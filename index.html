@@ -186,7 +186,7 @@ function renderCal(){const pop=document.getElementById('calpop');const y=calView
 document.getElementById('dateBtn').onclick=e=>{e.stopPropagation();const p=document.getElementById('calpop');p.classList.toggle('open');if(p.classList.contains('open'))renderCal()};
 document.addEventListener('click',()=>document.getElementById('calpop').classList.remove('open'));
 
-const IVLABEL={"1T":"Kerze: 15 Minuten","1W":"Kerze: 1 Stunde","1M":"Kerze: 1 Tag","1J":"Kerze: 1 Tag","5J":"Kerze: 1 Woche"};
+const IVLABEL={"1T":"Kerze: 15 Minuten","1W":"Kerze: 1 Stunde","1M":"Kerze: 1 Tag","1J":"Kerze: 1 Tag","5J":"Kerze: 1 Tag"};
 let lw,series,curIx;
 function candles(base,n,vol,kind){let p=base,out=[],now=Math.floor(Date.now()/1000);for(let i=0;i<n;i++){const o=p,c=o*(1+(Math.random()-0.5)*vol),hi=Math.max(o,c)*(1+Math.random()*vol*0.5),lo=Math.min(o,c)*(1-Math.random()*vol*0.5);let time;if(kind==='1D'){time=now-(n-i)*1800}else{const d=new Date();d.setDate(d.getDate()-(n-i)*(kind==='1Y'?7:1));time=d.toISOString().slice(0,10)}out.push({time,open:+o.toFixed(2),high:+hi.toFixed(2),low:+lo.toFixed(2),close:+c.toFixed(2)});p=c}return out}
 function dataFor(tf){if(curIx.candles&&curIx.candles[tf]&&curIx.candles[tf].length)return curIx.candles[tf];const b=pv(curIx.val);if(tf==='1T')return candles(b,26,0.003,'1D');if(tf==='1W')return candles(b,35,0.006,'1D');if(tf==='1M')return candles(b*0.97,22,0.012,'1M');if(tf==='1J')return candles(b*0.85,250,0.015,'1M');return candles(b*0.7,260,0.02,'1Y')}
