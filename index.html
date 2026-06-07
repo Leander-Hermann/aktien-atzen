@@ -50,11 +50,11 @@
   .mvrow{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:12px;margin-bottom:6px;transition:transform .18s,box-shadow .18s}
   .mvrow:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.14)}
   .mvrow .t{font-weight:600;font-size:14px}.mvrow .n{font-size:12px;opacity:.85}.mvrow .p{font-weight:700;font-size:14px}
-  .topicnav{position:sticky;top:64px;z-index:40;display:flex;flex-wrap:wrap;gap:8px;padding:10px 0;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px)}
+  .topicnav{display:flex;flex-wrap:wrap;gap:8px;padding:10px 0 4px}
   .tn{white-space:nowrap;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;display:flex;align-items:center;gap:7px;color:var(--ink)}
   .tn:hover{transform:translateY(-1px)}
   .dot{width:8px;height:8px;border-radius:50%;flex:0 0 auto}.p3{background:#ff453a}.p2{background:#ff9f0a}.p1{background:#30d158}
-  .topic{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:12px;scroll-margin-top:140px}
+  .topic{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:12px;scroll-margin-top:84px}
   .topic.clickable{cursor:pointer}
   .topic .head{display:flex;align-items:center;gap:10px;margin-bottom:6px;flex-wrap:wrap}
   .badge{font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px}.b3{background:#ffe5e3;color:#c4291c}.b2{background:#fff0d6;color:#9a6200}.b1{background:#dcf7e3;color:#1a7f37}
@@ -88,7 +88,7 @@
   .seg button.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.15)}
   footer{margin-top:46px;text-align:center;color:var(--muted);font-size:12.5px}
   .hidden{display:none}
-  @media(max-width:560px){.brand p{display:none}.nav button{padding:7px 11px}.idxgrid{grid-template-columns:1fr 1fr}.idx .val{font-size:20px}}
+  @media(max-width:560px){.brand p{display:none}.nav button{padding:7px 11px}.idxgrid{grid-template-columns:1fr 1fr}.idx .val{font-size:20px}.topicnav{max-height:88px;overflow-y:auto}}
 </style>
 </head>
 <body>
