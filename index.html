@@ -78,6 +78,19 @@
   .read .s{font-size:11.5px;color:var(--accent);margin-bottom:4px}.read .h{font-size:14.5px;font-weight:600}
   .ph{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-bottom:12px}
   .ph h3{margin:0 0 6px;font-size:17px;font-weight:600}.ph p{margin:0;color:var(--muted);font-size:14px}.ph .soon{display:inline-block;margin-top:10px;font-size:11px;font-weight:600;color:var(--accent);background:rgba(10,132,255,.12);border-radius:999px;padding:4px 10px}
+  .vcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+  .vcard .vh{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+  .vbadge{font-size:11px;font-weight:700;color:var(--accent);background:rgba(10,132,255,.12);border-radius:999px;padding:4px 10px}
+  .vdate{font-size:12px;color:var(--muted);margin-left:auto}
+  .vtitle{display:block;font-size:16.5px;font-weight:600;letter-spacing:-.02em;color:var(--ink);text-decoration:none;margin-bottom:6px}
+  .vtitle:hover{color:var(--accent)}
+  .vsum{font-size:14.5px;color:var(--ink);margin:0 0 6px}
+  .vlabel{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin:12px 0 2px}
+  .vstock{padding:8px 0;border-top:1px solid var(--line);font-size:14px}
+  .vstock .nm{font-weight:600}.vstock .nt{color:var(--muted)}
+  .vhi{padding:8px 0;border-top:1px solid var(--line);font-size:14px}
+  .tlink{display:inline-block;font-size:11.5px;font-weight:600;color:var(--accent);background:rgba(10,132,255,.1);border-radius:999px;padding:2px 9px;text-decoration:none;margin-left:4px;white-space:nowrap}
+  .tlink:hover{background:rgba(10,132,255,.2)}
   .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;z-index:100;padding:16px}
   .overlay.open{display:flex}
   .modal{background:var(--card);border-radius:24px;max-width:860px;width:100%;padding:20px}
@@ -126,7 +139,8 @@
  <div id="pageAna" class="hidden">
   <div class="sec"><h2>Analysen &amp; Tools</h2></div>
   <div class="ph"><h3>Aktienanalysen</h3><p>Eigene Unterseite für tiefere Einzelwert-Analysen.</p><span class="soon">in Arbeit</span></div>
-  <div class="ph"><h3>Video-Briefings</h3><p>Zusammenfassungen aus onvista, „Euer Egmond" &amp; „Rendezvous mit Harry".</p><span class="soon">Etappe 3</span></div>
+  <div class="sec"><h2>Video-Briefings</h2></div>
+  <div id="videoBriefings"></div>
   <div class="ph"><h3>Watchlist</h3><p>„Nvidia" → NVDA; passende News werden hervorgehoben.</p><span class="soon">Etappe 4</span></div>
   <div class="ph"><h3>Chart-Schule</h3><p>Täglich eine Chart-Formation kurz erklärt.</p><span class="soon">Etappe 4</span></div>
  </div>
@@ -153,7 +167,7 @@ const DEMO={
   {prio:2,time:"09:10",title:"Ölpreis springt nach OPEC+-Entscheidung",body:"OPEC+ hält Förderkürzung länger; Brent +2,3 %.",timing:"vor US-Open",sources:[{l:"@ReutersWorld",u:"https://x.com/ReutersWorld"}]}],
  reads:[{s:"Bloomberg Opinion",h:"Warum Chip-Nationalismus die Margen frisst",u:"#"},{s:"Chart-Schule",h:"Formation des Tages: Schulter-Kopf-Schulter",u:"#"}]}
 };
-let DATA={},order=[],labels={},current=null,calView=new Date(),DEMOMODE=false,allLoaded=false,MARKET=null,filterPrio=0;
+let DATA={},order=[],labels={},current=null,calView=new Date(),DEMOMODE=false,allLoaded=false,MARKET=null,filterPrio=0,VIDEOS=null;
 function mkt(){return (!DEMOMODE && MARKET && MARKET.indices)?MARKET:(DATA[current]||{})}
 
 function isDark(){return document.documentElement.dataset.theme==='dark'}
@@ -168,7 +182,8 @@ async function boot(){
   try{const r=await fetch('data/index.json',{cache:'no-store'});if(!r.ok)throw 0;const idx=await r.json();if(!idx.length)throw 0;order=idx.map(d=>d.date);idx.forEach(d=>labels[d.date]=d.label);current=order[0];await loadDay(current);}
   catch(e){DEMOMODE=true;DATA=DEMO;order=Object.keys(DEMO).sort().reverse();order.forEach(d=>labels[d]=DEMO[d].label);current=order[0];document.getElementById('banner').classList.remove('hidden')}
   try{const mr=await fetch('data/market.json',{cache:'no-store'});if(mr.ok)MARKET=await mr.json()}catch(e){}
-  calView=new Date(current);render()
+  try{const vr=await fetch('data/videos.json',{cache:'no-store'});if(vr.ok)VIDEOS=await vr.json()}catch(e){}
+  calView=new Date(current);render();renderVideos()
 }
 async function go(date){current=date;calView=new Date(date);if(!DEMOMODE){try{await loadDay(date)}catch(e){}}render()}
 function shift(s){const i=order.indexOf(current)+s;if(i>=0&&i<order.length)go(order[i])}
@@ -179,6 +194,8 @@ function movers(){const day=mkt();document.getElementById('gain').innerHTML=(day
 function actives(){const day=mkt();document.getElementById('actives').innerHTML=(day.actives||[]).map(mrow).join('')}
 function topics(){const day=DATA[current];const s=[...(day.topics||[])].sort((a,b)=>b.prio-a.prio);const nav=document.getElementById('topicnav');nav.innerHTML='';const w=document.getElementById('topics');w.innerHTML='';s.forEach((t,i)=>{const id='t'+i;const tn=document.createElement('button');tn.className='tn';tn.innerHTML=`<span class="dot p${t.prio}"></span>${t.title.length>30?t.title.slice(0,30)+'…':t.title}`;tn.onclick=()=>document.getElementById(id).scrollIntoView({behavior:'smooth'});nav.appendChild(tn);const lbl={3:'Hohe Prio',2:'Mittel',1:'Niedrig'}[t.prio]||'';const c=document.createElement('div');c.className='topic';c.id=id;c.innerHTML=`<div class="head"><h3>${t.title}</h3><div class="metaR"><span class="badge b${t.prio}">${lbl}</span>${t.time?`<span class="time">${t.time} Uhr</span>`:''}</div></div><div class="body">${t.body||''}</div>${t.img?`<img class="tweetimg" src="${t.img}" alt="">`:''}${t.timing?`<span class="tag">⏱ ${t.timing}</span>`:''}${(t.begriffe||[]).map((g,gi)=>`<button type="button" class="tag gloss" data-gi="${gi}">ⓘ ${g.term||g}</button>`).join('')}${(t.begriffe||[]).map((g,gi)=>`<div class="glossnote hidden" data-gn="${gi}"><b>${g.term||g}:</b> ${g.erklaerung||''}<a href="https://de.wikipedia.org/wiki/Spezial:Suche?search=${encodeURIComponent(g.term||g)}" target="_blank" rel="noopener">Wikipedia ↗</a></div>`).join('')}${t.einordnung?`<div class="einord">→ Einordnung: ${t.einordnung}</div>`:''}${t.verlauf?`<button type="button" class="tag vchip">↳ Verlauf</button><div class="vnote hidden">${t.verlauf}</div>`:''}<div class="src">${(t.sources||[]).map(x=>`<a href="${x.u}" target="_blank" rel="noopener">${x.l}</a>`).join('')}</div>`;w.appendChild(c)});w.querySelectorAll('.topic').forEach(card=>{card.querySelectorAll('.gloss').forEach(gb=>gb.addEventListener('click',e=>{e.stopPropagation();const n=card.querySelector('.glossnote[data-gn="'+gb.dataset.gi+'"]');if(n)n.classList.toggle('hidden')}));const vc=card.querySelector('.vchip');if(vc)vc.addEventListener('click',e=>{e.stopPropagation();const vn=card.querySelector('.vnote');if(vn)vn.classList.toggle('hidden')});const b=card.querySelector('.body');if(b.scrollHeight>b.clientHeight+2){card.classList.add('clickable');const btn=document.createElement('button');btn.className='more';btn.textContent='Mehr anzeigen';const tog=()=>{const ex=b.classList.toggle('expanded');btn.textContent=ex?'Weniger anzeigen':'Mehr anzeigen'};btn.onclick=e=>{e.stopPropagation();tog()};b.after(btn);card.addEventListener('click',e=>{if(e.target.closest('a')||e.target.closest('.more')||e.target.closest('.gloss')||e.target.closest('.glossnote')||e.target.closest('.vchip')||e.target.closest('.vnote'))return;tog()})}})}
 function reads(){const day=DATA[current];document.getElementById('reads').innerHTML=(day.reads||[]).map(r=>`<a class="read" href="${r.u||'#'}" target="_blank" rel="noopener"><div class="s">${r.s||''}</div><div class="h">${r.h||''}</div></a>`).join('')}
+function vdate(d){return (d&&d.length>=8)?d.slice(6,8)+'.'+d.slice(4,6)+'.'+d.slice(0,4):''}
+function renderVideos(){const el=document.getElementById('videoBriefings');if(!el)return;const vids=(VIDEOS&&VIDEOS.videos)||[];if(!vids.length){el.innerHTML='<div class="ph"><p style="color:var(--muted)">Noch keine Video-Briefings – erscheinen nach dem nächsten Lauf.</p></div>';return}el.innerHTML=vids.map(v=>`<div class="vcard"><div class="vh"><span class="vbadge">${v.channel}${v.playlist?' · '+v.playlist:''}</span><span class="vdate">${vdate(v.date)}</span></div><a class="vtitle" href="${v.url}" target="_blank" rel="noopener">${v.title} ↗</a><p class="vsum">${v.summary||''}</p>${(v.stocks&&v.stocks.length)?`<div class="vlabel">Besprochene Werte</div>${v.stocks.map(st=>`<div class="vstock"><span class="nm">${st.name}</span> <span class="nt">${st.note||''}</span>${st.tlink?`<a class="tlink" href="${st.tlink}" target="_blank" rel="noopener">▶ ${st.t}</a>`:''}</div>`).join('')}`:''}${(v.highlights&&v.highlights.length)?`<div class="vlabel">Highlights</div>${v.highlights.map(hi=>`<div class="vhi">${hi.text} ${hi.tlink?`<a class="tlink" href="${hi.tlink}" target="_blank" rel="noopener">▶ ${hi.t}</a>`:''}</div>`).join('')}`:''}</div>`).join('')}
 function render(){const day=DATA[current]||{};document.getElementById('dateLabel').textContent=labels[current]||day.label||current;const M=mkt();const hasIdx=M.indices&&M.indices.length;const hasMov=(M.gainers&&M.gainers.length)||(M.losers&&M.losers.length);document.getElementById('secMarket').classList.toggle('hidden',!hasIdx);document.getElementById('secMovers').classList.toggle('hidden',!hasMov);if(hasIdx)indices();if(hasMov)movers();const hasAct=M.actives&&M.actives.length;document.getElementById('secActives').classList.toggle('hidden',!hasAct);if(hasAct)actives();topics();reads();document.getElementById('foot').textContent='Aktien Atzen'+(DEMOMODE?' · Demo':'')}
 
 async function ensureAll(){if(DEMOMODE||allLoaded)return;await Promise.all(order.map(d=>loadDay(d).catch(()=>{})));allLoaded=true}
