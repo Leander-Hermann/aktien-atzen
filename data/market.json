@@ -1,10 +1,10 @@
 {
- "updated": "2026-06-08T14:20:39.357763+00:00",
+ "updated": "2026-06-08T15:20:36.769118+00:00",
  "indices": [
   {
    "nm": "S&P 500 Future",
-   "val": "7.445",
-   "pct": 0.6,
+   "val": "7.474",
+   "pct": 1.0,
    "candles": {
     "m15": [
      {
@@ -40466,8 +40466,8 @@
   },
   {
    "nm": "Nasdaq 100 Future",
-   "val": "29.444",
-   "pct": 1.44,
+   "val": "29.721",
+   "pct": 2.39,
    "candles": {
     "m15": [
      {
@@ -80929,7 +80929,7 @@
   },
   {
    "nm": "DAX",
-   "val": "24.661",
+   "val": "24.660",
    "pct": -0.4,
    "candles": {
     "m15": [
@@ -126791,8 +126791,8 @@
   },
   {
    "nm": "Brent Öl",
-   "val": "94,54",
-   "pct": 1.56,
+   "val": "94,85",
+   "pct": 1.89,
    "candles": {
     "m15": [
      {
@@ -167102,8 +167102,8 @@
   },
   {
    "nm": "WTI Öl",
-   "val": "91,38",
-   "pct": 0.93,
+   "val": "92,07",
+   "pct": 1.69,
    "candles": {
     "m15": [
      {
@@ -207518,63 +207518,63 @@
  ],
  "gainers": [
   {
-   "t": "CBRS",
-   "n": "Cerebras Systems Inc.",
-   "p": 15.17
-  },
-  {
    "t": "GLXY",
    "n": "Galaxy Digital Inc.",
-   "p": 13.17
+   "p": 21.42
+  },
+  {
+   "t": "CBRS",
+   "n": "Cerebras Systems Inc.",
+   "p": 17.29
   },
   {
    "t": "MRVL",
    "n": "Marvell Technology, Inc.",
-   "p": 10.07
-  },
-  {
-   "t": "INTC",
-   "n": "Intel Corporation",
-   "p": 9.73
+   "p": 15.12
   },
   {
    "t": "AAOI",
    "n": "Applied Optoelectronics, Inc.",
-   "p": 8.07
+   "p": 13.32
+  },
+  {
+   "t": "INTC",
+   "n": "Intel Corporation",
+   "p": 12.99
   }
  ],
  "losers": [
   {
-   "t": "KB",
-   "n": "KB Financial Group Inc",
-   "p": -7.78
-  },
-  {
    "t": "TLK",
    "n": "PT Telekomunikasi Indonesia, Tb",
-   "p": -7.56
+   "p": -8.43
   },
   {
-   "t": "GWRE",
-   "n": "Guidewire Software, Inc.",
-   "p": -5.7
-  },
-  {
-   "t": "SATS",
-   "n": "EchoStar Corporation",
-   "p": -5.47
+   "t": "KB",
+   "n": "KB Financial Group Inc",
+   "p": -7.75
   },
   {
    "t": "SHG",
    "n": "Shinhan Financial Group Co Ltd",
-   "p": -5.34
+   "p": -5.22
+  },
+  {
+   "t": "PS",
+   "n": "Pershing Square Inc.",
+   "p": -5.04
+  },
+  {
+   "t": "BAP",
+   "n": "Credicorp Ltd.",
+   "p": -4.48
   }
  ],
  "actives": [
   {
    "t": "INTC",
    "n": "Intel Corporation",
-   "p": 9.76,
+   "p": 12.99,
    "candles": {
     "d1": [
      {
@@ -209580,10 +209580,10 @@
      {
       "time": 1780925400,
       "open": 111.0,
-      "high": 111.0,
+      "high": 112.37,
       "low": 106.66,
-      "close": 108.85,
-      "volume": 47903469
+      "close": 112.04,
+      "volume": 68526767
      }
     ]
    }
@@ -209591,7 +209591,7 @@
   {
    "t": "NOK",
    "n": "Nokia Corporation Sponsored",
-   "p": 2.11,
+   "p": 4.2,
    "candles": {
     "d1": [
      {
@@ -211597,10 +211597,10 @@
      {
       "time": 1780925400,
       "open": 14.86,
-      "high": 14.92,
+      "high": 15.06,
       "low": 14.44,
-      "close": 14.68,
-      "volume": 43526475
+      "close": 14.98,
+      "volume": 60422645
      }
     ]
    }
@@ -211608,7 +211608,7 @@
   {
    "t": "NVDA",
    "n": "NVIDIA Corporation",
-   "p": 1.06,
+   "p": 1.77,
    "candles": {
     "d1": [
      {
@@ -213616,8 +213616,8 @@
       "open": 210.18,
       "high": 210.46,
       "low": 206.0,
-      "close": 207.27,
-      "volume": 41290915
+      "close": 208.74,
+      "volume": 57036603
      }
     ]
    }
@@ -213625,7 +213625,7 @@
   {
    "t": "MRVL",
    "n": "Marvell Technology, Inc.",
-   "p": 10.05,
+   "p": 15.15,
    "candles": {
     "d1": [
      {
@@ -215631,10 +215631,10 @@
      {
       "time": 1780925400,
       "open": 288.69,
-      "high": 292.44,
+      "high": 303.5,
       "low": 281.36,
-      "close": 290.11,
-      "volume": 26341131
+      "close": 303.3,
+      "volume": 41481362
      }
     ]
    }
@@ -215642,7 +215642,7 @@
   {
    "t": "MU",
    "n": "Micron Technology, Inc.",
-   "p": 7.29,
+   "p": 11.25,
    "candles": {
     "d1": [
      {
@@ -217648,17 +217648,17 @@
      {
       "time": 1780925400,
       "open": 938.27,
-      "high": 952.5,
+      "high": 962.95,
       "low": 916.5,
-      "close": 927.49,
-      "volume": 18933715
+      "close": 961.18,
+      "volume": 26820809
      }
     ]
    }
   }
  ],
  "feargreed": {
-  "score": 42.7,
+  "score": 44.6,
   "rating": "fear",
   "prev_close": 42.0571428571429,
   "prev_week": 56.5428571428571,
