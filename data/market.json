@@ -1,10 +1,10 @@
 {
- "updated": "2026-06-08T18:29:49.388457+00:00",
+ "updated": "2026-06-08T19:20:32.232908+00:00",
  "indices": [
   {
    "nm": "S&P 500 Future",
-   "val": "7.439",
-   "pct": 0.52,
+   "val": "7.419",
+   "pct": 0.25,
    "candles": {
     "m15": [
      {
@@ -40522,8 +40522,8 @@
   },
   {
    "nm": "Nasdaq 100 Future",
-   "val": "29.581",
-   "pct": 1.91,
+   "val": "29.450",
+   "pct": 1.46,
    "candles": {
     "m15": [
      {
@@ -105688,8 +105688,8 @@
   },
   {
    "nm": "Hang Seng",
-   "val": "24.657",
-   "pct": -2.36,
+   "val": "24.962",
+   "pct": -1.15,
    "candles": {
     "m15": [
      {
@@ -126927,8 +126927,8 @@
   },
   {
    "nm": "Brent Öl",
-   "val": "94,08",
-   "pct": 1.06,
+   "val": "94,21",
+   "pct": 1.2,
    "candles": {
     "m15": [
      {
@@ -167294,8 +167294,8 @@
   },
   {
    "nm": "WTI Öl",
-   "val": "91,11",
-   "pct": 0.63,
+   "val": "91,09",
+   "pct": 0.61,
    "candles": {
     "m15": [
      {
@@ -207768,61 +207768,61 @@
   {
    "t": "GLXY",
    "n": "Galaxy Digital Inc.",
-   "p": 24.66
+   "p": 22.61
   },
   {
    "t": "CBRS",
    "n": "Cerebras Systems Inc.",
-   "p": 23.94
+   "p": 20.44
   },
   {
-   "t": "MRVL",
-   "n": "Marvell Technology, Inc.",
-   "p": 14.13
-  },
-  {
-   "t": "AAOI",
-   "n": "Applied Optoelectronics, Inc.",
-   "p": 13.64
+   "t": "INTC",
+   "n": "Intel Corporation",
+   "p": 11.49
   },
   {
    "t": "IONQ",
    "n": "IonQ, Inc.",
-   "p": 13.46
+   "p": 11.43
+  },
+  {
+   "t": "MRVL",
+   "n": "Marvell Technology, Inc.",
+   "p": 11.13
   }
  ],
  "losers": [
   {
    "t": "TLK",
    "n": "PT Telekomunikasi Indonesia, Tb",
-   "p": -9.91
-  },
-  {
-   "t": "KB",
-   "n": "KB Financial Group Inc",
-   "p": -6.83
+   "p": -9.56
   },
   {
    "t": "FRVO",
    "n": "Fervo Energy Company",
-   "p": -6.46
+   "p": -8.54
+  },
+  {
+   "t": "KB",
+   "n": "KB Financial Group Inc",
+   "p": -6.86
   },
   {
    "t": "GWRE",
    "n": "Guidewire Software, Inc.",
-   "p": -5.45
+   "p": -6.34
   },
   {
-   "t": "CIEN",
-   "n": "Ciena Corporation",
-   "p": -5.36
+   "t": "TWLO",
+   "n": "Twilio Inc.",
+   "p": -5.89
   }
  ],
  "actives": [
   {
    "t": "INTC",
    "n": "Intel Corporation",
-   "p": 13.22,
+   "p": 11.5,
    "candles": {
     "d1": [
      {
@@ -209828,10 +209828,10 @@
      {
       "time": 1780925400,
       "open": 111.0,
-      "high": 112.5,
+      "high": 112.54,
       "low": 106.66,
-      "close": 112.27,
-      "volume": 103676806
+      "close": 110.57,
+      "volume": 111523081
      }
     ]
    }
@@ -209839,7 +209839,7 @@
   {
    "t": "NVDA",
    "n": "NVIDIA Corporation",
-   "p": 2.03,
+   "p": 1.36,
    "candles": {
     "d1": [
      {
@@ -211847,8 +211847,8 @@
       "open": 210.18,
       "high": 210.46,
       "low": 206.0,
-      "close": 209.27,
-      "volume": 93925114
+      "close": 207.9,
+      "volume": 101381990
      }
     ]
    }
@@ -211856,7 +211856,7 @@
   {
    "t": "NOK",
    "n": "Nokia Corporation Sponsored",
-   "p": 2.03,
+   "p": 1.11,
    "candles": {
     "d1": [
      {
@@ -213864,8 +213864,8 @@
       "open": 14.86,
       "high": 15.06,
       "low": 14.44,
-      "close": 14.67,
-      "volume": 86597921
+      "close": 14.53,
+      "volume": 92203523
      }
     ]
    }
@@ -213873,7 +213873,7 @@
   {
    "t": "MRVL",
    "n": "Marvell Technology, Inc.",
-   "p": 14.13,
+   "p": 11.13,
    "candles": {
     "d1": [
      {
@@ -215881,8 +215881,8 @@
       "open": 288.69,
       "high": 304.96,
       "low": 281.36,
-      "close": 300.59,
-      "volume": 62817847
+      "close": 292.87,
+      "volume": 69142506
      }
     ]
    }
@@ -215890,7 +215890,7 @@
   {
    "t": "SOFI",
    "n": "SoFi Technologies, Inc.",
-   "p": 3.43,
+   "p": 2.78,
    "candles": {
     "d1": [
      {
@@ -217898,15 +217898,15 @@
       "open": 16.18,
       "high": 16.66,
       "low": 15.95,
-      "close": 16.58,
-      "volume": 58911145
+      "close": 16.48,
+      "volume": 66038757
      }
     ]
    }
   }
  ],
  "feargreed": {
-  "score": 42.1,
+  "score": 41.2,
   "rating": "fear",
   "prev_close": 42.0571428571429,
   "prev_week": 56.5428571428571,
