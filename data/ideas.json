@@ -1,79 +1,75 @@
 {
- "updated": "2026-06-08T11:59:55.573895+00:00",
+ "updated": "2026-06-08T18:30:34.779365+00:00",
  "date": "2026-06-08",
  "ideas": [
   {
-   "title": "HBM-Speicher Kapazitätsengpass – Nvidia-Aussagen treiben Memory-Werte",
-   "thesis": "Jensen Huang erklärte explizit, dass SK Hynix' geplante Kapazitätsverdopplung bis 2030 nicht ausreicht. Wells Fargo verdoppelte daraufhin das Micron-Kursziel auf 1.220 USD. Der strukturelle HBM-Nachfrageüberhang begünstigt alle führenden Speicherhersteller, die an Nvidias KI-Chip-Ökosystem teilhaben.",
+   "title": "Öl-Spike nutzen, dann Short auf Erholung",
+   "thesis": "Fitch erwartet Brent bei 100–110 USD/bbl für Juni/Juli durch Hormuz-Störungen, gefolgt von einem raschen Rückfall auf ~70 USD im September. Die kurzfristige Knappheit begünstigt integrierte Ölmajors, während der prognostizierte Preisverfall ab August eine Short-Position auf Öl-ETFs oder E&P-Titel rechtfertigt.",
    "values": [
-    "Micron Technology (MU)",
-    "SK Hynix (000660.KS)",
-    "Samsung Electronics (005930.KS)",
-    "SOXX (Semiconductor-ETF)"
+    "XLE",
+    "Shell",
+    "TotalEnergies",
+    "BP",
+    "USO (Short ab Aug.)"
+   ],
+   "angle": "Long kurzfristig, dann Short",
+   "risk": "Eine schnellere als erwartete Waffenruhe und Wiedereröffnung der Straße von Hormuz könnte den Preisanstieg abrupt beenden.",
+   "source": "News: Fitch hebt Öl-Sektorausblick an – Brent 100–110 USD/bbl bis Juli, dann Rückgang",
+   "source_url": "https://x.com/DeItaone/status/2063975695638802933"
+  },
+  {
+   "title": "Pentagon-Listing belastet chinesische ADRs strukturell",
+   "thesis": "Die Einstufung von BYD, COSCO und Alibaba als 'Chinese Military Companies' durch das Pentagon kann US-Investoren und Behörden den Geschäftsverkehr erheblich einschränken, was Kapitalabflüsse aus chinesischen ADRs und ETFs auslösen dürfte. Der regulatorische Druck erhöht die Risikoprämie für das gesamte chinesische Aktienuniversum.",
+   "values": [
+    "BABA",
+    "BYD (HK)",
+    "COSCO (HK)",
+    "KWEB ETF",
+    "FXI ETF"
+   ],
+   "angle": "Short",
+   "risk": "Diplomatische Entspannung zwischen den USA und China oder eine gerichtliche Anfechtung der Designation könnte die Auswirkungen abschwächen.",
+   "source": "News: Pentagon listet BYD, COSCO und Alibaba als 'chinesische Militärfirmen'",
+   "source_url": "https://x.com/FirstSquawk/status/2064024396713648186"
+  },
+  {
+   "title": "SpaceX-IPO-Hype als Signalgeber für Nasdaq-Überhitzung",
+   "thesis": "Ein stark überzeichneter SpaceX-IPO bei gleichzeitig aktiven Bären-Indikatoren (70 % laut BofA) und steigenden Fed-Zinserhöhungswetten signalisiert einen spekulativen Marktgipfel. Historisch markieren solche Konstellationen – breite Überbewertung, konzentrierte Kursgewinne, IPO-Euphorie – kurzfristige Rückschlagpotenziale für wachstumsstarke Tech-Indizes.",
+   "values": [
+    "QQQ (Short/Put)",
+    "S&P 500 (SPXU)",
+    "Nasdaq-100"
+   ],
+   "angle": "Short",
+   "risk": "Anhaltende Liquiditätszuflüsse und KI-getriebene Gewinnrevisionen könnten den Markt trotz der Warnsignale weiter nach oben treiben.",
+   "source": "News: BofA warnt vor Marktüberhitzung – 70% der Bären-Indikatoren ausgelöst",
+   "source_url": "https://x.com/DeItaone/status/2063969229968122121"
+  },
+  {
+   "title": "Apple WWDC – KI-Siri als Katalysator für Apple-Ökosystem",
+   "thesis": "Die Vorstellung einer grundlegend überarbeiteten, kontextbewussten Siri auf Basis von Apple Intelligence auf der WWDC kann einen Upgrade-Zyklus beim iPhone-Bestand anstoßen und das Services-Geschäft (App Store, Apple Intelligence Abos) stärken. Die geräteübergreifende Verfügbarkeit (CarPlay, AirPods) vertieft die Ökosystembindung und stützt langfristig die Marge.",
+   "values": [
+    "AAPL",
+    "Zulieferer: Qualcomm (QCOM)",
+    "Foxconn (2317 TW)"
    ],
    "angle": "Long",
-   "risk": "Eine geopolitische Entspannung oder ein Nachfragerückgang bei KI-Infrastrukturinvestitionen könnte den HBM-Boom abrupt bremsen.",
-   "source": "News: Nvidia-CEO Jensen Huang in Seoul: SK Hynix-Kapazität reicht nicht – Partnerschaft soll Hunderte Mrd. USD bringen",
+   "risk": "Google setzt zeitgleich KI-Updates durch und könnte Marktanteile im Assisenten-Bereich halten oder ausbauen, was Apples Differenzierungsthese schwächt.",
+   "source": "News: Apple WWDC: Neues KI-Siri und iOS 27 vorgestellt",
+   "source_url": "https://x.com/FirstSquawk/status/2064038772547944457"
+  },
+  {
+   "title": "Nvidia-HBM-Engpass bevorteilt Samsung gegenüber SK Hynix",
+   "thesis": "Jensen Huangs Aussage, SK Hynix' geplante Kapazitätsverdopplung bis 2030 reiche nicht aus, kombiniert mit der bestätigten ASIC-Kooperation zwischen Nvidia und Samsung, verschiebt die Marktwahrnehmung zugunsten Samsungs als zweiten strategischen HBM/ASIC-Partner. SK Hynix bleibt zwar relevant, doch Samsung könnte Bewertungsaufholpotenzial haben.",
+   "values": [
+    "Samsung Electronics (005930 KS)",
+    "SK Hynix (000660 KS)",
+    "SOXX ETF"
+   ],
+   "angle": "Long Samsung, Beobachten SK Hynix",
+   "risk": "Samsung hat bei HBM-Qualifizierungen bei Nvidia bisher Rückstände; eine verzögerte Zertifizierung würde den Aufholeffekt zunichte machen.",
+   "source": "News: Nvidia-CEO: SK-Hynix-Kapazitätspläne reichen nicht – Samsung-ASIC-Kooperation bestätigt",
    "source_url": "https://x.com/DeItaone/status/2063950467445469219"
-  },
-  {
-   "title": "Doppelte Meerengenblockade – Seetransport und Versicherungen unter Druck",
-   "thesis": "Iran sperrte sowohl die Straße von Hormuz als auch Bab el-Mandeb vollständig. Damit sind zwei der weltweit kritischsten Schifffahrtsrouten gleichzeitig blockiert, was Tanker- und Containerschiffsrouten massiv verlängert und Frachtraten sowie Kriegsrisikoprämien in die Höhe treibt.",
-   "values": [
-    "Frontline (FRO)",
-    "Euronav (EURN)",
-    "Hapag-Lloyd (HLAG)",
-    "Maersk (MAERSK-B.CO)",
-    "Specialty-Versicherer wie Beazley (BEZ.L)"
-   ],
-   "angle": "Beobachten",
-   "risk": "Eine rasche Waffenstillstandseinigung auf Druck Trumps könnte die Blockaden kurzfristig aufheben und die Prämien sofort einbrechen lassen.",
-   "source": "News: Israel schlägt Irans Raketenprogramm-Infrastruktur – Straßen von Hormuz und Bab el-Mandeb blockiert",
-   "source_url": "https://x.com/FirstSquawk/status/2063925993187025398"
-  },
-  {
-   "title": "Ölpreis-Volatilität nutzen – Energiesektor zwischen Eskalation und Deal",
-   "thesis": "Die simultane Blockade beider Meerengen treibt Ölpreise auf Eskalationssorgen, während Irans Operationseinstellung und saudi-arabische Preissenkungen für Asien gegenläufige Signale senden. Diese Volatilität begünstigt Energieproduzenten mit diversifizierten Fördergebieten abseits des Golfs sowie Öl-ETFs mit Absicherungscharakter.",
-   "values": [
-    "WTI Crude Oil (USO ETF)",
-    "Brent Crude (BNO ETF)",
-    "ExxonMobil (XOM)",
-    "TotalEnergies (TTE)",
-    "Equinor (EQNR)"
-   ],
-   "angle": "Beobachten",
-   "risk": "Ein schneller Trump-vermittelter Deal könnte Ölpreise scharf fallen lassen und Energietitel belasten.",
-   "source": "News: Öl steigt, Futures erholen sich – Märkte reagieren auf Iran-Waffenruhe",
-   "source_url": "https://x.com/DeItaone/status/2063937717281464783"
-  },
-  {
-   "title": "Tech-Rotation weg von Semiconductors – defensive Sektoren als Nutznießer",
-   "thesis": "Das onvista-Markt-Update beschreibt explizit Kapitalabflüsse aus Tech in Healthcare und Financials. Broadcom-Enttäuschung und schwache Semikonductor-Werte verstärken die Rotation. Defensive und zyklisch diversifizierte Sektoren könnten kurzfristig überproportional Zuflüsse erhalten.",
-   "values": [
-    "iShares S&P 500 Health Care Sector ETF (IYH)",
-    "Financial Select Sector SPDR (XLF)",
-    "DAX Healthcare-Werte wie Fresenius (FRE)",
-    "Allianz (ALV)"
-   ],
-   "angle": "Long",
-   "risk": "Sollten US-Arbeitsmarktdaten enttäuschen, könnten breite Marktverkäufe auch defensive Sektoren erfassen.",
-   "source": "Markt-Update mit Fokus auf Tech-Rotation (onvista Video-Briefing)",
-   "source_url": ""
-  },
-  {
-   "title": "Indien-US-Handelsdeal – indische Exportwerte bei Zollvorteil-Szenario",
-   "thesis": "Indien fordert im laufenden US-Handelsdeal bevorzugte Zollsätze gegenüber Wettbewerbern wie China und Vietnam. Sollte ein solcher Deal abgeschlossen werden, würden indische Exportsektoren – insbesondere IT-Dienstleistungen, Pharma und Textil – einen strukturellen Wettbewerbsvorteil erhalten.",
-   "values": [
-    "iShares MSCI India ETF (INDA)",
-    "Infosys (INFY)",
-    "Wipro (WIT)",
-    "Dr. Reddy's Laboratories (RDY)",
-    "WisdomTree India Earnings ETF (EPI)"
-   ],
-   "angle": "Beobachten",
-   "risk": "Verhandlungen sind ohne konkreten Zeitplan und könnten an politischen Widerständen auf beiden Seiten scheitern oder sich stark verzögern.",
-   "source": "News: Indien fordert Vorzugszölle im US-Handelsdeal",
-   "source_url": "https://x.com/FirstSquawk/status/2063949807052595302"
   }
  ]
 }
