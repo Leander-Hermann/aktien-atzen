@@ -169,6 +169,20 @@
   .fghint{font-size:11.5px;font-weight:600;color:var(--accent);margin-top:9px}
   .mvrow.clk{cursor:pointer}
   .mvrow.clk .t::after{content:" ›";opacity:.45;font-weight:600}
+  /* --- Watchlist --- */
+  .wlbar{display:flex;gap:8px;margin:0 0 14px}
+  .wlbar input{flex:1;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:11px 14px;font-size:15px;font-family:inherit;color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s}
+  .wlbar input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(10,132,255,.15)}
+  .wlbar button{border:none;background:var(--accent);color:#fff;border-radius:14px;padding:0 18px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap}
+  .wlgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+  .wlc{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+  .wlc:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.12)}
+  .wlc .s{font-size:15px;font-weight:700;letter-spacing:-.01em}
+  .wlc .v{font-size:21px;font-weight:700;margin-top:6px;letter-spacing:-.02em}
+  .wlc .p{font-size:13.5px;font-weight:600;margin-top:2px}
+  .wlc .rm{position:absolute;top:8px;right:8px;width:24px;height:24px;border:none;background:var(--chip);color:var(--muted);border-radius:50%;font-size:14px;cursor:pointer;line-height:1;opacity:0;transition:opacity .15s}
+  .wlc:hover .rm{opacity:1}
+  .wlempty{color:var(--muted);font-size:14px}
 </style>
 </head>
 <body>
@@ -208,7 +222,10 @@
   <div class="ph"><h3>Aktienanalysen</h3><p>Eigene Unterseite für tiefere Einzelwert-Analysen.</p><span class="soon">in Arbeit</span></div>
   <div class="sec"><h2>Video-Briefings</h2></div>
   <div id="videoBriefings"></div>
-  <div class="ph"><h3>Watchlist</h3><p>„Nvidia" → NVDA; passende News werden hervorgehoben.</p><span class="soon">Etappe 4</span></div>
+  <div class="sec"><h2>Meine Watchlist</h2></div>
+  <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Lokal in deinem Browser gespeichert – jeder Besucher hat seine eigene. Symbole wie AAPL, NVDA, SAP.DE eingeben, oder einen TradingView-Export (NASDAQ:AAPL, …) einfügen. Live-Kurse über Yahoo.</p>
+  <div class="wlbar"><input id="wlInput" placeholder="Symbol(e) hinzufügen, z. B. AAPL, NVDA, SAP.DE"><button id="wlAdd">Hinzufügen</button></div>
+  <div class="wlgrid" id="wlGrid"></div>
   <div class="ph"><h3>Chart-Schule</h3><p>Täglich eine Chart-Formation kurz erklärt.</p><span class="soon">Etappe 4</span></div>
  </div>
 
@@ -398,7 +415,39 @@ function korow(l,v){return `<div class="kores"><span class="kl">${l}</span><span
 function koCalc(){const out=document.getElementById('koOut');if(!out)return;const long=koTypeVal==='long';const S=knum('koS'),BV=knum('koBV')||1;let strike=knum('koStrike');const cert=knum('koCert');let derived=false;if(strike==null&&cert!=null&&S!=null){strike=long?S-cert/BV:S+cert/BV;derived=true}const KO=knum('koKO'),TP=knum('koTP'),SL=knum('koSL'),stake=knum('koStake');if(S==null||strike==null){out.innerHTML='<p style="color:var(--muted);font-size:13.5px">Bitte mindestens <b>Basiswert-Kurs</b> und <b>Basispreis</b> (oder Scheinkurs) eingeben.</p>';return}const price=(long?(S-strike):(strike-S))*BV;const koOut=price<=0;const lev=price>0?(S*BV)/price:null;let kodist=null;if(KO!=null)kodist=long?(S-KO)/S*100:(KO-S)/S*100;const pAt=x=>(long?(x-strike):(strike-x))*BV;const knocked=x=>long?(KO!=null?x<=KO:pAt(x)<=0):(KO!=null?x>=KO:pAt(x)<=0);let html='';if(koOut)html+='<div class="kowarn">Mit diesen Werten ist der Schein bereits ausgeknockt (Kurs jenseits des Basispreises). Prüfe Typ (Long/Short), Basispreis und Kurs.</div>';if(stake&&price>0){const st=Math.floor(stake/price);html+=korow('Position',`${st} Stück · ${eurv(st*price)}`)}html+=korow('Scheinkurs (jetzt)',koOut?'<span class="kobad">KO ausgelöst</span>':eurv(price));html+=`<div class="koformula">P = (${long?'Kurs − Strike':'Strike − Kurs'}) × BV = (${nv(long?S:strike,2)} − ${nv(long?strike:S,2)}) × ${nv(BV,BV<1?2:0)} = ${koOut?'≤ 0':eurv(price)}</div>`;if(derived)html+=`<div class="koformula">Strike aus Scheinkurs berechnet = ${nv(strike,2)}</div>`;if(lev)html+=korow('Hebel','× '+nv(lev,2));if(kodist!=null)html+=korow('Abstand zum KO',`<span class="${kodist>=0?'kogood':'kobad'}">${pctv(kodist)}</span>`);if(TP!=null){const pt=pAt(TP),ren=price>0?(pt-price)/price*100:null,kn=knocked(TP);html+=korow(`Take-Profit @ ${nv(TP,2)}`,kn?'<span class="kobad">KO</span>':`${eurv(pt)}${ren!=null?` <span class="kogood" style="font-size:13px">(${pctv(ren)})</span>`:''}`);if(stake&&price>0&&!kn){const st=Math.floor(stake/price);html+=`<div class="koformula">${st} Stück · Wert ${eurv(st*pt)} · G/V ${eurv(st*(pt-price))}</div>`}}if(SL!=null){const ps=pAt(SL),ren=price>0?(ps-price)/price*100:null,kn=knocked(SL);html+=korow(`Stop-Loss @ ${nv(SL,2)}`,kn?'<span class="kobad">KO – Totalverlust</span>':`${eurv(ps)}${ren!=null?` <span class="kobad" style="font-size:13px">(${pctv(ren)})</span>`:''}`);if(stake&&price>0){const st=Math.floor(stake/price),val=kn?0:st*ps;html+=`<div class="koformula">${st} Stück · Wert ${eurv(val)} · G/V ${eurv(val-st*price)}</div>`}}out.innerHTML=html;out.querySelectorAll('.kv').forEach(e=>{e.classList.remove('flash');void e.offsetWidth;e.classList.add('flash')})}
 function koFib(){const out=document.getElementById('fibOut');if(!out)return;const H=knum('fibH'),L=knum('fibL');if(H==null||L==null||H<=L){out.innerHTML='<p style="color:var(--muted);font-size:13px">Hoch und Tief eingeben (Hoch &gt; Tief).</p>';return}const diff=H-L;const lv=[['0,0 · Hoch',H],['0,236',H-diff*0.236],['0,382',H-diff*0.382],['0,5',H-diff*0.5],['0,618',H-diff*0.618],['0,786',H-diff*0.786],['1,0 · Tief',L],['1,272 · Ext',L-diff*0.272],['1,618 · Ext',L-diff*0.618]];out.innerHTML=lv.map(([lab,v])=>`<div class="fibrow"><span class="fl">Fib ${lab}</span><span class="fv">${nv(v,2)}<span class="fibset" data-v="${v.toFixed(2)}" data-set="tp">→TP</span><span class="fibset" data-v="${v.toFixed(2)}" data-set="sl">→SL</span></span></div>`).join('');out.querySelectorAll('.fibset').forEach(s=>s.onclick=()=>{const id=s.dataset.set==='tp'?'koTP':'koSL';const f=document.getElementById(id);f.value=s.dataset.v.replace('.',',');koCalc();f.focus()})}
 function koInit(){document.querySelectorAll('#koType button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#koType button').forEach(x=>x.classList.remove('on'));b.classList.add('on');koTypeVal=b.dataset.t;koCalc()});['koS','koBV','koStrike','koCert','koKO','koTP','koSL','koStake'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',koCalc)});['fibH','fibL'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',koFib)});koCalc();koFib()}
-koInit();boot();
+const WLKEY='aa-wl';let WLCACHE={};
+function wlLoad(){try{return JSON.parse(localStorage.getItem(WLKEY))||[]}catch(e){return []}}
+function wlSave(a){try{localStorage.setItem(WLKEY,JSON.stringify(a))}catch(e){}}
+function normSym(raw){let s=(raw||'').trim().toUpperCase();if(!s)return '';if(s.includes(':')){const parts=s.split(':'),ex=parts[0],tk=parts[1]||'';const map={NASDAQ:'',NYSE:'',AMEX:'',ARCA:'',BATS:'',CBOE:'',OTC:'',XETR:'.DE',ETR:'.DE',FWB:'.F',FRA:'.F',GETTEX:'.DE',TRADEGATE:'.DE',LSE:'.L',LON:'.L',EURONEXT:'.PA',EPA:'.PA',TSE:'.T',TYO:'.T',HKEX:'.HK',HKG:'.HK',SWX:'.SW',SIX:'.SW',TSX:'.TO',ASX:'.AX',BME:'.MC',MIL:'.MI',BIT:'.MI',AMS:'.AS'};s=tk+(ex in map?map[ex]:'')}return s}
+function wlAddInput(){const inp=document.getElementById('wlInput');if(!inp||!inp.value.trim())return;const cur=wlLoad();inp.value.split(/[,;\n\s]+/).forEach(part=>{const s=normSym(part);if(s&&!cur.includes(s))cur.push(s)});wlSave(cur);inp.value='';renderWatchlist()}
+function wlRemove(sym){wlSave(wlLoad().filter(s=>s!==sym));renderWatchlist()}
+async function ywFetch(sym){
+  if(WLCACHE[sym]&&WLCACHE[sym].candles)return WLCACHE[sym];
+  const u='https://query1.finance.yahoo.com/v8/finance/chart/'+encodeURIComponent(sym)+'?interval=1d&range=1y';
+  const proxies=['https://api.allorigins.win/raw?url=','https://corsproxy.io/?url='];
+  for(const px of proxies){
+    try{
+      const r=await fetch(px+encodeURIComponent(u),{cache:'no-store'});if(!r.ok)continue;
+      const j=await r.json(),res=j.chart&&j.chart.result&&j.chart.result[0];if(!res)continue;
+      const meta=res.meta||{},ts=res.timestamp||[],q=((res.indicators&&res.indicators.quote)||[{}])[0]||{};
+      const candles=[];for(let i=0;i<ts.length;i++){const o=q.open&&q.open[i],h=q.high&&q.high[i],l=q.low&&q.low[i],c=q.close&&q.close[i];if(o==null||h==null||l==null||c==null)continue;candles.push({time:ts[i],open:+(+o).toFixed(2),high:+(+h).toFixed(2),low:+(+l).toFixed(2),close:+(+c).toFixed(2),volume:(q.volume&&q.volume[i])||0})}
+      let price=meta.regularMarketPrice;if(price==null&&candles.length)price=candles[candles.length-1].close;let prev=meta.chartPreviousClose||meta.previousClose;if(prev==null&&candles.length>1)prev=candles[candles.length-2].close;
+      const pct=(price!=null&&prev)?(price-prev)/prev*100:0;const out={sym,price,pct,candles,cur:meta.currency||''};WLCACHE[sym]=out;return out;
+    }catch(e){}
+  }
+  return null;
+}
+function wlValFmt(v){if(v==null)return '–';return Math.abs(v)<1000?v.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2}):Math.round(v).toLocaleString('de-DE')}
+function wlCur(c){return c==='EUR'?' €':c==='USD'?' $':c==='GBP'?' £':c?(' '+c):''}
+function renderWatchlist(){const grid=document.getElementById('wlGrid');if(!grid)return;const syms=wlLoad();if(!syms.length){grid.innerHTML='<p class="wlempty">Noch keine Werte. Oben Symbole hinzufügen – sie bleiben in diesem Browser gespeichert.</p>';return}
+  grid.innerHTML=syms.map(s=>{const id=s.replace(/[^A-Z0-9]/g,'_');return `<div class="wlc" data-s="${s}"><button class="rm" data-rm="${s}">×</button><div class="s">${s}</div><div class="v" id="wlv-${id}">…</div><div class="p" id="wlp-${id}"></div></div>`}).join('');
+  grid.querySelectorAll('.rm').forEach(b=>b.onclick=e=>{e.stopPropagation();wlRemove(b.dataset.rm)});
+  grid.querySelectorAll('.wlc').forEach(c=>c.onclick=()=>wlOpen(c.dataset.s));
+  syms.forEach(async s=>{const d=await ywFetch(s);const id=s.replace(/[^A-Z0-9]/g,'_'),ve=document.getElementById('wlv-'+id),pe=document.getElementById('wlp-'+id);if(!ve)return;if(d&&d.price!=null){ve.textContent=wlValFmt(d.price)+wlCur(d.cur);pe.textContent=fp(d.pct);pe.style.color=ink(d.pct,3)}else{ve.textContent='n/v';pe.textContent='Symbol prüfen';pe.style.color='var(--muted)'}});
+}
+async function wlOpen(sym){let d=WLCACHE[sym];if(!d)d=await ywFetch(sym);if(!d||!d.candles||!d.candles.length)return;openStock({t:sym,n:sym,p:d.pct||0,candles:{d1:d.candles}})}
+function initWatchlist(){const add=document.getElementById('wlAdd'),inp=document.getElementById('wlInput');if(add)add.onclick=wlAddInput;if(inp)inp.addEventListener('keydown',e=>{if(e.key==='Enter')wlAddInput()});renderWatchlist()}
+koInit();initWatchlist();boot();
 </script>
 </body>
 </html>
