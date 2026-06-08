@@ -1,10 +1,10 @@
 {
- "updated": "2026-06-08T19:20:32.232908+00:00",
+ "updated": "2026-06-08T20:20:32.432458+00:00",
  "indices": [
   {
    "nm": "S&P 500 Future",
-   "val": "7.419",
-   "pct": 0.25,
+   "val": "7.418",
+   "pct": 0.23,
    "candles": {
     "m15": [
      {
@@ -40522,8 +40522,8 @@
   },
   {
    "nm": "Nasdaq 100 Future",
-   "val": "29.450",
-   "pct": 1.46,
+   "val": "29.459",
+   "pct": 1.49,
    "candles": {
     "m15": [
      {
@@ -126927,8 +126927,8 @@
   },
   {
    "nm": "Brent Öl",
-   "val": "94,21",
-   "pct": 1.2,
+   "val": "94,41",
+   "pct": 1.42,
    "candles": {
     "m15": [
      {
@@ -167294,8 +167294,8 @@
   },
   {
    "nm": "WTI Öl",
-   "val": "91,09",
-   "pct": 0.61,
+   "val": "91,45",
+   "pct": 1.01,
    "candles": {
     "m15": [
      {
@@ -207768,61 +207768,61 @@
   {
    "t": "GLXY",
    "n": "Galaxy Digital Inc.",
-   "p": 22.61
+   "p": 21.36
   },
   {
    "t": "CBRS",
    "n": "Cerebras Systems Inc.",
-   "p": 20.44
+   "p": 18.32
   },
   {
    "t": "INTC",
    "n": "Intel Corporation",
-   "p": 11.49
+   "p": 11.19
+  },
+  {
+   "t": "AAOI",
+   "n": "Applied Optoelectronics, Inc.",
+   "p": 11.1
   },
   {
    "t": "IONQ",
    "n": "IonQ, Inc.",
-   "p": 11.43
-  },
-  {
-   "t": "MRVL",
-   "n": "Marvell Technology, Inc.",
-   "p": 11.13
+   "p": 10.6
   }
  ],
  "losers": [
   {
    "t": "TLK",
    "n": "PT Telekomunikasi Indonesia, Tb",
-   "p": -9.56
-  },
-  {
-   "t": "FRVO",
-   "n": "Fervo Energy Company",
-   "p": -8.54
+   "p": -9.46
   },
   {
    "t": "KB",
    "n": "KB Financial Group Inc",
-   "p": -6.86
+   "p": -6.97
   },
   {
    "t": "GWRE",
    "n": "Guidewire Software, Inc.",
-   "p": -6.34
+   "p": -6.52
+  },
+  {
+   "t": "PS",
+   "n": "Pershing Square Inc.",
+   "p": -6.24
   },
   {
    "t": "TWLO",
    "n": "Twilio Inc.",
-   "p": -5.89
+   "p": -5.95
   }
  ],
  "actives": [
   {
    "t": "INTC",
    "n": "Intel Corporation",
-   "p": 11.5,
+   "p": 11.19,
    "candles": {
     "d1": [
      {
@@ -209830,8 +209830,8 @@
       "open": 111.0,
       "high": 112.54,
       "low": 106.66,
-      "close": 110.57,
-      "volume": 111523081
+      "close": 110.27,
+      "volume": 135091297
      }
     ]
    }
@@ -209839,7 +209839,7 @@
   {
    "t": "NVDA",
    "n": "NVIDIA Corporation",
-   "p": 1.36,
+   "p": 1.73,
    "candles": {
     "d1": [
      {
@@ -211847,8 +211847,8 @@
       "open": 210.18,
       "high": 210.46,
       "low": 206.0,
-      "close": 207.9,
-      "volume": 101381990
+      "close": 208.64,
+      "volume": 131760887
      }
     ]
    }
@@ -211856,7 +211856,7 @@
   {
    "t": "NOK",
    "n": "Nokia Corporation Sponsored",
-   "p": 1.11,
+   "p": 1.46,
    "candles": {
     "d1": [
      {
@@ -213864,8 +213864,8 @@
       "open": 14.86,
       "high": 15.06,
       "low": 14.44,
-      "close": 14.53,
-      "volume": 92203523
+      "close": 14.59,
+      "volume": 101994209
      }
     ]
    }
@@ -213873,7 +213873,7 @@
   {
    "t": "MRVL",
    "n": "Marvell Technology, Inc.",
-   "p": 11.13,
+   "p": 9.63,
    "candles": {
     "d1": [
      {
@@ -215881,8 +215881,8 @@
       "open": 288.69,
       "high": 304.96,
       "low": 281.36,
-      "close": 292.87,
-      "volume": 69142506
+      "close": 288.85,
+      "volume": 83461434
      }
     ]
    }
@@ -215890,7 +215890,7 @@
   {
    "t": "SOFI",
    "n": "SoFi Technologies, Inc.",
-   "p": 2.78,
+   "p": 2.93,
    "candles": {
     "d1": [
      {
@@ -217898,15 +217898,15 @@
       "open": 16.18,
       "high": 16.66,
       "low": 15.95,
-      "close": 16.48,
-      "volume": 66038757
+      "close": 16.5,
+      "volume": 77123228
      }
     ]
    }
   }
  ],
  "feargreed": {
-  "score": 41.2,
+  "score": 40.1,
   "rating": "fear",
   "prev_close": 42.0571428571429,
   "prev_week": 56.5428571428571,
