@@ -118,13 +118,55 @@
   .seg button.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.15)}
   footer{margin-top:46px;text-align:center;color:var(--muted);font-size:12.5px}
   .hidden{display:none}
-  @media(max-width:560px){.brand p{display:none}.nav button{padding:7px 11px}.idxgrid{grid-template-columns:1fr 1fr}.idx .val{font-size:20px}.topicnav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:8px}}
+  @media(max-width:560px){.brand p{display:none}.brand h1{font-size:15px}.nav{overflow-x:auto;-webkit-overflow-scrolling:touch}.nav button{padding:6px 9px;font-size:12.5px;white-space:nowrap}.idxgrid{grid-template-columns:1fr 1fr}.idx .val{font-size:20px}.topicnav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:8px}.korow{grid-template-columns:1fr}}
+  /* --- Animationen (dezent, respektiert reduce-motion) --- */
+  @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  @keyframes pageIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  @keyframes popIn{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+  @keyframes kvflash{from{opacity:.25}to{opacity:1}}
+  .idx,.topic,.vcard,.read,.fgcard,.mvcol,.kocard{animation:fadeUp .42s cubic-bezier(.22,.61,.36,1) both}
+  #pageHeute,#pageAna,#pageIdeen,#pageKO{animation:pageIn .3s ease both}
+  .overlay.open .modal{animation:popIn .26s cubic-bezier(.22,.61,.36,1)}
+  .fgmarker{transition:left .6s cubic-bezier(.22,.61,.36,1)}
+  .kv.flash{animation:kvflash .45s ease}
+  .tn{transition:transform .18s,box-shadow .18s}.tn:hover{box-shadow:0 6px 16px rgba(0,0,0,.1)}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+  /* --- KO-Rechner --- */
+  .kointro{color:var(--muted);font-size:13.5px;margin:0 0 16px;max-width:660px}
+  .kogrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+  .kocard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px}
+  .kocard h3{margin:0 0 14px;font-size:15px;font-weight:600}
+  .kofield{margin-bottom:12px}
+  .kofield label{display:block;font-size:12.5px;font-weight:600;color:var(--muted);margin-bottom:5px}
+  .kofield label .h{font-weight:400;opacity:.8}
+  .koinput{width:100%;border:1px solid var(--line);background:var(--bg1);border-radius:12px;padding:10px 12px;font-size:15px;font-family:inherit;color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s}
+  .koinput:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(10,132,255,.16)}
+  .koseg{display:inline-flex;background:var(--chip);border-radius:12px;padding:3px;margin-bottom:14px}
+  .koseg button{border:none;background:transparent;border-radius:9px;padding:8px 16px;font-size:13.5px;font-weight:600;color:var(--muted);cursor:pointer;transition:color .15s}
+  .koseg button.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.15)}
+  .korow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .kores{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+  .kores:last-child{border-bottom:none}
+  .kores .kl{font-size:13.5px;color:var(--muted)}
+  .kores .kv{font-size:17px;font-weight:700;letter-spacing:-.01em;text-align:right}
+  .koformula{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px;color:var(--muted);background:var(--chip);border-radius:8px;padding:7px 10px;margin:6px 0 2px;overflow-x:auto;white-space:nowrap}
+  .kowarn{font-size:13px;color:#c4291c;background:#ffe5e3;border-radius:10px;padding:9px 12px;margin:0 0 12px}
+  [data-theme="dark"] .kowarn{color:#ff8a80;background:rgba(255,69,58,.14)}
+  .kogood{color:#1a7f37}.kobad{color:#c4291c}
+  [data-theme="dark"] .kogood{color:#86e0ab}[data-theme="dark"] .kobad{color:#ff8a80}
+  .fibrow{display:flex;justify-content:space-between;align-items:center;padding:7px 8px;border-radius:9px;font-size:13.5px}
+  .fibrow:hover{background:var(--chip)}
+  .fibrow .fl{color:var(--muted)}.fibrow .fv{font-weight:600;font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:6px}
+  .fibset{font-size:10.5px;font-weight:700;color:var(--accent);background:rgba(10,132,255,.12);border-radius:7px;padding:2px 6px;cursor:pointer}
+  .fibset:hover{background:rgba(10,132,255,.22)}
+  .konote{font-size:12px;color:var(--muted);margin:10px 0 0}
+  @media(max-width:720px){.kogrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="appbar"><div class="inner">
   <div class="brand"><div class="logo">A</div><div><h1>Aktien Atzen</h1><p>Markt- &amp; News-Digest</p></div></div>
-  <div class="nav"><button id="navHeute" class="on">Heute</button><button id="navAna">Analysen</button><button id="navIdeen">Ideen</button></div>
+  <div class="nav"><button id="navHeute" class="on">Heute</button><button id="navAna">Analysen</button><button id="navIdeen">Ideen</button><button id="navKO">KO-Rechner</button></div>
   <button class="iconbtn" id="theme" aria-label="Hell/Dunkel">◐</button>
 </div></div>
 
@@ -166,6 +208,48 @@
   <div class="sec"><h2>Aktien-Ideen</h2></div>
   <p style="color:var(--muted);font-size:13px;margin:0 0 14px">Aus den heutigen News &amp; Video-Briefings abgeleitet. Keine Anlageberatung.</p>
   <div id="ideaList"></div>
+ </div>
+
+ <div id="pageKO" class="hidden">
+  <div class="sec"><h2>KO-Rechner</h2></div>
+  <p class="kointro">Rechne den Kurs deines Knockout-Zertifikats aus dem Basiswert aus – und umgekehrt, was Scheinkurs, Hebel und Stop/Ziel bei deinen Wunsch-Marken machen. Die Eckdaten (Basispreis, Bezugsverhältnis, KO-Schwelle) stehen auf der Produktseite des Emittenten bzw. bei deinem Broker. Keine Anlageberatung.</p>
+  <div class="kogrid">
+   <div class="kocard">
+    <h3>Eingabe</h3>
+    <div class="koseg" id="koType"><button class="on" data-t="long">Long / Call</button><button data-t="short">Short / Put</button></div>
+    <div class="kofield"><label>WKN / ISIN <span class="h">(optional, nur Notiz)</span></label><input class="koinput" id="koWKN" placeholder="z. B. SY1234"></div>
+    <div class="korow">
+     <div class="kofield"><label>Basiswert-Kurs jetzt</label><input class="koinput" id="koS" inputmode="decimal" placeholder="182,40"></div>
+     <div class="kofield"><label>Bezugsverhältnis</label><input class="koinput" id="koBV" inputmode="decimal" placeholder="0,1"></div>
+    </div>
+    <div class="korow">
+     <div class="kofield"><label>Basispreis (Strike)</label><input class="koinput" id="koStrike" inputmode="decimal" placeholder="150,00"></div>
+     <div class="kofield"><label>Scheinkurs aktuell <span class="h">(falls Strike leer)</span></label><input class="koinput" id="koCert" inputmode="decimal" placeholder="3,24"></div>
+    </div>
+    <div class="korow">
+     <div class="kofield"><label>KO-Schwelle <span class="h">(optional)</span></label><input class="koinput" id="koKO" inputmode="decimal" placeholder="150,00"></div>
+     <div class="kofield"><label>Einsatz € <span class="h">(optional)</span></label><input class="koinput" id="koStake" inputmode="decimal" placeholder="1000"></div>
+    </div>
+    <div class="korow">
+     <div class="kofield"><label>Take-Profit (Basiswert)</label><input class="koinput" id="koTP" inputmode="decimal" placeholder="195,00"></div>
+     <div class="kofield"><label>Stop-Loss (Basiswert)</label><input class="koinput" id="koSL" inputmode="decimal" placeholder="172,00"></div>
+    </div>
+   </div>
+   <div class="kocard">
+    <h3>Ergebnis</h3>
+    <div id="koOut"></div>
+    <p class="konote">Formel (Long): P = (Kurs − Basispreis) × Bezugsverhältnis · Hebel = Kurs / (Kurs − Basispreis). Bei Short gespiegelt.</p>
+   </div>
+  </div>
+  <div class="kocard">
+   <h3>Fibonacci-Helfer</h3>
+   <div class="korow" style="max-width:420px">
+    <div class="kofield"><label>Hoch</label><input class="koinput" id="fibH" inputmode="decimal" placeholder="195,00"></div>
+    <div class="kofield"><label>Tief</label><input class="koinput" id="fibL" inputmode="decimal" placeholder="150,00"></div>
+   </div>
+   <div id="fibOut"></div>
+   <p class="konote">Retracement-Marken aus einer Bewegung Hoch→Tief. Tippe →TP / →SL, um eine Marke direkt in den Rechner zu übernehmen.</p>
+  </div>
  </div>
 
  <footer id="foot">Aktien Atzen</footer>
@@ -212,16 +296,16 @@ async function boot(){
 async function go(date){current=date;calView=new Date(date);if(!DEMOMODE){try{await loadDay(date)}catch(e){}}render()}
 function shift(s){const i=order.indexOf(current)+s;if(i>=0&&i<order.length)go(order[i])}
 
-function indices(){const day=mkt(),g=document.getElementById('idx');g.innerHTML='';(day.indices||[]).forEach((ix,i)=>{const el=document.createElement('div');el.className='idx';el.style.background=tint(ix.pct);const k=ink(ix.pct);el.innerHTML=`<div class="hint" style="color:${k}">Chart ›</div><div class="nm" style="color:${k}">${ix.nm}</div><div class="val" style="color:${k}">${ix.val}</div><div class="pct" style="color:${k}">${fp(ix.pct)}</div>`;el.onclick=()=>openModal(i);g.appendChild(el)})}
+function indices(){const day=mkt(),g=document.getElementById('idx');g.innerHTML='';(day.indices||[]).forEach((ix,i)=>{const el=document.createElement('div');el.className='idx';el.style.background=tint(ix.pct);el.style.animationDelay=(i*45)+'ms';const k=ink(ix.pct);el.innerHTML=`<div class="hint" style="color:${k}">Chart ›</div><div class="nm" style="color:${k}">${ix.nm}</div><div class="val" style="color:${k}">${ix.val}</div><div class="pct" style="color:${k}">${fp(ix.pct)}</div>`;el.onclick=()=>openModal(i);g.appendChild(el)})}
 function mrow(m){const k=ink(m.p,8);return `<div class="mvrow" style="background:${tint(m.p,8)}"><div><div class="t" style="color:${k}">${m.t}</div><div class="n" style="color:${k}">${m.n||''}</div></div><div class="p" style="color:${k}">${fp(m.p)}</div></div>`}
 function movers(){const day=mkt();document.getElementById('gain').innerHTML=(day.gainers||[]).map(mrow).join('');document.getElementById('lose').innerHTML=(day.losers||[]).map(mrow).join('')}
 function actives(){const day=mkt();document.getElementById('actives').innerHTML=(day.actives||[]).map(mrow).join('')}
 function fgRating(r){return {"extreme fear":"Extreme Angst","fear":"Angst","neutral":"Neutral","greed":"Gier","extreme greed":"Extreme Gier"}[(r||'').toLowerCase()]||(r||'')}
 function renderFG(fg){const s=Math.max(0,Math.min(100,+fg.score||0));document.getElementById('fgval').textContent=Math.round(fg.score)+' · '+fgRating(fg.rating);document.getElementById('fgmarker').style.left=s+'%';const sub=[];if(fg.prev_close!=null)sub.push('Vortag '+Math.round(fg.prev_close));if(fg.prev_week!=null)sub.push('Woche '+Math.round(fg.prev_week));if(fg.prev_month!=null)sub.push('Monat '+Math.round(fg.prev_month));document.getElementById('fgsub').textContent=sub.join(' · ')}
-function topics(){const day=DATA[current];const s=[...(day.topics||[])].sort((a,b)=>b.prio-a.prio);const nav=document.getElementById('topicnav');nav.innerHTML='';const w=document.getElementById('topics');w.innerHTML='';s.forEach((t,i)=>{const id='t'+i;const tn=document.createElement('button');tn.className='tn';tn.innerHTML=`<span class="dot p${t.prio}"></span>${t.title.length>30?t.title.slice(0,30)+'…':t.title}`;tn.onclick=()=>document.getElementById(id).scrollIntoView({behavior:'smooth'});nav.appendChild(tn);const lbl={3:'Hohe Prio',2:'Mittel',1:'Niedrig'}[t.prio]||'';const c=document.createElement('div');c.className='topic';c.id=id;c.innerHTML=`<div class="head"><h3>${t.title}</h3><div class="metaR"><span class="badge b${t.prio}">${lbl}</span>${t.time?`<span class="time">${t.time} Uhr</span>`:''}</div></div><div class="body">${t.body||''}</div>${t.img?`<img class="tweetimg" src="${t.img}" alt="">`:''}${t.timing?`<span class="tag">⏱ ${t.timing}</span>`:''}${(t.begriffe||[]).map((g,gi)=>`<button type="button" class="tag gloss" data-gi="${gi}">ⓘ ${g.term||g}</button>`).join('')}${(t.begriffe||[]).map((g,gi)=>`<div class="glossnote hidden" data-gn="${gi}"><b>${g.term||g}:</b> ${g.erklaerung||''}<a href="https://de.wikipedia.org/wiki/Spezial:Suche?search=${encodeURIComponent(g.term||g)}" target="_blank" rel="noopener">Wikipedia ↗</a></div>`).join('')}${t.einordnung?`<div class="einord">→ Einordnung: ${t.einordnung}</div>`:''}${t.verlauf?`<button type="button" class="tag vchip">↳ Verlauf</button><div class="vnote hidden">${t.verlauf}</div>`:''}<div class="src">${(t.sources||[]).map(x=>`<a href="${x.u}" target="_blank" rel="noopener">${x.l}</a>`).join('')}</div>`;w.appendChild(c)});w.querySelectorAll('.topic').forEach(card=>{card.querySelectorAll('.gloss').forEach(gb=>gb.addEventListener('click',e=>{e.stopPropagation();const n=card.querySelector('.glossnote[data-gn="'+gb.dataset.gi+'"]');if(n)n.classList.toggle('hidden')}));const vc=card.querySelector('.vchip');if(vc)vc.addEventListener('click',e=>{e.stopPropagation();const vn=card.querySelector('.vnote');if(vn)vn.classList.toggle('hidden')});const b=card.querySelector('.body');if(b.scrollHeight>b.clientHeight+2){card.classList.add('clickable');const btn=document.createElement('button');btn.className='more';btn.textContent='Mehr anzeigen';const tog=()=>{const ex=b.classList.toggle('expanded');btn.textContent=ex?'Weniger anzeigen':'Mehr anzeigen'};btn.onclick=e=>{e.stopPropagation();tog()};b.after(btn);card.addEventListener('click',e=>{if(e.target.closest('a')||e.target.closest('.more')||e.target.closest('.gloss')||e.target.closest('.glossnote')||e.target.closest('.vchip')||e.target.closest('.vnote'))return;tog()})}})}
+function topics(){const day=DATA[current];const s=[...(day.topics||[])].sort((a,b)=>b.prio-a.prio);const nav=document.getElementById('topicnav');nav.innerHTML='';const w=document.getElementById('topics');w.innerHTML='';s.forEach((t,i)=>{const id='t'+i;const tn=document.createElement('button');tn.className='tn';tn.innerHTML=`<span class="dot p${t.prio}"></span>${t.title.length>30?t.title.slice(0,30)+'…':t.title}`;tn.onclick=()=>document.getElementById(id).scrollIntoView({behavior:'smooth'});nav.appendChild(tn);const lbl={3:'Hohe Prio',2:'Mittel',1:'Niedrig'}[t.prio]||'';const c=document.createElement('div');c.className='topic';c.id=id;c.style.animationDelay=(i*35)+'ms';c.innerHTML=`<div class="head"><h3>${t.title}</h3><div class="metaR"><span class="badge b${t.prio}">${lbl}</span>${t.time?`<span class="time">${t.time} Uhr</span>`:''}</div></div><div class="body">${t.body||''}</div>${t.img?`<img class="tweetimg" src="${t.img}" alt="">`:''}${t.timing?`<span class="tag">⏱ ${t.timing}</span>`:''}${(t.begriffe||[]).map((g,gi)=>`<button type="button" class="tag gloss" data-gi="${gi}">ⓘ ${g.term||g}</button>`).join('')}${(t.begriffe||[]).map((g,gi)=>`<div class="glossnote hidden" data-gn="${gi}"><b>${g.term||g}:</b> ${g.erklaerung||''}<a href="https://de.wikipedia.org/wiki/Spezial:Suche?search=${encodeURIComponent(g.term||g)}" target="_blank" rel="noopener">Wikipedia ↗</a></div>`).join('')}${t.einordnung?`<div class="einord">→ Einordnung: ${t.einordnung}</div>`:''}${t.verlauf?`<button type="button" class="tag vchip">↳ Verlauf</button><div class="vnote hidden">${t.verlauf}</div>`:''}<div class="src">${(t.sources||[]).map(x=>`<a href="${x.u}" target="_blank" rel="noopener">${x.l}</a>`).join('')}</div>`;w.appendChild(c)});w.querySelectorAll('.topic').forEach(card=>{card.querySelectorAll('.gloss').forEach(gb=>gb.addEventListener('click',e=>{e.stopPropagation();const n=card.querySelector('.glossnote[data-gn="'+gb.dataset.gi+'"]');if(n)n.classList.toggle('hidden')}));const vc=card.querySelector('.vchip');if(vc)vc.addEventListener('click',e=>{e.stopPropagation();const vn=card.querySelector('.vnote');if(vn)vn.classList.toggle('hidden')});const b=card.querySelector('.body');if(b.scrollHeight>b.clientHeight+2){card.classList.add('clickable');const btn=document.createElement('button');btn.className='more';btn.textContent='Mehr anzeigen';const tog=()=>{const ex=b.classList.toggle('expanded');btn.textContent=ex?'Weniger anzeigen':'Mehr anzeigen'};btn.onclick=e=>{e.stopPropagation();tog()};b.after(btn);card.addEventListener('click',e=>{if(e.target.closest('a')||e.target.closest('.more')||e.target.closest('.gloss')||e.target.closest('.glossnote')||e.target.closest('.vchip')||e.target.closest('.vnote'))return;tog()})}})}
 function reads(){const day=DATA[current];document.getElementById('reads').innerHTML=(day.reads||[]).map(r=>`<a class="read" href="${r.u||'#'}" target="_blank" rel="noopener"><div class="s">${r.s||''}</div><div class="h">${r.h||''}</div></a>`).join('')}
 function vdate(d){return (d&&d.length>=8)?d.slice(6,8)+'.'+d.slice(4,6)+'.'+d.slice(0,4):''}
-function renderIdeas(){const el=document.getElementById('ideaList');if(!el)return;const ideas=(IDEAS&&IDEAS.ideas)||[];if(!ideas.length){el.innerHTML='<div class="ph"><p style="color:var(--muted)">Noch keine Ideen – erscheinen nach dem nächsten Lauf.</p></div>';return}el.innerHTML=ideas.map(i=>`<div class="vcard"><div class="vh"><span class="ibadge">${i.angle||'Idee'}</span></div><div class="vtitle">${i.title}</div><p class="vsum">${i.thesis||''}</p>${(i.values&&i.values.length)?`<div class="ivals">${i.values.map(v=>`<span class="ival">${v}</span>`).join('')}</div>`:''}${i.risk?`<div class="vfig"><b>Risiko:</b> ${i.risk}</div>`:''}</div>`).join('')}
+function renderIdeas(){const el=document.getElementById('ideaList');if(!el)return;const ideas=(IDEAS&&IDEAS.ideas)||[];if(!ideas.length){el.innerHTML='<div class="ph"><p style="color:var(--muted)">Noch keine Ideen – erscheinen nach dem nächsten Lauf.</p></div>';return}const d=(IDEAS&&IDEAS.date)?vdate(String(IDEAS.date).replace(/-/g,'')):'';el.innerHTML=(d?`<div style="font-size:12.5px;color:var(--muted);margin:0 0 12px">Stand: ${d} · wird täglich neu erzeugt</div>`:'')+ideas.map(i=>`<div class="vcard"><div class="vh"><span class="ibadge">${i.angle||'Idee'}</span>${i.source_url?`<a class="tlink" style="margin-left:auto" href="${i.source_url}" target="_blank" rel="noopener">Quelle ↗</a>`:''}</div><div class="vtitle">${i.title}</div><p class="vsum">${i.thesis||''}</p>${(i.values&&i.values.length)?`<div class="ivals">${i.values.map(v=>`<span class="ival">${v}</span>`).join('')}</div>`:''}${i.risk?`<div class="vfig"><b>Risiko:</b> ${i.risk}</div>`:''}${i.source?`<div style="font-size:12px;color:var(--muted);margin-top:6px">Basis: ${i.source}</div>`:''}</div>`).join('')}
 function renderVideos(){const el=document.getElementById('videoBriefings');if(!el)return;const vids=(VIDEOS&&VIDEOS.videos)||[];if(!vids.length){el.innerHTML='<div class="ph"><p style="color:var(--muted)">Noch keine Video-Briefings – erscheinen nach dem nächsten Lauf.</p></div>';return}el.innerHTML=vids.map(v=>{const items=v.items||v.stocks||[];const macro=v.macro||v.highlights||[];return `<div class="vcard"><div class="vh"><span class="vbadge">${v.channel}${v.playlist?' · '+v.playlist:''}</span><span class="vdate">${vdate(v.date)}</span></div><a class="vtitle" href="${v.url}" target="_blank" rel="noopener">${v.title} ↗</a><p class="vsum">${v.summary||''}</p>${items.length?`<div class="vlabel">Besprochen</div>${items.map(st=>`<div class="vstock"><div class="vstop"><span class="nm">${st.name}</span>${st.tlink?`<a class="tlink" href="${st.tlink}" target="_blank" rel="noopener">▶ ${st.t}</a>`:''}</div>${st.note?`<span class="nt">${st.note}</span>`:''}${st.figures?`<div class="vfig"><b>Zahlen:</b> ${st.figures}</div>`:''}${st.tip?`<div class="vtip"><b>Tipp:</b> ${st.tip}</div>`:''}</div>`).join('')}`:''}${macro.length?`<div class="vlabel">Marktumfeld &amp; Makro</div>${macro.map(mo=>`<div class="vhi">${mo.text||''} ${mo.tlink?`<a class="tlink" href="${mo.tlink}" target="_blank" rel="noopener">▶ ${mo.t}</a>`:''}</div>`).join('')}`:''}</div>`}).join('')}
 function render(){const day=DATA[current]||{};document.getElementById('dateLabel').textContent=labels[current]||day.label||current;const M=mkt();const fg=(!DEMOMODE&&MARKET&&MARKET.feargreed)?MARKET.feargreed:null;document.getElementById('secFG').classList.toggle('hidden',!fg);if(fg)renderFG(fg);const hasIdx=M.indices&&M.indices.length;const hasMov=(M.gainers&&M.gainers.length)||(M.losers&&M.losers.length);document.getElementById('secMarket').classList.toggle('hidden',!hasIdx);document.getElementById('secMovers').classList.toggle('hidden',!hasMov);if(hasIdx)indices();if(hasMov)movers();const hasAct=M.actives&&M.actives.length;document.getElementById('secActives').classList.toggle('hidden',!hasAct);if(hasAct)actives();topics();reads();document.getElementById('foot').textContent='Aktien Atzen'+(DEMOMODE?' · Demo':'')}
 
@@ -256,9 +340,18 @@ document.querySelectorAll('#filterbar .fpill').forEach(b=>b.onclick=()=>{documen
 function setTheme(t){document.documentElement.dataset.theme=t;try{localStorage.setItem('aa-theme',t)}catch(e){}const b=document.getElementById('theme');b.textContent=t==='dark'?'☀':'◐';b.style.color=t==='dark'?'#d6d6db':'';if(current)render()}
 document.getElementById('theme').onclick=()=>setTheme(isDark()?'light':'dark');
 (function(){let t;try{t=localStorage.getItem('aa-theme')}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';setTheme(t)})();
-function show(p){document.getElementById('pageHeute').classList.toggle('hidden',p!=='heute');document.getElementById('pageAna').classList.toggle('hidden',p!=='ana');document.getElementById('pageIdeen').classList.toggle('hidden',p!=='ideen');document.getElementById('navHeute').classList.toggle('on',p==='heute');document.getElementById('navAna').classList.toggle('on',p==='ana');document.getElementById('navIdeen').classList.toggle('on',p==='ideen');window.scrollTo({top:0})}
-document.getElementById('navHeute').onclick=()=>show('heute');document.getElementById('navAna').onclick=()=>show('ana');document.getElementById('navIdeen').onclick=()=>show('ideen');
-boot();
+function show(p){const P={heute:'pageHeute',ana:'pageAna',ideen:'pageIdeen',ko:'pageKO'},N={heute:'navHeute',ana:'navAna',ideen:'navIdeen',ko:'navKO'};for(const k in P)document.getElementById(P[k]).classList.toggle('hidden',k!==p);for(const k in N)document.getElementById(N[k]).classList.toggle('on',k===p);window.scrollTo({top:0})}
+document.getElementById('navHeute').onclick=()=>show('heute');document.getElementById('navAna').onclick=()=>show('ana');document.getElementById('navIdeen').onclick=()=>show('ideen');document.getElementById('navKO').onclick=()=>show('ko');
+let koTypeVal='long';
+function knum(id){const e=document.getElementById(id);if(!e)return null;const t=e.value.trim();if(!t)return null;const v=parseFloat(t.replace(/\s/g,'').replace(',','.'));return isFinite(v)?v:null}
+function eurv(v){if(v==null||!isFinite(v))return '–';const d=Math.abs(v)<1?3:2;return v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d})+' €'}
+function pctv(v){if(v==null||!isFinite(v))return '–';return (v>=0?'+':'')+v.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})+' %'}
+function nv(v,d){if(v==null||!isFinite(v))return '–';d=d==null?2:d;return v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d})}
+function korow(l,v){return `<div class="kores"><span class="kl">${l}</span><span class="kv">${v}</span></div>`}
+function koCalc(){const out=document.getElementById('koOut');if(!out)return;const long=koTypeVal==='long';const S=knum('koS'),BV=knum('koBV')||1;let strike=knum('koStrike');const cert=knum('koCert');let derived=false;if(strike==null&&cert!=null&&S!=null){strike=long?S-cert/BV:S+cert/BV;derived=true}const KO=knum('koKO'),TP=knum('koTP'),SL=knum('koSL'),stake=knum('koStake');if(S==null||strike==null){out.innerHTML='<p style="color:var(--muted);font-size:13.5px">Bitte mindestens <b>Basiswert-Kurs</b> und <b>Basispreis</b> (oder Scheinkurs) eingeben.</p>';return}const price=(long?(S-strike):(strike-S))*BV;const koOut=price<=0;const lev=price>0?(S*BV)/price:null;let kodist=null;if(KO!=null)kodist=long?(S-KO)/S*100:(KO-S)/S*100;const pAt=x=>(long?(x-strike):(strike-x))*BV;const knocked=x=>long?(KO!=null?x<=KO:pAt(x)<=0):(KO!=null?x>=KO:pAt(x)<=0);let html='';if(koOut)html+='<div class="kowarn">Mit diesen Werten ist der Schein bereits ausgeknockt (Kurs jenseits des Basispreises). Prüfe Typ (Long/Short), Basispreis und Kurs.</div>';if(stake&&price>0){const st=Math.floor(stake/price);html+=korow('Position',`${st} Stück · ${eurv(st*price)}`)}html+=korow('Scheinkurs (jetzt)',koOut?'<span class="kobad">KO ausgelöst</span>':eurv(price));html+=`<div class="koformula">P = (${long?'Kurs − Strike':'Strike − Kurs'}) × BV = (${nv(long?S:strike,2)} − ${nv(long?strike:S,2)}) × ${nv(BV,BV<1?2:0)} = ${koOut?'≤ 0':eurv(price)}</div>`;if(derived)html+=`<div class="koformula">Strike aus Scheinkurs berechnet = ${nv(strike,2)}</div>`;if(lev)html+=korow('Hebel','× '+nv(lev,2));if(kodist!=null)html+=korow('Abstand zum KO',`<span class="${kodist>=0?'kogood':'kobad'}">${pctv(kodist)}</span>`);if(TP!=null){const pt=pAt(TP),ren=price>0?(pt-price)/price*100:null,kn=knocked(TP);html+=korow(`Take-Profit @ ${nv(TP,2)}`,kn?'<span class="kobad">KO</span>':`${eurv(pt)}${ren!=null?` <span class="kogood" style="font-size:13px">(${pctv(ren)})</span>`:''}`);if(stake&&price>0&&!kn){const st=Math.floor(stake/price);html+=`<div class="koformula">${st} Stück · Wert ${eurv(st*pt)} · G/V ${eurv(st*(pt-price))}</div>`}}if(SL!=null){const ps=pAt(SL),ren=price>0?(ps-price)/price*100:null,kn=knocked(SL);html+=korow(`Stop-Loss @ ${nv(SL,2)}`,kn?'<span class="kobad">KO – Totalverlust</span>':`${eurv(ps)}${ren!=null?` <span class="kobad" style="font-size:13px">(${pctv(ren)})</span>`:''}`);if(stake&&price>0){const st=Math.floor(stake/price),val=kn?0:st*ps;html+=`<div class="koformula">${st} Stück · Wert ${eurv(val)} · G/V ${eurv(val-st*price)}</div>`}}out.innerHTML=html;out.querySelectorAll('.kv').forEach(e=>{e.classList.remove('flash');void e.offsetWidth;e.classList.add('flash')})}
+function koFib(){const out=document.getElementById('fibOut');if(!out)return;const H=knum('fibH'),L=knum('fibL');if(H==null||L==null||H<=L){out.innerHTML='<p style="color:var(--muted);font-size:13px">Hoch und Tief eingeben (Hoch &gt; Tief).</p>';return}const diff=H-L;const lv=[['0,0 · Hoch',H],['0,236',H-diff*0.236],['0,382',H-diff*0.382],['0,5',H-diff*0.5],['0,618',H-diff*0.618],['0,786',H-diff*0.786],['1,0 · Tief',L],['1,272 · Ext',L-diff*0.272],['1,618 · Ext',L-diff*0.618]];out.innerHTML=lv.map(([lab,v])=>`<div class="fibrow"><span class="fl">Fib ${lab}</span><span class="fv">${nv(v,2)}<span class="fibset" data-v="${v.toFixed(2)}" data-set="tp">→TP</span><span class="fibset" data-v="${v.toFixed(2)}" data-set="sl">→SL</span></span></div>`).join('');out.querySelectorAll('.fibset').forEach(s=>s.onclick=()=>{const id=s.dataset.set==='tp'?'koTP':'koSL';const f=document.getElementById(id);f.value=s.dataset.v.replace('.',',');koCalc();f.focus()})}
+function koInit(){document.querySelectorAll('#koType button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#koType button').forEach(x=>x.classList.remove('on'));b.classList.add('on');koTypeVal=b.dataset.t;koCalc()});['koS','koBV','koStrike','koCert','koKO','koTP','koSL','koStake'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',koCalc)});['fibH','fibL'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',koFib)});koCalc();koFib()}
+koInit();boot();
 </script>
 </body>
 </html>
