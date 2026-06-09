@@ -1,10 +1,10 @@
 {
- "updated": "2026-06-09T15:20:44.314634+00:00",
+ "updated": "2026-06-09T16:20:35.981271+00:00",
  "indices": [
   {
    "nm": "S&P 500 Future",
-   "val": "7.405",
-   "pct": -0.14,
+   "val": "7.304",
+   "pct": -1.51,
    "candles": {
     "m15": [
      {
@@ -40522,8 +40522,8 @@
   },
   {
    "nm": "Nasdaq 100 Future",
-   "val": "29.300",
-   "pct": -0.52,
+   "val": "28.607",
+   "pct": -2.88,
    "candles": {
     "m15": [
      {
@@ -81041,8 +81041,8 @@
   },
   {
    "nm": "DAX",
-   "val": "24.569",
-   "pct": -0.19,
+   "val": "24.433",
+   "pct": -0.74,
    "candles": {
     "m15": [
      {
@@ -105688,8 +105688,8 @@
   },
   {
    "nm": "Hang Seng",
-   "val": "24.566",
-   "pct": -0.37,
+   "val": "24.657",
+   "pct": -1.22,
    "candles": {
     "m15": [
      {
@@ -126927,8 +126927,8 @@
   },
   {
    "nm": "Brent Öl",
-   "val": "90,98",
-   "pct": -3.47,
+   "val": "89,73",
+   "pct": -4.8,
    "candles": {
     "m15": [
      {
@@ -167294,8 +167294,8 @@
   },
   {
    "nm": "WTI Öl",
-   "val": "87,56",
-   "pct": -4.1,
+   "val": "86,12",
+   "pct": -5.67,
    "candles": {
     "m15": [
      {
@@ -207768,61 +207768,61 @@
   {
    "t": "SJM",
    "n": "The J.M. Smucker Company",
-   "p": 12.37
+   "p": 12.32
   },
   {
    "t": "BAP",
    "n": "Credicorp Ltd.",
-   "p": 9.13
-  },
-  {
-   "t": "SN",
-   "n": "SharkNinja, Inc.",
-   "p": 8.48
+   "p": 8.47
   },
   {
    "t": "DKNG",
    "n": "DraftKings Inc.",
-   "p": 8.21
+   "p": 7.26
   },
   {
-   "t": "RKT",
-   "n": "Rocket Companies, Inc.",
-   "p": 6.07
+   "t": "SN",
+   "n": "SharkNinja, Inc.",
+   "p": 6.53
+  },
+  {
+   "t": "FLUT",
+   "n": "Flutter Entertainment plc",
+   "p": 5.4
   }
  ],
  "losers": [
   {
    "t": "AAOI",
    "n": "Applied Optoelectronics, Inc.",
-   "p": -9.61
+   "p": -17.81
   },
   {
    "t": "COHR",
    "n": "Coherent Corp.",
-   "p": -8.81
-  },
-  {
-   "t": "IONQ",
-   "n": "IonQ, Inc.",
-   "p": -8.57
+   "p": -15.48
   },
   {
    "t": "MRVL",
    "n": "Marvell Technology, Inc.",
-   "p": -7.27
+   "p": -14.7
   },
   {
-   "t": "RIVN",
-   "n": "Rivian Automotive, Inc.",
-   "p": -6.59
+   "t": "IONQ",
+   "n": "IonQ, Inc.",
+   "p": -14.14
+  },
+  {
+   "t": "TSEM",
+   "n": "Tower Semiconductor Ltd.",
+   "p": -12.73
   }
  ],
  "actives": [
   {
    "t": "NOK",
    "n": "Nokia Corporation Sponsored",
-   "p": -4.66,
+   "p": -8.94,
    "candles": {
     "d1": [
      {
@@ -209837,9 +209837,9 @@
       "time": 1781011800,
       "open": 14.58,
       "high": 14.62,
-      "low": 13.81,
-      "close": 13.91,
-      "volume": 80328708
+      "low": 13.28,
+      "close": 13.28,
+      "volume": 125525790
      }
     ]
    }
@@ -209847,7 +209847,7 @@
   {
    "t": "NVDA",
    "n": "NVIDIA Corporation",
-   "p": -1.34,
+   "p": -4.08,
    "candles": {
     "d1": [
      {
@@ -211862,9 +211862,9 @@
       "time": 1781011800,
       "open": 210.62,
       "high": 211.39,
-      "low": 204.85,
-      "close": 205.85,
-      "volume": 51687656
+      "low": 200.05,
+      "close": 200.13,
+      "volume": 79782221
      }
     ]
    }
@@ -211872,7 +211872,7 @@
   {
    "t": "INTC",
    "n": "Intel Corporation",
-   "p": -1.56,
+   "p": -8.54,
    "candles": {
     "d1": [
      {
@@ -213887,9 +213887,9 @@
       "time": 1781011800,
       "open": 112.75,
       "high": 114.0,
-      "low": 107.4,
-      "close": 108.57,
-      "volume": 48777790
+      "low": 100.71,
+      "close": 100.85,
+      "volume": 70989504
      }
     ]
    }
@@ -213897,7 +213897,7 @@
   {
    "t": "MRVL",
    "n": "Marvell Technology, Inc.",
-   "p": -7.27,
+   "p": -14.7,
    "candles": {
     "d1": [
      {
@@ -215912,9 +215912,9 @@
       "time": 1781011800,
       "open": 299.76,
       "high": 302.37,
-      "low": 263.21,
-      "close": 267.89,
-      "volume": 34863392
+      "low": 245.68,
+      "close": 246.39,
+      "volume": 48837033
      }
     ]
    }
@@ -215922,7 +215922,7 @@
   {
    "t": "SOFI",
    "n": "SoFi Technologies, Inc.",
-   "p": -1.43,
+   "p": -4.91,
    "candles": {
     "d1": [
      {
@@ -217937,16 +217937,16 @@
       "time": 1781011800,
       "open": 16.4,
       "high": 17.1,
-      "low": 16.22,
-      "close": 16.26,
-      "volume": 23944323
+      "low": 15.69,
+      "close": 15.7,
+      "volume": 37107809
      }
     ]
    }
   }
  ],
  "feargreed": {
-  "score": 34.7,
+  "score": 29.6,
   "rating": "fear",
   "prev_close": 40.1142857142857,
   "prev_week": 56.0571428571429,
