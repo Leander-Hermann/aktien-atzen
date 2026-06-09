@@ -1,10 +1,10 @@
 {
- "updated": "2026-06-09T17:20:31.972854+00:00",
+ "updated": "2026-06-09T18:20:36.624243+00:00",
  "indices": [
   {
    "nm": "S&P 500 Future",
-   "val": "7.301",
-   "pct": -1.55,
+   "val": "7.354",
+   "pct": -0.83,
    "candles": {
     "m15": [
      {
@@ -40522,8 +40522,8 @@
   },
   {
    "nm": "Nasdaq 100 Future",
-   "val": "28.591",
-   "pct": -2.93,
+   "val": "28.855",
+   "pct": -2.04,
    "candles": {
     "m15": [
      {
@@ -126927,8 +126927,8 @@
   },
   {
    "nm": "Brent Öl",
-   "val": "91,66",
-   "pct": -2.75,
+   "val": "91,68",
+   "pct": -2.73,
    "candles": {
     "m15": [
      {
@@ -167294,8 +167294,8 @@
   },
   {
    "nm": "WTI Öl",
-   "val": "88,06",
-   "pct": -3.55,
+   "val": "88,26",
+   "pct": -3.33,
    "candles": {
     "m15": [
      {
@@ -207766,63 +207766,63 @@
  ],
  "gainers": [
   {
-   "t": "SJM",
-   "n": "The J.M. Smucker Company",
-   "p": 10.08
-  },
-  {
-   "t": "DKNG",
-   "n": "DraftKings Inc.",
-   "p": 9.48
+   "t": "SN",
+   "n": "SharkNinja, Inc.",
+   "p": 10.56
   },
   {
    "t": "BAP",
    "n": "Credicorp Ltd.",
-   "p": 8.69
+   "p": 10.19
   },
   {
-   "t": "SN",
-   "n": "SharkNinja, Inc.",
-   "p": 8.3
+   "t": "SJM",
+   "n": "The J.M. Smucker Company",
+   "p": 9.43
   },
   {
-   "t": "FLUT",
-   "n": "Flutter Entertainment plc",
-   "p": 5.86
+   "t": "DKNG",
+   "n": "DraftKings Inc.",
+   "p": 9.08
+  },
+  {
+   "t": "LINE",
+   "n": "Lineage, Inc.",
+   "p": 6.79
   }
  ],
  "losers": [
   {
    "t": "AAOI",
    "n": "Applied Optoelectronics, Inc.",
-   "p": -13.62
+   "p": -14.08
   },
   {
    "t": "COHR",
    "n": "Coherent Corp.",
-   "p": -12.18
+   "p": -11.58
   },
   {
    "t": "MRVL",
    "n": "Marvell Technology, Inc.",
-   "p": -11.1
+   "p": -9.47
   },
   {
    "t": "IONQ",
    "n": "IonQ, Inc.",
-   "p": -10.32
+   "p": -9.43
   },
   {
-   "t": "SMCI",
-   "n": "Super Micro Computer, Inc.",
-   "p": -9.39
+   "t": "GLW",
+   "n": "Corning Incorporated",
+   "p": -9.24
   }
  ],
  "actives": [
   {
    "t": "NOK",
    "n": "Nokia Corporation Sponsored",
-   "p": -6.1,
+   "p": -5.91,
    "candles": {
     "d1": [
      {
@@ -209838,8 +209838,8 @@
       "open": 14.58,
       "high": 14.62,
       "low": 13.18,
-      "close": 13.7,
-      "volume": 147022302
+      "close": 13.73,
+      "volume": 155514842
      }
     ]
    }
@@ -209847,7 +209847,7 @@
   {
    "t": "NVDA",
    "n": "NVIDIA Corporation",
-   "p": -2.27,
+   "p": -1.32,
    "candles": {
     "d1": [
      {
@@ -211863,8 +211863,8 @@
       "open": 210.62,
       "high": 211.39,
       "low": 199.34,
-      "close": 203.87,
-      "volume": 106095619
+      "close": 205.89,
+      "volume": 122240560
      }
     ]
    }
@@ -211872,7 +211872,7 @@
   {
    "t": "INTC",
    "n": "Intel Corporation",
-   "p": -5.34,
+   "p": -4.2,
    "candles": {
     "d1": [
      {
@@ -213888,8 +213888,8 @@
       "open": 112.75,
       "high": 114.0,
       "low": 99.46,
-      "close": 104.36,
-      "volume": 93813498
+      "close": 105.61,
+      "volume": 108316585
      }
     ]
    }
@@ -213897,7 +213897,7 @@
   {
    "t": "MRVL",
    "n": "Marvell Technology, Inc.",
-   "p": -11.1,
+   "p": -9.47,
    "candles": {
     "d1": [
      {
@@ -215913,8 +215913,8 @@
       "open": 299.76,
       "high": 302.37,
       "low": 244.12,
-      "close": 256.74,
-      "volume": 61734247
+      "close": 261.16,
+      "volume": 71428152
      }
     ]
    }
@@ -215922,7 +215922,7 @@
   {
    "t": "SOFI",
    "n": "SoFi Technologies, Inc.",
-   "p": -2.58,
+   "p": -0.94,
    "candles": {
     "d1": [
      {
@@ -217938,15 +217938,15 @@
       "open": 16.4,
       "high": 17.1,
       "low": 15.65,
-      "close": 16.07,
-      "volume": 48643628
+      "close": 16.34,
+      "volume": 58632884
      }
     ]
    }
   }
  ],
  "feargreed": {
-  "score": 29.3,
+  "score": 31.5,
   "rating": "fear",
   "prev_close": 40.1142857142857,
   "prev_week": 56.0571428571429,
