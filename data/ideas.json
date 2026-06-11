@@ -1,77 +1,69 @@
 {
- "updated": "2026-06-11T08:38:00.222186+00:00",
+ "updated": "2026-06-11T18:47:09.569093+00:00",
  "date": "2026-06-11",
  "ideas": [
   {
-   "title": "Hormuz-Sperrung: Öl- und Energiepreisschock",
-   "thesis": "Die vollständige Schließung der Straße von Hormuz durch Iran unterbricht rund 20 % des globalen Ölhandels. Ein anhaltender Null-Verkehr treibt Rohölpreise (Brent/WTI) und Energieaktien kurzfristig stark nach oben, während raffinerienahe und tankerabhängige Unternehmen profitieren.",
+   "title": "Ölpreisschock: Straße von Hormuz auf null – Energiesektor profitiert",
+   "thesis": "Die vollständige Sperrung der Straße von Hormuz hat den Schiffsverkehr laut iranischen Medien auf null reduziert. Rund 20 % der weltweiten Ölversorgung laufen durch diese Route; Analysten nennen 100–150 USD je Fass als mögliche Szenarien. Öl- und Energieunternehmen wie TotalEnergies profitieren selbst bei leicht fallenden Preisen durch Rekordergebnisse, da die Gewinnschwelle weit darunter liegt.",
    "values": [
-    "Brent Crude (Futures)",
-    "WTI Crude (Futures)",
-    "Shell",
     "TotalEnergies",
-    "Equinor",
-    "iShares Oil & Gas Exploration & Production ETF (IOGP)"
+    "Shell",
+    "BP",
+    "iShares Oil & Gas Exploration & Production UCITS ETF",
+    "Brent Crude Futures"
    ],
    "angle": "Long",
-   "risk": "Ein schnelles diplomatisches Abkommen zwischen den USA und Iran – Gesprächskanal ist laut CNN noch intakt – könnte den Ölpreisanstieg abrupt beenden.",
+   "risk": "Rasches diplomatisches Einlenken oder Waffenruhe könnte die Ölpreise ebenso schnell wieder einbrechen lassen, wie sie gestiegen sind.",
    "source": "News: USA bombardieren Iran zweite Nacht in Folge – Hormuz-Verkehr auf null",
    "source_url": "https://x.com/FirstSquawk/status/2064983185134617003"
   },
   {
-   "title": "Schifffahrt- und Rüstungssektor unter Kriegspremium",
-   "thesis": "Der Angriff auf den indischen Tanker MT Jalveer mit drei Todesopfern sowie iranische Angriffe auf US-Flotte und Bahrain eskalieren den Konflikt auf eine neue Stufe. Rüstungsunternehmen profitieren von erhöhten Verteidigungsausgaben, während klassische Tankerschifffahrt und Güterlogistik durch Hormuz-Umwege unter Kostendruck geraten.",
+   "title": "Oracle unter Druck: CapEx-Schock trifft KI-Infrastruktur-Erwartungen",
+   "thesis": "Oracle brach nach Quartalszahlen vorbörslich rund 12 % ein, weil die Investitionsausgaben die Markterwartungen deutlich übertrafen. Mehrere Video-Briefings bestätigen, dass der Umsatz zwar um 20 % wuchs, der Markt aber auf übermäßige Schuldenaufnahme und hohe CapEx-Ankündigungen negativ reagierte. Technisch droht laut Analysten ein Bruch der 200-Tage-Linie.",
    "values": [
-    "Rheinmetall",
-    "Leonardo",
-    "Thales",
-    "Hapag-Lloyd (Short-Kandidat)",
-    "Maersk (Short-Kandidat)",
-    "iShares MSCI Global Defence ETF"
+    "Oracle (ORCL)"
    ],
-   "angle": "Long",
-   "risk": "Eine rasche De-Eskalation durch Vermittler (Katar, Pakistan, Ägypten) würde den Rüstungspremium schnell abbauen und Logistikwerte entlasten.",
-   "source": "News: Indisches Schiff MT Jalveer getroffen – drei Seeleute tot, diplomatischer Konflikt",
-   "source_url": "https://x.com/FirstSquawk/status/2064967853070250227"
-  },
-  {
-   "title": "Oracle-Capex-Schock: Bewertungskorrektur bei KI-Infrastruktur",
-   "thesis": "Oracles überraschend hohe Investitionsausgaben lösten einen vorbörslichen Kurseinbruch von rund 12 % aus und bestätigen den Trend, dass der Markt bei KI-Hyperscalern zunehmend auf Profitabilitätsdisziplin achtet. Im Kontext der laufenden Tech-Rotation (Kapital fließt von Tech in Healthcare/Financials) besteht weiterer Korrekturpotenzial bei hoch bewerteten KI-Infrastrukturwerten.",
-   "values": [
-    "Oracle (ORCL)",
-    "Microsoft",
-    "Alphabet",
-    "Invesco QQQ ETF"
-   ],
-   "angle": "Beobachten",
-   "risk": "Sollten die Investitionen mittelfristig in starkes Umsatzwachstum münden, könnte der Kurseinbruch eine Kaufgelegenheit darstellen und die Short-These entwerten.",
+   "angle": "Short",
+   "risk": "Der Cloud-Auftragsbestand bleibt strukturell stark; ein Rebound ist möglich, wenn der Markt die langfristige KI-Infrastruktur-Investitionsthese neu bewertet.",
    "source": "News: Oracle-Aktie bricht 12 % ein – Investitionskosten überraschend hoch",
    "source_url": "https://x.com/FirstSquawk/status/2064982633629786311"
   },
   {
-   "title": "SK Hynix: Langfristige Kapazitätsexpansion im KI-Speichermarkt",
-   "thesis": "Die Ankündigung von SK Hynix, die Wafer-Kapazität bis 2034 zu verdreifachen, signalisiert strukturell wachsende Nachfrage nach High-Bandwidth-Memory (HBM) für KI-Workloads. Gleichzeitig profitieren Zulieferer für Halbleiterausrüstung von einem langfristig gesicherten Investitionszyklus.",
+   "title": "Schifffahrt & Rückversicherung: Hormuz-Sperrung trifft Reedereien und treibt Versicherungsprämien",
+   "thesis": "Mit dem Schiffsverkehr durch die Straße von Hormuz auf null und dem Treffer des indischen Tankers MT Jalveer (drei Tote) steigen Kriegsrisikoprämien für Schifffahrtsversicherungen sprunghaft. Reedereien, die auf die Hormuz-Route angewiesen sind, dürften massive Umwegkosten tragen; große Rückversicherer wie Munich Re oder Hannover Rück könnten kurzfristig mit erhöhten Schadenerwartungen belastet werden.",
+   "values": [
+    "Hapag-Lloyd",
+    "A.P. Møller-Maersk",
+    "Munich Re",
+    "Hannover Rück"
+   ],
+   "angle": "Beobachten",
+   "risk": "Eine schnelle diplomatische Lösung oder Wiedereröffnung der Meerenge würde den Effekt auf Schifffahrts- und Versicherungswerte sofort umkehren.",
+   "source": "News: Indisches Schiff MT Jalveer getroffen – drei Seeleute tot, diplomatischer Konflikt",
+   "source_url": "https://x.com/FirstSquawk/status/2064967853070250227"
+  },
+  {
+   "title": "SK Hynix: Kapazitätsverdreifachung als langfristiger HBM-Dominanzanker",
+   "thesis": "SK Hynix-Chairman Chey kündigte laut Nikkei an, die Wafer-Produktionskapazität bis 2034 zu verdreifachen – ein klares Bekenntnis zur Führungsrolle bei HBM-Speichern für KI-Beschleuniger. Während die gesamte KI-Halbleiterbranche unter Gewinnmitnahmen leidet, bietet die Meldung einen strukturellen Long-Anlass für geduldige Investoren; auch Zulieferer von Halbleiter-Equipment (Applied Materials, ASML) sollten von einem solchen Kapazitätsausbau profitieren.",
    "values": [
     "SK Hynix (000660.KS)",
+    "Applied Materials (AMAT)",
     "ASML",
-    "Tokyo Electron",
-    "Lam Research",
-    "iShares MSCI Semiconductors ETF"
+    "iShares Semiconductor ETF (SOXX)"
    ],
    "angle": "Long",
-   "risk": "Ein globaler Konjunkturabschwung oder Überkapazitäten im Speicherchipmarkt könnten den Expansionsplan verzögern und Preisdruck erzeugen.",
+   "risk": "Geopolitische Eskalation rund um Taiwan oder ein abrupter KI-Investitionszyklus-Stopp könnte den geplanten Kapazitätsausbau wirtschaftlich entwerten.",
    "source": "News: SK Hynix verdreifacht Wafer-Kapazität bis 2034",
    "source_url": "https://x.com/FirstSquawk/status/2064977331152896483"
   },
   {
-   "title": "Hugo Boss: Übernahmeprämie durch Frasers-Angebot",
-   "thesis": "Das 2-Milliarden-Euro-Übernahmeangebot der britischen Frasers Group für Hugo Boss bietet einen klassischen M&A-Arbitrage-Ansatz: Ist der Angebotspreis über dem aktuellen Kurs, entsteht eine Prämie, die bei Angebotsannahme realisierbar ist.",
+   "title": "Hugo Boss: Übernahmeprämie als kurzfristiger Katalysator",
+   "thesis": "Die Frasers Group hat ein Übernahmeangebot von rund 2 Mrd. Euro für Hugo Boss lanciert; die Aktie reagierte laut Video-Briefing mit +9 % auf 38 EUR je Aktie. Analysten sehen bei 40 EUR zunächst ein Kurslimit, bis ein finaler Preis bekannt ist – der Spread zwischen aktuellem Kurs und einem möglichen erhöhten Angebot bietet eine taktische Arbitrage-Chance.",
    "values": [
-    "Hugo Boss (BOSS.DE)",
-    "Frasers Group (FRAS.L)"
+    "Hugo Boss (BOSS.DE)"
    ],
    "angle": "Beobachten",
-   "risk": "Das Angebot könnte scheitern oder von Hugo-Boss-Aktionären abgelehnt werden, was den Kurs auf das Vor-Angebots-Niveau zurückfallen ließe.",
+   "risk": "Frasers Group könnte das Angebot nicht erhöhen oder zurückziehen, woraufhin die Aktie den gesamten Übernahmeaufschlag wieder abgeben dürfte.",
    "source": "News: Frasers Group macht 2-Mrd.-Euro-Übernahmeangebot für Hugo Boss",
    "source_url": "https://x.com/ReutersWorld/status/2064822652879994927"
   }
