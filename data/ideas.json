@@ -1,81 +1,82 @@
 {
- "updated": "2026-06-10T18:34:19.552446+00:00",
- "date": "2026-06-10",
+ "updated": "2026-06-11T05:34:04.177378+00:00",
+ "date": "2026-06-11",
  "ideas": [
   {
-   "title": "Ölpreisanstieg durch Iran-Eskalation – Energie-Long",
-   "thesis": "Die Kombination aus US-Militäroperationen in der Straße von Hormuz, drohenden weiteren Angriffen auf den Iran und gleichzeitig fallenden US-Rohöllagerbeständen (siebte Woche in Folge) sowie dem SPR-Verkauf auf Mehrjahrestief schafft ein strukturell angespanntes Angebot. Brent und WTI haben bereits deutlich reagiert; anhaltende Eskalation dürfte den Aufwärtsdruck aufrechterhalten.",
+   "title": "Öl-Long bei Hormuz-Krise",
+   "thesis": "Die vollständige Sperrung der Straße von Hormuz durch Iran unterbricht rund 20 % des globalen Öldurchflusses. Solange keine diplomatische Lösung absehbar ist, dürfte der Angebotsschock die Ölpreise strukturell stützen. US-Rohöl-Futures reagierten bereits mit einem Anstieg von rund 2 USD je Barrel.",
    "values": [
-    "Brent Crude (Futures)",
-    "WTI Crude (Futures)",
-    "XLE (Energy Select Sector ETF)",
+    "USO",
+    "XLE",
+    "Brent-Futures",
+    "WTI-Futures",
+    "ExxonMobil",
     "Shell",
-    "TotalEnergies",
-    "Exxon Mobil"
+    "TotalEnergies"
    ],
    "angle": "Long",
-   "risk": "Eine rasche Einigung auf einen Iran-Deal – laut Trump angeblich kurz vor dem Abschluss – könnte den Ölpreis schlagartig um mehrere Dollar drücken.",
-   "source": "News: USA enthüllen geheime Hormuz-Mission – Öl-Tanker-Eskorte und Schiffsversenkungen",
-   "source_url": "https://x.com/DeItaone/status/2064742178719400422"
+   "risk": "Ein rascher Waffenstillstand oder direkte US-iranische Einigung könnte die Risikoprämie schlagartig abbauen und Öl deutlich fallen lassen.",
+   "source": "News: USA bombardieren Iran zum zweiten Mal – Hormuz vollständig gesperrt",
+   "source_url": "https://x.com/FirstSquawk/status/2064914277950185733"
   },
   {
-   "title": "US-Inflationsschock belastet Nasdaq – Tech-Short/Defensive Rotation",
-   "thesis": "Die US-Inflation stieg im Mai auf 4,2 %, getrieben durch Energiekosten, und das Bundesdefizit übertraf die negativen Erwartungen deutlich. Höhere Zinspfade und Fiskalstress belasten zinssensitive Wachstumstitel; zugleich zeigt das Markt-Update eine laufende Kapitalrotation aus Tech in Healthcare und Financials. Schwache Semiconductor-Daten (Broadcom) verstärken den Druck.",
+   "title": "Rüstungssektor profitiert von eskalierende Geopolitik",
+   "thesis": "Der neue Rheinmetall-Auftrag aus Dänemark und das geplante Weiße-Haus-Treffen mit Rüstungskonzernen zur Produktionsbeschleunigung signalisieren, dass staatliche Verteidigungsausgaben strukturell steigen. Die Iran-Krise mit Raketenangriffen auf US-Stützpunkte in Jordanien, Kuwait und Bahrain dürfte diesen Trend weiter verstärken.",
    "values": [
-    "QQQ (Nasdaq 100 ETF)",
-    "SMH (Semiconductor ETF)",
-    "Broadcom (AVGO)",
-    "XLV (Health Care Select Sector ETF)",
-    "XLF (Financial Select Sector ETF)"
+    "Rheinmetall",
+    "Leonardo",
+    "BAE Systems",
+    "Hensoldt",
+    "IITA ETF (NATO-Rüstung)",
+    "Lockheed Martin",
+    "RTX"
+   ],
+   "angle": "Long",
+   "risk": "Eine überraschend schnelle diplomatische De-Eskalation oder Haushaltskürzungen könnten den Rüstungsboom abrupt bremsen.",
+   "source": "News: Rheinmetall erhält Dänemark-Auftrag – Rüstungsnachfrage bleibt hoch",
+   "source_url": "https://x.com/FirstSquawk/status/2064931924636991980"
+  },
+  {
+   "title": "Japanische Langläufer short / JGB-Druck",
+   "thesis": "Die 40-jährigen JGB-Renditen erreichen mit rund 3,765 % neue Hochs, während BOJ-Chef Uedas Hospitalisierung die Zinssitzung im Juni mit Unsicherheit belastet. Der Ausfall der zentralen geldpolitischen Führung könnte Marktakteure dazu veranlassen, weiteren Renditeanstieg einzupreisen, was den Kursen langfristiger japanischer Anleihen schadet.",
+   "values": [
+    "JGB-Futures (Short)",
+    "TMF (inverse Durationsexposure)",
+    "japanische Versicherungsaktien (Beobachten)",
+    "USD/JPY"
    ],
    "angle": "Short",
-   "risk": "Sollte der Iran-Deal tatsächlich unterzeichnet werden und der Ölpreis kollabieren, könnte die Inflationsdynamik schnell drehen und eine Tech-Erholung auslösen.",
-   "source": "News: Inflation in den USA auf 4,2 % – Trump: 'I love the inflation'",
-   "source_url": "https://x.com/DeItaone/status/2064754339307000314"
+   "risk": "Ein reibungsloser Übergang der BOJ-Führung oder eine überraschend dovish ausgerichtete Sitzung könnte Renditen schnell zurückbringen.",
+   "source": "News: Japanische Langläufer-Renditen steigen – BOJ-Ausfall belastet",
+   "source_url": "https://x.com/FirstSquawk/status/2064895216709206126"
   },
   {
-   "title": "USMCA-Unsicherheit schadet kanadischen und mexikanischen Industriewerten",
-   "thesis": "Trumps Ankündigung, die USMCA-Verlängerung nicht anzustreben, und die Aussage der Bank of Canada, dass 'nichts garantiert' sei, erhöhen das Handelsrisiko für grenzüberschreitende Lieferketten in Nordamerika erheblich. Sektoren wie Automotive, Stahl und Landwirtschaft, die stark von zollfreiem Handel zwischen den drei Ländern abhängen, sind besonders exponiert.",
+   "title": "Biotech-Einzelwerte Novartis und Roche nach positiven Studiendaten",
+   "thesis": "Novartis' Del-brx erfüllte Phase-2b-Endpunkte bei der seltenen Muskelerkrankung FSHD und besitzt FDA-Fast-Track- und Orphan-Status für Phase 3; Roche erhielt FDA Priority Review für Tecentriq mit klinisch bedeutsamem Überlebensvorteil bei Stadium-III-Darmkrebs. Beide Datenpakete reduzieren regulatorisches Risiko und liefern konkrete Katalysatoren für die nächsten Quartale.",
    "values": [
-    "EWC (iShares MSCI Canada ETF)",
-    "EWW (iShares MSCI Mexico ETF)",
-    "Magna International",
-    "Stellantis",
-    "Ford Motor"
-   ],
-   "angle": "Beobachten",
-   "risk": "Politische Verhandlungsfortschritte oder ein kurzfristiger Kompromiss könnten die Risikoprämie schnell abbauen.",
-   "source": "News: Trump: USMCA-Verlängerung nicht geplant – Handelsabkommen mit Kanada und Mexiko in der Schwebe",
-   "source_url": "https://x.com/FirstSquawk/status/2064738724676780399"
-  },
-  {
-   "title": "SpaceX-IPO-Hype strahlt auf KI/New-Space-Ökosystem aus",
-   "thesis": "Der SpaceX-IPO ist vierfach überzeichnet bei einer angestrebten Bewertung von 1,8 Billionen USD; der Börsenstart unter $SPCX ist für den 12. Juni geplant. Die massive Nachfrage signalisiert hohe Risikobereitschaft für Zukunftstechnologien. Bereits börsennotierte Unternehmen im Raumfahrt- und Satellitenumfeld sowie KI-nahe Zulieferer könnten als Proxy profitieren.",
-   "values": [
-    "Rocket Lab (RKLB)",
-    "Planet Labs (PL)",
-    "Joby Aviation (JOBY)",
-    "ARK Space Exploration ETF (ARKX)",
-    "Nvidia (NVDA)"
-   ],
-   "angle": "Beobachten",
-   "risk": "Eine Kurskorrektur direkt nach dem Handelsstart ('Buy the rumor, sell the news') könnte den Sektor kurzfristig belasten und Sympathiekäufer auf dem falschen Fuß erwischen.",
-   "source": "News: SpaceX-IPO vierfach überzeichnet – Musk auf dem Weg zum Billionär",
-   "source_url": "https://x.com/DeItaone/status/2064758265594982593"
-  },
-  {
-   "title": "BOJ-Ausfall dämpft Yen-Stärke – Japanische Exporter profitieren kurzfristig",
-   "thesis": "Die ungeplante Hospitalisierung von BOJ-Gouverneur Ueda lässt eine Zinserhöhung auf 1,0 % beim Juni-Treffen unwahrscheinlicher werden. Ein schwächerer Yen-Aufwertungsdruck kommt japanischen Exporteuren zugute, während gleichzeitig die gestiegene Großhandelsinflation in Japan strukturellen Kostendruck signalisiert.",
-   "values": [
-    "EWJ (iShares MSCI Japan ETF)",
-    "Toyota Motor",
-    "Sony Group",
-    "USD/JPY (Währungspaar)"
+    "Novartis",
+    "Roche",
+    "iShares MSCI Switzerland ETF (EWL)"
    ],
    "angle": "Long",
-   "risk": "Sollte ein Übergangsgouverneur eine hawkishe Haltung signalisieren oder die hohe Großhandelsinflation den Zinsdruck verstärken, kann der Yen unerwartet aufwerten und Exportgewinne egalisieren.",
-   "source": "News: IAEA-Resolution gegen Iran – BOJ-Chef ins Krankenhaus eingeliefert",
-   "source_url": "https://x.com/FirstSquawk/status/2064723083483820185"
+   "risk": "Phase-3-Misserfolg bei Novartis oder Ablehnung der Priority Review bei Roche würden die Kursgewinne schnell zunichte machen.",
+   "source": "News: Novartis und Roche mit positiven Studiendaten",
+   "source_url": "https://x.com/FirstSquawk/status/2064936648996188585"
+  },
+  {
+   "title": "KI-Infrastruktur trotz Markt-Rotation beobachten",
+   "thesis": "KKR lanciert eine 10-Mrd.-USD-Rechenzentrumsgruppe unter Ex-AWS-Führung, und TensorWave schließt eine 350-Mio.-USD-Series-B unter AMD-Beteiligung ab – beides zeigt anhaltend hohes institutionelles Kapitalinteresse an KI-Infrastruktur. Das onvista-Markt-Update signalisiert jedoch eine laufende Rotation weg von Tech, was kurzfristig Gegenwind für den Sektor bedeuten könnte.",
+   "values": [
+    "AMD",
+    "KKR",
+    "EQIX (Equinix)",
+    "DFEN",
+    "Global X Data Center & Digital Infrastructure ETF (VPN)"
+   ],
+   "angle": "Beobachten",
+   "risk": "Eine anhaltende Rotation aus Tech-Aktien in defensive Sektoren sowie steigende Anleiherenditen könnten die Bewertungsprämien im KI-Infrastrukturbereich weiter komprimieren.",
+   "source": "News: KKR startet 10-Mrd.-USD-Datenzentrumsgruppe unter Ex-AWS-Chef",
+   "source_url": "https://x.com/FirstSquawk/status/2064922959547191554"
   }
  ]
 }
