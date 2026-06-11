@@ -1,82 +1,79 @@
 {
- "updated": "2026-06-11T05:34:04.177378+00:00",
+ "updated": "2026-06-11T08:38:00.222186+00:00",
  "date": "2026-06-11",
  "ideas": [
   {
-   "title": "Öl-Long bei Hormuz-Krise",
-   "thesis": "Die vollständige Sperrung der Straße von Hormuz durch Iran unterbricht rund 20 % des globalen Öldurchflusses. Solange keine diplomatische Lösung absehbar ist, dürfte der Angebotsschock die Ölpreise strukturell stützen. US-Rohöl-Futures reagierten bereits mit einem Anstieg von rund 2 USD je Barrel.",
+   "title": "Hormuz-Sperrung: Öl- und Energiepreisschock",
+   "thesis": "Die vollständige Schließung der Straße von Hormuz durch Iran unterbricht rund 20 % des globalen Ölhandels. Ein anhaltender Null-Verkehr treibt Rohölpreise (Brent/WTI) und Energieaktien kurzfristig stark nach oben, während raffinerienahe und tankerabhängige Unternehmen profitieren.",
    "values": [
-    "USO",
-    "XLE",
-    "Brent-Futures",
-    "WTI-Futures",
-    "ExxonMobil",
+    "Brent Crude (Futures)",
+    "WTI Crude (Futures)",
     "Shell",
-    "TotalEnergies"
+    "TotalEnergies",
+    "Equinor",
+    "iShares Oil & Gas Exploration & Production ETF (IOGP)"
    ],
    "angle": "Long",
-   "risk": "Ein rascher Waffenstillstand oder direkte US-iranische Einigung könnte die Risikoprämie schlagartig abbauen und Öl deutlich fallen lassen.",
-   "source": "News: USA bombardieren Iran zum zweiten Mal – Hormuz vollständig gesperrt",
-   "source_url": "https://x.com/FirstSquawk/status/2064914277950185733"
+   "risk": "Ein schnelles diplomatisches Abkommen zwischen den USA und Iran – Gesprächskanal ist laut CNN noch intakt – könnte den Ölpreisanstieg abrupt beenden.",
+   "source": "News: USA bombardieren Iran zweite Nacht in Folge – Hormuz-Verkehr auf null",
+   "source_url": "https://x.com/FirstSquawk/status/2064983185134617003"
   },
   {
-   "title": "Rüstungssektor profitiert von eskalierende Geopolitik",
-   "thesis": "Der neue Rheinmetall-Auftrag aus Dänemark und das geplante Weiße-Haus-Treffen mit Rüstungskonzernen zur Produktionsbeschleunigung signalisieren, dass staatliche Verteidigungsausgaben strukturell steigen. Die Iran-Krise mit Raketenangriffen auf US-Stützpunkte in Jordanien, Kuwait und Bahrain dürfte diesen Trend weiter verstärken.",
+   "title": "Schifffahrt- und Rüstungssektor unter Kriegspremium",
+   "thesis": "Der Angriff auf den indischen Tanker MT Jalveer mit drei Todesopfern sowie iranische Angriffe auf US-Flotte und Bahrain eskalieren den Konflikt auf eine neue Stufe. Rüstungsunternehmen profitieren von erhöhten Verteidigungsausgaben, während klassische Tankerschifffahrt und Güterlogistik durch Hormuz-Umwege unter Kostendruck geraten.",
    "values": [
     "Rheinmetall",
     "Leonardo",
-    "BAE Systems",
-    "Hensoldt",
-    "IITA ETF (NATO-Rüstung)",
-    "Lockheed Martin",
-    "RTX"
+    "Thales",
+    "Hapag-Lloyd (Short-Kandidat)",
+    "Maersk (Short-Kandidat)",
+    "iShares MSCI Global Defence ETF"
    ],
    "angle": "Long",
-   "risk": "Eine überraschend schnelle diplomatische De-Eskalation oder Haushaltskürzungen könnten den Rüstungsboom abrupt bremsen.",
-   "source": "News: Rheinmetall erhält Dänemark-Auftrag – Rüstungsnachfrage bleibt hoch",
-   "source_url": "https://x.com/FirstSquawk/status/2064931924636991980"
+   "risk": "Eine rasche De-Eskalation durch Vermittler (Katar, Pakistan, Ägypten) würde den Rüstungspremium schnell abbauen und Logistikwerte entlasten.",
+   "source": "News: Indisches Schiff MT Jalveer getroffen – drei Seeleute tot, diplomatischer Konflikt",
+   "source_url": "https://x.com/FirstSquawk/status/2064967853070250227"
   },
   {
-   "title": "Japanische Langläufer short / JGB-Druck",
-   "thesis": "Die 40-jährigen JGB-Renditen erreichen mit rund 3,765 % neue Hochs, während BOJ-Chef Uedas Hospitalisierung die Zinssitzung im Juni mit Unsicherheit belastet. Der Ausfall der zentralen geldpolitischen Führung könnte Marktakteure dazu veranlassen, weiteren Renditeanstieg einzupreisen, was den Kursen langfristiger japanischer Anleihen schadet.",
+   "title": "Oracle-Capex-Schock: Bewertungskorrektur bei KI-Infrastruktur",
+   "thesis": "Oracles überraschend hohe Investitionsausgaben lösten einen vorbörslichen Kurseinbruch von rund 12 % aus und bestätigen den Trend, dass der Markt bei KI-Hyperscalern zunehmend auf Profitabilitätsdisziplin achtet. Im Kontext der laufenden Tech-Rotation (Kapital fließt von Tech in Healthcare/Financials) besteht weiterer Korrekturpotenzial bei hoch bewerteten KI-Infrastrukturwerten.",
    "values": [
-    "JGB-Futures (Short)",
-    "TMF (inverse Durationsexposure)",
-    "japanische Versicherungsaktien (Beobachten)",
-    "USD/JPY"
-   ],
-   "angle": "Short",
-   "risk": "Ein reibungsloser Übergang der BOJ-Führung oder eine überraschend dovish ausgerichtete Sitzung könnte Renditen schnell zurückbringen.",
-   "source": "News: Japanische Langläufer-Renditen steigen – BOJ-Ausfall belastet",
-   "source_url": "https://x.com/FirstSquawk/status/2064895216709206126"
-  },
-  {
-   "title": "Biotech-Einzelwerte Novartis und Roche nach positiven Studiendaten",
-   "thesis": "Novartis' Del-brx erfüllte Phase-2b-Endpunkte bei der seltenen Muskelerkrankung FSHD und besitzt FDA-Fast-Track- und Orphan-Status für Phase 3; Roche erhielt FDA Priority Review für Tecentriq mit klinisch bedeutsamem Überlebensvorteil bei Stadium-III-Darmkrebs. Beide Datenpakete reduzieren regulatorisches Risiko und liefern konkrete Katalysatoren für die nächsten Quartale.",
-   "values": [
-    "Novartis",
-    "Roche",
-    "iShares MSCI Switzerland ETF (EWL)"
-   ],
-   "angle": "Long",
-   "risk": "Phase-3-Misserfolg bei Novartis oder Ablehnung der Priority Review bei Roche würden die Kursgewinne schnell zunichte machen.",
-   "source": "News: Novartis und Roche mit positiven Studiendaten",
-   "source_url": "https://x.com/FirstSquawk/status/2064936648996188585"
-  },
-  {
-   "title": "KI-Infrastruktur trotz Markt-Rotation beobachten",
-   "thesis": "KKR lanciert eine 10-Mrd.-USD-Rechenzentrumsgruppe unter Ex-AWS-Führung, und TensorWave schließt eine 350-Mio.-USD-Series-B unter AMD-Beteiligung ab – beides zeigt anhaltend hohes institutionelles Kapitalinteresse an KI-Infrastruktur. Das onvista-Markt-Update signalisiert jedoch eine laufende Rotation weg von Tech, was kurzfristig Gegenwind für den Sektor bedeuten könnte.",
-   "values": [
-    "AMD",
-    "KKR",
-    "EQIX (Equinix)",
-    "DFEN",
-    "Global X Data Center & Digital Infrastructure ETF (VPN)"
+    "Oracle (ORCL)",
+    "Microsoft",
+    "Alphabet",
+    "Invesco QQQ ETF"
    ],
    "angle": "Beobachten",
-   "risk": "Eine anhaltende Rotation aus Tech-Aktien in defensive Sektoren sowie steigende Anleiherenditen könnten die Bewertungsprämien im KI-Infrastrukturbereich weiter komprimieren.",
-   "source": "News: KKR startet 10-Mrd.-USD-Datenzentrumsgruppe unter Ex-AWS-Chef",
-   "source_url": "https://x.com/FirstSquawk/status/2064922959547191554"
+   "risk": "Sollten die Investitionen mittelfristig in starkes Umsatzwachstum münden, könnte der Kurseinbruch eine Kaufgelegenheit darstellen und die Short-These entwerten.",
+   "source": "News: Oracle-Aktie bricht 12 % ein – Investitionskosten überraschend hoch",
+   "source_url": "https://x.com/FirstSquawk/status/2064982633629786311"
+  },
+  {
+   "title": "SK Hynix: Langfristige Kapazitätsexpansion im KI-Speichermarkt",
+   "thesis": "Die Ankündigung von SK Hynix, die Wafer-Kapazität bis 2034 zu verdreifachen, signalisiert strukturell wachsende Nachfrage nach High-Bandwidth-Memory (HBM) für KI-Workloads. Gleichzeitig profitieren Zulieferer für Halbleiterausrüstung von einem langfristig gesicherten Investitionszyklus.",
+   "values": [
+    "SK Hynix (000660.KS)",
+    "ASML",
+    "Tokyo Electron",
+    "Lam Research",
+    "iShares MSCI Semiconductors ETF"
+   ],
+   "angle": "Long",
+   "risk": "Ein globaler Konjunkturabschwung oder Überkapazitäten im Speicherchipmarkt könnten den Expansionsplan verzögern und Preisdruck erzeugen.",
+   "source": "News: SK Hynix verdreifacht Wafer-Kapazität bis 2034",
+   "source_url": "https://x.com/FirstSquawk/status/2064977331152896483"
+  },
+  {
+   "title": "Hugo Boss: Übernahmeprämie durch Frasers-Angebot",
+   "thesis": "Das 2-Milliarden-Euro-Übernahmeangebot der britischen Frasers Group für Hugo Boss bietet einen klassischen M&A-Arbitrage-Ansatz: Ist der Angebotspreis über dem aktuellen Kurs, entsteht eine Prämie, die bei Angebotsannahme realisierbar ist.",
+   "values": [
+    "Hugo Boss (BOSS.DE)",
+    "Frasers Group (FRAS.L)"
+   ],
+   "angle": "Beobachten",
+   "risk": "Das Angebot könnte scheitern oder von Hugo-Boss-Aktionären abgelehnt werden, was den Kurs auf das Vor-Angebots-Niveau zurückfallen ließe.",
+   "source": "News: Frasers Group macht 2-Mrd.-Euro-Übernahmeangebot für Hugo Boss",
+   "source_url": "https://x.com/ReutersWorld/status/2064822652879994927"
   }
  ]
 }
