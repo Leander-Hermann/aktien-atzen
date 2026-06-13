@@ -1,6 +1,390 @@
 {
- "updated": "2026-06-11T18:46:34.992500+00:00",
+ "updated": "2026-06-13T07:55:19.767402+00:00",
  "videos": [
+  {
+   "channel": "derAktionär",
+   "playlist": "Märkte am Morgen",
+   "id": "S9qv7ifKEQc",
+   "title": "Märkte am Morgen: Öl, Gold, Bitcoin, Adobe, SanDisk, Oracle, SAP, Siemens Energy, ASML, Hugo Boss",
+   "date": "20260612",
+   "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc",
+   "thumbnail": "https://i.ytimg.com/vi/S9qv7ifKEQc/hqdefault.jpg",
+   "summarized_at": "2026-06-13T07:43:38.352340+00:00",
+   "summary": "Nach schwacher Woche startet der DAX mit über 1% Gewinnen, getragen von US-Iran-Deal-Hoffnungen und positiven Vorgaben aus Wall Street und Asien. Ölpreise geben nach, Gold und Bitcoin bleiben unter Druck. Im Einzelwertfokus: Adobe kämpft mit CFO-Rücktritt trotz guter Zahlen, Oracle wächst 20% aber plant Kapitalaufnahme, ASML wird von Analysten hochgespielt, Hugo Boss wird für 38€ offeriert.",
+   "items": [
+    {
+     "name": "Öl (WTI/Brent)",
+     "ticker": "CL=F",
+     "note": "Ölpreis korrigiert nach möglichem US-Iran-Deal; aktuell ~88 USD, deutlich über Jahresbeginn (60 USD), technisch zwischen 50er und 200-Tage-Linie.",
+     "figures": "Jahresbeginn ~60 USD, aktuell ~88 USD",
+     "tip": "",
+     "einordnung": "Klassische Risikoasset-Bewegung: Deal-Hoffnungen führen zu Entspannung und Preiskorrektion. Bleiben wir realistisch—der Ölpreis hat sich trotzdem verdreißigt prozentiert gegenüber Jahresbeginn, ein grundsätzlich konstruktives Signal für die Energieversorgung.",
+     "kategorie": "makro",
+     "sec": 160,
+     "t": "02:40",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=160s"
+    },
+    {
+     "name": "Gold",
+     "ticker": "GC=F",
+     "note": "Gold unter Druck durch Kapitalabflüsse zu Gunsten riskanterer Assets und Zinsängste; Host empfiehlt technisches Abwarten.",
+     "figures": "",
+     "tip": "Technisch abwarten, keine Eile",
+     "einordnung": "Typisches Muster bei Risiko-on-Phasen: Wenn die Angst sinkt, sinkt auch die Nachfrage nach dem sicheren Hafen. Das ist kein fundamentales Giftzeichen, eher Rotationssignal.",
+     "kategorie": "chartanalyse",
+     "sec": 219,
+     "t": "03:39",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=219s"
+    },
+    {
+     "name": "Bitcoin",
+     "ticker": "BTC-USD",
+     "note": "Bitcoin leicht erholt bei 63.200 USD; MicroStrategy hat kleine Menge verkauft, aber für über 100 Mio. USD nachgekauft—bullische Geste.",
+     "figures": "63.200 USD, über 100 Millionen USD Nachkauf",
+     "tip": "",
+     "einordnung": "MicroStrategy-Käufe sind hochgradig signifikant: Das Management signalisiert, dass Schwäche Chance ist, nicht Risiko. Nach der Euphorie des letzten Jahres ist diese Art von Conviction ein interessantes Sentiment-Zeichen.",
+     "kategorie": "news",
+     "sec": 288,
+     "t": "04:48",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=288s"
+    },
+    {
+     "name": "S&P 500",
+     "ticker": "^GSPC",
+     "note": "S&P 500 zeigt Stärke, aber mit hohen Tagesausschlägen; Host kritisiert mediale Übertreibung bei Kursverlusten.",
+     "figures": "+1,9% (am Vortag)",
+     "tip": "",
+     "einordnung": "Die 24/7-News-Maschinerie erzeugt Noise, der vom fundamentalen Trend ablenkt. Das Muster ist bekannt: Große Gewinne = normale Marktfunktion, kleine Verluste = Krise. Das ist Psychologie, keine Analyse.",
+     "kategorie": "sonstiges",
+     "sec": 341,
+     "t": "05:41",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=341s"
+    },
+    {
+     "name": "Adobe",
+     "ticker": "ADBE",
+     "note": "Adobe zeigt Quartalszahlen und Outlook gut, aber Aktie fällt nachbörslich 5%, weil CFO gehen wird; operative Stärke vs. psychologische Verunsicherung.",
+     "figures": "Nachbörse -5%",
+     "tip": "Bei Übertreibung einsteigen, aber nicht sofort mit voller Position",
+     "einordnung": "Das ist ein klassisches Verkaufsschock-Muster: Die Zahlen sind solid, aber der CFO-Wechsel schafft Unsicherheit. Für den geduldig aufgebauten Investor könnte das eine Einstiegsgelegenheit sein—allerdings sollte man den Nachfolger erst sehen, bevor man all-in geht.",
+     "kategorie": "news",
+     "sec": 397,
+     "t": "06:37",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=397s"
+    },
+    {
+     "name": "SanDisk",
+     "ticker": "SNDK",
+     "note": "SanDisk macht neue Hochs; KI-Boom treibt Speichernachfrage massiv bis 2027, danach droht Überangebot; Tagesgewinn ~240 USD.",
+     "figures": "Tagesgewinn ~240 USD, Überangebot ab 2027 erwartet",
+     "tip": "Vor Überangebot 2027 absprung schaffen",
+     "einordnung": "Das ist ein zyklengetriebenes Play—richtig, dass Host die Zeitgrenze klar benennt. Der aktuelle Aufwind ist echt (KI braucht speicher wie eine Lokomotive Kohle), aber die Uhr tickt. Das sollte in die Watchlist, mit Exit-Datum 2026.",
+     "kategorie": "fundamental",
+     "sec": 542,
+     "t": "09:02",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=542s"
+    },
+    {
+     "name": "Oracle",
+     "ticker": "ORCL",
+     "note": "Oracle Quartal: Umsatz +20%, aber Aktie unter Druck wegen Ankündigung weiterer 20 Mrd. USD Kapitalaufnahme; Anleger-Skepsis dominant.",
+     "figures": "Umsatzwachstum +20%, 20 Milliarden USD geplante Kapitalaufnahme",
+     "tip": "",
+     "einordnung": "Das ist ein interessantes Signal: 20% Umsatzwachstum ist solid, aber der Markt straft das ab, weil Oracle offensichtlich größere strategische Ausgaben plant (wahrscheinlich AI-Infrastructure). Das kann langfristig bullisch sein, kurzfristig aber Luftablassen bedeuten.",
+     "kategorie": "fundamental",
+     "sec": 600,
+     "t": "10:00",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=600s"
+    },
+    {
+     "name": "DAX",
+     "ticker": "^GDAXI",
+     "note": "DAX indiziert über 1% im Plus; nach schwacher Woche getragen von US-Iran-Deal-Hoffnungen und positiven Vorgaben. Technisch zwischen 50er und 200-Tage-Linie positioniert.",
+     "figures": "Indikation über +1%",
+     "tip": "",
+     "einordnung": "Der DAX ist ein Rückspiegel für europäische Stimmung und China-Konjunktur. Diese Gewinne sind Rally-Effekt, nicht strukturelle Heilung. Die Position zwischen 50er und 200er ist neutral—weder Crash noch Bullmarkt signalisiert.",
+     "kategorie": "chartanalyse",
+     "sec": 671,
+     "t": "11:11",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=671s"
+    },
+    {
+     "name": "SAP",
+     "ticker": "SAP.DE",
+     "note": "SAP unter Druck durch 'Sippenhaft' mit Oracle-Schwäche; Qualität der Company bleibt intakt, aber Kurs rutscht immer wieder zurück.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "SAP ist ein Quality-Stock mit Enterprise-Moat, aber der Markt spielt Sektor-Domino-Spiel. Oracle-Schwäche setzt Tech-Vertrauen unter Druck. Für Langfrist-Investoren ein Ansammelsignal, für Trader ein Risiko der Kettenreaktion.",
+     "kategorie": "fundamental",
+     "sec": 708,
+     "t": "11:48",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=708s"
+    },
+    {
+     "name": "Siemens Energy",
+     "ticker": "ENR.DE",
+     "note": "Siemens Energy nach 30% Verlust jetzt Tagesgewinner; Schnäppchenjäger aktiv bei knapp 140 EUR. Reaktion auf Überverkauf.",
+     "figures": "Vorheriger 30%-Verlust, aktuell knapp 140 EUR",
+     "tip": "",
+     "einordnung": "Das ist der klassische Bounce nach Panikverkauf—interessant, ob das Hold wird oder nur intraday-Lipidum ist. Die 30%-Verluste davor hatten Gründe (Margendruck, Marktmißtrauen), die heute nicht einfach weg sind. Vorsicht vor Bounce-Fallen.",
+     "kategorie": "chartanalyse",
+     "sec": 756,
+     "t": "12:36",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=756s"
+    },
+    {
+     "name": "Fraport",
+     "ticker": "FRA.DE",
+     "note": "Fraport: Passagierzahlen Mai besser als erwartet; Aktie vorbörslich leicht im Plus. 200-Tage-Linie noch weit weg—technische Schwäche bleibt.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Positive Passagierzahlen sind Konjunktur-Signal (Menschen fliegen wieder), aber das reicht nicht, um die breite Schwäche zu drehen. Der Abstand zur 200er ist Warnsignal: Trend bleibt DOWN, bis diese Linie wieder getestet wird.",
+     "kategorie": "fundamental",
+     "sec": 775,
+     "t": "12:55",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=775s"
+    },
+    {
+     "name": "ASML",
+     "ticker": "ASML.AS",
+     "note": "ASML von Elon Musk gelobt; Morgan Stanley: 90 Maschinenauslieferungen 2025, 15-20% Wachstum 2026 prognostiziert. Host empfiehlt bei Schwäche zugreifen.",
+     "figures": "90 Maschinen 2025, 15-20% Wachstum 2026 (Morgan Stanley)",
+     "tip": "Bei Schwäche zugreifen",
+     "einordnung": "ASML ist der unausweichliche Benefiziar der KI- und Chip-Explosion—wer Halbleiter will, braucht ASML-Equipment. Die 90er-Auslieferungszahl ist belastbar (ist nicht Hoffnung, sondern order book). Das Zuwachs-Szenario 2026 ist konservativ. Das ist ein Hold-und-wenn-es-zieht-Ankauf-Kandidat.",
+     "kategorie": "fundamental",
+     "sec": 815,
+     "t": "13:35",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=815s"
+    },
+    {
+     "name": "Hugo Boss",
+     "ticker": "BOSS.DE",
+     "note": "Großaktionär Frasers offeriert 38 EUR pro Aktie (ca. 2 Mrd. EUR); Kurs läuft in Richtung Gebot. Spekulation auf Nachbesserung.",
+     "figures": "38 EUR Gebot, ca. 2 Milliarden EUR Volumen",
+     "tip": "Dabei bleiben und auf Nachbesserung spekulieren",
+     "einordnung": "Das ist ein klassisches Übernahme-Arbitrage-Play. 38 EUR ist das Eröffnungsgebot; historisch folgen Gebote 1-3 Nachbesserungen. Risiko: Frasers könnte sagen 'final offer', dann sitzt du fest. Belohnungspotential höher als Abwärtsrisiko, aber mit Risiko-Management.",
+     "kategorie": "news",
+     "sec": 942,
+     "t": "15:42",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=942s"
+    }
+   ],
+   "macro": [
+    {
+     "text": "US-Iran-Deal-Hoffnungen beruhigen Märkte, drücken Ölpreise und führen zu Risk-on-Rotation (KI-Stocks, Equities vs. Bonds/Gold).",
+     "sec": 28,
+     "t": "00:28",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=28s"
+    },
+    {
+     "text": "SpaceX-Börsengang (75 Mrd. USD geplant) sorgt für massive Kapitalverschiebungen und erhöht Konkurrenz um Anlege-Cashflow.",
+     "sec": 0,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=0s"
+    }
+   ]
+  },
+  {
+   "channel": "onvista",
+   "playlist": "Börse & Märkte LIVE",
+   "id": "a6FF2tGXbok",
+   "title": "Mercedes wagt Spezialfahrzeuge, Nvidia & China, Adobe Zahlen",
+   "date": "20260612",
+   "url": "https://www.youtube.com/watch?v=a6FF2tGXbok",
+   "thumbnail": "https://i.ytimg.com/vi/a6FF2tGXbok/hqdefault.jpg",
+   "summarized_at": "2026-06-13T07:39:17.923485+00:00",
+   "summary": "DAX erholt sich mit +1,6% auf Hoffnungen einer Nahost-Einigung, doch geopolitische Risiken bleiben fragil und Volatilität (VIX über 16) signalisiert anhaltende Unsicherheit. Im Fokus: Mercedes wagt mit Drohnenabwehr-Spezialfahrzeugen ein neues Geschäftsfeld, Nvidia erschließt China über regulatorisch weniger sensible Vera-CPUs, und Adobe überrascht mit starken Zahlen (+13% Umsatz, +18% Gewinn), erleidet aber Kursrückgang wegen CFO-Wechsel-Signal und Bewertungssorgen. Breites Tech-Setup mit Kaufchancen bei günstigen Bewertungen.",
+   "items": [
+    {
+     "name": "DAX",
+     "ticker": null,
+     "note": "Nachbörslich +1,6% nach US-Gewinnen; Hoffnung auf Nahost-Einigung treibt Erholung, aber geopolitisches Risiko bleibt extrem hoch und könnte sich schnell umkehren.",
+     "figures": "+1,6%",
+     "tip": "Vorsicht: VIX über 16 (Normal 10–11) zeigt Unsicherheit; Long- wie Short-Positionen risikohaftet, solange Nahost-Situation ungelöst ist.",
+     "einordnung": "Bounce auf Hoffnung ist klassisch für fragile Lagen – solange Iran 300Mrd $ + Sanktionshebung verlangt, bleibt Deal-Wahrscheinlichkeit niedrig. Schnellwechsel zu höherer Volatilität jederzeit möglich.",
+     "kategorie": "makro",
+     "sec": 72,
+     "t": "01:12",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=72s"
+    },
+    {
+     "name": "flatexDEGIRO",
+     "ticker": null,
+     "note": "Barclays initiiert Coverage mit Overweight und 41-€-Kursziel; erwartet über 20% EPS-Wachstum bis 2028 gegenüber ~10% bei nordischen Konkurrenten; höchste Kundenzahl in Europa.",
+     "figures": "Kursziel 41 €, EPS-Wachstum >20% bis 2028",
+     "tip": "Charttechnischer Ausbruch aus Dreieck interessant, aber Chance-Risiko 1:1 zu 1,1:1 unzureichend; Trade überspringen.",
+     "einordnung": "Wachstumszahl respektabel, aber gegen den Sektor (Brokerage unter Zinsdrucksätzlich) nur mittelmäßig motivierend. Outperformance muss sich erst zeigen.",
+     "kategorie": "chartanalyse",
+     "sec": 584,
+     "t": "09:44",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=584s"
+    },
+    {
+     "name": "Mercedes-Benz",
+     "ticker": "MBG.DE",
+     "note": "Neue Partnerschaft mit Titan Technologies zu mobilen Drohnenabwehrsystemen; nutzt Sprinter- und G-Klasse-Plattformen für Spezialmärkte. Memorandum of Understanding erst unterschrieben, noch kein finalisierter Deal.",
+     "figures": "Von 78 € (3J.) auf 48 €, testet 45-€-Tiefs; KGV 8 vs. 5J-Schnitt 6,5",
+     "tip": "Interessante Geschäftsfeldausweitung, aber kurzfristig nicht ergebniswirksam; KGV-Expansion nicht gerechtfertigt. Weitere Korrektur möglich – kein Kaufgrund.",
+     "einordnung": "Drohnenabwehr ein echtes Zukunftsthema, aber Titan-Partnerschaft noch zu früh, um Ertrag zu prägen. Bewertungs-Rerating wirkt übertrieben bei nur MoU-Status. Warten auf Konkretisierung.",
+     "kategorie": "fundamental",
+     "sec": 788,
+     "t": "13:08",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=788s"
+    },
+    {
+     "name": "RH (RH Furniture)",
+     "ticker": "RH",
+     "note": "Q1: Umsatz 800 M (−1,7% YoY), EPS −1,97 (10 c besser als erwartet); schwaches Juni-Quartal normal; Rückgang durch Backorders und Zollbelastungen. Guidance: 3,6–3,71 Mrd Umsatz (vs. 3,63 Mrd Konsens), EBITDA-Marge 14,2–16%.",
+     "figures": "Umsatz 800 M (−1,7%), EPS −1,97, Guidance 3,6–3,71 Mrd, EBITDA 14,2–16%",
+     "tip": "Ausbruch über 160 $ möglich (nächstes Level 180 $), aber nur 1:1 Chance-Risiko. Internationale Expansion belastet Margen kurzfristig – Vorsicht beim Kauf.",
+     "einordnung": "Möbel-Zykliker unter Zolldruck und Demand-Druck – das ist 2024/25 das Gegenteil von tailwind. Backlog-Abbau durch Zahlkräftige Kunden ist eher Warnsignal denn Stärke.",
+     "kategorie": "fundamental",
+     "sec": 1042,
+     "t": "17:22",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=1042s"
+    },
+    {
+     "name": "Kratos Defense & Security Solutions",
+     "ticker": "KTOS",
+     "note": "Q1: Umsatz 371 M (+23%), EPS 16 c; viertes Quarter in Folge Double-Beat; Backlog über 2 Mrd USD, Book-to-Bill 1,6x sehr stark. 2026-Guidance: 1,7–1,76 Mrd Umsatz. JPMorgan Upgrade auf Overweight, Kursziel 82 $ (vs. Analyst-Durchschnitt 113 $).",
+     "figures": "Umsatz 371 M (+23%), EPS 16 c, Backlog 2 Mrd USD, Book-to-Bill 1,6x, Kursziel 82 $, Analyst-Schnitt 113 $",
+     "tip": "Nach Rückgang 134 $ → 51 $ nun Aufbau steigender Tiefs; Ausbruch über 60 $ wichtig. Verdienntpotenzial bis 82–113 $ lockt, aber noch keine Signal-Bestätigung.",
+     "einordnung": "Defense-Sektor zyklisch sensibel gegenüber Geopolitik und Haushaltsfreigaben. Backlog-Qualität gut, aber JPMorgan-Ziel deutlich unter Street-Consensus deutet auf Vorsicht hin – Anleger bremsen trotz Zahlen.",
+     "kategorie": "chartanalyse",
+     "sec": 1464,
+     "t": "24:24",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=1464s"
+    },
+    {
+     "name": "Rocket Lab USA",
+     "ticker": "RKLB",
+     "note": "Q1: Umsatz 200 M (+60%), Bruttomarge 38%; Backlog 2,2 Mrd (11x Quartalsumsatz); 88 Electron-Starts + 18 gebucht. Eintritt in Nasdaq 100 am 22.06. löst ETF-Käufe aus. Noch nicht profitabel.",
+     "figures": "Q1 Umsatz 200 M (+60%), Bruttomarge 38%, Backlog 2,2 Mrd USD, 88 Starts + 18 gebucht",
+     "tip": "Position im Musterportfolio gehalten; Rücksetzer bis 100 $ willkommen. SpaceX-IPO könnte Momentum geben; nächste Ziele 140 $ +. Ambitionierte Bewertung wegen Rerating-Potential akzeptiert.",
+     "einordnung": "Raumfahrt-Infrastruktur ist echtes Wachstumsfeld, aber Profitabilität noch nicht in Sicht. Backlog-Umsatz-Verhältnis 11x ist außergewöhnlich – zeigt reale Nachfrage. SpaceX-IPO-Effekt wahrscheinlich positiv für den Sektor.",
+     "kategorie": "fundamental",
+     "sec": 1724,
+     "t": "28:44",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=1724s"
+    },
+    {
+     "name": "Nebius",
+     "ticker": "NBIS",
+     "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blackwell Ultra; 20–25 Mrd Capex für 2025–26 erwartet.",
+     "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd",
+     "tip": "Hochbewertet, Capex-Risiken (Secondary, Schulden); aber Internationalisierung aggressiv positiv. Volatilität für Discount-Zertifikate nutzbar; Position halten aber vorsichtig.",
+     "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktueller Bewertung.",
+     "kategorie": "fundamental",
+     "sec": 2080,
+     "t": "34:40",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2080s"
+    },
+    {
+     "name": "Alphabet/Google",
+     "ticker": "GOOGL",
+     "note": "Google-TPUs ab 2028 in Massenproduktion; neue Partnerschaft mit Samsung zur Produktion (Diversifizierung weg von TSMC); parallel Intel-Verhandlungen. Ziel: breitere Lieferkette, schnellere Skalierung, geringeres Lieferkettenrisiko. TPUs ~80% kostengünstiger als Nvidia-GPUs bei vergleichbarer Leistung.",
+     "figures": "TPUs ~80% kostengünstiger vs. Nvidia; KGV 29",
+     "tip": "Gap zugelastet, Ausbruch über alte Trendlinie wichtiges Signal für Aufwärtstrend-Wiederaufnahme. KGV 29 über Markt (S&P, Nasdaq 100), aber Gewinne wachsen schneller. Neue Konkurrenz zu Nvidia positiv.",
+     "einordnung": "Samsung-Partnerschaft ist echter Sieg für Lieferkettenresilienz und senkt Abhängigkeit von TSMC. 80%-Kostenvorteil klingt optimistisch – in der Praxis verschwinden solche Deltas durch Volumen und Yield-Ramp. Dennoch strategisch wertvoll.",
+     "kategorie": "fundamental",
+     "sec": 2613,
+     "t": "43:33",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2613s"
+    },
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "note": "China-Story via Vera-CPUs: Großer chinesischer Cloud-Anbieter plant >300 Server mit Vera-CPUs. CPUs regulatorisch weniger sensibel als GPUs für China-Export. Falls Tests positiv, könnten weitere Hyperscaler folgen. Vera-Umsatz ~20 Mrd bis Jahresende, könnte angehoben werden. KGV ~20 für 2027er Gewinne, PEG 0,46.",
+     "figures": "KGV ~20 (2027er), PEG 0,46, Vera-Umsatz ~20 Mrd bis Jahresende, Unterstützung 200 $",
+     "tip": "Bewertung fundamental günstig; China-Vera-CPU-Kanal sehr spannend. 200-$-Hoch-Unterstützung wichtig. Rücksetzer fundamental nicht nachvollziehbar – Einstiegskurs attraktiv.",
+     "einordnung": "Vera-CPUs sind Regulierungs-Arbitrage: weniger Hardware-Restriktionen als GPUs, reale HPC-Kraft. Wenn China-Tests klappen, ist das für Nvidia 2026–27 ein 20–50-Mrd-Umsatz-Upside. PEG 0,46 ist tatsächlich günstig für den Wachstum.",
+     "kategorie": "fundamental",
+     "sec": 2859,
+     "t": "47:39",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2859s"
+    },
+    {
+     "name": "Adobe",
+     "ticker": "ADBE",
+     "note": "Q2: Umsatz +13%, Gewinn +18%; EPS 5,96 vs. 5,81 erwartet. Annual Recurring Revenue >27 Mrd. KI-Produkte zentraler Treiber, Photoshop-KI-Einsatz. Q3-Guidance: Umsatz 6,7 Mrd (vs. 6,5 Mrd Konsens), EPS 6,05–6,10. CFO-Wechsel angekündigt.",
+     "figures": "Q2 Umsatz +13%, Gewinn +18%, EPS 5,96, ARR >27 Mrd, Q3-Guidance 6,7 Mrd Umsatz, EPS 6,05–6,10",
+     "tip": "Starke Zahlen, aber Kurs −6% vorbörslich. 3J-Abstieg 592 € → 177 €; KGV nun 8 (extrem günstig), PEG 0,7 auch billig. CFO-Exit negatives Signal. Charttechnisch fallend – Vorsicht vor fallendem Messer trotz Bewertung.",
+     "einordnung": "Paradox: Zahlen excellent, CFO weg, Kurs fällt. Das ist oft Warnsignal für verborgene Probleme (KI-Monetarisierung stockt, Churn unter der Oberfläche). KGV 8 ist nur billig, wenn Gewinne nicht erodieren – Vorsicht bei Einstieg.",
+     "kategorie": "fundamental",
+     "sec": 3094,
+     "t": "51:34",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=3094s"
+    },
+    {
+     "name": "CoreWeave",
+     "ticker": "CORZ",
+     "note": "Eintritt in Nasdaq 100 am 22.06. triggert +8% vorbörslich. Seit IPO (33 $ → 187 $) auf ~50% Verlust zurückgekommen. Charttechnisch in Abwärtstrend, ABC-Korrektur, fallende Hochs und Tiefs. Sehr hoher Finanzierungsbedarf.",
+     "figures": "IPO 33 $, Hoch 187 $, aktuell ~100 $ +, heute +8%",
+     "tip": "Charttechnisch abwärts; Finanzierungsrisiken höher als Nebius/Iron. Trotz NVDA-Unterstützung eher meiden – andere Data-Center-Kandidaten besser.",
+     "einordnung": "CoreWeave ist reines Leverage-Play auf Nvidia-Demand, aber mit hoher Finanzierungsabhängigkeit (Capex-intensive Infrastruktur). Der 187-$-Hoch ist unrealistisch; fallende Tiefs deuten auf Struktur-Schwäche hin.",
+     "kategorie": "chartanalyse",
+     "sec": 3513,
+     "t": "58:33",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=3513s"
+    },
+    {
+     "name": "Vertiv Holdings",
+     "ticker": "VRT",
+     "note": "ABC-Korrektur (nicht Trendkiller); testet größere Unterstützung, findet dort sofort Käufer. Charttechnisch: Langfristig stabiler Aufwärtstrend. Stop unter ~80–90 $ sinnvoll; Kursziel ~470 $ (von Retracement 260–370 $ Hoch).",
+     "figures": "Aktuell ~250–260 €, Hoch 370 $, Ziel 470 $, Stop ~80–90 €",
+     "tip": "Guter Einstiegslevel aktuell; Risk ~90 $, Reward ~170 $ (1:2 Ratio). Aggressive Positionen mit enger Absicherung aufbauen, oder Investment mit breiterem Stop.",
+     "einordnung": "Vertiv profitiert direkt von Data-Center-Boom (Kühlung, Stromverteilung), aber ohne die Finanzierungsrisiken von CoreWeave/Nebius. Charttechnisch saubere ABC – Gegenbewegung normal. 1:2 Ratio ist respektabel.",
+     "kategorie": "chartanalyse",
+     "sec": 3513,
+     "t": "58:33",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=3513s"
+    },
+    {
+     "name": "Intel",
+     "ticker": "INTC",
+     "note": "Doppel-Upgrade Bank of America: Kursziel 96 $ → 135 $ angehoben. Begründung: Entlastung Wafer-Kapazitäten, Diversifizierung weg von TSMC, Foundry-Geschäft wächst. Server-Prozessor bis 2030 >40 Mrd erwartet. Konsolidierung über 4 Wochen auf Wochenbasis.",
+     "figures": "Kursziel 135 $ (vs. 96 $ vorher), Server-Prozessor bis 2030 >40 Mrd",
+     "tip": "KGV über 100 bleibt hoch, aber Trend positiv. Ausbruch über letztes Zwischenhoch charttechnisch interessant (Long mit Stop an letzten Tiefs). Foundry-Tests noch kritisch.",
+     "einordnung": "Intel-Rerating basiert auf Hoffnung (IDM-Modell + Foundry gelingt, Capex rentabel). 135-$-Ziel von BofA ist ambitioniert bei KGV >100. Server-Prozessor-Zahl 40 Mrd bis 2030 hängt von AMD-Konkurrenz und TSMC-Lieferkette ab – riskant.",
+     "kategorie": "chartanalyse",
+     "sec": 2326,
+     "t": "38:46",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2326s"
+    }
+   ],
+   "macro": [
+    {
+     "text": "Nahost-Geopolitik: Trump kündigt mögliche Einigung an, Iran fordert aber 300 Mrd $-Wiederaufbau + Sanktionshebung + Hormus-Kontrolle – Deal-Wahrscheinlichkeit niedrig, Risiken bleiben extrem.",
+     "sec": 103,
+     "t": "01:43",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=103s"
+    },
+    {
+     "text": "Ölpreise: Rückgang von 95 $ auf ~83,50 $ auf Hoffnung Nahost-Einigung; aber Lage fragil, Schnellwechsel zu 95 $ + möglich.",
+     "sec": 288,
+     "t": "04:48",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=288s"
+    },
+    {
+     "text": "US-Tech-Sektor: Nasdaq 100 zeigt anomale Volatilität (Inside/Outside-Day-Muster), VIX über 16 trotz Risikobereitschaft – Unsicherheit hoch, Momentum wechselhaft.",
+     "sec": 341,
+     "t": "05:41",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=341s"
+    },
+    {
+     "text": "KI-Infrastruktur-Capex-Boom: Nebius, CoreWeave, Rocket Lab und Oracle zeigen massive Investitionen (20–25 Mrd +); Dilutionsrisiken via Secondary, Anleihen und Prepayments steigen.",
+     "sec": 2177,
+     "t": "36:17",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2177s"
+    },
+    {
+     "text": "China-Regulierung: Nvidia's Vera-CPUs regulatorisch weniger sensibel als GPUs für China-Export; neuer Wachstumskanal könnte sich öffnen, wenn Hyperscaler-Tests positiv.",
+     "sec": 2929,
+     "t": "48:49",
+     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2929s"
+    }
+   ]
+  },
   {
    "channel": "onvista",
    "playlist": "Börse & Märkte LIVE",
@@ -449,6 +833,279 @@
      "text": "Geopolitische Spannungen im Nahen Osten (Iran greift Golfstaaten an) und bevorstehende US-Inflationsdaten (Core Inflation Rate) belasten die Märkte. JP Morgan erwartet bei Inflation über 0,35% einen S&P-Rückgang von 2-3%.",
      "t": "01:20",
      "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=80s"
+    }
+   ]
+  },
+  {
+   "channel": "Euer Egmond",
+   "playlist": "Fundamentalanalyse",
+   "id": "xX8ngYJCStg",
+   "title": "SpaceX, Nvidia, Apple, Meta, Broadcom – Euer Egmond vom 09.06.2026",
+   "date": "20260609",
+   "url": "https://www.youtube.com/watch?v=xX8ngYJCStg",
+   "thumbnail": "https://i.ytimg.com/vi/xX8ngYJCStg/hqdefault.jpg",
+   "summarized_at": "2026-06-13T07:39:24.517993+00:00",
+   "summary": "US-Arbeitsmarktbericht überraschte positiv (172k Jobs), drückt Zinsen auf 10J-US-Anleihen auf 4,55% (+30 BP in 2 Monaten) und führt zu globalem Ausverkauf in Tech und High-Valuation-Werten. Gleichzeitig belastet Broadcoms enttäuschender Q3-Ausblick die Chip-Sektor. Die bevorstehende SpaceX-IPO (75–86 Mrd. USD) zieht Liquidität aus Märkten ab, während Eurozone-BIP überraschend schrumpft und die EZB am Donnerstag 25 BP erhöht.",
+   "items": [
+    {
+     "name": "SpaceX Börsengang",
+     "ticker": null,
+     "note": "IPO in Kürze (Freitag erwartet) mit 75 Mrd. USD Platzierungsvolumen, inklusive Greenshoe bis 86,25 Mrd. USD; Bewertung 1,75–1,8 Billionen USD; 30% Allokation für Privatanleger (ca. 22,5 Mrd. USD); starkes institutionelles Kaufinteresse (10+ Mrd. USD je Institution).",
+     "figures": "Emissionsvolumen 75 Mrd. USD, mit Greenshoe 86,25 Mrd. USD; Bewertung 1,75–1,8 Billionen USD; Privatanleger-Quote 30%",
+     "tip": "Platzierung sollte problemlos erfolgen; Greenshoe 30 Tage gültig; ab Freitag Handel erwartet.",
+     "einordnung": "Mega-IPO mit KI-Satellit-Fokus (Starling) zieht massiv Liquidität aus Märkten – erklärt Teil der Tech-Verkäufe diese Woche. Bei erfolgreicher Notierung Ende der Volatilitäts-Phase zu erwarten.",
+     "kategorie": "news",
+     "sec": 212,
+     "t": "03:32",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=212s"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "note": "Q2 Rekord-Ergebnisse (Umsatz +48%, EBITDA +52%), aber Q3-Prognose enttäuschend: KI/Netzwerk-Umsatz nur 16 Mrd. USD statt 17,2 Mrd. erwartet; Jahresprognose 2025/26 bestätigt, nicht erhöht – belastet Aktie deutlich.",
+     "figures": "Q2: Umsatz +48% auf 22,19 Mrd. USD (Erw. 22,27), KI-Chips/Netzwerk +143% auf 10,8 Mrd. USD, EBITDA +52% auf 15,2 Mrd. USD (Marge 68,7%); Q3 erwartet: 29,4 Mrd. USD Umsatz, KI/Netzwerk 16 Mrd. USD (vs. Erw. 17,2); 2025/26 KI/Netzwerk +180% auf 56 Mrd. USD; 2026/27 >100 Mrd. USD; KGV 20,8, EV/EBIT 16,3x",
+     "tip": "Nach IPO-Phase sollte Beruhigung und Erholung folgen.",
+     "einordnung": "Enttäuschende Forward Guidance bei hohen Bewertungen (KGV 20,8 vs. Nvidia ~14x) ist klassisches sell-the-news-Muster. KI-Satelliten-/Netzwerk-Boom real, aber Erwartungen überambitioniert gewesen. Technisches Verkaufssignal nach IPO-Frenzy.",
+     "kategorie": "fundamental",
+     "sec": 377,
+     "t": "06:17",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=377s"
+    },
+    {
+     "name": "Nvidia",
+     "ticker": "NVDA",
+     "note": "Im Video kurz erwähnt; Broadcom-Vergleich: Nvidia EV/EBIT ~14x vs. Broadcom 16,3x.",
+     "figures": "EV/EBIT ~14x (indirekt aus Broadcom-Vergleich)",
+     "tip": "",
+     "einordnung": "Bessere Bewertung als Broadcom trotz ähnlicher KI-Dynamik – untermauert Chipsektor-Divergenz zwischen Leaders und Folgern.",
+     "kategorie": "fundamental",
+     "sec": 377,
+     "t": "06:17",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=377s"
+    },
+    {
+     "name": "Apple",
+     "ticker": "AAPL",
+     "note": "WWDC mit Fokus auf Siri und KI-Integration; kurzer Kursauftrieb (+1–3%), folgender Rückgang (-3%) da keine überraschenden Features. Host: langfristig positiv, da wenig in KI investiert bisher.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Typisches FOMO-Reversal. Apple weniger exponiert in KI-CapEx-Race als Mega-Peers (Meta, Alphabet) – könnte mittelfristig zur Undervaluation führen, falls KI-Narrative abkühlt. Defensive Qualität in Tech-Sell-off.",
+     "kategorie": "news",
+     "sec": 1119,
+     "t": "18:39",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1119s"
+    },
+    {
+     "name": "Meta Platforms",
+     "ticker": "META",
+     "note": "Gerüchte über mögliche Kapitalerhöhung (ca. 10 Mrd. USD) für KI-Infrastruktur nach Alphabets 80-Mrd.-Ankündigung; Aktie kurzfristig belastet.",
+     "figures": "Gerüchte ~10 Mrd. USD Kapitalerhöhung; Alphabet kündigte 80 Mrd. USD an",
+     "tip": "Host beobachtet Free-Cashflow-Entwicklung der Big-4-Techs (Alphabet, Amazon, Meta, Microsoft) – kritischer Faktor für Bewertungen.",
+     "einordnung": "Meta wird in KI-CapEx-Rennen hineingezogen, nachdem Zuckerberg lange konservativer agiert. Liquiditäts-Bedenken ungerechtfertigt (starke FCF), aber Margin-Druck real. Amazon/Microsoft ebenfalls unter Druck.",
+     "kategorie": "news",
+     "sec": 949,
+     "t": "15:49",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=949s"
+    },
+    {
+     "name": "Munich Re",
+     "ticker": "MUV2.DE",
+     "note": "Q1: Umsatz schwach (-5% auf 15,0 Mrd. EUR vs. Erw. 16,0), operatives Ergebnis stark (+52% auf 2,23 Mrd. EUR) durch niedrige Großschäden; Schaden-Kostenquote 66,8% (Erw. 74,6%); Gewinn +56,7% auf 1,7 Mrd. EUR. Kritisch: April-Erneuerung mit 3,1% Preissenkung und 18,5% Volumen-Rückgang; Juli-Erneuerung entscheidend.",
+     "figures": "Q1: Umsatz -5% auf 15,0 Mrd. EUR (Erw. 16,0); Op. Gewinn +52% auf 2,23 Mrd. EUR (Erw. 2,35); Schaden-Kostenquote 66,8% (Erw. 74,6%); Gewinn +56,7% auf 1,7 Mrd. EUR; Jan-Erneuerung: Volumen -7,8% auf 13,7 Mrd. EUR; Jahresprognose 2026: 64 Mrd. EUR Umsatz, 6,3 Mrd. EUR Gewinn; KGV 8,6",
+     "tip": "Kurzfristig seitwärts; Juli-Erneuerung kritisch; Zinsanstieg belastet Anleihenportfolio.",
+     "einordnung": "Günstiges KGV (8,6) spricht für Value, aber Volumen-Rückgänge in April/Januar sowie Druck auf Prämien-Wachstum warnen vor Margin-Erosion. Zinserhöhungen könnten Bewertungen am Markt stützen (höhere Discounted-Cashflows), aber operative Dynamik schwächer. Seitwärts-Haltung berechtigt.",
+     "kategorie": "fundamental",
+     "sec": 2007,
+     "t": "33:27",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=2007s"
+    },
+    {
+     "name": "Tower Semiconductor",
+     "ticker": "TSEM",
+     "note": "Israelischer Halbleiter-Auftragsferiger; profitiert von KI-Boom und Großaufträgen.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Im Video nur kurz erwähnt ohne Detailandlys. TSEM als Foundry-Play vom KI-CapEx-Boom profitierend, aber weniger direkt exponiert als Broadcom/NVDA.",
+     "kategorie": "sonstiges",
+     "sec": 1690,
+     "t": "28:10",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1690s"
+    },
+    {
+     "name": "Ormat Technologies",
+     "ticker": "ORA",
+     "note": "US-Geothermie- und Energiespeicher-Betreiber; profitiert von Stromhunger der KI-Rechenzentren, belastet durch Ölpreis-Abhängigkeit.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Im Video nur kurz erwähnt. Grüner Infrastruktur-Play mit echtem Demand-Katalysator (KI-Datenzentren brauchen stabile Stromversorgung), aber die Geothermie-Marginalität und Öl-Korrelation (falls Rohstoffe fallen) sind Risiken.",
+     "kategorie": "sonstiges",
+     "sec": 1706,
+     "t": "28:26",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1706s"
+    },
+    {
+     "name": "S&P 500",
+     "ticker": "^GSPC",
+     "note": "Deutliche Volatilität durch Broadcom-Enttäuschung und SpaceX-IPO-Liquiditätsbedarf; kurzfristig turbulent, aber kein großer Crash erwartet. SpaceX selbst wird nicht in S&P 500 aufgenommen (Indexkriterien nicht erfüllt).",
+     "figures": "~1% Rückgang in der Woche; Börsenwert-Vernichtung ca. 700 Mrd. USD bei 1% Verlust",
+     "tip": "Kurzfristig seitwärts unter Volatilität; ab IPO-Ende (ca. Freitag) Beruhigung erwartet.",
+     "einordnung": "Zinsanstieg (10J-US 4,55%) ist Hauptbelastung für US-Techs; SpaceX-IPO verstärkt temporär Druck. Charttechnisch noch keine echten Bruchmarken gerissen, aber 4,65% Zinsen (52W-Hoch) würde erhebliche weitere Belastung bringen.",
+     "kategorie": "chartanalyse",
+     "sec": 1588,
+     "t": "26:28",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1588s"
+    },
+    {
+     "name": "DAX",
+     "ticker": "^GDAXI",
+     "note": "Rückgang 1,5% Wochenverlauf durch Zinsanstieg und US-Tech-Verkäufe; unter Druck, aber nicht dramatisch.",
+     "figures": "Wochenverlauf -1,5%",
+     "tip": "Kurzfristig seitwärts.",
+     "einordnung": "DAX-Schwäche ist konjunkturbedingt (Eurozone-Schrumpfung Q1, EZB-Straffung) plus US-Zinseffekt. Weniger durch SpaceX-IPO getrieben als US-Indizes, da keine FAANG-Abhängigkeit.",
+     "kategorie": "chartanalyse",
+     "sec": 1727,
+     "t": "28:47",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1727s"
+    },
+    {
+     "name": "Gold",
+     "ticker": "GC=F",
+     "note": "Starker Ausverkauf trotz minimaler Zinserhöhung deutet auf Liquiditätsbedarf für SpaceX-IPO; Abwärtstrend etabliert. Gold fiel von 1513 USD nach Datenpublikation deutlich.",
+     "figures": "Rückgang von 1513 USD (15:30 Uhr) nach Arbeitsmarktdaten",
+     "tip": "Abwärtsdruck bleibt; Richtung 4200–4000 USD möglich (Anm.: wahrscheinlich 1420–1400 USD gemeint); Bodenbildung beobachten.",
+     "einordnung": "Gold-Sell-off bei steigenden Realzinsen (nominale Zinsen +30 BP, aber Inflation sinkt) logisch, aber Magnitude deutet auf Liquiditätszwang von Fonds/Investoren für IPO-Allokation. Technischer Break unter Support-Niveaus könnte Cascading-Verkäufe auslösen.",
+     "kategorie": "chartanalyse",
+     "sec": 1757,
+     "t": "29:17",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1757s"
+    },
+    {
+     "name": "Bitcoin",
+     "ticker": "BTC-USD",
+     "note": "Wochentief erreicht; Verkäufe für Liquidität ähnlich wie Gold; Abwärtstrend etabliert.",
+     "figures": "",
+     "tip": "Abwärts; Vorsicht geboten.",
+     "einordnung": "BTC als Liquidity-Buffer in Krisenzeiten verkauft – klassisches Risiko-Off-Zeichen. Zinsanstieg und IPO-Liquiditätsbedarf drücken Risk-Assets generell. Charttechnischer Breakout-Versuch gescheitert.",
+     "kategorie": "chartanalyse",
+     "sec": 1876,
+     "t": "31:16",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1876s"
+    },
+    {
+     "name": "EUR/USD",
+     "ticker": "EURUSD=X",
+     "note": "Euro gab 0,6% nach; Zinsanstieg USA stützt Dollar leicht, belastet Euro durch Zins-Divergenz.",
+     "figures": "Rückgang -0,6%",
+     "tip": "Seitwärts erwartet.",
+     "einordnung": "Typische Divergenz: Fed ggü. EZB straffet, USD profitiert. Aber europäische Inflation (3,2% Mai) zwingt auch EZB zu Erhöhungen – Zins-Differential bleibt eher eng. EUR/USD sollte Bewegung stabilisieren.",
+     "kategorie": "chartanalyse",
+     "sec": 1504,
+     "t": "25:04",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1504s"
+    },
+    {
+     "name": "WTI-Öl",
+     "ticker": "CL=F",
+     "note": "Ölpreis unter Druck durch Trumps Rhetorik über Waffenstillstand Iran-Israel und Entspannungs-Gerüchte; kein fundamentaler Grund, da Versorgungsknappheit anhält.",
+     "figures": "Rückgang -2,4% heute, -4,6% Wochenverlauf",
+     "tip": "Abwärtsdruck bleibt; Richtung 80–82 USD oder darunter möglich.",
+     "einordnung": "Narrative-gedriven Sell-off trotz struktureller Knappheit (Georisiken, OPEC+ Disziplin). Trump-Tweets zur Deeskalation schaffen False-Hope. Bei echtem Waffenstillstand könnte Test von 75–70 USD folgen, aber real-world Risiko niedrig. Technischer Bruch unter Support erwartet.",
+     "kategorie": "chartanalyse",
+     "sec": 1558,
+     "t": "25:58",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1558s"
+    },
+    {
+     "name": "Zinsen 10J-US-Anleihen",
+     "ticker": "^TNX",
+     "note": "Starker Arbeitsmarktbericht drückte Zinsen nach oben; weitere Hausverkäufe möglich; Risiko: 52-Wochen-Hoch 4,65%.",
+     "figures": "Aktuell 4,55%, 52-Wochen-Hoch 4,65%, Anstieg ~30 BP in 2 Monaten",
+     "tip": "Genaue Beobachtung erforderlich; bei 4,65% erhebliche Belastung für US-Tech-Bewertungen.",
+     "einordnung": "30-BP-Anstieg in 2 Monaten ist aggressiv und basiert auf Arbeitsmarkt-Überraschungen, nicht Inflation (CPI eher stabil bis fallend). Bei Erreichen von 4,65% drohen Tech-Drawdowns von weiteren 5–10%, da Terminal-Rate-Ängste zurückkehren würden.",
+     "kategorie": "makro",
+     "sec": 1429,
+     "t": "23:49",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1429s"
+    },
+    {
+     "name": "US-Inflationserwartungen (5Y)",
+     "ticker": null,
+     "note": "Inflationserwartungen sinken deutlich durch Ölpreisrückgang und Datenüberraschung.",
+     "figures": "5-Jahres-Inflationserwartung: von 2,70% auf 2,47%",
+     "tip": "Powell-Sitzung 17. Juni sollte etwas erleichterter ausfallen.",
+     "einordnung": "Fallende Inflationserwartungen trotz starken Arbeitsmarktes etwas beruhigend für Fed-Szenario, deuten aber auch auf Rezessionsängste (Disinflation = Schwäche). Host erwartet keine Rate-Hike im Juni – dürfte zutreffen.",
+     "kategorie": "makro",
+     "sec": 1399,
+     "t": "23:19",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1399s"
+    },
+    {
+     "name": "Marvell Technology",
+     "ticker": "MRVL",
+     "note": "Ungenannt in Video-Kontext, aber in Zuschauerfragen: +33% Anstieg in 1 Tag, Börsenkapitalisierung erreichte 270 Mrd. USD (+ca. 90 Mrd. USD in 1 Tag). Host wertet als Spekulationsbubble.",
+     "figures": "Anstieg +33% in 1 Tag; Börsenwert 270 Mrd. USD (+~90 Mrd. USD intraday)",
+     "tip": "",
+     "einordnung": "Klassisches Bubble-Signal: 90-Mrd.-USD-Wertschöpfung ohne News in 1 Tag ist pure Spekulation/Momentum. Marvell ist relevanter Chipdesigner für KI, aber 33%-Tagesgewinne sind unsustainabel. Technischer Sell-Off folgt wahrscheinlich.",
+     "kategorie": "chartanalyse",
+     "sec": 2338,
+     "t": "38:58",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=2338s"
+    },
+    {
+     "name": "Tesla/SpaceX-Beteiligung",
+     "ticker": "TSLA",
+     "note": "Zuschauerfrage: Hat Tesla 30% von SpaceX? Host: Nein, Tesla/Elon hat weniger als 1% Beteiligung, eher ~0,16–1%. Wahrscheinlich Verwechslung mit Privatanleger-Allokation (30%).",
+     "figures": "Tesla-Beteiligung SpaceX: ~0,16–1% (nicht 30%)",
+     "tip": "",
+     "einordnung": "Verbreitete Fehlkalkulation im Publikum. Elon hat Tesla, SpaceX und Neuralink getrennt, keine 30%-Beteiligung zwischen ihnen. Irrelevant für SpaceX-IPO-Dynamik.",
+     "kategorie": "sonstiges",
+     "sec": 2338,
+     "t": "38:58",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=2338s"
+    },
+    {
+     "name": "US-Handelsbeauftragter: Strafzölle",
+     "ticker": null,
+     "note": "Nach gescheiterten Strafzöllen vor Gericht versucht Handelsbeauftragter andere Rechtsgrundlagen (Zwangsarbeit); vorgeschlagene Zölle 10–12,5%.",
+     "figures": "Vorgeschlagene Strafzölle: 10–12,5%, Begründung: Zwangsarbeit",
+     "tip": "",
+     "einordnung": "Zoll-Saga dauert an. Trump-Administration sucht Umgehungswege, nachdem Vorherige rechtlich anfechtbar waren. Geopolitisches Risiko bleibt, aber Umsetzung unsicher.",
+     "kategorie": "news",
+     "sec": 274,
+     "t": "04:34",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=274s"
+    }
+   ],
+   "macro": [
+    {
+     "text": "US-Arbeitsmarktbericht überraschend stark (172k jobs vs. 75k erw.), treibt 10J-US-Zinsen auf 4,55% (+30 BP in 2 Monaten); globale High-Valuation-Aktien unter Druck, aber Jobsqualität fragwürdig (70k in Freizeit/Gastgewerbe, 52k in Kommunen – temporär).",
+     "sec": 790,
+     "t": "13:10",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=790s"
+    },
+    {
+     "text": "Eurozone-BIP kontrahiert überraschend (-0,2% vs. +0,1% erw.); widerlegt EZB-Lagarde-Optimismus zu Konjunktur. EZB erhöht am Donnerstag 25 BP; Inflation 3,2% (Mai, höchst seit Sept. 2023).",
+     "sec": 751,
+     "t": "12:31",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=751s"
+    },
+    {
+     "text": "US-Inflationserwartungen (5Y) sinken auf 2,47% (von 2,70%) durch Ölpreisrückgang; Powell-Sitzung 17. Juni sollte weniger streng werden, aber Terminal-Rate-Risiko bleibt bei Zins-Festigung.",
+     "sec": 1399,
+     "t": "23:19",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1399s"
+    },
+    {
+     "text": "SpaceX-IPO (75–86 Mrd. USD Volumen, Freitag) zieht massive Liquidität aus Märkten – erklärt Verkäufe in US-Techs, Gold, Bitcoin; Volatilität sollte abklingen nach Notierung.",
+     "sec": 212,
+     "t": "03:32",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=212s"
+    },
+    {
+     "text": "Trump-Rhetorik zu Iran-Israel-Waffenstillstand drückt Ölpreise trotz geopolitischer Risiken (-4,6% Woche); fundamentale Knappheit bleibt, aber Narrative-Sell-off dominant.",
+     "sec": 1056,
+     "t": "17:36",
+     "tlink": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1056s"
     }
    ]
   },
