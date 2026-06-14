@@ -183,6 +183,26 @@
   .wlc .rm{position:absolute;top:8px;right:8px;width:24px;height:24px;border:none;background:var(--chip);color:var(--muted);border-radius:50%;font-size:14px;cursor:pointer;line-height:1;opacity:0;transition:opacity .15s}
   .wlc:hover .rm{opacity:1}
   .wlempty{color:var(--muted);font-size:14px}
+  /* --- Video-Kalender + Themen-Expand (ADR-020/021) --- */
+  .vidnote{font-size:12.5px;color:var(--muted);margin:2px 0 12px}
+  .vthumb{width:100%;max-height:200px;object-fit:cover;border-radius:14px;border:1px solid var(--line);margin:2px 0 10px}
+  .vtick{font-size:11px;font-weight:700;color:var(--accent);background:rgba(10,132,255,.12);border-radius:7px;padding:2px 7px;margin-left:6px;vertical-align:middle}
+  .vkat{font-size:10.5px;font-weight:700;border-radius:7px;padding:2px 7px;margin-left:6px;vertical-align:middle;text-transform:uppercase;letter-spacing:.03em}
+  .vkat-chartanalyse{color:#7d4cff;background:rgba(125,76,255,.13)}
+  .vkat-fundamental{color:#0a7d4f;background:rgba(10,164,108,.14)}
+  .vkat-news{color:#0a84ff;background:rgba(10,132,255,.12)}
+  .vkat-makro{color:#9a6200;background:#fff0d6}
+  .vkat-sonstiges{color:var(--muted);background:var(--chip)}
+  [data-theme="dark"] .vkat-fundamental{color:#86e0ab}[data-theme="dark"] .vkat-makro{color:#ffcf70;background:rgba(255,159,10,.15)}
+  .vexpand{margin-top:8px;border:1px solid var(--line);background:var(--card);color:var(--accent);font-size:12.5px;font-weight:600;border-radius:999px;padding:5px 12px;cursor:pointer;font-family:inherit}
+  .vexpand:hover{background:rgba(10,132,255,.08)}
+  .vdetail{margin-top:10px;padding:12px 14px;background:var(--chip);border-radius:12px}
+  .vdetail.hidden{display:none}
+  .vdetailtext p{font-size:14px;margin:0 0 8px;line-height:1.6}.vdetailtext p:last-child{margin-bottom:0}
+  .vrefs{margin-top:10px;border-top:1px solid var(--line);padding-top:8px}
+  .vrefslbl{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+  .vref{display:flex;gap:8px;font-size:13px;color:var(--ink);padding:3px 0;align-items:baseline}
+  .vrefico{flex:0 0 auto}.vreftxt a{color:var(--accent);text-decoration:none}.vreftxt a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -221,7 +241,9 @@
   <div class="sec"><h2>Analysen &amp; Tools</h2></div>
   <div class="ph"><h3>Aktienanalysen</h3><p>Eigene Unterseite für tiefere Einzelwert-Analysen.</p><span class="soon">in Arbeit</span></div>
   <div class="sec"><h2>Video-Briefings</h2></div>
-  <div id="videoBriefings"></div>
+  <div class="filterbar" id="vidModeBar" style="margin-top:8px"><button class="fpill on" data-vm="latest">Aktuell</button><button class="fpill" data-vm="cal">Kalender</button></div>
+  <div class="cal hidden" id="vidCal" style="margin-top:10px"><button class="navbtn" id="vidPrev">‹</button><div class="dateBtn" id="vidDateBtn"><span id="vidDateLabel">…</span><span style="opacity:.5">▾</span></div><button class="navbtn" id="vidNext">›</button><div class="calpop" id="vidCalpop"></div></div>
+  <div id="videoBriefings" style="margin-top:14px"></div>
   <div class="sec"><h2>Meine Watchlist</h2></div>
   <p style="color:var(--muted);font-size:13px;margin:0 0 12px">Lokal in deinem Browser gespeichert – jeder Besucher hat seine eigene. Symbole wie AAPL, NVDA, SAP.DE eingeben, oder einen TradingView-Export (NASDAQ:AAPL, …) einfügen. Live-Kurse über Yahoo.</p>
   <div class="wlbar"><input id="wlInput" placeholder="Symbol(e) hinzufügen, z. B. AAPL, NVDA, SAP.DE"><button id="wlAdd">Hinzufügen</button></div>
@@ -315,6 +337,7 @@ const DEMO={
  reads:[{s:"Bloomberg Opinion",h:"Warum Chip-Nationalismus die Margen frisst",u:"#"},{s:"Chart-Schule",h:"Formation des Tages: Schulter-Kopf-Schulter",u:"#"}]}
 };
 let DATA={},order=[],labels={},current=null,calView=new Date(),DEMOMODE=false,allLoaded=false,MARKET=null,filterPrio=0,VIDEOS=null,IDEAS=null,FGDATA=null,FGHIST=null;
+let VIDIDX=null,VIDDAYS=[],vidCurrent=null,vidCalView=new Date(),vidMode='latest',VIDDAY={},VIDLABELS={};
 function mkt(){return (!DEMOMODE && MARKET && MARKET.indices)?MARKET:(DATA[current]||{})}
 
 function isDark(){return document.documentElement.dataset.theme==='dark'}
@@ -330,9 +353,10 @@ async function boot(){
   catch(e){DEMOMODE=true;DATA=DEMO;order=Object.keys(DEMO).sort().reverse();order.forEach(d=>labels[d]=DEMO[d].label);current=order[0];document.getElementById('banner').classList.remove('hidden')}
   try{const mr=await fetch('data/market.json',{cache:'no-store'});if(mr.ok)MARKET=await mr.json()}catch(e){}
   try{const vr=await fetch('data/videos.json',{cache:'no-store'});if(vr.ok)VIDEOS=await vr.json()}catch(e){}
+  try{const vir=await fetch('data/videos-index.json',{cache:'no-store'});if(vir.ok)VIDIDX=await vir.json()}catch(e){}
   try{const ir=await fetch('data/ideas.json',{cache:'no-store'});if(ir.ok)IDEAS=await ir.json()}catch(e){}
   if(MARKET&&MARKET.feargreed)FGDATA=MARKET.feargreed;
-  calView=new Date(current);render();renderVideos();renderIdeas();loadFG()
+  calView=new Date(current);render();initVideos();renderIdeas();loadFG()
 }
 async function go(date){current=date;calView=new Date(date);if(!DEMOMODE){try{await loadDay(date)}catch(e){}}render()}
 function shift(s){const i=order.indexOf(current)+s;if(i>=0&&i<order.length)go(order[i])}
@@ -347,7 +371,91 @@ function topics(){const day=DATA[current];const s=[...(day.topics||[])].sort((a,
 function reads(){const day=DATA[current];document.getElementById('reads').innerHTML=(day.reads||[]).map(r=>`<a class="read" href="${r.u||'#'}" target="_blank" rel="noopener"><div class="s">${r.s||''}</div><div class="h">${r.h||''}</div></a>`).join('')}
 function vdate(d){return (d&&d.length>=8)?d.slice(6,8)+'.'+d.slice(4,6)+'.'+d.slice(0,4):''}
 function renderIdeas(){const el=document.getElementById('ideaList');if(!el)return;const ideas=(IDEAS&&IDEAS.ideas)||[];if(!ideas.length){el.innerHTML='<div class="ph"><p style="color:var(--muted)">Noch keine Ideen – erscheinen nach dem nächsten Lauf.</p></div>';return}const d=(IDEAS&&IDEAS.date)?vdate(String(IDEAS.date).replace(/-/g,'')):'';el.innerHTML=(d?`<div style="font-size:12.5px;color:var(--muted);margin:0 0 12px">Stand: ${d} · wird täglich neu erzeugt</div>`:'')+ideas.map(i=>`<div class="vcard"><div class="vh"><span class="ibadge">${i.angle||'Idee'}</span>${i.source_url?`<a class="tlink" style="margin-left:auto" href="${i.source_url}" target="_blank" rel="noopener">Quelle ↗</a>`:''}</div><div class="vtitle">${i.title}</div><p class="vsum">${i.thesis||''}</p>${(i.values&&i.values.length)?`<div class="ivals">${i.values.map(v=>`<span class="ival">${v}</span>`).join('')}</div>`:''}${i.risk?`<div class="vfig"><b>Risiko:</b> ${i.risk}</div>`:''}${i.source?`<div style="font-size:12px;color:var(--muted);margin-top:6px">Basis: ${i.source}</div>`:''}</div>`).join('')}
-function renderVideos(){const el=document.getElementById('videoBriefings');if(!el)return;const vids=(VIDEOS&&VIDEOS.videos)||[];if(!vids.length){el.innerHTML='<div class="ph"><p style="color:var(--muted)">Noch keine Video-Briefings – erscheinen nach dem nächsten Lauf.</p></div>';return}el.innerHTML=vids.map(v=>{const items=v.items||v.stocks||[];const macro=v.macro||v.highlights||[];return `<div class="vcard"><div class="vh"><span class="vbadge">${v.channel}${v.playlist?' · '+v.playlist:''}</span><span class="vdate">${vdate(v.date)}</span></div><a class="vtitle" href="${v.url}" target="_blank" rel="noopener">${v.title} ↗</a><p class="vsum">${v.summary||''}</p>${items.length?`<div class="vlabel">Besprochen</div>${items.map(st=>`<div class="vstock"><div class="vstop"><span class="nm">${st.name}</span>${st.tlink?`<a class="tlink" href="${st.tlink}" target="_blank" rel="noopener">▶ ${st.t}</a>`:''}</div>${st.note?`<span class="nt">${st.note}</span>`:''}${st.figures?`<div class="vfig"><b>Zahlen:</b> ${st.figures}</div>`:''}${st.tip?`<div class="vtip"><b>Tipp:</b> ${st.tip}</div>`:''}</div>`).join('')}`:''}${macro.length?`<div class="vlabel">Marktumfeld &amp; Makro</div>${macro.map(mo=>`<div class="vhi">${mo.text||''} ${mo.tlink?`<a class="tlink" href="${mo.tlink}" target="_blank" rel="noopener">▶ ${mo.t}</a>`:''}</div>`).join('')}`:''}</div>`}).join('')}
+// --- Video-Briefings: Teil A (neuste je Kanal) + B (Kalender) + C (ausklappbare Themen) ---
+const VCHAN_ORDER=['onvista','euer egmond','deraktionär','calling usa','rendezvous mit harry'];
+function vchanRank(ch){const c=(ch||'').toLowerCase().trim();for(let i=0;i<VCHAN_ORDER.length;i++){const k=VCHAN_ORDER[i];if(c===k||c.startsWith(k)||c.includes(k)||k.includes(c))return i}return VCHAN_ORDER.length}
+const VKAT=['chartanalyse','fundamental','news','makro','sonstiges'];
+const VKATLBL={chartanalyse:'Chartanalyse',fundamental:'Fundamental',news:'News',makro:'Makro',sonstiges:'Sonstiges'};
+function vkatRank(k){const i=VKAT.indexOf((k||'').toLowerCase());return i<0?VKAT.length:i}
+function vidNiceLabel(iso){try{return new Date(iso+'T00:00:00').toLocaleDateString('de-DE',{weekday:'long',day:'2-digit',month:'2-digit',year:'numeric'})}catch(e){return iso}}
+function vParas(t){return String(t).split(/\n{2,}/).map(p=>`<p>${p.replace(/\n/g,'<br>')}</p>`).join('')}
+function vRefHTML(r){const icon=r.typ==='news'?'📰':'🎬';const q=r.quelle||(r.typ==='news'?'News':'Video');const txt=r.url?`<a href="${r.url}" target="_blank" rel="noopener">${q}</a>`:q;return `<div class="vref"><span class="vrefico">${icon}</span><span class="vreftxt"><b>${txt}</b>${r.bezug?' — '+r.bezug:''}</span></div>`}
+function vItemHTML(st){
+  const kat=(st.kategorie||'').toLowerCase();
+  const katBadge=VKATLBL[kat]?`<span class="vkat vkat-${kat}">${VKATLBL[kat]}</span>`:'';
+  const tickerBadge=st.ticker?`<span class="vtick">${st.ticker}</span>`:'';
+  const deeplink=st.tlink?`<a class="tlink" href="${st.tlink}" target="_blank" rel="noopener">▶ ${st.t||'Stelle'}</a>`:'';
+  const detail=(st.detail||'').trim();
+  const refs=Array.isArray(st.cross_refs)?st.cross_refs.filter(r=>r&&(r.bezug||r.quelle||r.url)):[];
+  const hasExpand=!!detail||refs.length;
+  const head=`<div class="vstop"><span class="nm">${st.name||''}${tickerBadge}${katBadge}</span>${deeplink}</div>`;
+  const short=`${st.note?`<span class="nt">${st.note}</span>`:''}${st.figures?`<div class="vfig"><b>Zahlen:</b> ${st.figures}</div>`:''}${st.tip?`<div class="vtip"><b>Tipp:</b> ${st.tip}</div>`:''}${st.einordnung?`<div class="einord">→ ${st.einordnung}</div>`:''}`;
+  let expand='';
+  if(hasExpand){
+    const detailHtml=detail?`<div class="vdetailtext">${vParas(detail)}</div>`:'';
+    const refsHtml=refs.length?`<div class="vrefs"><div class="vrefslbl">Querverweise</div>${refs.map(vRefHTML).join('')}</div>`:'';
+    expand=`<button type="button" class="vexpand">Tiefer einordnen ▾</button><div class="vdetail hidden">${detailHtml}${refsHtml}</div>`;
+  }
+  return `<div class="vstock${hasExpand?' hasdetail':''}">${head}${short}${expand}</div>`;
+}
+function vCardHTML(v){
+  const items=(v.items||v.stocks||[]).slice().sort((a,b)=>vkatRank(a.kategorie)-vkatRank(b.kategorie));
+  const macro=v.macro||v.highlights||[];
+  const thumb=v.thumbnail?`<img class="vthumb" src="${v.thumbnail}" alt="" loading="lazy">`:'';
+  return `<div class="vcard"><div class="vh"><span class="vbadge">${v.channel}${v.playlist?' · '+v.playlist:''}</span><span class="vdate">${vdate(v.date)}</span></div><a class="vtitle" href="${v.url}" target="_blank" rel="noopener">${v.title} ↗</a>${thumb}<p class="vsum">${v.summary||''}</p>${items.length?`<div class="vlabel">Besprochen</div>${items.map(vItemHTML).join('')}`:''}${macro.length?`<div class="vlabel">Marktumfeld &amp; Makro</div>${macro.map(mo=>`<div class="vhi">${mo.text||''} ${mo.tlink?`<a class="tlink" href="${mo.tlink}" target="_blank" rel="noopener">▶ ${mo.t}</a>`:''}</div>`).join('')}`:''}</div>`;
+}
+function wireVidCards(el){el.querySelectorAll('.vexpand').forEach(btn=>{btn.onclick=e=>{e.stopPropagation();const d=btn.nextElementSibling;if(!d)return;const nowHidden=d.classList.toggle('hidden');btn.textContent=nowHidden?'Tiefer einordnen ▾':'Weniger ▴'}})}
+function renderVidCards(vids,note,emptyMsg){const el=document.getElementById('videoBriefings');if(!el)return;if(!vids||!vids.length){el.innerHTML=`<div class="ph"><p style="color:var(--muted)">${emptyMsg||'Keine Video-Briefings.'}</p></div>`;return}el.innerHTML=(note?`<div class="vidnote">${note}</div>`:'')+vids.map(vCardHTML).join('');wireVidCards(el)}
+function vChannelLatest(){const vids=(VIDEOS&&VIDEOS.videos)||[];const byCh={};vids.forEach(v=>{const ch=v.channel||'?';if(!byCh[ch]||String(v.date)>String(byCh[ch].date))byCh[ch]=v});return Object.values(byCh).sort((a,b)=>vchanRank(a.channel)-vchanRank(b.channel)||String(b.date).localeCompare(String(a.date)))}
+function renderVideosLatest(){renderVidCards(vChannelLatest(),'Neuste Analyse je Kanal.','Noch keine Video-Briefings – erscheinen nach dem nächsten Lauf.')}
+async function vidLoadDay(iso){
+  if(VIDDAY[iso])return VIDDAY[iso];
+  if(VIDIDX){try{const r=await fetch('data/videos/'+iso+'.json',{cache:'no-store'});if(r.ok){const d=await r.json();VIDDAY[iso]=d.videos||[];return VIDDAY[iso]}}catch(e){}}
+  const ymd=iso.replace(/-/g,'');VIDDAY[iso]=((VIDEOS&&VIDEOS.videos)||[]).filter(v=>String(v.date)===ymd);return VIDDAY[iso];
+}
+function buildVidDays(){
+  const map={};
+  if(VIDIDX&&Array.isArray(VIDIDX.tage)&&VIDIDX.tage.length){
+    VIDIDX.tage.forEach(t=>{if(!t||!t.date)return;map[t.date]={date:t.date,label:t.label||'',count:t.count||0,channels:t.channels||[]}});
+  }else{
+    ((VIDEOS&&VIDEOS.videos)||[]).forEach(v=>{const ymd=String(v.date||'');if(ymd.length<8)return;const iso=ymd.slice(0,4)+'-'+ymd.slice(4,6)+'-'+ymd.slice(6,8);if(!map[iso])map[iso]={date:iso,label:'',count:0,channels:[]};map[iso].count++;if(v.channel&&!map[iso].channels.includes(v.channel))map[iso].channels.push(v.channel)});
+  }
+  VIDDAYS=Object.values(map).sort((a,b)=>a.date<b.date?1:-1);
+  VIDLABELS={};VIDDAYS.forEach(d=>VIDLABELS[d.date]=d.label||vidNiceLabel(d.date));
+  if(!vidCurrent||!map[vidCurrent])vidCurrent=VIDDAYS.length?VIDDAYS[0].date:null;
+}
+function renderVidCal(){
+  const pop=document.getElementById('vidCalpop');if(!pop)return;const y=vidCalView.getFullYear(),m=vidCalView.getMonth();
+  const dayMap={};VIDDAYS.forEach(d=>dayMap[d.date]=d);
+  let h=`<div class="calhead"><button id="vcprev">‹</button><span class="m">${MON[m]} ${y}</span><button id="vcnext">›</button></div><div class="calgrid">`;
+  ["Mo","Di","Mi","Do","Fr","Sa","So"].forEach(d=>h+=`<div class="wd">${d}</div>`);
+  let first=new Date(y,m,1).getDay();first=(first+6)%7;for(let i=0;i<first;i++)h+='<div class="day"></div>';
+  const dim=new Date(y,m+1,0).getDate();
+  for(let d=1;d<=dim;d++){const ds=`${y}-${String(m+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;const info=dayMap[ds];const has=info?'has':'';const sel=ds===vidCurrent?'sel':'';const tip=info?` title="${info.count} Video${info.count===1?'':'s'}${info.channels&&info.channels.length?' · '+info.channels.join(', '):''}"`:'';h+=`<div class="day ${has} ${sel}" data-d="${ds}"${tip}>${d}</div>`}
+  h+='</div>';pop.innerHTML=h;
+  document.getElementById('vcprev').onclick=e=>{e.stopPropagation();vidCalView=new Date(y,m-1,1);renderVidCal()};
+  document.getElementById('vcnext').onclick=e=>{e.stopPropagation();vidCalView=new Date(y,m+1,1);renderVidCal()};
+  pop.querySelectorAll('.day.has').forEach(el=>el.onclick=e=>{e.stopPropagation();pop.classList.remove('open');vidGo(el.dataset.d)});
+}
+async function vidGo(iso){if(!iso)return;vidCurrent=iso;vidCalView=new Date(iso+'T00:00:00');const lbl=document.getElementById('vidDateLabel');if(lbl)lbl.textContent=VIDLABELS[iso]||vidNiceLabel(iso);const vids=await vidLoadDay(iso);renderVidCards(vids,'',(VIDIDX?'Keine Video-Briefings an diesem Tag.':'Tagesarchiv folgt nach dem nächsten Backend-Lauf.'))}
+function vidShift(s){const i=VIDDAYS.findIndex(d=>d.date===vidCurrent)+s;if(i>=0&&i<VIDDAYS.length)vidGo(VIDDAYS[i].date)}
+function setVidMode(m){
+  vidMode=m;document.querySelectorAll('#vidModeBar .fpill').forEach(b=>b.classList.toggle('on',b.dataset.vm===m));
+  const cal=document.getElementById('vidCal');
+  if(m==='cal'){
+    if(!VIDDAYS.length){if(cal)cal.classList.add('hidden');renderVidCards([],'',(VIDEOS&&VIDEOS.videos&&VIDEOS.videos.length)?'Kalender noch nicht verfügbar – Tagesarchiv folgt nach dem nächsten Backend-Lauf.':'Noch keine Video-Briefings.');return}
+    if(cal)cal.classList.remove('hidden');vidGo(vidCurrent);
+  }else{if(cal)cal.classList.add('hidden');renderVideosLatest()}
+}
+function initVideos(){
+  buildVidDays();
+  document.querySelectorAll('#vidModeBar .fpill').forEach(b=>b.onclick=()=>setVidMode(b.dataset.vm));
+  const db=document.getElementById('vidDateBtn');if(db)db.onclick=e=>{e.stopPropagation();const p=document.getElementById('vidCalpop');p.classList.toggle('open');if(p.classList.contains('open'))renderVidCal()};
+  const vp=document.getElementById('vidPrev'),vn=document.getElementById('vidNext');if(vp)vp.onclick=()=>vidShift(1);if(vn)vn.onclick=()=>vidShift(-1);
+  document.addEventListener('click',()=>{const p=document.getElementById('vidCalpop');if(p)p.classList.remove('open')});
+  const lbl=document.getElementById('vidDateLabel');if(lbl&&vidCurrent)lbl.textContent=VIDLABELS[vidCurrent]||vidNiceLabel(vidCurrent);
+  setVidMode('latest');
+}
 async function loadFG(){
   if(MARKET&&MARKET.feargreed&&!FGDATA)FGDATA=MARKET.feargreed;
   try{
