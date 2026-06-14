@@ -1,68 +1,67 @@
 {
- "updated": "2026-06-14T16:13:15.282231+00:00",
+ "updated": "2026-06-14T18:42:59.346524+00:00",
  "date": "2026-06-14",
  "ideas": [
   {
-   "title": "Ölpreis-Rücksetzer bei Iran-Deal-Abschluss",
-   "thesis": "Ein unmittelbar bevorstehender US-Iran-Deal mit Öffnung der Hormuz-Straße und Sanktionsverzicht würde das Ölangebot erhöhen und den Ölpreis unter Druck setzen. Ölaktien und Energieproduzenten wären negativ betroffen, während ölintensive Sektoren wie Luftfahrt oder Chemie entlastet würden. Der Ölpreis liegt laut Videobriefings bereits deutlich über Jahresbeginn (~60 USD vs. ~88 USD aktuell), sodass ein Deal erhebliches Korrekturpotenzial bietet.",
+   "title": "Ölpreis-Volatilität: Energiesektor zwischen Eskalation und Deal-Hoffnung",
+   "thesis": "Die Schließung der Straße von Hormuz durch den Iran bedroht 20% des weltweiten Ölhandels und hat die Ölpreise von ~60 USD zu Jahresbeginn auf ~88 USD getrieben – mit Szenarien bis 100-150 USD bei anhaltender Blockade. Ein US-Iran-Deal könnte die Preise rasch korrigieren lassen, während eine Eskalation (Iran-Gegenangriff auf Israel) weitere Spikes auslösen würde. Integrierte Ölkonzerne wie TotalEnergies profitieren strukturell von höheren Preisen und gelten auch bei Normalisierung als profitabel.",
    "values": [
-    "Brent Crude Short (z.B. über ETCs)",
     "TotalEnergies",
-    "Lufthansa",
-    "BASF",
-    "iShares Oil & Gas Exploration ETF (Short)"
+    "Energy Select Sector SPDR ETF (XLE)",
+    "Brent Crude Oil Futures",
+    "WTI Crude Oil Futures"
    ],
-   "angle": "Short",
-   "risk": "Scheitern der Verhandlungen durch israelische Eskalation in Beirut oder Irans Rückzug würde Ölpreis schlagartig nach oben treiben und Short-Positionen massiv belasten.",
-   "source": "News: Iran signalisiert Verhandlungs-Fortschritt – Hormutz wird öffnen, Uran verdünnt",
-   "source_url": "https://x.com/DeItaone/status/2066097922148589595"
+   "angle": "Beobachten",
+   "risk": "Ein schnell unterzeichneter und dauerhafter US-Iran-Deal würde die Ölpreise abrupt einbrechen lassen und Energietitel unter Druck setzen.",
+   "source": "News: Straße von Hormuz geschlossen – 20% des weltweiten Ölhandels blockiert",
+   "source_url": "https://x.com/FirstSquawk/status/2066217497892941947"
   },
   {
-   "title": "Rüstungs- und Drohnenabwehr-Profiteure bei anhaltender Nahost-Eskalation",
-   "thesis": "Die fortlaufenden israelischen Angriffe auf Beirut, Hezbollah-Drohnenangriffe und die Vorbereitung des israelischen Generalstabs auf Mehrfronten-Operationen signalisieren anhaltende Rüstungsnachfrage. Spezialisierte Verteidigungs- und Drohnenabwehr-Unternehmen profitieren strukturell, wie auch Kratos Defense mit starkem Backlog von über 2 Mrd. USD und Book-to-Bill 1,6x zeigt.",
+   "title": "Rüstungs- und Verteidigungssektor: Eskalation im Nahen Osten als struktureller Treiber",
+   "thesis": "Die anhaltende Eskalation zwischen Israel, Iran und Hisbollah sowie Irans Drohnenangriffe auf US-Schiffe erhöhen den Druck auf westliche Regierungen, Verteidigungsausgaben zu steigern. Kratos Defense zeigt starkes Umsatzwachstum (+23%), einen Backlog über 2 Mrd. USD und einen Book-to-Bill von 1,6x; zudem profitiert Lockheed Martin nach dem neuen IAM-Tarifabkommen bis 2030 von operativer Planungssicherheit.",
    "values": [
     "Kratos Defense & Security Solutions (KTOS)",
-    "Rocket Lab USA (RKLB)",
-    "Mercedes-Benz (Drohnenabwehr-Partnerschaft mit Titan Technologies)"
+    "Lockheed Martin (LMT)",
+    "iShares U.S. Aerospace & Defense ETF (ITA)"
    ],
    "angle": "Long",
-   "risk": "Ein überraschend rascher und stabiler Waffenstillstand oder Iran-Deal könnte die Rüstungsprämie abrupt auflösen und die Kurse dieser Werte unter Druck setzen.",
-   "source": "News: Israels Beirut-Offensive – Hezbollah-Drones und Kettenreaktion",
-   "source_url": "https://x.com/FirstSquawk/status/2066173424385536308"
-  },
-  {
-   "title": "Rocket Lab USA: Nasdaq-100-Aufnahme als kurzfristiger Katalysator",
-   "thesis": "Rocket Lab tritt am 22. Juni in den Nasdaq 100 ein, was zwangsläufig ETF-Käufe in erheblichem Volumen auslöst und den Kurs kurzfristig stützt. Fundamentalisch ist das Unternehmen mit 60% Umsatzwachstum, einem Backlog von 2,2 Mrd. USD (11x Quartalsumsatz) und starker Bruttomarge von 38% überzeugendes Wachstum sichtbar.",
-   "values": [
-    "Rocket Lab USA (RKLB)",
-    "iShares Nasdaq 100 ETF (QQQ, indirekt)"
-   ],
-   "angle": "Long",
-   "risk": "Die Bewertung ist ambitioniert und das Unternehmen ist noch nicht profitabel; ein SpaceX-IPO könnte Aufmerksamkeit und Liquidität kurzfristig von Rocket Lab abziehen.",
-   "source": "Rocket Lab USA: Q1: Umsatz 200 M (+60%), Bruttomarge 38%; Backlog 2,2 Mrd (11x Quartalsumsatz); Eintritt in Nasdaq 100 am 22.06.",
+   "risk": "Eine rasche diplomatische Lösung im Nahen Osten könnte den unmittelbaren Rüstungsboom dämpfen und Bewertungsprämien abbauen.",
+   "source": "Kratos Defense & Security Solutions: Q1 Umsatz +23%, Backlog 2 Mrd. USD (onvista-Briefing)",
    "source_url": ""
   },
   {
-   "title": "Adobe: CFO-Abgang als übertriebene Überreaktion – antizyklischer Einstieg",
-   "thesis": "Adobe meldete starke Quartalszahlen (+13% Umsatz, +18% Gewinn laut onvista) und einen positiven Outlook, doch die Aktie fiel nachbörslich rund 5% allein wegen des CFO-Rücktritts. Erfahrungsgemäß werden solche Management-Wechsel-Reaktionen kurzfristig übertrieben, sodass sich bei weiterer Schwäche ein antizyklischer Einstieg mit begrenztem Risiko ergeben kann.",
+   "title": "Adobe: Operative Stärke trifft psychologische Überreaktion beim CFO-Abgang",
+   "thesis": "Adobe lieferte starke Quartalszahlen (+13% Umsatz, +18% Gewinn) und einen soliden Ausblick, doch der angekündigte CFO-Weggang löste einen nachbörslichen Kursrückgang von ~5% aus – eine psychologische Überreaktion, nicht eine fundamentale Verschlechterung. Historisch bieten solche Führungswechsel-bedingten Abverkäufe bei operativ intakten Unternehmen Einstiegsmöglichkeiten für geduldige Investoren.",
    "values": [
     "Adobe Inc. (ADBE)"
    ],
    "angle": "Beobachten",
-   "risk": "Sollte der CFO-Abgang auf tiefere strategische Probleme oder bevorstehende Enttäuschungen beim KI-Produktportfolio hindeuten, könnte der Kursrückgang nachhaltig und keine Übertreibung sein.",
-   "source": "Adobe: Adobe zeigt Quartalszahlen und Outlook gut, aber Aktie fällt nachbörslich 5%, weil CFO gehen wird; operative Stärke vs. psychologische Verunsicherung.",
+   "risk": "Sollte der CFO-Abgang tiefere strategische Unstimmigkeiten signalisieren oder der KI-Wettbewerbsdruck durch Konkurrenten zunehmen, wäre ein weiterer Kursrückgang möglich.",
+   "source": "Adobe: Quartalszahlen und Outlook gut, aber Aktie fällt nachbörslich 5%, weil CFO gehen wird (derAktionär-Briefing)",
    "source_url": ""
   },
   {
-   "title": "Alphabet/Google: TPU-Eigenentwicklung als langfristige Nvidia-Alternative",
-   "thesis": "Googles TPUs sollen ab 2028 in Massenproduktion gehen, sind laut Briefing rund 80% kostengünstiger als Nvidia-GPUs bei vergleichbarer Leistung, und die neue Partnerschaft mit Samsung diversifiziert die Lieferkette weg von TSMC. Bei einem KGV von 29 mit überdurchschnittlichem Gewinnwachstum erscheint Alphabet als günstigere KI-Infrastruktur-Wette gegenüber höher bewerteten Halbleiterunternehmen.",
+   "title": "Rocket Lab: Nasdaq-100-Aufnahme als kurzfristiger Katalysator",
+   "thesis": "Rocket Lab wird am 22. Juni in den Nasdaq 100 aufgenommen, was obligatorische Käufe durch Index-ETFs auslöst und kurzfristig technischen Kaufdruck erzeugt. Fundamental stützen ein Umsatzwachstum von +60% im Q1, eine Bruttomarge von 38% und ein Backlog von 2,2 Mrd. USD (11-faches des Quartalsumsatzes) die Wachstumsstory; ein möglicher SpaceX-IPO könnte zusätzliches Sektoren-Momentum erzeugen.",
    "values": [
-    "Alphabet Inc. (GOOGL/GOOG)",
-    "Samsung Electronics (indirekt, als Produktionspartner)"
+    "Rocket Lab USA (RKLB)",
+    "ARK Space Exploration & Innovation ETF (ARKX)"
    ],
    "angle": "Long",
-   "risk": "Verzögerungen bei der TPU-Massenproduktion oder technologische Rückschläge bis 2028 könnten den erwarteten Kostenvorteil gegenüber Nvidia zunichte machen und die Bewertungsprämie nicht rechtfertigen.",
-   "source": "Alphabet/Google: Google-TPUs ab 2028 in Massenproduktion; neue Partnerschaft mit Samsung zur Produktion; TPUs ~80% kostengünstiger als Nvidia-GPUs bei vergleichbarer Leistung.",
+   "risk": "Die Aktie ist noch nicht profitabel und weist eine ambitionierte Bewertung auf; ein Ausbleiben des SpaceX-IPO-Effekts oder geopolitisch bedingte Risikoaversion könnten den Kurs trotz Index-Aufnahme belasten.",
+   "source": "Rocket Lab USA: Q1 Umsatz +60%, Eintritt in Nasdaq 100 am 22.06. löst ETF-Käufe aus (onvista-Briefing)",
+   "source_url": ""
+  },
+  {
+   "title": "Alphabet/Google: Strukturelle Nvidia-Alternative durch eigene TPU-Fertigung",
+   "thesis": "Google plant ab 2028 die Massenproduktion eigener TPUs in Partnerschaft mit Samsung und verhandelt parallel mit Intel – eine strategische Diversifizierung weg von TSMC und Nvidia. Da TPUs laut Analysteneinschätzung ~80% kostengünstiger als Nvidia-GPUs bei vergleichbarer Leistung sein sollen, könnte Alphabet sowohl eigene KI-Infrastrukturkosten senken als auch externe Nachfrage bedienen, während das KGV von 29 durch überdurchschnittliches Gewinnwachstum gestützt wird.",
+   "values": [
+    "Alphabet Inc. (GOOGL)",
+    "Samsung Electronics (005930.KS)"
+   ],
+   "angle": "Long",
+   "risk": "Die TPU-Massenproduktion ist erst ab 2028 geplant, sodass kurzfristig kein Ergebnisbeitrag entsteht und Nvidia seinen Technologievorsprung bis dahin weiter ausbauen könnte.",
+   "source": "Alphabet/Google: Google-TPUs ab 2028 in Massenproduktion, Partnerschaft mit Samsung, TPUs ~80% kostengünstiger als Nvidia-GPUs (onvista-Briefing)",
    "source_url": ""
   }
  ]
