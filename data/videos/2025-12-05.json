@@ -10,13 +10,13 @@
    "date": "20251205",
    "url": "https://www.youtube.com/watch?v=BADYwmZH114",
    "thumbnail": "https://i.ytimg.com/vi/BADYwmZH114/hqdefault.jpg",
-   "summarized_at": "2026-06-15T13:38:44.375027+00:00",
-   "summary": "Die Sendung \"Calling USA\" vom 04.12.2025 beleuchtet die KI-Chip-Partnerschaften von Marvell mit Amazon und Broadcom mit Google, die zunehmende Konkurrenz für Nvidia bedeuten. Zudem werden die Zahlen von Hewlett Packard Enterprise, die Schuldenproblematik bei Oracle sowie gemischte Nachrichten zu Tesla, Boeing und Wynn Resorts besprochen. Charttechnisch analysiert Patrik den S&P 500, Alphabet und Tesla, wobei er Tesla bullisher einschätzt als Alphabet.",
+   "summarized_at": "2026-06-15T18:43:05.893763+00:00",
+   "summary": "Live-Schalte aus dem Silicon Valley zu KI-Chips, Cloud-Infrastruktur und Softwarebranche. Fokus auf Broadcom und Marvell als strategische Partner der Hyperscaler (AWS, Google, Microsoft), die Nvidia Konkurrenz machen. Oracle steht vor Ergebnissen unter Druck durch negative Free Cashflow und hohe Verschuldung (100 Mrd. USD). US-Notenbank wird Zinssenkung um 25 BP erwartet, S&P 500 konsolidiert unter Widerstand.",
    "items": [
     {
      "name": "Intro mit Antonie vor Marvell",
      "ticker": null,
-     "note": "Antonie steht vor der Marvell-Zentrale im Silicon Valley.",
+     "note": "Marvell und Amazon entwickeln zusammen neue Trainings-Chips (Trainium) in der dritten Generation. Positive Entwicklung für Marvell als etablierter Partner der Hyperscaler trotz kleinerer Marktposition gegenüber Broadcom.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -30,7 +30,7 @@
     {
      "name": "OpenAI",
      "ticker": null,
-     "note": "Interner 'Code Red' von Sam Altman: Fokus auf neue KI-Modelle, Sorge vor Google Gemini.",
+     "note": "Code Red Memo von Sam Altman zeigt Fokus auf neue Modelle durch interne Umstrukturierung. Sorge vor Google Gemini-Konkurrenz, aber noch keine gravierenden Verschiebungen in Useraten erkennbar zwischen ChatGPT und Gemini.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -44,8 +44,8 @@
     {
      "name": "Anstehende Termine",
      "ticker": null,
-     "note": "Fed-Zinsentscheidung nächste Woche: 89% der Marktteilnehmer erwarten eine Senkung.",
-     "figures": "89%",
+     "note": "Fed-Sitzung nächsten Mittwoch: 89% der Marktteilnehmer erwarten Leitzinssenkung. Inflationsdaten morgen (September-Daten, geringes Gewicht). Arbeitsmarkt schwach. Earnings nächsten Freitag auf Nasdaq.",
+     "figures": "89% erwarten Leitzinssenkung",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -58,9 +58,9 @@
     {
      "name": "Marvell, Broadcom, KI-Chips",
      "ticker": null,
-     "note": "Marvell entwickelt mit Amazon (AWS) die nächste Trainium-Chip-Generation. Broadcom arbeitet mit Google. Zunehmender Wettbewerb für Nvidia.",
-     "figures": "Market Cap Broadcom: 1797 Mrd USD, Marvell: 86 Mrd USD",
-     "tip": "",
+     "note": "Broadcom (1797 Mrd. USD Marktkapitalisierung) arbeitet mit Google an Chips (7. Generation); Marvell (86 Mrd. USD) mit AWS/Amazon an Trainium-Chips (3. Generation) und Microsoft an Maia-200-Chips (2026). Broadcom höher bewertet trotz ähnlicher Umsätze. Wettbewerb durch AMD und Qualcomm reduziert Nvidias Preissetzungsmacht. Marvell führt Restrukturierung durch, verkaufte Automotive-Division an Infineon, kaufte Optophonik-Technologie zu.",
+     "figures": "Broadcom Marktkapitalisierung: 1797 Mrd. USD, Marvell: 86 Mrd. USD; Broadcom Umsatz nicht 10x größer, aber Bewertung 20x größer",
+     "tip": "Marvell kooperativ in Verhandlungen, könnte Vorteil vs. hartem Pricing von Broadcom sein",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -72,9 +72,9 @@
     {
      "name": "Hewlett Packard Enterprise",
      "ticker": null,
-     "note": "HPE senkte Prognose: Umsatzwachstum 5-10% statt erwarteter 17%, Ergebnis 2,20-2,40 USD/Aktie. Analystenstimmung verhalten.",
-     "figures": "Umsatzwachstum 5-10%, Ergebnis 2,20-2,40 USD/Aktie, Dividende +10%, 29 Mrd USD Marktkapitalisierung",
-     "tip": "",
+     "note": "HPE bringt heute nach Börsenschluss Zahlen. Management senkte Erwartungen auf Analystenkonferenz: bereinigtes EPS 220-240 USD (Markt erwartet 242-243), Umsatzwachstum 5-10% statt erwarteter 17%. Aktienkurs stark gefallen, Analysten passten Prognosen an. Dividende um 10% erhöht, mehr Aktienrückkäufe angekündigt. Für FY 2028 3,5 Mrd. USD Free Cashflow angepeilt.",
+     "figures": "Bereinigtes EPS 220-240 USD (vs. Markterwartung 242-243), Umsatzwachstum 5-10% (vs. Markterwartung 17%), Dividendenerhöhung 10%, Marktkapitalisierung 29 Mrd. USD",
+     "tip": "Verhalten optimistisch, letzte Tage leicht nach oben",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -84,11 +84,25 @@
      "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=838s"
     },
     {
+     "name": "Cloud-Marktanteile",
+     "ticker": null,
+     "note": "Amazon mit ~29% (rückläufig um Marktanteile), Microsoft 20%, Google 13%, alle wachsen. IBM fällt kontinuierlich von 5%, Oracle bleibt niedrig bei 3-4%, noch weit entfernt von Top-3. Neo-Cloud-Anbieter (Coreweave etc.) wachsen von unten.",
+     "figures": "Amazon 29%, Microsoft 20%, Google 13%, Oracle 3-4%, IBM fallend von 5%",
+     "tip": "",
+     "einordnung": "",
+     "detail": "",
+     "cross_refs": [],
+     "kategorie": "sonstiges",
+     "sec": 1016,
+     "t": "16:56",
+     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=1016s"
+    },
+    {
      "name": "Oracle",
      "ticker": null,
-     "note": "Aktie von 345 USD auf 200 USD gefallen. Hauptproblem: hohe Verschuldung (~100 Mrd USD Verbindlichkeiten) und negativer Free Cashflow.",
-     "figures": "Kurs Rekordhoch 345 USD, Rückgang auf 200 USD, 100 Mrd USD Verbindlichkeiten",
-     "tip": "",
+     "note": "Aktie fiel von Rekordhoch 345 USD (September) auf 200 USD (Anfang Dezember). Grund: negativer Free Cashflow durch Rechenzentrum-Ausbau (über Kredite finanziert), 100 Mrd. USD Schulden (Kredite + Leasing). Morgan Stanley warnt vor 300 Mrd. USD Schulden bis 2028. Neue CEOs übernehmen Montag, präsentieren wahrscheinlich erste Ergebnisse. Wachstum schwach (2 Cent mehr als vor 3 Monaten).",
+     "figures": "Rekordhoch 345 USD (September), 200 USD (Anfang Dezember), Schulden 100 Mrd. USD, Prognose Morgan Stanley 300 Mrd. USD bis 2028",
+     "tip": "Investoren strafen negativen Free Cashflow ab; hohe Verschuldung problematisch",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -98,11 +112,11 @@
      "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=1192s"
     },
     {
-     "name": "Mixed News – Tesla, Boeing, Wynn Resorts, Analysehaus Baird über die Softwarebranche",
+     "name": "Mixed News – Tesla, Boeing, Wynn Resorts, Baird Analysehaus",
      "ticker": null,
-     "note": "Tesla: China-Absatz im November 9,9% gestiegen, aber Förderung sinkt ab 2026. Boeing: positive Aussagen zu Auslieferungen und Free Cashflow. Wynn: 'Best in Class' laut Goldman Sachs. Baird sieht Schnäppchen bei Axon, Zoom, Twilio, Rubrik.",
-     "figures": "Tesla China Absatz +9,9% (Model 3/Y +41% ggü. Vormonat), Boeing Auslieferungen 737/787 höher 2026, positiver Free Cashflow 2026",
-     "tip": "",
+     "note": "Tesla: Model-3-Absatz in China 41% höher als Vormonat (9,9% MoM), aber Vorsicht: Förderung sinkt ab 2026, hohe Kaufanreize jetzt. Boeing: neuer CEO, CFO kündigte höhere Auslieferungen 737/787 für 2026 und positiven Free Cashflow an (+10% Aktienkurs). Airbus hat A320-Qualitätsprobleme (Boeing-Vorteil). Wynn Resorts: Goldman Sachs 'Best in Class', profitiert von Macau-Geschäft. Baird analysiert Softwarebranche: Axon (hohe Wachstumsraten, Teaser-Software für Behörden), Zoom Communications, Twilio (Cashflow), Rubrik, Okta (attraktive Bewertungen), auch Palo Alto Networks erwähnt.",
+     "figures": "Tesla Model 3 China +41% MoM, Boeing Aktienkurs +10%",
+     "tip": "Tesla: Kaufanreize temporär, nicht übergewichten; Boeing: positiv für 2026 Free Cashflow",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -114,9 +128,9 @@
     {
      "name": "Charttechnik mit Patrik – S&P 500",
      "ticker": null,
-     "note": "S&P 500 konsolidiert unter 21-Tage-Durchschnitt. Ausbruch über 6820 könnte bis 7000/7200 führen. Warnflagge: fallende Nvidia-Kurse.",
-     "figures": "Widerstand bei 6820 Punkten, Lücken bei 6766 und 6600",
-     "tip": "Auf Ausbruch warten, keine Long-Position vor Ausbruch aufbauen",
+     "note": "S&P 500 klettert die 'Wall of Worry' nach oben in Feiertagswoche (niedriges Volumen). Schließung Preislücke vom 12. November. Wenn 0,75er Level (6820 Punkte) nachhaltig überschritten: Test der Hochs möglich, aber wahrscheinlich nur Test ohne großen Katalyst. Fed Meeting könnte Katalyst sein. Aufwärtspotenzial bis 7000-7200, aber unterdurchschnittliches Volumen bei Rally. Nvidia neue Tiefs (Warnflagge). Preislücken bei 6766 und 6600 Punkten. Keine Long-Position vor Ausbruch; Risiko zu hoch.",
+     "figures": "0,75er Level 6820 Punkte, Aufwärtspotenzial 7000-7200 Punkte, Preislücken 6766 und 6600 Punkte",
+     "tip": "Abwarten auf Ausbruch; keine Long vor nachhaltiger Überwindung 6820er Level",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -128,9 +142,9 @@
     {
      "name": "Alphabet",
      "ticker": null,
-     "note": "Kurs nahe Allzeithoch, aber Patrik sieht begrenztes Aufwärtspotenzial bis 340-350 USD und erwartet einen Rücksetzer.",
-     "figures": "Kursziel 340-350 USD",
-     "tip": "Eher Short-Kandidat, Rücksetzer abwarten",
+     "note": "Im August noch bullisch (keine neuen Hochs unter Magnificent Seven), jetzt Bild geändert. Positive Nachrichten zuletzt beflügelt Kurs, aber Position ist Konsolidierungskandidat / Shortkandidant. Aufwärtspotenzial begrenzt bis 340, max. 350 USD. Rücksetzer zur vorherigen Konsolidierung erwartet.",
+     "figures": "Aufwärtspotenzial bis 340-350 USD",
+     "tip": "Short-Kandidat; Rücksetzer/Korrektur abwarten, nicht zu neuen Hochs kaufen",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -142,9 +156,9 @@
     {
      "name": "Tesla",
      "ticker": null,
-     "note": "Kein neues Allzeithoch 2025, aber gesunde Konsolidierung nach Ausbruch. Relative Stärke in den letzten Tagen. Ausbruch über 475 USD als Kaufsignal.",
-     "figures": "Allzeithoch bei 510/520 USD, Ausbruchsniveau 475 USD",
-     "tip": "Long bei Rücksetzer zur Aufwärtstrendlinie, Ausbruch über 475 als Go-Signal",
+     "note": "Long-Kandidat, noch nicht an Allzeithochs angeknüpft (165 USD war historisches Hoch). Volumenprofil zeigt Widerstände. Shortsqueeze möglich, Ziel 510-520 USD. Gesunde Konsolidierung nach Ausbruch. Letzte Tage relative Stärke vs. S&P/Nasdaq. Ausbruch über 475 USD wäre 'Go' für weitere Rallye. Trendlinie als Unterstützung hält gut, Rücksetzer bis 365 USD unwahrscheinlich.",
+     "figures": "Zielzone 510-520 USD, Ausbruch-Level 475 USD",
+     "tip": "Long-Kandidat; auf Rücksetzer zur Trendlinie einsteigen, Ausbruch über 475 USD kaufen",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -152,20 +166,52 @@
      "sec": 2048,
      "t": "34:08",
      "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=2048s"
+    },
+    {
+     "name": "Outro",
+     "ticker": null,
+     "note": "Drei Wochen bis Weihnachten, Nachrichtenlage könnte dünner werden, aber interessante Unternehmensgebnisse (Salesforce, Marvell-Zahlen) und Fed-Sitzung nächste Woche stehen an. Sendung bleibt aktiv.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "",
+     "detail": "",
+     "cross_refs": [],
+     "kategorie": "sonstiges",
+     "sec": 2420,
+     "t": "40:20",
+     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=2420s"
     }
    ],
    "macro": [
     {
-     "text": "Fed-Zinsentscheidung nächsten Mittwoch: 89% der Marktteilnehmer erwarten eine Leitzinssenkung.",
+     "text": "Fed-Leitzinssenkung um 25 BP nächsten Mittwoch zu 89% erwartet; US-Arbeitsmarkt schwächer; Inflationsdaten morgen aus September mit geringem Gewicht.",
      "sec": 187,
      "t": "03:07",
      "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=187s"
     },
     {
-     "text": "US-Arbeitsmarkt schwächelt etwas, Inflationsdaten (September) werden veröffentlicht.",
-     "sec": 187,
-     "t": "03:07",
-     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=187s"
+     "text": "Wettbewerb in KI-Chips (Broadcom, Marvell, AMD, Qualcomm) gegen Nvidia reduziert Preissetzungsmacht und Monopol-Margen.",
+     "sec": 243,
+     "t": "04:03",
+     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=243s"
+    },
+    {
+     "text": "US-Cloud-Infrastruktur: Amazon verliert Marktanteile (29%), Microsoft und Google wachsen; Oracle und IBM schwach.",
+     "sec": 1016,
+     "t": "16:56",
+     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=1016s"
+    },
+    {
+     "text": "China E-Fahrzeug-Förderung sinkt ab 2026, hohe Kaufanreize führen temporär zu Absatzspitzen (Tesla), nicht nachhaltig.",
+     "sec": 1352,
+     "t": "22:32",
+     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s"
+    },
+    {
+     "text": "S&P 500 konsolidiert in Range 6600-6820 mit unterdurchschnittlichem Volumen; Fed Meeting und Inflationsdaten nächste Woche als Katalyste für Ausbruch nötig.",
+     "sec": 1729,
+     "t": "28:49",
+     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=1729s"
     }
    ]
   }
