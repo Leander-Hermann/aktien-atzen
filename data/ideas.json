@@ -1,68 +1,78 @@
 {
- "updated": "2026-06-14T18:42:59.346524+00:00",
- "date": "2026-06-14",
+ "updated": "2026-06-15T06:46:58.376909+00:00",
+ "date": "2026-06-15",
  "ideas": [
   {
-   "title": "Ölpreis-Volatilität: Energiesektor zwischen Eskalation und Deal-Hoffnung",
-   "thesis": "Die Schließung der Straße von Hormuz durch den Iran bedroht 20% des weltweiten Ölhandels und hat die Ölpreise von ~60 USD zu Jahresbeginn auf ~88 USD getrieben – mit Szenarien bis 100-150 USD bei anhaltender Blockade. Ein US-Iran-Deal könnte die Preise rasch korrigieren lassen, während eine Eskalation (Iran-Gegenangriff auf Israel) weitere Spikes auslösen würde. Integrierte Ölkonzerne wie TotalEnergies profitieren strukturell von höheren Preisen und gelten auch bei Normalisierung als profitabel.",
+   "title": "Hormuz-Öffnung drückt Energiepreise – Short auf Öl / Long auf Fluglinien und Reise",
+   "thesis": "Der USA-Iran-Deal und die Wiedereröffnung der Straße von Hormuz normalisieren das globale Ölangebot nach über 100 Tagen Blockade. Fallende Ölpreise entlasten direkt die Kostenbasis von Airlines und Touristikkonzernen wie Lufthansa und TUI, die im heutigen Marktbriefing explizit als Profiteure genannt werden.",
    "values": [
-    "TotalEnergies",
-    "Energy Select Sector SPDR ETF (XLE)",
-    "Brent Crude Oil Futures",
-    "WTI Crude Oil Futures"
+    "Brent Crude (Short)",
+    "WTI Crude (Short)",
+    "Lufthansa",
+    "TUI",
+    "iShares STOXX Europe 600 Travel & Leisure ETF"
+   ],
+   "angle": "Long",
+   "risk": "Der Deal ist laut Beobachtern noch fragil – ein Scheitern der formalen Unterzeichnung am 19. Juni würde Ölpreise sofort wieder nach oben treiben und die Airline-/Reise-These umkehren.",
+   "source": "News: Straße von Hormuz öffnet sich – erstes LNG-Schiff passiert nach Deal",
+   "source_url": "https://x.com/FirstSquawk/status/2066383038515380330"
+  },
+  {
+   "title": "Breites Risk-on-Rally – Long auf europäische und US-Aktienindizes",
+   "thesis": "Der geopolitische Entspannungsschock löst einen klassischen Risk-on-Modus aus: US-Futures (S&P 500 +1,3 %, Nasdaq +1,9 %) und europäische Indizes (DAX über 25.000) starten deutlich im Plus, Anleiherenditen fallen und die EZB-Chefin bezeichnet den Deal als 'gute Nachrichten'. Solche abrupten Entspannungsereignisse haben historisch kurzfristig breite Indexgewinne ausgelöst.",
+   "values": [
+    "S&P 500 E-Mini (Long)",
+    "DAX ETF (z.B. Xtrackers DAX)",
+    "EuroStoxx 50 ETF",
+    "Nasdaq-100 ETF (QQQ)",
+    "CAC 40"
+   ],
+   "angle": "Long",
+   "risk": "Die Lage wird von Beobachtern als fragil eingestuft und der VIX liegt laut Onvista-Briefing noch über 16 – ein Scheitern des MoU oder neue Eskalation (z.B. Russland-Ukraine-Angriffe) kann die Rally schnell umkehren.",
+   "source": "News: Märkte preisen Geopolitik-Entspannung ein – Futures und Anleihen im Risk-on-Modus",
+   "source_url": "https://x.com/FirstSquawk/status/2066397203770507369"
+  },
+  {
+   "title": "Goldminen als Absicherung trotz Geopolitik-Entspannung",
+   "thesis": "Gold steigt laut derAktionär-Briefing trotz der Entspannung weiter, da strukturelle Unsicherheiten (Ukraine-Krieg, Fragilität des Iran-Deals) bestehen bleiben. Goldminenwerte wie Agnico Eagle bieten gegenüber physischem Gold einen Hebel auf steigende Goldpreise und wurden im Video-Briefing explizit als Kaufkandidaten genannt.",
+   "values": [
+    "Agnico Eagle Mines",
+    "Newmont Corporation",
+    "VanEck Gold Miners ETF (GDX)",
+    "Gold (Spot)"
+   ],
+   "angle": "Long",
+   "risk": "Eine vollständige und nachhaltige Nahost-Entspannung könnte den sicheren Hafen Gold deutlich unter Druck setzen und Kapital in Risikoanlagen umlenken.",
+   "source": "Gold: Gold steigt trotz Entspannung — der Host nennt Agnico Eagle als konkreten Kaufkandidaten im Goldminenbereich",
+   "source_url": ""
+  },
+  {
+   "title": "Rüstungssektor unter Druck – Rheinmetall und Verteidigungswerte als Gegenläufer beobachten",
+   "thesis": "Das derAktionär-Briefing nennt Rheinmetall explizit als 'Gegenläufer' im heutigen Euphorie-Umfeld: Geopolitische Entspannung im Nahen Osten reduziert kurzfristig die Dringlichkeitswahrnehmung bei Rüstungsausgaben und belastet Defense-Titel. Gleichzeitig schwächt der massive russische Raketen- und Drohnenangriff auf die Ukraine die Entspannungsnarrative im europäischen Verteidigungskontext.",
+   "values": [
+    "Rheinmetall",
+    "Hensoldt",
+    "BAE Systems",
+    "iShares MSCI Europe Financials & Industrials (Rüstungsanteil)"
    ],
    "angle": "Beobachten",
-   "risk": "Ein schnell unterzeichneter und dauerhafter US-Iran-Deal würde die Ölpreise abrupt einbrechen lassen und Energietitel unter Druck setzen.",
-   "source": "News: Straße von Hormuz geschlossen – 20% des weltweiten Ölhandels blockiert",
-   "source_url": "https://x.com/FirstSquawk/status/2066217497892941947"
+   "risk": "Der anhaltende Russland-Ukraine-Krieg mit 70 Raketen und 611 Drohnen über Nacht hält den strukturellen Rüstungsbedarf Europas hoch – eine kurzfristige Schwäche könnte sich als Kaufgelegenheit erweisen.",
+   "source": "Marktüberblick / DAX: Der Iran-USA-Friedensdeal treibt die Märkte – Profiteure wie Lufthansa und TUI sowie Gegenläufer wie Rheinmetall",
+   "source_url": ""
   },
   {
-   "title": "Rüstungs- und Verteidigungssektor: Eskalation im Nahen Osten als struktureller Treiber",
-   "thesis": "Die anhaltende Eskalation zwischen Israel, Iran und Hisbollah sowie Irans Drohnenangriffe auf US-Schiffe erhöhen den Druck auf westliche Regierungen, Verteidigungsausgaben zu steigern. Kratos Defense zeigt starkes Umsatzwachstum (+23%), einen Backlog über 2 Mrd. USD und einen Book-to-Bill von 1,6x; zudem profitiert Lockheed Martin nach dem neuen IAM-Tarifabkommen bis 2030 von operativer Planungssicherheit.",
+   "title": "Schneider Electric / KI-Rechenzentrum-Infrastruktur – strategische Allianz als Kurstreiber",
+   "thesis": "Schneider Electric und Foxconn haben eine strategische Partnerschaft zur beschleunigten Bereitstellung von KI-fokussierten Rechenzentren geschlossen. Die Nachfrage nach Rechenzentrumsinfrastruktur wird durch den KI-Boom strukturell getrieben; Schneider Electric profitiert als Anbieter von Energiemanagement und Automatisierungslösungen direkt von diesem Megatrend.",
    "values": [
-    "Kratos Defense & Security Solutions (KTOS)",
-    "Lockheed Martin (LMT)",
-    "iShares U.S. Aerospace & Defense ETF (ITA)"
+    "Schneider Electric",
+    "Foxconn (Hon Hai Precision)",
+    "Vertiv Holdings",
+    "Eaton Corporation"
    ],
    "angle": "Long",
-   "risk": "Eine rasche diplomatische Lösung im Nahen Osten könnte den unmittelbaren Rüstungsboom dämpfen und Bewertungsprämien abbauen.",
-   "source": "Kratos Defense & Security Solutions: Q1 Umsatz +23%, Backlog 2 Mrd. USD (onvista-Briefing)",
-   "source_url": ""
-  },
-  {
-   "title": "Adobe: Operative Stärke trifft psychologische Überreaktion beim CFO-Abgang",
-   "thesis": "Adobe lieferte starke Quartalszahlen (+13% Umsatz, +18% Gewinn) und einen soliden Ausblick, doch der angekündigte CFO-Weggang löste einen nachbörslichen Kursrückgang von ~5% aus – eine psychologische Überreaktion, nicht eine fundamentale Verschlechterung. Historisch bieten solche Führungswechsel-bedingten Abverkäufe bei operativ intakten Unternehmen Einstiegsmöglichkeiten für geduldige Investoren.",
-   "values": [
-    "Adobe Inc. (ADBE)"
-   ],
-   "angle": "Beobachten",
-   "risk": "Sollte der CFO-Abgang tiefere strategische Unstimmigkeiten signalisieren oder der KI-Wettbewerbsdruck durch Konkurrenten zunehmen, wäre ein weiterer Kursrückgang möglich.",
-   "source": "Adobe: Quartalszahlen und Outlook gut, aber Aktie fällt nachbörslich 5%, weil CFO gehen wird (derAktionär-Briefing)",
-   "source_url": ""
-  },
-  {
-   "title": "Rocket Lab: Nasdaq-100-Aufnahme als kurzfristiger Katalysator",
-   "thesis": "Rocket Lab wird am 22. Juni in den Nasdaq 100 aufgenommen, was obligatorische Käufe durch Index-ETFs auslöst und kurzfristig technischen Kaufdruck erzeugt. Fundamental stützen ein Umsatzwachstum von +60% im Q1, eine Bruttomarge von 38% und ein Backlog von 2,2 Mrd. USD (11-faches des Quartalsumsatzes) die Wachstumsstory; ein möglicher SpaceX-IPO könnte zusätzliches Sektoren-Momentum erzeugen.",
-   "values": [
-    "Rocket Lab USA (RKLB)",
-    "ARK Space Exploration & Innovation ETF (ARKX)"
-   ],
-   "angle": "Long",
-   "risk": "Die Aktie ist noch nicht profitabel und weist eine ambitionierte Bewertung auf; ein Ausbleiben des SpaceX-IPO-Effekts oder geopolitisch bedingte Risikoaversion könnten den Kurs trotz Index-Aufnahme belasten.",
-   "source": "Rocket Lab USA: Q1 Umsatz +60%, Eintritt in Nasdaq 100 am 22.06. löst ETF-Käufe aus (onvista-Briefing)",
-   "source_url": ""
-  },
-  {
-   "title": "Alphabet/Google: Strukturelle Nvidia-Alternative durch eigene TPU-Fertigung",
-   "thesis": "Google plant ab 2028 die Massenproduktion eigener TPUs in Partnerschaft mit Samsung und verhandelt parallel mit Intel – eine strategische Diversifizierung weg von TSMC und Nvidia. Da TPUs laut Analysteneinschätzung ~80% kostengünstiger als Nvidia-GPUs bei vergleichbarer Leistung sein sollen, könnte Alphabet sowohl eigene KI-Infrastrukturkosten senken als auch externe Nachfrage bedienen, während das KGV von 29 durch überdurchschnittliches Gewinnwachstum gestützt wird.",
-   "values": [
-    "Alphabet Inc. (GOOGL)",
-    "Samsung Electronics (005930.KS)"
-   ],
-   "angle": "Long",
-   "risk": "Die TPU-Massenproduktion ist erst ab 2028 geplant, sodass kurzfristig kein Ergebnisbeitrag entsteht und Nvidia seinen Technologievorsprung bis dahin weiter ausbauen könnte.",
-   "source": "Alphabet/Google: Google-TPUs ab 2028 in Massenproduktion, Partnerschaft mit Samsung, TPUs ~80% kostengünstiger als Nvidia-GPUs (onvista-Briefing)",
-   "source_url": ""
+   "risk": "Die Partnerschaft ist bislang nur auf strategischer Ebene angekündigt – konkrete Umsatz- und Margenbeiträge sind noch nicht quantifiziert, sodass der Kurse-Effekt verpuffen kann, wenn Folgeaufträge ausbleiben.",
+   "source": "News: Schneider Electric und Foxconn bilden Allianz für KI-Rechenzentren",
+   "source_url": "https://x.com/FirstSquawk/status/2066382611145208159"
   }
  ]
 }

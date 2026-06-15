@@ -1,6 +1,201 @@
 {
- "updated": "2026-06-14T18:42:22.335685+00:00",
+ "updated": "2026-06-15T06:46:20.615321+00:00",
  "videos": [
+  {
+   "channel": "derAktionär",
+   "playlist": "Märkte am Morgen",
+   "id": "GAF_7ULoiQ0",
+   "title": "Märkte am Morgen: Öl, Gold, Bitcoin, Softbank, SpaceX, Infineon, Lufthansa, TUI, Rheinmetall, ASML",
+   "date": "20260615",
+   "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0",
+   "thumbnail": "https://i.ytimg.com/vi/GAF_7ULoiQ0/hqdefault.jpg",
+   "summarized_at": "2026-06-15T06:38:46.892468+00:00",
+   "summary": "Ein gemeldeter Friedensdurchbruch zwischen den USA und dem Iran — Vertragsunterzeichnung soll am Freitag erfolgen — versetzt die Weltbörsen in Euphorie. Der DAX startet über 25.000 Punkte, Nikkei und Kospi legen kräftig zu, der S&P 500 zeigt Stärke. Ölpreise geben nach, Gold und Silber steigen. Im Mittelpunkt der Einzelwerte steht das spektakuläre SpaceX-IPO, daneben Profiteure wie Lufthansa und TUI sowie Gegenläufer wie Rheinmetall.",
+   "items": [
+    {
+     "name": "Marktüberblick / DAX",
+     "ticker": "^GDAXI",
+     "note": "Der Iran-USA-Friedensdeal treibt die Märkte: DAX erwartet über 25.000 Punkte zum Handelsstart, Wall Street hatte bereits am Freitag zugelegt und dürfte erneut im Plus eröffnen.",
+     "figures": "DAX über 25.000 Punkte",
+     "tip": "",
+     "einordnung": "Ein geopolitischer Entspannungsschock dieser Größenordnung kann kurzfristig erhebliche Kursprünge auslösen — die Frage ist stets, wie viel bereits eingepreist war. Nach dem Freitags-Run sollte man Anschlusskäufe auf Rücksetzer-Basis bevorzugen.",
+     "kategorie": "makro",
+     "sec": 35,
+     "t": "00:35",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=35s"
+    },
+    {
+     "name": "Gold",
+     "ticker": "GC=F",
+     "note": "Gold steigt trotz Entspannung — der Host nennt Agnico Eagle als konkreten Kaufkandidaten im Goldminenbereich.",
+     "figures": "",
+     "tip": "Agnico Eagle als Kaufkandidat genannt",
+     "einordnung": "Interessant, dass Gold auch im Risk-on-Umfeld steigt — das zeigt die strukturelle Nachfrage von Notenbanken und Anleger. Agnico Eagle (AEM) gehört zu den qualitativ hochwertigsten Seniors im Minensektor, das ist eine vernünftige Präferenz.",
+     "kategorie": "news",
+     "sec": 87,
+     "t": "01:27",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=87s"
+    },
+    {
+     "name": "Agnico Eagle Mines",
+     "ticker": "AEM",
+     "note": "Vom Host als Goldminenempfehlung im Umfeld steigender Goldpreise genannt.",
+     "figures": "",
+     "tip": "Kaufkandidat laut Host",
+     "einordnung": "Agnico Eagle überzeugt seit Jahren mit stabiler Produktion und solider Bilanz — im Vergleich zu Barrick oder Newmont der konservativere, aber zuverlässigere Ansatz.",
+     "kategorie": "fundamental",
+     "sec": 87,
+     "t": "01:27",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=87s"
+    },
+    {
+     "name": "Öl (Brent/WTI)",
+     "ticker": "CL=F",
+     "note": "Ölpreise stehen nach dem Iran-Deal deutlich unter Druck — eine über 100 Tage dauernde Blockade könnte sich auflösen und die Versorgung normalisieren.",
+     "figures": "Blockade über 100 Tage",
+     "tip": "",
+     "einordnung": "Sinkende Ölpreise sind ein zweischneidiges Schwert: gut für Verbraucher, Airlines und Chemie — aber Energietitel und OPEC+ geraten unter Druck. Die Angebotsausweitung durch iranisches Öl könnte den Preis strukturell belasten.",
+     "kategorie": "makro",
+     "sec": 139,
+     "t": "02:19",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=139s"
+    },
+    {
+     "name": "Bitcoin",
+     "ticker": "BTC-USD",
+     "note": "Bitcoin befindet sich in einer Aufwärtsbewegung, zeitweise über 66.000 $ gesehen; leichte Gewinnmitnahmen werden als möglich eingestuft.",
+     "figures": "über 66.000 $",
+     "tip": "",
+     "einordnung": "Bitcoin profitiert im Risk-on-Modus klassischerweise mit. Das Niveau um 66.000 $ ist charttechnisch relevant — ein nachhaltiger Ausbruch darüber wäre ein positives Signal, scheitert er, droht Konsolidierung.",
+     "kategorie": "chartanalyse",
+     "sec": 182,
+     "t": "03:02",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=182s"
+    },
+    {
+     "name": "Nikkei 225",
+     "ticker": "^N225",
+     "note": "Japanische Börse mit deutlichen Gewinnen, getrieben von Technologie- und KI-Werten; zeitweise über 4 % Zuwachs.",
+     "figures": "über 4 %",
+     "tip": "",
+     "einordnung": "Ein Tagesgewinn von über 4 % im Nikkei ist ungewöhnlich stark — das signalisiert, wie groß das geopolitische Relief-Momentum ist. KI-Werte wie Softbank verstärken den Effekt.",
+     "kategorie": "news",
+     "sec": 206,
+     "t": "03:26",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=206s"
+    },
+    {
+     "name": "Softbank",
+     "ticker": "9984.T",
+     "note": "Softbank legt deutlich zu und ist einer der Haupttreiber der starken japanischen Börse.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Softbank ist durch seine KI- und Tech-Beteiligungen (u.a. Arm Holdings) ein hochvolatiler Beta-Wert — in Risk-on-Phasen überdurchschnittliche Gewinne, in Korrekturen entsprechend heftige Verluste.",
+     "kategorie": "news",
+     "sec": 235,
+     "t": "03:55",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=235s"
+    },
+    {
+     "name": "S&P 500",
+     "ticker": "^GSPC",
+     "note": "Freitag war laut Host ein starker Tag für den S&P 500, u.a. befeuert durch das SpaceX-IPO; heute erneut klare Gewinne erwartet.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Der S&P 500 im Aufwind durch geopolitische Entspannung und ein Mega-IPO — das ist eine selten günstige Kombination. Kurzfristig bullish, aber Vorsicht vor überkauften Signalen.",
+     "kategorie": "news",
+     "sec": 258,
+     "t": "04:18",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=258s"
+    },
+    {
+     "name": "SpaceX",
+     "ticker": null,
+     "note": "SpaceX-IPO geglückt: zeitweise 35 % über Ausgabekurs, Schluss bei +19 %, am Folgetag vorbörslich weitere 5 % im Plus. Damit avanciert SpaceX zum wertvollsten Unternehmen der Welt mit einer Bewertung von knapp über 2 Billionen Dollar.",
+     "figures": "IPO-Tag: +35 % intraday, Schluss +19 % über Ausgabekurs; Folgetag: +5 % vorbörslich; Marktkapitalisierung: knapp über 2 Billionen USD",
+     "tip": "Host: Zeichnungsgewinne kurzfristig mitnehmen; langfristig für Space-Economy-Exposition halten",
+     "einordnung": "Eine Bewertung von 2 Billionen USD für ein Unternehmen, das weder profitabel im klassischen Sinne ist noch börsennotierte Vergleichswerte hat, ist ambitioniert — erinnert an die Tesla-Euphorie 2020/21. Die Space Economy ist real, aber solche Ersttagsprämien verdampfen historisch oft schnell. Der Host-Hinweis, Zeichnungsgewinne zu sichern, ist vernünftig.",
+     "kategorie": "fundamental",
+     "sec": 269,
+     "t": "04:29",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=269s"
+    },
+    {
+     "name": "Infineon Technologies",
+     "ticker": "IFX.DE",
+     "note": "Charttechnisch stark mit kaum nennenswerter Korrektur; KI-Fantasie treibt den Wert, hat sich in kurzer Zeit mehr als verdoppelt.",
+     "figures": "mehr als verdoppelt in kurzer Zeit",
+     "tip": "Anleger greifen laut Host zu",
+     "einordnung": "Infineon als KI-Profiteur über Leistungshalbleiter und Power-Management ist fundamental nachvollziehbar. Eine Verdopplung in kurzer Zeit erhöht jedoch das Rückschlagrisiko — hier sollte man Gewinne mit Trailing-Stops absichern.",
+     "kategorie": "chartanalyse",
+     "sec": 376,
+     "t": "06:16",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=376s"
+    },
+    {
+     "name": "Lufthansa",
+     "ticker": "LHA.DE",
+     "note": "Profitiert doppelt: sinkende Kerosinpreise durch fallenden Ölpreis und geopolitische Entspannung. Charttechnisch überwindet der Kurs einen Widerstand; nächstes Ziel ist eine Kurslücke bei ca. 9 €.",
+     "figures": "Kurslücke bei ca. 9 €",
+     "tip": "Kursziel Lücke bei ca. 9 €",
+     "einordnung": "Lufthansa ist der klassische Ölpreis-Profiteur — jeder Rückgang der Kerosinkosten wirkt direkt auf die ohnehin dünnen Margen. Das charttechnische Kursziel von 9 € ist plausibel, die strukturellen Probleme (Streikrisiko, hohe Schulden) bleiben aber.",
+     "kategorie": "chartanalyse",
+     "sec": 399,
+     "t": "06:39",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=399s"
+    },
+    {
+     "name": "TUI",
+     "ticker": "TUI1.DE",
+     "note": "Vorbörslich deutlich im Plus — profitiert von der Kombination aus geopolitischer Entspannung (Nahost) und sinkenden Ölpreisen.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "TUI als Reiseveranstalter ist ein direkter Geopolitik-Beta-Wert: Entspannung im Nahen Osten öffnet potentiell Reiseziele und senkt Kerosinkosten. Das ist kurzfristig eindeutig positiv, strukturell bleibt TUI aber ein Sanierungsfall mit hoher Schuldenquote.",
+     "kategorie": "news",
+     "sec": 471,
+     "t": "07:51",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=471s"
+    },
+    {
+     "name": "Rheinmetall",
+     "ticker": "RHM.DE",
+     "note": "Unter Druck: Friedenshoffnung dämpft die Rüstungsfantasie, zusätzlich Sorgen um das deutsch-französische Panzer-Joint-Venture und mögliche Mittelkürzungen.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Das ist die Kehrseite des Friedens-Trades — wer von Rüstungsausgaben profitiert, leidet bei Deeskalation. Rheinmetall hatte eine beispiellose Rally; eine Konsolidierung ist nach diesem Katalysator fundamental erklärbar. Langfristig bleibt die Bundeswehr-Modernisierung ein struktureller Treiber, kurzfristig ist Geduld gefragt.",
+     "kategorie": "news",
+     "sec": 483,
+     "t": "08:03",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=483s"
+    },
+    {
+     "name": "ASML Holding",
+     "ticker": "ASML",
+     "note": "Neues Rekordhoch vorbörslich; volle Auftragsbücher, Analysten rechnen für das nächste Jahr mit 90 ausgelieferten Anlagen (vs. zuletzt ~80) und 15–20 % Umsatzwachstum.",
+     "figures": "80 Anlagen aktuell, ~90 Anlagen nächstes Jahr erwartet; Wachstumsprognose 15–20 %",
+     "tip": "",
+     "einordnung": "ASML ist und bleibt das Monopol im EUV-Segment — kein Wettbewerber in Sichtweite. Rekordstände auf Rekordkurs bei solcher Visibilität der Auftragslage sind fundamental gerechtfertigt. Das erinnert an die Nvidia-Dynamik: solange der KI-Investitionszyklus läuft, bleibt ASML alternativlos.",
+     "kategorie": "fundamental",
+     "sec": 540,
+     "t": "09:00",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=540s"
+    }
+   ],
+   "macro": [
+    {
+     "text": "USA und Iran haben einen Friedensdurchbruch erzielt — Vertragsunterzeichnung am Freitag erwartet; dies normalisiert die Ölversorgung, senkt die Energiepreise und löst weltweit einen Risk-on-Impuls aus.",
+     "sec": 35,
+     "t": "00:35",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=35s"
+    },
+    {
+     "text": "Sinkende Ölpreise durch Iran-Deal reduzieren den Inflationsdruck und könnten Notenbanken (Fed, EZB) Spielraum für eine lockerere Zinspolitik geben.",
+     "sec": 139,
+     "t": "02:19",
+     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=139s"
+    }
+   ]
+  },
   {
    "channel": "derAktionär",
    "playlist": "Märkte am Morgen",
