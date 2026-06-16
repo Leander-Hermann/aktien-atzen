@@ -10,13 +10,13 @@
    "date": "20251205",
    "url": "https://www.youtube.com/watch?v=BADYwmZH114",
    "thumbnail": "https://i.ytimg.com/vi/BADYwmZH114/hqdefault.jpg",
-   "summarized_at": "2026-06-16T06:41:22.595935+00:00",
-   "summary": "Die Sendung beleuchtet die KI-Chip-Partnerschaften von Marvell und Broadcom mit Hyperscalern, die anstehende Fed-Zinsentscheidung (89% erwarten eine Senkung) sowie Quartalszahlen von Hewlett Packard Enterprise und Oracle. Zudem werden Mixed News zu Tesla, Boeing und Wynn Resorts sowie Chartanalysen zu S&P 500, Alphabet und Tesla besprochen.",
+   "summarized_at": "2026-06-16T13:41:46.163337+00:00",
+   "summary": "In der Sendung 'Calling USA' vom 04.12.2025 stehen KI-Chip-Entwickler Marvell und Broadcom im Fokus, begleitet von Quartalszahlen bei Hewlett Packard Enterprise und Oracle. Die US-Notenbank entscheidet nächste Woche über Zinsen, der Markt erwartet eine Senkung. Charttechnisch zeigt Patrik beim S&P 500 eine Konsolidierung und bewertet Alphabet als Short-, Tesla als langfristigen Long-Kandidaten.",
    "items": [
     {
      "name": "Intro mit Antonie vor Marvell",
      "ticker": null,
-     "note": "Einleitung zu den Themen Marvell, Broadcom und KI-Chips; Antonie steht vor dem Chipentwickler Marvell.",
+     "note": "Begrüßung und Vorstellung der Sendung, Antonie steht vor der Marvell-Zentrale.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -30,7 +30,7 @@
     {
      "name": "OpenAI",
      "ticker": null,
-     "note": "Internes Memo 'Code Red' von Sam Altman: Fokus auf neue Modelle wegen Konkurrenz durch Googles Gemini; Nutzerzahlen zeigen leichte Verschiebung, aber keine dramatische Änderung.",
+     "note": "Internes Memo von Sam Altman (Code Red): Fokus auf neue KI-Modelle, alle anderen Projekte zurückgestellt. Open AI sorgt sich um Google Gemini als Wettbewerber.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -44,7 +44,7 @@
     {
      "name": "Anstehende Termine",
      "ticker": null,
-     "note": "US-Notenbanksitzung nächste Woche: 89% der Marktteilnehmer erwarten eine Leitzinssenkung; Inflationsdaten von September und schwacher Arbeitsmarkt als wichtige Faktoren.",
+     "note": "US-Notenbank trifft nächste Woche zur Zinsentscheidung, 89% der Marktteilnehmer erwarten eine Leitzinssenkung. Am nächsten Tag kommen Inflationsdaten, die aber alt sind. Arbeitsmarkt zeigt Schwäche.",
      "figures": "89%",
      "tip": "",
      "einordnung": "",
@@ -58,8 +58,8 @@
     {
      "name": "Marvell, Broadcom, KI-Chips",
      "ticker": null,
-     "note": "Marvell arbeitet mit Amazon (Trainium 3) und Microsoft (Maia 200) zusammen, Broadcom mit Google (TPU v7) und Meta. Broadcom (1797 Mrd. Marktkap.) ist deutlich größer als Marvell (86 Mrd.), aber Marvell hat höheres Wachstum. Nvidia steht unter Wettbewerbsdruck; China-Exporte (50 Mrd. p.a.) sind gefährdet.",
-     "figures": "1797 Mrd., 86 Mrd., 50 Mrd.",
+     "note": "Marvell entwickelt mit Amazon die dritte Generation von KI-Trainingschips. Broadcom arbeitet mit Google. Beide stellen zunehmend Konkurrenz für Nvidia dar. Broadcom (1797 Mrd. Marktkap.) ist deutlich größer als Marvell (86 Mrd.), aber auch teurer bewertet. Marvell hat sich neu strukturiert und kauft Optophonik-Technologie zu.",
+     "figures": "1797 Milliarden (Broadcom), 86 Milliarden (Marvell), 50 Milliarden (Nvidia China-Exporte)",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -72,8 +72,8 @@
     {
      "name": "Hewlett Packard Enterprise",
      "ticker": null,
-     "note": "HPE meldet nach Börsenschluss: Management senkte Prognosen (EPS 220-240, Umsatzwachstum 5-10% vs. erwartete 17%). Aktie fiel, Dividende um 10% erhöht. Analysten: 13 neutral, 7 Kauf. Marktkap. 29 Mrd., Free Cashflow-Ziel 3,5 Mrd. bis 2028.",
-     "figures": "220-240, 5-10%, 10%, 29 Mrd., 3,5 Mrd.",
+     "note": "HPE berichtet nach Börsenschluss. Das Management hatte zuvor die Erwartungen gedämpft: EPS 220-240 (Markt rechnete mit 242-244), Umsatzwachstum 5-10% (erwartet 17%). Dividende wird um 10% erhöht. Analysten sind verhalten: 13 neutral, 7 Kauf. Ziel: 3,5 Mrd. Free Cashflow bis 2028.",
+     "figures": "220-240 (EPS), 5-10% (Umsatz), 17% (Markterwartung), 10% (Dividende), 3,5 Milliarden (Free Cashflow), 29 Milliarden (Marktkap.), 13 neutral, 7 Kauf",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -86,8 +86,8 @@
     {
      "name": "Oracle",
      "ticker": null,
-     "note": "Oracle-Aktie fiel von 345 $ auf 200 $ wegen hoher Verschuldung (100 Mrd. $ Kredite/Leasing, 18 Mrd. Anleihen, bis 2028 auf 300 Mrd. prognostiziert) und negativem Free Cashflow. Neue CEOs treten an.",
-     "figures": "345, 200, 100 Mrd., 18 Mrd., 300 Mrd.",
+     "note": "Oracle erreichte im September ein Rekordhoch von 345$, fiel dann auf 200$ zurück. Grund: negativer Free Cashflow und hohe Verschuldung (100 Mrd., bis 2028 auf 300 Mrd. prognostiziert). Neue CEOs präsentieren erstmals Zahlen. Ergebniswachstum nur gering (2 Cent mehr).",
+     "figures": "345$, 200$, 100 Milliarden (Verbindlichkeiten), 300 Milliarden (Prognose 2028), 18 Milliarden (Kapitalmarkt-Schulden)",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -100,8 +100,8 @@
     {
      "name": "Mixed News – Tesla, Boeing, Wynn Resorts, Analysehaus Baird über die Softwarebranche",
      "ticker": null,
-     "note": "Tesla: China-Absatz +9,9% (Model 3 +41% ggü. Vormonat), aber Förderung sinkt ab 2026. Boeing: CFO kündigt höhere Auslieferungen für 737/787 an, positiver Free Cashflow ab 2026 erwartet; Aktie +10%. Wynn Resorts auf Goldman Sachs Conviction List. Baird empfiehlt Axon, Zoom, Twilio, Rubrik, Okta.",
-     "figures": "9,9%, 41%, 10%",
+     "note": "Tesla verzeichnet in China +9,9% Absatz (Model 3 +41% ggü. Vormonat), aber Subventionen laufen aus. Boeing kündigt höhere Auslieferungen für 737/787 an und erwartet 2026 positiven Free Cashflow (Aktie +10%). Wynn Resorts von Goldman Sachs als 'Best in Class' in Macao eingestuft. Baird sieht günstige Bewertungen bei Axon (hohes Wachstum), Zoom und Twilio (hoher Cashflow) sowie Rubrik und Okta.",
+     "figures": "9,9% (Tesla China), 41% (Model 3), 10% (Boeing Aktie)",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -114,9 +114,9 @@
     {
      "name": "Charttechnik mit Patrik – S&P 500",
      "ticker": null,
-     "note": "S&P 500 konsolidiert unter 6820 Punkten; möglicher Test der Hochs (7000-7200) mit Fed-Katalysator, aber geringes Volumen. Unterstützung bei 6766 und 6600. Nvidia zeigt Schwäche. Keine Long-Position vor Ausbruch empfohlen.",
-     "figures": "6820, 6766, 6600, 7000-7200",
-     "tip": "Keine Long-Position vor Ausbruch aufbauen.",
+     "note": "S&P 500 konsolidiert nach der Feiertagswoche mit geringem Volumen. Wichtige Marken: 6820 (0,75-Fibonacci), bei Ausbruch bis 7000-7200 möglich. Unterstützungen bei 6766 und 6600. Nvidia zeigt neue Tiefs – Warnsignal. Aktuell unter 21-Tage-Durchschnitt. Keine Long-Position vor Ausbruch empfohlen.",
+     "figures": "6820, 7000, 7200, 6766, 6600",
+     "tip": "Keine Long-Position vor Ausbruch aufbauen",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -128,9 +128,9 @@
     {
      "name": "Alphabet",
      "ticker": null,
-     "note": "Alphabet (Google) wird als Short-Kandidat gesehen; Aufwärtspotenzial auf 340-350 begrenzt, eher Konsolidierung/Korrektur erwartet.",
-     "figures": "340-350",
-     "tip": "Short-Kandidat; Rücksetzer abwarten.",
+     "note": "Patrik sieht Alphabet nun als Short-Kandidaten. Aufwärtspotenzial bis 340-350 begrenzt, erwartet eine Konsolidierung oder Korrektur in den nächsten Monaten.",
+     "figures": "340, 350",
+     "tip": "Short-Kandidat, Rücksetzer abwarten",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -142,9 +142,9 @@
     {
      "name": "Tesla",
      "ticker": null,
-     "note": "Tesla zeigt relative Stärke, Konsolidierung nach Ausbruch; Potenzial bis 500+ bei Ausbruch über 475. Unterstützung an aufwärtsgerichteter Trendlinie. Patrik ist bullish und würde bei Rücksetzer einsteigen.",
-     "figures": "475, 500+, 365",
-     "tip": "Bei Rücksetzer einsteigen; Ausbruch über 475 als Signal.",
+     "note": "Patrik bleibt bullish: noch keine neuen Allzeithochs in 2024, Aufwärtspotenzial bis 500+. Bei Ausbruch über 475 wäre das Go. Unterstützung durch aufwärtsgerichtete Trendlinie. Relative Stärke in den letzten Tagen. Rücksetzer zum Einstieg nutzen.",
+     "figures": "365, 475, 500",
+     "tip": "Bei Rücksetzer einsteigen, Ausbruch über 475 abwarten",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -156,7 +156,7 @@
     {
      "name": "Outro",
      "ticker": null,
-     "note": "Zusammenfassung und Ausblick auf nächste Woche; weitere interessante News werden erwartet.",
+     "note": "Verabschiedung und Hinweis auf die nächste Sendung in der Vorweihnachtszeit.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -170,7 +170,7 @@
    ],
    "macro": [
     {
-     "text": "US-Notenbank: 89% der Marktteilnehmer erwarten eine Leitzinssenkung auf der nächsten Sitzung; Inflationsdaten und schwacher Arbeitsmarkt beeinflussen die Erwartungen.",
+     "text": "US-Notenbank entscheidet nächste Woche über Leitzins, 89% der Marktteilnehmer erwarten eine Zinssenkung. Inflationsdaten und schwacher Arbeitsmarkt beeinflussen die Erwartungen.",
      "sec": 187,
      "t": "03:07",
      "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=187s"
