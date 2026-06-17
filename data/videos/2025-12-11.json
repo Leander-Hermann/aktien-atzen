@@ -10,13 +10,13 @@
    "date": "20251211",
    "url": "https://www.youtube.com/watch?v=f0pcBA15wVI",
    "thumbnail": "https://i.ytimg.com/vi/f0pcBA15wVI/hqdefault.jpg",
-   "summarized_at": "2026-06-16T18:38:50.609994+00:00",
-   "summary": "Die Sendung behandelt die aktuelle Fed-Zinssenkung, geldpolitische Lockerung und die Nachfolge von Fed-Chef Powell durch Kevin Hassett. Zudem werden Einzelwerte wie Credo Technology (starkes KI-bezogenes Wachstum) und Micron Technologies (vor Quartalszahlen) analysiert, sowie Mixed News zu S&P-500-Anpassungen, der Übernahmeschlacht um Warner Bros. und Adobe. Charttechnische Einschätzungen zum S&P 500, Berkshire Hathaway und Netflix runden die Sendung ab.",
+   "summarized_at": "2026-06-17T06:38:44.833342+00:00",
+   "summary": "Die Sendung diskutiert die Fed-Zinssenkung, Indizes auf Rekordhoch, und Einzelaktien wie Credo Technology, Micron, Berkshire Hathaway, Netflix sowie Mixed News zu S&P 500-Änderungen und Warner-Übernahme. Charttechnisch zeigt der S&P 500 Seitwärtsbewegung, Berkshire und Netflix bieten taktische Chancen.",
    "items": [
     {
      "name": "Intro mit Antonie vor Micron Technologies",
      "ticker": null,
-     "note": "Antonie steht vor dem Micron-Gebäude und kündigt die Themen der Sendung an: Fed-Sitzung, Credo Technology, Micron-Zahlen und Berkshire Hathaway.",
+     "note": "Begrüßung mit Vorschau auf Micron, Credo und Berkshire.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -30,8 +30,8 @@
     {
      "name": "Zinssenkung und die Indizes/Oracle",
      "ticker": null,
-     "note": "Die Fed senkte die Zinsen um 0,25% und startet quantitatives Easing (40 Mrd USD) im Dezember. Die Entscheidung fiel 9:3; der Arbeitsmarkt bleibt schwach, die Inflation hoch. Oracle wird im Zusammenhang mit KI und Auftragsbestand erwähnt.",
-     "figures": "0,25% Zinssenkung, 40 Mrd USD QE, 9:3 Entscheidung, 13 Zinssenkungen in Folge",
+     "note": "Fed senkt Zinsen um 25 BP, QE startet im Dezember. S&P 500 und Russell 2000 auf Rekordhoch. Michael Burry vergleicht OpenAI mit Netscape.",
+     "figures": "25 BP Zinssenkung, 40 Mrd. USD QE",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -44,7 +44,7 @@
     {
      "name": "Fed-Vorsitz: Auf Powell dürfte Hassett folgen",
      "ticker": null,
-     "note": "Kevin Hassett (Trump-Vertrauter) soll Powell im Mai als Fed-Chef ablösen. Hassett wird nicht allein entscheiden, aber die Richtung der Geldpolitik beeinflussen.",
+     "note": "Kevin Hassett als möglicher Nachfolger Powells ab Mai 2025. Einfluss begrenzt, da Fed-Chef nicht allein entscheidet.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -58,8 +58,8 @@
     {
      "name": "Wachstumsprognose der Atlanta Fed",
      "ticker": null,
-     "note": "Die Atlanta Fed prognostiziert 1,7% BIP-Wachstum für 2025, 2,3% für 2026. Arbeitslosenrate liegt bei 4,4% und wird auf 4,5% steigen. Der starke Konsum der oberen Schichten stützt die Wirtschaft, schwächere Einkommensschichten bereiten Sorgen.",
-     "figures": "1,7% (2025), 2,3% (2026), 4,4% Arbeitslosenrate (Prognose 4,5%), GDP Now 3,5% (Q3), Jahreswachstum 1,82%",
+     "note": "BIP-Wachstum 1,7% für 2025, 2,3% für 2026, Arbeitslosenrate 4,5%. Atlanta Fed GDPNow bei 3,5% für Q3.",
+     "figures": "1,7%, 2,3%, 4,5%, 3,5%",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -72,9 +72,9 @@
     {
      "name": "Credo Technology",
      "ticker": null,
-     "note": "Credo ist ein Nischenzulieferer für Datacenter-Verkabelung (elektrisch/optisch). Das Unternehmen steigerte den Umsatz von 436 Mio auf erwartete 1,2 Mrd USD (+170%). KGV liegt bei 102, Analysten sehen 40-50% Kurspotenzial (Kursziele 220-240 USD).",
-     "figures": "600 Mitarbeiter, Umsatz 436 Mio USD (Vorjahr), 1,2 Mrd USD (erwartet 2025), 1,6 Mrd USD (FY2026), Nettogewinn 52 Mio USD, KGV 102, Kursziele: 165→240 (BofA), 220-225 (andere)",
-     "tip": "Analysten sehen 40-50% Kurspotenzial, aber hohe Wachstumserwartungen (170% dann nur noch 30-40%) machen Aktie riskant.",
+     "note": "Zulieferer für Datencenter-Verkabelung, starkes Wachstum mit KI. Umsatzverdopplung auf 436 Mio. USD, KGV 102. Analysten sehen 40-50% Kurspotenzial.",
+     "figures": "600 Mitarbeiter, Umsatz 436 Mio. USD (2025), 1,2 Mrd. (2026E), 1,6 Mrd. (2027E), Nettogewinn 52 Mio., KGV 102, Kursziele 220-240 USD",
+     "tip": "Kursziele 220-240 USD, 40-50% Potenzial",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -86,9 +86,9 @@
     {
      "name": "Micron Technologies",
      "ticker": null,
-     "note": "Micron verdreifachte den Aktienkurs seit Jahresbeginn und verdoppelte den Umsatz. Die Marge stieg auf 41%. Analysten erwarten starke Q1-Zahlen (Umsatz ~12,78 Mrd USD, Marge 51,5%). Kursziele reichen von 300 bis 330 USD.",
-     "figures": "Aktie +200% YTD, Umsatz verdoppelt, Marge +17 Prozentpunkte auf 41%, KGV 17, DRAM-Preise +18-23% (Q4), Eigenprognose: Umsatz 12,5 Mrd ±300 Mio, Marge 51,5% ±1, Kursziele: 250 (BofA neutral), 300 (Citi), 330 (HSBC)",
-     "tip": "Vor den Zahlen nächste Woche: Markt erwartet oberes Ende der Prognosen. Aktie gilt als günstig (KGV 17), aber Speicherzyklus birgt Risiko.",
+     "note": "Zahlen nächste Woche. Fokussiert auf KI-Speicher, stellt Consumer-Sparte ein. Umsatz verdoppelt, Marge 41%. KGV 17. Analysten erwarten Prognosen am oberen Ende.",
+     "figures": "Aktie verdreifacht YTD, Umsatz verdoppelt, Marge 41%, KGV 17, Q4-Umsatz 12,78 Mrd. USD, Marge 51,5%, Kursziele: BofA 250, Citi 300, HSBC 330",
+     "tip": "",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -100,8 +100,8 @@
     {
      "name": "Mixed News – Ares Management, Netflix/Warner, Adobe u.a.",
      "ticker": null,
-     "note": "Ares Management wird kurzfristig in den S&P 500 aufgenommen (ersetzt Kellanova). Übernahmeschlacht um Warner Bros: Paramount SkyDance bietet 30 USD je Aktie, Netflix will nur Streaming/Studio kaufen. Vertragsstrafen: Netflix müsste bei Scheitern 5,8 Mrd USD zahlen. Adobe liefert starke Zahlen (KI-Umsatz 250 Mio USD), aber Wettbewerb bleibt hart.",
-     "figures": "Carvana +17%, CRH +5%, Comfort Systems +3%, Paramount-Angebot 30 USD/Aktie, Vertragsstrafe Netzflix 5,8 Mrd USD, Adobe KI-Umsatz 250 Mio USD im letzten Quartal",
+     "note": "S&P 500-Aufnahmen: Ares Management, CRH, Carvana, Comfort Systems. Warner-Übernahme: Netflix bietet 5,8 Mrd. USD Vertragsstrafe. Adobe: KI-Umsatz 250 Mio. USD, Aktie -22% YTD.",
+     "figures": "Carvana +17%, CRH +5%, Comfort +3%, Warner: 5,8 Mrd. (Netflix), 2,8 Mrd. (Warner), Adobe: 250 Mio. KI-Umsatz, -22% YTD",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -114,9 +114,9 @@
     {
      "name": "Berkshire Hathaway",
      "ticker": null,
-     "note": "Berkshire sitzt auf 382 Mrd USD Cash, aber günstige Übernahmeziele sind rar. Warren Buffett geht in Rente, CFO Mark Hamburg (2027) und Ted Combs (Wechsel zu JPMorgan) verlassen das Unternehmen. Nachfolger Greg Abel. Das Portfolio wurde zuletzt mit Google-Aktien ausgebaut.",
-     "figures": "382 Mrd USD Cash, Google-Investment im letzten Quartal (unterbewertet)",
-     "tip": "Führungswechsel und Cash-Berg als Herausforderung, aber Struktur bleibt solide.",
+     "note": "Managementwechsel: Buffett geht in Rente, CFO geht 2027, Ted Combs verlässt zu JPMorgan. Cashberg 382 Mrd. USD. Fokus auf Value-Aktien.",
+     "figures": "382 Mrd. USD Cash",
+     "tip": "",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -128,9 +128,9 @@
     {
      "name": "Charttechnik mit Patrik – S&P 500",
      "ticker": null,
-     "note": "S&P 500 bewegt sich seit 10 Tagen in einer Range unterhalb von 6800 Punkten. Bei Ausbruch Ziel 7000-7200. Dow Jones erreicht neue Allzeithochs (+1,3%), während Magnificent 7 überwiegend rot sind. Nächste Woche Verfall, daher geringe Volatilität erwartet.",
-     "figures": "Unterstützung 6800 Punkte, Zielzone 7000-7200, 21-Tage-Durchschnitt, Dow +1,3%",
-     "tip": "Ausbruch über 6800 nötig für weitere Aufschwünge; unter 6800 bärisch. Verfall beachten.",
+     "note": "S&P 500 in enger Range 6800-6900, Ausbruch über 6900 könnte Richtung 7000-7200 führen. Unterstützung bei 6800. Verfall nächste Woche. Divergenz: Dow stark, Mag7 rot.",
+     "figures": "6800, 7000, 7200",
+     "tip": "Abwarten auf Ausbruch über 6900, bei Unterschreitung von 6800 bärisch",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -142,9 +142,9 @@
     {
      "name": "Berkshire Hathaway",
      "ticker": null,
-     "note": "Charttechnisch schwache Aktie mit Seitwärtsbewegung seit Mai. Unterstützung bei 460 USD, Widerstand bei 520 USD. Aktuell unter 500 USD. Kein klarer Trend, aber bei Ausbruch über 520 wären neue Allzeithochs möglich.",
-     "figures": "Unterstützung 460 USD, Widerstand 520 USD, aktuell um 500 USD",
-     "tip": "Abwarten auf Ausbruch über 520 USD für Long-Einstieg. Solange unter 500 bleibt die Aktie in der Seitwärtsphase.",
+     "note": "Chartanalyse: Aktie unterperformt, Widerstand bei 520 USD, Unterstützung 460 USD. Aktuell um 500 USD. Konsolidierung, abwarten auf Ausbruch.",
+     "figures": "460, 500, 520",
+     "tip": "Ausbruch über 520 für neue Hochs, sonst abwarten",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -156,9 +156,9 @@
     {
      "name": "Netflix",
      "ticker": null,
-     "note": "Netflix zeigt charttechnisch eine bullische Wende nach unten mit erhöhtem Volumen in den letzten Tagen. Unterstützung bei 90 USD, Widerstandszonen bei 106 und 114 USD. Unabhängig vom Gesamtmarkt, taktisch interessant für Trading.",
-     "figures": "Unterstützung 90 USD, Widerstände 106 und 114 USD",
-     "tip": "Trading-Idee: Einstieg nahe Unterstützung 90 USD, Ziel 106-114 USD. Stopp unter 90 USD.",
+     "note": "Chart: Bodenbildung im April, Unterstützung bei 90 USD, Widerstand 106 und 114. Hohes Volumen, taktische Long-Chance. Korrektur könnte Kaufgelegenheit sein.",
+     "figures": "90, 106, 114",
+     "tip": "Taktisch long bei Unterstützung 90, Ziel 106-114",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -170,7 +170,7 @@
     {
      "name": "Outro",
      "ticker": null,
-     "note": "Verabschiedung und Hinweis auf letzte Sendung 2025 am 18. Dezember (nächste Woche). Danach Weihnachtspause.",
+     "note": "Zusammenfassung und Hinweis auf letzte Sendung am 18.12.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -184,22 +184,22 @@
    ],
    "macro": [
     {
-     "text": "Fed senkt Leitzins um 0,25% und startet quantitatives Easing (40 Mrd USD); weitere Lockerungen werden langsamer (nur 1-2 Senkungen 2025 erwartet).",
+     "text": "Fed senkt Leitzins um 25 Basispunkte und startet QE im Dezember, um schwachen Arbeitsmarkt zu stützen.",
      "sec": 81,
      "t": "01:21",
      "tlink": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=81s"
     },
     {
-     "text": "Fed-Vorsitz: Kevin Hassett soll Powell im Mai ablösen – geldpolitische Richtung könnte sich ändern, aber Einfluss begrenzt.",
-     "sec": 305,
-     "t": "05:05",
-     "tlink": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=305s"
-    },
-    {
-     "text": "BIP-Wachstum von 1,7% (2025) und 2,3% (2026) prognostiziert; Arbeitsmarkt bleibt schwach mit 4,4% Arbeitslosigkeit. Schwächere Einkommensschichten belasten die Konjunktur.",
+     "text": "BIP-Wachstum 2025 bei 1,7%, 2026 bei 2,3%; Arbeitslosenrate steigt auf 4,5%.",
      "sec": 392,
      "t": "06:32",
      "tlink": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=392s"
+    },
+    {
+     "text": "Zölle wirken bremsend auf die Wirtschaft, da sie vorgezogene Käufe verursachen und dann negative Effekte haben.",
+     "sec": 588,
+     "t": "09:48",
+     "tlink": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=588s"
     }
    ]
   }
