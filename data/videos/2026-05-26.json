@@ -10,28 +10,14 @@
    "date": "20260526",
    "url": "https://www.youtube.com/watch?v=LU60d_3fNcM",
    "thumbnail": "https://i.ytimg.com/vi/LU60d_3fNcM/hqdefault.jpg",
-   "summarized_at": "2026-06-18T13:44:57.931169+00:00",
-   "summary": "Egmond Haidt analysiert die Marktlage vor dem Hintergrund des Iran-Kriegs und Trumps Äußerungen, die den Ölpreis drücken und die Aktienmärkte treiben. Er bespricht Konjunkturdaten (ifo, PMIs), die US-Schuldenproblematik, die Nasdaq-Regeländerung für SpaceX, sowie Einzelwerte wie Nvidia, Infineon, Delivery Hero und Nextracker. Trotz fundamentaler Bedenken erwartet er eine Fortsetzung der Rally in S&P 500 und DAX, während Gold und Bitcoin seitwärts laufen.",
+   "summarized_at": "2026-06-18T18:44:21.342710+00:00",
+   "summary": "Egmond Haidt analysiert am 26.05.2026 die Marktlage beeinflusst durch Trump's Aussagen zu Iran-Verhandlungen, fallende Ölpreise und steigende Aktienmärkte. Er diskutiert Nvidia, Infineon, Delivery Hero, Nasdaq-100-Regeländerungen, SpaceX IPO und Konjunkturdaten. Die US-Märkte sind auf Rekordfahrt, während deutsche Konjunkturdaten schwach sind. Er erwartet eine anhaltende Rally bei S&P 500 und DAX sowie eine Seitwärtsbewegung bei Gold und Bitcoin.",
    "items": [
-    {
-     "name": "Intro",
-     "ticker": null,
-     "note": "Sendungsbeginn mit Themenübersicht und Hinweis auf keine Anlageberatung.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 0,
-     "t": "00:00",
-     "tlink": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=0s"
-    },
     {
      "name": "ifo – jedes vierte Industrieunternehmen sieht Verlust an Wettbewerbsfähigkeit",
      "ticker": null,
-     "note": "25,2% der Unternehmen verlieren außerhalb der EU an Wettbewerbsfähigkeit, innerhalb der EU 15,5%.",
-     "figures": "25,2% außerhalb EU, 15,5% innerhalb EU",
+     "note": "25,2% der Industrieunternehmen verlieren laut ifo-Umfrage Wettbewerbsfähigkeit außerhalb der EU, innerhalb Europas 15,5%.",
+     "figures": "25,2%, 15,5%",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -42,10 +28,10 @@
      "tlink": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=120s"
     },
     {
-     "name": "Trump – „letzte Etappen\" in den Iran-Verhandlungen, Ölpreis bricht ein",
+     "name": "Trump – \"letzte Etappen\" in den Iran-Verhandlungen, Ölpreis bricht ein",
      "ticker": null,
-     "note": "Trump behauptet letzte Etappen der Iran-Verhandlungen, Ölpreis fällt um 5%, S&P 500 steigt.",
-     "figures": "-5% Ölpreis",
+     "note": "Trump behauptet letzte Etappen der Iran-Verhandlungen, Ölpreis fällt 5%, S&P 500 steigt.",
+     "figures": "-5%",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -58,9 +44,9 @@
     {
      "name": "Nvidia",
      "ticker": null,
-     "note": "Aktie nach Zahlen zunächst leicht gefallen, dann weiter abwärts; EV/EBIT 2027/28 bei 16x, 70% Umsatzwachstum, EBIT-Marge 60-70%.",
-     "figures": "EV/EBIT 16x, 70% Umsatzwachstum, 60-70% EBIT-Marge",
-     "tip": "Aktie könnte zwei Monate seitwärts laufen und vor nächsten Zahlen wieder steigen.",
+     "note": "Nvidia-Aktie fiel nach Zahlenvorlage 1-2% und setzte Rückgang fort. Bewertung: Enterprise Value/EBIT 2027/28 beim 16-fachen, EBIT-Marge 60-70%. Er sieht Gewinnmitnahmen und erwartet Seitwärtsbewegung.",
+     "figures": "-1% bis -2%, 16-fach, 60-70%",
+     "tip": "Abwarten, mögliche Seitwärtsbewegung",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -72,8 +58,8 @@
     {
      "name": "Einkaufsmanagerindex Deutschland",
      "ticker": null,
-     "note": "PMI gesamt von 48,4 auf 48,6; Industrie fällt von 51,4 auf 49,9 (4-Monats-Tief); Dienstleistung steigt auf 47,8.",
-     "figures": "PMI gesamt 48,6; Industrie 49,9; Dienstleistung 47,8",
+     "note": "EMI Deutschland stieg leicht von 48,4 auf 48,6, Industrie brach von 51,4 auf 49,9 ein, Dienstleistung stieg von 46,9 auf 47,8. Liegt klar unter 50er Marke.",
+     "figures": "48,4→48,6; Industrie 51,4→49,9; Dienstleistung 46,9→47,8",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -86,8 +72,8 @@
     {
      "name": "Einkaufsmanagerindex Eurozone",
      "ticker": null,
-     "note": "PMI von 48,8 auf 47,5 gefallen, leicht unter Erwartung von 47,8. Wirtschaft leidet unter Iran-Krieg.",
-     "figures": "47,5 Punkte",
+     "note": "EMI Eurozone fiel von 48,8 auf 47,5, leicht unter Erwartung von 47,8. Wirtschaft leidet unter Irankrieg.",
+     "figures": "48,8→47,5; Erwartung 47,8",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -100,8 +86,8 @@
     {
      "name": "Einkaufsmanagerindex USA",
      "ticker": null,
-     "note": "PMI stabil bei 51,7; Industrie steigt von 54,5 auf 55,3. USA profitiert von hohen Ölpreisen.",
-     "figures": "51,7 gesamt, Industrie 55,3",
+     "note": "EMI USA stabil bei 51,7, Industrieanstieg von 54,5 auf 55,3. USA profitieren von hohen Ölpreisen.",
+     "figures": "51,7; Industrie 54,5→55,3",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -114,7 +100,7 @@
     {
      "name": "ifo Geschäftsklimaindex",
      "ticker": null,
-     "note": "Index von 84,5 auf 84,9 gestiegen; Lage 86,1; Erwartungen 83,8. Wirtschaft stabilisiert sich leicht, bleibt fragil.",
+     "note": "ifo Geschäftsklimaindex stieg im Mai auf 84,9 (von 84,5). Lage 86,1, Erwartungen 83,8. Deutsche Wirtschaft stabilisiert sich leicht, bleibt fragil.",
      "figures": "84,9; Lage 86,1; Erwartungen 83,8",
      "tip": "",
      "einordnung": "",
@@ -128,7 +114,7 @@
     {
      "name": "Kevin Warsh als neuer Fed-Chef vereidigt",
      "ticker": null,
-     "note": "Warsh am 22. Mai vereidigt; nächste Sitzung 17. Juni. Erwartet wird, dass er Zinsen senkt, da KI disinflationär wirke.",
+     "note": "Wash am 22. Mai vereidigt. Erwartet wird, dass er Zinssenkungen vorbereitet, da KI disinflationär wirke. Nächste Sitzung 17. Juni.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -142,9 +128,9 @@
     {
      "name": "Uber Technologies / Übernahmeangebot für Delivery Hero",
      "ticker": null,
-     "note": "Uber bietet 33 € je Aktie für Delivery Hero (Börsenwert 10 Mrd. €). DH aktuell bei 37,92 €, ergibt EV 13,5 Mrd. = 18,6x EBIT 2027. Doordash zeigt ebenfalls Interesse.",
-     "figures": "33 €/Aktie, Börsenwert 10 Mrd. €, DH Kurs 37,92 €, EV 13,5 Mrd. = 18,6x EBIT 2027",
-     "tip": "Bei 38 € (5% Spread) würde ich verkaufen, nicht auf die letzten 5% spekulieren.",
+     "note": "Uber bietet 33€ je Aktie für Delivery Hero. Börsenwert 10 Mrd. €, aktueller Kurs 37,92€. Bewertung (EV/EBIT 2027) 18,6-fach, höher als Nvidia. Wettbewerber DoorDash hat auch Interesse.",
+     "figures": "33€, 10 Mrd. €, 37,92€, 18,6-fach",
+     "tip": "Verkaufen, letzte 5% mitnehmen",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -156,7 +142,7 @@
     {
      "name": "US-Militär greift in der Straße von Hormus an",
      "ticker": null,
-     "note": "Keine echte Einigung in Sicht; Trump redet den Markt mit immer gleichen Aussagen schön.",
+     "note": "US-Militär führt Angriffe zur Selbstverteidigung in der Straße von Hormus durch. Egmond sieht keine baldige Einigung mit Iran.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -170,8 +156,8 @@
     {
      "name": "US-Staatsschulden – 10 Billionen Dollar Refinanzierungsbedarf binnen Jahresfrist",
      "ticker": null,
-     "note": "US-Schulden 39,5 Billionen $, privat gehalten 31,27 Billionen $, 33% (rd. 10 Billionen $) in 12 Monaten fällig. Trump muss Zinsen niedrig halten.",
-     "figures": "39,5 Billionen $ Gesamtschulden, 31,27 Billionen $ privat, 33% fällig = 10 Billionen $",
+     "note": "US-Staatsschulden bei 39,5 Billionen, 31,27 Billionen bei privaten Investoren. 33% davon (ca. 10 Billionen) werden in 12 Monaten fällig. Trump muss Zinsen niedrig halten.",
+     "figures": "39,5 Billionen, 31,27 Billionen, 33%, 10 Billionen",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -184,9 +170,9 @@
     {
      "name": "Infineon",
      "ticker": null,
-     "note": "Aktie +17,8% in einer Woche; EBITDA laufendes Jahr 4,6 Mrd. €, nächstes Jahr 6,1 Mrd. €; EBIT 2,6/3,8 Mrd.; EV 105,3 Mrd. = 27,7x EBIT, KGV 29,7; hohe Bewertung.",
-     "figures": "+17,8% in der Woche, EBITDA 4,6/6,1 Mrd., EBIT 2,6/3,8 Mrd., EV 105,3 Mrd. = 27,7x EBIT, KGV 29,7",
-     "tip": "Höhenflug könnte trotz extrem hoher Bewertung weitergehen.",
+     "note": "Infineon-Aktie steigt 17,8% in einer Woche. Bewertung: EV/EBIT 27,7-fach, KGV 29,7. Ebitda laufendes Fiskaljahr 4,6 Mrd. €, nächstes 6,1 Mrd. €. Extrem hoch bewertet, aber KI-Hype treibt.",
+     "figures": "+17,8%; EV/EBIT 27,7; KGV 29,7; Ebitda 4,6 Mrd.€, 6,1 Mrd.€",
+     "tip": "Kaufen wegen KI-Hype, aber hohe Bewertung beachten",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -198,9 +184,9 @@
     {
      "name": "Nasdaq-Indexregeländerung & Börsengang SpaceX",
      "ticker": null,
-     "note": "Neue Fast-Entry-Regel: 15 Handelstage statt 3 Monate, Freefloat-Schwelle von 10% entfällt. SpaceX IPO 12. Juni zu 1,75 Billionen $ Bewertung, Emissionserlös 75 Mrd. $ (4,3% Freefloat). Gewichtungsfaktor 3x ergibt 12,9% des Börsenwerts im Index = 1% Indexgewicht = 7,5 Mrd. $ ETF-Käufe.",
-     "figures": "IPO 12. Juni, Bewertung 1,75 Billionen $, Erlös 75 Mrd. $ (4,3% Freefloat), Faktor 3x, 12,9% im Index, 1% Indexgewicht = 7,5 Mrd. $ Käufe",
-     "tip": "Nasdaq 100 bis zum IPO positv, da Käufe beschleunigt werden.",
+     "note": "Nasdaq änderte Indexregeln zum 1. Mai: Fast-Entry-Regel (Freefloat 10%) entfällt, Aufstieg nach 15 Handelstagen statt 33 Monaten. SpaceX IPO am 12. Juni mit Börsenwert 1,75 Billionen, Emissionserlös 75 Mrd. (4,3% Freefloat). Gewichtungsfaktor auf 3x gesetzt, führt zu Käufen von 7,5 Mrd. $ in 15 Tagen.",
+     "figures": "1,75 Billionen, 75 Mrd., 4,3%, 12,9%, 225 Mrd., 7,5 Mrd.",
+     "tip": "Positiv für Nasdaq 100 bis zum IPO",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -212,7 +198,7 @@
     {
      "name": "US-Inflationserwartungen",
      "ticker": null,
-     "note": "Inflationserwartungen brechen ein, unterstützt durch Trumps Ölpreis-Manipulation.",
+     "note": "Inflationserwartungen brechen ein, nachdem Trump Ölpreis nach unten redet. Fed könnte Zinsen senken.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -226,8 +212,8 @@
     {
      "name": "Zinsen 10-jährige US-Anleihen",
      "ticker": null,
-     "note": "Rendite fiel 18 Basispunkte in einer Woche, obwohl Fundamentaldaten unverändert.",
-     "figures": "-18 Basispunkte in einer Woche",
+     "note": "Zinsen fielen 18 Basispunkte in einer Woche trotz unveränderter Lage im Irankrieg. Trend nach unten gedreht.",
+     "figures": "-18 Basispunkte",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -240,8 +226,8 @@
     {
      "name": "EUR/USD",
      "ticker": null,
-     "note": "Seitwärts bei 1,16–1,17, stabile Seitenlage seit 10–11 Monaten.",
-     "figures": "1,16/1,17",
+     "note": "Stabile Seitenlage um 1,16-1,17, keine kurzfristige Änderung erwartet.",
+     "figures": "1,16-1,17",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -254,8 +240,8 @@
     {
      "name": "WTI-Öl",
      "ticker": null,
-     "note": "Derzeit 93–96 $, Wochenrückgang 13,7% allein durch Trumps Rhetorik.",
-     "figures": "93-96 $/Barrel, -13,7% in der Woche",
+     "note": "WTI bei ca. 93$, nach Erholung. Wochenrückgang 13,7% nur durch Trumps Rhetorik. Trend nach unten gedreht.",
+     "figures": "93$, -13,7%",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -268,9 +254,9 @@
     {
      "name": "S&P 500",
      "ticker": null,
-     "note": "Rekordfahrt dürfte bei niedrigem Ölpreis und Zinsen anhalten.",
+     "note": "S&P 500 auf Rekordfahrt. Sollte weiter steigen, da Trump Ölpreis drückt und Zinsen sinken. Größte Blase aller Zeiten.",
      "figures": "",
-     "tip": "Pfeil nach oben, Rally könnte weitergehen.",
+     "tip": "Weiterhin positiv",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -282,7 +268,7 @@
     {
      "name": "Nextracker",
      "ticker": null,
-     "note": "US-Solartechnik-Spezialist, KI-Boom treibt Nachfrage nach erneuerbaren Energien.",
+     "note": "US-Solartechnik-Spezialist, profitiert von KI-Boom, Nachfrage nach erneuerbaren Energien. Beitrag auf BNP-Homepage.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -296,9 +282,9 @@
     {
      "name": "DAX",
      "ticker": null,
-     "note": "1–2% unter Rekordhoch, Rally folgt dem S&P 500, KGV 14–15 nicht niedrig.",
-     "figures": "1-2% unter Rekordhoch",
-     "tip": "",
+     "note": "DAX schoss nach oben, 1-2% unter Rekordhoch. Rally fundamental nicht gerechtfertigt, aber S&P 500 zieht mit.",
+     "figures": "1-2% unter Rekord",
+     "tip": "Positiv, aber Vorsicht",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -310,9 +296,9 @@
     {
      "name": "Gold",
      "ticker": null,
-     "note": "Nahe 5-Monats-Tief; bei sinkendem Ölpreis und Zinsen sollte Gold stabil bleiben.",
+     "note": "Goldpreis gestern gestiegen, heute gefallen. Nahe 5-Monats-Tief. Seitwärts erwartet, aber Risiko nach unten bei schlechten Nachrichten.",
      "figures": "",
-     "tip": "Zumindest stabil, aber 5-Monats-Tief im Auge behalten.",
+     "tip": "Seitwärts, genau beobachten",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -324,9 +310,9 @@
     {
      "name": "Bitcoin",
      "ticker": null,
-     "note": "Wochenplus 0,2%, Seitwärtsbewegung, kurzfristig keine großen Sorgen.",
-     "figures": "+0,2% in der Woche",
-     "tip": "Seitwärts, kurzfristig kein Abwärtspotenzial.",
+     "note": "Wochenverlauf +0,2%, kaum Bewegung. Seitwärts erwartet bei fallenden Zinsen und bullischen Märkten.",
+     "figures": "+0,2%",
+     "tip": "Seitwärts",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -338,7 +324,7 @@
     {
      "name": "Zusammenfassung Finanzmarkt",
      "ticker": null,
-     "note": "Egmond fasst seine Erwartungen zusammen: Zinsen nach unten, EUR/USD seitwärts, Öl nach unten, S&P 500/DAX nach oben, Gold/Bitcoin seitwärts.",
+     "note": "Zinsen 10J US: nach unten, EUR/USD seitwärts, Öl nach unten, S&P 500 und DAX nach oben, Gold und Bitcoin seitwärts.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -352,9 +338,9 @@
     {
      "name": "Anstehende Termine – Salesforce, HP, BIP-Wachstum Q1, PCE-Preisindex, Dell, Inflationsrate Deutschland",
      "ticker": null,
-     "note": "Wichtige Termine: Salesforce und HP am Mittwoch, BIP Q1 und PCE am Donnerstag, Dell und Inflation Deutschland am Freitag.",
+     "note": "Zahlen von Salesforce und HP (Mi), BIP Q1 und PCE (Do), Dell (Do), Inflation Deutschland (Fr). Gute Zahlen könnten KI-Hype weiter treiben.",
      "figures": "",
-     "tip": "",
+     "tip": "Chipaktien bleiben positiv",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -366,8 +352,8 @@
     {
      "name": "Zuschauerfragen – Poste Italiane, SpaceX-Liquidität/Handelbarkeit, Saipem",
      "ticker": null,
-     "note": "Poste Italiane und Saipem werden geprüft, SpaceX-Handelbarkeit in Deutschland noch unklar. Liquidität für SpaceX-IPO wird aufgrund hoher Geldmarktfonds als unproblematisch gesehen.",
-     "figures": "",
+     "note": "Poste Italiane und Saipem werden analysiert. SpaceX ist ab IPO in Deutschland handelbar. Liquidität für SpaceX IPO (80 Mrd.) ist vorhanden, da viel Cash bei institutionellen Investoren.",
+     "figures": "80 Mrd.",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -380,7 +366,7 @@
     {
      "name": "Outro",
      "ticker": null,
-     "note": "Abschluss der Sendung mit Hinweis auf nächste Sendung am 2. Juni.",
+     "note": "Sendungsende, Verabschiedung und rechtliche Hinweise.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -394,22 +380,22 @@
    ],
    "macro": [
     {
-     "text": "Trump treibt durch Iran-Verhandlungsrhetorik den Ölpreis nach unten, was die US-Inflationserwartungen senkt und Zinssenkungsspielraum für die Fed schafft – trotz anhaltender geopolitischer Spannungen.",
+     "text": "Irankrieg: Trump redet Ölpreis nach unten mit Aussagen über bevorstehende Einigung, was Märkte antreibt, obwohl fundamental keine Einigung in Sicht ist.",
      "sec": 166,
      "t": "02:46",
      "tlink": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=166s"
     },
     {
-     "text": "Die US-Verschuldung von 39,5 Billionen Dollar mit 10 Billionen Dollar Refinanzierungsbedarf innerhalb eines Jahres zwingt die Administration zu niedrigen Zinsen, was Aktienmärkte indirekt stützt.",
+     "text": "US-Staatsschulden: 10 Billionen Dollar müssen binnen Jahresfrist refinanziert werden, was Trump zwingt, Zinsen niedrig zu halten.",
      "sec": 936,
      "t": "15:36",
      "tlink": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=936s"
     },
     {
-     "text": "Die Nasdaq-Indexregeländerung begünstigt den SpaceX-IPO massiv durch beschleunigte Aufnahme und dreifache Gewichtung des Freefloats, was kurzfristig Kaufdruck im Tech-Sektor erzeugt.",
-     "sec": 1182,
-     "t": "19:42",
-     "tlink": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1182s"
+     "text": "Fed-Politik: Neuer Fed-Chef Kevin Warsh wird Zinssenkungen vorbereiten, da KI disinflationär wirkt und Schuldenlast drückt.",
+     "sec": 505,
+     "t": "08:25",
+     "tlink": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=505s"
     }
    ]
   }
