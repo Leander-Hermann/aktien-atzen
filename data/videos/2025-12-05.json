@@ -10,13 +10,13 @@
    "date": "20251205",
    "url": "https://www.youtube.com/watch?v=BADYwmZH114",
    "thumbnail": "https://i.ytimg.com/vi/BADYwmZH114/hqdefault.jpg",
-   "summarized_at": "2026-06-17T18:34:29.735664+00:00",
-   "summary": "Die Sendung Calling USA vom 04.12.2025 beleuchtet die KI-Chip-Kooperationen von Marvell und Broadcom mit Hyperscalern sowie die schwache Cloud-Position von Oracle. Hewlett Packard Enterprise steht vor einer enttäuschenden Ergebnisprognose, während Tesla dank starker China-Absätze steigt. Charttechnisch zeigt der S&P 500 eine Konsolidierung mit begrenztem Aufwärtspotenzial, Alphabet wird als Short-Kandidat, Tesla als Long-Kandidat eingestuft.",
+   "summarized_at": "2026-06-18T06:43:22.103999+00:00",
+   "summary": "Die Sendung beleuchtet KI-Chip-Kooperationen von Broadcom und Marvell, die Quartalszahlen von Hewlett Packard Enterprise und Oracle sowie gemischte News zu Tesla, Boeing und anderen Werten. Am Ende gibt es eine charttechnische Analyse von S&P 500, Alphabet und Tesla.",
    "items": [
     {
      "name": "Intro mit Antonie vor Marvell",
      "ticker": null,
-     "note": "Antonie steht vor dem Chipentwickler Marvell; es wird auf Kooperationen mit Amazon und Broadcom hingewiesen.",
+     "note": "Antonie berichtet von neuen Kooperationen im KI-Chip-Bereich, speziell Marvell mit Amazon.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -30,7 +30,7 @@
     {
      "name": "OpenAI",
      "ticker": null,
-     "note": "Interner Code Red von Sam Altman zur Fokussierung auf neue Modelle; Chat GPT verliert leicht Marktanteile an Gemini, aber noch keine gravierende Verschiebung.",
+     "note": "Ein internes 'Code Red'-Memo von Sam Altman fokussiert alle Ressourcen auf neue Modelle, da Google mit Gemini aufholt. Userzahlen zeigen noch keine gravierende Verschiebung.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -44,7 +44,7 @@
     {
      "name": "Anstehende Termine",
      "ticker": null,
-     "note": "US-Zinsentscheidung nächste Woche: 89% der Marktteilnehmer erwarten eine Leitzinssenkung; Inflationsdaten (September) und schwacher Arbeitsmarkt.",
+     "note": "Wichtigster Termin ist die US-Leitzinsentscheidung nächste Woche; 89% der Marktteilnehmer erwarten eine Senkung.",
      "figures": "89%",
      "tip": "",
      "einordnung": "",
@@ -58,8 +58,8 @@
     {
      "name": "Marvell, Broadcom, KI-Chips",
      "ticker": null,
-     "note": "Marvell und Amazon entwickeln neue KI-Trainingschips; Broadcom mit Google Chip. Broadcom (1797 Mrd Market Cap) ist deutlich größer als Marvell (86 Mrd), aber teurer bewertet. Marvell zeigt bessere Wachstumszahlen.",
-     "figures": "1797 Milliarden Market Cap (Broadcom), 86 Milliarden (Marvell)",
+     "note": "Amazon und Marvell entwickeln die dritte Generation von Trainium-Chips. Broadcom arbeitet mit Google, Meta und OpenAI. Marvell hat sich mit Zukäufen und Umstrukturierung neu positioniert.",
+     "figures": "Marktkapitalisierung Broadcom 1.797 Mrd USD; Marvell 86 Mrd USD",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -72,8 +72,8 @@
     {
      "name": "Hewlett Packard Enterprise",
      "ticker": null,
-     "note": "Zahlen nach Börsenschluss: EPS-Prognose 220-240 USD (Markt erwartete 242-243), Umsatzwachstum 5-10% (Markt 17%). Dividendenerhöhung um 10% auf 2,5% Rendite, Free Cashflow-Ziel 3,5 Mrd USD bis 2028.",
-     "figures": "EPS 220-240 USD, Markterwartung 242-243 USD; Umsatzwachstum 5-10% vs. 17%; Dividende 2,5%; free Cashflow 3,5 Mrd USD bis 2028",
+     "note": "HPE berichtet nach Börsenschluss. Management hatte zuvor die Euphorie gebremst mit schwächeren Prognosen für 2025. Analysten sind verhalten; 13 neutral, 7 Kaufen.",
+     "figures": "Ergebnisprognose 2025: 2,20-2,40 USD je Aktie; Markterwartung über 2,42 USD; Umsatzwachstum 5-10% vs. erwartete 17%; Dividende +10%; Free Cashflow 2028: 3,5 Mrd USD; KGV 8%",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -84,10 +84,24 @@
      "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=838s"
     },
     {
+     "name": "Marktanteile von Cloud-Anbietern",
+     "ticker": null,
+     "note": "Amazon (29%), Microsoft (20%), Google (13%) dominieren. Oracle wächst langsam auf 3-4% Marktanteil.",
+     "figures": "Amazon 29%, Microsoft 20%, Google 13%, Oracle 3-4%",
+     "tip": "",
+     "einordnung": "",
+     "detail": "",
+     "cross_refs": [],
+     "kategorie": "sonstiges",
+     "sec": 1006,
+     "t": "16:46",
+     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=1006s"
+    },
+    {
      "name": "Oracle",
      "ticker": null,
-     "note": "Aktie fiel von Rekordhoch 345 USD auf 200 USD aufgrund negativen Free Cashflows und hoher Verschuldung (100 Mrd USD, bis 2028 auf 300 Mrd USD prognostiziert). Neue CEOs präsentieren bald Zahlen.",
-     "figures": "345 USD (Rekord), 200 USD (aktuell); 100 Mrd USD Verschuldung, 300 Mrd USD Prognose für 2028",
+     "note": "Oracle-Aktie fiel von 345 USD auf 200 USD nach Hype und Absturz wegen negativem Free Cashflow und hoher Verschuldung (100 Mrd USD Verbindlichkeiten). Neue CEOs präsentieren Zahlen.",
+     "figures": "Höchststand 345 USD; Tief 200 USD; 100 Mrd USD Verbindlichkeiten; 18 Mrd USD Schulden am Kapitalmarkt; Prognose bis 2028: 300 Mrd USD",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -100,8 +114,8 @@
     {
      "name": "Mixed News – Tesla, Boeing, Wynn Resorts, Analysehaus Baird über die Softwarebranche",
      "ticker": null,
-     "note": "Tesla: China-Absatz +9,9%, Model 3 +41% zum Vormonat, aber Förderung sinkt ab 2025. Boeing: CFO kündigt höhere Auslieferungen und positiven Free Cashflow bis 2026 an, Aktie +10%. Wynn Resorts von Goldman Sachs als 'Best-in-Class' in Macao eingestuft. Baird hebt Axon, Zoom, Twilio, Rubrik, Okta als günstig bewertet hervor.",
-     "figures": "Tesla China +9,9%, Model 3 +41%; Boeing Aktie +10%",
+     "note": "Tesla-Absatz in China +9,9% im November, aber Förderung sinkt ab 2026. Boeing kündigt höhere Auslieferungen und positiven Free Cashflow 2026 an. Wynn Resorts von Goldman Sachs als 'Best in Class' bewertet. Baird sieht Schnäppchen bei Axon, Zoom, Twilio, Rubrik, Palo Alto Networks.",
+     "figures": "Tesla China: Model 3/Y Absatz +41% vs. Vormonat; Boeing: +10% Kurs nach News; Wynn: Goldman Sachs Conviction List",
      "tip": "",
      "einordnung": "",
      "detail": "",
@@ -114,9 +128,9 @@
     {
      "name": "Charttechnik mit Patrik – S&P 500",
      "ticker": null,
-     "note": "S&P 500 testet 6820 Punkte, aber geringes Volumen; Unterstützungen bei 6766 und 6600. Nvidia zeigt Warnsignale. Keine Long-Position vor Ausbruch empfohlen.",
-     "figures": "6820, 6766, 6600 Punkte",
-     "tip": "Keine Long-Position aufbauen",
+     "note": "S&P 500 konsolidiert nach Feiertagen mit geringem Volumen. Wichtiges Level bei 6820 Punkten; Ausbruch möglich bis 7000-7200, aber Risiken bestehen bei 6766 und 6600 Punkten.",
+     "figures": "Unterstützung 6820, 6766, 6600 Punkte; mögliches Ziel 7000-7200",
+     "tip": "Keine Long-Position vor Ausbruch aufbauen, da Risiko zu hoch.",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -128,9 +142,9 @@
     {
      "name": "Alphabet",
      "ticker": null,
-     "note": "Aktie wird als Short-Kandidat gesehen; Aufwärtspotenzial auf 340-350 USD begrenzt, Konsolidierung/Korrektur erwartet.",
-     "figures": "340-350 USD (Kursziel)",
-     "tip": "Short-Kandidat, Rücksetzer abwarten",
+     "note": "Alphabet-Aktie hatte positive Nachrichten, aber Patrik sieht begrenztes Aufwärtspotenzial bis 340-350 USD und erwartet eine Konsolidierung/Korrektur.",
+     "figures": "Kursziel bis 340-350 USD",
+     "tip": "Eher Short-Kandidat; gesunden Rücksetzer abwarten.",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -142,9 +156,9 @@
     {
      "name": "Tesla",
      "ticker": null,
-     "note": "Long-Position: Ziel 510-520 USD; Ausbruch über 475 USD nötig für weiteres Potenzial. Relative Stärke; Einstieg bei Rücksetzern empfohlen.",
-     "figures": "510-520 USD (Kursziel), 475 USD (Widerstand)",
-     "tip": "Beim Rücksetzer einsteigen",
+     "note": "Tesla zeigt relative Stärke und hat Potenzial für neue Allzeithochs. Patrik sieht Einstiegschance bei Rücksetzern; Ausbruch über 475 USD wäre Go für weiteres Potenzial bis 500+ USD.",
+     "figures": "Widerstand 475 USD; Ziel 500+ USD; Unterstützung bei aufwärtsgerichteter Trendlinie",
+     "tip": "Long-Kandidat; bei Rücksetzer einsteigen, z.B. an der Trendlinie.",
      "einordnung": "",
      "detail": "",
      "cross_refs": [],
@@ -156,7 +170,7 @@
     {
      "name": "Outro",
      "ticker": null,
-     "note": "Zusammenfassung und Vorschau auf nächste Woche.",
+     "note": "Sendung endet mit Hinweis auf kommende Termine und Ausblick auf nächste Woche.",
      "figures": "",
      "tip": "",
      "einordnung": "",
@@ -170,16 +184,16 @@
    ],
    "macro": [
     {
-     "text": "US-Notenbank: 89% der Marktteilnehmer erwarten eine Leitzinssenkung beim nächsten Meeting; Inflationsdaten (September) und schwacher Arbeitsmarkt beeinflussen die Entscheidung.",
+     "text": "US-Leitzinsentscheidung nächste Woche: 89% der Marktteilnehmer erwarten eine Senkung; Inflationsdaten von September stehen an.",
      "sec": 187,
      "t": "03:07",
      "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=187s"
     },
     {
-     "text": "Nvidia leidet unter Exportbeschränkungen nach China; CEO Jensen Huang verhandelt in Washington über Genehmigungen für 50 Mrd USD Umsatz.",
-     "sec": 434,
-     "t": "07:14",
-     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=434s"
+     "text": "KI-Chip-Wettbewerb nimmt zu: Broadcom, Marvell, AMD, Qualcomm drängen in den Markt, preisdruck für Nvidia steigt. Chinaexporte für Nvidia (50 Mrd USD jährlich) sind unsicher.",
+     "sec": 243,
+     "t": "04:03",
+     "tlink": "https://www.youtube.com/watch?v=BADYwmZH114&t=243s"
     }
    ]
   }
