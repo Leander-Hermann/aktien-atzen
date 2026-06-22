@@ -1,60 +1,72 @@
 {
- "updated": "2026-06-22T06:41:28.481146+00:00",
+ "updated": "2026-06-22T18:51:29.030971+00:00",
  "date": "2026-06-22",
  "ideas": [
   {
-   "title": "Seltene-Erden als geopolitischer Hebel Chinas",
-   "thesis": "China beschränkt den Handel mit ausgewählten US-Seltenen-Erden-Unternehmen und verhängt Exportkontrollen gegen Dutzende US-Firmen. Diese Eskalation dürfte westliche Bemühungen zur Aufbau einer unabhängigen Lieferkette für Seltene Erden beschleunigen und Produzenten außerhalb Chinas begünstigen.",
+   "title": "Rüstungskonzerne auf Trump-Treffen hin positionieren",
+   "thesis": "Trump empfängt Lockheed Martin, RTX, Boeing und L3Harris zu Gesprächen über beschleunigte Waffenproduktion. Das für Mittwoch geplante Treffen signalisiert politischen Druck auf höhere Rüstungsausgaben und könnte Auftragsvergabe beschleunigen.",
    "values": [
-    "Seltene-Erden-Produzenten außerhalb Chinas (z.B. MP Materials, Lynas Rare Earths), ETFs auf kritische Rohstoffe"
+    "Lockheed Martin",
+    "RTX",
+    "Boeing",
+    "L3Harris",
+    "Rüstungs-ETF"
    ],
    "angle": "Long",
-   "risk": "Eine rasche Deeskalation zwischen USA und China könnte den Anreiz für alternative Lieferketten schwächen.",
-   "source": "News: China eskaliert: Exportkontrollen gegen Dutzende US-Unternehmen, Seltene-Erden-Restriktionen",
-   "source_url": "https://x.com/FirstSquawk/status/2068886856671134070"
+   "risk": "Konkrete Auftragsvergabe bleibt offen, Treffen könnte ohne verbindliche Zusagen enden.",
+   "source": "News: Trump trifft Rüstungskonzerne – beschleunigte Waffenproduktion",
+   "source_url": "https://x.com/FirstSquawk/status/2069109546514309538"
   },
   {
-   "title": "Rüstungstechnologie profitiert von 12 Mrd. $ VC-Zustrom",
-   "thesis": "Globale Konflikte haben rund 12 Milliarden Dollar an Venture Capital in Rüstungstechnologie gelenkt. Dieser strukturelle Kapitalzufluss dürfte Innovationen in Drohnen, Cybersecurity und autonomen Systemen beschleunigen und etablierte Rüstungsunternehmen sowie neue Tech-Player begünstigen.",
+   "title": "Öl und Energieaktien short – Iran-Waiver und Überangebot drücken Preise",
+   "thesis": "Die USA haben einen 60-Tage-Waiver für iranische Ölverkäufe in Dollar erteilt, gleichzeitig plant Irak eine Produktionssteigerung auf 4,2–4,3 Mio. bpd. Goldman Sachs senkt das Rezessionsrisiko auf 15% und nennt niedrigere Energiepreise als Faktor – Brent durchbricht die 200-Tage-Linie nach unten.",
    "values": [
-    "Rüstungs- und Wehrtechnikunternehmen (z.B. Rheinmetall, Lockheed Martin, Palantir), Defense-Tech-ETFs"
+    "Öl-ETFs",
+    "Energie-Sektor-ETFs",
+    "Brent Future",
+    "WTI Future"
    ],
-   "angle": "Long",
-   "risk": "Eine plötzliche Entspannung der globalen Konflikte könnte die Wachstumsfantasy für Rüstungstechnologie dämpfen.",
-   "source": "News: Kriege treiben $12 Mrd. Venture Capital in Rüstungstechnologie",
-   "source_url": "https://x.com/FirstSquawk/status/2068929717663924466"
+   "angle": "Short",
+   "risk": "Geopolitische Eskalation könnte den Waiver vorzeitig beenden und Ölpreise wieder ansteigen lassen.",
+   "source": "News: USA autorisiert iranische Ölverkäufe in Dollar – 60-Tage-Waiver",
+   "source_url": "https://x.com/DeItaone/status/2069049299862704297"
   },
   {
-   "title": "Südkoreas Börsenreformen stärken Chip-Sektor",
-   "thesis": "Südkorea plant Börsenreformen mit Delisting von rund 300 schwachen Unternehmen und Initiativen für Leveraged ETFs auf südkoreanische Chip-Aktien. Gleichzeitig hat SK Hynix Samsung im Marktwert überholt, was eine Neubewertung des Chip-Sektors an der Kospi signalisiert.",
+   "title": "Software-Aktien am IGV-Support beobachten – extreme Bewertungs-Schere zu Halbleitern",
+   "thesis": "Der IGV testet die wichtige Unterstützung bei 90$, das Verhältnis IGV/SOX ist auf einem historischen Tief. Software-Aktien zeigen starkes Gewinnwachstum bei eingestürztem KGV, während KI-Aktien den S&P 500 dominieren. Ein Halten der 90$-Marke könnte selektive Einstiege bei Burggraben-Titeln wie Microsoft ermöglichen, das laut Morningstar mit 37% Discount auf Fair Value notiert.",
    "values": [
-    "SK Hynix, Samsung Electronics, südkoreanische Chip-ETFs, MSCI South Korea ETFs"
-   ],
-   "angle": "Long",
-   "risk": "Geopolitische Spannungen auf der koreanischen Halbinsel könnten die Reformdynamik und Investorenstimmung überlagern.",
-   "source": "News: Südkorea: Ex-Justizminister zu 25 Jahren verurteilt, Börsenreformen geplant",
-   "source_url": "https://x.com/ReutersWorld/status/2068944651684294997"
-  },
-  {
-   "title": "Silber profitiert von strukturellem Angebotsdefizit",
-   "thesis": "Silber leidet seit 2019 unter einem strukturellen Angebotsdefizit, angetrieben durch industrielle Nachfrage und Zentralbankenkäufe. Die charttechnische Korrektur ist noch nicht abgeschlossen, was bei Erreichen der genannten Kursziele eine Einstiegschance bieten könnte.",
-   "values": [
-    "Silber-ETC (z.B. Xetra ETC Physical Silver), Silberminen-Aktien (z.B. First Majestic, Pan American Silver)"
+    "IGV ETF",
+    "Microsoft",
+    "Salesforce",
+    "ServiceNow"
    ],
    "angle": "Beobachten",
-   "risk": "Eine schwächere industrielle Nachfrage bei konjunktureller Abkühlung könnte das Defizit reduzieren und den Druck auf den Silberpreis verstärken.",
-   "source": "onvista – Nico Santura Markt-Update: Silber leidet unter strukturellem Angebotsdefizit seit 2019",
+   "risk": "Bruch der 90$-Unterstützung könnte weiteren Abverkauf bis 77$ auslösen.",
+   "source": "onvista Markt-Update: KI-Aktien treiben S&P 500, Softwareaktien im Verkaufsdruck",
    "source_url": ""
   },
   {
-   "title": "Adyen als Turnaround-Spekulation nach Kurshalbierung",
-   "thesis": "Adyen hat sich von 1600-1700 € auf rund 890 € nahezu halbiert, das KGV 2027 fiel von 34-36 auf 19. Operativ bleibt das Unternehmen mit 18% Nettoumsatzplus und EBDA-Margenverbesserung auf 53% solide, die Orb-Übernahme eröffnet zusätzliche KI-Fantasie. Analystenziele liegen deutlich über dem aktuellen Kursniveau.",
+   "title": "Intel Long – Apple-Kooperation und Trump-Post als Katalysator",
+   "thesis": "Intel profitiert massiv von einem Trump-Post bezüglich einer Kooperation mit Apple und legte nachbörslich rund 10% zu. Charttechnisch bildet sich eine bullische Flaggenformation mit Kurszielen bei 155$ und 190$, der Ausbruch über 133$ gilt als bestätigend. Das Investmentvolumen soll von 10 Mrd. $ auf 60 Mrd. $ gestiegen sein.",
    "values": [
-    "Adyen NV"
+    "Intel"
    ],
    "angle": "Long",
-   "risk": "Wenn das Wachstum weiter nachlässt und der Markt die Bewertung nicht als attraktiv einstuft, könnte die Aktie weitere Unterstützungsniveuen verlieren.",
-   "source": "BerneckerTV – Analyse von Netflix, Adyen, Siemens Healthineers und SAP",
+   "risk": "Die Kooperation ist bisher nur ein Post ohne verbindliche Details, charttechnisch besteht Risiko einer Trendwende bei Bruch der Unterstützung.",
+   "source": "onvista Markt-Update: Intel profitiert von Apple-Kooperation",
+   "source_url": ""
+  },
+  {
+   "title": "Silber Long – strukturelles Angebotsdefizit seit 2019",
+   "thesis": "Silber leidet unter einem strukturellen Angebotsdefizit seit 2019, angetrieben durch industrielle Nachfrage und Zentralbankenkäufe. Die Gold/Silber-Ratio liegt bei 64 gegenüber einem 10-Jahres-Schnitt von 70, was auf Aufholpotenzial deutet. Mittel- bis langfristig werden Kursziele von 56-58$ genannt.",
+   "values": [
+    "Silber-ETF",
+    "Newmont",
+    "Barrick Gold"
+   ],
+   "angle": "Long",
+   "risk": "Charttechnisch ist die Korrektur noch nicht abgeschlossen, kurzfristig sind weitere Rücksetzer Richtung 55$ möglich.",
+   "source": "onvista Markt-Update: Silber leidet unter strukturellem Angebotsdefizit",
    "source_url": ""
   }
  ]
