@@ -1,73 +1,74 @@
 {
- "updated": "2026-06-22T18:51:29.030971+00:00",
- "date": "2026-06-22",
+ "updated": "2026-06-23T06:42:29.020550+00:00",
+ "date": "2026-06-23",
  "ideas": [
   {
-   "title": "Rüstungskonzerne auf Trump-Treffen hin positionieren",
-   "thesis": "Trump empfängt Lockheed Martin, RTX, Boeing und L3Harris zu Gesprächen über beschleunigte Waffenproduktion. Das für Mittwoch geplante Treffen signalisiert politischen Druck auf höhere Rüstungsausgaben und könnte Auftragsvergabe beschleunigen.",
+   "title": "Short Asien-Maerkte – Taiwan AI-Blase droht zu platzen",
+   "thesis": "Asiens Maerkte stuerzen ab (KOSPI -7,3%, Nikkei -2,3%), in Taiwan leihen sich Privatanleger massiv Geld fuer TSMC-AI-Aktien. Blasenwarnungen mehren sich, US-Futures schwaechen sich deutlich ab. Ein Entladen der Hebelpositionen koennte die Korrektur verschaerfen.",
    "values": [
-    "Lockheed Martin",
-    "RTX",
-    "Boeing",
-    "L3Harris",
-    "Rüstungs-ETF"
-   ],
-   "angle": "Long",
-   "risk": "Konkrete Auftragsvergabe bleibt offen, Treffen könnte ohne verbindliche Zusagen enden.",
-   "source": "News: Trump trifft Rüstungskonzerne – beschleunigte Waffenproduktion",
-   "source_url": "https://x.com/FirstSquawk/status/2069109546514309538"
-  },
-  {
-   "title": "Öl und Energieaktien short – Iran-Waiver und Überangebot drücken Preise",
-   "thesis": "Die USA haben einen 60-Tage-Waiver für iranische Ölverkäufe in Dollar erteilt, gleichzeitig plant Irak eine Produktionssteigerung auf 4,2–4,3 Mio. bpd. Goldman Sachs senkt das Rezessionsrisiko auf 15% und nennt niedrigere Energiepreise als Faktor – Brent durchbricht die 200-Tage-Linie nach unten.",
-   "values": [
-    "Öl-ETFs",
-    "Energie-Sektor-ETFs",
-    "Brent Future",
-    "WTI Future"
+    "TSMC",
+    "KOSPI-ETFs",
+    "Nikkei-ETFs",
+    "Asien-ETFs"
    ],
    "angle": "Short",
-   "risk": "Geopolitische Eskalation könnte den Waiver vorzeitig beenden und Ölpreise wieder ansteigen lassen.",
-   "source": "News: USA autorisiert iranische Ölverkäufe in Dollar – 60-Tage-Waiver",
-   "source_url": "https://x.com/DeItaone/status/2069049299862704297"
+   "risk": "Staatliche Interventionen oder Konjunkturprogramme koennten den Abfall abmildern.",
+   "source": "News: Asien-Maerkte im Sturzflug – KOSPI -7,3%, Nikkei -2,3%",
+   "source_url": "https://x.com/FirstSquawk/status/2069279303083446673"
   },
   {
-   "title": "Software-Aktien am IGV-Support beobachten – extreme Bewertungs-Schere zu Halbleitern",
-   "thesis": "Der IGV testet die wichtige Unterstützung bei 90$, das Verhältnis IGV/SOX ist auf einem historischen Tief. Software-Aktien zeigen starkes Gewinnwachstum bei eingestürztem KGV, während KI-Aktien den S&P 500 dominieren. Ein Halten der 90$-Marke könnte selektive Einstiege bei Burggraben-Titeln wie Microsoft ermöglichen, das laut Morningstar mit 37% Discount auf Fair Value notiert.",
+   "title": "Short Private Credit – Ruecknahmewelle bei Apollo & Co.",
+   "thesis": "Anleger fordern ueber neun grosse Retail-Private-Credit-Fonds fast 15 Mrd. USD zurueck. Apollos Flaggschiff-Fund verzeichnet Ruecknahmewuensche von 17% des Fondsvolumens im Q2 – eine der groessten Ruecknahmewellen in diesem Sektor. Das deutet auf Vertrauensverlust und Liquiditaetsdruck im Private-Credit-Markt hin.",
    "values": [
-    "IGV ETF",
+    "Apollo Global Management (APO)",
+    "Private Credit ETFs",
+    "Alternative Asset Manager"
+   ],
+   "angle": "Short",
+   "risk": "Fonds koennen Ruecknahmen aussetzen oder Illiquidiitaetsschranken aktivieren, was den Druck verzoegert.",
+   "source": "News: Apollo Private Credit: Anleger fordern $15 Mrd zurueck",
+   "source_url": "https://x.com/FirstSquawk/status/2069286733813080272"
+  },
+  {
+   "title": "Long Software-Aktien – Extreme Bewertungs-Schere zu Halbleitern",
+   "thesis": "Die IGV/SOX Ratio befindet sich auf einem historischen Tief. Software-Aktien haben trotz hoechster Gewinnprognosen seit 8 Jahren ein KGV auf Baerenmarktniveau (weit unter historischem Schnitt von 26). Die extreme Divergenz im S&P 500 – KI-Aktien allein +6 Bio. USD, alle anderen Sektoren -1 Bio. USD – deutet auf eine moegliche Rotation zurueck zu Software hin.",
+   "values": [
     "Microsoft",
     "Salesforce",
-    "ServiceNow"
+    "ServiceNow",
+    "IGV (Software-ETF)"
    ],
-   "angle": "Beobachten",
-   "risk": "Bruch der 90$-Unterstützung könnte weiteren Abverkauf bis 77$ auslösen.",
-   "source": "onvista Markt-Update: KI-Aktien treiben S&P 500, Softwareaktien im Verkaufsdruck",
+   "angle": "Long",
+   "risk": "Ein Bruch der IGV-Unterstuetzung bei 90$ koennte weiteren Abverkauf bis 77$ ausloesen.",
+   "source": "onvista Markt-Update: Software vs. Halbleiter – Extreme Bewertungs-Schere",
    "source_url": ""
   },
   {
-   "title": "Intel Long – Apple-Kooperation und Trump-Post als Katalysator",
-   "thesis": "Intel profitiert massiv von einem Trump-Post bezüglich einer Kooperation mit Apple und legte nachbörslich rund 10% zu. Charttechnisch bildet sich eine bullische Flaggenformation mit Kurszielen bei 155$ und 190$, der Ausbruch über 133$ gilt als bestätigend. Das Investmentvolumen soll von 10 Mrd. $ auf 60 Mrd. $ gestiegen sein.",
+   "title": "Long Chevron – KI-Energiebedarf als Langfrist-Treiber",
+   "thesis": "Chevron schliesst einen 20-Jahres-Stromliefervertrag mit Microsoft fuer eines der groessten KI-Rechenzentren der USA in West-Texas ab. Dies unterstreicht den wachsenden und langfristigen Energiebedarf der KI-Industrie und eroeffnet Oel- und Energiekonzernen ein neues, stabiles Geschaeftsmodell jenseits der reinen Foerderung.",
    "values": [
-    "Intel"
+    "Chevron (CVX)",
+    "Energie-Sektor",
+    "KI-Infrastruktur"
    ],
    "angle": "Long",
-   "risk": "Die Kooperation ist bisher nur ein Post ohne verbindliche Details, charttechnisch besteht Risiko einer Trendwende bei Bruch der Unterstützung.",
-   "source": "onvista Markt-Update: Intel profitiert von Apple-Kooperation",
-   "source_url": ""
+   "risk": "Der Iran-Deal drueckt den Oelpreis (Brent ueber 1% auf 77,04 USD), was kurzfristig auf die Margen drueckt.",
+   "source": "News: Chevron liefert 20 Jahre Strom an Microsoft fuer KI-Rechenzentrum",
+   "source_url": "https://x.com/WSJmarkets/status/2069028553895653661"
   },
   {
-   "title": "Silber Long – strukturelles Angebotsdefizit seit 2019",
-   "thesis": "Silber leidet unter einem strukturellen Angebotsdefizit seit 2019, angetrieben durch industrielle Nachfrage und Zentralbankenkäufe. Die Gold/Silber-Ratio liegt bei 64 gegenüber einem 10-Jahres-Schnitt von 70, was auf Aufholpotenzial deutet. Mittel- bis langfristig werden Kursziele von 56-58$ genannt.",
+   "title": "Short US-Boersenaktien – CFTC genehmigt Perpetuals",
+   "thesis": "Die CFTC hat sogenannte Perpetual Futures (Perps) genehmigt, was einen Ausverkauf bei US-Boersenaktien ausloest. Mindestens eine prominente Klage wurde eingereicht. Die neue Produktkategorie bedroht das Geschaeftsmodell traditioneller Terminboersen mit potenziellem Wettbewerbsdruck und Margenverlust.",
    "values": [
-    "Silber-ETF",
-    "Newmont",
-    "Barrick Gold"
+    "CME Group",
+    "Intercontinental Exchange (ICE)",
+    "Nasdaq Inc.",
+    "CBOE"
    ],
-   "angle": "Long",
-   "risk": "Charttechnisch ist die Korrektur noch nicht abgeschlossen, kurzfristig sind weitere Rücksetzer Richtung 55$ möglich.",
-   "source": "onvista Markt-Update: Silber leidet unter strukturellem Angebotsdefizit",
-   "source_url": ""
+   "angle": "Short",
+   "risk": "Rechtliche Herausforderungen oder eine verzögerte Implementierung koennten den Druck mindern.",
+   "source": "News: CFTC genehmigt Perpetuals – Boersen-Aktien unter Druck",
+   "source_url": "https://x.com/WSJmarkets/status/2069224514446131273"
   }
  ]
 }
