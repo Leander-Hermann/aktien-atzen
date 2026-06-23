@@ -1,74 +1,73 @@
 {
- "updated": "2026-06-23T06:42:29.020550+00:00",
+ "updated": "2026-06-23T18:44:06.398254+00:00",
  "date": "2026-06-23",
  "ideas": [
   {
-   "title": "Short Asien-Maerkte – Taiwan AI-Blase droht zu platzen",
-   "thesis": "Asiens Maerkte stuerzen ab (KOSPI -7,3%, Nikkei -2,3%), in Taiwan leihen sich Privatanleger massiv Geld fuer TSMC-AI-Aktien. Blasenwarnungen mehren sich, US-Futures schwaechen sich deutlich ab. Ein Entladen der Hebelpositionen koennte die Korrektur verschaerfen.",
+   "title": "Öl-Short bei Iran-Entspannung und Hormuz-Erholung",
+   "thesis": "Die Einigung im Iran-Deal und der Rekorddurchfluss von 19 Mio. Barrel durch die Straße von Hormuz nehmen die geopolitische Risikoprämie aus dem Ölpreis. Hedgefonds haben Short-Positionen auf ein 5-Monats-Hoch ausgebaut, und TotalEnergies' CEO kündigt Pipeline-Investitionen zur Hormuz-Umgehung an – struktureller Gegenwind für Ölpreise.",
    "values": [
-    "TSMC",
-    "KOSPI-ETFs",
-    "Nikkei-ETFs",
-    "Asien-ETFs"
+    "Exxon",
+    "Shell",
+    "Chevron",
+    "Petrobras",
+    "Öl-ETFs"
    ],
    "angle": "Short",
-   "risk": "Staatliche Interventionen oder Konjunkturprogramme koennten den Abfall abmildern.",
-   "source": "News: Asien-Maerkte im Sturzflug – KOSPI -7,3%, Nikkei -2,3%",
-   "source_url": "https://x.com/FirstSquawk/status/2069279303083446673"
+   "risk": "Ein Bruch des Iran-Abkommens oder unerwartete Lieferstörungen könnten den Ölpreis schnell wieder ansteigen lassen.",
+   "source": "News: Hormuz-Verkehr erholt sich stark – 19 Mio. Barrel an einem Tag",
+   "source_url": "https://x.com/FirstSquawk/status/2069459683476394126"
   },
   {
-   "title": "Short Private Credit – Ruecknahmewelle bei Apollo & Co.",
-   "thesis": "Anleger fordern ueber neun grosse Retail-Private-Credit-Fonds fast 15 Mrd. USD zurueck. Apollos Flaggschiff-Fund verzeichnet Ruecknahmewuensche von 17% des Fondsvolumens im Q2 – eine der groessten Ruecknahmewellen in diesem Sektor. Das deutet auf Vertrauensverlust und Liquiditaetsdruck im Private-Credit-Markt hin.",
+   "title": "Long Kernenergie – Trump-Kredite für 10 neue Reaktoren",
+   "thesis": "Die Trump-Regierung bietet $17,5 Mrd. an zinsgünstigen Krediten für 10 Westinghouse AP1000-Reaktoren, angetrieben durch den Strombedarf von KI-Rechenzentren. Das Programm könnte die Entwicklungszeit um bis zu drei Jahre verkürzen und erste Reaktoren ab 2035 in Betrieb nehmen.",
    "values": [
-    "Apollo Global Management (APO)",
-    "Private Credit ETFs",
-    "Alternative Asset Manager"
-   ],
-   "angle": "Short",
-   "risk": "Fonds koennen Ruecknahmen aussetzen oder Illiquidiitaetsschranken aktivieren, was den Druck verzoegert.",
-   "source": "News: Apollo Private Credit: Anleger fordern $15 Mrd zurueck",
-   "source_url": "https://x.com/FirstSquawk/status/2069286733813080272"
-  },
-  {
-   "title": "Long Software-Aktien – Extreme Bewertungs-Schere zu Halbleitern",
-   "thesis": "Die IGV/SOX Ratio befindet sich auf einem historischen Tief. Software-Aktien haben trotz hoechster Gewinnprognosen seit 8 Jahren ein KGV auf Baerenmarktniveau (weit unter historischem Schnitt von 26). Die extreme Divergenz im S&P 500 – KI-Aktien allein +6 Bio. USD, alle anderen Sektoren -1 Bio. USD – deutet auf eine moegliche Rotation zurueck zu Software hin.",
-   "values": [
-    "Microsoft",
-    "Salesforce",
-    "ServiceNow",
-    "IGV (Software-ETF)"
+    "Westinghouse/Toshiba",
+    "Cameco",
+    "Uranium-ETFs",
+    "Nuclear-ETFs"
    ],
    "angle": "Long",
-   "risk": "Ein Bruch der IGV-Unterstuetzung bei 90$ koennte weiteren Abverkauf bis 77$ ausloesen.",
-   "source": "onvista Markt-Update: Software vs. Halbleiter – Extreme Bewertungs-Schere",
+   "risk": "Bauverzögerungen und regulatorische Hürden könnten die Projektrealisierung deutlich verzögern.",
+   "source": "News: Trump pusht $17,5 Mrd. fuer 10 neue Kernreaktoren",
+   "source_url": "https://x.com/DeItaone/status/2069398062867382699"
+  },
+  {
+   "title": "Long Software-ETFs vs. Halbleiter – extreme Bewertungs-Schere",
+   "thesis": "Die IGV/SOX-Ratio notiert auf einem historischen Tief: Software-Aktien sind im Verhältnis zu Halbleitern extrem günstig, obwohl Gewinnprognosen auf 8-Jahres-Hochs liegen. Während KI-Aktien den S&P 500 dominieren, verzeichnen Softwarewerte trotz starken Gewinnwachstums KGVs auf Bärenmarktniveau weit unter dem historischen Schnitt von 26.",
+   "values": [
+    "IGV-ETF",
+    "Microsoft",
+    "Salesforce",
+    "ServiceNow"
+   ],
+   "angle": "Beobachten",
+   "risk": "Ein Bruch der IGV-Unterstützung bei 90$ könnte weitere Verluste bis 77$ auslösen, bevor sich der Trend dreht.",
+   "source": "onvista – Nico Santura: Software vs. Halbleiter: Extreme Bewertungs-Schere",
    "source_url": ""
   },
   {
-   "title": "Long Chevron – KI-Energiebedarf als Langfrist-Treiber",
-   "thesis": "Chevron schliesst einen 20-Jahres-Stromliefervertrag mit Microsoft fuer eines der groessten KI-Rechenzentren der USA in West-Texas ab. Dies unterstreicht den wachsenden und langfristigen Energiebedarf der KI-Industrie und eroeffnet Oel- und Energiekonzernen ein neues, stabiles Geschaeftsmodell jenseits der reinen Foerderung.",
+   "title": "Short deutsche Automobilwerte – BMW im charttechnischen Bärenmarkt",
+   "thesis": "BMW hat die wichtige Unterstützung bei 68 Euro nach unten durchbrochen und befindet sich charttechnisch in einem Bärenmarkt, untermauert durch eine Gewinnwarnung. Auch Mercedes-Benz und Volkswagen zeigen intakte Abwärtstrends ohne Kaufsignale – die gesamte deutsche Automobilbranche ist charttechnisch stark angeschlagen.",
    "values": [
-    "Chevron (CVX)",
-    "Energie-Sektor",
-    "KI-Infrastruktur"
-   ],
-   "angle": "Long",
-   "risk": "Der Iran-Deal drueckt den Oelpreis (Brent ueber 1% auf 77,04 USD), was kurzfristig auf die Margen drueckt.",
-   "source": "News: Chevron liefert 20 Jahre Strom an Microsoft fuer KI-Rechenzentrum",
-   "source_url": "https://x.com/WSJmarkets/status/2069028553895653661"
-  },
-  {
-   "title": "Short US-Boersenaktien – CFTC genehmigt Perpetuals",
-   "thesis": "Die CFTC hat sogenannte Perpetual Futures (Perps) genehmigt, was einen Ausverkauf bei US-Boersenaktien ausloest. Mindestens eine prominente Klage wurde eingereicht. Die neue Produktkategorie bedroht das Geschaeftsmodell traditioneller Terminboersen mit potenziellem Wettbewerbsdruck und Margenverlust.",
-   "values": [
-    "CME Group",
-    "Intercontinental Exchange (ICE)",
-    "Nasdaq Inc.",
-    "CBOE"
+    "BMW",
+    "Mercedes-Benz",
+    "Volkswagen Vz."
    ],
    "angle": "Short",
-   "risk": "Rechtliche Herausforderungen oder eine verzögerte Implementierung koennten den Druck mindern.",
-   "source": "News: CFTC genehmigt Perpetuals – Boersen-Aktien unter Druck",
-   "source_url": "https://x.com/WSJmarkets/status/2069224514446131273"
+   "risk": "Konjunkturstützen oder Zinssenkungen könnten die Sektorstimmung kurzfristig verbessern und Short-Positionen gefährden.",
+   "source": "Rendezvous mit Harry – charttechnische Rundumschau vom 22.06.2026",
+   "source_url": ""
+  },
+  {
+   "title": "Beobachten: SpaceX nach 23% Absturz – Überbewertung trifft Anleihe-Nachfrage",
+   "thesis": "SpaceX hat binnen drei Tagen 600 Mrd. Dollar Börsenwert verloren bei einem extremen KGV von 355,8 und operativen Verlusten. Gleichzeitig zieht die erste Investment-Grade-Anleihe $89 Mrd. Nachfrage an – ein widersprüchliches Bild, das kurzfristig hohe Schwankungen bei unklarer Richtung erwarten lässt.",
+   "values": [
+    "SpaceX"
+   ],
+   "angle": "Beobachten",
+   "risk": "Die extrem hohe Bewertung und der geringe Free Float unter 5% bergen erhebliche Volatilitätsrisiken in beide Richtungen.",
+   "source": "News: SpaceX-Anleihe zieht $89 Mrd. Nachfrage – Aktie volatil",
+   "source_url": "https://x.com/FirstSquawk/status/2069456765146763691"
   }
  ]
 }
