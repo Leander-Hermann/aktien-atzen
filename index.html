@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+  Aktien Atzen · © 2026 — Alle Rechte vorbehalten / All Rights Reserved.
+  Proprietär (kein MIT/Apache/GPL): keine Vervielfältigung, Veränderung oder kommerzielle
+  Nutzung von Code/Inhalten ohne ausdrückliche schriftliche Genehmigung. Siehe Datei LICENSE.
+-->
 <html lang="de" data-theme="light">
 <head>
 <meta charset="utf-8" />
@@ -225,6 +230,23 @@
   .vtile-meta{font-size:12px;font-weight:600;color:var(--accent);margin-top:auto;padding-top:12px}
   .vidmodal{max-height:88vh;overflow:auto}
   .tn.on{background:var(--accent);color:#fff;border-color:transparent}
+  /* --- Rechts-Footer (ADR-302): dezent, aber überall erreichbar --- */
+  .sitefoot{padding:18px 0 0;border-top:1px solid var(--line)}
+  .footlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px;margin-bottom:8px}
+  .footlink{border:none;background:none;color:var(--muted);font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;padding:5px 9px;border-radius:8px;text-decoration:underline;text-underline-offset:2px}
+  .footlink:hover{color:var(--accent);background:rgba(10,132,255,.08)}
+  .footcopy{font-size:12px;opacity:.9}
+  .footbrand{font-size:11.5px;opacity:.6;margin-top:4px}
+  /* --- Legal-Overlay (Impressum/Datenschutz/Lizenz) --- */
+  .legalmodal{max-height:88vh;overflow:auto}
+  .legalbody{font-size:14px;line-height:1.6;color:var(--ink);margin-top:6px}
+  .legalbody h4{font-size:15px;font-weight:600;margin:18px 0 6px}
+  .legalbody h4:first-child{margin-top:4px}
+  .legalbody p{margin:0 0 10px}
+  .legalbody .lph{color:var(--muted)}
+  .legalbody code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--chip);border-radius:6px;padding:1px 5px}
+  .legalbody .draftnote{font-size:13px;color:#9a6200;background:#fff0d6;border-radius:10px;padding:10px 12px;margin:0 0 14px}
+  [data-theme="dark"] .legalbody .draftnote{color:#ffcf70;background:rgba(255,159,10,.15)}
 </style>
 </head>
 <body>
@@ -320,7 +342,15 @@
   </div>
  </div>
 
- <footer id="foot">Aktien Atzen</footer>
+ <footer class="sitefoot">
+   <nav class="footlinks" aria-label="Rechtliches">
+     <button type="button" class="footlink" onclick="openLegal('impressum')">Impressum</button>
+     <button type="button" class="footlink" onclick="openLegal('datenschutz')">Datenschutz</button>
+     <button type="button" class="footlink" onclick="openLegal('lizenz')">Lizenz</button>
+   </nav>
+   <div class="footcopy">© 2026 Aktien Atzen · Alle Rechte vorbehalten</div>
+   <div id="foot" class="footbrand">Aktien Atzen</div>
+ </footer>
 </div>
 
 <div class="overlay" id="overlay"><div class="modal">
@@ -349,6 +379,11 @@
 <div class="overlay" id="vidOverlay"><div class="modal vidmodal">
   <div class="top"><h3 id="vidmTitle">Analyse</h3><button class="x" onclick="closeVidArticle()">×</button></div>
   <div id="vidmBody"></div>
+</div></div>
+
+<div class="overlay" id="legalOverlay"><div class="modal legalmodal">
+  <div class="top"><h3 id="legalTitle">Rechtliches</h3><button class="x" onclick="closeLegal()">×</button></div>
+  <div id="legalBody" class="legalbody"></div>
 </div></div>
 
 <script>
@@ -572,7 +607,51 @@ function closeStk(){document.getElementById('stkOverlay').classList.remove('open
 document.querySelectorAll('#stkseg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#stkseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(stkChart){stkChart.remove();stkChart=null}buildStk(+b.dataset.d)});
 document.getElementById('stkOverlay').addEventListener('click',e=>{if(e.target.id==='stkOverlay')closeStk()});
 document.getElementById('vidOverlay').addEventListener('click',e=>{if(e.target.id==='vidOverlay')closeVidArticle()});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeVidArticle()});
+// --- Rechtliches (ADR-302): Impressum / Datenschutz / Lizenz ---
+// Statische, vom Projekt selbst verfasste Texte (kein Fremd-/LLM-Input) → In-App-Overlay statt
+// Extra-Seiten (Lean-SPA). Footer liegt außerhalb der Tab-Seiten → in jeder Ansicht erreichbar.
+const LEGAL={
+ impressum:{title:'Impressum',html:`
+   <div class="draftnote"><b>Platzhalter – auszufüllen vor Kommerzialisierung (R4a).</b> Aktien Atzen ist derzeit ein nicht-kommerzielles, privates Projekt. Die Pflichtangaben nach § 5 DDG werden mit echten Daten ergänzt und anwaltlich geprüft, bevor das Angebot kommerziell betrieben wird.</div>
+   <h4>Angaben gemäß § 5 DDG</h4>
+   <p class="lph">[Vor- und Nachname / Betreiber]<br>[Straße und Hausnummer]<br>[PLZ und Ort]<br>[Land]</p>
+   <h4>Kontakt</h4>
+   <p class="lph">E-Mail: [E-Mail-Adresse]<br>Telefon: [optional]</p>
+   <h4>Umsatzsteuer-Identifikationsnummer</h4>
+   <p class="lph">[USt-IdNr. gemäß § 27a UStG, falls vorhanden]</p>
+   <h4>Verantwortlich für journalistisch-redaktionelle Inhalte (§ 18 Abs. 2 MStV)</h4>
+   <p class="lph">[Name und Anschrift wie oben]</p>
+   <h4>Haftungshinweis</h4>
+   <p>Die Inhalte dienen ausschließlich der allgemeinen Information und stellen keine Anlageberatung dar. Für die Inhalte verlinkter externer Seiten sind ausschließlich deren Betreiber verantwortlich.</p>`},
+ datenschutz:{title:'Datenschutz',html:`
+   <div class="draftnote"><b>Entwurf (Stand 2026) – vor Monetarisierung anwaltlich gegenprüfen.</b> Diese Erklärung beschreibt die bekannten Datenflüsse dieses privaten Projekts und ist noch nicht abschließend rechtsverbindlich geprüft.</div>
+   <h4>1. Hosting (GitHub Pages)</h4>
+   <p>Diese Seite wird über GitHub Pages (GitHub, Inc., USA) ausgeliefert. Beim Aufruf verarbeitet der Hoster technisch notwendige Zugriffsdaten (u. a. IP-Adresse, Zeitpunkt, abgerufene Datei, Browser-/Geräteangaben) in Server-Logfiles. Dabei findet eine Datenübermittlung in die USA (Drittland) statt. Rechtsgrundlage: berechtigtes Interesse am sicheren Betrieb (Art. 6 Abs. 1 lit. f DSGVO).</p>
+   <h4>2. Programmbibliothek (CDN)</h4>
+   <p>Für die Chart-Darstellung wird die Bibliothek „lightweight-charts" von jsDelivr (<code>cdn.jsdelivr.net</code>) geladen. Dabei wird Ihre IP-Adresse an den CDN-Anbieter übertragen.</p>
+   <h4>3. Kurs- und Marktdaten</h4>
+   <p>Für Live-Kurse (Watchlist, Top-Mover) werden Anfragen an Yahoo Finance (<code>query1.finance.yahoo.com</code>) gestellt. Da ein direkter Browser-Abruf nicht möglich ist, laufen diese über öffentliche CORS-Proxy-Dienste (<code>api.allorigins.win</code>, <code>corsproxy.io</code>); die von Ihnen abgefragten Börsensymbole und Ihre IP-Adresse werden dabei an diese Dritt-Dienste übermittelt. Der Fear-&amp;-Greed-Index wird von CNN (<code>production.dataviz.cnn.io</code>) abgerufen.</p>
+   <h4>4. Eingebundene Drittinhalte</h4>
+   <p><b>YouTube-Vorschaubilder:</b> In den Video-Briefings werden Vorschaubilder von <code>i.ytimg.com</code> (Google/YouTube) angezeigt. Diese laden erst, wenn Sie eine Analyse-Kachel anklicken und die ausführliche Ansicht öffnen – nicht automatisch beim Seitenaufruf. Dabei wird Ihre IP-Adresse an YouTube übertragen.</p>
+   <p><b>TradingView:</b> TradingView wird lediglich als Eingabe-/Verweisformat für Börsensymbole genannt. Es werden keine TradingView-Skripte, -Widgets oder -Inhalte geladen.</p>
+   <h4>5. Lokale Speicherung (localStorage)</h4>
+   <p>Ihre Watchlist und die Hell-/Dunkel-Einstellung werden ausschließlich lokal in Ihrem Browser gespeichert (<code>localStorage</code>). Diese Daten verbleiben auf Ihrem Gerät, werden nicht an einen Server übertragen und sind für uns nicht einsehbar. Es werden keine Tracking-Cookies und kein Web-Analyse-Werkzeug eingesetzt.</p>
+   <h4>6. Ihre Rechte</h4>
+   <p>Sie haben im Rahmen der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie ein Beschwerderecht bei einer Aufsichtsbehörde. Lokal gespeicherte Daten können Sie jederzeit über die Einstellungen Ihres Browsers löschen.</p>
+   <h4>7. Verantwortlicher</h4>
+   <p class="lph">Siehe Impressum (wird vor Kommerzialisierung mit Kontaktdaten ergänzt).</p>`},
+ lizenz:{title:'Lizenz',html:`
+   <p><b>© 2026 Aktien Atzen — Alle Rechte vorbehalten / All Rights Reserved.</b></p>
+   <p>Dieser Quellcode und sämtliche zugehörigen Inhalte (HTML, JavaScript, CSS, Texte, Daten und Gestaltung) sind urheberrechtlich geschützt und proprietär lizenziert.</p>
+   <p>Kein Teil dieses Codes oder dieser Inhalte darf ohne ausdrückliche vorherige schriftliche Genehmigung des Rechteinhabers kopiert, vervielfältigt, verändert, weiterverbreitet, öffentlich zugänglich gemacht oder kommerziell genutzt werden. Es wird keine Open-Source-Lizenz (z. B. MIT, Apache, GPL) gewährt.</p>
+   <p>Das Ansehen, Klonen und Forken dieses öffentlichen Repositorys im Rahmen der GitHub-Nutzungsbedingungen bleibt unberührt; daraus entstehen keine Nutzungs-, Bearbeitungs- oder Verwertungsrechte am Code oder an den Inhalten.</p>
+   <p>Die dargestellten Markt-, Kurs-, News- und Videodaten stammen aus Drittquellen, unterliegen den Rechten ihrer jeweiligen Anbieter und dienen ausschließlich Informationszwecken – keine Anlageberatung.</p>
+   <p>Den vollständigen Lizenztext finden Sie in der Datei <code>LICENSE</code> im Repository.</p>`}
+};
+function openLegal(k){const e=LEGAL[k];if(!e)return;document.getElementById('legalTitle').textContent=e.title;document.getElementById('legalBody').innerHTML=e.html;const ov=document.getElementById('legalOverlay');ov.classList.add('open');const md=ov.querySelector('.modal');if(md)md.scrollTop=0}
+function closeLegal(){document.getElementById('legalOverlay').classList.remove('open')}
+document.getElementById('legalOverlay').addEventListener('click',e=>{if(e.target.id==='legalOverlay')closeLegal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeVidArticle();closeLegal()}});
 document.getElementById('prev').onclick=()=>shift(1);document.getElementById('next').onclick=()=>shift(-1);
 document.getElementById('q').addEventListener('input',e=>searchAll(e.target.value));
 document.querySelectorAll('#filterbar .fpill').forEach(b=>b.onclick=()=>{document.querySelectorAll('#filterbar .fpill').forEach(x=>x.classList.remove('on'));b.classList.add('on');filterPrio=+b.dataset.f;searchAll(document.getElementById('q').value)});
