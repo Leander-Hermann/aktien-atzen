@@ -227,6 +227,16 @@
   .vtchips-scroll .vtchip{flex:0 0 auto;max-width:none}
   .vtchip{font-size:11.5px;font-weight:600;border-radius:8px;padding:3px 9px;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis}
   .vtchip-more{color:var(--muted);background:var(--chip)}
+  /* ADR-701: klickbare Werte (Chip + Item-Kopf-Name) → On-Site-Chart; TradingView-Sekundärlink */
+  .vtchip-lnk{cursor:pointer}
+  .vtchip-lnk:hover{box-shadow:0 0 0 1px rgba(10,132,255,.45) inset;filter:brightness(1.06)}
+  .vtchip-lnk:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+  .vname-lnk{cursor:pointer;border-bottom:1px dashed rgba(10,132,255,.55)}
+  .vname-lnk:hover{color:var(--accent)}
+  .vname-lnk:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+  .vtchip.mvloading,.vname-lnk.mvloading{opacity:.55;cursor:progress}
+  .tv-link{font-size:10.5px;font-weight:600;color:var(--muted);text-decoration:none;margin-left:8px;white-space:nowrap;vertical-align:middle;opacity:.85}
+  .tv-link:hover{color:var(--accent);opacity:1;text-decoration:underline}
   .vtile-meta{font-size:12px;font-weight:600;color:var(--accent);margin-top:auto;padding-top:12px}
   .vidmodal{max-height:88vh;overflow:auto}
   .tn.on{background:var(--accent);color:#fff;border-color:transparent}
@@ -408,6 +418,8 @@ function fp(p){return (p>=0?"+":"")+(+p).toFixed(2)+" %"}
 function escapeHtml(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function safeUrl(u){u=String(u==null?'':u).trim();return /^https:\/\//i.test(u)?u:''}
 function safeLink(u,label,extra){const h=safeUrl(u),t=escapeHtml(label==null?'':label);return h?`<a href="${h}" target="_blank" rel="noopener noreferrer"${extra||''}>${t}</a>`:t}
+// ADR-025/701: Ticker ist LLM-Fremdtext → strikte Whitelist. Nur valide Symbole werden Chart-/Link-Ziel; sonst kein Link.
+function validTicker(t){t=String(t==null?'':t).trim();return /^[A-Z0-9.=^-]+$/.test(t)?t:''}
 function pv(s){return parseFloat(String(s).replace(/\./g,"").replace(",","."))||100}
 function shortDate(d){return new Date(d).toLocaleDateString('de-DE',{day:'2-digit',month:'short'})}
 
@@ -431,6 +443,10 @@ function mrow(m){const k=ink(m.p,8);return `<div class="mvrow" style="background
 // bereits Kerzen, direkt öffnen; sonst (Gewinner/Verlierer) on-demand von Yahoo nachladen (ADR-025: Ticker als Symbol).
 function mvOpen(el,m){if(el.dataset.busy)return;if(m.candles&&m.candles.d1&&m.candles.d1.length){openStock(m);return}if(!m.t)return;el.dataset.busy='1';el.classList.add('mvloading');ywFetch(m.t).then(d=>{el.classList.remove('mvloading');delete el.dataset.busy;if(d&&d.candles&&d.candles.length)openStock({t:m.t,n:m.n||m.t,p:(m.p!=null?m.p:(d.pct||0)),candles:{d1:d.candles}})}).catch(()=>{el.classList.remove('mvloading');delete el.dataset.busy})}
 function mvEl(m){const d=document.createElement('div');d.innerHTML=mrow(m);const el=d.firstElementChild;el.classList.add('clk');el.onclick=()=>mvOpen(el,m);return el}
+// ADR-701: Klick auf Name/Chip mit validem Ticker → On-Site-Kurs-Chart (Mover-Muster: ywFetch + Loading + graceful Fallback, kein Overlay-Crash).
+function openTicker(el,ticker,name){const tk=validTicker(ticker);if(!tk)return;if(el&&el.dataset.busy)return;if(el){el.dataset.busy='1';el.classList.add('mvloading')}ywFetch(tk).then(d=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}if(d&&d.candles&&d.candles.length)openStock({t:tk,n:name||tk,p:d.pct||0,candles:{d1:d.candles}})}).catch(()=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}})}
+// Verdrahtet alle klickbaren Werte (Themen-Chips + Item-Kopf-Namen) in scope auf den Chart-Pfad (Tastatur + Maus).
+function wireTopicChips(scope){if(!scope)return;scope.querySelectorAll('.vtchip-lnk,.vname-lnk').forEach(el=>{const go=e=>{e.stopPropagation();openTicker(el,el.dataset.tk,el.dataset.nm)};el.onclick=go;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go(e)}}})}
 // Kerzen für Gewinner/Verlierer im Hintergrund vorladen → Klick öffnet den Chart aus dem Cache (sofort).
 function mvPrefetch(){const day=mkt();[].concat(day.gainers||[],day.losers||[]).forEach(m=>{if(m&&m.t&&!(m.candles&&m.candles.d1)&&!(WLCACHE[m.t]&&WLCACHE[m.t].candles))ywFetch(m.t).catch(()=>{})})}
 function movers(){const day=mkt();const g=document.getElementById('gain'),l=document.getElementById('lose');g.innerHTML='';l.innerHTML='';(day.gainers||[]).forEach(m=>g.appendChild(mvEl(m)));(day.losers||[]).forEach(m=>l.appendChild(mvEl(m)));setTimeout(mvPrefetch,300)}
@@ -453,13 +469,17 @@ function vRefHTML(r){const icon=r.typ==='news'?'📰':'🎬';const q=r.quelle||(
 function vItemHTML(st){
   const kat=(st.kategorie||'').toLowerCase();
   const katBadge=VKATLBL[kat]?`<span class="vkat vkat-${kat}">${VKATLBL[kat]}</span>`:'';
-  const tickerBadge=st.ticker?`<span class="vtick">${escapeHtml(st.ticker)}</span>`:'';
+  // ADR-701: Name als Haupttext (klickbar→Chart bei validem Ticker), Roh-Ticker nur Tooltip/Link-Ziel + TradingView-Sekundärlink.
+  const tk=validTicker(st.ticker);
+  const rawNm=(st.name!=null&&String(st.name).trim()!=='')?String(st.name):(st.ticker?String(st.ticker):'—');
+  const nameHtml=tk?`<span class="nm-val vname-lnk" data-tk="${escapeHtml(tk)}" data-nm="${escapeHtml(rawNm)}" title="${escapeHtml(tk)} · Kurs-Chart öffnen" role="button" tabindex="0">${escapeHtml(rawNm)}</span>`:`<span class="nm-val">${escapeHtml(rawNm)}</span>`;
+  const tvLink=tk?`<a class="tv-link" href="https://www.tradingview.com/chart/?symbol=${tk}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(tk)} auf TradingView ansehen">TradingView ↗</a>`:'';
   const deeplink=st.tlink?safeLink(st.tlink,'▶ '+(st.t||'Stelle'),' class="tlink"'):'';
   const detail=(st.detail||'').trim();
   const chart=(st.chart_info||'').trim();
   const refs=Array.isArray(st.cross_refs)?st.cross_refs.filter(r=>r&&(r.bezug||r.quelle||r.url)):[];
   const hasExpand=!!detail||refs.length;
-  const head=`<div class="vstop"><span class="nm">${escapeHtml(st.name||'')}${tickerBadge}${katBadge}</span>${deeplink}</div>`;
+  const head=`<div class="vstop"><span class="nm">${nameHtml}${katBadge}${tvLink}</span>${deeplink}</div>`;
   const short=`${st.note?`<span class="nt">${escapeHtml(st.note)}</span>`:''}${st.figures?`<div class="vfig"><b>Zahlen:</b> ${escapeHtml(st.figures)}</div>`:''}${chart?`<div class="vchart"><b>📈 Chart:</b> ${escapeHtml(chart)}<span class="vchart-badge" title="Maschinell aus einem internen Chart-Standbild abgelesen (Vision-Modell) – keine wörtliche Host-Aussage">auto-erkannt</span></div>`:''}${st.tip?`<div class="vtip"><b>Tipp:</b> ${escapeHtml(st.tip)}</div>`:''}${st.einordnung?`<div class="einord">→ ${escapeHtml(st.einordnung)}</div>`:''}`;
   let expand='';
   if(hasExpand){
@@ -476,8 +496,13 @@ function vTopicChips(items,all){
   const shown=list.map(it=>{
     const kat=(it.kategorie||'').toLowerCase();
     const cls=VKATLBL[kat]?('vkat-'+kat):'vkat-sonstiges';
-    const lab=it.ticker?it.ticker:String(it.name||'').slice(0,24);
-    return `<span class="vtchip ${cls}">${escapeHtml(lab)}</span>`;
+    // ADR-701: Name zuerst (geläufig), Roh-Ticker nur Tooltip/Link-Ziel; fehlt name → Ticker → „—".
+    const nm=(it.name!=null&&String(it.name).trim()!=='')?String(it.name):'';
+    const lab=nm?nm.slice(0,24):(it.ticker?String(it.ticker):'—');
+    const tk=validTicker(it.ticker);
+    const lnk=tk?' vtchip-lnk':'';
+    const attrs=tk?` data-tk="${escapeHtml(tk)}" data-nm="${escapeHtml(nm||tk)}" title="${escapeHtml(tk)} · Kurs öffnen" role="button" tabindex="0"`:'';
+    return `<span class="vtchip ${cls}${lnk}"${attrs}>${escapeHtml(lab)}</span>`;
   });
   if(!all&&items.length>6)shown.push(`<span class="vtchip vtchip-more">+${items.length-6}</span>`);
   return `<div class="vtchips${all?' vtchips-scroll':''}">${shown.join('')}</div>`;
@@ -494,11 +519,11 @@ function vArticleHTML(v){
   const titleHtml=titleUrl?`<a class="vtitle" href="${titleUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(v.title)} ↗</a>`:`<span class="vtitle">${escapeHtml(v.title)}</span>`;
   return `<div class="vh"><span class="vbadge">${escapeHtml(v.channel)}${v.playlist?' · '+escapeHtml(v.playlist):''}</span><span class="vdate">${escapeHtml(vdate(v.date))}</span></div>${titleHtml}${thumb}${v.summary?`<p class="vsum">${escapeHtml(v.summary)}</p>`:''}${items.length?`<div class="vlabel">Behandelte Themen</div>${vTopicChips(items,true)}${items.map(vItemHTML).join('')}`:''}${macro.length?`<div class="vlabel">Marktumfeld &amp; Makro</div>${macro.map(mo=>`<div class="vhi">${escapeHtml(mo.text||'')} ${mo.tlink?safeLink(mo.tlink,'▶ '+(mo.t||''),' class="tlink"'):''}</div>`).join('')}`:''}`;
 }
-function wireVidCards(el){el.querySelectorAll('.vexpand').forEach(btn=>{btn.onclick=e=>{e.stopPropagation();const d=btn.nextElementSibling;if(!d)return;const nowHidden=d.classList.toggle('hidden');btn.textContent=nowHidden?'Tiefer einordnen ▾':'Weniger ▴'}})}
+function wireVidCards(el){wireTopicChips(el);el.querySelectorAll('.vexpand').forEach(btn=>{btn.onclick=e=>{e.stopPropagation();const d=btn.nextElementSibling;if(!d)return;const nowHidden=d.classList.toggle('hidden');btn.textContent=nowHidden?'Tiefer einordnen ▾':'Weniger ▴'}})}
 function openVidArticle(v){if(!v)return;document.getElementById('vidmTitle').textContent=v.channel||'Analyse';const body=document.getElementById('vidmBody');body.innerHTML=vArticleHTML(v);wireVidCards(body);const ov=document.getElementById('vidOverlay');ov.classList.add('open');const md=ov.querySelector('.modal');if(md)md.scrollTop=0}
 function closeVidArticle(){document.getElementById('vidOverlay').classList.remove('open')}
 let VLIST=[];
-function renderVidCards(vids,note,emptyMsg){const el=document.getElementById('videoBriefings');if(!el)return;if(!vids||!vids.length){el.innerHTML=`<div class="ph"><p style="color:var(--muted)">${emptyMsg||'Keine Video-Briefings.'}</p></div>`;return}VLIST=vids;el.innerHTML=(note?`<div class="vidnote">${note}</div>`:'')+`<div class="vgrid">${vids.map((v,i)=>vTileHTML(v,i)).join('')}</div>`;el.querySelectorAll('.vtile').forEach(t=>t.onclick=()=>openVidArticle(VLIST[+t.dataset.vi]))}
+function renderVidCards(vids,note,emptyMsg){const el=document.getElementById('videoBriefings');if(!el)return;if(!vids||!vids.length){el.innerHTML=`<div class="ph"><p style="color:var(--muted)">${emptyMsg||'Keine Video-Briefings.'}</p></div>`;return}VLIST=vids;el.innerHTML=(note?`<div class="vidnote">${note}</div>`:'')+`<div class="vgrid">${vids.map((v,i)=>vTileHTML(v,i)).join('')}</div>`;el.querySelectorAll('.vtile').forEach(t=>t.onclick=()=>openVidArticle(VLIST[+t.dataset.vi]));wireTopicChips(el)}
 function vChannelLatest(){const vids=(VIDEOS&&VIDEOS.videos)||[];const byCh={};vids.forEach(v=>{const ch=v.channel||'?';if(!byCh[ch]||String(v.date)>String(byCh[ch].date))byCh[ch]=v});return Object.values(byCh).sort((a,b)=>String(b.date).localeCompare(String(a.date))||vchanRank(a.channel)-vchanRank(b.channel))}
 function renderVideosLatest(){renderVidCards(vChannelLatest(),'Neuste Analyse je Kanal (nach Datum).','Noch keine Video-Briefings – erscheinen nach dem nächsten Lauf.')}
 async function vidLoadAllDays(){if(vidAllLoaded)return;if(VIDIDX&&Array.isArray(VIDIDX.tage)&&VIDIDX.tage.length){await Promise.all(VIDIDX.tage.map(t=>(t&&t.date)?vidLoadDay(t.date).catch(()=>{}):null))}vidAllLoaded=true}
@@ -633,7 +658,7 @@ const LEGAL={
    <p>Für Live-Kurse (Watchlist, Top-Mover) werden Anfragen an Yahoo Finance (<code>query1.finance.yahoo.com</code>) gestellt. Da ein direkter Browser-Abruf nicht möglich ist, laufen diese über öffentliche CORS-Proxy-Dienste (<code>api.allorigins.win</code>, <code>corsproxy.io</code>); die von Ihnen abgefragten Börsensymbole und Ihre IP-Adresse werden dabei an diese Dritt-Dienste übermittelt. Der Fear-&amp;-Greed-Index wird von CNN (<code>production.dataviz.cnn.io</code>) abgerufen.</p>
    <h4>4. Eingebundene Drittinhalte</h4>
    <p><b>YouTube-Vorschaubilder:</b> In den Video-Briefings werden Vorschaubilder von <code>i.ytimg.com</code> (Google/YouTube) angezeigt. Diese laden erst, wenn Sie eine Analyse-Kachel anklicken und die ausführliche Ansicht öffnen – nicht automatisch beim Seitenaufruf. Dabei wird Ihre IP-Adresse an YouTube übertragen.</p>
-   <p><b>TradingView:</b> TradingView wird lediglich als Eingabe-/Verweisformat für Börsensymbole genannt. Es werden keine TradingView-Skripte, -Widgets oder -Inhalte geladen.</p>
+   <p><b>TradingView:</b> Zu einzelnen Börsenwerten bieten wir einen Verweis-Link auf den passenden TradingView-Chart (<code>tradingview.com</code>) an. Es werden keine TradingView-Skripte, -Widgets oder -Inhalte in diese Seite eingebettet oder automatisch geladen; erst wenn Sie den Link aktiv anklicken, öffnet sich TradingView in einem neuen Tab und Ihre IP-Adresse wird an TradingView übertragen.</p>
    <h4>5. Lokale Speicherung (localStorage)</h4>
    <p>Ihre Watchlist und die Hell-/Dunkel-Einstellung werden ausschließlich lokal in Ihrem Browser gespeichert (<code>localStorage</code>). Diese Daten verbleiben auf Ihrem Gerät, werden nicht an einen Server übertragen und sind für uns nicht einsehbar. Es werden keine Tracking-Cookies und kein Web-Analyse-Werkzeug eingesetzt.</p>
    <h4>6. Ihre Rechte</h4>
