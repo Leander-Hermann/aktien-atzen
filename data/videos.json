@@ -1,6 +1,269 @@
 {
- "updated": "2026-06-24T18:45:21.250807+00:00",
+ "updated": "2026-06-25T06:55:05.607968+00:00",
  "videos": [
+  {
+   "channel": "Der Aktionär - Märkte am Morgen",
+   "playlist": "Märkte am Morgen",
+   "id": "KTfBNyeb-g4",
+   "title": "Märkte am Morgen: Öl, Gold, Bitcoin, Micron, SanDisk, Infineon, Rheinmetall, TKMS, MTU, Fraport, TUI",
+   "date": "20260625",
+   "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4",
+   "thumbnail": "https://i.ytimg.com/vi/KTfBNyeb-g4/hqdefault.jpg",
+   "summarized_at": "2026-06-25T06:55:05.607718+00:00",
+   "summary": "Der DAX kommt nach starkem Wochenstart ins Stocken und fällt unter 25.000 Punkte, belastet durch den Rheinmetall-Crash und Korrekturen im Speichersektor. International liefern Wall Street und Asien gemischte Signale, während Micron mit herausragenden Quartalszahlen für Tech-Euphorie sorgt. Öl und Gold geben nach, Bitcoin stagniert — fallende Energiepreise stützen dagegen zyklische Luftfahrtwerte wie MTU, Fraport und TUI.",
+   "items": [
+    {
+     "name": "Öl",
+     "ticker": "CL=F",
+     "note": "Der Ölpreis fällt weiter auf rund 72 Dollar und liegt damit unter dem Niveau zum Kriegsausbruch, getrieben von Hoffnung auf eine Waffenruhe im Nahen Osten und anhaltendem Überangebot.",
+     "figures": "72 USD",
+     "tip": "",
+     "einordnung": "Die Rückkehr des Ölpreises auf Vorkriegsniveau ist ein deutliches Disinflationssignal — die Rotation zugunsten verbrauchsnaher und transportabhängiger Sektoren läuft weiter. Solange das Überangebot besteht, bleibt der Druck auf Energiewerte erhalten.",
+     "detail": "Der Preisverfall wird durch zwei Faktoren gespeist: erstens die Hoffnung auf eine Waffenruhe im Nahen Osten, zweitens das strukturelle Überangebot. Tages-News ergänzen, dass Hormuz-Versicherer ihre Kriegsprämien drastisch gesenkt haben — ein deutliches Zeichen, dass auch die Marktteilnehmer eine Eskalation im Hormuz als zunehmend unwahrscheinlich einstufen. Das Iran-Außenministerium warnt zwar NATO-Mitglieder vor Konsequenzen bei Einmischung, doch der Markt preist diese Rhetorik offenbar nicht mehr als akutes Risiko ein. Der Ölpreis nahe 72 Dollar entlastet die Inflationsdebatte und gibt den Notenbanken Spielraum — ein Faktor, der auch den DAX-Luftfahrtwerten MTU, Fraport und TUI zugutekommt.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS: Öl unter $70 – Hormuz-Versicherer senken Kriegsprämien drastisch",
+       "url": "",
+       "bezug": "Sinkende Ölpreise dürften Inflationsdruck mindern, belasten aber Energiewerte; Versicherer sehen geringeres Eskalationsrisiko im Hormuz."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 78,
+     "t": "01:18",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=78s"
+    },
+    {
+     "name": "Gold",
+     "ticker": "GC=F",
+     "note": "Der Goldpreis rutscht unter die 4.000-Dollar-Marke, belastet durch Zinssorgen und eine entspanntere geopolitische Lage. Charttechnisch sind die Skeptiker im Recht.",
+     "figures": "4.000 USD",
+     "tip": "Vorsicht, Gewinnmitnahmen möglich",
+     "einordnung": "Der Bruch der 4.000-Dollar-Marke ist psychologisch bedeutend. Solange die Zinswende nicht vom Tisch ist und geopolitische Risiken abnehmen, fehlt dem Gold der Treibstoff für neue Höchstkurse.",
+     "detail": "Der gleichzeitige Rückgang von Gold, Silber und Bitcoin — in den Tages-News als Auflösung des 'Debasement Trade' beschrieben — deutet auf einen strukturellen Stimmungswandel hin. Anleger reduzieren offenbar ihre Inflationsschutz-Positionen, was mit der fallenden Ölpreisdynamik korrespondiert. Die Zinssorgen, die der Host nennt, beziehen sich vermutlich auf die Frage, ob die Fed im zweiten Halbjahr 2026 überhaupt noch Zinssenkungen liefern wird — ein Szenario, das für Goldinvestoren belastend wäre. Charttechnisch bestätigt der Bruch von 4.000 Dollar eine potenziell weitere Abwärtsbewegung, wenngleich das zentrale Bankenkäufer-Programm als struktureller Boden wirkt.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS: Gold, Silber, Bitcoin unter Druck – Debasement Trade löst sich auf",
+       "url": "",
+       "bezug": "Gold, Silber und Bitcoin fallen gleichzeitig; der Debasement Trade verliert an Momentum."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 134,
+     "t": "02:14",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=134s"
+    },
+    {
+     "name": "Bitcoin",
+     "ticker": "BTC-USD",
+     "note": "Bitcoin hält sich knapp über 60.000 Dollar, große Sprünge sind nicht angesagt und das Thema ist von den Titelseiten verschwunden.",
+     "figures": "60.000 USD",
+     "tip": "",
+     "einordnung": "Die Seitwärtsbewegung bei 60.000 Dollar spiegelt einen ermüdenden Markt ohne neuen Katalysator. Das verschwindende Medieninteresse ist typisch für eine Konsolidierungsphase, kann aber auch den Boden für die nächste Trendwende bereiten.",
+     "detail": "Die Tages-News deuten auf ein potenzielles Risiko hin: Ein weiterer Rückgang unter 55.000 Dollar könnte MicroStrategy (MSTR) zu Aktienemissionen oder Bitcoin-Verkäufen zwingen, was einen negativen Feedback-Loop auslösen würde. Der Host impliziert, dass Bitcoin als Anlageklasse an medialer Aufmerksamkeit verloren hat — ein Sentiment-Indikator, der historisch oft am Beginn oder Ende von Konsolidierungsphasen zu beobachten ist. Die Korrelation mit dem Goldrückgang im Rahmen des sich auflösenden 'Debasement Trade' ist dabei ein wichtiger Kontext: Beide Anlageklassen profitierten von Inflationsängsten, die nun nachlassen.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS: Gold, Silber, Bitcoin unter Druck – Debasement Trade löst sich auf",
+       "url": "",
+       "bezug": "Bitcoin-Rückgang unter $55.000 könnte MSTR zu Verkäufen zwingen; Debasement Trade verliert Momentum."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 207,
+     "t": "03:27",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=207s"
+    },
+    {
+     "name": "Dow Jones",
+     "ticker": "^DJI",
+     "note": "Der Dow Jones bewegt sich nahe Rekordniveau, ohne sich stark von den Höchstkursen abzusetzen, bleibt aber in einer starken Rally.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Die Nähe zu Rekordhöhen ohne nennenswerte Korrektur zeigt bemerkenswerte Widerstandskraft. Die Breite der Rally verdient allerdings genauere Beobachtung — nicht jeder Sektor zieht gleich stark mit.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 241,
+     "t": "04:01",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=241s"
+    },
+    {
+     "name": "Micron Technology",
+     "ticker": "MU",
+     "note": "Micron überzeugt mit starken Quartalszahlen: 75 Prozent Umsatzwachstum auf 41 Milliarden Dollar, Nettogewinn von 28 Milliarden Dollar. Der Kurs steigt nachbörslich um 17 Prozent.",
+     "figures": "75% Wachstum, 41 Mrd. USD Umsatz, 28 Mrd. USD Nettogewinn, +17% nachbörslich",
+     "tip": "",
+     "einordnung": "Ein 75-prozentiges Umsatzwachstum demonstriert, dass der KI-getriebene Speicherzyklus in voller Blüte steht. Die nachbörsliche Reaktion von plus 17 Prozent zeigt, dass der Markt Ausführung belohnt — die Bewertung wird jedoch schnell anspruchsvoll.",
+     "detail": "Die Tages-News ergänzen ein wichtiges Detail: JPMorgan hat das Kursziel für Micron verdoppelt, was die nachbörsliche Euphorie zusätzlich befeuert. Der Tech-Rebound zeigt sich auch in den Futures: Nasdaq 100 plus 2 Prozent, S&P 500 plus 0,6 Prozent. Microns Zahlen lindern offenbar die im Vorfeld aufgekommenen KI-Ängste, wonach der Speicherboom abkühlen könnte. Die Spillover-Effekte auf SanDisk (+16% nachbörslich) und den gesamten Halbleitersektor sind ein klassisches Sektor-Momentum-Phänomen. Für Infineon im DAX könnte dies ein positiver Vorgabe-Impuls sein, auch wenn Infineon eher im Automotive- und industriellen Spektrum agiert.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS: Tech-Rebound: Micron-Ergebnisse lindern KI-Ängste – JPM verdoppelt Ziel",
+       "url": "",
+       "bezug": "JPM verdoppelt Micron-Kursziel; Nasdaq 100 +2%, S&P 500 +0,6%; KI-Ängste werden durch Micron-Zahlen gelindert."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 264,
+     "t": "04:24",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=264s"
+    },
+    {
+     "name": "SanDisk",
+     "ticker": "SNDK",
+     "note": "SanDisk legt nachbörslich um 16 Prozent zu und profitiert von der Euphorie nach Microns starken Quartalszahlen.",
+     "figures": "+16% nachbörslich",
+     "tip": "",
+     "einordnung": "Der Spillover von Micron auf SanDisk ist angesichts der korrelierten Speichergeschäfte logisch. Die Frage ist jedoch, ob SanDisks eigene Fundamentaldaten diese Euphorie rechtfertigen oder ob es sich um einen klassischen Sektor-Momentum-Effekt handelt.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 331,
+     "t": "05:31",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=331s"
+    },
+    {
+     "name": "DAX",
+     "ticker": "^GDAXI",
+     "note": "Der DAX fällt unter die 25.000-Punkte-Marke, bedingt durch Korrekturen im Speicherbereich und schlechte Nachrichten bei Rheinmetall.",
+     "figures": "25.000 Punkte",
+     "tip": "",
+     "einordnung": "Der Rückgang unter 25.000 Punkte wird durch idiosynkratische Faktoren getrieben — der Rheinmetall-Crash und Speicher-Korrekturen —, nicht durch systemische Probleme. Der Index sollte sich stabilisieren, sobald der Rheinmetall-Schock verdaut ist.",
+     "detail": "Die Tages-News deuten auf einen weiteren Belastungsfaktor hin: Europäische Haushalte kürzen Ausgaben und horten Bargeld, was die Wachstumsaussichten belastet. Dies könnte erklären, warum der DAX nach dem starken Wochenstart nicht in die Gänge kommt — die konjunkturelle Realität in Europa holt den Markt ein. Der Host erwähnt, dass der DAX gestern teils deutliche Verluste verzeichnete, bevor er sich zum Ende hin erholte — ein klassisches Intraday-V-Formation-Muster, das auf institutionelle Käufe in der Schlussphase hindeutet.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS: Europäische Verbraucher horten Bargeld – Wachstum unter Druck",
+       "url": "",
+       "bezug": "Europäische Haushalte kürzen Ausgaben und horten Bargeld, was die Wachstumsaussichten belastet."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 353,
+     "t": "05:53",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=353s"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "note": "Infineon dürfte heute Morgen im Fokus stehen, da alles mit Chips und KI im Aufgalopp ist, gestützt durch positive Vorgaben aus Asien.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Der positive Read-through von Micron und asiatischen Halbleiterwerten ist gerechtfertigt, auch wenn Infineon eher im Automotive- und Industriebereich agiert. Die KI-Euphorie könnte kurzfristig für Auftrieb sorgen.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 370,
+     "t": "06:10",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=370s"
+    },
+    {
+     "name": "Rheinmetall",
+     "ticker": "RHM.DE",
+     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
+     "figures": "-19%, 12,8 Mrd. Euro",
+     "tip": "Übertriebener Kursverlust, langfristig Einstiegschance",
+     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. Wer langfristig denkt, könnte hier eine Einstiegschance sehen.",
+     "detail": "Der F126-Fregattenauftrag mit einem Volumen von 12,8 Milliarden Euro gehört zu den größten Verteidigungsaufträgen in der deutschen Geschichte. Der Verlust wirft Fragen auf: erstens nach Rheinmetalls wettbewerbsfähiger Positionierung im Marinesektor, zweitens nach der künftigen Auftragspipeline. Die wesentliche Wachstumsstory von Rheinmetall liegt jedoch im Landsystembereich — Panzer, Munition, Fahrzeugsysteme —, der von diesem Rückschlag unberührt bleibt. Der Host spricht von einem Vertrauensverlust, was psychologisch nachvollziehbar ist: Investoren strafen Unternehmen, die Großaufträge verlieren, oft überproportional ab. Historisch betrachtet — ich erinnere an ähnliche Überreaktionen bei Rüstungswerten in der Vergangenheit — bieten solche Kursstürze oft langfristige Einstiegschancen, wenn das Kerngeschäft intakt bleibt. Der Begünstigte des Auftragsverlusts ist TKMS (ThyssenKrupp Marine Systems), der als möglicher Ersatz ins Spiel kommt.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 390,
+     "t": "06:30",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s"
+    },
+    {
+     "name": "TKMS",
+     "ticker": "TKA.DE",
+     "note": "TKMS profitiert vom gescheiterten Rheinmetall-Auftrag als möglicher Ersatz und legt massiv zu.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Als potenzieller Nutznießer der F126-Auftragsreallokation ist die Rally spekulativ, aber logisch. Die Auftragsvisibilität würde sich substantiell verbessern, falls TKMS den Zuschlag erhält.",
+     "detail": "TKMS (ThyssenKrupp Marine Systems) ist als Tochtergesellschaft der ThyssenKrupp AG nicht separat börsennotiert — die Kursreaktion spielt sich über die ThyssenKrupp-Aktie ab. Der Host impliziert, dass TKMS als natürlicher Empfänger des F126-Auftrags ins Spiel kommt, was angesichts der vorhandenen Marine-Expertise plausibel ist. Die Kursreaktion ist jedoch vor allem eine Momentum-Folgebewegung aus dem Rheinmetall-Crash — Anleger rotieren schnell in den vermeintlichen Gewinner. Ob der Auftrag tatsächlich an TKMS vergeben wird, ist noch nicht final bestätigt.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 579,
+     "t": "09:39",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=579s"
+    },
+    {
+     "name": "MTU",
+     "ticker": "MTX.DE",
+     "note": "MTU führt den DAX an, da sinkende Kerosinpreise die Luftfahrt antreiben und die Aktie charttechnisch die 200-Tage-Linie knackt.",
+     "figures": "25%",
+     "tip": "Kaufgelegenheit",
+     "einordnung": "Niedrigere Ölpreise schaffen einen doppelten Rückenwind für MTU — geringere Inputkosten für das Wartungsgeschäft und höhere Luftverkehrsnachfrage. Der Bruch der 200-Tage-Linie ist charttechnisch ein bullisches Signal.",
+     "detail": "Die 25 Prozent, die der Host nennt, beziehen sich vermutlich auf den jüngsten Kursgewinn seit dem Tief. Der Bruch der 200-Tage-Linie ist ein signifikantes charttechnisches Ereignis — er signalisiert den Übergang von einem Abwärtstrend zu einem potenziellen Aufwärtstrend. MTU profitiert doppelt vom fallenden Ölpreis: Erstens senken niedrigere Kerosinkosten die Betriebskosten der Fluggesellschaften, was zu mehr Flugverkehr und damit mehr Wartungsbedarf führt. Zweitens verbessert sich die Margensituation im Ersatzteilgeschäft. Der Host bezeichnet dies als Kaufgelegenheit, was charttechnisch nachvollziehbar ist — allerdings sollte man beachten, dass MTU nach einem 25-Prozent-Gewinn nicht mehr im absoluten Schnäppchenbereich notiert.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 596,
+     "t": "09:56",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=596s"
+    },
+    {
+     "name": "Fraport",
+     "ticker": "FRA.DE",
+     "note": "Fraport zeigt Aufwärtsbewegung und profitiert von sinkenden Ölpreisen sowie der entspannteren Lage im Nahen Osten.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Niedrigere Ölpreise reduzieren die Betriebskosten für Flughafenbetreiber und stützen das Reiseverkehrswachstum. Die geopolitische Entspannung im Nahen Osten beseitigt einen weiteren Risikoüberhang.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 630,
+     "t": "10:30",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=630s"
+    },
+    {
+     "name": "TUI",
+     "ticker": "TUI1.DE",
+     "note": "TUI profitiert von sinkenden Ölpreisen und der veränderten Lage im Nahen Osten, was die Aufwärtsbewegung der Aktie stützt.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Niedrigere Treibstoffkosten und geopolitische Entspannung sind klare Rückenwinde für den Reiseriesen. Die Aktie bleibt jedoch sensibel für konjunkturelle Schwankungen im Konsumverhalten.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 630,
+     "t": "10:30",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=630s"
+    }
+   ],
+   "macro": [
+    {
+     "text": "Fallender Ölpreis auf rund 72 Dollar aufgrund von Waffenruhe-Hoffnungen und Überangebot, was positive Auswirkungen auf Treibstoffkosten und Inflation haben könnte.",
+     "sec": 78,
+     "t": "01:18",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=78s"
+    },
+    {
+     "text": "Goldpreis unter 4.000 Dollar durch Zinssorgen und geopolitische Entspannung, obwohl die Lage im Nahen Osten und im Ukraine-Krieg angespannt bleibt.",
+     "sec": 134,
+     "t": "02:14",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=134s"
+    },
+    {
+     "text": "Gemischte Vorgaben aus Asien: Der Nikkei schaltet nach mehreren schwachen Handelstagen in den Rallymodus, während der Hang Seng deutlich abgibt.",
+     "sec": 35,
+     "t": "00:35",
+     "tlink": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=35s"
+    }
+   ]
+  },
   {
    "channel": "onvista",
    "playlist": "Börse & Märkte LIVE",
@@ -7536,97 +7799,6 @@
      "text": "Tech-Rotation fortgesetzt: Kapital fließt aus Tech in Healthcare und Financials, Index-Stabilität langfristig gestützt, solange Geld im Aktienmarkt bleibt.",
      "t": "09:49",
      "tlink": "https://www.youtube.com/watch?v=mvQyqXCR0Ho&t=589s"
-    }
-   ]
-  },
-  {
-   "channel": "Der Aktionär - Märkte am Morgen",
-   "playlist": "Märkte am Morgen",
-   "id": "Du2MefN2vbk",
-   "title": "Märkte am Morgen: Marvell, Palo Alto, Microchip Tech, Victoria's Secret, Rheinmetall, Commerzbank",
-   "date": "20260603",
-   "url": "https://www.youtube.com/watch?v=Du2MefN2vbk",
-   "summarized_at": "2026-06-11T18:46:11.378251+00:00",
-   "summary": "Die Märkte bewegen sich zwischen KI-Euphorie und Iran-Unsicherheit, wobei die Tech-Begeisterung zuletzt überwog. Der Dow Jones markierte eine neue Bestmarke, der DAX schloss mit +0,5% bei 25.124 Punkten, während heute ein schwächerer Start erwartet wird. Im Fokus stehen Einzelwerte wie Marvell Technology, Palo Alto Networks, Microchip Technology, Victoria's Secret, Rheinmetall und die Commerzbank, sowie der US-Arbeitsmarktbericht am Freitag.",
-   "items": [
-    {
-     "name": "Intro",
-     "note": "Ankündigung der Themen der Sendung und Hinweis auf den neuen Aktionär mit Megatrend-Aktien.",
-     "figures": "",
-     "tip": "",
-     "t": "00:00",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=0s"
-    },
-    {
-     "name": "Marktüberblick",
-     "note": "DAX schloss mit +0,5% bei 25.124 Punkten, heute wird ein schwächerer Start erwartet. Dow Jones legte 0,45% zu und erreichte ein neues Rekordhoch. Ölpreise stiegen leicht, der US-Arbeitsmarktbericht am Freitag ist im Fokus.",
-     "figures": "DAX +0,5% auf 25.124 Punkte, Dow Jones +0,45%",
-     "tip": "",
-     "t": "00:30",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=30s"
-    },
-    {
-     "name": "Bitcoin",
-     "note": "Bitcoin fiel unter die 70.000-Dollar-Marke und notiert nun bei etwa 67.100 Dollar.",
-     "figures": "Bitcoin bei 67.100 Dollar",
-     "tip": "",
-     "t": "02:15",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=135s"
-    },
-    {
-     "name": "Marvell Technology Group",
-     "note": "Nvidia-CEO Jensen Huang prognostizierte, dass Marvell das nächste Unternehmen im Billion-Dollar-Club sein könnte. Die Aktie stieg daraufhin um 32%.",
-     "figures": "+32% Kursanstieg",
-     "tip": "",
-     "t": "02:35",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=155s"
-    },
-    {
-     "name": "Palo Alto Networks",
-     "note": "Quartalszahlen übertrafen die Erwartungen (Umsatz 3 Mrd. USD, Gewinn pro Aktie 85 Cent), aber Aussagen zu steigenden Kosten und Verwässerung drückten die Aktie nachbörslich ins Minus. Aktuell vorbörslich -3,4%.",
-     "figures": "Umsatz 3 Mrd. USD (erwartet 2,94 Mrd.), Gewinn pro Aktie 85 Cent (erwartet 80 Cent), Guidance Q4: Gewinn 96-98 Cent, Umsatz 3,34-3,35 Mrd. USD",
-     "tip": "",
-     "t": "03:56",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=236s"
-    },
-    {
-     "name": "Microchip Technology",
-     "note": "Positive Prognosen für das Datacenter-Geschäft: Umsatz 2025 bei 302,7 Mio. USD, 2026 Anstieg um 65% auf über 500 Mio. USD. Aktie schloss mit +6% bei 9696 USD, nachbörslich -2,5%.",
-     "figures": "Umsatz 2025: 302,7 Mio. USD, 2026: über 500 Mio. USD (+65%), Aktie +6% auf 9696 USD",
-     "tip": "Rückeroberung der 100-Dollar-Marke im Fokus, dann Hoch vom Mai als nächstes Ziel",
-     "t": "06:03",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=363s"
-    },
-    {
-     "name": "Victoria’s Secret",
-     "note": "Rekordtag mit +47% im US-Handel, getrieben von starken Quartalszahlen (Gewinn pro Aktie 60 Cent, doppelt so hoch wie erwartet) und einem Short Squeeze (Shortquote 19%). Umsatz stieg um 15%, Guidance für 2026 angehoben.",
-     "figures": "+47% Tagesgewinn, Gewinn pro Aktie 60 Cent (doppelt so hoch wie erwartet), Umsatz +15%, Shortquote 19%",
-     "tip": "",
-     "t": "07:19",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=439s"
-    },
-    {
-     "name": "Rheinmetall",
-     "note": "Großauftrag aus Rumänien im Volumen von 5,7 Mrd. Euro (größter Auftrag der jüngeren Firmengeschichte) konnte das Minus verringern, aber die Aktie bleibt im Abwärtstrend. Wichtig ist, dass die 1000-Euro-Marke hält.",
-     "figures": "Auftrag 5,7 Mrd. Euro",
-     "tip": "1000-Euro-Marke muss halten",
-     "t": "08:57",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=537s"
-    },
-    {
-     "name": "Commerzbank",
-     "note": "UniCredit stockte Anteil auf 34,4% auf, umgeht damit ein Pflichtangebot. Die Aktie notiert bei etwa 37 Euro und schloss gestern mit +0,5%.",
-     "figures": "UniCredit-Anteil 34,4%, Aktie bei ca. 37 Euro, +0,5%",
-     "tip": "",
-     "t": "09:57",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=597s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "US-Arbeitsmarktbericht am Freitag im Fokus, da er die Zinserwartungen beeinflussen könnte.",
-     "t": "01:18",
-     "tlink": "https://www.youtube.com/watch?v=Du2MefN2vbk&t=78s"
     }
    ]
   }
