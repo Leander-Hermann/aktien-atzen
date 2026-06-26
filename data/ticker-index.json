@@ -1,6 +1,328 @@
 {
- "updated": "2026-06-26T09:13:13.315159+00:00",
+ "updated": "2026-06-26T09:59:04.735886+00:00",
  "ticker": {
+  "AAPL": {
+   "name": "Apple",
+   "auftritte": [
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=164s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Deutliche Preiserhöhungen für MacBooks aufgrund gestiegener Speicherpreise belasten die Aktie; die 200-Tage-Linie rückt in Sichtweite.",
+     "einordnung": "Die Preiserhöhungen könnten die ohnehin schwache Nachfrage weiter dämpfen — Apple kämpft bereits mit China-Schwäche. Charttechnisch nähert sich die Aktie einer wichtigen Unterstützung, was über kurz…"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=1900s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Apple kündigt Preiserhöhungen für iPhones, Macs und iPads an, begründet mit steigenden Speicherpreisen. Charttechnisch ist das Kaufsignal intakt, fundamental erscheint die Aktie jedoch teuer.",
+     "einordnung": "Apple schiebt Kostensteigerungen elegant auf den Kunden – eine klassische Pricing-Power-Strategie. Ein KGV von 32,6 ist für ein Unternehmen mit diesem Wachstum jedoch sportlich. Die Zone 277-280$ ist…",
+     "figures": "PE Forward 32,6 (Schnitt 21,7); Kursziel 330-360$; iPhone Pro 18 Einstiegspreis 3000$; Speicherpreis-Upgrade 270-300$"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1119s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "WWDC mit Fokus auf Siri und KI-Integration; kurzer Kursauftrieb (+1–3%), folgender Rückgang (-3%) da keine überraschenden Features. Host: langfristig positiv, da wenig in KI investiert bisher.",
+     "einordnung": "Typisches FOMO-Reversal. Apple weniger exponiert in KI-CapEx-Race als Mega-Peers (Meta, Alphabet) – könnte mittelfristig zur Undervaluation führen, falls KI-Narrative abkühlt. Defensive Qualität in T…"
+    }
+   ]
+  },
+  "MU": {
+   "name": "Micron Technology",
+   "auftritte": [
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=191s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Fulminante Quartalszahlen begeistern den Markt: Umsatz und Nettogewinn legen stark zu, die Margen übertreffen sogar Nvidia.",
+     "einordnung": "Micron ist der direkte Nutznießer des KI-Booms im Speicherchip-Segment — die Zahlen belegen, dass die Nachfrage nach HBM-Speichern für KI-Anwendungen massiv skaliert. Die Bewertung hat sich durch die…",
+     "figures": "41 Mrd. USD Umsatz, 28 Mrd. USD Nettogewinn"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=264s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Micron überzeugt mit starken Quartalszahlen: 75 Prozent Umsatzwachstum auf 41 Milliarden Dollar, Nettogewinn von 28 Milliarden Dollar. Der Kurs steigt nachbörslich um 17 Prozent.",
+     "einordnung": "Ein 75-prozentiges Umsatzwachstum demonstriert, dass der KI-getriebene Speicherzyklus in voller Blüte steht. Die nachbörsliche Reaktion von plus 17 Prozent zeigt, dass der Markt Ausführung belohnt —…",
+     "figures": "75% Wachstum, 41 Mrd. USD Umsatz, 28 Mrd. USD Nettogewinn, +17% nachbörslich"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1408s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Micron überzeugt mit starken Q3-Zahlen (Rekordumsatz, Gewinnschub) und einem deutlich angehobenen Ausblick; Aktie springt auf 1200$.",
+     "einordnung": "Micron liefert das starke Fundament, das die Halbleiter-Euphorie rechtfertigt — Rekordumsatz, explodierende Margen und ein Ausblick, der den KI-Investitionszyklus bestätigt. Die Bewertung ist hoch, a…",
+     "figures": "Umsatz Q3 41,46 Mrd. $ (Erwartung 35,7 Mrd.), Gewinn/Aktie 25,11$ (20,50$ erwartet), Bruttomarge 84,9%, Ausblick Q4: Umsatz 50 Mrd. $, Gewinn 31$; Kursziel 1254$, danach 1715$"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "04yYuesQS4g",
+     "url": "https://www.youtube.com/watch?v=04yYuesQS4g&t=182s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Quartalszahlen stehen heute Abend nach US-Handelsschluss an. Micron hat in den vergangenen vier Quartalen die Konsensschätzungen jeweils um über 20% geschlagen — die Messlatte liegt entsprechend hoch.",
+     "einordnung": "Micron ist der Stimmungsbarometer für den Speicherzyklus. Werden die Zahlen enttäuschen, dürfte das den gesamten Chip-Sektor kurzfristig belasten — das erinnert an die Saison 2018, als Micron nach st…",
+     "figures": "Schätzung in letzten 4 Quartalen um über 20% übertroffen (21%)"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "t04FPU9gZbI",
+     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=3151s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Micron -6,23% vorbörslich, aber +300% seit Jahresbeginn. Kooperation mit Anthropic, Needham hebt Kursziel von 500 auf 1.550 $. KGV von 11, Potenzial auf 16.",
+     "einordnung": "Ein Kursziel von 1.550 $ nach einer Verdopplung von 500 $ ist eine drastische Anhebung, die die KI-Speicher-Story unterstreicht. Mit einem KGV von 11 und Potenzial auf 16 ist Micron trotz +300% YTD n…",
+     "figures": "-6,23%, YTD +300%, Kursziel 1.550 $, KGV 11"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=839s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Micron hat seit Jahresbeginn ein Plus von 160-170% erzielt. Das Kursziel von 443 USD wird als Street High bezeichnet.",
+     "einordnung": "160-170% YTD-Plus bei einem Speicherchiphersteller — das ist die HBM-Euphorie in Reinform. Micron profitiert von High-Bandwidth-Memory für KI-Beschleuniger, aber Speicher ist zyklisch. Wer hier einst…",
+     "figures": "160-170% YTD-Plus, 443 USD Kursziel (Street High)"
+    },
+    {
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=886s",
+     "channel": "Calling USA",
+     "kategorie": "fundamental",
+     "note": "Speicherhersteller, der sich auf KI-Speicher fokussiert und das Consumer-Geschäft einstellt. Die Aktie hat sich seit Jahresbeginn verdreifacht. Analysten sind optimistisch vor den Quartalszahlen näch…",
+     "einordnung": "Ein KGV von 17 bei einem Speicherhersteller im KI-Boom ist moderat — das ist nicht die typische Blende-Bewertung, die man in Zyklen sonst sieht. Der strategische Wechsel weg vom volatilen Consumer-Ge…",
+     "figures": "Umsatz 12,78 Mrd. USD, Prognose 12,5 Mrd. USD ±300 Mio., Marge von 41% auf 51,5% ±1%, Ergebnis 390 Mio. USD, KGV 17, Kursziel BofA 250 USD, Citi 275 auf 300 USD, HSBC 330 USD"
+    }
+   ]
+  },
+  "BAYRY": {
+   "name": "Bayer",
+   "auftritte": [
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=261s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Positives Glyphosat-Urteil des US Supreme Courts könnte Klagen die Grundlage entziehen und die Aktie nachhaltig stützen.",
+     "einordnung": "Das Supreme-Court-Urteil ist ein potenzieller Wendepunkt für die langjährige Glyphosat-Belastung — würde die Klagewelle gestoppt, entfiele ein wesentlicher Überhang auf die Aktie. Bayer bleibt dennoc…"
+    }
+   ]
+  },
+  "ZAL.DE": {
+   "name": "Zalando",
+   "auftritte": [
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=308s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BaFin prüft die Rechnungslegung im Zusammenhang mit der Übernahme von About You; die Aktie bricht ein, der Aufwärtstrend ist zunächst beendet.",
+     "einordnung": "Eine BaFin-Prüfung ist immer ein Vertrauensbruch — unabhängig vom Ausgang drückt das Risiko einer Bilanzkorrektur die Bewertung. Der charttechnische Bruch des Aufwärtstrends bestätigt, dass das Senti…",
+     "figures": "DAX-Indikation -15%, -40% seit Tief"
+    }
+   ]
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "auftritte": [
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=383s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Chipwerte wie Infineon laufen weiter stark; Infineon hat seit Überwinden der 50-Kursmarke über 60% zugelegt.",
+     "einordnung": "Die +60% seit dem Breakout sind beeindruckend, aber auch ein Warnsignal für eine überhitzte Bewegung. Infineon profitiert vom KI-Hype, ist aber zyklischer als die reinen KI-Spezialisten — eine Korrek…",
+     "figures": "+60% seit 50-Kursmarke"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=370s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon dürfte heute Morgen im Fokus stehen, da alles mit Chips und KI im Aufgalopp ist, gestützt durch positive Vorgaben aus Asien.",
+     "einordnung": "Der positive Read-through von Micron und asiatischen Halbleiterwerten ist gerechtfertigt, auch wenn Infineon eher im Automotive- und Industriebereich agiert. Die KI-Euphorie könnte kurzfristig für Au…"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=386s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon gestern noch gefragt, heute vorbörslich unter Druck durch Realitätstrack und Gewinnmitnahmen bei Chipherstellern.",
+     "einordnung": "Infineon ist ein klassischer Zykliker, der auf globale Konjunktur- und Zinserwartungen reagiert. Wenn die Zinswende ausbleibt, bleibt der Titel unter Druck. Das ist kein Kaufgrund, sondern ein Abwart…"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=552s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Trump-Tweet zu Intel-Apple-Kooperation treibt Chipaktien, Infineon verdoppelt von 40 auf 80 Euro in 2–3 Monaten. Kurzfristig wegen Überbewertung und Korea-Risiko seitwärts.",
+     "einordnung": "Eine Verdopplung in drei Monaten auf Basis eines Tweets ist kein fundamentales Fundament, sondern Momentum. Das Korea-Risiko als geopolitischer Overhang wird vom Markt unterschätzt – ein Konflikt dor…",
+     "figures": "Kurs von 40 auf 80 Euro verdoppelt"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=376s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Charttechnisch stark mit kaum nennenswerter Korrektur; KI-Fantasie treibt den Wert, hat sich in kurzer Zeit mehr als verdoppelt.",
+     "einordnung": "Infineon als KI-Profiteur über Leistungshalbleiter und Power-Management ist fundamental nachvollziehbar. Eine Verdopplung in kurzer Zeit erhöht jedoch das Rückschlagrisiko — hier sollte man Gewinne m…",
+     "figures": "mehr als verdoppelt in kurzer Zeit"
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1033s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Aktie in einer Woche 17,8% gestiegen — KI-Hype. EBITDA 4,6 Mrd. € (FY per Sep), nächstes Jahr 6,1 Mrd. €. EBIT von 2,6 auf 3,8 Mrd. €. Börsenwert 99,6 Mrd. €, EV 105,3 Mrd. € = 17,3x EBIT, 27,7x EBIT…",
+     "einordnung": "17,8% in einer Woche bei einem KGV von knapp 30 ist ein klassischer Hype-Move — das erinnert an die SOXL-Bewegungen 2023, als jeder Chipname auf KI-Gedanken gehoben wurde. Die EBITDA-Steigerung von 4…",
+     "figures": "Woche: +17,8%, EBITDA FY: 4,6 Mrd. €, EBITDA n. J.: 6,1 Mrd. €, EBIT: 2,6 auf 3,8 Mrd. €, Börsenwert: 99,6 Mrd. €, EV: 105,3 Mrd. €, EV/EBIT: 17,3x, EV/EBITDA: 27,7x, KGV: 29,7"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
+     "einordnung": "Infineon als Profiteur des vorherigen Momentum-Trades wird nun verkauft – das ist die Kehrseite der Rotation. Wenn der Momentum-Trade zurückkehrt, ist Infineon der erste Profiteur."
+    }
+   ]
+  },
+  "MUV2.DE": {
+   "name": "Munich Re",
+   "auftritte": [
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=420s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Als möglicher KI-Effizienztreiber überzeugend; Schwächephasen bei Munich Re, Hannover Rück und Allianz sollten zum Einstieg genutzt werden.",
+     "einordnung": "Rückversicherer profitieren von KI-gestützter Risikomodellierung und gleichzeitig von hartem Zinsumfeld — das ist eine seltene Kombination. Die Empfehlung, Schwächephasen zu kaufen, ist bei Qualitäts…"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "MJo67AkNy70",
+     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=589s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Munich Re könnte von weniger Großschäden 2026 profitieren; Analysteneinschätzung auf Aktionär.de.",
+     "einordnung": "Rückversicherer profitieren von ruhigen Schadenjahren — das ist zyklisch, nicht strukturell. Munich Re als defensiver Baustein in einem hawkischen Umfeld ist aber eine sinnvolle Positionierung. Der V…"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=2007s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Q1: Umsatz schwach (-5% auf 15,0 Mrd. EUR vs. Erw. 16,0), operatives Ergebnis stark (+52% auf 2,23 Mrd. EUR) durch niedrige Großschäden; Schaden-Kostenquote 66,8% (Erw. 74,6%); Gewinn +56,7% auf 1,7…",
+     "einordnung": "Günstiges KGV (8,6) spricht für Value, aber Volumen-Rückgänge in April/Januar sowie Druck auf Prämien-Wachstum warnen vor Margin-Erosion. Zinserhöhungen könnten Bewertungen am Markt stützen (höhere D…",
+     "figures": "Q1: Umsatz -5% auf 15,0 Mrd. EUR (Erw. 16,0); Op. Gewinn +52% auf 2,23 Mrd. EUR (Erw. 2,35); Schaden-Kostenquote 66,8% (Erw. 74,6%); Gewinn +56,7% auf 1,7 Mrd. EUR; Jan-Erneuerung: Volumen -7,8% auf…"
+    }
+   ]
+  },
+  "RHM.DE": {
+   "name": "Rheinmetall",
+   "auftritte": [
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nach Verlust des Fregatten-Auftrags an TKDS keine Gegenbewegung; die Reaktion erscheint übertrieben, langfristig besteht Potenzial, aber kurzfristig abwarten.",
+     "einordnung": "Der Verlust eines Großauftrags ist ein psychologischer Dämpfer, ändert aber wenig an der strukturellen Verteidigungsnachfrage. Dass der Host die Reaktion als übertrieben einstuft, ist nachvollziehbar…"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
+     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. We…",
+     "figures": "-19%, 12,8 Mrd. Euro"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "4K4U0fRfM0A",
+     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=1424s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "Die Aktie fällt 18 Prozent nach Meldung über mögliches Ende des F126-Fregattenprojekts. JP Morgan senkt das Kursziel leicht auf 1400 Euro, hält aber am Hold-Rating fest. Zusätzlicher Druck entsteht d…",
+     "einordnung": "Die 18-Prozent-Reaktion ist dramatisch, aber der F126 ist ein Marineprojekt — Rheinmetalls Kernfranchise sind Landsysteme. Der PEG von 0,67 signalisiert, dass die Aktie trotz des Abverkaufs noch imme…",
+     "figures": "-18%, Kursziel 1400 Euro (von 1450), KGV 24, PEG 0,67"
+    },
+    {
+     "date": "2026-06-16",
+     "video_id": "J1zzTOyOdKE",
+     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=952s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Die Aktie steht unter Druck, weil ein baldiges Ende des Iran-Krieges die Nachfrage nach Rüstungsgütern dämpfen könnte. Egmond sieht noch kein belastbares Tief und bleibt skeptisch.",
+     "einordnung": "Rheinmetall ist ein klassisches Geopolitik-Play — steigt bei Konflikten, leidet bei Entspannung. Das Iran-Abkommen trifft die Aktie daher doppelt: sinkende Ölpreis-Einnahmen schwächen gleichzeitig di…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=483s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Unter Druck: Friedenshoffnung dämpft die Rüstungsfantasie, zusätzlich Sorgen um das deutsch-französische Panzer-Joint-Venture und mögliche Mittelkürzungen.",
+     "einordnung": "Das ist die Kehrseite des Friedens-Trades — wer von Rüstungsausgaben profitiert, leidet bei Deeskalation. Rheinmetall hatte eine beispiellose Rally; eine Konsolidierung ist nach diesem Katalysator fu…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "4TeOYIh5hN0",
+     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1051s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Mittelfristiger Abwärtstrend nach Triple-Top bei 1930 €; Verkäufer dominant, nächster Support bei 934 €, Key-Support bei 1481 €.",
+     "einordnung": "Rheinmetall ist ein lehrbuchhaftes Beispiel für einen gebrochenen Aufwärtstrend – das Triple-Top bei 1930 € ist definitiv gescheitert, und der Trend läuft nach unten aus, ohne dass eine Stabilisierun…",
+     "figures": "1930 € (Triple-Top-Hoch), 1481 € (Key-Support), 1270 € (Zwischenstützung), 934 € (nächster Support), Korrektur ca. 40 %"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1466s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Die These, Drohnen seien wichtiger als Panzer, untergräbt die klassische Rheinmetall-Story.",
+     "einordnung": "Die strategische Neubewertung des Rüstungssektors zugunsten von Drohnen-Systemen ist ein langfristiger Trend, der Rheinmetalls Panzer-Dominanz infrage stellt — das ist eine Narrative-Verschiebung, di…"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
+     "einordnung": "Rheinmetall als Underperformer ist überraschend – die Rüstungsstory bleibt intakt, aber die Aktie war überkauft und korrigiert nun. Kurzfristig könnte sie vom Momentum-Wechsel profitieren."
+    }
+   ]
+  },
   "CL=F": {
    "name": "Öl",
    "auftritte": [
@@ -13,6 +335,16 @@
      "note": "Der Ölpreis fällt weiter auf rund 72 Dollar und liegt damit unter dem Niveau zum Kriegsausbruch, getrieben von Hoffnung auf eine Waffenruhe im Nahen Osten und anhaltendem Überangebot.",
      "einordnung": "Die Rückkehr des Ölpreises auf Vorkriegsniveau ist ein deutliches Disinflationssignal — die Rotation zugunsten verbrauchsnaher und transportabhängiger Sektoren läuft weiter. Solange das Überangebot b…",
      "figures": "72 USD"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1277s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "US-Rohölvorräte sanken um 6,1 Mio. Barrel auf 412 Mio. Barrel, liegen 7% unter 5-Jahres-Schnitt; Preise weiter unter Druck.",
+     "einordnung": "Sinkende Lagerbestände bei gleichzeitig fallenden Preisen ist ein ungewöhnliches Signal — es deutet darauf hin, dass das Angebot trotz sinkender Vorräte den Markt dominiert. Die Entspannung im Nahen…",
+     "figures": "-6,1 Mio. Barrel (Woche bis 19. Juni), 412 Mio. Barrel (Lagerbestand)"
     },
     {
      "date": "2026-06-22",
@@ -87,42 +419,32 @@
     {
      "date": "2026-06-02",
      "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=565s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Iran bricht Gespräche mit USA ab. Straße von Hormus blockiert, täglich fehlen 4,5–5 Millionen Barrel Öl. Ölpreis fällt trotzdem um 2,44% in der Woche.",
-     "einordnung": "Fundamentale Angebotsverknappung wird durch politische Narrative überschrieben — klassisches Zeichen für Überfluss-Liquidität, die Realität ignoriert.",
-     "figures": "Ölpreis -2,44% Wochenverlauf; 4,5–5 Mio. Barrel täglicher Ausfall"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=938s",
      "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "makro",
-     "note": "WTI-Ölpreis trotz fundamentaler Verschlechterung (täglich fehlen 5 Mio. Barrel) weiter unter Druck. Trump redet den Preis nach unten.",
-     "einordnung": "Ölpreis wird von Sentiment und Geldmenge überschrieben, nicht von Fundamentals — klassisches Blasen-Muster.",
-     "figures": "-2,44% Wochenverlauf"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=166s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Trump behauptet, die USA stünden in den 'letzten Etappen' einer Iran-Einigung. Der Ölpreis fällt daraufhin um 5 % unmittelbar, WTI sinkt auf 93 $ (Wochenrückgang 13,7 %), Brent auf 96 $.",
-     "einordnung": "Trumps Rhetorik ist ein klassisches Marktmanipulations-Szenario: Der Ölpreis reagiert auf Hoffnung, nicht auf Fakten. Egmond hält eine baldige Einigung für unwahrscheinlich, da die Interessen zu weit…",
-     "figures": "-5 % (unmittelbar), WTI 93 $, Brent 96 $, -13,7 % (Woche)"
+     "note": "Trotz fehlender Lösung im Iran-Krieg fiel der Ölpreis weiter — der sogenannte Trump-Effekt. Täglich fehlen rund 5 Millionen Barrel.",
+     "einordnung": "Der 'Trump-Effekt' als Erklärung für fallende Ölpreise trotz geopolitischer Spannungen ist plausibel — die Energiekrise wird politisch gelöst, nicht marktwirtschaftlich. Das erinnert an 2018, als der…",
+     "figures": "-2,44% (Woche); 5 Mio. Barrel/Tag fehlen"
     },
     {
      "date": "2026-05-26",
      "video_id": "LU60d_3fNcM",
      "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1583s",
      "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "WTI um 93-96 $, 13,7% Wochenrückgang durch Trumps Rhetorik; heute leichte Erholung.",
+     "einordnung": "Ein 13,7% Sturz in einer Woche auf verbale Intervention ist heftig — das erinnert an die Ölpreis-Manipulationen durch politische Rhetorik, die wir 2018 bei den China-Verhandlungen gesehen haben. Wenn…",
+     "figures": "93-96 $, Wochenrückgang: 13,7%"
+    },
+    {
+     "date": "2026-05-25",
+     "video_id": "E2voXrwfH2g",
+     "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=1246s",
+     "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "WTI bei 93 $, Brent bei 96 $. Wochenrückgang von 13,7 % durch Trumps Rhetorik. Tendenz: weiter fallend, wenn Trump Erfolg hat.",
-     "einordnung": "Der 13,7%-Rückgang ist dramatisch und zeigt die Macht von Trumps Rhetorik. Aber das Risiko ist hoch: Wenn die Verhandlungen scheitern, könnte der Ölpreis schnell wieder steigen.",
-     "figures": "WTI 93 $, Brent 96 $, -13,7 % (Woche)"
+     "note": "Geopolitischer Treiber dominiert. Fundamentales Ziel bei 115, 124 und 151 Dollar ohne Krieg — eine aktuelle Einigung könnte den Ölpreis jedoch drücken.",
+     "einordnung": "Die Spannung zwischen fundamentalen Ölpreiszahlen (115 bis 151 Dollar) und der geopolitischen Entspannungsrhetorik ist das Kernproblem. Weygands Abwarten-Haltung ist hier die einzig vernünftige — wer…",
+     "figures": "115, 124, 151"
     }
    ]
   },
@@ -226,21 +548,22 @@
     {
      "date": "2026-06-02",
      "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1309s",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1313s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Gold kämpft um Marke von 4500 Dollar. Fallende Zinsen und schwächerer Dollar sorgen für kurze Sprünge, dann massive Verkäufe. Marke 4500 ist entscheidend. Risiko bis 4000–4250, aber gute Nachrichten…",
-     "einordnung": "Gold ist in Seitwärts-Phase gefangen zwischen fallenden Zinsen (bullish) und starkem Dollar (bearish) — Arbeitsmarktdaten sind Katalysator.",
-     "figures": "4500 $ Widerstand; mögliche Unterstützung 4250–4000 $"
+     "kategorie": "makro",
+     "note": "Gold kämpft um die Marke von 4.500 Dollar. Bei guten Nachrichten sollte es nach oben starten, bei einem Einbruch besteht Risiko auf 4.250 bis 4.000 Dollar.",
+     "einordnung": "Der Kampf um 4.500 Dollar ist ein psychologisches Niveau — bei fallenden Zinsen sollte Gold eigentlich steigen, doch der Risikoappetit der Anleger drückt die Fluchtmetalle.",
+     "figures": "4.500 (Marke); Risiko 4.250-4.000"
     },
     {
      "date": "2026-05-26",
      "video_id": "LU60d_3fNcM",
      "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1742s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Gestern gestiegen (Ölpreis gefallen), heute gefallen trotz sinkender Zinsen. Nahe 5-Monats-Tief. Sollte bei sinkendem Ölpreis und Zinsen stabil sein.",
-     "einordnung": "Gold zeigt anomales Verhalten: Normalerweise steigt Gold, wenn Zinsen fallen, aber hier fällt es trotzdem. Dies deutet auf Liquiditätsprobleme oder Gewinnmitnahmen hin."
+     "kategorie": "makro",
+     "note": "Gold nahe 5-Monats-Tief. Bei nachhaltig fallendem Ölpreis und Zinsen sollte Gold stabil sein, aber Absturzrisiko besteht.",
+     "einordnung": "Gold nahe dem 5-Monats-Tief bei fallenden Zinsen ist paradox — normalerweise sind niedrigere Realzinsen bullisch für Gold. Dass es trotzdem schwächelt, deutet auf Risiko-On-Sentiment hin: Anleger bev…",
+     "figures": "Nahe 5-Monats-Tief"
     }
    ]
   },
@@ -256,6 +579,16 @@
      "note": "Bitcoin hält sich knapp über 60.000 Dollar, große Sprünge sind nicht angesagt und das Thema ist von den Titelseiten verschwunden.",
      "einordnung": "Die Seitwärtsbewegung bei 60.000 Dollar spiegelt einen ermüdenden Markt ohne neuen Katalysator. Das verschwindende Medieninteresse ist typisch für eine Konsolidierungsphase, kann aber auch den Boden…",
      "figures": "60.000 USD"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=847s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin zeigt charttechnisch eine mögliche Topbildung; fällt er unter 60.000$, droht ein Rückfall auf 49.000$.",
+     "einordnung": "Die charttechnische Topbildung bei Bitcoin ist ein klares Warnsignal — der Widerstand bei 74.000$ hat sich als zu stark erwiesen. Ein Bruch der 60.000$ würde die nächste Unterstützungszone bei 49.000…",
+     "figures": "74.000$ (Widerstand), 65.000$/60.000$ (Unterstützung), 49.000$ (nächstes Ziel)"
     },
     {
      "date": "2026-06-19",
@@ -310,20 +643,20 @@
      "video_id": "aMB3cXXBiiI",
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1369s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Bitcoin bricht 9,6% in der Woche ein, Chart sieht schlecht aus. Rückgang signalisiert geringere Liquidität, was negativ für Märkte insgesamt sein könnte.",
-     "einordnung": "Bitcoin-Rückgang ist Warnsignal für sinkende Risikobereitschaft und Liquidität — könnte Vorbote für breitere Markt-Korrektur sein.",
-     "figures": "-9,6% im Wochenverlauf"
+     "kategorie": "makro",
+     "note": "Bitcoin fiel im Wochenverlauf um 9,6% — ein Zeichen sinkender Liquidität. Der Chart sieht schlecht aus.",
+     "einordnung": "Ein 9,6%-Wochenverlust bei sinkender Liquidität ist ein klassisches Saisonality-Muster — der Chart sieht nach weiterer Konsolidierung aus, ein Bruch der Unterstützung könnte eine größere Korrektur ei…",
+     "figures": "-9,6% (Woche)"
     },
     {
      "date": "2026-05-26",
      "video_id": "LU60d_3fNcM",
      "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1790s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Wochenverlauf +0,2 %, kaum Bewegung. Bei sinkenden Zinsen und bullish Märkten seitwärts erwartet.",
-     "einordnung": "Bitcoin zeigt Seitwärtsbewegung, was überraschend ist, da sinkende Zinsen normalerweise bullish für Bitcoin sind. Dies deutet auf Konsolidierung hin.",
-     "figures": "+0,2 % (Woche)"
+     "kategorie": "makro",
+     "note": "Wochenverlauf +0,2%, seitwärts; kurzfristig keine großen Sorgen.",
+     "einordnung": "Bitcoin im Seitwärtsmodus bei fallenden Zinsen ist ungewöhnlich — normalerweise profitiert Krypto von Liquiditätserwartungen. Die Stagnation deutet darauf hin, dass der Markt bereits eingepreist hat,…",
+     "figures": "+0,2% Woche"
     },
     {
      "date": "2026-05-25",
@@ -331,9 +664,9 @@
      "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=2001s",
      "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "Bitcoin zeigt bullisches Big Picture, aber spekulative Volatilität. Der Host kauft live 5.000 € Bitcoin bei 7.764 $ (Kurs-Fehler im Rohextrakt; aktuell notiert Bitcoin im fünfstelligen Bereich).",
-     "einordnung": "Der Host demonstriert aktives Trading mit kleiner Position (5.000 €). Die Zahlen im Rohextrakt wirken fehlerhaft — Bitcoin notiert nicht bei 7.764 $. Unabhängig davon: Das bullische Big Picture ist r…",
-     "figures": "Kaufkurs Host: 7.764 $ (Anmerkung: Wert unplausibel, Bitcoin notiert deutlich höher), Volatilitäts-Level erwähnt: 8.082 $, 4.790 $, 9.752 $, 8.271 $"
+     "note": "Plus 1,9 Prozent. Bullisches Big Picture, aber kurzfristig volatil. Harry kauft live 5.000 Euro dazu. Support bei 65.000 Dollar, Widerstand bei 8.082 Dollar (wobei diese Zahl vermutlich einen Transkr…",
+     "einordnung": "Weygands Live-Kauf ist ein starkes Sentiment-Signal — er setzt eigenes Geld hinter seiner Überzeugung. Das bullische Big Picture steht im Kontrast zur kurzfristigen Volatilität, was typisch für Bitco…",
+     "figures": "65.000 (Support), 8.082 (Widerstand), 5.000 (Kauf)"
     },
     {
      "date": "2026-05-19",
@@ -368,61 +701,6 @@
      "note": "Der Dow Jones wird im Tageschart mittels einer Trendkanalanalyse untersucht, wobei sich vielversprechende Kursziele abzeichnen.",
      "einordnung": "Der Dow kämpft sich in einem intakten Aufwärtstrend nach oben. Ein Ziel von 58.000 Punkten klingt nach Hausnummern, aber der Trendkanal gibt das her – solange die Unterstützung nicht bricht.",
      "figures": "Kursziele: 53.281; 54.681; langfristig 58.000"
-    }
-   ]
-  },
-  "MU": {
-   "name": "Micron Technology",
-   "auftritte": [
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=264s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Micron überzeugt mit starken Quartalszahlen: 75 Prozent Umsatzwachstum auf 41 Milliarden Dollar, Nettogewinn von 28 Milliarden Dollar. Der Kurs steigt nachbörslich um 17 Prozent.",
-     "einordnung": "Ein 75-prozentiges Umsatzwachstum demonstriert, dass der KI-getriebene Speicherzyklus in voller Blüte steht. Die nachbörsliche Reaktion von plus 17 Prozent zeigt, dass der Markt Ausführung belohnt —…",
-     "figures": "75% Wachstum, 41 Mrd. USD Umsatz, 28 Mrd. USD Nettogewinn, +17% nachbörslich"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "04yYuesQS4g",
-     "url": "https://www.youtube.com/watch?v=04yYuesQS4g&t=182s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Quartalszahlen stehen heute Abend nach US-Handelsschluss an. Micron hat in den vergangenen vier Quartalen die Konsensschätzungen jeweils um über 20% geschlagen — die Messlatte liegt entsprechend hoch.",
-     "einordnung": "Micron ist der Stimmungsbarometer für den Speicherzyklus. Werden die Zahlen enttäuschen, dürfte das den gesamten Chip-Sektor kurzfristig belasten — das erinnert an die Saison 2018, als Micron nach st…",
-     "figures": "Schätzung in letzten 4 Quartalen um über 20% übertroffen (21%)"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=3151s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Micron -6,23% vorbörslich, aber +300% seit Jahresbeginn. Kooperation mit Anthropic, Needham hebt Kursziel von 500 auf 1.550 $. KGV von 11, Potenzial auf 16.",
-     "einordnung": "Ein Kursziel von 1.550 $ nach einer Verdopplung von 500 $ ist eine drastische Anhebung, die die KI-Speicher-Story unterstreicht. Mit einem KGV von 11 und Potenzial auf 16 ist Micron trotz +300% YTD n…",
-     "figures": "-6,23%, YTD +300%, Kursziel 1.550 $, KGV 11"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Micron wurde von Analysten mit einem Kursziel von 443 USD hochgestuft.",
-     "einordnung": "Micron profitiert vom HBM- und Speicher-Boom der KI-Infrastruktur. Das Kursziel von 443 USD deutet auf erhebliches Aufwärtspotenzial, aber Halbleiteraktien sind hochzyklisch und volatil.",
-     "figures": "Kursziel: 443 USD"
-    },
-    {
-     "date": "2025-12-11",
-     "video_id": "f0pcBA15wVI",
-     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=886s",
-     "channel": "Calling USA",
-     "kategorie": "fundamental",
-     "note": "Micron hat den Aktienkurs seit Jahresbeginn verdreifacht und konzentriert sich auf KI-Speicher. Analysten erwarten Quartalsumsätze am oberen Ende der Spanne. Umsatz verdoppelt sich, Marge steigt auf…",
-     "einordnung": "Micron ist günstiger bewertet als Credo (KGV 17 vs. 102) und hat bereits Profitabilität nachgewiesen. Das ist attraktiver, aber der Speichermarkt ist zyklisch – Überkapazitäten können schnell zu Prei…",
-     "figures": "Umsatzverdopplung im letzten Geschäftsjahr; Marge +17% auf 41%; KGV 17; Kursziele 300–330 USD"
     }
    ]
   },
@@ -577,154 +855,29 @@
      "video_id": "aMB3cXXBiiI",
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1252s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "DAX läuft seitwärts, legt seit Mai 800 Punkte zu, 1–2% unter Rekordhochs bei ca. 25.370 Punkten. Fundamentales Umfeld für viele DAX-Werte schwierig, aber im Fahrwasser des S&P 500.",
-     "einordnung": "DAX profitiert von US-Liquidität und KI-Hype, nicht von fundamentaler Stärke — Divergenz zwischen Kurs und Fundamentals ist besorgniserregend.",
-     "figures": "+800 Punkte seit Mai; Rekord ca. 25.370 Punkte"
+     "kategorie": "makro",
+     "note": "Seit Mai um rund 800 Punkte gestiegen, aktuell 1-2% unter dem Rekordhoch von 25.370 Punkten. Fundamental schwieriges Umfeld für Auto- und Chemiewerte.",
+     "einordnung": "800 Punkte Aufwärtsschub seit Mai bei schwachen Auto- und Chemewerten zeigt, dass der DAX vom US-Sog und von Einzelwerten wie SAP getrieben wird — die Breite des Aufwärtsmarktes ist fragwürdig.",
+     "figures": "+800 Punkte seit Mai; Rekordhoch 25.370 Punkte"
     },
     {
      "date": "2026-05-26",
      "video_id": "LU60d_3fNcM",
      "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1681s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Schießt nach oben, nur noch 1–2 % unter Rekordhoch. Fundamental nicht gerechtfertigt, aber S&P 500 zieht den DAX mit. KGV 14–15, aber nicht niedrig bewertet.",
-     "einordnung": "Egmonds Einschätzung ist klar: Der DAX läuft nicht wegen fundamentaler Stärke, sondern weil der S&P 500 läuft. Dies ist ein klassisches Coattail-Szenario. Das KGV von 14–15 ist nicht günstig, aber au…",
-     "figures": "1–2 % unter Rekordhoch, KGV 14–15"
+     "kategorie": "makro",
+     "note": "DAX 1-2% unter Rekordhoch, KGV 14-15; zieht mit S&P 500 nach oben.",
+     "einordnung": "KGV 14-15 für den DAX ist angesichts der schwachen Konjunkturdaten nicht günstig, sondern angemessen — die PMIs unter 50 und das ifo-Signal deuten auf Stagnation, nicht auf Wachstum. Dass der DAX tro…",
+     "figures": "KGV: 14-15"
     },
     {
      "date": "2026-05-25",
      "video_id": "E2voXrwfH2g",
-     "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=229s",
+     "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=85s",
      "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "DAX notiert nahe Allzeithoch, getrieben durch Hoffnung auf Entspannung im Iran-Konflikt und KI-Boom in den USA. Widerstand bei 25.430 Punkten; ein dynamischer Ausbruch auf Wochenschlussbasis wäre Kau…",
-     "einordnung": "Der DAX profitiert von Entspannungshoffnungen, die Öl- und Energiepreise unter Druck setzen — klassisches Risk-On-Szenario. Ein Ausbruch über 25.430 wäre charttechnisch sauber und würde die Aufwärtsd…",
-     "figures": "Widerstand: 25.430 Punkte, Ziel: 28.800 Punkte"
-    }
-   ]
-  },
-  "IFX.DE": {
-   "name": "Infineon",
-   "auftritte": [
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=370s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon dürfte heute Morgen im Fokus stehen, da alles mit Chips und KI im Aufgalopp ist, gestützt durch positive Vorgaben aus Asien.",
-     "einordnung": "Der positive Read-through von Micron und asiatischen Halbleiterwerten ist gerechtfertigt, auch wenn Infineon eher im Automotive- und Industriebereich agiert. Die KI-Euphorie könnte kurzfristig für Au…"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=386s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon gestern noch gefragt, heute vorbörslich unter Druck durch Realitätstrack und Gewinnmitnahmen bei Chipherstellern.",
-     "einordnung": "Infineon ist ein klassischer Zykliker, der auf globale Konjunktur- und Zinserwartungen reagiert. Wenn die Zinswende ausbleibt, bleibt der Titel unter Druck. Das ist kein Kaufgrund, sondern ein Abwart…"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=552s",
-     "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "makro",
-     "note": "Trump-Tweet zu Intel-Apple-Kooperation treibt Chipaktien, Infineon verdoppelt von 40 auf 80 Euro in 2–3 Monaten. Kurzfristig wegen Überbewertung und Korea-Risiko seitwärts.",
-     "einordnung": "Eine Verdopplung in drei Monaten auf Basis eines Tweets ist kein fundamentales Fundament, sondern Momentum. Das Korea-Risiko als geopolitischer Overhang wird vom Markt unterschätzt – ein Konflikt dor…",
-     "figures": "Kurs von 40 auf 80 Euro verdoppelt"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=376s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Charttechnisch stark mit kaum nennenswerter Korrektur; KI-Fantasie treibt den Wert, hat sich in kurzer Zeit mehr als verdoppelt.",
-     "einordnung": "Infineon als KI-Profiteur über Leistungshalbleiter und Power-Management ist fundamental nachvollziehbar. Eine Verdopplung in kurzer Zeit erhöht jedoch das Rückschlagrisiko — hier sollte man Gewinne m…",
-     "figures": "mehr als verdoppelt in kurzer Zeit"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1033s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktie steigt stark (+17,8 % in einer Woche). EBITDA laufendes Fiskaljahr 4,6 Mrd. €, nächstes Jahr 6,1 Mrd. €. EBIT 2,6 Mrd. € → 3,8 Mrd. €. Börsenwert 99,6 Mrd. €, EV 105,3 Mrd. € = 17,3x EBIT, 27,7…",
-     "einordnung": "Infineon profitiert vom KI-Boom (Chipnachfrage), aber die Bewertung (17,3x EBIT, KGV 29,7) ist nicht günstig. Egmonds Aussage, dass der Höhenflug weitergehen könnte, ist ein Momentum-Argument, kein F…",
-     "figures": "+17,8 % (Woche), EBITDA 4,6 Mrd. € / 6,1 Mrd. €, EBIT 2,6 Mrd. € / 3,8 Mrd. €, Börsenwert 99,6 Mrd. €, Nettoschulden 5,7 Mrd. €, EV 105,3 Mrd. €, 17,3x EBIT, 27,7x EBITDA, KGV 29,7"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
-     "einordnung": "Infineon als Profiteur des vorherigen Momentum-Trades wird nun verkauft – das ist die Kehrseite der Rotation. Wenn der Momentum-Trade zurückkehrt, ist Infineon der erste Profiteur."
-    }
-   ]
-  },
-  "RHM.DE": {
-   "name": "Rheinmetall",
-   "auftritte": [
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
-     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. We…",
-     "figures": "-19%, 12,8 Mrd. Euro"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "4K4U0fRfM0A",
-     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=1424s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Die Aktie fällt 18 Prozent nach Meldung über mögliches Ende des F126-Fregattenprojekts. JP Morgan senkt das Kursziel leicht auf 1400 Euro, hält aber am Hold-Rating fest. Zusätzlicher Druck entsteht d…",
-     "einordnung": "Die 18-Prozent-Reaktion ist dramatisch, aber der F126 ist ein Marineprojekt — Rheinmetalls Kernfranchise sind Landsysteme. Der PEG von 0,67 signalisiert, dass die Aktie trotz des Abverkaufs noch imme…",
-     "figures": "-18%, Kursziel 1400 Euro (von 1450), KGV 24, PEG 0,67"
-    },
-    {
-     "date": "2026-06-16",
-     "video_id": "J1zzTOyOdKE",
-     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=952s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Die Aktie steht unter Druck, weil ein baldiges Ende des Iran-Krieges die Nachfrage nach Rüstungsgütern dämpfen könnte. Egmond sieht noch kein belastbares Tief und bleibt skeptisch.",
-     "einordnung": "Rheinmetall ist ein klassisches Geopolitik-Play — steigt bei Konflikten, leidet bei Entspannung. Das Iran-Abkommen trifft die Aktie daher doppelt: sinkende Ölpreis-Einnahmen schwächen gleichzeitig di…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=483s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Unter Druck: Friedenshoffnung dämpft die Rüstungsfantasie, zusätzlich Sorgen um das deutsch-französische Panzer-Joint-Venture und mögliche Mittelkürzungen.",
-     "einordnung": "Das ist die Kehrseite des Friedens-Trades — wer von Rüstungsausgaben profitiert, leidet bei Deeskalation. Rheinmetall hatte eine beispiellose Rally; eine Konsolidierung ist nach diesem Katalysator fu…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "4TeOYIh5hN0",
-     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1051s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Mittelfristiger Abwärtstrend nach Triple-Top bei 1930 €; Verkäufer dominant, nächster Support bei 934 €, Key-Support bei 1481 €.",
-     "einordnung": "Rheinmetall ist ein lehrbuchhaftes Beispiel für einen gebrochenen Aufwärtstrend – das Triple-Top bei 1930 € ist definitiv gescheitert, und der Trend läuft nach unten aus, ohne dass eine Stabilisierun…",
-     "figures": "1930 € (Triple-Top-Hoch), 1481 € (Key-Support), 1270 € (Zwischenstützung), 934 € (nächster Support), Korrektur ca. 40 %"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
-     "einordnung": "Rheinmetall als Underperformer ist überraschend – die Rüstungsstory bleibt intakt, aber die Aktie war überkauft und korrigiert nun. Kurzfristig könnte sie vom Momentum-Wechsel profitieren."
+     "note": "DAX notiert nahe dem Rekordhoc, getrieben von Gerüchten über eine Iran-Einigung. KI und Tech ('Glorreichen Sieben') stabil, während die Energierohstoff-Krise im Fokus steht.",
+     "einordnung": "Der Marktüberblick zeichnet ein klassisches risiko-on-Szenario: geopolitische Entspannung beflügt Aktien, belastet Rohstoffe. Typisch für solche Gerücht-Phasen ist, dass die Aufwärtsbewegung fragil b…"
     }
    ]
   },
@@ -739,6 +892,16 @@
      "kategorie": "news",
      "note": "TKMS profitiert vom gescheiterten Rheinmetall-Auftrag als möglicher Ersatz und legt massiv zu.",
      "einordnung": "Als potenzieller Nutznießer der F126-Auftragsreallokation ist die Rally spekulativ, aber logisch. Die Auftragsvisibilität würde sich substantiell verbessern, falls TKMS den Zuschlag erhält."
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2982s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "TKMS profitiert von Kapitalumschichtung in der Rüstungsbranche; Kursziel 125€, Chart deutet auf Anstieg Richtung 90-100€.",
+     "einordnung": "TKMS ist der Profiteur einer geopolitischen Neuausrichtung — europäische Verteidigungsausgaben steigen strukturell, und als Spezialist für U-Boote und Marine-Systeme sitzt TKMS in einer Sweet Spot. D…",
+     "figures": "Kursziel 125€ (MWB Research), Gewinnwachstum +20% bis +25% in 2026/27, KGV 37"
     },
     {
      "date": "2026-06-17",
@@ -839,6 +1002,500 @@
      "kategorie": "news",
      "note": "Vorbörslich deutlich im Plus — profitiert von der Kombination aus geopolitischer Entspannung (Nahost) und sinkenden Ölpreisen.",
      "einordnung": "TUI als Reiseveranstalter ist ein direkter Geopolitik-Beta-Wert: Entspannung im Nahen Osten öffnet potentiell Reiseziele und senkt Kerosinkosten. Das ist kurzfristig eindeutig positiv, strukturell bl…"
+    }
+   ]
+  },
+  "^GSPC": {
+   "name": "S&P 500",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=290s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Index stabilisiert sich an der 7330er-Marke (50-Tage-Linie); Ausbruch über 7676 Punkte könnte Rally beschleunigen.",
+     "einordnung": "Der S&P 500 zeigt einen klassischen gesunden Konsolidierungsverlauf an der 50-Tage-Linie — solange 7330 hält, bleibt die Aufwärtstrend-Struktur intakt. Das Goldman-Ziel von 8000 Punkten wirkt ambitio…",
+     "figures": "7330 Punkte (Unterstützung), 7620/7676 (Widerstände), 8000 Punkte (Goldman-Ziel)"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=445s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "S&P 500 +5 Bio. USD, aber KI-Aktien allein +6 Bio. USD; alle anderen Sektoren verloren 1 Bio. USD. KI-Anteil am Index 47% (2023: 27%).",
+     "einordnung": "Das ist eine extreme Konzentration – der Index wird von einer Handvoll Mega-Cap-KI-Titel getragen, während der Rest des Marktes abverkauft wird. Das erinnert an Blasen-Phasen und birgt Risiko für Kor…",
+     "figures": "S&P 500 +5 Bio. USD; KI-Aktien +6 Bio. USD; Energie +200 Mrd. USD; andere Sektoren -1 Bio. USD; KI-Anteil 47% (2023: 27%)"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=258s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Freitag war laut Host ein starker Tag für den S&P 500, u.a. befeuert durch das SpaceX-IPO; heute erneut klare Gewinne erwartet.",
+     "einordnung": "Der S&P 500 im Aufwind durch geopolitische Entspannung und ein Mega-IPO — das ist eine selten günstige Kombination. Kurzfristig bullish, aber Vorsicht vor überkauften Signalen."
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=341s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "sonstiges",
+     "note": "S&P 500 zeigt Stärke, aber mit hohen Tagesausschlägen; Host kritisiert mediale Übertreibung bei Kursverlusten.",
+     "einordnung": "Die 24/7-News-Maschinerie erzeugt Noise, der vom fundamentalen Trend ablenkt. Das Muster ist bekannt: Große Gewinne = normale Marktfunktion, kleine Verluste = Krise. Das ist Psychologie, keine Analys…",
+     "figures": "+1,9% (am Vortag)"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1588s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Deutliche Volatilität durch Broadcom-Enttäuschung und SpaceX-IPO-Liquiditätsbedarf; kurzfristig turbulent, aber kein großer Crash erwartet. SpaceX selbst wird nicht in S&P 500 aufgenommen (Indexkrite…",
+     "einordnung": "Zinsanstieg (10J-US 4,55%) ist Hauptbelastung für US-Techs; SpaceX-IPO verstärkt temporär Druck. Charttechnisch noch keine echten Bruchmarken gerissen, aber 4,65% Zinsen (52W-Hoch) würde erhebliche w…",
+     "figures": "~1% Rückgang in der Woche; Börsenwert-Vernichtung ca. 700 Mrd. USD bei 1% Verlust"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=964s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Neue Rekordhochs; Wochenanstieg von 0,95%, Jahresanstieg von 10,68%. Treiber ist der KI-Hype, trotz Warnungen vor Übertreibungen.",
+     "einordnung": "Rekordhochs bei gleichzeitig sichtbaren Übertreibungen im Tech-Sektor erinnern an die späten Phasen des Dotcom-Booms — Vorsicht ist angebracht, ein Crash steht jedoch nicht unmittelbar bevor, solange…",
+     "figures": "+0,95% (Woche), +10,68% (YTD)"
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1610s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Rekordfahrt; wenn Ölpreis und Zinsen fallen, sollte die Rally weitergehen.",
+     "einordnung": "Die Rekordfahrt wird von fallenden Ölpreisen und Zinsen getragen — das ist ein klassisches Goldilocks-Szenario. Aber die 10 Billionen $ Refinanzierungsbedarf der USA binnen Jahresfrist ist der Elepha…"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=1705s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Kurzfristig wird kein großer Einbruch erwartet, da Trump versuchen wird, den Ölpreis zu drücken und notfalls Fed-Mitglieder verbal eingreifen. Seitwärtsbewegung.",
+     "einordnung": "Die These, dass Trump den Markt stützt, ist plausibel – er hat ein politisches Interesse an starken Aktienmärkten. Aber ein Zinsanstieg auf 5 % würde diese Stützung übersteuern."
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1670s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Patrick sieht eine Konsolidierung auf hohem Niveau und erwartet neue Allzeithochs im Q1 2026. Zielzone liegt bei 7000-7200 Punkten. Rücksetzer werden als Kaufgelegenheit interpretiert.",
+     "einordnung": "7000-7200 als Zielzone ist ambitioniert, aber charttechnisch nicht abwegig bei einem intakten Aufwärtstrend. Die Aussage 'Rücksetzer sind Kaufgelegenheit' ist in einem Markt mit 3,3% Cashbestand jedo…",
+     "figures": "7000-7200 Punkte (Zielzone)"
+    },
+    {
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1843s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Seit 10 Tagen in einer Range unter 6800 Punkten. Ein Ausbruch über 6800 könnte zu 7000 oder 7200 führen. Der Dow Jones legte 1,3 Prozent zu, die Magnificent 7 rotieren.",
+     "einordnung": "Zehn Tage Seitwärts unter einem runden Widerstand ist klassische Konsolidierung — der Markt atmet aus. Dass die Mag 7 rotieren, während der Dow zulegt, ist ein gesundes Zeichen für eine breitere Mark…",
+     "figures": "6800 Punkte, 7000, 7200, Dow +1,3%"
+    },
+    {
+     "date": "2025-12-05",
+     "video_id": "BADYwmZH114",
+     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1729s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "S&P 500 testet Widerstand bei 6.820 Punkten; bei Ausbruch Ziel 7.000-7.200. Lücken bei 6.766 und 6.600. Volumen schwach. Nvidia neue Tiefs als Warnsignal.",
+     "einordnung": "Der Widerstand bei 6.820 ist charttechnisch relevant, aber das schwache Volumen ist ein klassisches Warnsignal — ein Ausbruch ohne Volumenbestätigung ist verdächtig. Die Nvidia-Tiefs als Warnsignal f…",
+     "figures": "Widerstand 6.820, Ziel 7.000-7.200, Lücken 6.766 und 6.600"
+    }
+   ]
+  },
+  "^SOX": {
+   "name": "SOX Halbleiterindex Volatilität",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=536s",
+     "channel": "onvista",
+     "kategorie": "sonstiges",
+     "note": "Die Volatilität im Halbleiterindex steigt, was auf Unsicherheit hindeutet; nach starken Rallys sind größere Ausschläge normal.",
+     "einordnung": "Steigende Volatilität nach einer langen Rally ist ein klassisches Reifesignal — nicht zwangsläufig das Ende des Trends, aber ein Warnsignal für überzogene Positionierungen. Der SOX hat in den letzten…"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=596s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "SOX hat die 14400-Punkte-Marke (161,8%-Extension) erreicht; bei Überschreiten sind Ziele bei 15868 und 18330 Punkten möglich.",
+     "einordnung": "Die 161,8%-Fibonacci-Extension bei 14400 ist eine klassische charttechnische Widerstandszone — hier entscheidet sich, ob der Trend beschleunigt oder konsolidiert. Ein Potenzial von +36% bis 18330 ist…",
+     "figures": "14400 (Extension), 15868 (Zwischenetappe), 18330 (Extensionsziel), +36% Potenzial"
+    }
+   ]
+  },
+  "COIN": {
+   "name": "Coinbase",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1060s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Coinbase versucht, die 150$-Marke zu halten; Bank of America sieht Kursziel 218$, charttechnisch bleibt Risiko.",
+     "einordnung": "Die Diskrepanz zwischen dem fundamentalen Kursziel von 218$ (BoA) und der charttechnischen Schwäche ist typisch für Krypto-affine Titel — die Analysten rechnen mit einer Erholung des Krypto-Marktes,…",
+     "figures": "150$ (Unterstützung), Kursziel 218$ (BoA)"
+    }
+   ]
+  },
+  "MSTR": {
+   "name": "Strategy (MicroStrategy)",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1210s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Strategy hat die Topbildung vollendet und unter 103$ geschlossen; nächstes Ziel bei 45$, langfristig 22$.",
+     "einordnung": "Die vollendete Topbildung bei Strategy ist ein deutliches charttechnisches Verkaufssignal — der Bruch unter 103$ bestätigt den Trendwechsel. Die Ziele bei 45$ und 22$ erscheinen drastisch, sind aber…",
+     "figures": "103$ (Marke), 100$ (psychologisch), Tief 45$ (potenzielles Ziel), 22$ (Trendlinie)"
+    }
+   ]
+  },
+  "PAYX": {
+   "name": "Paychex",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1795s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Paychex meldete leichte Beats bei EPS und Umsatz, aber der Ausblick für 2027 deutet auf Verlangsamung hin; Dividendenrendite von 4,7% ist attraktiv.",
+     "einordnung": "Paychex ist ein klassischer defensiver Titel mit solider Dividende und stabiler Margen — der verlangsamte Ausblick für 2027 ist ein Warnsignal, aber bei einem KGV von 16,6 und 4,7% Dividendenrendite…",
+     "figures": "EPS 1,32$ (1,31$ erwartet), Umsatz 1,61 Mrd. $ (1,6 Mrd. erwartet), operative Marge 42,1%, Dividendenrendite 4,7%, PE Forward 16,6"
+    }
+   ]
+  },
+  "NKE": {
+   "name": "Nike",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2050s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nike leidet unter schlechten China-Daten, neuem CFO-Wechsel und herabgestuften Analysten; charttechnisch weiter schwach.",
+     "einordnung": "Nike ist ein klassischer Wert, bei dem sich fundamentale und charttechnische Probleme überlagern — China-Schwäche, Managementwechsel und Analystenherabstufungen bilden eine giftige Mischung. Die Divi…",
+     "figures": "Umsatzrückgang China -20% (Prognose Q4), Kursziel Bank of America 55$, Dividendenrendite 3,8%"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1162s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Der neue CEO kündigt schwankende Ergebnisse an, Analysten haben ihre Prognosen gesenkt. Fokus liegt auf dem Turnaround bei Basketball und Sportbekleidung, zudem gibt es eine neue Kollektion mit Kim K…",
+     "einordnung": "Ein neuer CEO, der schwankende Ergebnisse ankündigt, ist ehrlich — aber Ehrlichkeit ist kein Investmentthesis. Der Skims-Collab ist ein Marketing-Coup, kein Turnaround-Beweis. Bei -10% YTD ist die En…",
+     "figures": "-10% YTD"
+    }
+   ]
+  },
+  "NBIS": {
+   "name": "Nebius",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2357s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Nebius führte KI-Agent 'Echo' ein, charttechnisch aber Abschwächung; wichtig ist Halten des 50-Tage-Durchschnitts.",
+     "einordnung": "Nebius ist ein hochspekulativer KI-Titel, bei dem die charttechnische Abschwächung im Widerspruch zur produktseitigen Innovation steht. Der Bruch unter 227$ würde den Trend eindeutig negativ wenden —…",
+     "figures": "Widerstand 141$, Unterstützung 227$, Ziel 320$ (nicht erreicht), Bruch unter 227$ könnte auf 183$ fallen"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "a6FF2tGXbok",
+     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2080s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blac…",
+     "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktu…",
+     "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd"
+    }
+   ]
+  },
+  "RKLB": {
+   "name": "Rocket Lab",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2520s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Rocket Lab rutscht nach Aufnahme in Nasdaq 100 und Verwässerungssorgen ab; charttechnisch unter 100$.",
+     "einordnung": "Die Aufnahme in den Nasdaq 100 ist paradoxerweise oft ein Kontraindikator — sie bringt passive Käufe, aber auch erhöhte Aufmerksamkeit und Verwässerungsrisiko. Der Bruch der 100$-Marke ist charttechn…",
+     "figures": "Widerstand 122$, Unterstützung 100$ (gebrochen), nächstes Ziel 77,8$ (EMA 200), dann 66$"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2818s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Rocket Lab liefert Rekordzahlen und wird in den Nasdaq 100 aufgenommen. Der Chart ist bullisch.",
+     "einordnung": "Die Aufnahme in den Nasdaq 100 bringt institutionelle Kaufkraft. Wenn Rocket Lab die 100$ halten kann, ist das ein fantastisches Chart-Setup für eine neue Aufwärtswelle.",
+     "figures": "Erstes Quartal über 200 Mio. $ Umsatz (+63%); Auftragsbestand 2,2 Mrd. $"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "a6FF2tGXbok",
+     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=1724s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Q1: Umsatz 200 M (+60%), Bruttomarge 38%; Backlog 2,2 Mrd (11x Quartalsumsatz); 88 Electron-Starts + 18 gebucht. Eintritt in Nasdaq 100 am 22.06. löst ETF-Käufe aus. Noch nicht profitabel.",
+     "einordnung": "Raumfahrt-Infrastruktur ist echtes Wachstumsfeld, aber Profitabilität noch nicht in Sicht. Backlog-Umsatz-Verhältnis 11x ist außergewöhnlich – zeigt reale Nachfrage. SpaceX-IPO-Effekt wahrscheinlich…",
+     "figures": "Q1 Umsatz 200 M (+60%), Bruttomarge 38%, Backlog 2,2 Mrd USD, 88 Starts + 18 gebucht"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=1760s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Die Aktie ist in den letzten Wochen 30-50 % gestiegen, getrieben durch die Zahlen vom 7. Mai und die Ankündigung des SpaceX-Börsengangs (angeblich 12. Juni, 55 Mrd. $ eingesammelt, Bewertung 1,75-1,8…",
+     "einordnung": "Rocket Lab ist eine Spekulation auf den SpaceX-Börsengang – die Bewertung von 60-70-fachem Umsatz ist jenseits jeder Fundamentalität. Wenn der Momentum-Trade dreht, fällt diese Aktie zuerst.",
+     "figures": "30-50 % (Anstieg), 55 Mrd. $ (SpaceX Emission), 1,75-1,8 Billionen $ (SpaceX Bewertung), 60-70-facher Umsatz (Rocket Lab)"
+    }
+   ]
+  },
+  "ORCL": {
+   "name": "Oracle",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2640s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Oracle fällt zurück; Evercore ISI bestätigt Outperform mit Kursziel 245$, charttechnisch aber Abwärtstrend.",
+     "einordnung": "Oracle zeigt das klassische Dilemma eines Transformationsunternehmens: Die Fundamentaldaten (RPO von 77 Mrd. $) sind stark, aber die Kapitalintensität (CapEx +162%) und der Stellenabbau signalisieren…",
+     "figures": "Kursziel 245$ (Evercore), verbleibende Leistungsverpflichtung 77 Mrd. $, Stellenabbau 21.000, CapEx +162% auf 55,7 Mrd. $"
+    },
+    {
+     "date": "2026-06-16",
+     "video_id": "J1zzTOyOdKE",
+     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=377s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Oracle lieferte starke Topline-Zahlen für Q4 des Fiskaljahres 2025: Umsatz +21%, Cloud-Infrastruktur +93%. Der Free Cashflow ist jedoch durch massive Investitionen von 55,7 Mrd. USD stark negativ. Di…",
+     "einordnung": "Ein KGV von 17,5 bei 21% Umsatzwachstum und 93% Cloud-Wachstum klingt zunächst attraktiv — aber ein negativer Free Cashflow von –1,9 Mrd. USD bei gleichzeitigen Investitionsvorhaben von fast 56 Mrd.…",
+     "figures": "Umsatz Q4: 19,18 Mrd. USD (+21% YoY). Cloud-Infrastrukturumsatz: 5,79 Mrd. USD (+93%). EBIT: 8,59 Mrd. USD (+22%). Free Cashflow: –1,9 Mrd. USD. Investitionen Fiskaljahr 25/26: 55,7 Mrd. USD (Nettoau…"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=600s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Oracle Quartal: Umsatz +20%, aber Aktie unter Druck wegen Ankündigung weiterer 20 Mrd. USD Kapitalaufnahme; Anleger-Skepsis dominant.",
+     "einordnung": "Das ist ein interessantes Signal: 20% Umsatzwachstum ist solid, aber der Markt straft das ab, weil Oracle offensichtlich größere strategische Ausgaben plant (wahrscheinlich AI-Infrastructure). Das ka…",
+     "figures": "Umsatzwachstum +20%, 20 Milliarden USD geplante Kapitalaufnahme"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=839s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Oracle hat sich von seinem Hoch bei 345-350 USD etwa halbiert. Das Unternehmen trägt hohe Verschuldung und negativen Cashflow bei einer grossen Wette auf Data-Center-Ausbau. Charttechnisch liegt die…",
+     "einordnung": "Oracle halbiert bei hoher Verschuldung und negativem Cashflow — das ist eine hochriskante Wette auf Data-Center-Monetenisierung. Die charttechnische Erholungschance bis 233-256 USD ist real, aber bei…",
+     "figures": "345-350 USD (Hoch), 165-185 USD (Unterstützung), 233-256 USD (Erholungsziel), 250 USD"
+    },
+    {
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=81s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Im Video im Rahmen der Zins- und Indexdiskussion erwähnt, jedoch nicht weiter eigenständig analysiert.",
+     "einordnung": "Oracle taucht lediglich als Randnotiz im Timestamp auf; eine fundierte Einordnung ist auf Basis des Videos nicht möglich."
+    },
+    {
+     "date": "2025-12-05",
+     "video_id": "BADYwmZH114",
+     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1192s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Oracle legt demnächst Ertragszahlen vor. Nach der letzten Veröffentlichung folgte erst eine Rally, dann ein Absturz von 345 $ auf 200 $. Treiber: negativer Free Cashflow und hohe Verschuldung von 100…",
+     "einordnung": "Oracle ist das Paradebeispiel für einen KI-Hype, der an der Bilanzrealität scheitert — die Verschuldung explodiert, während der Free Cashflow negativ ist. Das erinnert an die Cloud-Investmentsspirale…",
+     "figures": "Rekordhoch 345 $, Tief 200 $, Verbindlichkeiten 100 Mrd. $, bis 2028 auf 300 Mrd. $ geschätzt"
+    }
+   ]
+  },
+  "MUM.DE": {
+   "name": "Mensch und Maschine",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=3147s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Qualitätsaktie mit starker Dividende (6,4%) und solidem Wachstum, aber unter Druck wie andere Softwaretitel; charttechnisch unter 41€.",
+     "einordnung": "Mensch und Maschine ist ein klassischer Hidden Champion der deutschen Softwarebranche — solide Margen, attraktive Dividende und kontinuierliches Wachstum. Der charttechnische Druck ist sektorgetriebe…",
+     "figures": "PE Forward 15,8, Dividendenrendite 6,4%, Gewinnwachstum 13-15% p.a., KGV fällt von hohem Niveau"
+    }
+   ]
+  },
+  "ZS": {
+   "name": "Zscaler",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=3465s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Zscaler leidet unter enttäuschendem Ausblick und Führungskrise im Vertrieb; charttechnisch negativ.",
+     "einordnung": "Zscaler zeigt das klassische Bild eines Wachstumstitels, der an Erwartungen gemessen wird — 25% Wachstum sind im absoluten Sinne stark, aber der verlangsamte Ausblick und die sinkende Cashflow-Marge…",
+     "figures": "Wachstum +25% (Quartal), Ausblick 16-17%, freier Cashflow-Marge von 26,5% auf 22,8% gesunken, Bestätigung bei 114$"
+    },
+    {
+     "date": "2026-05-29",
+     "video_id": "EJUkEYUPawE",
+     "url": "https://www.youtube.com/watch?v=EJUkEYUPawE&t=563s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Zscaler zeigt nachlassendes Wachstum (23% 2025) und verfehlte den Ausblick (Q4 Umsatz 875–878 Mio USD vs. erwartet 878,6 Mio USD). Die Free-Cashflow-Marge wurde gesenkt, und Vertriebsprobleme belaste…",
+     "einordnung": "Der Absturz um 31,5% ist typisch für einen Wachstumswert, der an der Wachstumsgrenze kratzt: Die Senkung der FCF-Marge ist das eigentliche Warnsignal, nicht der verfehlte Ausblick per se. Das Aprilti…",
+     "figures": "35% Durchschnittswachstum (3 Jahre), 48% (2023), 34% (2024), 23% (2025), Non-GAAP EPS 4,10–4,11 USD (2026), GAAP-Nettogewinn 35 Mio USD (2028 erwartet), Kursabsturz 31,5%, Q3 Umsatz +25,4% auf 850,5…"
+    }
+   ]
+  },
+  "SNPS": {
+   "name": "Synopsys",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=3609s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Synopsys in Seitwärtsbewegung; aktivistischer Investor Elliot Management an Bord, Investorentag am 30.09.2026.",
+     "einordnung": "Synopsys ist ein qualitativ hochwertiger EDA-Titel, der von der Halbleiter-Nachfrage profitiert, aber charttechnisch in einer Warteschleife steckt. Die Präsenz von Elliot Management als aktivistische…",
+     "figures": "Unterstützung 455$, Ausbruch über 530$ Ziel 600$, unter 447$ Gefahr für 384$"
+    }
+   ]
+  },
+  "NVDA": {
+   "name": "NVIDIA",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=3742s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "NVIDIA zeigt relative Schwäche, Konsolidierung unter 195$; längerfristig Kursziel 250$.",
+     "einordnung": "NVIDIAs relative Schwäche nach der beispiellosen Rally ist ein gesundes Zeichen — kein Baum wächst in den Himmel. Die 195$-Unterstützung ist charttechnisch der Dreh- und Angelpunkt: Hält sie, bleibt…",
+     "figures": "Unterstützung 195$, Ziele 178$, 164$ (bei Bruch), langfristig 250$"
+    },
+    {
+     "date": "2026-06-16",
+     "video_id": "J1zzTOyOdKE",
+     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=991s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Nvidia plant trotz eines Netto-Cash-Bestands von 72 Mrd. USD eine Anleiheplatzierung von mindestens 20 Mrd. USD. Egmond vermutet dahinter steueroptimiertes Roundtripping; die Aktie bleibt auf Rekordk…",
+     "einordnung": "Die Anleiheplatzierung trotz praller Kasse ist ein klassisches Kapitalstruktur-Manöver amerikanischer Tech-Konzerne — steuerliche Arbitrage statt Kapitalbedarf. Das ändert nichts an der fundamentalen…",
+     "figures": "Anleiheemission mindestens 20 Mrd. USD. Netto-Cash-Position: 72 Mrd. USD."
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "a6FF2tGXbok",
+     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2859s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "China-Story via Vera-CPUs: Großer chinesischer Cloud-Anbieter plant >300 Server mit Vera-CPUs. CPUs regulatorisch weniger sensibel als GPUs für China-Export. Falls Tests positiv, könnten weitere Hype…",
+     "einordnung": "Vera-CPUs sind Regulierungs-Arbitrage: weniger Hardware-Restriktionen als GPUs, reale HPC-Kraft. Wenn China-Tests klappen, ist das für Nvidia 2026–27 ein 20–50-Mrd-Umsatz-Upside. PEG 0,46 ist tatsäch…",
+     "figures": "KGV ~20 (2027er), PEG 0,46, Vera-Umsatz ~20 Mrd bis Jahresende, Unterstützung 200 $"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=377s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Im Video kurz erwähnt; Broadcom-Vergleich: Nvidia EV/EBIT ~14x vs. Broadcom 16,3x.",
+     "einordnung": "Bessere Bewertung als Broadcom trotz ähnlicher KI-Dynamik – untermauert Chipsektor-Divergenz zwischen Leaders und Folgern.",
+     "figures": "EV/EBIT ~14x (indirekt aus Broadcom-Vergleich)"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=436s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Die Ankündigung des RTX Spark Superchip für KI-Workflows auf PCs und Laptops trieb die Aktie um 3,8%. Die Bewertung (EV/EBIT) liegt bei 14 und ist damit günstiger als bei Dell (16-17).",
+     "einordnung": "Ein EV/EBIT von 14 bei Nvidia gegenüber 16-17 bei Dell ist eine bemerkenswerte Bewertungsdiskrepanz — der Chipherr ist billiger bewertet als der Server-Integrator. Das spricht dafür, dass der Markt D…",
+     "figures": "+3,8% (Kursanstieg), EV/EBIT 14 (Nvidia) vs. 16-17 (Dell)"
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=221s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Nach den Quartalszahlen Gewinnmitnahmen von 1-2%. Enterprise Value/EBIT für 2027/28 bei 16x, Umsatzwachstum 60-70%, EBIT-Marge 60-70%. Haidt erwartet eine ein- bis zweimonatige Seitwärtsbewegung.",
+     "einordnung": "Ein EV/EBIT von 16x bei 60-70% Umsatzwachstum und 60-70% EBIT-Marge ist für einen Quasi-Monopolisten im AI-Compute-Bereich nicht überteuert — das erinnert an die frühen Apple-Bewertungen 2010-2012, a…",
+     "figures": "EV/EBIT 2027/28: 16x, Umsatzwachstum: 60-70%, EBIT-Marge: 60-70%, Kursreaktion: -1 bis -2%"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Im Video als wichtigster Katalysator erwähnt: Die Zahlen am Mittwochabend entscheiden über die kurzfristige Marktrichtung und die Frage, ob der Momentum-Trade zurückkehrt.",
+     "einordnung": "Nvidia ist der Zugführer – wenn die Zahlen stark sind, kehrt der Momentum-Trade (KI- und Chipaktien stark) zurück, und die Rotation dreht sich um. Wenn sie enttäuschen, geht die Rotation weiter."
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1885s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Nvidias Marktkapitalisierung liegt bei etwa 4 Billionen USD. Charttechnisch liegt die Unterstützungszone zwischen 165 und 171 USD, eine wichtige Marke bei 164 USD (Q3-Tief). Nvidia ist ein Trendwende…",
+     "einordnung": "Bei 4 Billionen USD Marktkapitalisierung ist Nvidia kein Aktienwert mehr, sondern ein Marktfaktor — jede Bewegung bewegt den Index. Die charttechnische Roadmap mit Unterstützung bei 165-171 USD und A…",
+     "figures": "4 Billionen USD Marktkapitalisierung, 165-171 USD (Unterstützung), 164 USD (Q3-Tief), 200 USD (Ausbruchsmarke)"
+    }
+   ]
+  },
+  "OTIS": {
+   "name": "Otis Worldwide",
+   "auftritte": [
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=3829s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Otis fällt charttechnisch; unter 76$ Richtung 63-64$, KGV günstig bei 17,8.",
+     "einordnung": "Otis ist ein solider Dividendenwert mit günstiger Bewertung, aber der charttechnische Abwärtstrend ist unübersehbar. Ein KGV von 17,8 ist attraktiv, aber bei fallendem Kurs ist die Watchlist der rich…",
+     "figures": "Unterstützung 76$, Ziele 63-64$, KGV 17,8"
     }
    ]
   },
@@ -995,8 +1652,8 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Analysehaus Baird sieht Twilio als günstig bewertet.",
-     "einordnung": "Twilio war unter Druck, und Bairds positive Sicht deutet auf potenziellen Wert auf aktuellen Niveaus hin."
+     "note": "Baird empfiehlt Twilio aufgrund attraktiver Bewertung.",
+     "einordnung": "Twilio leidet seit Jahren unter Margendruck und Wachstumsverlangsamung — die Bewertung ist tatsächlich niedrig, aber ein Value-Trap-Risiko ist nicht ausgeschlossen."
     }
    ]
   },
@@ -1067,10 +1724,10 @@
      "video_id": "juY3ezTp3DY",
      "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=611s",
      "channel": "Calling USA",
-     "kategorie": "fundamental",
-     "note": "Amazon zeigt seit Jahresbeginn praktisch Nullperformance. Das KGV für 2026 liegt knapp unter 30.",
-     "einordnung": "Eine Nullperformance bei einem KGV von knapp 30 für 2026 ist für Amazon-Verhältnisse bemerkenswert moderat. Das könnte auf eine Konsolidierung vor dem nächsten Aufwärtsimpuls hindeuten, AWS-Wachstum…",
-     "figures": "KGV 2026: knapp 30"
+     "kategorie": "news",
+     "note": "Amazon zeigt seit Jahresbeginn eine Nullperformance bei einem KGV von knapp 30 für 2026. AWS bleibt der Margin-Treiber, aber der Retail-Bereich trügt die Gesamtbewertung.",
+     "einordnung": "Nullperformance bei einem KGV von 30 für 2026 ist ein klares Signal: Der Markt honoriert das AWS-Wachstum, straft aber die Retail-Margen ab. Das ist kein Kaufgrund per se, aber ein Hinweis darauf, da…",
+     "figures": "KGV 30 (2026)"
     }
    ]
   },
@@ -1103,8 +1760,8 @@
      "url": "https://www.youtube.com/watch?v=juY3ezTp3DY",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Performance-Übersicht der US-Giganten.",
-     "einordnung": "Netflix wird nur am Rande gestreift. Die Aktie hat sich 2025 gut entwickelt, aber ohne vertiefte Diskussion im Video bleibt die Einordnung spekulativ."
+     "note": "im Video nur kurz erwähnt",
+     "einordnung": "Netflix wird in der VIDEOBESCHREIBUNG als Teil der Top-Firmen-Übersicht genannt, im Video selbst jedoch nicht weiter analysiert. Das ist typisch für ein breites News-Format — nicht jeder genannte Wer…"
     },
     {
      "date": "2025-12-11",
@@ -1112,9 +1769,9 @@
      "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=2211s",
      "channel": "Calling USA",
      "kategorie": "chartanalyse",
-     "note": "Netflix zeigt Potenzial für bullische Trendwende nach Korrektur. Unterstützung bei 90 USD, möglicher Anstieg bis 106–114 USD. Zudem bietet Netflix für Warner Bros., mit Vertragsstrafen von 5,8 Mrd. U…",
-     "einordnung": "Netflix zeigt charttechnisch eine klassische Erholungsformation nach Korrektur. Das Angebot für Warner Bros. ist strategisch interessant, aber die hohen Vertragsstrafen deuten auf Risiken hin.",
-     "figures": "Unterstützungszone 90 USD; Widerstand 106–114 USD; Vertragsstrafen Warner-Deal 5,8 Mrd. USD"
+     "note": "Korrektur mit erhöhtem Volumen, Unterstützung bei 90 USD. Taktische Einstiegsmöglichkeit bei Korrekturen, solange die April-Tiefs verteidigt werden.",
+     "einordnung": "Eine Korrektur mit erhöhtem Volumen ist ein Warnsignal, dass Verkäufer entschlossen agieren. Der Charttechniker sieht eine taktische Chance — ich würde vorsichtig sein: Volumen-Korrekturen können sic…",
+     "figures": "90 USD, 106, 114"
     }
    ]
   },
@@ -1316,10 +1973,10 @@
      "video_id": "aMB3cXXBiiI",
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=639s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Alphabet kündigt Kapitalerhöhung von 80 Milliarden Dollar an (ca. 2% des Börsenwerts von 4,5 Billionen Dollar). Aktie fällt 2%. Kurzfristig seitwärts erwartet, langfristig kein großes Problem.",
-     "einordnung": "Kapitalerhöhung ist fundamental korrekt (KI-Infrastruktur braucht Investitionen), aber Markt reagiert mit Verwässerungs-Angst — typisch für Hype-Phasen.",
-     "figures": "80 Mrd. $ Kapitalerhöhung; Börsenwert ca. 4,5 Bio. $; Aktie -2%"
+     "kategorie": "news",
+     "note": "Alphabet kündigte eine Kapitalerhöhung von 80 Milliarden Dollar an (2% des Börsenwerts von 4,5 Billionen Dollar), was die Aktie um 2% fallen ließ. Kurzfristig seitwärts, langfristig okay.",
+     "einordnung": "Eine 80-Mrd.-USD-Kapitalerhöhung für KI-Infrastruktur ist ein strategischer Alleingang, der kurzfristig Verwässerung bedeutet, langfristig aber die Wettbewerbsposition im KI-Rennen stärkt. Das ist ei…",
+     "figures": "80 Mrd. USD Kapitalerhöhung, Börsenwert 4,5 Billionen USD, 2% Verwässerung; Aktie -2%"
     },
     {
      "date": "2025-12-19",
@@ -1327,8 +1984,8 @@
      "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=611s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Alphabet gehört zu den starken Performern im Jahresvergleich, unter anderem durch die Beteiligung an SpaceX.",
-     "einordnung": "Alphabet als starker Performer überrascht angesichts der anhaltenden Antitrust-Diskussionen. Die SpaceX-Beteiligung ist ein interessanter versteckter Wert, den der Markt möglicherweise noch nicht vol…"
+     "note": "Alphabet wird als starker Performer seit Jahresbeginn im Mega-Cap-Vergleich hervorgehoben.",
+     "einordnung": "Alphabet hat sich 2025 als der heimliche KI-Gewinner unter den Mega-Caps etabliert — Gemini, Cloud und Search ergänzen sich. Die Bewertung ist dabei moderater als bei den reinen KI-Hypes, was asymmet…"
     },
     {
      "date": "2025-12-05",
@@ -1336,9 +1993,9 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1948s",
      "channel": "Calling USA",
      "kategorie": "chartanalyse",
-     "note": "Patrik sieht Alphabet als Short-Kandidat. Aufwärtspotenzial begrenzt auf 340-350, erwartet Konsolidierung oder Korrektur.",
-     "einordnung": "Die Short-Empfehlung ist bemerkenswert angesichts Alphabets starker KI-Positionierung. Charttechnisch deutet das Setup auf Erschöpfung hin.",
-     "figures": "340-350"
+     "note": "Alphabet nach starkem Anstieg kurzfristig begrenzt auf 340-350 $. Host erwartet Konsolidierung oder Korrektur.",
+     "einordnung": "Alphabet nach dem starken Lauf als Short-Kandidat zu sehen ist eine mutige These — die Bewertung ist nicht übertrieben, aber ein kurzfristiger Rücksetzer nach solch einer Rally ist charttechnisch pla…",
+     "figures": "Aufwärtspotenzial bis 340-350 $"
     }
    ]
   },
@@ -1484,9 +2141,9 @@
      "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=652s",
      "channel": "Calling USA",
      "kategorie": "fundamental",
-     "note": "Credo ist ein Zulieferer für Datenzentren und KI-Industrie mit starker Präsenz in Asien. Analysten sehen 40–50% Kurspotenzial; das KGV liegt bei 102. Umsatz soll sich 2025 verdoppeln (436 Mio. USD) u…",
-     "einordnung": "Credo profitiert von der KI-Infrastruktur-Welle, aber das KGV von 102 ist extrem hoch und preist massive Wachstumserfolge ein. Das Risiko ist erheblich, wenn die KI-Investitionen verlangsamen.",
-     "figures": "Umsatz 2025: 436 Mio. USD (Verdopplung), 2026: 1,2 Mrd. USD erwartet; KGV 102; Kursziele 220–240 USD"
+     "note": "Zulieferer für Datacenter-Verkabelung, profitiert massiv vom KI-Ausbau. Der Host hebt das starke Wachstum hervor: Umsatzverdopplung und Analysten sehen 40 bis 50 Prozent Kurspotenzial bei einem hohen…",
+     "einordnung": "Ein KGV von 102 preist bereits eine perfekte Ausführung ein — das erinnert an die Cloud-Hype-Phase 2020/21, als ähnliche Wachstumsstorys später hart korrigierten. Das Geschäftsmodell ist überzeugend,…",
+     "figures": "Umsatz 436 Mio. USD (2025), 1,2 Mrd. USD (2026), 1,6 Mrd. USD (2027), Nettogewinn 52 Mio. USD, KGV 102, Kursziel 165 auf 240 USD, 220 USD, 225 USD"
     }
    ]
   },
@@ -1650,9 +2307,18 @@
      "video_id": "aMB3cXXBiiI",
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI",
      "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "im Video nur kurz erwähnt",
+     "einordnung": "Silber bewegt sich typischerweise im Kielwasser von Gold, weist jedoch eine höhere Volatilität auf — bei einem Gold-Ausbruch über 4.500 Dollar dürfte Silber proportional stärker reagieren."
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM",
+     "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "sonstiges",
-     "note": "Im Video kurz erwähnt, aber keine detaillierte Analyse.",
-     "einordnung": "Silber wird im Video nicht tiefergehend analysiert."
+     "note": "In der Videobeschreibung genannt, im Video nur kurz im Kontext der Rohstoffübersicht erwähnt.",
+     "einordnung": "Silber folgt typischerweise Gold mit einer Verzögerung und ist volatiler — wenn Gold auf einem 5-Monats-Tief steht, ist Silber meist überproportional unter Druck. Als industrieller Rohstoff hat Silbe…"
     },
     {
      "date": "2026-05-19",
@@ -1662,108 +2328,6 @@
      "kategorie": "sonstiges",
      "note": "Im Video in der Videobeschreibung erwähnt, aber im Transkript nicht näher behandelt.",
      "einordnung": "Silber wird in der Videobeschreibung erwähnt, aber nicht näher behandelt – es verhält sich typischerweise wie ein Hybrid aus Gold und Industrierohstoff, sodass es im zinssensitiven Umfeld ebenfalls u…"
-    }
-   ]
-  },
-  "^GSPC": {
-   "name": "KI-Aktien treiben S&P 500, andere Sektoren verlieren",
-   "auftritte": [
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=445s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "S&P 500 +5 Bio. USD, aber KI-Aktien allein +6 Bio. USD; alle anderen Sektoren verloren 1 Bio. USD. KI-Anteil am Index 47% (2023: 27%).",
-     "einordnung": "Das ist eine extreme Konzentration – der Index wird von einer Handvoll Mega-Cap-KI-Titel getragen, während der Rest des Marktes abverkauft wird. Das erinnert an Blasen-Phasen und birgt Risiko für Kor…",
-     "figures": "S&P 500 +5 Bio. USD; KI-Aktien +6 Bio. USD; Energie +200 Mrd. USD; andere Sektoren -1 Bio. USD; KI-Anteil 47% (2023: 27%)"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=258s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Freitag war laut Host ein starker Tag für den S&P 500, u.a. befeuert durch das SpaceX-IPO; heute erneut klare Gewinne erwartet.",
-     "einordnung": "Der S&P 500 im Aufwind durch geopolitische Entspannung und ein Mega-IPO — das ist eine selten günstige Kombination. Kurzfristig bullish, aber Vorsicht vor überkauften Signalen."
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=341s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "sonstiges",
-     "note": "S&P 500 zeigt Stärke, aber mit hohen Tagesausschlägen; Host kritisiert mediale Übertreibung bei Kursverlusten.",
-     "einordnung": "Die 24/7-News-Maschinerie erzeugt Noise, der vom fundamentalen Trend ablenkt. Das Muster ist bekannt: Große Gewinne = normale Marktfunktion, kleine Verluste = Krise. Das ist Psychologie, keine Analys…",
-     "figures": "+1,9% (am Vortag)"
-    },
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1588s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Deutliche Volatilität durch Broadcom-Enttäuschung und SpaceX-IPO-Liquiditätsbedarf; kurzfristig turbulent, aber kein großer Crash erwartet. SpaceX selbst wird nicht in S&P 500 aufgenommen (Indexkrite…",
-     "einordnung": "Zinsanstieg (10J-US 4,55%) ist Hauptbelastung für US-Techs; SpaceX-IPO verstärkt temporär Druck. Charttechnisch noch keine echten Bruchmarken gerissen, aber 4,65% Zinsen (52W-Hoch) würde erhebliche w…",
-     "figures": "~1% Rückgang in der Woche; Börsenwert-Vernichtung ca. 700 Mrd. USD bei 1% Verlust"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=964s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "S&P 500 steigt 0,95% in der Woche, Jahresentwicklung +10,68%. Rekordfahrt setzt sich fort, getrieben von KI-Thema. Iran-Krieg wird ignoriert.",
-     "einordnung": "S&P 500 auf Rekordhochs bei schwacher Konjunktur und hoher Geldmenge — Egmond sieht dies als 'größte Blase aller Zeiten'.",
-     "figures": "+0,95% (Woche); +10,68% (Jahr)"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1610s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Rekordfahrt. Wenn Ölpreis und Zinsen sinken, sollte die Rally weitergehen. Größte Blase aller Zeiten, aber Trump treibt die Märkte.",
-     "einordnung": "Egmonds Aussage ist widersprüchlich: 'Größte Blase aller Zeiten' und 'weiterhin bullish' — aber das ist die Realität von Boom-Märkten. Technisch ist der S&P 500 bullish, fundamental ist er überbewert…"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=1705s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Kurzfristig wird kein großer Einbruch erwartet, da Trump versuchen wird, den Ölpreis zu drücken und notfalls Fed-Mitglieder verbal eingreifen. Seitwärtsbewegung.",
-     "einordnung": "Die These, dass Trump den Markt stützt, ist plausibel – er hat ein politisches Interesse an starken Aktienmärkten. Aber ein Zinsanstieg auf 5 % würde diese Stützung übersteuern."
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1670s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Der S&P 500 konsolidiert auf hohem Niveau. Patrik erwartet im ersten Quartal 2026 neue Allzeithochs mit Zielen von 7000-7200 Punkten. Rücksetzer sieht er als Kaufgelegenheit.",
-     "einordnung": "Eine Konsolidierung auf hohem Niveau ist gesund und typisch für späte Aufwärtsphasen. Das Ziel von 7000-7200 für Q1 2026 ist ambitioniert, aber bei einem Markt mit 12% Gewinnwachstum nicht abwegig. D…",
-     "figures": "Ziel Q1 2026: 7000-7200 Punkte"
-    },
-    {
-     "date": "2025-12-11",
-     "video_id": "f0pcBA15wVI",
-     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=2058s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Der S&P 500 bewegt sich seitwärts zwischen 6800 und Allzeithoch. Ein Ausbruch über 6800 könnte Kursziele von 7000–7200 bringen; unter 6800 wäre das Bild bärisch. Der Verfall nächste Woche dämpft die…",
-     "einordnung": "Der Index befindet sich in einer klassischen Konsolidierungsphase nach der Rallye. Charttechnisch ist das neutral bis leicht bullisch, solange die 6800er-Unterstützung hält.",
-     "figures": "Unterstützung 6800 Punkte; Kursziele 7000–7200 Punkte"
-    },
-    {
-     "date": "2025-12-05",
-     "video_id": "BADYwmZH114",
-     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1729s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Index klettert an der 'Wall of Worry', schließt Preislücke vom 12. November. Potenzial bis 7000-7200 bei Ausbruch, aber geringes Volumen. Nvidia notiert neue Tiefs als Warnsignal. Keine Long-Position…",
-     "einordnung": "Die 'Wall of Worry' ist typischerweise bullisch, aber das geringe Volumen und Nvidias Schwäche sind legitime Bedenken. Der Rat, auf den Ausbruch zu warten, ist diszipliniert.",
-     "figures": "Level 6820, 6766, 6600, 7000-7200"
     }
    ]
   },
@@ -1979,14 +2543,24 @@
      "einordnung": "Uber zeigt operative Fortschritte (autonomes Fahren), aber der Chart ist seitwärts. Das ist ein klassisches Abwarten-Signal auf einen Ausbruch."
     },
     {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=561s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Uber Technologies legt ein Übernahmeangebot für Delivery Hero vor: 33 € je Aktie bei einem Börsenwert von rund 10 Mrd. €. DoorDash zeigt ebenfalls Interesse.",
+     "einordnung": "Für Uber ist dies ein strategischer Kauf, um die Asien- und Nahost-Präsenz zu übernehmen — der Preis ist ambitioniert bei 18,6x EBIT 2027. Ob DoorDash als Gegenbieter auftritt, wird den Ausgang besti…",
+     "figures": "33 €/Aktie, 10 Mrd. € Börsenwert"
+    },
+    {
      "date": "2026-05-25",
      "video_id": "E2voXrwfH2g",
      "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=2640s",
      "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "Uber bildet Boden unterhalb des gleitenden Durchschnitts. Widerstand bei 79 $, Unterstützung bei 71 $, kritische Marke bei 69 $.",
-     "einordnung": "Klassische Bodenbildung nach Rückgang. Die Marken sind klar definiert; ein Wochenschluss über 79 $ würde Kaufsignal geben, ein Bruch unter 69 $ wäre Verkaufssignal.",
-     "figures": "Widerstand: 79 $, Unterstützung: 71 $, kritische Marke: 69 $"
+     "note": "Seit Februar in einer Range unter dem gleitenden Durchschnitt; Bodenbildung möglich. Unterstützung bei 71 Dollar, Widerstand bei 79 Dollar, kritisch bei 69 Dollar.",
+     "einordnung": "Uber befindet sich in einer klassischen Konsolidierungsphase nach einem Trendverlust. Die Range von 69 bis 79 Dollar ist eng genug für ein Range-Trading-Setup, aber Weygand bevorzugt den Ausbruch übe…",
+     "figures": "79, 71, 69"
     }
    ]
   },
@@ -2060,6 +2634,16 @@
      "kategorie": "fundamental",
      "note": "SAP unter Druck durch 'Sippenhaft' mit Oracle-Schwäche; Qualität der Company bleibt intakt, aber Kurs rutscht immer wieder zurück.",
      "einordnung": "SAP ist ein Quality-Stock mit Enterprise-Moat, aber der Markt spielt Sektor-Domino-Spiel. Oracle-Schwäche setzt Tech-Vertrauen unter Druck. Für Langfrist-Investoren ein Ansammelsignal, für Trader ein…"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=995s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "SAP erlebte einen Short Squeeze mit einem Kursanstieg von 10-15%. Die Fundamentaldaten haben sich nicht geändert.",
+     "einordnung": "Ein Short Squeeze bei SAP zeigt, dass der Markt einseitig positioniert war — die Bewegung ist rein technisch getrieben, nicht fundamental begründet.",
+     "figures": "+10-15%"
     },
     {
      "date": "2026-05-19",
@@ -2140,30 +2724,6 @@
     }
    ]
   },
-  "MUV2.DE": {
-   "name": "Munich Re",
-   "auftritte": [
-    {
-     "date": "2026-06-19",
-     "video_id": "MJo67AkNy70",
-     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=589s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Munich Re könnte von weniger Großschäden 2026 profitieren; Analysteneinschätzung auf Aktionär.de.",
-     "einordnung": "Rückversicherer profitieren von ruhigen Schadenjahren — das ist zyklisch, nicht strukturell. Munich Re als defensiver Baustein in einem hawkischen Umfeld ist aber eine sinnvolle Positionierung. Der V…"
-    },
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=2007s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Q1: Umsatz schwach (-5% auf 15,0 Mrd. EUR vs. Erw. 16,0), operatives Ergebnis stark (+52% auf 2,23 Mrd. EUR) durch niedrige Großschäden; Schaden-Kostenquote 66,8% (Erw. 74,6%); Gewinn +56,7% auf 1,7…",
-     "einordnung": "Günstiges KGV (8,6) spricht für Value, aber Volumen-Rückgänge in April/Januar sowie Druck auf Prämien-Wachstum warnen vor Margin-Erosion. Zinserhöhungen könnten Bewertungen am Markt stützen (höhere D…",
-     "figures": "Q1: Umsatz -5% auf 15,0 Mrd. EUR (Erw. 16,0); Op. Gewinn +52% auf 2,23 Mrd. EUR (Erw. 2,35); Schaden-Kostenquote 66,8% (Erw. 74,6%); Gewinn +56,7% auf 1,7 Mrd. EUR; Jan-Erneuerung: Volumen -7,8% auf…"
-    }
-   ]
-  },
   "VWS.CO": {
    "name": "Vestas",
    "auftritte": [
@@ -2208,30 +2768,6 @@
     }
    ]
   },
-  "AAPL": {
-   "name": "Apple",
-   "auftritte": [
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=1900s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Apple kündigt Preiserhöhungen für iPhones, Macs und iPads an, begründet mit steigenden Speicherpreisen. Charttechnisch ist das Kaufsignal intakt, fundamental erscheint die Aktie jedoch teuer.",
-     "einordnung": "Apple schiebt Kostensteigerungen elegant auf den Kunden – eine klassische Pricing-Power-Strategie. Ein KGV von 32,6 ist für ein Unternehmen mit diesem Wachstum jedoch sportlich. Die Zone 277-280$ ist…",
-     "figures": "PE Forward 32,6 (Schnitt 21,7); Kursziel 330-360$; iPhone Pro 18 Einstiegspreis 3000$; Speicherpreis-Upgrade 270-300$"
-    },
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1119s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "WWDC mit Fokus auf Siri und KI-Integration; kurzer Kursauftrieb (+1–3%), folgender Rückgang (-3%) da keine überraschenden Features. Host: langfristig positiv, da wenig in KI investiert bisher.",
-     "einordnung": "Typisches FOMO-Reversal. Apple weniger exponiert in KI-CapEx-Race als Mega-Peers (Meta, Alphabet) – könnte mittelfristig zur Undervaluation führen, falls KI-Narrative abkühlt. Defensive Qualität in T…"
-    }
-   ]
-  },
   "AIR.DE": {
    "name": "Airbus",
    "auftritte": [
@@ -2259,41 +2795,6 @@
      "note": "Accenture steht stark unter Druck (-20%). Das Consultinggeschäft ist schwach, die KI-Transformation frisst Geld. Der Chart ist bärisch.",
      "einordnung": "Ein PE von 9 und 5% Dividende bei Accenture klingen wie ein Value-Traumszenario – bis man den Chart sieht. Der Markt bestraft hier die Unsicherheit über den KI-RoI im Consulting. Finger weg, bis die…",
      "figures": "Umsatz 18,7 Mrd. $ (+6%); Gewinn/Aktie 3,80$ (Erwartung 3,72$); Auftragseingang Ratio 1,0; freier Cashflow; Zukäufe 4,2 Mrd. $; PE Forward 9; Dividendenrendite über 5%"
-    }
-   ]
-  },
-  "RKLB": {
-   "name": "Rocket Lab",
-   "auftritte": [
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2818s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Rocket Lab liefert Rekordzahlen und wird in den Nasdaq 100 aufgenommen. Der Chart ist bullisch.",
-     "einordnung": "Die Aufnahme in den Nasdaq 100 bringt institutionelle Kaufkraft. Wenn Rocket Lab die 100$ halten kann, ist das ein fantastisches Chart-Setup für eine neue Aufwärtswelle.",
-     "figures": "Erstes Quartal über 200 Mio. $ Umsatz (+63%); Auftragsbestand 2,2 Mrd. $"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "a6FF2tGXbok",
-     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=1724s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Q1: Umsatz 200 M (+60%), Bruttomarge 38%; Backlog 2,2 Mrd (11x Quartalsumsatz); 88 Electron-Starts + 18 gebucht. Eintritt in Nasdaq 100 am 22.06. löst ETF-Käufe aus. Noch nicht profitabel.",
-     "einordnung": "Raumfahrt-Infrastruktur ist echtes Wachstumsfeld, aber Profitabilität noch nicht in Sicht. Backlog-Umsatz-Verhältnis 11x ist außergewöhnlich – zeigt reale Nachfrage. SpaceX-IPO-Effekt wahrscheinlich…",
-     "figures": "Q1 Umsatz 200 M (+60%), Bruttomarge 38%, Backlog 2,2 Mrd USD, 88 Starts + 18 gebucht"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=1760s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Die Aktie ist in den letzten Wochen 30-50 % gestiegen, getrieben durch die Zahlen vom 7. Mai und die Ankündigung des SpaceX-Börsengangs (angeblich 12. Juni, 55 Mrd. $ eingesammelt, Bewertung 1,75-1,8…",
-     "einordnung": "Rocket Lab ist eine Spekulation auf den SpaceX-Börsengang – die Bewertung von 60-70-fachem Umsatz ist jenseits jeder Fundamentalität. Wenn der Momentum-Trade dreht, fällt diese Aktie zuerst.",
-     "figures": "30-50 % (Anstieg), 55 Mrd. $ (SpaceX Emission), 1,75-1,8 Billionen $ (SpaceX Bewertung), 60-70-facher Umsatz (Rocket Lab)"
     }
    ]
   },
@@ -2363,6 +2864,15 @@
      "note": "Tencent integriert einen KI-Agenten in die WeChat-Plattform mit 1,4 Milliarden monatlich aktiven Nutzern und erschließt damit erhebliche neue Monetarisierungspotenziale. Bei einem KGV von 13,4 für 20…",
      "einordnung": "Ein KGV von unter 14 für einen global bedeutenden KI- und Gaming-Konzern ist historisch ungewöhnlich niedrig — das spiegelt primär den China-Risikoaufschlag wider, nicht die operative Schwäche. Die F…",
      "figures": "Monatlich aktive Nutzer (WeChat): 1,4 Mrd.; KGV 2026: 13,4; KGV 2027: 12; KGV 2028: 10,8"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1466s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Chinesische Tech-Aktien könnten aufholen — Tencent als möglicher Proxy für den chinesischen Konsum.",
+     "einordnung": "Chinesische Tech-Aktien könnten ein Value-Rotation-Kandidat sein, wenn die KI-Euphorie in den USA abkühlt — die Bewertungen sind deutlich niedriger, die regulatorischen Risiken jedoch noch nicht voll…"
     }
    ]
   },
@@ -2440,135 +2950,6 @@
     }
    ]
   },
-  "NVDA": {
-   "name": "Nvidia",
-   "auftritte": [
-    {
-     "date": "2026-06-16",
-     "video_id": "J1zzTOyOdKE",
-     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=991s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Nvidia plant trotz eines Netto-Cash-Bestands von 72 Mrd. USD eine Anleiheplatzierung von mindestens 20 Mrd. USD. Egmond vermutet dahinter steueroptimiertes Roundtripping; die Aktie bleibt auf Rekordk…",
-     "einordnung": "Die Anleiheplatzierung trotz praller Kasse ist ein klassisches Kapitalstruktur-Manöver amerikanischer Tech-Konzerne — steuerliche Arbitrage statt Kapitalbedarf. Das ändert nichts an der fundamentalen…",
-     "figures": "Anleiheemission mindestens 20 Mrd. USD. Netto-Cash-Position: 72 Mrd. USD."
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "a6FF2tGXbok",
-     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2859s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "China-Story via Vera-CPUs: Großer chinesischer Cloud-Anbieter plant >300 Server mit Vera-CPUs. CPUs regulatorisch weniger sensibel als GPUs für China-Export. Falls Tests positiv, könnten weitere Hype…",
-     "einordnung": "Vera-CPUs sind Regulierungs-Arbitrage: weniger Hardware-Restriktionen als GPUs, reale HPC-Kraft. Wenn China-Tests klappen, ist das für Nvidia 2026–27 ein 20–50-Mrd-Umsatz-Upside. PEG 0,46 ist tatsäch…",
-     "figures": "KGV ~20 (2027er), PEG 0,46, Vera-Umsatz ~20 Mrd bis Jahresende, Unterstützung 200 $"
-    },
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=377s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Im Video kurz erwähnt; Broadcom-Vergleich: Nvidia EV/EBIT ~14x vs. Broadcom 16,3x.",
-     "einordnung": "Bessere Bewertung als Broadcom trotz ähnlicher KI-Dynamik – untermauert Chipsektor-Divergenz zwischen Leaders und Folgern.",
-     "figures": "EV/EBIT ~14x (indirekt aus Broadcom-Vergleich)"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=436s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Nvidia kündigt RTX Spark Superchip für KI-Workflows auf PCs/Laptops an. Aktie steigt 3,8%, fehlen 1–2% zum Rekord. Bewertung (EV/EBIT) bei ca. 14, günstiger als Dell.",
-     "einordnung": "Nvidia bleibt der fundamentale Profiteur der KI-Welle mit besserer Bewertung als Dell — aber auch hier gilt: Bewertung ist nicht billig, nur relativ.",
-     "figures": "+3,8% am Tag; EV/EBIT ca. 14 (vs. Dell 16–17)"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=221s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Nach Zahlenvorlage fiel die Aktie zunächst 1–2 %, dann weiter durch Gewinnmitnahmen. Bewertung (EV/EBIT 2027/28) bei 16x, Umsatzwachstum 60–70 %, EBIT-Marge 60–70 %.",
-     "einordnung": "Die 16x-Bewertung auf 2027/28-EBIT ist für ein Wachstumsunternehmen dieser Qualität nicht übertrieben, aber auch nicht günstig. Egmonds Szenario (Seitwärts, dann Anstieg vor Zahlen) ist typisch für M…",
-     "figures": "EV/EBIT 16x, Umsatzwachstum 60–70 %, EBIT-Marge 60–70 %"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Im Video als wichtigster Katalysator erwähnt: Die Zahlen am Mittwochabend entscheiden über die kurzfristige Marktrichtung und die Frage, ob der Momentum-Trade zurückkehrt.",
-     "einordnung": "Nvidia ist der Zugführer – wenn die Zahlen stark sind, kehrt der Momentum-Trade (KI- und Chipaktien stark) zurück, und die Rotation dreht sich um. Wenn sie enttäuschen, geht die Rotation weiter."
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1885s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Nvidia zeigt eine Konsolidierung mit Unterstützung zwischen 165 und 171 USD. Ein Ausbruch über 200 USD wäre nötig für neue Allzeithochs.",
-     "einordnung": "Nvidia als 'Trendwendekandidat' zu bezeichnen ist mutig, wenn man gleichzeitig im Makro-Teil vor einer KI-Blase warnt. Die Unterstützung bei 165-171 USD ist charttechnisch relevant, aber ein Bruch wü…",
-     "figures": "Unterstützung: 165-171 USD; Widerstand: 200 USD"
-    },
-    {
-     "date": "2025-12-05",
-     "video_id": "BADYwmZH114",
-     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=434s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Wird als Konkurrenzziel von Marvell und Broadcom genannt. Im Chartteil als Warnsignal erwähnt: Nvidia notiert neue Tiefs. China-Exporte im Wert von 50 Mrd. USD jährlich gefährdet, da China eigene Chi…",
-     "einordnung": "Nvidia steht unter doppeltem Druck: Custom-Silicon-Wettbewerb durch Hyperscaler und geopolitische Risiken durch China-Exportbeschränkungen. Die neuen Tiefs im Chart sind ein deutliches Warnsignal für…",
-     "figures": "China-Exporte 50 Mrd. USD jährlich gefährdet"
-    }
-   ]
-  },
-  "ORCL": {
-   "name": "Oracle",
-   "auftritte": [
-    {
-     "date": "2026-06-16",
-     "video_id": "J1zzTOyOdKE",
-     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=377s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Oracle lieferte starke Topline-Zahlen für Q4 des Fiskaljahres 2025: Umsatz +21%, Cloud-Infrastruktur +93%. Der Free Cashflow ist jedoch durch massive Investitionen von 55,7 Mrd. USD stark negativ. Di…",
-     "einordnung": "Ein KGV von 17,5 bei 21% Umsatzwachstum und 93% Cloud-Wachstum klingt zunächst attraktiv — aber ein negativer Free Cashflow von –1,9 Mrd. USD bei gleichzeitigen Investitionsvorhaben von fast 56 Mrd.…",
-     "figures": "Umsatz Q4: 19,18 Mrd. USD (+21% YoY). Cloud-Infrastrukturumsatz: 5,79 Mrd. USD (+93%). EBIT: 8,59 Mrd. USD (+22%). Free Cashflow: –1,9 Mrd. USD. Investitionen Fiskaljahr 25/26: 55,7 Mrd. USD (Nettoau…"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=600s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Oracle Quartal: Umsatz +20%, aber Aktie unter Druck wegen Ankündigung weiterer 20 Mrd. USD Kapitalaufnahme; Anleger-Skepsis dominant.",
-     "einordnung": "Das ist ein interessantes Signal: 20% Umsatzwachstum ist solid, aber der Markt straft das ab, weil Oracle offensichtlich größere strategische Ausgaben plant (wahrscheinlich AI-Infrastructure). Das ka…",
-     "figures": "Umsatzwachstum +20%, 20 Milliarden USD geplante Kapitalaufnahme"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=2055s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Oracle hat sich vom Jahreshoch bei 345-350 USD nahezu halbiert und leidet unter hoher Verschuldung und negativem Cashflow. Charttechnisch sieht Patrik eine Erholung bis 233-256 USD möglich, basierend…",
-     "einordnung": "Die Halbierung vom Jahreshoch bei gleichzeitig hoher Verschuldung und negativem Cashflow ist ein fundamentales Warnsignal. Das charttechnische Erholungsziel von 233-256 USD klingt verlockend, aber be…",
-     "figures": "Jahreshoch: 345-350 USD; Erholungsziel: 233-256 USD"
-    },
-    {
-     "date": "2025-12-05",
-     "video_id": "BADYwmZH114",
-     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1192s",
-     "channel": "Calling USA",
-     "kategorie": "fundamental",
-     "note": "Aktie fiel vom Rekordhoch von 345 USD auf 200 USD. Negativer Free Cashflow durch schuldenfinanzierten Rechenzentrumsausbau. Schulden bei 100 Mrd. USD, Morgan Stanley sieht 300 Mrd. bis 2028. Neue CEO…",
-     "einordnung": "Der Absturz von 345 auf 200 USD ist ein klassisches Beispiel für Wachstum-um-jeden-Preis, der auf Marktdisziplin trifft. Mit 100 Mrd. USD Schulden und einer Prognose von 300 Mrd. bis 2028 geht Oracle…",
-     "figures": "Rekordhoch 345 USD, Tief 200 USD, Schulden 100 Mrd. USD, Prognose 300 Mrd. USD bis 2028"
-    }
-   ]
-  },
   "MRVL": {
    "name": "Marvell Technology",
    "auftritte": [
@@ -2592,14 +2973,24 @@
      "figures": "Anstieg +33% in 1 Tag; Börsenwert 270 Mrd. USD (+~90 Mrd. USD intraday)"
     },
     {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=995s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Marvell schoss um 20-25%, nachdem Jensen Huang äußerte, der Börsenwert solle auf 1 Billion Dollar steigen. Die Fundamentaldaten haben sich nicht entsprechend verändert.",
+     "einordnung": "Ein 20-25%-Sprung allein aufgrund einer Bemerkung von Jensen Huang ist klassische Narrative-Driven-Price-Action ohne fundamentale Basis — das ist kein Investieren, das ist Momentum-Trading.",
+     "figures": "+20-25%"
+    },
+    {
      "date": "2025-12-05",
      "video_id": "BADYwmZH114",
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=243s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Marvell und Amazon AWS präsentieren die dritte Generation der Trainium-Trainingschips. Damit positioniert sich Marvell als Alternative zu Nvidia im KI-Chip-Geschäft. Marktkapitalisierung liegt bei 86…",
-     "einordnung": "Marvell ist mit 86 Mrd. USD Marktkapitalisierung der kleinere Player im Custom-Silicon-Markt. Die Amazon-Partnerschaft bietet Skaleneffekte, aber Amazons Verhandlungsmacht begrenzt die Margen.",
-     "figures": "Marktkapitalisierung 86 Mrd. USD"
+     "note": "Marvell kooperiert mit Amazon und liefert die Trainium-Chips der 3. Generation. Das Unternehmen hat restrukturiert und Photonics-Chips-Chips zugekauft. Marktkapitalisierung 86 Mrd. $.",
+     "einordnung": "Marvell ist der kleinere, aber dynamischere Player im Custom-Silicon-Feld — die Restrukturierung und gezielte Akquisitionen zeigen Managementfokus. Bei 86 Mrd. $ Marktkapitalisierung ist die Bewertun…",
+     "figures": "Marktkapitalisierung 86 Mrd. $"
     }
    ]
   },
@@ -2705,19 +3096,19 @@
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=915s",
      "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "makro",
-     "note": "EUR/USD zeigt stabile Seitenlage seit 11 Monaten, Anstieg um 0,14% im Wochenverlauf. Seitwärtstrend erwartet.",
-     "einordnung": "Langfristige Seitenlage spiegelt strukturelle Divergenz wider: US-Konjunktur schwach, aber Geldmenge hoch; Eurozone-Inflation hartnäckig, aber EZB-Spielräume begrenzt.",
-     "figures": "+0,14% im Wochenverlauf"
+     "note": "Stabile Seitwärtslage seit 11 Monaten; im Wochenvergleich leichter Anstieg um 0,14%.",
+     "einordnung": "Eine 11-monatige Seitwärtsphase ist ungewöhnlich stabil — ein Ausbruch in eine Richtung würde einen klaren makroökonomischen Trigger erfordern, etwa eine deutliche Zinsdivergenz zwischen Fed und EZB.",
+     "figures": "+0,14% (Woche)"
     },
     {
      "date": "2026-05-26",
      "video_id": "LU60d_3fNcM",
      "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1571s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Stabile Seitenlage seit 10–11 Monaten um 1,16–1,17. Kurzfristig keine Änderung erwartet.",
-     "einordnung": "Die EUR/USD-Seitenlage ist ein Zeichen von Gleichgewicht zwischen Fed-Zinssenkungserwartungen und EZB-Haltung. Keine Handelsopportunitäten kurzfristig.",
-     "figures": "1,16–1,17"
+     "kategorie": "makro",
+     "note": "Seitwärtsbewegung um 1,16-1,17, keine Änderung erwartet.",
+     "einordnung": "Ein stabiler Euro bei 1,16-1,17 trotz fallender US-Zinsen ist ein Zeichen, dass der Markt den Zinsvorteil der USA als temporär einschätzt. Für deutsche Exportunternehmen ist dieses Niveau noch verträ…",
+     "figures": "1,16-1,17"
     },
     {
      "date": "2026-05-19",
@@ -2818,6 +3209,15 @@
      "note": "Die Aktie brach am Mittwoch um 28 Prozent ein, ausgelöst durch eine Kapitalerhöhung von bis zu 7 Milliarden Dollar. Strukturell belasten ein negativer freier Cashflow von minus 6,85 Milliarden Dollar…",
      "einordnung": "Das KUV von 0,6 und ein KGV von 12–13 klingen verführerisch günstig — doch ein Unternehmen, das 7 Milliarden Dollar frisches Kapital aufnehmen muss und dabei negative freie Cashflows produziert, hat…",
      "figures": "Kapitalerhöhung bis zu 7 Mrd. $ (1,25 Mrd. $ Stammaktien + 3,75 Mrd. $ Wandelvorzugsaktien + 2 Mrd. $ ATM), freier Cashflow −6,85 Mrd. $, Bruttomarge 8,4%, operative Marge 4,5%, KUV 0,6, erwartetes K…"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1466s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "SMCI bleibt spannend — nach den jüngsten Skandalen ein Spekulationsobjekt.",
+     "einordnung": "Die Geschichte zeigt, dass solche Aktien nach Governance-Skandalen entweder komplett kollabieren oder sich spektakulär erholen — ein Binärspiel, das für konservative Investoren ungeeignet ist."
     }
    ]
   },
@@ -2879,10 +3279,10 @@
      "video_id": "f0pcBA15wVI",
      "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1104s",
      "channel": "Calling USA",
-     "kategorie": "fundamental",
-     "note": "Adobe überzeugt mit KI-Umsätzen von 250 Mio. USD. Das Unternehmen integriert KI-Funktionen in seine Creative Suite und generiert damit neue Umsatzströme.",
-     "einordnung": "Adobe zeigt, wie etablierte Software-Unternehmen KI-Funktionen monetarisieren können. Das ist ein positives Signal für die Profitabilität von KI-Investitionen.",
-     "figures": "KI-Umsatz: 250 Mio. USD"
+     "kategorie": "news",
+     "note": "Adobe verzeichnet KI-Umsätze von 250 Millionen USD, die Aktie ist jedoch seit Jahresbeginn 22 Prozent im Minus.",
+     "einordnung": "250 Millionen KI-Umsatz bei einem Konzern mit über 20 Milliarden Gesamtumsatz ist noch ein Tropfen — die -22 Prozent seit Jahresbeginn spiegeln die Enttäuschung darüber, dass Adobes KI-Story nicht di…",
+     "figures": "KI-Umsatz 250 Mio. USD, -22% seit Jahresbeginn"
     }
    ]
   },
@@ -2935,23 +3335,8 @@
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1144s",
      "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "fundamental",
-     "note": "US-Regierung erwägt Finanzspritzen für Drohnenhersteller. Kratos nicht explizit genannt, aber Aktie teuer. Investoren ignorieren Bewertung angesichts potenzieller Aufträge.",
-     "einordnung": "Geopolitische Spannungen treiben Defense-Sektor, aber Bewertungen sind nicht nachhaltig — typisches Hype-Muster."
-    }
-   ]
-  },
-  "NBIS": {
-   "name": "Nebius",
-   "auftritte": [
-    {
-     "date": "2026-06-12",
-     "video_id": "a6FF2tGXbok",
-     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2080s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blac…",
-     "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktu…",
-     "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd"
+     "note": "Die US-Regierung erwägt Finanzspritzen für Drohnenhersteller. Kratos ist zwar nicht namentlich genannt, aber die Aktie ist überbewertet und könnte dennoch weiter steigen.",
+     "einordnung": "Die Drohnen-Story ist real, aber die Bewertung eilt den Fundamentaldaten voraus — typisch für Rüstungsaktien in Kriegszeiten, wie man es 2022 bei Rheinmetall beobachten konnte."
     }
    ]
   },
@@ -2999,14 +3384,23 @@
      "figures": "Q2: Umsatz +48% auf 22,19 Mrd. USD (Erw. 22,27), KI-Chips/Netzwerk +143% auf 10,8 Mrd. USD, EBITDA +52% auf 15,2 Mrd. USD (Marge 68,7%); Q3 erwartet: 29,4 Mrd. USD Umsatz, KI/Netzwerk 16 Mrd. USD (vs…"
     },
     {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1426s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Broadcom legt am Mittwochabend die Quartalszahlen vor — ein potenzieller Katalysator für den gesamten KI-Server-Sektor.",
+     "einordnung": "Broadcoms Zahlen könnten die KI-Euphorie entweder bestätigen oder dämpfen — als Chip- und Software-Lieferant ist das Unternehmen ein wichtiger Indikator für die reale KI-Nachfrage jenseits der Nvidia…"
+    },
+    {
      "date": "2025-12-05",
      "video_id": "BADYwmZH114",
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=243s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Broadcom kooperiert mit Google bereits in der siebten Generation der TPU-Chips. Marktkapitalisierung 1.797 Mrd. USD. Berichtet am 11.12. über Quartalszahlen.",
-     "einordnung": "Mit knapp 1,8 Billionen USD Marktkapitalisierung ist Broadcom bereits als dominanter KI-Infrastrukturplayer eingepreist. Die reife Google-TPU-Partnerschaft in der siebten Generation sorgt für wiederk…",
-     "figures": "Marktkapitalisierung 1.797 Mrd. USD, Bericht am 11.12."
+     "note": "Broadcom entwirft Custom-KI-Chips für Google/Alphabet und ist damit einer der wichtigsten Akteure im Hyperscaler-Geschäft. Die Marktkapitalisierung beträgt 1.797 Mrd. $. Der Host verweist auf den ans…",
+     "einordnung": "Broadcom ist nach Nvidia der zweite große Profiteur des KI-Chip-Booms — die Custom-Silicon-Kooperation mit Alphabet sichert wiederkehrende Design-Revenue-Ströme. Die Bewertung ist gehoben, aber durch…",
+     "figures": "Marktkapitalisierung 1.797 Mrd. $"
     }
    ]
   },
@@ -3052,14 +3446,24 @@
      "figures": "Aktuell 4,55%, 52-Wochen-Hoch 4,65%, Anstieg ~30 BP in 2 Monaten"
     },
     {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=869s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Die Rendite 10-jähriger US-Anleihen fiel auf etwa 4,45% und nähert sich dem 3-Wochen-Tief, begünstigt durch Konjunktursorgen.",
+     "einordnung": "Der Rückgang auf 4,45% ist ein Bullen-Signal für Aktien — solange die Zinsen fallen, hat der S&P 500 Rückenwind. Die Frage ist, ob der Arbeitsmarktbericht am Freitag diesen Trend bestätigt.",
+     "figures": "4,45%"
+    },
+    {
      "date": "2026-05-26",
      "video_id": "LU60d_3fNcM",
      "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1521s",
      "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "makro",
-     "note": "Zinsen sind innerhalb einer Woche um 18 Basispunkte gefallen. Grund: Trumps Rhetorik zur Iran-Einigung und sinkende Inflationserwartungen. Tendenz: weiter sinkend.",
-     "einordnung": "Der 18-Basispunkte-Rückgang ist signifikant und zeigt, dass die Märkte Trumps Rhetorik ernst nehmen. Niedrigere Zinsen sind bullish für Aktienmärkte.",
-     "figures": "-18 Basispunkte (eine Woche)"
+     "note": "Zinsen innerhalb einer Woche um 18 Basispunkte gefallen, obwohl fundamental nichts geändert.",
+     "einordnung": "Ein 18-Basispunkte-Sturz in einer Woche ohne fundamentalen Auslöser ist ein Sentiment-Shift, der durch den Ölpreiseinbruch und die Warsh-Erwartung getrieben ist. Das ist die Vorwegnahme von Zinssenku…",
+     "figures": "-18 Basispunkte in einer Woche"
     },
     {
      "date": "2026-05-19",
@@ -3092,9 +3496,9 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "News: China-Absatz Model 3 +41% zum Vormonat, aber Förderungen sinken ab 2026. Charttechnik (ab Min 34:08): Patrik bullish, noch kein neues Allzeithoch 2024, Ziel 510-520. Relative Stärke. Einstieg b…",
-     "einordnung": "Die China-Absatzzahlen sind ermutigend, aber die Förderungsreduzierung ab 2026 ist ein bekannter Gegenwind. Charttechnisch zeigt Tesla relative Stärke, was Patriks bullishen Standpunkt stützt.",
-     "figures": "Model 3 +41% MoM, Ziel 510-520, Level 475"
+     "note": "China-Verkäufe +9,9% (Model 3 +41%), aber Subventionen sinken ab 2026. Charttechnisch bullisch: Ziel über 500 $, Ausbruch über 475 $ wäre Kaufsignal. Unterstützung an Trendlinie, Rücksetzer bis 365 $…",
+     "einordnung": "Die China-Zahlen sind solide, aber der Subventionsabbau ab 2026 ist ein bekannter Kopfwind. Charttechnisch sieht Tesla nach der jüngsten Rally gesund aus — ein Ausbruch über 475 $ würde den Trend bes…",
+     "figures": "China-Verkäufe +9,9%, Model 3 +41%, Ziel 500+ $, Ausbruch über 475 $"
     }
    ]
   },
@@ -3136,9 +3540,9 @@
      "video_id": "aMB3cXXBiiI",
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=201s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Adidas-Aktie erholt sich vor der Fußball-WM, obwohl sich fundamentale Aussichten nicht geändert haben. Iran-Krieg hatte Geschäft gedämpft; Erholung könnte noch weitergehen.",
-     "einordnung": "Reine Sentiment-Rally ohne fundamentale Verbesserung — typisches Muster in Hype-Phasen, wo Narrative über Fakten siegen."
+     "kategorie": "fundamental",
+     "note": "Die Aktie erholt sich im Vorfeld der WM, die fundamentalen Aussichten haben sich jedoch nicht verändert. Die Erholung könnte kurzfristig noch etwas weitergehen, ist aber spekulativ.",
+     "einordnung": "Der WM-Effekt ist ein klassisches saisonales Thema — nachhaltige Kursgewinne erfordern verbesserte Fundamentaldaten, nicht nur Turnier-Euphorie. Das erinnert an 2014, als Adidas im WM-Jahr similarly…"
     }
    ]
   },
@@ -3150,10 +3554,34 @@
      "video_id": "aMB3cXXBiiI",
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=273s",
      "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Dell-Quartalszahlen waren 'Bombenzahlen' mit massivem Ausblick; Aktie stieg 33% auf Rekordhochs. KI-Server-Geschäft treibt.",
-     "einordnung": "Dell profitiert fundamental von der KI-Infrastruktur-Nachfrage — im Gegensatz zu vielen anderen Hype-Profiteuren ist dies ein echter Geschäftstreiber.",
-     "figures": "+33% nach Zahlen"
+     "kategorie": "news",
+     "note": "Die Quartalszahlen waren exzellent mit einem massiv angehobenen Ausblick dank des KI-Server-Geschäfts. Die Aktie schoss um 33% auf Rekordhochs.",
+     "einordnung": "Ein 33%-Sprung auf ein Rekordhoch nach exzellenten Zahlen ist beeindruckend, wirft aber die Frage auf, wie viel vom KI-Server-Boom bereits eingepreist ist. Die Bewertungsdiskrepanz zu Nvidia (Dell EV…",
+     "figures": "+33% (Kursanstieg), Rekordhoch"
+    }
+   ]
+  },
+  "HPE": {
+   "name": "HP Enterprise",
+   "auftritte": [
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=995s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Im Kontext der Übertreibungen im Technologiesektor erwähnt. Die Aktie profitiert vom KI-Narrativ, ohne dass sich die Fundamentaldaten signifikant verändert hätten.",
+     "einordnung": "HPE wird im Sog der KI-Euphorie mitgezogen — der Markt preist hier einen Wachstumspfad ein, der operativ noch nicht belegt ist."
+    },
+    {
+     "date": "2025-12-05",
+     "video_id": "BADYwmZH114",
+     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=838s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "HPE legt nach Börsenschluss Zahlen vor: Guidance gesenkt, EPS auf 2,20-2,40 $ (Markt erwartete 2,42-2,43 $), Umsatzwachstum nur 5-10% (erwartet 17%). Dividende +10% auf 2,5% Rendite. Free-Cashflow-Zi…",
+     "einordnung": "Die gesenkte Guidance mit deutlich unter Erwartung liegendem Umsatzwachstum ist ein Warnsignal — HPE kämpft offenbar mit Nachfrageverzögerungen. Die Dividendenerhöhung ist ein positives Signal, kann…",
+     "figures": "EPS 2,20-2,40 $, Umsatzwachstum 5-10%, Dividende +10% auf 2,5% Rendite, Free Cashflow 3,5 Mrd. $ bis 2028, Analysten: 13 neutral/7 kaufen"
     }
    ]
   },
@@ -3166,8 +3594,8 @@
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1201s",
      "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "fundamental",
-     "note": "Compass Minerals verbessert Profitabilität in Richtung guter Jahre. US-Anbieter von Salz und Spezialdünger, Fokus auf Auftausalz. Aktie im Rallye-Modus.",
-     "einordnung": "Zyklisches Geschäft profitiert von höheren Rohstoffpreisen und Geopolitik-Prämien — aber Bewertung sollte beobachtet werden."
+     "note": "US-Anbieter von Salz und Spezialdünger. Die Profitabilität verbessert sich, die Aktie befindet sich im Rally-Modus.",
+     "einordnung": "Ein Profitabilitäts-Turnaround bei einem Spezialdünger-Anbieter ist ein solider Fundamentaltrend, der sich wohltuend von der KI-Euphorie abhebt — das ist ein Value-Play in einem Growth-Markt."
     }
    ]
   },
@@ -3180,8 +3608,22 @@
      "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1221s",
      "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "fundamental",
-     "note": "Archer Aviation bereitet kommerziellen Start von E-Flugtaxis vor. Wartet auf letzte Genehmigungen. Aktie nicht günstig bewertet.",
-     "einordnung": "Zukunfts-Technologie mit hohem Risiko und teurer Bewertung — typisches Hype-Play ohne klare Profitabilität."
+     "note": "Vorbereitung auf den kommerziellen Start von Flugtaxis. Das Unternehmen wartet auf Genehmigungen durch die Regulierungsbehörden. Die Bewertung ist nicht günstig.",
+     "einordnung": "Flugtaxis sind eine faszinierende Story, aber die Genehmigungsunsicherheit und die hohe Bewertung machen die Aktie zu einem reinen Spekulationsobjekt — das erinnert an die SPAC-Euphorie von 2020/21."
+    }
+   ]
+  },
+  "^IXIC": {
+   "name": "Nasdaq",
+   "auftritte": [
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "im Video nur kurz erwähnt",
+     "einordnung": "Der Nasdaq bewegt sich im Sog des S&P 500 und der KI-Titel — die Übertreibungs-Warnungen des Hosts gelten hier in noch stärkerem Maße, da der Index noch tech-lastiger ist."
     }
    ]
   },
@@ -3194,9 +3636,9 @@
      "url": "https://www.youtube.com/watch?v=EJUkEYUPawE&t=14s",
      "channel": "BerneckerTV",
      "kategorie": "fundamental",
-     "note": "Der Host beleuchtet die Transformation vom Bitcoin-Miner zum KI-Rechenzentrum-Betreiber. Iren hat große Verträge mit Nvidia (3,4 Mrd. $), Microsoft (9,7 Mrd. $) und Dell (1,6 Mrd. $) in der Tasche. D…",
-     "einordnung": "Der Pivot vom Bitcoin-Miner zum KI-Rechenzentrum ist der klassische Narrativ-Trade der Jahre 2025/26 — das erinnert an die Crypto-Miner, die sich 2018 als Blockchain-Infrastruktur-Player neu erfanden…",
-     "figures": "3,4 Mrd. $ (Nvidia-Vertrag), 9,7 Mrd. $ (Microsoft-Vertrag), 1,6 Mrd. $ (Dell-Vertrag), Umsatzprognose 2027: 3,7-4,4 Mrd. $, KGV 66, Kursziel Goldman Sachs 50 $, Kursziel B. Riley 88 $, Chartbreak be…"
+     "note": "Iren wandelt sich vom Bitcoin-Miner zum KI-Infrastrukturanbieter mit Großverträgen (Nvidia 3,4 Mrd USD, Microsoft 9,7 Mrd USD, Dell 1,6 Mrd USD). Das annualisierte Umsatzpotenzial bis 2027 wird auf 3…",
+     "einordnung": "Der Pivot vom Bitcoin-Mining zur KI-Rechenzentrumsinfrastruktur ist strategisch plausibel, aber die Bewertung reflektiert bereits erhebliche Zukunftshoffnungen. Bei KGV 66 ist die Aktie ein Hochrisik…",
+     "figures": "3,4 Mrd USD (Nvidia-Vertrag), 9,7 Mrd USD (Microsoft-Vertrag), 1,6 Mrd USD (Dell-Deal), 3,7–4,4 Mrd USD annualisierter Umsatz (2027), KGV 66, Kursziel Goldman Sachs 50 USD, B Riley 88 USD, Break bei…"
     }
    ]
   },
@@ -3209,24 +3651,9 @@
      "url": "https://www.youtube.com/watch?v=EJUkEYUPawE&t=298s",
      "channel": "BerneckerTV",
      "kategorie": "fundamental",
-     "note": "Der Host sieht Datadog als Gradmesser für den Cloud-Markt: Die Monitoring-Plattform profitiert vom KI-Boom, das Umsatzwachstum beschleunigt sich im Q1 2026 auf 32% bei über 1 Mrd. $ Quartalsumsatz. B…",
-     "einordnung": "Datadog ist der Qualitätsname in diesem Quartett — Wachstumsbeschleunigung von 27% auf 32% bei positivem freiem Cashflow ist die Art Reacceleration, die ein Premium-Multiple rechtfertigt. Aber bei KG…",
-     "figures": "Durchschnittliches Wachstum 27%, Q1 2026: 32% auf über 1 Mrd. $, operativer Verlust 2025: 44 Mio. $, Q1-Gewinn 7 Mio. $, EPS 2,36-2,44 $, freier Cashflow 289 Mio. $, Umsatzprognose 4,3-4,34 Mrd. $, K…"
-    }
-   ]
-  },
-  "ZS": {
-   "name": "Zscaler",
-   "auftritte": [
-    {
-     "date": "2026-05-29",
-     "video_id": "EJUkEYUPawE",
-     "url": "https://www.youtube.com/watch?v=EJUkEYUPawE&t=563s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Der Host analysiert die Zero-Trust-Sicherheitsplattform, deren Wachstum sich verlangsamt: von durchschnittlich 35% auf 23% im Jahr 2025. Die Aktie stürzt nach Quartalszahlen um 31,5% ab — Umsatz leic…",
-     "einordnung": "Der Absturz um 31,5% ist die klassische Growth-Stock-Strafe, wenn ein Hochflieger gleichzeitig Wachstum verliert UND die Margenführung senkt. Die Zero-Trust-Architektur bleibt strategisch relevant, a…",
-     "figures": "Durchschnittswachstum 35%, 2025: 23%, non-GAAP EPS 4,10-4,11 $, Q3-Umsatz 850,5 Mio. $ (+25,4%), bereinigter EPS 1,08 $ (Konsens 1,01 $), Q4-Prognose 875-878 Mio. $ (Erwartung 878,6 Mio. $), Free-Cas…"
+     "note": "Datadog profitiert vom KI-Boom mit beschleunigtem Umsatzwachstum (32% im Q1 2026), hohen Margen (EBIT 22–25%) und starkem Free Cashflow (289 Mio USD). Die Aktie ist jedoch teuer (KGV 97) und technisc…",
+     "einordnung": "Datadog ist der klassische Cloud-Barometer-Wert: Wenn die KI-Investitionen fließen, profitiert das Monitoring-Geschäft direkt. KGV 97 ist jedoch ein anspruchsvolles Bewertungsniveau, das wenig Raum f…",
+     "figures": "27% durchschnittliches Wachstum (3 Jahre), 32% Wachstum Q1 2026, Umsatz >1 Mrd USD, operativer Verlust 44 Mio USD (2025), operativer Gewinn 7 Mio USD (Q1 2026), bereinigter Gewinn 2,36–2,44 USD/Aktie…"
     }
    ]
   },
@@ -3239,9 +3666,52 @@
      "url": "https://www.youtube.com/watch?v=EJUkEYUPawE&t=807s",
      "channel": "BerneckerTV",
      "kategorie": "fundamental",
-     "note": "Der Host beleuchtet IBMs Quantencomputing-Strategie: 1 Mrd. $ Förderung durch die US-Regierung plus 1 Mrd. $ Eigenbeitrag. Gründung einer neuen Gesellschaft für Quantenchipfertigung. Das Quantenmarkt…",
-     "einordnung": "IBM ist der Value-Play in diesem Quartett — ein 240-Mrd.-$-Unternehmen mit moderatem Wachstum, aber echter Quanten-Optionality. Die Regierungsförderung validiert IBMs technologische Führung, doch bei…",
-     "figures": "1 Mrd. $ Regierungsförderung, 1 Mrd. $ Eigenbeitrag, Umsatz 2025: 67,5 Mrd. $, Umsatz 2026e: 71,5 Mrd. $, Börsenwert 240 Mrd. $, Quantenmarkt-Potenzial bis 2030: 7,3-20 Mrd. $, bis 2035: 28-72 Mrd. $"
+     "note": "IBM erhält bis zu 1 Mrd USD Förderung für Quantencomputing (Tochter Anderon) und investiert selbst 1 Mrd USD. Der kurzfristige Einfluss ist gering (IBM-Umsatz 2025: 67,5 Mrd USD), aber strategisch be…",
+     "einordnung": "IBM ist der Reifegrad-Wert im Quartett: Die Quanten-Förderung ist strategisch interessant, aber bei 67,5 Mrd USD Umsatz bewegen 1 Mrd USD Förderung kurzfristig nichts. Die Marke 260 USD als Kaufsigna…",
+     "figures": "1 Mrd USD Förderung, 1 Mrd USD Eigeninvestition, Umsatz 2025: 67,5 Mrd USD, erwartet 2026: 71,5 Mrd USD, Quantenmarkt-Prognosen: Markets and Markets 3,5 Mrd (2025) auf 20 Mrd USD (2030), BC Research…"
+    }
+   ]
+  },
+  "DHER.DE": {
+   "name": "Delivery Hero",
+   "auftritte": [
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=561s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Uber Technologies bietet 33 € je Aktie, Börsenwert rund 10 Mrd. €. Delivery Hero hat starke Präsenz in Asien und Nahem Osten. Auch DoorDash zeigt Interesse. Bewertung bei 18,6x 2027er EBIT bei niedri…",
+     "einordnung": "33 € als Übernahmeangebot ist ein klares Signal, aber der Rat, die letzten 5% nicht mitzujagen, ist erfahrungsgemäß richtig — Kartellverfahren in Food-Delivery sind komplex und dauern. Bei 18,6x EBIT…",
+     "figures": "Angebot: 33 €/Aktie, Börsenwert: 10 Mrd. €, EV/EBIT 2027: 18,6x, Umsatzmarge: 10-15%, EBIT-Marge: 3-5%, erwähnt auch: 40 €, 37,92 €, 11,5 Mrd. €, 2,0 Mrd. €, 13,5 Mrd. €"
+    }
+   ]
+  },
+  "NXT": {
+   "name": "Nextracker",
+   "auftritte": [
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1660s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "US-Solartechnik-Spezialist; kurzer Beitrag auf BNP-Homepage erwähnt. In der Videobeschreibung als 'Nextpower' gelistet.",
+     "einordnung": "Nextracker ist der Marktführer für Solar-Tracker in den USA und profitiert vom US-Infrastrukturpush. Dass Haidt nur kurz darauf eingeht, suggeriert, dass es eher ein Beobachtungswert als ein unmittel…"
+    }
+   ]
+  },
+  "^NDX": {
+   "name": "Nasdaq 100",
+   "auftritte": [
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1182s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Index durch SpaceX-IPO und Regeländerung strukturell unterstützt bis 12. Juni. KI-Hype treibt Chipwerte.",
+     "einordnung": "Der Nasdaq 100 hat durch die SpaceX-Mechanik einen kurzfristigen strukturellen Rückenwind, der über fundamentale Faktoren hinausgeht. Das ist ein Timing-Fenster, kein langfristiges Strukturthema."
     }
    ]
   },
@@ -3253,9 +3723,9 @@
      "video_id": "E2voXrwfH2g",
      "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=1853s",
      "channel": "Rendezvous mit Harry",
-     "kategorie": "fundamental",
-     "note": "US-Großhandelsbenzinpreis ist stark gestiegen, da die USA trotz Selbstversorgung mit Rohöl auf Schwerölimporte angewiesen sind.",
-     "einordnung": "Ein kontraintuitives Phänomen: Die USA sind Rohölexporteur, aber Benzin-Netto-Importer. Das zeigt, wie spezialisiert die globale Raffinerie-Infrastruktur ist und wie wenig nationale Energieunabhängig…"
+     "kategorie": "makro",
+     "note": "Großhandelspreis in den USA stark gestiegen. Politischer Druck auf Biden und Trump, da der Benzinpreis wahlentscheidend ist.",
+     "einordnung": "Der Benzinpreis als politischer Indikator ist ein klassisches US-Wahljahr-Thema. Historisch greifen Präsidenten hier gerne in die strategische Ölreserve ein — ein Faktor, den man bei Trading-Überlegu…"
     }
    ]
   },
@@ -3268,9 +3738,9 @@
      "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=2966s",
      "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "Palantir in intaktem Abwärtstrendkanal; langfristige Aufwärtstrendlinie bei 100 $ als Unterstützung.",
-     "einordnung": "Der Host ist bärisch auf Palantir, solange der Abwärtstrendkanal hält. Die Erwähnung von Michael Burry (bekannter Short-Seller) deutet auf Bewusstsein für Gegenwind hin — wenn Burry covern würde, kön…",
-     "figures": "Unterstützung: 100 $"
+     "note": "Intakter Abwärtstrendkanal; langfristige Aufwärtslinie bei 100 Dollar als Support. Michael Burry ist Short positioniert.",
+     "einordnung": "Der Verweis auf Michael Burrys Short-Position ist ein starkes Sentiment-Signal — Burry hat zwar eine treue Anhängerschaft, lag aber in den letzten Jahren bei Tech-Shorts häufig zu früh. Charttechnisc…",
+     "figures": "100"
     },
     {
      "date": "2025-12-19",
@@ -3278,8 +3748,8 @@
      "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=839s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Palantir ist trotz Rückgang unter das Jahreshoch weiterhin stark beachtet und gehört zu den Werten der zweiten Reihe, die im Fokus stehen.",
-     "einordnung": "Palantir bleibt ein polarisierender Wert: Die fundamentale Bewertung ist extrem, aber die strategische Positionierung im KI- und Regierungssektor sorgt für anhaltendes Interesse. Der Rückgang unter d…"
+     "note": "Palantir ist Top-Performer, notiert aber unter dem Hoch. Michael Burry hat Palantir mit langlaufenden Optionen geshortet — ein bemerkenswertes Kontrasignal.",
+     "einordnung": "Palantir ist der Inbegriff der KI-Euphorie 2025 — ein Multiplikator-Chart, der von Regierungsaufträgen und AIP-Commercial-Expansion getrieben wird. Burrys Short mit langlaufenden Optionen ist nicht z…"
     }
    ]
   },
@@ -3292,9 +3762,9 @@
      "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=3134s",
      "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "Workday bildet nach starkem Kursverfall einen Boden bei 115 $. Key-Supports bei 108 $ und 115 $.",
-     "einordnung": "Workday ist von 203 $ auf 115 $ gefallen — ein Rückgang von etwa 43 %. Die Bodenbildung deutet auf Stabilisierung hin, aber der Host rät zu Vorsicht: Erst beobachten, nicht sofort kaufen.",
-     "figures": "Vorheriges Hoch: 203 $, Boden: 115 $, Support: 108 $"
+     "note": "Nach starkem Kursverfall Bodenbildung als Rounding Bottom im Bereich 108 bis 115 Dollar; Stabilisierung erkennbar.",
+     "einordnung": "Ein Rounding Bottom ist eines der zuverlässigeren Umkehrmuster — es zeigt eine langsame Stimmungswende von Pessimismus zu Optimismus. Weygands Zurückhaltung (nur Watchlist, kein voreiliger Einstieg)…",
+     "figures": "108, 115"
     }
    ]
   },
@@ -3307,9 +3777,9 @@
      "url": "https://www.youtube.com/watch?v=E2voXrwfH2g&t=3334s",
      "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "Spotify zeigt einen Doppelboden mit Neckline bei 550 $. Unterstützung bei 400 $.",
-     "einordnung": "Doppelboden ist ein klassisches Reversal-Pattern. Ein Bruch über die Neckline bei 550 $ würde ein starkes Kaufsignal geben — die Projektion würde ein Ziel deutlich über 550 $ andeuten.",
-     "figures": "Unterstützung: 400 $, Neckline: 550 $"
+     "note": "Doppelboden bei 400 Dollar; Neckline bei 550 Dollar. Ein Ausbruch darüber würde den Weg zu einem neuen Allzeithoch freimachen.",
+     "einordnung": "Das Doppelboden-Setup ist eines der klassischen Umkehrmuster aus der Schablonen-Schule. Spotify hat sich in den letzten Jahren von einem Growth-Darling zu einem profitablen Unternehmen entwickelt — f…",
+     "figures": "400, 550"
     }
    ]
   },
@@ -3484,21 +3954,6 @@
     }
    ]
   },
-  "NKE": {
-   "name": "Nike",
-   "auftritte": [
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1162s",
-     "channel": "Calling USA",
-     "kategorie": "fundamental",
-     "note": "Nike hat seit Jahresbeginn 10% verloren. Der neue CEO senkte die Prognosen für das laufende Quartal. Analysten erwarten aber einen Turnaround im Basketballbereich und durch die Skims-Kollektion mit K…",
-     "einordnung": "Ein klassischer Turnaround-Case: Neuer CEO, gesenkte Prognosen als Reset, und dann hofft man auf Erholung. Die Skims-Kollaboration ist interessant, aber Turnarounds in Konsumgütern dauern meist länge…",
-     "figures": "Jahresperformance -10%"
-    }
-   ]
-  },
   "PYPL": {
    "name": "PayPal",
    "auftritte": [
@@ -3508,8 +3963,8 @@
      "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "PayPal beantragt eine Banklizenz für die eigene Kreditvergabe.",
-     "einordnung": "Ein Banklizenzantrag ist strategisch richtig, um Margen zu verbreitern und vom reinen Transaktionsgeschäft wegzukommen. Die regulatorischen Hürden sind jedoch erheblich."
+     "note": "PayPal beantragt ein Banklizent für Direktkredite — eine strategische Erweiterung des Geschäftsmodells über reine Zahlungsabwicklung hinaus.",
+     "einordnung": "Ein Banklizent für Direktkredite ist strategisch logisch — PayPal sitzt auf einem enormen Datenpool über Kaufverhalten und Kreditwürdigkeit. Aber der Wettbewerb mit Apple Pay, Stripe und den traditio…"
     }
    ]
   },
@@ -3522,9 +3977,9 @@
      "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "KLA wurde von Jeffries auf ein Kursziel von 1500 USD hochgestuft. Die Aktie notiert bei knapp 1200 USD.",
-     "einordnung": "KLA ist ein Qualitäts-Wafer-Inspektions-Play mit starker Marktposition. Das Kursziel impliziert rund 25% Aufwärtspotenzial, was bei einem Halbleiter-Ausrüster nicht ungewöhnlich ist, aber von der Kap…",
-     "figures": "Kursziel Jeffries: 1500 USD; Aktie bei knapp 1200 USD"
+     "note": "Jeffries hebt KLA auf Buy mit einem Kursziel von 1500 USD. Zuvor lag das Ziel offenbar bei 1200 USD.",
+     "einordnung": "KLA ist der Qualitätskontroll-Monopolist in der Halbleiter-Lithografie — je komplexer die Chips werden, desto wichtiger wird KLA. Das Upgrade auf Buy mit Ziel 1500 USD ist eine zyklische Aktie in ein…",
+     "figures": "1500 USD (Jeffries-Ziel), 1200 USD (vorheriges Ziel)"
     }
    ]
   },
@@ -3537,9 +3992,9 @@
      "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Roku wurde von Morgan Stanley und Jeffries hochgestuft. Kursziel 135 USD, erwartet wird ein Wachstum von 15-20%.",
-     "einordnung": "Roku ist ein hochspekulatives Wachstumsplay im Streaming-Markt. Doppelte Hochstufungen sind ein positives Signal, aber Roku hat historisch mit Profitabilität gekämpft. Das Kursziel von 135 USD muss g…",
-     "figures": "Kursziel: 135 USD; Wachstum 15-20%"
+     "note": "Morgan Stanley und Jeffries haben Roku hochgestuft, das Kursziel liegt bei 135 USD.",
+     "einordnung": "Doppeltes Analysten-Upgrade bei Roku ist ein Sentiment-Signal, aber Roku bleibt ein Profitabilitäts-Problemkind im Streaming-Markt. Die Plattform ist stark, die Monetarisierung ist schwach. Bei Strea…",
+     "figures": "135 USD (Kursziel)"
     }
    ]
   },
@@ -3552,8 +4007,8 @@
      "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1104s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Ares Management wurde in den S&P 500 aufgenommen. Die Aufnahme ist ein Zeichen für die wachsende Bedeutung von Private-Equity und alternativen Vermögensverwaltern.",
-     "einordnung": "Die S&P-500-Aufnahme ist ein positives Signal für das Geschäftsmodell, aber der Kurs wird kurzfristig durch Indexfonds-Käufe gestützt – langfristig zählt die Fundamentalentwicklung."
+     "note": "Neuaufnahme in den S&P 500. Der Host erwähnt die Neuaufnahme im Rahmen der Indexänderungen.",
+     "einordnung": "S&P-500-Neuaufnahmen lösen typischerweise passiven Kaufdruck durch Indexfonds aus, der kurzfristig die Aktie stützt. Mittelfristig ist die Fundamentalentwicklung entscheidend — der Index-Effekt verpu…"
     }
    ]
   },
@@ -3566,9 +4021,9 @@
      "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1104s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "CRH wurde in den S&P 500 aufgenommen und stieg um 5%. Das Unternehmen ist ein globaler Baustoff-Konzern.",
-     "einordnung": "Die Aufnahme in den S&P 500 ist positiv für CRH, aber der Kurs wird durch Index-Käufe gestützt. Langfristig hängt die Performance von der Baukonjunktur ab.",
-     "figures": "Kursgewinn nach S&P-500-Aufnahme: +5%"
+     "note": "Neuaufnahme in den S&P 500, Aktie legte um 5 Prozent zu.",
+     "einordnung": "Der Baustoffriese profitiert vom Index-Effekt, der kurzfristig Kaufdruck erzeugt. CRH ist solide, aber zyklisch — die Neuaufnahme allein ist kein nachhaltiges Kaufargument.",
+     "figures": "+5%"
     }
    ]
   },
@@ -3581,9 +4036,9 @@
      "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1104s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Carvana wurde in den S&P 500 aufgenommen und stieg um 17%. Das Unternehmen ist ein Online-Autohändler.",
-     "einordnung": "Der 17%-Kursgewinn ist bemerkenswert und deutet auf starke Index-Käufe hin. Aber Carvana ist ein zyklisches Unternehmen – in einer Rezession könnte der Kurs schnell fallen.",
-     "figures": "Kursgewinn nach S&P-500-Aufnahme: +17%"
+     "note": "Neuaufnahme in den S&P 500, Aktie stieg um 17 Prozent.",
+     "einordnung": "Ein Plus von 17 Prozent an einem Tag bei einer Neuaufnahme ist extrem — das erinnert an Tesla 2020, als der S&P-Effekt die Volatilität entfesselte. Carvana bleibt hochspekulativ; die Neuaufnahme ände…",
+     "figures": "+17%"
     }
    ]
   },
@@ -3596,14 +4051,14 @@
      "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1104s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Comfort Systems wurde in den S&P 500 aufgenommen und stieg um 2–3%. Das Unternehmen ist ein Anbieter von Heiz-, Lüftungs- und Klimatechnik.",
-     "einordnung": "Der moderate Kursgewinn deutet auf geringere Index-Käufe hin. Comfort Systems ist ein stabiles Unternehmen, aber nicht so spekulativ wie Carvana.",
-     "figures": "Kursgewinn nach S&P-500-Aufnahme: +2–3%"
+     "note": "Neuaufnahme in den S&P 500, Marktkapitalisierung von 36 Milliarden USD.",
+     "einordnung": "36 Milliarden USD Marktkap für ein HVAC- und Dienstleistungsunternehmen ist beachtlich. Der Index-Effekt ist hier eher ein Nebeneffekt — die Fundamentaldaten müssen die Bewertung tragen.",
+     "figures": "36 Mrd. USD Marktkapitalisierung"
     }
    ]
   },
   "WBD": {
-   "name": "Warner Bros. Discovery – Bieterschlacht",
+   "name": "Warner Bros Discovery",
    "auftritte": [
     {
      "date": "2025-12-11",
@@ -3611,24 +4066,34 @@
      "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1104s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Netflix bietet für Warner Bros. Discovery mit Vertragsstrafen von 5,8 Mrd. USD bei Nichterfüllung oder behördlicher Ablehnung. Die hohen Strafen deuten auf Risiken und Unsicherheiten hin.",
-     "einordnung": "Die hohen Vertragsstrafen sind ein Zeichen für Risiken im Deal. Sie deuten darauf hin, dass Netflix sehr zuversichtlich ist, aber auch dass die Behörden-Genehmigung nicht garantiert ist.",
-     "figures": "Vertragsstrafen: 5,8 Mrd. USD"
+     "note": "Bieterschlacht um Warner Bros: Netflix vs. Paramount/Skydance. Hohe Vertragsstrafen von 5,8 Milliarden USD bei behördlicher Blockade bzw. 2,8 Milliarden USD bei Rücktritt eines Bieters. David Ellison…",
+     "einordnung": "Die Höhe der Vertragsstrafen signalisiert, dass beide Lager den Deal ernsthaft wollen und die Behörden ein echtes Risiko darstellen. 30 USD pro Aktie als Gebot ist ein klarer Ankerwert — die Aktie wi…",
+     "figures": "Vertragsstrafe 5,8 Mrd. USD (Behörden) / 2,8 Mrd. USD (Rücktritt), Gebot 30 USD/Aktie"
     }
    ]
   },
-  "HPE": {
-   "name": "Hewlett Packard Enterprise",
+  "BRK-B": {
+   "name": "Berkshire Hathaway",
    "auftritte": [
     {
-     "date": "2025-12-05",
-     "video_id": "BADYwmZH114",
-     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=838s",
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1620s",
      "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "HPE berichtet nach Börsenschluss. Das Management dämpfte Erwartungen: EPS 220-240 (Markt erwartete 242-243), Umsatzwachstum 5-10% (Markt erwartete 17%). Dividende +10%. Free-Cashflow-Ziel 3,5 Mrd. bi…",
-     "einordnung": "Die Guidance ist eine herbe Enttäuschung: Das Umsatzwachstum von 5-10% gegenüber erwarteten 17% zeigt, dass HPE den KI-Tailwind nicht wie erhofft einfängt. Die Dividendenanhebung ist ein Versuch, Anl…",
-     "figures": "EPS 220-240, Umsatzwachstum 5-10%, Dividende +10%, FCF-Ziel 3,5 Mrd. bis 2028"
+     "kategorie": "fundamental",
+     "note": "Warren Buffett geht in Rente, CFO Marc Hamburg geht 2027, Todd Combs wechselt zu JP Morgan. 382 Milliarden USD Cash, Nachfolge geregelt.",
+     "einordnung": "382 Milliarden USD Cash ist ein Statement für sich — Buffett hat nie so viel Pulver gehortet, was auf ein historisch hohes Marktrisiko hindeutet. Die geordnete Nachfolge ist beruhigend, doch die Frag…",
+     "figures": "382 Mrd. USD Cash"
+    },
+    {
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=2058s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Charttechnische Analyse: Widerstand bei 520 USD, Unterstützung bei 460 USD. Seitwärtsphase, abwarten auf Ausbruch.",
+     "einordnung": "Eine Seitwärtsphase zwischen 460 und 520 bei Berkshire ist typisch für das Titeljahr der Buffett-Ära — der Markt wartet auf Klarheit über die Nachfolge. Ein Ausbruch über 520 würde signalisieren, das…",
+     "figures": "520, 460, 500, 521"
     }
    ]
   },
@@ -3641,8 +4106,8 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Höhere Auslieferungen für 737 und 787 erwartet. Positiver Free Cashflow 2026 angestrebt. Aktie legte +10% zu.",
-     "einordnung": "Boeings operative Erholung kommt voran, höhere Auslieferungen sind der zentrale Treiber. Das Plus von 10% spiegelt wachsendes Vertrauen in den FCF-Turnaround 2026 wider.",
+     "note": "Höhere Auslieferungen von 737 und 787, positiver Free Cashflow 2026 erwartet. Aktie +10%.",
+     "einordnung": "Boeing zeigt erste Anzeichen einer Erholung — höhere Auslieferungen sind der direkteste Hebel für Free-Cashflow-Verbesserung. Die +10% sind gerechtfertigt, aber Boeing bleibt ein Turnaround mit erheb…",
      "figures": "Aktie +10%"
     }
    ]
@@ -3656,8 +4121,9 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Auf die Goldman Sachs Conviction List aufgenommen.",
-     "einordnung": "Die Aufnahme in die Goldman Sachs Conviction List ist ein positives institutionelles Signal, das auf hohe Überzeugung bezüglich des Aufwärtspotenzials hindeutet."
+     "note": "Goldman vergibt ein Conviction Buy-Rating für Wynn Resorts.",
+     "einordnung": "Ein Conviction Buy von Goldman ist ein starkes Signal, aber Wynn bleibt zyklisch und abhängig von Macau sowie dem US-Konsum. Die Bewertung muss man sich im Einzelfall ansehen.",
+     "figures": "Conviction Buy von Goldman"
     }
    ]
   },
@@ -3670,8 +4136,8 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Analysehaus Baird sieht Axon als günstig bewertet.",
-     "einordnung": "Bairds positive Einschätzung ist bemerkenswert, da Axon normalerweise mit einer Premium-Bewertung handelt. Die starke Position im Bereich Law-Enforcement-Technologie könnte den Wert rechtfertigen."
+     "note": "Analysehaus Baird empfiehlt Axon wegen hohen Wachstums.",
+     "einordnung": "Axon ist ein Qualitätswachstumswert mit monopolähnlicher Stellung im Body-Cam- und Taser-Markt. Die Bewertung ist traditionell hoch — Baird's Empfehlung passt zum Sektor-Sentiment."
     }
    ]
   },
@@ -3684,8 +4150,8 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Analysehaus Baird sieht Zoom als günstig bewertet.",
-     "einordnung": "Zooms Bewertungskompression seit den Pandemie-Hochs hat das Papier auf Niveaus gebracht, die Baird als attraktiv einstuft."
+     "note": "Baird empfiehlt Zoom aufgrund attraktiver Bewertung.",
+     "einordnung": "Zoom ist nach dem Pandemie-Hype stark korrigiert worden — eine attraktive Bewertung ist relativ zu sehen. Das KI-Integrationsthema könnte ein Katalysator sein."
     }
    ]
   },
@@ -3698,8 +4164,8 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Analysehaus Baird sieht Rubrik als günstig bewertet.",
-     "einordnung": "Als neuere Börsennotierung im Cybersecurity- und Datenschutz-Bereich könnte Rubrik auf aktuellen Niveaus Einstiegschancen bieten, so Baird."
+     "note": "Baird empfiehlt Rubrik aufgrund attraktiver Bewertung.",
+     "einordnung": "Rubrik als junger IPO-Kandidat im Cybersecurity/Backup-Bereich profitiert vom KI-getriebenen Datenschutzbedarf. Die Bewertung ist noch nicht etabliert — hier ist Vorsicht geboten."
     }
    ]
   },
@@ -3712,8 +4178,8 @@
      "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
      "channel": "Calling USA",
      "kategorie": "news",
-     "note": "Analysehaus Baird sieht Okta als günstig bewertet.",
-     "einordnung": "Oktas Bewertung hat sich seit den 2021er Hochs deutlich komprimiert. Bairds positive Sicht legt nahe, dass der Markt möglicherweise zu pessimistisch eingestellt ist."
+     "note": "Baird empfiehlt Okta aufgrund attraktiver Bewertung.",
+     "einordnung": "Okta hat sich vom Sicherheits-Skandal erholt, aber das Vertrauen ist fragil. Die Bewertung ist attraktiv, aber das Reputationsrisiko bleibt ein Überhang."
     }
    ]
   }

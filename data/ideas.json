@@ -1,57 +1,67 @@
 {
- "updated": "2026-06-26T09:14:56.502255+00:00",
+ "updated": "2026-06-26T09:59:37.852146+00:00",
  "date": "2026-06-26",
  "ideas": [
   {
-   "title": "VW im Umbruch – Restrukturierung birgt erhebliche Risiken",
-   "thesis": "VW plant einen massiven Stellenabbau und die Ausgliederung der Kernmarke, was zu starken Konflikten mit der IG Metall führen dürfte. Die Unsicherheit über die Werksstandorte und die Mitbestimmung belastet die Aktie zusätzlich.",
-   "values": [
-    "Volkswagen",
-    "Automobilsektor"
-   ],
-   "angle": "Beobachten",
-   "risk": "Der Konflikt mit der IG Metall könnte eskalieren oder die Pläne werden politisch abgemildert.",
-   "source": "News: VW plant bis zu 100.000 Stellen abzubauen und Kernmarke auszugliedern",
-   "source_url": "https://x.com/FirstSquawk/status/2070408336722547043"
-  },
-  {
-   "title": "Südkorea-Markt unter Druck durch politische und strukturelle Risiken",
-   "thesis": "Der südkoreanische Aktienmarkt erleidet erneut einen Handelsstopp, belastet durch politische Skandale und strukturelle Diskussionen wie den 24-Stunden-Handel. Die anhaltende Unsicherheit treibt Investoren in die Flucht.",
-   "values": [
-    "KOSPI",
-    "Samsung Electronics",
-    "SK Hynix"
-   ],
-   "angle": "Short",
-   "risk": "Politische Beruhigung oder staatliche Stützungsmaßnahmen führen zu einer schnellen Erholung.",
-   "source": "News: Suedkoreas Aktienmarkt stuerzt ab – zweiter Handelsstopp in dieser Woche",
-   "source_url": "https://x.com/WSJmarkets/status/2070391953275895930"
-  },
-  {
-   "title": "KI-Speicherchips im Aufwind – Micron profitiert von starkem Wachstum",
-   "thesis": "Die Nachfrage nach KI-Speicherchips bleibt robust, was zu deutlichen Kurszielanhebungen für Micron durch Analysten führt. Starke Quartalszahlen und ein Umsatzwachstum von 75 Prozent untermauern den Aufwärtstrend im Speichersektor.",
+   "title": "Speicherchip-Boom durch KI-Rechenzentren",
+   "thesis": "Micron Technology liefert fulminante Quartalszahlen mit 41 Mrd USD Umsatz und 28 Mrd USD Nettogewinn, die Margen übertreffen sogar Nvidia. HSBC hebt das Kursziel auf 1.700 USD. Der KI-Boom treibt die Nachfrage nach Speicherchips massiv an, was auch Apple zu Preiserhöhungen bei iPads und Macs zwingt.",
    "values": [
     "Micron Technology",
     "SanDisk",
-    "Infineon"
+    "Infineon",
+    "SOX Halbleiterindex"
    ],
    "angle": "Long",
-   "risk": "Konjunkturelle Abkühlung oder eine Überhitzung des Speichersektors führt zu Gewinnmitnahmen.",
-   "source": "News: HSBC hebt Micron-Kursziel auf $1.700 – KI-Speicherchips-Nachfrage staerkt sich",
-   "source_url": "https://x.com/FirstSquawk/status/2070409373067903040"
+   "risk": "Hohe Volatilität im Halbleiterindex und Überkaufungssignale nach starken Rallys könnten kurzfristige Korrekturen auslösen.",
+   "source": "Apple stürzt bis 6% – Preiserhöhungen und China-Schwäche – Micron springt 18%",
+   "source_url": ""
+  },
+  {
+   "title": "Apple unter Druck – China-Schwäche und Preiserhöhungen als Risiko",
+   "thesis": "Apple verliert bis zu 6% und rund 210 Mrd USD Marktkapitalisierung nach deutlichen Preiserhöhungen für iPads und Macs sowie einem iPhone-Verkaufsrückgang in China von -19% J/J laut UBS. Die 200-Tage-Linie rückt in Sichtweite, was charttechnisch weiteren Abwärtsdruck signalisiert.",
+   "values": [
+    "Apple"
+   ],
+   "angle": "Short",
+   "risk": "Ein unerwartet starkes iPhone-16-Upgrade oder KI-Integrationserfolge könnten die Aktie schnell drehen.",
+   "source": "Apple stürzt bis 6% – Preiserhöhungen und China-Schwäche – Micron springt 18%",
+   "source_url": ""
   },
   {
    "title": "Fallende Ölpreise stützen zyklische Luftfahrtwerte",
-   "thesis": "Da die Ölpreise auf ein Vorkriegsniveau fallen und die Versorgungslage sich stabilisiert, profitieren luftfahrtabhängige Werte von sinkenden Treibstoffkosten. Analysten sehen hier deutliches Kurspotenzial, wie bei MTU Aero Engines.",
+   "thesis": "Ölpreise fallen auf Vorkriegsniveau von rund 72 USD, da sich der Hormuz-Verkehr erholt und Banken wie JPMorgan ihre Brent-Prognosen drastisch senken. JP Morgan sieht bei MTU Aero Engines 40% Kurspotenzial innerhalb von 18 Monaten, getrieben von sinkenden Treibstoffkosten und einem starken US-Dollar.",
    "values": [
     "MTU Aero Engines",
     "Fraport",
     "TUI"
    ],
    "angle": "Long",
-   "risk": "Eine erneute Eskalation im Nahen Osten treibt die Ölpreise wieder an und belastet die Margen.",
-   "source": "News: Oel auf Vorkriegsniveau – Aramco nimmt Ras Tanura wieder in Betrieb",
-   "source_url": "https://x.com/FirstSquawk/status/2070412045607137680"
+   "risk": "Eine erneute Eskalation im Nahen Osten oder ein Wiederaufleben der Hormuz-Spannungen könnte Ölpreise schnell ansteigen lassen.",
+   "source": "Öl auf Vorkriegsniveau – Banken senken Prognosen drastisch",
+   "source_url": ""
+  },
+  {
+   "title": "Volkswagen-Restrukturierung als Wendepunkt",
+   "thesis": "VW plant bis zu 100.000 Stellenabbau und die Ausgliederung der Kernmarke in eine separate Einheit, was eine tiefgreifende Transformation einleitet. CEO Blume strebt eine schlankere Struktur an, allerdings warnt die IG Metall vor irresponsiblen Drohungen, was erhebliche Umsetzungskrise birgt.",
+   "values": [
+    "Volkswagen VZ",
+    "Volkswagen ST"
+   ],
+   "angle": "Beobachten",
+   "risk": "Widerstand von IG Metall und Betriebsräten könnte die Restrukturierung blockieren und die Aktie weiter belasten.",
+   "source": "News: Volkswagen plant bis zu 100.000 Stellenabbau und Ausgliederung der Kernmarke",
+   "source_url": "https://x.com/FirstSquawk/status/2070406526699999422"
+  },
+  {
+   "title": "Samsung als KI-Langfristwert mit massivem Rückkaufprogramm",
+   "thesis": "Samsung legt ein Aktienrückkaufprogramm von 90 Billionen Won (ca. 60 Mrd USD) auf, bei einem KGV von 5 und PEG von 0,07 – extrem günstig. Die Aktie korrigierte zuvor 14% im Zuge der Südkorea-Unruhe, erholt sich aber, und bereitet laut Reuters eine 648 Mrd USD KI-Wette vor.",
+   "values": [
+    "Samsung Electronics"
+   ],
+   "angle": "Long",
+   "risk": "Politische Unsicherheit in Südkorea durch Verurteilung der ehemaligen First Lady und Handelsstopp-Risiken könnten kurzfristig weiteren Druck erzeugen.",
+   "source": "Südkoreanische Aktien stürzen – zweiter Handelsstopp in dieser Woche",
+   "source_url": ""
   }
  ]
 }
