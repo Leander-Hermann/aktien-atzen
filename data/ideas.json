@@ -1,67 +1,70 @@
 {
- "updated": "2026-06-26T09:59:37.852146+00:00",
+ "updated": "2026-06-26T18:40:58.289558+00:00",
  "date": "2026-06-26",
  "ideas": [
   {
-   "title": "Speicherchip-Boom durch KI-Rechenzentren",
-   "thesis": "Micron Technology liefert fulminante Quartalszahlen mit 41 Mrd USD Umsatz und 28 Mrd USD Nettogewinn, die Margen übertreffen sogar Nvidia. HSBC hebt das Kursziel auf 1.700 USD. Der KI-Boom treibt die Nachfrage nach Speicherchips massiv an, was auch Apple zu Preiserhöhungen bei iPads und Macs zwingt.",
+   "title": "KI-Speicherboom durch Micron befeuert",
+   "thesis": "Microns überragende Quartalszahlen und massive Umsatzprognose validieren den anhaltenden Boom im KI-Speicherchip-Sektor. Auch SK Hynix und Sandisk profitieren von diesem Schwung und einem strukturellen Unterangebot bis 2027.",
    "values": [
     "Micron Technology",
-    "SanDisk",
-    "Infineon",
-    "SOX Halbleiterindex"
+    "SK Hynix",
+    "Sandisk",
+    "Infineon"
    ],
    "angle": "Long",
-   "risk": "Hohe Volatilität im Halbleiterindex und Überkaufungssignale nach starken Rallys könnten kurzfristige Korrekturen auslösen.",
-   "source": "Apple stürzt bis 6% – Preiserhöhungen und China-Schwäche – Micron springt 18%",
+   "risk": "Hohe Volatilität im Halbleitersektor und kurzfristige Gewinnmitnahmen nach starken Rallyes.",
+   "source": "Das Video dreht sich um den KI-Speicherboom, der durch Microns überragende Quartalszahlen weiter befeuert wird",
    "source_url": ""
   },
   {
-   "title": "Apple unter Druck – China-Schwäche und Preiserhöhungen als Risiko",
-   "thesis": "Apple verliert bis zu 6% und rund 210 Mrd USD Marktkapitalisierung nach deutlichen Preiserhöhungen für iPads und Macs sowie einem iPhone-Verkaufsrückgang in China von -19% J/J laut UBS. Die 200-Tage-Linie rückt in Sichtweite, was charttechnisch weiteren Abwärtsdruck signalisiert.",
+   "title": "Europäische Bankenrallye mit BNP Paribas",
+   "thesis": "BNP Paribas bricht auf ein neues Jahreshoch und profitiert von vier fundamentalen Treibern: Staatsverschuldung, Investitionsboom, Zinsumfeld und Unterbewertung. Die europäischen Banken zeigen trotz Marktvolatilität relative Stärke.",
    "values": [
+    "BNP Paribas",
+    "Europäische Banken"
+   ],
+   "angle": "Long",
+   "risk": "Ein überraschend hawkisher Zinspfad der Fed könnte die Konjunktur dämpfen und die Bankenrenditen belasten.",
+   "source": "BNP Paribas als Protagonist der europäischen Bankenrallye",
+   "source_url": ""
+  },
+  {
+   "title": "Trump-Zolldrohung gegen EU-Digitalsteuer belastet europäische Exporteure",
+   "thesis": "Trumps Drohung mit 100% Zöllen auf Länder, die eine Digital Services Tax erheben, eskaliert die Handelskonflikte mit der EU. Europäische Indizes und exportorientierte Unternehmen könnten unter den Sanktionsdrohungen leiden.",
+   "values": [
+    "DAX",
+    "Europäische Tech-Werte",
     "Apple"
    ],
    "angle": "Short",
-   "risk": "Ein unerwartet starkes iPhone-16-Upgrade oder KI-Integrationserfolge könnten die Aktie schnell drehen.",
-   "source": "Apple stürzt bis 6% – Preiserhöhungen und China-Schwäche – Micron springt 18%",
-   "source_url": ""
+   "risk": "Die Zolldrohung könnte sich als reines Verhandlungsinstrument erweisen und nicht umgesetzt werden.",
+   "source": "News: Trump droht EU mit 100% Zoll wegen geplanter Digital Services Tax",
+   "source_url": "https://x.com/FirstSquawk/status/2070542974686298581"
   },
   {
-   "title": "Fallende Ölpreise stützen zyklische Luftfahrtwerte",
-   "thesis": "Ölpreise fallen auf Vorkriegsniveau von rund 72 USD, da sich der Hormuz-Verkehr erholt und Banken wie JPMorgan ihre Brent-Prognosen drastisch senken. JP Morgan sieht bei MTU Aero Engines 40% Kurspotenzial innerhalb von 18 Monaten, getrieben von sinkenden Treibstoffkosten und einem starken US-Dollar.",
+   "title": "Gold als Sicherheitshafen bei Zins- und Geopolitik-Risiken",
+   "thesis": "Angesichts steigender geopolitischer Spannungen im Hormuz und einer hawkishen Fed-Rhetorik (Kashkari plant Zinserhöhung) steigt die Volatilität (VIX über 20). Gold profitiert als Sicherheitshafen von dieser Unsicherheit und notiert auf hohem Niveau.",
    "values": [
-    "MTU Aero Engines",
-    "Fraport",
-    "TUI"
+    "Gold",
+    "Gold-ETFs",
+    "Goldminen-Aktien"
    ],
    "angle": "Long",
-   "risk": "Eine erneute Eskalation im Nahen Osten oder ein Wiederaufleben der Hormuz-Spannungen könnte Ölpreise schnell ansteigen lassen.",
-   "source": "Öl auf Vorkriegsniveau – Banken senken Prognosen drastisch",
-   "source_url": ""
+   "risk": "Ein starker US-Dollar, wie von UBS prognostiziert, könnte den Goldpreis in Fremdwährung verteuern und bremsen.",
+   "source": "News: Maerkte unter Druck: Nasdaq -1,1%, DAX -1,5%, Bitcoin-ETF-Abfluesse $1,34 Mrd.",
+   "source_url": "https://x.com/DeItaone/status/2070483266730148092"
   },
   {
-   "title": "Volkswagen-Restrukturierung als Wendepunkt",
-   "thesis": "VW plant bis zu 100.000 Stellenabbau und die Ausgliederung der Kernmarke in eine separate Einheit, was eine tiefgreifende Transformation einleitet. CEO Blume strebt eine schlankere Struktur an, allerdings warnt die IG Metall vor irresponsiblen Drohungen, was erhebliche Umsetzungskrise birgt.",
+   "title": "VW-Restrukturierung als Wendepunkt oder Risiko",
+   "thesis": "Volkswagen zieht einen radikalen Umbau mit bis zu 100.000 Stellenabbau und Werkschliessungen sowie der Ausgliederung der Kernmarke in Betracht. Dies signalisiert tiefgreifende strukturelle Probleme, könnte aber langfristig Effizienz und Wert freisetzen.",
    "values": [
-    "Volkswagen VZ",
-    "Volkswagen ST"
+    "Volkswagen (VW)",
+    "Automobilsektor"
    ],
    "angle": "Beobachten",
-   "risk": "Widerstand von IG Metall und Betriebsräten könnte die Restrukturierung blockieren und die Aktie weiter belasten.",
-   "source": "News: Volkswagen plant bis zu 100.000 Stellenabbau und Ausgliederung der Kernmarke",
-   "source_url": "https://x.com/FirstSquawk/status/2070406526699999422"
-  },
-  {
-   "title": "Samsung als KI-Langfristwert mit massivem Rückkaufprogramm",
-   "thesis": "Samsung legt ein Aktienrückkaufprogramm von 90 Billionen Won (ca. 60 Mrd USD) auf, bei einem KGV von 5 und PEG von 0,07 – extrem günstig. Die Aktie korrigierte zuvor 14% im Zuge der Südkorea-Unruhe, erholt sich aber, und bereitet laut Reuters eine 648 Mrd USD KI-Wette vor.",
-   "values": [
-    "Samsung Electronics"
-   ],
-   "angle": "Long",
-   "risk": "Politische Unsicherheit in Südkorea durch Verurteilung der ehemaligen First Lady und Handelsstopp-Risiken könnten kurzfristig weiteren Druck erzeugen.",
-   "source": "Südkoreanische Aktien stürzen – zweiter Handelsstopp in dieser Woche",
-   "source_url": ""
+   "risk": "Widerstand der IG Metall und politische Interventionen könnten die Restrukturierung verzögern oder blockieren.",
+   "source": "News: VW plant bis zu 100.000 Stellenabbau und vier Werkschliessungen",
+   "source_url": "https://x.com/ReutersWorld/status/2070472235924554198"
   }
  ]
 }
