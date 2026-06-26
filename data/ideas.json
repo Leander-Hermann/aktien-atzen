@@ -1,71 +1,59 @@
 {
- "updated": "2026-06-26T06:33:55.756054+00:00",
+ "updated": "2026-06-26T08:36:48.380416+00:00",
  "date": "2026-06-26",
  "ideas": [
   {
-   "title": "Luftfahrtzykliker profitieren von sinkenden Ölpreisen",
-   "thesis": "Der Ölpreis fällt unter 70 Dollar, da der Iran-Krieg nicht die befürchteten Folgen hatte und ein Überangebot besteht. Dies senkt die Treibstoffkosten für Fluglinien und Flughafenbetreiber, während JP Morgan für MTU Aero Engines 40 Prozent Kurspotenzial sieht.",
+   "title": "Deutsche Autobauer unter massivem Struktur- und Chartdruck",
+   "thesis": "VW plant eine tiefgreifende Umstrukturierung mit Ausgliederung der Kernmarke und bis zu 100.000 Stellenstreichungen, was die Branche zusätzlich verunsichert. Charttechnisch befinden sich BMW, Mercedes und VW in intakten Abwärtstrends, nachdem wichtige Unterstützungen bereits durchbrochen wurden.",
+   "values": [
+    "VW Vz.",
+    "BMW",
+    "Mercedes-Benz",
+    "Auto-ETFs"
+   ],
+   "angle": "Short | Beobachten",
+   "risk": "Positive Überraschungen bei der Restrukturierung oder politische Interventionen könnten den Abwärtstrend abrupt stoppen.",
+   "source": "News: VW: Bis zu 100.000 Stellenabbau, Kernmarke soll ausgegliedert werden",
+   "source_url": "https://x.com/FirstSquawk/status/2070406526699999422"
+  },
+  {
+   "title": "Software-Aktien als günstige Alternative zu hoch bewerteten Halbleitern",
+   "thesis": "Während KI-Halbleiter den S&P 500 dominieren und historisch teuer sind, stehen Software-Aktien trotz starkem Gewinnwachstum auf Bärenmarktniveaus. Die Bewertungs-Schere zwischen Software und Halbleitern hat ein historisches Tief erreicht, was eine Sektorrotation zugunsten von Software-Werten wahrscheinlich macht.",
+   "values": [
+    "Microsoft",
+    "Salesforce",
+    "ServiceNow",
+    "IGV ETF"
+   ],
+   "angle": "Long",
+   "risk": "Ein anhaltender Hype um KI-Chips könnte die Bewertungs-Schere noch weiter ausufern lassen, bevor sie sich schließt.",
+   "source": "onvista (Nico Santura: Software vs. Halbleiter: Extreme Bewertungs-Schere)",
+   "source_url": ""
+  },
+  {
+   "title": "Zyklische Luftfahrtwerte profitieren von fallenden Ölpreisen",
+   "thesis": "Der Ölpreis fällt auf rund 72 USD und liegt damit unter dem Niveau zum Kriegsausbruch, was die Treibstoffkosten für Airlines und Flughäfen deutlich senkt. Analysten sehen bei MTU Aero Engines bis zu 40 Prozent Kurspotenzial, gestützt durch sinkende Energiekosten und einen starken US-Dollar.",
    "values": [
     "MTU Aero Engines",
     "Fraport",
     "TUI"
    ],
    "angle": "Long",
-   "risk": "Eine unerwartete Eskalation im Nahen Osten könnte die Ölpreise wieder ansteigen lassen und die Kostenvorteile zunichtemachen.",
-   "source": "Der Aktionär - Märkte am Morgen",
+   "risk": "Eine unerwartete Eskalation im Nahen Osten könnte den Ölpreis wieder ansteigen lassen und die Kostenvorteile zunichtemachen.",
+   "source": "Der Aktionär - Märkte am Morgen / Rendezvous mit Harry",
    "source_url": ""
   },
   {
-   "title": "Asiatische Halbleiterwerte nach KI-Sell-off als Kaufgelegenheit",
-   "thesis": "Asiatische Börsen wie der Nikkei stürzten um bis zu 5 Prozent ab, da Investoren KI-Aktien abstoßen. Gleichzeitig initiiert Samsung einen 60 Milliarden Dollar Aktienrückkauf und plant 648 Milliarden Dollar KI-Investitionen, was Analysten zufolge scharfe Halbleiterrücksetzer historisch als Kaufgelegenheit erscheinen lässt.",
-   "values": [
-    "Samsung Electronics",
-    "SK Hynix",
-    "ASML"
-   ],
-   "angle": "Long",
-   "risk": "Die Sorgen bezüglich der KI-Nachfrage könnten sich als strukturelles Problem erweisen und nicht nur als temporäre Korrektur.",
-   "source": "onvista",
-   "source_url": ""
-  },
-  {
-   "title": "Rheinmetall im Abwärtsdruck nach Streich des Fregattenprojekts",
-   "thesis": "Die Aktie von Rheinmetall verliert 18 Prozent nach Meldungen über das mögliche Ende des F126-Fregattenprojekts. Charttechnisch wird der Boden erst bei 800 bis 900 Euro gesehen, weshalb ein Einstieg ins fallende Messer nicht empfohlen wird.",
+   "title": "Rheinmetall im Abverkauf nach F126-Streichung",
+   "thesis": "Die Aktie von Rheinmetall verliert 18 Prozent nach der Meldung über das mögliche Ende des F126-Fregattenprojekts. Zusätzlicher Druck entsteht durch den Börsengang von KNDS, und Analysten raten vom Auffangen des fallenden Messers ab, da der Boden erst bei 800-900 Euro erwartet wird.",
    "values": [
     "Rheinmetall",
-    "KNDS"
+    "Rüstungs-ETFs"
    ],
-   "angle": "Short",
-   "risk": "Neue staatliche Verteidigungsaufträge oder eine politische Wendung könnten die Aktie kurzfristig stabilisieren.",
-   "source": "onvista",
+   "angle": "Short | Beobachten",
+   "risk": "Das Unternehmen profitiert weiterhin vom massiven Verteidigungsbudget der NATO-Staaten, was mittelfristig für unerwartete Erholungen sorgen könnte.",
+   "source": "onvista (Rheinmetall-Crash nach F126-Streichung)",
    "source_url": ""
-  },
-  {
-   "title": "Software- und Tech-Werte außerhalb des KI-Hypes als Value-Beobachtung",
-   "thesis": "Während KI-Aktien den S&P 500 dominieren, stehen Softwareaktien trotz starken Gewinnwachstums unter Verkaufsdruck und sind historisch günstig bewertet. Auch Amazon fiel um 4,7 Prozent auf ein KGV von knapp über 20 und bietet eine mögliche Chance, falls Unterstützungen halten.",
-   "values": [
-    "Amazon",
-    "Microsoft",
-    "Salesforce",
-    "ServiceNow"
-   ],
-   "angle": "Beobachten",
-   "risk": "Die Marktrotation weg von Software könnte anhalten, wenn KI weiterhin alle Investitionsströme absorbiert.",
-   "source": "onvista",
-   "source_url": ""
-  },
-  {
-   "title": "Deutsche Automobilbranche im charttechnischen Bärenmarkt",
-   "thesis": "BMW hat nach einer Gewinnwarnung die wichtige Unterstützung bei 68 Euro nach unten durchbrochen und befindet sich im Bärenmarkt. Auch Mercedes-Benz zeigt im fallenden Kanal keine Kaufsignale, weshalb ein Abwarten angeraten ist.",
-   "values": [
-    "BMW",
-    "Mercedes-Benz",
-    "Volkswagen"
-   ],
-   "angle": "Short",
-   "risk": "Überraschend positive Konjunkturdaten oder Handelsabkommen könnten eine unerwartete Sektorerholung auslösen.",
-   "source": "Rendezvous mit Harry: MTU, BMW, Mercedes, VW, Exxon, Shell, Chevron, Petrobras – Rendezvous mit Harry vom 22.06.2026",
-   "source_url": "https://www.youtube.com/watch?v=9G1WNKY6uuY"
   }
  ]
 }
