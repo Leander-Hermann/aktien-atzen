@@ -8,9 +8,12 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://production.dataviz.cnn.io https://query1.finance.yahoo.com https://api.allorigins.win https://corsproxy.io; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://production.dataviz.cnn.io https://query1.finance.yahoo.com https://api.allorigins.win https://corsproxy.io https://aktienatzen.goatcounter.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
 <title>Aktien Atzen · Digest</title>
 <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+<!-- Reichweitenmessung: GoatCounter (cookielos, IP-anonymisiert, EU-Hosting; ADR-304). src explizit https:// (gehärtet ggü. protokoll-relativem Default-Snippet). -->
+<script data-goatcounter="https://aktienatzen.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
 <style>
   :root{--bg1:#fbfbfd;--bg2:#eef0f5;--card:#fff;--ink:#1d1d1f;--muted:#6e6e73;--line:rgba(0,0,0,.08);--chip:#f1f1f4;--accent:#0a84ff;--radius:22px;--bar:rgba(251,251,253,.72)}
   [data-theme="dark"]{--bg1:#0a0a0c;--bg2:#161619;--card:#1c1c1e;--ink:#f5f5f7;--muted:#9b9ba1;--line:rgba(255,255,255,.12);--chip:#2c2c2e;--bar:rgba(20,20,22,.72)}
@@ -756,10 +759,12 @@ const LEGAL={
    <p><b>YouTube-Vorschaubilder:</b> In den Video-Briefings werden Vorschaubilder von <code>i.ytimg.com</code> (Google/YouTube) angezeigt. Diese laden erst, wenn Sie eine Analyse-Kachel anklicken und die ausführliche Ansicht öffnen – nicht automatisch beim Seitenaufruf. Dabei wird Ihre IP-Adresse an YouTube übertragen.</p>
    <p><b>TradingView:</b> Zu einzelnen Börsenwerten bieten wir einen Verweis-Link auf den passenden TradingView-Chart (<code>tradingview.com</code>) an. Es werden keine TradingView-Skripte, -Widgets oder -Inhalte in diese Seite eingebettet oder automatisch geladen; erst wenn Sie den Link aktiv anklicken, öffnet sich TradingView in einem neuen Tab und Ihre IP-Adresse wird an TradingView übertragen.</p>
    <h4>5. Lokale Speicherung (localStorage)</h4>
-   <p>Ihre Watchlist und die Hell-/Dunkel-Einstellung werden ausschließlich lokal in Ihrem Browser gespeichert (<code>localStorage</code>). Diese Daten verbleiben auf Ihrem Gerät, werden nicht an einen Server übertragen und sind für uns nicht einsehbar. Es werden keine Tracking-Cookies und kein Web-Analyse-Werkzeug eingesetzt.</p>
-   <h4>6. Ihre Rechte</h4>
+   <p>Ihre Watchlist und die Hell-/Dunkel-Einstellung werden ausschließlich lokal in Ihrem Browser gespeichert (<code>localStorage</code>). Diese Daten verbleiben auf Ihrem Gerät, werden nicht an einen Server übertragen und sind für uns nicht einsehbar. Es werden keine Tracking-Cookies gesetzt; zur Reichweitenmessung kommt ein cookieloses, datenschutzfreundliches Verfahren zum Einsatz (siehe Abschnitt 6).</p>
+   <h4>6. Reichweitenmessung (GoatCounter)</h4>
+   <p>Zur Verbesserung des Angebots messen wir die Reichweite und die Nutzung einzelner Funktionen (z. B. welche Bereiche/Tabs aufgerufen werden, Mobil- vs. Desktop-Zugriff) mit dem Dienst <b>GoatCounter</b>. Die Verarbeitung erfolgt auf Servern innerhalb der EU (Deutschland/Finnland), eine Übermittlung in ein Drittland findet dabei nicht statt. GoatCounter arbeitet <b>cookielos</b>, setzt also keine Cookies und legt keine Kennungen auf Ihrem Gerät ab. Es werden <b>keine personenbezogenen Daten gespeichert</b>: Ihre IP-Adresse wird ausschließlich kurzzeitig und <b>anonymisiert</b> zur Aufrufzählung verwendet und nicht dauerhaft gespeichert; es findet <b>kein Profiling</b> und keine geräte- oder personenübergreifende Wiedererkennung statt. Erhoben werden nur aggregierte, nicht auf eine Person rückführbare Statistiken. Eine <b>„Do Not Track"</b>-Einstellung Ihres Browsers wird respektiert (in diesem Fall erfolgt keine Zählung). Da weder Cookies gesetzt noch personenbezogene Daten verarbeitet werden, ist hierfür keine Einwilligung erforderlich; Rechtsgrundlage ist das berechtigte Interesse an einer bedarfsgerechten Gestaltung des Angebots (Art. 6 Abs. 1 lit. f DSGVO).</p>
+   <h4>7. Ihre Rechte</h4>
    <p>Sie haben im Rahmen der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie ein Beschwerderecht bei einer Aufsichtsbehörde. Lokal gespeicherte Daten können Sie jederzeit über die Einstellungen Ihres Browsers löschen.</p>
-   <h4>7. Verantwortlicher</h4>
+   <h4>8. Verantwortlicher</h4>
    <p class="lph">Siehe Impressum (wird vor Kommerzialisierung mit Kontaktdaten ergänzt).</p>`},
  lizenz:{title:'Lizenz',html:`
    <p><b>© 2026 Aktien Atzen — Alle Rechte vorbehalten / All Rights Reserved.</b></p>
