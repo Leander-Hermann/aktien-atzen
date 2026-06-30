@@ -1,68 +1,71 @@
 {
- "updated": "2026-06-29T18:41:30.490432+00:00",
- "date": "2026-06-29",
+ "updated": "2026-06-30T06:36:07.496425+00:00",
+ "date": "2026-06-30",
  "ideas": [
   {
-   "title": "KI-Speicherboom durch Micron-Zahlen beflügelt",
-   "thesis": "Micron hat mit starken Quartalszahlen und einer massiven Umsatzprognose den Sektor beflügelt. SK Hynix und Sandisk profitieren im Sog davon, da ein strukturelles Unterangebot bis 2027 erwartet wird.",
+   "title": "S&P 500-Absicherung gegen Tech-Rotation und Korrekturrisiko",
+   "thesis": "BofA warnt vor einem Rücksetzer des S&P 500 auf bis zu 6.850 Punkte bis September, da die Rallye an Momentum verliert. Gleichzeitig haben die Magnificent Seven rund 2,3 Billionen Dollar in der aktuellen Tech-Rotation verloren, was eine Verschiebung hin zu breiteren Strategien signalisiert. Ein Hedge oder eine Short-Position auf den S&P 500 bzw. auf konzentrierte Tech-ETFs erscheint angesichts der Head-Fake-Gefahr bei neuen Hochs sinnvoll.",
    "values": [
-    "Micron Technology",
+    "S&P 500",
+    "Magnificent Seven",
+    "QQQ",
+    "Nvidia",
+    "AMD"
+   ],
+   "angle": "Short",
+   "risk": "Neue Höchststände könnten kurzfristig noch erreicht werden, bevor eine Korrektur einsetzt, was Stop-Loss-Strategien erfordert.",
+   "source": "News: BofA warnt vor S&P 500-Korrektur bis 6.850, empfiehlt Hedging",
+   "source_url": "https://x.com/DeItaone/status/2071689685026345093"
+  },
+  {
+   "title": "Samsung und koreanische Halbleiter als KI-Nutznießer mit Aufwärtspotenzial",
+   "thesis": "Südkorea plant ein 500-Milliarden-Dollar-Investitionsprogramm für KI und Halbleiter, während Samsung neue Fabriken baut und operative Gewinne stark steigen sollen. Bei einem KGV von rund 6 und einem Jahreshoch von +370% sieht der Host bullische Konsolidierung mit 50% Aufwärtspotenzial, auch wenn der WSJ vor einer Gefahrenzone warnt.",
+   "values": [
+    "Samsung Electronics",
+    "KOSPI",
     "SK Hynix",
     "Sandisk"
    ],
    "angle": "Long",
-   "risk": "Kurzfristige Überhitzung nach parabolischen Kursanstiegen wie bei SK Hynix.",
-   "source": "[BerneckerTV] Das Video dreht sich um den KI-Speicherboom, der durch Microns überragende Quartalszahlen weiter befeuert wird",
-   "source_url": ""
+   "risk": "Der WSJ warnt, dass Koreas Chip-Rallye den Aktienmarkt in eine Gefahrenzone treibt – eine Überhitzung und anschließende Korrektur ist möglich.",
+   "source": "News: Samsung +6 %, KOSPI +2,7 % – Korea-Chips-Rallye in Gefahrenzone",
+   "source_url": "https://x.com/FirstSquawk/status/2071818045262274976"
   },
   {
-   "title": "Öl- und Frachtraten-Spike durch Hormuz-Eskalation",
-   "thesis": "Irans Forderung nach neu definierten Transitrouten und der Rückgang der Schiffspassagen auf den niedrigsten Wert seit dem Vorabkommen lassen Ölpreise steigen. Maersk hat bereits seine FY-Prognose erhöht, was auf anhaltend starke Frachtraten hindeutet.",
+   "title": "Ferrari-Luxussegment als charttechnischer Ausbruchskandidat",
+   "thesis": "Während Massenhersteller wie Volkswagen und BYD unter gebrochenen Unterstützungen leiden, zeigt Ferrari eine mittelfristige Bodenbildung (Rounding Bottom) und testet den Widerstand bei 323-325 Euro. Ein Ausbruch darüber auf Wochenschlussbasis wäre ein Kaufsignal mit Potenzial Richtung Allzeithoch bei 490 Euro.",
    "values": [
-    "Öl-ETFs",
-    "Maersk",
-    "Tanker-Sektor"
+    "Ferrari"
    ],
    "angle": "Long",
-   "risk": "Eine schnelle Einigung in den Doha-Gesprächen diese Woche könnte die geopolitische Prämie schnell abbauen.",
-   "source": "News: Iran verlangt Neudefinition der Hormuz-Transitrouten, Doha-Gespräche diese Woche",
-   "source_url": "https://x.com/DeItaone/status/2071598230626767060"
+   "risk": "Sollte der Widerstand bei 323-325 Euro nicht überwunden werden, droht ein Rücksetzer zum Support bei 270 Euro.",
+   "source": "Rendezvous mit Harry: VW, BYD, Visa, Ferrari, Toyota, Bitcoin – Rendezvous mit Harry vom 29.06.2026",
+   "source_url": "https://www.youtube.com/watch?v=zXPxhjz_nX0"
   },
   {
-   "title": "Rotation weg von US-Tech bei drohender härterer Fed",
-   "thesis": "Citadel warnt vor unterschätzter Inflationsbekämpfung durch Fed-Chef Warsh, was Risk Assets belasten könnte. Gleichzeitig verzeichnen Tech-Fonds Rekordabflüsse von 9,3 Milliarden Dollar, was auf eine Verlagerung weg von konzentrierten US-Tech-Wetten hindeutet.",
+   "title": "Yen-Schwäche und steigende JGB-Renditen als Japan-Risiko",
+   "thesis": "Der Yen fiel auf ein 40-Jahres-Tief von 162 gegen den US-Dollar, während JGB-Renditen quer über die Kurve deutlich steigen. Eine mögliche FX-Intervention durch japanische Behörden sowie politischer Widerstand gegen BOJ-Zinserhöhungen schaffen ein hohes Unsicherheitsniveau für japanische Aktien und Währungspositionen.",
    "values": [
-    "US-Tech-ETFs (Nasdaq 100)",
-    "Nvidia",
-    "Strategy (MicroStrategy)"
+    "JPY/USD",
+    "JGB-Futures",
+    "Toyota",
+    "Nikkei 225"
    ],
-   "angle": "Short",
-   "risk": "Die breite US-Aktienpositionierung ist bereits leicht unter neutral gerutscht, was das weitere Abfluss-Potenzial begrenzen könnte.",
-   "source": "News: Citadel warnt vor härterer Fed, Warsh tritt am Mittwoch in Sintra auf",
-   "source_url": "https://x.com/FirstSquawk/status/2071629463306285361"
+   "angle": "Beobachten",
+   "risk": "Eine plötzliche FX-Intervention könnte den Yen kurzfristig stark aufwerten lassen und bestehende Short-Positionen im Yen gefährden.",
+   "source": "News: Yen auf 40-Jahres-Tief, JGB-Renditen steigen quer über die Kurve",
+   "source_url": "https://x.com/FirstSquawk/status/2071801596800078165"
   },
   {
-   "title": "DAX als unterbewertete Value-Alternative",
-   "thesis": "Der DAX liegt mit einem Marktwert von nur 50% des BIP extrem unterbewertet und hinkt anderen Indizes hinterher. Ein goldenes Kreuz stützt die übergeordnete Struktur, auch wenn die politische Hängepartie in Deutschland den Sommer schwierig gestaltet.",
+   "title": "BB Biotech als Ausbruchskandidat im Biotech-Sektor",
+   "thesis": "Der Biotech-Sektor bricht dynamisch aus, und BB Biotech zeigt eine Bullflag-Auflösung über 51,50 Euro mit charttechnischen Zielen bei 71 Euro und 85 Euro. Harry Weygand hat bereits eine zweifach gehebelte Position für sein Echtgelddepot eröffnet, was das Vertrauen in die Fortsetzung der Aufwärtsbewegung unterstreicht.",
    "values": [
-    "DAX-ETF",
-    "BNP Paribas"
-   ],
-   "angle": "Long",
-   "risk": "Fehlende glaubwürdige Signale von Fakten und Unternehmern in Deutschland könnten den Sommer zu einer schwierigen Seitwärtsphase machen.",
-   "source": "[BerneckerTV] Hans A. Bernecker nutzt den Tod von Alan Greenspan und den Wechsel an der Fed-Spitze zu Kevin Warsh als Aufhänger für eine grundsätzliche Reflexion über Produktivität",
-   "source_url": ""
-  },
-  {
-   "title": "Übertriebene Reaktion bei Rheinmetall nach Auftragsverlust",
-   "thesis": "Rheinmetall verlor den F126-Auftrag, was zu einem starken Kursrückgang unter die 1.000-Euro-Marke führte. Die Reaktion wird als übertrieben eingeschätzt, zumal der CEO durch Aktienkäufe Vertrauen signalisiert und mittelfristig eine Kurserholung erwartet wird.",
-   "values": [
-    "Rheinmetall"
+    "BB Biotech"
    ],
    "angle": "Long",
-   "risk": "Der EBIT-Verlust von 250 Mio. Euro und der Umsatzentgang von 2 Mrd. Euro könnten die Gewinnprognosen nachhaltig drücken.",
-   "source": "[Der Aktionär - Märkte am Morgen] Der DAX schloss eine schwache Woche bei 24.671 Punkten ab",
-   "source_url": ""
+   "risk": "Ein Bruch unter die Barriere bei 51,50 Euro würde das bullische Setup invalidieren und zu Verlusten führen, insbesondere bei gehebelten Produkten.",
+   "source": "Rendezvous mit Harry: VW, BYD, Visa, Ferrari, Toyota, Bitcoin – Rendezvous mit Harry vom 29.06.2026",
+   "source_url": "https://www.youtube.com/watch?v=zXPxhjz_nX0"
   }
  ]
 }
