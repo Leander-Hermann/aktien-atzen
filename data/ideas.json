@@ -1,70 +1,73 @@
 {
- "updated": "2026-07-01T06:35:29.281999+00:00",
+ "updated": "2026-07-01T18:35:55.616781+00:00",
  "date": "2026-07-01",
  "ideas": [
   {
-   "title": "Südkoreas KI-Chip-Exportboom als Treiber für Halbleiterwerte",
-   "thesis": "Südkoreas Exporte verzeichneten im Juni das stärkste Wachstum seit 1978, maßgeblich angetrieben durch robuste KI-Chip-Nachfrage. SK Hynix plant zudem ein US-Listing mit Kapitalerhöhung von 29,4 Mrd. USD und massiven Investitionen in Korea, was die strategische Positionierung im KI-Halbleitermarkt unterstreicht.",
+   "title": "Meta als KI-Nutznießer durch neues Cloud-Geschäft",
+   "thesis": "Meta plant den Verkauf überschüssiger KI-Rechenkapazität als Cloud-Service und sprang daraufhin bis zu 10 % – der größte Tagesgewinn seit April. Dies verdeutlicht die wachsende Divergenz innerhalb des Tech-Sektors zugunsten von KI-Nutzern gegenüber reinen Infrastruktur-Anbietern, deren Aktien unter Druck gerieten.",
    "values": [
-    "SK Hynix",
-    "Samsung Electronics",
-    "iShares MSCI South Korea ETF"
+    "Meta Platforms",
+    "Philadelphia Semiconductor Index",
+    "Micron",
+    "ARM",
+    "AMD"
    ],
    "angle": "Long",
-   "risk": "Quartalsend-Rebalancing könnte kurzfristig zu Seitwärtsbewegung führen; KI-Euphorie bröckelt laut Egmond Haidt sichtbar.",
-   "source": "News: Südkoreas Exporte verzeichnen stärksten Zuwachs seit 1978 – KI-Chips treiben",
-   "source_url": "https://x.com/ReutersWorld/status/2072160942327038074"
+   "risk": "Das Cloud-Geschäft ist noch im Aufbau und könnte sich als margenschwächend erweisen, falls Überkapazitäten am Markt drücken.",
+   "source": "News: Chip-Aktien rutsch ab – Meta springt 10 % auf Cloud-Pläne",
+   "source_url": "https://x.com/DeItaone/status/2072297848507392347"
   },
   {
-   "title": "EU-Stahlzölle als Katalysator für europäische Stahlproduzenten",
-   "thesis": "Die EU plant, zollfreie Stahlimporte zu begrenzen und Zölle zu erhöhen, um die europäische Stahlindustrie vor Billigimporten zu schützen. Dieser protektionistische Schritt könnte heimischen Produzenten einen Wettbewerbsvorteil verschaffen und die Margen stabilisieren.",
+   "title": "Volkswagen-Umbruch: 100.000 Stellenabbau und Asset-Verkäufe signalisieren tiefe Krise",
+   "thesis": "Volkswagen prüft die Streichung von 100.000 Stellen und den Verkauf von Sport-Beteiligungen wie dem FC-Bayern-Anteil. Die charttechnische Situation ist mit gebrochener Unterstützung bei 87 Euro desaströs, und Trumps separate Handelsabkommen mit Mexiko drohen zusätzliche Belastung durch strengere Ursprungsregeln für Autos zu bringen.",
    "values": [
-    "ArcelorMittal",
-    "Thyssenkrupp",
-    "Voestalpine",
-    "Stahlsektor-ETFs"
+    "Volkswagen Vorzugsaktien",
+    "Mercedes-Benz",
+    "BMW",
+    "Deutsche Automobilwerte"
+   ],
+   "angle": "Short",
+   "risk": "Radikale Restrukturierung könnte kurzfristig als Wendepunkt interpretiert werden und Gegenreaktionen auslösen.",
+   "source": "News: Volkswagen plant 100.000-Stellen-Abbau und verkauft Sport-Beteiligungen",
+   "source_url": "https://x.com/FirstSquawk/status/2072377580184117753"
+  },
+  {
+   "title": "Gold profitiert von hartnäckigem Inflationsnarrativ der Fed",
+   "thesis": "Fed-Chef Warsh betonte in Sintra, die Inflation sei noch zu hoch, und lehnte es ab, eine Zinserhöhung auszuschließen. Gold sprang daraufhin 2 % auf 4.086 $ pro Unze. Solange die Fed einen hawkish Kurs vertritt und Zinsen hoch bleiben, bleibt Gold als Inflationsschutz attraktiv.",
+   "values": [
+    "Gold (Spot)",
+    "Silber",
+    "Gold-ETFs",
+    "Bergbauaktien"
    ],
    "angle": "Long",
-   "risk": "Schwache Baukonjunktur in Deutschland und höhere Energiekosten durch den Irankonflikt könnten die positive Wirkung der Zölle überlagern.",
-   "source": "News: EU will zollfreien Stahlimport begrenzen und Zölle erhöhen",
-   "source_url": "https://x.com/FirstSquawk/status/2072192995894726904"
+   "risk": "Ein überraschend schneller Rückgang der Inflation könnte die Fed zu einer dovisheren Haltung veranlassen und den Goldrückwind schwächen.",
+   "source": "News: Gold springt 2 % auf Warsh-Kommentare – Yen auf 40-Jahres-Tief",
+   "source_url": "https://x.com/DeItaone/status/2072315435538600324"
   },
   {
-   "title": "Westliche Solarwerte profitieren von US-Sanktionen gegen chinesische Konkurrenz",
-   "thesis": "Die Ankündigung von US-Beschränkungen gegen chinesische Solarkonzerne hat SMA Solar um 11 Prozent steigen lassen. Westliche Solaraktien profitieren strukturell von dieser Entwicklung, da Wettbewerber aus China Marktanteile verlieren könnten.",
+   "title": "SMA Solar als Profiteur von US-Sanktionen gegen chinesische Solarkonzerne",
+   "thesis": "Ein mögliches US-Importverbot für chinesische Wechselrichter könnte SMA als westlichen Anbieter begünstigen – die Aktie stieg bereits 11 %. Das KGV ist von 120-140 auf 28 gefallen bei erwartetem Gewinnwachstum von 70 % und 18 %, was eine attraktive Bewertung bei gleichzeitiger struktureller Bevorzugung darstellt.",
    "values": [
     "SMA Solar",
-    "First Solar",
-    "Enphase Energy"
+    "westliche Solaraktien"
    ],
    "angle": "Long",
-   "risk": "Nach dem starken Ein-Tages-Anstieg von 11 Prozent könnten kurzfristige Gewinnmitnahmen erfolgen; kleine Rücksetzer vor Einstieg abwarten.",
-   "source": "Der Aktionär - Märkte am Morgen",
-   "source_url": ""
+   "risk": "Die Aktie hat bereits stark angezogen; bei einem Unterlaufen der Unterstützung bei 59 Euro könnte das bullische Bild kippen.",
+   "source": "Der Aktionär - Märkte am Morgen: Märkte am Morgen: Micron Technology, Applied Materials, Shell, Nike, Siemens, SMA Solar",
+   "source_url": "https://www.youtube.com/watch?v=mNobFjJKrNE"
   },
   {
-   "title": "Yen auf 40-Jahres-Tief – Intervention-Risiko als Short-Signal",
-   "thesis": "Der Yen fiel auf 162,34 gegenüber dem Dollar, während japanische Anleiherenditen steigen und das Verbrauchervertrauen schwach bleibt. Die Zinsdifferenz zwischen USA und Japan treibt den Trend, doch eine FX-Intervention durch Japan könnte jederzeit erfolgen und den Kurs abrupt drehen.",
+   "title": "Rheinmetall: Starkes Insidersignal nach Kursrutsch",
+   "thesis": "CEO Armin Papperger kaufte nach dem Kursrutsch 3.200 Aktien zu 954 Euro für rund 3 Mio. Euro – ein deutliches Vertrauenssignal. Bei einem KGV von 24 und einem PEG unter 0,6 bei erwartetem Gewinnwachstum von 130 %, 50 % und 40 % ist die Aktie trotz jüngster Enttäuschung günstig bewertet.",
    "values": [
-    "USD/JPY",
-    "Japanische Exportwerte (Toyota, Honda)",
-    "Short Yen via ETF/Forex"
+    "Rheinmetall",
+    "Rüstungssektor"
    ],
-   "angle": "Beobachten",
-   "risk": "Eine plötzliche FX-Intervention durch Japan könnte den Yen rasch aufwerten und Short-Positionen erheblich belasten.",
-   "source": "News: Yen stürzt auf 40-Jahres-Tief – Markt wartet auf Intervention",
-   "source_url": "https://x.com/FirstSquawk/status/2072171274571489740"
-  },
-  {
-   "title": "Bayer nach Supreme-Court-Sieg – Sammelvergleich als nächste Wegmarke",
-   "thesis": "Bayer erzielte einen wichtigen juristischen Sieg vor dem US Supreme Court, was die Aktie um 20 Prozent nach oben trieb. Der Markt wartet nun auf die Ergebnisse eines 7,25-Milliarden-Dollar-Sammelvergleichs, der weitere Katalysatoren liefern könnte.",
-   "values": [
-    "Bayer AG"
-   ],
-   "angle": "Beobachten",
-   "risk": "Ein ungünstiger Ausgang des Sammelvergleichs oder weitere Klagen könnten die positive Stimmung schnell kippen.",
-   "source": "Fundamentalanalyse mit Egmond",
-   "source_url": ""
+   "angle": "Long",
+   "risk": "Ein ausgefallener Großauftrag belastete bereits die Aktie; weitere Auftragsverzögerungen könnten den Abwärtstrend fortsetzen.",
+   "source": "onvista: Rheinmetall-Kauf, Bloom-KI-Strom, Nike-Zahlencheck",
+   "source_url": "https://www.youtube.com/watch?v=kbhs3X-LW2E"
   }
  ]
 }
