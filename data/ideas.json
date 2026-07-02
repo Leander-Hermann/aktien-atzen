@@ -1,67 +1,75 @@
 {
- "updated": "2026-07-02T06:34:50.248757+00:00",
+ "updated": "2026-07-02T18:35:48.366861+00:00",
  "date": "2026-07-02",
  "ideas": [
   {
-   "title": "Yen-Aufwertung durch BOJ-Zinswende und Überraschungs-Interventionen",
-   "thesis": "BOJ-Vorstandsmitglied Nagahama plädiert für graduelle Zinserhöhungen, während Japan zu unangekündigten Interventionen übergeht, um eine übermäßige Yen-Abwertung zu stoppen. Dies erhöht das Potenzial für eine kurzfristige Yen-Stärkung.",
+   "title": "DAX profitiert von schwachem US-Arbeitsmarkt – Rotation in europäische Werte",
+   "thesis": "Der NFP-Schock mit nur 57.000 neuen Jobs im Juni verschiebt die Fed-Zinswetten von Oktober auf Dezember. Europäische Märkte reagierten unmittelbar positiv mit DAX +2,02 %, FTSE +1,77 % und CAC 40 +1,66 %. Gleichzeitig bestätigt Lagarde die restriktive EZB-Ausrichtung, was den DAX nahe dem Allzeithoch bei rund 25.280 Punkten stützt. Die Divergenz zwischen korrigierenden US-Tech-Werten und dem breiten europäischen Markt setzt sich fort.",
    "values": [
-    "JPY",
-    "Japan-ETFs",
-    "USD/JPY"
+    "DAX",
+    "DAX-ETFs",
+    "Deutsche Bank",
+    "Siemens",
+    "SAP"
+   ],
+   "angle": "Long",
+   "risk": "Ein überraschend hawkischer Fed-Kurs oder eine Verschärfung des Iran-Konflikts könnte die Stimmung rasch kippen lassen.",
+   "source": "News: NFP-Schock: Nur +57.000 Jobs im Juni – Zinswetten zurückgeschraubt",
+   "source_url": "https://x.com/DeItaone/status/2072659283401908462"
+  },
+  {
+   "title": "Tesla: Antizyklische Chance nach Lieferungs-Beat trotz Tech-Korrektur",
+   "thesis": "Tesla lieferte im Q2 mit 480.126 Fahrzeugen deutlich mehr als die erwarteten 406.024 und verzeichnete in China das achte Wachstumsmonat in Folge (+24,4 % y/y). Trotz dieser massiven Outperformance fiel die Aktie um bis zu 5,6 % unter dem breiten Tech-Korrekturdruck. Truist erhöhte das Kursziel auf 430 $. Die Diskrepanz zwischen starken Fundamentaldaten und kursbelastendem Marktrumfeld bietet einen antizyklischen Einstiegspunkt.",
+   "values": [
+    "Tesla"
+   ],
+   "angle": "Long",
+   "risk": "Die KI- und Tech-Korrektur könnte sich weiter vertiefen und den Druck auf Tesla unabhängig von den operativen Zahlen aufrechterhalten.",
+   "source": "News: Tesla Q2-Lieferungen übertreffen Erwartungen massiv – Aktie fällt trotzdem",
+   "source_url": "https://x.com/DeItaone/status/2072654008632709543"
+  },
+  {
+   "title": "KI-Infrastruktur unter Verkaufsdruck – Rotation weg von Hype-Aktien",
+   "thesis": "Der globale KI-Verkaufswelle hat über 730 Mrd $ an asiatischem Marktwert vernichtet, der Nasdaq 100 fiel um 2 %. Gleichzeitig entwickelt Anthropic einen eigenen KI-Chip mit Samsung, um die Nvidia-Abhängigkeit zu reduzieren. Martin Weiß ordnet die Bewegung als technische Rotation ein: Geld fließt aus überhitzten Hype-Aktien in korrigierte Qualitäts titel. SK Hynix und SMCI zeigen hohe Volatilität mit intaktem Abwärtsmomentum.",
+   "values": [
+    "Nvidia",
+    "SMCI",
+    "SK Hynix",
+    "ASML",
+    "Micron"
    ],
    "angle": "Beobachten",
-   "risk": "Der anstehende US-Arbeitsmarktbericht am Freitag könnte den Dollar stärken und die Yen-Erholung verzögern.",
-   "source": "News: BOJ-Nagahama plädiert für Zinserhöhungen – Japan wechselt zu Überraschungs-Intervention",
-   "source_url": "https://x.com/FirstSquawk/status/2072534841242108140"
+   "risk": "Eine überraschend positive Fed-Rhetorik oder neue KI-Mega-Deals könnten den Sektor kurzfristig wieder anziehen lassen.",
+   "source": "News: KI- und Chip-Aktienrutsch vertieft sich – $730 Mrd in Asien vernichtet",
+   "source_url": "https://x.com/FirstSquawk/status/2072706608757723494"
   },
   {
-   "title": "SMA Solar als Profiteur von US-Sanktionen gegen chinesische Konkurrenz",
-   "thesis": "Mögliche US-Importverbote für chinesische Wechselrichter dürften SMA als westlichen Anbieter begünstigen. Das KGV ist auf 28 gefallen, und charttechnisch bleibt die Aktie bullisch, solange die Unterstützung bei 59 EUR hält.",
+   "title": "Verteidigungssektor: NATO-Gipfel und Insiderkäufe als Katalysatoren",
+   "thesis": "Rheinmetall-CEO Armin Papperger kaufte nach dem Kursrutsch 3.200 Aktien zu 954 € – ein starkes Insidersignal mit rund 3 Mio. € Volumen bei einem PEG unter 0,6. Beim kommenden NATO-Gipfel plant Kanada eine Global Defence Bank zu lancieren, und Trump beklagt die ungleiche Verteidigungsauslastung. Belgien investiert 3,1 Mrd € in NASAMS und Skyranger-Systeme. Kratos Defense wurde von Wedbush mit Outperform und Kursziel 85 $ aufgenommen.",
    "values": [
-    "SMA Solar"
+    "Rheinmetall",
+    "Kratos Defense",
+    "TKMS",
+    "Hensoldt"
    ],
    "angle": "Long",
-   "risk": "Starke Kursvolatilität und ein Bruch der Unterstützung bei 59 EUR könnten die Erholung beenden.",
-   "source": "[onvista]",
-   "source_url": ""
+   "risk": "Verzögerungen oder Streichungen einzelner Großaufträge könnten die bereits korrigierten Bewertungen weiter belasten.",
+   "source": "News: Kanada pushpt LNG-Verdreifachung und Global Defence Bank für NATO-Gipfel",
+   "source_url": "https://x.com/FirstSquawk/status/2072738408729043333"
   },
   {
-   "title": "Rheinmetall: Insiderkäufe signalisieren übertriebene Reaktion auf verlorenen Auftrag",
-   "thesis": "Nach einem Kursrutsch kauft CEO Armin Papperger Aktien im Volumen von rund 3 Mio. EUR, was ein starkes Insidersignal ist. Bei einem KGV von 24 und einem PEG unter 0,6 gilt die Aktie als günstig bewertet.",
+   "title": "Bitcoin im finalen Bärenzyklus-Stadium – Krypto-Aktien rallyen vor",
+   "thesis": "Bitcoin kletterte auf über 60.000 $ trotz Nettoabflüssen bei Spot-ETFs von 296 Mio. $. Tiger Research sieht den Markt im finalen Stadium des Bärenzyklus – die meisten Verkäufe seien erfolgt. Der Fear & Greed Index verbesserte sich von Extreme Fear auf Fear. Krypto-Aktien wie MicroStrategy (+9,8 %) und Coinbase (+8,0 %) rallyten bereits. Strategy kündigte zudem Aktienrückkäufe bis 2 Mrd. $ an.",
    "values": [
-    "Rheinmetall"
+    "Bitcoin",
+    "MicroStrategy",
+    "Coinbase",
+    "Strategy"
    ],
    "angle": "Long",
-   "risk": "Weitere enttäuschende Auftragsvergaben könnten den Abwärtstrend kurzfristig fortsetzen.",
-   "source": "[onvista]",
-   "source_url": ""
-  },
-  {
-   "title": "Strukturelle Krise der deutschen Autobranche",
-   "thesis": "Volkswagen kämpft mit Gerüchten über 100.000 Stellenabbau und drohenden Werkschließungen, während Mercedes Sonderzahlungen verschiebt. Diese Sparsignale unterstreichen die tiefgreifenden strukturellen Probleme der Branche.",
-   "values": [
-    "Volkswagen",
-    "Mercedes-Benz",
-    "BMW"
-   ],
-   "angle": "Short",
-   "risk": "Staatliche Subventionen oder eine unerwartet schnelle Erholung der Nachfrage könnten eine Gegenbewegung auslösen.",
-   "source": "[Fundamentalanalyse mit Egmond]",
-   "source_url": ""
-  },
-  {
-   "title": "Goldpotenzial bis 5.000 $ durch geopolitische und wirtschaftliche Faktoren",
-   "thesis": "Eine WSJ-Analyse sieht Goldpotenzial bis 5.000 $ pro Unze bis Anfang 2027, gestützt durch Zentralbank-Kommentare und wirtschaftliche Daten. Spotgold hat bereits deutlich zugelegt und profitiert von anhaltenden geopolitischen Spannungen.",
-   "values": [
-    "Gold",
-    "Gold-ETFs",
-    "Goldminen-Aktien"
-   ],
-   "angle": "Long",
-   "risk": "Ein starker Dollar oder ein rascher Rückgang der Inflationserwartungen könnten den Goldpreis dämpfen.",
-   "source": "News: Gold könnte bis 2027 auf 5.000 $ steigen – WSJ-Analyse",
-   "source_url": "https://x.com/FirstSquawk/status/2072550383046766955"
+   "risk": "Ein weiterer ETF-Abfluss-Trend oder regulatorische Verschärfungen könnten den Bärenzyklus verlängern und neue Tiefs erzwingen.",
+   "source": "News: Bitcoin steigt über $60.000 trotz ETF-Abflüssen – Tiger Research bullish",
+   "source_url": "https://x.com/DeItaone/status/2072677813769924924"
   }
  ]
 }
