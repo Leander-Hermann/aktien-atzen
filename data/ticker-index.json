@@ -1,9 +1,19 @@
 {
- "updated": "2026-07-01T18:35:19.526591+00:00",
+ "updated": "2026-07-02T06:34:02.817121+00:00",
  "ticker": {
   "^GDAXI": {
    "name": "DAX",
    "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=56s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX schloss erstmals wieder über 25.000 Punkten und versucht, sich von dieser Marke abzusetzen. Ein Ausbruch über die alten Hochs wäre ein Kaufsignal in Richtung der Allzeithochs.",
+     "einordnung": "Die Rückeroberung der 25.000er-Marke ist psychologisch wichtig, aber erst ein nachhaltiger Ausbruch über die Juni-Hochs würde den Trend bestätigen. Solange das Allzeithoch nicht genommen ist, bleibt…",
+     "figures": "25.000 Punkte; Allzeithoch rund 2% entfernt"
+    },
     {
      "date": "2026-07-01",
      "video_id": "mNobFjJKrNE",
@@ -109,22 +119,70 @@
      "note": "Der DAX notiert bei knapp 24.700 Punkten mit einem goldenen Kreuz (50er über 200er-Linie); der Nasdaq 100 befindet sich in einer ABC-Korrektur unter 30.000 Punkten, das Forward-KGV ist von 29 auf 22-…",
      "einordnung": "Das goldene Kreuz bei gleichzeitig sinkendem Forward-KGV des Nasdaq ist ein solides technisch-fundamentales Fundament — doch die ABC-Korrektur im Nasdaq mahnt zur Vorsicht, denn der DAX folgt selten…",
      "figures": "DAX 24.685; Nasdaq 100 Forward-KGV 22-23 (vor 12 Monaten 29)"
+    }
+   ]
+  },
+  "CRM": {
+   "name": "Salesforce",
+   "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=86s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Starker Anstieg gestern, aber nur technische Gegenbewegung nach herben Verlusten. Positive Analystenkommentare stützen, operative Neuigkeiten fehlen. Erholung könnte bis in den Bereich 340-370 USD re…",
+     "einordnung": "Eine klassische Short-Squeeze-Rally nach überverkauftem Zustand — ohne fundamental neuen Katalysator bleibt das nur eine Gegenbewegung. Wer hier einsteigt, sollte sich bewusst sein, dass der Abwärtst…",
+     "figures": "Erholungsziel 340-370 USD"
     },
     {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=776s",
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=1732s",
      "channel": "onvista",
      "kategorie": "chartanalyse",
-     "note": "DAX in Seitwärtsphase um 25.000 Punkte. Volatilität erwartet mit möglichem Rücksetzer auf 23.800 oder 23.000. Bullisch erst über 25.400 mit Ziel 28.000.",
-     "einordnung": "Die 25.000er-Marke ist psychologisch wie technisch der Angelpunkt — solange der DAX nicht über 25.400 ausbricht, bleibt es ein Handelsmarkt. Das Risiko-Reward-Verhältnis für Long-Positionen ist in di…",
-     "figures": "25.000 Punkte, Unterstützung 23.800, 23.000, Widerstand 25.400, Ziel 28.000"
+     "note": "Massiv abgestraft, Rekord-Buybacks (50 Mrd. genehmigt, 27,5 Mrd. in Q1). KI-Übernahme Finn für 3,6 Mrd. Dollar. Chart sehr schwach.",
+     "einordnung": "Salesforce ist ein Turnaround-Play: Massive Buybacks (27,5 Mrd. in Q1) und KI-Übernahme (Finn) zeigen Management-Commitment. Aber charttechnisch schwach – 130$ ist kritisch.",
+     "figures": "Umsatz +10% auf 41,5 Mrd.; Nongap-Marge über 34%; Buyback 27,5 Mrd. in Q1; Übernahme Finn 3,6 Mrd.; KGV 2024/25: 42, dann 19,46, Richtung 16/13,5"
+    },
+    {
+     "date": "2025-11-28",
+     "video_id": "fQxlQW1Y5LQ",
+     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1497s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Im Kontext von CrowdStrike erwähnt: Hackerangriff auf Salesforce mit 1 Mrd. betroffenen Daten als Beleg für wachsenden Cybersicherheitsbedarf.",
+     "einordnung": "Der Hack ist ein Reputationsrisiko für Salesforce und gleichzeitig ein Vertriebsargument für Cybersecurity-Anbieter wie CrowdStrike. Für Salesforce-Anleger ist die Frage, ob Datensicherheitsvorfälle…",
+     "figures": "1 Mrd. betroffene Daten"
+    }
+   ]
+  },
+  "GS": {
+   "name": "Goldman Sachs",
+   "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=156s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Finanztitel haben für Stabilisierung gesorgt. Goldman Sachs profitiert von steigenden Zinsen und guter Stimmung dank M&A-Aktivität und Börsengängen.",
+     "einordnung": "Finanztitel sind aktuell die Stütze des Marktes — ein gesundes Zeichen, da sie typischerweise in einer späten Konjunkturphase outperformen. Goldman Sachs als M&A-Primus fährt mit der IPO-Welle eine e…"
     }
    ]
   },
   "MU": {
    "name": "Micron Technology",
    "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=208s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Korrekturbewegung nach unten als Teil einer branchenweiten Konsolidierung bei Chipwerten. Weiß sieht keinen Grund zur Sorge.",
+     "einordnung": "Die Chip-Konsolidierung ist nach dem massiven AI-Hype gesund und normal. Micron als Speicherchipspezialist ist ohnehin zyklischer als die Logik-Chip-Anbieter — Schwankungen gehören hier zum Geschäfts…"
+    },
     {
      "date": "2026-07-01",
      "video_id": "mNobFjJKrNE",
@@ -223,6 +281,320 @@
      "note": "Micron hat im letzten Jahr den Umsatz verdoppelt und die Marge von 17 auf 41 Prozent gesteigert. Die Speicherpreise sollen im vierten Quartal um 18-23 Prozent steigen. Die Aktie zählt zu den Top-Perf…",
      "einordnung": "Margensprung von 17 auf 41 Prozent ist beeindruckend und typisch für einen Speicherzyklus im Aufschwung. KGV 17 erscheint fair, doch bei Halbleiterzykliken kauft man den Zyklus, nicht eine strukturel…",
      "figures": "Umsatz letztes Jahr verdoppelt, Marge von 17% auf 41% gesteigert, KGV 17, Analystenerwartung Umsatz 12,78 Mrd. USD, Marge 51,5%"
+    }
+   ]
+  },
+  "SAP.DE": {
+   "name": "SAP",
+   "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=276s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Zeigt Erholungsbewegung und könnte von Mittelabflüssen aus Hypeaktien profitieren.",
+     "einordnung": "SAP als defensiver Tech-Wert mit solidem Geschäftsmodell ist ein natürlicher Profiteur, wenn Anleger aus überhitzten KI-Titeln Gewinne mitnehmen. Die Aktie hat in der Korrektur zuletzt relativ standg…"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1954s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Sorgen vor KI-Kosten, Talfahrt erwartet. Haidt sieht weiteres Abwärtsrisiko.",
+     "einordnung": "SAP hat sich in den letzten zwei Jahren als KI-Profiteur positioniert, aber die Investitionskosten drücken nun auf die Margen. Das ist ein klassisches Transformationsdilemma: Langfristig richtig, kur…"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "10_Fe8OVqnk",
+     "url": "https://www.youtube.com/watch?v=10_Fe8OVqnk&t=960s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "SAP fiel von 269 € auf 140 €, das KGV sank von 38 auf 19,3. Das Cloudgeschäft bleibt mit CCB-Wachstum von 20% auf 21,9 Mrd. € stark, jedoch belasten KI-Investitionen und der Oracle-Effekt die Margene…",
+     "einordnung": "SAP bei 140 € und einem KGV von 19,3 ist eine völlig andere Bewertungssituation als bei 269 € — das ist eine Normalisierung, kein Crash. Das Cloud-Wachstum von 20% ist solide, aber der Margendruck du…",
+     "figures": "Kurs von 269 € auf 140 €, KGV von 38 (2026) auf 19,3 (2026), Oracle KGV 38,7, Salesforce KGV 19,8, Q1 2026 CCB +20% (währungsbereinigt +25%) auf 21,9 Mrd. €, Cloudlöse währungsbereinigt +27%, Goldman…"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "MJo67AkNy70",
+     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=513s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SAP auf tiefstem Stand seit 2023; fehlende Impulse, Markt erwartet KI-Unterstützung nicht.",
+     "einordnung": "SAP auf dem tiefsten Stand seit 2023 ist ein bemerkenswerter Stilwechsel — der Markt straft die KI-Narrative ab, die bisher den Auftrieb trug. Bei einem DAX-Schwergewicht ist das ein Stimmungsbaromet…",
+     "figures": "tiefster Stand seit 2023"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=708s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SAP unter Druck durch 'Sippenhaft' mit Oracle-Schwäche; Qualität der Company bleibt intakt, aber Kurs rutscht immer wieder zurück.",
+     "einordnung": "SAP ist ein Quality-Stock mit Enterprise-Moat, aber der Markt spielt Sektor-Domino-Spiel. Oracle-Schwäche setzt Tech-Vertrauen unter Druck. Für Langfrist-Investoren ein Ansammelsignal, für Trader ein…"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=995s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Short Squeeze bei SAP, fundamentale Änderungen fehlen.",
+     "einordnung": "Ein Short Squeeze bei SAP zeigt, dass der Markt nicht nur von KI-Enthusiasmus, sondern auch von Leerverkäufer-Schmerz getrieben ist. Das ist ein technisches, kein fundamentales Signal."
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Kurzfristig kann sich SAP erholen, aber mittel-/langfristig keine Besserung. Bei Wiederkehr des Momentum-Trades verkaufen.",
+     "einordnung": "SAP als Underperformer profitiert kurzfristig vom Momentum-Wechsel, aber die fundamentale Schwäche bleibt – das ist ein taktischer Trade, kein strategisches Investment."
+    }
+   ]
+  },
+  "ADS.DE": {
+   "name": "Adidas",
+   "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=283s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Wartet auf Ausbruch über 180 € Richtung 200 €. Das EM-Aus der deutschen Nationalmannschaft hat nicht geholfen, ist wirtschaftlich aber nicht dramatisch.",
+     "einordnung": "Das EM-Aus ist sentimentaler Natur — die Trikotverkäufe laufen bereits, und Adidas profitiert ohnehin vom Turnier-Halo unabhängig vom deutschen Weiterkommen. Charttechnisch ist die 180 € der Schlüsse…",
+     "figures": "180 €, 200 €"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "sax3NJ-Q6tc",
+     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=292s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas technisch stark, beginnender Aufwärtstrend. Ein Kollege sieht ein Kursziel bei 200 €. Das WM-Aus der deutschen Mannschaft belastet die Aktie nicht.",
+     "einordnung": "Das WM-Aus ist für Adidas irrelevant — das Unternehmen profitiert von globalen Markenzyklen, nicht vom deutschen Nationalteam. Ein 200-€-Ziel ist ambitioniert, aber im Chartbild nicht abwegig.",
+     "figures": "Kursziel 200 €"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1691s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Aktie nach oben geschossen wegen WM-Hoffnung, Deutschland ist ausgeschieden. Haidt sieht Korrekturrisiko.",
+     "einordnung": "Der WM-Effekt bei Adidas ist ein klassisches 'Buy the rumor, sell the news'-Szenario. Das deutsche Aus bei der WM entzieht der Aktie den kurzfristigen Katalysator – das erinnert an 2018, als Adidas n…"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "Nxn0NmV-hnM",
+     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=2790s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "ABC Outperform, Kursziel von 170 auf 210 Euro. KGV 13 für FY27, Abschlag 10-15 Prozent zu Konkurrenz. Gewinnwachstum 25 Prozent p.a. (3 Jahre). Marktanteile: Sportschuhe 11,2 Prozent (plus 80 BP), Sp…",
+     "einordnung": "Adidas ist im Turnaround-Modus — Marktanteilgewinne bei Sportschuhen von 80 Basispunkten sind handfest. KGV 13 für 2027 bei 25 Prozent Gewinnwachstum ist ein PEG unter 1; das ist attraktiv. Die 170-E…",
+     "figures": "Kursziel 210€, KGV 13, Gewinnwachstum 25% p.a., Marktanteile 11,2% (Schuhe) und 5,9% (Bekleidung)"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=201s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Aktionäre setzen auf WM-Erfolg, der Kurs ist seit April 20-30% gestiegen. Die Erholung könnte weitergehen, die fundamentalen Aussichten seien jedoch unverändert.",
+     "einordnung": "Der WM-Hype treibt die Aktie, doch ein Vorauslauf auf sportliche Events ist oft zyklisch begrenzt. Ohne fundamentale Aufwärtsrevisionen droht nach dem Turnier ein Kater.",
+     "figures": "20-30% seit April"
+    }
+   ]
+  },
+  "AIR.DE": {
+   "name": "Airbus",
+   "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=333s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Positive Analystenkommentare: Rekordauslieferung von 870 Maschinen für 2026 erwartet. Aktie hat die 200-Tage-Linie gebrochen und steigt Richtung 220 €.",
+     "einordnung": "Die Rückeroberung der 200-Tage-Linie ist ein starkes charttechnisches Signal. Fundamental untermauert durch die Auslieferungsstory — Airbus ist einer der wenigen DAX-Werte mit klarer, mehrjähriger Wa…",
+     "figures": "870 Maschinen Auslieferung 2026; Kursziel 200 €, 220 €"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2265s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Airbus erhält ein Upgrade von Kepler. Eine mögliche Besserung im Nahostkonflikt wirkt sich positiv auf die Aktie aus. Charttechnisch wurde eine wichtige Marke überwunden.",
+     "einordnung": "Luftfahrtzyklen sind langwierig. Wenn der Nahostkonflikt sich entspannt, fallen geopolitische Risikoprämien weg. Der Bruch über 197€ wäre das technische Signal für eine Erholungsbewegung.",
+     "figures": "Kursziel Kepler 212€ (von 196€); Widerstand 197€; Kursziele 216€, 256€"
+    }
+   ]
+  },
+  "RHM.DE": {
+   "name": "Rheinmetall",
+   "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=384s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gestärkter DAX-Wert mit Gegenbewegung nach Verlust eines Auftrags. Abwärtstrend seit Februar muss noch gebrochen werden. Der Absturz war übertrieben, da der Auftrag erst 2031 relevant geworden wäre.",
+     "einordnung": "Die heftige Reaktion auf einen Auftrag, der erst 2031 greift, zeigt wie emotional der Rheinmetall-Chart besetzt ist. Die Gegenbewegung ist rational — der Abwärtstrend bleibt aber intakt, bis die Febr…",
+     "figures": "über 1.600 € vor Auftragsverlust; Bruch bei 1.000 €"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "kbhs3X-LW2E",
+     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1588s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "CEO Armin Papperger kauft nach dem Kursrutsch 3.200 Aktien zu 954 EUR — ein starkes Insidersignal mit einem Volumen von rund 3 Mio. EUR. Das KGV liegt bei 24, der PEG unter 0,6 — günstig bewertet bei…",
+     "einordnung": "Ein CEO-Kauf in dieser Größenordnung ist ein deutliches Signal — Papperger setzt sein eigenes Geld dort ein, wo er die Value-Lücke sieht. Das PEG von 0,6 bei diesem Wachstumspfad ist für einen Rüstun…",
+     "figures": "3.200 Aktien; Kaufkurs 954 EUR; Volumen ~3 Mio. EUR; KGV ~24; PEG 0,6; Gewinnwachstum 130%, 50%, 40%"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=250s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Ein erhoffter Großauftrag fällt aus, die Aktie bricht ein. Haidt liefert keine konkrete Prognose.",
+     "einordnung": "Rheinmetall leidet unter dem klassischen Problem hochbewerteter Rüstungswerte: Jeder entgangene Auftrag wird überproportional bestraft, weil die Bewertung bereits Perfektion einpreist. Das erinnert a…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "tIXIrS3cz1s",
+     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=395s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall verlor einen Auftrag vom Verteidigungsministerium, woraufhin der Kurs von zuvor rund 1.200 Euro unter die 1.000-Euro-Marke fiel. Der Host hält die Reaktion für übertrieben und erwartet, d…",
+     "einordnung": "Ein Auftragsverlust bei einem Rüstungskonzern mit einem Auftragsbestand in Milliardenhöhe ist ein marginales Ereignis — der Markt reagiert hier emotional, nicht fundamental. Unter 1.000 Euro wird Rhe…",
+     "figures": "1.200 € (vorheriges Niveau), unter 1.000 € (aktueller Bereich)"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "F6cTDl0_v6Q",
+     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=538s",
+     "channel": "BerneckerTV",
+     "kategorie": "news",
+     "note": "Rheinmetall verliert den F126-Auftrag im Volumen von 12 Mrd. EUR, was zu einem Umsatzentgang von 2 Mrd. EUR und einem EBIT-Verlust von 250 Mio. EUR führt. Der CEO zeichnet sich durch Aktienkäufe aus,…",
+     "einordnung": "Der Auftragsverlust ist ein Rückschlag, muss aber gegen den massiven Auftragsbestand aus dem europäischen Rüstungszyklus abgewogen werden. Das KGV von 16,8 für 2027 ist moderat für einen Rüstungskonz…",
+     "figures": "Auftragswert 12 Mrd. EUR; Umsatzentgang 2 Mrd. EUR; EBIT-Verlust 250 Mio. EUR; KGV 16,8 für 2027; CEO-Käufe 3 Mrd. EUR"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nach Verlust des Fregatten-Auftrags an TKDS keine Gegenbewegung; die Reaktion erscheint übertrieben, langfristig besteht Potenzial, aber kurzfristig abwarten.",
+     "einordnung": "Der Verlust eines Großauftrags ist ein psychologischer Dämpfer, ändert aber wenig an der strukturellen Verteidigungsnachfrage. Dass der Host die Reaktion als übertrieben einstuft, ist nachvollziehbar…"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
+     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. We…",
+     "figures": "-19%, 12,8 Mrd. Euro"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "4K4U0fRfM0A",
+     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=1424s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "Die Aktie fällt 18 Prozent nach Meldung über mögliches Ende des F126-Fregattenprojekts. JP Morgan senkt das Kursziel leicht auf 1400 Euro, hält aber am Hold-Rating fest. Zusätzlicher Druck entsteht d…",
+     "einordnung": "Die 18-Prozent-Reaktion ist dramatisch, aber der F126 ist ein Marineprojekt — Rheinmetalls Kernfranchise sind Landsysteme. Der PEG von 0,67 signalisiert, dass die Aktie trotz des Abverkaufs noch imme…",
+     "figures": "-18%, Kursziel 1400 Euro (von 1450), KGV 24, PEG 0,67"
+    },
+    {
+     "date": "2026-06-16",
+     "video_id": "J1zzTOyOdKE",
+     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=952s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Die Aktie steht unter Druck, weil ein baldiges Ende des Iran-Krieges die Nachfrage nach Rüstungsgütern dämpfen könnte. Egmond sieht noch kein belastbares Tief und bleibt skeptisch.",
+     "einordnung": "Rheinmetall ist ein klassisches Geopolitik-Play — steigt bei Konflikten, leidet bei Entspannung. Das Iran-Abkommen trifft die Aktie daher doppelt: sinkende Ölpreis-Einnahmen schwächen gleichzeitig di…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=483s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Unter Druck: Friedenshoffnung dämpft die Rüstungsfantasie, zusätzlich Sorgen um das deutsch-französische Panzer-Joint-Venture und mögliche Mittelkürzungen.",
+     "einordnung": "Das ist die Kehrseite des Friedens-Trades — wer von Rüstungsausgaben profitiert, leidet bei Deeskalation. Rheinmetall hatte eine beispiellose Rally; eine Konsolidierung ist nach diesem Katalysator fu…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "4TeOYIh5hN0",
+     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1051s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Mittelfristiger Abwärtstrend nach Triple-Top bei 1930 €; Verkäufer dominant, nächster Support bei 934 €, Key-Support bei 1481 €.",
+     "einordnung": "Rheinmetall ist ein lehrbuchhaftes Beispiel für einen gebrochenen Aufwärtstrend – das Triple-Top bei 1930 € ist definitiv gescheitert, und der Trend läuft nach unten aus, ohne dass eine Stabilisierun…",
+     "figures": "1930 € (Triple-Top-Hoch), 1481 € (Key-Support), 1270 € (Zwischenstützung), 934 € (nächster Support), Korrektur ca. 40 %"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1466s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "In Zuschauerfragen erwähnt — Fokus auf Drohnen als neues Rüstungssegment.",
+     "einordnung": "Rheinmetalls Erweiterung in den Drohnenbereich ist eine logische Diversifikation über klassische Fahrzeuge hinaus. Die Bewertung spiegelt jedoch bereits massive Erwartungen wider."
+    }
+   ]
+  },
+  "BAYN.DE": {
+   "name": "Bayer",
+   "auftritte": [
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=462s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Reagiert positiv auf Beschluss des US-Obersten Gerichtshofs zu Glyphosat. US-Glyphosatgeschäft soll ausgegliedert werden. Aktie steht bei 49 €, könnte 50 € brechen — dann technisches Kaufsignal.",
+     "einordnung": "Der Glyphosat-Befreiungsschlag ist für Bayer existenziell — die Aktie hat jahrelang unter dieser Unsicherheit gelitten. Ein Bruch der 50 € wäre charttechnisch bedeutend, fundamental bleibt aber das P…",
+     "figures": "49 €, 50 €"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=617s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Wichtiger Sieg vor dem US Supreme Court, die Aktie schießt 20 Prozent nach oben. Nun wartet der Markt auf die Ergebnisse eines 7,25-Milliarden-Dollar-Sammelvergleichs.",
+     "einordnung": "Ein Supreme-Court-Sieg ist für Bayer ein existenzieller Meilenstein – das Glyphosat-Risiko war der größte Überhängende Faktor seit Jahren. 20 Prozent Aufschlag sind gerechtfertigt, aber der Sammelver…",
+     "figures": "7,25 Mrd USD Sammelvergleich, +20% Kurs"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "tIXIrS3cz1s",
+     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=345s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Bayer reagiert positiv auf ein günstiges Glyphosat-Urteil. Die nächste charttechnische Hürde ist die 50-Euro-Marke; zuvor lag der Widerstand bei 42 bis 43 Euro.",
+     "einordnung": "Nach jahrelangem Rechtsstreit um Glyphosat ist jedes positive Urteil ein Befreiungsschlag für die Aktie. Die 50-Euro-Marke ist psychologisch und technisch relevant — ein Breakout würde den Weg für ei…",
+     "figures": "50 € (nächste Hürde), 42-43 € (vorheriger Widerstand)"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=254s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Zwei juristische Meilensteine rücken in den Fokus: der 4. Juni als Fristende für den Glyphosat-Sammelvergleich und das Urteil des obersten US-Gerichts Ende Juni. Die Aktie könnte kurzfristig als Unde…",
+     "einordnung": "Bayer ist ein klassischer Turnaround-Kandidat mit binärem Risiko – die juristischen Termine im Juni könnten entweder eine Entlastung oder eine neue Belastung bringen. Der kurzfristige Momentum-Tailwi…",
+     "figures": "7,25 Milliarden Dollar (Rückstellung für Glyphosat-Vergleiche)"
     }
    ]
   },
@@ -371,125 +743,6 @@
      "kategorie": "sonstiges",
      "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
      "einordnung": "SMA Solar leidet unter dem Momentum-Wechsel – die Aktie ist hoch volatil und reagiert besonders sensibel auf Rotationseffekte."
-    }
-   ]
-  },
-  "RHM.DE": {
-   "name": "Rheinmetall",
-   "auftritte": [
-    {
-     "date": "2026-07-01",
-     "video_id": "kbhs3X-LW2E",
-     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1588s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "CEO Armin Papperger kauft nach dem Kursrutsch 3.200 Aktien zu 954 EUR — ein starkes Insidersignal mit einem Volumen von rund 3 Mio. EUR. Das KGV liegt bei 24, der PEG unter 0,6 — günstig bewertet bei…",
-     "einordnung": "Ein CEO-Kauf in dieser Größenordnung ist ein deutliches Signal — Papperger setzt sein eigenes Geld dort ein, wo er die Value-Lücke sieht. Das PEG von 0,6 bei diesem Wachstumspfad ist für einen Rüstun…",
-     "figures": "3.200 Aktien; Kaufkurs 954 EUR; Volumen ~3 Mio. EUR; KGV ~24; PEG 0,6; Gewinnwachstum 130%, 50%, 40%"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=250s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Ein erhoffter Großauftrag fällt aus, die Aktie bricht ein. Haidt liefert keine konkrete Prognose.",
-     "einordnung": "Rheinmetall leidet unter dem klassischen Problem hochbewerteter Rüstungswerte: Jeder entgangene Auftrag wird überproportional bestraft, weil die Bewertung bereits Perfektion einpreist. Das erinnert a…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "tIXIrS3cz1s",
-     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=395s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall verlor einen Auftrag vom Verteidigungsministerium, woraufhin der Kurs von zuvor rund 1.200 Euro unter die 1.000-Euro-Marke fiel. Der Host hält die Reaktion für übertrieben und erwartet, d…",
-     "einordnung": "Ein Auftragsverlust bei einem Rüstungskonzern mit einem Auftragsbestand in Milliardenhöhe ist ein marginales Ereignis — der Markt reagiert hier emotional, nicht fundamental. Unter 1.000 Euro wird Rhe…",
-     "figures": "1.200 € (vorheriges Niveau), unter 1.000 € (aktueller Bereich)"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "F6cTDl0_v6Q",
-     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=538s",
-     "channel": "BerneckerTV",
-     "kategorie": "news",
-     "note": "Rheinmetall verliert den F126-Auftrag im Volumen von 12 Mrd. EUR, was zu einem Umsatzentgang von 2 Mrd. EUR und einem EBIT-Verlust von 250 Mio. EUR führt. Der CEO zeichnet sich durch Aktienkäufe aus,…",
-     "einordnung": "Der Auftragsverlust ist ein Rückschlag, muss aber gegen den massiven Auftragsbestand aus dem europäischen Rüstungszyklus abgewogen werden. Das KGV von 16,8 für 2027 ist moderat für einen Rüstungskonz…",
-     "figures": "Auftragswert 12 Mrd. EUR; Umsatzentgang 2 Mrd. EUR; EBIT-Verlust 250 Mio. EUR; KGV 16,8 für 2027; CEO-Käufe 3 Mrd. EUR"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "5AeBdQRrZ2k",
-     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=460s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nach Verlust des Fregatten-Auftrags an TKDS keine Gegenbewegung; die Reaktion erscheint übertrieben, langfristig besteht Potenzial, aber kurzfristig abwarten.",
-     "einordnung": "Der Verlust eines Großauftrags ist ein psychologischer Dämpfer, ändert aber wenig an der strukturellen Verteidigungsnachfrage. Dass der Host die Reaktion als übertrieben einstuft, ist nachvollziehbar…"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
-     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. We…",
-     "figures": "-19%, 12,8 Mrd. Euro"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "4K4U0fRfM0A",
-     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=1424s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Die Aktie fällt 18 Prozent nach Meldung über mögliches Ende des F126-Fregattenprojekts. JP Morgan senkt das Kursziel leicht auf 1400 Euro, hält aber am Hold-Rating fest. Zusätzlicher Druck entsteht d…",
-     "einordnung": "Die 18-Prozent-Reaktion ist dramatisch, aber der F126 ist ein Marineprojekt — Rheinmetalls Kernfranchise sind Landsysteme. Der PEG von 0,67 signalisiert, dass die Aktie trotz des Abverkaufs noch imme…",
-     "figures": "-18%, Kursziel 1400 Euro (von 1450), KGV 24, PEG 0,67"
-    },
-    {
-     "date": "2026-06-16",
-     "video_id": "J1zzTOyOdKE",
-     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=952s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Die Aktie steht unter Druck, weil ein baldiges Ende des Iran-Krieges die Nachfrage nach Rüstungsgütern dämpfen könnte. Egmond sieht noch kein belastbares Tief und bleibt skeptisch.",
-     "einordnung": "Rheinmetall ist ein klassisches Geopolitik-Play — steigt bei Konflikten, leidet bei Entspannung. Das Iran-Abkommen trifft die Aktie daher doppelt: sinkende Ölpreis-Einnahmen schwächen gleichzeitig di…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=483s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Unter Druck: Friedenshoffnung dämpft die Rüstungsfantasie, zusätzlich Sorgen um das deutsch-französische Panzer-Joint-Venture und mögliche Mittelkürzungen.",
-     "einordnung": "Das ist die Kehrseite des Friedens-Trades — wer von Rüstungsausgaben profitiert, leidet bei Deeskalation. Rheinmetall hatte eine beispiellose Rally; eine Konsolidierung ist nach diesem Katalysator fu…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "4TeOYIh5hN0",
-     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1051s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Mittelfristiger Abwärtstrend nach Triple-Top bei 1930 €; Verkäufer dominant, nächster Support bei 934 €, Key-Support bei 1481 €.",
-     "einordnung": "Rheinmetall ist ein lehrbuchhaftes Beispiel für einen gebrochenen Aufwärtstrend – das Triple-Top bei 1930 € ist definitiv gescheitert, und der Trend läuft nach unten aus, ohne dass eine Stabilisierun…",
-     "figures": "1930 € (Triple-Top-Hoch), 1481 € (Key-Support), 1270 € (Zwischenstützung), 934 € (nächster Support), Korrektur ca. 40 %"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1466s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "In Zuschauerfragen erwähnt — Fokus auf Drohnen als neues Rüstungssegment.",
-     "einordnung": "Rheinmetalls Erweiterung in den Drohnenbereich ist eine logische Diversifikation über klassische Fahrzeuge hinaus. Die Bewertung spiegelt jedoch bereits massive Erwartungen wider."
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
-     "einordnung": "Rheinmetall als Underperformer ist überraschend – die Rüstungsstory bleibt intakt, aber die Aktie war überkauft und korrigiert nun. Kurzfristig könnte sie vom Momentum-Wechsel profitieren."
     }
    ]
   },
@@ -733,50 +986,6 @@
      "kategorie": "news",
      "note": "Iridium wird von Rocket Lab übernommen; der Sektor profitiert von der Konsolidierungsbewegung im Raumfahrt- und Satellitenbereich.",
      "einordnung": "Eine Übernahme ist für das Zielunternehmen meist ein kurzfristiges Kursplus. Wer Iridium nicht bereits hält, ist hier zu spät dran."
-    }
-   ]
-  },
-  "ADS.DE": {
-   "name": "Adidas",
-   "auftritte": [
-    {
-     "date": "2026-06-30",
-     "video_id": "sax3NJ-Q6tc",
-     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=292s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adidas technisch stark, beginnender Aufwärtstrend. Ein Kollege sieht ein Kursziel bei 200 €. Das WM-Aus der deutschen Mannschaft belastet die Aktie nicht.",
-     "einordnung": "Das WM-Aus ist für Adidas irrelevant — das Unternehmen profitiert von globalen Markenzyklen, nicht vom deutschen Nationalteam. Ein 200-€-Ziel ist ambitioniert, aber im Chartbild nicht abwegig.",
-     "figures": "Kursziel 200 €"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1691s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Aktie nach oben geschossen wegen WM-Hoffnung, Deutschland ist ausgeschieden. Haidt sieht Korrekturrisiko.",
-     "einordnung": "Der WM-Effekt bei Adidas ist ein klassisches 'Buy the rumor, sell the news'-Szenario. Das deutsche Aus bei der WM entzieht der Aktie den kurzfristigen Katalysator – das erinnert an 2018, als Adidas n…"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=2790s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "ABC Outperform, Kursziel von 170 auf 210 Euro. KGV 13 für FY27, Abschlag 10-15 Prozent zu Konkurrenz. Gewinnwachstum 25 Prozent p.a. (3 Jahre). Marktanteile: Sportschuhe 11,2 Prozent (plus 80 BP), Sp…",
-     "einordnung": "Adidas ist im Turnaround-Modus — Marktanteilgewinne bei Sportschuhen von 80 Basispunkten sind handfest. KGV 13 für 2027 bei 25 Prozent Gewinnwachstum ist ein PEG unter 1; das ist attraktiv. Die 170-E…",
-     "figures": "Kursziel 210€, KGV 13, Gewinnwachstum 25% p.a., Marktanteile 11,2% (Schuhe) und 5,9% (Bekleidung)"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=201s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktionäre setzen auf WM-Erfolg, der Kurs ist seit April 20-30% gestiegen. Die Erholung könnte weitergehen, die fundamentalen Aussichten seien jedoch unverändert.",
-     "einordnung": "Der WM-Hype treibt die Aktie, doch ein Vorauslauf auf sportliche Events ist oft zyklisch begrenzt. Ohne fundamentale Aufwärtsrevisionen droht nach dem Turnier ein Kater.",
-     "figures": "20-30% seit April"
     }
    ]
   },
@@ -1089,41 +1298,6 @@
     }
    ]
   },
-  "BAYN.DE": {
-   "name": "Bayer",
-   "auftritte": [
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=617s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Wichtiger Sieg vor dem US Supreme Court, die Aktie schießt 20 Prozent nach oben. Nun wartet der Markt auf die Ergebnisse eines 7,25-Milliarden-Dollar-Sammelvergleichs.",
-     "einordnung": "Ein Supreme-Court-Sieg ist für Bayer ein existenzieller Meilenstein – das Glyphosat-Risiko war der größte Überhängende Faktor seit Jahren. 20 Prozent Aufschlag sind gerechtfertigt, aber der Sammelver…",
-     "figures": "7,25 Mrd USD Sammelvergleich, +20% Kurs"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "tIXIrS3cz1s",
-     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=345s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Bayer reagiert positiv auf ein günstiges Glyphosat-Urteil. Die nächste charttechnische Hürde ist die 50-Euro-Marke; zuvor lag der Widerstand bei 42 bis 43 Euro.",
-     "einordnung": "Nach jahrelangem Rechtsstreit um Glyphosat ist jedes positive Urteil ein Befreiungsschlag für die Aktie. Die 50-Euro-Marke ist psychologisch und technisch relevant — ein Breakout würde den Weg für ei…",
-     "figures": "50 € (nächste Hürde), 42-43 € (vorheriger Widerstand)"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=254s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Zwei juristische Meilensteine rücken in den Fokus: der 4. Juni als Fristende für den Glyphosat-Sammelvergleich und das Urteil des obersten US-Gerichts Ende Juni. Die Aktie könnte kurzfristig als Unde…",
-     "einordnung": "Bayer ist ein klassischer Turnaround-Kandidat mit binärem Risiko – die juristischen Termine im Juni könnten entweder eine Entlastung oder eine neue Belastung bringen. Der kurzfristige Momentum-Tailwi…",
-     "figures": "7,25 Milliarden Dollar (Rückstellung für Glyphosat-Vergleiche)"
-    }
-   ]
-  },
   "MBG.DE": {
    "name": "Mercedes-Benz",
    "auftritte": [
@@ -1375,67 +1549,6 @@
      "kategorie": "sonstiges",
      "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
      "einordnung": "Siemens Energy als Profiteur des vorherigen Momentum-Trades wird nun verkauft – die Aktie war stark gelaufen und korrigiert nun. Bei Rückkehr des Momentum-Trades könnte sie schnell wieder anziehen."
-    }
-   ]
-  },
-  "SAP.DE": {
-   "name": "SAP",
-   "auftritte": [
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1954s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Sorgen vor KI-Kosten, Talfahrt erwartet. Haidt sieht weiteres Abwärtsrisiko.",
-     "einordnung": "SAP hat sich in den letzten zwei Jahren als KI-Profiteur positioniert, aber die Investitionskosten drücken nun auf die Margen. Das ist ein klassisches Transformationsdilemma: Langfristig richtig, kur…"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "10_Fe8OVqnk",
-     "url": "https://www.youtube.com/watch?v=10_Fe8OVqnk&t=960s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "SAP fiel von 269 € auf 140 €, das KGV sank von 38 auf 19,3. Das Cloudgeschäft bleibt mit CCB-Wachstum von 20% auf 21,9 Mrd. € stark, jedoch belasten KI-Investitionen und der Oracle-Effekt die Margene…",
-     "einordnung": "SAP bei 140 € und einem KGV von 19,3 ist eine völlig andere Bewertungssituation als bei 269 € — das ist eine Normalisierung, kein Crash. Das Cloud-Wachstum von 20% ist solide, aber der Margendruck du…",
-     "figures": "Kurs von 269 € auf 140 €, KGV von 38 (2026) auf 19,3 (2026), Oracle KGV 38,7, Salesforce KGV 19,8, Q1 2026 CCB +20% (währungsbereinigt +25%) auf 21,9 Mrd. €, Cloudlöse währungsbereinigt +27%, Goldman…"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "MJo67AkNy70",
-     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=513s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SAP auf tiefstem Stand seit 2023; fehlende Impulse, Markt erwartet KI-Unterstützung nicht.",
-     "einordnung": "SAP auf dem tiefsten Stand seit 2023 ist ein bemerkenswerter Stilwechsel — der Markt straft die KI-Narrative ab, die bisher den Auftrieb trug. Bei einem DAX-Schwergewicht ist das ein Stimmungsbaromet…",
-     "figures": "tiefster Stand seit 2023"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=708s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "SAP unter Druck durch 'Sippenhaft' mit Oracle-Schwäche; Qualität der Company bleibt intakt, aber Kurs rutscht immer wieder zurück.",
-     "einordnung": "SAP ist ein Quality-Stock mit Enterprise-Moat, aber der Markt spielt Sektor-Domino-Spiel. Oracle-Schwäche setzt Tech-Vertrauen unter Druck. Für Langfrist-Investoren ein Ansammelsignal, für Trader ein…"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=995s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Short Squeeze bei SAP, fundamentale Änderungen fehlen.",
-     "einordnung": "Ein Short Squeeze bei SAP zeigt, dass der Markt nicht nur von KI-Enthusiasmus, sondern auch von Leerverkäufer-Schmerz getrieben ist. Das ist ein technisches, kein fundamentales Signal."
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Kurzfristig kann sich SAP erholen, aber mittel-/langfristig keine Besserung. Bei Wiederkehr des Momentum-Trades verkaufen.",
-     "einordnung": "SAP als Underperformer profitiert kurzfristig vom Momentum-Wechsel, aber die fundamentale Schwäche bleibt – das ist ein taktischer Trade, kein strategisches Investment."
     }
    ]
   },
@@ -4036,31 +4149,6 @@
     }
    ]
   },
-  "CRM": {
-   "name": "Salesforce",
-   "auftritte": [
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=1732s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Massiv abgestraft, Rekord-Buybacks (50 Mrd. genehmigt, 27,5 Mrd. in Q1). KI-Übernahme Finn für 3,6 Mrd. Dollar. Chart sehr schwach.",
-     "einordnung": "Salesforce ist ein Turnaround-Play: Massive Buybacks (27,5 Mrd. in Q1) und KI-Übernahme (Finn) zeigen Management-Commitment. Aber charttechnisch schwach – 130$ ist kritisch.",
-     "figures": "Umsatz +10% auf 41,5 Mrd.; Nongap-Marge über 34%; Buyback 27,5 Mrd. in Q1; Übernahme Finn 3,6 Mrd.; KGV 2024/25: 42, dann 19,46, Richtung 16/13,5"
-    },
-    {
-     "date": "2025-11-28",
-     "video_id": "fQxlQW1Y5LQ",
-     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1497s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Im Kontext von CrowdStrike erwähnt: Hackerangriff auf Salesforce mit 1 Mrd. betroffenen Daten als Beleg für wachsenden Cybersicherheitsbedarf.",
-     "einordnung": "Der Hack ist ein Reputationsrisiko für Salesforce und gleichzeitig ein Vertriebsargument für Cybersecurity-Anbieter wie CrowdStrike. Für Salesforce-Anleger ist die Frage, ob Datensicherheitsvorfälle…",
-     "figures": "1 Mrd. betroffene Daten"
-    }
-   ]
-  },
   "CSU.TO": {
    "name": "Constellation Software",
    "auftritte": [
@@ -4348,21 +4436,6 @@
      "note": "Hims & Hers zeigt bullische Dynamik. Das Short Interest ist gesunken, Barclays erhöht das Kursziel, und operative Kennzahlen (Traffic, App-Nutzung) verbessern sich deutlich.",
      "einordnung": "Ein klassischer Short-Squeeze-Kandidat mit starken operativen Daten. Wenn das Short Interest bei 26% liegt und die Fundamentaldaten liefern, kann das explosiv sein. Ein Ziel von 130$ ist ambitioniert…",
      "figures": "Short Interest 39% (April) auf 26%; Price/Sales Forward 2,2 (Schnitt 3,1); Kursziel Barclays 29$ auf 39$; Website Traffic +12% (April), +35% (Mai); Appnutzer +21% (Mai); Transaktionen +16%, Ausgabenv…"
-    }
-   ]
-  },
-  "AIR.DE": {
-   "name": "Airbus",
-   "auftritte": [
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2265s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Airbus erhält ein Upgrade von Kepler. Eine mögliche Besserung im Nahostkonflikt wirkt sich positiv auf die Aktie aus. Charttechnisch wurde eine wichtige Marke überwunden.",
-     "einordnung": "Luftfahrtzyklen sind langwierig. Wenn der Nahostkonflikt sich entspannt, fallen geopolitische Risikoprämien weg. Der Bruch über 197€ wäre das technische Signal für eine Erholungsbewegung.",
-     "figures": "Kursziel Kepler 212€ (von 196€); Widerstand 197€; Kursziele 216€, 256€"
     }
    ]
   },

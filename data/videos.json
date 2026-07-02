@@ -1,6 +1,218 @@
 {
- "updated": "2026-07-01T18:35:19.526591+00:00",
+ "updated": "2026-07-02T06:34:02.817121+00:00",
  "videos": [
+  {
+   "channel": "Der Aktionär - Märkte am Morgen",
+   "playlist": "Märkte am Morgen",
+   "id": "rtqIeordQFo",
+   "title": "Märkte am Morgen: Salesforce, Goldman Sachs, Micron, SAP, Adidas, Nordex, Airbus, Rheinmetall, Bayer",
+   "date": "20260702",
+   "url": "https://www.youtube.com/watch?v=rtqIeordQFo",
+   "thumbnail": "https://i.ytimg.com/vi/rtqIeordQFo/hqdefault.jpg",
+   "summarized_at": "2026-07-02T06:34:02.816423+00:00",
+   "summary": "Der DAX hat sich über 25.000 Punkte befreit und deutet weitere Gewinne an, trotz gemischter Vorgaben aus USA und Asien. Martin Weiß ordnet die Bewegungen als technische Rotation ein: Geld fließt aus zuvor überhitzten Hype-Aktien in korrigierte Qualitäts titel wie Salesforce und SAP. Im Fokus stehen zudem Rheinmetalls übertriebene Reaktion auf einen verlorenen Auftrag und Bayers positiver Glyphosat-Beschchluss des US-Obersten Gerichtshofs.",
+   "items": [
+    {
+     "name": "DAX",
+     "ticker": "^GDAXI",
+     "note": "Der DAX schloss erstmals wieder über 25.000 Punkten und versucht, sich von dieser Marke abzusetzen. Ein Ausbruch über die alten Hochs wäre ein Kaufsignal in Richtung der Allzeithochs.",
+     "figures": "25.000 Punkte; Allzeithoch rund 2% entfernt",
+     "tip": "",
+     "einordnung": "Die Rückeroberung der 25.000er-Marke ist psychologisch wichtig, aber erst ein nachhaltiger Ausbruch über die Juni-Hochs würde den Trend bestätigen. Solange das Allzeithoch nicht genommen ist, bleibt die Gefahr einer Seitwärts-Falle.",
+     "detail": "Weiß betont implizit, dass die aktuelle Bewegung keine fundamentale Story ist, sondern eine technische Erholung nach einer längeren Konsolidierungsphase. Die gemischten Vorgaben — Tech-Druck an der Wall Street, Nikkei- und KOSPI-Verluste in Asien, nur Hang Seng positiv — zeigen, dass der DAX derzeit aus eigener Kraft läuft, was für die Qualität der Erholung spricht. Interessant ist der Sektor-Rotation-Aspekt: Finanztitel stabilisieren, Tech korrigiert — das ist ein klassisches spätes-Bullenmarkt-Muster, das man zuletzt 2018 sah, bevor der Jahresendrally die Segel strich.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 56,
+     "t": "00:56",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=56s",
+     "tv_symbol": "XETR:DAX"
+    },
+    {
+     "name": "Salesforce",
+     "ticker": "CRM",
+     "note": "Starker Anstieg gestern, aber nur technische Gegenbewegung nach herben Verlusten. Positive Analystenkommentare stützen, operative Neuigkeiten fehlen. Erholung könnte bis in den Bereich 340-370 USD reichen.",
+     "figures": "Erholungsziel 340-370 USD",
+     "tip": "Bei Erholung in den Bereich 340-370 USD auf zusätzliche Dynamik achten",
+     "einordnung": "Eine klassische Short-Squeeze-Rally nach überverkauftem Zustand — ohne fundamental neuen Katalysator bleibt das nur eine Gegenbewegung. Wer hier einsteigt, sollte sich bewusst sein, dass der Abwärtstrend nicht gebrochen ist.",
+     "detail": "Weiß stellt klar, dass es sich um eine Mean-Reversion handelt, nicht um einen Trendwechsel. Die positiven Analystenkommentare sind dabei eher Begleitmusik als Auslöser — typisch für Wall-Street-Research, das nach starken Kursverlusten 'kaufen' empfiehlt, weil die Bewertung nun 'attraktiv' erscheint. Der Bereich 340-370 USD ist charttechnisch die Zone, in der die vorherige Unterstützung nun als Widerstand wirkt; dort entscheidet sich, ob die Aktie eine V-Bottom-Erholung oder nur eine Dead-Cat-Bounce macht.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 86,
+     "t": "01:26",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=86s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Goldman Sachs",
+     "ticker": "GS",
+     "note": "Finanztitel haben für Stabilisierung gesorgt. Goldman Sachs profitiert von steigenden Zinsen und guter Stimmung dank M&A-Aktivität und Börsengängen.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Finanztitel sind aktuell die Stütze des Marktes — ein gesundes Zeichen, da sie typischerweise in einer späten Konjunkturphase outperformen. Goldman Sachs als M&A-Primus fährt mit der IPO-Welle eine eigene, zyklische Story.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 156,
+     "t": "02:36",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=156s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Micron Technology",
+     "ticker": "MU",
+     "note": "Korrekturbewegung nach unten als Teil einer branchenweiten Konsolidierung bei Chipwerten. Weiß sieht keinen Grund zur Sorge.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Die Chip-Konsolidierung ist nach dem massiven AI-Hype gesund und normal. Micron als Speicherchipspezialist ist ohnehin zyklischer als die Logik-Chip-Anbieter — Schwankungen gehören hier zum Geschäftsmodell.",
+     "detail": "Im Kontext der Tagesnews ist bemerkenswert, dass Nvidia ein Revenue-Sharing-Modell mit KI-Cloud-Anbietern aufbaut — das könnte mittelfristig die Nachfragestruktur für Speicherchips verändern, da vertikale Integration den klassischen Chip-Verkauf drücken könnte. Weiß thematisiert dies nicht, aber die Chip-Konsolidierung, die er als harmlos einordnet, könnte durch solche Strukturverschiebungen länger dauern als eine typische Zwischenkorrektur.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "Nvidia kooperiert mit KI-Cloud-Anbietern im Revenue-Sharing-Modell — könnte Nachfragestruktur für Chip-Anbieter wie Micron mittelfristig verändern."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 208,
+     "t": "03:28",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=208s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "SAP",
+     "ticker": "SAP.DE",
+     "note": "Zeigt Erholungsbewegung und könnte von Mittelabflüssen aus Hypeaktien profitieren.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "SAP als defensiver Tech-Wert mit solidem Geschäftsmodell ist ein natürlicher Profiteur, wenn Anleger aus überhitzten KI-Titeln Gewinne mitnehmen. Die Aktie hat in der Korrektur zuletzt relativ standgehalten — ein Qualitätsmerkmal.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 276,
+     "t": "04:36",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=276s",
+     "tv_symbol": "XETR:SAP"
+    },
+    {
+     "name": "Adidas",
+     "ticker": "ADS.DE",
+     "note": "Wartet auf Ausbruch über 180 € Richtung 200 €. Das EM-Aus der deutschen Nationalmannschaft hat nicht geholfen, ist wirtschaftlich aber nicht dramatisch.",
+     "figures": "180 €, 200 €",
+     "tip": "200 €-Marke im Auge behalten",
+     "einordnung": "Das EM-Aus ist sentimentaler Natur — die Trikotverkäufe laufen bereits, und Adidas profitiert ohnehin vom Turnier-Halo unabhängig vom deutschen Weiterkommen. Charttechnisch ist die 180 € der Schlüsselwiderstand.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 283,
+     "t": "04:43",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=283s",
+     "tv_symbol": "XETR:ADS"
+    },
+    {
+     "name": "Nordex",
+     "ticker": null,
+     "note": "Neue Aufträge über 197 Megawatt (30 Turbinen) von Innova und BMR treiben die Aktie. Chartziel ist das Juni-Hoch, danach die Mai-Hochs.",
+     "figures": "197 Megawatt, 30 Turbinen",
+     "tip": "",
+     "einordnung": "Order-News sind bei Nordex willkommen, aber die Aktie bleibt ein schwieriges Chart-Papier mit hoher Volatilität. Erst die Überwindung der Mai-Hochs würde den Abwärtstrend seit 2023 nachhaltig brechen.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 306,
+     "t": "05:06",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=306s"
+    },
+    {
+     "name": "Airbus",
+     "ticker": "AIR.DE",
+     "note": "Positive Analystenkommentare: Rekordauslieferung von 870 Maschinen für 2026 erwartet. Aktie hat die 200-Tage-Linie gebrochen und steigt Richtung 220 €.",
+     "figures": "870 Maschinen Auslieferung 2026; Kursziel 200 €, 220 €",
+     "tip": "220 € könnten bald in Angriff genommen werden",
+     "einordnung": "Die Rückeroberung der 200-Tage-Linie ist ein starkes charttechnisches Signal. Fundamental untermauert durch die Auslieferungsstory — Airbus ist einer der wenigen DAX-Werte mit klarer, mehrjähriger Wachstumssicht.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 333,
+     "t": "05:33",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=333s",
+     "tv_symbol": "XETR:AIR"
+    },
+    {
+     "name": "Rheinmetall",
+     "ticker": "RHM.DE",
+     "note": "Gestärkter DAX-Wert mit Gegenbewegung nach Verlust eines Auftrags. Abwärtstrend seit Februar muss noch gebrochen werden. Der Absturz war übertrieben, da der Auftrag erst 2031 relevant geworden wäre.",
+     "figures": "über 1.600 € vor Auftragsverlust; Bruch bei 1.000 €",
+     "tip": "",
+     "einordnung": "Die heftige Reaktion auf einen Auftrag, der erst 2031 greift, zeigt wie emotional der Rheinmetall-Chart besetzt ist. Die Gegenbewegung ist rational — der Abwärtstrend bleibt aber intakt, bis die Februar-Hochs fallen.",
+     "detail": "Weiß macht hier einen wichtigen fundamentalen Punkt: Der Markt hat auf ein Ereignis reagiert, das zeitlich weit in der Zukunft liegt und zudem einzelvertraglich ist — das Gesamtauftragsbuch von Rheinmetall bleibt massiv. Das erinnert an die Überreaktionen bei Rüstungswerten in der Anfangsphase des Ukraine-Kriegs 2022, als jeder positiven News eine euphorische und jeder negativen eine panische Reaktion folgte. Die Tagesnews zum massiven russischen Angriff auf Kiew (74 Raketen, 496 Drohnen) unterstreicht, dass der sicherheitspolitische Kontext intakt bleibt — was die grundsätzliche Nachfragestory für Rüstungswerte stützt, auch wenn der Chart kurzfristig korrigiert.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "Russland fliegt massiven Angriff auf Kiew — 74 Raketen und 496 Drohnen; unterstreicht anhaltenden Rüstungsbedarf."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 384,
+     "t": "06:24",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=384s",
+     "tv_symbol": "XETR:RHM"
+    },
+    {
+     "name": "Bayer",
+     "ticker": "BAYN.DE",
+     "note": "Reagiert positiv auf Beschluss des US-Obersten Gerichtshofs zu Glyphosat. US-Glyphosatgeschäft soll ausgegliedert werden. Aktie steht bei 49 €, könnte 50 € brechen — dann technisches Kaufsignal.",
+     "figures": "49 €, 50 €",
+     "tip": "Bei Ausbruch über 50 € Kaufsignal für Trader; fundamental abwarten möglich",
+     "einordnung": "Der Glyphosat-Befreiungsschlag ist für Bayer existenziell — die Aktie hat jahrelang unter dieser Unsicherheit gelitten. Ein Bruch der 50 € wäre charttechnisch bedeutend, fundamental bleibt aber das Pharma-Geschäft die eigentliche Baustelle.",
+     "detail": "Der Beschluss des Obersten Gerichtshofs ist ein struktureller Wendepunkt: Die Klageflut, die Bayer seit der Monsanto-Übernahme belastet hat, könnte durch die Ausgliederung des US-Glyphosatgeschäfts entschärft werden. Weiß fokussiert sich auf die charttechnische Komponente — die 50 € als psychologische und technische Schwelle —, aber die fundamentale Implikation ist weit größer: Entfällt das Glyphosat-Risiko, könnte Bayer neu bewertet werden, da der Konzern ohne diesen 'Liability-Discount' deutlich höher notieren könnte. Das erinnert an BP nach dem Deepwater-Horizon-Schaden: Sobald die Klage-Rückstellungen berechenbar wurden, setzte eine mehrjährige Neubewertung ein.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 462,
+     "t": "07:42",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=462s",
+     "tv_symbol": "XETR:BAYN"
+    }
+   ],
+   "macro": [
+    {
+     "text": "An der Wall Street geraten Techwerte unter Druck, während Finanztitel stabilisieren — ein klassisches Rotationsmuster im späten Bullenmarkt.",
+     "sec": 56,
+     "t": "00:56",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=56s"
+    },
+    {
+     "text": "In Asien geben Nikkei und KOSPI deutlich nach, während der Hang Seng im Aufwind ist — gemischte Vorgaben für den europäischen Handel.",
+     "sec": 56,
+     "t": "00:56",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=56s"
+    },
+    {
+     "text": "Geld fließt aus Hypeaktien in zuvor korrigierte Qualitäts titel wie Salesforce, Adobe und SAP — eine Mean-Reversion-Rotation.",
+     "sec": 116,
+     "t": "01:56",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=116s"
+    },
+    {
+     "text": "Südkoreas Inflation beschleunigt sich auf ein 30-Monats-Hoch, was die geldpolitische Ausrichtung der südkoreanischen Notenbank kompliziert und den KOSPI-Verlust mit erklärt.",
+     "sec": 56,
+     "t": "00:56",
+     "tlink": "https://www.youtube.com/watch?v=rtqIeordQFo&t=56s"
+    }
+   ]
+  },
   {
    "channel": "onvista",
    "playlist": "Börse & Märkte LIVE",
@@ -10168,201 +10380,6 @@
      "text": "Steigende Ölpreise könnten Inflationsschübe im Herbst auslösen.",
      "t": "02:06",
      "tlink": "https://www.youtube.com/watch?v=nMo7Sk-jhFo&t=126s"
-    }
-   ]
-  },
-  {
-   "channel": "Der Aktionär - Märkte am Morgen",
-   "playlist": "Märkte am Morgen",
-   "id": "vGxy42Dw53w",
-   "title": "Märkte am Morgen: Commerzbank, Meta, OpenAI-IPO, Nuvalent/GSK, Oracle",
-   "date": "20260610",
-   "url": "https://www.youtube.com/watch?v=vGxy42Dw53w",
-   "summarized_at": "2026-06-11T13:17:09.521675+00:00",
-   "summary": "Der deutsche Aktienmarkt bleibt schwierig, der DAX gab gestern deutlich ab und wird heute schwächer erwartet. Belastend wirken die Lage im Iran-Krieg und schwache Vorgaben aus Asien. Fokus liegt auf Einzelwerten wie Commerzbank, Meta, OpenAI-IPO, Nuvalent/GSK und Oracle.",
-   "items": [
-    {
-     "name": "Intro",
-     "note": "Begrüßung und kurzer Hinweis auf die schwierige Marktlage.",
-     "figures": "",
-     "tip": "",
-     "t": "00:00",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=0s"
-    },
-    {
-     "name": "Marktüberblick",
-     "note": "Wall Street schloss uneinheitlich mit Tech-Selloff, DAX drehte ins Minus. Heute US-Verbraucherpreise um 14:30 Uhr im Fokus. Asiatische Börsen deutlich im Minus.",
-     "figures": "DAX -0,7%; S&P500 und Nasdaq rot; Nikkei -2,2%; Hang Seng -1,1%; Shanghai Composite -0,8%; Öl Brent 91,25 $; WTI unter 90 $ (88 $); Bitcoin 61.200 $",
-     "tip": "",
-     "t": "00:21",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=21s"
-    },
-    {
-     "name": "Commerzbank",
-     "note": "UniCredit erhöht Annahmequote im Übernahmeangebot auf 10,91%, Gesamtanteil steigt auf 37,68%. Commerzbank kontert mit Vorwürfen, UniCredit betont Regelkonformität.",
-     "figures": "Annahmequote 10,91% (vorher 7,58%); Gesamtanteil 37,68% (vorher 26,77%); Tausch 0,485 UniCredit-Aktien pro Commerzbank-Aktie; Frist bis 16. Juni, Verlängerung bis 3. Juli möglich",
-     "tip": "",
-     "t": "02:28",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=148s"
-    },
-    {
-     "name": "Meta",
-     "note": "EU fordert Öffnung von WhatsApp für Drittanbieter-KI innerhalb von 5 Tagen, sonst drohen Bußgelder bis zu 10% des Umsatzes und tägliche Zwangsgelder. Aktie reagierte kaum.",
-     "figures": "Bußgelder bis 10% des Gesamtumsatzes; tägliche Zwangsgelder bis 5% des durchschnittlichen Tagesumsatzes",
-     "tip": "",
-     "t": "04:12",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=252s"
-    },
-    {
-     "name": "OpenAI-IPO",
-     "note": "OpenAI hat vertraulichen IPO-Antrag eingereicht, Bewertung bei ca. 900 Milliarden Dollar. Grund: hohe Investitionsausgaben (KPEX), die nicht mehr vollständig über private Runden stemmbar sind.",
-     "figures": "Bewertung ca. 900 Milliarden $; Space X IPO am Freitag mit 75 Mrd. $; Anthropic bereits bei SEC",
-     "tip": "",
-     "t": "06:10",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=370s"
-    },
-    {
-     "name": "Nuvalent/GSK",
-     "note": "GSK übernimmt Nuvalent für 10,6 Milliarden Dollar in bar (124 $ je Aktie, Aufschlag von 40%). Ziel: Stärkung der Onkologiesparte mit zwei Lungenkrebs-Medikamenten (Blockbuster, Breakthrough Therapy Status).",
-     "figures": "Übernahme 10,6 Mrd. $; 124 $ je Aktie; Aufschlag 40%; Abschluss im dritten Quartal",
-     "tip": "",
-     "t": "07:40",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=460s"
-    },
-    {
-     "name": "Oracle",
-     "note": "Oracle legt heute nach US-Handelsschluss Q4-Zahlen vor. Analysten erwarten Gewinn von 1,96 $ und Umsatz von 19,1 Mrd. $. Fokus liegt auf dem Auftragsbestand im Cloudgeschäft.",
-     "figures": "Erwarteter Gewinn Q4: 1,96 $ (Vorjahr 1,9 $); Umsatz Q4: 19,1 Mrd. $ (+20% zum Vorjahr); Gesamtjahr Gewinn 7,50 $ (Vorjahr 4,34 $); Gesamtumsatz 67,26 Mrd. $ (Vorjahr 57,4 Mrd. $)",
-     "tip": "Bei nur Erfüllung der Erwartungen könnte Enttäuschung drohen, ähnlich wie bei Broadcom letzte Woche.",
-     "t": "09:47",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=587s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "Belastend wirken die Lage im Iran-Krieg mit gegenseitigen Attacken und Drohungen von Donald Trump sowie schwache Vorgaben aus Asien.",
-     "t": "00:21",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=21s"
-    },
-    {
-     "text": "Heute Nachmittag um 14:30 Uhr werden US-Verbraucherpreise veröffentlicht, die für die zukünftige Zinspolitik der Fed entscheidend sind.",
-     "t": "01:30",
-     "tlink": "https://www.youtube.com/watch?v=vGxy42Dw53w&t=90s"
-    }
-   ]
-  },
-  {
-   "channel": "onvista",
-   "playlist": "Börse & Märkte LIVE",
-   "id": "S_B3M_kBoEQ",
-   "title": "STMicro-Upgrade, SK Hynix-IPO, Oracle vor Zahlen",
-   "date": "20260610",
-   "url": "https://www.youtube.com/watch?v=S_B3M_kBoEQ",
-   "summarized_at": "2026-06-11T12:42:31.849084+00:00",
-   "summary": "Der DAX steht unter Druck aufgrund geopolitischer Spannungen im Nahen Osten und bevorstehender US-Inflationsdaten. Martin Goersch analysiert Einzelwerte wie Fielmann, Heidelberger Druckmaschinen, Adidas, STMicroelectronics, Bitmine, Super Micro Computer, Taiwan Semi, Applied Optoelectronics, SK Hynix und Oracle. Er sieht die aktuelle Marktschwäche als Rotation aus Tech-Werten und betont, dass die Gewinnentwicklung im Tech-Sektor die Kursentwicklung stützt, anders als im Jahr 2000.",
-   "items": [
-    {
-     "name": "Dax",
-     "note": "Der DAX fällt um über 100 Punkte (ca. 1,3-1,4%) aufgrund geopolitischer Spannungen und Inflationsängste.",
-     "figures": "-1,3% bis -1,4%",
-     "tip": "",
-     "t": "00:00",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=0s"
-    },
-    {
-     "name": "Fielmann",
-     "note": "Deutsche Bank nimmt Fielmann mit Kaufrating und höchstem Kursziel im Analystenfeld auf. Die Aktie steigt um fast 6%.",
-     "figures": "Kursziel 63 €, KGV 15,6, durchschnittliches Kursziel 54 €",
-     "tip": "Abwarten auf Ausbruch über die Trendlinie und die letzten Hochs, dann Einstieg.",
-     "t": "15:30",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=930s"
-    },
-    {
-     "name": "Heidelberger Druckmaschinen",
-     "note": "Aktie steigt um 5,5% nach Bestätigung der vorläufigen Jahreszahlen. Bereinigte EBITDA-Marge lag bei 6,6%, Umsatz stagniert voraussichtlich.",
-     "figures": "+5,5%, EBITDA-Marge 6,6%",
-     "tip": "Zurückhaltend sein, da Gewinnsteigerung nur durch Kostensenkungen und nicht durch Umsatzwachstum. Charttechnisch Unterstützung bei ca. 1,25-1,30 €, Ziel 2 €.",
-     "t": "19:30",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=1170s"
-    },
-    {
-     "name": "Adidas",
-     "note": "Keine spezifischen Details im Transkript genannt.",
-     "figures": "",
-     "tip": "",
-     "t": "22:54",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=1374s"
-    },
-    {
-     "name": "STMicroelectronics",
-     "note": "Bank of America stuft STMicroelectronics auf 'Buy' hoch mit dem höchsten Kursziel im Analystenfeld. Grund sind Silizium-Photonik, Rechenzentren und Satelliten.",
-     "figures": "",
-     "tip": "",
-     "t": "27:07",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=1627s"
-    },
-    {
-     "name": "Bitmine",
-     "note": "Keine spezifischen Details im Transkript genannt.",
-     "figures": "",
-     "tip": "",
-     "t": "33:13",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=1993s"
-    },
-    {
-     "name": "Super Micro Computer",
-     "note": "Keine spezifischen Details im Transkript genannt.",
-     "figures": "",
-     "tip": "",
-     "t": "35:56",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=2156s"
-    },
-    {
-     "name": "Taiwan Semi",
-     "note": "Keine spezifischen Details im Transkript genannt.",
-     "figures": "",
-     "tip": "",
-     "t": "39:02",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=2342s"
-    },
-    {
-     "name": "Applied Optoelectronics",
-     "note": "Keine spezifischen Details im Transkript genannt.",
-     "figures": "",
-     "tip": "",
-     "t": "41:57",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=2517s"
-    },
-    {
-     "name": "SK Hynix",
-     "note": "SK Hynix prüft US-Markteintritt mit einem möglichen ADR-Listing. Starke Position bei HBM-Speichern als Nvidia-Zulieferer.",
-     "figures": "",
-     "tip": "",
-     "t": "49:18",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=2958s"
-    },
-    {
-     "name": "Oracle",
-     "note": "Oracle steht vor Quartalszahlen. Fokus liegt auf Cloud-Wachstum, KI-Infrastruktur und Auftragsbestand.",
-     "figures": "",
-     "tip": "",
-     "t": "53:14",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=3194s"
-    },
-    {
-     "name": "Zuschauerfragen",
-     "note": "Keine spezifischen Details im Transkript genannt.",
-     "figures": "",
-     "tip": "",
-     "t": "57:35",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=3455s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "Geopolitische Spannungen im Nahen Osten (Iran greift Golfstaaten an) und bevorstehende US-Inflationsdaten (Core Inflation Rate) belasten die Märkte. JP Morgan erwartet bei Inflation über 0,35% einen S&P-Rückgang von 2-3%.",
-     "t": "01:20",
-     "tlink": "https://www.youtube.com/watch?v=S_B3M_kBoEQ&t=80s"
     }
    ]
   }
