@@ -1,9 +1,19 @@
 {
- "updated": "2026-07-02T18:35:10.995763+00:00",
+ "updated": "2026-07-03T06:34:38.516055+00:00",
  "ticker": {
   "^GDAXI": {
-   "name": "DAX",
+   "name": "Marktüberblick",
    "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=37s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der DAX erreicht ein neues Rekordhoch bei 25.655 Punkten und dehnt in der Indikation auf 25.750 Punkte aus. Der Dow Jones legt rund 550 Punkte zu. Asien liefert positive Vorgaben, die US-Börsen bleib…",
+     "einordnung": "Der DAX nutzt das momentum-basierte Rally-Umfeld konsequent aus. Dass der Index trotz schwächelnder US-Tech-Vorgaben neue Hochs markiert, spricht für eine eigenständige europäische Dynamik — ein Bild…",
+     "figures": "25.655 Punkte (Rekord), 25.750 Punkte (Indikation), +550 Punkte Dow Jones"
+    },
     {
      "date": "2026-07-02",
      "video_id": "rtqIeordQFo",
@@ -109,16 +119,554 @@
      "kategorie": "makro",
      "note": "Der DAX behauptet sich am Morgen nach den Gewinnmitnahmen vom Freitag.",
      "einordnung": "Die Behauptung am Morgen nach der Freitagsschwäche ist ein erstes Stabilitätssignal, aber nicht mehr als das. Entscheidend wird, ob der Index die Unterstützung bei rund 24.500 Punkten hält."
+    }
+   ]
+  },
+  "AAPL": {
+   "name": "Apple",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=135s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Apple legt um 4,8% zu, gespeist von Meldungen, dass das Unternehmen 10 Millionen faltbare Handys in Produktion geben soll.",
+     "einordnung": "Ein Falt-Handy-Gerücht als Kursbeschleuniger bei Apple ist ein klassisches News-Driven-Move. Solche Gerüchte haben in der Vergangenheit oft kurzfristig gezündet, sich aber als nachhaltiger Treiber se…",
+     "figures": "+4,8%, 10 Millionen faltbare Handys"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=495s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Apple erhöht Preise für Mac und iPads um 15-18 Prozent, die Aktie bricht mit 6,9 Prozent Wochenverlust ein. Haidt bleibt langfristig Fan, sieht aber kurzfristig Seitwärtsbewegung.",
+     "einordnung": "Preiserhöungen in einem konsumschwachen Umfeld sind ein zweischneidiges Schwert. Dass die Aktie trotzdem abgibt, zeigt, dass der Markt die Preiselastizität der Nachfrage skeptisch beurteilt. Langfris…",
+     "figures": "6,9% Wochenverlust, Preiserhöhung 15-18%"
     },
     {
      "date": "2026-06-29",
-     "video_id": "zXPxhjz_nX0",
-     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=80s",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=2948s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Apple erhöht die Preise um 15-20% wegen steigender Speicherpreisen und versucht, Chips von CXMT (China) zu beziehen; charttechnisch bullisch nach ABC-Korrektur.",
+     "einordnung": "Preiserhöhungen von 15-20% bei Apple sind ungewöhnlich aggressiv und zeigen, dass das Unternehmen Speicherkosten weitergibt — ein Zeichen von Preissetzungsmacht. Das KGV von 31 ist jedoch kein Schnäp…",
+     "figures": "KGV 31; Preiserhöhung 15-20%; Unterstützung nach ABC-Korrektur"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=164s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Deutliche Preiserhöhungen für MacBooks aufgrund gestiegener Speicherpreise belasten die Aktie; die 200-Tage-Linie rückt in Sichtweite.",
+     "einordnung": "Die Preiserhöhungen könnten die ohnehin schwache Nachfrage weiter dämpfen — Apple kämpft bereits mit China-Schwäche. Charttechnisch nähert sich die Aktie einer wichtigen Unterstützung, was über kurz…"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "Nxn0NmV-hnM",
+     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=2043s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Preiserhöhungen: MacBook Air plus 200 Dollar, iPad Air plus 150 Dollar, 11-Zoll iPad Pro plus 200 Dollar, iPhone unverändert. Evercore ISI Kursziel 365 Dollar, Redburn 400 Dollar. Auslaufende günstig…",
+     "einordnung": "Preiserhöhungen in einem schwachen Konsumumfeld sind ein mutiger Schachzug — Apple setzt auf Markenmacht, aber die Speicherkosten explodieren und die günstigen Verträge laufen aus. KGV 30 für ein Unt…",
+     "figures": "Preiserhöhungen: +200$, +150$, +200$; Kursziel 365$, 400$; wichtige Zone 277$"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=1900s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Apple kündigt Preiserhöhungen für iPhones, Macs und iPads an, begründet mit steigenden Speicherpreisen. Charttechnisch ist das Kaufsignal intakt, fundamental erscheint die Aktie jedoch teuer.",
+     "einordnung": "Apple schiebt Kostensteigerungen elegant auf den Kunden – eine klassische Pricing-Power-Strategie. Ein KGV von 32,6 ist für ein Unternehmen mit diesem Wachstum jedoch sportlich. Die Zone 277-280$ ist…",
+     "figures": "PE Forward 32,6 (Schnitt 21,7); Kursziel 330-360$; iPhone Pro 18 Einstiegspreis 3000$; Speicherpreis-Upgrade 270-300$"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1119s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "WWDC mit Fokus auf Siri und KI-Integration; kurzer Kursauftrieb (+1–3%), folgender Rückgang (-3%) da keine überraschenden Features. Host: langfristig positiv, da wenig in KI investiert bisher.",
+     "einordnung": "Typisches FOMO-Reversal. Apple weniger exponiert in KI-CapEx-Race als Mega-Peers (Meta, Alphabet) – könnte mittelfristig zur Undervaluation führen, falls KI-Narrative abkühlt. Defensive Qualität in T…"
+    },
+    {
+     "date": "2025-11-20",
+     "video_id": "HNPb_J0F96o",
+     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=2446s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Apple zeigt relative Stärke und konsolidiert nahe der Widerstandszone um 277 USD. Bei Überschreiten wäre Raum bis 290–300 USD, ansonsten droht ein Rückfall zur Unterstützung bei 258–265 USD. Ein Verl…",
+     "einordnung": "Apple als defensiver Anker im Tech-Sektor — das ist ein vertrautes Muster in Marktphasen mit steigenden Zinserwartungen. Die Aktie hat weniger KI-Hype-Übergewicht und profitiert von Flight-to-Quality…",
+     "figures": "Widerstand 277 USD, Ziel 290–300 USD, Unterstützung 258–265 USD"
+    }
+   ]
+  },
+  "SNDK": {
+   "name": "SanDisk",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=168s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SanDisk fällt den zweiten Tag in Folge, wird aber als normale Korrektur nach starkem Jahresverlauf eingestuft.",
+     "einordnung": "Eine zweitägige Korrektur nach einem starken YTD-Lauf ist technisch gesund und kein Warnsignal. Wer die Aktie hält, sollte Ausschläge in dünnem US-Feiertagshandel nicht überbewerten."
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "Nxn0NmV-hnM",
+     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=887s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Citi hebt Kursziel von 2025 auf 500 US-Dollar und eröffnet eine 90-tägige positive Einschätzung. Grund: starke Micron-Zahlen und strukturelles Unterangebot bis 2027. Chart: wichtig 235,50 US-Dollar;…",
+     "einordnung": "Sandisk als Speicherpure-Play profitiert direkt vom Micron-Momentum — das Citi-Kursziel von 500 Dollar impliziert ein multiples, das nur gerechtfertigt ist, wenn das Unterangebot bis 2027 tatsächlich…",
+     "figures": "Kursziel 500$, wichtige Marke 235.50$, Stop 183.50$"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=331s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SanDisk legt nachbörslich um 16 Prozent zu und profitiert von der Euphorie nach Microns starken Quartalszahlen.",
+     "einordnung": "Der Spillover von Micron auf SanDisk ist angesichts der korrelierten Speichergeschäfte logisch. Die Frage ist jedoch, ob SanDisks eigene Fundamentaldaten diese Euphorie rechtfertigen oder ob es sich…",
+     "figures": "+16% nachbörslich"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "04yYuesQS4g",
+     "url": "https://www.youtube.com/watch?v=04yYuesQS4g&t=246s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Gestern 14% Verlust, heute leichte Erholung um 2% im vorbörslichen Handel.",
+     "einordnung": "Ein 14%-Einbruch bei einem Speicherwert ist fast immer ein Symptom, kein Zufall — entweder fundamentals Misstrauen oder Mitnahmeeffekt vom Sektor. Die 2%-Erholung ist noch kein All-clear-Signal, zuma…",
+     "figures": "-14% (gestern); +2% (vorbörslich)"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "t04FPU9gZbI",
+     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=2948s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Sandisk -7,5% vorbörslich. NAND-Speicher ersetzt HDDs, neue QLC-Produkte. Sehr niedriges KGV von 13 und PEG von 0,04 bei starkem Gewinnwachstum.",
+     "einordnung": "Ein PEG von 0,04 ist außergewöhnlich niedrig und signalisiert, dass der Markt das Gewinnwachstum von 5,4 auf 33,6 Mrd. $ kaum einpreist. Die NAND-Substitutionsstory gegenüber HDDs ist fundiert. Der h…",
+     "figures": "-7,5%, KGV 13, PEG 0,04, operativer Gewinn von 5,4 auf 33,6 Mrd. $ erwartet"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=542s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SanDisk macht neue Hochs; KI-Boom treibt Speichernachfrage massiv bis 2027, danach droht Überangebot; Tagesgewinn ~240 USD.",
+     "einordnung": "Das ist ein zyklengetriebenes Play—richtig, dass Host die Zeitgrenze klar benennt. Der aktuelle Aufwind ist echt (KI braucht speicher wie eine Lokomotive Kohle), aber die Uhr tickt. Das sollte in die…",
+     "figures": "Tagesgewinn ~240 USD, Überangebot ab 2027 erwartet"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Eine Chips-Short bei SanDisk wird als möglich erachtet.",
+     "einordnung": "SanDisk als Short-Kandidat ist interessant, da das Unternehmen im Speicherchips-Markt zyklisch ist – ein Kapazitätsengpass könnte jedoch die Short-These drehen."
+    },
+    {
+     "date": "2025-11-28",
+     "video_id": "fQxlQW1Y5LQ",
+     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1752s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Host meldet Aufnahme in den S&P 500; Aktie reagiert mit Kursgewinnen.",
+     "einordnung": "S&P-500-Aufnahmen generieren mechanische passive Käufe durch Indexfonds. Der unmittelbare Kursanstieg ist typisch, doch der Effekt verpufft meist nach wenigen Tagen.",
+     "figures": "+13%, +7%"
+    },
+    {
+     "date": "2025-11-20",
+     "video_id": "HNPb_J0F96o",
+     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=740s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Sandisk wird als möglicher S&P-500-Kandidat genannt.",
+     "einordnung": "Sandisk als Speicher-Spinoff profitiert vom KI-Speicherbedarf. Eine Index-Aufnahme würde passive Käufe auslösen, doch der Speichersektor bleibt zyklisch und margenempfindlich."
+    },
+    {
+     "date": "2025-11-13",
+     "video_id": "DdOoAO1ztKo",
+     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=535s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Sandisk fällt trotz gutem Ausblick um 10% – der Markt straft die Aktie ab, offenbar waren die Erwartungen vorausgelaufen.",
+     "einordnung": "Klassisches 'sell the news'-Verhalten nach einem guten Outlook. Bei Speicherspezialisten sind Prognoseerhöhungen oft bereits im Kurs – die 10% Korrektur zeigt, wie schnell die Stimmung kippt, wenn ni…",
+     "figures": "-10%"
+    }
+   ]
+  },
+  "TSLA": {
+   "name": "Tesla",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=190s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Tesla liefert im Q2 480.126 Fahrzeuge aus, deutlich über den Erwartungen von 406.000. Die Aktie fällt dennoch — vermutlich aufgrund von Rotation aus der Position.",
+     "einordnung": "Das klassische 'Buy the rumor, sell the news'-Muster: Die Outperformance bei den Auslieferungen war offensichtlich bereits eingepreist. Dass die Aktie trotz massiver positiver Überraschung fällt, sig…",
+     "figures": "480.126 Auslieferungen, Erwartung: 406.000"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=2338s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Zuschauerfrage: Hat Tesla 30% von SpaceX? Host: Nein, Tesla/Elon hat weniger als 1% Beteiligung, eher ~0,16–1%. Wahrscheinlich Verwechslung mit Privatanleger-Allokation (30%).",
+     "einordnung": "Verbreitete Fehlkalkulation im Publikum. Elon hat Tesla, SpaceX und Neuralink getrennt, keine 30%-Beteiligung zwischen ihnen. Irrelevant für SpaceX-IPO-Dynamik.",
+     "figures": "Tesla-Beteiligung SpaceX: ~0,16–1% (nicht 30%)"
+    },
+    {
+     "date": "2025-12-05",
+     "video_id": "BADYwmZH114",
+     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Tesla als Long-Kandidat eingestuft: Noch keine neuen Allzeithochs, aber Potenzial bis 500+ $. Ausbruch über 475 $ wäre Signal. Relative Stärke in den letzten Tagen. China-Absatz +9,9%, Model 3 +41% z…",
+     "einordnung": "Tesla zeigt aktuell relative Stärke im schwachen Marktumfeld — das ist ein bemerkenswertes Zeichen. Die China-Zahlen stützen kurzfristig, aber der Förderungs-Rückzug ab 2026 ist ein bekannter Kopfwin…",
+     "figures": "China-Absatz +9,9%, Model 3 +41% zum Vormonat, 475 $ Ausbruch-Level, 500+ $ Potenzial, 365 $, 510-520 $"
+    },
+    {
+     "date": "2025-11-20",
+     "video_id": "HNPb_J0F96o",
+     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=1741s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "xAI plant eine Finanzierungsrunde über 15 Mrd USD zu einer Bewertung von 230 Mrd USD. Die Integration von xAI in Tesla bleibt schwierig und umstritten.",
+     "einordnung": "Die xAI-Integration in Tesla ist ein Governance-Albtraum: Musk hält die KI-Tochter formal außerhalb von Tesla, nutzt aber Tesla-Ressourcen. Das erinnert an die SolarCity-Transaktion 2016, die Anleger…",
+     "figures": "xAI Finanzierung 15 Mrd USD, Bewertung 230 Mrd USD"
+    }
+   ]
+  },
+  "MRNA": {
+   "name": "Moderna",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=225s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Moderna steigt in kurzer Zeit um 30%, bricht über die 60$-Marke und wird von Analysten zum Kauf empfohlen. Der Host erwägt eine Teil-Gewinnmitnahme.",
+     "einordnung": "Ein 30%-Lauf in kurzer Zeit bei einem Biotech-Wert ist ein hochvolatiles Muster, das nach Gewinnmitnahme schreit. Die 60$-Marke als psychologischer Anker ist ein typischer Punkt, an dem Short-Coverin…",
+     "figures": "+30% in kurzer Zeit, 60$-Marke"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "MJo67AkNy70",
+     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=367s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Moderna mit technischem Ausbruch, aber Pullback; möglicher Rückläufer auf Ausbruchslinie.",
+     "einordnung": "Klassisches Break-and-Retest-Muster — der Rücklauf auf die Ausbruchslinie ist gesund, solange sie hält. Moderna bleibt aber ein Pipeline-Wert mit hohem Risiko, die Charttechnik allein reicht als Begr…"
+    },
+    {
+     "date": "2026-06-17",
+     "video_id": "UBcaG1xcyng",
+     "url": "https://www.youtube.com/watch?v=UBcaG1xcyng&t=422s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Modernas mRNA-basierter Grippeimpfstoff 'mFlusiva' steht vor wichtigen Zulassungsweichen: Das FDA-Beratergremium entscheidet morgen (18. Juni), die endgültige FDA-Entscheidung folgt am 5. August. Die…",
+     "einordnung": "Für Moderna wäre eine Zulassung von mFlusiva ein strategischer Durchbruch – der Konzern würde damit seine mRNA-Plattform über COVID hinaus etablieren und in den Massenmarkt Grippe-Impfung vorstoßen.…",
+     "figures": "Aktie +6% (intraday zweistellig); FDA-Beratervotum morgen (18.06.); FDA-Entscheid 05.08."
+    }
+   ]
+  },
+  "BAYN.DE": {
+   "name": "Bayer",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=300s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bayer kämpft um die 50€-Marke, zuletzt überwogen positive Nachrichten.",
+     "einordnung": "Die 50€-Marke ist bei Bayer nicht nur psychologisch, sondern auch charttechnisch eine mehrfach getestete Umbruchzone. Dass positive Nachrichten überwiegen, ist ein Stimmungswechsel nach einer langen…",
+     "figures": "50€-Marke"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=462s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Reagiert positiv auf Beschluss des US-Obersten Gerichtshofs zu Glyphosat. US-Glyphosatgeschäft soll ausgegliedert werden. Aktie steht bei 49 €, könnte 50 € brechen — dann technisches Kaufsignal.",
+     "einordnung": "Der Glyphosat-Befreiungsschlag ist für Bayer existenziell — die Aktie hat jahrelang unter dieser Unsicherheit gelitten. Ein Bruch der 50 € wäre charttechnisch bedeutend, fundamental bleibt aber das P…",
+     "figures": "49 €, 50 €"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=1168s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Roundup-Vergleich genehmigt, neue Glyphosat-Einheit Ruvan. Deutsche Bank stuft auf Kauf hoch. Chart zeigt Widerstand bei 52-54 Euro, KGV jedoch sehr hoch.",
+     "einordnung": "Der Roundup-Vergleich ist ein Befreiungsschlag, aber das KGV von 155 zeigt, dass die Ertragskraft noch nicht da ist. Die Deutsche-Bank-Hochstufung ist mutig, aber charttechnisch ist die Aktie überkau…",
+     "figures": "Kursziel 45 € auf 60 €, aktuell ca. 52 €, KGV 155"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=617s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Wichtiger Sieg vor dem US Supreme Court, die Aktie schießt 20 Prozent nach oben. Nun wartet der Markt auf die Ergebnisse eines 7,25-Milliarden-Dollar-Sammelvergleichs.",
+     "einordnung": "Ein Supreme-Court-Sieg ist für Bayer ein existenzieller Meilenstein – das Glyphosat-Risiko war der größte Überhängende Faktor seit Jahren. 20 Prozent Aufschlag sind gerechtfertigt, aber der Sammelver…",
+     "figures": "7,25 Mrd USD Sammelvergleich, +20% Kurs"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "tIXIrS3cz1s",
+     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=345s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Bayer reagiert positiv auf ein günstiges Glyphosat-Urteil. Die nächste charttechnische Hürde ist die 50-Euro-Marke; zuvor lag der Widerstand bei 42 bis 43 Euro.",
+     "einordnung": "Nach jahrelangem Rechtsstreit um Glyphosat ist jedes positive Urteil ein Befreiungsschlag für die Aktie. Die 50-Euro-Marke ist psychologisch und technisch relevant — ein Breakout würde den Weg für ei…",
+     "figures": "50 € (nächste Hürde), 42-43 € (vorheriger Widerstand)"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=254s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Zwei juristische Meilensteine rücken in den Fokus: der 4. Juni als Fristende für den Glyphosat-Sammelvergleich und das Urteil des obersten US-Gerichts Ende Juni. Die Aktie könnte kurzfristig als Unde…",
+     "einordnung": "Bayer ist ein klassischer Turnaround-Kandidat mit binärem Risiko – die juristischen Termine im Juni könnten entweder eine Entlastung oder eine neue Belastung bringen. Der kurzfristige Momentum-Tailwi…",
+     "figures": "7,25 Milliarden Dollar (Rückstellung für Glyphosat-Vergleiche)"
+    }
+   ]
+  },
+  "DBK.DE": {
+   "name": "Deutsche Bank",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=322s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Deutsche Bank profitiert von einem Reformpaket und war gestern der stärkste Wert im europäischen Bankensektor. Kursziel wird bei 33-34€ gesehen.",
+     "einordnung": "Ein Reformpaket als Katalysator für Bankaktien ist ein vertrautes Muster — das erinnert an die EU-Bankensektor-Reformen 2014/15, die damals den gesamten Sektor beflügelten. Wenn die 33-34€-Zone saube…",
+     "figures": "Kursziel 33-34€"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=906s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Morgan Stanley hebt das Kursziel moderat an und sieht deutliches Potenzial. Chart zeigt Widerstand bei 34 Euro, Ziel bei 40 Euro möglich. Bewertung mit Buchwert von 0,7 günstig.",
+     "einordnung": "Die Deutsche Bank profitiert vom Zinsumfeld und der Rotation in Finanzwerte. Ein Buchwert von 0,7 ist für eine systemrelevante Bank nach wie vor attraktiv, aber der Widerstand bei 34 Euro muss erst ü…",
+     "figures": "Kursziel 34 € auf 36 €, Buchwert 0,7, Ziel 40 € (161,8% Extension)"
+    }
+   ]
+  },
+  "CBK.DE": {
+   "name": "Commerzbank",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=364s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Commerzbank tendiert ebenfalls nach oben, jedoch weniger dynamisch als die Deutsche Bank. Ein Einstieg wird als möglich angesehen.",
+     "einordnung": "Die Commerzbank läuft der Deutschen Bank hinterher, was typisch für eine Sektor-Rally ist, bei der der Primus die Führung übernimmt und der Zweitplatzierte nachzieht. Wer auf den Sektor setzt, bekomm…"
+    }
+   ]
+  },
+  "RHM.DE": {
+   "name": "Rheinmetall",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=375s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Barclays senkt das Kursziel auf 2000€, aber die Aktie erholt sich nach dem Verlust des Marina-Auftrags. Chart: Ein Break bei 1200€ könnte den Abwärtstrend beenden.",
+     "einordnung": "Die Senkung des Kursziels durch Barclays auf 2000€ ist bei einer Aktie, die zuletzt deutlich unter Druck stand, ein interessantes Signal — das Ziel liegt immer noch deutlich über dem aktuellen Kurs.…",
+     "figures": "2000€ Kursziel (Barclays), 1200€ Break-Marke"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=384s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gestärkter DAX-Wert mit Gegenbewegung nach Verlust eines Auftrags. Abwärtstrend seit Februar muss noch gebrochen werden. Der Absturz war übertrieben, da der Auftrag erst 2031 relevant geworden wäre.",
+     "einordnung": "Die heftige Reaktion auf einen Auftrag, der erst 2031 greift, zeigt wie emotional der Rheinmetall-Chart besetzt ist. Die Gegenbewegung ist rational — der Abwärtstrend bleibt aber intakt, bis die Febr…",
+     "figures": "über 1.600 € vor Auftragsverlust; Bruch bei 1.000 €"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "kbhs3X-LW2E",
+     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1588s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "CEO Armin Papperger kauft nach dem Kursrutsch 3.200 Aktien zu 954 EUR — ein starkes Insidersignal mit einem Volumen von rund 3 Mio. EUR. Das KGV liegt bei 24, der PEG unter 0,6 — günstig bewertet bei…",
+     "einordnung": "Ein CEO-Kauf in dieser Größenordnung ist ein deutliches Signal — Papperger setzt sein eigenes Geld dort ein, wo er die Value-Lücke sieht. Das PEG von 0,6 bei diesem Wachstumspfad ist für einen Rüstun…",
+     "figures": "3.200 Aktien; Kaufkurs 954 EUR; Volumen ~3 Mio. EUR; KGV ~24; PEG 0,6; Gewinnwachstum 130%, 50%, 40%"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=250s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Ein erhoffter Großauftrag fällt aus, die Aktie bricht ein. Haidt liefert keine konkrete Prognose.",
+     "einordnung": "Rheinmetall leidet unter dem klassischen Problem hochbewerteter Rüstungswerte: Jeder entgangene Auftrag wird überproportional bestraft, weil die Bewertung bereits Perfektion einpreist. Das erinnert a…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "tIXIrS3cz1s",
+     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=395s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall verlor einen Auftrag vom Verteidigungsministerium, woraufhin der Kurs von zuvor rund 1.200 Euro unter die 1.000-Euro-Marke fiel. Der Host hält die Reaktion für übertrieben und erwartet, d…",
+     "einordnung": "Ein Auftragsverlust bei einem Rüstungskonzern mit einem Auftragsbestand in Milliardenhöhe ist ein marginales Ereignis — der Markt reagiert hier emotional, nicht fundamental. Unter 1.000 Euro wird Rhe…",
+     "figures": "1.200 € (vorheriges Niveau), unter 1.000 € (aktueller Bereich)"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "F6cTDl0_v6Q",
+     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=538s",
+     "channel": "BerneckerTV",
+     "kategorie": "news",
+     "note": "Rheinmetall verliert den F126-Auftrag im Volumen von 12 Mrd. EUR, was zu einem Umsatzentgang von 2 Mrd. EUR und einem EBIT-Verlust von 250 Mio. EUR führt. Der CEO zeichnet sich durch Aktienkäufe aus,…",
+     "einordnung": "Der Auftragsverlust ist ein Rückschlag, muss aber gegen den massiven Auftragsbestand aus dem europäischen Rüstungszyklus abgewogen werden. Das KGV von 16,8 für 2027 ist moderat für einen Rüstungskonz…",
+     "figures": "Auftragswert 12 Mrd. EUR; Umsatzentgang 2 Mrd. EUR; EBIT-Verlust 250 Mio. EUR; KGV 16,8 für 2027; CEO-Käufe 3 Mrd. EUR"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nach Verlust des Fregatten-Auftrags an TKDS keine Gegenbewegung; die Reaktion erscheint übertrieben, langfristig besteht Potenzial, aber kurzfristig abwarten.",
+     "einordnung": "Der Verlust eines Großauftrags ist ein psychologischer Dämpfer, ändert aber wenig an der strukturellen Verteidigungsnachfrage. Dass der Host die Reaktion als übertrieben einstuft, ist nachvollziehbar…"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
+     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. We…",
+     "figures": "-19%, 12,8 Mrd. Euro"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "4K4U0fRfM0A",
+     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=1424s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "Die Aktie fällt 18 Prozent nach Meldung über mögliches Ende des F126-Fregattenprojekts. JP Morgan senkt das Kursziel leicht auf 1400 Euro, hält aber am Hold-Rating fest. Zusätzlicher Druck entsteht d…",
+     "einordnung": "Die 18-Prozent-Reaktion ist dramatisch, aber der F126 ist ein Marineprojekt — Rheinmetalls Kernfranchise sind Landsysteme. Der PEG von 0,67 signalisiert, dass die Aktie trotz des Abverkaufs noch imme…",
+     "figures": "-18%, Kursziel 1400 Euro (von 1450), KGV 24, PEG 0,67"
+    },
+    {
+     "date": "2026-06-16",
+     "video_id": "J1zzTOyOdKE",
+     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=952s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Die Aktie steht unter Druck, weil ein baldiges Ende des Iran-Krieges die Nachfrage nach Rüstungsgütern dämpfen könnte. Egmond sieht noch kein belastbares Tief und bleibt skeptisch.",
+     "einordnung": "Rheinmetall ist ein klassisches Geopolitik-Play — steigt bei Konflikten, leidet bei Entspannung. Das Iran-Abkommen trifft die Aktie daher doppelt: sinkende Ölpreis-Einnahmen schwächen gleichzeitig di…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=483s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Unter Druck: Friedenshoffnung dämpft die Rüstungsfantasie, zusätzlich Sorgen um das deutsch-französische Panzer-Joint-Venture und mögliche Mittelkürzungen.",
+     "einordnung": "Das ist die Kehrseite des Friedens-Trades — wer von Rüstungsausgaben profitiert, leidet bei Deeskalation. Rheinmetall hatte eine beispiellose Rally; eine Konsolidierung ist nach diesem Katalysator fu…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "4TeOYIh5hN0",
+     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1051s",
      "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "Der Index läuft seit Monaten in einer Seitwärtsbewegung unter der Barriere bei 25.470 Punkten. Harry wartet auf einen dynamischen Wochenausbruch darüber, um ein neues Kaufsignal zu aktivieren.",
-     "einordnung": "Die Seitwärtsphase ist ein klassisches Pattszenario – wer hier voreilig einsteigt, zahlt Lehrgeld. Der Wochenausbruch als Trigger ist methodisch sauber, doch bis dahin ist Geduld die einzige profitab…",
-     "figures": "25.470 Punkte"
+     "note": "Mittelfristiger Abwärtstrend nach Triple-Top bei 1930 €; Verkäufer dominant, nächster Support bei 934 €, Key-Support bei 1481 €.",
+     "einordnung": "Rheinmetall ist ein lehrbuchhaftes Beispiel für einen gebrochenen Aufwärtstrend – das Triple-Top bei 1930 € ist definitiv gescheitert, und der Trend läuft nach unten aus, ohne dass eine Stabilisierun…",
+     "figures": "1930 € (Triple-Top-Hoch), 1481 € (Key-Support), 1270 € (Zwischenstützung), 934 € (nächster Support), Korrektur ca. 40 %"
+    }
+   ]
+  },
+  "R3NK.DE": {
+   "name": "Renk",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=489s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Renk plant einen Zukauf für die Marinesparte in Höhe von 200-250 Mio.€ für ein nicht börsennotiertes Unternehmen. Die Aktie zeigt Erholung.",
+     "einordnung": "Eine Akquisition in der Marinesparte ist strategisch schlüssig, nachdem der Marina-Auftrag an Rheinmetall gegangen war — Renk bündelt hier Kompetenzen. 200-250 Mio.€ sind für ein Unternehmen dieser G…",
+     "figures": "200-250 Mio.€"
+    }
+   ]
+  },
+  "TKA.DE": {
+   "name": "Thyssenkrupp",
+   "auftritte": [
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=514s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Thyssenkrupp ist stark unterwegs und benötigt einen Break bei 1230-1250 für weitere Dynamik.",
+     "einordnung": "Ein Break-Bereich bei 1230-1250 deutet darauf hin, dass die Aktie in einer Konsolidierungszone feststeckt und eine Richtungsentscheidung ansteht. Dass der Host den Break abwarten will, ist die diszip…",
+     "figures": "1230-1250 (Break-Bereich)"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=579s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "TKMS profitiert vom gescheiterten Rheinmetall-Auftrag als möglicher Ersatz und legt massiv zu.",
+     "einordnung": "Als potenzieller Nutznießer der F126-Auftragsreallokation ist die Rally spekulativ, aber logisch. Die Auftragsvisibilität würde sich substantiell verbessern, falls TKMS den Zuschlag erhält."
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2982s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "TKMS profitiert von Kapitalumschichtung in der Rüstungsbranche; Kursziel 125€, Chart deutet auf Anstieg Richtung 90-100€.",
+     "einordnung": "TKMS ist der Profiteur einer geopolitischen Neuausrichtung — europäische Verteidigungsausgaben steigen strukturell, und als Spezialist für U-Boote und Marine-Systeme sitzt TKMS in einer Sweet Spot. D…",
+     "figures": "Kursziel 125€ (MWB Research), Gewinnwachstum +20% bis +25% in 2026/27, KGV 37"
+    },
+    {
+     "date": "2026-06-17",
+     "video_id": "UBcaG1xcyng",
+     "url": "https://www.youtube.com/watch?v=UBcaG1xcyng&t=647s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Aufsichtsrat von Thyssenkrupp empfiehlt die Abspaltung der Stahlsparte TK Excel. Eine außerordentliche Hauptversammlung wurde für den 7. August einberufen. Die Aktie reagierte nachbörslich kaum.",
+     "einordnung": "Die Abspaltung von TK Excel ist ein längst überfälliger Schritt, um den Mischkonzern zu entflechten und die Stahlsparte mit eigener Kapitalmarktstruktur zu versehen. Die verhaltene Kursreaktion zeigt…",
+     "figures": "Außerordentliche HV: 07.08.; Aktie nachbörslich kaum bewegt"
     }
    ]
   },
@@ -440,196 +988,6 @@
      "note": "Airbus erhält ein Upgrade von Kepler. Eine mögliche Besserung im Nahostkonflikt wirkt sich positiv auf die Aktie aus. Charttechnisch wurde eine wichtige Marke überwunden.",
      "einordnung": "Luftfahrtzyklen sind langwierig. Wenn der Nahostkonflikt sich entspannt, fallen geopolitische Risikoprämien weg. Der Bruch über 197€ wäre das technische Signal für eine Erholungsbewegung.",
      "figures": "Kursziel Kepler 212€ (von 196€); Widerstand 197€; Kursziele 216€, 256€"
-    }
-   ]
-  },
-  "RHM.DE": {
-   "name": "Rheinmetall",
-   "auftritte": [
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=384s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Gestärkter DAX-Wert mit Gegenbewegung nach Verlust eines Auftrags. Abwärtstrend seit Februar muss noch gebrochen werden. Der Absturz war übertrieben, da der Auftrag erst 2031 relevant geworden wäre.",
-     "einordnung": "Die heftige Reaktion auf einen Auftrag, der erst 2031 greift, zeigt wie emotional der Rheinmetall-Chart besetzt ist. Die Gegenbewegung ist rational — der Abwärtstrend bleibt aber intakt, bis die Febr…",
-     "figures": "über 1.600 € vor Auftragsverlust; Bruch bei 1.000 €"
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "kbhs3X-LW2E",
-     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1588s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "CEO Armin Papperger kauft nach dem Kursrutsch 3.200 Aktien zu 954 EUR — ein starkes Insidersignal mit einem Volumen von rund 3 Mio. EUR. Das KGV liegt bei 24, der PEG unter 0,6 — günstig bewertet bei…",
-     "einordnung": "Ein CEO-Kauf in dieser Größenordnung ist ein deutliches Signal — Papperger setzt sein eigenes Geld dort ein, wo er die Value-Lücke sieht. Das PEG von 0,6 bei diesem Wachstumspfad ist für einen Rüstun…",
-     "figures": "3.200 Aktien; Kaufkurs 954 EUR; Volumen ~3 Mio. EUR; KGV ~24; PEG 0,6; Gewinnwachstum 130%, 50%, 40%"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=250s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Ein erhoffter Großauftrag fällt aus, die Aktie bricht ein. Haidt liefert keine konkrete Prognose.",
-     "einordnung": "Rheinmetall leidet unter dem klassischen Problem hochbewerteter Rüstungswerte: Jeder entgangene Auftrag wird überproportional bestraft, weil die Bewertung bereits Perfektion einpreist. Das erinnert a…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "tIXIrS3cz1s",
-     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=395s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall verlor einen Auftrag vom Verteidigungsministerium, woraufhin der Kurs von zuvor rund 1.200 Euro unter die 1.000-Euro-Marke fiel. Der Host hält die Reaktion für übertrieben und erwartet, d…",
-     "einordnung": "Ein Auftragsverlust bei einem Rüstungskonzern mit einem Auftragsbestand in Milliardenhöhe ist ein marginales Ereignis — der Markt reagiert hier emotional, nicht fundamental. Unter 1.000 Euro wird Rhe…",
-     "figures": "1.200 € (vorheriges Niveau), unter 1.000 € (aktueller Bereich)"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "F6cTDl0_v6Q",
-     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=538s",
-     "channel": "BerneckerTV",
-     "kategorie": "news",
-     "note": "Rheinmetall verliert den F126-Auftrag im Volumen von 12 Mrd. EUR, was zu einem Umsatzentgang von 2 Mrd. EUR und einem EBIT-Verlust von 250 Mio. EUR führt. Der CEO zeichnet sich durch Aktienkäufe aus,…",
-     "einordnung": "Der Auftragsverlust ist ein Rückschlag, muss aber gegen den massiven Auftragsbestand aus dem europäischen Rüstungszyklus abgewogen werden. Das KGV von 16,8 für 2027 ist moderat für einen Rüstungskonz…",
-     "figures": "Auftragswert 12 Mrd. EUR; Umsatzentgang 2 Mrd. EUR; EBIT-Verlust 250 Mio. EUR; KGV 16,8 für 2027; CEO-Käufe 3 Mrd. EUR"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "5AeBdQRrZ2k",
-     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=460s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nach Verlust des Fregatten-Auftrags an TKDS keine Gegenbewegung; die Reaktion erscheint übertrieben, langfristig besteht Potenzial, aber kurzfristig abwarten.",
-     "einordnung": "Der Verlust eines Großauftrags ist ein psychologischer Dämpfer, ändert aber wenig an der strukturellen Verteidigungsnachfrage. Dass der Host die Reaktion als übertrieben einstuft, ist nachvollziehbar…"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
-     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. We…",
-     "figures": "-19%, 12,8 Mrd. Euro"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "4K4U0fRfM0A",
-     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=1424s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Die Aktie fällt 18 Prozent nach Meldung über mögliches Ende des F126-Fregattenprojekts. JP Morgan senkt das Kursziel leicht auf 1400 Euro, hält aber am Hold-Rating fest. Zusätzlicher Druck entsteht d…",
-     "einordnung": "Die 18-Prozent-Reaktion ist dramatisch, aber der F126 ist ein Marineprojekt — Rheinmetalls Kernfranchise sind Landsysteme. Der PEG von 0,67 signalisiert, dass die Aktie trotz des Abverkaufs noch imme…",
-     "figures": "-18%, Kursziel 1400 Euro (von 1450), KGV 24, PEG 0,67"
-    },
-    {
-     "date": "2026-06-16",
-     "video_id": "J1zzTOyOdKE",
-     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=952s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Die Aktie steht unter Druck, weil ein baldiges Ende des Iran-Krieges die Nachfrage nach Rüstungsgütern dämpfen könnte. Egmond sieht noch kein belastbares Tief und bleibt skeptisch.",
-     "einordnung": "Rheinmetall ist ein klassisches Geopolitik-Play — steigt bei Konflikten, leidet bei Entspannung. Das Iran-Abkommen trifft die Aktie daher doppelt: sinkende Ölpreis-Einnahmen schwächen gleichzeitig di…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=483s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Unter Druck: Friedenshoffnung dämpft die Rüstungsfantasie, zusätzlich Sorgen um das deutsch-französische Panzer-Joint-Venture und mögliche Mittelkürzungen.",
-     "einordnung": "Das ist die Kehrseite des Friedens-Trades — wer von Rüstungsausgaben profitiert, leidet bei Deeskalation. Rheinmetall hatte eine beispiellose Rally; eine Konsolidierung ist nach diesem Katalysator fu…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "4TeOYIh5hN0",
-     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1051s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Mittelfristiger Abwärtstrend nach Triple-Top bei 1930 €; Verkäufer dominant, nächster Support bei 934 €, Key-Support bei 1481 €.",
-     "einordnung": "Rheinmetall ist ein lehrbuchhaftes Beispiel für einen gebrochenen Aufwärtstrend – das Triple-Top bei 1930 € ist definitiv gescheitert, und der Trend läuft nach unten aus, ohne dass eine Stabilisierun…",
-     "figures": "1930 € (Triple-Top-Hoch), 1481 € (Key-Support), 1270 € (Zwischenstützung), 934 € (nächster Support), Korrektur ca. 40 %"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1466s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "In Zuschauerfragen erwähnt — Fokus auf Drohnen als neues Rüstungssegment.",
-     "einordnung": "Rheinmetalls Erweiterung in den Drohnenbereich ist eine logische Diversifikation über klassische Fahrzeuge hinaus. Die Bewertung spiegelt jedoch bereits massive Erwartungen wider."
-    }
-   ]
-  },
-  "BAYN.DE": {
-   "name": "Bayer",
-   "auftritte": [
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=462s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Reagiert positiv auf Beschluss des US-Obersten Gerichtshofs zu Glyphosat. US-Glyphosatgeschäft soll ausgegliedert werden. Aktie steht bei 49 €, könnte 50 € brechen — dann technisches Kaufsignal.",
-     "einordnung": "Der Glyphosat-Befreiungsschlag ist für Bayer existenziell — die Aktie hat jahrelang unter dieser Unsicherheit gelitten. Ein Bruch der 50 € wäre charttechnisch bedeutend, fundamental bleibt aber das P…",
-     "figures": "49 €, 50 €"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=1168s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Roundup-Vergleich genehmigt, neue Glyphosat-Einheit Ruvan. Deutsche Bank stuft auf Kauf hoch. Chart zeigt Widerstand bei 52-54 Euro, KGV jedoch sehr hoch.",
-     "einordnung": "Der Roundup-Vergleich ist ein Befreiungsschlag, aber das KGV von 155 zeigt, dass die Ertragskraft noch nicht da ist. Die Deutsche-Bank-Hochstufung ist mutig, aber charttechnisch ist die Aktie überkau…",
-     "figures": "Kursziel 45 € auf 60 €, aktuell ca. 52 €, KGV 155"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=617s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Wichtiger Sieg vor dem US Supreme Court, die Aktie schießt 20 Prozent nach oben. Nun wartet der Markt auf die Ergebnisse eines 7,25-Milliarden-Dollar-Sammelvergleichs.",
-     "einordnung": "Ein Supreme-Court-Sieg ist für Bayer ein existenzieller Meilenstein – das Glyphosat-Risiko war der größte Überhängende Faktor seit Jahren. 20 Prozent Aufschlag sind gerechtfertigt, aber der Sammelver…",
-     "figures": "7,25 Mrd USD Sammelvergleich, +20% Kurs"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "tIXIrS3cz1s",
-     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=345s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Bayer reagiert positiv auf ein günstiges Glyphosat-Urteil. Die nächste charttechnische Hürde ist die 50-Euro-Marke; zuvor lag der Widerstand bei 42 bis 43 Euro.",
-     "einordnung": "Nach jahrelangem Rechtsstreit um Glyphosat ist jedes positive Urteil ein Befreiungsschlag für die Aktie. Die 50-Euro-Marke ist psychologisch und technisch relevant — ein Breakout würde den Weg für ei…",
-     "figures": "50 € (nächste Hürde), 42-43 € (vorheriger Widerstand)"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=254s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Zwei juristische Meilensteine rücken in den Fokus: der 4. Juni als Fristende für den Glyphosat-Sammelvergleich und das Urteil des obersten US-Gerichts Ende Juni. Die Aktie könnte kurzfristig als Unde…",
-     "einordnung": "Bayer ist ein klassischer Turnaround-Kandidat mit binärem Risiko – die juristischen Termine im Juni könnten entweder eine Entlastung oder eine neue Belastung bringen. Der kurzfristige Momentum-Tailwi…",
-     "figures": "7,25 Milliarden Dollar (Rückstellung für Glyphosat-Vergleiche)"
-    }
-   ]
-  },
-  "DBK.DE": {
-   "name": "Deutsche Bank",
-   "auftritte": [
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=906s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Morgan Stanley hebt das Kursziel moderat an und sieht deutliches Potenzial. Chart zeigt Widerstand bei 34 Euro, Ziel bei 40 Euro möglich. Bewertung mit Buchwert von 0,7 günstig.",
-     "einordnung": "Die Deutsche Bank profitiert vom Zinsumfeld und der Rotation in Finanzwerte. Ein Buchwert von 0,7 ist für eine systemrelevante Bank nach wie vor attraktiv, aber der Widerstand bei 34 Euro muss erst ü…",
-     "figures": "Kursziel 34 € auf 36 €, Buchwert 0,7, Ziel 40 € (161,8% Extension)"
     }
    ]
   },
@@ -1396,79 +1754,6 @@
      "kategorie": "news",
      "note": "Chemiewerte insgesamt abverkauft. Lanxess hat kein technisches Kaufsignal (200-Tage-Linie nicht gebrochen) und tendiert schwach.",
      "einordnung": "Lanxess ist ein klassischer Zyklker, der im Chemie-Abverkauf mitschwimmt. Ohne intakte 200-Tage-Linie gibt es keinen charttechnischen Grund, hier aktiv zu werden."
-    }
-   ]
-  },
-  "AAPL": {
-   "name": "Apple",
-   "auftritte": [
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=495s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Apple erhöht Preise für Mac und iPads um 15-18 Prozent, die Aktie bricht mit 6,9 Prozent Wochenverlust ein. Haidt bleibt langfristig Fan, sieht aber kurzfristig Seitwärtsbewegung.",
-     "einordnung": "Preiserhöungen in einem konsumschwachen Umfeld sind ein zweischneidiges Schwert. Dass die Aktie trotzdem abgibt, zeigt, dass der Markt die Preiselastizität der Nachfrage skeptisch beurteilt. Langfris…",
-     "figures": "6,9% Wochenverlust, Preiserhöhung 15-18%"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=2948s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Apple erhöht die Preise um 15-20% wegen steigender Speicherpreisen und versucht, Chips von CXMT (China) zu beziehen; charttechnisch bullisch nach ABC-Korrektur.",
-     "einordnung": "Preiserhöhungen von 15-20% bei Apple sind ungewöhnlich aggressiv und zeigen, dass das Unternehmen Speicherkosten weitergibt — ein Zeichen von Preissetzungsmacht. Das KGV von 31 ist jedoch kein Schnäp…",
-     "figures": "KGV 31; Preiserhöhung 15-20%; Unterstützung nach ABC-Korrektur"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "5AeBdQRrZ2k",
-     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=164s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Deutliche Preiserhöhungen für MacBooks aufgrund gestiegener Speicherpreise belasten die Aktie; die 200-Tage-Linie rückt in Sichtweite.",
-     "einordnung": "Die Preiserhöhungen könnten die ohnehin schwache Nachfrage weiter dämpfen — Apple kämpft bereits mit China-Schwäche. Charttechnisch nähert sich die Aktie einer wichtigen Unterstützung, was über kurz…"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=2043s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Preiserhöhungen: MacBook Air plus 200 Dollar, iPad Air plus 150 Dollar, 11-Zoll iPad Pro plus 200 Dollar, iPhone unverändert. Evercore ISI Kursziel 365 Dollar, Redburn 400 Dollar. Auslaufende günstig…",
-     "einordnung": "Preiserhöhungen in einem schwachen Konsumumfeld sind ein mutiger Schachzug — Apple setzt auf Markenmacht, aber die Speicherkosten explodieren und die günstigen Verträge laufen aus. KGV 30 für ein Unt…",
-     "figures": "Preiserhöhungen: +200$, +150$, +200$; Kursziel 365$, 400$; wichtige Zone 277$"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=1900s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Apple kündigt Preiserhöhungen für iPhones, Macs und iPads an, begründet mit steigenden Speicherpreisen. Charttechnisch ist das Kaufsignal intakt, fundamental erscheint die Aktie jedoch teuer.",
-     "einordnung": "Apple schiebt Kostensteigerungen elegant auf den Kunden – eine klassische Pricing-Power-Strategie. Ein KGV von 32,6 ist für ein Unternehmen mit diesem Wachstum jedoch sportlich. Die Zone 277-280$ ist…",
-     "figures": "PE Forward 32,6 (Schnitt 21,7); Kursziel 330-360$; iPhone Pro 18 Einstiegspreis 3000$; Speicherpreis-Upgrade 270-300$"
-    },
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1119s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "WWDC mit Fokus auf Siri und KI-Integration; kurzer Kursauftrieb (+1–3%), folgender Rückgang (-3%) da keine überraschenden Features. Host: langfristig positiv, da wenig in KI investiert bisher.",
-     "einordnung": "Typisches FOMO-Reversal. Apple weniger exponiert in KI-CapEx-Race als Mega-Peers (Meta, Alphabet) – könnte mittelfristig zur Undervaluation führen, falls KI-Narrative abkühlt. Defensive Qualität in T…"
-    },
-    {
-     "date": "2025-11-20",
-     "video_id": "HNPb_J0F96o",
-     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=2446s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Apple zeigt relative Stärke und konsolidiert nahe der Widerstandszone um 277 USD. Bei Überschreiten wäre Raum bis 290–300 USD, ansonsten droht ein Rückfall zur Unterstützung bei 258–265 USD. Ein Verl…",
-     "einordnung": "Apple als defensiver Anker im Tech-Sektor — das ist ein vertrautes Muster in Marktphasen mit steigenden Zinserwartungen. Die Aktie hat weniger KI-Hype-Übergewicht und profitiert von Flight-to-Quality…",
-     "figures": "Widerstand 277 USD, Ziel 290–300 USD, Unterstützung 258–265 USD"
     }
    ]
   },
@@ -3339,99 +3624,6 @@
     }
    ]
   },
-  "SNDK": {
-   "name": "Sandisk",
-   "auftritte": [
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=887s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Citi hebt Kursziel von 2025 auf 500 US-Dollar und eröffnet eine 90-tägige positive Einschätzung. Grund: starke Micron-Zahlen und strukturelles Unterangebot bis 2027. Chart: wichtig 235,50 US-Dollar;…",
-     "einordnung": "Sandisk als Speicherpure-Play profitiert direkt vom Micron-Momentum — das Citi-Kursziel von 500 Dollar impliziert ein multiples, das nur gerechtfertigt ist, wenn das Unterangebot bis 2027 tatsächlich…",
-     "figures": "Kursziel 500$, wichtige Marke 235.50$, Stop 183.50$"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=331s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SanDisk legt nachbörslich um 16 Prozent zu und profitiert von der Euphorie nach Microns starken Quartalszahlen.",
-     "einordnung": "Der Spillover von Micron auf SanDisk ist angesichts der korrelierten Speichergeschäfte logisch. Die Frage ist jedoch, ob SanDisks eigene Fundamentaldaten diese Euphorie rechtfertigen oder ob es sich…",
-     "figures": "+16% nachbörslich"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "04yYuesQS4g",
-     "url": "https://www.youtube.com/watch?v=04yYuesQS4g&t=246s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Gestern 14% Verlust, heute leichte Erholung um 2% im vorbörslichen Handel.",
-     "einordnung": "Ein 14%-Einbruch bei einem Speicherwert ist fast immer ein Symptom, kein Zufall — entweder fundamentals Misstrauen oder Mitnahmeeffekt vom Sektor. Die 2%-Erholung ist noch kein All-clear-Signal, zuma…",
-     "figures": "-14% (gestern); +2% (vorbörslich)"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=2948s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Sandisk -7,5% vorbörslich. NAND-Speicher ersetzt HDDs, neue QLC-Produkte. Sehr niedriges KGV von 13 und PEG von 0,04 bei starkem Gewinnwachstum.",
-     "einordnung": "Ein PEG von 0,04 ist außergewöhnlich niedrig und signalisiert, dass der Markt das Gewinnwachstum von 5,4 auf 33,6 Mrd. $ kaum einpreist. Die NAND-Substitutionsstory gegenüber HDDs ist fundiert. Der h…",
-     "figures": "-7,5%, KGV 13, PEG 0,04, operativer Gewinn von 5,4 auf 33,6 Mrd. $ erwartet"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=542s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "SanDisk macht neue Hochs; KI-Boom treibt Speichernachfrage massiv bis 2027, danach droht Überangebot; Tagesgewinn ~240 USD.",
-     "einordnung": "Das ist ein zyklengetriebenes Play—richtig, dass Host die Zeitgrenze klar benennt. Der aktuelle Aufwind ist echt (KI braucht speicher wie eine Lokomotive Kohle), aber die Uhr tickt. Das sollte in die…",
-     "figures": "Tagesgewinn ~240 USD, Überangebot ab 2027 erwartet"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Eine Chips-Short bei SanDisk wird als möglich erachtet.",
-     "einordnung": "SanDisk als Short-Kandidat ist interessant, da das Unternehmen im Speicherchips-Markt zyklisch ist – ein Kapazitätsengpass könnte jedoch die Short-These drehen."
-    },
-    {
-     "date": "2025-11-28",
-     "video_id": "fQxlQW1Y5LQ",
-     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1752s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Host meldet Aufnahme in den S&P 500; Aktie reagiert mit Kursgewinnen.",
-     "einordnung": "S&P-500-Aufnahmen generieren mechanische passive Käufe durch Indexfonds. Der unmittelbare Kursanstieg ist typisch, doch der Effekt verpufft meist nach wenigen Tagen.",
-     "figures": "+13%, +7%"
-    },
-    {
-     "date": "2025-11-20",
-     "video_id": "HNPb_J0F96o",
-     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=740s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Sandisk wird als möglicher S&P-500-Kandidat genannt.",
-     "einordnung": "Sandisk als Speicher-Spinoff profitiert vom KI-Speicherbedarf. Eine Index-Aufnahme würde passive Käufe auslösen, doch der Speichersektor bleibt zyklisch und margenempfindlich."
-    },
-    {
-     "date": "2025-11-13",
-     "video_id": "DdOoAO1ztKo",
-     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=535s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Sandisk fällt trotz gutem Ausblick um 10% – der Markt straft die Aktie ab, offenbar waren die Erwartungen vorausgelaufen.",
-     "einordnung": "Klassisches 'sell the news'-Verhalten nach einem guten Outlook. Bei Speicherspezialisten sind Prognoseerhöhungen oft bereits im Kurs – die 10% Korrektur zeigt, wie schnell die Stimmung kippt, wenn ni…",
-     "figures": "-10%"
-    }
-   ]
-  },
   "QCOM": {
    "name": "Qualcomm",
    "auftritte": [
@@ -3673,40 +3865,6 @@
      "note": "18 Rekordjahre in Folge, EBIT-Marge 30-35 Prozent, schuldenfrei. Chart: wichtige Zone 71 Euro aufgegeben, Ziel 55 Euro (Tief 2022). Unter 55 Euro wird es düster.",
      "einordnung": "18 Rekordjahre in Folge bei 30-35 Prozent EBIT-Marge und schuldenfrei — das ist ein Qualitätsunternehmen erster Güte. Aber die Aufgabe der 71-Euro-Zone ist alarmierend; 55 Euro ist die nächste Unters…",
      "figures": "EBIT-Marge 30-35%"
-    }
-   ]
-  },
-  "TKA.DE": {
-   "name": "TKMS",
-   "auftritte": [
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=579s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "TKMS profitiert vom gescheiterten Rheinmetall-Auftrag als möglicher Ersatz und legt massiv zu.",
-     "einordnung": "Als potenzieller Nutznießer der F126-Auftragsreallokation ist die Rally spekulativ, aber logisch. Die Auftragsvisibilität würde sich substantiell verbessern, falls TKMS den Zuschlag erhält."
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "1_zNnqdriM4",
-     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2982s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "TKMS profitiert von Kapitalumschichtung in der Rüstungsbranche; Kursziel 125€, Chart deutet auf Anstieg Richtung 90-100€.",
-     "einordnung": "TKMS ist der Profiteur einer geopolitischen Neuausrichtung — europäische Verteidigungsausgaben steigen strukturell, und als Spezialist für U-Boote und Marine-Systeme sitzt TKMS in einer Sweet Spot. D…",
-     "figures": "Kursziel 125€ (MWB Research), Gewinnwachstum +20% bis +25% in 2026/27, KGV 37"
-    },
-    {
-     "date": "2026-06-17",
-     "video_id": "UBcaG1xcyng",
-     "url": "https://www.youtube.com/watch?v=UBcaG1xcyng&t=647s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Aufsichtsrat von Thyssenkrupp empfiehlt die Abspaltung der Stahlsparte TK Excel. Eine außerordentliche Hauptversammlung wurde für den 7. August einberufen. Die Aktie reagierte nachbörslich kaum.",
-     "einordnung": "Die Abspaltung von TK Excel ist ein längst überfälliger Schritt, um den Mischkonzern zu entflechten und die Stahlsparte mit eigener Kapitalmarktstruktur zu versehen. Die verhaltene Kursreaktion zeigt…",
-     "figures": "Außerordentliche HV: 07.08.; Aktie nachbörslich kaum bewegt"
     }
    ]
   },
@@ -4555,30 +4713,6 @@
     }
    ]
   },
-  "MRNA": {
-   "name": "Moderna",
-   "auftritte": [
-    {
-     "date": "2026-06-19",
-     "video_id": "MJo67AkNy70",
-     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=367s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Moderna mit technischem Ausbruch, aber Pullback; möglicher Rückläufer auf Ausbruchslinie.",
-     "einordnung": "Klassisches Break-and-Retest-Muster — der Rücklauf auf die Ausbruchslinie ist gesund, solange sie hält. Moderna bleibt aber ein Pipeline-Wert mit hohem Risiko, die Charttechnik allein reicht als Begr…"
-    },
-    {
-     "date": "2026-06-17",
-     "video_id": "UBcaG1xcyng",
-     "url": "https://www.youtube.com/watch?v=UBcaG1xcyng&t=422s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Modernas mRNA-basierter Grippeimpfstoff 'mFlusiva' steht vor wichtigen Zulassungsweichen: Das FDA-Beratergremium entscheidet morgen (18. Juni), die endgültige FDA-Entscheidung folgt am 5. August. Die…",
-     "einordnung": "Für Moderna wäre eine Zulassung von mFlusiva ein strategischer Durchbruch – der Konzern würde damit seine mRNA-Plattform über COVID hinaus etablieren und in den Massenmarkt Grippe-Impfung vorstoßen.…",
-     "figures": "Aktie +6% (intraday zweistellig); FDA-Beratervotum morgen (18.06.); FDA-Entscheid 05.08."
-    }
-   ]
-  },
   "VWS.CO": {
    "name": "Vestas",
    "auftritte": [
@@ -5126,41 +5260,6 @@
      "note": "Bei weiterhin guten Konjunkturdaten und steigendem Ölpreis besteht das Risiko, dass die 10-jährigen US-Zinsen Richtung 5 % steigen. Dies würde Technologieaktien besonders belasten.",
      "einordnung": "Die 5 %-Marke ist die psychologische Schwelle – wenn sie fällt, droht ein Bewertungsrücksetzer bei Growth-Aktien. 2018 hat ein ähnlicher Zinsanstieg den Q4-Crash ausgelöst.",
      "figures": "5 % (Richtung)"
-    }
-   ]
-  },
-  "TSLA": {
-   "name": "Tesla/SpaceX-Beteiligung",
-   "auftritte": [
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=2338s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Zuschauerfrage: Hat Tesla 30% von SpaceX? Host: Nein, Tesla/Elon hat weniger als 1% Beteiligung, eher ~0,16–1%. Wahrscheinlich Verwechslung mit Privatanleger-Allokation (30%).",
-     "einordnung": "Verbreitete Fehlkalkulation im Publikum. Elon hat Tesla, SpaceX und Neuralink getrennt, keine 30%-Beteiligung zwischen ihnen. Irrelevant für SpaceX-IPO-Dynamik.",
-     "figures": "Tesla-Beteiligung SpaceX: ~0,16–1% (nicht 30%)"
-    },
-    {
-     "date": "2025-12-05",
-     "video_id": "BADYwmZH114",
-     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Tesla als Long-Kandidat eingestuft: Noch keine neuen Allzeithochs, aber Potenzial bis 500+ $. Ausbruch über 475 $ wäre Signal. Relative Stärke in den letzten Tagen. China-Absatz +9,9%, Model 3 +41% z…",
-     "einordnung": "Tesla zeigt aktuell relative Stärke im schwachen Marktumfeld — das ist ein bemerkenswertes Zeichen. Die China-Zahlen stützen kurzfristig, aber der Förderungs-Rückzug ab 2026 ist ein bekannter Kopfwin…",
-     "figures": "China-Absatz +9,9%, Model 3 +41% zum Vormonat, 475 $ Ausbruch-Level, 500+ $ Potenzial, 365 $, 510-520 $"
-    },
-    {
-     "date": "2025-11-20",
-     "video_id": "HNPb_J0F96o",
-     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=1741s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "xAI plant eine Finanzierungsrunde über 15 Mrd USD zu einer Bewertung von 230 Mrd USD. Die Integration von xAI in Tesla bleibt schwierig und umstritten.",
-     "einordnung": "Die xAI-Integration in Tesla ist ein Governance-Albtraum: Musk hält die KI-Tochter formal außerhalb von Tesla, nutzt aber Tesla-Ressourcen. Das erinnert an die SolarCity-Transaktion 2016, die Anleger…",
-     "figures": "xAI Finanzierung 15 Mrd USD, Bewertung 230 Mrd USD"
     }
    ]
   },
