@@ -1,0 +1,421 @@
+{
+ "date": "2026-07-01",
+ "label": "Mittwoch, 01.07.2026",
+ "videos": [
+  {
+   "channel": "Der Aktionär - Märkte am Morgen",
+   "playlist": "Märkte am Morgen",
+   "id": "mNobFjJKrNE",
+   "title": "Märkte am Morgen: Micron Technology, Applied Materials, Shell, Nike, Siemens, SMA Solar",
+   "date": "20260701",
+   "url": "https://www.youtube.com/watch?v=mNobFjJKrNE",
+   "thumbnail": "https://i.ytimg.com/vi/mNobFjJKrNE/hqdefault.jpg",
+   "summarized_at": "2026-07-01T06:34:49.528152+00:00",
+   "summary": "Der DAX scheiterte gestern knapp unter der psychologisch wichtigen 25.000-Punkte-Marke, schloss aber mit einem soliden Plus von 1,5 Prozent bei 24.995 Punkten. Die Vorgaben aus den USA und Asien sind freundlich, wobei insbesondere Techwerte Rückenwind erhalten. Im Einzelfokus stehen heute Micron und Applied Materials als Halbleiter-Vertreter, Nike nach Quartalszahlen, Shell mit Portfolio-Verkäufen, Siemens nach einem gut aufgenommenen Pre-Close Call sowie SMA Solar als Profiteur neuer US-Sanktionen gegen chinesische Solarkonzerne.",
+   "items": [
+    {
+     "name": "DAX",
+     "ticker": "^GDAXI",
+     "note": "Der deutsche Leitindex sprang zeitweise über 25.000 Punkte, konnte die Marke aber nicht nachhaltig überwinden und schloss bei 24.995 Punkten. Für heute werden leichte Verluste erwartet.",
+     "figures": "24.995 Punkte (+1,5%); heute leichte Verluste erwartet",
+     "tip": "Überwindung der 25.000-Punkte-Marke nachhaltig abwarten",
+     "einordnung": "Die 25.000 ist eine klassische psychologische Hürde — wer hier voreilig einsteigt, riskiert ein False Breakout. Erst ein Schlusskurs darüber würde das Bild vertrauenswürdig machen.",
+     "detail": "Das gestrige Muster — hohes Intraday-Hoch über 25.000, dann Rücknahme bis knapp unter die Marke — ist ein typisches Over-and-Back-Verhalten an runden Widerständen. Historisch gesehen (etwa beim Anlauf auf 20.000 im Jahr 2017) brauchte der DAX mehrere Versuche, bevor eine solche Marke dauerhaft fiel. Die freundlichen Vorgaben aus den USA (Nasdaq +1,7%) und Asien (Nikkei +0,9%) reichen allein nicht aus, wenn nicht auch der DAX selbst die Marke im Schlusskurs bestätigt. Die TAGES-NEWS zur ECB, die eine Pause im Juli signalisiert, dürfte das Umfeld für deutsche Aktien kurzfristig stützen — Zinslast vom Aktienmarkt nimmt ab.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "ECB dämpft Zinserhöhungs-Erwartungen und stützt damit die Präferenz für eine Pause im Juli, was den DAX-Rahmen freundlich hält."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 70,
+     "t": "01:10",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=70s",
+     "tv_symbol": "XETR:DAX"
+    },
+    {
+     "name": "Micron Technology",
+     "ticker": "MU",
+     "note": "Der Host bleibt beim Speichermedien-Favoriten überzeugt, bezeichnet die Aktie aber als volatil und rät zu einem vorsichtigeren Einstieg.",
+     "figures": "Kursziel 119,7 USD",
+     "tip": "Wegen Volatilität vorsichtig einsteigen; Kursziel 119,7 USD",
+     "einordnung": "Micron ist ein klassischer Zyklus-Titel im HBM-Speicher-Boom — die Volatilität ist hier kein Bug, sondern ein Feature der Speicherchips. Wer das Kursziel von knapp 120 USD teilt, sollte Schwächen als Einstiegschance nutzen, nicht als Warnsignal lesen.",
+     "detail": "Die Volatilität bei Micron spiegelt den typischen Speicherzyklus wider: Hohe Schwankungen, weil der Markt ständig zwischen Über- und Unterangebot pendelt. Der aktuelle HBM-Tailwind (High Bandwidth Memory für KI-Anwendungen) ist strukturell anders als frühere Speicher-Booms — die Nachfrage kommt nicht mehr nur aus PC und Smartphone, sondern aus Rechenzentren. Die TAGES-News zu Südkoreas Exporten (stärkster Zuwachs seit 1978, getrieben von KI-Chips) bestätigt indirekt, dass der Halbleiter-Aufschwung realwirtschaftlich greifbar wird. Das Kursziel von 119,7 USD setzt voraus, dass Micron seine HBM-Kapazitäten rechtzeitig hochfahren kann — ein Ausfall oder Verzögerung dort wäre die größte Gefahr für die These.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "Südkoreas Exporte verzeichnen stärksten Zuwachs seit 1978, getrieben von KI-Chips — bestätigt den Halbleiter-Aufschwung, von dem auch Micron profitiert."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 130,
+     "t": "02:10",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=130s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Applied Materials",
+     "ticker": "AMAT",
+     "note": "Der Chipausrüster notiert auf einem neuen Rekordhoch nach rasantem Anstieg. Der Host rät, einen Neueinstieg abzuwarten, bis die Überhitzung sich legt.",
+     "figures": "Neues Rekordhoch",
+     "tip": "Neueinstieg nach dem rasanten Anstieg abwarten",
+     "einordnung": "Ein Rekordhoch nach solchem Anstieg ist charttechnisch ein zweischneidiges Schwert: bullisch, weil der Trend intakt ist, aber auch ein klassisches Überkaufungssignal. Geduld ist hier die bessere Tugend.",
+     "detail": "Applied Materials profitiert vom Kapitalausgaben-Zyklus der großen Foundries und Speicherhersteller — wenn TSMC, Samsung und Micron gleichzeitig investieren, fließt das Geld über die Ausrüster. Das Rekordhoch spieglt diese Konjunktur wider. Die Gefahr bei Ausrüstern ist jedoch der typische Vorlauf-Effekt: Wenn die Endkunden ihre Capex-Ankündigungen gemacht haben, ist das oft schon im Kurs — der 'Sell the News'-Effekt lauert. Der Host impliziert mit seinem Abwarten-Rat, dass er eine Consolidation oder einen Pullback erwartet, bevor ein neues Kaufsignal entsteht. Das ist bei Ausrüstern nach 20-30%-Rallyen ein bewährtes Muster.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 176,
+     "t": "02:56",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=176s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Nike",
+     "ticker": "NKE",
+     "note": "Quartalszahlen überraschten positiv — Umsatz und Gewinn lagen über den Erwartungen. Skeptische Aussagen zum Umfeld belasten die Aktie jedoch nachbörslich mit einem erwarteten Startverlust von 3-4 Prozent.",
+     "figures": "Umsatz 10,97 Mrd. USD (Erwartung 10,86 Mrd.); Gewinn 72 Cent/Aktie (mit Sondereffekt), bereinigt +13 Cent; erwarteter Startverlust 3-4%",
+     "tip": "Einstieg drängt sich nicht auf; eher Adidas oder Puma bevorzugen",
+     "einordnung": "Das ist das klassische 'Beat and Retreat'-Muster: Die Zahlen stimmen, aber das Guidance-Sentiment trübt die Stimmung. Bei Nike kommt erschwerend hinzu, dass der strukturelle Turnaround im Gange ist — das kostet Zeit, die der Markt nicht geben will.",
+     "detail": "Nikes Problem ist nicht das aktuelle Quartal, sondern die Erzählung: Der Markt fragt sich, ob die Zahlen eine nachhaltige Trendwende markieren oder nur ein Strohfeuer im Rahmen von Liquidationen und Rabatten. Die skeptischen Aussagen zum Umfeld — wahrscheinlich bezogen auf China-Schwäche und Verbrauchermüdigkeit in Nordamerika — deuten auf ein anhaltendes Turnaround-Risiko hin. Der Host bevorzugt Adidas und Puma, was aus einer Sektorrotation-Perspektive sinnvoll ist: Beide haben ihre China-Probleme weitgehend verdaut und profitieren von klareren Marken narratives. Nikes nachbörslicher Rücksetzer von 3-4% trotz Beat ist ein Beleg dafür, dass der Markt das Guidance über die Rückblick-Zahlen stellt.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 227,
+     "t": "03:47",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=227s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Shell",
+     "ticker": null,
+     "note": "Shell verkauft Tiefsee-Vermögenswerte im Golf von Mexiko für 1,7 Mrd. USD sowie weitere Vermögenswerte im Juni für 1,42 Mrd. USD. Die Aktie schwächelt wegen des Ölpreisrückgangs.",
+     "figures": "Dealvolumen 1,7 Mrd. USD; weitere Verkäufe im Juni für 1,42 Mrd. USD; Kursziel 52 EUR; Stopp 27 EUR",
+     "tip": "Neueinstieg nicht aufdrängen; 200-Tage-Linie abwarten; Stopp bei 27 EUR",
+     "einordnung": "Die Portfolio-Verschlanung ist strategisch richtig — Shell entlastet die Bilanz und fokussiert sich. Aber solange der Ölpreis fällt, ist das nur Kosmetik. Die 200-Tage-Linie als Warte-Marke ist hier der richtige Filter.",
+     "detail": "Die Verkäufe im Golf von Mexiko passen zu Shells strategischer Neuausrichtung unter CEO Wael Sawan: weg von teuren Tiefsee-Projekten, hin zu kapitalleichteren, höher margigen Segmenten. Das Dealvolumen von insgesamt über 3 Mrd. USD im laufenden Quartal ist substanziell und verbessert die Free-Cashflow-Position. Das Problem ist der Ölpreis: Die TAGES-News zu Iran, das Öl mit 20% Aufpreis verkauft und Hormuz-Ansprüche stellt, zeigt, dass die geopolitische Ölpreiskomplexität hoch bleibt. Shell als Öl-Major korreliert kurzfristig stärker mit dem Rohstoffpreis als mit eigenen Portfolio-Optimierungen. Die 200-Tage-Linie als Wartemarke ist charttechnisch sinnvoll — sie filtert Trendbestätigung von Trendbruch. Der Stopp bei 27 EUR ist relativ weit, was auf ein hohes Vertrauen in die mittelfristige These deutet.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "Iran verkauft Öl mit 20% Aufpreis, Hormuz-Anspruch bleibt strittig — Ölpreise könnten volatil bleiben, was Shell direkt betrifft."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 386,
+     "t": "06:26",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=386s"
+    },
+    {
+     "name": "Siemens",
+     "ticker": "SIE.DE",
+     "note": "Der Pre-Close Call kam gut an, Analysten hoben ihre Kursziele an. Ein neues Rekordhoch und ein mögliches Kaufsignal zeichnen sich ab. Zahlen folgen am 6. August.",
+     "figures": "Kursziel UBS 310 EUR; JP Morgan von 335 auf 345 EUR angehoben; Zahlen am 6.8.; erwartete Werte 5% über Marktkonsens",
+     "tip": "Kaufsignal bestätigen abwarten; auf Empfehlungsliste eher Siemens Energy",
+     "einordnung": "Siemens ist ein Musterbeispiel für einen gut geführten Industriekonzern mit Digitalisierungs-Tailwind. Die Analystenreaktion auf den Pre-Close Call ist ein klassisches Vorzeichen für starke Quartalszahlen — aber der Host bevorzugt Siemens Energy, was auf eine Sektorrotation innerhalb der Familie hindeutet.",
+     "detail": "Der Pre-Close Call ist eine relativ neue IR-Praxis, die Siemens vor einigen Quartalen eingeführt hat — er gibt dem Markt vorab Einblicke in operative Trends, ohne harte Zahlen zu nennen. Dass Analysten danach ihre Kursziele anheben (UBS 310 EUR, JP Morgan auf 345 EUR), signalisiert, dass die im Call vermittelte Botschaft deutlich positiver war als der Konsens. Die Erwartung, dass die Zahlen am 6. August 5% über dem Marktkonsens liegen könnten, ist ein aggressives Setup — wer hier vorab einsteigt, kauft die Erwartung, nicht die Bestätigung. Der Host favorisiert Siemens Energy auf der Empfehlungsliste, was aus einer Konjunktur-Perspektive nachvollziehbar ist: Siemens Energy hat mehr Catch-up-Potenzial nach Jahren der Krise, während Siemens-Mutter bereits auf Rekordniveau notiert. Das Risiko beim Warten auf ein bestätigtes Kaufsignal ist ein verpasster Einstieg — bei Siemens ist das 'Buy the rumor, sell the news'-Risiko aber real.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 536,
+     "t": "08:56",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=536s",
+     "tv_symbol": "XETR:SIE"
+    },
+    {
+     "name": "SMA Solar",
+     "ticker": "S92.DE",
+     "note": "Die Aktie stieg 11 Prozent nach der Ankündigung von US-Beschränkungen gegen chinesische Solarkonzerne. Westliche Solaraktien profitieren von dieser Entwicklung.",
+     "figures": "+11%",
+     "tip": "Nach starkem Anstieg kleine Rücksetzer abwarten; auf Empfehlungsliste",
+     "einordnung": "Das ist ein geopolitischer Katalysator, kein fundamentaler Turnaround. SMA Solar profitiert kurzfristig vom Schutzschild gegen chinesische Konkurrenz, aber der Solar-Sektor leidet strukturell unter Überkapazitäten. Ein 11%-Tag ist ein Strohfeuer, kein Trendwechsel.",
+     "detail": "Die US-Sanktionen gegen chinesische Solarkonzerne sind Teil der breiteren Entkopplungs-Strategie, die auch im TAGES-News-Block sichtbar wird (Weltbank will Kredite an China bis 2031 auslaufen lassen). Für SMA Solar als deutscher Wechselrichter-Hersteller bedeutet das eine potenziell bessere Wettbewerbsposition auf dem US-Markt, wo chinesische Player bisher mit aggressiver Preispolitik dominierten. Der Haken: SMA Solar hatte zuletzt mit schwachen Quartalszahlen und Margendruck zu kämpfen — ein geopolitischer Katalysator ändert nichts an der operativen Herausforderung. Der Host rät zu einem Abwarten kleiner Rücksetzer, was bei einer 11%-Rallye der richtige Reflex ist: Wer hier nachkauft, fährt einem Momentum-Zug hinterher, der oft mit einem Pullback endet. Die Aufnahme in die Empfehlungsliste deutet auf ein mittelfristiges Engagement hin, nicht auf einen Daytrade.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "Weltbank will Kredite an China bis 2031 auslaufen lassen — unterstreicht die geopolitische Entkopplung, die auch SMA Solar über US-Sanktionen gegen chinesische Solarfirmen profitieren lässt."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 616,
+     "t": "10:16",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=616s",
+     "tv_symbol": "XETR:S92"
+    }
+   ],
+   "macro": [
+    {
+     "text": "Asiatische Börsen legen zu (Nikkei +0,9%, Shanghai Composite positiv), US-Techwerte stark (Nasdaq +1,7%, S&P 500 +0,8%); DAX testet 25.000 Punkte, bleibt aber knapp darunter.",
+     "sec": 34,
+     "t": "00:34",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=34s"
+    },
+    {
+     "text": "Der Yen stürzt auf ein 40-Jahres-Tief, was den Interventionsdruck der Bank of Japan erhöht — eine mögliche Intervention könnte asiatische Märkte kurzfristig destabilisieren.",
+     "sec": 34,
+     "t": "00:34",
+     "tlink": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=34s"
+    }
+   ]
+  },
+  {
+   "channel": "onvista",
+   "playlist": "Börse & Märkte LIVE",
+   "id": "kbhs3X-LW2E",
+   "title": "Rheinmetall-Kauf, Bloom-KI-Strom, Nike-Zahlencheck",
+   "date": "20260701",
+   "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E",
+   "thumbnail": "https://i.ytimg.com/vi/kbhs3X-LW2E/hqdefault.jpg",
+   "summarized_at": "2026-07-01T18:35:02.091577+00:00",
+   "summary": " ",
+   "items": [
+    {
+     "name": "DAX & Marktüberblick",
+     "ticker": "^GDAXI",
+     "note": "Martin Goersch blickt optimistisch auf das zweite Halbjahr: Die S&P 500 legte im zweiten Quartal 14,9 Prozent zu, historisch folgen im dritten Quartal +5 Prozent und im vierten +6 Prozent bei einer Trefferquote von 89 Prozent. Technisch erkennt er bullische Formationen wie Wimpel und eine inverse Schulter-Kopf-Schulter, getragen von breiter Marktbeteiligung und Tech-Werten.",
+     "figures": "S&P 500 Q2: +14,9%; historisch Q3 +5%, Q4 +6%, Trefferquote 89%; 9,6% YTD; erwartetes Gewinnwachstum Q2: 22%; KI-Infrastruktur trägt 60% des Gewinnwachstums",
+     "tip": "",
+     "einordnung": "Die Saisonalitätsargumentation ist statistisch fundiert, doch ein 14,9-Prozent-Quartal ist ein Ausreißer, der die Basis für die Folgewerte verbreitert. Dass 60 Prozent des Gewinnwachstums aus KI-Infrastruktur stammen, macht den Index verwundbar für KI-Rotations-Schocks.",
+     "detail": "Goersch impliziert, dass die breite Marktbeteiligung — gleichgewichteter Techsektor +41%, Magnificent 7 dagegen -1,6% — ein gesundes Zeichen sei, kein Rotation-Risiko. Das ist eine bullische Lesart: Die Mag-7-Schwäche könnte aber auch bedeuten, dass das KI-Kapital aus den Mega-Caps in Zulieferer wie Bloom Energy oder SK Hynix wandert, was die Volatilität in diesen Einzelwerten erklärt. Die inverse SKS-Formation im S&P 500 wäre erst bestätigt bei einem Ausbruch über den Nackenlinie-Widerstand — Goersch nennt das Formationsszenario, ohne das Bestätigungsniveau explizit zu nennen. Cross-Source: Der Aktionär berichtet, der DAX scheiterte gestern knapp unter 25.000 Punkten bei 24.995 — die psychologische Marke bleibt der unmittelbare Widerstand.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär - Märkte am Morgen",
+       "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E",
+       "bezug": "DAX scheiterte an 25.000 Punkten, schloss bei 24.995 mit +1,5%; freundliche Vorgaben aus USA und Asien, Techwerte mit Rückenwind."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 0,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=0s",
+     "tv_symbol": "XETR:DAX"
+    },
+    {
+     "name": "SMA Solar",
+     "ticker": "S92.DE",
+     "note": "Nach starkem Anstieg leichte Konsolidierung. Ein mögliches US-Importverbot für chinesische Wechselrichter könnte SMA als westlichen Anbieter begünstigen. Technisch bleibt die Aktie bullisch, solange die Unterstützung bei 59 EUR hält. Das KGV ist von 120-140 auf 28 gefallen, erwartetes Gewinnwachstum liegt bei 70% und 18%.",
+     "figures": "KGV 28 (zuvor 120-140); erwartetes Gewinnwachstum 70% und 18%; Unterstützung bei 59 EUR",
+     "tip": "Aktie bleibt bullisch, solange sie nicht unter das letzte Tief fällt; dann Risikomanagement aktivieren.",
+     "einordnung": "Das KGV-Kollaps von 120 auf 28 spiegelt die explosive Gewinnexpansion wider — das ist kein Bewertungsproblem, sondern ein Wachstumsstory. Der geopolitische Hebel durch ein chinesisches Importverbot ist ein echter Katalysator, aber politisch unsicher.",
+     "detail": "Der US-Sanktionshebel gegen chinesische Solarkonzerne ist der zentrale Treiber: Cross-Source bestätigt, dass SMA Solar im Parallelvideo des Aktionärs +11% nach der Ankündigung von US-Beschränkungen gegen chinesische Solarkonzerne legte. Das bestätigt Goerschs These, dass westliche Solaraktien strukturell profitieren — aber es zeigt auch, dass die Aktie bereits auf diese Nachricht reagiert hat. Die Konsolidierung ist daher kein Zeichen von Schwäche, sondern ein Verdauen der Vorwochen-Rally. Das Risiko: Sollten die Sanktionen softer ausfallen als erhofft, könnte die Aktie die 59-EUR-Unterstützung testen. Das KGV von 28 bei 70% Gewinnwachstum ergibt ein PEG von 0,4 — das ist selbst für einen Zykluswert günstig.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär - Märkte am Morgen",
+       "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E",
+       "bezug": "SMA Solar stieg 11% nach Ankündigung von US-Beschränkungen gegen chinesische Solarkonzerne; westliche Solaraktien profitieren."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1221,
+     "t": "20:21",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1221s",
+     "tv_symbol": "XETR:S92"
+    },
+    {
+     "name": "Rheinmetall",
+     "ticker": "RHM.DE",
+     "note": "CEO Armin Papperger kauft nach dem Kursrutsch 3.200 Aktien zu 954 EUR — ein starkes Insidersignal mit einem Volumen von rund 3 Mio. EUR. Das KGV liegt bei 24, der PEG unter 0,6 — günstig bewertet bei erwartetem Gewinnwachstum von 130%, 50% und 40%.",
+     "figures": "3.200 Aktien; Kaufkurs 954 EUR; Volumen ~3 Mio. EUR; KGV ~24; PEG 0,6; Gewinnwachstum 130%, 50%, 40%",
+     "tip": "Aktuelles Niveau um 1.000 EUR bietet günstige Einstiegsgelegenheit auf Sicht der nächsten Jahre.",
+     "einordnung": "Ein CEO-Kauf in dieser Größenordnung ist ein deutliches Signal — Papperger setzt sein eigenes Geld dort ein, wo er die Value-Lücke sieht. Das PEG von 0,6 bei diesem Wachstumspfad ist für einen Rüstungswert außergewöhnlich günstig.",
+     "detail": "Das Timing des Insiderkaufs ist die eigentliche Botschaft: Papperger kauft nach dem Kursrutsch, nicht am Hoch. Das signalisiert, dass er die jüngste Schwäche als übertrieben ansieht. Das Gewinnwachstum von 130% auf 50% auf 40% zeigt einen degressiven, aber immer noch extrem hohen Pfad — das KGV von 24 ist vor diesem Hintergrund nicht teuer. Der PEG von 0,6 ist das stärkste Argument: Ein PEG unter 1 bedeutet, dass das Wachstum nicht im Kurs eingepreist ist. Das Risiko liegt in der politischen Abhängigkeit: Rüstungsausgaben sind keine rein marktwirtschaftlichen Größen, sondern von Haushaltsentscheidungen abhängig. Sollten europäische Regierungen die Verteidigungsbudgets konsolidieren, könnte das Wachstumspfad revidiert werden. Goersch setzt implizit voraus, dass der Rüstungszyklus noch Jahre läuft — das ist konsens, aber nicht garantiert.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 1588,
+     "t": "26:28",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1588s",
+     "tv_symbol": "XETR:RHM"
+    },
+    {
+     "name": "Kratos Defense",
+     "ticker": "KTOS",
+     "note": "Wedbush nimmt Coverage mit Outperform und Kursziel 85 USD auf. Kratos bietet ein breites Defense-Ökosystem (Drohnen, Raketen, Hyperschall). Technisch starker Widerstand bei 50 USD; bei nachhaltigem Ausbruch Potenzial bis 60+ USD. Das KGV fiel von 180 auf 63.",
+     "figures": "Kursziel 85 USD (Wedbush); KGV 63 (zuvor 180); Widerstand 50 USD",
+     "tip": "Bei nachhaltigem Ausbruch über 50 USD kaufen; erstes Ziel über 60 USD. Risiko bei 50 USD managbar.",
+     "einordnung": "Das Kursziel von 85 USD bei einem aktuellen Niveau nahe 50 USD impliziert 70% Aufwärtspotenzial — das ist aggressiv, aber für einen Small-Cap-Defense-Wert mit Drohnen-Exposition nicht unrealistisch. Der Widerstand bei 50 USD ist die Schlüsselmarke.",
+     "detail": "Kratos ist der klassische Small-Cap-Rüstungswert, der von der Drohnen- und Hyperschall-Welle profitiert — ein thematischer Cousin von Rheinmetall, aber mit anderem Risikoprofil. Das KGV von 63 ist hoch, aber der Fall von 180 zeigt, dass die Gewinne schneller wachsen als der Kurs. Wedbushs Outperform-Initiierung mit 85 USD ist eine Analystenmeinung, kein Fakt — Small-Cap-Defense-Werte haben historisch hohe Analysten-Fehlerraten. Der Ausbruch über 50 USD ist die charttechnische Bestätigung, die Goersch fordert: Ohne diesen Ausbruch bleibt die Aktie eine Range-Story. Das Risiko: Kratos ist illiquider als die großen Defense-Names, was die Volatilität bei schlechten Nachrichten erhöht.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1916,
+     "t": "31:56",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1916s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Rezolve AI",
+     "ticker": null,
+     "note": "Aktienrückkaufprogramm von bis zu 300 Mio. USD stützt den Kurs. Starkes Umsatzwachstum: 360 Mio. USD Umsatz, bis 2026 auf 7-faches Niveau, ARR-Ziel 500 Mio. USD. Technisch in Bodenbildung; Ausbruch über 3,30-3,40 USD könnte schnelle Rally auslösen.",
+     "figures": "Rückkauf bis 300 Mio. USD; Umsatz 360 Mio. USD; 7-faches Wachstum bis 2026; ARR-Ziel 500 Mio. USD",
+     "tip": "Bei Ausbruch über 3,40 USD kurzfristige Ziele bei 5 USD und 7 USD. Schnelle Bewegungen möglich, daher Limite setzen.",
+     "einordnung": "Ein 300-Mio.-USD-Rückkauf bei einem Small-Cap ist ein massiver Rückhalt — aber das 7-fache Umsatzwachstum bis 2026 ist eine Projektion, die an Beweislast trägt. Die Bodenbildung ist vielversprechend, aber Micro-Caps sind hochspekulativ.",
+     "detail": "Rezolve AI ist ein klassischer Micro-Cap-KI-Play, bei dem die Story (KI-Commerce) attraktiv ist, aber die operative Validierung fehlt. Der Rückkauf von 300 Mio. USD ist in Relation zur Marktkapitalisierung enorm — das künstlich verknappt das Float und kann die Volatilität nach oben treiben. Das ARR-Ziel von 500 Mio. USD bei aktuell 360 Mio. USD Umsatz ist aggressiv, aber nicht absurd, wenn das KI-Commerce-Marktsegment skaliert. Goersch warnt implizit vor der Illiquidität: 'Schnelle Bewegungen möglich, daher Limite setzen' ist ein Hinweis, dass die Aktie bei dünnem Orderbuch extreme Ausschläge zeigen kann. Das Risiko: Micro-Cap-KI-Werte haben eine hohe Mortalitätsrate — viele versprechen das 7-fache Wachstum, wenige liefern es.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2168,
+     "t": "36:08",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=2168s"
+    },
+    {
+     "name": "Palantir",
+     "ticker": "PLTR",
+     "note": "Zwei neue Deals (Surf Air Mobility, Nvidia-Kooperation) für mehr KI-Integration. Technisch skeptisch: Aktie unter wichtiger Unterstützung, weiteres Potenzial bis 90-100 USD. Doppeltop-Formation. Antizyklischer Kauf möglich.",
+     "figures": "Mögliches Tief bei 90-100 USD; Doppeltop-Formation",
+     "tip": "Erste Position aufbauen, Reserve für möglichen Rückgang auf 90 USD freihalten. Antizyklisch, daher risikobewusst agieren.",
+     "einordnung": "Die Diskrepanz zwischen fundamental positiven News (Nvidia-Kooperation) und charttechnischer Schwäche (Doppeltop, Unterstützung gebrochen) ist typisch für einen Wert, der nach einer starken Rally verdaut. Antizyklisch einzusteigen ist mutig, aber bei 90 USD wäre das Risiko asymmetrischer.",
+     "detail": "Das Doppeltop ist eine klassische Umkehrformation — sie signalisiert, dass die Käuferkraft erschöpft ist. Dass Palantir gleichzeitig neue Deals announced, zeigt die Diskrepanz zwischen Fundament und Chart: Der Markt diskontiert bereits, dass die KI-Story in den großen Caps überhitzt ist. Cross-Source: Tages-News berichtet, dass Chip-Aktien rutschten und Meta 10% auf Cloud-Pläne sprang — Metas Cloud-Pläne deuten auf eine Kommodifizierung von KI-Rechenleistung hin, was den Margendruck auf KI-Software-Anbieter wie Palantir verschärfen könnte. Das erklärt die charttechnische Schwäche: Der Markt fragt sich, ob KI-Software-Margen kommodifiziert werden. Goerschs antizyklischer Ansatz setzt voraus, dass Palantir ein Premium-Data-Provider bleibt, nicht kommodifiziert — das ist die Bull-These. Das 90-100-USD-Ziel ist die 38,2%-Retracement-Zone der großen Rally.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Chip-Aktien rutschten ab, Meta sprang 10% auf Cloud-Pläne — Metas Cloud-Pläne deuten auf Kommodifizierung von KI-Rechenleistung, was Margendruck auf KI-Software-Anbieter verschärfen könnte."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2364,
+     "t": "39:24",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=2364s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "SK Hynix",
+     "ticker": null,
+     "note": "Hohe Volatilität (Schwankungen bis 30% in wenigen Tagen) durch Knappheit bei HBM und Speicher. US-Listing mit 18 Mio. neuen Aktien. Nachfrage bleibt 'insane', Angebotsknappheit hält an. Kapital ca. 30 Mrd. USD.",
+     "figures": "Kursschwankungen: -18%, -28%, -30%; 18 Mio. neue Stammaktien; Kapital ca. 30 Mrd. USD",
+     "tip": "Bei Rücksetzern in die Aktie einsteigen; die Knappheitssituation bleibt strukturell positiv.",
+     "einordnung": "HBM-Knappheit ist ein struktureller Megatrend — SK Hynix ist der primäre Profiteur. Die Volatilität von bis zu 30% in wenigen Tagen ist extrem, aber bei einem Speicherzyklus-Wert nicht ungewöhnlich. Das US-Listing erhöht die Liquidität und die Sichtbarkeit.",
+     "detail": "Die 'insane' Nachfrage nach HBM (High Bandwidth Memory) ist direkt an den KI-Infrastruktur-Boom gekoppelt — HBM ist der Flaschenhals für KI-Beschleuniger. SK Hynix als führender HBM-Hersteller profitiert von Angebotsknappheit, die Preise treibt. Die Volatilität von -18%, -28%, -30% in kurzen Abständen ist typisch für einen Speicherzyklus-Wert: Speicherchips sind zyklisch, und der Markt diskontiert Zyklus-Wendepunkte vorzeitig. Das US-Listing mit 18 Mio. neuen Aktien ist eine Kapitalerhöhung, die Verwässerung bringt, aber auch institutionelle Investoren öffnet. Cross-Source: Tages-News berichtet, dass Micron Technology im Parallelvideo als volatiler Speicher-Favorit bezeichnet wird — das bestätigt das Sektor-Thema. Meta's Cloud-Pläne (Tages-News) deuten auf mehr KI-Rechenleistung-Bedarf, was die HBM-Nachfrage weiter stützt. Das Risiko: Sollte die KI-Infrastruktur-Investitionsrate abkühlen, ist HBM der erste Engpass, der sich löst — dann kippt die Speicherstory schnell.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär - Märkte am Morgen",
+       "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E",
+       "bezug": "Micron Technology als Speicher-Favorit, volatil, vorsichtiger Einstieg empfohlen — bestätigt Speicher-Sektor-Thema."
+      },
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Metas Cloud-Pläne deuten auf mehr KI-Rechenleistung-Bedarf, stützt HBM-Nachfrage."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2563,
+     "t": "42:43",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=2563s"
+    },
+    {
+     "name": "Bloom Energy",
+     "ticker": "BE",
+     "note": "Ausweitung der Brookfield-Partnerschaft von 5 auf 25 Mrd. USD für KI-Infrastruktur. Nach Russell-Rebalancing (Kursrutsch) deutliche Erholung. Kursziel 400-450 USD bei aktuellem Kurs um 330 USD. Hebelposition im Chartzeit-Depot.",
+     "figures": "Finanzierungsrahmen von 5 auf 25 Mrd. USD ausgeweitet; aktueller Kurs um 330 USD; Kursziel 400-450 USD",
+     "tip": "Bereits gehebelt eingestiegen; Stop eng gesetzt, kein Ziel. Aggressiver Trade mit Potenzial nach oben.",
+     "einordnung": "Die Verfünffachung des Brookfield-Rahmens von 5 auf 25 Mrd. USD ist ein struktureller Meilenstein — das validiert Bloom Energy als KI-Strom-Infrastruktur-Provider. Der Hebeltrade ist aggressiv, aber die Katalysator-Dichte ist hoch.",
+     "detail": "Bloom Energy ist der Inbegriff des KI-Strom-Plays: Rechenzentren brauchen zuverlässige, dezentrale Energieversorgung, und Bloom's Brennstoffzellen-Technologie ist eine Lösung. Die Brookfield-Partnerschaft ist nicht nur ein Finanzierungsrahmen, sondern ein strategisches Bekenntnis — Brookfield als Infrastruktur-Investor validiert das Geschäftsmodell. Der Russell-Rebalancing-Kursrutsch war ein technisches Ereignis, kein fundamentales — die Erholung bestätigt das. Goerschs Hebelposition mit engem Stop ist ein Hochrisiko-Trade: Bei 330 USD mit Ziel 400-450 USD ist das Aufwärtspotenzial 20-35%, bei gehebelt ist das ein disproportionales Risiko. Cross-Source: Tages-News berichtet, dass Metas Cloud-Pläne auf KI-Rechenleistung-Bedarf deuten — das stützt die KI-Strom-These direkt. Der Sektorvergleich: Bloom Energy ist kein Utility, sondern ein Wachstumswert mit KI-Hebel — das rechtfertigt eine höhere Bewertung, aber auch höhere Volatilität.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Metas Cloud-Pläne deuten auf Kommodifizierung von KI-Rechenleistung, was die Nachfrage nach KI-Strom-Infrastruktur stützt."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2948,
+     "t": "49:08",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=2948s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Constellation Brands",
+     "ticker": "STZ",
+     "note": "Alkoholproduzent mit anhaltendem Umsatz- und Gewinnrückgang (vier Quartale in Folge). Erstmals wieder Gewinnwachstum, aber Trend weiter abwärts. Zuletzt -3% Umsatz. Technisch kein positives Signal.",
+     "figures": "Umsatzrückgang vier Quartale; zuletzt -3% Umsatz; erster Gewinnanstieg seit längerer Zeit",
+     "tip": "Von Aktie fernhalten; Abwärtstrend intakt, kein Kauf.",
+     "einordnung": "Ein erster Gewinnanstieg nach vier Rückgangs-Quartalen ist kein Wendepunkt, sondern ein statistisches Rauschen im Abwärtstrend. Der Konsumtrend bei Alkohol ist strukturell schwach — Gen-Z trinkt weniger.",
+     "detail": "Constellation Brands ist ein klassischer Value-Trap-Kandidat: Die Aktie sieht günstig aus, weil der Kurs gefallen ist, aber der Trend ist intakt. Der erste Gewinnanstieg nach vier Rückgangs-Quartalen könnte ein Bottoming-Signal sein, aber Goersch warnt zu Recht: Ein Quartal macht keinen Trend. Die strukturelle Herausforderung ist der Gen-Z-Konsumwandel: Jüngere Kohorten trinken weniger Alkohol, was das Volumenwachstum der Branche strukturell begrenzt. Das ist kein zyklisches Problem, sondern ein demografisches. Goerschs 'kein Kauf'-Empfehlung ist konservativ richtig: Bis der Abwärtstrend charttechnisch gebrochen ist, ist die asymmetrie nach unten. Vergleich: Andere Konsumgüter-Werte mit Gen-Z-Headwind (z.B. Tabak) zeigen ähnliche Muster — der Markt diskontiert den demografischen Wandel vorzeitig.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 3165,
+     "t": "52:45",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=3165s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Nike",
+     "ticker": "NKE",
+     "note": "Quartalszahlen: Gewinn +414% (bereinigt +271%), Umsatz -1%. China-Umsatz -12% auf 1,3 Mrd. USD. Analysten senken Ziele auf 42-47 USD. Abwärtstrend hält an, charttechnisch schwach.",
+     "figures": "Gewinnwachstum 414% (von 0,14 auf 0,72 USD; adjustiert 0,52 USD); Umsatz -1%; China -12% auf 1,3 Mrd. USD; Analystenziele: BoA 47, Goldman 42, UBS 48, Citi 45 USD",
+     "tip": "Nicht kaufen. Risiko einer Trendfortsetzung trotz 10-20% Analystenpotenzial zu hoch.",
+     "einordnung": "Der Gewinnjump von +414% ist beeindruckend, aber der Umsatzrückgang von -1% und China -12% zeigen, dass die operative Wende noch nicht da ist. Die Analystenziele von 42-48 USD implizieren 10-20% Aufwärtspotenzial, aber der Abwärtstrend ist intakt — das ist eine Value-Trap-Falle.",
+     "detail": "Die Diskrepanz zwischen +414% Gewinn und -1% Umsatz ist der Schlüssel: Nike hat Kosten geschnitten und Margen verbessert, aber das Topline-Wachstum fehlt. China -12% ist die zentrale Baustelle — der chinesische Konsum ist schwach, und Nike's Premium-Positionierung trifft auf einen Preiswettbewerb mit lokalen Marken. Goersch warnt zu Recht vor der Value-Trap: Analystenpotenzial von 10-20% ist verlockend, aber der Abwärtstrend ist intakt, und der Markt diskontiert, dass die operative Wende ausbleibt. Cross-Source: Der Aktionär berichtet, dass Nike's Quartalszahlen positiv überraschten — Umsatz und Gewinn lagen über Erwartungen —, aber skeptische Aussagen zum Umfeld belasten die Aktie nachbörslich. Das bestätigt Goerschs Lesart: Die Zahlen sind besser, die Story ist schwieriger. Das Risiko: Sollte Nike's China-Geschäft weiter schwächen, könnte der Abwärtstrend sich beschleunigen — dann werden die 42-48 USD-Analystenziele irrelevant.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär - Märkte am Morgen",
+       "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E",
+       "bezug": "Nike's Quartalszahlen überraschten positiv — Umsatz und Gewinn über Erwartungen —, aber skeptische Aussagen zum Umfeld belasten die Aktie nachbörslich mit erwartetem Startverlust."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 3350,
+     "t": "55:50",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=3350s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Zuschauerfragen",
+     "ticker": null,
+     "note": "Behandelt Iron (separates Video angekündigt), OHB (Abwärtstrend, von 650 auf 350 EUR, -46%, mögliches Ziel 200 EUR) und ServiceNow (bullisch, aktuell über 100 USD, Ziel 140 USD nach Bodenbildung).",
+     "figures": "OHB: von 650 auf 350 EUR (-46%); mögliches Ziel 200 EUR; ServiceNow: aktuell über 100 USD, Ziel 140 USD",
+     "tip": "ServiceNow: Einstieg nach Bodenbildung; OHB: Vorsicht, bei Unterschreiten des letzten Tiefs weiteres Abwärtspotenzial.",
+     "einordnung": "OHB ist ein klassischer Abwärtstrend-Wert — der Fall von 650 auf 350 EUR ist dramatisch, und 200 EUR ist kein unrealistisches Ziel, wenn der Trend intakt bleibt. ServiceNow nach Bodenbildung ist ein bullischer Setup, aber der Beweis steht aus.",
+     "detail": "OHB's Fall von 46% ist ein Warnsignal für den gesamten deutschen Small-Cap-Raum: Wenn ein etablierter Satellitenbau-Wert so stark korrigiert, steckt mehr dahinter als Marktrauschen — vermutlich operative Enttäuschungen oder Auftragsverzögerungen. ServiceNow ist ein KI-Software-Wert, der von der Enterprise-KI-Welle profitiert — die Bodenbildung über 100 USD ist ein technisches Signal, aber Goersch's Ziel von 140 USD setzt voraus, dass die KI-Enterprise-Nachfrage anhält. Cross-Source: Tages-News berichtet, dass Metas Cloud-Pläne auf KI-Rechenleistung-Kommodifizierung deuten — das könnte ServiceNow tangential betreffen, wenn Enterprise-KI-Software kommodifiziert wird. Das Risiko für ServiceNow: Sollte KI-Software-Margen unter Druck kommen, ist das 140-USD-Ziel gefährdet.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Metas Cloud-Pläne deuten auf Kommodifizierung von KI-Rechenleistung, was Margendruck auf KI-Software-Anbieter wie ServiceNow verschärfen könnte."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "sonstiges",
+     "sec": 3653,
+     "t": "60:53",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=3653s"
+    }
+   ],
+   "macro": [
+    {
+     "text": "Goersch erwartet positive Saisonalität für das zweite Halbjahr bei breiter Marktbeteiligung — gleichgewichteter Techsektor +41%, Magnificent 7 -1,6%. Energie- und Finanzsektor bieten hohe Shareholder Returns. Geopolitische Risiken (Nahost, Energiepreise) scheinen eingepreist.",
+     "sec": 38,
+     "t": "00:38",
+     "tlink": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=38s"
+    }
+   ]
+  }
+ ]
+}
