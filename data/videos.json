@@ -1,6 +1,333 @@
 {
- "updated": "2026-07-03T06:34:38.516055+00:00",
+ "updated": "2026-07-05T06:32:38.924700+00:00",
  "videos": [
+  {
+   "channel": "onvista",
+   "playlist": "Börse & Märkte LIVE",
+   "id": "wVQZI7oZ9mQ",
+   "title": "Bitcoin ETF-Abflüsse, Meta KI-Frust, Micron Burry-Short",
+   "date": "20260703",
+   "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ",
+   "thumbnail": "https://i.ytimg.com/vi/wVQZI7oZ9mQ/hqdefault.jpg",
+   "summarized_at": "2026-07-03T18:50:16.002287+00:00",
+   "summary": "Das tägliche Markt-Update mit Martin Goersch eröffnet mit einem neuen DAX-Allzeithoch bei 25.800 Punkten, getragen von schwächeren US-Arbeitsmarktdaten, die eine Fed-Pause wahrscheinlicher machen. Der rote Faden des Videos ist die Spannung zwischen günstigen Bewertungen und kurzfristigen Unsicherheiten: Bitcoin kämpft mit ETF-Abflüssen, Meta mit KI-Reibung, Micron mit Burrys Short-Position — während bei RENK, Siemens Energy und Chevron die Fundamentaldaten überzeugen. Zehn Einzelwerte werden mit konkreten Chart-Levels und Kurszielen durchgenommen.",
+   "items": [
+    {
+     "name": "DAX & Marktüberblick",
+     "ticker": "^GDAXI",
+     "note": "DAX auf neuem Allzeithoch bei 25.800 Punkten, aber intraday volatil. Nonfarm Payrolls schwächer als erwartet, Arbeitslosenquote sinkt auf 4,2%. Zinserhöhungswahrscheinlichkeiten sinken, Ölpreis (WTI) unter 70 $. Nasdaq zeigt bullische Wimpelkonsolidierung, Ziel 30.000-31.000 Punkte. Marktbreite verbessert sich (RSP auf Allzeithoch).",
+     "figures": "DAX 25.800 Punkte, Arbeitslosenquote 4,2%, WTI <70 $, S&P 500 Juli im Schnitt +3,2%",
+     "tip": "",
+     "einordnung": "Der DAX profitiert vom klassischen 'bad news is good news'-Mechanismus: schwache Arbeitsmarktdaten drücken die Zinserwartungen und befeuern die Rally. Ein Allzeithoch bei gleichzeitig verbesserter Marktbreite ist ein gesundes Bild — aber intraday-Volatilität warnt vor übermütigem Einstieg.",
+     "detail": "Die Kombination aus enttäuschenden Nonfarm Payrolls und einer sinkenden Arbeitslosenquote von 4,2% erzeugt ein paradoxes Signal: schwache Joberstellung bei gleichzeitig engem Arbeitsmarkt. Das suggeriert eine Fed, die im Juli pausiert, aber nicht sofort lockerungsready ist. Der WTI-Rückfall unter 70 $ dämpft Inflationsängste, belastet aber gleichzeitig Energieaktien. Die Nasdaq-Wimpelkonsolidierung mit Ziel 30.000-31.000 Punkte setzt voraus, dass die Tech-Bewertungen weiter getragen werden — ein Risiko, falls die KI-Euphorie abkühlt. Der RSP auf Allzeithoch deutet darauf hin, dass die Rally nicht nur von Megacaps getragen wird, was strukturell gesund ist. Der 'Der Aktionär'-Morgenbericht bestätigt die Indikation bei rund 25.750 Punkten und nennt asiatische Vorgaben als weiteren Treiber. US-Börsen bleiben wegen des Unabhängigkeitstages geschlossen, was die DAX-Bewegung überproportional sichtbar macht.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär - Märkte am Morgen",
+       "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ",
+       "bezug": "DAX erreicht Rekordhoch bei 25.655 Punkten, Indikation 25.750, getrieben von schwachen US-Arbeitsmarktdaten und asiatischen Vorgaben."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 0,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=0s",
+     "tv_symbol": "XETR:DAX"
+    },
+    {
+     "name": "Bitcoin & Strategy",
+     "ticker": null,
+     "note": "Bitcoin bei 62.000 $, kurzfristiger Rebound erwartet, aber finaler Boden noch nicht erreicht (Realized Price bei 54.000 $). ETF-Abflüsse belasten die Stimmung. Strategy (MicroStrategy) hat durch Kapitalerhöhung von 1,25 Mrd. $ das Tailrisiko reduziert; die Aktie erholte sich von 80 $ auf über 100 $.",
+     "figures": "Bitcoin 62.000 $, Realized Price 54.000 $, Strategy Kapitalerhöhung 1,25 Mrd. $, Strategy Bitcoin-Käufe 2026: 170.000 BTC, Bestand 850.000 BTC, Bestandswert 50 Mrd. $, Dividenden 7 Mrd. $",
+     "tip": "Kurzfristig Rebound möglich, finaler Bottom aber offen. Strategy-Aktie von 80 $ auf 100 $ erholt.",
+     "einordnung": "Der Realized Price bei 54.000 $ als potenzieller Boden ist ein valides on-chain-Argument, aber ETF-Abflüsse zeigen institutionelles De-Risking. Strategy's Kapitalerhöhung reduziert zwar das Tailrisiko, bedeutet aber auch Verwässerung — die Erholung von 80 $ auf 100 $ ist eher eine Short-Squeeze-Reaktion als fundamentale Überzeugung.",
+     "detail": "Der Realized Price als durchschnittlicher Anschaffungskurs aller Bitcoin-Holder markiert historisch oft wichtige Unterstützungszonen — ein Test der 54.000 $ wäre bei aktuellen 62.000 $ ein Rücksetzer von rund 13%. Die ETF-Abflüsse sind strukturell bedeutsam, da sie institutionelles Kapital repräsentieren, das im Spot-ETF-Boom der letzten Monate hineingeströmt war. Strategy's Kapitalerhöhung von 1,25 Mrd. $ ist ambivalent: einerseits wird das Tailrisiko des hochgehebelten Bitcoin-Exposures reduziert, andererseits bedeutet jede neue Aktienemission Verwässerung für bestehende Aktionäre. Der Bestand von 850.000 BTC im Wert von 50 Mrd. $ macht Strategy de facto zum Bitcoin-Proxy — wer die Aktie kauft, wettet auf Bitcoin mit Hebel. Die Dividenden von 7 Mrd. $ suggerieren, dass Strategy mittlerweile Cashflow aus dem Bitcoin-Bestand generiert, was die Argumentation von Kritikern relativiert, die das Modell als reine Spekulation betrachten.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 405,
+     "t": "06:45",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=405s"
+    },
+    {
+     "name": "RENK",
+     "ticker": null,
+     "note": "Übernahme von David Brown Defense für 200-250 Mio. $. Bewertung von KGV 45-50 auf KGV 25 gefallen, PEG unter 1. Bodenbildung in der Aktie, kurzfristig noch unter Abwärtstrend.",
+     "figures": "Übernahme 200-250 Mio. $, KGV 25 (früher 45-50), PEG unter 1",
+     "tip": "Erstes Kursziel 60 €, langfristig 90 €. Vor Break über 50 € abwarten.",
+     "einordnung": "Die David-Brown-Übernahme ist ein strategisch sinnvoller Schritt, der RENK im Rüstungsmarkt skaliert. Ein PEG unter 1 bei KGV 25 ist attraktiv, aber der Abwärtstrend ist noch nicht gebrochen — Geduld ist angebracht.",
+     "detail": "Die Übernahme von David Brown Defense für 200-250 Mio. $ erweitert RENK's Produktportfolio im Rüstungsbereich und nutzt die anhaltende Erhöhung von Verteidigungsbudgets in Europa. Der Bewertungsrückgang von KGV 45-50 auf 25 resultiert aus starken Gewinnsteigerungen, die das überkommene Hochbewertungs-Niveau komprimiert haben. Ein PEG unter 1 signalisiert, dass das Gewinnwachstum schneller läuft, als der Markt aktuell preist. Charttechnisch befindet sich die Aktie in einer Bodenbildung, die aber noch nicht durch einen Trendbruch bestätigt ist. Der Abwärtstrend muss erst durchbrochen werden, bevor ein Long-Einstieg gerechtfertigt ist. Das erste Kursziel von 60 € entspricht rund 20% Aufwertungspotenzial, das langfristige Ziel von 90 € würde die Aktie auf KGV-Niveaus zurückführen, die dem Sektor entsprechen. Geopolitische Spannungen — Houthi-Drohungen gegen Saudi-Arabien, Iran-Russland-Kooperation — untermauern die Nachfrage nach Rüstungsgütern strukturell.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 1547,
+     "t": "25:47",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=1547s"
+    },
+    {
+     "name": "GEA Group",
+     "ticker": null,
+     "note": "RBC Upgrade von Sector Perform auf Outperform, Kursziel von 57 € auf 70 € erhöht. Aktie bei 63 €, starker Widerstand bei 65-67 €. Langfristig bullische Konsolidierung, aber kurzfristig wenig Potenzial.",
+     "figures": "Kursziel 70 € (vorher 57 €), aktuell 63 €, Widerstand 65-67 €",
+     "tip": "Bei 65-67 € Gewinne mitnehmen. Kein Topkandidat für die nächsten Monate.",
+     "einordnung": "Das RBC-Upgrade mit einer Kurszielanhebung um 23% ist ein starkes Signal, aber der Widerstand bei 65-67 € liegt nur 4-6% über dem aktuellen Kurs. Der Host gibt pragmatische Gewinnmitnahme-Empfehlungen — das ist diszipliniert.",
+     "detail": "RBC's Upgrade von Sector Perform auf Outperform mit einer Kurszielanhebung von 57 € auf 70 € ist ein signifikanter Analystenruf, der eine Neubewertung der GEA-Geschäftsmodells impliziert. Der Widerstand bei 65-67 € ist charttechnisch relevant, da hier frühere Kaufversuche gescheitert sind. Die langfristige bullische Konsolidierung deutet auf ein intaktes Aufwärtstrendumfeld hin, aber die kurzfristige Distanz zum Widerstand limitiert das Aufwertungspotenzial auf wenige Prozent. Der Host's Rat, bei 65-67 € Gewinne mitzunehmen, reflektiert die Erkenntnis, dass Konsolidierungen an Widerständen oft Wochen bis Monate dauern. GEA ist kein Momentum-Wert, sondern ein Qualitätswert mit verbesserter Analystenunterstützung — geeignet für geduldige Positionen, nicht für schnelle Trades.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1784,
+     "t": "29:44",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=1784s"
+    },
+    {
+     "name": "Siemens Energy",
+     "ticker": "ENR.DE",
+     "note": "RBC erhöht Kursziel von 200 € auf 210 €. Technisch bullische Flagge mit möglichem SKS. Bewertung günstig: KGV 32, PEG 0,6. Im Vergleich zu GE Vernova (KGV 60, PEG 1,9) deutlich attraktiver.",
+     "figures": "Kursziel 210 € (vorher 200 €), KGV 32, PEG 0,6, GE Vernova KGV 60, PEG 1,9",
+     "tip": "Erst bei Break über letztes Hoch einsteigen. Kursziel 210 €.",
+     "einordnung": "Der Vergleich mit GE Vernova ist das stärkste Argument: bei halbem KGV und einem Drittel des PEG ist Siemens Energy relativer Wert im Sektor. Die bullische Flagge ist ein klassisches Fortsetzungsmuster, aber der Host wartet zu Recht auf die Bestätigung.",
+     "detail": "Der relative Wert-Vergleich mit GE Vernova ist aussagekräftig: bei KGV 32 vs. 60 und PEG 0,6 vs. 1,9 preist der Markt Siemens Energy deutlich konservativer als den US-Pendant, obwohl beide im Energiewende-Infrastrukturboom stehen. Die bullische Flagge als charttechnisches Fortsetzungsmuster deutet auf eine Konsolidierung vor dem nächsten Aufwärtsimpuls hin. Der mögliche SKS (Stochastik-Kreuz) als Zweitindikator würde den Einstiegszeitpunkt präzisieren. Der Host's Rat, erst bei Break über das letzte Hoch einzusteigen, ist diszipliniert — Flaggen können auch nach unten auflösen, wenn der Ausbleib bleibt. RBC's Kurszielanhebung von 200 € auf 210 € ist moderat und suggeriert, dass die Analysten das Momentum als intakt, aber nicht überhitzt einschätzen. Der PJM-Netznotstand in den USA unterstreicht strukturell den Bedarf für Netzinfrastruktur-Investitionen, von denen Siemens Energy profitiert.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "PJM-Notstand: Größter US-Stromnetzbetreiber kann Energiebedarf nicht decken — deutet auf strukturelle Überlastung des US-Stromnetzes hin, relevant für Energieinfrastruktur-Aktien."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1991,
+     "t": "33:11",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=1991s",
+     "tv_symbol": "XETR:ENR"
+    },
+    {
+     "name": "STMicroelectronics",
+     "ticker": "STM",
+     "note": "Aktie in ABC-Konsolidierung, Unterstützung bei 60 € hält. Bewertung hoch (KGV 43), aber Wachstum rechtfertigt (PEG 0,44). UBS sieht weiteres Potenzial für KI-Chip-Lieferkette. WFE-Investitionen steigen bis 2028 auf 250 Mrd. $.",
+     "figures": "KGV 43, PEG 0,44, WFE 147 Mrd. $ (2025), 198 Mrd. $ (2026), 250 Mrd. $ (2028), Wandelanleihe 1,5 Mrd. $",
+     "tip": "Rücksetzer auf 60 € sind Kaufgelegenheit.",
+     "einordnung": "Ein PEG von 0,44 bei KGV 43 ist extrem — der Markt preist das Wachstum massiv unter. Die WFE-Trajektorie bis 250 Mrd. $ zeigt, dass der Halbleiter-Kapexzyklus weit vom Peak entfernt ist. Die Wandelanleihe von 1,5 Mrd. $ ist als potenzielle Verwässerung im Auge zu behalten.",
+     "detail": "Die WFE-Investitionen (Wafer Fabrication Equipment) von 147 Mrd. $ (2025) über 198 Mrd. $ (2026) auf 250 Mrd. $ (2028) zeichnen eine Kapex-Trajektorie, die den Halbleiterzyklus als strukturell intakt ausweist — nicht als zyklische Blase. Ein PEG von 0,44 bei KGV 43 bedeutet, dass das Gewinnwachstum fast doppelt so schnell läuft wie der Markt einpreist — ein klassisches Value-Growth-Setup. Die ABC-Konsolidierung mit haltender Unterstützung bei 60 € ist ein technisch gesundes Korrekturmuster. UBS's positive Haltung zur KI-Chip-Lieferkette stützt die These, dass STMicro als Lieferant von Spezialchips vom KI-Infrastrukturboom profitiert. Die Wandelanleihe über 1,5 Mrd. $ ist ambivalent: sie stärkt die Bilanz, birgt aber Verwässerungsrisiko bei steigendem Kurs. Der Host's Kaufempfehlung bei Rücksetzern auf 60 € ist eine antizyklische Strategie, die auf der intakten Unterstützung und der günstigen PEG-Bewertung basiert.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2334,
+     "t": "38:54",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=2334s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Chevron",
+     "ticker": "CVX",
+     "note": "Wolfe Research Upgrade auf Outperform, Kursziel 210 $. Aktie bei 170 $, KGV von 28 auf 10 gefallen. Stark steigender Free Cashflow wird von fallenden Ölpreisen überschattet.",
+     "figures": "Kursziel 210 $, aktuell 170 $, KGV 10 (früher 28)",
+     "tip": "Gute Gelegenheit zum Einstieg; wird für Chartszeit-Depot geprüft.",
+     "einordnung": "KGV-Kompression von 28 auf 10 bei steigendem Free Cashflow ist ein klassischer Value-Disconnect. Der WTI unter 70 $ überschattet kurzfristig, aber bei KGV 10 ist viel Pessimismus bereits eingepreist.",
+     "detail": "Die KGV-Kompression von 28 auf 10 bei gleichzeitig steigendem Free Cashflow ist ein klassisches Value-Setup: der Markt preist zyklische Pessimismus ein, während die Fundamentaldaten sich verbessern. Der WTI-Rückfall unter 70 $ drückt die Aktie, obwohl Chevron's FCF-Wachstum unabhängig von kurzfristigen Ölpreisschwankungen ist — die Kapitaldisziplin und Dividendenrendite tragen. Wolfe Research's Upgrade auf Outperform mit Kursziel 210 $ impliziert rund 24% Aufwertungspotenzial. Politische Risiken sind nicht zu ignorieren: US-Antitrust-Behörden überwachen den Ölmarkt auf Preismanipulation, was den Druck auf Energieaktien erhöhen könnte. Der Host's Erwägung, Chevron ins Chartszeit-Depot aufzunehmen, reflektiert die Einschätzung, dass der Value-Disconnect bei KGV 10 überkompensiert ist.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "US-Antitrust-Behörden überwachen Ölmarkt auf Preismanipulation — scharfe Rhetorik gegenüber Ölunternehmen könnte Druck auf Energieaktien erhöhen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2609,
+     "t": "43:29",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=2609s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "AeroVironment",
+     "ticker": "AVAV",
+     "note": "Aktie in 2 Tagen von 135 $ auf 190 $ (+40%), aber YTD -20%. Großer Auftrag für Counter-UAS-Systeme (500 Mio. $). Langfristig viel Potenzial, kurzfristig überhitzt.",
+     "figures": "aktuell 190 $, Hoch 417 $, Tief 135 $, Auftrag 500 Mio. $, KGV 58",
+     "tip": "Langfristig Ziel 300 $, nach 40% Anstieg kurzfristig überhitzt.",
+     "einordnung": "Ein 40%-Surge in zwei Tagen auf einen 500-Mio.-$-Auftrag zeigt, wie der Markt Counter-Drone-Nachfrage preist. YTD -20% trotz dieses Sprungs zeigt, wie tief die Aktie gefallen war. KGV 58 ist sportlich, aber bei Verteidigungsaufträgen zählt das Auftragsbuch mehr als das aktuelle KGV.",
+     "detail": "Der 500-Mio.-$-Auftrag für Counter-UAS-Systeme ist ein struktureller Auftrag, der die Nachfrage nach Drohnenabwehr-Technologie quantifiziert — ein Markt, der durch die Eskalation asymmetrischer Konflikte weltweit wächst. Der 40%-Anstieg in zwei Tagen von 135 $ auf 190 $ ist eine klassische News-Reaktion, die kurzfristig überhitzt ist. Das YAD von -20% trotz dieses Sprungs zeigt, dass die Aktie zuvor massiv korrigiert hatte — vom Hoch von 417 $ auf 135 $ war ein Rückgang von 68%. Das langfristige Ziel von 300 $ läge immer noch 28% unter dem alten Hoch, wäre also eine Rückkehr zum langfristigen Trendkanal. KGV 58 ist hoch, aber bei Rüstungswerten mit mehrjährigen Auftragsbüchern ist das aktuelle KGV weniger aussagekräftig als der Auftragsbacklog. Geopolitische Faktoren — Houthi-Drohungen gegen Saudi-Flughäfen, Iran-Konflikt — untermauern die Nachfrage nach Counter-UAS-Systemen strukturell.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "TAGES-NEWS",
+       "url": "",
+       "bezug": "Houthi drohen Saudi-Arabien mit Vergeltungsschlägen auf Flughäfen — unterstreicht die Relevanz von Counter-UAS-Systemen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2794,
+     "t": "46:34",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=2794s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Meta",
+     "ticker": "META",
+     "note": "Aktie von Widerstand 625 $ abgewiesen. Interne KI-Entwicklung stockt, Personalabbau 10% nicht wie erwartet. Bewertung günstig: KGV 18, PEG 0,85. Cloud-Vermietung (Meta Compute) könnte Gewinn um 3,50-5,50 $/Aktie steigern.",
+     "figures": "Widerstand 625 $, KGV 18, PEG 0,85, Gewinnpotenzial 3,50-5,50 $/Aktie durch Cloud-Vermietung",
+     "tip": "Günstig bewertet, aber kurzfristig Unsicherheit. Abwarten.",
+     "einordnung": "KGV 18 bei PEG 0,85 ist für einen Tech-Giganten attraktiv. Die Cloud-Vermietung als neues Geschäftsmodell könnte eine Re-Rating-Katalysator sein, solange die KI-Infrastruktur funktioniert. Der Host's Abwarten-Haltung ist bei der Widerstands-Abweisung diszipliniert.",
+     "detail": "Die Kluft zwischen internen KI-Verzögerungen und der positiven Aktienreaktion ist bemerkenswert: der Markt fokussiert sich auf das Cloud-Vermietungspotenzial (Meta Compute) und ignoriert kurzfristige Execution-Probleme. Das Gewinnpotenzial von 3,50-5,50 $/Aktie durch Cloud-Vermietung wäre bei einem KGV von 18 eine Aufwertung um 63-99 $ pro Aktie — substantiell. Der Widerstand bei 625 $ ist charttechnisch relevant als Abweisungsniveau. Der BerneckerTV-Bericht bestätigt die Meta-Compute-Story mit einer +8,8% Tagesreaktion, warnt aber, dass Cloud-Fantasie allein nicht reicht — Meta muss gegen etablierte Cloud-Provider wie AWS, Azure und GCP konkurrieren. Der Host's Abwarten-Empfehlung reflektiert die Spannung zwischen günstiger Bewertung (KGV 18, PEG 0,85) und kurzfristiger Unsicherheit durch KI-Verzögerungen und Personalabbau-Probleme. Ein Break über 625 $ würde den Cloud-Bärenfall bestätigen.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "BerneckerTV",
+       "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ",
+       "bezug": "Meta prüft Einstieg ins Cloud-Geschäft mit KI-Rechenleistung (Meta Compute), Börse reagiert positiv (+8,8%), aber Cloud-Fantasie allein reicht nicht."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2988,
+     "t": "49:48",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=2988s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "note": "Michael Burry shortet bei 1.050 $. Aktie fiel von 1.154 $ auf 975 $, heute +6%. Bewertung extrem günstig: KGV 7, PEG 0,04. Technisches Kursziel 1.500-1.550 $.",
+     "figures": "Burry Short 1.050 $, aktuell 975 $, KGV 7, PEG 0,04, Kursziel 1.500-1.550 $",
+     "tip": "Nicht shorten, Ziel 1.500-1.550 $. Kaufen oder halten.",
+     "einordnung": "",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "sonstiges",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ",
+     "tv_symbol": ""
+    }
+   ],
+   "macro": [
+    {
+     "text": "DAX neues Allzeithoch, Nonfarm Payrolls schwächer als erwartet, Arbeitslosenquote sinkt auf 4,2%, Zinserhöhungserwartungen sinken. Ölpreis (WTI) unter 70 $ gefallen. Nasdaq zeigt bullische Wimpelkonsolidierung, Ziel 30.000-31.000 Punkte. Marktbreite verbessert sich (RSP auf Allzeithoch).",
+     "sec": 0,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=0s"
+    }
+   ]
+  },
+  {
+   "channel": "BerneckerTV",
+   "playlist": "Börse & Aktien",
+   "id": "vlq3ZDw4Te4",
+   "title": "Befreiung? Bernecker Aktien Schnelltest inkl. Bayer, Meta Platforms, Tesla und CTS Eventim",
+   "date": "20260703",
+   "url": "https://www.youtube.com/watch?v=vlq3ZDw4Te4",
+   "thumbnail": "https://i.ytimg.com/vi/vlq3ZDw4Te4/hqdefault.jpg",
+   "summarized_at": "2026-07-03T18:47:01.780027+00:00",
+   "summary": "Oliver Kantimm bespricht im Aktien-Schnelltest vier Einzelwerte: Bayer profitiert von einem Supreme-Court-Urteil im Glyphosat-Streit, Meta prüft den Einstieg ins KI-Cloud-Geschäft, Tesla zeigt operative Erholung in Europa bei gleichzeitiger SpaceX-Fusionsspekulation, und CTS Eventim erhält Rückenwind von Analysten. Die Marktlage ist verhalten optimistisch mit klarem Fokus auf Einzelwerte.",
+   "items": [
+    {
+     "name": "Einleitung",
+     "ticker": null,
+     "note": "Begrüßung und Einleitung zur Sendung durch Oliver Kantimm.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "sonstiges",
+     "sec": 0,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=vlq3ZDw4Te4&t=0s"
+    },
+    {
+     "name": "Bayer",
+     "ticker": "BAYN.DE",
+     "note": "Bayer erzielt einen juristischen Erfolg vor dem US Supreme Court, der die wichtigste Angriffslinie der Glyphosat-Kläger schwächt. Die Aktie steigt erstmals seit drei Jahren über 50 €, Kursziele von Deutscher Bank und Aktionärsbrief auf 60 € angehoben.",
+     "figures": "Vergleich 7,25 Mrd. Dollar; Q1-Umsatz +4,1% auf 13,405 Mrd. $; bereinigtes EPS +12,9% auf 2,71 €; Einstand im Allround-Portfolio bei 36,42 €; Deutsche Bank Kursziel 60 €; Konsolidierung bis ca. 47 € möglich",
+     "tip": "Nicht in den stark gestiegenen Kurs kaufen, Konsolidierung bis ca. 47 € abwarten.",
+     "einordnung": "Der Supreme-Court-Beschluss ist ein fundamentaler Meilenstein, der die Glyphosat-Risikoprämie spürbar reduziert. Nach drei Jahren Kursfrust ist die Aktie charttechnisch befreit, doch ein Kauf in der aktuellen Überkauftheit wäre vermessen.",
+     "detail": "Die Befreiungsbewegung resultiert aus einem strukturellen juristischen Shift: Der Supreme Court erschwert es Klägern, kausal Zusammenhänge zwischen Glyphosat und Krebs zu behaupten, was die Massenklage-Basis aushöhlt. Das entlastet nicht nur die Bilanz, sondern auch das Management, das sich wieder auf das operative Geschäft konzentrieren kann – die Q1-Zahlen mit Umsatzplus und EPS-Wachstum bestätigen die operative Stabilität. Historisch erinnert das an die Jahre nach dem Monsanto-Deal 2018, als Bayer unter der Klagewelle litt und die Aktie auf lange Sicht frustrierte; nun kehrt sich das Sentiment allmählich um. Bull-Argument: Die Risikoprämie schmilzt, das Kursziel 60 € wird greifbar. Bear-Risiko: Ein Revisionsantrag oder neue Klagen auf Bundesstaatsebene könnten die Erleichterung dämpfen. Der Host impliziert, dass der Markt dies bereits eingepreist hat, weshalb er eine Konsolidierung auf 47 € fordert – ein Niveau, das dem langfristigen Einstand vieler institutioneller Investoren nahekommt.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär - Märkte am Morgen",
+       "url": "",
+       "bezug": "Bayer wird im Kontext der DAX-Rekordjagd und einzelwertbezogenen Sentiment erwähnt."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 12,
+     "t": "00:12",
+     "tlink": "https://www.youtube.com/watch?v=vlq3ZDw4Te4&t=12s",
+     "tv_symbol": "XETR:BAYN"
+    },
+    {
+     "name": "Meta Platforms",
+     "ticker": "META",
+     "note": "Meta prüft den Einstieg ins Cloud-Geschäft mit KI-Rechenleistung (Meta Compute). Der Markt reagiert positiv mit einem Kurssprung von 8,8%, doch der Host warnt, dass diese Cloud-Fantasie allein noch nicht für einen nachhaltigen Kauf ausreicht.",
+     "figures": "Investitionen 125–145 Mrd. $ für 2026; Kurs +8,8% auf knapp 613 $; CoreWeave −14%, Nebius −17%; früheres Kursniveau 800 $, Tief 520 $; Erholungspotenzial bis 700 $",
+     "tip": "Kurzfristiger Trade Richtung 700 $ möglich, aber noch kein nachhaltiger Kauf.",
+     "einordnung": "Der Cloud-Einstieg ist strategisch richtig, um die massiven KI-Investitionen zu monetarisieren, doch konkurriert Meta direkt mit etablierten Hyperscalern. Der Kurssprung ist eher eine Short-Squeeze-artige Reaktion im überverkauften Bereich als ein fundamentaler Neubewertungsanfang.",
+     "detail": "Die positive Reaktion resultiert aus einem narrativen Wechsel: Bislang wurde Meta für seine reinen KI-Investitionen ohne klaren ROI bestraft, nun verspricht Meta Compute, diese Kosten als Cloud-Dienstleistung zu refinanzieren. Der Host vergleicht dies mit der Reaktion bei CoreWeave und Nebius, die zeitgleich stark abgaben – ein Zeichen, dass der Markt den neuen Konkurrenten ernst nimmt, aber auch dass die KI-Cloud-Bubble reift. Das erinnert an die Phase nach der Datenschutz-Krise 2018, als Facebook tief fiel und dann schrittweise rehabilitiert wurde; hier ist die Rehabilitation noch fragil. Das onvista-Tagesvideo thematisiert parallel einen KI-Frust bei Meta und einen Burry-Short bei Micron, was das Sektor-Sentiment trübt. Bull-Argument: Neue Erlösquelle rechtfertigt höhere Investitionen. Bear-Risiko: Der Cloud-Markt ist ein brutaler Preiskampf, Meta hat keine Cloud-DNA; kurzfristig droht Gewinnmitnahme.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "onvista",
+       "url": "",
+       "bezug": "Onvista thematisiert Meta-KI-Frust und Burry-Short bei Micron, was das KI-Sektor-Sentiment belastet."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 306,
+     "t": "05:06",
+     "tlink": "https://www.youtube.com/watch?v=vlq3ZDw4Te4&t=306s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Tesla",
+     "ticker": "TSLA",
+     "note": "Tesla zeigt in Europa steigende Neuzulassungen, doch die Bewertung bleibt extrem hoch. Der Host diskutiert die Spekulation um eine Fusion mit SpaceX über ein Holding-Modell und rät, dies nur mit Spielgeld und für einen kurzfristigen Trade zu spielen.",
+     "figures": "Frankreich +105%, Schweden +66%, Italien/Portugal +43%, Dänemark +39%, Spanien +5,6%, Norwegen −43%; Q2-Konsens 40.624 Auslieferungen (+5,7%); Börsenwert 1,5 Bio. $; KGV 2026 ca. 226; Fusion: 58% SpaceX-Aktionäre, 42% Tesla-Aktionäre; Gesamtwert 3,8 Bio. $; Erholung bis 460 $",
+     "tip": "Nur spekulativ mit Spielgeld für kurzfristigen Trade bis 460 $; von einer Investition wird abgeraten.",
+     "einordnung": "Die europäischen Zulassungszahlen sind ein zyklischer Hoffnungsschimmer, ändern aber nichts am strukturellen Bewertungsproblem. Die SpaceX-Fusion ist reine Narrativ-Spekulation, die typisch für Musk-Assets ist – hier gilt: Fantasie ist kein Fundament.",
+     "detail": "Die Erholungsbewegung wird von zwei Narrativen getrieben: Erstens die operativen Zulassungszahlen in Europa, die nach schwachen Vorquartallen nun deutlich anziehen – ein klassischer Mean-Reversion-Effekt in einem zyklischen Markt. Zweitens die SpaceX-Fusionsspekulation, die der Host als Holding-Konstrukt mit 58/42-Aufteilung skizziert. Das erinnert an die SolarCity-Übernahme 2016, die damals ebenfalls als Synergie verkauft wurde, aber für Aktionäre wertvernichtend war. Der Host impliziert, dass die Markteffizienz bei solchen Musk-Spekulationen gestört ist – die Aktie reagiert auf Hype, nicht auf Cashflow. Das Tagesvideo von Der Aktionär erwähnt Tesla im Kontext der Rekordjagd, ohne die Fusionsspekulation zu bestätigen. Bull-Argument: Fusions-Synergie und operative Erholung. Bear-Risiko: Das KGV von 226 lässt keinen Fehltritt zu; jede Enttäuschung bestraft die Aktie disproportionial.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär - Märkte am Morgen",
+       "url": "",
+       "bezug": "Tesla wird im Kontext der Marktstimmung erwähnt, ohne auf die SpaceX-Spekulation einzugehen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 584,
+     "t": "09:44",
+     "tlink": "https://www.youtube.com/watch?v=vlq3ZDw4Te4&t=584s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "CTS Eventim",
+     "ticker": "EVD.DE",
+     "note": "Analysten von Oddo BHF (Kursziel 67 €) und JP Morgan (Übergewicht, 95 €) stützen die Aktie. Charttechnisch deutet sich ein doppelter Boden bei 48–49 € an, was kurzfristiges Potenzial bis 60–63 € eröffnet.",
+     "figures": "Oddo Kursziel 67 €; JP Morgan 95 €; Q1-Umsatz +23%, bereinigtes EBITDA +18,5%; aktueller Kurs 56,55 €; KGV 2026 bei 16,4; doppelter Boden 48–49 €; Potenzial 60–63 €; Mai-Hoch 63,65 €",
+     "tip": "Erholungschance bis 60–63 €, nachhaltiger Aufwärtstrend erst über 63,65 €.",
+     "einordnung": "Die Analysten-Rückendeckung kommt zu einem charttechnisch günstigen Zeitpunkt am doppelten Boden. Das KGV von 16,4 ist für einen Wachstumswert im Ticketing-Sektor moderat, doch der Widerstand bei 63,65 € muss erst nachhaltig gebrochen werden.",
+     "detail": "Die Bewegung ist eine klassische Analysten-getriebene Erholung an einer charttechnischen Stütze. Der doppelte Boden bei 48–49 € signalisiert, dass die Verkäufererschöpfung erreicht ist – ein Muster, das oft Vorläufer einer trendwende ist, aber Bestätigung braucht. Der Host impliziert, dass das Q1-Zahlenbild mit Umsatzplus von 23% und EBITDA-Wachstum von 18,5% das Fundament für die Analysten-Optimismus liefert, doch er warnt, dass der Mai-Hoch bei 63,65 € die nacheilige Hürde ist. Historisch gesehen ist CTS Eventim ein Profiteur des Live-Entertainment-Booms, der nach der Pandemie strukturell gewachsen ist; die Aktie leidet jedoch unter zyklischer Inflationssensibilität bei Konsumenten. Bull-Argument: Analysten-Doppelpunk mit Kurszielen 67–95 € bietet breiten Puffer. Bear-Risiko: Ein schwaches Sommergeschäft oder ein Zinsschock könnte den Boden erneut testen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 897,
+     "t": "14:57",
+     "tlink": "https://www.youtube.com/watch?v=vlq3ZDw4Te4&t=897s",
+     "tv_symbol": "XETR:EVD"
+    }
+   ],
+   "macro": []
+  },
   {
    "channel": "Der Aktionär - Märkte am Morgen",
    "playlist": "Märkte am Morgen",
@@ -9971,467 +10298,6 @@
      "sec": 139,
      "t": "02:19",
      "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=139s"
-    }
-   ]
-  },
-  {
-   "channel": "BerneckerTV",
-   "playlist": "Börse & Aktien",
-   "id": "0YJSCsAcAPg",
-   "title": "SpaceX Börsengang & Tech-Korrektur: SpaceX, SMCI, CoreWeave & Zeta Global im Check",
-   "date": "20260612",
-   "url": "https://www.youtube.com/watch?v=0YJSCsAcAPg",
-   "thumbnail": "https://i.ytimg.com/vi/0YJSCsAcAPg/hqdefault.jpg",
-   "summarized_at": "2026-06-15T13:39:41.956001+00:00",
-   "summary": "Das BerneckerTV-Video vom 12. Juni 2026 dreht sich um vier Tech-Werte inmitten einer laufenden Korrektur bei Wachstumsaktien. Im Mittelpunkt steht das spektakuläre SpaceX-IPO, das zwar Rekordvolumina erreicht, aber fundamental auf sehr dünnem Eis steht. Super Micro Computer kämpft mit einem massiven Kapitalerhöhungsdruck und strukturell schwachen Margen, während CoreWeave zwar explosives Umsatzwachstum zeigt, aber noch tief defizitär ist. Zeta Global wird als relativ attraktivste Wachstumsstory im KI-Marketing-Umfeld eingestuft — mit klaren Einstiegsbereichen.",
-   "items": [
-    {
-     "name": "SpaceX IPO",
-     "ticker": null,
-     "note": "SpaceX kommt zu einem Ausgabepreis von 135 Dollar an die Börse — als Rekord-IPO mit einer angestrebten Marktkapitalisierung von rund 1,75 bis 1,77 Billionen Dollar. Der Morningstar-Fair-Value liegt bei lediglich 63 Dollar, was eine massive Überbewertung zum IPO-Preis impliziert.",
-     "figures": "Ausgabepreis 135 $, Emissionsvolumen 75 Mrd. $, angestrebte Marktkapitalisierung 1,75–1,77 Bio. $, Kurs-Umsatz-Verhältnis 95, Umsatz 2025 ca. 19 Mrd. $, Verlust ca. 5 Mrd. $, Morningstar-Fair-Value 63 $",
-     "tip": "Kurzfristig nur für sehr risikofreudige Anleger; ab 160–180 $ Short-Position denkbar; langfristiger Einstieg erst bei 60 $ oder darunter.",
-     "einordnung": "Ein KUV von 95 bei gleichzeitigem Verlust von 5 Milliarden Dollar erinnert stark an die Exzesse des Neuen Markts um 2000 — der Hype um Elon Musks Marke überstrahlt hier jede fundamentale Rechnung. Der Morningstar-Fair-Value von 63 Dollar zeigt das wahre Ausmaß der Preisprämie.",
-     "detail": "SpaceX debütiert als eines der teuersten IPOs der Börsengeschichte: Bei einem Ausgabepreis von 135 Dollar und einem Emissionsvolumen von 75 Milliarden Dollar wird das Unternehmen mit rund 1,75 bis 1,77 Billionen Dollar bewertet — eine Marktkapitalisierung, die selbst etablierte Tech-Giganten in den Schatten stellt. Das Kurs-Umsatz-Verhältnis von 95 ist dabei besonders bemerkenswert: Der Umsatz für 2025 wird auf rund 19 Milliarden Dollar geschätzt, während das Unternehmen gleichzeitig einen Verlust von circa 5 Milliarden Dollar ausweist. Der unabhängige Morningstar-Fair-Value von 63 Dollar — also weniger als die Hälfte des Ausgabepreises — macht deutlich, dass der IPO-Preis primär durch Momentum, Marken-Hype und das Narrativ rund um Starlink, Starship und KI-Ambitionen getragen wird. Der Host sieht kurzfristig Kurspotenzial für spekulative Anleger, warnt aber ausdrücklich vor einem langfristigen Investment zu diesen Preisen. Eine Short-Position ab 160–180 Dollar wird als taktisch interessant eingestuft, ein echter fundamentaler Einstieg erst unterhalb von 60 Dollar.",
-     "cross_refs": [],
-     "kategorie": "fundamental",
-     "sec": 39,
-     "t": "00:39",
-     "tlink": "https://www.youtube.com/watch?v=0YJSCsAcAPg&t=39s"
-    },
-    {
-     "name": "Super Micro Computer (SMCI)",
-     "ticker": "SMCI",
-     "note": "Die Aktie brach am Mittwoch um 28 Prozent ein, ausgelöst durch eine Kapitalerhöhung von bis zu 7 Milliarden Dollar. Strukturell belasten ein negativer freier Cashflow von minus 6,85 Milliarden Dollar sowie eine Bruttomarge von lediglich 8,4 Prozent das Bild.",
-     "figures": "Kapitalerhöhung bis zu 7 Mrd. $ (1,25 Mrd. $ Stammaktien + 3,75 Mrd. $ Wandelvorzugsaktien + 2 Mrd. $ ATM), freier Cashflow −6,85 Mrd. $, Bruttomarge 8,4%, operative Marge 4,5%, KUV 0,6, erwartetes KGV 12–13, Auftragsbestand 39 Mrd. $",
-     "tip": "Technische Erholung erst bei Kursen über 40–41 Dollar realistisch; vorab abwarten, bis die Platzierung abgeschlossen ist. Mittelfristig hängt der Wert an der Umsetzung des 39-Milliarden-Dollar-Auftragsbestands.",
-     "einordnung": "Das KUV von 0,6 und ein KGV von 12–13 klingen verführerisch günstig — doch ein Unternehmen, das 7 Milliarden Dollar frisches Kapital aufnehmen muss und dabei negative freie Cashflows produziert, hat ein strukturelles Problem, das günstige Multiples allein nicht heilen. Solche Kapitalerhöhungen in dieser Größenordnung sind klassische Verwässerungssignale.",
-     "detail": "Super Micro Computer erlebte mit einem Tagesverlust von 28 Prozent einen der schärfsten Einbrüche der jüngeren Geschichte — ausgelöst durch die Ankündigung einer mehrstufigen Kapitalerhöhung: 1,25 Milliarden Dollar über neue Stammaktien, 3,75 Milliarden Dollar über Wandelvorzugsaktien und bis zu 2 Milliarden Dollar über ein ATM-Programm (At-the-Market). Die Bruttomarge von 8,4 Prozent und die operative Marge von 4,5 Prozent zeigen, dass SMCI trotz seines Status als KI-Serverlieferant unter massivem Wettbewerbs- und Preisdruck steht — das Unternehmen verdient an jedem verkauften Server kaum etwas. Der negative freie Cashflow von minus 6,85 Milliarden Dollar signalisiert, dass das schnelle Wachstum auf Pump finanziert wird. Einzig der Auftragsbestand von 39 Milliarden Dollar gibt Hoffnung auf mittelfristige Erholung — sofern diese Aufträge profitabel abgearbeitet werden können. Der Host empfiehlt, die Platzierung abzuwarten und einen nachhaltigen Ausbruch über 40–41 Dollar als erstes Erholungssignal zu nutzen.",
-     "cross_refs": [],
-     "kategorie": "fundamental",
-     "sec": 468,
-     "t": "07:48",
-     "tlink": "https://www.youtube.com/watch?v=0YJSCsAcAPg&t=468s"
-    },
-    {
-     "name": "CoreWeave",
-     "ticker": "CRWV",
-     "note": "Spezialisierter KI-Cloud-Anbieter mit explosivem Umsatzwachstum — plus 736 Prozent in 2024 und plus 168 Prozent in 2025 — bleibt jedoch weiterhin deutlich defizitär. Ein potenzieller Einstieg in den US-Bundesmarkt (Government-Segment) könnte als zusätzlicher Wachstumshebel wirken.",
-     "figures": "Umsatzwachstum 2024: +736%, 2025: +168%; Verlust 2024: +45%, 2025: +35% (Verlust weitet sich aus)",
-     "tip": "Risikoaffine Anleger können langsam einsteigen; möglicher Kursrückschlag mit Boden um 75 Dollar.",
-     "einordnung": "Dreistellige Wachstumsraten sind beeindruckend, aber ein sich ausweitender Verlust bei gleichzeitig sinkender Wachstumsdynamik ist ein klassisches Warnzeichen — das Geschäftsmodell muss erst den Beweis antreten, dass es bei Skalierung tatsächlich profitabel wird. Der Bundesmarkt-Hebel ist real, aber noch spekulativ.",
-     "detail": "CoreWeave positioniert sich als spezialisierter KI-Cloud-Infrastrukturanbieter, der sich von den großen Hyperscalern durch GPU-fokussierte Rechenleistung abgrenzt. Das Wachstum ist in der Tat außergewöhnlich: Plus 736 Prozent Umsatzwachstum in 2024 und noch immer plus 168 Prozent in 2025 sind selbst im aufgeheizten KI-Umfeld rekordverdächtig. Bedenklich ist jedoch, dass sich der Nettoverlust parallel dazu ausweitet — 2024 um 45 Prozent, 2025 nochmals um 35 Prozent. Das deutet darauf hin, dass das Wachstum durch massive Investitionen in Infrastruktur erkauft wird, ohne dass eine klare Profitabilitätsschwelle in Sicht ist. Der Host sieht den potenziellen Einstieg in das US-Bundesbehörden-Geschäft als wichtigen nächsten Wachstumskatalysator — staatliche Kontrakte bieten langfristige Planungssicherheit und höhere Margen. Ein möglicher Kursrücksetzer auf rund 75 Dollar wird als taktisch interessante Einstiegszone benannt.",
-     "cross_refs": [],
-     "kategorie": "fundamental",
-     "sec": 842,
-     "t": "14:02",
-     "tlink": "https://www.youtube.com/watch?v=0YJSCsAcAPg&t=842s"
-    },
-    {
-     "name": "Zeta Global Holdings",
-     "ticker": "ZETA",
-     "note": "KI-gestützte Marketingdatenplattform mit starkem und beschleunigtem Umsatzwachstum sowie deutlich verbesserter Profitabilität. Der Host stuft Zeta Global als interessanter ein als direkte Wettbewerber wie Adobe oder Salesforce.",
-     "figures": "Umsatz 2023: 729 Mio. $, 2025: 1,30 Mrd. $; Wachstum: +23% (2023), +38% (2024), +30% (2025); bereinigtes EBITDA-Marge: 17,8% (2023), 19,2% (2024), 21,4% (2025); Nettoverlust: 2023 −187 Mio. $, 2025 −31,5 Mio. $; Bewertung ca. 3x Umsatz",
-     "tip": "Einstieg bei 20–22 Dollar; bei fortgesetzter Tech-Korrektur bis 16–17 Dollar möglich, dort Nachkaufchance.",
-     "einordnung": "Die Kombination aus beschleunigtem Umsatzwachstum, steigenden EBITDA-Margen und einem rapide schrumpfenden Nettoverlust bei einer Bewertung von nur 3x Umsatz ist im KI-Software-Segment ausgesprochen selten — das macht Zeta Global zur relativ überzeugendsten Story im heutigen Video.",
-     "detail": "Zeta Global ist eine datengetriebene Marketing-Cloud-Plattform, die KI nutzt, um Werbetreibenden präzisere Zielgruppenansprache zu ermöglichen. Was den Host überzeugt: Das Umsatzwachstum beschleunigte sich von 23 Prozent (2023) auf 38 Prozent (2024) und liegt 2025 noch bei 30 Prozent — bei einem Umsatz, der von 729 Millionen auf 1,30 Milliarden Dollar gestiegen ist. Gleichzeitig verbessert sich die bereinigte EBITDA-Marge kontinuierlich von 17,8 auf 21,4 Prozent, und der Nettoverlust schmolz dramatisch von 187 Millionen Dollar (2023) auf nur noch 31,5 Millionen Dollar (2025) — die Gewinnschwelle rückt in greifbare Nähe. Mit einer Bewertung von lediglich rund drei Mal dem Umsatz erscheint Zeta Global deutlich günstiger als etablierte Wettbewerber wie Salesforce oder Adobe, die für weitaus niedrigere Wachstumsraten deutlich höhere Multiples aufrufen. Der Vergleich mit diesen Platzhirschen ist bewusst provokativ formuliert — der Host sieht das Potenzial, dass Zeta in einem weiter KI-getriebenen Marketingumfeld Marktanteile gewinnen kann. Einstiegspunkte werden bei 20–22 Dollar gesehen, mit einer attraktiveren Nachkaufzone bei 16–17 Dollar im Falle einer vertieften Tech-Korrektur.",
-     "cross_refs": [],
-     "kategorie": "fundamental",
-     "sec": 1128,
-     "t": "18:48",
-     "tlink": "https://www.youtube.com/watch?v=0YJSCsAcAPg&t=1128s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "Eine laufende Tech-Korrektur belastet Wachstums- und KI-Werte wie SMCI und CoreWeave spürbar, während das SpaceX-IPO vom anhaltenden Hype um KI-nahe Technologieunternehmen und dem geringen Streubesitz profitiert.",
-     "sec": 39,
-     "t": "00:39",
-     "tlink": "https://www.youtube.com/watch?v=0YJSCsAcAPg&t=39s"
-    }
-   ]
-  },
-  {
-   "channel": "Der Aktionär - Märkte am Morgen",
-   "playlist": "Märkte am Morgen",
-   "id": "S9qv7ifKEQc",
-   "title": "Märkte am Morgen: Öl, Gold, Bitcoin, Adobe, SanDisk, Oracle, SAP, Siemens Energy, ASML, Hugo Boss",
-   "date": "20260612",
-   "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc",
-   "thumbnail": "https://i.ytimg.com/vi/S9qv7ifKEQc/hqdefault.jpg",
-   "summarized_at": "2026-06-13T07:43:38.352340+00:00",
-   "summary": "Nach schwacher Woche startet der DAX mit über 1% Gewinnen, getragen von US-Iran-Deal-Hoffnungen und positiven Vorgaben aus Wall Street und Asien. Ölpreise geben nach, Gold und Bitcoin bleiben unter Druck. Im Einzelwertfokus: Adobe kämpft mit CFO-Rücktritt trotz guter Zahlen, Oracle wächst 20% aber plant Kapitalaufnahme, ASML wird von Analysten hochgespielt, Hugo Boss wird für 38€ offeriert.",
-   "items": [
-    {
-     "name": "Öl (WTI/Brent)",
-     "ticker": "CL=F",
-     "note": "Ölpreis korrigiert nach möglichem US-Iran-Deal; aktuell ~88 USD, deutlich über Jahresbeginn (60 USD), technisch zwischen 50er und 200-Tage-Linie.",
-     "figures": "Jahresbeginn ~60 USD, aktuell ~88 USD",
-     "tip": "",
-     "einordnung": "Klassische Risikoasset-Bewegung: Deal-Hoffnungen führen zu Entspannung und Preiskorrektion. Bleiben wir realistisch—der Ölpreis hat sich trotzdem verdreißigt prozentiert gegenüber Jahresbeginn, ein grundsätzlich konstruktives Signal für die Energieversorgung.",
-     "kategorie": "makro",
-     "sec": 160,
-     "t": "02:40",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=160s"
-    },
-    {
-     "name": "Gold",
-     "ticker": "GC=F",
-     "note": "Gold unter Druck durch Kapitalabflüsse zu Gunsten riskanterer Assets und Zinsängste; Host empfiehlt technisches Abwarten.",
-     "figures": "",
-     "tip": "Technisch abwarten, keine Eile",
-     "einordnung": "Typisches Muster bei Risiko-on-Phasen: Wenn die Angst sinkt, sinkt auch die Nachfrage nach dem sicheren Hafen. Das ist kein fundamentales Giftzeichen, eher Rotationssignal.",
-     "kategorie": "chartanalyse",
-     "sec": 219,
-     "t": "03:39",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=219s"
-    },
-    {
-     "name": "Bitcoin",
-     "ticker": "BTC-USD",
-     "note": "Bitcoin leicht erholt bei 63.200 USD; MicroStrategy hat kleine Menge verkauft, aber für über 100 Mio. USD nachgekauft—bullische Geste.",
-     "figures": "63.200 USD, über 100 Millionen USD Nachkauf",
-     "tip": "",
-     "einordnung": "MicroStrategy-Käufe sind hochgradig signifikant: Das Management signalisiert, dass Schwäche Chance ist, nicht Risiko. Nach der Euphorie des letzten Jahres ist diese Art von Conviction ein interessantes Sentiment-Zeichen.",
-     "kategorie": "news",
-     "sec": 288,
-     "t": "04:48",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=288s"
-    },
-    {
-     "name": "S&P 500",
-     "ticker": "^GSPC",
-     "note": "S&P 500 zeigt Stärke, aber mit hohen Tagesausschlägen; Host kritisiert mediale Übertreibung bei Kursverlusten.",
-     "figures": "+1,9% (am Vortag)",
-     "tip": "",
-     "einordnung": "Die 24/7-News-Maschinerie erzeugt Noise, der vom fundamentalen Trend ablenkt. Das Muster ist bekannt: Große Gewinne = normale Marktfunktion, kleine Verluste = Krise. Das ist Psychologie, keine Analyse.",
-     "kategorie": "sonstiges",
-     "sec": 341,
-     "t": "05:41",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=341s"
-    },
-    {
-     "name": "Adobe",
-     "ticker": "ADBE",
-     "note": "Adobe zeigt Quartalszahlen und Outlook gut, aber Aktie fällt nachbörslich 5%, weil CFO gehen wird; operative Stärke vs. psychologische Verunsicherung.",
-     "figures": "Nachbörse -5%",
-     "tip": "Bei Übertreibung einsteigen, aber nicht sofort mit voller Position",
-     "einordnung": "Das ist ein klassisches Verkaufsschock-Muster: Die Zahlen sind solid, aber der CFO-Wechsel schafft Unsicherheit. Für den geduldig aufgebauten Investor könnte das eine Einstiegsgelegenheit sein—allerdings sollte man den Nachfolger erst sehen, bevor man all-in geht.",
-     "kategorie": "news",
-     "sec": 397,
-     "t": "06:37",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=397s"
-    },
-    {
-     "name": "SanDisk",
-     "ticker": "SNDK",
-     "note": "SanDisk macht neue Hochs; KI-Boom treibt Speichernachfrage massiv bis 2027, danach droht Überangebot; Tagesgewinn ~240 USD.",
-     "figures": "Tagesgewinn ~240 USD, Überangebot ab 2027 erwartet",
-     "tip": "Vor Überangebot 2027 absprung schaffen",
-     "einordnung": "Das ist ein zyklengetriebenes Play—richtig, dass Host die Zeitgrenze klar benennt. Der aktuelle Aufwind ist echt (KI braucht speicher wie eine Lokomotive Kohle), aber die Uhr tickt. Das sollte in die Watchlist, mit Exit-Datum 2026.",
-     "kategorie": "fundamental",
-     "sec": 542,
-     "t": "09:02",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=542s"
-    },
-    {
-     "name": "Oracle",
-     "ticker": "ORCL",
-     "note": "Oracle Quartal: Umsatz +20%, aber Aktie unter Druck wegen Ankündigung weiterer 20 Mrd. USD Kapitalaufnahme; Anleger-Skepsis dominant.",
-     "figures": "Umsatzwachstum +20%, 20 Milliarden USD geplante Kapitalaufnahme",
-     "tip": "",
-     "einordnung": "Das ist ein interessantes Signal: 20% Umsatzwachstum ist solid, aber der Markt straft das ab, weil Oracle offensichtlich größere strategische Ausgaben plant (wahrscheinlich AI-Infrastructure). Das kann langfristig bullisch sein, kurzfristig aber Luftablassen bedeuten.",
-     "kategorie": "fundamental",
-     "sec": 600,
-     "t": "10:00",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=600s"
-    },
-    {
-     "name": "DAX",
-     "ticker": "^GDAXI",
-     "note": "DAX indiziert über 1% im Plus; nach schwacher Woche getragen von US-Iran-Deal-Hoffnungen und positiven Vorgaben. Technisch zwischen 50er und 200-Tage-Linie positioniert.",
-     "figures": "Indikation über +1%",
-     "tip": "",
-     "einordnung": "Der DAX ist ein Rückspiegel für europäische Stimmung und China-Konjunktur. Diese Gewinne sind Rally-Effekt, nicht strukturelle Heilung. Die Position zwischen 50er und 200er ist neutral—weder Crash noch Bullmarkt signalisiert.",
-     "kategorie": "chartanalyse",
-     "sec": 671,
-     "t": "11:11",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=671s"
-    },
-    {
-     "name": "SAP",
-     "ticker": "SAP.DE",
-     "note": "SAP unter Druck durch 'Sippenhaft' mit Oracle-Schwäche; Qualität der Company bleibt intakt, aber Kurs rutscht immer wieder zurück.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "SAP ist ein Quality-Stock mit Enterprise-Moat, aber der Markt spielt Sektor-Domino-Spiel. Oracle-Schwäche setzt Tech-Vertrauen unter Druck. Für Langfrist-Investoren ein Ansammelsignal, für Trader ein Risiko der Kettenreaktion.",
-     "kategorie": "fundamental",
-     "sec": 708,
-     "t": "11:48",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=708s"
-    },
-    {
-     "name": "Siemens Energy",
-     "ticker": "ENR.DE",
-     "note": "Siemens Energy nach 30% Verlust jetzt Tagesgewinner; Schnäppchenjäger aktiv bei knapp 140 EUR. Reaktion auf Überverkauf.",
-     "figures": "Vorheriger 30%-Verlust, aktuell knapp 140 EUR",
-     "tip": "",
-     "einordnung": "Das ist der klassische Bounce nach Panikverkauf—interessant, ob das Hold wird oder nur intraday-Lipidum ist. Die 30%-Verluste davor hatten Gründe (Margendruck, Marktmißtrauen), die heute nicht einfach weg sind. Vorsicht vor Bounce-Fallen.",
-     "kategorie": "chartanalyse",
-     "sec": 756,
-     "t": "12:36",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=756s"
-    },
-    {
-     "name": "Fraport",
-     "ticker": "FRA.DE",
-     "note": "Fraport: Passagierzahlen Mai besser als erwartet; Aktie vorbörslich leicht im Plus. 200-Tage-Linie noch weit weg—technische Schwäche bleibt.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "Positive Passagierzahlen sind Konjunktur-Signal (Menschen fliegen wieder), aber das reicht nicht, um die breite Schwäche zu drehen. Der Abstand zur 200er ist Warnsignal: Trend bleibt DOWN, bis diese Linie wieder getestet wird.",
-     "kategorie": "fundamental",
-     "sec": 775,
-     "t": "12:55",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=775s"
-    },
-    {
-     "name": "ASML",
-     "ticker": "ASML.AS",
-     "note": "ASML von Elon Musk gelobt; Morgan Stanley: 90 Maschinenauslieferungen 2025, 15-20% Wachstum 2026 prognostiziert. Host empfiehlt bei Schwäche zugreifen.",
-     "figures": "90 Maschinen 2025, 15-20% Wachstum 2026 (Morgan Stanley)",
-     "tip": "Bei Schwäche zugreifen",
-     "einordnung": "ASML ist der unausweichliche Benefiziar der KI- und Chip-Explosion—wer Halbleiter will, braucht ASML-Equipment. Die 90er-Auslieferungszahl ist belastbar (ist nicht Hoffnung, sondern order book). Das Zuwachs-Szenario 2026 ist konservativ. Das ist ein Hold-und-wenn-es-zieht-Ankauf-Kandidat.",
-     "kategorie": "fundamental",
-     "sec": 815,
-     "t": "13:35",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=815s"
-    },
-    {
-     "name": "Hugo Boss",
-     "ticker": "BOSS.DE",
-     "note": "Großaktionär Frasers offeriert 38 EUR pro Aktie (ca. 2 Mrd. EUR); Kurs läuft in Richtung Gebot. Spekulation auf Nachbesserung.",
-     "figures": "38 EUR Gebot, ca. 2 Milliarden EUR Volumen",
-     "tip": "Dabei bleiben und auf Nachbesserung spekulieren",
-     "einordnung": "Das ist ein klassisches Übernahme-Arbitrage-Play. 38 EUR ist das Eröffnungsgebot; historisch folgen Gebote 1-3 Nachbesserungen. Risiko: Frasers könnte sagen 'final offer', dann sitzt du fest. Belohnungspotential höher als Abwärtsrisiko, aber mit Risiko-Management.",
-     "kategorie": "news",
-     "sec": 942,
-     "t": "15:42",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=942s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "US-Iran-Deal-Hoffnungen beruhigen Märkte, drücken Ölpreise und führen zu Risk-on-Rotation (KI-Stocks, Equities vs. Bonds/Gold).",
-     "sec": 28,
-     "t": "00:28",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=28s"
-    },
-    {
-     "text": "SpaceX-Börsengang (75 Mrd. USD geplant) sorgt für massive Kapitalverschiebungen und erhöht Konkurrenz um Anlege-Cashflow.",
-     "sec": 0,
-     "t": "00:00",
-     "tlink": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=0s"
-    }
-   ]
-  },
-  {
-   "channel": "onvista",
-   "playlist": "Börse & Märkte LIVE",
-   "id": "a6FF2tGXbok",
-   "title": "Mercedes wagt Spezialfahrzeuge, Nvidia & China, Adobe Zahlen",
-   "date": "20260612",
-   "url": "https://www.youtube.com/watch?v=a6FF2tGXbok",
-   "thumbnail": "https://i.ytimg.com/vi/a6FF2tGXbok/hqdefault.jpg",
-   "summarized_at": "2026-06-13T07:39:17.923485+00:00",
-   "summary": "DAX erholt sich mit +1,6% auf Hoffnungen einer Nahost-Einigung, doch geopolitische Risiken bleiben fragil und Volatilität (VIX über 16) signalisiert anhaltende Unsicherheit. Im Fokus: Mercedes wagt mit Drohnenabwehr-Spezialfahrzeugen ein neues Geschäftsfeld, Nvidia erschließt China über regulatorisch weniger sensible Vera-CPUs, und Adobe überrascht mit starken Zahlen (+13% Umsatz, +18% Gewinn), erleidet aber Kursrückgang wegen CFO-Wechsel-Signal und Bewertungssorgen. Breites Tech-Setup mit Kaufchancen bei günstigen Bewertungen.",
-   "items": [
-    {
-     "name": "DAX",
-     "ticker": null,
-     "note": "Nachbörslich +1,6% nach US-Gewinnen; Hoffnung auf Nahost-Einigung treibt Erholung, aber geopolitisches Risiko bleibt extrem hoch und könnte sich schnell umkehren.",
-     "figures": "+1,6%",
-     "tip": "Vorsicht: VIX über 16 (Normal 10–11) zeigt Unsicherheit; Long- wie Short-Positionen risikohaftet, solange Nahost-Situation ungelöst ist.",
-     "einordnung": "Bounce auf Hoffnung ist klassisch für fragile Lagen – solange Iran 300Mrd $ + Sanktionshebung verlangt, bleibt Deal-Wahrscheinlichkeit niedrig. Schnellwechsel zu höherer Volatilität jederzeit möglich.",
-     "kategorie": "makro",
-     "sec": 72,
-     "t": "01:12",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=72s"
-    },
-    {
-     "name": "flatexDEGIRO",
-     "ticker": null,
-     "note": "Barclays initiiert Coverage mit Overweight und 41-€-Kursziel; erwartet über 20% EPS-Wachstum bis 2028 gegenüber ~10% bei nordischen Konkurrenten; höchste Kundenzahl in Europa.",
-     "figures": "Kursziel 41 €, EPS-Wachstum >20% bis 2028",
-     "tip": "Charttechnischer Ausbruch aus Dreieck interessant, aber Chance-Risiko 1:1 zu 1,1:1 unzureichend; Trade überspringen.",
-     "einordnung": "Wachstumszahl respektabel, aber gegen den Sektor (Brokerage unter Zinsdrucksätzlich) nur mittelmäßig motivierend. Outperformance muss sich erst zeigen.",
-     "kategorie": "chartanalyse",
-     "sec": 584,
-     "t": "09:44",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=584s"
-    },
-    {
-     "name": "Mercedes-Benz",
-     "ticker": "MBG.DE",
-     "note": "Neue Partnerschaft mit Titan Technologies zu mobilen Drohnenabwehrsystemen; nutzt Sprinter- und G-Klasse-Plattformen für Spezialmärkte. Memorandum of Understanding erst unterschrieben, noch kein finalisierter Deal.",
-     "figures": "Von 78 € (3J.) auf 48 €, testet 45-€-Tiefs; KGV 8 vs. 5J-Schnitt 6,5",
-     "tip": "Interessante Geschäftsfeldausweitung, aber kurzfristig nicht ergebniswirksam; KGV-Expansion nicht gerechtfertigt. Weitere Korrektur möglich – kein Kaufgrund.",
-     "einordnung": "Drohnenabwehr ein echtes Zukunftsthema, aber Titan-Partnerschaft noch zu früh, um Ertrag zu prägen. Bewertungs-Rerating wirkt übertrieben bei nur MoU-Status. Warten auf Konkretisierung.",
-     "kategorie": "fundamental",
-     "sec": 788,
-     "t": "13:08",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=788s"
-    },
-    {
-     "name": "RH (RH Furniture)",
-     "ticker": "RH",
-     "note": "Q1: Umsatz 800 M (−1,7% YoY), EPS −1,97 (10 c besser als erwartet); schwaches Juni-Quartal normal; Rückgang durch Backorders und Zollbelastungen. Guidance: 3,6–3,71 Mrd Umsatz (vs. 3,63 Mrd Konsens), EBITDA-Marge 14,2–16%.",
-     "figures": "Umsatz 800 M (−1,7%), EPS −1,97, Guidance 3,6–3,71 Mrd, EBITDA 14,2–16%",
-     "tip": "Ausbruch über 160 $ möglich (nächstes Level 180 $), aber nur 1:1 Chance-Risiko. Internationale Expansion belastet Margen kurzfristig – Vorsicht beim Kauf.",
-     "einordnung": "Möbel-Zykliker unter Zolldruck und Demand-Druck – das ist 2024/25 das Gegenteil von tailwind. Backlog-Abbau durch Zahlkräftige Kunden ist eher Warnsignal denn Stärke.",
-     "kategorie": "fundamental",
-     "sec": 1042,
-     "t": "17:22",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=1042s"
-    },
-    {
-     "name": "Kratos Defense & Security Solutions",
-     "ticker": "KTOS",
-     "note": "Q1: Umsatz 371 M (+23%), EPS 16 c; viertes Quarter in Folge Double-Beat; Backlog über 2 Mrd USD, Book-to-Bill 1,6x sehr stark. 2026-Guidance: 1,7–1,76 Mrd Umsatz. JPMorgan Upgrade auf Overweight, Kursziel 82 $ (vs. Analyst-Durchschnitt 113 $).",
-     "figures": "Umsatz 371 M (+23%), EPS 16 c, Backlog 2 Mrd USD, Book-to-Bill 1,6x, Kursziel 82 $, Analyst-Schnitt 113 $",
-     "tip": "Nach Rückgang 134 $ → 51 $ nun Aufbau steigender Tiefs; Ausbruch über 60 $ wichtig. Verdienntpotenzial bis 82–113 $ lockt, aber noch keine Signal-Bestätigung.",
-     "einordnung": "Defense-Sektor zyklisch sensibel gegenüber Geopolitik und Haushaltsfreigaben. Backlog-Qualität gut, aber JPMorgan-Ziel deutlich unter Street-Consensus deutet auf Vorsicht hin – Anleger bremsen trotz Zahlen.",
-     "kategorie": "chartanalyse",
-     "sec": 1464,
-     "t": "24:24",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=1464s"
-    },
-    {
-     "name": "Rocket Lab USA",
-     "ticker": "RKLB",
-     "note": "Q1: Umsatz 200 M (+60%), Bruttomarge 38%; Backlog 2,2 Mrd (11x Quartalsumsatz); 88 Electron-Starts + 18 gebucht. Eintritt in Nasdaq 100 am 22.06. löst ETF-Käufe aus. Noch nicht profitabel.",
-     "figures": "Q1 Umsatz 200 M (+60%), Bruttomarge 38%, Backlog 2,2 Mrd USD, 88 Starts + 18 gebucht",
-     "tip": "Position im Musterportfolio gehalten; Rücksetzer bis 100 $ willkommen. SpaceX-IPO könnte Momentum geben; nächste Ziele 140 $ +. Ambitionierte Bewertung wegen Rerating-Potential akzeptiert.",
-     "einordnung": "Raumfahrt-Infrastruktur ist echtes Wachstumsfeld, aber Profitabilität noch nicht in Sicht. Backlog-Umsatz-Verhältnis 11x ist außergewöhnlich – zeigt reale Nachfrage. SpaceX-IPO-Effekt wahrscheinlich positiv für den Sektor.",
-     "kategorie": "fundamental",
-     "sec": 1724,
-     "t": "28:44",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=1724s"
-    },
-    {
-     "name": "Nebius",
-     "ticker": "NBIS",
-     "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blackwell Ultra; 20–25 Mrd Capex für 2025–26 erwartet.",
-     "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd",
-     "tip": "Hochbewertet, Capex-Risiken (Secondary, Schulden); aber Internationalisierung aggressiv positiv. Volatilität für Discount-Zertifikate nutzbar; Position halten aber vorsichtig.",
-     "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktueller Bewertung.",
-     "kategorie": "fundamental",
-     "sec": 2080,
-     "t": "34:40",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2080s"
-    },
-    {
-     "name": "Alphabet/Google",
-     "ticker": "GOOGL",
-     "note": "Google-TPUs ab 2028 in Massenproduktion; neue Partnerschaft mit Samsung zur Produktion (Diversifizierung weg von TSMC); parallel Intel-Verhandlungen. Ziel: breitere Lieferkette, schnellere Skalierung, geringeres Lieferkettenrisiko. TPUs ~80% kostengünstiger als Nvidia-GPUs bei vergleichbarer Leistung.",
-     "figures": "TPUs ~80% kostengünstiger vs. Nvidia; KGV 29",
-     "tip": "Gap zugelastet, Ausbruch über alte Trendlinie wichtiges Signal für Aufwärtstrend-Wiederaufnahme. KGV 29 über Markt (S&P, Nasdaq 100), aber Gewinne wachsen schneller. Neue Konkurrenz zu Nvidia positiv.",
-     "einordnung": "Samsung-Partnerschaft ist echter Sieg für Lieferkettenresilienz und senkt Abhängigkeit von TSMC. 80%-Kostenvorteil klingt optimistisch – in der Praxis verschwinden solche Deltas durch Volumen und Yield-Ramp. Dennoch strategisch wertvoll.",
-     "kategorie": "fundamental",
-     "sec": 2613,
-     "t": "43:33",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2613s"
-    },
-    {
-     "name": "Nvidia",
-     "ticker": "NVDA",
-     "note": "China-Story via Vera-CPUs: Großer chinesischer Cloud-Anbieter plant >300 Server mit Vera-CPUs. CPUs regulatorisch weniger sensibel als GPUs für China-Export. Falls Tests positiv, könnten weitere Hyperscaler folgen. Vera-Umsatz ~20 Mrd bis Jahresende, könnte angehoben werden. KGV ~20 für 2027er Gewinne, PEG 0,46.",
-     "figures": "KGV ~20 (2027er), PEG 0,46, Vera-Umsatz ~20 Mrd bis Jahresende, Unterstützung 200 $",
-     "tip": "Bewertung fundamental günstig; China-Vera-CPU-Kanal sehr spannend. 200-$-Hoch-Unterstützung wichtig. Rücksetzer fundamental nicht nachvollziehbar – Einstiegskurs attraktiv.",
-     "einordnung": "Vera-CPUs sind Regulierungs-Arbitrage: weniger Hardware-Restriktionen als GPUs, reale HPC-Kraft. Wenn China-Tests klappen, ist das für Nvidia 2026–27 ein 20–50-Mrd-Umsatz-Upside. PEG 0,46 ist tatsächlich günstig für den Wachstum.",
-     "kategorie": "fundamental",
-     "sec": 2859,
-     "t": "47:39",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2859s"
-    },
-    {
-     "name": "Adobe",
-     "ticker": "ADBE",
-     "note": "Q2: Umsatz +13%, Gewinn +18%; EPS 5,96 vs. 5,81 erwartet. Annual Recurring Revenue >27 Mrd. KI-Produkte zentraler Treiber, Photoshop-KI-Einsatz. Q3-Guidance: Umsatz 6,7 Mrd (vs. 6,5 Mrd Konsens), EPS 6,05–6,10. CFO-Wechsel angekündigt.",
-     "figures": "Q2 Umsatz +13%, Gewinn +18%, EPS 5,96, ARR >27 Mrd, Q3-Guidance 6,7 Mrd Umsatz, EPS 6,05–6,10",
-     "tip": "Starke Zahlen, aber Kurs −6% vorbörslich. 3J-Abstieg 592 € → 177 €; KGV nun 8 (extrem günstig), PEG 0,7 auch billig. CFO-Exit negatives Signal. Charttechnisch fallend – Vorsicht vor fallendem Messer trotz Bewertung.",
-     "einordnung": "Paradox: Zahlen excellent, CFO weg, Kurs fällt. Das ist oft Warnsignal für verborgene Probleme (KI-Monetarisierung stockt, Churn unter der Oberfläche). KGV 8 ist nur billig, wenn Gewinne nicht erodieren – Vorsicht bei Einstieg.",
-     "kategorie": "fundamental",
-     "sec": 3094,
-     "t": "51:34",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=3094s"
-    },
-    {
-     "name": "CoreWeave",
-     "ticker": "CORZ",
-     "note": "Eintritt in Nasdaq 100 am 22.06. triggert +8% vorbörslich. Seit IPO (33 $ → 187 $) auf ~50% Verlust zurückgekommen. Charttechnisch in Abwärtstrend, ABC-Korrektur, fallende Hochs und Tiefs. Sehr hoher Finanzierungsbedarf.",
-     "figures": "IPO 33 $, Hoch 187 $, aktuell ~100 $ +, heute +8%",
-     "tip": "Charttechnisch abwärts; Finanzierungsrisiken höher als Nebius/Iron. Trotz NVDA-Unterstützung eher meiden – andere Data-Center-Kandidaten besser.",
-     "einordnung": "CoreWeave ist reines Leverage-Play auf Nvidia-Demand, aber mit hoher Finanzierungsabhängigkeit (Capex-intensive Infrastruktur). Der 187-$-Hoch ist unrealistisch; fallende Tiefs deuten auf Struktur-Schwäche hin.",
-     "kategorie": "chartanalyse",
-     "sec": 3513,
-     "t": "58:33",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=3513s"
-    },
-    {
-     "name": "Vertiv Holdings",
-     "ticker": "VRT",
-     "note": "ABC-Korrektur (nicht Trendkiller); testet größere Unterstützung, findet dort sofort Käufer. Charttechnisch: Langfristig stabiler Aufwärtstrend. Stop unter ~80–90 $ sinnvoll; Kursziel ~470 $ (von Retracement 260–370 $ Hoch).",
-     "figures": "Aktuell ~250–260 €, Hoch 370 $, Ziel 470 $, Stop ~80–90 €",
-     "tip": "Guter Einstiegslevel aktuell; Risk ~90 $, Reward ~170 $ (1:2 Ratio). Aggressive Positionen mit enger Absicherung aufbauen, oder Investment mit breiterem Stop.",
-     "einordnung": "Vertiv profitiert direkt von Data-Center-Boom (Kühlung, Stromverteilung), aber ohne die Finanzierungsrisiken von CoreWeave/Nebius. Charttechnisch saubere ABC – Gegenbewegung normal. 1:2 Ratio ist respektabel.",
-     "kategorie": "chartanalyse",
-     "sec": 3513,
-     "t": "58:33",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=3513s"
-    },
-    {
-     "name": "Intel",
-     "ticker": "INTC",
-     "note": "Doppel-Upgrade Bank of America: Kursziel 96 $ → 135 $ angehoben. Begründung: Entlastung Wafer-Kapazitäten, Diversifizierung weg von TSMC, Foundry-Geschäft wächst. Server-Prozessor bis 2030 >40 Mrd erwartet. Konsolidierung über 4 Wochen auf Wochenbasis.",
-     "figures": "Kursziel 135 $ (vs. 96 $ vorher), Server-Prozessor bis 2030 >40 Mrd",
-     "tip": "KGV über 100 bleibt hoch, aber Trend positiv. Ausbruch über letztes Zwischenhoch charttechnisch interessant (Long mit Stop an letzten Tiefs). Foundry-Tests noch kritisch.",
-     "einordnung": "Intel-Rerating basiert auf Hoffnung (IDM-Modell + Foundry gelingt, Capex rentabel). 135-$-Ziel von BofA ist ambitioniert bei KGV >100. Server-Prozessor-Zahl 40 Mrd bis 2030 hängt von AMD-Konkurrenz und TSMC-Lieferkette ab – riskant.",
-     "kategorie": "chartanalyse",
-     "sec": 2326,
-     "t": "38:46",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2326s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "Nahost-Geopolitik: Trump kündigt mögliche Einigung an, Iran fordert aber 300 Mrd $-Wiederaufbau + Sanktionshebung + Hormus-Kontrolle – Deal-Wahrscheinlichkeit niedrig, Risiken bleiben extrem.",
-     "sec": 103,
-     "t": "01:43",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=103s"
-    },
-    {
-     "text": "Ölpreise: Rückgang von 95 $ auf ~83,50 $ auf Hoffnung Nahost-Einigung; aber Lage fragil, Schnellwechsel zu 95 $ + möglich.",
-     "sec": 288,
-     "t": "04:48",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=288s"
-    },
-    {
-     "text": "US-Tech-Sektor: Nasdaq 100 zeigt anomale Volatilität (Inside/Outside-Day-Muster), VIX über 16 trotz Risikobereitschaft – Unsicherheit hoch, Momentum wechselhaft.",
-     "sec": 341,
-     "t": "05:41",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=341s"
-    },
-    {
-     "text": "KI-Infrastruktur-Capex-Boom: Nebius, CoreWeave, Rocket Lab und Oracle zeigen massive Investitionen (20–25 Mrd +); Dilutionsrisiken via Secondary, Anleihen und Prepayments steigen.",
-     "sec": 2177,
-     "t": "36:17",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2177s"
-    },
-    {
-     "text": "China-Regulierung: Nvidia's Vera-CPUs regulatorisch weniger sensibel als GPUs für China-Export; neuer Wachstumskanal könnte sich öffnen, wenn Hyperscaler-Tests positiv.",
-     "sec": 2929,
-     "t": "48:49",
-     "tlink": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2929s"
     }
    ]
   }
