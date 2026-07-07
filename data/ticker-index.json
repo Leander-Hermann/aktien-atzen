@@ -1,9 +1,19 @@
 {
- "updated": "2026-07-06T18:38:32.084719+00:00",
+ "updated": "2026-07-07T06:38:46.442352+00:00",
  "ticker": {
   "^GDAXI": {
-   "name": "Marktüberblick",
+   "name": "Marktüberblick DAX",
    "auftritte": [
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=10s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "makro",
+     "note": "Der DAX erreichte ein neues Rekordhoch bei 25.900 Punkten und schloss bei 25.817 Zählern mit einem kleinen Plus von 0,15%. Die Wall Street lieferte ab, besonders der Technologiesektor legte zu. Asien…",
+     "einordnung": "Ein neues Allzeithoch bei gleichzeitig schwindendem Momentum ist ein klassisches Bild für späte Zyklusphasen — die Rekordjagd läuft, aber die Breite der Bewegung nimmt ab. Dass Asien dreht, während U…",
+     "figures": "DAX Rekordhoch 25.900 Punkte; Schlussstand 25.817 Punkte; +0,15%"
+    },
     {
      "date": "2026-07-06",
      "video_id": "htTDw4hrfRo",
@@ -13,6 +23,16 @@
      "note": "DAX erreichte Rekordstand bei 2.526 Punkten nach der besten Handelswoche seit April 2025 (+4,5%). Asiatische Vorgaben gemischt: Nikkei schwächer, Hang Seng leicht im Plus. US-Börsen am Freitag geschl…",
      "einordnung": "Rekordhochs ziehen statistisch weitere Rekorde nach sich — ein Trendbruch ist nach einer derart starken Woche unwahrscheinlich, kurzfristige Konsolidierung jedoch gesund. Die positiven deutschen Fabr…",
      "figures": "DAX-Rekord: 2.526 Punkte; Wochenplus: +4,5%"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=121s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX hat auf Wochenschlusskursbasis den Ausbruch über 25.430 Punkte ausgelöst, was als bullisches Signal für einen mittelfristigen Anstieg gilt.",
+     "einordnung": "Der Wochenschlusskurs-Ausbruch ist das stärkste technische Argument für Fortsetzungsaufwärts. Dass der DAX trotz geopolitischer Belastung neue Hochs markiert, unterstreicht die robuste Binnenlage — d…",
+     "figures": "25.430 Punkte (Key-Level), 50.000 Punkte (langfristiges Ziel)"
     },
     {
      "date": "2026-07-06",
@@ -101,31 +121,466 @@
      "kategorie": "makro",
      "note": "DAX gestern schwächer, heute positive Vorgaben aus USA und Asien sorgen für erwarteten Anstieg.",
      "einordnung": "Der DAX hängt am US-Sentiment. Solange der Dow Rekordmarken setzt, ist der deutsche Leitindex im Windschatten."
+    }
+   ]
+  },
+  "KO": {
+   "name": "Coca-Cola",
+   "auftritte": [
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=124s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Coca-Cola schloss ebenfalls auf Rekordniveau. Es gab leichte Gewinnmitnahmen, die der Host aber als nicht dramatisch einstuft.",
+     "einordnung": "Defensive Konsumwerte an der Rekordspitze sind ein typisches Spätzyklus-Phänomen — Anleger suchen Sicherheit bei gleichzeitigem Momentum. Coca-Cola profitiert von Preissetzungsmacht und stabilem Cash…"
+    }
+   ]
+  },
+  "BTC-USD": {
+   "name": "Bitcoin",
+   "auftritte": [
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=164s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin scheint sich über 60.000$ zu halten. Der langfristige Chart zeigt ein Muster abnehmender Drawdowns: aktuell 54% Rückgang, was der historischen Sequenz sinkender Volatilität folgt.",
+     "einordnung": "Das Muster sinkender Drawdowns ist ein starkes Argument für die institutionelle Reifung Bitcoins — jeder Zyklus wird weniger extrem. Bei 60.000$ hat sich eine technische Basis gebildet, aber die Vola…",
+     "figures": "Bitcoin über 60.000$; Drawdown aktuell 54%; historische Drawdowns: 93% (2011), 84% (2014), 83% (2018), 77% (2019)"
     },
     {
      "date": "2026-06-30",
      "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1417s",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1582s",
      "channel": "Fundamentalanalyse mit Egmond",
      "kategorie": "makro",
-     "note": "Heute gestiegen durch Rebalancing, aber Gewinne könnten morgen wieder abgegeben werden. Haidt sieht Seitwärtsbewegung, Rekordfahrt schwer.",
-     "einordnung": "Der DAX profitiert vom Quartalsend-Rebalancing, aber die strukturellen Probleme (VW, Mercedes, Bayer-Risiken, Telekom-Schwäche) machen eine Rekordfahrt unwahrscheinlich. Das ist ein Index, der von we…"
+     "note": "MicroStrategy muss Bitcoin verkaufen, Druck auf den Kurs. Haidt rät zu kurzfristiger Vorsicht.",
+     "einordnung": "MicroStrategy als gezwungener Verkäufer ist ein strukturelles Problem für Bitcoin – wenn der größte Corporate-Hodler liquidieren muss, entsteht ein Überhang, der den Markt belastet. Das erinnert an d…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "zXPxhjz_nX0",
+     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=2897s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin korrigiert seit August/September und testet den Key Support bei 65.000 Dollar. Ein Kaufsignal entsteht erst über 82.000 Dollar auf Wochen-/Monatsschlussbasis. Das Sentiment ist schlecht, aber…",
+     "einordnung": "Ein schlechtes Sentiment an einem Key Support ist konträrindikativ oft ein Kaufsignal – aber Harrys Disziplin, erst über 82.000 Dollar ein bestätigtes Signal zu fordern, ist methodisch der richtige A…",
+     "figures": "65.000 Dollar (Support), 80.808-82.000 Dollar (Ausbruchszone)"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=633s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin testet die 60.000-Dollar-Marke; der Abwärtstrend ist intakt, und neue Tiefs sind möglich.",
+     "einordnung": "Die 60K-Marke ist psychologisch zentral — ein nachhaltiger Bruch öffnet die Tür zu deutlich tieferen Niveaus. Solange der Abwärtstrend nicht gebrochen wird, ist每一 ein Rallye-Versuch nur ein Counter-T…",
+     "figures": "60.000$"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=207s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bitcoin hält sich knapp über 60.000 Dollar, große Sprünge sind nicht angesagt und das Thema ist von den Titelseiten verschwunden.",
+     "einordnung": "Die Seitwärtsbewegung bei 60.000 Dollar spiegelt einen ermüdenden Markt ohne neuen Katalysator. Das verschwindende Medieninteresse ist typisch für eine Konsolidierungsphase, kann aber auch den Boden…",
+     "figures": "60.000 USD"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=847s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin zeigt charttechnisch eine mögliche Topbildung; fällt er unter 60.000$, droht ein Rückfall auf 49.000$.",
+     "einordnung": "Die charttechnische Topbildung bei Bitcoin ist ein klares Warnsignal — der Widerstand bei 74.000$ hat sich als zu stark erwiesen. Ein Bruch der 60.000$ würde die nächste Unterstützungszone bei 49.000…",
+     "figures": "74.000$ (Widerstand), 65.000$/60.000$ (Unterstützung), 49.000$ (nächstes Ziel)"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "MJo67AkNy70",
+     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=208s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bitcoin-Erholung verflüchtigt sich; Anleger fokussieren sich auf IPOs.",
+     "einordnung": "Risk-Off-Stimmung durch hawkische Fed trifft Bitcoin doppelt — die Krypto-Erholung war ohnehin fragil. IPO-Fokus bedeutet Kapitalrotation weg von Krypto."
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=182s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin befindet sich in einer Aufwärtsbewegung, zeitweise über 66.000 $ gesehen; leichte Gewinnmitnahmen werden als möglich eingestuft.",
+     "einordnung": "Bitcoin profitiert im Risk-on-Modus klassischerweise mit. Das Niveau um 66.000 $ ist charttechnisch relevant — ein nachhaltiger Ausbruch darüber wäre ein positives Signal, scheitert er, droht Konsoli…",
+     "figures": "über 66.000 $"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=288s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bitcoin leicht erholt bei 63.200 USD; MicroStrategy hat kleine Menge verkauft, aber für über 100 Mio. USD nachgekauft—bullische Geste.",
+     "einordnung": "MicroStrategy-Käufe sind hochgradig signifikant: Das Management signalisiert, dass Schwäche Chance ist, nicht Risiko. Nach der Euphorie des letzten Jahres ist diese Art von Conviction ein interessant…",
+     "figures": "63.200 USD, über 100 Millionen USD Nachkauf"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1876s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Wochentief erreicht; Verkäufe für Liquidität ähnlich wie Gold; Abwärtstrend etabliert.",
+     "einordnung": "BTC als Liquidity-Buffer in Krisenzeiten verkauft – klassisches Risiko-Off-Zeichen. Zinsanstieg und IPO-Liquiditätsbedarf drücken Risk-Assets generell. Charttechnischer Breakout-Versuch gescheitert."
+    },
+    {
+     "date": "2026-06-05",
+     "video_id": "ogH7N_SxJqk",
+     "url": "https://www.youtube.com/watch?v=ogH7N_SxJqk&t=823s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Der Host notiert Bitcoin unter 77.000$ mit ETF-Abflüssen von 3,5 Mrd. $ und Liquidationen von 1,5 Mrd. $. Er erwartet eine Erholung bei geopolitischer Entspannung und setzt Bitcoin auf die Watchlist.",
+     "einordnung": "Die Kapitalrotation von Krypto zu KI/Rechenzentren ist ein struktureller Trend, der nicht nur zyklisch ist. Bitcoin bei 77.000$ ist psychologisch wichtig, aber die ETF-Abflüsse zeigen, dass instituti…",
+     "figures": "Unter 77.000$; ETF-Abflüsse 3,5 Mrd. $; Liquidationen 1,5 Mrd. $"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1369s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "-9,6% im Wochenverlauf, Chart sieht schlecht aus. Rückgang ist Signal für geringere Liquidität.",
+     "einordnung": "Ein -9,6%-Wochenverlust bei gleichzeitigem S&P-500-Rekord ist ein Divergenz-Signal, das ernst genommen werden muss. Bitcoin als Liquiditätsindikator deutet auf nachlassenden Risiko-Appetit abseits de…",
+     "figures": "-9,6%"
+    }
+   ]
+  },
+  "GC=F": {
+   "name": "Gold",
+   "auftritte": [
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=273s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gold befindet sich in einer Erholungsbewegung. Die Sorge vor steigenden Zinsen drückte den Goldpreis unter die 200-Tage-Linie; er pendelt nun um 4.100 bis 4.200$.",
+     "einordnung": "Gold kämpft mit dem klassischen Konflikt: geopolitische Unsicherheit stützt, Zinssorgen drücken. Die Rückeroberung der 200-Tage-Linie ist das entscheidende technische Kriterium für die weitere Richtu…",
+     "figures": "Gold pendelt um 4.100–4.200$"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "-DiygCxAXrc",
+     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=761s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Gold meldet sich nach vier schwächeren Wochen zurück. Schwächere US-Jobdaten senken die Zinserwartungen, die Unterstützung knapp unter 4000$ hält mit starken Käufern. ETF-Abflüsse von 12 Mrd $ beruhi…",
+     "einordnung": "Das Gold-Comeback auf Basis schwächerer Jobdaten ist klassisch — sinkende Zinserwartungen drücken den Dollar und heben das gelbe Metall. Die Beruhigung der ETF-Abflüsse ist ein wichtiger Bestätigungs…",
+     "figures": "5600$, 4000$, 12 Mrd $, 48-49$"
     },
     {
      "date": "2026-06-30",
-     "video_id": "6A1KvJN7P_U",
-     "url": "https://www.youtube.com/watch?v=6A1KvJN7P_U&t=0s",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1480s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Rückgang von 2 Prozent im Wochenverlauf trotz fallender US-Zinsen. Haidt sieht kurzfristig Abwärtsrisiko.",
+     "einordnung": "Gold fällt trotz sinkender Zinsen – das ist ungewöhnlich und deutet darauf hin, dass der geopolitische Risikoaufschlag abgebaut wird. Wenn der Irankrieg nicht eskaliert, könnte Gold auf sein Vor-Kris…",
+     "figures": "Rückgang 2%"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=134s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Goldpreis rutscht unter die 4.000-Dollar-Marke, belastet durch Zinssorgen und eine entspanntere geopolitische Lage. Charttechnisch sind die Skeptiker im Recht.",
+     "einordnung": "Der Bruch der 4.000-Dollar-Marke ist psychologisch bedeutend. Solange die Zinswende nicht vom Tisch ist und geopolitische Risiken abnehmen, fehlt dem Gold der Treibstoff für neue Höchstkurse.",
+     "figures": "4.000 USD"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=166s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Goldpreis gerät unter Druck, da steigende Zinsen für Edelmetalle ungünstig sind.",
+     "einordnung": "Klassisches Zinssensitivitäts-Thema: Wenn die Renditen steigen, verliert das unproduktive Edelmetall an Reiz. Das ist kein strukturelles, sondern ein konjunkturelles Thema."
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "9G1WNKY6uuY",
+     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY&t=3302s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Gold befindet sich in einem mittelfristigen Abwärtstrend; Harry rät vom Kauf ab und empfiehlt Beobachtung oder Short-Positionen.",
+     "einordnung": "Überraschend klar bearishe Sicht auf Gold – das kontrastiert mit der allgemeinen Gold-Euphorie. Harrys charttechnische Lesart ist diszipliniert: Der Trend ist unten, also kein Long. Das erinnert an 2…"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=3150s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Gold und Silber haben als sicherer Hafen enttäuscht. Gewinnmitnahmen und Dollarstärke belasten.",
+     "einordnung": "Das ist ein klassisches Muster: In Krisenzeiten steigen sichere Häfen zunächst, dann folgen Gewinnmitnahmen und Dollarstärke. Aktuell sind wir in der Gewinnmitnahmen-Phase."
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "MJo67AkNy70",
+     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=158s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Goldpreis unter Druck, da Fed-Chef Powell keine Zinssenkungssignale sendet.",
+     "einordnung": "Klassisches Muster: hawkische Fed ohne Zinssenkungsaussicht drückt Gold als zinlose Anlage. Doch bei eskalierender Geopolitik im Nahen Osten könnte das Safe-Haven-Argument schnell zurückkehren."
+    },
+    {
+     "date": "2026-06-17",
+     "video_id": "UBcaG1xcyng",
+     "url": "https://www.youtube.com/watch?v=UBcaG1xcyng&t=115s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gold befindet sich technisch im Bärenmarkt – mehr als 20% Verlust seit dem 52-Wochen-Hoch und der Kurs liegt unter der 200-Tage-Linie. Nach einem kurzen Erholungsversuch am Montag bleibt das Bild get…",
+     "einordnung": "Gold im technischen Bärenmarkt ist ungewohnt – das Edelmetall hatte in den vergangenen Jahren vom Misstrauen gegenüber Notenbanken profitiert. Dass jetzt ausgerechnet eine potenzielle Fed-Pause den G…",
+     "figures": "Rückgang >20% vom 52-Wochen-Hoch; unter 200-Tage-Linie; 23 Handelstage vs. 91 Tage Konsolidierungsphase; Leitzins-Erwartung 3,5–3,75%; letzte Senkung 0,25%"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=87s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Gold steigt trotz Entspannung — der Host nennt Agnico Eagle als konkreten Kaufkandidaten im Goldminenbereich.",
+     "einordnung": "Interessant, dass Gold auch im Risk-on-Umfeld steigt — das zeigt die strukturelle Nachfrage von Notenbanken und Anleger. Agnico Eagle (AEM) gehört zu den qualitativ hochwertigsten Seniors im Minensek…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "4TeOYIh5hN0",
+     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=2717s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Mittelfristige Korrektur nach finalem Ziel 4950–5000 $; EMA 200 unterschritten, Abwärtstrend vorerst intakt. Langfristig bullisch wegen Schuldenkrise.",
+     "einordnung": "Gold zeigt klassische Post-Rally-Erschöpfung – das finale Ziel wurde erreicht, nun folgt Konsolidierung/Korrektur; langfristig bleibt das Bild bullisch wegen Verschuldung, kurzfristig aber Geduld geb…",
+     "figures": "5600 $ (Spike-Hoch), 4950–5000 $ (finales Ziel erreicht), EMA 200 bei 4371 $, Deckellinie 4570 $, Unterstützung 4100 $, möglicher Fall auf 3500 $"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=219s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gold unter Druck durch Kapitalabflüsse zu Gunsten riskanterer Assets und Zinsängste; Host empfiehlt technisches Abwarten.",
+     "einordnung": "Typisches Muster bei Risiko-on-Phasen: Wenn die Angst sinkt, sinkt auch die Nachfrage nach dem sicheren Hafen. Das ist kein fundamentales Giftzeichen, eher Rotationssignal."
+    }
+   ]
+  },
+  "005930.KS": {
+   "name": "Samsung",
+   "auftritte": [
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=353s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Samsung-Aktie verliert zeitweise 10% in Korea, trotz eines operativen Gewinns von 58 Mrd. $ und 25% Umsatzwachstum. Grund sind Gewinnmitnahmen nach einem starken Kursanstieg von ca. 80% innerhalb kur…",
+     "einordnung": "Ein 10%-Abverkauf trotz Rekordbilanz ist das klassische 'buy the rumor, sell the news'-Muster. Nach 80% Kursanstieg war die Bilanz bereits eingepreist — die Enttäuschung liegt nicht in den Zahlen, so…",
+     "figures": "Aktie -10%; operativer Gewinn Q2: 58 Mrd. $; Umsatzwachstum +25%"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "-DiygCxAXrc",
+     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=3211s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Samsung ist der mögliche Foundry-Partner für Meta. Für Q2 wird ein Betriebsgewinn von 56,3 Mrd $ erwartet, was +750% gegenüber dem Vorjahr entspricht. Charttechnisch befindet sich die Aktie in einer…",
+     "einordnung": "Ein Betriebsgewinn-Sprung von +750% ist spektakulär und spiegelt die Erholung im Speicherchipzyklus wider. Der potenzielle Meta-Auftrag würde Samsungs Foundry-Sparte zusätzlich validieren. Die Range-…",
+     "figures": "56,3 Mrd $, +750%, 240 Mrd $"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=1218s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Südkorea plant ein 500-Mrd.-Dollar-Investitionsprogramm für KI und Halbleiter; Samsung baut neue Fabriken, operative Gewinne sollen stark steigen. Die Aktie ist mit einem KGV von ca. 6 günstig und ha…",
+     "einordnung": "Ein KGV von 6 bei einem Halbleitergiganten mit staatlichem Investitionsrückwind ist extrem attraktiv — doch +370% in einem Jahr bedeutet, dass viel Gutes bereits eingepreist ist. Die Frage ist, ob di…",
+     "figures": "Investition 500 Mrd. $; op. Gewinn 2026: 237 Mrd. $, 2027: 324 Mrd. $, 2028: 330 Mrd. $; KGV ca. 6; Aktie +370% in 1 Jahr"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "4K4U0fRfM0A",
+     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=2336s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Ein großes Aktienrückkaufprogramm von 90 Billionen Won (ca. 60 Mrd. USD) wird aufgelegt. Die Aktie korrigierte gestern 14 Prozent und erholt sich heute. KGV von 5 und PEG von 0,07 sind extrem günstig.",
+     "einordnung": "KGV 5 und PEG 0,07 sind selbst für den koreanischen Markt extrem niedrig. Der massive Rückkauf signalisiert Managementvertrauen. Der 'Korea-Discount' ist persistent, aber die Bewertungslücke ist hier…",
+     "figures": "Rückkauf 90 Billionen Won (60 Mrd. USD), KGV 5, PEG 0,07, Korrektur von 30% und 21%"
+    }
+   ]
+  },
+  "HOOD": {
+   "name": "Robinhood",
+   "auftritte": [
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=449s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Robinhood entwickelte sich hervorragend mit +40% im vergangenen Monat. Der S&P Financial Index läuft stark: 82 von 85 Mitgliedern im Plus auf Wochensicht, Robinhood führt an.",
+     "einordnung": "Eine +40%-Bewegung in einem Monat bei einem Finanzwert ist extrem und deutet auf eine Momentum-Phase hin, die über die Fundamentaldaten hinausgeht. Die Breite des S&P Financial Index (82/85 positiv)…",
+     "figures": "+40% im vergangenen Monat"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=2452s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Expansion nach London, tokenisierte Assets, KI-Trading. Charttechnisch bullische Konsolidierung. Bewertung gesunken.",
+     "einordnung": "Robinhood diversifiziert sich erfolgreich, aber das KGV von 44 ist immer noch hoch. Die Expansion nach London und der Einstieg in tokenisierte Assets sind spannende Wachstumshebel.",
+     "figures": "KGV 44 (von 75), keine konkreten Kursziele"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2990s",
      "channel": "onvista",
      "kategorie": "chartanalyse",
-     "note": "Der DAX legt 1,4% zu und testet die 25.000er Marke. Henry sieht bei nachhaltiger Überwindung Potenzial bis zum Allzeithoch. Der Dollar-Yen-Kurs steigt auf 162, gestützt durch die hohe Zinsdifferenz z…",
-     "einordnung": "Die 25.000er Marke ist psychologisch wichtig, aber charttechnisch kein massiver Widerstand. Entscheidender ist, ob der Herbst nicht doch Zinserhöhungen bringt — dann wären Gewinnmitnahmen programmier…",
-     "figures": "DAX +1,4%, 25.000 Punkte, Dollar/Yen 162, US-Zins knapp unter 4%, Japan 1%"
+     "note": "Robinhood baut 10% der Stellen ab. Das Kaufsignal bleibt intakt, das Kursziel liegt bei 153$.",
+     "einordnung": "Stellenabbau wird an der Börse oft als Effizienzsteigerung gefeiert. Dass Ark verkauft, während die Aktie steigt, ist ein klassisches Warnsignal. Wenn aber die 93$ halten, ist der Trend intakt.",
+     "figures": "Stellenabbau 10%; Kursziel AGIS 110$; Gewinnwachstum +42% (2027), +21%; Ark Investment verkauft 26,6 Mio. $"
+    },
+    {
+     "date": "2025-11-28",
+     "video_id": "fQxlQW1Y5LQ",
+     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1752s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Host meldet Start einer Prognoseplattform bei Robinhood.",
+     "einordnung": "Robinhood diversifiziert über reine Transaktionsprovisionen hinaus. Eine Prognoseplattform ist ein Versuch, Nutzerbindung und Datenmonetarisierung zu erhöhen — ob das skaliert, ist fraglich."
+    }
+   ]
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "auftritte": [
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=539s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon voraussichtlich -4% wegen Sippenhaft nach der Samsung-Enttäuschung. Die Aktie hatte sich zu weit von der 200-Tage-Linie entfernt; Kurse kehren zu gleitenden Durchschnitten zurück.",
+     "einordnung": "Die Sippenhaft-Logik im Halbleitersektor ist kurzfristig wirksam, aber fundamental fragwürdig: Infineon ist ein Automobil- und Industriechip-Spezialist, Samsung ein Memory-Chip-Gigant — die Geschäfts…",
+     "figures": "Voraussichtlich -4%"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "sax3NJ-Q6tc",
+     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=338s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon eröffnet am 2. Juli eine neue Chipfabrik und verdoppelt Kapazitäten. Aktie konsolidiert nach Anstieg von 40 auf 80.",
+     "einordnung": "Die Fabrikeröffnung ist ein Meilenstein, aber Kapazitätsverdopplung bedeutet auch höhere Abschreibungen. Die Konsolidierung nach dem Lauf von 40 auf 80 ist gesund.",
+     "figures": "Kursanstieg von 40 auf 80"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=771s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Aktie bricht im Zuge von KI-Zweifeln ein. Haidt rät zu kurzfristiger Vorsicht.",
+     "einordnung": "Infineon ist stark zyklisch und wird bei jeder KI-Skepsis als Erster abgestraft. Die Bewertung ist nicht günstig genug, um einen echten Kontrahalt zu bieten – das KGV bleibt hoch für einen Halbleiter…"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=383s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Chipwerte wie Infineon laufen weiter stark; Infineon hat seit Überwinden der 50-Kursmarke über 60% zugelegt.",
+     "einordnung": "Die +60% seit dem Breakout sind beeindruckend, aber auch ein Warnsignal für eine überhitzte Bewegung. Infineon profitiert vom KI-Hype, ist aber zyklischer als die reinen KI-Spezialisten — eine Korrek…",
+     "figures": "+60% seit 50-Kursmarke"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=370s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon dürfte heute Morgen im Fokus stehen, da alles mit Chips und KI im Aufgalopp ist, gestützt durch positive Vorgaben aus Asien.",
+     "einordnung": "Der positive Read-through von Micron und asiatischen Halbleiterwerten ist gerechtfertigt, auch wenn Infineon eher im Automotive- und Industriebereich agiert. Die KI-Euphorie könnte kurzfristig für Au…"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=386s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon gestern noch gefragt, heute vorbörslich unter Druck durch Realitätstrack und Gewinnmitnahmen bei Chipherstellern.",
+     "einordnung": "Infineon ist ein klassischer Zykliker, der auf globale Konjunktur- und Zinserwartungen reagiert. Wenn die Zinswende ausbleibt, bleibt der Titel unter Druck. Das ist kein Kaufgrund, sondern ein Abwart…"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=552s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Trump-Tweet zu Intel-Apple-Kooperation treibt Chipaktien, Infineon verdoppelt von 40 auf 80 Euro in 2–3 Monaten. Kurzfristig wegen Überbewertung und Korea-Risiko seitwärts.",
+     "einordnung": "Eine Verdopplung in drei Monaten auf Basis eines Tweets ist kein fundamentales Fundament, sondern Momentum. Das Korea-Risiko als geopolitischer Overhang wird vom Markt unterschätzt – ein Konflikt dor…",
+     "figures": "Kurs von 40 auf 80 Euro verdoppelt"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=376s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Charttechnisch stark mit kaum nennenswerter Korrektur; KI-Fantasie treibt den Wert, hat sich in kurzer Zeit mehr als verdoppelt.",
+     "einordnung": "Infineon als KI-Profiteur über Leistungshalbleiter und Power-Management ist fundamental nachvollziehbar. Eine Verdopplung in kurzer Zeit erhöht jedoch das Rückschlagrisiko — hier sollte man Gewinne m…",
+     "figures": "mehr als verdoppelt in kurzer Zeit"
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1033s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Aktie +17,8% in einer Woche. EBITDA steigt von 4,6 Mrd. (laufendes Jahr) auf 6,1 Mrd. (nächstes Jahr); EBIT von 2,6 Mrd. auf 3,8 Mrd. EV/EBIT 27,7x, KGV 29,7 — extrem hoch bewertet, aber Momentum int…",
+     "einordnung": "Ein KGV von knapp 30 bei einem Halbleiterzyklik-Unternehmen ist sportlich — das erinnert an 2018, als Infineon nach starken Zykler-Rallys auf ähnliche Bewertungen stieg und dann korrigierte. Das Mome…",
+     "figures": "+17,8% (1 Woche), EBITDA 4,6 Mrd. auf 6,1 Mrd., EBIT 2,6 Mrd. auf 3,8 Mrd., EV/EBIT 27,7x, KGV 29,7, EBITDA-Marge 20,1%, Marktkapitalisierung 99,6 Mrd. auf 105,3 Mrd."
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
+     "einordnung": "Infineon als Profiteur des vorherigen Momentum-Trades wird nun verkauft – das ist die Kehrseite der Rotation. Wenn der Momentum-Trade zurückkehrt, ist Infineon der erste Profiteur."
     }
    ]
   },
   "BAYN.DE": {
    "name": "Bayer",
    "auftritte": [
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=664s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bayer zeigt Gewinnmitnahmen nach einem technischen Kaufsignal und positiven Nachrichten. Die operative Story und der Investment Case bleiben unverändert.",
+     "einordnung": "Gewinnmitnahmen nach einem Kaufsignal sind technisch normal und bestätigen oft sogar die Signalqualität — der Markt testet, ob die Käufer bleiben. Solange die operative Story intakt ist, ist dies kei…"
+    },
     {
      "date": "2026-07-06",
      "video_id": "htTDw4hrfRo",
@@ -405,122 +860,293 @@
     }
    ]
   },
-  "GC=F": {
-   "name": "Gold",
+  "EOAN.DE": {
+   "name": "E.ON",
    "auftritte": [
     {
      "date": "2026-07-06",
-     "video_id": "-DiygCxAXrc",
-     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=761s",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1585s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Kaufsignal ausgelöst durch dynamischen Anstieg über 18,50 EUR nach langer Korrektur innerhalb eines Bull-Keils.",
+     "einordnung": "Der Ausbruch aus einem Bull-Keil nach langer Seitwärtsphase ist ein klassisches Fortsetzungssignal. Mit einem mittelfristigen Ziel bei 23,30 EUR sieht Harry rund 26 Prozent Aufwärtspotenzial — ambiti…",
+     "figures": "18,50 EUR (Ausbruchsmarke), 20,60 EUR (Zwischenziel), 23,30 EUR (mittelfristiges Ziel)"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=4076s",
      "channel": "onvista",
      "kategorie": "chartanalyse",
-     "note": "Gold meldet sich nach vier schwächeren Wochen zurück. Schwächere US-Jobdaten senken die Zinserwartungen, die Unterstützung knapp unter 4000$ hält mit starken Käufern. ETF-Abflüsse von 12 Mrd $ beruhi…",
-     "einordnung": "Das Gold-Comeback auf Basis schwächerer Jobdaten ist klassisch — sinkende Zinserwartungen drücken den Dollar und heben das gelbe Metall. Die Beruhigung der ETF-Abflüsse ist ein wichtiger Bestätigungs…",
-     "figures": "5600$, 4000$, 12 Mrd $, 48-49$"
-    },
+     "note": "E.ON befindet sich in einer bullischen Konsolidierung und profitiert von der intelligenten Netzinfrastruktur.",
+     "einordnung": "Netzbetreiber sind die Gewinner der Energiewende – sie verdienen an der Volatilität, egal woher der Strom kommt. E.ON in einer bullischen Konsolidierung ist ein solides Basis-Investment. Über 19€ wir…"
+    }
+   ]
+  },
+  "RWE.DE": {
+   "name": "RWE",
+   "auftritte": [
     {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1480s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Rückgang von 2 Prozent im Wochenverlauf trotz fallender US-Zinsen. Haidt sieht kurzfristig Abwärtsrisiko.",
-     "einordnung": "Gold fällt trotz sinkender Zinsen – das ist ungewöhnlich und deutet darauf hin, dass der geopolitische Risikoaufschlag abgebaut wird. Wenn der Irankrieg nicht eskaliert, könnte Gold auf sein Vor-Kris…",
-     "figures": "Rückgang 2%"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=134s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Goldpreis rutscht unter die 4.000-Dollar-Marke, belastet durch Zinssorgen und eine entspanntere geopolitische Lage. Charttechnisch sind die Skeptiker im Recht.",
-     "einordnung": "Der Bruch der 4.000-Dollar-Marke ist psychologisch bedeutend. Solange die Zinswende nicht vom Tisch ist und geopolitische Risiken abnehmen, fehlt dem Gold der Treibstoff für neue Höchstkurse.",
-     "figures": "4.000 USD"
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1774s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Fast-Kaufsignal: Noch nicht über 58 EUR ausgebrochen, aber der positive Sektortrend (E.ON bereits ausgebrochen) lässt einen Ausbruch erwarten.",
+     "einordnung": "Das Catch-up-Argument innerhalb des Versorgersektors ist stichhaltig — wenn E.ON ausbricht, zieht RWE meist nach. Der konventionelle Stromgeschäftsanteil bei RWE macht den Titel zyklischer als E.ON,…",
+     "figures": "58 EUR (Clusterpunkt), 62,50 EUR (Ziel), 67-69 EUR (höhere Ziele)"
     },
     {
      "date": "2026-06-23",
      "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=166s",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=460s",
      "channel": "Der Aktionär - Märkte am Morgen",
      "kategorie": "news",
-     "note": "Goldpreis gerät unter Druck, da steigende Zinsen für Edelmetalle ungünstig sind.",
-     "einordnung": "Klassisches Zinssensitivitäts-Thema: Wenn die Renditen steigen, verliert das unproduktive Edelmetall an Reiz. Das ist kein strukturelles, sondern ein konjunkturelles Thema."
+     "note": "RWE will Anteil an Ampion (Höchstspannungsnetz Nordsee-Alpen) von 25,1% auf 55% aufstocken, Kosten ca. 4 Mrd. Euro. Aktie unter Gewinnmitnahmen.",
+     "einordnung": "Eine 4-Mrd.-Euro-Investition in ein Höchstspannungsnetz ist strategisch sinnvoll, aber kurzfristig belastend. Die Aktie reagiert mit Gewinnmitnahmen – das ist typisch für eine Kapitalerhöhung oder gr…",
+     "figures": "25,1% auf 55%, 4 Milliarden Euro"
     },
     {
-     "date": "2026-06-22",
-     "video_id": "9G1WNKY6uuY",
-     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY&t=3302s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Gold befindet sich in einem mittelfristigen Abwärtstrend; Harry rät vom Kauf ab und empfiehlt Beobachtung oder Short-Positionen.",
-     "einordnung": "Überraschend klar bearishe Sicht auf Gold – das kontrastiert mit der allgemeinen Gold-Euphorie. Harrys charttechnische Lesart ist diszipliniert: Der Trend ist unten, also kein Long. Das erinnert an 2…"
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=1256s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "RWE stockt Anteil an Amprion auf 55% auf, Kaufpreis 3,6 Milliarden Euro, finanziert durch Kapitalerhöhung und Aktienverkauf. Gewinnziel 2031: 4,40 auf 4,55 Euro je Aktie. Kurzfristig seitwärts.",
+     "einordnung": "Die Aufstockung des Amprion-Anteils ist strategisch sinnvoll, weil regulierte Netzbetriebe stabile Erträge liefern, aber die Finanzierung über Kapitalerhöhung und Aktienverkauf bedeutet Verwässerung…",
+     "figures": "3,6 Mrd. Euro Kaufpreis, Anteil 55%, Gewinnziel 4,40-4,55 Euro/Aktie"
     },
     {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=3150s",
+     "date": "2026-06-23",
+     "video_id": "t04FPU9gZbI",
+     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=1496s",
      "channel": "onvista",
      "kategorie": "fundamental",
-     "note": "Gold und Silber haben als sicherer Hafen enttäuscht. Gewinnmitnahmen und Dollarstärke belasten.",
-     "einordnung": "Das ist ein klassisches Muster: In Krisenzeiten steigen sichere Häfen zunächst, dann folgen Gewinnmitnahmen und Dollarstärke. Aktuell sind wir in der Gewinnmitnahmen-Phase."
+     "note": "RWE erhöht Anteil an Amprion auf 55% für 3,6 Mrd. €, teilweise über Aktienemission. Schritt in Richtung regulierten Netzbetrieb, stabilisiert Erträge.",
+     "einordnung": "Die Aufstockung der Amprion-Beteiligung ist ein strategisch sinnvoller Schritt hin zu regulierten, planbaren Erträgen. Die Finanzierung über Aktienemission verdünnt jedoch kurzfristig, und bei einem…",
+     "figures": "3,6 Mrd. €, KGV 19, Dividendenrendite 2,4%"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
+     "einordnung": "RWE leidet ebenfalls unter dem Momentum-Wechsel – als Underperformer könnte die Aktie jedoch kurzfristig Rotationsgelder anziehen."
+    }
+   ]
+  },
+  "AIR.DE": {
+   "name": "Airbus",
+   "auftritte": [
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1905s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Positiver langfristiger Trend trotz geopolitischer Rücksetzer durch den Iran-Konflikt.",
+     "einordnung": "Airbus bleibt ein Langfristtrend-Titel, bei dem geopolitische Dellen als Einstiegschancen genutzt werden. Die Ziele bei 263 und 271 EUR sind naheliegende charttechnische Marken.",
+     "figures": "263 EUR, 271 EUR (Ziele)"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=333s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Positive Analystenkommentare: Rekordauslieferung von 870 Maschinen für 2026 erwartet. Aktie hat die 200-Tage-Linie gebrochen und steigt Richtung 220 €.",
+     "einordnung": "Die Rückeroberung der 200-Tage-Linie ist ein starkes charttechnisches Signal. Fundamental untermauert durch die Auslieferungsstory — Airbus ist einer der wenigen DAX-Werte mit klarer, mehrjähriger Wa…",
+     "figures": "870 Maschinen Auslieferung 2026; Kursziel 200 €, 220 €"
     },
     {
      "date": "2026-06-19",
-     "video_id": "MJo67AkNy70",
-     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=158s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Goldpreis unter Druck, da Fed-Chef Powell keine Zinssenkungssignale sendet.",
-     "einordnung": "Klassisches Muster: hawkische Fed ohne Zinssenkungsaussicht drückt Gold als zinlose Anlage. Doch bei eskalierender Geopolitik im Nahen Osten könnte das Safe-Haven-Argument schnell zurückkehren."
-    },
-    {
-     "date": "2026-06-17",
-     "video_id": "UBcaG1xcyng",
-     "url": "https://www.youtube.com/watch?v=UBcaG1xcyng&t=115s",
-     "channel": "Der Aktionär - Märkte am Morgen",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2265s",
+     "channel": "onvista",
      "kategorie": "chartanalyse",
-     "note": "Gold befindet sich technisch im Bärenmarkt – mehr als 20% Verlust seit dem 52-Wochen-Hoch und der Kurs liegt unter der 200-Tage-Linie. Nach einem kurzen Erholungsversuch am Montag bleibt das Bild get…",
-     "einordnung": "Gold im technischen Bärenmarkt ist ungewohnt – das Edelmetall hatte in den vergangenen Jahren vom Misstrauen gegenüber Notenbanken profitiert. Dass jetzt ausgerechnet eine potenzielle Fed-Pause den G…",
-     "figures": "Rückgang >20% vom 52-Wochen-Hoch; unter 200-Tage-Linie; 23 Handelstage vs. 91 Tage Konsolidierungsphase; Leitzins-Erwartung 3,5–3,75%; letzte Senkung 0,25%"
-    },
+     "note": "Airbus erhält ein Upgrade von Kepler. Eine mögliche Besserung im Nahostkonflikt wirkt sich positiv auf die Aktie aus. Charttechnisch wurde eine wichtige Marke überwunden.",
+     "einordnung": "Luftfahrtzyklen sind langwierig. Wenn der Nahostkonflikt sich entspannt, fallen geopolitische Risikoprämien weg. Der Bruch über 197€ wäre das technische Signal für eine Erholungsbewegung.",
+     "figures": "Kursziel Kepler 212€ (von 196€); Widerstand 197€; Kursziele 216€, 256€"
+    }
+   ]
+  },
+  "ADS.DE": {
+   "name": "Adidas",
+   "auftritte": [
     {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=87s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Gold steigt trotz Entspannung — der Host nennt Agnico Eagle als konkreten Kaufkandidaten im Goldminenbereich.",
-     "einordnung": "Interessant, dass Gold auch im Risk-on-Umfeld steigt — das zeigt die strukturelle Nachfrage von Notenbanken und Anleger. Agnico Eagle (AEM) gehört zu den qualitativ hochwertigsten Seniors im Minensek…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "4TeOYIh5hN0",
-     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=2717s",
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2015s",
      "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "Mittelfristige Korrektur nach finalem Ziel 4950–5000 $; EMA 200 unterschritten, Abwärtstrend vorerst intakt. Langfristig bullisch wegen Schuldenkrise.",
-     "einordnung": "Gold zeigt klassische Post-Rally-Erschöpfung – das finale Ziel wurde erreicht, nun folgt Konsolidierung/Korrektur; langfristig bleibt das Bild bullisch wegen Verschuldung, kurzfristig aber Geduld geb…",
-     "figures": "5600 $ (Spike-Hoch), 4950–5000 $ (finales Ziel erreicht), EMA 200 bei 4371 $, Deckellinie 4570 $, Unterstützung 4100 $, möglicher Fall auf 3500 $"
+     "note": "Bull-Keil deutet auf Erholung, aber bisher noch kein überzeugendes Kaufsignal (Ausbruch über 172-173 EUR fehlt).",
+     "einordnung": "Das Bull-Keil ist ein klassisches Erholungsmuster, aber ohne überzeugenden Ausbruch bleibt die Geduld die bessere Strategie. Die ambitionierten Ziele bei 242 und 262 EUR setzen eine fundamentale Best…",
+     "figures": "172-173 EUR (Clusterpunkt), 242 EUR, 262 EUR (Ziele)"
     },
     {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=219s",
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=283s",
      "channel": "Der Aktionär - Märkte am Morgen",
      "kategorie": "chartanalyse",
-     "note": "Gold unter Druck durch Kapitalabflüsse zu Gunsten riskanterer Assets und Zinsängste; Host empfiehlt technisches Abwarten.",
-     "einordnung": "Typisches Muster bei Risiko-on-Phasen: Wenn die Angst sinkt, sinkt auch die Nachfrage nach dem sicheren Hafen. Das ist kein fundamentales Giftzeichen, eher Rotationssignal."
+     "note": "Wartet auf Ausbruch über 180 € Richtung 200 €. Das EM-Aus der deutschen Nationalmannschaft hat nicht geholfen, ist wirtschaftlich aber nicht dramatisch.",
+     "einordnung": "Das EM-Aus ist sentimentaler Natur — die Trikotverkäufe laufen bereits, und Adidas profitiert ohnehin vom Turnier-Halo unabhängig vom deutschen Weiterkommen. Charttechnisch ist die 180 € der Schlüsse…",
+     "figures": "180 €, 200 €"
     },
     {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1757s",
+     "date": "2026-06-30",
+     "video_id": "sax3NJ-Q6tc",
+     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=292s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas technisch stark, beginnender Aufwärtstrend. Ein Kollege sieht ein Kursziel bei 200 €. Das WM-Aus der deutschen Mannschaft belastet die Aktie nicht.",
+     "einordnung": "Das WM-Aus ist für Adidas irrelevant — das Unternehmen profitiert von globalen Markenzyklen, nicht vom deutschen Nationalteam. Ein 200-€-Ziel ist ambitioniert, aber im Chartbild nicht abwegig.",
+     "figures": "Kursziel 200 €"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1691s",
      "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Aktie nach oben geschossen wegen WM-Hoffnung, Deutschland ist ausgeschieden. Haidt sieht Korrekturrisiko.",
+     "einordnung": "Der WM-Effekt bei Adidas ist ein klassisches 'Buy the rumor, sell the news'-Szenario. Das deutsche Aus bei der WM entzieht der Aktie den kurzfristigen Katalysator – das erinnert an 2018, als Adidas n…"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "Nxn0NmV-hnM",
+     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=2790s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "ABC Outperform, Kursziel von 170 auf 210 Euro. KGV 13 für FY27, Abschlag 10-15 Prozent zu Konkurrenz. Gewinnwachstum 25 Prozent p.a. (3 Jahre). Marktanteile: Sportschuhe 11,2 Prozent (plus 80 BP), Sp…",
+     "einordnung": "Adidas ist im Turnaround-Modus — Marktanteilgewinne bei Sportschuhen von 80 Basispunkten sind handfest. KGV 13 für 2027 bei 25 Prozent Gewinnwachstum ist ein PEG unter 1; das ist attraktiv. Die 170-E…",
+     "figures": "Kursziel 210€, KGV 13, Gewinnwachstum 25% p.a., Marktanteile 11,2% (Schuhe) und 5,9% (Bekleidung)"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=201s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Aktionäre setzen auf WM-Erfolg, der Kurs ist seit April 20-30% gestiegen. Die Erholung könnte weitergehen, die fundamentalen Aussichten seien jedoch unverändert.",
+     "einordnung": "Der WM-Hype treibt die Aktie, doch ein Vorauslauf auf sportliche Events ist oft zyklisch begrenzt. Ohne fundamentale Aufwärtsrevisionen droht nach dem Turnier ein Kater.",
+     "figures": "20-30% seit April"
+    }
+   ]
+  },
+  "LIN": {
+   "name": "Linde (USD)",
+   "auftritte": [
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2220s",
+     "channel": "Rendezvous mit Harry",
      "kategorie": "chartanalyse",
-     "note": "Starker Ausverkauf trotz minimaler Zinserhöhung deutet auf Liquiditätsbedarf für SpaceX-IPO; Abwärtstrend etabliert. Gold fiel von 1513 USD nach Datenpublikation deutlich.",
-     "einordnung": "Gold-Sell-off bei steigenden Realzinsen (nominale Zinsen +30 BP, aber Inflation sinkt) logisch, aber Magnitude deutet auf Liquiditätszwang von Fonds/Investoren für IPO-Allokation. Technischer Break u…",
-     "figures": "Rückgang von 1513 USD (15:30 Uhr) nach Arbeitsmarktdaten"
+     "note": "Langfristiger Bullenmarkt mit Bodenbildungsphase nach Test des Key-Supports bei 413 USD — Harry spricht von einer Bärenfalle.",
+     "einordnung": "Die Bärenfallen-These am Key-Support ist ein starkes Argument: Wer unter 413 USD verkauft hat, wird wahrscheinlich bald zurückkaufen müssen. Linde als defensiver Industriegastitel profitiert zusätzli…",
+     "figures": "413 USD (Key-Support), 560 USD, 610 USD (Ziele)"
+    }
+   ]
+  },
+  "V": {
+   "name": "Visa (USD)",
+   "auftritte": [
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=3208s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Ausbruch über den Clusterpunkt bei 341 USD mit Dynamik, spricht für mittelfristigen Anstieg.",
+     "einordnung": "Der dynamische Ausbruch über einen Clusterpunkt ist ein hochwertiges Signal. Visa als Zahlungsnetzwerk profitiert von globaler Konsumstärke und Digitalisierung — die Dip-Kauf-Strategie ist für etabli…",
+     "figures": "341 USD (Clusterpunkt), 370 USD, 417 USD (Ziele)"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "zXPxhjz_nX0",
+     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=1588s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Visa zeigt relative Stärke im Finanzsektor. Die Aktie hat eine inverse SKS-Bodenbildung gebildet und testet den Clusterpunkt bei 341-342 Dollar. Ein dynamischer Ausbruch über 342-343 Dollar wäre ein…",
+     "einordnung": "Eine inverse SKS-Bodenbildung ist das Spiegelbild eines bärischen Musters und signalisiert eine Trendwende nach oben. Visa als Konsum-Proxy mit duopolartiger Marktstellung ist fundamental solide – de…",
+     "figures": "317 Dollar (EMA100 Support), 341-342 Dollar (Clusterpunkt/Widerstand)"
+    }
+   ]
+  },
+  "^MDAXI": {
+   "name": "MDAX",
+   "auftritte": [
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=380s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Verbessert sich langsam, aber noch nicht so stark wie der DAX. Die große Zwischenkorrektur seit 2017/18 wird als bullisch eingestuft.",
+     "einordnung": "Die Einordnung der mehrjährigen Korrektur als bullisch ist eine mutige Kontra-Lesart. Der MDAX hat den DAX seit Jahren unterperformt — eine Aufholbewegung wäre charttechnisch überfällig, bedarf aber…"
+    }
+   ]
+  },
+  "^SDAXI": {
+   "name": "SDAX",
+   "auftritte": [
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=492s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Kämpft mit der Barriere bei 17.450 Punkten, Big Picture aber weiterhin bullisch mit Ziel über 25.000 Punkte.",
+     "einordnung": "Der SDAX kämpft an einer klaren charttechnischen Barriere. Das langfristige Ziel über 25.000 Punkte zeigt, dass Gebhard ein erhebliches Aufholpotenzial sieht — Small Caps führen oft in frühen Erholun…",
+     "figures": "17.450 Punkte (Barriere), 15.816 Punkte (ehemaliges Ausbruchsniveau), 25.000 Punkte (langfristiges Ziel)"
+    }
+   ]
+  },
+  "HYQ.DE": {
+   "name": "Hypoport",
+   "auftritte": [
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2818s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Bodenbildung nach starkem Kursverfall. Zinsabhängigkeit und hausgemachte Probleme (teure Übernahmen) belasteten, aber Bewertung jetzt günstig.",
+     "einordnung": "Hypoport ist ein klassischer Zins-Hebel-Titel: Bei fallenden Renditen läuft die Aktie überproportional, bei steigenden fällt sie überproportional. Die Bodenbildung ist vielversprechend, aber der Bund…"
+    }
+   ]
+  },
+  "LEG.DE": {
+   "name": "LEG Immobilien",
+   "auftritte": [
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2994s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "5% Dividendenrendite, Bewertung liegt beim halben inneren Wert. Nach erneutem Tief (Iran-Dip, Dividendenabschlag) in Bodenbildung.",
+     "einordnung": "Eine Dividendenrendite von 5% bei halbem innerem Wert ist ein klassisches Deep-Value-Setup. Die Bodenbildung nach dem Iran-Dip ist charttechnisch plausibel, aber das gesamte Setup steht und fällt mit…",
+     "figures": "5% Dividendenrendite, ca. 77 EUR (Deckelbereich)"
+    }
+   ]
+  },
+  "AFX.DE": {
+   "name": "Carl Zeiss Meditec",
+   "auftritte": [
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=3441s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Starker Kursverlust (80-90%), Medizintechniksektor erholt sich langsam. Großaktionär investiert 200 Mio. EUR — möglicher Turnaround.",
+     "einordnung": "Ein Kursverlust von 80-90% ist extrem und markiert oft die Zone maximaler Verzweiflung — genau dort entstehen die besten Turnaround-Chancen. Das 200-Millionen-Euro-Engagement des Großaktionärs ist ei…",
+     "figures": "200 Mio. EUR (Rückkauf durch Großaktionär)"
     }
    ]
   },
@@ -803,41 +1429,6 @@
      "note": "Meta fiel deutlich und nähert sich den April-Tiefs. Die nächste Unterstützung liegt bei 558 USD, darüber eine Zone von 576–613 USD. Ein Schlusskurs unter 558 USD wäre stark bärisch. Erholungspotenzia…",
      "einordnung": "Meta ist der klare Underperformer im Mag-7-Quartett dieser Woche. Die Annäherung an die April-Tiefs ist charttechnisch kritisch — ein Bruch würde eine größere Top-Bildung signalisieren.",
      "figures": "Unterstützung 558 USD, Widerstand 686–724 USD"
-    }
-   ]
-  },
-  "005930.KS": {
-   "name": "Samsung",
-   "auftritte": [
-    {
-     "date": "2026-07-06",
-     "video_id": "-DiygCxAXrc",
-     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=3211s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Samsung ist der mögliche Foundry-Partner für Meta. Für Q2 wird ein Betriebsgewinn von 56,3 Mrd $ erwartet, was +750% gegenüber dem Vorjahr entspricht. Charttechnisch befindet sich die Aktie in einer…",
-     "einordnung": "Ein Betriebsgewinn-Sprung von +750% ist spektakulär und spiegelt die Erholung im Speicherchipzyklus wider. Der potenzielle Meta-Auftrag würde Samsungs Foundry-Sparte zusätzlich validieren. Die Range-…",
-     "figures": "56,3 Mrd $, +750%, 240 Mrd $"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=1218s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Südkorea plant ein 500-Mrd.-Dollar-Investitionsprogramm für KI und Halbleiter; Samsung baut neue Fabriken, operative Gewinne sollen stark steigen. Die Aktie ist mit einem KGV von ca. 6 günstig und ha…",
-     "einordnung": "Ein KGV von 6 bei einem Halbleitergiganten mit staatlichem Investitionsrückwind ist extrem attraktiv — doch +370% in einem Jahr bedeutet, dass viel Gutes bereits eingepreist ist. Die Frage ist, ob di…",
-     "figures": "Investition 500 Mrd. $; op. Gewinn 2026: 237 Mrd. $, 2027: 324 Mrd. $, 2028: 330 Mrd. $; KGV ca. 6; Aktie +370% in 1 Jahr"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "4K4U0fRfM0A",
-     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=2336s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Ein großes Aktienrückkaufprogramm von 90 Billionen Won (ca. 60 Mrd. USD) wird aufgelegt. Die Aktie korrigierte gestern 14 Prozent und erholt sich heute. KGV von 5 und PEG von 0,07 sind extrem günstig.",
-     "einordnung": "KGV 5 und PEG 0,07 sind selbst für den koreanischen Markt extrem niedrig. Der massive Rückkauf signalisiert Managementvertrauen. Der 'Korea-Discount' ist persistent, aber die Bewertungslücke ist hier…",
-     "figures": "Rückkauf 90 Billionen Won (60 Mrd. USD), KGV 5, PEG 0,07, Korrektur von 30% und 21%"
     }
    ]
   },
@@ -1710,85 +2301,6 @@
     }
    ]
   },
-  "ADS.DE": {
-   "name": "Adidas",
-   "auftritte": [
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=283s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Wartet auf Ausbruch über 180 € Richtung 200 €. Das EM-Aus der deutschen Nationalmannschaft hat nicht geholfen, ist wirtschaftlich aber nicht dramatisch.",
-     "einordnung": "Das EM-Aus ist sentimentaler Natur — die Trikotverkäufe laufen bereits, und Adidas profitiert ohnehin vom Turnier-Halo unabhängig vom deutschen Weiterkommen. Charttechnisch ist die 180 € der Schlüsse…",
-     "figures": "180 €, 200 €"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "sax3NJ-Q6tc",
-     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=292s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adidas technisch stark, beginnender Aufwärtstrend. Ein Kollege sieht ein Kursziel bei 200 €. Das WM-Aus der deutschen Mannschaft belastet die Aktie nicht.",
-     "einordnung": "Das WM-Aus ist für Adidas irrelevant — das Unternehmen profitiert von globalen Markenzyklen, nicht vom deutschen Nationalteam. Ein 200-€-Ziel ist ambitioniert, aber im Chartbild nicht abwegig.",
-     "figures": "Kursziel 200 €"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1691s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Aktie nach oben geschossen wegen WM-Hoffnung, Deutschland ist ausgeschieden. Haidt sieht Korrekturrisiko.",
-     "einordnung": "Der WM-Effekt bei Adidas ist ein klassisches 'Buy the rumor, sell the news'-Szenario. Das deutsche Aus bei der WM entzieht der Aktie den kurzfristigen Katalysator – das erinnert an 2018, als Adidas n…"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=2790s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "ABC Outperform, Kursziel von 170 auf 210 Euro. KGV 13 für FY27, Abschlag 10-15 Prozent zu Konkurrenz. Gewinnwachstum 25 Prozent p.a. (3 Jahre). Marktanteile: Sportschuhe 11,2 Prozent (plus 80 BP), Sp…",
-     "einordnung": "Adidas ist im Turnaround-Modus — Marktanteilgewinne bei Sportschuhen von 80 Basispunkten sind handfest. KGV 13 für 2027 bei 25 Prozent Gewinnwachstum ist ein PEG unter 1; das ist attraktiv. Die 170-E…",
-     "figures": "Kursziel 210€, KGV 13, Gewinnwachstum 25% p.a., Marktanteile 11,2% (Schuhe) und 5,9% (Bekleidung)"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=201s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktionäre setzen auf WM-Erfolg, der Kurs ist seit April 20-30% gestiegen. Die Erholung könnte weitergehen, die fundamentalen Aussichten seien jedoch unverändert.",
-     "einordnung": "Der WM-Hype treibt die Aktie, doch ein Vorauslauf auf sportliche Events ist oft zyklisch begrenzt. Ohne fundamentale Aufwärtsrevisionen droht nach dem Turnier ein Kater.",
-     "figures": "20-30% seit April"
-    }
-   ]
-  },
-  "AIR.DE": {
-   "name": "Airbus",
-   "auftritte": [
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=333s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Positive Analystenkommentare: Rekordauslieferung von 870 Maschinen für 2026 erwartet. Aktie hat die 200-Tage-Linie gebrochen und steigt Richtung 220 €.",
-     "einordnung": "Die Rückeroberung der 200-Tage-Linie ist ein starkes charttechnisches Signal. Fundamental untermauert durch die Auslieferungsstory — Airbus ist einer der wenigen DAX-Werte mit klarer, mehrjähriger Wa…",
-     "figures": "870 Maschinen Auslieferung 2026; Kursziel 200 €, 220 €"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2265s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Airbus erhält ein Upgrade von Kepler. Eine mögliche Besserung im Nahostkonflikt wirkt sich positiv auf die Aktie aus. Charttechnisch wurde eine wichtige Marke überwunden.",
-     "einordnung": "Luftfahrtzyklen sind langwierig. Wenn der Nahostkonflikt sich entspannt, fallen geopolitische Risikoprämien weg. Der Bruch über 197€ wäre das technische Signal für eine Erholungsbewegung.",
-     "figures": "Kursziel Kepler 212€ (von 196€); Widerstand 197€; Kursziele 216€, 256€"
-    }
-   ]
-  },
   "ADBE": {
    "name": "Adobe",
    "auftritte": [
@@ -1831,40 +2343,6 @@
      "note": "Adobe hat gute Zahlen geliefert und kooperiert mit OpenAI. Der KI-Umsatz erreicht 250 Mio. USD.",
      "einordnung": "250 Mio. USD KI-Umsatz zeigt, dass Adobe Monetarisierung schafft, bleibt aber hinter reinen KI-Playern zurück. Die OpenAI-Kooperation ist strategisch klug — Adobe integriert KI statt sie zu bekämpfen.",
      "figures": "250 Mio. USD KI-Umsatz"
-    }
-   ]
-  },
-  "HOOD": {
-   "name": "Robinhood",
-   "auftritte": [
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=2452s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Expansion nach London, tokenisierte Assets, KI-Trading. Charttechnisch bullische Konsolidierung. Bewertung gesunken.",
-     "einordnung": "Robinhood diversifiziert sich erfolgreich, aber das KGV von 44 ist immer noch hoch. Die Expansion nach London und der Einstieg in tokenisierte Assets sind spannende Wachstumshebel.",
-     "figures": "KGV 44 (von 75), keine konkreten Kursziele"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2990s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Robinhood baut 10% der Stellen ab. Das Kaufsignal bleibt intakt, das Kursziel liegt bei 153$.",
-     "einordnung": "Stellenabbau wird an der Börse oft als Effizienzsteigerung gefeiert. Dass Ark verkauft, während die Aktie steigt, ist ein klassisches Warnsignal. Wenn aber die 93$ halten, ist der Trend intakt.",
-     "figures": "Stellenabbau 10%; Kursziel AGIS 110$; Gewinnwachstum +42% (2027), +21%; Ark Investment verkauft 26,6 Mio. $"
-    },
-    {
-     "date": "2025-11-28",
-     "video_id": "fQxlQW1Y5LQ",
-     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1752s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Host meldet Start einer Prognoseplattform bei Robinhood.",
-     "einordnung": "Robinhood diversifiziert über reine Transaktionsprovisionen hinaus. Eine Prognoseplattform ist ein Versuch, Nutzerbindung und Datenmonetarisierung zu erhöhen — ob das skaliert, ist fraglich."
     }
    ]
   },
@@ -2316,97 +2794,6 @@
      "kategorie": "news",
      "note": "Iridium wird von Rocket Lab übernommen; der Sektor profitiert von der Konsolidierungsbewegung im Raumfahrt- und Satellitenbereich.",
      "einordnung": "Eine Übernahme ist für das Zielunternehmen meist ein kurzfristiges Kursplus. Wer Iridium nicht bereits hält, ist hier zu spät dran."
-    }
-   ]
-  },
-  "IFX.DE": {
-   "name": "Infineon",
-   "auftritte": [
-    {
-     "date": "2026-06-30",
-     "video_id": "sax3NJ-Q6tc",
-     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=338s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon eröffnet am 2. Juli eine neue Chipfabrik und verdoppelt Kapazitäten. Aktie konsolidiert nach Anstieg von 40 auf 80.",
-     "einordnung": "Die Fabrikeröffnung ist ein Meilenstein, aber Kapazitätsverdopplung bedeutet auch höhere Abschreibungen. Die Konsolidierung nach dem Lauf von 40 auf 80 ist gesund.",
-     "figures": "Kursanstieg von 40 auf 80"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=771s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktie bricht im Zuge von KI-Zweifeln ein. Haidt rät zu kurzfristiger Vorsicht.",
-     "einordnung": "Infineon ist stark zyklisch und wird bei jeder KI-Skepsis als Erster abgestraft. Die Bewertung ist nicht günstig genug, um einen echten Kontrahalt zu bieten – das KGV bleibt hoch für einen Halbleiter…"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "5AeBdQRrZ2k",
-     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=383s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Chipwerte wie Infineon laufen weiter stark; Infineon hat seit Überwinden der 50-Kursmarke über 60% zugelegt.",
-     "einordnung": "Die +60% seit dem Breakout sind beeindruckend, aber auch ein Warnsignal für eine überhitzte Bewegung. Infineon profitiert vom KI-Hype, ist aber zyklischer als die reinen KI-Spezialisten — eine Korrek…",
-     "figures": "+60% seit 50-Kursmarke"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=370s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon dürfte heute Morgen im Fokus stehen, da alles mit Chips und KI im Aufgalopp ist, gestützt durch positive Vorgaben aus Asien.",
-     "einordnung": "Der positive Read-through von Micron und asiatischen Halbleiterwerten ist gerechtfertigt, auch wenn Infineon eher im Automotive- und Industriebereich agiert. Die KI-Euphorie könnte kurzfristig für Au…"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=386s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon gestern noch gefragt, heute vorbörslich unter Druck durch Realitätstrack und Gewinnmitnahmen bei Chipherstellern.",
-     "einordnung": "Infineon ist ein klassischer Zykliker, der auf globale Konjunktur- und Zinserwartungen reagiert. Wenn die Zinswende ausbleibt, bleibt der Titel unter Druck. Das ist kein Kaufgrund, sondern ein Abwart…"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=552s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Trump-Tweet zu Intel-Apple-Kooperation treibt Chipaktien, Infineon verdoppelt von 40 auf 80 Euro in 2–3 Monaten. Kurzfristig wegen Überbewertung und Korea-Risiko seitwärts.",
-     "einordnung": "Eine Verdopplung in drei Monaten auf Basis eines Tweets ist kein fundamentales Fundament, sondern Momentum. Das Korea-Risiko als geopolitischer Overhang wird vom Markt unterschätzt – ein Konflikt dor…",
-     "figures": "Kurs von 40 auf 80 Euro verdoppelt"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=376s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Charttechnisch stark mit kaum nennenswerter Korrektur; KI-Fantasie treibt den Wert, hat sich in kurzer Zeit mehr als verdoppelt.",
-     "einordnung": "Infineon als KI-Profiteur über Leistungshalbleiter und Power-Management ist fundamental nachvollziehbar. Eine Verdopplung in kurzer Zeit erhöht jedoch das Rückschlagrisiko — hier sollte man Gewinne m…",
-     "figures": "mehr als verdoppelt in kurzer Zeit"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1033s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktie +17,8% in einer Woche. EBITDA steigt von 4,6 Mrd. (laufendes Jahr) auf 6,1 Mrd. (nächstes Jahr); EBIT von 2,6 Mrd. auf 3,8 Mrd. EV/EBIT 27,7x, KGV 29,7 — extrem hoch bewertet, aber Momentum int…",
-     "einordnung": "Ein KGV von knapp 30 bei einem Halbleiterzyklik-Unternehmen ist sportlich — das erinnert an 2018, als Infineon nach starken Zykler-Rallys auf ähnliche Bewertungen stieg und dann korrigierte. Das Mome…",
-     "figures": "+17,8% (1 Woche), EBITDA 4,6 Mrd. auf 6,1 Mrd., EBIT 2,6 Mrd. auf 3,8 Mrd., EV/EBIT 27,7x, KGV 29,7, EBITDA-Marge 20,1%, Marktkapitalisierung 99,6 Mrd. auf 105,3 Mrd."
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
-     "einordnung": "Infineon als Profiteur des vorherigen Momentum-Trades wird nun verkauft – das ist die Kehrseite der Rotation. Wenn der Momentum-Trade zurückkehrt, ist Infineon der erste Profiteur."
     }
    ]
   },
@@ -2888,128 +3275,6 @@
      "note": "AMD legt nach einem Investorentag um 9% zu; der KI-Chipmarkt wird von 200 Mrd. USD bis 2030 auf 1.000 Mrd. USD projiziert.",
      "einordnung": "Der Investorentag hat offensichtlich überzeugt – 9% Aufschlag sprechen für sich. Die Projektion des KI-Chipmarktes auf 1.000 Mrd. USD bis 2030 ist aggressiv, aber wenn sie auch nur halbwegs stimmt, i…",
      "figures": "+9%, 200 Mrd. USD, 1.000 Mrd. USD"
-    }
-   ]
-  },
-  "BTC-USD": {
-   "name": "Bitcoin",
-   "auftritte": [
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1582s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "MicroStrategy muss Bitcoin verkaufen, Druck auf den Kurs. Haidt rät zu kurzfristiger Vorsicht.",
-     "einordnung": "MicroStrategy als gezwungener Verkäufer ist ein strukturelles Problem für Bitcoin – wenn der größte Corporate-Hodler liquidieren muss, entsteht ein Überhang, der den Markt belastet. Das erinnert an d…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "zXPxhjz_nX0",
-     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=2897s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Bitcoin korrigiert seit August/September und testet den Key Support bei 65.000 Dollar. Ein Kaufsignal entsteht erst über 82.000 Dollar auf Wochen-/Monatsschlussbasis. Das Sentiment ist schlecht, aber…",
-     "einordnung": "Ein schlechtes Sentiment an einem Key Support ist konträrindikativ oft ein Kaufsignal – aber Harrys Disziplin, erst über 82.000 Dollar ein bestätigtes Signal zu fordern, ist methodisch der richtige A…",
-     "figures": "65.000 Dollar (Support), 80.808-82.000 Dollar (Ausbruchszone)"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=633s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Bitcoin testet die 60.000-Dollar-Marke; der Abwärtstrend ist intakt, und neue Tiefs sind möglich.",
-     "einordnung": "Die 60K-Marke ist psychologisch zentral — ein nachhaltiger Bruch öffnet die Tür zu deutlich tieferen Niveaus. Solange der Abwärtstrend nicht gebrochen wird, ist每一 ein Rallye-Versuch nur ein Counter-T…",
-     "figures": "60.000$"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=207s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Bitcoin hält sich knapp über 60.000 Dollar, große Sprünge sind nicht angesagt und das Thema ist von den Titelseiten verschwunden.",
-     "einordnung": "Die Seitwärtsbewegung bei 60.000 Dollar spiegelt einen ermüdenden Markt ohne neuen Katalysator. Das verschwindende Medieninteresse ist typisch für eine Konsolidierungsphase, kann aber auch den Boden…",
-     "figures": "60.000 USD"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "1_zNnqdriM4",
-     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=847s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Bitcoin zeigt charttechnisch eine mögliche Topbildung; fällt er unter 60.000$, droht ein Rückfall auf 49.000$.",
-     "einordnung": "Die charttechnische Topbildung bei Bitcoin ist ein klares Warnsignal — der Widerstand bei 74.000$ hat sich als zu stark erwiesen. Ein Bruch der 60.000$ würde die nächste Unterstützungszone bei 49.000…",
-     "figures": "74.000$ (Widerstand), 65.000$/60.000$ (Unterstützung), 49.000$ (nächstes Ziel)"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "MJo67AkNy70",
-     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=208s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Bitcoin-Erholung verflüchtigt sich; Anleger fokussieren sich auf IPOs.",
-     "einordnung": "Risk-Off-Stimmung durch hawkische Fed trifft Bitcoin doppelt — die Krypto-Erholung war ohnehin fragil. IPO-Fokus bedeutet Kapitalrotation weg von Krypto."
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=182s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Bitcoin befindet sich in einer Aufwärtsbewegung, zeitweise über 66.000 $ gesehen; leichte Gewinnmitnahmen werden als möglich eingestuft.",
-     "einordnung": "Bitcoin profitiert im Risk-on-Modus klassischerweise mit. Das Niveau um 66.000 $ ist charttechnisch relevant — ein nachhaltiger Ausbruch darüber wäre ein positives Signal, scheitert er, droht Konsoli…",
-     "figures": "über 66.000 $"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=288s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Bitcoin leicht erholt bei 63.200 USD; MicroStrategy hat kleine Menge verkauft, aber für über 100 Mio. USD nachgekauft—bullische Geste.",
-     "einordnung": "MicroStrategy-Käufe sind hochgradig signifikant: Das Management signalisiert, dass Schwäche Chance ist, nicht Risiko. Nach der Euphorie des letzten Jahres ist diese Art von Conviction ein interessant…",
-     "figures": "63.200 USD, über 100 Millionen USD Nachkauf"
-    },
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1876s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Wochentief erreicht; Verkäufe für Liquidität ähnlich wie Gold; Abwärtstrend etabliert.",
-     "einordnung": "BTC als Liquidity-Buffer in Krisenzeiten verkauft – klassisches Risiko-Off-Zeichen. Zinsanstieg und IPO-Liquiditätsbedarf drücken Risk-Assets generell. Charttechnischer Breakout-Versuch gescheitert."
-    },
-    {
-     "date": "2026-06-05",
-     "video_id": "ogH7N_SxJqk",
-     "url": "https://www.youtube.com/watch?v=ogH7N_SxJqk&t=823s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Der Host notiert Bitcoin unter 77.000$ mit ETF-Abflüssen von 3,5 Mrd. $ und Liquidationen von 1,5 Mrd. $. Er erwartet eine Erholung bei geopolitischer Entspannung und setzt Bitcoin auf die Watchlist.",
-     "einordnung": "Die Kapitalrotation von Krypto zu KI/Rechenzentren ist ein struktureller Trend, der nicht nur zyklisch ist. Bitcoin bei 77.000$ ist psychologisch wichtig, aber die ETF-Abflüsse zeigen, dass instituti…",
-     "figures": "Unter 77.000$; ETF-Abflüsse 3,5 Mrd. $; Liquidationen 1,5 Mrd. $"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=1369s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "-9,6% im Wochenverlauf, Chart sieht schlecht aus. Rückgang ist Signal für geringere Liquidität.",
-     "einordnung": "Ein -9,6%-Wochenverlust bei gleichzeitigem S&P-500-Rekord ist ein Divergenz-Signal, das ernst genommen werden muss. Bitcoin als Liquiditätsindikator deutet auf nachlassenden Risiko-Appetit abseits de…",
-     "figures": "-9,6%"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1790s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Wochenplus 0,2%, seitwärts. Keine großen Sorgen kurzfristig.",
-     "einordnung": "Bitcoin bei 0,2% Wochenplus ist bemerkenswert ruhig angesichts der Rekordjagd bei Aktien — das deutet darauf hin, dass die Risiko-Appetit-Rotation in Richtung Index-Mechaniken (SpaceX) läuft und Kryp…",
-     "figures": "+0,2% (Woche)"
     }
    ]
   },
@@ -3728,21 +3993,6 @@
      "note": "Im Big Picture zeigt sich eine Aufwärtstendenz, aber aktuell läuft eine Korrektur seit Februar. Die Aktie testet den Key Support bei 2.748 Yen. Sollte dieser nicht halten, droht eine Anpassung an das…",
      "einordnung": "Toyota korrigiert im intakten Aufwärtstrend – das ist normal, solange der Key Support hält. Der Verweis auf das VW-Bild bei einem Unterstützungsbuch ist allerdings ein warnendes Signal: Die globale A…",
      "figures": "2.748 Yen (Key Support), 2.200 Yen (nächstes Ziel)"
-    }
-   ]
-  },
-  "V": {
-   "name": "Visa",
-   "auftritte": [
-    {
-     "date": "2026-06-29",
-     "video_id": "zXPxhjz_nX0",
-     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=1588s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Visa zeigt relative Stärke im Finanzsektor. Die Aktie hat eine inverse SKS-Bodenbildung gebildet und testet den Clusterpunkt bei 341-342 Dollar. Ein dynamischer Ausbruch über 342-343 Dollar wäre ein…",
-     "einordnung": "Eine inverse SKS-Bodenbildung ist das Spiegelbild eines bärischen Musters und signalisiert eine Trendwende nach oben. Visa als Konsum-Proxy mit duopolartiger Marktstellung ist fundamental solide – de…",
-     "figures": "317 Dollar (EMA100 Support), 341-342 Dollar (Clusterpunkt/Widerstand)"
     }
    ]
   },
@@ -4561,50 +4811,6 @@
     }
    ]
   },
-  "RWE.DE": {
-   "name": "RWE",
-   "auftritte": [
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=460s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "RWE will Anteil an Ampion (Höchstspannungsnetz Nordsee-Alpen) von 25,1% auf 55% aufstocken, Kosten ca. 4 Mrd. Euro. Aktie unter Gewinnmitnahmen.",
-     "einordnung": "Eine 4-Mrd.-Euro-Investition in ein Höchstspannungsnetz ist strategisch sinnvoll, aber kurzfristig belastend. Die Aktie reagiert mit Gewinnmitnahmen – das ist typisch für eine Kapitalerhöhung oder gr…",
-     "figures": "25,1% auf 55%, 4 Milliarden Euro"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=1256s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "RWE stockt Anteil an Amprion auf 55% auf, Kaufpreis 3,6 Milliarden Euro, finanziert durch Kapitalerhöhung und Aktienverkauf. Gewinnziel 2031: 4,40 auf 4,55 Euro je Aktie. Kurzfristig seitwärts.",
-     "einordnung": "Die Aufstockung des Amprion-Anteils ist strategisch sinnvoll, weil regulierte Netzbetriebe stabile Erträge liefern, aber die Finanzierung über Kapitalerhöhung und Aktienverkauf bedeutet Verwässerung…",
-     "figures": "3,6 Mrd. Euro Kaufpreis, Anteil 55%, Gewinnziel 4,40-4,55 Euro/Aktie"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=1496s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "RWE erhöht Anteil an Amprion auf 55% für 3,6 Mrd. €, teilweise über Aktienemission. Schritt in Richtung regulierten Netzbetrieb, stabilisiert Erträge.",
-     "einordnung": "Die Aufstockung der Amprion-Beteiligung ist ein strategisch sinnvoller Schritt hin zu regulierten, planbaren Erträgen. Die Finanzierung über Aktienemission verdünnt jedoch kurzfristig, und bei einem…",
-     "figures": "3,6 Mrd. €, KGV 19, Dividendenrendite 2,4%"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
-     "einordnung": "RWE leidet ebenfalls unter dem Momentum-Wechsel – als Underperformer könnte die Aktie jedoch kurzfristig Rotationsgelder anziehen."
-    }
-   ]
-  },
   "MC.PA": {
    "name": "LVMH",
    "auftritte": [
@@ -5149,20 +5355,6 @@
      "kategorie": "news",
      "note": "Pfizer wird im Video im Rahmen der Gewinner-und-Verlierer-Übersicht kurz erwähnt, ohne dass nähere Zahlen oder Einschätzungen genannt werden.",
      "einordnung": "Pfizer bleibt ein Dividendentitel im Abwärtstrend – der Post-Covid-Tiefpunkt ist möglicherweise noch nicht erreicht. Ohne konkrete Katalysatoren aus dieser Sendung ist der Wert hier nur ein Randthema."
-    }
-   ]
-  },
-  "EOAN.DE": {
-   "name": "E.ON",
-   "auftritte": [
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=4076s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "E.ON befindet sich in einer bullischen Konsolidierung und profitiert von der intelligenten Netzinfrastruktur.",
-     "einordnung": "Netzbetreiber sind die Gewinner der Energiewende – sie verdienen an der Volatilität, egal woher der Strom kommt. E.ON in einer bullischen Konsolidierung ist ein solides Basis-Investment. Über 19€ wir…"
     }
    ]
   },

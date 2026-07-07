@@ -1,6 +1,611 @@
 {
- "updated": "2026-07-06T18:38:32.084719+00:00",
+ "updated": "2026-07-07T06:38:46.442352+00:00",
  "videos": [
+  {
+   "channel": "Der Aktionär - Märkte am Morgen",
+   "playlist": "Märkte am Morgen",
+   "id": "nPsSsD7zbI8",
+   "title": "Märkte am Morgen: Coca-Cola, Bitcoin, Gold, SpaceX, Samsung, Robinhood, Infineon, TKMS, Bayer",
+   "date": "20260707",
+   "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8",
+   "thumbnail": "https://i.ytimg.com/vi/nPsSsD7zbI8/hqdefault.jpg",
+   "summarized_at": "2026-07-07T06:37:25.790853+00:00",
+   "summary": "Der DAX setzt seine Rekordjagd mit einem neuen Hoch bei 25.900 Punkten fort, schließt aber nur marginal im Plus. Während die Wall Street — insbesondere der Technologiesektor — Zulauf erhält, sorgt eine enttäuschende Samsung-Bilanz für tiefrote Vorgaben in Asien. Im Fokus stehen heute Coca-Cola auf Rekordniveau, Bitcoin mit sinkender Volatilität, Gold in Erholung, Samsungs Abverkauf trotz Rekordgewinnen, Robinhoods Finanz-Sektor-Rally, Infineons Sippenhaft, TKMS' Milliardenauftrag aus Kanada sowie Bayer nach technischem Kaufsignal.",
+   "items": [
+    {
+     "name": "Marktüberblick DAX",
+     "ticker": "^GDAXI",
+     "note": "Der DAX erreichte ein neues Rekordhoch bei 25.900 Punkten und schloss bei 25.817 Zählern mit einem kleinen Plus von 0,15%. Die Wall Street lieferte ab, besonders der Technologiesektor legte zu. Asien notiert tiefrot, vor allem Südkorea und Japan, aufgrund der Samsung-Bilanz.",
+     "figures": "DAX Rekordhoch 25.900 Punkte; Schlussstand 25.817 Punkte; +0,15%",
+     "tip": "",
+     "einordnung": "Ein neues Allzeithoch bei gleichzeitig schwindendem Momentum ist ein klassisches Bild für späte Zyklusphasen — die Rekordjagd läuft, aber die Breite der Bewegung nimmt ab. Dass Asien dreht, während USA und Europa noch grün stehen, signalisiert eine zunehmende regionale Divergenz.",
+     "detail": "Die Diskrepanz zwischen neuem Hoch und minimalem Tagesplus von 0,15% zeigt, dass der DAX eher durch Trägheit als durch frischen Kaufdruck nach oben driftet. Bemerkenswert ist die Asien-Schwäche: Wenn Samsung als asiatischer Leitwert enttäuscht, droht ein Sentiment-Übergriff auf den globalen Halbleitersektor, der auch europäische Techwerte wie Infineon erfasst. Die Tages-News zum Iran-Angriff auf Handelsschiffe in der Straße von Hormuz werden vom Markt ebenso ignoriert wie die Nahost-Krise — solange die Liquidität stimmt, werden geopolitische Risiken ausgeblendet. Das erinnert an den Sommer 2007, als der Markt ebenfalls neue Hochs markierte, während die ersten Subprime-Alarme untergingen.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Iran greift Handelsschiffe in der Straße von Hormuz an — Ölhandelsroute gefährdet, wird vom Markt jedoch ignoriert."
+      },
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Hedgefonds extrem bärisch auf Yen — negativster Stand seit 2007, erhöht Risiko einer sharp Yen-Rally bei BOJ-Überraschungen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 10,
+     "t": "00:10",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=10s",
+     "tv_symbol": "XETR:DAX"
+    },
+    {
+     "name": "Coca-Cola",
+     "ticker": "KO",
+     "note": "Coca-Cola schloss ebenfalls auf Rekordniveau. Es gab leichte Gewinnmitnahmen, die der Host aber als nicht dramatisch einstuft.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Defensive Konsumwerte an der Rekordspitze sind ein typisches Spätzyklus-Phänomen — Anleger suchen Sicherheit bei gleichzeitigem Momentum. Coca-Cola profitiert von Preissetzungsmacht und stabilem Cashflow, die Bewertung ist jedoch nicht mehr günstig.",
+     "detail": "Dass Coca-Cola parallel zum DAX neue Hochs markiert, ist kein Zufall: In Phasen, in denen der Markt zwar steigt, aber die Risikobereitschaft selektiver wird, rotiert Kapital in Low-Beta-Qualität. Coca-Cola liefert genau das — predictable earnings, Dividendenkontinuität und geringe Zyklizität. Die leichten Gewinnmitnahmen sind technisch gesehen gesund, solange die Aktie über der kurzfristigen Unterstützung bleibt. Risiko: Wenn die Zinswende tatsächlich kommt, werden Defensivwerte mit hoher Duration ihrer Cashflows relativ teuer.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 124,
+     "t": "02:04",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=124s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Bitcoin",
+     "ticker": "BTC-USD",
+     "note": "Bitcoin scheint sich über 60.000$ zu halten. Der langfristige Chart zeigt ein Muster abnehmender Drawdowns: aktuell 54% Rückgang, was der historischen Sequenz sinkender Volatilität folgt.",
+     "figures": "Bitcoin über 60.000$; Drawdown aktuell 54%; historische Drawdowns: 93% (2011), 84% (2014), 83% (2018), 77% (2019)",
+     "tip": "",
+     "einordnung": "Das Muster sinkender Drawdowns ist ein starkes Argument für die institutionelle Reifung Bitcoins — jeder Zyklus wird weniger extrem. Bei 60.000$ hat sich eine technische Basis gebildet, aber die Volatilität bleibt im Vergleich zu traditionellen Assets hoch.",
+     "detail": "Die vom Host skizzierte Sequenz — 93% (2011), 84% (2014), 83% (2018), 77% (2019), nun 54% — ist mehr als eine Anekdote: Sie spiegelt die wachsende Marktgröße, die zunehmende institutionelle Beteiligung und die Liquiditätsverbesserung wider. Mit jedem Zyklus wird der Markt tiefer, und die extreme Whale-Dominanz nimmt ab. Implizit setzt der Host voraus, dass dieser Trend anhält — was plausibel, aber nicht garantiert ist, da ein regulatorischer Schock oder ein systemisches Krypto-Event das Muster durchbrechen könnte. Die 60.000$-Marke fungiert aktuell als psychologische Unterstützung; ein Bruch darunter würde das Bild trüben.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 164,
+     "t": "02:44",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=164s",
+     "tv_symbol": "CRYPTO:BTCUSD"
+    },
+    {
+     "name": "Gold",
+     "ticker": "GC=F",
+     "note": "Gold befindet sich in einer Erholungsbewegung. Die Sorge vor steigenden Zinsen drückte den Goldpreis unter die 200-Tage-Linie; er pendelt nun um 4.100 bis 4.200$.",
+     "figures": "Gold pendelt um 4.100–4.200$",
+     "tip": "",
+     "einordnung": "Gold kämpft mit dem klassischen Konflikt: geopolitische Unsicherheit stützt, Zinssorgen drücken. Die Rückeroberung der 200-Tage-Linie ist das entscheidende technische Kriterium für die weitere Richtung.",
+     "detail": "Dass Gold trotz eskalierender Nahost-Spannungen — inklusive der Iran-Angriffe auf Handelsschiffe in der Straße von Hormuz laut Tages-News — nicht stärker läuft, zeigt, dass der Zinsfaktor aktuell dominant ist. Realzinsen sind der größte Gegenspieler des Goldpreises, und solange der Markt eine restriktive Geldpolitik einpreist, fehlt der Treibstoff für einen nachhaltigen Ausbruch. Die 4.100–4.200$-Zone ist eine typische Konsolidierungsregion nach einem größeren Drawdown. Wenn der Host von Erholung spricht, meint er technisch eine Gegenbewegung innerhalb eines intakten Abwärtstrends — kein neues Bullen-Setup. Der NATO-Gipfel mit seinen Milliarden-Rüstungsdeals und die geopolitische Eskalation könnten jedoch als Katalysator dienen, wenn die Zinsseite Pause macht.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Iran greift Handelsschiffe in der Straße von Hormuz an — geopolitische Eskalation stützt Gold potenziell."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 273,
+     "t": "04:33",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=273s",
+     "tv_symbol": "TVC:GOLD"
+    },
+    {
+     "name": "SpaceX",
+     "ticker": null,
+     "note": "Im Video nur kurz erwähnt; SpaceX wird im Rahmen der Einzelwerte genannt, aber nicht tiefer analysiert.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "SpaceX bleibt als Privatunternehmen für Retail-Investoren nur indirekt zugänglich. Die Aufnahme der Coverage durch Morgan Stanley mit einem 300$-Ziel signalisiert jedoch eine zunehmende Institutionalisierung.",
+     "detail": "Morgan Stanley hat laut Tages-News eine Coverage mit Overweight und einem 300$-Ziel gestartet — ein bemerkenswerter Schritt für ein nicht börsennotiertes Unternehmen. Dies deutet darauf hin, dass SpaceX zunehmend als institutioneller Investment-Case wahrgenommen wird, möglicherweise im Vorfeld eines künftigen IPOs. Für Privatanleger bleibt der Zugang jedoch auf den Sekundärmarkt oder indirekte Wege beschränkt. Die Bewertung impliziert, dass das Starlink-Geschäft und die Raketenaktivitäten bereits signifikante Skaleneffekte erreichen.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Morgan Stanley startet SpaceX-Coverage mit Overweight und 300$-Ziel — zunehmende Institutionalisierung."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8"
+    },
+    {
+     "name": "Samsung",
+     "ticker": "005930.KS",
+     "note": "Samsung-Aktie verliert zeitweise 10% in Korea, trotz eines operativen Gewinns von 58 Mrd. $ und 25% Umsatzwachstum. Grund sind Gewinnmitnahmen nach einem starken Kursanstieg von ca. 80% innerhalb kurzer Zeit.",
+     "figures": "Aktie -10%; operativer Gewinn Q2: 58 Mrd. $; Umsatzwachstum +25%",
+     "tip": "",
+     "einordnung": "Ein 10%-Abverkauf trotz Rekordbilanz ist das klassische 'buy the rumor, sell the news'-Muster. Nach 80% Kursanstieg war die Bilanz bereits eingepreist — die Enttäuschung liegt nicht in den Zahlen, sondern in den Erwartungen.",
+     "detail": "Der Abverkauf trotz Rekordgewinnen signalisiert, wie auch die Tages-News betonen, wachsende Skepsis gegenüber der Nachhaltigkeit des KI-Chip-Booms. Samsung ist stark im Memory-Chip-Bereich positioniert, der von der KI-Nachfrage profitiert — aber der Markt fragt sich, ob das Wachstumstempo haltbar ist. Der Kospi-Handel wurde laut Tages-News sogar ausgesetzt, was die Heftigkeit der Reaktion unterstreicht. Ein Kursplus von 80% in kurzer Zeit schafft eine extrem hohe Erwartungshaltung: Wenn die Bilanz nur gut statt überragend ist, reicht das für Gewinnmitnahmen. Implizit zeigt dies auch, wie stark der Halbleitersektor mittlerweile von KI-Narrativen getrieben wird — und wie fragil diese Narrative bei ersten Enttäuschungen sind. Für Infineon und andere Halbleiterwerte ist das ein Warnsignal.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Samsung-Aktie stürzt trotz Rekordgewinn — Kospi-Handel ausgesetzt; wachsende Skepsis gegenüber KI-Chip-Boom."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 353,
+     "t": "05:53",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=353s",
+     "tv_symbol": "KRX:005930"
+    },
+    {
+     "name": "Robinhood",
+     "ticker": "HOOD",
+     "note": "Robinhood entwickelte sich hervorragend mit +40% im vergangenen Monat. Der S&P Financial Index läuft stark: 82 von 85 Mitgliedern im Plus auf Wochensicht, Robinhood führt an.",
+     "figures": "+40% im vergangenen Monat",
+     "tip": "Depotposition wurde gehalten, erfolgreich",
+     "einordnung": "Eine +40%-Bewegung in einem Monat bei einem Finanzwert ist extrem und deutet auf eine Momentum-Phase hin, die über die Fundamentaldaten hinausgeht. Die Breite des S&P Financial Index (82/85 positiv) zeigt, dass es ein Sektor-Thema ist, nicht nur ein Einzeltitel-Effekt.",
+     "detail": "Dass 82 von 85 S&P Financial-Mitgliedern auf Wochensicht im Plus stehen, ist eine bemerkenswerte Breite und deutet auf eine Rotation in den Finanzsektor hin — möglicherweise getrieben durch die Aussicht auf stabile bis steigende Zinsen, die das Zinsgeschäft der Banken und Broker begünstigt. Robinhood als Momentum-Leader profitiert zusätzlich von steigender Handelsaktivität und Krypto-Engagement. Die +40% in einem Monat sind jedoch auch ein Risikoindikator: Solche Momentum-Phasen enden oft abrupt, wenn die Zuflussdynamik nachlässt. Der Host hält an der Position fest, was strategisch konsequent ist — aber ein enges Stopp-Management wäre hier angebracht, um Gewinne nicht wieder abzugeben.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 449,
+     "t": "07:29",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=449s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "note": "Infineon voraussichtlich -4% wegen Sippenhaft nach der Samsung-Enttäuschung. Die Aktie hatte sich zu weit von der 200-Tage-Linie entfernt; Kurse kehren zu gleitenden Durchschnitten zurück.",
+     "figures": "Voraussichtlich -4%",
+     "tip": "",
+     "einordnung": "Die Sippenhaft-Logik im Halbleitersektor ist kurzfristig wirksam, aber fundamental fragwürdig: Infineon ist ein Automobil- und Industriechip-Spezialist, Samsung ein Memory-Chip-Gigant — die Geschäftsmodelle überlappen nur marginal. Die Rückkehr zur 200-Tage-Linie ist technisch gesund.",
+     "detail": "Die Korrelation im Halbleitersektor führt regelmäßig zu Sippenhaft-Abverkäufen, auch wenn die Fundamentaldaten der einzelnen Unternehmen völlig unterschiedlich gelagert sind. Infineons Kerngeschäft — Leistungshalbleiter für Automotive und Industrie — hat wenig mit Samsungs Memory-Chip-Dominanz zu tun. Dennoch wird der Sektor als Block gehandelt, insbesondere wenn das KI-Narrativ wackelt. Die Rückkehr zur 200-Tage-Linie, die der Host erwähnt, ist technisch gesehen eine Normalisierung nach einem Überlauf — kein Trendbruch. Interessant ist der Kontrast: Während Samsung nach 80% Aufwärtsbewegung abverkauft wird, ist Infineon eher in einer Seitwärts- bis Abwärtsphase. Das unterschiedliche Ausgangsniveau erklärt, warum die Reaktion auf dieselbe Nachricht so unterschiedlich ausfällt.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Samsung-Abverkauf trotz Rekordgewinn signalisiert Skepsis im Halbleitersektor — trifft Infineon durch Sippenhaft."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 539,
+     "t": "08:59",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=539s",
+     "tv_symbol": "XETR:IFX"
+    },
+    {
+     "name": "TKMS",
+     "ticker": null,
+     "note": "TKMS legt +11% nach einem Milliardenauftrag aus Kanada über 12 U-Boote zu. Der Gesamtauftragswert liegt bei rund 20 Mrd. Euro plus Folgeaufträge für Wartung. Ein deutscher Rüstungserfolg.",
+     "figures": "Aktie +11%; Auftragswert ca. 20 Mrd. Euro",
+     "tip": "",
+     "einordnung": "Ein 20-Mrd.-Euro-Auftrag ist ein Gamechanger für TKMS und unterstreicht die deutsche Rüstungskompetenz im internationalen Wettbewerb. Die +11% sind gerechtfertigt, da solche Aufträge die Auftragsbücher für Jahre füllen und Sichtbarkeit schaffen.",
+     "detail": "Der kanadische U-Boot-Auftrag passt in ein größeres Bild: Der NATO-Gipfel laut Tages-News bringt Milliarden-Rüstungsdeals, und Trump fordert 350 Mrd. $ Verteidigungsbudget. Die westliche Rüstungsindustrie profitiert strukturell von der Neuausrichtung der NATO-Länder auf 2%-plus-Verteidigungsausgaben. TKMS als deutscher Marine-Spezialist ist hier besonders gut positioniert — U-Boote sind ein Nischenmarkt mit hohen Eintrittsbarrieren. Die Folgeaufträge für Wartung und Service sind dabei strategisch mindestens so wichtig wie der Erstauftrag, da sie wiederkehrende Einnahmen über Jahrzehnte sichern. Der Abverkauf bei Samsung und die Rally bei TKMS zeigen anschaulich, wie Kapital aktuell von Technologie in Rüstung rotiert.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "NATO-Gipfel: Milliarden-Rüstungsdeals und Unterstützung für Tiefenschläge — stützt Rüstungswerte strukturell."
+      },
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Trump fordert 350 Mrd. $ Verteidigungsbudget — massiver Tailwind für westliche Rüstungsindustrie."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 570,
+     "t": "09:30",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=570s"
+    },
+    {
+     "name": "Bayer",
+     "ticker": "BAYN.DE",
+     "note": "Bayer zeigt Gewinnmitnahmen nach einem technischen Kaufsignal und positiven Nachrichten. Die operative Story und der Investment Case bleiben unverändert.",
+     "figures": "",
+     "tip": "Kein Grund zur Änderung, Momentum auf Bayer-Seite",
+     "einordnung": "Gewinnmitnahmen nach einem Kaufsignal sind technisch normal und bestätigen oft sogar die Signalqualität — der Markt testet, ob die Käufer bleiben. Solange die operative Story intakt ist, ist dies kein Alarmzeichen.",
+     "detail": "Bayer bleibt ein Sonderfall im DAX: Die Aktie ist fundamental durch die Glyphosat-Litigation belastet, aber operativ — mit Pharma-Pipeline und Crop-Science — intakt. Ein technisches Kaufsignal nach einer langen Abwärtsphase ist ein erster Hinweis auf eine Trendwende, aber Gewinnmitnahmen zeigen, dass das Vertrauen noch nicht gefestigt ist. Der Host spricht von Momentum auf Bayer-Seite, was darauf hindeutet, dass die positiven Nachrichten der jüngsten Zeit — möglicherweise Pipeline-Fortschritte oder Litigation-Beruhigung — allmählich vom Markt absorbiert werden. Risiko: Jede negative Gerichtsentscheidung im Glyphosat-Komplex kann das Momentum sofort kappen. Das ist kein Wert für schwache Nerven, aber für konträre Investoren mit Geduld ein interessantes Setup.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 664,
+     "t": "11:04",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=664s",
+     "tv_symbol": "XETR:BAYN"
+    }
+   ],
+   "macro": [
+    {
+     "text": "Makroökonomische Sorgen wie die Nahost-Krise und Ölpreise werden vom Markt kurz beiseitegeschoben; Anleger fokussieren auf positive Stimmung und Liquidität.",
+     "sec": 136,
+     "t": "02:16",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=136s"
+    },
+    {
+     "text": "Asien dreht tiefrot, vor allem Südkorea und Japan, aufgrund der Samsung-Bilanzenttäuschung — Risiko eines Sentiment-Übergriffs auf den globalen Halbleitersektor.",
+     "sec": 10,
+     "t": "00:10",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=10s"
+    },
+    {
+     "text": "Iran greift Handelsschiffe in der Straße von Hormuz an — Ölhandelsroute gefährdet, wird vom Markt jedoch ignoriert.",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=nPsSsD7zbI8"
+    }
+   ]
+  },
+  {
+   "channel": "Rendezvous mit Harry",
+   "playlist": "Charttechnik",
+   "id": "gOPRrqA_L38",
+   "title": "RWE, E.ON, Adidas, Visa, Linde, Carl Zeiss, MDAX, Siltronic – Rendezvous mit Harry vom 06.07.2026",
+   "date": "20260706",
+   "url": "https://www.youtube.com/watch?v=gOPRrqA_L38",
+   "thumbnail": "https://i.ytimg.com/vi/gOPRrqA_L38/hqdefault.jpg",
+   "summarized_at": "2026-07-07T06:38:26.195944+00:00",
+   "summary": "Harry Weygand sieht den DAX nach dem Ausbruch über 25.430 Punkte auf Wochenschlusskursbasis auf mittelfristigem Bullenkurs. Im Fokus stehen Kaufsignale bei E.ON (Ausbruch über 18,50 EUR) und ein drohendes Signal bei RWE (58 EUR). Gast Sascha Gebhard beleuchtet Small Caps und sieht Turnaround-Potenzial bei Carl Zeiss Meditec, während der Bund Future an der kritischen Marke von 126,5 Prozent kämpft.",
+   "items": [
+    {
+     "name": "DAX",
+     "ticker": "^GDAXI",
+     "note": "Der DAX hat auf Wochenschlusskursbasis den Ausbruch über 25.430 Punkte ausgelöst, was als bullisches Signal für einen mittelfristigen Anstieg gilt.",
+     "figures": "25.430 Punkte (Key-Level), 50.000 Punkte (langfristiges Ziel)",
+     "tip": "Bereits in Long-Position",
+     "einordnung": "Der Wochenschlusskurs-Ausbruch ist das stärkste technische Argument für Fortsetzungsaufwärts. Dass der DAX trotz geopolitischer Belastung neue Hochs markiert, unterstreicht die robuste Binnenlage — das erinnert an die Unbekümmertheit des Marktes im Vorfeld großer Korrekturen, könnte aber auch schlicht eine gesunde Trendfortsetzung sein.",
+     "detail": "Der Ausbruch erhält Rückenwind von einer laufenden Marktrotation: Während KI-Profiteure Konsolidierung zeigen, wandert Kapital in defensive und zyklische Werte — das verbreitert die Participation im DAX und macht den Aufwärtstrend tragfähiger. Parallel dazu signalisiert Trump Verhandlungsbereitschaft im Iran-Konflikt, was die geopolitische Prämie reduziert und dem Risikoappetit zugutekommt. Harry setzt implizit voraus, dass der Wochenschchlusskurs-Halter über 25.430 nicht sofort als Fehlausbruch entwertet wird — ein Rückfall unter diese Marke auf Wochenschlussbasis würde das Signal drehen.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär - Märkte am Morgen",
+       "url": "",
+       "bezug": "DAX erreichte Rekordstand nach bester Handelswoche seit April 2025 mit plus 4,5 Prozent, bestätigt die bullische Momentumlage."
+      },
+      {
+       "typ": "video",
+       "quelle": "onvista",
+       "url": "",
+       "bezug": "Beobachtet Rotation von KI-Profiteuren in defensive und zyklische Sektoren, was den DAX-Ausbruch breiter stützt."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 121,
+     "t": "02:01",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=121s",
+     "tv_symbol": "XETR:DAX"
+    },
+    {
+     "name": "E.ON",
+     "ticker": "EOAN.DE",
+     "note": "Kaufsignal ausgelöst durch dynamischen Anstieg über 18,50 EUR nach langer Korrektur innerhalb eines Bull-Keils.",
+     "figures": "18,50 EUR (Ausbruchsmarke), 20,60 EUR (Zwischenziel), 23,30 EUR (mittelfristiges Ziel)",
+     "tip": "Einstieg nach Kaufsignal, Zwischenziel 20,60 EUR, mittelfristig 23,30 EUR",
+     "einordnung": "Der Ausbruch aus einem Bull-Keil nach langer Seitwärtsphase ist ein klassisches Fortsetzungssignal. Mit einem mittelfristigen Ziel bei 23,30 EUR sieht Harry rund 26 Prozent Aufwärtspotenzial — ambitioniert, aber charttechnisch nachvollziehbar, wenn der Sektorwind dreht.",
+     "detail": "Das Kaufsignal bei E.ON steht in einem größeren Kontext: Versorger profitieren von der defensiven Rotation, die aktuell an den Märkten läuft. Gleichzeitig hängt das weitere Potenzial maßgeblich vom Bund Future ab — solange die Renditen nicht weiter ansteigen, bleibt der Diskontierungsfaktor für die zukünftigen Cashflows stabil. Das Ziel bei 23,30 EUR entspricht in etwa der Zone, an der E.ON vor der Korrektur notierte; Harry geht also von einer vollständigen V-Korrektur aus. Risiko: Ein Bruch der 18,50 EUR auf Tagesschlussbasis würde das Signal als Fehlausbruch entwerten.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1585,
+     "t": "26:25",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1585s",
+     "tv_symbol": "XETR:EOAN"
+    },
+    {
+     "name": "RWE",
+     "ticker": "RWE.DE",
+     "note": "Fast-Kaufsignal: Noch nicht über 58 EUR ausgebrochen, aber der positive Sektortrend (E.ON bereits ausgebrochen) lässt einen Ausbruch erwarten.",
+     "figures": "58 EUR (Clusterpunkt), 62,50 EUR (Ziel), 67-69 EUR (höhere Ziele)",
+     "tip": "Abwarten auf Tagesschluss über 58 EUR, dann Einstieg Richtung 62,50 EUR",
+     "einordnung": "Das Catch-up-Argument innerhalb des Versorgersektors ist stichhaltig — wenn E.ON ausbricht, zieht RWE meist nach. Der konventionelle Stromgeschäftsanteil bei RWE macht den Titel zyklischer als E.ON, was bei höheren Strompreisen durch geopolitische Spannungen ein zusätzlicher Katalysator sein könnte.",
+     "detail": "RWE unterscheidet sich von E.ON durch seinen höheren Anteil an konventioneller und erneuerbarer Stromerzeugung, was den Titel direkter mit Rohstoff- und Strompreisschwankungen verknüpft. Die geopolitischen Spannungen im Nahen Osten (Iran-Konflikt, Ölpreiseffekte) könnten über höhere Strompreise den Ausbruch über 58 EUR beschleunigen. Harry wartet diszipliniert auf den Tagesschluss über der Marke — das ist richtig, denn Fehlausbrüche an Clusterpunkten sind in Seitwärtsphasen häufig. Die Zielzone 67-69 EUR würde eine vollständige Aufholbewegung zur Vorkorrekturspitze bedeuten.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1774,
+     "t": "29:34",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1774s",
+     "tv_symbol": "XETR:RWE"
+    },
+    {
+     "name": "Airbus",
+     "ticker": "AIR.DE",
+     "note": "Positiver langfristiger Trend trotz geopolitischer Rücksetzer durch den Iran-Konflikt.",
+     "figures": "263 EUR, 271 EUR (Ziele)",
+     "tip": "Halten oder bei Rücksetzern aufbauen",
+     "einordnung": "Airbus bleibt ein Langfristtrend-Titel, bei dem geopolitische Dellen als Einstiegschancen genutzt werden. Die Ziele bei 263 und 271 EUR sind naheliegende charttechnische Marken.",
+     "detail": "Der Iran-Konflikt ist für Airbus ein doppelter Faktor: Lieferkettenrisiken auf der einen Seite, aber steigende Verteidigungsausgaben in Europa auf der anderen. Deutschlands geplante 800 Milliarden Euro Schulden für Aufrüstung könnten indirekt den gesamten Rüstungs- und Luftfahrtsektor stützen. Harry impliziert, dass die Auftragsbücher von Airbus voll sind und kurzfristige geopolitische Schocks den langfristigen Produktionszyklus nicht brechen können — eine Annahme, die historisch meistens richtig war, aber bei massiven Lieferunterbrechungen (Titan, Bauteile) schnell invalidiert werden kann.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News: Deutschland plant 800 Mrd. Euro Schulden für Aufrüstung",
+       "url": "",
+       "bezug": "Massive europäische Rüstungsausgaben könnten Airbus als Luftfahrt- und Rüstungslieferant strukturell stützen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1905,
+     "t": "31:45",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1905s",
+     "tv_symbol": "XETR:AIR"
+    },
+    {
+     "name": "Adidas",
+     "ticker": "ADS.DE",
+     "note": "Bull-Keil deutet auf Erholung, aber bisher noch kein überzeugendes Kaufsignal (Ausbruch über 172-173 EUR fehlt).",
+     "figures": "172-173 EUR (Clusterpunkt), 242 EUR, 262 EUR (Ziele)",
+     "tip": "Noch kein starkes Signal, abwarten",
+     "einordnung": "Das Bull-Keil ist ein klassisches Erholungsmuster, aber ohne überzeugenden Ausbruch bleibt die Geduld die bessere Strategie. Die ambitionierten Ziele bei 242 und 262 EUR setzen eine fundamentale Bestätigung voraus, die der Chart aktuell noch nicht liefert.",
+     "detail": "Adidas kämpft seit Jahren mit strukturellen Problemen — China-Schwäche, Markenmanagement, Yeezy-Fragen. Ein Bull-Keil allein reicht nicht, um eine Trendwende zu bestätigen. Der Ausbruch über 172-173 EUR muss mit Volumen und Dynamik kommen, sonst droht ein Fehlausbruch. Die Ziele bei 242 und 262 EUR implizieren eine vollständige Rückkehr zum langfristigen Aufwärtstrend vor den Problemen — das ist ambitioniert und erfordert eine fundamentale Wende im Kerngeschäft. Harry wartet zu Recht auf Bestätigung.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2015,
+     "t": "33:35",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2015s",
+     "tv_symbol": "XETR:ADS"
+    },
+    {
+     "name": "Linde (USD)",
+     "ticker": "LIN",
+     "note": "Langfristiger Bullenmarkt mit Bodenbildungsphase nach Test des Key-Supports bei 413 USD — Harry spricht von einer Bärenfalle.",
+     "figures": "413 USD (Key-Support), 560 USD, 610 USD (Ziele)",
+     "tip": "Halten, Ziele 560 USD und 610 USD",
+     "einordnung": "Die Bärenfallen-These am Key-Support ist ein starkes Argument: Wer unter 413 USD verkauft hat, wird wahrscheinlich bald zurückkaufen müssen. Linde als defensiver Industriegastitel profitiert zusätzlich von der laufenden Rotation in defensive Werte.",
+     "detail": "Die Bodenbildungsphase nach dem Support-Test bei 413 USD zeigt, dass Verkäufer versucht haben, den Titel nach unten zu drücken, aber keine nachhaltige Schwäche erzeugen konnten — ein klassisches Bärenfallensetup. Industriegase sind ein extrem defensives Geschäft mit langfristigen Verträgen und hoher Kundenbindung, was Linde zu einem der widerstandsfähigsten Titel im industriellen Sektor macht. Die Ziele bei 560 und 610 USD würden neue Rekordhochs bedeuten und setzen voraus, dass der langfristige Bullenmarkt unbeschadet fortgesetzt wird. Risiko: Eine globale Rezession könnte industrielle Gasnachfrage temporär dämpfen.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "onvista",
+       "url": "",
+       "bezug": "Rotation von KI-Profiteuren in defensive Sektoren stützt defensive Industrietitel wie Linde."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2220,
+     "t": "37:00",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2220s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Visa (USD)",
+     "ticker": "V",
+     "note": "Ausbruch über den Clusterpunkt bei 341 USD mit Dynamik, spricht für mittelfristigen Anstieg.",
+     "figures": "341 USD (Clusterpunkt), 370 USD, 417 USD (Ziele)",
+     "tip": "In Rücksetzer (Dips) einsteigen, Ziele 370 USD und 417 USD",
+     "einordnung": "Der dynamische Ausbruch über einen Clusterpunkt ist ein hochwertiges Signal. Visa als Zahlungsnetzwerk profitiert von globaler Konsumstärke und Digitalisierung — die Dip-Kauf-Strategie ist für etablierte Aufwärtstrends die richtige Disziplin.",
+     "detail": "Visas Ausbruch über 341 USD mit Dynamik unterscheidet sich von vielen anderen Signalen dadurch, dass der Titel ein klares Momentum-Setup zeigt. Das Ziel bei 417 USD würde ein neues Allzeithoch bedeuten. Implizit setzt Harry voraus, dass der globale Konsum stabil bleibt und die Kreditkarten-Gebührenstruktur nicht regulatorisch angetastet wird — beides plausible, aber nicht risikofreie Annahmen. Die Strategie, in Rücksetzer zu kaufen, ist bei bestätigten Ausbrüchen statistisch überlegen gegenüber dem Kauf am Ausbruchstag.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 3208,
+     "t": "53:28",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=3208s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "MDAX",
+     "ticker": "^MDAXI",
+     "note": "Verbessert sich langsam, aber noch nicht so stark wie der DAX. Die große Zwischenkorrektur seit 2017/18 wird als bullisch eingestuft.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Die Einordnung der mehrjährigen Korrektur als bullisch ist eine mutige Kontra-Lesart. Der MDAX hat den DAX seit Jahren unterperformt — eine Aufholbewegung wäre charttechnisch überfällig, bedarf aber eines Sektorwindwechsels.",
+     "detail": "Sascha Gebhard interpretiert die MDAX-Korrektur seit 2017/18 als große bullische Zwischenkorrektur innerhalb eines übergeordneten Aufwärtstrends — das ist eine sehr langfristige Perspektive, die an klassische Dow-Theorie-Überlegungen erinnert. Der MDAX ist stark gewichtet mit zyklischen Werten (Automobil, Chemie, Maschinenbau), die von einer Rotation weg von KI-Titeln profitieren könnten. Das Risiko: Wenn die globale Konjunktur nachgibt, trifft es den MDAX härter als den defensiveren DAX. Die langsame Verbesserung, die Gebhard beobachtet, könnte ein erster Frühindikator für eine Small/Mid-Cap-Rotation sein.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "onvista",
+       "url": "",
+       "bezug": "Rotation von KI-Profiteuren in zyklische Werte könnte MDAX-Aufholbewegung begünstigen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 380,
+     "t": "06:20",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=380s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "SDAX",
+     "ticker": "^SDAXI",
+     "note": "Kämpft mit der Barriere bei 17.450 Punkten, Big Picture aber weiterhin bullisch mit Ziel über 25.000 Punkte.",
+     "figures": "17.450 Punkte (Barriere), 15.816 Punkte (ehemaliges Ausbruchsniveau), 25.000 Punkte (langfristiges Ziel)",
+     "tip": "",
+     "einordnung": "Der SDAX kämpft an einer klaren charttechnischen Barriere. Das langfristige Ziel über 25.000 Punkte zeigt, dass Gebhard ein erhebliches Aufholpotenzial sieht — Small Caps führen oft in frühen Erholungsphasen.",
+     "detail": "Die Barriere bei 17.450 Punkten ist charttechnisch die entscheidende Marke: Ein nachhaltiger Ausbruch darüber würde das Bild deutlich aufhellen. Das ehemalige Ausbruchsniveau bei 15.816 Punkten fungiert als Unterstützung — solange dieses hält, bleibt die bullische Struktur intakt. Small Caps sind traditionell führend in frühen Erholungsphasen, weil sie schneller auf improving domestic conditions reagieren. Das langfristige Ziel von 25.000 Punkten impliziert ein massives Aufholpotenzial gegenüber dem DAX, der bereits auf Rekordniveau notiert.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 492,
+     "t": "08:12",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=492s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Bund Future",
+     "ticker": null,
+     "note": "Bärisches Fortsetzungsmuster (fallendes Dreieck), aber die entscheidende Marke bei 126,5 Prozent ist noch nicht final gebrochen — mögliche Bärenfalle.",
+     "figures": "126,5% (Key-Support)",
+     "tip": "Abwarten, Richtungsentscheidung noch offen",
+     "einordnung": "Der Bund Future ist der Dreh- und Angelpunkt für den gesamten zinsabhängigen Sektor — von Versorgern über Immobilien bis zu Small Caps. Ein Bruch unter 126,5 Prozent würde die Renditen treiben und die Erholungsstory bei E.ON, RWE, LEG und Hypoport sofort infrage stellen.",
+     "detail": "Das fallende Dreieck im Bund Future ist ein klassisches bärisches Fortsetzungsmuster, aber Harry warnt zu Recht vor einer möglichen Bärenfalle am Key-Support. Die Argumentation ist nuanciert: Einerseits belasten Deutschlands geplante 800 Milliarden Euro Neuverschuldung für Aufrüstung den Bundemarkekt und stützen das bärische Muster. Andererseits argumentiert Harry, dass die US-Staatsverschuldung mit rund einer Billion Dollar jährlichem Zinsdienst eine natürliche Grenze für weitere Renditeanstiege setzt — wenn die Zinsen zu hoch werden, erstickt die Wirtschaft. Fed-Gouverneur Waller sieht Inflation im Aufwind und bevorzugt ein Inflationsziel als Range, was Zinssenkungen nicht imminent macht. Die Richtungsentscheidung am 126,5-Prozent-Level wird den Ton für den gesamten zinsabhängigen Sektor angeben.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News: Deutschland plant 800 Mrd. Euro Schulden für Aufrüstung",
+       "url": "",
+       "bezug": "Massive Neuverschuldung belastet deutsche Anleihen und stützt das bärische Bund-Future-Muster."
+      },
+      {
+       "typ": "news",
+       "quelle": "Tages-News: Fed Waller sieht Inflation im Aufwind",
+       "url": "",
+       "bezug": "Waller bevorzugt Inflationsziel als Range, Zinssenkungen nicht imminent — stützt höhere Renditen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 913,
+     "t": "15:13",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=913s"
+    },
+    {
+     "name": "2G Energy",
+     "ticker": null,
+     "note": "Profiteur von Datencenter-Aufträgen in den USA. Konsolidierung auf hohem Niveau, Tendenz weiter nach oben.",
+     "figures": "",
+     "tip": "Beobachten, Einstieg bei Konsolidierung möglich",
+     "einordnung": "Die Datencenter-Story ist einer der stärksten strukturellen Growth-Trends aktuell. 2G Energy als KWK-Anbieter profitiert direkt vom Energiebedarf der KI-Infrastruktur — eine Small-Cap-Story mit echtem Katalysator.",
+     "detail": "Die Verbindung zwischen KI-Infrastruktur und Energiebedarf ist ein unterschätzter Megatrend: Datencenter benötigen massive Mengen an Strom und Wärme, und 2G Energys Blockheizkraftwerke sind eine effiziente Lösung für genau diesen Bedarf. Die US-Aufträge sind besonders wertvoll, weil dort der Großteil der Datencenter-Expansion stattfindet. Die Konsolidierung auf hohem Niveau ist gesund — sie verdaut die starken Vorgewinne und schafft eine neue Basis. Risiko: Die Aktie ist illiquid und volatil, ein einzelner Großauftrag oder dessen Ausbleiben kann die Kursbewegung dominieren.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "onvista",
+       "url": "",
+       "bezug": "Meta verhandelt mit Samsung über eigene 2nm-Chips, Nvidia-Roadmap intakt — KI-Infrastruktur-Expansion treibt Datencenter-Bedarf."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2363,
+     "t": "39:23",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2363s"
+    },
+    {
+     "name": "Hermle",
+     "ticker": null,
+     "note": "Hochwertiger Maschinenbauer mit Großaufträgen aus USA (Roboterfabriken). Langfristiger Abwärtstrend könnte enden.",
+     "figures": "ca. 10 EUR Dividendenabschlag (letzte Woche)",
+     "tip": "Auf die Beobachtungsliste setzen",
+     "einordnung": "Hermle ist ein klassischer deutscher Qualitäts-Maschinenbauer, dessen langfristiger Abwärtstrend durch US-Großaufträge ein potenzielles Ende finden könnte. Die Beobachtungsliste ist der richtige Platz — Trendwechsel brauchen Bestätigung.",
+     "detail": "Die Großaufträge aus den USA für Roboterfabriken sind ein Indiz für den laufenden Reshoring-Trend: Amerikanische Unternehmen bauen Produktionskapazitäten im Inland auf, und deutsche Maschinenbauer sind technologisch führend in diesem Segment. Der Dividendenabschlag von rund 10 EUR ist ein technischer Faktor, der den Kurs künstlich gedrückt hat — ex-Dividende sieht das Chartbild besser aus. Der langfristige Abwärtstrend zu enden, erfordert aber mehr als einen Auftrag: es braucht eine Serie von Folgeaufträgen und eine fundamentale Erholung der Auftragseingänge. Gebhard positioniert dies als frühe Turnaround-Beobachtung.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2493,
+     "t": "41:33",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2493s"
+    },
+    {
+     "name": "Siltronic",
+     "ticker": null,
+     "note": "Wafer-Hersteller für Halbleiter. Kurs hat sich verdoppelt, trotz schwacher Zahlen. Hohe Volatilität erwartet, aber Potenzial nach oben.",
+     "figures": "",
+     "tip": "Nur für risikobereite Anleger, 20-30% Schwankung pro Woche möglich",
+     "einordnung": "Eine Verdopplung trotz schwacher Zahlen ist ein klassisches Vorboten-Verhalten für einen Zyklus-Turn — der Markt antizipiert die Erholung, bevor die Fundamentaldaten sie bestätigen. Die Warnung vor hoher Volatilität ist angemessen.",
+     "detail": "Siltronic ist ein hochzyklischer Titel, bei dem der Kurs der Fundamentalerholung typischerweise vorausläuft. Die Verdopplung trotz schwacher Zahlen signalisiert, dass institutionelle Investoren den Halbleiterzyklus-Turn einpreisen. Die laufenden KI-Investitionen (Meta verhandelt mit Samsung über 2nm-Chips, Nvidia-Roadmap intakt) stützen die Nachfrage nach Wafern mittel- bis langfristig. Die hohe Volatilität von 20-30 Prozent pro Woche ist charakteristisch für Small-Cap-Halbleiterwerte mit geringer Marktkapitalisierung und hohem Free-Float-Risiko. Gebhard richtet sich mit seiner Warnung an risikobereite Anleger — das ist ehrlich und richtig.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "onvista",
+       "url": "",
+       "bezug": "Meta verhandelt mit Samsung über 2nm-Chips, Nvidia-Roadmap intakt — Halbleiter-Nachfrage bleibt strukturell gestützt."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2707,
+     "t": "45:07",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2707s"
+    },
+    {
+     "name": "Hypoport",
+     "ticker": "HYQ.DE",
+     "note": "Bodenbildung nach starkem Kursverfall. Zinsabhängigkeit und hausgemachte Probleme (teure Übernahmen) belasteten, aber Bewertung jetzt günstig.",
+     "figures": "",
+     "tip": "Günstig bewertet, bei fallenden Zinsen steigender Hebel",
+     "einordnung": "Hypoport ist ein klassischer Zins-Hebel-Titel: Bei fallenden Renditen läuft die Aktie überproportional, bei steigenden fällt sie überproportional. Die Bodenbildung ist vielversprechend, aber der Bund Future entscheidet über Erfolg oder Misserfolg.",
+     "detail": "Hypoport verbindet zwei Risikofaktoren: die Zinsabhängigkeit des Immobiliengeschäfts und die hausgemachten Probleme durch teure Übernahmen, die das Kapital gebunden haben. Die aktuelle Bodenbildung suggeriert, dass die schlechtesten Nachrichten eingepreist sind. Der Hebel funktioniert in beide Richtungen: Wenn der Bund Future die 126,5-Prozent-Marke hält oder dreht, fällt der Zinsdruck und Hypoport könnte überproportional profitieren. Wenn jedoch Deutschland 800 Milliarden Euro neu verschuldet und die Renditen weiter steigen, droht ein Bruch der Bodenbildung. Die Bewertung ist günstig, aber günstig ist nicht gleich billig, wenn die Erträge weiter schrumpfen.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News: Fed Waller sieht Inflation im Aufwind",
+       "url": "",
+       "bezug": "Waller-Comments stützen höhere Zinsen länger — Risiko für zinsabhängige Titel wie Hypoport."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2818,
+     "t": "46:58",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2818s",
+     "tv_symbol": "XETR:HYQ"
+    },
+    {
+     "name": "LEG Immobilien",
+     "ticker": "LEG.DE",
+     "note": "5% Dividendenrendite, Bewertung liegt beim halben inneren Wert. Nach erneutem Tief (Iran-Dip, Dividendenabschlag) in Bodenbildung.",
+     "figures": "5% Dividendenrendite, ca. 77 EUR (Deckelbereich)",
+     "tip": "Auf dem Niveau interessant, aber Vorsicht vor Zinswende",
+     "einordnung": "Eine Dividendenrendite von 5% bei halbem innerem Wert ist ein klassisches Deep-Value-Setup. Die Bodenbildung nach dem Iran-Dip ist charttechnisch plausibel, aber das gesamte Setup steht und fällt mit der Zinsentwicklung.",
+     "detail": "LEG ist der Inbegriff eines zinsabhängigen Immobilienwertes: Die 5% Dividendenrendite ist attraktiv, aber nur, wenn die Renditen nicht weiter steigen und die Bewertungsabschläge nicht noch größer werden. Der Iran-Dip als Auslöser für das Tief ist typisch — geopolitische Schocks erzeugen oft finale Verkaufsspitzen, die dann den Boden markieren. Der Deckelbereich bei ca. 77 EUR ist die kurzfristige Widerstandsmarke. Deutschlands geplante 800 Milliarden Euro Neuverschuldung belastet den Bundemarkekt und damit die Immobilienwerte — das ist der größte Risikofaktor für die LEG-Bodenbildung. Gebhard warnt zu Recht vor der Zinswende.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News: Deutschland plant 800 Mrd. Euro Schulden für Aufrüstung",
+       "url": "",
+       "bezug": "Massive Neuverschuldung belastet Bund-Renditen und damit Immobilienwerte wie LEG."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2994,
+     "t": "49:54",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2994s",
+     "tv_symbol": "XETR:LEG"
+    },
+    {
+     "name": "Carl Zeiss Meditec",
+     "ticker": "AFX.DE",
+     "note": "Starker Kursverlust (80-90%), Medizintechniksektor erholt sich langsam. Großaktionär investiert 200 Mio. EUR — möglicher Turnaround.",
+     "figures": "200 Mio. EUR (Rückkauf durch Großaktionär)",
+     "tip": "Turnaround-Spekulation, Beobachten der Bodenbildung",
+     "einordnung": "Ein Kursverlust von 80-90% ist extrem und markiert oft die Zone maximaler Verzweiflung — genau dort entstehen die besten Turnaround-Chancen. Das 200-Millionen-Euro-Engagement des Großaktionärs ist ein starkes Signal, dass Insider den Boden sehen.",
+     "detail": "Carl Zeiss Meditec ist ein Spezialfall: Der Kursverlust von 80-90% ist außergewöhnlich für einen Medizintechniktitel mit einem starken Großaktionär (Carl Zeiss AG). Das 200-Millionen-Euro-Engagement ist kein normales Aktienrückkaufprogramm, sondern ein gezielter Eingriff des Großaktionärs — das signalisiert, dass der innere Kreis den Wert deutlich höher einschätzt als der Markt. Die Medizintechniksektor-Erholung, die Gebhard beobachtet, könnte den Turnaround stützen. Risiko: Bei 80-90% Kursverlust gibt es oft gute Gründe, und ein Turnaround braucht Zeit. Die Bodenbildung muss sich über Wochen und Monate bestätigen, bevor ein echtes Kaufsignal entsteht.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 3441,
+     "t": "57:21",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=3441s",
+     "tv_symbol": "XETR:AFX"
+    }
+   ],
+   "macro": [
+    {
+     "text": "Geopolitische Spannungen (Iran-Konflikt, mögliche Blockade der Straße von Hormus) belasten die Märkte, doch DAX und Nebenwerte zeigen Erholungstendenzen — Trump signalisiert gleichzeitig Verhandlungsbereitschaft.",
+     "sec": 13,
+     "t": "00:13",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=13s"
+    },
+    {
+     "text": "EZB-Zinsentscheidung und Inflation (Ölpreis) im Fokus; Arbeitsmarkt angespannt, Löhne steigen nicht massiv — zweite Runden-Effekte noch unklar.",
+     "sec": 1496,
+     "t": "24:56",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1496s"
+    },
+    {
+     "text": "US-Staatsverschuldung und Finanzierungsprobleme (ca. 1 Billion USD jährlich nur für Zinsdienst) könnten Grenzen für weitere Renditeanstiege setzen.",
+     "sec": 1291,
+     "t": "21:31",
+     "tlink": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1291s"
+    }
+   ]
+  },
   {
    "channel": "onvista",
    "playlist": "Börse & Märkte LIVE",
@@ -9880,848 +10485,6 @@
      "sec": 44,
      "t": "00:44",
      "tlink": "https://www.youtube.com/watch?v=EX7oe2YpbFY&t=44s"
-    }
-   ]
-  },
-  {
-   "channel": "Rendezvous mit Harry",
-   "playlist": "Charttechnik",
-   "id": "4TeOYIh5hN0",
-   "title": "Rheinmetall, Gold, Öl, Alzchem, Deutsche Börse, Freeport – Rendezvous mit Harry vom 15.06.2026",
-   "date": "20260615",
-   "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0",
-   "thumbnail": "https://i.ytimg.com/vi/4TeOYIh5hN0/hqdefault.jpg",
-   "summarized_at": "2026-06-16T06:38:37.597396+00:00",
-   "summary": "Harald Weygand analysiert in dieser Sendung primär Charttechnik über mehrere Assetklassen: Der DAX pendelt seitwärts unter 25470 Punkten, der Euro erwartet eine mittelfristige Aufwertung, und bei den Einzelaktien zeigen Deutsche Börse und Alzchem bullische Signale, während Rheinmetall weiterhin unter Verkaufsdruck steht. Als Highlight präsentiert Weygand seinen privaten Kauf des spanischen IBEX 35, der prozyklisch ausbricht. Rohstoffe wie Kupfer und Freeport McMoRan profitieren von KI-Nachfrage, während Gold korrigiert und Öl volatil bleibt – letzteres wegen der aktuellen Iran-Einigung und deren Unsicherheiten.",
-   "items": [
-    {
-     "name": "DAX",
-     "ticker": null,
-     "note": "Seitwärtsbewegung unter der Barriere bei 25470 Punkten; positive Erwartung, aber Abwarten auf Ausbruch erforderlich.",
-     "figures": "Barriere 24630 Punkte, Widerstand 25470 Punkte",
-     "tip": "Abwarten bis Ausbruch über 25470",
-     "einordnung": "Der DAX zeigt typische Konsolidierungsmuster vor Richtungsentscheidung – unter 25000 Punkte ist technisch wenig los, über 25470 würde sich ein neuer Impuls eröffnen.",
-     "detail": "Weygand beobachtet den DAX in einer Range zwischen 24630 und 25470 Punkten. Die aktuelle Seitwärtsbewegung könnte als Konsolidierung nach der vorherigen Rallye interpretiert werden. Die Markterwartung ist grundsätzlich positiv, doch eine konkrete Direktive für Long-Positionen ergibt sich erst nach Überwindung der 25470er-Marke. Unter 24630 Punkten könnte der DAX in eine tiefere Korrektur rutschen.",
-     "cross_refs": [
-      {
-       "typ": "news",
-       "quelle": "Der Aktionär - Märkte am Morgen",
-       "url": "",
-       "bezug": "DAX startet über 25.000 Punkte und zeigt Stärke nach Iran-Einigung; Geopolitische Entspannung unterstützt die Aktienmärkte."
-      }
-     ],
-     "kategorie": "chartanalyse",
-     "sec": 106,
-     "t": "01:46",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=106s"
-    },
-    {
-     "name": "Euro (EUR/USD)",
-     "ticker": "EURUSD=X",
-     "note": "Handelt in einer Box seitwärts; mittelfristig wird eine Aufwertung bei Überwindung der mehrjährigen Deckellinie bei 1.1120 erwartet.",
-     "figures": "1.1120 (mehrjährige Deckellinie)",
-     "tip": "Kursalarm bei Wochenschluss über 1.1120",
-     "einordnung": "Die Euro-Box ist klassisches Akkumulationsmuster vor Breakout – bei fundamentaler EZB-Straffung und US-Zinserwartungen bei 6,2% bleibt der EUR unter Druck, aber technisch reift ein Aufwärtssetup.",
-     "detail": "Der Euro befindet sich laut Weygand in einer engen Handelsspanne und wartet auf das Ausbruchsignal. Die mehrjährige Deckellinie bei 1.1120 ist das entscheidende Pivot – bricht der Euro hier durch, könnte eine mittelfristige Aufwertungsbewegung starten. Weygand empfiehlt, einen Kursalarm bei Wochenschluss über dieser Marke zu setzen, um nicht überraschend aus der Position geworfen zu werden. Die makroökonomische Kulisse (EZB-Zinserhöhung vs. US-Inflationserwartungen bei 6,2%) wird dabei als Hintergrund erwähnt.",
-     "cross_refs": [],
-     "kategorie": "chartanalyse",
-     "sec": 597,
-     "t": "09:57",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=597s"
-    },
-    {
-     "name": "Deutsche Börse",
-     "ticker": "DB1.DE",
-     "note": "Doppelboden bei 205 €, bullischer Keil, Anstieg zum Allzeithoch bei 294 € und darüber wird erwartet; Projektionsziel 340 €.",
-     "figures": "205 € (Unterstützung/Doppelboden), 294 € (Allzeithoch), 340 € (Projektionsziel)",
-     "tip": "Einstieg bei Rücksetzer auf 205 €, Ziel 340 €",
-     "einordnung": "Deutsche Börse zeigt klassisches bullisches Umkehrmuster – der Doppelboden bei 205 € ist eine solide Einstiegszone, und das Ziel 340 € bedeutet ein Aufwärtspotenzial von über 60 % vom aktuellen Niveau.",
-     "detail": "Weygand identifiziert einen Doppelboden bei 205 € als klassische Umkehrsformation. Ein bullischer Keil deutet auf Kaufdruck hin. Das Allzeithoch bei 294 € war das erste Ziel, dahinter eröffnet sich das Projektionsziel bei 340 €. Dies ist ein klassisches, technisch fundiertes Kaufsignal für Anleger, die bereit sind, einen Rücksetzer zur Einstiegslinie zu warten. Die Formation ist vollständig und die Konfluenz von Doppelboden + bullischem Keil + Allzeithoch-Durchbruch spricht für Fortsetzung.",
-     "cross_refs": [],
-     "kategorie": "chartanalyse",
-     "sec": 839,
-     "t": "13:59",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=839s"
-    },
-    {
-     "name": "Rheinmetall",
-     "ticker": "RHM.DE",
-     "note": "Mittelfristiger Abwärtstrend nach Triple-Top bei 1930 €; Verkäufer dominant, nächster Support bei 934 €, Key-Support bei 1481 €.",
-     "figures": "1930 € (Triple-Top-Hoch), 1481 € (Key-Support), 1270 € (Zwischenstützung), 934 € (nächster Support), Korrektur ca. 40 %",
-     "tip": "Abwarten; bei Zwang short Richtung 934 €",
-     "einordnung": "Rheinmetall ist ein lehrbuchhaftes Beispiel für einen gebrochenen Aufwärtstrend – das Triple-Top bei 1930 € ist definitiv gescheitert, und der Trend läuft nach unten aus, ohne dass eine Stabilisierung in Sicht ist.",
-     "detail": "Das Triple-Top bei 1930 € zeigt, dass Käufer es dreifach nicht über diese Marke schaffen – ein klassisches Zeichen für Trendumkehr. Weygand beobachtet dominante Verkäufer und ein intaktes Abwärtstrend-Setup. Der nächste Support bei 934 € markiert eine 40-prozentige Korrektur vom Hoch. Kurzfristig könnte der Key-Support bei 1481 € getestet werden, doch ohne Stabilisierung dort droht der weitere Fall. Für aggressive Short-Positionen bei Zwang könnte 934 € das Ziel sein. Für Long-Einstiege ist das Bild zu negativ; eine Stabilisierung oberhalb von 1481 € wäre Voraussetzung.",
-     "cross_refs": [
-      {
-       "typ": "news",
-       "quelle": "Der Aktionär - Märkte am Morgen",
-       "url": "",
-       "bezug": "Rheinmetall wird als volatiles Einzelwert erwähnt, der von geopolitischen Faktoren (Ukraine, Rüstung) abhängig ist und unter Druck steht."
-      }
-     ],
-     "kategorie": "chartanalyse",
-     "sec": 1051,
-     "t": "17:31",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1051s"
-    },
-    {
-     "name": "Alzchem",
-     "ticker": "ACM.DE",
-     "note": "Ausbruch über die Barriere bei 167 €, mittelfristiges Kaufsignal; Rücksetzer zum EMA 200 bei 155–160 € als Einstiegszone nutzen.",
-     "figures": "167 € (Barriere/Ausbruch), 203 €, 212 €, 250 € (Projektionsziele), EMA 200 bei 155–156 €",
-     "tip": "Rücksetzer auf EMA 200 (155–160 €) als Einstieg, Ziel 250 €",
-     "einordnung": "Alzchem zeigt ein sauberes prozyklisches Ausbruchsmuster – über 167 € ist die Tür offen, und der EMA 200 als Pullback-Zone bietet eine attraktive Einstiegsmöglichkeit mit geringem Risiko.",
-     "detail": "Weygand sieht bei Alzchem einen klaren Ausbruch über die Barriere bei 167 €. Dies ist ein mittelfristiges Kaufsignal. Der nächste technische Support befindet sich beim EMA 200 (Exponentieller Gleitender Durchschnitt über 200 Tage) bei etwa 155–156 €. Sollte die Aktie hier pullback-artig zurückkommen, bietet diese Zone eine Einstiegsmöglichkeit mit relativ tiehem Risiko und hohem Gewinn-Verlust-Verhältnis. Die Projektionsziele sind gestaffelt: 203 €, 212 € und schließlich 250 €. Die Aufwärtsdynamik ist intakt.",
-     "cross_refs": [],
-     "kategorie": "chartanalyse",
-     "sec": 1442,
-     "t": "24:02",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1442s"
-    },
-    {
-     "name": "IBEX 35 (Spanischer Leitindex)",
-     "ticker": "^IBEX",
-     "note": "Outperformance mit steigeendem Dreieck und bullischem Schulter-Kopf-Schulter (SKS); prozyklisches Kaufsignal – Harald hat diesen Index privat gekauft.",
-     "figures": "20520 €, 23160 € (Ziele)",
-     "tip": "Gekauft, Ziel 23160",
-     "einordnung": "Der IBEX 35 zeigt klassische europäische Outperformance gegen den DAX – das steigende Dreieck mit bullischem SKS ist ein starkes prozyklisches Setup, und Weygands private Investition unterstreicht das Vertrauen in die Formation.",
-     "detail": "Weygand hebt den spanischen IBEX 35 als seinen persönlichen europäischen Index-Favoriten hervor. Das steigende Dreieck (steigender unterer Rand bei parallelem oberen Widerstand) gilt als bullische Fortsetzungsformation. Hinzu kommt ein bullisches Schulter-Kopf-Schulter-Muster (SKS), das auf Aufwärtsbewegung hindeutet. Die Tatsache, dass Weygand diesen Index privat gekauft hat, spricht für seine Überzeugung. Die Ziele sind 20520 € (kurzfristiges Ziel) und 23160 € (mittelfristiges Ziel). Der IBEX profitiert auch von der spanischen Konjunkturstabilität und der niedrigeren Risikoprämie im Euro-Kontext.",
-     "cross_refs": [],
-     "kategorie": "chartanalyse",
-     "sec": 1720,
-     "t": "28:40",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1720s"
-    },
-    {
-     "name": "Freeport McMoRan",
-     "ticker": "FCX",
-     "note": "Ausbruch über eine Jahrzehnte alte Barriere bei 50 $, kurzfristig Shooting Star, aber langfristig bullisch; Ziele gestaffelt bis 107 $.",
-     "figures": "50 $ (Jahrzehnte-Barriere), 72 $ (Etappenziel), 101 $, 107 $ (weitere Ziele)",
-     "tip": "Nach Rücksetzer long, Ziel 107 $",
-     "einordnung": "Der Ausbruch über 50 $ ist ein historisch bedeutsamer Level – Freeport durchbricht eine decades-alte Resistenz, was langfristig stark bullisch ist, auch wenn es kurzfristig eine Shooting-Star-Warnung gibt.",
-     "detail": "Weygand markiert die 50-Dollar-Marke als eine jahrzehntelange Barriere für Freeport McMoRan – ein solch langjähriger Widerstand, wenn durchbrochen, signalisiert einen fundamentalen Trendwechsel. Der kurzfristige Shooting Star (eine Kerzenformation mit langem oberen Docht) ist ein Vorsicht-Signal, bedeutet aber nicht, dass der langfristige Trend umkehrt. Weygand rät, nach einem Rücksetzer wieder long zu gehen, mit staffelierten Zielen: zunächst 72 $, dann 101 $, schließlich 107 $. Das fundamentale Narrative ist die KI-Nachfrage nach Kupfer, wofür Freeport als Kupferproduzent perfekt positioniert ist.",
-     "cross_refs": [
-      {
-       "typ": "news",
-       "quelle": "BerneckerTV – KI trifft Robotik",
-       "url": "",
-       "bezug": "KI und Robotik treiben die Nachfrage nach Kupfer und anderen Rohstoffen massiv an – Freeport profitiert direkt als Major-Kupferproduzent."
-      }
-     ],
-     "kategorie": "chartanalyse",
-     "sec": 1996,
-     "t": "33:16",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=1996s"
-    },
-    {
-     "name": "Kupferpreis (US-Kupfer-Future)",
-     "ticker": "HG=F",
-     "note": "Steigendes Dreieck mit Ausbruch nach oben; Ziel bei 785 $, fundamental durch KI-Nachfrage gestützt.",
-     "figures": "504 $ (Oberkante Dreieck), 635 $ (Etappenziel), 785 $ (weiteres Ziel)",
-     "tip": "Bei Rücksetzer kaufen, Ziel 785 $",
-     "einordnung": "Kupfer zeigt das klassische prozyklische Dreieck-Breakout – technisch sauberes Kaufsignal, fundamental getragen durch den KI/Robotik-Superzyklus und Energiewende (Leitungen, Transformatoren, EV).",
-     "detail": "Das steigende Dreieck beim Kupferpreis ist eine Standardformation für bullische Fortsetzung: Der untere Rand der Dreieckskonsolidierung steigt (stärkere Käufer bei jeder Dips), der obere Rand (Widerstand bei ca. 504 $) wird schließlich durchbrochen. Das Ausbruchsziel wird klassisch berechnet: Höhe des Dreiecks zur Oberkante addiert, was hier bei etwa 785 $ landet. Fundamentalbetrachtung: KI erfordert massive Kupfermengen (für Infrastruktur, Leitungen, Transformatoren), Robotik-Boom verstärkt das weiter. Zwischenziele sind 635 $ (Etappe). Rücksetzer könnten gute Einstiegszonen darstellen.",
-     "cross_refs": [
-      {
-       "typ": "video",
-       "quelle": "BerneckerTV – KI trifft Robotik",
-       "url": "",
-       "bezug": "Hyperscaler investieren 380 Mrd. (2025) und 600 Mrd. (2026) in KI-Infrastruktur, was Kupfer-Nachfrage massiv befeuert."
-      }
-     ],
-     "kategorie": "chartanalyse",
-     "sec": 2418,
-     "t": "40:18",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=2418s"
-    },
-    {
-     "name": "Goldpreis",
-     "ticker": "GC=F",
-     "note": "Mittelfristige Korrektur nach finalem Ziel 4950–5000 $; EMA 200 unterschritten, Abwärtstrend vorerst intakt. Langfristig bullisch wegen Schuldenkrise.",
-     "figures": "5600 $ (Spike-Hoch), 4950–5000 $ (finales Ziel erreicht), EMA 200 bei 4371 $, Deckellinie 4570 $, Unterstützung 4100 $, möglicher Fall auf 3500 $",
-     "tip": "Abwarten, nächstes bullisches Signal abwarten",
-     "einordnung": "Gold zeigt klassische Post-Rally-Erschöpfung – das finale Ziel wurde erreicht, nun folgt Konsolidierung/Korrektur; langfristig bleibt das Bild bullisch wegen Verschuldung, kurzfristig aber Geduld geboten.",
-     "detail": "Weygand erklärt, dass Gold sein finales Ziel bei 4950–5000 $ erreicht hat und nun in eine Korrektionsphase eintritt. Der EMA 200 wurde unterschritten, was kurzfristig für Verkäufer spricht. Die Deckellinie bei 4570 $ könnte getestet werden, der nächste Support liegt bei 4100 $. Im schlimmsten Fall könnte Gold bis 3500 $ fallen. Allerdings bleibt das langfristige Bild bullisch: Staatliche Verschuldung, schwaches Vertrauen in Papierwährungen, und die EZB-Zinserhöhungen (die kurz- bis mittelfristig Gold drücken) sind nicht nachhaltig, da die Schuldenlast das System belastet. Langfristig gehört Gold zu den Profiteuren dieser Konstellation. Kurzfristig sollten Anleger aber Geduld haben und auf das nächste bullische Signal warten.",
-     "cross_refs": [
-      {
-       "typ": "news",
-       "quelle": "Der Aktionär - Märkte am Morgen",
-       "url": "",
-       "bezug": "Gold und Silber steigen trotz Ölrückgang nach Iran-Einigung, was zeigt, dass Safe-Haven-Nachfrage bleibt, aber Zinserhöhungen kurzfristig drücken."
-      }
-     ],
-     "kategorie": "chartanalyse",
-     "sec": 2717,
-     "t": "45:17",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=2717s"
-    },
-    {
-     "name": "Ölpreis (WTI Crude Oil)",
-     "ticker": "CL=F",
-     "note": "Ausbruch aus mehrjährigem Korrekturtrendkanal, aber aktuell hohe Volatilität durch Iran-Einigung; heute -4,8 %, Ziele bis 151 $ langfristig, kurzfristig Vorsicht.",
-     "figures": "70 $ (Ausbruch), 94 $, 115 $, 124 $, 151 $ (Ziele), heute -4,8 %",
-     "tip": "Füße stillhalten, beobachten",
-     "einordnung": "Öl ist gefangen zwischen technischem Ausbruchssignal (oben) und massiver geopolitischer Verunsicherung (Iran-Deal) – Weygands Rat zum Abwarten ist klug; die Volatilität bleibt zu hoch für sichere Positionierung.",
-     "detail": "Technisch hätte Öl einen interessanten Ausbruch aus dem mehrjährigen Korrekturtrendkanal bei ca. 70 $ gezeigt, mit Zielen bis 151 $. Doch fundamental ist die Situation extrem volatil: Die Iran-Einigung und teilweise Öffnung der Hormutz-Straße führen zu Ölpreis-Druck (heute -4,8 %). Gleichzeitig sind die strategischen US-Ölreserven (SPR) auf dem niedrigsten Niveau seit 1983, was den Handlungsspielraum begrenzt. Weygands Rat ist goldwert: ‚Füße stillhalten, beobachten'. Solange die geopolitische Klärung nicht eindeutig ist, bleibt ein Trade auf dem aktuellen Niveau zu riskant. Erst wenn sich die Markterwartungen zur Iran-Situation stabilisieren (entweder Eskalation oder tatsächliche Normalisierung), ergibt sich ein brauchbares Trade-Setup.",
-     "cross_refs": [
-      {
-       "typ": "news",
-       "quelle": "Tages-News",
-       "url": "",
-       "bezug": "USA und Iran unterzeichnen MoU, Hormuz teilweise geöffnet, Ölpreise fallen spürbar; Fitch erwartet Rückkehr zum globalen Ölüberangebot innerhalb eines Monats nach vollständiger Hormuz-Öffnung."
-      }
-     ],
-     "kategorie": "chartanalyse",
-     "sec": 3308,
-     "t": "55:08",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=3308s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "EZB hat Zinsen erhöht; US-Inflationserwartungen bei 6,2 %, Markt rechnet mit drei weiteren Zinserhöhungen ab Dezember – Druck auf risikoarme Assets wie Gold, Kursstabilität für Aktien.",
-     "sec": 474,
-     "t": "07:54",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=474s"
-    },
-    {
-     "text": "Goldpreis kurzfristig negativ durch Zinserhöhungen, aber langfristig bullisch wegen Schuldenkrise – Support 4100 $, Worst-Case-Fall auf 3500 $ möglich.",
-     "sec": 2930,
-     "t": "48:50",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=2930s"
-    },
-    {
-     "text": "Iran-Krise: Bei Einigung Ölpreis bis 70 $ fallend, bei Eskalation bis 140 $ oder sogar 200 $; strategische US-Ölreserven stark abgebaut, Spielraum begrenzt.",
-     "sec": 3166,
-     "t": "52:46",
-     "tlink": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=3166s"
-    }
-   ]
-  },
-  {
-   "channel": "BerneckerTV",
-   "playlist": "Börse & Aktien",
-   "id": "rKxoPJ-7WJ8",
-   "title": "KI trifft Robotik - Welche Aktien von einem Robotik-Boom profitieren | Daniel Sailer im Bernecker.TV",
-   "date": "20260615",
-   "url": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8",
-   "thumbnail": "https://i.ytimg.com/vi/rKxoPJ-7WJ8/hqdefault.jpg",
-   "summarized_at": "2026-06-15T18:42:54.714455+00:00",
-   "summary": "Im Video diskutiert Daniel Sailer (Metzler Asset Management) mit Moderator die Kombination von KI und Robotik als großen Wachstumstreiber. Er sieht aktuell keine KI-Blase (Vergleich Nvidia KGV 35 vs. Cisco KGV 130) und empfiehlt, in der Wertschöpfungskette auf Infrastruktur- und Hardwareunternehmen zu setzen. Deutsche Profiteure wie Infineon und Schaeffler werden genannt, ebenso die steigende Energienachfrage als Investmentchance.",
-   "items": [
-    {
-     "name": "Impressions of the segment and introduction",
-     "ticker": null,
-     "note": "Einleitung des Themas KI plus Robotik; Elon Musk sieht über 10 Milliarden Roboter bis 2040, Morgan Stanley eine Milliarde.",
-     "figures": "10 Milliarden Roboter bis 2040 (Elon Musk); 1 Milliarde Roboter bis 2040 (Morgan Stanley)",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 0,
-     "t": "00:00",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=0s"
-    },
-    {
-     "name": "AI as a turbocharger for robotics",
-     "ticker": null,
-     "note": "KI ist entscheidend für humanoide Roboter (physische KI); 90% der humanoiden Roboter werden aktuell in China produziert.",
-     "figures": "10 Milliarden Roboter bis 2040 (Musk); 1 Milliarde (Morgan Stanley); 90% Produktion in China",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 79,
-     "t": "01:19",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=79s"
-    },
-    {
-     "name": "AI on the stock market – an investment bubble?",
-     "ticker": null,
-     "note": "Vergleich mit Dotcom-Blase: Nvidia hat heute KGV 35 (vs. Cisco 130), daher keine Blase. Alphabet hat 460 Mrd. USD Auftragsbestand (Backlog).",
-     "figures": "KGV 130 (Cisco); KGV 35 (Nvidia); Alphabet: 80 Mrd. Kapitalerhöhung, 180 Mrd. Capex Q1, 460 Mrd. Auftragsbestand",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 166,
-     "t": "02:46",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=166s"
-    },
-    {
-     "name": "A nuanced perspective – not all AI is created equal",
-     "ticker": null,
-     "note": "Vorsicht bei reinen Large Language Models, besser auf KI-Infrastruktur setzen. Hyperscaler investieren massiv: 380 Mrd. (2025), 600 Mrd. (2026), 750 Mrd. (2027/28).",
-     "figures": "380 Mrd. USD Investitionen (2025); 600 Mrd. (2026); 750 Mrd. (2027/28)",
-     "tip": "Bei Large Language Models vorsichtig, Infrastrukturseite bevorzugen",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 307,
-     "t": "05:07",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=307s"
-    },
-    {
-     "name": "Robotics – \"powered by AI\"",
-     "ticker": null,
-     "note": "Robotik findet Anwendung in Automobilproduktion (BMW, Hyundai) und Dienstleistung (Pflege). Dienstleistungssektor macht 70% des Arbeitsmarktes aus.",
-     "figures": "70% Dienstleistungsanteil am Arbeitsmarkt",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 439,
-     "t": "07:19",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=439s"
-    },
-    {
-     "name": "Where does value creation occur in robotics?",
-     "ticker": null,
-     "note": "Wertschöpfung bei Robotern: KI-Chip nur 5%, Sensorik 37%, Mechanik/Struktur 60%. Deutsche Maschinenbauer profitieren. Tesla Optimus braucht 28 Gelenke.",
-     "figures": "5% KI-Chip; 37% Sensorik; 60% Mechanik; 28 Gelenke (Tesla Optimus)",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 538,
-     "t": "08:58",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=538s"
-    },
-    {
-     "name": "Product mention of \"Die Actien-Börse\" (The Stock Exchange)",
-     "ticker": null,
-     "note": "Hinweis auf neues Musterportfolio der Actien-Börse, Start Anfang Juni, Leser können Aufbau verfolgen.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 634,
-     "t": "10:34",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=634s"
-    },
-    {
-     "name": "German beneficiaries of the robotics trend",
-     "ticker": null,
-     "note": "Infineon kann ca. 500 USD pro Roboter umsetzen; Schaeffler peilt bis 2035 3 Mrd. EUR Umsatz mit Zukunftssystemen (Robotik, Rüstung, Raumfahrt) an.",
-     "figures": "500 USD pro Roboter (Infineon); 3 Mrd. EUR Umsatzziel bis 2035 (Schaeffler)",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 682,
-     "t": "11:22",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=682s"
-    },
-    {
-     "name": "How can a robotics story be written?",
-     "ticker": null,
-     "note": "Unternehmen sollten Kernkompetenzen auf neue Felder übertragen und selbst KI schnell adoptieren.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 774,
-     "t": "12:54",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=774s"
-    },
-    {
-     "name": "Robotics and sustainability",
-     "ticker": null,
-     "note": "Risiko von Arbeitsplatzverlusten; Uber-CEO prognostiziert Jobverlust für 9 Millionen Fahrer durch Robotaxis. Sozialverträgliche Implementierung nötig.",
-     "figures": "9 Millionen Uber-Fahrer",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 832,
-     "t": "13:52",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=832s"
-    },
-    {
-     "name": "Opportunities in the energy sector?",
-     "ticker": null,
-     "note": "Strombedarf wächst von 0,5% auf 2,5% p.a. (Verfünffachung); Chancen in Erzeugung, Netzen und Verteilung. Europäische Firmen wie Siemens Energy, Schneider Electric profitieren.",
-     "figures": "Strombedarfswachstum 0,5% auf 2,5% p.a.; 75% Neuzulassungen in Europa sind Hybrid/EV (Q1)",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 1014,
-     "t": "16:54",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=1014s"
-    },
-    {
-     "name": "Short-term market outlook",
-     "ticker": null,
-     "note": "Nvidia KGV 35, Forward PE 25; Gewinne müssen kommen. Empfehlung: schrittweise und diversifiziert investieren, nicht auf einzelne Themen setzen.",
-     "figures": "Nvidia KGV 35; Forward PE 25",
-     "tip": "Schrittweise und diversifiziert investieren; nicht auf Einzelthemen setzen",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 1162,
-     "t": "19:22",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=1162s"
-    },
-    {
-     "name": "Closing remarks",
-     "ticker": null,
-     "note": "Verabschiedung; Daniel Sailer ist über LinkedIn und metzler.com erreichbar.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 1312,
-     "t": "21:52",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=1312s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "KI-Aktien sind nach Einschätzung von Sailer keine Blase, da Gewinne mit Bewertung mitziehen (Vergleich Nvidia vs. Cisco).",
-     "sec": 166,
-     "t": "02:46",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=166s"
-    },
-    {
-     "text": "Strombedarf steigt massiv durch Elektrifizierung und KI-Rechenzentren; bietet Chancen entlang der Energie-Wertschöpfungskette.",
-     "sec": 1014,
-     "t": "16:54",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=1014s"
-    },
-    {
-     "text": "Robotik und KI können zu erheblichen Arbeitsplatzverlusten führen, was soziale Anpassungen erfordert.",
-     "sec": 832,
-     "t": "13:52",
-     "tlink": "https://www.youtube.com/watch?v=rKxoPJ-7WJ8&t=832s"
-    }
-   ]
-  },
-  {
-   "channel": "onvista",
-   "playlist": "Börse & Märkte LIVE",
-   "id": "yk-PSTDdgBQ",
-   "title": "Allianz, SpaceX, AMD: Kursziele, IPO-Fantasie und KI-Chancen",
-   "date": "20260615",
-   "url": "https://www.youtube.com/watch?v=yk-PSTDdgBQ",
-   "thumbnail": "https://i.ytimg.com/vi/yk-PSTDdgBQ/hqdefault.jpg",
-   "summarized_at": "2026-06-15T13:38:44.898975+00:00",
-   "summary": "Der DAX startet freundlich (+1,3%) in die Woche, gestützt durch eine mögliche Einigung zwischen den USA und dem Iran, die die Ölpreise drückt. Der Sprecher analysiert charttechnisch den Nasdaq 100 und S&P 500 als intakte Aufwärtstrends mit ABC-Korrekturen und sieht neues Allzeithoch-Potenzial. Einzelaktien wie Allianz, BE Semiconductor, AMD und Ferrari erhalten positive Analysten-Upgrades, während Rheinmetall, Nike und Netflix unter Druck bleiben.",
-   "items": [
-    {
-     "name": "DAX",
-     "ticker": null,
-     "note": "Der DAX startet freundlich mit +1,3% nach einer möglichen Einigung zwischen USA und Iran.",
-     "figures": "+1,3%",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 0,
-     "t": "00:00",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=0s"
-    },
-    {
-     "name": "Dax (Marktkommentar)",
-     "ticker": null,
-     "note": "Der Markt reagiert positiv auf die Entspannung im Nahen Osten und fallende Ölpreise. Der Sprecher erwartet für den S&P 500 ein Jahresendziel von 7700 Punkten, sieht dies aber als eher konservativ an.",
-     "figures": "S&P 500 Jahresendziel 7700 Punkte",
-     "tip": "",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 65,
-     "t": "01:05",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=65s"
-    },
-    {
-     "name": "Rheinmetall",
-     "ticker": null,
-     "note": "Rheinmetall steht weiter unter Druck, unter anderem wegen möglicher Budgetkürzungen in Frankreich und dem Ausstieg aus gemeinsamen Rüstungsprojekten. Der sprecher ist vorsichtig und hat Positionen abgebaut.",
-     "figures": "KGV 29; unter 1000 € möglich",
-     "tip": "Vorsichtig sein, weitere Abwärtsbewegung möglich",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 625,
-     "t": "10:25",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=625s"
-    },
-    {
-     "name": "Allianz",
-     "ticker": null,
-     "note": "Allianz zeigt einen starken charttechnischen Aufwärtstrend. Berenberg hat das Kursziel deutlich auf 684 EUR angehoben. Ein möglicher Zukauf des HSBC-Versicherungsgeschäfts in Singapur (ca. 2 Mrd. USD) wird positiv gesehen.",
-     "figures": "Kursziel Berenberg 684 €; Dividendenrendite ~5%",
-     "tip": "Kursziel 460 € (charttechnisch); Einstieg bei Ausbruch über 400 €",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 898,
-     "t": "14:58",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=898s"
-    },
-    {
-     "name": "BE Semiconductor",
-     "ticker": null,
-     "note": "BE Semiconductor erhält positive Analystenkommentare (JPMorgan Kursziel 342 €, Barclays 270 €). Das Unternehmen meldet ein starkes erstes Quartal mit einem Auftragseingang von 270 Mio. € (+100%). Das PEG-Verhältnis ist von 2 auf 1,2 gesunken.",
-     "figures": "Kursziel JPMorgan 342 €, Barclays 270 €; Q1 Aufträge 270 Mio. €; Q2 Umsatzplus 30-40% zum Vorquartal; KGV 66/67; PEG 1,2",
-     "tip": "Rücksetzer unter 300 € (Bereich 285-290 €) könnten kaufenswert sein",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 1223,
-     "t": "20:23",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=1223s"
-    },
-    {
-     "name": "Novo Nordisk",
-     "ticker": null,
-     "note": "UK-Zulassung für die Vegovi-Pille wird positiv bewertet. In einer Phase-3-Studie (Oasis 4) wurde ein Gewichtsverlust von 14% in 64 Wochen erzielt. Charttechnisch ist die Aktie in einer bullischen Konsolidierung und hat Aufholpotenzial gegenüber Eli Lilly.",
-     "figures": "14% Gewichtsverlust in 64 Wochen (25 mg Dosierung); 10.000+ Patienten Warteliste in UK",
-     "tip": "Ausbruch über 40 € wäre positives Signal",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 1531,
-     "t": "25:31",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=1531s"
-    },
-    {
-     "name": "Ferrari",
-     "ticker": null,
-     "note": "Morgan Stanley stuft Ferrari von Equal Weight auf Overweight hoch und erhöht das Kursziel auf 438 $ (ca. 380 €). Der Abverkauf nach dem neuen E-Modell (Lutscher) wird als übertrieben angesehen. Der Chart zeigt eine inverse SKS mit Nackenlinie bei 375 €.",
-     "figures": "Kursziel Morgan Stanley 438 $ / ca. 380 €; altes Kursziel 330 €",
-     "tip": "Kursziel 380 € (charttechnisch deckungsgleich mit Morgan Stanley); Einstieg bei Ausbruch über das letzte Zwischenhoch",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 1743,
-     "t": "29:03",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=1743s"
-    },
-    {
-     "name": "McDonald's / Coca-Cola",
-     "ticker": null,
-     "note": "McDonald's erwägt eine Erweiterung des Getränkeangebots (Energy Drinks, Custom Sodas), um jüngere Kunden anzusprechen. Der Chart zeigt ein Doppeltief bei 270 $ und einen Ausbruch über die Abwärtstrendlinie. Das KGV ist auf dem Niveau von 2024-Tiefs.",
-     "figures": "McDonald's 12-Monats-Performance -6%; Coca-Cola +17%; KGV auf 3-Jahres-Tief",
-     "tip": "Erstes Kursziel 310 $; Einstieg bei Ausbruch über 290 $",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 1980,
-     "t": "33:00",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=1980s"
-    },
-    {
-     "name": "Jabil",
-     "ticker": null,
-     "note": "Jabil legt am Mittwoch Zahlen vor. Erwartet werden ein Umsatz zwischen 8,1 und 8,9 Mrd. $ (Konsens 8,6 Mrd.) und ein Gewinn über 3,10 $. Insider haben in den letzten 3 Monaten Aktien im Wert von 14 Mio. $ verkauft.",
-     "figures": "Q3 Umsatz: 8,28 Mrd. $ (+23%); Gewinn: 2,69 $ (+39%); Guidance Q3: 8,1-8,9 Mrd. $; Analystenerwartung Q3 Gewinn: 3,10 $; Insiderverkäufe: 14 Mio. $ in 3 Monaten; Kursziel Raymond James 425 $; Goldman Sachs 384 $",
-     "tip": "Nicht vor den Zahlen einsteigen; Sollte die Guidance angehoben werden, sind Kurse über 400 $ möglich",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 2290,
-     "t": "38:10",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=2290s"
-    },
-    {
-     "name": "Nike",
-     "ticker": null,
-     "note": "Nike steht weiter unter Druck. RBC hat die Aktie von Outperform auf Sector Perform zurückgestuft und das Kursziel um fast 30% auf 50 $ gesenkt. Der Sprecher sieht eine hohe Wahrscheinlichkeit für weitere Verluste bis unter 40 $.",
-     "figures": "Kursziel RBC 50 $; Aktie am Freitag -2,2%",
-     "tip": "Vorsichtig, weiteres Abwärtspotenzial möglich",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 2578,
-     "t": "42:58",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=2578s"
-    },
-    {
-     "name": "SpaceX",
-     "ticker": null,
-     "note": "SpaceX notiert im vorbörslichen Handel bei +5% (ca. 160 $). Der Sprecher erwartet nach dem First-Day-Pop von 20% eine Abkühlung wie bei vergangenen IPOs. Elon Musk prognostiziert einen Umsatz von 1 Billion $ bis 2030, was als extrem optimistisch eingeschätzt wird.",
-     "figures": "IPO-Preis 135 $; Schlusskurs Freitag 161 $ (+20%); Marktkapitalisierung 2 Billionen $; Umsatz 2024: 14 Mrd. $; 2025: 18,7 Mrd. $; Morgan Stanley Umsatzprognose 2030: 330 Mrd. $; Goldman Sachs: 470 Mrd. $",
-     "tip": "Abwarten, Einstiegsbereich in den nächsten Wochen/Monaten zu tieferen Kursen erwarten",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 2724,
-     "t": "45:24",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=2724s"
-    },
-    {
-     "name": "AMD",
-     "ticker": null,
-     "note": "Citi stuft AMD von Neutral auf Buy hoch und hebt das Kursziel von 460 $ auf 575 $. Der Sprecher sieht charttechnisch höhere Kursziele von 610-650 $. Begründet wird das mit steigendem Potenzial im GPU-Markt und Meta als potenziellem Großkunden.",
-     "figures": "Kursziel Citi 575 $; KGV 60; PEG Ratio etwa 1; charttechnisches Ziel 610-650 $",
-     "tip": "Kaufen; Kursziel 575 $ (Citi) bis 650 $ (charttechnisch); auf News von Meta als GPU-Kunde achten",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 3236,
-     "t": "53:56",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=3236s"
-    },
-    {
-     "name": "Reddit",
-     "ticker": null,
-     "note": "Reddit wird vom Sprecher charttechnisch als schwach eingestuft. Die Aktie zeigt ein dominierendes Abwärtsmomentum und eine lange Konsolidierung auf dem 50%-Retracement.",
-     "figures": "",
-     "tip": "Kein Interesse; nicht kaufen",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 3488,
-     "t": "58:08",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=3488s"
-    },
-    {
-     "name": "Netflix",
-     "ticker": null,
-     "note": "Netflix ist erneut unter Druck und testet die Tiefs. Eine Bodenbildung ist möglich, aber charttechnisch ist die Situation katastrophal. Ein Bruch unter die Tiefs könnte zu Kursen von 40-50 $ führen.",
-     "figures": "",
-     "tip": "Abwarten; bei Bruch unter die Tiefs aussteigen; erstes Ziel: Ausbruch über die Abwärtstrendlinie",
-     "einordnung": "",
-     "detail": "",
-     "cross_refs": [],
-     "kategorie": "sonstiges",
-     "sec": 3607,
-     "t": "60:07",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=3607s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "Mögliche Einigung zwischen USA und Iran drückt Ölpreise (WTI zwischen 78,50 und 82 $) und stützt die Märkte. Fed-Sitzung am Mittwoch erwartet keine Zinserhöhung.",
-     "sec": 65,
-     "t": "01:05",
-     "tlink": "https://www.youtube.com/watch?v=yk-PSTDdgBQ&t=65s"
-    }
-   ]
-  },
-  {
-   "channel": "Der Aktionär - Märkte am Morgen",
-   "playlist": "Märkte am Morgen",
-   "id": "GAF_7ULoiQ0",
-   "title": "Märkte am Morgen: Öl, Gold, Bitcoin, Softbank, SpaceX, Infineon, Lufthansa, TUI, Rheinmetall, ASML",
-   "date": "20260615",
-   "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0",
-   "thumbnail": "https://i.ytimg.com/vi/GAF_7ULoiQ0/hqdefault.jpg",
-   "summarized_at": "2026-06-15T06:38:46.892468+00:00",
-   "summary": "Ein gemeldeter Friedensdurchbruch zwischen den USA und dem Iran — Vertragsunterzeichnung soll am Freitag erfolgen — versetzt die Weltbörsen in Euphorie. Der DAX startet über 25.000 Punkte, Nikkei und Kospi legen kräftig zu, der S&P 500 zeigt Stärke. Ölpreise geben nach, Gold und Silber steigen. Im Mittelpunkt der Einzelwerte steht das spektakuläre SpaceX-IPO, daneben Profiteure wie Lufthansa und TUI sowie Gegenläufer wie Rheinmetall.",
-   "items": [
-    {
-     "name": "Marktüberblick / DAX",
-     "ticker": "^GDAXI",
-     "note": "Der Iran-USA-Friedensdeal treibt die Märkte: DAX erwartet über 25.000 Punkte zum Handelsstart, Wall Street hatte bereits am Freitag zugelegt und dürfte erneut im Plus eröffnen.",
-     "figures": "DAX über 25.000 Punkte",
-     "tip": "",
-     "einordnung": "Ein geopolitischer Entspannungsschock dieser Größenordnung kann kurzfristig erhebliche Kursprünge auslösen — die Frage ist stets, wie viel bereits eingepreist war. Nach dem Freitags-Run sollte man Anschlusskäufe auf Rücksetzer-Basis bevorzugen.",
-     "kategorie": "makro",
-     "sec": 35,
-     "t": "00:35",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=35s"
-    },
-    {
-     "name": "Gold",
-     "ticker": "GC=F",
-     "note": "Gold steigt trotz Entspannung — der Host nennt Agnico Eagle als konkreten Kaufkandidaten im Goldminenbereich.",
-     "figures": "",
-     "tip": "Agnico Eagle als Kaufkandidat genannt",
-     "einordnung": "Interessant, dass Gold auch im Risk-on-Umfeld steigt — das zeigt die strukturelle Nachfrage von Notenbanken und Anleger. Agnico Eagle (AEM) gehört zu den qualitativ hochwertigsten Seniors im Minensektor, das ist eine vernünftige Präferenz.",
-     "kategorie": "news",
-     "sec": 87,
-     "t": "01:27",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=87s"
-    },
-    {
-     "name": "Agnico Eagle Mines",
-     "ticker": "AEM",
-     "note": "Vom Host als Goldminenempfehlung im Umfeld steigender Goldpreise genannt.",
-     "figures": "",
-     "tip": "Kaufkandidat laut Host",
-     "einordnung": "Agnico Eagle überzeugt seit Jahren mit stabiler Produktion und solider Bilanz — im Vergleich zu Barrick oder Newmont der konservativere, aber zuverlässigere Ansatz.",
-     "kategorie": "fundamental",
-     "sec": 87,
-     "t": "01:27",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=87s"
-    },
-    {
-     "name": "Öl (Brent/WTI)",
-     "ticker": "CL=F",
-     "note": "Ölpreise stehen nach dem Iran-Deal deutlich unter Druck — eine über 100 Tage dauernde Blockade könnte sich auflösen und die Versorgung normalisieren.",
-     "figures": "Blockade über 100 Tage",
-     "tip": "",
-     "einordnung": "Sinkende Ölpreise sind ein zweischneidiges Schwert: gut für Verbraucher, Airlines und Chemie — aber Energietitel und OPEC+ geraten unter Druck. Die Angebotsausweitung durch iranisches Öl könnte den Preis strukturell belasten.",
-     "kategorie": "makro",
-     "sec": 139,
-     "t": "02:19",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=139s"
-    },
-    {
-     "name": "Bitcoin",
-     "ticker": "BTC-USD",
-     "note": "Bitcoin befindet sich in einer Aufwärtsbewegung, zeitweise über 66.000 $ gesehen; leichte Gewinnmitnahmen werden als möglich eingestuft.",
-     "figures": "über 66.000 $",
-     "tip": "",
-     "einordnung": "Bitcoin profitiert im Risk-on-Modus klassischerweise mit. Das Niveau um 66.000 $ ist charttechnisch relevant — ein nachhaltiger Ausbruch darüber wäre ein positives Signal, scheitert er, droht Konsolidierung.",
-     "kategorie": "chartanalyse",
-     "sec": 182,
-     "t": "03:02",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=182s"
-    },
-    {
-     "name": "Nikkei 225",
-     "ticker": "^N225",
-     "note": "Japanische Börse mit deutlichen Gewinnen, getrieben von Technologie- und KI-Werten; zeitweise über 4 % Zuwachs.",
-     "figures": "über 4 %",
-     "tip": "",
-     "einordnung": "Ein Tagesgewinn von über 4 % im Nikkei ist ungewöhnlich stark — das signalisiert, wie groß das geopolitische Relief-Momentum ist. KI-Werte wie Softbank verstärken den Effekt.",
-     "kategorie": "news",
-     "sec": 206,
-     "t": "03:26",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=206s"
-    },
-    {
-     "name": "Softbank",
-     "ticker": "9984.T",
-     "note": "Softbank legt deutlich zu und ist einer der Haupttreiber der starken japanischen Börse.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "Softbank ist durch seine KI- und Tech-Beteiligungen (u.a. Arm Holdings) ein hochvolatiler Beta-Wert — in Risk-on-Phasen überdurchschnittliche Gewinne, in Korrekturen entsprechend heftige Verluste.",
-     "kategorie": "news",
-     "sec": 235,
-     "t": "03:55",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=235s"
-    },
-    {
-     "name": "S&P 500",
-     "ticker": "^GSPC",
-     "note": "Freitag war laut Host ein starker Tag für den S&P 500, u.a. befeuert durch das SpaceX-IPO; heute erneut klare Gewinne erwartet.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "Der S&P 500 im Aufwind durch geopolitische Entspannung und ein Mega-IPO — das ist eine selten günstige Kombination. Kurzfristig bullish, aber Vorsicht vor überkauften Signalen.",
-     "kategorie": "news",
-     "sec": 258,
-     "t": "04:18",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=258s"
-    },
-    {
-     "name": "SpaceX",
-     "ticker": null,
-     "note": "SpaceX-IPO geglückt: zeitweise 35 % über Ausgabekurs, Schluss bei +19 %, am Folgetag vorbörslich weitere 5 % im Plus. Damit avanciert SpaceX zum wertvollsten Unternehmen der Welt mit einer Bewertung von knapp über 2 Billionen Dollar.",
-     "figures": "IPO-Tag: +35 % intraday, Schluss +19 % über Ausgabekurs; Folgetag: +5 % vorbörslich; Marktkapitalisierung: knapp über 2 Billionen USD",
-     "tip": "Host: Zeichnungsgewinne kurzfristig mitnehmen; langfristig für Space-Economy-Exposition halten",
-     "einordnung": "Eine Bewertung von 2 Billionen USD für ein Unternehmen, das weder profitabel im klassischen Sinne ist noch börsennotierte Vergleichswerte hat, ist ambitioniert — erinnert an die Tesla-Euphorie 2020/21. Die Space Economy ist real, aber solche Ersttagsprämien verdampfen historisch oft schnell. Der Host-Hinweis, Zeichnungsgewinne zu sichern, ist vernünftig.",
-     "kategorie": "fundamental",
-     "sec": 269,
-     "t": "04:29",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=269s"
-    },
-    {
-     "name": "Infineon Technologies",
-     "ticker": "IFX.DE",
-     "note": "Charttechnisch stark mit kaum nennenswerter Korrektur; KI-Fantasie treibt den Wert, hat sich in kurzer Zeit mehr als verdoppelt.",
-     "figures": "mehr als verdoppelt in kurzer Zeit",
-     "tip": "Anleger greifen laut Host zu",
-     "einordnung": "Infineon als KI-Profiteur über Leistungshalbleiter und Power-Management ist fundamental nachvollziehbar. Eine Verdopplung in kurzer Zeit erhöht jedoch das Rückschlagrisiko — hier sollte man Gewinne mit Trailing-Stops absichern.",
-     "kategorie": "chartanalyse",
-     "sec": 376,
-     "t": "06:16",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=376s"
-    },
-    {
-     "name": "Lufthansa",
-     "ticker": "LHA.DE",
-     "note": "Profitiert doppelt: sinkende Kerosinpreise durch fallenden Ölpreis und geopolitische Entspannung. Charttechnisch überwindet der Kurs einen Widerstand; nächstes Ziel ist eine Kurslücke bei ca. 9 €.",
-     "figures": "Kurslücke bei ca. 9 €",
-     "tip": "Kursziel Lücke bei ca. 9 €",
-     "einordnung": "Lufthansa ist der klassische Ölpreis-Profiteur — jeder Rückgang der Kerosinkosten wirkt direkt auf die ohnehin dünnen Margen. Das charttechnische Kursziel von 9 € ist plausibel, die strukturellen Probleme (Streikrisiko, hohe Schulden) bleiben aber.",
-     "kategorie": "chartanalyse",
-     "sec": 399,
-     "t": "06:39",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=399s"
-    },
-    {
-     "name": "TUI",
-     "ticker": "TUI1.DE",
-     "note": "Vorbörslich deutlich im Plus — profitiert von der Kombination aus geopolitischer Entspannung (Nahost) und sinkenden Ölpreisen.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "TUI als Reiseveranstalter ist ein direkter Geopolitik-Beta-Wert: Entspannung im Nahen Osten öffnet potentiell Reiseziele und senkt Kerosinkosten. Das ist kurzfristig eindeutig positiv, strukturell bleibt TUI aber ein Sanierungsfall mit hoher Schuldenquote.",
-     "kategorie": "news",
-     "sec": 471,
-     "t": "07:51",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=471s"
-    },
-    {
-     "name": "Rheinmetall",
-     "ticker": "RHM.DE",
-     "note": "Unter Druck: Friedenshoffnung dämpft die Rüstungsfantasie, zusätzlich Sorgen um das deutsch-französische Panzer-Joint-Venture und mögliche Mittelkürzungen.",
-     "figures": "",
-     "tip": "",
-     "einordnung": "Das ist die Kehrseite des Friedens-Trades — wer von Rüstungsausgaben profitiert, leidet bei Deeskalation. Rheinmetall hatte eine beispiellose Rally; eine Konsolidierung ist nach diesem Katalysator fundamental erklärbar. Langfristig bleibt die Bundeswehr-Modernisierung ein struktureller Treiber, kurzfristig ist Geduld gefragt.",
-     "kategorie": "news",
-     "sec": 483,
-     "t": "08:03",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=483s"
-    },
-    {
-     "name": "ASML Holding",
-     "ticker": "ASML",
-     "note": "Neues Rekordhoch vorbörslich; volle Auftragsbücher, Analysten rechnen für das nächste Jahr mit 90 ausgelieferten Anlagen (vs. zuletzt ~80) und 15–20 % Umsatzwachstum.",
-     "figures": "80 Anlagen aktuell, ~90 Anlagen nächstes Jahr erwartet; Wachstumsprognose 15–20 %",
-     "tip": "",
-     "einordnung": "ASML ist und bleibt das Monopol im EUV-Segment — kein Wettbewerber in Sichtweite. Rekordstände auf Rekordkurs bei solcher Visibilität der Auftragslage sind fundamental gerechtfertigt. Das erinnert an die Nvidia-Dynamik: solange der KI-Investitionszyklus läuft, bleibt ASML alternativlos.",
-     "kategorie": "fundamental",
-     "sec": 540,
-     "t": "09:00",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=540s"
-    }
-   ],
-   "macro": [
-    {
-     "text": "USA und Iran haben einen Friedensdurchbruch erzielt — Vertragsunterzeichnung am Freitag erwartet; dies normalisiert die Ölversorgung, senkt die Energiepreise und löst weltweit einen Risk-on-Impuls aus.",
-     "sec": 35,
-     "t": "00:35",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=35s"
-    },
-    {
-     "text": "Sinkende Ölpreise durch Iran-Deal reduzieren den Inflationsdruck und könnten Notenbanken (Fed, EZB) Spielraum für eine lockerere Zinspolitik geben.",
-     "sec": 139,
-     "t": "02:19",
-     "tlink": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=139s"
     }
    ]
   }
