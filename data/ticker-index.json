@@ -1,6 +1,463 @@
 {
- "updated": "2026-07-07T18:36:13.428850+00:00",
+ "updated": "2026-07-08T06:36:50.744471+00:00",
  "ticker": {
+  "MU": {
+   "name": "Micron Technology",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=130s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Volatil, bleibt auf der Empfehlungsliste, aber der Stoppkurs rückt näher. Host betont, dass man die Position diszipliniert begleiten muss.",
+     "einordnung": "Micron ist ein klassischer Speicherzykler — wenn der Stopp bei 856 USD greift, ist das kein Schaden, sondern Risikomanagement. Wer hier nicht konsequent ist, wird im nächsten Downcycle bestraft.",
+     "figures": "Kursziel ~1.200 USD; Stopp 856 USD"
+    },
+    {
+     "date": "2026-07-03",
+     "video_id": "wVQZI7oZ9mQ",
+     "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ",
+     "channel": "onvista",
+     "kategorie": "sonstiges",
+     "note": "Michael Burry shortet bei 1.050 $. Aktie fiel von 1.154 $ auf 975 $, heute +6%. Bewertung extrem günstig: KGV 7, PEG 0,04. Technisches Kursziel 1.500-1.550 $.",
+     "einordnung": "",
+     "figures": "Burry Short 1.050 $, aktuell 975 $, KGV 7, PEG 0,04, Kursziel 1.500-1.550 $"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=208s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Korrekturbewegung nach unten als Teil einer branchenweiten Konsolidierung bei Chipwerten. Weiß sieht keinen Grund zur Sorge.",
+     "einordnung": "Die Chip-Konsolidierung ist nach dem massiven AI-Hype gesund und normal. Micron als Speicherchipspezialist ist ohnehin zyklischer als die Logik-Chip-Anbieter — Schwankungen gehören hier zum Geschäfts…"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=2779s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Langfristiger Liefervertrag mit GM. Extrem günstige Bewertung mit KGV 7,2 und PEG 0,04. Starke Nachfrage und Preissteigerungen.",
+     "einordnung": "Micron ist ein klassischer Zykliker, der gerade von der KI-Nachfrage profitiert. Das PEG von 0,04 ist absurd günstig, aber man muss den Zyklus verstehen.",
+     "figures": "KGV 7,2, PEG 0,04, Kurs von 300 auf 1.200 $ (historisch)"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "mNobFjJKrNE",
+     "url": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=130s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Host bleibt beim Speichermedien-Favoriten überzeugt, bezeichnet die Aktie aber als volatil und rät zu einem vorsichtigeren Einstieg.",
+     "einordnung": "Micron ist ein klassischer Zyklus-Titel im HBM-Speicher-Boom — die Volatilität ist hier kein Bug, sondern ein Feature der Speicherchips. Wer das Kursziel von knapp 120 USD teilt, sollte Schwächen als…",
+     "figures": "Kursziel 119,7 USD"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=355s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Bombenzahlen und super Ausblick, aber die Aktie gab Gewinne nach anfänglichem Anstieg ab. Haidt sieht darin ein Zeichen für KI-Müdigkeit.",
+     "einordnung": "Dass Micron trotz starker Zahlen nicht hält, ist ein klassisches 'Buy the rumor, sell the news'-Phänomen. Der Speicherchip-Zyklus ist intakt, aber der Markt fragt sich, ob das KI-Wachstum bereits ein…"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "F6cTDl0_v6Q",
+     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=0s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Micron pulverisiert mit seinen Quartalszahlen alle Schätzungen. Der Host hebt die massive Umsatzprognose von 50 Mrd. USD gegen einen Konsens von 43,7 Mrd. USD hervor, angetrieben durch rasant steigen…",
+     "einordnung": "Die Zahlen bestätigen eindrucksvoll, dass der KI-Speicherzyklus in der Frühphase ist. Bei einem KGV von 8 für 2026/27 erscheint die Bewertung moderat, vorausgesetzt die DRAM-Preise halten. Das Kurszi…",
+     "figures": "Umsatzprognose Q3: 50 Mrd. USD vs. Konsens 43,7 Mrd. USD; Consumer DRAM-Preise Q2 +55-60%, Q3 +35-40%; KGV 8 für GJ 2026/27; Kursziel 1300-1400 USD"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=191s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Fulminante Quartalszahlen begeistern den Markt: Umsatz und Nettogewinn legen stark zu, die Margen übertreffen sogar Nvidia.",
+     "einordnung": "Micron ist der direkte Nutznießer des KI-Booms im Speicherchip-Segment — die Zahlen belegen, dass die Nachfrage nach HBM-Speichern für KI-Anwendungen massiv skaliert. Die Bewertung hat sich durch die…",
+     "figures": "41 Mrd. USD Umsatz, 28 Mrd. USD Nettogewinn"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=264s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Micron überzeugt mit starken Quartalszahlen: 75 Prozent Umsatzwachstum auf 41 Milliarden Dollar, Nettogewinn von 28 Milliarden Dollar. Der Kurs steigt nachbörslich um 17 Prozent.",
+     "einordnung": "Ein 75-prozentiges Umsatzwachstum demonstriert, dass der KI-getriebene Speicherzyklus in voller Blüte steht. Die nachbörsliche Reaktion von plus 17 Prozent zeigt, dass der Markt Ausführung belohnt —…",
+     "figures": "75% Wachstum, 41 Mrd. USD Umsatz, 28 Mrd. USD Nettogewinn, +17% nachbörslich"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1408s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Micron überzeugt mit starken Q3-Zahlen (Rekordumsatz, Gewinnschub) und einem deutlich angehobenen Ausblick; Aktie springt auf 1200$.",
+     "einordnung": "Micron liefert das starke Fundament, das die Halbleiter-Euphorie rechtfertigt — Rekordumsatz, explodierende Margen und ein Ausblick, der den KI-Investitionszyklus bestätigt. Die Bewertung ist hoch, a…",
+     "figures": "Umsatz Q3 41,46 Mrd. $ (Erwartung 35,7 Mrd.), Gewinn/Aktie 25,11$ (20,50$ erwartet), Bruttomarge 84,9%, Ausblick Q4: Umsatz 50 Mrd. $, Gewinn 31$; Kursziel 1254$, danach 1715$"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "04yYuesQS4g",
+     "url": "https://www.youtube.com/watch?v=04yYuesQS4g&t=182s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Quartalszahlen stehen heute Abend nach US-Handelsschluss an. Micron hat in den vergangenen vier Quartalen die Konsensschätzungen jeweils um über 20% geschlagen — die Messlatte liegt entsprechend hoch.",
+     "einordnung": "Micron ist der Stimmungsbarometer für den Speicherzyklus. Werden die Zahlen enttäuschen, dürfte das den gesamten Chip-Sektor kurzfristig belasten — das erinnert an die Saison 2018, als Micron nach st…",
+     "figures": "Schätzung in letzten 4 Quartalen um über 20% übertroffen (21%)"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "t04FPU9gZbI",
+     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=3151s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Micron -6,23% vorbörslich, aber +300% seit Jahresbeginn. Kooperation mit Anthropic, Needham hebt Kursziel von 500 auf 1.550 $. KGV von 11, Potenzial auf 16.",
+     "einordnung": "Ein Kursziel von 1.550 $ nach einer Verdopplung von 500 $ ist eine drastische Anhebung, die die KI-Speicher-Story unterstreicht. Mit einem KGV von 11 und Potenzial auf 16 ist Micron trotz +300% YTD n…",
+     "figures": "-6,23%, YTD +300%, Kursziel 1.550 $, KGV 11"
+    }
+   ]
+  },
+  "CL=F": {
+   "name": "WTI Öl",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=192s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Ölpreis steigt aufgrund eskalierender Spannungen im Nahen Osten — Iran beschießt ein Schiff, USA greifen 80 Ziele an. WTI kehrt über 70 USD zurück.",
+     "einordnung": "Der Nahost-Eskalationspfad ist der klassische Geopolitik-Prämien-Treiber für Öl. Über 70 USD ist zunächst nur eine Normalisierung nach dem überverkauften Zustand der Vorwochen — erst bei 80+ USD wird…",
+     "figures": "WTI über 70 USD"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1553s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Kurzfristiger Anstieg durch geopolitische Spannungen — Angriffe in der Straße von Hormuz. Insgesamt bleibt Haidt bärisch, sieht aber kurzfristige Risiken.",
+     "einordnung": "Die geopolitische Prämie ist berechtigt, aber der fundamentale Überhang bei der Ölversorgung drückt den Preis strukturell. Ein bärisches Basisszenario mit geopolitischen Kurzfrist-Risiken ist die rea…"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1141s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Fällt, hat das Niveau von vor dem Irankrieg erreicht. Haidt sieht eine klare Talfahrt.",
+     "einordnung": "Der Ölpreis gibt die Kriegsprämie komplett zurück – das ist ein klares Signal, dass der Markt eine Eskalation im Iran-Konflikt nicht mehr einpreist. Für Inflationsaussichten ist das positiv, für Ölpr…",
+     "figures": "2,24 (Preisniveau)"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=78s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Ölpreis fällt weiter auf rund 72 Dollar und liegt damit unter dem Niveau zum Kriegsausbruch, getrieben von Hoffnung auf eine Waffenruhe im Nahen Osten und anhaltendem Überangebot.",
+     "einordnung": "Die Rückkehr des Ölpreises auf Vorkriegsniveau ist ein deutliches Disinflationssignal — die Rotation zugunsten verbrauchsnaher und transportabhängiger Sektoren läuft weiter. Solange das Überangebot b…",
+     "figures": "72 USD"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1277s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "US-Rohölvorräte sanken um 6,1 Mio. Barrel auf 412 Mio. Barrel, liegen 7% unter 5-Jahres-Schnitt; Preise weiter unter Druck.",
+     "einordnung": "Sinkende Lagerbestände bei gleichzeitig fallenden Preisen ist ein ungewöhnliches Signal — es deutet darauf hin, dass das Angebot trotz sinkender Vorräte den Markt dominiert. Die Entspannung im Nahen…",
+     "figures": "-6,1 Mio. Barrel (Woche bis 19. Juni), 412 Mio. Barrel (Lagerbestand)"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "9G1WNKY6uuY",
+     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY&t=3104s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "WTI-Rohöl korrigiert; Unterstützungen bei 65 und 55-56 Dollar. Langfristig sieht Harry Potential für höhere Preisniveaus.",
+     "einordnung": "Der Ölpreis ist der Treiber für alle Öl-Aktien. Harrys langfristig bullische Sicht wird durch die geopolitischen Risiken gestützt – die schrumpfenden US-Reserven und die Iran-Spannungen sind reale Ve…",
+     "figures": "65, 55, 56, 115"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=137s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "60-Tage-Fahrplan zur Deeskalation vereinbart, aber Ölpreis behält Risikoprämie. Brent-Future -1,4%.",
+     "einordnung": "Die Entspannung reduziert akutes Eskalationsrisiko, doch die Risikoprämie bleibt – ein klassisches Muster bei geopolitischen Pausen. Langfristig könnten iranische Ölexporte die globalen Preise belast…",
+     "figures": "Brent Future -1,4%"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "MJo67AkNy70",
+     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=114s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Ölpreis unter Druck nach Friedenshoffnungen, notiert um 80 $. Kritik am Iran-Abkommen aus den USA.",
+     "einordnung": "Die vom Host bemühte Friedenshoffnung erscheint fragil — die Tages-News zeigen abgesagte Schweiz-Gespräche und Geheimzellen-Aufbau der Revolutionsgarden. Das 80-$-Niveau könnte sich als trügerisch st…",
+     "figures": "80 $"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=139s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "makro",
+     "note": "Ölpreise stehen nach dem Iran-Deal deutlich unter Druck — eine über 100 Tage dauernde Blockade könnte sich auflösen und die Versorgung normalisieren.",
+     "einordnung": "Sinkende Ölpreise sind ein zweischneidiges Schwert: gut für Verbraucher, Airlines und Chemie — aber Energietitel und OPEC+ geraten unter Druck. Die Angebotsausweitung durch iranisches Öl könnte den P…",
+     "figures": "Blockade über 100 Tage"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "4TeOYIh5hN0",
+     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=3308s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Ausbruch aus mehrjährigem Korrekturtrendkanal, aber aktuell hohe Volatilität durch Iran-Einigung; heute -4,8 %, Ziele bis 151 $ langfristig, kurzfristig Vorsicht.",
+     "einordnung": "Öl ist gefangen zwischen technischem Ausbruchssignal (oben) und massiver geopolitischer Verunsicherung (Iran-Deal) – Weygands Rat zum Abwarten ist klug; die Volatilität bleibt zu hoch für sichere Pos…",
+     "figures": "70 $ (Ausbruch), 94 $, 115 $, 124 $, 151 $ (Ziele), heute -4,8 %"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=160s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "makro",
+     "note": "Ölpreis korrigiert nach möglichem US-Iran-Deal; aktuell ~88 USD, deutlich über Jahresbeginn (60 USD), technisch zwischen 50er und 200-Tage-Linie.",
+     "einordnung": "Klassische Risikoasset-Bewegung: Deal-Hoffnungen führen zu Entspannung und Preiskorrektion. Bleiben wir realistisch—der Ölpreis hat sich trotzdem verdreißigt prozentiert gegenüber Jahresbeginn, ein g…",
+     "figures": "Jahresbeginn ~60 USD, aktuell ~88 USD"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1558s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Ölpreis unter Druck durch Trumps Rhetorik über Waffenstillstand Iran-Israel und Entspannungs-Gerüchte; kein fundamentaler Grund, da Versorgungsknappheit anhält.",
+     "einordnung": "Narrative-gedriven Sell-off trotz struktureller Knappheit (Georisiken, OPEC+ Disziplin). Trump-Tweets zur Deeskalation schaffen False-Hope. Bei echtem Waffenstillstand könnte Test von 75–70 USD folge…",
+     "figures": "Rückgang -2,4% heute, -4,6% Wochenverlauf"
+    }
+   ]
+  },
+  "CVX": {
+   "name": "Chevron",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=246s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gewinner mit +3,5%, über der 200-Tage-Linie, auf der Empfehlungsliste. Host rät, ein klares Kaufsignal abzuwarten.",
+     "einordnung": "Chevron profitiert direkt vom Öl-Risiko-Premium. Die 200-Tage-Linie als Stützzone ist charttechnisch sauber — wer abwartet, bis das Signal bestätigt ist, opfert etwas Upside, gewinnt aber Sicherheit.",
+     "figures": "+3,5%; Kursziel 205 USD; Stopp 131 USD"
+    },
+    {
+     "date": "2026-07-03",
+     "video_id": "wVQZI7oZ9mQ",
+     "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=2609s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Wolfe Research Upgrade auf Outperform, Kursziel 210 $. Aktie bei 170 $, KGV von 28 auf 10 gefallen. Stark steigender Free Cashflow wird von fallenden Ölpreisen überschattet.",
+     "einordnung": "KGV-Kompression von 28 auf 10 bei steigendem Free Cashflow ist ein klassischer Value-Disconnect. Der WTI unter 70 $ überschattet kurzfristig, aber bei KGV 10 ist viel Pessimismus bereits eingepreist.",
+     "figures": "Kursziel 210 $, aktuell 170 $, KGV 10 (früher 28)"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "9G1WNKY6uuY",
+     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Chevron wird in der Videobeschreibung genannt, im Video jedoch nicht separat charttechnisch analysiert.",
+     "einordnung": "Chevron teilt als zweiter großer US-Ölkonzern das langfristig bullische Setup von Exxon. Die fehlende separate Analyse ist typisch – wenn das Sektor-Setup stimmt, gelten die Argumente für beide Titel."
+    }
+   ]
+  },
+  "CAT": {
+   "name": "Caterpillar",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=315s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Großer Verlierer im Dow Jones. KGV knapp 50, kein Einstieg empfohlen. Host rät zum Abwarten.",
+     "einordnung": "Ein KGV von 50 für einen Bau- und Maschinenzykler ist schlichtweg überteuert — das erinnert an die späten Phasen von Caterpillar 2018, als die Aktie ebenfalls auf überzogenen Erwartungen lief. Abwart…",
+     "figures": "KGV ca. 50"
+    }
+   ]
+  },
+  "VRTX": {
+   "name": "Vertex",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=386s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Übernahme von Crinetics für 85 USD/Aktie (Gesamtwert 10 Mrd. USD), Abschluss Q3 2026. Aktie gab leicht nach, bleibt Empfehlung. Kursziel 65 USD.",
+     "einordnung": "Dass Vertex-Aktien auf die Übernahme leicht fallen, ist der typische 'Acquirer's Curse' — der Käufer zahlt, der Verkäufer gewinnt. 10 Mrd. USD sind eine gewaltige Summe, aber Vertex hat die Bilanz da…",
+     "figures": "Übernahmepreis 85 USD/Aktie; Gesamtwert 10 Mrd. USD; Kursziel 65 USD"
+    }
+   ]
+  },
+  "CRNX": {
+   "name": "Crinetics Pharmaceuticals",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=486s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Aktie verdoppelte sich auf Schlusskurs 83,53 USD und wird in Vertex aufgehen. Übernahme zum Preis von 85 USD/Aktie.",
+     "einordnung": "Die Verdopplung über Nacht ist der klassische Übernahme-Premium-Effekt bei Biotech-Deals. Bei 83,53 USD (vs. 85 USD Übernahmepreis) ist die Arbitrage-Spanne minimal — hier ist kein nennenswertes Upsi…",
+     "figures": "Schlusskurs 83,53 USD; vorher über 40 USD; Übernahmepreis 85 USD/Aktie"
+    }
+   ]
+  },
+  "BEI.DE": {
+   "name": "Beiersdorf",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=586s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Defensiver Titel, nach schwachem Ausblick für 2026 (flaches Wachstum) abgestürzt, jetzt Bodenbildung. Nicht auf der Empfehlungsliste.",
+     "einordnung": "Beiersdorf ist ein Qualitätsunternehmen, aber 'flaches Wachstum' bei einem defensiven Konsumwert ist ein Dämpfer, der die Bewertung schrumpfen lässt. Bodenbildung ist kein Kaufgrund — erst wenn das W…",
+     "figures": "2026 flaches Wachstum"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
+     "einordnung": "Beiersdorf als Underperformer profitiert kurzfristig vom Momentum-Wechsel – als defensiver Wert könnte die Aktie im zinssensitiven Umfeld sogar nachhaltiger profitieren."
+    }
+   ]
+  },
+  "ENR.DE": {
+   "name": "Siemens Energy",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=658s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Größter DAX-Verlierer mit -8,9%. Barclays senkt auf Underweight, hebt aber Kursziel auf 130 EUR an. Eigenes Kursziel 240 EUR, Stopp 130 EUR. Host bleibt bullish, rät aber nach der Volatilität abzuwar…",
+     "einordnung": "Ein -8,9% Tag bei Siemens Energy zeigt, wie fragil das Sentiment nach dem gewaltigen Lauf geworden ist. Dass Barclays das Kursziel auf 130 EUR anhebt, aber gleichzeitig auf Underweight senkt, ist ein…",
+     "figures": "-8,9%; Barclays Kursziel 130 EUR (Underweight); eigenes Kursziel 240 EUR; Stopp 130 EUR; 25% Gewinnplus bis 2030 erwartet"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1063s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Siemens Energy steht ebenfalls unter Druck und gilt als KI-Wette. Haidt nennt einen Verlust von rund 8,6%.",
+     "einordnung": "Siemens Energy als KI-Wette zu betrachten ist gewagt — das Unternehmen profitiert von der Energie-Infrastruktur für Rechenzentren, aber ein 8,6%-Verlust zeigt, wie schnell der Markt diese Narrative h…",
+     "figures": "-8,6%"
+    },
+    {
+     "date": "2026-07-03",
+     "video_id": "wVQZI7oZ9mQ",
+     "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=1991s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "RBC erhöht Kursziel von 200 € auf 210 €. Technisch bullische Flagge mit möglichem SKS. Bewertung günstig: KGV 32, PEG 0,6. Im Vergleich zu GE Vernova (KGV 60, PEG 1,9) deutlich attraktiver.",
+     "einordnung": "Der Vergleich mit GE Vernova ist das stärkste Argument: bei halbem KGV und einem Drittel des PEG ist Siemens Energy relativer Wert im Sektor. Die bullische Flagge ist ein klassisches Fortsetzungsmust…",
+     "figures": "Kursziel 210 € (vorher 200 €), KGV 32, PEG 0,6, GE Vernova KGV 60, PEG 1,9"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=771s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Bricht ebenfalls ein, wird von Investoren als KI-Wette gesehen. Haidt rät zu kurzfristiger Vorsicht.",
+     "einordnung": "Siemens Energy war der Shooting-Star der letzten zwei Jahre, aber die KI-Wette ist spekulativ – Strominfrastruktur für Rechenzentren ist ein langfristiges Thema, kurzfristig dominiert die Gewinneinna…"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=471s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Gerüchte über Abspaltung von Kompressoren und Dampfturbinen trieben Aktie zu Rekord, dann 5-6% Einbruch. Wegen Korea-Krise und Überbewertung kurzfristig Vorsicht geboten.",
+     "einordnung": "Die Abspaltungsgerüchte sind ein klassischer Value-Unlock-Ansatz, aber ein 5-6% Einbruch nach dem Rekord zeigt, dass das Momentum erschöpft ist. Das Korea-Risiko als gemeinsamer Nenner mit Infineon i…",
+     "figures": "5-6% eingebrochen"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=3430s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Bei Siemens Energy gibt es Gerüchte um eine Spartenabspaltung. Die Aktie erholt sich und hat kurzfristig Potenzial.",
+     "einordnung": "Siemens Energy ist die Comeback-Story des Jahres. Ein KGV von 36 bei über 30% Gewinnwachstum ist absolut vertretbar. Die 172€ sind die Nagelprobe – hält diese, geht es zur 192€.",
+     "figures": "Umsatz Sparte 5,7 Mrd. $; Aktienrückkaufvolumen bis 1 Mrd. €; Gewinnwachstum über 30%; KGV 36"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=756s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Siemens Energy nach 30% Verlust jetzt Tagesgewinner; Schnäppchenjäger aktiv bei knapp 140 EUR. Reaktion auf Überverkauf.",
+     "einordnung": "Das ist der klassische Bounce nach Panikverkauf—interessant, ob das Hold wird oder nur intraday-Lipidum ist. Die 30%-Verluste davor hatten Gründe (Margendruck, Marktmißtrauen), die heute nicht einfac…",
+     "figures": "Vorheriger 30%-Verlust, aktuell knapp 140 EUR"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
+     "einordnung": "Siemens Energy als Profiteur des vorherigen Momentum-Trades wird nun verkauft – die Aktie war stark gelaufen und korrigiert nun. Bei Rückkehr des Momentum-Trades könnte sie schnell wieder anziehen."
+    }
+   ]
+  },
+  "CBK.DE": {
+   "name": "Commerzbank",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "S7EqI85pKaM",
+     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=777s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "UniCredit erwartet eine Beteiligungshöhe von 42-45%, die Bundesregierung ist dagegen. Auf der Empfehlungsliste, dabei bleiben.",
+     "einordnung": "Der Übernahmekampf um die Commerzbank ist ein politischer Poker — die Bundesregierung als Widerstandsfaktor macht es spannend, aber UniCredit hat Geduld. Wer auf der Empfehlungsliste ist, sollte blei…",
+     "figures": "42-45% Beteiligung erwartet"
+    },
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=364s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Commerzbank tendiert ebenfalls nach oben, jedoch weniger dynamisch als die Deutsche Bank. Ein Einstieg wird als möglich angesehen.",
+     "einordnung": "Die Commerzbank läuft der Deutschen Bank hinterher, was typisch für eine Sektor-Rally ist, bei der der Primus die Führung übernimmt und der Zweitplatzierte nachzieht. Wer auf den Sektor setzt, bekomm…"
+    }
+   ]
+  },
   "^GDAXI": {
    "name": "Marktüberblick DAX",
    "auftritte": [
@@ -1221,79 +1678,6 @@
     }
    ]
   },
-  "ENR.DE": {
-   "name": "Siemens Energy",
-   "auftritte": [
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1063s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Siemens Energy steht ebenfalls unter Druck und gilt als KI-Wette. Haidt nennt einen Verlust von rund 8,6%.",
-     "einordnung": "Siemens Energy als KI-Wette zu betrachten ist gewagt — das Unternehmen profitiert von der Energie-Infrastruktur für Rechenzentren, aber ein 8,6%-Verlust zeigt, wie schnell der Markt diese Narrative h…",
-     "figures": "-8,6%"
-    },
-    {
-     "date": "2026-07-03",
-     "video_id": "wVQZI7oZ9mQ",
-     "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=1991s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "RBC erhöht Kursziel von 200 € auf 210 €. Technisch bullische Flagge mit möglichem SKS. Bewertung günstig: KGV 32, PEG 0,6. Im Vergleich zu GE Vernova (KGV 60, PEG 1,9) deutlich attraktiver.",
-     "einordnung": "Der Vergleich mit GE Vernova ist das stärkste Argument: bei halbem KGV und einem Drittel des PEG ist Siemens Energy relativer Wert im Sektor. Die bullische Flagge ist ein klassisches Fortsetzungsmust…",
-     "figures": "Kursziel 210 € (vorher 200 €), KGV 32, PEG 0,6, GE Vernova KGV 60, PEG 1,9"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=771s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Bricht ebenfalls ein, wird von Investoren als KI-Wette gesehen. Haidt rät zu kurzfristiger Vorsicht.",
-     "einordnung": "Siemens Energy war der Shooting-Star der letzten zwei Jahre, aber die KI-Wette ist spekulativ – Strominfrastruktur für Rechenzentren ist ein langfristiges Thema, kurzfristig dominiert die Gewinneinna…"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=471s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Gerüchte über Abspaltung von Kompressoren und Dampfturbinen trieben Aktie zu Rekord, dann 5-6% Einbruch. Wegen Korea-Krise und Überbewertung kurzfristig Vorsicht geboten.",
-     "einordnung": "Die Abspaltungsgerüchte sind ein klassischer Value-Unlock-Ansatz, aber ein 5-6% Einbruch nach dem Rekord zeigt, dass das Momentum erschöpft ist. Das Korea-Risiko als gemeinsamer Nenner mit Infineon i…",
-     "figures": "5-6% eingebrochen"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=3430s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Bei Siemens Energy gibt es Gerüchte um eine Spartenabspaltung. Die Aktie erholt sich und hat kurzfristig Potenzial.",
-     "einordnung": "Siemens Energy ist die Comeback-Story des Jahres. Ein KGV von 36 bei über 30% Gewinnwachstum ist absolut vertretbar. Die 172€ sind die Nagelprobe – hält diese, geht es zur 192€.",
-     "figures": "Umsatz Sparte 5,7 Mrd. $; Aktienrückkaufvolumen bis 1 Mrd. €; Gewinnwachstum über 30%; KGV 36"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=756s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Siemens Energy nach 30% Verlust jetzt Tagesgewinner; Schnäppchenjäger aktiv bei knapp 140 EUR. Reaktion auf Überverkauf.",
-     "einordnung": "Das ist der klassische Bounce nach Panikverkauf—interessant, ob das Hold wird oder nur intraday-Lipidum ist. Die 30%-Verluste davor hatten Gründe (Margendruck, Marktmißtrauen), die heute nicht einfac…",
-     "figures": "Vorheriger 30%-Verlust, aktuell knapp 140 EUR"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
-     "einordnung": "Siemens Energy als Profiteur des vorherigen Momentum-Trades wird nun verkauft – die Aktie war stark gelaufen und korrigiert nun. Bei Rückkehr des Momentum-Trades könnte sie schnell wieder anziehen."
-    }
-   ]
-  },
   "HOT.DE": {
    "name": "Hochtief",
    "auftritte": [
@@ -1844,130 +2228,6 @@
      "note": "Der Euro ist im Wochenverlauf um 1,18 % gefallen. Mittel- bis langfristig seitwärts, kurzfristig könnte der Dollar noch etwas stärker werden.",
      "einordnung": "Der starke Dollar ist eine logische Konsequenz der Zinsdifferenz – höhere US-Zinsen ziehen Kapital an. Das belastet gleichzeitig den Goldpreis und Emerging Markets.",
      "figures": "-1,18 % (Woche)"
-    }
-   ]
-  },
-  "CL=F": {
-   "name": "Rohöl (WTI)",
-   "auftritte": [
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1553s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Kurzfristiger Anstieg durch geopolitische Spannungen — Angriffe in der Straße von Hormuz. Insgesamt bleibt Haidt bärisch, sieht aber kurzfristige Risiken.",
-     "einordnung": "Die geopolitische Prämie ist berechtigt, aber der fundamentale Überhang bei der Ölversorgung drückt den Preis strukturell. Ein bärisches Basisszenario mit geopolitischen Kurzfrist-Risiken ist die rea…"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1141s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Fällt, hat das Niveau von vor dem Irankrieg erreicht. Haidt sieht eine klare Talfahrt.",
-     "einordnung": "Der Ölpreis gibt die Kriegsprämie komplett zurück – das ist ein klares Signal, dass der Markt eine Eskalation im Iran-Konflikt nicht mehr einpreist. Für Inflationsaussichten ist das positiv, für Ölpr…",
-     "figures": "2,24 (Preisniveau)"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=78s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Ölpreis fällt weiter auf rund 72 Dollar und liegt damit unter dem Niveau zum Kriegsausbruch, getrieben von Hoffnung auf eine Waffenruhe im Nahen Osten und anhaltendem Überangebot.",
-     "einordnung": "Die Rückkehr des Ölpreises auf Vorkriegsniveau ist ein deutliches Disinflationssignal — die Rotation zugunsten verbrauchsnaher und transportabhängiger Sektoren läuft weiter. Solange das Überangebot b…",
-     "figures": "72 USD"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "1_zNnqdriM4",
-     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1277s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "US-Rohölvorräte sanken um 6,1 Mio. Barrel auf 412 Mio. Barrel, liegen 7% unter 5-Jahres-Schnitt; Preise weiter unter Druck.",
-     "einordnung": "Sinkende Lagerbestände bei gleichzeitig fallenden Preisen ist ein ungewöhnliches Signal — es deutet darauf hin, dass das Angebot trotz sinkender Vorräte den Markt dominiert. Die Entspannung im Nahen…",
-     "figures": "-6,1 Mio. Barrel (Woche bis 19. Juni), 412 Mio. Barrel (Lagerbestand)"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "9G1WNKY6uuY",
-     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY&t=3104s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "WTI-Rohöl korrigiert; Unterstützungen bei 65 und 55-56 Dollar. Langfristig sieht Harry Potential für höhere Preisniveaus.",
-     "einordnung": "Der Ölpreis ist der Treiber für alle Öl-Aktien. Harrys langfristig bullische Sicht wird durch die geopolitischen Risiken gestützt – die schrumpfenden US-Reserven und die Iran-Spannungen sind reale Ve…",
-     "figures": "65, 55, 56, 115"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=137s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "60-Tage-Fahrplan zur Deeskalation vereinbart, aber Ölpreis behält Risikoprämie. Brent-Future -1,4%.",
-     "einordnung": "Die Entspannung reduziert akutes Eskalationsrisiko, doch die Risikoprämie bleibt – ein klassisches Muster bei geopolitischen Pausen. Langfristig könnten iranische Ölexporte die globalen Preise belast…",
-     "figures": "Brent Future -1,4%"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "MJo67AkNy70",
-     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=114s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Ölpreis unter Druck nach Friedenshoffnungen, notiert um 80 $. Kritik am Iran-Abkommen aus den USA.",
-     "einordnung": "Die vom Host bemühte Friedenshoffnung erscheint fragil — die Tages-News zeigen abgesagte Schweiz-Gespräche und Geheimzellen-Aufbau der Revolutionsgarden. Das 80-$-Niveau könnte sich als trügerisch st…",
-     "figures": "80 $"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=139s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "makro",
-     "note": "Ölpreise stehen nach dem Iran-Deal deutlich unter Druck — eine über 100 Tage dauernde Blockade könnte sich auflösen und die Versorgung normalisieren.",
-     "einordnung": "Sinkende Ölpreise sind ein zweischneidiges Schwert: gut für Verbraucher, Airlines und Chemie — aber Energietitel und OPEC+ geraten unter Druck. Die Angebotsausweitung durch iranisches Öl könnte den P…",
-     "figures": "Blockade über 100 Tage"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "4TeOYIh5hN0",
-     "url": "https://www.youtube.com/watch?v=4TeOYIh5hN0&t=3308s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Ausbruch aus mehrjährigem Korrekturtrendkanal, aber aktuell hohe Volatilität durch Iran-Einigung; heute -4,8 %, Ziele bis 151 $ langfristig, kurzfristig Vorsicht.",
-     "einordnung": "Öl ist gefangen zwischen technischem Ausbruchssignal (oben) und massiver geopolitischer Verunsicherung (Iran-Deal) – Weygands Rat zum Abwarten ist klug; die Volatilität bleibt zu hoch für sichere Pos…",
-     "figures": "70 $ (Ausbruch), 94 $, 115 $, 124 $, 151 $ (Ziele), heute -4,8 %"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=160s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "makro",
-     "note": "Ölpreis korrigiert nach möglichem US-Iran-Deal; aktuell ~88 USD, deutlich über Jahresbeginn (60 USD), technisch zwischen 50er und 200-Tage-Linie.",
-     "einordnung": "Klassische Risikoasset-Bewegung: Deal-Hoffnungen führen zu Entspannung und Preiskorrektion. Bleiben wir realistisch—der Ölpreis hat sich trotzdem verdreißigt prozentiert gegenüber Jahresbeginn, ein g…",
-     "figures": "Jahresbeginn ~60 USD, aktuell ~88 USD"
-    },
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=1558s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Ölpreis unter Druck durch Trumps Rhetorik über Waffenstillstand Iran-Israel und Entspannungs-Gerüchte; kein fundamentaler Grund, da Versorgungsknappheit anhält.",
-     "einordnung": "Narrative-gedriven Sell-off trotz struktureller Knappheit (Georisiken, OPEC+ Disziplin). Trump-Tweets zur Deeskalation schaffen False-Hope. Bei echtem Waffenstillstand könnte Test von 75–70 USD folge…",
-     "figures": "Rückgang -2,4% heute, -4,6% Wochenverlauf"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=565s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Ölpreis reagiert auf Iran-Nachrichten zunächst nach oben, dann -2,44%. Es fehlen 4,5-5 Mio Barrel pro Tag. Trump wird den Ölpreis weiter nach unten reden.",
-     "einordnung": "Die Diskrepanz zwischen fundamentalem Lieferengpass und politischer Rhetorik ist typisch für Wahlkampfphasen. Ein physisches Defizit von 4,5-5 Mio Barrel/Tag lässt sich nicht wegreden — aber der Futu…",
-     "figures": "-2,44%, 4,5-5 Millionen Barrel/Tag"
     }
    ]
   },
@@ -2671,20 +2931,6 @@
     }
    ]
   },
-  "CBK.DE": {
-   "name": "Commerzbank",
-   "auftritte": [
-    {
-     "date": "2026-07-03",
-     "video_id": "XVi3pNFu4dA",
-     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=364s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Die Commerzbank tendiert ebenfalls nach oben, jedoch weniger dynamisch als die Deutsche Bank. Ein Einstieg wird als möglich angesehen.",
-     "einordnung": "Die Commerzbank läuft der Deutschen Bank hinterher, was typisch für eine Sektor-Rally ist, bei der der Primus die Führung übernimmt und der Zweitplatzierte nachzieht. Wer auf den Sektor setzt, bekomm…"
-    }
-   ]
-  },
   "RHM.DE": {
    "name": "Rheinmetall",
    "auftritte": [
@@ -2889,30 +3135,6 @@
     }
    ]
   },
-  "CVX": {
-   "name": "Chevron",
-   "auftritte": [
-    {
-     "date": "2026-07-03",
-     "video_id": "wVQZI7oZ9mQ",
-     "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=2609s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Wolfe Research Upgrade auf Outperform, Kursziel 210 $. Aktie bei 170 $, KGV von 28 auf 10 gefallen. Stark steigender Free Cashflow wird von fallenden Ölpreisen überschattet.",
-     "einordnung": "KGV-Kompression von 28 auf 10 bei steigendem Free Cashflow ist ein klassischer Value-Disconnect. Der WTI unter 70 $ überschattet kurzfristig, aber bei KGV 10 ist viel Pessimismus bereits eingepreist.",
-     "figures": "Kursziel 210 $, aktuell 170 $, KGV 10 (früher 28)"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "9G1WNKY6uuY",
-     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Chevron wird in der Videobeschreibung genannt, im Video jedoch nicht separat charttechnisch analysiert.",
-     "einordnung": "Chevron teilt als zweiter großer US-Ölkonzern das langfristig bullische Setup von Exxon. Die fehlende separate Analyse ist typisch – wenn das Sektor-Setup stimmt, gelten die Argumente für beide Titel."
-    }
-   ]
-  },
   "AVAV": {
    "name": "AeroVironment",
    "auftritte": [
@@ -2935,129 +3157,6 @@
      "note": "Starke Q2-Zahlen: Gewinn pro Aktie 0,84 $ (Beat um 0,37 $), Umsatz +133% auf 641 Mio. $. Aber der Ausblick liegt unter dem Konsens: Nettogewinn 8-24 Mio. $ (Konsens 4 $ EPS), Umsatz 2,12-2,22 Mrd. $.…",
      "einordnung": "Ein Book-to-Bill von 1,4 bei einem Rüstungsunternehmen in der aktuellen geopolitischen Lage ist ein starkes Signal. Der schwache Ausblick ist vermutlich konservativ — das erinnert an Lockheed Martin…",
      "figures": "EPS 0,84 $ (Beat 0,37 $), Umsatz 641 Mio. $ (+133%), Ausblick EPS 3,2-3,34 $ (Konsens 4 $), Umsatzausblick 2,12-2,22 Mrd. $ (Konsens 2,18 Mrd.), Book-to-Bill 1,4, Funded Backlog 1,2 Mrd. $ (Vorjahr 7…"
-    }
-   ]
-  },
-  "MU": {
-   "name": "Micron",
-   "auftritte": [
-    {
-     "date": "2026-07-03",
-     "video_id": "wVQZI7oZ9mQ",
-     "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ",
-     "channel": "onvista",
-     "kategorie": "sonstiges",
-     "note": "Michael Burry shortet bei 1.050 $. Aktie fiel von 1.154 $ auf 975 $, heute +6%. Bewertung extrem günstig: KGV 7, PEG 0,04. Technisches Kursziel 1.500-1.550 $.",
-     "einordnung": "",
-     "figures": "Burry Short 1.050 $, aktuell 975 $, KGV 7, PEG 0,04, Kursziel 1.500-1.550 $"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=208s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Korrekturbewegung nach unten als Teil einer branchenweiten Konsolidierung bei Chipwerten. Weiß sieht keinen Grund zur Sorge.",
-     "einordnung": "Die Chip-Konsolidierung ist nach dem massiven AI-Hype gesund und normal. Micron als Speicherchipspezialist ist ohnehin zyklischer als die Logik-Chip-Anbieter — Schwankungen gehören hier zum Geschäfts…"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=2779s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Langfristiger Liefervertrag mit GM. Extrem günstige Bewertung mit KGV 7,2 und PEG 0,04. Starke Nachfrage und Preissteigerungen.",
-     "einordnung": "Micron ist ein klassischer Zykliker, der gerade von der KI-Nachfrage profitiert. Das PEG von 0,04 ist absurd günstig, aber man muss den Zyklus verstehen.",
-     "figures": "KGV 7,2, PEG 0,04, Kurs von 300 auf 1.200 $ (historisch)"
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "mNobFjJKrNE",
-     "url": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=130s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Host bleibt beim Speichermedien-Favoriten überzeugt, bezeichnet die Aktie aber als volatil und rät zu einem vorsichtigeren Einstieg.",
-     "einordnung": "Micron ist ein klassischer Zyklus-Titel im HBM-Speicher-Boom — die Volatilität ist hier kein Bug, sondern ein Feature der Speicherchips. Wer das Kursziel von knapp 120 USD teilt, sollte Schwächen als…",
-     "figures": "Kursziel 119,7 USD"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=355s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Bombenzahlen und super Ausblick, aber die Aktie gab Gewinne nach anfänglichem Anstieg ab. Haidt sieht darin ein Zeichen für KI-Müdigkeit.",
-     "einordnung": "Dass Micron trotz starker Zahlen nicht hält, ist ein klassisches 'Buy the rumor, sell the news'-Phänomen. Der Speicherchip-Zyklus ist intakt, aber der Markt fragt sich, ob das KI-Wachstum bereits ein…"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "F6cTDl0_v6Q",
-     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=0s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Micron pulverisiert mit seinen Quartalszahlen alle Schätzungen. Der Host hebt die massive Umsatzprognose von 50 Mrd. USD gegen einen Konsens von 43,7 Mrd. USD hervor, angetrieben durch rasant steigen…",
-     "einordnung": "Die Zahlen bestätigen eindrucksvoll, dass der KI-Speicherzyklus in der Frühphase ist. Bei einem KGV von 8 für 2026/27 erscheint die Bewertung moderat, vorausgesetzt die DRAM-Preise halten. Das Kurszi…",
-     "figures": "Umsatzprognose Q3: 50 Mrd. USD vs. Konsens 43,7 Mrd. USD; Consumer DRAM-Preise Q2 +55-60%, Q3 +35-40%; KGV 8 für GJ 2026/27; Kursziel 1300-1400 USD"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "5AeBdQRrZ2k",
-     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=191s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Fulminante Quartalszahlen begeistern den Markt: Umsatz und Nettogewinn legen stark zu, die Margen übertreffen sogar Nvidia.",
-     "einordnung": "Micron ist der direkte Nutznießer des KI-Booms im Speicherchip-Segment — die Zahlen belegen, dass die Nachfrage nach HBM-Speichern für KI-Anwendungen massiv skaliert. Die Bewertung hat sich durch die…",
-     "figures": "41 Mrd. USD Umsatz, 28 Mrd. USD Nettogewinn"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=264s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Micron überzeugt mit starken Quartalszahlen: 75 Prozent Umsatzwachstum auf 41 Milliarden Dollar, Nettogewinn von 28 Milliarden Dollar. Der Kurs steigt nachbörslich um 17 Prozent.",
-     "einordnung": "Ein 75-prozentiges Umsatzwachstum demonstriert, dass der KI-getriebene Speicherzyklus in voller Blüte steht. Die nachbörsliche Reaktion von plus 17 Prozent zeigt, dass der Markt Ausführung belohnt —…",
-     "figures": "75% Wachstum, 41 Mrd. USD Umsatz, 28 Mrd. USD Nettogewinn, +17% nachbörslich"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "1_zNnqdriM4",
-     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=1408s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Micron überzeugt mit starken Q3-Zahlen (Rekordumsatz, Gewinnschub) und einem deutlich angehobenen Ausblick; Aktie springt auf 1200$.",
-     "einordnung": "Micron liefert das starke Fundament, das die Halbleiter-Euphorie rechtfertigt — Rekordumsatz, explodierende Margen und ein Ausblick, der den KI-Investitionszyklus bestätigt. Die Bewertung ist hoch, a…",
-     "figures": "Umsatz Q3 41,46 Mrd. $ (Erwartung 35,7 Mrd.), Gewinn/Aktie 25,11$ (20,50$ erwartet), Bruttomarge 84,9%, Ausblick Q4: Umsatz 50 Mrd. $, Gewinn 31$; Kursziel 1254$, danach 1715$"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "04yYuesQS4g",
-     "url": "https://www.youtube.com/watch?v=04yYuesQS4g&t=182s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Quartalszahlen stehen heute Abend nach US-Handelsschluss an. Micron hat in den vergangenen vier Quartalen die Konsensschätzungen jeweils um über 20% geschlagen — die Messlatte liegt entsprechend hoch.",
-     "einordnung": "Micron ist der Stimmungsbarometer für den Speicherzyklus. Werden die Zahlen enttäuschen, dürfte das den gesamten Chip-Sektor kurzfristig belasten — das erinnert an die Saison 2018, als Micron nach st…",
-     "figures": "Schätzung in letzten 4 Quartalen um über 20% übertroffen (21%)"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=3151s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Micron -6,23% vorbörslich, aber +300% seit Jahresbeginn. Kooperation mit Anthropic, Needham hebt Kursziel von 500 auf 1.550 $. KGV von 11, Potenzial auf 16.",
-     "einordnung": "Ein Kursziel von 1.550 $ nach einer Verdopplung von 500 $ ist eine drastische Anhebung, die die KI-Speicher-Story unterstreicht. Mit einem KGV von 11 und Potenzial auf 16 ist Micron trotz +300% YTD n…",
-     "figures": "-6,23%, YTD +300%, Kursziel 1.550 $, KGV 11"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=839s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Micron legte im Jahresverlauf 160-170% zu. Ein Topanalyst hat ein Kursziel von 443 Dollar, andere Analysten sehen 300 Dollar (+30%).",
-     "einordnung": "Ein Zuwachs von 160-170% im Speicherspeicher-Sektor ist klassisch zyklisch — das erinnert an die Memory-Booms 2017 und 2021. Die Spanne zwischen 300 und 443 Dollar zeigt, wie weit die Analystenmeinun…",
-     "figures": "160-170% Jahresperformance, Kursziel Topanalyst 443$, Konsens 300$ (+30%)"
     }
    ]
   },
@@ -6186,20 +6285,6 @@
      "kategorie": "makro",
      "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Die Kospi wird als Warnsignal wegen übermäßiger Wertpapierkredite gesehen.",
      "einordnung": "Die Kospi-Warnung wegen übermäßiger Wertpapierkredite ist ein klassisches Spätzyklus-Signal – wenn Margin-Schulden zu hoch werden, droht eine gezwungene Entleerung."
-    }
-   ]
-  },
-  "BEI.DE": {
-   "name": "Beiersdorf",
-   "auftritte": [
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
-     "einordnung": "Beiersdorf als Underperformer profitiert kurzfristig vom Momentum-Wechsel – als defensiver Wert könnte die Aktie im zinssensitiven Umfeld sogar nachhaltiger profitieren."
     }
    ]
   },
