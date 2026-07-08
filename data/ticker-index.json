@@ -1,5 +1,5 @@
 {
- "updated": "2026-07-08T06:36:50.744471+00:00",
+ "updated": "2026-07-08T18:36:17.711137+00:00",
  "ticker": {
   "MU": {
    "name": "Micron Technology",
@@ -13,6 +13,16 @@
      "note": "Volatil, bleibt auf der Empfehlungsliste, aber der Stoppkurs rückt näher. Host betont, dass man die Position diszipliniert begleiten muss.",
      "einordnung": "Micron ist ein klassischer Speicherzykler — wenn der Stopp bei 856 USD greift, ist das kein Schaden, sondern Risikomanagement. Wer hier nicht konsequent ist, wird im nächsten Downcycle bestraft.",
      "figures": "Kursziel ~1.200 USD; Stopp 856 USD"
+    },
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=3014s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Gleiche Speicher-Story wie Samsung: KGV 6,5 (5-Jahres-Durchschnitt 12). Unterstützung 800-900 $. Analystenziele über 1.200 $. Ford-Deal (langfristige Liefervereinbarung) unterstreicht automobile Spei…",
+     "einordnung": "Micron bei KGV 6,5 gegenüber dem 5-Jahres-Mittel von 12 ist eine klare Unterbewertung — der Speicherzyklus läuft, und der Ford-Deal sichert langfristige Nachfrage. Der Einstieg um 900 $ ist disziplin…",
+     "figures": "KGV 6,5, 5-Jahres-Durchschnitt 12, Unterstützung 800-900 $, Kursziel über 1.200 $"
     },
     {
      "date": "2026-07-03",
@@ -111,16 +121,6 @@
      "note": "Quartalszahlen stehen heute Abend nach US-Handelsschluss an. Micron hat in den vergangenen vier Quartalen die Konsensschätzungen jeweils um über 20% geschlagen — die Messlatte liegt entsprechend hoch.",
      "einordnung": "Micron ist der Stimmungsbarometer für den Speicherzyklus. Werden die Zahlen enttäuschen, dürfte das den gesamten Chip-Sektor kurzfristig belasten — das erinnert an die Saison 2018, als Micron nach st…",
      "figures": "Schätzung in letzten 4 Quartalen um über 20% übertroffen (21%)"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=3151s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Micron -6,23% vorbörslich, aber +300% seit Jahresbeginn. Kooperation mit Anthropic, Needham hebt Kursziel von 500 auf 1.550 $. KGV von 11, Potenzial auf 16.",
-     "einordnung": "Ein Kursziel von 1.550 $ nach einer Verdopplung von 500 $ ist eine drastische Anhebung, die die KI-Speicher-Story unterstreicht. Mit einem KGV von 11 und Potenzial auf 16 ist Micron trotz +300% YTD n…",
-     "figures": "-6,23%, YTD +300%, Kursziel 1.550 $, KGV 11"
     }
    ]
   },
@@ -459,8 +459,18 @@
    ]
   },
   "^GDAXI": {
-   "name": "Marktüberblick DAX",
+   "name": "DAX & Marktüberblick",
    "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "DAX fällt unter 25.000 Punkte aufgrund geopolitischer Risiken (Iran/USA) und steigender Ölpreise. Nasdaq 100 zeigt nach 190% Anstieg seit 2023 charttechnisches Korrekturpotenzial von 12-13% oder mehr.",
+     "einordnung": "Die Kombination aus Ölpreisschock und hawkish Fed ist ein klassischer Spätzyklus-Risk-Off-Impuls. Der DAX bei 25.000 ist keine Panikzone, sondern eine gesunde Konsolidierung nach Rekordlauf — wer jet…",
+     "figures": "DAX 25.000, Ölpreis 80 $, Nasdaq 100 +190% seit 2023, Korrekturpotenzial 12-13%, Retracement 26-27%"
+    },
     {
      "date": "2026-07-07",
      "video_id": "nPsSsD7zbI8",
@@ -570,15 +580,427 @@
      "note": "Martin Goersch blickt optimistisch auf das zweite Halbjahr: Die S&P 500 legte im zweiten Quartal 14,9 Prozent zu, historisch folgen im dritten Quartal +5 Prozent und im vierten +6 Prozent bei einer T…",
      "einordnung": "Die Saisonalitätsargumentation ist statistisch fundiert, doch ein 14,9-Prozent-Quartal ist ein Ausreißer, der die Basis für die Folgewerte verbreitert. Dass 60 Prozent des Gewinnwachstums aus KI-Infr…",
      "figures": "S&P 500 Q2: +14,9%; historisch Q3 +5%, Q4 +6%, Trefferquote 89%; 9,6% YTD; erwartetes Gewinnwachstum Q2: 22%; KI-Infrastruktur trägt 60% des Gewinnwachstums"
+    }
+   ]
+  },
+  "AFX.DE": {
+   "name": "Carl Zeiss Meditec",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=849s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Aktie steigt knapp 3% nach Hochstufung durch Metzler von Halten auf Kaufen, Kursziel 42 Euro. Das Profit-Up-Programm soll Margen verbessern.",
+     "einordnung": "Eine 45%-Aufwärtsdiskontierung von Metzler ist mutig, aber bei Meditech mit historisch hohem Margenpotenzial nicht unrealistisch. Der Profit-Up-Ansatz ist der Schlüssel — ob das Programm greift, ents…",
+     "figures": "+3%, Kursziel Metzler 42 EUR, aktuell 29 EUR, Aufwärtspotenzial 45%"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=3441s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Starker Kursverlust (80-90%), Medizintechniksektor erholt sich langsam. Großaktionär investiert 200 Mio. EUR — möglicher Turnaround.",
+     "einordnung": "Ein Kursverlust von 80-90% ist extrem und markiert oft die Zone maximaler Verzweiflung — genau dort entstehen die besten Turnaround-Chancen. Das 200-Millionen-Euro-Engagement des Großaktionärs ist ei…",
+     "figures": "200 Mio. EUR (Rückkauf durch Großaktionär)"
+    }
+   ]
+  },
+  "TLX.DE": {
+   "name": "Talanx",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1002s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Aktie rückläufig wegen Verkauf eines großen Aktienpakets (4,3 Mio. Aktien, 1,7%) durch Meiji Yasuda. KGV bei 9, Dividendenrendite 4,8%.",
+     "einordnung": "Ein Block-Trade-Verkauf durch einen institutionellen Investor ist ein technischer Überhang, kein fundamentales Signal. Bei KGV 9 und knapp 5% Dividendenrendite ist Talanx ein klassischer Value-Kandid…",
+     "figures": "110 EUR, KGV 9, Dividendenrendite 4,8% (erwartet 4,2% 2026), 4,3 Mio. Aktien verkauft (1,7%)"
+    }
+   ]
+  },
+  "LHA.DE": {
+   "name": "Lufthansa",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1211s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Aktie -4,6% nach Abstufungen: Citigroup auf Verkaufen (Kursziel 8,70 EUR), Barclays Underweight (Kursziel 7,75 EUR). Belastung durch Ölpreise und Konjunktursorgen.",
+     "einordnung": "Eine doppelte Abstufung nach einer Verdopplung von 7 auf 10 EUR ist ein klassisches Profit-Taking-Signal. Ölpreise treffen Airlines direkt über Treibstoffkosten — das ist kein temporäres Rauschen, so…",
+     "figures": "-4,6%, Kursziel Citigroup 8,70 EUR, Barclays 7,75 EUR, Aktie von 7 auf 10 EUR verdoppelt"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=3555s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Erholt sich von Iran-Konflikt. Chart technisch verbessert (Kaufsignal 50er über 200er).",
+     "einordnung": "Lufthansa zeigt eine technische Erholung nach dem Iran-Schock. Die Fundamentals sind schwach (Q1-Verlust), aber der Chart verbessert sich. Das ist ein klassisches Turnaround-Setup.",
+     "figures": "Q1 Verlust -0,55€ (Vorjahr -0,74€); Umsatz +7,6%"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=399s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Profitiert doppelt: sinkende Kerosinpreise durch fallenden Ölpreis und geopolitische Entspannung. Charttechnisch überwindet der Kurs einen Widerstand; nächstes Ziel ist eine Kurslücke bei ca. 9 €.",
+     "einordnung": "Lufthansa ist der klassische Ölpreis-Profiteur — jeder Rückgang der Kerosinkosten wirkt direkt auf die ohnehin dünnen Margen. Das charttechnische Kursziel von 9 € ist plausibel, die strukturellen Pro…",
+     "figures": "Kurslücke bei ca. 9 €"
+    }
+   ]
+  },
+  "RWE.DE": {
+   "name": "RWE",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1394s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Relativ stabil im schwachen Markt. UBS hebt Kursziel von 65 auf 66 EUR. KGV 20, nicht billig. Diversifikation ins Netzgeschäft positiv.",
+     "einordnung": "KGV 20 für einen Versorger ist ambitioniert — das Netzgeschäft ist zwar strategisch richtig, aber die Re-Rating-Premise braucht Geduld. Bei 50 EUR wäre die Risiko-Rendite deutlich attraktiver als auf…",
+     "figures": "Kursziel UBS 66 EUR (vorher 65 EUR), KGV 20, Unterstützung 43-44 EUR"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1774s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Fast-Kaufsignal: Noch nicht über 58 EUR ausgebrochen, aber der positive Sektortrend (E.ON bereits ausgebrochen) lässt einen Ausbruch erwarten.",
+     "einordnung": "Das Catch-up-Argument innerhalb des Versorgersektors ist stichhaltig — wenn E.ON ausbricht, zieht RWE meist nach. Der konventionelle Stromgeschäftsanteil bei RWE macht den Titel zyklischer als E.ON,…",
+     "figures": "58 EUR (Clusterpunkt), 62,50 EUR (Ziel), 67-69 EUR (höhere Ziele)"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "RWE will Anteil an Ampion (Höchstspannungsnetz Nordsee-Alpen) von 25,1% auf 55% aufstocken, Kosten ca. 4 Mrd. Euro. Aktie unter Gewinnmitnahmen.",
+     "einordnung": "Eine 4-Mrd.-Euro-Investition in ein Höchstspannungsnetz ist strategisch sinnvoll, aber kurzfristig belastend. Die Aktie reagiert mit Gewinnmitnahmen – das ist typisch für eine Kapitalerhöhung oder gr…",
+     "figures": "25,1% auf 55%, 4 Milliarden Euro"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=1256s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "RWE stockt Anteil an Amprion auf 55% auf, Kaufpreis 3,6 Milliarden Euro, finanziert durch Kapitalerhöhung und Aktienverkauf. Gewinnziel 2031: 4,40 auf 4,55 Euro je Aktie. Kurzfristig seitwärts.",
+     "einordnung": "Die Aufstockung des Amprion-Anteils ist strategisch sinnvoll, weil regulierte Netzbetriebe stabile Erträge liefern, aber die Finanzierung über Kapitalerhöhung und Aktienverkauf bedeutet Verwässerung…",
+     "figures": "3,6 Mrd. Euro Kaufpreis, Anteil 55%, Gewinnziel 4,40-4,55 Euro/Aktie"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "t04FPU9gZbI",
+     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=1496s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "RWE erhöht Anteil an Amprion auf 55% für 3,6 Mrd. €, teilweise über Aktienemission. Schritt in Richtung regulierten Netzbetrieb, stabilisiert Erträge.",
+     "einordnung": "Die Aufstockung der Amprion-Beteiligung ist ein strategisch sinnvoller Schritt hin zu regulierten, planbaren Erträgen. Die Finanzierung über Aktienemission verdünnt jedoch kurzfristig, und bei einem…",
+     "figures": "3,6 Mrd. €, KGV 19, Dividendenrendite 2,4%"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
+     "einordnung": "RWE leidet ebenfalls unter dem Momentum-Wechsel – als Underperformer könnte die Aktie jedoch kurzfristig Rotationsgelder anziehen."
+    }
+   ]
+  },
+  "VNA.DE": {
+   "name": "Vonovia",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1642s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Aktie -5,5% durch Zinsangst aufgrund steigender Ölpreise. Im Abwärtstrend, KGV 12,7, kein Schnäppchen.",
+     "einordnung": "Immobilienwerte sind die direksten Opfer einer Öl-bedingten Inflationssorge — weil höhere Inflation höhere Zinsen impliziert und Vonovia hoch verschuldet ist. KGV 12,7 ist für einen Immobilienkonzern…",
+     "figures": "-5,5%, KGV 12,7, Unterstützung 20 EUR"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=398s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Vonovia will Wandelanleihe emittieren (Stückelung 100.000€, Kupon 1,6-2,1%), nicht für Privatanleger, Kurs heute etwas schwächer.",
+     "einordnung": "Eine Wandelanleihe in dieser Stückelung ist ein institutionelles Instrument. Für Privatanleger ist das nur ein Stimmungsbarometer – die Aktie reagiert schwächer, was auf eine leichte Verwässerungssor…",
+     "figures": "100.000€ Stückelung, Kupon 1,6-2,1%"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=3656s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Unter Druck durch Zinsängste. Fehlausbruch und Top-Formation. Chart schwach.",
+     "einordnung": "Vonovia ist ein Opfer der Zinsängste – Immobilien-REITs leiden unter höheren Zinsen. Der Chart zeigt Fehlausbruch und Top-Formation. Kein Kaufsignal.",
+     "figures": "Operatives Gewinnziel bis 2028: 3,5 Mrd. €; Analysten-Kursziel über 30€"
+    }
+   ]
+  },
+  "PENG": {
+   "name": "Penguin Solutions",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1786s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Starke Quartalszahlen: EPS 0,84 $ (erwartet 0,55 $), Umsatz 479 Mio. $ (erwartet 415 Mio. $). Umsatzwachstum 48%, Gewinnwachstum 80%. Ausblick angehoben: Umsatz +22%, EPS 2,55-2,65 $. Aktie bei 64 $,…",
+     "einordnung": "Ein EPS-Beat von über 50% kombiniert mit angehobener Guidance ist ein Quality-Moment — aber die Aktie ist von 16 auf 77 $ gelaufen und korrigiert nun. Wer bei 60 $ kauft, bekommt eine AI-Infrastruktu…",
+     "figures": "EPS 0,84 $ vs 0,55 $ erwartet, Umsatz 479 Mio. $ vs 415 Mio. $ erwartet, 48% Umsatzwachstum, 80% Gewinnwachstum, Guidance: Umsatz +22%, EPS 2,55-2,65 $, Aktie von 16 $ auf 77 $ (+376%), aktuell 64 $"
+    }
+   ]
+  },
+  "META": {
+   "name": "Meta",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=2167s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "KGV 19, niedrigste Bewertung unter Magnificent 7. Launch von 'Mus Image' (KI-Bildgenerierung) positiv. Aktie gestern +2% in schwachem Markt.",
+     "einordnung": "KGV 19 bei einem Mag-7-Wert mit PEG unter 1 ist eine seltene Kombination — Meta ist nach der Metaverse-Durststrecke wieder ein Bewertungs-Sonderling. Relative Stärke in einem schwachen Markt ist ein…",
+     "figures": "KGV 19, PEG unter 1, +2%"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=261s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Meta plant den Einstieg ins Cloudgeschäft, offenbar wegen Überkapazitäten bei Chip-Anbietern. Die Aktie profitiert, während Chipwerte breit unter Druck geraten. Haidt erwartet kurzfristig eine Seitwä…",
+     "einordnung": "Metas Cloud-Ambitionen sind strategisch logisch, wenn man eigene KI-Infrastruktur aufbauen will. Der Markt feiert das als Hyperscaler-Story, doch die eigentliche Botschaft ist, dass die Chip-Nachfrag…"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "-DiygCxAXrc",
+     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=2933s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Meta verhandelt mit Samsung über eigene KI-Chips auf 2nm-Basis, das Auftragsvolumen beläuft sich auf 6,5 Mrd $. Die Aktie notiert mit einem KGV unter 18 und einem PEG unter 1. Goersch empfiehlt langf…",
+     "einordnung": "Dass Meta eigene Chips entwickelt, ist ein strategisch logischer Schritt zur Unabhängigkeit von Nvidia — das erinnert an Google's TPU-Entwicklung, die ebenfalls aus der Abhängigkeit von externen Chip…",
+     "figures": "6,5 Mrd $, 2nm, KGV unter 18, PEG unter 1"
+    },
+    {
+     "date": "2026-07-03",
+     "video_id": "vlq3ZDw4Te4",
+     "url": "https://www.youtube.com/watch?v=vlq3ZDw4Te4&t=306s",
+     "channel": "BerneckerTV",
+     "kategorie": "news",
+     "note": "Meta prüft den Einstieg ins Cloud-Geschäft mit KI-Rechenleistung (Meta Compute). Der Markt reagiert positiv mit einem Kurssprung von 8,8%, doch der Host warnt, dass diese Cloud-Fantasie allein noch n…",
+     "einordnung": "Der Cloud-Einstieg ist strategisch richtig, um die massiven KI-Investitionen zu monetarisieren, doch konkurriert Meta direkt mit etablierten Hyperscalern. Der Kurssprung ist eher eine Short-Squeeze-a…",
+     "figures": "Investitionen 125–145 Mrd. $ für 2026; Kurs +8,8% auf knapp 613 $; CoreWeave −14%, Nebius −17%; früheres Kursniveau 800 $, Tief 520 $; Erholungspotenzial bis 700 $"
+    },
+    {
+     "date": "2026-07-03",
+     "video_id": "wVQZI7oZ9mQ",
+     "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=2988s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Aktie von Widerstand 625 $ abgewiesen. Interne KI-Entwicklung stockt, Personalabbau 10% nicht wie erwartet. Bewertung günstig: KGV 18, PEG 0,85. Cloud-Vermietung (Meta Compute) könnte Gewinn um 3,50-…",
+     "einordnung": "KGV 18 bei PEG 0,85 ist für einen Tech-Giganten attraktiv. Die Cloud-Vermietung als neues Geschäftsmodell könnte eine Re-Rating-Katalysator sein, solange die KI-Infrastruktur funktioniert. Der Host's…",
+     "figures": "Widerstand 625 $, KGV 18, PEG 0,85, Gewinnpotenzial 3,50-5,50 $/Aktie durch Cloud-Vermietung"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=3283s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Bloomberg-Bericht über Cloud-Monetarisierung. CapEx von 125-145 Mrd. $, Aktie reagiert mit +8,8%. Analysten sehen großes Potenzial.",
+     "einordnung": "Metas Cloud-Pläne sind ein Gamechanger, der die CapEx-Story neu bewertet. Die Aktie reagiert entsprechend positiv, aber die Umsetzung ist erst ab 2027 zu erwarten.",
+     "figures": "CapEx 125-145 Mrd. $, Kursziel Jefferies 825 $, Bank of America 835 $, Token-Kosten 50.000 $ pro Mitarbeiter"
     },
     {
      "date": "2026-06-30",
-     "video_id": "sax3NJ-Q6tc",
-     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=40s",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1877s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Investiert zu viel in KI, Haidt sieht das kritisch. Vorsichtige Haltung.",
+     "einordnung": "Metas KI-Investitionen sind enorm, aber im Gegensatz zu Oracle hat Meta zumindest Werbeeinnahmen, die den Cashflow stützen. Die Frage ist, ob die KI-Ausgaben jemals zu einem ROI führen oder ob sie ei…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=2552s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Meta nutzt Gemini-Modelle mit eingeschränktem Zugang und hat keine eigene Cloud-Infrastruktur; die Aktie notiert nahe den Tiefs mit einem KGV von 16,8. Hyperscaler sind YTD -10%.",
+     "einordnung": "Ein KGV von 16,8 für Meta ist bemerkenswert günstig — aber die Abhängigkeit von fremden KI-Modellen (Gemini) und das Fehlen einer eigenen Cloud-Infrastruktur sind strategische Schwächen, die den Disk…",
+     "figures": "KGV 16,8; Aktie nahe 520$; Hyperscaler -10% YTD"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "04yYuesQS4g",
+     "url": "https://www.youtube.com/watch?v=04yYuesQS4g&t=552s",
      "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "makro",
-     "note": "Wall Street stark, Dow Jones neue Bestmarke. Asien gemischt, Nikkei gut. DAX wird heute höher erwartet.",
-     "einordnung": "Die Vorgaben sind solide, aber ein Dow-Rekord bei gleichzeitigen Tech-Rotationen signalisiert keine breite Euphorie, sondern eine selektive Marktführung."
+     "kategorie": "news",
+     "note": "Meta plant eine neue App namens 'Arena' für Prognosemärkte — zunächst ohne Echtgeld, später möglicherweise mit Echtgeld. Die Aktie reagiert kaum.",
+     "einordnung": "Prognosemärkte sind ein Nischenfeld, das in den USA seit den Wahljahren an Fahrt aufnimmt. Für Meta ist das ein marginales Projekt, das aber regulatorischen Sprengstoff birgt, sobald Echtgeld ins Spi…"
+    },
+    {
+     "date": "2026-06-09",
+     "video_id": "xX8ngYJCStg",
+     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=949s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Gerüchte über mögliche Kapitalerhöhung (ca. 10 Mrd. USD) für KI-Infrastruktur nach Alphabets 80-Mrd.-Ankündigung; Aktie kurzfristig belastet.",
+     "einordnung": "Meta wird in KI-CapEx-Rennen hineingezogen, nachdem Zuckerberg lange konservativer agiert. Liquiditäts-Bedenken ungerechtfertigt (starke FCF), aber Margin-Druck real. Amazon/Microsoft ebenfalls unter…",
+     "figures": "Gerüchte ~10 Mrd. USD Kapitalerhöhung; Alphabet kündigte 80 Mrd. USD an"
+    },
+    {
+     "date": "2025-11-20",
+     "video_id": "HNPb_J0F96o",
+     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=2633s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Meta fiel deutlich und nähert sich den April-Tiefs. Die nächste Unterstützung liegt bei 558 USD, darüber eine Zone von 576–613 USD. Ein Schlusskurs unter 558 USD wäre stark bärisch. Erholungspotenzia…",
+     "einordnung": "Meta ist der klare Underperformer im Mag-7-Quartett dieser Woche. Die Annäherung an die April-Tiefs ist charttechnisch kritisch — ein Bruch würde eine größere Top-Bildung signalisieren.",
+     "figures": "Unterstützung 558 USD, Widerstand 686–724 USD"
+    }
+   ]
+  },
+  "005930.KS": {
+   "name": "Samsung",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=2647s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Starke Zahlen: Umsatz +129% YoY, Gewinn +1800% YoY. Operativer Gewinn 58,4 Mrd. $ übertrifft Nvidia, Alphabet, Microsoft, Apple. Aktie trotzdem fallend wegen Speicherpreis-Sorgen, KGV 5. DRAM-Preise…",
+     "einordnung": "Ein KGV von 5 bei +1800% Gewinnwachstum ist eine paradoxe Bewertung — der Markt diskontiert hier einen zyklischen Peak. Speicher-Chips sind tief zyklisch, und der Markt hat recht, skeptisch zu sein —…",
+     "figures": "Umsatz +129% YoY, Gewinn +1800% YoY, KGV 5, operativer Gewinn 58,4 Mrd. $, DRAM-Preise +20% erwartet"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=353s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Samsung-Aktie verliert zeitweise 10% in Korea, trotz eines operativen Gewinns von 58 Mrd. $ und 25% Umsatzwachstum. Grund sind Gewinnmitnahmen nach einem starken Kursanstieg von ca. 80% innerhalb kur…",
+     "einordnung": "Ein 10%-Abverkauf trotz Rekordbilanz ist das klassische 'buy the rumor, sell the news'-Muster. Nach 80% Kursanstieg war die Bilanz bereits eingepreist — die Enttäuschung liegt nicht in den Zahlen, so…",
+     "figures": "Aktie -10%; operativer Gewinn Q2: 58 Mrd. $; Umsatzwachstum +25%"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=926s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Samsungs operativer Gewinn im Q2 hat sich verneunfacht, die Aktie bricht dennoch wegen der Chipkrise und Überinvestitionsängsten ein. Haidt warnt vor weiteren Risiken.",
+     "einordnung": "Ein verneunfachter operativer Gewinn bei gleichzeitigem Kurssturz ist der klassische Konflikt zwischen Fundamenten und Erwartungen. Der Markt preist offenbar ein, dass die Zyklusspitze erreicht ist u…",
+     "figures": "Operativer Gewinn Q2: 89,4 Billionen Won (58 Mrd USD); Umsatz 133,87 Bio Won (Vorjahr 74,57 Bio Won)"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "-DiygCxAXrc",
+     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=3211s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Samsung ist der mögliche Foundry-Partner für Meta. Für Q2 wird ein Betriebsgewinn von 56,3 Mrd $ erwartet, was +750% gegenüber dem Vorjahr entspricht. Charttechnisch befindet sich die Aktie in einer…",
+     "einordnung": "Ein Betriebsgewinn-Sprung von +750% ist spektakulär und spiegelt die Erholung im Speicherchipzyklus wider. Der potenzielle Meta-Auftrag würde Samsungs Foundry-Sparte zusätzlich validieren. Die Range-…",
+     "figures": "56,3 Mrd $, +750%, 240 Mrd $"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=1218s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Südkorea plant ein 500-Mrd.-Dollar-Investitionsprogramm für KI und Halbleiter; Samsung baut neue Fabriken, operative Gewinne sollen stark steigen. Die Aktie ist mit einem KGV von ca. 6 günstig und ha…",
+     "einordnung": "Ein KGV von 6 bei einem Halbleitergiganten mit staatlichem Investitionsrückwind ist extrem attraktiv — doch +370% in einem Jahr bedeutet, dass viel Gutes bereits eingepreist ist. Die Frage ist, ob di…",
+     "figures": "Investition 500 Mrd. $; op. Gewinn 2026: 237 Mrd. $, 2027: 324 Mrd. $, 2028: 330 Mrd. $; KGV ca. 6; Aktie +370% in 1 Jahr"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "4K4U0fRfM0A",
+     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=2336s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Ein großes Aktienrückkaufprogramm von 90 Billionen Won (ca. 60 Mrd. USD) wird aufgelegt. Die Aktie korrigierte gestern 14 Prozent und erholt sich heute. KGV von 5 und PEG von 0,07 sind extrem günstig.",
+     "einordnung": "KGV 5 und PEG 0,07 sind selbst für den koreanischen Markt extrem niedrig. Der massive Rückkauf signalisiert Managementvertrauen. Der 'Korea-Discount' ist persistent, aber die Bewertungslücke ist hier…",
+     "figures": "Rückkauf 90 Billionen Won (60 Mrd. USD), KGV 5, PEG 0,07, Korrektur von 30% und 21%"
+    }
+   ]
+  },
+  "AMZN": {
+   "name": "Amazon",
+   "auftritte": [
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=3240s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Plant 25 Mrd. $ Anleihe (Nachfrage 62 Mrd. $), vermutlich für KI-Infrastruktur. Capex 200 Mrd. $ erwartet. Aktie in Korrektur, Widerstand bei 250 $.",
+     "einordnung": "Eine 2,5-fach übersubskribierte Anleihe bei 25 Mrd. $ zeigt extremen Investorenappetit für Amazon-Kredit — das ist ein Vertrauenssignal. 200 Mrd. $ Capex für AI-Infrastruktur ist gewaltig, aber bei A…",
+     "figures": "25 Mrd. $ Anleihe, 62 Mrd. $ Nachfrage (2,5x übersubskribiert), 200 Mrd. $ Capex erwartet, Widerstand 250 $, Ziel 280 $"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=3230s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Prime Day entwickelt sich zum zweiten großen Shopping-Fenster; Umsatz über 26 Mrd. $ (+9,3%), starkes mobiles Shopping und KI-gestützte Produktsuche. Aktie mit niedrigem KGV und guter Chartstruktur.",
+     "einordnung": "Prime Day mit 26,4 Mrd. $ und +9,3% Wachstum zeigt, dass Amazon den Konsum nicht nur bedient, sondern aktiv formt. Ein KGV von 28 bei diesem Wachstum ist fair bewertet, und die Chartstruktur mit Unte…",
+     "figures": "Prime Day Umsatz 26,4 Mrd. $ (+9,3%); Black Friday/Cyber Monday 32,5 Mrd. $; KGV 28; Unterstützung 220$, Ziel 250$/270$"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=246s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Amazon fiel gestern um 4,7%, obwohl es mit KGV von knapp über 20 nicht teuer bewertet ist, bietet mögliche Chance.",
+     "einordnung": "Ein KGV von knapp über 20 für Amazon ist historisch gesehen ein ausgesprochen niedriges Niveau. Wenn hier Unterstützungen halten, könnte das eine antizyklische Chance sein – vorausgesetzt, der Gesamt…",
+     "figures": "4,7%, KGV knapp über 20"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=4010s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Amazon veranstaltet den Prime Day im Juni. Bank of America erhöht das Kursziel, der Chart ist bullisch.",
+     "einordnung": "Amazon profitiert von der KI-Infrastruktur (AWS) und dem robusten Konsum. Der vorgezogene Prime Day ist ein kluger Schachzug. Das Kaufsignal ist intakt, die 293$ sind das nächste Etappenziel.",
+     "figures": "Kursziel Bank of America 310$; Prime Day zusätzlicher Umsatz 8,5 Mrd. $; Prognose 199 Mrd. $; Kursziel 353$; Zwischenziel 293$"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=611s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Amazon zeigt eine Nullperformance im Jahresverlauf. Das KGV für 2026 liegt knapp bei 30. Im Einzelhandel wächst der Wettbewerb durch Walmart.",
+     "einordnung": "Eine Nullperformance bei einem KGV von 30 signalisiert, dass der Markt bereits viel einpreist und auf den Beweis wartet, dass AWS das KI-Rennen nicht verliert. Walmart als Einzelhandels-Konkurrent is…",
+     "figures": "KGV 2026 knapp 30, Jahresperformance 0%"
     }
    ]
   },
@@ -837,61 +1259,6 @@
     }
    ]
   },
-  "005930.KS": {
-   "name": "Samsung",
-   "auftritte": [
-    {
-     "date": "2026-07-07",
-     "video_id": "nPsSsD7zbI8",
-     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=353s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Samsung-Aktie verliert zeitweise 10% in Korea, trotz eines operativen Gewinns von 58 Mrd. $ und 25% Umsatzwachstum. Grund sind Gewinnmitnahmen nach einem starken Kursanstieg von ca. 80% innerhalb kur…",
-     "einordnung": "Ein 10%-Abverkauf trotz Rekordbilanz ist das klassische 'buy the rumor, sell the news'-Muster. Nach 80% Kursanstieg war die Bilanz bereits eingepreist — die Enttäuschung liegt nicht in den Zahlen, so…",
-     "figures": "Aktie -10%; operativer Gewinn Q2: 58 Mrd. $; Umsatzwachstum +25%"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=926s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Samsungs operativer Gewinn im Q2 hat sich verneunfacht, die Aktie bricht dennoch wegen der Chipkrise und Überinvestitionsängsten ein. Haidt warnt vor weiteren Risiken.",
-     "einordnung": "Ein verneunfachter operativer Gewinn bei gleichzeitigem Kurssturz ist der klassische Konflikt zwischen Fundamenten und Erwartungen. Der Markt preist offenbar ein, dass die Zyklusspitze erreicht ist u…",
-     "figures": "Operativer Gewinn Q2: 89,4 Billionen Won (58 Mrd USD); Umsatz 133,87 Bio Won (Vorjahr 74,57 Bio Won)"
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "-DiygCxAXrc",
-     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=3211s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Samsung ist der mögliche Foundry-Partner für Meta. Für Q2 wird ein Betriebsgewinn von 56,3 Mrd $ erwartet, was +750% gegenüber dem Vorjahr entspricht. Charttechnisch befindet sich die Aktie in einer…",
-     "einordnung": "Ein Betriebsgewinn-Sprung von +750% ist spektakulär und spiegelt die Erholung im Speicherchipzyklus wider. Der potenzielle Meta-Auftrag würde Samsungs Foundry-Sparte zusätzlich validieren. Die Range-…",
-     "figures": "56,3 Mrd $, +750%, 240 Mrd $"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=1218s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Südkorea plant ein 500-Mrd.-Dollar-Investitionsprogramm für KI und Halbleiter; Samsung baut neue Fabriken, operative Gewinne sollen stark steigen. Die Aktie ist mit einem KGV von ca. 6 günstig und ha…",
-     "einordnung": "Ein KGV von 6 bei einem Halbleitergiganten mit staatlichem Investitionsrückwind ist extrem attraktiv — doch +370% in einem Jahr bedeutet, dass viel Gutes bereits eingepreist ist. Die Frage ist, ob di…",
-     "figures": "Investition 500 Mrd. $; op. Gewinn 2026: 237 Mrd. $, 2027: 324 Mrd. $, 2028: 330 Mrd. $; KGV ca. 6; Aktie +370% in 1 Jahr"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "4K4U0fRfM0A",
-     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=2336s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Ein großes Aktienrückkaufprogramm von 90 Billionen Won (ca. 60 Mrd. USD) wird aufgelegt. Die Aktie korrigierte gestern 14 Prozent und erholt sich heute. KGV von 5 und PEG von 0,07 sind extrem günstig.",
-     "einordnung": "KGV 5 und PEG 0,07 sind selbst für den koreanischen Markt extrem niedrig. Der massive Rückkauf signalisiert Managementvertrauen. Der 'Korea-Discount' ist persistent, aber die Bewertungslücke ist hier…",
-     "figures": "Rückkauf 90 Billionen Won (60 Mrd. USD), KGV 5, PEG 0,07, Korrektur von 30% und 21%"
-    }
-   ]
-  },
   "HOOD": {
    "name": "Robinhood",
    "auftritte": [
@@ -1138,108 +1505,6 @@
      "note": "Zwei juristische Meilensteine rücken in den Fokus: der 4. Juni als Fristende für den Glyphosat-Sammelvergleich und das Urteil des obersten US-Gerichts Ende Juni. Die Aktie könnte kurzfristig als Unde…",
      "einordnung": "Bayer ist ein klassischer Turnaround-Kandidat mit binärem Risiko – die juristischen Termine im Juni könnten entweder eine Entlastung oder eine neue Belastung bringen. Der kurzfristige Momentum-Tailwi…",
      "figures": "7,25 Milliarden Dollar (Rückstellung für Glyphosat-Vergleiche)"
-    }
-   ]
-  },
-  "META": {
-   "name": "Meta Platforms",
-   "auftritte": [
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=261s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Meta plant den Einstieg ins Cloudgeschäft, offenbar wegen Überkapazitäten bei Chip-Anbietern. Die Aktie profitiert, während Chipwerte breit unter Druck geraten. Haidt erwartet kurzfristig eine Seitwä…",
-     "einordnung": "Metas Cloud-Ambitionen sind strategisch logisch, wenn man eigene KI-Infrastruktur aufbauen will. Der Markt feiert das als Hyperscaler-Story, doch die eigentliche Botschaft ist, dass die Chip-Nachfrag…"
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "-DiygCxAXrc",
-     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=2933s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Meta verhandelt mit Samsung über eigene KI-Chips auf 2nm-Basis, das Auftragsvolumen beläuft sich auf 6,5 Mrd $. Die Aktie notiert mit einem KGV unter 18 und einem PEG unter 1. Goersch empfiehlt langf…",
-     "einordnung": "Dass Meta eigene Chips entwickelt, ist ein strategisch logischer Schritt zur Unabhängigkeit von Nvidia — das erinnert an Google's TPU-Entwicklung, die ebenfalls aus der Abhängigkeit von externen Chip…",
-     "figures": "6,5 Mrd $, 2nm, KGV unter 18, PEG unter 1"
-    },
-    {
-     "date": "2026-07-03",
-     "video_id": "vlq3ZDw4Te4",
-     "url": "https://www.youtube.com/watch?v=vlq3ZDw4Te4&t=306s",
-     "channel": "BerneckerTV",
-     "kategorie": "news",
-     "note": "Meta prüft den Einstieg ins Cloud-Geschäft mit KI-Rechenleistung (Meta Compute). Der Markt reagiert positiv mit einem Kurssprung von 8,8%, doch der Host warnt, dass diese Cloud-Fantasie allein noch n…",
-     "einordnung": "Der Cloud-Einstieg ist strategisch richtig, um die massiven KI-Investitionen zu monetarisieren, doch konkurriert Meta direkt mit etablierten Hyperscalern. Der Kurssprung ist eher eine Short-Squeeze-a…",
-     "figures": "Investitionen 125–145 Mrd. $ für 2026; Kurs +8,8% auf knapp 613 $; CoreWeave −14%, Nebius −17%; früheres Kursniveau 800 $, Tief 520 $; Erholungspotenzial bis 700 $"
-    },
-    {
-     "date": "2026-07-03",
-     "video_id": "wVQZI7oZ9mQ",
-     "url": "https://www.youtube.com/watch?v=wVQZI7oZ9mQ&t=2988s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Aktie von Widerstand 625 $ abgewiesen. Interne KI-Entwicklung stockt, Personalabbau 10% nicht wie erwartet. Bewertung günstig: KGV 18, PEG 0,85. Cloud-Vermietung (Meta Compute) könnte Gewinn um 3,50-…",
-     "einordnung": "KGV 18 bei PEG 0,85 ist für einen Tech-Giganten attraktiv. Die Cloud-Vermietung als neues Geschäftsmodell könnte eine Re-Rating-Katalysator sein, solange die KI-Infrastruktur funktioniert. Der Host's…",
-     "figures": "Widerstand 625 $, KGV 18, PEG 0,85, Gewinnpotenzial 3,50-5,50 $/Aktie durch Cloud-Vermietung"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=3283s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Bloomberg-Bericht über Cloud-Monetarisierung. CapEx von 125-145 Mrd. $, Aktie reagiert mit +8,8%. Analysten sehen großes Potenzial.",
-     "einordnung": "Metas Cloud-Pläne sind ein Gamechanger, der die CapEx-Story neu bewertet. Die Aktie reagiert entsprechend positiv, aber die Umsetzung ist erst ab 2027 zu erwarten.",
-     "figures": "CapEx 125-145 Mrd. $, Kursziel Jefferies 825 $, Bank of America 835 $, Token-Kosten 50.000 $ pro Mitarbeiter"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1877s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Investiert zu viel in KI, Haidt sieht das kritisch. Vorsichtige Haltung.",
-     "einordnung": "Metas KI-Investitionen sind enorm, aber im Gegensatz zu Oracle hat Meta zumindest Werbeeinnahmen, die den Cashflow stützen. Die Frage ist, ob die KI-Ausgaben jemals zu einem ROI führen oder ob sie ei…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=2552s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Meta nutzt Gemini-Modelle mit eingeschränktem Zugang und hat keine eigene Cloud-Infrastruktur; die Aktie notiert nahe den Tiefs mit einem KGV von 16,8. Hyperscaler sind YTD -10%.",
-     "einordnung": "Ein KGV von 16,8 für Meta ist bemerkenswert günstig — aber die Abhängigkeit von fremden KI-Modellen (Gemini) und das Fehlen einer eigenen Cloud-Infrastruktur sind strategische Schwächen, die den Disk…",
-     "figures": "KGV 16,8; Aktie nahe 520$; Hyperscaler -10% YTD"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "04yYuesQS4g",
-     "url": "https://www.youtube.com/watch?v=04yYuesQS4g&t=552s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Meta plant eine neue App namens 'Arena' für Prognosemärkte — zunächst ohne Echtgeld, später möglicherweise mit Echtgeld. Die Aktie reagiert kaum.",
-     "einordnung": "Prognosemärkte sind ein Nischenfeld, das in den USA seit den Wahljahren an Fahrt aufnimmt. Für Meta ist das ein marginales Projekt, das aber regulatorischen Sprengstoff birgt, sobald Echtgeld ins Spi…"
-    },
-    {
-     "date": "2026-06-09",
-     "video_id": "xX8ngYJCStg",
-     "url": "https://www.youtube.com/watch?v=xX8ngYJCStg&t=949s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Gerüchte über mögliche Kapitalerhöhung (ca. 10 Mrd. USD) für KI-Infrastruktur nach Alphabets 80-Mrd.-Ankündigung; Aktie kurzfristig belastet.",
-     "einordnung": "Meta wird in KI-CapEx-Rennen hineingezogen, nachdem Zuckerberg lange konservativer agiert. Liquiditäts-Bedenken ungerechtfertigt (starke FCF), aber Margin-Druck real. Amazon/Microsoft ebenfalls unter…",
-     "figures": "Gerüchte ~10 Mrd. USD Kapitalerhöhung; Alphabet kündigte 80 Mrd. USD an"
-    },
-    {
-     "date": "2025-11-20",
-     "video_id": "HNPb_J0F96o",
-     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=2633s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Meta fiel deutlich und nähert sich den April-Tiefs. Die nächste Unterstützung liegt bei 558 USD, darüber eine Zone von 576–613 USD. Ein Schlusskurs unter 558 USD wäre stark bärisch. Erholungspotenzia…",
-     "einordnung": "Meta ist der klare Underperformer im Mag-7-Quartett dieser Woche. Die Annäherung an die April-Tiefs ist charttechnisch kritisch — ein Bruch würde eine größere Top-Bildung signalisieren.",
-     "figures": "Unterstützung 558 USD, Widerstand 686–724 USD"
     }
    ]
   },
@@ -2434,60 +2699,6 @@
     }
    ]
   },
-  "RWE.DE": {
-   "name": "RWE",
-   "auftritte": [
-    {
-     "date": "2026-07-06",
-     "video_id": "gOPRrqA_L38",
-     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1774s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Fast-Kaufsignal: Noch nicht über 58 EUR ausgebrochen, aber der positive Sektortrend (E.ON bereits ausgebrochen) lässt einen Ausbruch erwarten.",
-     "einordnung": "Das Catch-up-Argument innerhalb des Versorgersektors ist stichhaltig — wenn E.ON ausbricht, zieht RWE meist nach. Der konventionelle Stromgeschäftsanteil bei RWE macht den Titel zyklischer als E.ON,…",
-     "figures": "58 EUR (Clusterpunkt), 62,50 EUR (Ziel), 67-69 EUR (höhere Ziele)"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=460s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "RWE will Anteil an Ampion (Höchstspannungsnetz Nordsee-Alpen) von 25,1% auf 55% aufstocken, Kosten ca. 4 Mrd. Euro. Aktie unter Gewinnmitnahmen.",
-     "einordnung": "Eine 4-Mrd.-Euro-Investition in ein Höchstspannungsnetz ist strategisch sinnvoll, aber kurzfristig belastend. Die Aktie reagiert mit Gewinnmitnahmen – das ist typisch für eine Kapitalerhöhung oder gr…",
-     "figures": "25,1% auf 55%, 4 Milliarden Euro"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=1256s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "RWE stockt Anteil an Amprion auf 55% auf, Kaufpreis 3,6 Milliarden Euro, finanziert durch Kapitalerhöhung und Aktienverkauf. Gewinnziel 2031: 4,40 auf 4,55 Euro je Aktie. Kurzfristig seitwärts.",
-     "einordnung": "Die Aufstockung des Amprion-Anteils ist strategisch sinnvoll, weil regulierte Netzbetriebe stabile Erträge liefern, aber die Finanzierung über Kapitalerhöhung und Aktienverkauf bedeutet Verwässerung…",
-     "figures": "3,6 Mrd. Euro Kaufpreis, Anteil 55%, Gewinnziel 4,40-4,55 Euro/Aktie"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=1496s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "RWE erhöht Anteil an Amprion auf 55% für 3,6 Mrd. €, teilweise über Aktienemission. Schritt in Richtung regulierten Netzbetrieb, stabilisiert Erträge.",
-     "einordnung": "Die Aufstockung der Amprion-Beteiligung ist ein strategisch sinnvoller Schritt hin zu regulierten, planbaren Erträgen. Die Finanzierung über Aktienemission verdünnt jedoch kurzfristig, und bei einem…",
-     "figures": "3,6 Mrd. €, KGV 19, Dividendenrendite 2,4%"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
-     "einordnung": "RWE leidet ebenfalls unter dem Momentum-Wechsel – als Underperformer könnte die Aktie jedoch kurzfristig Rotationsgelder anziehen."
-    }
-   ]
-  },
   "AIR.DE": {
    "name": "Airbus",
    "auftritte": [
@@ -2682,21 +2893,6 @@
      "note": "5% Dividendenrendite, Bewertung liegt beim halben inneren Wert. Nach erneutem Tief (Iran-Dip, Dividendenabschlag) in Bodenbildung.",
      "einordnung": "Eine Dividendenrendite von 5% bei halbem innerem Wert ist ein klassisches Deep-Value-Setup. Die Bodenbildung nach dem Iran-Dip ist charttechnisch plausibel, aber das gesamte Setup steht und fällt mit…",
      "figures": "5% Dividendenrendite, ca. 77 EUR (Deckelbereich)"
-    }
-   ]
-  },
-  "AFX.DE": {
-   "name": "Carl Zeiss Meditec",
-   "auftritte": [
-    {
-     "date": "2026-07-06",
-     "video_id": "gOPRrqA_L38",
-     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=3441s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Starker Kursverlust (80-90%), Medizintechniksektor erholt sich langsam. Großaktionär investiert 200 Mio. EUR — möglicher Turnaround.",
-     "einordnung": "Ein Kursverlust von 80-90% ist extrem und markiert oft die Zone maximaler Verzweiflung — genau dort entstehen die besten Turnaround-Chancen. Das 200-Millionen-Euro-Engagement des Großaktionärs ist ei…",
-     "figures": "200 Mio. EUR (Rückkauf durch Großaktionär)"
     }
    ]
   },
@@ -4365,51 +4561,6 @@
     }
    ]
   },
-  "AMZN": {
-   "name": "Amazon",
-   "auftritte": [
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=3230s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Prime Day entwickelt sich zum zweiten großen Shopping-Fenster; Umsatz über 26 Mrd. $ (+9,3%), starkes mobiles Shopping und KI-gestützte Produktsuche. Aktie mit niedrigem KGV und guter Chartstruktur.",
-     "einordnung": "Prime Day mit 26,4 Mrd. $ und +9,3% Wachstum zeigt, dass Amazon den Konsum nicht nur bedient, sondern aktiv formt. Ein KGV von 28 bei diesem Wachstum ist fair bewertet, und die Chartstruktur mit Unte…",
-     "figures": "Prime Day Umsatz 26,4 Mrd. $ (+9,3%); Black Friday/Cyber Monday 32,5 Mrd. $; KGV 28; Unterstützung 220$, Ziel 250$/270$"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=246s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Amazon fiel gestern um 4,7%, obwohl es mit KGV von knapp über 20 nicht teuer bewertet ist, bietet mögliche Chance.",
-     "einordnung": "Ein KGV von knapp über 20 für Amazon ist historisch gesehen ein ausgesprochen niedriges Niveau. Wenn hier Unterstützungen halten, könnte das eine antizyklische Chance sein – vorausgesetzt, der Gesamt…",
-     "figures": "4,7%, KGV knapp über 20"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=4010s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Amazon veranstaltet den Prime Day im Juni. Bank of America erhöht das Kursziel, der Chart ist bullisch.",
-     "einordnung": "Amazon profitiert von der KI-Infrastruktur (AWS) und dem robusten Konsum. Der vorgezogene Prime Day ist ein kluger Schachzug. Das Kaufsignal ist intakt, die 293$ sind das nächste Etappenziel.",
-     "figures": "Kursziel Bank of America 310$; Prime Day zusätzlicher Umsatz 8,5 Mrd. $; Prognose 199 Mrd. $; Kursziel 353$; Zwischenziel 293$"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=611s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Amazon zeigt eine Nullperformance im Jahresverlauf. Das KGV für 2026 liegt knapp bei 30. Im Einzelhandel wächst der Wettbewerb durch Walmart.",
-     "einordnung": "Eine Nullperformance bei einem KGV von 30 signalisiert, dass der Markt bereits viel einpreist und auf den Beweis wartet, dass AWS das KI-Rennen nicht verliert. Walmart als Einzelhandels-Konkurrent is…",
-     "figures": "KGV 2026 knapp 30, Jahresperformance 0%"
-    }
-   ]
-  },
   "BNP.PA": {
    "name": "BNP Paribas",
    "auftritte": [
@@ -5056,31 +5207,6 @@
     }
    ]
   },
-  "VNA.DE": {
-   "name": "Vonovia",
-   "auftritte": [
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=398s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Vonovia will Wandelanleihe emittieren (Stückelung 100.000€, Kupon 1,6-2,1%), nicht für Privatanleger, Kurs heute etwas schwächer.",
-     "einordnung": "Eine Wandelanleihe in dieser Stückelung ist ein institutionelles Instrument. Für Privatanleger ist das nur ein Stimmungsbarometer – die Aktie reagiert schwächer, was auf eine leichte Verwässerungssor…",
-     "figures": "100.000€ Stückelung, Kupon 1,6-2,1%"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=3656s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Unter Druck durch Zinsängste. Fehlausbruch und Top-Formation. Chart schwach.",
-     "einordnung": "Vonovia ist ein Opfer der Zinsängste – Immobilien-REITs leiden unter höheren Zinsen. Der Chart zeigt Fehlausbruch und Top-Formation. Kein Kaufsignal.",
-     "figures": "Operatives Gewinnziel bis 2028: 3,5 Mrd. €; Analysten-Kursziel über 30€"
-    }
-   ]
-  },
   "MC.PA": {
    "name": "LVMH",
    "auftritte": [
@@ -5331,31 +5457,6 @@
      "note": "Aus langfristigem Trendkanal ausgebrochen, neues Allzeithoch bei 131$. Konsolidiert aktuell bei 95$.",
      "einordnung": "Newmont hat ein neues Allzeithoch bei 131$ erreicht – ein bullisches Signal. Die aktuelle Konsolidierung bei 95$ ist normal nach starkem Anstieg. Wenn die Trendlinie bricht, könnte eine neue Aufwärts…",
      "figures": "Allzeithoch 131$; Unterstützung 95$ (3820er Retracement); bei Bruch 82$, 70$"
-    }
-   ]
-  },
-  "LHA.DE": {
-   "name": "Lufthansa",
-   "auftritte": [
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=3555s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Erholt sich von Iran-Konflikt. Chart technisch verbessert (Kaufsignal 50er über 200er).",
-     "einordnung": "Lufthansa zeigt eine technische Erholung nach dem Iran-Schock. Die Fundamentals sind schwach (Q1-Verlust), aber der Chart verbessert sich. Das ist ein klassisches Turnaround-Setup.",
-     "figures": "Q1 Verlust -0,55€ (Vorjahr -0,74€); Umsatz +7,6%"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=399s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Profitiert doppelt: sinkende Kerosinpreise durch fallenden Ölpreis und geopolitische Entspannung. Charttechnisch überwindet der Kurs einen Widerstand; nächstes Ziel ist eine Kurslücke bei ca. 9 €.",
-     "einordnung": "Lufthansa ist der klassische Ölpreis-Profiteur — jeder Rückgang der Kerosinkosten wirkt direkt auf die ohnehin dünnen Margen. Das charttechnische Kursziel von 9 € ist plausibel, die strukturellen Pro…",
-     "figures": "Kurslücke bei ca. 9 €"
     }
    ]
   },
