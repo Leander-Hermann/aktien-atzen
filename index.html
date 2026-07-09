@@ -366,6 +366,70 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   @media(prefers-reduced-motion:no-preference){
     .idx:active,.read:active,.vtile:active,.wlc:active,.fgcard.clickable:active,.ecard:active,.topic.clickable:active,.mvrow:active,.tn:active{transform:translateY(-1px) scale(.98);transition:transform .12s ease-out}
   }
+  /* ===== Phase 2b: Mobile-Shell — floating Glass-Bottom-Nav + Snap-Slide-Tabs (§10/§7, ADR-704) ===== */
+  /* Chart-Flächen: sauberes touch-action vorbereiten (künftiger Stufe-2-Edge-Swipe darf nicht mit dem
+     internen Pan/Zoom von lightweight-charts kollidieren) — Befund/Konfliktflächen im Tagebuch. */
+  #lw,#fglw,#stklw{touch-action:pan-y}
+  .bnav{display:none}
+  .tabtrack,.tabtrack-inner{display:contents}
+  @media(max-width:1023px){
+    .nav{display:none}
+    .wrap{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+    .bnav{
+      display:flex;position:fixed;left:50%;bottom:calc(10px + env(safe-area-inset-bottom));
+      transform:translateX(-50%);width:min(94%,440px);height:58px;
+      background:var(--bar);backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);
+      border:1px solid var(--line);border-radius:999px;z-index:80;box-shadow:var(--shadow-pop);padding:0 6px;
+    }
+    @supports not (backdrop-filter:blur(12px)){.bnav{background:color-mix(in srgb,var(--card) 94%,transparent)}}
+    @media(prefers-reduced-transparency:reduce){.bnav{background:var(--card);backdrop-filter:none;-webkit-backdrop-filter:none}}
+    /* Transform-Slide (Stufe 1): äußerer Clip statisch, innere Reihe wird per translateX verschoben.
+       Bewusst KEIN overflow-x-Scroll-Snap — das gäbe natives Finger-Swipe (Stufe-2-Verhalten) und den
+       ungate-ten Chart-/Zurück-Gesten-Konflikt schon jetzt. Begründung im Tagebuch (Interpretations-Entscheid). */
+    .tabtrack{display:block;overflow:hidden}
+    .tabtrack-inner{display:flex;align-items:flex-start;transform:translateX(calc(var(--ti,0) * -100%));transition:transform var(--dur-slide) var(--ease-snap);will-change:transform}
+    .tabtrack.tt-hidden{display:none}
+    .tabtrack-inner>#pageHeute,.tabtrack-inner>#pageAna,.tabtrack-inner>#pageIdeen{flex:0 0 100%;min-width:100%}
+    /* Header degradiert zuerst, wenn das Mehr-Sheet offen ist (Glass-Budget-Rangfolge: Bottom-Nav > Mehr-Sheet > Header) */
+    body.mehr-open .appbar{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:color-mix(in srgb,var(--card) 94%,transparent)!important}
+  }
+  .bnav-ind{position:absolute;top:6px;bottom:6px;left:6px;width:46px;border-radius:999px;background:color-mix(in srgb,var(--accent) 16%,transparent);pointer-events:none;z-index:0}
+  .bnav-slot{position:relative;z-index:1;flex:1;min-width:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border:none;background:transparent;color:var(--muted);cursor:pointer;border-radius:999px;font-family:inherit;padding:0}
+  .bnav-slot.on{color:var(--ink)}
+  .bnav-slot svg{width:24px;height:24px;flex:0 0 auto}
+  .bnav-slot .bnav-lbl{font-size:11px;font-weight:600;letter-spacing:.02em;line-height:1}
+  #bnavSearch{flex:0 0 48px}
+  /* Mehr-Sheet (E2 schwebend, Glass §6) */
+  .sheet-overlay{position:fixed;inset:0;background:rgba(0,0,0,.4);display:none;align-items:flex-end;justify-content:center;z-index:90}
+  .sheet-overlay.open{display:flex}
+  .sheet{position:relative;width:100%;max-width:560px;max-height:74vh;display:flex;flex-direction:column;overflow:hidden;background:var(--bar);backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);border:1px solid var(--line);border-radius:24px 24px 0 0;padding:10px 8px calc(18px + env(safe-area-inset-bottom));box-shadow:var(--shadow-pop);transform:translateY(100%);transition:transform var(--dur-base) var(--ease-out)}
+  .sheet-overlay.open .sheet{transform:translateY(0)}
+  @supports not (backdrop-filter:blur(12px)){.sheet{background:color-mix(in srgb,var(--card) 96%,transparent)}}
+  @media(prefers-reduced-transparency:reduce){.sheet{background:var(--card);backdrop-filter:none;-webkit-backdrop-filter:none}}
+  @media(prefers-reduced-motion:reduce){.sheet{transition:none}}
+  .sheet-handle{width:36px;height:4px;border-radius:2px;background:var(--line);margin:2px auto 10px;flex:0 0 auto}
+  .sheet-body{flex:1 1 auto;overflow-y:auto;min-height:0}
+  .sheet-item{width:100%;display:flex;align-items:center;gap:12px;padding:14px;border:none;background:transparent;color:var(--ink);font-family:inherit;font-size:14.5px;font-weight:600;text-align:left;cursor:pointer;border-radius:14px;min-height:48px}
+  .sheet-item .si-ic{width:22px;height:22px;flex:0 0 auto;color:var(--muted)}
+  .sheet-sep{height:1px;background:var(--line);margin:6px 8px}
+  .sheet-legal .sheet-item{font-weight:500;color:var(--muted);font-size:12.5px;min-height:40px}
+  @media(hover:hover) and (pointer:fine){.sheet-item:hover{background:var(--chip)}}
+  /* §14.5 Progressive Blur am Sheet-Ende (Premium-Variante, zählt in dieses Max-2-Kontingent) */
+  .sheet-scrollhint{position:absolute;left:0;right:0;bottom:0;height:42px;pointer-events:none;opacity:1;transition:opacity .15s ease}
+  @media(prefers-reduced-motion:reduce){.sheet-scrollhint{transition:none}}
+  .sheet-scrollhint.at-end{opacity:0}
+  .sheet-scrollhint .shstrip{position:absolute;left:0;right:0;bottom:0;mask-image:linear-gradient(to top,black,transparent);-webkit-mask-image:linear-gradient(to top,black,transparent)}
+  .sheet-scrollhint .s1{height:14px;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
+  .sheet-scrollhint .s2{height:26px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .sheet-scrollhint .s3{height:42px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+  @supports not (backdrop-filter:blur(2px)){
+    .sheet-scrollhint .s1,.sheet-scrollhint .s2{display:none}
+    .sheet-scrollhint .s3{backdrop-filter:none;-webkit-backdrop-filter:none;background:linear-gradient(to top,var(--bar),transparent)}
+  }
+  @media(prefers-reduced-transparency:reduce){
+    .sheet-scrollhint .s1,.sheet-scrollhint .s2{display:none}
+    .sheet-scrollhint .s3{backdrop-filter:none;-webkit-backdrop-filter:none;background:linear-gradient(to top,var(--bar),transparent)}
+  }
 </style>
 </head>
 <body>
@@ -376,6 +440,8 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 </div></div>
 
 <div class="wrap">
+ <div class="tabtrack" id="tabtrack">
+ <div class="tabtrack-inner" id="tabtrackInner">
  <div id="pageHeute">
   <div class="banner hidden" id="banner">Demo-Ansicht · echte Inhalte erscheinen nach dem nächsten Digest-Lauf.</div>
   <div class="cal">
@@ -418,6 +484,8 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   <p style="color:var(--muted);font-size:12.5px;margin:0 0 14px">Aus den heutigen News &amp; Video-Briefings abgeleitet. Keine Anlageberatung.</p>
   <div id="ideaList"></div>
  </div>
+ </div><!-- /.tabtrack-inner -->
+ </div><!-- /.tabtrack -->
 
  <div id="pageKO" class="hidden">
   <div class="sec"><h2>KO-Rechner</h2></div>
@@ -529,6 +597,59 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   <div class="top"><h3 id="legalTitle">Rechtliches</h3><button class="x" onclick="closeLegal()">×</button></div>
   <div id="legalBody" class="legalbody"></div>
 </div></div>
+
+<!-- Phase 2b: floating Glass-Bottom-Nav (§10, ADR-704) — nur < 1024px sichtbar -->
+<nav class="bnav" id="bnav" aria-label="Hauptnavigation">
+  <div class="bnav-ind" id="bnavInd"></div>
+  <button class="bnav-slot on" id="bnavHeute" data-tab="heute" aria-label="Heute">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    <span class="bnav-lbl">Heute</span>
+  </button>
+  <button class="bnav-slot" id="bnavSearch" aria-label="Suche">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+  </button>
+  <button class="bnav-slot" id="bnavAna" data-tab="ana" aria-label="Analysen">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+    <span class="bnav-lbl">Analysen</span>
+  </button>
+  <button class="bnav-slot" id="bnavIdeen" data-tab="ideen" aria-label="Ideen">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+    <span class="bnav-lbl">Ideen</span>
+  </button>
+  <button class="bnav-slot" id="bnavMehr" aria-label="Mehr" aria-haspopup="dialog">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+    <span class="bnav-lbl">Mehr</span>
+  </button>
+</nav>
+
+<!-- Mehr-Sheet: Quartalszahlen/KO-Rechner/Theme/Rechtliches (§10, von unten einschwebend) -->
+<div class="sheet-overlay" id="mehrOverlay">
+  <div class="sheet" id="mehrSheetEl" role="dialog" aria-modal="true" aria-label="Mehr">
+    <div class="sheet-handle"></div>
+    <div class="sheet-body" id="mehrBody">
+      <button type="button" class="sheet-item hidden" id="mehrEarnBtn" onclick="mehrGo('earn')">
+        <svg class="si-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M3 9h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg>
+        <span>Quartalszahlen</span>
+      </button>
+      <button type="button" class="sheet-item" onclick="mehrGo('ko')">
+        <svg class="si-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="12" x2="8.01" y2="12"/><line x1="12" y1="12" x2="12.01" y2="12"/><line x1="16" y1="12" x2="16.01" y2="12"/><line x1="8" y1="16" x2="8.01" y2="16"/><line x1="12" y1="16" x2="12.01" y2="16"/><line x1="16" y1="16" x2="16.01" y2="16"/></svg>
+        <span>KO-Rechner</span>
+      </button>
+      <div class="sheet-sep"></div>
+      <button type="button" class="sheet-item" id="mehrThemeBtn" onclick="setTheme(isDark()?'light':'dark')">
+        <svg class="si-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.9 4.9 1.4 1.4"/><path d="m17.7 17.7 1.4 1.4"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.3 17.7-1.4 1.4"/><path d="m19.1 4.9-1.4 1.4"/></svg>
+        <span id="mehrThemeLbl">Heller Modus</span>
+      </button>
+      <div class="sheet-sep"></div>
+      <div class="sheet-legal">
+        <button type="button" class="sheet-item" onclick="mehrLegal('impressum')"><span>Impressum</span></button>
+        <button type="button" class="sheet-item" onclick="mehrLegal('datenschutz')"><span>Datenschutz</span></button>
+        <button type="button" class="sheet-item" onclick="mehrLegal('lizenz')"><span>Lizenz</span></button>
+      </div>
+    </div>
+    <div class="sheet-scrollhint" id="mehrScrollHint"><span class="shstrip s1"></span><span class="shstrip s2"></span><span class="shstrip s3"></span></div>
+  </div>
+</div>
 
 <script>
 const DEMO={
@@ -818,17 +939,139 @@ const LEGAL={
 function openLegal(k){const e=LEGAL[k];if(!e)return;document.getElementById('legalTitle').textContent=e.title;document.getElementById('legalBody').innerHTML=e.html;const ov=document.getElementById('legalOverlay');ov.classList.add('open');const md=ov.querySelector('.modal');if(md)md.scrollTop=0}
 function closeLegal(){document.getElementById('legalOverlay').classList.remove('open')}
 document.getElementById('legalOverlay').addEventListener('click',e=>{if(e.target.id==='legalOverlay')closeLegal()});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeVidArticle();closeLegal()}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeVidArticle();closeLegal();closeMehr()}});
 document.getElementById('prev').onclick=()=>shift(1);document.getElementById('next').onclick=()=>shift(-1);
 document.getElementById('q').addEventListener('input',e=>searchAll(e.target.value));
 document.querySelectorAll('#filterbar .fpill').forEach(b=>b.onclick=()=>{document.querySelectorAll('#filterbar .fpill').forEach(x=>x.classList.remove('on'));b.classList.add('on');filterPrio=+b.dataset.f;searchAll(document.getElementById('q').value)});
 
-function setTheme(t){document.documentElement.dataset.theme=t;try{localStorage.setItem('aa-theme',t)}catch(e){}const b=document.getElementById('theme');b.textContent=t==='dark'?'☀':'◐';const mc=document.querySelector('meta[name="theme-color"]');if(mc)mc.setAttribute('content',tok('--bg1'));if(current)render()}
+function setTheme(t){document.documentElement.dataset.theme=t;try{localStorage.setItem('aa-theme',t)}catch(e){}const b=document.getElementById('theme');b.textContent=t==='dark'?'☀':'◐';const mc=document.querySelector('meta[name="theme-color"]');if(mc)mc.setAttribute('content',tok('--bg1'));mehrSyncTheme();if(current)render()}
 document.getElementById('theme').onclick=()=>setTheme(isDark()?'light':'dark');
 /* Dark = Standard ohne gespeicherte Wahl (ADR-703); gespeicherte Nutzerwahl gewinnt. */
 (function(){let t;try{t=localStorage.getItem('aa-theme')}catch(e){}setTheme(t==='light'?'light':'dark')})();
-function show(p){const P={heute:'pageHeute',ana:'pageAna',earn:'pageEarn',ideen:'pageIdeen',ko:'pageKO'},N={heute:'navHeute',ana:'navAna',earn:'navEarn',ideen:'navIdeen',ko:'navKO'};for(const k in P)document.getElementById(P[k]).classList.toggle('hidden',k!==p);for(const k in N)document.getElementById(N[k]).classList.toggle('on',k===p);window.scrollTo({top:0})}
+/* ===== Phase 2b: Mobile-Shell — Bottom-Nav + Slide-Tabs Stufe 1 (§7/§10, ADR-704) =====
+   Interpretations-Entscheid (Tagebuch): TRANSFORM-Slide statt overflow-Scroll-Snap. Grund: ein
+   scroll-snap-x-Track aktiviert sofort natives Finger-Swipe zwischen Tabs = de facto Stufe-2-Verhalten
+   ("Inhalt klebt am Finger") und der ungate-te Chart-/Zurück-Gesten-Konflikt, dessen Lösung das Stufe-2-
+   Gate abwartet. translateX auf einer inneren Reihe + CSS-Transition gibt den Tap-Slide OHNE dieses Swipe;
+   der Indikator gleitet über seine eigene CSS-Transition. Kein rAF/Scroll-Sync nötig (das Design-System
+   erlaubt die „gleichwertige Transform-Lösung" ausdrücklich). Stufe-2-Finger-Tracking bleibt gated. */
+const TRACK_KEYS=['heute','ana','ideen'],TRACK_IDS=['pageHeute','pageAna','pageIdeen'];
+let currentTopKey='heute',bnavIdx=0,_trackRO=null;
+function isMobileNav(){return window.matchMedia('(max-width:1023px)').matches}
+function prefersReducedMotion(){return window.matchMedia('(prefers-reduced-motion: reduce)').matches}
+
+function show(p){
+  currentTopKey=p;
+  const P={heute:'pageHeute',ana:'pageAna',earn:'pageEarn',ideen:'pageIdeen',ko:'pageKO'},N={heute:'navHeute',ana:'navAna',earn:'navEarn',ideen:'navIdeen',ko:'navKO'};
+  for(const k in N)document.getElementById(N[k]).classList.toggle('on',k===p);
+  if(isMobileNav()){
+    document.getElementById('pageKO').classList.toggle('hidden',p!=='ko');
+    document.getElementById('pageEarn').classList.toggle('hidden',p!=='earn');
+    const track=document.getElementById('tabtrack');
+    if(TRACK_KEYS.includes(p)){
+      track.classList.remove('tt-hidden');
+      TRACK_KEYS.forEach(k=>document.getElementById(P[k]).classList.remove('hidden'));
+      bnavIdx=TRACK_KEYS.indexOf(p);
+      slideTrackTo(bnavIdx,true);
+      updateBnavActive(p);
+    }else{
+      track.classList.add('tt-hidden');
+      updateBnavActive(p);// KO/Earn: kein Track → Mehr-Slot bleibt aktiv (bnavElFor mappt earn/ko→Mehr)
+    }
+  }else{
+    for(const k in P)document.getElementById(P[k]).classList.toggle('hidden',k!==p);
+  }
+  window.scrollTo({top:0});
+}
 document.getElementById('navHeute').onclick=()=>show('heute');document.getElementById('navAna').onclick=()=>show('ana');document.getElementById('navEarn').onclick=()=>show('earn');document.getElementById('navIdeen').onclick=()=>show('ideen');document.getElementById('navKO').onclick=()=>show('ko');
+
+function slideTrackTo(idx,animate){
+  const inner=document.getElementById('tabtrackInner'),panel=document.getElementById(TRACK_IDS[idx]);
+  if(!inner)return;
+  // translateX setzt die logische Tab-Position SOFORT (Korrektheit hängt nicht an einer Animation); der
+  // Slide entsteht aus der CSS-Transition auf .tabtrack-inner (unter reduced-motion global auf none → instant).
+  inner.style.setProperty('--ti',idx);
+  if(animate&&prefersReducedMotion()&&panel&&panel.animate){
+    // reduced-motion: §7 → Crossfade statt Translation (Transition ist per global-Regel eh aus)
+    panel.animate([{opacity:0},{opacity:1}],{duration:220,easing:'ease-out'});
+  }
+  updateTrackHeight();
+}
+function updateTrackHeight(){
+  if(!isMobileNav())return;
+  const track=document.getElementById('tabtrack');if(!track||track.classList.contains('tt-hidden'))return;
+  const active=document.getElementById(TRACK_IDS[bnavIdx]);
+  if(active)track.style.height=active.offsetHeight+'px';
+}
+function initTrackObserver(){
+  if(_trackRO||!('ResizeObserver' in window))return;
+  _trackRO=new ResizeObserver(()=>updateTrackHeight());// Höhe des aktiven Panels folgt Inhalt/Umbruch
+  TRACK_IDS.forEach(id=>{const el=document.getElementById(id);if(el)_trackRO.observe(el)});
+}
+function bnavElFor(key){return document.getElementById({heute:'bnavHeute',ana:'bnavAna',ideen:'bnavIdeen',earn:'bnavMehr',ko:'bnavMehr',mehr:'bnavMehr'}[key]||'bnavHeute')}
+function jumpIndicatorTo(el,animate){
+  const ind=document.getElementById('bnavInd'),nav=document.getElementById('bnav');
+  if(!ind||!nav||!el)return;
+  const r=el.getBoundingClientRect(),nr=nav.getBoundingClientRect();
+  ind.style.transition=animate===false?'none':'left var(--dur-slide) var(--ease-snap), width var(--dur-slide) var(--ease-snap)';
+  ind.style.left=(r.left-nr.left)+'px';ind.style.width=r.width+'px';
+}
+function updateBnavActive(key,animate){
+  const activeEl=bnavElFor(key);
+  document.querySelectorAll('.bnav-slot').forEach(b=>b.classList.toggle('on',b===activeEl));
+  jumpIndicatorTo(activeEl,animate);
+}
+document.getElementById('bnavHeute').onclick=()=>show('heute');
+document.getElementById('bnavAna').onclick=()=>show('ana');
+document.getElementById('bnavIdeen').onclick=()=>show('ideen');
+document.getElementById('bnavSearch').onclick=()=>{show('heute');const q=document.getElementById('q');if(q){q.focus();q.scrollIntoView({block:'center',behavior:prefersReducedMotion()?'auto':'smooth'})}};
+document.getElementById('bnavMehr').onclick=()=>openMehr();
+
+function mehrSyncTheme(){const lbl=document.getElementById('mehrThemeLbl');if(lbl)lbl.textContent=isDark()?'Heller Modus':'Dunkler Modus'}
+function mehrSyncEarn(){const navEarn=document.getElementById('navEarn'),row=document.getElementById('mehrEarnBtn');if(row)row.classList.toggle('hidden',!navEarn||navEarn.classList.contains('hidden'))}
+function checkSheetScrollEnd(){const body=document.getElementById('mehrBody'),hint=document.getElementById('mehrScrollHint');if(!body||!hint)return;hint.classList.toggle('at-end',body.scrollHeight-body.scrollTop-body.clientHeight<=4)}
+function openMehr(){mehrSyncTheme();mehrSyncEarn();document.getElementById('mehrOverlay').classList.add('open');document.body.classList.add('mehr-open');updateBnavActive('mehr');const body=document.getElementById('mehrBody');if(body)body.scrollTop=0;checkSheetScrollEnd()}
+function closeMehr(){document.getElementById('mehrOverlay').classList.remove('open');document.body.classList.remove('mehr-open');updateBnavActive(currentTopKey)}
+function mehrGo(p){closeMehr();show(p)}
+function mehrLegal(k){closeMehr();openLegal(k)}
+document.getElementById('mehrOverlay').addEventListener('click',e=>{if(e.target.id==='mehrOverlay')closeMehr()});
+document.getElementById('mehrBody').addEventListener('scroll',checkSheetScrollEnd,{passive:true});
+
+function syncNavForViewport(){
+  const track=document.getElementById('tabtrack');if(!track)return;
+  if(isMobileNav()){
+    TRACK_KEYS.forEach(k=>document.getElementById({heute:'pageHeute',ana:'pageAna',ideen:'pageIdeen'}[k]).classList.remove('hidden'));
+    if(TRACK_KEYS.includes(currentTopKey)){
+      track.classList.remove('tt-hidden');
+      bnavIdx=TRACK_KEYS.indexOf(currentTopKey);
+      slideTrackTo(bnavIdx,false);// ohne Animation beim Umschalten der Viewport-Klasse
+      updateBnavActive(currentTopKey,false);
+    }else{
+      track.classList.add('tt-hidden');
+      document.getElementById('pageKO').classList.toggle('hidden',currentTopKey!=='ko');
+      document.getElementById('pageEarn').classList.toggle('hidden',currentTopKey!=='earn');
+      updateBnavActive(currentTopKey,false);
+    }
+  }else{
+    // Desktop: Top-Nav übernimmt, Track wird transparent (display:contents) → alle Nicht-aktiven verstecken
+    document.getElementById('mehrOverlay').classList.remove('open');document.body.classList.remove('mehr-open');
+    const P={heute:'pageHeute',ana:'pageAna',earn:'pageEarn',ideen:'pageIdeen',ko:'pageKO'};
+    for(const k in P)document.getElementById(P[k]).classList.toggle('hidden',k!==currentTopKey);
+    track.classList.remove('tt-hidden');track.style.height='';
+  }
+}
+function initMobileNav(){
+  initTrackObserver();
+  const mql=window.matchMedia('(max-width:1023px)');
+  const onVpChange=()=>syncNavForViewport();
+  if(mql.addEventListener)mql.addEventListener('change',onVpChange);else if(mql.addListener)mql.addListener(onVpChange);
+  // Reines Resize INNERHALB der Mobile-Spanne (Rotation, DevTools, Preview-MCP-2px-Startfalle) löst
+  // KEIN matchMedia-'change' aus (kein Schwellenübertritt) — Indikator-Position/Panel-Höhe würden sonst am
+  // Layout-Stand des allerersten Ladens hängen bleiben. Deshalb zusätzlich debounced resync.
+  let _resizeT=null;
+  window.addEventListener('resize',()=>{clearTimeout(_resizeT);_resizeT=setTimeout(syncNavForViewport,80)},{passive:true});
+  syncNavForViewport();
+}
 let koTypeVal='long';
 function knum(id){const e=document.getElementById(id);if(!e)return null;const t=e.value.trim();if(!t)return null;const v=parseFloat(t.replace(/\s/g,'').replace(',','.'));return isFinite(v)?v:null}
 function eurv(v){if(v==null||!isFinite(v))return '–';const d=Math.abs(v)<1?3:2;return v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d})+' €'}
@@ -1018,7 +1261,7 @@ function initEarnings(){
   if(hasCal)buildEarnFilters();
   setEarnMode(hasCal?'cal':'recap');
 }
-koInit();initWatchlist();boot();
+koInit();initWatchlist();initMobileNav();boot();
 </script>
 </body>
 </html>
