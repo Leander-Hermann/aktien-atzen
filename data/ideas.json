@@ -1,71 +1,68 @@
 {
- "updated": "2026-07-11T18:33:19.110497+00:00",
- "date": "2026-07-11",
+ "updated": "2026-07-12T06:33:13.876940+00:00",
+ "date": "2026-07-12",
  "ideas": [
   {
-   "title": "Salzgitter als Stahl-Umbruch-Gewinner mit JP-Morgan-Upgrade",
-   "thesis": "Salzgitter übernimmt HKM vollständig und startet eine tiefgreifende Restrukturierung. JP Morgan stuft von Underweight auf Overweight hoch und verdoppelt das Kursziel auf 65 Euro, da EU-Schutzmaßnahmen für Stahlpreise sich positiv auf die Gewinne auswirken und die Dynamik ab dem zweiten Halbjahr erwartet wird. Charttechnisch ergibt sich ein Ausbruch mit Ziel 67 Euro.",
-   "values": [
-    "Salzgitter AG",
-    "Stahlsektor"
-   ],
-   "angle": "Long",
-   "risk": "Konjunkturschwäche und Übernahmekomplexität könnten die Restrukturierung verzögern.",
-   "source": "onvista: DAX & Marktüberblick – Salzgitter HKM-Übernahme mit JP-Morgan-Upgrade",
-   "source_url": ""
-  },
-  {
-   "title": "Halbleiter-Erholung: Nvidia und Broadcom als KI-Infrastruktur-Gewinner",
-   "thesis": "Der Philadelphia Semiconductor Index stieg über 3 Prozent und zeigt eine klare Erholung der zuvor bis zu 20 Prozent korrigierten Chipwerte. Nvidia steigt rund 4 Prozent auf 200 Dollar, nachdem China die H200-Chips freigegeben hat, und gilt mit einem KGV von 22,7 als günstig bewertet. Broadcom profitiert von der Ausweitung der Apple-Kooperation auf 30 Milliarden Dollar.",
-   "values": [
-    "Nvidia",
-    "Broadcom",
-    "Taiwan Semiconductor",
-    "ASML",
-    "SOX-Index"
-   ],
-   "angle": "Long",
-   "risk": "Geopolitische Spannungen und Exportbeschränkungen könnten die Halbleiter-Nachfrage abrupt dämpfen.",
-   "source": "Der Aktionär - Märkte am Morgen: Halbleiter-Sektor, Nvidia und Broadcom",
-   "source_url": ""
-  },
-  {
-   "title": "Lufthansa unter Druck durch Ölpreise und Analysten-Downgrades",
-   "thesis": "Lufthansa leidet unter steigende Ölpreise im Rahmen der Iran-Krise, wobei WTI zeitweise über 80 Dollar notiert. Citigroup stuft auf Verkaufen herab mit Kursziel 8,70 Euro und Barclays auf Underweight mit 7,75 Euro. Die Aktie fiel 4,6 Prozent, nachdem sie zuvor von 7 auf 10 Euro verdoppelt hatte – nun werden Gewinne mitgenommen.",
+   "title": "Ölpreise belasten Airlines – Short-Chance bei Lufthansa",
+   "thesis": "Die Schließung der Straße von Hormuz und die US-Militärschläge gegen Iran treiben den Ölpreis Richtung 80 Dollar, was direkt die Treibstoffkosten von Airlines erhöht. Lufthansa wurde bereits von Citigroup auf Verkaufen und von Barclays auf Underweight herabgestuft, zudem belasten Konjunktursorgen die Nachfrage.",
    "values": [
     "Deutsche Lufthansa",
-    "Luftfahrtsektor"
+    "Airlines-Sektor"
    ],
    "angle": "Short",
-   "risk": "Eine rasche Entspannung der Iran-Krise und sinkende Ölpreise könnten die Aktie schnell wieder aufwerten lassen.",
-   "source": "onvista: Lufthansa – Aktie -4,6% nach Abstufungen durch Citigroup und Barclays",
-   "source_url": ""
+   "risk": "Eine schnelle diplomatische Entspannung im Nahen Osten könnte den Ölpreis fallen lassen und die Aktie entlasten.",
+   "source": "News: Iran schließt Straße von Hormuz – USA schlagen mit über 300 Zielen zurück",
+   "source_url": "https://x.com/DeItaone/status/2076081633854124491"
   },
   {
-   "title": "CATL als Batterie-Marktführer mit zweistelligem Wachstum",
-   "thesis": "CATL ist Weltmarktführer bei Batterien, baut stationäre Speicher und betreibt bereits 2.000 Batteriewechselstationen in China, wo 2025 bereits 30 Prozent der schweren LKWs elektrisch fahren. Das Geschäft wächst zweistellig mit 25 Prozent Gewinndynamik bei moderater Bewertung mit einem KGV von 17,9 für 2026 und 12 für 2028.",
+   "title": "Halbleiter-Erholung nimmt Fahrt auf – Taiwan Semiconductor als Profiteur",
+   "thesis": "Der SK-Hynix-IPO war 7-fach überzeichnet, der SOX-Index legte über 3 Prozent zu und Applied Materials' CEO signalisierte jahrelange Mehrproduktion von Chips. Taiwan Semiconductor bietet mit erwartetem EPS von 3,80 Dollar und Umsatzplus von 11,4 Prozent ein konkretes Fundament-Plus, bei schwacher Reaktion auf die Zahlen ist ein Einstieg bei 415 bis 420 Dollar attraktiv.",
    "values": [
-    "CATL",
-    "Batterie-Sektor",
-    "Elektromobilität"
+    "Taiwan Semiconductor",
+    "Applied Materials",
+    "SOX-Index/ETF",
+    "Halbleiter-Sektor"
    ],
    "angle": "Long",
-   "risk": "EU-Zölle auf chinesische Batterieprodukte könnten den Zugang zum europäischen Markt erschwerden.",
-   "source": "BerneckerTV: CATL – Weltmarktführer bei Batterien mit 25% Gewinndynamik",
+   "risk": "Eine Verschärfung der US-China-Spannungen könnte die Chip-Lieferketten und Exportlizenzen erneut belasten.",
+   "source": "onvista – DAX & Marktüberblick mit SK Hynix IPO und Taiwan Semiconductor Zahlen",
    "source_url": ""
   },
   {
-   "title": "JPMorgan KI-Agenten: Autonome Portfolio-Allokation als Trendindikator",
-   "thesis": "JPMorgan testet KI-Agenten, die selbstständig Investitionen zwischen Aktien und Anleihen verschieben, wenn sich Marktbedingungen ändern. In 20-jährigen Backtests schlug das beste Modell das traditionelle 60/40-Portfolio um 0,7 Prozentpunkte pro Jahr bei geringerer Volatilität. Dies signalisiert einen strukturellen Trend hin zu KI-gesteuerter Asset-Allokation, der auch anderen Finanzinstituten und Technologie-Anbietern zugutekommen könnte.",
+   "title": "Salzgitter profitiert von EU-Stahlschutz und HKM-Übernahme",
+   "thesis": "JP Morgan hat Salzgitter von Underweight auf Overweight hochgestuft und das Kursziel auf 65 Euro verdoppelt, da EU-Schutzmaßnahmen für Stahlpreise sich positiv auf die Gewinne auswirken. Die vollständige Übernahme von HKM und die tiefgreifende Restrukturierung bieten zusätzliches Upside-Potenzial, charttechnisch ergibt sich ein Ausbruch mit Ziel 67 Euro.",
    "values": [
-    "JPMorgan Chase",
-    "KI-Finanztechnologie",
-    "Asset-Manager"
+    "Salzgitter"
+   ],
+   "angle": "Long",
+   "risk": "Eine konjunkturelle Schwäche in Europa könnte die Stahlnachfrage und damit die Margen dämpfen.",
+   "source": "onvista – Salzgitter: HKM-Übernahme mit JP-Morgan-Upgrade",
+   "source_url": ""
+  },
+  {
+   "title": "Japan drängt Pensionsfonds zu Alternativinvestments – struktureller Tailwind",
+   "thesis": "Japan plant, seinen massiven Government Pension Investment Fund (GPIF) zu mehr Alternativinvestments zu bewegen, was im Rahmen einer strukturellen Neuausrichtung japanischer Anlagestrategien steht. Dies könnte mittelfristig erhebliche Kapitalflüsse in Private Equity, Infrastruktur und Immobilien auslösen.",
+   "values": [
+    "Alternative Investments",
+    "Private Equity",
+    "Infrastruktur-ETFs",
+    "Japan-Fonds"
    ],
    "angle": "Beobachten",
-   "risk": "KI kann überfüllte Trades und Marktstress verstärken, was in echten Marktphasen zu erheblichen Verlusten führen könnte.",
-   "source": "News: JPMorgan testet KI-Agenten für autonome Portfolio-Allokation",
-   "source_url": "https://x.com/DeItaone/status/2075954010167693736"
+   "risk": "Die Umsetzung könnte politisch und regulatorisch verzögert werden, konkrete Volumina wurden noch nicht genannt.",
+   "source": "News: Japan will riesigen Pensionsfonds zu Alternativinvestments drängen",
+   "source_url": "https://x.com/ReutersWorld/status/2076192426461475261"
+  },
+  {
+   "title": "Meta baut KI-Infrastruktur aus und entwickelt eigene Chips",
+   "thesis": "Mark Zuckerberg plant KI-Infrastruktur als Service und beginnt im September mit der Produktion eigener KI-Chips, um die Abhängigkeit von Nvidia zu verringern. Mit einem KGV unter 19, einer Pack Ratio unter 1 und dem Bau eines 1-GW-Rechenzentrums in Kanada bietet Meta sowohl fundamentale als auch strategische Attraktivität.",
+   "values": [
+    "Meta Platforms"
+   ],
+   "angle": "Long",
+   "risk": "Hohe Investitionskosten für KI-Infrastruktur könnten kurzfristig die Margen belasten, falls sich die Monetarisierung verzögert.",
+   "source": "onvista – Meta: KI-Infrastruktur als Service und eigene KI-Chips",
+   "source_url": ""
   }
  ]
 }
