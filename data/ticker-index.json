@@ -1,6 +1,690 @@
 {
- "updated": "2026-07-14T18:35:56.729799+00:00",
+ "updated": "2026-07-15T06:34:31.075784+00:00",
  "ticker": {
+  "PYPL": {
+   "name": "PayPal",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=137s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Advent und Stripe sollen ein mögliches Übernahmeangebot für PayPal von 60,50 Dollar je Aktie prüfen. Weitere Details wurden für die Sendung Opening Bell angekündigt.",
+     "einordnung": "Übernahmefantasie kann einen angeschlagenen Zahlungsdienstleister kurzfristig neu bewerten, ersetzt aber keine Klarheit über Finanzierung und behördliche Genehmigungen. Solange es sich nur um ein mög…",
+     "figures": "60,50 Dollar je Aktie, insgesamt 53 Mrd. Dollar"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "PayPal beantragt eine Banklizenz für die eigene Kreditvergabe.",
+     "einordnung": "Eine Banklizenz wäre ein strategischer Meilenstein für PayPal — sie würde das Geschäftsmodell vom reinen Zahlungsabwickler zum Finanzdienstleister erweitern. Das erinnert an die Bestrebungen von Squa…"
+    }
+   ]
+  },
+  "ASML": {
+   "name": "ASML",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "ASML steigerte den Umsatz im zweiten Quartal und hob die Jahresprognose erneut an. Die Aktie lag vorbörslich im Plus; auch mehrere Halbleiterzulieferer profitierten von der Nachricht.",
+     "einordnung": "Die erneute Prognoseanhebung ist ein starkes Signal für die Nachfrage nach moderner Chipfertigung und hebt ASML positiv vom zyklischen Halbleiterumfeld ab. Die Bewertung bleibt allerdings eng an daue…",
+     "figures": "Umsatz Q2 9,3 Mrd. Euro, Q1 8,8 Mrd. Euro, Bruttomarge Q2 54 Prozent, Q1 53 Prozent, Jahresumsatzprognose 43 bis 45 Mrd. Euro nach zuvor 30 bis 40 Mrd. Euro, erwartete Bruttomarge 54 bis 56 Prozent,…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Investoren warten auf die Zahlen von ASML am Mittwochmorgen. Der Wert wird im Video im Zusammenhang mit dem angespannten Halbleiterumfeld genannt.",
+     "einordnung": "ASML ist ein zentraler Prüfstein für die Investitionsbereitschaft der Halbleiterindustrie. Gerade nach den starken Ausschlägen bei Speicherwerten dürfte der Ausblick wichtiger sein als ein einzelnes…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=540s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Neues Rekordhoch vorbörslich; volle Auftragsbücher, Analysten rechnen für das nächste Jahr mit 90 ausgelieferten Anlagen (vs. zuletzt ~80) und 15–20 % Umsatzwachstum.",
+     "einordnung": "ASML ist und bleibt das Monopol im EUV-Segment — kein Wettbewerber in Sichtweite. Rekordstände auf Rekordkurs bei solcher Visibilität der Auftragslage sind fundamental gerechtfertigt. Das erinnert an…",
+     "figures": "80 Anlagen aktuell, ~90 Anlagen nächstes Jahr erwartet; Wachstumsprognose 15–20 %"
+    }
+   ]
+  },
+  "IBM": {
+   "name": "IBM",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=284s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "IBM verzeichnete laut Host den größten Tagesverlust seiner Geschichte. Der Vorstand verwies auf Zurückhaltung der Kunden im Zusammenhang mit der Umstellung auf Hardware- und Cybersecurity-Ausgaben.",
+     "einordnung": "Ein derartiger Kursrückgang signalisiert, dass der Markt die operative Entwicklung und die Glaubwürdigkeit der bisherigen Wachstumsstory neu bewertet. Die Abweichung von nur 0,2 Prozentpunkten zwisch…",
+     "figures": "IBM -25 Prozent laut Host, aktuell laut Marktdaten -25,2 Prozent; Salesforce -1,5 Prozent, Adobe -4,2 Prozent, Accenture -2,6 Prozent, Microsoft -1,3 Prozent; auf Jahressicht Salesforce -35 Prozent,…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=1431s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "IBM veröffentlicht schwache vorläufige Zahlen: Der Quartalsumsatz liegt bei 17,2 Milliarden US-Dollar statt erwarteter 17,9 Milliarden US-Dollar. Egmond sieht die Aktie nach dem Kurseinbruch von 20 b…",
+     "einordnung": "Die Umsatzverfehlung ist gemessen an der Erwartung groß genug, um die hohe KI- und Transformationsbewertung zu hinterfragen. Der laut Marktdaten ausgewiesene Tagesverlust von IBM von 24,3 Prozent bes…",
+     "figures": "Quartalsumsatz 17,2 Milliarden US-Dollar; erwartet 17,9 Milliarden US-Dollar; Kursrückgang 20 bis 25 Prozent"
+    },
+    {
+     "date": "2026-05-29",
+     "video_id": "EJUkEYUPawE",
+     "url": "https://www.youtube.com/watch?v=EJUkEYUPawE&t=807s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "IBM erhält bis zu 1 Mrd USD Förderung für Quantencomputing (Tochter Anderon) und investiert selbst 1 Mrd USD. Der kurzfristige Einfluss ist gering (IBM-Umsatz 2025: 67,5 Mrd USD), aber strategisch be…",
+     "einordnung": "IBM ist der Reifegrad-Wert im Quartett: Die Quanten-Förderung ist strategisch interessant, aber bei 67,5 Mrd USD Umsatz bewegen 1 Mrd USD Förderung kurzfristig nichts. Die Marke 260 USD als Kaufsigna…",
+     "figures": "1 Mrd USD Förderung, 1 Mrd USD Eigeninvestition, Umsatz 2025: 67,5 Mrd USD, erwartet 2026: 71,5 Mrd USD, Quantenmarkt-Prognosen: Markets and Markets 3,5 Mrd (2025) auf 20 Mrd USD (2030), BC Research…"
+    },
+    {
+     "date": "2025-11-13",
+     "video_id": "DdOoAO1ztKo",
+     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1055s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "IBM präsentiert einen neuen Quantenprozessor – ein technologischer Meilenstein, der das Unternehmen im Quantencomputing-Rennen positioniert.",
+     "einordnung": "IBM hat sich in den letzten Jahren vom Legacy-IT-Konzern zum Hybrid-Cloud- und KI-Player gewandelt. Quantencomputing ist das nächste Narrativ – allerdings mit einem Horizont von 5-10 Jahren bis zur k…"
+    }
+   ]
+  },
+  "CRM": {
+   "name": "Salesforce",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=325s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Salesforce gab im Zuge der schwachen Stimmung bei Software- und IT-Werten nach. Auf Jahressicht liegt die Aktie laut Host deutlich im Minus.",
+     "einordnung": "Die Kursentwicklung zeigt, wie empfindlich große Softwaretitel auf Zweifel an IT-Budgets und an der Monetarisierung neuer Technologien reagieren. Nach einem starken Rückgang kann die Aktie zwar techn…",
+     "figures": "Tagesverlust -1,5 Prozent, Jahresverlust -35 Prozent"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=86s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Starker Anstieg gestern, aber nur technische Gegenbewegung nach herben Verlusten. Positive Analystenkommentare stützen, operative Neuigkeiten fehlen. Erholung könnte bis in den Bereich 340-370 USD re…",
+     "einordnung": "Eine klassische Short-Squeeze-Rally nach überverkauftem Zustand — ohne fundamental neuen Katalysator bleibt das nur eine Gegenbewegung. Wer hier einsteigt, sollte sich bewusst sein, dass der Abwärtst…",
+     "figures": "Erholungsziel 340-370 USD"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=1732s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Massiv abgestraft, Rekord-Buybacks (50 Mrd. genehmigt, 27,5 Mrd. in Q1). KI-Übernahme Finn für 3,6 Mrd. Dollar. Chart sehr schwach.",
+     "einordnung": "Salesforce ist ein Turnaround-Play: Massive Buybacks (27,5 Mrd. in Q1) und KI-Übernahme (Finn) zeigen Management-Commitment. Aber charttechnisch schwach – 130$ ist kritisch.",
+     "figures": "Umsatz +10% auf 41,5 Mrd.; Nongap-Marge über 34%; Buyback 27,5 Mrd. in Q1; Übernahme Finn 3,6 Mrd.; KGV 2024/25: 42, dann 19,46, Richtung 16/13,5"
+    },
+    {
+     "date": "2025-11-28",
+     "video_id": "fQxlQW1Y5LQ",
+     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1497s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Im Kontext von CrowdStrike erwähnt: Hackerangriff auf Salesforce mit 1 Mrd. betroffenen Daten als Beleg für wachsenden Cybersicherheitsbedarf.",
+     "einordnung": "Der Hack ist ein Reputationsrisiko für Salesforce und gleichzeitig ein Vertriebsargument für Cybersecurity-Anbieter wie CrowdStrike. Für Salesforce-Anleger ist die Frage, ob Datensicherheitsvorfälle…",
+     "figures": "1 Mrd. betroffene Daten"
+    }
+   ]
+  },
+  "ADBE": {
+   "name": "Adobe",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=325s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adobe verlor im Tagesvergleich 4,2 Prozent und liegt auf Jahressicht ebenfalls deutlich zurück. Die Aktie wurde damit wie Salesforce von der schwachen Stimmung im Softwaresektor belastet.",
+     "einordnung": "Adobe besitzt starke Kreativ- und Dokumentenplattformen, muss aber beweisen, dass generative KI die Zahlungsbereitschaft erhöht und nicht nur bestehende Produkte unter Preisdruck setzt. Der hohe Jahr…",
+     "figures": "Tagesverlust -4,2 Prozent, Jahresverlust -39 Prozent"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=2039s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "HSBC stuft auf Buy hoch. Bodenbildung mit Doppeltief um 190$. Günstige Bewertung mit KGV 8,1 und PEG 0,6. Widerstand bei 225-230$.",
+     "einordnung": "Die HSBC-Hochstufung ist ein Signal, dass der Markt die KI-Risiken bei Adobe zu stark eingepreist hat. Das PEG von 0,6 ist extrem günstig, aber der Widerstand bei 225-230$ muss erst fallen.",
+     "figures": "KGV 8,1 (Forward), PEG 0,6, aktuell ca. 212 $, Risiko 22 $ bis 190 $, Potenzial 60-65 $ bis 275 $"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=397s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adobe zeigt Quartalszahlen und Outlook gut, aber Aktie fällt nachbörslich 5%, weil CFO gehen wird; operative Stärke vs. psychologische Verunsicherung.",
+     "einordnung": "Das ist ein klassisches Verkaufsschock-Muster: Die Zahlen sind solid, aber der CFO-Wechsel schafft Unsicherheit. Für den geduldig aufgebauten Investor könnte das eine Einstiegsgelegenheit sein—allerd…",
+     "figures": "Nachbörse -5%"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "a6FF2tGXbok",
+     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=3094s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Q2: Umsatz +13%, Gewinn +18%; EPS 5,96 vs. 5,81 erwartet. Annual Recurring Revenue >27 Mrd. KI-Produkte zentraler Treiber, Photoshop-KI-Einsatz. Q3-Guidance: Umsatz 6,7 Mrd (vs. 6,5 Mrd Konsens), EPS…",
+     "einordnung": "Paradox: Zahlen excellent, CFO weg, Kurs fällt. Das ist oft Warnsignal für verborgene Probleme (KI-Monetarisierung stockt, Churn unter der Oberfläche). KGV 8 ist nur billig, wenn Gewinne nicht erodie…",
+     "figures": "Q2 Umsatz +13%, Gewinn +18%, EPS 5,96, ARR >27 Mrd, Q3-Guidance 6,7 Mrd Umsatz, EPS 6,05–6,10"
+    },
+    {
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1104s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Adobe hat gute Zahlen geliefert und kooperiert mit OpenAI. Der KI-Umsatz erreicht 250 Mio. USD.",
+     "einordnung": "250 Mio. USD KI-Umsatz zeigt, dass Adobe Monetarisierung schafft, bleibt aber hinter reinen KI-Playern zurück. Die OpenAI-Kooperation ist strategisch klug — Adobe integriert KI statt sie zu bekämpfen.",
+     "figures": "250 Mio. USD KI-Umsatz"
+    }
+   ]
+  },
+  "PANW": {
+   "name": "Palo Alto Networks",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=372s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Palo Alto Networks gehörte laut Host zu den Profiteuren der Nachrichten aus dem Cybersecurity-Sektor und stieg um 6,2 Prozent.",
+     "einordnung": "Palo Alto Networks profitiert als großer Plattformanbieter von der Priorisierung sicherheitskritischer Ausgaben. Der Kurssprung ist jedoch zunächst eine Sentimentreaktion und kein Beleg dafür, dass s…",
+     "figures": "Tagesplus +6,2 Prozent"
+    },
+    {
+     "date": "2025-11-13",
+     "video_id": "DdOoAO1ztKo",
+     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1390s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Zahlen werden am 19.11. erwartet; Übernahme von Cybersecurity-Spezialist für 25 Mrd. USD (2,5 Mrd. Cash + 100 Mio. neue Aktien); Kursziele: Mizuho 230 USD, Jefferies/RBC 250 USD.",
+     "einordnung": "Palo Alto ist der Branchenführer im Cybersecurity-Markt, und eine 25-Mrd.-USD-Übernahme zeigt Größenordnung und Ambition. Die Kursziele von 230-250 USD sind moderat optimistisch. Die Integration der…",
+     "figures": "25 Mrd. USD, 2,5 Mrd. USD, 100 Mio. Aktien, 230 USD, 250 USD"
+    },
+    {
+     "date": "2025-11-13",
+     "video_id": "DdOoAO1ztKo",
+     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1934s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Allzeithoch bei 220 USD erreicht; Potenzial bis 231 USD, wenn die 50%-Fibonacci-Retracement bei 198 USD gehalten wird; Rücksetzer auf 198 USD bieten spekulative Kaufchancen.",
+     "einordnung": "Ein Allzeithoch kurz vor den Quartalszahlen am 19.11. ist mutig – der Markt antizipiert offenbar ein gutes Ergebnis. Die 198-USD-Marke als Fibonacci-Unterstützung ist ein solider Einstiegspunkt bei R…",
+     "figures": "220 USD, 231 USD, 198 USD"
+    }
+   ]
+  },
+  "FTNT": {
+   "name": "Fortinet",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=372s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Fortinet legte laut Host im Zuge der positiven Reaktion des Cybersecurity-Sektors um 3,2 Prozent zu.",
+     "einordnung": "Die Jahresperformance zeigt eine bereits ausgeprägte Neubewertung des Titels. Weitere Kursgewinne benötigen daher wahrscheinlich operative Bestätigung und nicht nur eine günstige Sektorrotation.",
+     "figures": "Tagesplus +3,2 Prozent, Jahresplus +61 Prozent"
+    }
+   ]
+  },
+  "CRWD": {
+   "name": "CrowdStrike",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=372s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "CrowdStrike profitierte ebenfalls von der Nachfragefantasie im Cybersecurity-Bereich und legte laut Host deutlich zu.",
+     "einordnung": "Die positive Reaktion passt zur hohen strategischen Bedeutung von Endpoint- und Cloud-Sicherheit. Die Differenz zwischen Host und aktuellen Marktdaten zeigt zugleich, wie stark sich die Tagesbewegung…",
+     "figures": "Tagesplus +7,7 Prozent laut Host, aktuell laut Marktdaten +12,1 Prozent"
+    },
+    {
+     "date": "2025-11-28",
+     "video_id": "fQxlQW1Y5LQ",
+     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1497s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Host sieht Erholung nach dem Serverausfall im Sommer; CrowdStrike erhält erneute Autorisierung für US-Behörden; Hackerangriff auf Salesforce mit 1 Mrd. betroffenen Daten unterstreicht Cybersicherheit…",
+     "einordnung": "Die Erholung nach dem globalen Ausfall ist charttechnisch intakt, doch KGV 140 ist selbst für einen Cybersecurity-Wachstumstitel extrem. Der Salesforce-Hack ist ein Branchen-Tailwind, rechtfertigt ab…",
+     "figures": "1 Mrd. betroffene Daten, KGV 140"
+    }
+   ]
+  },
+  "UBER": {
+   "name": "Uber",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=445s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Uber soll möglicherweise 40 Euro je Delivery-Hero-Aktie bieten und hält bereits einen bedeutenden Anteil beziehungsweise weitere Positionen über Finanzinstrumente. Die Übernahmefantasie belastete Ube…",
+     "einordnung": "Für Uber wäre eine Übernahme strategisch nachvollziehbar, aber der Kursrückgang zeigt, dass der Markt die Finanzierung und die Integrationsrisiken kritisch sieht. Ohne bestätigtes Angebot bleibt die…",
+     "figures": "Mögliches Angebot 40 Euro je Delivery-Hero-Aktie, Uber hält 44,99 Prozent beziehungsweise 37 Prozent über Finanzinstrumente, Delivery Hero +5,8 Prozent, Uber -2,9 Prozent"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=3805s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Macht Fortschritte bei autonomem Fahren, aber Aktie seitwärts. Chart in Range.",
+     "einordnung": "Uber zeigt operative Fortschritte (autonomes Fahren), aber der Chart ist seitwärts. Das ist ein klassisches Abwarten-Signal auf einen Ausbruch."
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=561s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Uber legt Übernahmeangebot für Delivery Hero vor — 33 € je Aktie, Enterprise Value 13,5 Mrd. €. Mögliche Übernahmeschlacht mit DoorDash als Konkurrent.",
+     "einordnung": "Uber kauft sich mit Delivery Hero den europäischen Food-Delivery-Markt — strategisch logisch nach der Grubhub-Pleite, aber der Preis ist hoch. Die Frage ist, ob DoorDash kontert und eine Bieterschlac…",
+     "figures": "Angebot 33 € je Delivery-Hero-Aktie, EV 13,5 Mrd. €, 18,6x 2027er EBIT"
+    }
+   ]
+  },
+  "DHER.DE": {
+   "name": "Delivery Hero",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=445s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Uber prüft laut Host möglicherweise ein Angebot von 40 Euro je Delivery-Hero-Aktie. Delivery Hero stieg im Zuge der Übernahmefantasie um 5,8 Prozent; bei einem Scheitern der Gespräche droht eine Gege…",
+     "einordnung": "Die Kursreaktion ist nahezu vollständig nachrichtengetrieben und daher nicht mit einer normalen fundamentalen Neubewertung gleichzusetzen. Entscheidend ist, ob aus der Spekulation ein verbindliches A…",
+     "figures": "Mögliches Angebot 40 Euro je Aktie, Uber hält 44,99 Prozent beziehungsweise 37 Prozent über Finanzinstrumente, Delivery Hero +5,8 Prozent"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "htTDw4hrfRo",
+     "url": "https://www.youtube.com/watch?v=htTDw4hrfRo&t=211s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Uber-Übernahme und Expansionspläne in Europa gebremst. Aktie von 20 auf 40 Euro fast verdoppelt, Sperrminorität von 25% erreicht. Branche bleibt schwierig.",
+     "einordnung": "Die Verdopplung von 20 auf 40 Euro ist beeindruckend, aber der Host warnt zu Recht vor der schwierigen Branche. Die Uber-Übernahme verändert die Wettbewerbsdynamik fundamental — Delivery Hero muss be…",
+     "figures": "Kurs von 20 auf 40 Euro (ca. +100%); Sperrminorität: 25%"
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=561s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Uber bietet 33 € je Aktie, aktueller Kurs 37,92 €. Enterprise Value 13,5 Mrd. € = 18,6x 2027er EBIT. Bewertung hoch, aber mögliche Übernahmeschlacht mit DoorDash als Konkurrent.",
+     "einordnung": "Der Kurs liegt bereits deutlich über dem Angebot — der Markt preist entweder ein höheres Gebot oder einen Bieterwettstreit ein. Wer nicht spekulieren will, sollte dem Host folgen und abstoßen; die Ri…",
+     "figures": "Angebot 33 €, aktueller Kurs 37,92 €, EV 13,5 Mrd. €, 18,6x 2027er EBIT, Übernahmeprämie 10-15%, Synergiepotenzial 3-5%"
+    }
+   ]
+  },
+  "NA9.DE": {
+   "name": "Nagarro",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=619s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die BaFin beanstandete Fehler in der Bilanz 2022, unter anderem bei der Umsatzaufteilung und der Erfassung von Unternehmenserwerben. Die Aktie reagierte nachbörslich nur moderat; zugleich bleibt Über…",
+     "einordnung": "Die milde Kursreaktion deutet darauf hin, dass der Markt die Beanstandungen zumindest teilweise erwartet oder als korrigierbar einstuft. Bilanzierungsfragen sind dennoch ein Vertrauensrisiko, das dur…",
+     "figures": "Nachbörslicher Kursrückgang -0,8 Prozent"
+    }
+   ]
+  },
+  "RWE.DE": {
+   "name": "RWE",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=702s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Jefferies führt RWE auf einer Favoritenliste, bestätigt die Kaufempfehlung und nennt ein Kursziel von 68 Euro. Als Wachstumstreiber werden Elektrifizierung, Dekarbonisierung und der steigende Energie…",
+     "einordnung": "Die RWE-Story verbindet strukturell steigenden Strombedarf mit dem Ausbau dekarbonisierter Erzeugung und passt damit zu einem langfristigen Infrastrukturthema. Gleichzeitig bleiben Strompreise, Regul…",
+     "figures": "Kursziel 68 Euro"
+    },
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1394s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Relativ stabil im schwachen Markt. UBS hebt Kursziel von 65 auf 66 EUR. KGV 20, nicht billig. Diversifikation ins Netzgeschäft positiv.",
+     "einordnung": "KGV 20 für einen Versorger ist ambitioniert — das Netzgeschäft ist zwar strategisch richtig, aber die Re-Rating-Premise braucht Geduld. Bei 50 EUR wäre die Risiko-Rendite deutlich attraktiver als auf…",
+     "figures": "Kursziel UBS 66 EUR (vorher 65 EUR), KGV 20, Unterstützung 43-44 EUR"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1774s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Fast-Kaufsignal: Noch nicht über 58 EUR ausgebrochen, aber der positive Sektortrend (E.ON bereits ausgebrochen) lässt einen Ausbruch erwarten.",
+     "einordnung": "Das Catch-up-Argument innerhalb des Versorgersektors ist stichhaltig — wenn E.ON ausbricht, zieht RWE meist nach. Der konventionelle Stromgeschäftsanteil bei RWE macht den Titel zyklischer als E.ON,…",
+     "figures": "58 EUR (Clusterpunkt), 62,50 EUR (Ziel), 67-69 EUR (höhere Ziele)"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "RWE will Anteil an Ampion (Höchstspannungsnetz Nordsee-Alpen) von 25,1% auf 55% aufstocken, Kosten ca. 4 Mrd. Euro. Aktie unter Gewinnmitnahmen.",
+     "einordnung": "Eine 4-Mrd.-Euro-Investition in ein Höchstspannungsnetz ist strategisch sinnvoll, aber kurzfristig belastend. Die Aktie reagiert mit Gewinnmitnahmen – das ist typisch für eine Kapitalerhöhung oder gr…",
+     "figures": "25,1% auf 55%, 4 Milliarden Euro"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=1256s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "RWE stockt Anteil an Amprion auf 55% auf, Kaufpreis 3,6 Milliarden Euro, finanziert durch Kapitalerhöhung und Aktienverkauf. Gewinnziel 2031: 4,40 auf 4,55 Euro je Aktie. Kurzfristig seitwärts.",
+     "einordnung": "Die Aufstockung des Amprion-Anteils ist strategisch sinnvoll, weil regulierte Netzbetriebe stabile Erträge liefern, aber die Finanzierung über Kapitalerhöhung und Aktienverkauf bedeutet Verwässerung…",
+     "figures": "3,6 Mrd. Euro Kaufpreis, Anteil 55%, Gewinnziel 4,40-4,55 Euro/Aktie"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "t04FPU9gZbI",
+     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=1496s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "RWE erhöht Anteil an Amprion auf 55% für 3,6 Mrd. €, teilweise über Aktienemission. Schritt in Richtung regulierten Netzbetrieb, stabilisiert Erträge.",
+     "einordnung": "Die Aufstockung der Amprion-Beteiligung ist ein strategisch sinnvoller Schritt hin zu regulierten, planbaren Erträgen. Die Finanzierung über Aktienemission verdünnt jedoch kurzfristig, und bei einem…",
+     "figures": "3,6 Mrd. €, KGV 19, Dividendenrendite 2,4%"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
+     "einordnung": "RWE leidet ebenfalls unter dem Momentum-Wechsel – als Underperformer könnte die Aktie jedoch kurzfristig Rotationsgelder anziehen."
+    }
+   ]
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon profitierte laut Host von der positiven ASML-Reaktion und legte um 1 Prozent zu.",
+     "einordnung": "Die Bewegung zeigt die Ausstrahlung guter Nachrichten des europäischen Halbleitersektors. Für Infineon selbst liefert der ASML-Bericht jedoch nur einen indirekten Impuls, da die Geschäftsprofile nich…",
+     "figures": "Tagesplus +1 Prozent"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=539s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon voraussichtlich -4% wegen Sippenhaft nach der Samsung-Enttäuschung. Die Aktie hatte sich zu weit von der 200-Tage-Linie entfernt; Kurse kehren zu gleitenden Durchschnitten zurück.",
+     "einordnung": "Die Sippenhaft-Logik im Halbleitersektor ist kurzfristig wirksam, aber fundamental fragwürdig: Infineon ist ein Automobil- und Industriechip-Spezialist, Samsung ein Memory-Chip-Gigant — die Geschäfts…",
+     "figures": "Voraussichtlich -4%"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1063s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Infineon gerät durch den Chip-Ausverkauf massiv unter Druck mit einem Tagesverlust von 8 bis 9%.",
+     "einordnung": "Infineon leidet unter Sippenhaft: Samsungs Enttäuschung zieht den gesamten Halbleitersektor mit. Ein Tagesverlust von 8-9% bei einem Blue-Chip ist ein klares Risiko-Signal.",
+     "figures": "-8 bis 9% an einem Tag"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "sax3NJ-Q6tc",
+     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=338s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon eröffnet am 2. Juli eine neue Chipfabrik und verdoppelt Kapazitäten. Aktie konsolidiert nach Anstieg von 40 auf 80.",
+     "einordnung": "Die Fabrikeröffnung ist ein Meilenstein, aber Kapazitätsverdopplung bedeutet auch höhere Abschreibungen. Die Konsolidierung nach dem Lauf von 40 auf 80 ist gesund.",
+     "figures": "Kursanstieg von 40 auf 80"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=771s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Aktie bricht im Zuge von KI-Zweifeln ein. Haidt rät zu kurzfristiger Vorsicht.",
+     "einordnung": "Infineon ist stark zyklisch und wird bei jeder KI-Skepsis als Erster abgestraft. Die Bewertung ist nicht günstig genug, um einen echten Kontrahalt zu bieten – das KGV bleibt hoch für einen Halbleiter…"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=383s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Chipwerte wie Infineon laufen weiter stark; Infineon hat seit Überwinden der 50-Kursmarke über 60% zugelegt.",
+     "einordnung": "Die +60% seit dem Breakout sind beeindruckend, aber auch ein Warnsignal für eine überhitzte Bewegung. Infineon profitiert vom KI-Hype, ist aber zyklischer als die reinen KI-Spezialisten — eine Korrek…",
+     "figures": "+60% seit 50-Kursmarke"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=370s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon dürfte heute Morgen im Fokus stehen, da alles mit Chips und KI im Aufgalopp ist, gestützt durch positive Vorgaben aus Asien.",
+     "einordnung": "Der positive Read-through von Micron und asiatischen Halbleiterwerten ist gerechtfertigt, auch wenn Infineon eher im Automotive- und Industriebereich agiert. Die KI-Euphorie könnte kurzfristig für Au…"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=386s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon gestern noch gefragt, heute vorbörslich unter Druck durch Realitätstrack und Gewinnmitnahmen bei Chipherstellern.",
+     "einordnung": "Infineon ist ein klassischer Zykliker, der auf globale Konjunktur- und Zinserwartungen reagiert. Wenn die Zinswende ausbleibt, bleibt der Titel unter Druck. Das ist kein Kaufgrund, sondern ein Abwart…"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=552s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Trump-Tweet zu Intel-Apple-Kooperation treibt Chipaktien, Infineon verdoppelt von 40 auf 80 Euro in 2–3 Monaten. Kurzfristig wegen Überbewertung und Korea-Risiko seitwärts.",
+     "einordnung": "Eine Verdopplung in drei Monaten auf Basis eines Tweets ist kein fundamentales Fundament, sondern Momentum. Das Korea-Risiko als geopolitischer Overhang wird vom Markt unterschätzt – ein Konflikt dor…",
+     "figures": "Kurs von 40 auf 80 Euro verdoppelt"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=376s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Charttechnisch stark mit kaum nennenswerter Korrektur; KI-Fantasie treibt den Wert, hat sich in kurzer Zeit mehr als verdoppelt.",
+     "einordnung": "Infineon als KI-Profiteur über Leistungshalbleiter und Power-Management ist fundamental nachvollziehbar. Eine Verdopplung in kurzer Zeit erhöht jedoch das Rückschlagrisiko — hier sollte man Gewinne m…",
+     "figures": "mehr als verdoppelt in kurzer Zeit"
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1033s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Aktie +17,8% in einer Woche. EBITDA steigt von 4,6 Mrd. (laufendes Jahr) auf 6,1 Mrd. (nächstes Jahr); EBIT von 2,6 Mrd. auf 3,8 Mrd. EV/EBIT 27,7x, KGV 29,7 — extrem hoch bewertet, aber Momentum int…",
+     "einordnung": "Ein KGV von knapp 30 bei einem Halbleiterzyklik-Unternehmen ist sportlich — das erinnert an 2018, als Infineon nach starken Zykler-Rallys auf ähnliche Bewertungen stieg und dann korrigierte. Das Mome…",
+     "figures": "+17,8% (1 Woche), EBITDA 4,6 Mrd. auf 6,1 Mrd., EBIT 2,6 Mrd. auf 3,8 Mrd., EV/EBIT 27,7x, KGV 29,7, EBITDA-Marge 20,1%, Marktkapitalisierung 99,6 Mrd. auf 105,3 Mrd."
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
+     "einordnung": "Infineon als Profiteur des vorherigen Momentum-Trades wird nun verkauft – das ist die Kehrseite der Rotation. Wenn der Momentum-Trade zurückkehrt, ist Infineon der erste Profiteur."
+    }
+   ]
+  },
+  "AIXA.DE": {
+   "name": "Aixtron",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Aixtron gehörte laut Host zu den Halbleiterwerten, die von der angehobenen ASML-Prognose profitierten.",
+     "einordnung": "Die stärkere Kursreaktion als bei Infineon unterstreicht den Hebel, den positive Branchensignale bei spezialisierten Ausrüstern auslösen können. Sie erhöht aber auch die Abhängigkeit von Investitions…",
+     "figures": "Tagesplus +3 Prozent"
+    }
+   ]
+  },
+  "SMHN.DE": {
+   "name": "Süss MicroTec",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Süss MicroTec legte laut Host im Zuge der positiven Nachrichten aus dem Halbleiterausrüstungssektor zu.",
+     "einordnung": "Der Kursanstieg ist vor allem als Sektorreaktion zu verstehen. Bei kleineren Ausrüstern können Branchensignale überproportional wirken, allerdings auch in beide Richtungen.",
+     "figures": "Tagesplus +2,2 Prozent"
+    }
+   ]
+  },
+  "ACN": {
+   "name": "Accenture",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=284s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Accenture gab laut Host im Zuge der Schwäche bei IT- und Softwarewerten nach.",
+     "einordnung": "Als großer IT-Dienstleister ist Accenture besonders sensibel für Verschiebungen bei den Budgets seiner Kunden. Der Rückgang passt daher zum im Video beschriebenen Muster, ohne für sich genommen eine…",
+     "figures": "Tagesverlust -2,6 Prozent"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2399s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Accenture steht stark unter Druck (-20%). Das Consultinggeschäft ist schwach, die KI-Transformation frisst Geld. Der Chart ist bärisch.",
+     "einordnung": "Ein PE von 9 und 5% Dividende bei Accenture klingen wie ein Value-Traumszenario – bis man den Chart sieht. Der Markt bestraft hier die Unsicherheit über den KI-RoI im Consulting. Finger weg, bis die…",
+     "figures": "Umsatz 18,7 Mrd. $ (+6%); Gewinn/Aktie 3,80$ (Erwartung 3,72$); Auftragseingang Ratio 1,0; freier Cashflow; Zukäufe 4,2 Mrd. $; PE Forward 9; Dividendenrendite über 5%"
+    }
+   ]
+  },
+  "MSFT": {
+   "name": "Microsoft",
+   "auftritte": [
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=284s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Microsoft verlor laut Host im schwachen Umfeld für Softwarewerte 1,3 Prozent.",
+     "einordnung": "Die vergleichsweise geringere Bewegung unterstreicht die größere Diversifikation des Konzerns gegenüber reinen Software- oder IT-Dienstleistern. Dennoch bleibt auch Microsoft von der Frage abhängig,…",
+     "figures": "Tagesverlust -1,3 Prozent"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "1NCf_rpMGr8",
+     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=1058s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Microsoft zeigt laut Host einen möglichen Doppelboden. Dirk Siebenhaar hat den Trade nach dem Muster 'Undercut & Rally' mit 1 Prozent Risiko umgesetzt.",
+     "einordnung": "Das teilweise realisierte Risiko verbessert die Positionskontrolle, ändert aber nichts daran, dass der Doppelboden erst durch eine nachhaltige Aufwärtsbewegung bestätigt werden muss. Technisch ist da…",
+     "figures": "1 Prozent Risiko"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=414s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Laut Medienbericht plant Microsoft einen deutlichen Personalabbau, insbesondere im Xbox-Bereich. Die Aktie erholt sich dennoch.",
+     "einordnung": "Restrukturierungen bei Tech-Giganten werden vom Markt oft als Kostendisziplin gefeiert. Dass die Aktie trotz Abbau-Meldung steigt, zeigt, wie dominant die KI-Narrative derzeit ist — Effizienzgewinne…"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=579s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Microsoft erhöht Xbox-Preise und fällt auf ein 52-Wochen-Tief. Haidt bleibt vorsichtig.",
+     "einordnung": "Ein 52-Wochen-Tief bei Microsoft ist ein seltenes Signal – das letzte Mal sahen wir so etwas in der Zinswende-Phase 2022/23. Die Xbox-Preiserhöhung ist marginal, aber das Tiefer-Rutschen deutet darau…",
+     "figures": "52-Wochen-Tief"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=1264s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Unter Druck, Doppeltop bei 493$ gebrochen. Langfristig günstig bewertet (Morningstar 37% Discount, Kursziel 600$). Risiken: hohe Investitionen, regulatorischer Druck.",
+     "einordnung": "Microsoft ist ein klassisches Value-Paradoxon: Starkes Gewinnwachstum (23%, 15%), aber Kurs unter Druck. Das Morningstar-Kursziel von 600$ impliziert 37% Upside – attraktiv für Geduld-Anleger, aber c…",
+     "figures": "KGV 20,5; Morningstar Fair Value 600$; Gewinnwachstum 23% im laufenden Jahr, 15% im nächsten Jahr; Doppeltop 493$"
+    },
+    {
+     "date": "2025-11-28",
+     "video_id": "fQxlQW1Y5LQ",
+     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=2429s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Aktie bei 485 USD unter der 500er-Marke; Konsolidierung seit Juli; Host sieht attraktive Preiszone für spekulative Trendwende mit Stop bei 452.",
+     "einordnung": "Microsoft konsolidiert seit Monaten in einer engen Range — das ist für einen Mega-Cap ungewöhnlich und spricht für eine ausgereifte Bewertung. Der Stop bei 452 bietet ein angemessenes Risiko-Reward-V…",
+     "figures": "485, 500, 452"
+    },
+    {
+     "date": "2025-11-20",
+     "video_id": "HNPb_J0F96o",
+     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=474s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Microsoft liegt erneut hinter Apple in der Marktkapitalisierung und zeigt damit relative Schwäche im Vergleich zum iPhone-Konzern.",
+     "einordnung": "Microsoft ist im aktuellen Umfeld weniger der defensive Tech-Titel als vielmehr Apple. Die Cloud-Konkurrenz durch Alphabet zusätzlich macht die Position nicht leichter."
+    }
+   ]
+  },
   "CL=F": {
    "name": "Brent-Öl",
    "auftritte": [
@@ -1510,40 +2194,6 @@
     }
    ]
   },
-  "IBM": {
-   "name": "IBM",
-   "auftritte": [
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=1431s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "IBM veröffentlicht schwache vorläufige Zahlen: Der Quartalsumsatz liegt bei 17,2 Milliarden US-Dollar statt erwarteter 17,9 Milliarden US-Dollar. Egmond sieht die Aktie nach dem Kurseinbruch von 20 b…",
-     "einordnung": "Die Umsatzverfehlung ist gemessen an der Erwartung groß genug, um die hohe KI- und Transformationsbewertung zu hinterfragen. Der laut Marktdaten ausgewiesene Tagesverlust von IBM von 24,3 Prozent bes…",
-     "figures": "Quartalsumsatz 17,2 Milliarden US-Dollar; erwartet 17,9 Milliarden US-Dollar; Kursrückgang 20 bis 25 Prozent"
-    },
-    {
-     "date": "2026-05-29",
-     "video_id": "EJUkEYUPawE",
-     "url": "https://www.youtube.com/watch?v=EJUkEYUPawE&t=807s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "IBM erhält bis zu 1 Mrd USD Förderung für Quantencomputing (Tochter Anderon) und investiert selbst 1 Mrd USD. Der kurzfristige Einfluss ist gering (IBM-Umsatz 2025: 67,5 Mrd USD), aber strategisch be…",
-     "einordnung": "IBM ist der Reifegrad-Wert im Quartett: Die Quanten-Förderung ist strategisch interessant, aber bei 67,5 Mrd USD Umsatz bewegen 1 Mrd USD Förderung kurzfristig nichts. Die Marke 260 USD als Kaufsigna…",
-     "figures": "1 Mrd USD Förderung, 1 Mrd USD Eigeninvestition, Umsatz 2025: 67,5 Mrd USD, erwartet 2026: 71,5 Mrd USD, Quantenmarkt-Prognosen: Markets and Markets 3,5 Mrd (2025) auf 20 Mrd USD (2030), BC Research…"
-    },
-    {
-     "date": "2025-11-13",
-     "video_id": "DdOoAO1ztKo",
-     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1055s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "IBM präsentiert einen neuen Quantenprozessor – ein technologischer Meilenstein, der das Unternehmen im Quantencomputing-Rennen positioniert.",
-     "einordnung": "IBM hat sich in den letzten Jahren vom Legacy-IT-Konzern zum Hybrid-Cloud- und KI-Player gewandelt. Quantencomputing ist das nächste Narrativ – allerdings mit einem Horizont von 5-10 Jahren bis zur k…"
-    }
-   ]
-  },
   "^GSPC": {
    "name": "S&P 500",
    "auftritte": [
@@ -1974,30 +2624,6 @@
     }
    ]
   },
-  "ASML": {
-   "name": "ASML",
-   "auftritte": [
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Investoren warten auf die Zahlen von ASML am Mittwochmorgen. Der Wert wird im Video im Zusammenhang mit dem angespannten Halbleiterumfeld genannt.",
-     "einordnung": "ASML ist ein zentraler Prüfstein für die Investitionsbereitschaft der Halbleiterindustrie. Gerade nach den starken Ausschlägen bei Speicherwerten dürfte der Ausblick wichtiger sein als ein einzelnes…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=540s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Neues Rekordhoch vorbörslich; volle Auftragsbücher, Analysten rechnen für das nächste Jahr mit 90 ausgelieferten Anlagen (vs. zuletzt ~80) und 15–20 % Umsatzwachstum.",
-     "einordnung": "ASML ist und bleibt das Monopol im EUV-Segment — kein Wettbewerber in Sichtweite. Rekordstände auf Rekordkurs bei solcher Visibilität der Auftragslage sind fundamental gerechtfertigt. Das erinnert an…",
-     "figures": "80 Anlagen aktuell, ~90 Anlagen nächstes Jahr erwartet; Wachstumsprognose 15–20 %"
-    }
-   ]
-  },
   "NOVT": {
    "name": "Novanta",
    "auftritte": [
@@ -2337,69 +2963,6 @@
      "kategorie": "news",
      "note": "Die Aktie steht unter Druck, weil ein baldiges Ende des Iran-Krieges die Nachfrage nach Rüstungsgütern dämpfen könnte. Egmond sieht noch kein belastbares Tief und bleibt skeptisch.",
      "einordnung": "Rheinmetall ist ein klassisches Geopolitik-Play — steigt bei Konflikten, leidet bei Entspannung. Das Iran-Abkommen trifft die Aktie daher doppelt: sinkende Ölpreis-Einnahmen schwächen gleichzeitig di…"
-    }
-   ]
-  },
-  "MSFT": {
-   "name": "Microsoft",
-   "auftritte": [
-    {
-     "date": "2026-07-13",
-     "video_id": "1NCf_rpMGr8",
-     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=1058s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Microsoft zeigt laut Host einen möglichen Doppelboden. Dirk Siebenhaar hat den Trade nach dem Muster 'Undercut & Rally' mit 1 Prozent Risiko umgesetzt.",
-     "einordnung": "Das teilweise realisierte Risiko verbessert die Positionskontrolle, ändert aber nichts daran, dass der Doppelboden erst durch eine nachhaltige Aufwärtsbewegung bestätigt werden muss. Technisch ist da…",
-     "figures": "1 Prozent Risiko"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=414s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Laut Medienbericht plant Microsoft einen deutlichen Personalabbau, insbesondere im Xbox-Bereich. Die Aktie erholt sich dennoch.",
-     "einordnung": "Restrukturierungen bei Tech-Giganten werden vom Markt oft als Kostendisziplin gefeiert. Dass die Aktie trotz Abbau-Meldung steigt, zeigt, wie dominant die KI-Narrative derzeit ist — Effizienzgewinne…"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=579s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Microsoft erhöht Xbox-Preise und fällt auf ein 52-Wochen-Tief. Haidt bleibt vorsichtig.",
-     "einordnung": "Ein 52-Wochen-Tief bei Microsoft ist ein seltenes Signal – das letzte Mal sahen wir so etwas in der Zinswende-Phase 2022/23. Die Xbox-Preiserhöhung ist marginal, aber das Tiefer-Rutschen deutet darau…",
-     "figures": "52-Wochen-Tief"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=1264s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Unter Druck, Doppeltop bei 493$ gebrochen. Langfristig günstig bewertet (Morningstar 37% Discount, Kursziel 600$). Risiken: hohe Investitionen, regulatorischer Druck.",
-     "einordnung": "Microsoft ist ein klassisches Value-Paradoxon: Starkes Gewinnwachstum (23%, 15%), aber Kurs unter Druck. Das Morningstar-Kursziel von 600$ impliziert 37% Upside – attraktiv für Geduld-Anleger, aber c…",
-     "figures": "KGV 20,5; Morningstar Fair Value 600$; Gewinnwachstum 23% im laufenden Jahr, 15% im nächsten Jahr; Doppeltop 493$"
-    },
-    {
-     "date": "2025-11-28",
-     "video_id": "fQxlQW1Y5LQ",
-     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=2429s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Aktie bei 485 USD unter der 500er-Marke; Konsolidierung seit Juli; Host sieht attraktive Preiszone für spekulative Trendwende mit Stop bei 452.",
-     "einordnung": "Microsoft konsolidiert seit Monaten in einer engen Range — das ist für einen Mega-Cap ungewöhnlich und spricht für eine ausgereifte Bewertung. Der Stop bei 452 bietet ein angemessenes Risiko-Reward-V…",
-     "figures": "485, 500, 452"
-    },
-    {
-     "date": "2025-11-20",
-     "video_id": "HNPb_J0F96o",
-     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=474s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Microsoft liegt erneut hinter Apple in der Marktkapitalisierung und zeigt damit relative Schwäche im Vergleich zum iPhone-Konzern.",
-     "einordnung": "Microsoft ist im aktuellen Umfeld weniger der defensive Tech-Titel als vielmehr Apple. Die Cloud-Konkurrenz durch Alphabet zusätzlich macht die Position nicht leichter."
     }
    ]
   },
@@ -3681,70 +4244,6 @@
     }
    ]
   },
-  "RWE.DE": {
-   "name": "RWE",
-   "auftritte": [
-    {
-     "date": "2026-07-08",
-     "video_id": "e11CVmyBuR8",
-     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1394s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Relativ stabil im schwachen Markt. UBS hebt Kursziel von 65 auf 66 EUR. KGV 20, nicht billig. Diversifikation ins Netzgeschäft positiv.",
-     "einordnung": "KGV 20 für einen Versorger ist ambitioniert — das Netzgeschäft ist zwar strategisch richtig, aber die Re-Rating-Premise braucht Geduld. Bei 50 EUR wäre die Risiko-Rendite deutlich attraktiver als auf…",
-     "figures": "Kursziel UBS 66 EUR (vorher 65 EUR), KGV 20, Unterstützung 43-44 EUR"
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "gOPRrqA_L38",
-     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1774s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Fast-Kaufsignal: Noch nicht über 58 EUR ausgebrochen, aber der positive Sektortrend (E.ON bereits ausgebrochen) lässt einen Ausbruch erwarten.",
-     "einordnung": "Das Catch-up-Argument innerhalb des Versorgersektors ist stichhaltig — wenn E.ON ausbricht, zieht RWE meist nach. Der konventionelle Stromgeschäftsanteil bei RWE macht den Titel zyklischer als E.ON,…",
-     "figures": "58 EUR (Clusterpunkt), 62,50 EUR (Ziel), 67-69 EUR (höhere Ziele)"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=460s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "RWE will Anteil an Ampion (Höchstspannungsnetz Nordsee-Alpen) von 25,1% auf 55% aufstocken, Kosten ca. 4 Mrd. Euro. Aktie unter Gewinnmitnahmen.",
-     "einordnung": "Eine 4-Mrd.-Euro-Investition in ein Höchstspannungsnetz ist strategisch sinnvoll, aber kurzfristig belastend. Die Aktie reagiert mit Gewinnmitnahmen – das ist typisch für eine Kapitalerhöhung oder gr…",
-     "figures": "25,1% auf 55%, 4 Milliarden Euro"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=1256s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "RWE stockt Anteil an Amprion auf 55% auf, Kaufpreis 3,6 Milliarden Euro, finanziert durch Kapitalerhöhung und Aktienverkauf. Gewinnziel 2031: 4,40 auf 4,55 Euro je Aktie. Kurzfristig seitwärts.",
-     "einordnung": "Die Aufstockung des Amprion-Anteils ist strategisch sinnvoll, weil regulierte Netzbetriebe stabile Erträge liefern, aber die Finanzierung über Kapitalerhöhung und Aktienverkauf bedeutet Verwässerung…",
-     "figures": "3,6 Mrd. Euro Kaufpreis, Anteil 55%, Gewinnziel 4,40-4,55 Euro/Aktie"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=1496s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "RWE erhöht Anteil an Amprion auf 55% für 3,6 Mrd. €, teilweise über Aktienemission. Schritt in Richtung regulierten Netzbetrieb, stabilisiert Erträge.",
-     "einordnung": "Die Aufstockung der Amprion-Beteiligung ist ein strategisch sinnvoller Schritt hin zu regulierten, planbaren Erträgen. Die Finanzierung über Aktienemission verdünnt jedoch kurzfristig, und bei einem…",
-     "figures": "3,6 Mrd. €, KGV 19, Dividendenrendite 2,4%"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
-     "einordnung": "RWE leidet ebenfalls unter dem Momentum-Wechsel – als Underperformer könnte die Aktie jedoch kurzfristig Rotationsgelder anziehen."
-    }
-   ]
-  },
   "VNA.DE": {
    "name": "Vonovia",
    "auftritte": [
@@ -3791,117 +4290,6 @@
      "kategorie": "news",
      "note": "Coca-Cola schloss ebenfalls auf Rekordniveau. Es gab leichte Gewinnmitnahmen, die der Host aber als nicht dramatisch einstuft.",
      "einordnung": "Defensive Konsumwerte an der Rekordspitze sind ein typisches Spätzyklus-Phänomen — Anleger suchen Sicherheit bei gleichzeitigem Momentum. Coca-Cola profitiert von Preissetzungsmacht und stabilem Cash…"
-    }
-   ]
-  },
-  "IFX.DE": {
-   "name": "Infineon",
-   "auftritte": [
-    {
-     "date": "2026-07-07",
-     "video_id": "nPsSsD7zbI8",
-     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=539s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon voraussichtlich -4% wegen Sippenhaft nach der Samsung-Enttäuschung. Die Aktie hatte sich zu weit von der 200-Tage-Linie entfernt; Kurse kehren zu gleitenden Durchschnitten zurück.",
-     "einordnung": "Die Sippenhaft-Logik im Halbleitersektor ist kurzfristig wirksam, aber fundamental fragwürdig: Infineon ist ein Automobil- und Industriechip-Spezialist, Samsung ein Memory-Chip-Gigant — die Geschäfts…",
-     "figures": "Voraussichtlich -4%"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1063s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Infineon gerät durch den Chip-Ausverkauf massiv unter Druck mit einem Tagesverlust von 8 bis 9%.",
-     "einordnung": "Infineon leidet unter Sippenhaft: Samsungs Enttäuschung zieht den gesamten Halbleitersektor mit. Ein Tagesverlust von 8-9% bei einem Blue-Chip ist ein klares Risiko-Signal.",
-     "figures": "-8 bis 9% an einem Tag"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "sax3NJ-Q6tc",
-     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=338s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon eröffnet am 2. Juli eine neue Chipfabrik und verdoppelt Kapazitäten. Aktie konsolidiert nach Anstieg von 40 auf 80.",
-     "einordnung": "Die Fabrikeröffnung ist ein Meilenstein, aber Kapazitätsverdopplung bedeutet auch höhere Abschreibungen. Die Konsolidierung nach dem Lauf von 40 auf 80 ist gesund.",
-     "figures": "Kursanstieg von 40 auf 80"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=771s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktie bricht im Zuge von KI-Zweifeln ein. Haidt rät zu kurzfristiger Vorsicht.",
-     "einordnung": "Infineon ist stark zyklisch und wird bei jeder KI-Skepsis als Erster abgestraft. Die Bewertung ist nicht günstig genug, um einen echten Kontrahalt zu bieten – das KGV bleibt hoch für einen Halbleiter…"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "5AeBdQRrZ2k",
-     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=383s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Chipwerte wie Infineon laufen weiter stark; Infineon hat seit Überwinden der 50-Kursmarke über 60% zugelegt.",
-     "einordnung": "Die +60% seit dem Breakout sind beeindruckend, aber auch ein Warnsignal für eine überhitzte Bewegung. Infineon profitiert vom KI-Hype, ist aber zyklischer als die reinen KI-Spezialisten — eine Korrek…",
-     "figures": "+60% seit 50-Kursmarke"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=370s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon dürfte heute Morgen im Fokus stehen, da alles mit Chips und KI im Aufgalopp ist, gestützt durch positive Vorgaben aus Asien.",
-     "einordnung": "Der positive Read-through von Micron und asiatischen Halbleiterwerten ist gerechtfertigt, auch wenn Infineon eher im Automotive- und Industriebereich agiert. Die KI-Euphorie könnte kurzfristig für Au…"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=386s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon gestern noch gefragt, heute vorbörslich unter Druck durch Realitätstrack und Gewinnmitnahmen bei Chipherstellern.",
-     "einordnung": "Infineon ist ein klassischer Zykliker, der auf globale Konjunktur- und Zinserwartungen reagiert. Wenn die Zinswende ausbleibt, bleibt der Titel unter Druck. Das ist kein Kaufgrund, sondern ein Abwart…"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=552s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Trump-Tweet zu Intel-Apple-Kooperation treibt Chipaktien, Infineon verdoppelt von 40 auf 80 Euro in 2–3 Monaten. Kurzfristig wegen Überbewertung und Korea-Risiko seitwärts.",
-     "einordnung": "Eine Verdopplung in drei Monaten auf Basis eines Tweets ist kein fundamentales Fundament, sondern Momentum. Das Korea-Risiko als geopolitischer Overhang wird vom Markt unterschätzt – ein Konflikt dor…",
-     "figures": "Kurs von 40 auf 80 Euro verdoppelt"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=376s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Charttechnisch stark mit kaum nennenswerter Korrektur; KI-Fantasie treibt den Wert, hat sich in kurzer Zeit mehr als verdoppelt.",
-     "einordnung": "Infineon als KI-Profiteur über Leistungshalbleiter und Power-Management ist fundamental nachvollziehbar. Eine Verdopplung in kurzer Zeit erhöht jedoch das Rückschlagrisiko — hier sollte man Gewinne m…",
-     "figures": "mehr als verdoppelt in kurzer Zeit"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1033s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktie +17,8% in einer Woche. EBITDA steigt von 4,6 Mrd. (laufendes Jahr) auf 6,1 Mrd. (nächstes Jahr); EBIT von 2,6 Mrd. auf 3,8 Mrd. EV/EBIT 27,7x, KGV 29,7 — extrem hoch bewertet, aber Momentum int…",
-     "einordnung": "Ein KGV von knapp 30 bei einem Halbleiterzyklik-Unternehmen ist sportlich — das erinnert an 2018, als Infineon nach starken Zykler-Rallys auf ähnliche Bewertungen stieg und dann korrigierte. Das Mome…",
-     "figures": "+17,8% (1 Woche), EBITDA 4,6 Mrd. auf 6,1 Mrd., EBIT 2,6 Mrd. auf 3,8 Mrd., EV/EBIT 27,7x, KGV 29,7, EBITDA-Marge 20,1%, Marktkapitalisierung 99,6 Mrd. auf 105,3 Mrd."
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der Gewinner des vorherigen Momentum-Trades erwähnt, der nun verkauft wird.",
-     "einordnung": "Infineon als Profiteur des vorherigen Momentum-Trades wird nun verkauft – das ist die Kehrseite der Rotation. Wenn der Momentum-Trade zurückkehrt, ist Infineon der erste Profiteur."
     }
    ]
   },
@@ -4321,31 +4709,6 @@
      "note": "Morgan Stanley hebt das Kursziel moderat an und sieht deutliches Potenzial. Chart zeigt Widerstand bei 34 Euro, Ziel bei 40 Euro möglich. Bewertung mit Buchwert von 0,7 günstig.",
      "einordnung": "Die Deutsche Bank profitiert vom Zinsumfeld und der Rotation in Finanzwerte. Ein Buchwert von 0,7 ist für eine systemrelevante Bank nach wie vor attraktiv, aber der Widerstand bei 34 Euro muss erst ü…",
      "figures": "Kursziel 34 € auf 36 €, Buchwert 0,7, Ziel 40 € (161,8% Extension)"
-    }
-   ]
-  },
-  "DHER.DE": {
-   "name": "Delivery Hero",
-   "auftritte": [
-    {
-     "date": "2026-07-06",
-     "video_id": "htTDw4hrfRo",
-     "url": "https://www.youtube.com/watch?v=htTDw4hrfRo&t=211s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Uber-Übernahme und Expansionspläne in Europa gebremst. Aktie von 20 auf 40 Euro fast verdoppelt, Sperrminorität von 25% erreicht. Branche bleibt schwierig.",
-     "einordnung": "Die Verdopplung von 20 auf 40 Euro ist beeindruckend, aber der Host warnt zu Recht vor der schwierigen Branche. Die Uber-Übernahme verändert die Wettbewerbsdynamik fundamental — Delivery Hero muss be…",
-     "figures": "Kurs von 20 auf 40 Euro (ca. +100%); Sperrminorität: 25%"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=561s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Uber bietet 33 € je Aktie, aktueller Kurs 37,92 €. Enterprise Value 13,5 Mrd. € = 18,6x 2027er EBIT. Bewertung hoch, aber mögliche Übernahmeschlacht mit DoorDash als Konkurrent.",
-     "einordnung": "Der Kurs liegt bereits deutlich über dem Angebot — der Markt preist entweder ein höheres Gebot oder einen Bieterwettstreit ein. Wer nicht spekulieren will, sollte dem Host folgen und abstoßen; die Ri…",
-     "figures": "Angebot 33 €, aktueller Kurs 37,92 €, EV 13,5 Mrd. €, 18,6x 2027er EBIT, Übernahmeprämie 10-15%, Synergiepotenzial 3-5%"
     }
    ]
   },
@@ -4807,41 +5170,6 @@
     }
    ]
   },
-  "CRM": {
-   "name": "Salesforce",
-   "auftritte": [
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=86s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Starker Anstieg gestern, aber nur technische Gegenbewegung nach herben Verlusten. Positive Analystenkommentare stützen, operative Neuigkeiten fehlen. Erholung könnte bis in den Bereich 340-370 USD re…",
-     "einordnung": "Eine klassische Short-Squeeze-Rally nach überverkauftem Zustand — ohne fundamental neuen Katalysator bleibt das nur eine Gegenbewegung. Wer hier einsteigt, sollte sich bewusst sein, dass der Abwärtst…",
-     "figures": "Erholungsziel 340-370 USD"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=1732s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Massiv abgestraft, Rekord-Buybacks (50 Mrd. genehmigt, 27,5 Mrd. in Q1). KI-Übernahme Finn für 3,6 Mrd. Dollar. Chart sehr schwach.",
-     "einordnung": "Salesforce ist ein Turnaround-Play: Massive Buybacks (27,5 Mrd. in Q1) und KI-Übernahme (Finn) zeigen Management-Commitment. Aber charttechnisch schwach – 130$ ist kritisch.",
-     "figures": "Umsatz +10% auf 41,5 Mrd.; Nongap-Marge über 34%; Buyback 27,5 Mrd. in Q1; Übernahme Finn 3,6 Mrd.; KGV 2024/25: 42, dann 19,46, Richtung 16/13,5"
-    },
-    {
-     "date": "2025-11-28",
-     "video_id": "fQxlQW1Y5LQ",
-     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1497s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Im Kontext von CrowdStrike erwähnt: Hackerangriff auf Salesforce mit 1 Mrd. betroffenen Daten als Beleg für wachsenden Cybersicherheitsbedarf.",
-     "einordnung": "Der Hack ist ein Reputationsrisiko für Salesforce und gleichzeitig ein Vertriebsargument für Cybersecurity-Anbieter wie CrowdStrike. Für Salesforce-Anleger ist die Frage, ob Datensicherheitsvorfälle…",
-     "figures": "1 Mrd. betroffene Daten"
-    }
-   ]
-  },
   "GS": {
    "name": "Goldman Sachs",
    "auftritte": [
@@ -4853,51 +5181,6 @@
      "kategorie": "news",
      "note": "Finanztitel haben für Stabilisierung gesorgt. Goldman Sachs profitiert von steigenden Zinsen und guter Stimmung dank M&A-Aktivität und Börsengängen.",
      "einordnung": "Finanztitel sind aktuell die Stütze des Marktes — ein gesundes Zeichen, da sie typischerweise in einer späten Konjunkturphase outperformen. Goldman Sachs als M&A-Primus fährt mit der IPO-Welle eine e…"
-    }
-   ]
-  },
-  "ADBE": {
-   "name": "Adobe",
-   "auftritte": [
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=2039s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "HSBC stuft auf Buy hoch. Bodenbildung mit Doppeltief um 190$. Günstige Bewertung mit KGV 8,1 und PEG 0,6. Widerstand bei 225-230$.",
-     "einordnung": "Die HSBC-Hochstufung ist ein Signal, dass der Markt die KI-Risiken bei Adobe zu stark eingepreist hat. Das PEG von 0,6 ist extrem günstig, aber der Widerstand bei 225-230$ muss erst fallen.",
-     "figures": "KGV 8,1 (Forward), PEG 0,6, aktuell ca. 212 $, Risiko 22 $ bis 190 $, Potenzial 60-65 $ bis 275 $"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=397s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adobe zeigt Quartalszahlen und Outlook gut, aber Aktie fällt nachbörslich 5%, weil CFO gehen wird; operative Stärke vs. psychologische Verunsicherung.",
-     "einordnung": "Das ist ein klassisches Verkaufsschock-Muster: Die Zahlen sind solid, aber der CFO-Wechsel schafft Unsicherheit. Für den geduldig aufgebauten Investor könnte das eine Einstiegsgelegenheit sein—allerd…",
-     "figures": "Nachbörse -5%"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "a6FF2tGXbok",
-     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=3094s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Q2: Umsatz +13%, Gewinn +18%; EPS 5,96 vs. 5,81 erwartet. Annual Recurring Revenue >27 Mrd. KI-Produkte zentraler Treiber, Photoshop-KI-Einsatz. Q3-Guidance: Umsatz 6,7 Mrd (vs. 6,5 Mrd Konsens), EPS…",
-     "einordnung": "Paradox: Zahlen excellent, CFO weg, Kurs fällt. Das ist oft Warnsignal für verborgene Probleme (KI-Monetarisierung stockt, Churn unter der Oberfläche). KGV 8 ist nur billig, wenn Gewinne nicht erodie…",
-     "figures": "Q2 Umsatz +13%, Gewinn +18%, EPS 5,96, ARR >27 Mrd, Q3-Guidance 6,7 Mrd Umsatz, EPS 6,05–6,10"
-    },
-    {
-     "date": "2025-12-11",
-     "video_id": "f0pcBA15wVI",
-     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=1104s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Adobe hat gute Zahlen geliefert und kooperiert mit OpenAI. Der KI-Umsatz erreicht 250 Mio. USD.",
-     "einordnung": "250 Mio. USD KI-Umsatz zeigt, dass Adobe Monetarisierung schafft, bleibt aber hinter reinen KI-Playern zurück. Die OpenAI-Kooperation ist strategisch klug — Adobe integriert KI statt sie zu bekämpfen.",
-     "figures": "250 Mio. USD KI-Umsatz"
     }
    ]
   },
@@ -6552,30 +6835,6 @@
     }
    ]
   },
-  "UBER": {
-   "name": "Uber",
-   "auftritte": [
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=3805s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Macht Fortschritte bei autonomem Fahren, aber Aktie seitwärts. Chart in Range.",
-     "einordnung": "Uber zeigt operative Fortschritte (autonomes Fahren), aber der Chart ist seitwärts. Das ist ein klassisches Abwarten-Signal auf einen Ausbruch."
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=561s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Uber legt Übernahmeangebot für Delivery Hero vor — 33 € je Aktie, Enterprise Value 13,5 Mrd. €. Mögliche Übernahmeschlacht mit DoorDash als Konkurrent.",
-     "einordnung": "Uber kauft sich mit Delivery Hero den europäischen Food-Delivery-Markt — strategisch logisch nach der Grubhub-Pleite, aber der Preis ist hoch. Die Frage ist, ob DoorDash kontert und eine Bieterschlac…",
-     "figures": "Angebot 33 € je Delivery-Hero-Aktie, EV 13,5 Mrd. €, 18,6x 2027er EBIT"
-    }
-   ]
-  },
   "ADYEN.AS": {
    "name": "Adyen",
    "auftritte": [
@@ -6670,21 +6929,6 @@
      "kategorie": "news",
      "note": "Vestas: J.P. Morgan erwartet Prognoseanhebung; Aktie testet 200-Tage-Linie.",
      "einordnung": "J.P. Morgan als Haus mit guter Wind-Energy-Coverage — eine Prognoseanhebung wäre ein klarer Katalysator. Die 200-Tage-Linie als charttechnischer Drehpunkt macht Vestas zu einem interessanten Setup, w…"
-    }
-   ]
-  },
-  "ACN": {
-   "name": "Accenture",
-   "auftritte": [
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=2399s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Accenture steht stark unter Druck (-20%). Das Consultinggeschäft ist schwach, die KI-Transformation frisst Geld. Der Chart ist bärisch.",
-     "einordnung": "Ein PE von 9 und 5% Dividende bei Accenture klingen wie ein Value-Traumszenario – bis man den Chart sieht. Der Markt bestraft hier die Unsicherheit über den KI-RoI im Consulting. Finger weg, bis die…",
-     "figures": "Umsatz 18,7 Mrd. $ (+6%); Gewinn/Aktie 3,80$ (Erwartung 3,72$); Auftragseingang Ratio 1,0; freier Cashflow; Zukäufe 4,2 Mrd. $; PE Forward 9; Dividendenrendite über 5%"
     }
    ]
   },
@@ -7347,20 +7591,6 @@
     }
    ]
   },
-  "PYPL": {
-   "name": "PayPal",
-   "auftritte": [
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "PayPal beantragt eine Banklizenz für die eigene Kreditvergabe.",
-     "einordnung": "Eine Banklizenz wäre ein strategischer Meilenstein für PayPal — sie würde das Geschäftsmodell vom reinen Zahlungsabwickler zum Finanzdienstleister erweitern. Das erinnert an die Bestrebungen von Squa…"
-    }
-   ]
-  },
   "KLAC": {
    "name": "KLA",
    "auftritte": [
@@ -7646,21 +7876,6 @@
     }
    ]
   },
-  "CRWD": {
-   "name": "CrowdStrike",
-   "auftritte": [
-    {
-     "date": "2025-11-28",
-     "video_id": "fQxlQW1Y5LQ",
-     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1497s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Host sieht Erholung nach dem Serverausfall im Sommer; CrowdStrike erhält erneute Autorisierung für US-Behörden; Hackerangriff auf Salesforce mit 1 Mrd. betroffenen Daten unterstreicht Cybersicherheit…",
-     "einordnung": "Die Erholung nach dem globalen Ausfall ist charttechnisch intakt, doch KGV 140 ist selbst für einen Cybersecurity-Wachstumstitel extrem. Der Salesforce-Hack ist ein Branchen-Tailwind, rechtfertigt ab…",
-     "figures": "1 Mrd. betroffene Daten, KGV 140"
-    }
-   ]
-  },
   "RDDT": {
    "name": "Reddit",
    "auftritte": [
@@ -7731,31 +7946,6 @@
      "note": "Erwarteter Umsatz von 175 Mrd. USD, Ergebniswachstum von 3-5%; Analysten heben Gewinnprognose von 57 auf 60 Cent je Aktie an; KI-Effizienzpotenzial für nächstes Jahr.",
      "einordnung": "Walmart ist der Inbegriff des defensiven Value-Titels – und genau das wird in einer Phase des Konsumrückgangs gesucht. Die Analystenrevisionen sind moderat positiv, das KI-Narrativ ist ein Bonus, abe…",
      "figures": "175 Mrd. USD, 3-5%, 57 Cent, 60 Cent"
-    }
-   ]
-  },
-  "PANW": {
-   "name": "Palo Alto Networks",
-   "auftritte": [
-    {
-     "date": "2025-11-13",
-     "video_id": "DdOoAO1ztKo",
-     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1390s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Zahlen werden am 19.11. erwartet; Übernahme von Cybersecurity-Spezialist für 25 Mrd. USD (2,5 Mrd. Cash + 100 Mio. neue Aktien); Kursziele: Mizuho 230 USD, Jefferies/RBC 250 USD.",
-     "einordnung": "Palo Alto ist der Branchenführer im Cybersecurity-Markt, und eine 25-Mrd.-USD-Übernahme zeigt Größenordnung und Ambition. Die Kursziele von 230-250 USD sind moderat optimistisch. Die Integration der…",
-     "figures": "25 Mrd. USD, 2,5 Mrd. USD, 100 Mio. Aktien, 230 USD, 250 USD"
-    },
-    {
-     "date": "2025-11-13",
-     "video_id": "DdOoAO1ztKo",
-     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1934s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Allzeithoch bei 220 USD erreicht; Potenzial bis 231 USD, wenn die 50%-Fibonacci-Retracement bei 198 USD gehalten wird; Rücksetzer auf 198 USD bieten spekulative Kaufchancen.",
-     "einordnung": "Ein Allzeithoch kurz vor den Quartalszahlen am 19.11. ist mutig – der Markt antizipiert offenbar ein gutes Ergebnis. Die 198-USD-Marke als Fibonacci-Unterstützung ist ein solider Einstiegspunkt bei R…",
-     "figures": "220 USD, 231 USD, 198 USD"
     }
    ]
   }
