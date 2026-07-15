@@ -260,6 +260,50 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .vtile-meta{font-size:12.5px;font-weight:600;color:var(--accent-ink);margin-top:auto;padding-top:12px}
   .vidmodal{max-height:88vh;overflow:auto}
   .tn.on{background:var(--accent);color:var(--bg1);border-color:transparent}
+  /* --- Beobachtungskandidaten (ADR-806, Contract v0.12): kompakte Liste vor den Video-Briefings --- */
+  .cand-block{margin:var(--sp-8) 0 0}
+  .cand-head{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;margin-bottom:var(--sp-3)}
+  .cand-title{min-width:0;flex:1 1 420px}
+  .cand-title h2{font-size:19px;line-height:1.2;font-weight:700;letter-spacing:-.015em;margin:0 0 4px}
+  .cand-sub{font-size:12.5px;color:var(--muted);margin:0;max-width:720px}
+  .cand-status{display:inline-flex;align-items:center;min-height:28px;border-radius:999px;padding:4px 10px;font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);background:var(--chip);white-space:nowrap}
+  .cand-status.warn{color:var(--warn);background:color-mix(in srgb,var(--warn) 15%,transparent)}
+  .cand-status.down{color:var(--down);background:color-mix(in srgb,var(--down) 15%,transparent)}
+  .cand-list{list-style:none;margin:0;padding:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-card);overflow:hidden}
+  .cand-row{display:grid;grid-template-columns:36px minmax(170px,1.1fr) minmax(150px,.8fr) minmax(210px,1.35fr);gap:var(--sp-3);align-items:center;padding:var(--sp-3) var(--sp-4);border-bottom:1px solid var(--line)}
+  .cand-row:last-child{border-bottom:none}
+  .cand-rank{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent-ink);font-size:12.5px;font-weight:700;font-variant-numeric:tabular-nums}
+  .cand-name{display:inline-flex;align-items:center;min-height:44px;border:none;background:transparent;color:var(--ink);font-family:inherit;font-size:16px;font-weight:650;letter-spacing:-.01em;line-height:1.3;padding:0;text-align:left;cursor:pointer}
+  .cand-name:not(button){cursor:default}
+  .cand-name.mvloading{opacity:.55;cursor:progress}
+  .cand-ticker,.cand-sector,.cand-asof{font-size:12.5px;color:var(--muted)}
+  .cand-ticker{font-weight:600;color:var(--accent-ink);margin-left:6px}
+  .cand-sector{margin-top:1px}
+  .cand-price{font-size:16px;font-weight:700;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+  .cand-asof{margin-top:2px}
+  .cand-readiness{display:inline-flex;align-items:center;border-radius:8px;padding:3px 9px;font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);background:var(--chip)}
+  .cand-readiness.zone{color:var(--up);background:color-mix(in srgb,var(--up) 15%,transparent)}
+  .cand-readiness.near{color:var(--accent-ink);background:color-mix(in srgb,var(--accent) 15%,transparent)}
+  .cand-distance{font-size:12.5px;font-weight:600;margin-left:6px;font-variant-numeric:tabular-nums}
+  .cand-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+  .cand-chip{font-size:11px;font-weight:600;letter-spacing:.02em;border-radius:7px;padding:2px 8px;color:var(--accent-ink);background:color-mix(in srgb,var(--accent) 13%,transparent)}
+  .cand-chip.risk{color:var(--warn);background:color-mix(in srgb,var(--warn) 14%,transparent)}
+  .cand-chip.neutral{color:var(--muted);background:var(--chip)}
+  .cand-interest{font-size:12.5px;color:var(--muted);margin-top:6px}
+  .cand-empty{font-size:14.5px;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4)}
+  .cand-empty.failed{color:var(--down);background:color-mix(in srgb,var(--down) 8%,var(--card))}
+  .cand-disclosure{display:flex;align-items:center;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-3);padding:var(--sp-3) var(--sp-4);background:var(--card);border:1px solid var(--line);border-radius:14px}
+  .cand-disclosure-label{font-size:12.5px;font-style:italic;color:var(--muted);flex:1 1 360px}
+  .cand-disclosure-btn{min-height:44px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--accent-ink);font-family:inherit;font-size:12.5px;font-weight:600;padding:8px 13px;cursor:pointer}
+  .cand-details{font-size:12.5px;color:var(--muted);background:var(--chip);border-radius:12px;padding:var(--sp-3);margin-top:var(--sp-2)}
+  .cand-details p{margin:0 0 8px}.cand-details p:last-child{margin-bottom:0}
+  .cand-details b{color:var(--ink)}.cand-details a{color:var(--accent-ink);font-weight:600;text-decoration:none}
+  @media(max-width:639px){
+    .cand-row{grid-template-columns:36px minmax(0,1fr);align-items:start}
+    .cand-quote,.cand-setup{grid-column:2}
+    .cand-head{gap:var(--sp-2)}
+    .cand-title{flex-basis:100%}
+  }
   /* --- Rechts-Footer (ADR-302): dezent, aber überall erreichbar --- */
   .sitefoot{padding:18px 0 0;border-top:1px solid var(--line)}
   .footlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 8px;margin-bottom:8px}
@@ -349,7 +393,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     .wlc .rm{opacity:0}.wlc:hover .rm{opacity:1}
     /* Zeilen/Links/Chips: dezente Flächen-/Text-Rückmeldung, keine Elevation */
     .results .r:hover,.fibrow:hover,.etable tbody tr:hover,.footlink:hover{background:var(--chip)}
-    .vtitle:hover,.vname-lnk:hover,.footlink:hover,.tv-link:hover{color:var(--accent-ink)}
+    .vtitle:hover,.vname-lnk:hover,.cand-name:hover,.footlink:hover,.tv-link:hover{color:var(--accent-ink)}
     .more:hover,.glossnote a:hover,.vreftxt a:hover,.equelle:hover,.tv-link:hover{text-decoration:underline;text-underline-offset:2px}
     .tv-link:hover{opacity:1}
     .tag.gloss:hover,.elink:hover,.fibset:hover{background:color-mix(in srgb,var(--accent) 20%,transparent)}
@@ -467,6 +511,14 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
  </div>
 
  <div id="pageAna" class="hidden">
+  <section id="candidateBlock" class="cand-block hidden" aria-labelledby="candidateTitle" aria-hidden="true" inert>
+   <div class="cand-head">
+    <div class="cand-title"><h2 id="candidateTitle">Beobachtungskandidaten</h2><p class="cand-sub">Sortiert nach Nähe zur regelbasierten Beobachtungszone – keine Erfolgsprognose.</p></div>
+    <div id="candidateStatus"></div>
+   </div>
+   <div id="candidateContent"></div>
+   <div id="candidateDisclosure"></div>
+  </section>
   <div class="sec"><h2>Video-Briefings</h2></div>
   <p style="color:var(--muted);font-size:12.5px;margin:0 0 2px">Auf eine Kachel tippen öffnet die ausführliche Analyse.</p>
   <div class="filterbar" id="vidModeBar" style="margin-top:8px"><button class="fpill on" data-vm="latest">Aktuell</button><button class="fpill" data-vm="cal">Kalender</button><button class="fpill" data-vm="chan">Nach Kanal</button></div>
@@ -662,7 +714,7 @@ const DEMO={
   {prio:2,time:"09:10",title:"Ölpreis springt nach OPEC+-Entscheidung",body:"OPEC+ hält Förderkürzung länger; Brent +2,3 %.",timing:"vor US-Open",sources:[{l:"@ReutersWorld",u:"https://x.com/ReutersWorld"}]}],
  reads:[{s:"Bloomberg Opinion",h:"Warum Chip-Nationalismus die Margen frisst",u:"#"},{s:"Chart-Schule",h:"Formation des Tages: Schulter-Kopf-Schulter",u:"#"}]}
 };
-let DATA={},order=[],labels={},current=null,calView=new Date(),DEMOMODE=false,allLoaded=false,MARKET=null,filterPrio=0,VIDEOS=null,IDEAS=null,FGDATA=null,FGHIST=null;
+let DATA={},order=[],labels={},current=null,calView=new Date(),DEMOMODE=false,allLoaded=false,MARKET=null,filterPrio=0,VIDEOS=null,IDEAS=null,CANDIDATES=null,FGDATA=null,FGHIST=null;
 let VIDIDX=null,VIDDAYS=[],vidCurrent=null,vidCalView=new Date(),vidMode='latest',VIDDAY={},VIDLABELS={},vidChannel=null,vidAllLoaded=false;
 let EARN=null,ERECAP=null,earnMode='cal',earnRange='week',earnRegion='',earnIndex='',earnWLonly=false,earnSortKey='reaktion',earnSortDir=-1,EARNWL=new Set();
 function mkt(){return (!DEMOMODE && MARKET && MARKET.indices)?MARKET:(DATA[current]||{})}
@@ -675,7 +727,7 @@ function tint(p,cap){const d=isDark(),m=Math.min(Math.abs(p)/(cap||2.5),1);if(p>
 function ink(p,cap){const d=isDark(),m=Math.min(Math.abs(p)/(cap||2.5),1);if(d)return p>=0?`hsl(155 48% ${68+m*12}%)`:`hsl(9 64% ${70+m*10}%)`;return p>=0?`hsl(156 45% ${27-m*6}%)`:`hsl(9 48% ${35-m*8}%)`}
 function fp(p){return (p>=0?"+":"")+(+p).toFixed(2)+" %"}
 function escapeHtml(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function safeUrl(u){u=String(u==null?'':u).trim();return /^https:\/\//i.test(u)?u:''}
+function safeUrl(u){u=String(u==null?'':u).trim();if(/[\u0000-\u001F\u007F<>"'`\\]/.test(u))return '';try{return new URL(u).protocol==='https:'?u:''}catch(e){return ''}}
 function safeLink(u,label,extra){const h=safeUrl(u),t=escapeHtml(label==null?'':label);return h?`<a href="${h}" target="_blank" rel="noopener noreferrer"${extra||''}>${t}</a>`:t}
 // ADR-025/701: Ticker ist LLM-Fremdtext → strikte Whitelist. Nur valide Symbole werden Chart-/Link-Ziel; sonst kein Link.
 function validTicker(t){t=String(t==null?'':t).trim();return /^[A-Z0-9.=^-]+$/.test(t)?t:''}
@@ -692,8 +744,9 @@ async function boot(){
   try{const ir=await fetch('data/ideas.json',{cache:'no-store'});if(ir.ok)IDEAS=await ir.json()}catch(e){}
   try{const er=await fetch('data/earnings.json',{cache:'no-store'});if(er.ok)EARN=await er.json()}catch(e){}
   try{const rr=await fetch('data/earnings-recap.json',{cache:'no-store'});if(rr.ok)ERECAP=await rr.json()}catch(e){}
+  try{const cr=await fetch('data/candidates.json',{cache:'no-store'});if(cr.ok)CANDIDATES=await cr.json()}catch(e){}
   if(MARKET&&MARKET.feargreed)FGDATA=MARKET.feargreed;
-  calView=new Date(current);render();initVideos();renderIdeas();initEarnings();loadFG()
+  calView=new Date(current);render();renderCandidates();initVideos();renderIdeas();initEarnings();loadFG()
 }
 async function go(date){current=date;calView=new Date(date);if(!DEMOMODE){try{await loadDay(date)}catch(e){}}render()}
 function shift(s){const i=order.indexOf(current)+s;if(i>=0&&i<order.length)go(order[i])}
@@ -718,6 +771,52 @@ function topics(){const day=DATA[current];const s=[...(day.topics||[])].sort((a,
 function reads(){const day=DATA[current];document.getElementById('reads').innerHTML=(day.reads||[]).map(r=>`<a class="read" href="${safeUrl(r.u)||'#'}" target="_blank" rel="noopener noreferrer"><div class="s">${escapeHtml(r.s||'')}</div><div class="h">${escapeHtml(r.h||'')}</div></a>`).join('')}
 function vdate(d){return (d&&d.length>=8)?d.slice(6,8)+'.'+d.slice(4,6)+'.'+d.slice(0,4):''}
 function renderIdeas(){const el=document.getElementById('ideaList');if(!el)return;const ideas=(IDEAS&&IDEAS.ideas)||[];if(!ideas.length){el.innerHTML='<div class="ph"><p style="color:var(--muted)">Noch keine Ideen – erscheinen nach dem nächsten Lauf.</p></div>';return}const d=(IDEAS&&IDEAS.date)?vdate(String(IDEAS.date).replace(/-/g,'')):'';el.innerHTML=(d?`<div style="font-size:12.5px;color:var(--muted);margin:0 0 12px">Stand: ${escapeHtml(d)} · wird täglich neu erzeugt</div>`:'')+ideas.map(i=>`<div class="vcard"><div class="vh"><span class="ibadge">${escapeHtml(i.angle||'Idee')}</span>${safeUrl(i.source_url)?`<a class="tlink" style="margin-left:auto" href="${safeUrl(i.source_url)}" target="_blank" rel="noopener noreferrer">Quelle ↗</a>`:''}</div><div class="vtitle">${escapeHtml(i.title)}</div><p class="vsum">${escapeHtml(i.thesis||'')}</p>${(i.values&&i.values.length)?`<div class="ivals">${i.values.map(v=>`<span class="ival">${escapeHtml(v)}</span>`).join('')}</div>`:''}${i.risk?`<div class="vfig"><b>Risiko:</b> ${escapeHtml(i.risk)}</div>`:''}${i.source?`<div style="font-size:12.5px;color:var(--muted);margin-top:6px">Basis: ${escapeHtml(i.source)}</div>`:''}</div>`).join('')}
+// --- Öffentliche Beobachtungskandidaten (ADR-806 / Contract v0.12) ---
+const CAND_STATUS={fresh:{cls:'',label:'Stand'},stale:{cls:'warn',label:'Verzögert'},empty:{cls:'',label:'Stand'},partial:{cls:'warn',label:'Teilweise geladen'},failed:{cls:'down',label:'Nicht aktuell'}};
+const CAND_READINESS={in_zone:{cls:'zone',label:'in Beobachtungszone'},near:{cls:'near',label:'nah an Zone'},watch:{cls:'',label:'im Blick'}};
+const CAND_RULES={weekly_uptrend:'Wochen-Aufwärtstrend',daily_uptrend:'Tages-Aufwärtstrend',above_ma200:'über 200-Tage-Linie',pullback_present:'Rücksetzer vorhanden',support_near:'Unterstützung nahe',momentum_confirmed:'Momentum bestätigt'};
+const CAND_RISKS={data_partial:'Daten teilweise',earnings_near:'Quartalszahlen nah',earnings_date_unverified:'Termin der Quartalszahlen ungeprüft',extended_from_zone:'von Zone entfernt',low_liquidity:'geringe Liquidität',high_volatility:'hohe Volatilität'};
+const CAND_INTEREST={none_declared:'Keine Position oder sonstiges Interesse offengelegt.',position_or_interest:'Position oder sonstiges Interesse offengelegt – Details unten.'};
+function candText(v){return typeof v==='string'&&v.trim()!==''}
+function candDisclosureValid(d){return d&&typeof d==='object'&&candText(d.label)&&candText(d.producer)&&candText(d.contact_url)&&candText(d.methodology)&&candText(d.interests)&&candText(d.as_of)}
+function candFeedValid(d){return d&&typeof d==='object'&&d._meta&&typeof d._meta==='object'&&d._meta.schema_version==='0.12'&&candText(d._meta.status)&&d._meta.ranking_basis==='setup_readiness_v1'&&Array.isArray(d.items)&&candDisclosureValid(d.disclosure)}
+function candItemValid(i){const rank=Number(i&&i.rank),price=Number(i&&i.quote&&i.quote.price),distance=Number(i&&i.setup&&i.setup.distance_to_zone_pct);return i&&typeof i==='object'&&Number.isInteger(rank)&&rank>0&&(candText(i.name)||candText(i.ticker))&&i.quote&&typeof i.quote==='object'&&Number.isFinite(price)&&price>0&&candText(i.quote.currency)&&i.setup&&typeof i.setup==='object'&&Number.isFinite(distance)&&distance>=0}
+function candDateTime(v){const d=new Date(String(v||''));return Number.isNaN(d.getTime())?'':d.toLocaleString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'})}
+function candNum(v,d){return Number(v).toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d})}
+function candUnique(a){return a.filter((v,i)=>a.indexOf(v)===i)}
+function candStatusHTML(meta){const raw=String(meta.status||''),mapped=CAND_STATUS[raw]||{cls:'',label:'Datenstatus unbekannt'};const dt=candDateTime(meta.generated_at||meta.trading_day);const txt=raw==='fresh'||raw==='empty'?(dt?mapped.label+' '+dt:mapped.label):(dt?mapped.label+' · Stand '+dt:mapped.label);return `<span class="cand-status ${mapped.cls}">${escapeHtml(txt)}</span>`}
+function candItemHTML(i){
+  const tk=validTicker(i.ticker),name=candText(i.name)?String(i.name):String(i.ticker||'—'),sector=candText(i.sector)?String(i.sector):'Sektor nicht ausgewiesen';
+  const nameHtml=tk?`<button type="button" class="cand-name" data-tk="${escapeHtml(tk)}" data-nm="${escapeHtml(name)}" title="${escapeHtml(tk)} · Kurs-Chart öffnen">${escapeHtml(name)}<span class="cand-ticker">${escapeHtml(tk)}</span></button>`:`<div class="cand-name">${escapeHtml(name)}${candText(i.ticker)?`<span class="cand-ticker">${escapeHtml(i.ticker)}</span>`:''}</div>`;
+  const cur=/^[A-Z]{3}$/.test(String(i.quote.currency||''))?String(i.quote.currency):'Währung offen';
+  const quoteAsOf=candDateTime(i.quote.as_of||i.as_of),read=CAND_READINESS[String(i.setup.readiness||'')]||{cls:'',label:'Status unbekannt'};
+  const ruleRaw=Array.isArray(i.rule_hits)?i.rule_hits:[],riskRaw=Array.isArray(i.risk_flags)?i.risk_flags:[];
+  const rules=candUnique(ruleRaw.map(r=>CAND_RULES[r]||'Weiteres Regelsignal')).slice(0,3);
+  const risks=candUnique(riskRaw.map(r=>CAND_RISKS[r]||'Weiterer Risikohinweis'));
+  if(i.data_quality&&i.data_quality.status==='partial')risks.push('Datenqualität teilweise');
+  else if(i.data_quality&&i.data_quality.status&&i.data_quality.status!=='ok')risks.push('Datenqualität offen');
+  const hints=candUnique(risks).slice(0,2),interest=CAND_INTEREST[String(i.interest_status||'')]||'Interessenstatus nicht ausgewiesen.';
+  return `<li class="cand-row"><div class="cand-rank" aria-label="Rang ${escapeHtml(i.rank)}">${escapeHtml(i.rank)}</div><div class="cand-identity">${nameHtml}<div class="cand-sector">${escapeHtml(sector)}</div></div><div class="cand-quote"><div class="cand-price">${candNum(i.quote.price,2)} ${escapeHtml(cur)}</div><div class="cand-asof">${quoteAsOf?'Stand '+escapeHtml(quoteAsOf):'Datenstand nicht ausgewiesen'}</div></div><div class="cand-setup"><span class="cand-readiness ${read.cls}">${escapeHtml(read.label)}</span><span class="cand-distance">${candNum(i.setup.distance_to_zone_pct,1)} % zur Zone</span>${rules.length?`<div class="cand-chips">${rules.map(x=>`<span class="cand-chip${x==='Weiteres Regelsignal'?' neutral':''}">${escapeHtml(x)}</span>`).join('')}</div>`:''}${hints.length?`<div class="cand-chips">${hints.map(x=>`<span class="cand-chip risk${x==='Weiterer Risikohinweis'||x==='Datenqualität offen'?' neutral':''}">${escapeHtml(x)}</span>`).join('')}</div>`:''}<div class="cand-interest">${escapeHtml(interest)}</div></div></li>`;
+}
+function candDisclosureHTML(d){const link=safeUrl(d.contact_url)?`<a href="${safeUrl(d.contact_url)}" target="_blank" rel="noopener noreferrer">Kontakt / Impressum ↗</a>`:'Kontakt-Link nicht verfügbar';const asOf=candDateTime(d.as_of)||String(d.as_of);return `<div class="cand-disclosure"><div class="cand-disclosure-label">${escapeHtml(d.label)}</div><button type="button" class="cand-disclosure-btn" id="candDisclosureBtn" aria-expanded="false" aria-controls="candDisclosureDetails">Methodik &amp; Interessen</button></div><div class="cand-details hidden" id="candDisclosureDetails"><p><b>Herausgeber:</b> ${escapeHtml(d.producer)}</p><p><b>Methodik:</b> ${escapeHtml(d.methodology)}</p><p><b>Interessen:</b> ${escapeHtml(d.interests)}</p><p><b>Stand:</b> ${escapeHtml(asOf)} · ${link}</p></div>`}
+function wireCandidates(){
+  const block=document.getElementById('candidateBlock');if(!block)return;
+  block.querySelectorAll('.cand-name[data-tk]').forEach(btn=>btn.onclick=()=>openTicker(btn,btn.dataset.tk,btn.dataset.nm));
+  const btn=document.getElementById('candDisclosureBtn'),details=document.getElementById('candDisclosureDetails');
+  if(btn&&details)btn.onclick=()=>{const open=details.classList.toggle('hidden')===false;btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'Methodik & Interessen schließen':'Methodik & Interessen'};
+}
+function syncCandidateA11y(){const block=document.getElementById('candidateBlock');if(!block)return;const hidden=block.classList.contains('hidden')||currentTopKey!=='ana';block.toggleAttribute('inert',hidden);if(hidden)block.setAttribute('aria-hidden','true');else block.removeAttribute('aria-hidden')}
+function renderCandidates(){
+  const block=document.getElementById('candidateBlock'),content=document.getElementById('candidateContent'),status=document.getElementById('candidateStatus'),disclosure=document.getElementById('candidateDisclosure');if(!block||!content||!status||!disclosure)return;
+  if(!candFeedValid(CANDIDATES)){block.classList.add('hidden');content.innerHTML='';status.innerHTML='';disclosure.innerHTML='';syncCandidateA11y();return}
+  block.classList.remove('hidden');const meta=CANDIDATES._meta,rawStatus=String(meta.status||'');status.innerHTML=candStatusHTML(meta);
+  const items=CANDIDATES.items.filter(candItemValid).slice(0,5);
+  if(rawStatus==='failed')content.innerHTML='<div class="cand-empty failed">Beobachtungskandidaten konnten nicht aktualisiert werden.</div>';
+  else if(rawStatus==='empty'||!items.length)content.innerHTML='<div class="cand-empty">Heute liegt kein Setup nah genug an der Zone.</div>';
+  else content.innerHTML=`<ol class="cand-list">${items.map(candItemHTML).join('')}</ol>`;
+  disclosure.innerHTML=candDisclosureHTML(CANDIDATES.disclosure);wireCandidates();syncCandidateA11y();
+}
+
 // --- Video-Briefings: Teil A (neuste je Kanal) + B (Kalender) + C (ausklappbare Themen) ---
 const VCHAN_ORDER=['onvista','egmond','aktionär','calling usa','harry','börse mit hans','aktien im schnelltest','berneckertv'];
 function vchanRank(ch){const c=(ch||'').toLowerCase().trim();for(let i=0;i<VCHAN_ORDER.length;i++){const k=VCHAN_ORDER[i];if(c===k||c.startsWith(k)||c.includes(k)||k.includes(c))return i}return VCHAN_ORDER.length}
@@ -981,6 +1080,7 @@ function show(p){
   }else{
     for(const k in P)document.getElementById(P[k]).classList.toggle('hidden',k!==p);
   }
+  syncCandidateA11y();
   window.scrollTo({top:0});
 }
 document.getElementById('navHeute').onclick=()=>show('heute');document.getElementById('navAna').onclick=()=>show('ana');document.getElementById('navEarn').onclick=()=>show('earn');document.getElementById('navIdeen').onclick=()=>show('ideen');document.getElementById('navKO').onclick=()=>show('ko');
@@ -1059,6 +1159,7 @@ function syncNavForViewport(){
     for(const k in P)document.getElementById(P[k]).classList.toggle('hidden',k!==currentTopKey);
     track.classList.remove('tt-hidden');track.style.height='';
   }
+  syncCandidateA11y();
 }
 function initMobileNav(){
   initTrackObserver();
