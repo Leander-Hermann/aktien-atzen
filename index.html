@@ -290,6 +290,14 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .cand-chip.risk{color:var(--warn);background:color-mix(in srgb,var(--warn) 14%,transparent)}
   .cand-chip.neutral{color:var(--muted);background:var(--chip)}
   .cand-interest{font-size:12.5px;color:var(--muted);margin-top:6px}
+  .cand-levels{display:flex;flex-direction:column;gap:4px;margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+  .cand-level{display:flex;align-items:baseline;justify-content:space-between;gap:8px;font-size:12.5px}
+  .cand-level-lbl{color:var(--muted)}
+  .cand-level-val{font-weight:700;font-variant-numeric:tabular-nums}
+  .cand-level-val.down{color:var(--down)}
+  .cand-level-val.up{color:var(--up)}
+  .cand-level-horizon{font-size:11px;color:var(--muted)}
+  .cand-legend{font-size:11.5px;color:var(--muted);margin:var(--sp-2) 2px 0}
   .cand-empty{font-size:14.5px;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--sp-4)}
   .cand-empty.failed{color:var(--down);background:color-mix(in srgb,var(--down) 8%,var(--card))}
   .cand-disclosure{display:flex;align-items:center;gap:var(--sp-2);flex-wrap:wrap;margin-top:var(--sp-3);padding:var(--sp-3) var(--sp-4);background:var(--card);border:1px solid var(--line);border-radius:14px}
@@ -758,7 +766,7 @@ function mrow(m){const k=ink(m.p,8);return `<div class="mvrow" style="background
 function mvOpen(el,m){if(el.dataset.busy)return;if(m.candles&&m.candles.d1&&m.candles.d1.length){openStock(m);return}if(!m.t)return;el.dataset.busy='1';el.classList.add('mvloading');ywFetch(m.t).then(d=>{el.classList.remove('mvloading');delete el.dataset.busy;if(d&&d.candles&&d.candles.length)openStock({t:m.t,n:m.n||m.t,p:(m.p!=null?m.p:(d.pct||0)),candles:{d1:d.candles}})}).catch(()=>{el.classList.remove('mvloading');delete el.dataset.busy})}
 function mvEl(m){const d=document.createElement('div');d.innerHTML=mrow(m);const el=d.firstElementChild;el.classList.add('clk');el.onclick=()=>mvOpen(el,m);return el}
 // ADR-701: Klick auf Name/Chip mit validem Ticker → On-Site-Kurs-Chart (Mover-Muster: ywFetch + Loading + graceful Fallback, kein Overlay-Crash).
-function openTicker(el,ticker,name){const tk=validTicker(ticker);if(!tk)return;if(el&&el.dataset.busy)return;if(el){el.dataset.busy='1';el.classList.add('mvloading')}ywFetch(tk).then(d=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}if(d&&d.candles&&d.candles.length)openStock({t:tk,n:name||tk,p:d.pct||0,candles:{d1:d.candles}})}).catch(()=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}})}
+function openTicker(el,ticker,name,levels){const tk=validTicker(ticker);if(!tk)return;if(el&&el.dataset.busy)return;if(el){el.dataset.busy='1';el.classList.add('mvloading')}ywFetch(tk).then(d=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}if(d&&d.candles&&d.candles.length)openStock({t:tk,n:name||tk,p:d.pct||0,candles:{d1:d.candles}},levels)}).catch(()=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}})}
 // Verdrahtet alle klickbaren Werte (Themen-Chips + Item-Kopf-Namen) in scope auf den Chart-Pfad (Tastatur + Maus).
 function wireTopicChips(scope){if(!scope)return;scope.querySelectorAll('.vtchip-lnk,.vname-lnk').forEach(el=>{const go=e=>{e.stopPropagation();openTicker(el,el.dataset.tk,el.dataset.nm)};el.onclick=go;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go(e)}}})}
 // Kerzen für Gewinner/Verlierer im Hintergrund vorladen → Klick öffnet den Chart aus dem Cache (sofort).
@@ -779,15 +787,49 @@ const CAND_RISKS={data_partial:'Daten teilweise',earnings_near:'Quartalszahlen n
 const CAND_INTEREST={none_declared:'Keine Position oder sonstiges Interesse offengelegt.',position_or_interest:'Position oder sonstiges Interesse offengelegt – Details unten.'};
 function candText(v){return typeof v==='string'&&v.trim()!==''}
 function candDisclosureValid(d){return d&&typeof d==='object'&&candText(d.label)&&candText(d.producer)&&candText(d.contact_url)&&candText(d.methodology)&&candText(d.interests)&&candText(d.as_of)}
-function candFeedValid(d){return d&&typeof d==='object'&&d._meta&&typeof d._meta==='object'&&d._meta.schema_version==='1.0'&&candText(d._meta.status)&&d._meta.ranking_basis==='setup_readiness_v1'&&Array.isArray(d.items)&&candDisclosureValid(d.disclosure)}
+function candFeedValid(d){return d&&typeof d==='object'&&d._meta&&typeof d._meta==='object'&&(d._meta.schema_version==='1.0'||d._meta.schema_version==='1.1')&&candText(d._meta.status)&&d._meta.ranking_basis==='setup_readiness_v1'&&Array.isArray(d.items)&&candDisclosureValid(d.disclosure)}
 function candItemValid(i){const rank=Number(i&&i.rank),price=Number(i&&i.quote&&i.quote.price),distance=Number(i&&i.setup&&i.setup.distance_to_zone_pct);return i&&typeof i==='object'&&Number.isInteger(rank)&&rank>0&&(candText(i.name)||candText(i.ticker))&&i.quote&&typeof i.quote==='object'&&Number.isFinite(price)&&price>0&&candText(i.quote.currency)&&i.setup&&typeof i.setup==='object'&&Number.isFinite(distance)&&distance>=0}
 function candDateTime(v){const d=new Date(String(v||''));return Number.isNaN(d.getTime())?'':d.toLocaleString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'})}
 function candNum(v,d){return Number(v).toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d})}
 function candUnique(a){return a.filter((v,i)=>a.indexOf(v)===i)}
+// ADR-807: Plausibilitäts-Gate für levels — unplausible Werte werden je Item still verworfen (kein Konsolenfehler).
+function candLevelsValid(lv){
+  if(!lv||typeof lv!=='object')return false;
+  const el=Number(lv.entry_low),eh=Number(lv.entry_high),st=Number(lv.stop),tg=Number(lv.target),hz=lv.horizon_sessions;
+  if(![el,eh,st,tg].every(v=>Number.isFinite(v)&&v>0))return false;
+  if(!(st<el&&el<eh&&eh<tg))return false;
+  return Number.isInteger(hz)&&hz>=1;
+}
+const CAND_FIB_RATIOS=[1.0,1.272,1.618];
+const CAND_FIB_RATIO_LABEL={1:'1.0',1.272:'1.272',1.618:'1.618'};
+// ADR-810: eigenes, von "levels" unabhängiges Plausibilitäts-Gate für die Fib-Extension-Annotation.
+function candFibValid(fib){
+  if(!fib||typeof fib!=='object')return false;
+  const a=fib.anchors;if(!a||typeof a!=='object')return false;
+  const pts=[a.a,a.b,a.c];
+  if(pts.some(p=>!p||typeof p!=='object'||!/^\d{4}-\d{2}-\d{2}$/.test(String(p.date))))return false;
+  const prices=pts.map(p=>Number(p.price));
+  if(!prices.every(v=>Number.isFinite(v)&&v>0))return false;
+  if(!(prices[0]<prices[1]&&prices[2]<prices[1]))return false;
+  const ext=fib.extensions;
+  if(!Array.isArray(ext)||!ext.length)return false;
+  return ext.every(e=>e&&typeof e==='object'&&CAND_FIB_RATIOS.includes(Number(e.ratio))&&Number.isFinite(Number(e.price))&&Number(e.price)>0);
+}
+function candFibDate(s){const t=Date.parse(s+'T00:00:00Z');return Number.isFinite(t)?Math.floor(t/1000):null}
+// Levels- und Fib-Gate sind unabhängig voneinander; liefert null, wenn beide leer/ungültig sind.
+function candChartLevels(it){
+  if(!it||!it.levels||typeof it.levels!=='object')return null;
+  const lv=candLevelsValid(it.levels)?it.levels:null;
+  const fib=candFibValid(it.levels.fib)?it.levels.fib:null;
+  return (lv||fib)?{levels:lv,fib}:null;
+}
 function candStatusHTML(meta){const raw=String(meta.status||''),mapped=CAND_STATUS[raw]||{cls:'',label:'Datenstatus unbekannt'};const dt=candDateTime(meta.generated_at||meta.trading_day);const txt=raw==='fresh'||raw==='empty'?(dt?mapped.label+' '+dt:mapped.label):(dt?mapped.label+' · Stand '+dt:mapped.label);return `<span class="cand-status ${mapped.cls}">${escapeHtml(txt)}</span>`}
-function candItemHTML(i){
+function candLevelsHTML(lv,cur){
+  return `<div class="cand-levels"><div class="cand-level"><span class="cand-level-lbl">Beobachtungszone</span><span class="cand-level-val">${candNum(lv.entry_low,2)}–${candNum(lv.entry_high,2)} ${escapeHtml(cur)}</span></div><div class="cand-level"><span class="cand-level-lbl">Stop-Loss (regelbasiert)</span><span class="cand-level-val down">${candNum(lv.stop,2)} ${escapeHtml(cur)}</span></div><div class="cand-level"><span class="cand-level-lbl">Kursziel (regelbasiert)</span><span class="cand-level-val up">${candNum(lv.target,2)} ${escapeHtml(cur)}</span></div><div class="cand-level-horizon">Horizont ${escapeHtml(lv.horizon_sessions)} Handelstage</div></div>`;
+}
+function candItemHTML(i,idx){
   const tk=validTicker(i.ticker),name=candText(i.name)?String(i.name):String(i.ticker||'—'),sector=candText(i.sector)?String(i.sector):'Sektor nicht ausgewiesen';
-  const nameHtml=tk?`<button type="button" class="cand-name" data-tk="${escapeHtml(tk)}" data-nm="${escapeHtml(name)}" title="${escapeHtml(tk)} · Kurs-Chart öffnen">${escapeHtml(name)}<span class="cand-ticker">${escapeHtml(tk)}</span></button>`:`<div class="cand-name">${escapeHtml(name)}${candText(i.ticker)?`<span class="cand-ticker">${escapeHtml(i.ticker)}</span>`:''}</div>`;
+  const nameHtml=tk?`<button type="button" class="cand-name" data-tk="${escapeHtml(tk)}" data-nm="${escapeHtml(name)}" data-idx="${idx}" title="${escapeHtml(tk)} · Kurs-Chart öffnen">${escapeHtml(name)}<span class="cand-ticker">${escapeHtml(tk)}</span></button>`:`<div class="cand-name">${escapeHtml(name)}${candText(i.ticker)?`<span class="cand-ticker">${escapeHtml(i.ticker)}</span>`:''}</div>`;
   const cur=/^[A-Z]{3}$/.test(String(i.quote.currency||''))?String(i.quote.currency):'Währung offen';
   const quoteAsOf=candDateTime(i.quote.as_of||i.as_of),read=CAND_READINESS[String(i.setup.readiness||'')]||{cls:'',label:'Status unbekannt'};
   const ruleRaw=Array.isArray(i.rule_hits)?i.rule_hits:[],riskRaw=Array.isArray(i.risk_flags)?i.risk_flags:[];
@@ -796,12 +838,16 @@ function candItemHTML(i){
   if(i.data_quality&&i.data_quality.status==='partial')risks.push('Datenqualität teilweise');
   else if(i.data_quality&&i.data_quality.status&&i.data_quality.status!=='ok')risks.push('Datenqualität offen');
   const hints=candUnique(risks).slice(0,2),interest=CAND_INTEREST[String(i.interest_status||'')]||'Interessenstatus nicht ausgewiesen.';
-  return `<li class="cand-row"><div class="cand-rank" aria-label="Rang ${escapeHtml(i.rank)}">${escapeHtml(i.rank)}</div><div class="cand-identity">${nameHtml}<div class="cand-sector">${escapeHtml(sector)}</div></div><div class="cand-quote"><div class="cand-price">${candNum(i.quote.price,2)} ${escapeHtml(cur)}</div><div class="cand-asof">${quoteAsOf?'Stand '+escapeHtml(quoteAsOf):'Datenstand nicht ausgewiesen'}</div></div><div class="cand-setup"><span class="cand-readiness ${read.cls}">${escapeHtml(read.label)}</span><span class="cand-distance">${candNum(i.setup.distance_to_zone_pct,1)} % zur Zone</span>${rules.length?`<div class="cand-chips">${rules.map(x=>`<span class="cand-chip${x==='Weiteres Regelsignal'?' neutral':''}">${escapeHtml(x)}</span>`).join('')}</div>`:''}${hints.length?`<div class="cand-chips">${hints.map(x=>`<span class="cand-chip risk${x==='Weiterer Risikohinweis'||x==='Datenqualität offen'?' neutral':''}">${escapeHtml(x)}</span>`).join('')}</div>`:''}<div class="cand-interest">${escapeHtml(interest)}</div></div></li>`;
+  const lvOk=candLevelsValid(i.levels)?i.levels:null;
+  return `<li class="cand-row"><div class="cand-rank" aria-label="Rang ${escapeHtml(i.rank)}">${escapeHtml(i.rank)}</div><div class="cand-identity">${nameHtml}<div class="cand-sector">${escapeHtml(sector)}</div></div><div class="cand-quote"><div class="cand-price">${candNum(i.quote.price,2)} ${escapeHtml(cur)}</div><div class="cand-asof">${quoteAsOf?'Stand '+escapeHtml(quoteAsOf):'Datenstand nicht ausgewiesen'}</div></div><div class="cand-setup"><span class="cand-readiness ${read.cls}">${escapeHtml(read.label)}</span><span class="cand-distance">${candNum(i.setup.distance_to_zone_pct,1)} % zur Zone</span>${rules.length?`<div class="cand-chips">${rules.map(x=>`<span class="cand-chip${x==='Weiteres Regelsignal'?' neutral':''}">${escapeHtml(x)}</span>`).join('')}</div>`:''}${hints.length?`<div class="cand-chips">${hints.map(x=>`<span class="cand-chip risk${x==='Weiterer Risikohinweis'||x==='Datenqualität offen'?' neutral':''}">${escapeHtml(x)}</span>`).join('')}</div>`:''}<div class="cand-interest">${escapeHtml(interest)}</div>${lvOk?candLevelsHTML(lvOk,cur):''}</div></li>`;
 }
 function candDisclosureHTML(d){const link=safeUrl(d.contact_url)?`<a href="${safeUrl(d.contact_url)}" target="_blank" rel="noopener noreferrer">Kontakt / Impressum ↗</a>`:'Kontakt-Link nicht verfügbar';const asOf=candDateTime(d.as_of)||String(d.as_of);return `<div class="cand-disclosure"><div class="cand-disclosure-label">${escapeHtml(d.label)}</div><button type="button" class="cand-disclosure-btn" id="candDisclosureBtn" aria-expanded="false" aria-controls="candDisclosureDetails">Methodik &amp; Interessen</button></div><div class="cand-details hidden" id="candDisclosureDetails"><p><b>Herausgeber:</b> ${escapeHtml(d.producer)}</p><p><b>Methodik:</b> ${escapeHtml(d.methodology)}</p><p><b>Interessen:</b> ${escapeHtml(d.interests)}</p><p><b>Stand:</b> ${escapeHtml(asOf)} · ${link}</p></div>`}
-function wireCandidates(){
+function wireCandidates(items){
   const block=document.getElementById('candidateBlock');if(!block)return;
-  block.querySelectorAll('.cand-name[data-tk]').forEach(btn=>btn.onclick=()=>openTicker(btn,btn.dataset.tk,btn.dataset.nm));
+  block.querySelectorAll('.cand-name[data-tk]').forEach(btn=>{
+    const it=(items||[])[+btn.dataset.idx];
+    btn.onclick=()=>openTicker(btn,btn.dataset.tk,btn.dataset.nm,candChartLevels(it));
+  });
   const btn=document.getElementById('candDisclosureBtn'),details=document.getElementById('candDisclosureDetails');
   if(btn&&details)btn.onclick=()=>{const open=details.classList.toggle('hidden')===false;btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'Methodik & Interessen schließen':'Methodik & Interessen'};
 }
@@ -813,8 +859,11 @@ function renderCandidates(){
   const items=CANDIDATES.items.filter(candItemValid).slice(0,5);
   if(rawStatus==='failed')content.innerHTML='<div class="cand-empty failed">Beobachtungskandidaten konnten nicht aktualisiert werden.</div>';
   else if(rawStatus==='empty'||!items.length)content.innerHTML='<div class="cand-empty">Heute liegt kein Setup nah genug an der Zone.</div>';
-  else content.innerHTML=`<ol class="cand-list">${items.map(candItemHTML).join('')}</ol>`;
-  disclosure.innerHTML=candDisclosureHTML(CANDIDATES.disclosure);wireCandidates();syncCandidateA11y();
+  else{
+    const anyLevels=items.some(i=>candLevelsValid(i.levels));
+    content.innerHTML=`<ol class="cand-list">${items.map((i,idx)=>candItemHTML(i,idx)).join('')}</ol>${anyLevels?'<p class="cand-legend">Zone, Stop-Loss und Kursziel sind regelbasierte Rechenwerte der offengelegten Systematik – keine Kauf- oder Verkaufsempfehlung, keine Erfolgsprognose.</p>':''}`;
+  }
+  disclosure.innerHTML=candDisclosureHTML(CANDIDATES.disclosure);wireCandidates(items);syncCandidateA11y();
 }
 
 // --- Video-Briefings: Teil A (neuste je Kanal) + B (Kalender) + C (ausklappbare Themen) ---
@@ -980,14 +1029,37 @@ function closeModal(){document.getElementById('overlay').classList.remove('open'
 document.querySelectorAll('#seg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#seg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(lw)lw.remove();buildChart(b.dataset.tf)});
 document.getElementById('overlay').addEventListener('click',e=>{if(e.target.id==='overlay')closeModal()});
 function chartOpts(cont,h){return {width:cont.clientWidth,height:h,layout:{background:{color:'transparent'},textColor:tok('--muted'),fontFamily:'InterVariable,-apple-system,system-ui,sans-serif'},grid:{vertLines:{color:tok('--line')},horzLines:{color:tok('--line')}},timeScale:{borderColor:tok('--line')},rightPriceScale:{borderColor:tok('--line')},crosshair:{mode:0}}}
-let fgChart=null,stkChart=null,stkIx=null;
+let fgChart=null,stkChart=null,stkIx=null,stkLevels=null;
+// ADR-807/810: zeichnet Zone/Stop/Ziel + optionale Fib-Extension-Annotation auf die frisch gebaute Serie.
+// Muss nach JEDEM Serien-Neuaufbau (Preset-Wechsel) erneut aufgerufen werden, sonst verschwinden die Linien.
+function applyStkLevels(chart,series,ctx){
+  if(!ctx)return;
+  if(ctx.levels){
+    const lv=ctx.levels;
+    series.createPriceLine({price:lv.entry_low,color:tok('--accent'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:'Zone'});
+    series.createPriceLine({price:lv.entry_high,color:tok('--accent'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:'Zone'});
+    series.createPriceLine({price:lv.stop,color:tok('--down'),lineWidth:1,lineStyle:0,axisLabelVisible:true,title:'Stop'});
+    series.createPriceLine({price:lv.target,color:tok('--up'),lineWidth:1,lineStyle:0,axisLabelVisible:true,title:'Ziel'});
+  }
+  if(ctx.fib){
+    const pts=['a','b','c'].map(k=>({t:candFibDate(ctx.fib.anchors[k].date),v:Number(ctx.fib.anchors[k].price)})).filter(p=>p.t!=null).sort((x,y)=>x.t-y.t);
+    if(pts.length===3){
+      const abc=chart.addLineSeries({color:tok('--muted'),lineWidth:1,priceLineVisible:false,lastValueVisible:false});
+      abc.setData(pts.map(p=>({time:p.t,value:p.v})));
+    }
+    ctx.fib.extensions.forEach(e=>{
+      const r=Number(e.ratio),label=CAND_FIB_RATIO_LABEL[r]||r.toFixed(3);
+      series.createPriceLine({price:Number(e.price),color:tok('--accent'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:label+' · '+candNum(e.price,2)});
+    });
+  }
+}
 function openFG(){if(!FGHIST||!FGHIST.length)return;document.getElementById('fgmSub').textContent=FGDATA?(Math.round(FGDATA.score)+' · '+fgRating(FGDATA.rating)):'';document.querySelectorAll('#fgseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='180'));document.getElementById('fgOverlay').classList.add('open');setTimeout(()=>buildFG(180),30)}
 function buildFG(days){const cont=document.getElementById('fglw');cont.innerHTML='';fgChart=LightweightCharts.createChart(cont,chartOpts(cont,360));const ac=tok('--accent');const s=fgChart.addAreaSeries({lineColor:ac,topColor:hexA(ac,.35),bottomColor:hexA(ac,.04),lineWidth:2,priceLineVisible:false});s.applyOptions({autoscaleInfoProvider:()=>({priceRange:{minValue:0,maxValue:100}})});let data=FGHIST;if(days){const cut=Math.floor(Date.now()/1000)-days*86400;const f=FGHIST.filter(p=>p.time>=cut);if(f.length)data=f}s.setData(data);[25,45,55,75].forEach(v=>s.createPriceLine({price:v,color:tok('--line'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:''}));fgChart.timeScale().fitContent()}
 function closeFG(){document.getElementById('fgOverlay').classList.remove('open');if(fgChart){fgChart.remove();fgChart=null}}
 document.querySelectorAll('#fgseg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#fgseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(fgChart){fgChart.remove();fgChart=null}buildFG(+b.dataset.d)});
 document.getElementById('fgOverlay').addEventListener('click',e=>{if(e.target.id==='fgOverlay')closeFG()});
-function openStock(a){if(!a||!a.candles||!a.candles.d1||!a.candles.d1.length)return;stkIx=a;document.getElementById('stkTitle').textContent=a.n||a.t;document.getElementById('stkSub').textContent=a.t+' · '+fp(a.p);document.querySelectorAll('#stkseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='90'));document.getElementById('stkOverlay').classList.add('open');setTimeout(()=>buildStk(90),30)}
-function buildStk(days){const cont=document.getElementById('stklw');cont.innerHTML='';stkChart=LightweightCharts.createChart(cont,chartOpts(cont,360));const cUp=tok('--up'),cDn=tok('--down');const s=stkChart.addCandlestickSeries({upColor:cUp,downColor:cDn,wickUpColor:cUp,wickDownColor:cDn,borderVisible:false});let data=stkIx.candles.d1;if(days){const cut=Math.floor(Date.now()/1000)-days*86400;const f=data.filter(c=>c.time>=cut);if(f.length)data=f}s.setData(data);stkChart.timeScale().fitContent()}
+function openStock(a,levels){if(!a||!a.candles||!a.candles.d1||!a.candles.d1.length)return;stkIx=a;stkLevels=(levels&&typeof levels==='object')?levels:null;document.getElementById('stkTitle').textContent=a.n||a.t;document.getElementById('stkSub').textContent=a.t+' · '+fp(a.p);document.querySelectorAll('#stkseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='90'));document.getElementById('stkOverlay').classList.add('open');setTimeout(()=>buildStk(90),30)}
+function buildStk(days){const cont=document.getElementById('stklw');cont.innerHTML='';stkChart=LightweightCharts.createChart(cont,chartOpts(cont,360));const cUp=tok('--up'),cDn=tok('--down');const s=stkChart.addCandlestickSeries({upColor:cUp,downColor:cDn,wickUpColor:cUp,wickDownColor:cDn,borderVisible:false});let data=stkIx.candles.d1;if(days){const cut=Math.floor(Date.now()/1000)-days*86400;const f=data.filter(c=>c.time>=cut);if(f.length)data=f}s.setData(data);applyStkLevels(stkChart,s,stkLevels);stkChart.timeScale().fitContent()}
 function closeStk(){document.getElementById('stkOverlay').classList.remove('open');if(stkChart){stkChart.remove();stkChart=null}}
 document.querySelectorAll('#stkseg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#stkseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(stkChart){stkChart.remove();stkChart=null}buildStk(+b.dataset.d)});
 document.getElementById('stkOverlay').addEventListener('click',e=>{if(e.target.id==='stkOverlay')closeStk()});
