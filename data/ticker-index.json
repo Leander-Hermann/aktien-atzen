@@ -1,6 +1,681 @@
 {
- "updated": "2026-07-19T18:32:25.231898+00:00",
+ "updated": "2026-07-20T06:33:26.346126+00:00",
  "ticker": {
+  "BZ=F": {
+   "name": "Öl",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=59s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "makro",
+     "note": "Die Ölpreise steigen wegen der Spannungen im Iran. Brent notiert über der 200-Tage-Linie; der Host nennt 100 Dollar als nächste Marke und 87 Dollar als Unterstützung.",
+     "einordnung": "Der Sprung über die 200-Tage-Linie verbessert das kurzfristige Chartbild für Brent, macht den Markt aber zugleich anfällig für politische Entspannung oder Gewinnmitnahmen. Für die Gesamtbörse ist ein…",
+     "figures": "Host: Brent knapp 90 Dollar, nächste Marke 100 Dollar, Unterstützung 87 Dollar; aktuell laut Marktdaten 91,04 Dollar, plus 3,34 Prozent"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "tIXIrS3cz1s",
+     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=90s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Ein Zwischenfall nahe der Straße von Hormus treibt den Ölpreis in den ersten Handelsminuten um rund 2 Prozent nach oben. Der Markt reagiert jedoch verhalten, da auf eine Verhandlungslösung gesetzt wi…",
+     "einordnung": "Eine 2-Prozent-Reaktion auf einen Hormus-Zwischenfall ist bemerkenswert zurückhaltend — das erinnert an Phasen, in denen der Markt geopolitische Risiken bereits weitgehend einpreist. Solange die Stra…",
+     "figures": "+2% in den ersten Handelsminuten"
+    }
+   ]
+  },
+  "^DJI": {
+   "name": "Dow Jones",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=143s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der Dow Jones bewegt sich in einem aufwärts gerichteten Trendkanal; die 50-Tage-Linie wirkt bislang stabilisierend. Die Marke von 52.000 Punkten gilt als wichtig, bei einem Bruch wäre ein Test der 50…",
+     "einordnung": "Das ist ein klassisches Abwarten an einer technischen Entscheidungszone: Der übergeordnete Trend ist noch nicht aufgegeben, die kurzfristige Stabilität aber sichtbar angeschlagen. Im Vergleich zum DA…",
+     "figures": "52.000 Punkte"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "tIXIrS3cz1s",
+     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=183s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Host zeigt den Dow Jones per Infront-Chart und diskutiert die bevorstehende Aufnahme von Alphabet in den Index, die die Technologielastigkeit des Dow erhöht. Bei Indexaufnahmen komme es meist ers…",
+     "einordnung": "Die Aufnahme eines GAFAM-Werts in den Dow ist ein symbolischer Meilenstein, der den Index weiter modernisiert. Der pattern 'Aufnahme-Rallye, dann Profit-Taking' ist historisch gut belegt — man denke…"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=241s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Dow Jones bewegt sich nahe Rekordniveau, ohne sich stark von den Höchstkursen abzusetzen, bleibt aber in einer starken Rally.",
+     "einordnung": "Die Nähe zu Rekordhöhen ohne nennenswerte Korrektur zeigt bemerkenswerte Widerstandskraft. Die Breite der Rally verdient allerdings genauere Beobachtung — nicht jeder Sektor zieht gleich stark mit."
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=470s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Der Dow Jones wird im Tageschart mittels einer Trendkanalanalyse untersucht, wobei sich vielversprechende Kursziele abzeichnen.",
+     "einordnung": "Der Dow kämpft sich in einem intakten Aufwärtstrend nach oben. Ein Ziel von 58.000 Punkten klingt nach Hausnummern, aber der Trendkanal gibt das her – solange die Unterstützung nicht bricht.",
+     "figures": "Kursziele: 53.281; 54.681; langfristig 58.000"
+    }
+   ]
+  },
+  "NFLX": {
+   "name": "Netflix",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=222s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Netflix verzeichnete schwache Zahlen; der Kurs fiel zunächst um 13 Prozent und erholte sich anschließend etwas. Der Host sieht das Chartbild nach dem Bruch jüngster Tiefs als negativ, obwohl der Umsa…",
+     "einordnung": "Der Fall zeigt, dass solides Umsatzwachstum bei einem hoch bewerteten Plattformwert nicht genügt, wenn der Markt mehr Transparenz und belastbare Belege für die langfristige Skalierung verlangt. Nach…",
+     "figures": "13 Prozent Kursverlust; 13 Prozent Umsatzwachstum; Ziel einer Umsatzverdopplung bis 2030"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "ZtKFU4SJtbQ",
+     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=227s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Netflix fiel nach den Quartalszahlen nachbörslich um mehr als 9 Prozent. Obwohl der Umsatz um 13 Prozent zulegte, sah der Host keinen ausreichenden neuen Impuls für die Aktie; zuvor war Netflix eine…",
+     "einordnung": "Die Reaktion zeigt, dass bei hoch bewerteten Wachstumswerten ein gutes Umsatzwachstum allein nicht genügt, wenn der Markt einen stärkeren Katalysator erwartet. Das Sentiment bleibt dadurch anfällig f…",
+     "figures": "Mehr als 9 Prozent nachbörslicher Kursverlust; Umsatz plus 13 Prozent"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "jbBenx99pmg",
+     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=3601s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Netflix verlor vorbörslich 11 Prozent. Trotz eines Umsatzwachstums von 11 Prozent traf der Gewinn nur exakt den Konsens, während der Free Cashflow mit 1,5 Mrd. US-Dollar deutlich hinter den erwartete…",
+     "einordnung": "Netflix wächst weiterhin zweistellig, doch der Markt bewertet inzwischen die Qualität und Planbarkeit dieses Wachstums. Der schwache Cashflow ist der entscheidende Makel, weil er die hohe Erwartung a…",
+     "figures": "Kurs -11 Prozent, Gewinn 0,80 US-Dollar je Aktie, Umsatz +11 Prozent, Free Cashflow 1,5 Mrd. US-Dollar gegenüber 2,9 Mrd. US-Dollar erwartet, Werbeerlöse 3 Mrd. US-Dollar, USA/Kanada +10 Prozent, EME…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=2118s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Die Netflix-Aktie befindet sich in einer herben Talfahrt; zugleich erwägt das Unternehmen werbefinanzierte Abonnements. Egmond rät, die Zahlen am Donnerstagabend abzuwarten.",
+     "einordnung": "Ein werbefinanziertes Modell kann zusätzliche Erlöse und niedrigere Einstiegspreise ermöglichen, bringt aber den klassischen Zielkonflikt zwischen Reichweite, Werbepreisen und Nutzerqualität. Nach ei…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=2033s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Abwärtstrend und charttechnische Schwäche, aber die Bewertung ist mit einem KGV von 22 günstig und Analysten bleiben positiv. YTD -23%.",
+     "einordnung": "Die Divergenz zwischen charttechnischem Abwärtstrend und fundamentaler Bewertung (KGV 22, Analysten positiv) ist genau die Konstellation, in der konträre Investoren fündig werden. Der Vorschlag mit D…",
+     "figures": "Kursziel Bernstein 110$, Wolfe 107$; KGV 22; YTD -23%"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=295s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Netflix leidet unter Bewertungszweifeln, ist unter die 200-Tagelinie gerutscht und könnte bei 80$ Unterstützung finden.",
+     "einordnung": "Der Bruch der 200-Tagelinie ist ein charttechnisches Warnsignal. Bei 80$ würde ich nicht blind kaufen, sondern erst sehen, ob der Markt dort überhaupt reagiert. Das erinnert an 2022, als Netflix nach…",
+     "figures": "200-Tagelinie, 80$"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "10_Fe8OVqnk",
+     "url": "https://www.youtube.com/watch?v=10_Fe8OVqnk&t=18s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Netflix hat rund 40% vom Hoch verloren, das KGV halbierte sich von 52 auf 22. Operativ bleibt das Unternehmen mit 16% Umsatzwachstum im Q1 2026 stark, allerdings belastet ein einmaliger Warner-Bros.-…",
+     "einordnung": "Ein KGV von 22 bei 16% Umsatzwachstum und über 30% operativer Marge ist für einen Qualitäts-Tech-Titel ungewöhnlich attraktiv — das erinnert an die Netflix-Korrektur 2022, die sich als hervorragende…",
+     "figures": "KGV von 52 auf 22 halbiert, Umsatz Q1 2026 +16%, operatives Ergebnis +18%, Warner-Bros.-Termination-Fee 2,8 Mrd. $, Umsatzguidance 2026: 50,7-51,7 Mrd. $, operative Marge 31,5%, 50-Tage-Linie 87 $, 2…"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=839s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Netflix kommt auf eine Jahresperformance von +7% und liegt damit unter dem S&P 500 mit +14,5%.",
+     "einordnung": "Netflix mit +7% deutlich hinter dem Markt ist ein Zeichen, dass Streaming als Thema aus dem Fokus geraten ist — KI dominiert das Sentiment. Für einen defensiven Ansatz kann das ein Qualitätswert sein…",
+     "figures": "+7% Jahresperformance, S&P 500 +14,5%"
+    },
+    {
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=2211s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Netflix zeigt sich charttechnisch als Kandidat für eine bullische Trendwende. Kurzfristig könnte die Aktie bis zur Widerstandszone von 106-114 USD steigen, Unterstützung bei 90 USD.",
+     "einordnung": "Charttechnischer Trendwende-Kandidat mit klar definiertem Risiko-Reward — Einstieg bei 90, Ziel 106-114 USD. Die Übernahme-Story um Warner Bros. bietet zusätzlichen katalytischen Zündstoff.",
+     "figures": "Kursziel 106-114 USD, Unterstützung bei 90 USD"
+    }
+   ]
+  },
+  "^GDAXI": {
+   "name": "DAX",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=294s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt sich am Morgen etwas fester, nachdem er am Freitag schwach geschlossen hatte. Auf Wochensicht liegt der Index wieder unter 25.000 Punkten und ungefähr auf dem Niveau des Jahresbeginns.",
+     "einordnung": "Die Erholung am Morgen ist zunächst nur ein Stabilisierungsversuch und noch kein neues Kaufsignal. Dass der Index auf das Jahresanfangsniveau zurückgefallen ist, unterstreicht die verlorene Dynamik n…",
+     "figures": "Unter 25.000 Punkten; aktuell laut Marktdaten 24.831 Punkte"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "ZtKFU4SJtbQ",
+     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=353s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX steht laut Host vor einem schwachen Handelstag und liegt auf Wochensicht etwa 1 bis 1,5 Prozent im Minus. Belastend wirken vor allem die schwachen Vorgaben aus den USA und Asien.",
+     "einordnung": "Der DAX bleibt damit ein Spielball der internationalen Risikoaversion und weniger eines eigenständigen deutschen Konjunkturthemas. Die Vorgaben aus Nasdaq und Asien sind für den Tagesstart derzeit de…",
+     "figures": "Etwa 1 bis 1,5 Prozent Wochenverlust; Host: rund 52.100 Punkte; aktuell laut Marktdaten: 24.915 Punkte, -0,34 Prozent"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "WFyYyqhoiVo",
+     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX hält sich trotz der Spannungen im Nahen Osten vergleichsweise gut; der erwartete Abschlag bleibt laut Host überschaubar. Anleger warten die weitere geopolitische Entwicklung ab.",
+     "einordnung": "Die Stabilität des DAX spricht für eine bislang begrenzte Risikoaversion, darf aber nicht mit Entwarnung verwechselt werden. Ein nachhaltiger Ölpreisschub wäre für die europäische Konjunktur und dami…",
+     "figures": "Aktueller DAX laut Marktdaten: 25.114 Punkte (+0,19 %)"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=1870s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Auch beim DAX steht am 17. Juli ein Verfallstag an. Der Index gab in der Woche 1,5 Prozent nach; Egmond erwartet eine Seitwärtsbewegung und weist auf die Schwäche des Kursindex hin.",
+     "einordnung": "Der DAX liegt laut Marktdaten mit 25.147 Punkten leicht über der im Video genannten Marke von 25.000 Punkten, die Wochenbilanz bleibt aber schwach. Der Hinweis auf den Kursindex ist wichtig, weil er…",
+     "figures": "Wochenrückgang 1,5 Prozent; 25.000 Punkte; Marktdaten 25.147 Punkte, plus 0,13 Prozent"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "1NCf_rpMGr8",
+     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=206s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX befindet sich in einer Seitwärtskonsolidierung mit enger werdenden Inside Days. Der Host erwartet in den nächsten Tagen einen Ausbruch und beurteilt das kurzfristige Bild eher bullisch.",
+     "einordnung": "Die enge Handelsspanne spricht für eine bevorstehende Richtungsentscheidung, liefert aber noch keinen belastbaren Beweis für die Fortsetzung des Aufwärtstrends. Solange 25.000 Punkte halten, bleibt d…",
+     "figures": "25.000 Punkte als Unterstützung; Host: rund 25.100 Punkte; aktuell laut Marktdaten: 25.114 Punkte"
+    },
+    {
+     "date": "2026-07-10",
+     "video_id": "PCFTur5_7FE",
+     "url": "https://www.youtube.com/watch?v=PCFTur5_7FE&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der Markt bewegt sich seitwärts; der SK-Hynix-IPO zu 149 Dollar war 7-fach überzeichnet. Goersch blickt auf die anstehende Berichtssaison: Citigroup (erwartetes EPS 2,72 Dollar), Netflix (EPS 0,79 Do…",
+     "einordnung": "Die seitwärts gerichtete Phase bei gleichzeitig 7-fach überzeichnetem Memory-Chip-IPO signalisiert, dass das Kapital selektiv in Halbleiter-Themen fließt. Die Berichtssaison mit Citi, Netflix und TSM…",
+     "figures": "SK Hynix IPO 149 Dollar, 7-fach überzeichnet; Citigroup EPS 2,72 Dollar; Netflix EPS 0,79 Dollar, Vola 8 Prozent; Taiwan Semi EPS 3,80 Dollar, Umsatz plus 11,4 Prozent"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "UFUVya_aw3k",
+     "url": "https://www.youtube.com/watch?v=UFUVya_aw3k&t=41s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Bernecker sieht den DAX in einer Range zwischen 24.500 und 25.500 Punkten und betont die Diskrepanz zwischen Index-Rekorden und deutscher Realwirtschaft. Der DAX sei ein Spiegel der internationalen K…",
+     "einordnung": "Die These ist so alt wie der DAX selbst: Der Index ist ein Export- und Dollar-Barometer, kein Konjunkturbarometer für Deutschland. Solange die globalen Geschäfte der DAX-Konzerne laufen, kauft der In…",
+     "figures": "Range 24.500 bis 25.500"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "UFUVya_aw3k",
+     "url": "https://www.youtube.com/watch?v=UFUVya_aw3k&t=765s",
+     "channel": "BerneckerTV",
+     "kategorie": "makro",
+     "note": "Ein DAX von 30.000 Punkten sei möglich, wenn eine politische Wende — Bernecker spricht von einem 'Rechtsruck' — Investitionsdynamik bringe. Aktuell fehle jede positive Perspektive.",
+     "einordnung": "Die 30.000-Punkte-Marke ist keine Prognose, sondern ein Szenario mit Vorbehalt. Bernecker macht sie abhängig von einem politischen Richtungswechsel — das ist ehrlich, aber auch spekulativ, weil Wahle…",
+     "figures": "DAX-Ziel 30.000"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "rGKDA0JAU4I",
+     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "DAX gibt Gewinne ab, US-Märkte bleiben stabiler. Nasdaq 100 zeigt ABC-Korrektur innerhalb einer Dreiecksformation mit Ausbruchspotenzial über 30.000 Punkte. IPO von SK Hynix 6-7-fach überzeichnet, Da…",
+     "einordnung": "Die Diskrepanz zwischen europäischer Schwäche und US-Stärke ist ein klassisches Sommermuster — Ölpreise treffen Europa als Nettoimporteur härter. Der SK Hynix-IPO könnte kurzfristig ETF-Umschichtunge…",
+     "figures": "IPO SK Hynix 6-7x überzeichnet, David Tepper 5% EWY-Position"
+    },
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "DAX fällt unter 25.000 Punkte aufgrund geopolitischer Risiken (Iran/USA) und steigender Ölpreise. Nasdaq 100 zeigt nach 190% Anstieg seit 2023 charttechnisches Korrekturpotenzial von 12-13% oder mehr.",
+     "einordnung": "Die Kombination aus Ölpreisschock und hawkish Fed ist ein klassischer Spätzyklus-Risk-Off-Impuls. Der DAX bei 25.000 ist keine Panikzone, sondern eine gesunde Konsolidierung nach Rekordlauf — wer jet…",
+     "figures": "DAX 25.000, Ölpreis 80 $, Nasdaq 100 +190% seit 2023, Korrekturpotenzial 12-13%, Retracement 26-27%"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=10s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "makro",
+     "note": "Der DAX erreichte ein neues Rekordhoch bei 25.900 Punkten und schloss bei 25.817 Zählern mit einem kleinen Plus von 0,15%. Die Wall Street lieferte ab, besonders der Technologiesektor legte zu. Asien…",
+     "einordnung": "Ein neues Allzeithoch bei gleichzeitig schwindendem Momentum ist ein klassisches Bild für späte Zyklusphasen — die Rekordjagd läuft, aber die Breite der Bewegung nimmt ab. Dass Asien dreht, während U…",
+     "figures": "DAX Rekordhoch 25.900 Punkte; Schlussstand 25.817 Punkte; +0,15%"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1666s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX schießt auf ein Rekordhoch nahe 26.000 Punkte, gibt dann aber nach. Haidt stuft die Bewegung als Bullenfalle ein und warnt vor Momentum-Trade-Umschichtungen.",
+     "einordnung": "Ein Rekordhoch, das im Tagesverlauf abgegeben wird, ist ein klassisches Bullenfalle-Signal. Die Rotation aus Chip- in Hyperscaler- und Nachzügler-Werte treibt den DAX, aber das Fundament — schwache I…",
+     "figures": "Hoch: 25.600, fast 26.000"
+    }
+   ]
+  },
+  "SAP.DE": {
+   "name": "SAP",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=313s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Bei SAP werden Quartalszahlen erwartet. Der Markt rechnet mit einem Cloud-Wachstum von 25 Prozent, einem Umsatz von rund 10 Milliarden Euro und einem operativen Ergebnis von 2,9 Milliarden Euro; char…",
+     "einordnung": "Bei einem Qualitäts- und Wachstumswert kann ein schwacher Chart tatsächlich eine niedrige Erwartungshaltung widerspiegeln, aber nur eine überzeugende Bestätigung des Cloud-Trends würde den Abschlag n…",
+     "figures": "Erwartetes Cloud-Wachstum 25 Prozent; Umsatz rund 10 Milliarden Euro; operatives Ergebnis 2,9 Milliarden Euro"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "WFyYyqhoiVo",
+     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=419s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SAP fiel nach längerer Schwäche positiv auf. Der Host sieht eine mögliche Kapitalrotation aus spekulativen Werten in defensivere oder zuvor gebeutelte Titel.",
+     "einordnung": "SAP kann in einem nervösen Markt als Qualitäts- und Stabilitätsanker innerhalb des Technologiesektors wahrgenommen werden. Ob daraus ein nachhaltiger Trend wird, hängt allerdings davon ab, ob die Rot…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=1437s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "SAP wird laut Egmond von der IBM-Schwäche mit nach unten gezogen. Er sieht das Risiko eines schwachen Ausblicks, falls hohe KI-Investitionen die Entwicklung belasten.",
+     "einordnung": "Die unmittelbare Kursreaktion ist eher eine Sektor- und Sentimentübertragung als ein eigener SAP-Nachweis. Fundamental bleibt entscheidend, ob KI bei SAP als margensteigerndes Produkt oder zunächst a…"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=516s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "SAP bleibt unter Druck, zeigt heute eine technische Erholung. Haidt sieht keinen nachhaltigen Trend.",
+     "einordnung": "Eine technische Erholung ohne fundamentale Katalysatoren ist oft ein Strohfeuer. SAP muss zeigen, dass das Cloud-Wachstum trägt, sonst bleibt die Aktie im Abwärtstrend."
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "htTDw4hrfRo",
+     "url": "https://www.youtube.com/watch?v=htTDw4hrfRo&t=176s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Kapitalumschichtung aus KI/Speicher-Titeln hin zu defensiven Werten wie SAP führte zuletzt zu Anstiegen. SAP als Nachzügler mit Potenzial.",
+     "einordnung": "SAP profitiert von der Rotation in defensive Qualitätswerte — ein Muster, das typisch ist für späte Zyklusphasen. Als DAX-Gewicht mit solidem KI-Bezug ist SAP ein logischer Empfänger von Kapital, das…"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=276s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Zeigt Erholungsbewegung und könnte von Mittelabflüssen aus Hypeaktien profitieren.",
+     "einordnung": "SAP als defensiver Tech-Wert mit solidem Geschäftsmodell ist ein natürlicher Profiteur, wenn Anleger aus überhitzten KI-Titeln Gewinne mitnehmen. Die Aktie hat in der Korrektur zuletzt relativ standg…"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1954s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Sorgen vor KI-Kosten, Talfahrt erwartet. Haidt sieht weiteres Abwärtsrisiko.",
+     "einordnung": "SAP hat sich in den letzten zwei Jahren als KI-Profiteur positioniert, aber die Investitionskosten drücken nun auf die Margen. Das ist ein klassisches Transformationsdilemma: Langfristig richtig, kur…"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "10_Fe8OVqnk",
+     "url": "https://www.youtube.com/watch?v=10_Fe8OVqnk&t=960s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "SAP fiel von 269 € auf 140 €, das KGV sank von 38 auf 19,3. Das Cloudgeschäft bleibt mit CCB-Wachstum von 20% auf 21,9 Mrd. € stark, jedoch belasten KI-Investitionen und der Oracle-Effekt die Margene…",
+     "einordnung": "SAP bei 140 € und einem KGV von 19,3 ist eine völlig andere Bewertungssituation als bei 269 € — das ist eine Normalisierung, kein Crash. Das Cloud-Wachstum von 20% ist solide, aber der Margendruck du…",
+     "figures": "Kurs von 269 € auf 140 €, KGV von 38 (2026) auf 19,3 (2026), Oracle KGV 38,7, Salesforce KGV 19,8, Q1 2026 CCB +20% (währungsbereinigt +25%) auf 21,9 Mrd. €, Cloudlöse währungsbereinigt +27%, Goldman…"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "MJo67AkNy70",
+     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=513s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SAP auf tiefstem Stand seit 2023; fehlende Impulse, Markt erwartet KI-Unterstützung nicht.",
+     "einordnung": "SAP auf dem tiefsten Stand seit 2023 ist ein bemerkenswerter Stilwechsel — der Markt straft die KI-Narrative ab, die bisher den Auftrieb trug. Bei einem DAX-Schwergewicht ist das ein Stimmungsbaromet…",
+     "figures": "tiefster Stand seit 2023"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "S9qv7ifKEQc",
+     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=708s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SAP unter Druck durch 'Sippenhaft' mit Oracle-Schwäche; Qualität der Company bleibt intakt, aber Kurs rutscht immer wieder zurück.",
+     "einordnung": "SAP ist ein Quality-Stock mit Enterprise-Moat, aber der Markt spielt Sektor-Domino-Spiel. Oracle-Schwäche setzt Tech-Vertrauen unter Druck. Für Langfrist-Investoren ein Ansammelsignal, für Trader ein…"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=995s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Short Squeeze bei SAP, fundamentale Änderungen fehlen.",
+     "einordnung": "Ein Short Squeeze bei SAP zeigt, dass der Markt nicht nur von KI-Enthusiasmus, sondern auch von Leerverkäufer-Schmerz getrieben ist. Das ist ein technisches, kein fundamentales Signal."
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Kurzfristig kann sich SAP erholen, aber mittel-/langfristig keine Besserung. Bei Wiederkehr des Momentum-Trades verkaufen.",
+     "einordnung": "SAP als Underperformer profitiert kurzfristig vom Momentum-Wechsel, aber die fundamentale Schwäche bleibt – das ist ein taktischer Trade, kein strategisches Investment."
+    }
+   ]
+  },
+  "VOW3.DE": {
+   "name": "Volkswagen",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=380s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Volkswagen kämpft mit rückläufigem Umsatz und schwachen Verkaufszahlen in China. Werkschließungen wurden angekündigt, zugleich soll die Produktion in China ausgebaut werden; das Chartbild bleibt schl…",
+     "einordnung": "Die Aktie ist ein klassischer Turnaround-Fall, bei dem die niedrige Erwartung allein noch keine Wende garantiert. Solange China, Absatz und Produktionsstruktur gleichzeitig unter Druck stehen, bleibt…",
+     "figures": "Umsatzrückgang"
+    },
+    {
+     "date": "2026-07-16",
+     "video_id": "8n4SjPW9E8M",
+     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=577s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Volkswagen erholte sich leicht, getragen von Schnäppchenkäufern. Die übergeordneten Probleme sind laut Host jedoch ungelöst; eine Bodenbildung ist möglich, eine Kaufempfehlung spricht er noch nicht a…",
+     "einordnung": "Eine technische Erholung nach schwacher Entwicklung ist noch kein Turnaround-Signal. Bei Volkswagen müssen operative Fortschritte die Bodenbildung bestätigen, sonst bleibt der Anstieg ein kurzfristig…"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1194s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "VW wird kurz als Nachzügler erwähnt. Am Donnerstag steht eine Aufsichtsratssitzung an, bei der möglicherweise ein Stellenabbau von bis zu 100.000 diskutiert wird.",
+     "einordnung": "Ein potenzieller Stellenabbau von 100.000 bei VW wäre ein historischer Einschnitt für die deutsche Industrie. Der Markt könnte das kurzfristig als Restrukturierung feiern, aber die Umsetzungskosten u…"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "-DiygCxAXrc",
+     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=2131s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Metzler hebt das Kursziel von 105 auf 130€ an. Die Aktie notiert bei 75€ mit einem KGV von 3,5, charttechnisch zeigt sich ein negativer Ausbruch unter hohem Volumen. Unterstützung bei 69€. Derzeit ke…",
+     "einordnung": "Ein KGV von 3,5 ist ein klassischer Value-Trap-Indikator bei VW — niedrige Bewertung allein ist kein Kaufgrund, wenn die Fundamentaldaten fallen. Der negative Ausbruch unter hohem Volumen bestätigt d…",
+     "figures": "105€, 130€, 75€, KGV 3,5, 69€"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=889s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Gerücht über 100.000 Jobsabbau (bislang 50.000 geplant), vier Werke drohen Schließung. Haidt sieht VW als Teil der tiefen Autokrise.",
+     "einordnung": "Wenn sich das Gerücht von 100.000 Stellenabbau bestätigt, sprechen wir über den größten Industriestreich in der deutschen Nachkriegsgeschichte. VW ist das Epizentrum der deutschen Industriekrise – di…",
+     "figures": "bislang 50.000 Jobs geplant, 100.000 Gerücht"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "zXPxhjz_nX0",
+     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=219s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Die Aktie befindet sich in einem starken Abwärtstrend. Die wichtige Unterstützung bei 87 Euro wurde gebrochen – Harry spricht bildhaft von brechenden Dämmen. Der Markt reagiert auf schwaches Chinages…",
+     "einordnung": "Der Bruch der 87-Euro-Marke ist charttechnisch ein klares Negativsignal – im Abwärtstrend nach Unterstützungsbereichen zu fischen, ist ein klassischer Anfängerfehler. Die Fundamentaldaten mit dem Chi…",
+     "figures": "87 Euro (gebrochene Unterstützung)"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "9G1WNKY6uuY",
+     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Volkswagen Vz. wird in der Videobeschreibung genannt, im Video jedoch nur im Kontext der allgemeinen Automobilschwäche erwähnt.",
+     "einordnung": "VW als Massenhersteller ist im aktuellen Sektor-Stress besonders exponiert. Der Titel teilt das schwierige Umfeld mit BMW und Mercedes, hat aber strukturell noch größere Herausforderungen durch die s…"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "MJo67AkNy70",
+     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=485s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "VW Exdividende: Vorzüge 5,26 €, Stämme 5,20 €; Aktie trotzdem schwach.",
+     "einordnung": "Ex-Dividende-Schwäche ist mechanisch, aber die anhaltende Schwäche dahinter ist das eigentliche Problem. VW leidet unter denselben strukturellen Themen wie Mercedes — China, E-Mobility-Wettbewerb, Ma…",
+     "figures": "5,26 € (Vorzüge), 5,20 € (Stämme)"
+    }
+   ]
+  },
+  "VBK.DE": {
+   "name": "Verbio",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=425s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Host erwartet, dass steigende Ölpreise Verbio stützen könnten, und verweist auf ein historisches Muster aus dem Ausbruch eines Krieges.",
+     "einordnung": "Die These ist als kurzfristige Börsenkorrelation nachvollziehbar, aber kein Selbstläufer: Für Verbio zählen zusätzlich Margen, politische Rahmenbedingungen und die Entwicklung der Biokraftstoffpreise…"
+    }
+   ]
+  },
+  "RHM.DE": {
+   "name": "Rheinmetall",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Rheinmetall ist zuletzt schwach gewesen und unter 1.000 Euro gefallen. Der Host sieht mittelfristig ein interessantes Einstiegsniveau, warnt aber vor weiteren Kursrückgängen und möglichen Schmerzen.",
+     "einordnung": "Die strukturelle Nachfrage im Verteidigungssektor bleibt ein Argument, doch nach starken Kursanstiegen ist auch bei einem fundamental starken Unternehmen eine längere Neubewertung möglich. Die Marke…",
+     "figures": "Unter 1.000 Euro"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "1NCf_rpMGr8",
+     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=488s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Rheinmetall befindet sich laut Host in einem Abwärtstrend der Stage 4. Eine Hammerkerze könnte eine Wende einleiten, die Aktie notiert jedoch noch unter den gleitenden Durchschnitten.",
+     "einordnung": "Die Hammerkerze ist zunächst nur ein Warnsignal für nachlassenden Verkaufsdruck, kein bestätigter Trendwechsel. Der Abstand zu den gleitenden Durchschnitten zeigt, dass die Aktie charttechnisch noch…",
+     "figures": "2.000 Euro als Hoch; aktuell etwa 1.000 Euro; 900 Euro als Jess-Livermore-Level"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "rGKDA0JAU4I",
+     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=1645s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "MWB stuft von Kaufen auf Halten herab, senkt Kursziel von 1400 auf 1150€. Schwäche im Bereich Landsysteme, fallende Trendlinie im Chart. Bewertung mit KGV 25 nahe dem 5-Jahres-Durchschnitt.",
+     "einordnung": "Das Kursziel von 1150€ bei einem aktuellen Kurs nahe 1200€ lässt kaum Aufwärtspotenzial. Die fallende Trendlinie und der Widerstand bei 1200€ sind charttechnisch ein klares Warnsignal — hier gilt es…",
+     "figures": "Kursziel alt 1400€, neu 1150€, aktuell -3,8%, KGV 25, Widerstand bei 1200€"
+    },
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=375s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Barclays senkt das Kursziel auf 2000€, aber die Aktie erholt sich nach dem Verlust des Marina-Auftrags. Chart: Ein Break bei 1200€ könnte den Abwärtstrend beenden.",
+     "einordnung": "Die Senkung des Kursziels durch Barclays auf 2000€ ist bei einer Aktie, die zuletzt deutlich unter Druck stand, ein interessantes Signal — das Ziel liegt immer noch deutlich über dem aktuellen Kurs.…",
+     "figures": "2000€ Kursziel (Barclays), 1200€ Break-Marke"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=384s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gestärkter DAX-Wert mit Gegenbewegung nach Verlust eines Auftrags. Abwärtstrend seit Februar muss noch gebrochen werden. Der Absturz war übertrieben, da der Auftrag erst 2031 relevant geworden wäre.",
+     "einordnung": "Die heftige Reaktion auf einen Auftrag, der erst 2031 greift, zeigt wie emotional der Rheinmetall-Chart besetzt ist. Die Gegenbewegung ist rational — der Abwärtstrend bleibt aber intakt, bis die Febr…",
+     "figures": "über 1.600 € vor Auftragsverlust; Bruch bei 1.000 €"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "kbhs3X-LW2E",
+     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1588s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "CEO Armin Papperger kauft nach dem Kursrutsch 3.200 Aktien zu 954 EUR — ein starkes Insidersignal mit einem Volumen von rund 3 Mio. EUR. Das KGV liegt bei 24, der PEG unter 0,6 — günstig bewertet bei…",
+     "einordnung": "Ein CEO-Kauf in dieser Größenordnung ist ein deutliches Signal — Papperger setzt sein eigenes Geld dort ein, wo er die Value-Lücke sieht. Das PEG von 0,6 bei diesem Wachstumspfad ist für einen Rüstun…",
+     "figures": "3.200 Aktien; Kaufkurs 954 EUR; Volumen ~3 Mio. EUR; KGV ~24; PEG 0,6; Gewinnwachstum 130%, 50%, 40%"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=250s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Ein erhoffter Großauftrag fällt aus, die Aktie bricht ein. Haidt liefert keine konkrete Prognose.",
+     "einordnung": "Rheinmetall leidet unter dem klassischen Problem hochbewerteter Rüstungswerte: Jeder entgangene Auftrag wird überproportional bestraft, weil die Bewertung bereits Perfektion einpreist. Das erinnert a…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "tIXIrS3cz1s",
+     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=395s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall verlor einen Auftrag vom Verteidigungsministerium, woraufhin der Kurs von zuvor rund 1.200 Euro unter die 1.000-Euro-Marke fiel. Der Host hält die Reaktion für übertrieben und erwartet, d…",
+     "einordnung": "Ein Auftragsverlust bei einem Rüstungskonzern mit einem Auftragsbestand in Milliardenhöhe ist ein marginales Ereignis — der Markt reagiert hier emotional, nicht fundamental. Unter 1.000 Euro wird Rhe…",
+     "figures": "1.200 € (vorheriges Niveau), unter 1.000 € (aktueller Bereich)"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "F6cTDl0_v6Q",
+     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=538s",
+     "channel": "BerneckerTV",
+     "kategorie": "news",
+     "note": "Rheinmetall verliert den F126-Auftrag im Volumen von 12 Mrd. EUR, was zu einem Umsatzentgang von 2 Mrd. EUR und einem EBIT-Verlust von 250 Mio. EUR führt. Der CEO zeichnet sich durch Aktienkäufe aus,…",
+     "einordnung": "Der Auftragsverlust ist ein Rückschlag, muss aber gegen den massiven Auftragsbestand aus dem europäischen Rüstungszyklus abgewogen werden. Das KGV von 16,8 für 2027 ist moderat für einen Rüstungskonz…",
+     "figures": "Auftragswert 12 Mrd. EUR; Umsatzentgang 2 Mrd. EUR; EBIT-Verlust 250 Mio. EUR; KGV 16,8 für 2027; CEO-Käufe 3 Mrd. EUR"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "5AeBdQRrZ2k",
+     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nach Verlust des Fregatten-Auftrags an TKDS keine Gegenbewegung; die Reaktion erscheint übertrieben, langfristig besteht Potenzial, aber kurzfristig abwarten.",
+     "einordnung": "Der Verlust eines Großauftrags ist ein psychologischer Dämpfer, ändert aber wenig an der strukturellen Verteidigungsnachfrage. Dass der Host die Reaktion als übertrieben einstuft, ist nachvollziehbar…"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "KTfBNyeb-g4",
+     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
+     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. We…",
+     "figures": "-19%, 12,8 Mrd. Euro"
+    },
+    {
+     "date": "2026-06-24",
+     "video_id": "4K4U0fRfM0A",
+     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=1424s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "Die Aktie fällt 18 Prozent nach Meldung über mögliches Ende des F126-Fregattenprojekts. JP Morgan senkt das Kursziel leicht auf 1400 Euro, hält aber am Hold-Rating fest. Zusätzlicher Druck entsteht d…",
+     "einordnung": "Die 18-Prozent-Reaktion ist dramatisch, aber der F126 ist ein Marineprojekt — Rheinmetalls Kernfranchise sind Landsysteme. Der PEG von 0,67 signalisiert, dass die Aktie trotz des Abverkaufs noch imme…",
+     "figures": "-18%, Kursziel 1400 Euro (von 1450), KGV 24, PEG 0,67"
+    }
+   ]
+  },
+  "SZG.DE": {
+   "name": "Salzgitter",
+   "auftritte": [
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=528s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Der Host sieht den EU-Protektionismus als positiv für Salzgitter. Die entsprechenden Maßnahmen sollten sich seiner Einschätzung nach künftig positiv in den Bilanzen niederschlagen.",
+     "einordnung": "Schutzmaßnahmen können einem zyklischen Stahlproduzenten kurzfristig Luft verschaffen, ersetzen aber keine dauerhaft wettbewerbsfähige Kosten- und Energieposition. Für Salzgitter bleibt deshalb entsc…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "WFyYyqhoiVo",
+     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=547s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Analysten, darunter Jefferies, werden zuversichtlicher und sehen Salzgitter als möglichen Profiteur protektionistischer EU-Maßnahmen in der zweiten Jahreshälfte. Das aktuelle Kursniveau sieht der Hos…",
+     "einordnung": "Schutzmaßnahmen können einem europäischen Stahlhersteller kurzfristig helfen, weil sie den Wettbewerbsdruck durch Importe mindern. Der Titel bleibt aber stark zyklisch und abhängig von Stahlpreisen,…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "BfRCptZ2OAI",
+     "url": "https://www.youtube.com/watch?v=BfRCptZ2OAI&t=2426s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Mehrere Analysten stufen Salzgitter hoch: Jefferies empfiehlt die Aktie zum Kauf mit einem Kursziel von 66 Euro, JPMorgan wechselt von Underweight auf Overweight und nennt 65 Euro. Charttechnisch bil…",
+     "einordnung": "Die Nähe der Analystenziele zum Jahreshoch macht die Aktie zu einer klaren Bestätigungsspekulation: Erst der Ausbruch über die Widerstandszone würde das charttechnische Bild wirklich vollenden. Das C…",
+     "figures": "Kursziel Jefferies 66 Euro; Kursziel JPMorgan 65 Euro; Jahreshoch 67 Euro; letztes Zwischentief 47,80 Euro"
+    },
+    {
+     "date": "2026-07-10",
+     "video_id": "H5zYVH8xlRI",
+     "url": "https://www.youtube.com/watch?v=H5zYVH8xlRI&t=499s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "JP Morgan hebt von Underweight auf Overweight und verdoppelt das Kursziel auf 65 Euro. Grund: EU-Schutzmaßnahmen für Stahlpreise wirken sich positiv auf Gewinne aus, Dynamik ab zweitem Halbjahr erwar…",
+     "einordnung": "Ein doppeltes Upgrade mit Kurszielverdopplung ist einer der stärksten Analysten-Signale — das erinnert an ThyssenKrupp 2016, als Schutzmaßnahmen die Stahlaktien beflügelten. Salzgitter ist hochzyklis…",
+     "figures": "Kursziel 65 € (verdoppelt), Upgrade Underweight → Overweight"
+    },
+    {
+     "date": "2026-07-10",
+     "video_id": "PCFTur5_7FE",
+     "url": "https://www.youtube.com/watch?v=PCFTur5_7FE&t=1639s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Salzgitter übernimmt HKM vollständig und startet eine tiefgreifende Restrukturierung. JP Morgan stuft auf Overweight hoch mit Kursziel 65 Euro. Charttechnisch ergibt sich ein Ausbruch mit Ziel 67 Eur…",
+     "einordnung": "Die vollständige HKM-Übernahme gibt Salzgitter erstmals die volle Kontrolle über den Duisburger Standort, was Restrukturierung ohne Kompromisse erlaubt. Das JP-Morgan-Upgrade auf Overweight ist das e…",
+     "figures": "JP Morgan Kursziel 65 Euro, charttechnisches Ziel 67 Euro"
+    }
+   ]
+  },
   "ASML": {
    "name": "ASML",
    "auftritte": [
@@ -299,215 +974,6 @@
      "note": "Die Aktie verlor 10% seit Jahresbeginn. Der CEO hat Prognosen reduziert, ein Turnaround wird erwartet. Eine neue Kollektion mit Kim Kardashian (Skims) soll helfen.",
      "einordnung": "Nike bei -10% ist ein klassischer Turnaround-Fall — neue Führung, reduzierte Prognosen, erste strategische Initiativen. Die Skims-Kollaboration ist typisch für den Versuch, über Celebrity-Marketing j…",
      "figures": "-10% Jahresperformance"
-    }
-   ]
-  },
-  "NFLX": {
-   "name": "Netflix",
-   "auftritte": [
-    {
-     "date": "2026-07-17",
-     "video_id": "ZtKFU4SJtbQ",
-     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=227s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Netflix fiel nach den Quartalszahlen nachbörslich um mehr als 9 Prozent. Obwohl der Umsatz um 13 Prozent zulegte, sah der Host keinen ausreichenden neuen Impuls für die Aktie; zuvor war Netflix eine…",
-     "einordnung": "Die Reaktion zeigt, dass bei hoch bewerteten Wachstumswerten ein gutes Umsatzwachstum allein nicht genügt, wenn der Markt einen stärkeren Katalysator erwartet. Das Sentiment bleibt dadurch anfällig f…",
-     "figures": "Mehr als 9 Prozent nachbörslicher Kursverlust; Umsatz plus 13 Prozent"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "jbBenx99pmg",
-     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=3601s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Netflix verlor vorbörslich 11 Prozent. Trotz eines Umsatzwachstums von 11 Prozent traf der Gewinn nur exakt den Konsens, während der Free Cashflow mit 1,5 Mrd. US-Dollar deutlich hinter den erwartete…",
-     "einordnung": "Netflix wächst weiterhin zweistellig, doch der Markt bewertet inzwischen die Qualität und Planbarkeit dieses Wachstums. Der schwache Cashflow ist der entscheidende Makel, weil er die hohe Erwartung a…",
-     "figures": "Kurs -11 Prozent, Gewinn 0,80 US-Dollar je Aktie, Umsatz +11 Prozent, Free Cashflow 1,5 Mrd. US-Dollar gegenüber 2,9 Mrd. US-Dollar erwartet, Werbeerlöse 3 Mrd. US-Dollar, USA/Kanada +10 Prozent, EME…"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=2118s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Die Netflix-Aktie befindet sich in einer herben Talfahrt; zugleich erwägt das Unternehmen werbefinanzierte Abonnements. Egmond rät, die Zahlen am Donnerstagabend abzuwarten.",
-     "einordnung": "Ein werbefinanziertes Modell kann zusätzliche Erlöse und niedrigere Einstiegspreise ermöglichen, bringt aber den klassischen Zielkonflikt zwischen Reichweite, Werbepreisen und Nutzerqualität. Nach ei…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=2033s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Abwärtstrend und charttechnische Schwäche, aber die Bewertung ist mit einem KGV von 22 günstig und Analysten bleiben positiv. YTD -23%.",
-     "einordnung": "Die Divergenz zwischen charttechnischem Abwärtstrend und fundamentaler Bewertung (KGV 22, Analysten positiv) ist genau die Konstellation, in der konträre Investoren fündig werden. Der Vorschlag mit D…",
-     "figures": "Kursziel Bernstein 110$, Wolfe 107$; KGV 22; YTD -23%"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=295s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Netflix leidet unter Bewertungszweifeln, ist unter die 200-Tagelinie gerutscht und könnte bei 80$ Unterstützung finden.",
-     "einordnung": "Der Bruch der 200-Tagelinie ist ein charttechnisches Warnsignal. Bei 80$ würde ich nicht blind kaufen, sondern erst sehen, ob der Markt dort überhaupt reagiert. Das erinnert an 2022, als Netflix nach…",
-     "figures": "200-Tagelinie, 80$"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "10_Fe8OVqnk",
-     "url": "https://www.youtube.com/watch?v=10_Fe8OVqnk&t=18s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Netflix hat rund 40% vom Hoch verloren, das KGV halbierte sich von 52 auf 22. Operativ bleibt das Unternehmen mit 16% Umsatzwachstum im Q1 2026 stark, allerdings belastet ein einmaliger Warner-Bros.-…",
-     "einordnung": "Ein KGV von 22 bei 16% Umsatzwachstum und über 30% operativer Marge ist für einen Qualitäts-Tech-Titel ungewöhnlich attraktiv — das erinnert an die Netflix-Korrektur 2022, die sich als hervorragende…",
-     "figures": "KGV von 52 auf 22 halbiert, Umsatz Q1 2026 +16%, operatives Ergebnis +18%, Warner-Bros.-Termination-Fee 2,8 Mrd. $, Umsatzguidance 2026: 50,7-51,7 Mrd. $, operative Marge 31,5%, 50-Tage-Linie 87 $, 2…"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=839s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Netflix kommt auf eine Jahresperformance von +7% und liegt damit unter dem S&P 500 mit +14,5%.",
-     "einordnung": "Netflix mit +7% deutlich hinter dem Markt ist ein Zeichen, dass Streaming als Thema aus dem Fokus geraten ist — KI dominiert das Sentiment. Für einen defensiven Ansatz kann das ein Qualitätswert sein…",
-     "figures": "+7% Jahresperformance, S&P 500 +14,5%"
-    },
-    {
-     "date": "2025-12-11",
-     "video_id": "f0pcBA15wVI",
-     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=2211s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Netflix zeigt sich charttechnisch als Kandidat für eine bullische Trendwende. Kurzfristig könnte die Aktie bis zur Widerstandszone von 106-114 USD steigen, Unterstützung bei 90 USD.",
-     "einordnung": "Charttechnischer Trendwende-Kandidat mit klar definiertem Risiko-Reward — Einstieg bei 90, Ziel 106-114 USD. Die Übernahme-Story um Warner Bros. bietet zusätzlichen katalytischen Zündstoff.",
-     "figures": "Kursziel 106-114 USD, Unterstützung bei 90 USD"
-    }
-   ]
-  },
-  "^GDAXI": {
-   "name": "DAX",
-   "auftritte": [
-    {
-     "date": "2026-07-17",
-     "video_id": "ZtKFU4SJtbQ",
-     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=353s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX steht laut Host vor einem schwachen Handelstag und liegt auf Wochensicht etwa 1 bis 1,5 Prozent im Minus. Belastend wirken vor allem die schwachen Vorgaben aus den USA und Asien.",
-     "einordnung": "Der DAX bleibt damit ein Spielball der internationalen Risikoaversion und weniger eines eigenständigen deutschen Konjunkturthemas. Die Vorgaben aus Nasdaq und Asien sind für den Tagesstart derzeit de…",
-     "figures": "Etwa 1 bis 1,5 Prozent Wochenverlust; Host: rund 52.100 Punkte; aktuell laut Marktdaten: 24.915 Punkte, -0,34 Prozent"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "WFyYyqhoiVo",
-     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX hält sich trotz der Spannungen im Nahen Osten vergleichsweise gut; der erwartete Abschlag bleibt laut Host überschaubar. Anleger warten die weitere geopolitische Entwicklung ab.",
-     "einordnung": "Die Stabilität des DAX spricht für eine bislang begrenzte Risikoaversion, darf aber nicht mit Entwarnung verwechselt werden. Ein nachhaltiger Ölpreisschub wäre für die europäische Konjunktur und dami…",
-     "figures": "Aktueller DAX laut Marktdaten: 25.114 Punkte (+0,19 %)"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=1870s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Auch beim DAX steht am 17. Juli ein Verfallstag an. Der Index gab in der Woche 1,5 Prozent nach; Egmond erwartet eine Seitwärtsbewegung und weist auf die Schwäche des Kursindex hin.",
-     "einordnung": "Der DAX liegt laut Marktdaten mit 25.147 Punkten leicht über der im Video genannten Marke von 25.000 Punkten, die Wochenbilanz bleibt aber schwach. Der Hinweis auf den Kursindex ist wichtig, weil er…",
-     "figures": "Wochenrückgang 1,5 Prozent; 25.000 Punkte; Marktdaten 25.147 Punkte, plus 0,13 Prozent"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "1NCf_rpMGr8",
-     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=206s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX befindet sich in einer Seitwärtskonsolidierung mit enger werdenden Inside Days. Der Host erwartet in den nächsten Tagen einen Ausbruch und beurteilt das kurzfristige Bild eher bullisch.",
-     "einordnung": "Die enge Handelsspanne spricht für eine bevorstehende Richtungsentscheidung, liefert aber noch keinen belastbaren Beweis für die Fortsetzung des Aufwärtstrends. Solange 25.000 Punkte halten, bleibt d…",
-     "figures": "25.000 Punkte als Unterstützung; Host: rund 25.100 Punkte; aktuell laut Marktdaten: 25.114 Punkte"
-    },
-    {
-     "date": "2026-07-10",
-     "video_id": "PCFTur5_7FE",
-     "url": "https://www.youtube.com/watch?v=PCFTur5_7FE&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Der Markt bewegt sich seitwärts; der SK-Hynix-IPO zu 149 Dollar war 7-fach überzeichnet. Goersch blickt auf die anstehende Berichtssaison: Citigroup (erwartetes EPS 2,72 Dollar), Netflix (EPS 0,79 Do…",
-     "einordnung": "Die seitwärts gerichtete Phase bei gleichzeitig 7-fach überzeichnetem Memory-Chip-IPO signalisiert, dass das Kapital selektiv in Halbleiter-Themen fließt. Die Berichtssaison mit Citi, Netflix und TSM…",
-     "figures": "SK Hynix IPO 149 Dollar, 7-fach überzeichnet; Citigroup EPS 2,72 Dollar; Netflix EPS 0,79 Dollar, Vola 8 Prozent; Taiwan Semi EPS 3,80 Dollar, Umsatz plus 11,4 Prozent"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "UFUVya_aw3k",
-     "url": "https://www.youtube.com/watch?v=UFUVya_aw3k&t=41s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Bernecker sieht den DAX in einer Range zwischen 24.500 und 25.500 Punkten und betont die Diskrepanz zwischen Index-Rekorden und deutscher Realwirtschaft. Der DAX sei ein Spiegel der internationalen K…",
-     "einordnung": "Die These ist so alt wie der DAX selbst: Der Index ist ein Export- und Dollar-Barometer, kein Konjunkturbarometer für Deutschland. Solange die globalen Geschäfte der DAX-Konzerne laufen, kauft der In…",
-     "figures": "Range 24.500 bis 25.500"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "UFUVya_aw3k",
-     "url": "https://www.youtube.com/watch?v=UFUVya_aw3k&t=765s",
-     "channel": "BerneckerTV",
-     "kategorie": "makro",
-     "note": "Ein DAX von 30.000 Punkten sei möglich, wenn eine politische Wende — Bernecker spricht von einem 'Rechtsruck' — Investitionsdynamik bringe. Aktuell fehle jede positive Perspektive.",
-     "einordnung": "Die 30.000-Punkte-Marke ist keine Prognose, sondern ein Szenario mit Vorbehalt. Bernecker macht sie abhängig von einem politischen Richtungswechsel — das ist ehrlich, aber auch spekulativ, weil Wahle…",
-     "figures": "DAX-Ziel 30.000"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "rGKDA0JAU4I",
-     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "DAX gibt Gewinne ab, US-Märkte bleiben stabiler. Nasdaq 100 zeigt ABC-Korrektur innerhalb einer Dreiecksformation mit Ausbruchspotenzial über 30.000 Punkte. IPO von SK Hynix 6-7-fach überzeichnet, Da…",
-     "einordnung": "Die Diskrepanz zwischen europäischer Schwäche und US-Stärke ist ein klassisches Sommermuster — Ölpreise treffen Europa als Nettoimporteur härter. Der SK Hynix-IPO könnte kurzfristig ETF-Umschichtunge…",
-     "figures": "IPO SK Hynix 6-7x überzeichnet, David Tepper 5% EWY-Position"
-    },
-    {
-     "date": "2026-07-08",
-     "video_id": "e11CVmyBuR8",
-     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "DAX fällt unter 25.000 Punkte aufgrund geopolitischer Risiken (Iran/USA) und steigender Ölpreise. Nasdaq 100 zeigt nach 190% Anstieg seit 2023 charttechnisches Korrekturpotenzial von 12-13% oder mehr.",
-     "einordnung": "Die Kombination aus Ölpreisschock und hawkish Fed ist ein klassischer Spätzyklus-Risk-Off-Impuls. Der DAX bei 25.000 ist keine Panikzone, sondern eine gesunde Konsolidierung nach Rekordlauf — wer jet…",
-     "figures": "DAX 25.000, Ölpreis 80 $, Nasdaq 100 +190% seit 2023, Korrekturpotenzial 12-13%, Retracement 26-27%"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "nPsSsD7zbI8",
-     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=10s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "makro",
-     "note": "Der DAX erreichte ein neues Rekordhoch bei 25.900 Punkten und schloss bei 25.817 Zählern mit einem kleinen Plus von 0,15%. Die Wall Street lieferte ab, besonders der Technologiesektor legte zu. Asien…",
-     "einordnung": "Ein neues Allzeithoch bei gleichzeitig schwindendem Momentum ist ein klassisches Bild für späte Zyklusphasen — die Rekordjagd läuft, aber die Breite der Bewegung nimmt ab. Dass Asien dreht, während U…",
-     "figures": "DAX Rekordhoch 25.900 Punkte; Schlussstand 25.817 Punkte; +0,15%"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1666s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX schießt auf ein Rekordhoch nahe 26.000 Punkte, gibt dann aber nach. Haidt stuft die Bewegung als Bullenfalle ein und warnt vor Momentum-Trade-Umschichtungen.",
-     "einordnung": "Ein Rekordhoch, das im Tagesverlauf abgegeben wird, ist ein klassisches Bullenfalle-Signal. Die Rotation aus Chip- in Hyperscaler- und Nachzügler-Werte treibt den DAX, aber das Fundament — schwache I…",
-     "figures": "Hoch: 25.600, fast 26.000"
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "htTDw4hrfRo",
-     "url": "https://www.youtube.com/watch?v=htTDw4hrfRo&t=13s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "makro",
-     "note": "DAX erreichte Rekordstand bei 2.526 Punkten nach der besten Handelswoche seit April 2025 (+4,5%). Asiatische Vorgaben gemischt: Nikkei schwächer, Hang Seng leicht im Plus. US-Börsen am Freitag geschl…",
-     "einordnung": "Rekordhochs ziehen statistisch weitere Rekorde nach sich — ein Trendbruch ist nach einer derart starken Woche unwahrscheinlich, kurzfristige Konsolidierung jedoch gesund. Die positiven deutschen Fabr…",
-     "figures": "DAX-Rekord: 2.526 Punkte; Wochenplus: +4,5%"
     }
    ]
   },
@@ -1278,78 +1744,6 @@
      "note": "Q1: Umsatz schwach (-5% auf 15,0 Mrd. EUR vs. Erw. 16,0), operatives Ergebnis stark (+52% auf 2,23 Mrd. EUR) durch niedrige Großschäden; Schaden-Kostenquote 66,8% (Erw. 74,6%); Gewinn +56,7% auf 1,7…",
      "einordnung": "Günstiges KGV (8,6) spricht für Value, aber Volumen-Rückgänge in April/Januar sowie Druck auf Prämien-Wachstum warnen vor Margin-Erosion. Zinserhöhungen könnten Bewertungen am Markt stützen (höhere D…",
      "figures": "Q1: Umsatz -5% auf 15,0 Mrd. EUR (Erw. 16,0); Op. Gewinn +52% auf 2,23 Mrd. EUR (Erw. 2,35); Schaden-Kostenquote 66,8% (Erw. 74,6%); Gewinn +56,7% auf 1,7 Mrd. EUR; Jan-Erneuerung: Volumen -7,8% auf…"
-    }
-   ]
-  },
-  "VOW3.DE": {
-   "name": "Volkswagen",
-   "auftritte": [
-    {
-     "date": "2026-07-16",
-     "video_id": "8n4SjPW9E8M",
-     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=577s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Volkswagen erholte sich leicht, getragen von Schnäppchenkäufern. Die übergeordneten Probleme sind laut Host jedoch ungelöst; eine Bodenbildung ist möglich, eine Kaufempfehlung spricht er noch nicht a…",
-     "einordnung": "Eine technische Erholung nach schwacher Entwicklung ist noch kein Turnaround-Signal. Bei Volkswagen müssen operative Fortschritte die Bodenbildung bestätigen, sonst bleibt der Anstieg ein kurzfristig…"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1194s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "VW wird kurz als Nachzügler erwähnt. Am Donnerstag steht eine Aufsichtsratssitzung an, bei der möglicherweise ein Stellenabbau von bis zu 100.000 diskutiert wird.",
-     "einordnung": "Ein potenzieller Stellenabbau von 100.000 bei VW wäre ein historischer Einschnitt für die deutsche Industrie. Der Markt könnte das kurzfristig als Restrukturierung feiern, aber die Umsetzungskosten u…"
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "-DiygCxAXrc",
-     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=2131s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Metzler hebt das Kursziel von 105 auf 130€ an. Die Aktie notiert bei 75€ mit einem KGV von 3,5, charttechnisch zeigt sich ein negativer Ausbruch unter hohem Volumen. Unterstützung bei 69€. Derzeit ke…",
-     "einordnung": "Ein KGV von 3,5 ist ein klassischer Value-Trap-Indikator bei VW — niedrige Bewertung allein ist kein Kaufgrund, wenn die Fundamentaldaten fallen. Der negative Ausbruch unter hohem Volumen bestätigt d…",
-     "figures": "105€, 130€, 75€, KGV 3,5, 69€"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=889s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Gerücht über 100.000 Jobsabbau (bislang 50.000 geplant), vier Werke drohen Schließung. Haidt sieht VW als Teil der tiefen Autokrise.",
-     "einordnung": "Wenn sich das Gerücht von 100.000 Stellenabbau bestätigt, sprechen wir über den größten Industriestreich in der deutschen Nachkriegsgeschichte. VW ist das Epizentrum der deutschen Industriekrise – di…",
-     "figures": "bislang 50.000 Jobs geplant, 100.000 Gerücht"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "zXPxhjz_nX0",
-     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=219s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Die Aktie befindet sich in einem starken Abwärtstrend. Die wichtige Unterstützung bei 87 Euro wurde gebrochen – Harry spricht bildhaft von brechenden Dämmen. Der Markt reagiert auf schwaches Chinages…",
-     "einordnung": "Der Bruch der 87-Euro-Marke ist charttechnisch ein klares Negativsignal – im Abwärtstrend nach Unterstützungsbereichen zu fischen, ist ein klassischer Anfängerfehler. Die Fundamentaldaten mit dem Chi…",
-     "figures": "87 Euro (gebrochene Unterstützung)"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "9G1WNKY6uuY",
-     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Volkswagen Vz. wird in der Videobeschreibung genannt, im Video jedoch nur im Kontext der allgemeinen Automobilschwäche erwähnt.",
-     "einordnung": "VW als Massenhersteller ist im aktuellen Sektor-Stress besonders exponiert. Der Titel teilt das schwierige Umfeld mit BMW und Mercedes, hat aber strukturell noch größere Herausforderungen durch die s…"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "MJo67AkNy70",
-     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=485s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "VW Exdividende: Vorzüge 5,26 €, Stämme 5,20 €; Aktie trotzdem schwach.",
-     "einordnung": "Ex-Dividende-Schwäche ist mechanisch, aber die anhaltende Schwäche dahinter ist das eigentliche Problem. VW leidet unter denselben strukturellen Themen wie Mercedes — China, E-Mobility-Wettbewerb, Ma…",
-     "figures": "5,26 € (Vorzüge), 5,20 € (Stämme)"
     }
    ]
   },
@@ -3052,112 +3446,6 @@
     }
    ]
   },
-  "SAP.DE": {
-   "name": "SAP",
-   "auftritte": [
-    {
-     "date": "2026-07-14",
-     "video_id": "WFyYyqhoiVo",
-     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=419s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SAP fiel nach längerer Schwäche positiv auf. Der Host sieht eine mögliche Kapitalrotation aus spekulativen Werten in defensivere oder zuvor gebeutelte Titel.",
-     "einordnung": "SAP kann in einem nervösen Markt als Qualitäts- und Stabilitätsanker innerhalb des Technologiesektors wahrgenommen werden. Ob daraus ein nachhaltiger Trend wird, hängt allerdings davon ab, ob die Rot…"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=1437s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "SAP wird laut Egmond von der IBM-Schwäche mit nach unten gezogen. Er sieht das Risiko eines schwachen Ausblicks, falls hohe KI-Investitionen die Entwicklung belasten.",
-     "einordnung": "Die unmittelbare Kursreaktion ist eher eine Sektor- und Sentimentübertragung als ein eigener SAP-Nachweis. Fundamental bleibt entscheidend, ob KI bei SAP als margensteigerndes Produkt oder zunächst a…"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=516s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "SAP bleibt unter Druck, zeigt heute eine technische Erholung. Haidt sieht keinen nachhaltigen Trend.",
-     "einordnung": "Eine technische Erholung ohne fundamentale Katalysatoren ist oft ein Strohfeuer. SAP muss zeigen, dass das Cloud-Wachstum trägt, sonst bleibt die Aktie im Abwärtstrend."
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "htTDw4hrfRo",
-     "url": "https://www.youtube.com/watch?v=htTDw4hrfRo&t=176s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Kapitalumschichtung aus KI/Speicher-Titeln hin zu defensiven Werten wie SAP führte zuletzt zu Anstiegen. SAP als Nachzügler mit Potenzial.",
-     "einordnung": "SAP profitiert von der Rotation in defensive Qualitätswerte — ein Muster, das typisch ist für späte Zyklusphasen. Als DAX-Gewicht mit solidem KI-Bezug ist SAP ein logischer Empfänger von Kapital, das…"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=276s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Zeigt Erholungsbewegung und könnte von Mittelabflüssen aus Hypeaktien profitieren.",
-     "einordnung": "SAP als defensiver Tech-Wert mit solidem Geschäftsmodell ist ein natürlicher Profiteur, wenn Anleger aus überhitzten KI-Titeln Gewinne mitnehmen. Die Aktie hat in der Korrektur zuletzt relativ standg…"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1954s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Sorgen vor KI-Kosten, Talfahrt erwartet. Haidt sieht weiteres Abwärtsrisiko.",
-     "einordnung": "SAP hat sich in den letzten zwei Jahren als KI-Profiteur positioniert, aber die Investitionskosten drücken nun auf die Margen. Das ist ein klassisches Transformationsdilemma: Langfristig richtig, kur…"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "10_Fe8OVqnk",
-     "url": "https://www.youtube.com/watch?v=10_Fe8OVqnk&t=960s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "SAP fiel von 269 € auf 140 €, das KGV sank von 38 auf 19,3. Das Cloudgeschäft bleibt mit CCB-Wachstum von 20% auf 21,9 Mrd. € stark, jedoch belasten KI-Investitionen und der Oracle-Effekt die Margene…",
-     "einordnung": "SAP bei 140 € und einem KGV von 19,3 ist eine völlig andere Bewertungssituation als bei 269 € — das ist eine Normalisierung, kein Crash. Das Cloud-Wachstum von 20% ist solide, aber der Margendruck du…",
-     "figures": "Kurs von 269 € auf 140 €, KGV von 38 (2026) auf 19,3 (2026), Oracle KGV 38,7, Salesforce KGV 19,8, Q1 2026 CCB +20% (währungsbereinigt +25%) auf 21,9 Mrd. €, Cloudlöse währungsbereinigt +27%, Goldman…"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "MJo67AkNy70",
-     "url": "https://www.youtube.com/watch?v=MJo67AkNy70&t=513s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SAP auf tiefstem Stand seit 2023; fehlende Impulse, Markt erwartet KI-Unterstützung nicht.",
-     "einordnung": "SAP auf dem tiefsten Stand seit 2023 ist ein bemerkenswerter Stilwechsel — der Markt straft die KI-Narrative ab, die bisher den Auftrieb trug. Bei einem DAX-Schwergewicht ist das ein Stimmungsbaromet…",
-     "figures": "tiefster Stand seit 2023"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "S9qv7ifKEQc",
-     "url": "https://www.youtube.com/watch?v=S9qv7ifKEQc&t=708s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "SAP unter Druck durch 'Sippenhaft' mit Oracle-Schwäche; Qualität der Company bleibt intakt, aber Kurs rutscht immer wieder zurück.",
-     "einordnung": "SAP ist ein Quality-Stock mit Enterprise-Moat, aber der Markt spielt Sektor-Domino-Spiel. Oracle-Schwäche setzt Tech-Vertrauen unter Druck. Für Langfrist-Investoren ein Ansammelsignal, für Trader ein…"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=995s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Short Squeeze bei SAP, fundamentale Änderungen fehlen.",
-     "einordnung": "Ein Short Squeeze bei SAP zeigt, dass der Markt nicht nur von KI-Enthusiasmus, sondern auch von Leerverkäufer-Schmerz getrieben ist. Das ist ein technisches, kein fundamentales Signal."
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Kurzfristig kann sich SAP erholen, aber mittel-/langfristig keine Besserung. Bei Wiederkehr des Momentum-Trades verkaufen.",
-     "einordnung": "SAP als Underperformer profitiert kurzfristig vom Momentum-Wechsel, aber die fundamentale Schwäche bleibt – das ist ein taktischer Trade, kein strategisches Investment."
-    }
-   ]
-  },
   "8TRA.DE": {
    "name": "Traton",
    "auftritte": [
@@ -3298,50 +3586,6 @@
      "note": "Evotec meldet schwache vorläufige Halbjahreszahlen: Der Umsatz bleibt hinter den Erwartungen zurück, der Verlust weitet sich deutlich aus und der Ausblick wird massiv gesenkt. Die Aktie bricht um meh…",
      "einordnung": "Eine derart starke Prognosekürzung ist mehr als ein gewöhnlicher Quartalsrückschlag und rechtfertigt zunächst eine vorsichtige Haltung. Charttechnisch liegt die Aktie nach dem Absturz zwar am Jahrest…",
      "figures": "Umsatz 300 Millionen Euro; bereinigtes EBITDA -43 Millionen Euro; neuer Umsatzausblick 570 bis 610 Millionen Euro nach zuvor 700 bis 780 Millionen Euro; EBITDA-Ausblick -70 bis -105 Millionen Euro; 5…"
-    }
-   ]
-  },
-  "SZG.DE": {
-   "name": "Salzgitter",
-   "auftritte": [
-    {
-     "date": "2026-07-14",
-     "video_id": "WFyYyqhoiVo",
-     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=547s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Analysten, darunter Jefferies, werden zuversichtlicher und sehen Salzgitter als möglichen Profiteur protektionistischer EU-Maßnahmen in der zweiten Jahreshälfte. Das aktuelle Kursniveau sieht der Hos…",
-     "einordnung": "Schutzmaßnahmen können einem europäischen Stahlhersteller kurzfristig helfen, weil sie den Wettbewerbsdruck durch Importe mindern. Der Titel bleibt aber stark zyklisch und abhängig von Stahlpreisen,…"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "BfRCptZ2OAI",
-     "url": "https://www.youtube.com/watch?v=BfRCptZ2OAI&t=2426s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Mehrere Analysten stufen Salzgitter hoch: Jefferies empfiehlt die Aktie zum Kauf mit einem Kursziel von 66 Euro, JPMorgan wechselt von Underweight auf Overweight und nennt 65 Euro. Charttechnisch bil…",
-     "einordnung": "Die Nähe der Analystenziele zum Jahreshoch macht die Aktie zu einer klaren Bestätigungsspekulation: Erst der Ausbruch über die Widerstandszone würde das charttechnische Bild wirklich vollenden. Das C…",
-     "figures": "Kursziel Jefferies 66 Euro; Kursziel JPMorgan 65 Euro; Jahreshoch 67 Euro; letztes Zwischentief 47,80 Euro"
-    },
-    {
-     "date": "2026-07-10",
-     "video_id": "H5zYVH8xlRI",
-     "url": "https://www.youtube.com/watch?v=H5zYVH8xlRI&t=499s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "JP Morgan hebt von Underweight auf Overweight und verdoppelt das Kursziel auf 65 Euro. Grund: EU-Schutzmaßnahmen für Stahlpreise wirken sich positiv auf Gewinne aus, Dynamik ab zweitem Halbjahr erwar…",
-     "einordnung": "Ein doppeltes Upgrade mit Kurszielverdopplung ist einer der stärksten Analysten-Signale — das erinnert an ThyssenKrupp 2016, als Schutzmaßnahmen die Stahlaktien beflügelten. Salzgitter ist hochzyklis…",
-     "figures": "Kursziel 65 € (verdoppelt), Upgrade Underweight → Overweight"
-    },
-    {
-     "date": "2026-07-10",
-     "video_id": "PCFTur5_7FE",
-     "url": "https://www.youtube.com/watch?v=PCFTur5_7FE&t=1639s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Salzgitter übernimmt HKM vollständig und startet eine tiefgreifende Restrukturierung. JP Morgan stuft auf Overweight hoch mit Kursziel 65 Euro. Charttechnisch ergibt sich ein Ausbruch mit Ziel 67 Eur…",
-     "einordnung": "Die vollständige HKM-Übernahme gibt Salzgitter erstmals die volle Kontrolle über den Duisburger Standort, was Restrukturierung ohne Kompromisse erlaubt. Das JP-Morgan-Upgrade auf Overweight ist das e…",
-     "figures": "JP Morgan Kursziel 65 Euro, charttechnisches Ziel 67 Euro"
     }
    ]
   },
@@ -4246,128 +4490,6 @@
      "note": "Lam Research steht nach einem Rückgang von mehr als 100 Dollar an einer wichtigen Unterstützung bei etwa 330 Dollar. Morgan Stanley erwartet Überraschungspotenzial bei den Geschäftszahlen; zugleich w…",
      "einordnung": "Die strukturelle Nachfrage nach Ausrüstung für die Chipfertigung spricht für Lam Research, doch ein KGV von 43 lässt wenig Raum für operative Enttäuschungen. Die Zone um 330 Dollar ist deshalb sowohl…",
      "figures": "Unterstützung etwa 330 Dollar; Rückgang über 100 Dollar; historischer Ergebnis-Beat etwa 9 Prozent; WFE-Markt 145 Milliarden Dollar für 2026; KGV 43; KUV 2"
-    }
-   ]
-  },
-  "RHM.DE": {
-   "name": "Rheinmetall",
-   "auftritte": [
-    {
-     "date": "2026-07-13",
-     "video_id": "1NCf_rpMGr8",
-     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=488s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Rheinmetall befindet sich laut Host in einem Abwärtstrend der Stage 4. Eine Hammerkerze könnte eine Wende einleiten, die Aktie notiert jedoch noch unter den gleitenden Durchschnitten.",
-     "einordnung": "Die Hammerkerze ist zunächst nur ein Warnsignal für nachlassenden Verkaufsdruck, kein bestätigter Trendwechsel. Der Abstand zu den gleitenden Durchschnitten zeigt, dass die Aktie charttechnisch noch…",
-     "figures": "2.000 Euro als Hoch; aktuell etwa 1.000 Euro; 900 Euro als Jess-Livermore-Level"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "rGKDA0JAU4I",
-     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=1645s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "MWB stuft von Kaufen auf Halten herab, senkt Kursziel von 1400 auf 1150€. Schwäche im Bereich Landsysteme, fallende Trendlinie im Chart. Bewertung mit KGV 25 nahe dem 5-Jahres-Durchschnitt.",
-     "einordnung": "Das Kursziel von 1150€ bei einem aktuellen Kurs nahe 1200€ lässt kaum Aufwärtspotenzial. Die fallende Trendlinie und der Widerstand bei 1200€ sind charttechnisch ein klares Warnsignal — hier gilt es…",
-     "figures": "Kursziel alt 1400€, neu 1150€, aktuell -3,8%, KGV 25, Widerstand bei 1200€"
-    },
-    {
-     "date": "2026-07-03",
-     "video_id": "XVi3pNFu4dA",
-     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=375s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Barclays senkt das Kursziel auf 2000€, aber die Aktie erholt sich nach dem Verlust des Marina-Auftrags. Chart: Ein Break bei 1200€ könnte den Abwärtstrend beenden.",
-     "einordnung": "Die Senkung des Kursziels durch Barclays auf 2000€ ist bei einer Aktie, die zuletzt deutlich unter Druck stand, ein interessantes Signal — das Ziel liegt immer noch deutlich über dem aktuellen Kurs.…",
-     "figures": "2000€ Kursziel (Barclays), 1200€ Break-Marke"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=384s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Gestärkter DAX-Wert mit Gegenbewegung nach Verlust eines Auftrags. Abwärtstrend seit Februar muss noch gebrochen werden. Der Absturz war übertrieben, da der Auftrag erst 2031 relevant geworden wäre.",
-     "einordnung": "Die heftige Reaktion auf einen Auftrag, der erst 2031 greift, zeigt wie emotional der Rheinmetall-Chart besetzt ist. Die Gegenbewegung ist rational — der Abwärtstrend bleibt aber intakt, bis die Febr…",
-     "figures": "über 1.600 € vor Auftragsverlust; Bruch bei 1.000 €"
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "kbhs3X-LW2E",
-     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1588s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "CEO Armin Papperger kauft nach dem Kursrutsch 3.200 Aktien zu 954 EUR — ein starkes Insidersignal mit einem Volumen von rund 3 Mio. EUR. Das KGV liegt bei 24, der PEG unter 0,6 — günstig bewertet bei…",
-     "einordnung": "Ein CEO-Kauf in dieser Größenordnung ist ein deutliches Signal — Papperger setzt sein eigenes Geld dort ein, wo er die Value-Lücke sieht. Das PEG von 0,6 bei diesem Wachstumspfad ist für einen Rüstun…",
-     "figures": "3.200 Aktien; Kaufkurs 954 EUR; Volumen ~3 Mio. EUR; KGV ~24; PEG 0,6; Gewinnwachstum 130%, 50%, 40%"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=250s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Ein erhoffter Großauftrag fällt aus, die Aktie bricht ein. Haidt liefert keine konkrete Prognose.",
-     "einordnung": "Rheinmetall leidet unter dem klassischen Problem hochbewerteter Rüstungswerte: Jeder entgangene Auftrag wird überproportional bestraft, weil die Bewertung bereits Perfektion einpreist. Das erinnert a…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "tIXIrS3cz1s",
-     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=395s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall verlor einen Auftrag vom Verteidigungsministerium, woraufhin der Kurs von zuvor rund 1.200 Euro unter die 1.000-Euro-Marke fiel. Der Host hält die Reaktion für übertrieben und erwartet, d…",
-     "einordnung": "Ein Auftragsverlust bei einem Rüstungskonzern mit einem Auftragsbestand in Milliardenhöhe ist ein marginales Ereignis — der Markt reagiert hier emotional, nicht fundamental. Unter 1.000 Euro wird Rhe…",
-     "figures": "1.200 € (vorheriges Niveau), unter 1.000 € (aktueller Bereich)"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "F6cTDl0_v6Q",
-     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=538s",
-     "channel": "BerneckerTV",
-     "kategorie": "news",
-     "note": "Rheinmetall verliert den F126-Auftrag im Volumen von 12 Mrd. EUR, was zu einem Umsatzentgang von 2 Mrd. EUR und einem EBIT-Verlust von 250 Mio. EUR führt. Der CEO zeichnet sich durch Aktienkäufe aus,…",
-     "einordnung": "Der Auftragsverlust ist ein Rückschlag, muss aber gegen den massiven Auftragsbestand aus dem europäischen Rüstungszyklus abgewogen werden. Das KGV von 16,8 für 2027 ist moderat für einen Rüstungskonz…",
-     "figures": "Auftragswert 12 Mrd. EUR; Umsatzentgang 2 Mrd. EUR; EBIT-Verlust 250 Mio. EUR; KGV 16,8 für 2027; CEO-Käufe 3 Mrd. EUR"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "5AeBdQRrZ2k",
-     "url": "https://www.youtube.com/watch?v=5AeBdQRrZ2k&t=460s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nach Verlust des Fregatten-Auftrags an TKDS keine Gegenbewegung; die Reaktion erscheint übertrieben, langfristig besteht Potenzial, aber kurzfristig abwarten.",
-     "einordnung": "Der Verlust eines Großauftrags ist ein psychologischer Dämpfer, ändert aber wenig an der strukturellen Verteidigungsnachfrage. Dass der Host die Reaktion als übertrieben einstuft, ist nachvollziehbar…"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall verliert 19 Prozent nach dem Scheitern des Fregattenauftrags F126 im Volumen von 12,8 Milliarden Euro, was einen Vertrauensverlust auslöst. Langfristig bleibt die Aktie jedoch interessant.",
-     "einordnung": "Ein 19-prozentiger Kursverlust auf einen verlorenen Auftrag ist eine klassische Überreaktion. Der F126-Verlust ist signifikant, ändert aber nichts an der strukturellen Verteidigungsausgaben-These. We…",
-     "figures": "-19%, 12,8 Mrd. Euro"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "4K4U0fRfM0A",
-     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=1424s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Die Aktie fällt 18 Prozent nach Meldung über mögliches Ende des F126-Fregattenprojekts. JP Morgan senkt das Kursziel leicht auf 1400 Euro, hält aber am Hold-Rating fest. Zusätzlicher Druck entsteht d…",
-     "einordnung": "Die 18-Prozent-Reaktion ist dramatisch, aber der F126 ist ein Marineprojekt — Rheinmetalls Kernfranchise sind Landsysteme. Der PEG von 0,67 signalisiert, dass die Aktie trotz des Abverkaufs noch imme…",
-     "figures": "-18%, Kursziel 1400 Euro (von 1450), KGV 24, PEG 0,67"
-    },
-    {
-     "date": "2026-06-16",
-     "video_id": "J1zzTOyOdKE",
-     "url": "https://www.youtube.com/watch?v=J1zzTOyOdKE&t=952s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Die Aktie steht unter Druck, weil ein baldiges Ende des Iran-Krieges die Nachfrage nach Rüstungsgütern dämpfen könnte. Egmond sieht noch kein belastbares Tief und bleibt skeptisch.",
-     "einordnung": "Rheinmetall ist ein klassisches Geopolitik-Play — steigt bei Konflikten, leidet bei Entspannung. Das Iran-Abkommen trifft die Aktie daher doppelt: sinkende Ölpreis-Einnahmen schwächen gleichzeitig di…"
     }
    ]
   },
@@ -6475,54 +6597,6 @@
      "note": "Die Aktie ist in den letzten Wochen 30-50 % gestiegen, getrieben durch die Zahlen vom 7. Mai und die Ankündigung des SpaceX-Börsengangs (angeblich 12. Juni, 55 Mrd. $ eingesammelt, Bewertung 1,75-1,8…",
      "einordnung": "Rocket Lab ist eine Spekulation auf den SpaceX-Börsengang – die Bewertung von 60-70-fachem Umsatz ist jenseits jeder Fundamentalität. Wenn der Momentum-Trade dreht, fällt diese Aktie zuerst.",
      "figures": "30-50 % (Anstieg), 55 Mrd. $ (SpaceX Emission), 1,75-1,8 Billionen $ (SpaceX Bewertung), 60-70-facher Umsatz (Rocket Lab)"
-    }
-   ]
-  },
-  "BZ=F": {
-   "name": "Öl Brent",
-   "auftritte": [
-    {
-     "date": "2026-06-29",
-     "video_id": "tIXIrS3cz1s",
-     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=90s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Ein Zwischenfall nahe der Straße von Hormus treibt den Ölpreis in den ersten Handelsminuten um rund 2 Prozent nach oben. Der Markt reagiert jedoch verhalten, da auf eine Verhandlungslösung gesetzt wi…",
-     "einordnung": "Eine 2-Prozent-Reaktion auf einen Hormus-Zwischenfall ist bemerkenswert zurückhaltend — das erinnert an Phasen, in denen der Markt geopolitische Risiken bereits weitgehend einpreist. Solange die Stra…",
-     "figures": "+2% in den ersten Handelsminuten"
-    }
-   ]
-  },
-  "^DJI": {
-   "name": "Dow Jones",
-   "auftritte": [
-    {
-     "date": "2026-06-29",
-     "video_id": "tIXIrS3cz1s",
-     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=183s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Host zeigt den Dow Jones per Infront-Chart und diskutiert die bevorstehende Aufnahme von Alphabet in den Index, die die Technologielastigkeit des Dow erhöht. Bei Indexaufnahmen komme es meist ers…",
-     "einordnung": "Die Aufnahme eines GAFAM-Werts in den Dow ist ein symbolischer Meilenstein, der den Index weiter modernisiert. Der pattern 'Aufnahme-Rallye, dann Profit-Taking' ist historisch gut belegt — man denke…"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "KTfBNyeb-g4",
-     "url": "https://www.youtube.com/watch?v=KTfBNyeb-g4&t=241s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Dow Jones bewegt sich nahe Rekordniveau, ohne sich stark von den Höchstkursen abzusetzen, bleibt aber in einer starken Rally.",
-     "einordnung": "Die Nähe zu Rekordhöhen ohne nennenswerte Korrektur zeigt bemerkenswerte Widerstandskraft. Die Breite der Rally verdient allerdings genauere Beobachtung — nicht jeder Sektor zieht gleich stark mit."
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=470s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Der Dow Jones wird im Tageschart mittels einer Trendkanalanalyse untersucht, wobei sich vielversprechende Kursziele abzeichnen.",
-     "einordnung": "Der Dow kämpft sich in einem intakten Aufwärtstrend nach oben. Ein Ziel von 58.000 Punkten klingt nach Hausnummern, aber der Trendkanal gibt das her – solange die Unterstützung nicht bricht.",
-     "figures": "Kursziele: 53.281; 54.681; langfristig 58.000"
     }
    ]
   },
