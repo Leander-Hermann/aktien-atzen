@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-19T23:20:37.278064Z",
+  "generated_at": "2026-07-20T01:20:36.101038Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -21,55 +21,11 @@
  },
  "items": [
   {
-   "symbol": "NFLX",
-   "name": "Netflix",
-   "score": 100,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 68.95,
-    "pct": -7.26,
-    "cur": "USD",
-    "as_of": "2026-07-19T18:32:25.231898+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-16",
-    "distance_days": -3,
-    "zeit": "amc"
-   }
-  },
-  {
    "symbol": "ISRG",
    "name": "Intuitive Surgical",
-   "score": 95,
+   "score": 70,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
@@ -82,18 +38,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "3,9× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "quote": {
@@ -101,44 +45,32 @@
     "pct": -14.15,
     "cur": "USD",
     "as_of": "2026-07-19T18:32:25.231898+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-16",
-    "distance_days": -3,
-    "zeit": "amc"
    }
   },
   {
-   "symbol": "S92.DE",
-   "name": "SMA Solar",
-   "score": 65,
-   "priority": "medium",
+   "symbol": "NFLX",
+   "name": "Netflix",
+   "score": 70,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,8 %",
-     "weight": 30
+     "value": "-7,3 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,2× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "value": "2,8× Durchschnitt",
+     "weight": 25
     }
    ],
-   "tv_symbol": "XETR:S92",
    "quote": {
-    "price": 61.55,
-    "pct": 5.76,
-    "cur": "EUR",
+    "price": 68.95,
+    "pct": -7.26,
+    "cur": "USD",
     "as_of": "2026-07-19T18:32:25.231898+00:00"
    }
   }
