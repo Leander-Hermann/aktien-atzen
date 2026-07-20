@@ -1,9 +1,9 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-20T18:20:31.477910Z",
+  "generated_at": "2026-07-20T19:20:35.439020Z",
   "source": "radar",
-  "status": "fresh",
+  "status": "empty",
   "partial": false,
   "warnings": [],
   "errors": []
@@ -11,7 +11,7 @@
  "mode": "batch",
  "universe": {
   "symbols_total": 114,
-  "with_quote_data": 60,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -19,100 +19,5 @@
    "movers"
   ]
  },
- "items": [
-  {
-   "symbol": "NFLX",
-   "name": "Netflix",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 68.95,
-    "pct": -7.26,
-    "cur": "USD",
-    "as_of": "2026-07-20T06:33:26.346126+00:00"
-   }
-  },
-  {
-   "symbol": "ISRG",
-   "name": "Intuitive Surgical",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-14,2 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,9× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 345.42,
-    "pct": -14.15,
-    "cur": "USD",
-    "as_of": "2026-07-20T06:33:26.346126+00:00"
-   }
-  },
-  {
-   "symbol": "VBK.DE",
-   "name": "Verbio",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,0 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:VBK",
-   "quote": {
-    "price": 32.08,
-    "pct": -3.02,
-    "cur": "EUR",
-    "as_of": "2026-07-20T06:33:26.346126+00:00"
-   }
-  }
- ]
+ "items": []
 }
