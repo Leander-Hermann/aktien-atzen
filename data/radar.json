@@ -1,16 +1,16 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-20T23:20:32.306269Z",
+  "generated_at": "2026-07-21T00:20:32.786762Z",
   "source": "radar",
-  "status": "empty",
+  "status": "fresh",
   "partial": false,
   "warnings": [],
   "errors": []
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 114,
+  "symbols_total": 120,
   "with_quote_data": 56,
   "sources": [
    "watchlist",
@@ -19,5 +19,44 @@
    "movers"
   ]
  },
- "items": []
+ "items": [
+  {
+   "symbol": "TSLA",
+   "name": "Tesla",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,2 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 372.365,
+    "pct": -2.23,
+    "cur": "USD",
+    "as_of": "2026-07-20T18:35:39.646293+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-22",
+    "distance_days": 1,
+    "zeit": "amc"
+   }
+  }
+ ]
 }
