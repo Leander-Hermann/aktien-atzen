@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T06:20:31.082740Z",
+  "generated_at": "2026-07-21T07:20:35.295172Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 120,
-  "with_quote_data": 56,
+  "symbols_total": 121,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -23,14 +23,14 @@
   {
    "symbol": "TSLA",
    "name": "Tesla",
-   "score": 60,
-   "priority": "medium",
+   "score": 70,
+   "priority": "high",
    "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,2 %",
+     "value": "-3,0 %",
      "weight": 15
     },
     {
@@ -42,20 +42,81 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 372.365,
-    "pct": -2.23,
+    "price": 369.57,
+    "pct": -2.96,
     "cur": "USD",
-    "as_of": "2026-07-20T18:35:39.646293+00:00"
+    "as_of": "2026-07-21T06:34:43.245923+00:00"
    },
    "earnings": {
     "date": "2026-07-22",
     "distance_days": 1,
     "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "BE",
+   "name": "Bloom Energy",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-8,3 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 197.06,
+    "pct": -8.33,
+    "cur": "USD",
+    "as_of": "2026-07-21T06:34:43.245923+00:00"
+   }
+  },
+  {
+   "symbol": "VBK.DE",
+   "name": "Verbio",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,0 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:VBK",
+   "quote": {
+    "price": 32.92,
+    "pct": -3.02,
+    "cur": "EUR",
+    "as_of": "2026-07-21T06:34:43.245923+00:00"
    }
   }
  ]
