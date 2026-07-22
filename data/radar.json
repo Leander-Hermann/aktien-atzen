@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-21T23:20:28.062615Z",
+  "generated_at": "2026-07-22T00:20:29.451169Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 118,
+  "symbols_total": 127,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -20,6 +20,44 @@
   ]
  },
  "items": [
+  {
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 90,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,2 %",
+     "weight": 45
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 105.22,
+    "pct": 8.41,
+    "cur": "USD",
+    "as_of": "2026-07-21T18:36:43.820725+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-23",
+    "distance_days": 1,
+    "zeit": "amc"
+   }
+  },
   {
    "symbol": "SRT3.DE",
    "name": "Sartorius",
@@ -55,49 +93,11 @@
    }
   },
   {
-   "symbol": "INTC",
-   "name": "Intel",
-   "score": 75,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+8,2 %",
-     "weight": 45
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 105.22,
-    "pct": 8.41,
-    "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-23",
-    "distance_days": 2,
-    "zeit": "amc"
-   }
-  },
-  {
    "symbol": "TSLA",
    "name": "Tesla",
    "score": 70,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -108,7 +108,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     },
     {
@@ -126,7 +126,7 @@
    },
    "earnings": {
     "date": "2026-07-22",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "amc"
    }
   },
@@ -173,7 +173,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     },
     {
@@ -192,7 +192,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "tbd"
    }
   },
@@ -278,6 +278,39 @@
    }
   },
   {
+   "symbol": "SAP.DE",
+   "name": "SAP",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:SAP",
+   "quote": {
+    "price": 136.42,
+    "pct": -1.33,
+    "cur": "EUR",
+    "as_of": "2026-07-21T18:36:43.820725+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-23",
+    "distance_days": 1,
+    "zeit": "tbd"
+   }
+  },
+  {
    "symbol": "GOOGL",
    "name": "Alphabet",
    "score": 55,
@@ -287,7 +320,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     },
     {
@@ -305,7 +338,7 @@
    },
    "earnings": {
     "date": "2026-07-22",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "amc"
    }
   },
