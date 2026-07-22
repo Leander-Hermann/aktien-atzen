@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T06:20:25.678450Z",
+  "generated_at": "2026-07-22T07:20:29.385649Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 127,
-  "with_quote_data": 59,
+  "symbols_total": 128,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -30,7 +30,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+8,2 %",
+     "value": "+8,6 %",
      "weight": 45
     },
     {
@@ -47,10 +47,10 @@
     }
    ],
    "quote": {
-    "price": 105.22,
-    "pct": 8.41,
+    "price": 105.45,
+    "pct": 8.64,
     "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    },
    "earnings": {
     "date": "2026-07-23",
@@ -59,8 +59,8 @@
    }
   },
   {
-   "symbol": "SRT3.DE",
-   "name": "Sartorius",
+   "symbol": "UTZ",
+   "name": "Utz Brands",
    "score": 80,
    "priority": "high",
    "alert_type": "large_move",
@@ -68,13 +68,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-8,5 %",
+     "value": "+88,7 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,3× Durchschnitt",
+     "value": "31,1× Durchschnitt",
      "weight": 25
     },
     {
@@ -84,12 +84,44 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:SRT3",
    "quote": {
-    "price": 217.2,
-    "pct": -8.51,
-    "cur": "EUR",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "price": 14.06,
+    "pct": 88.72,
+    "cur": "USD",
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
+   }
+  },
+  {
+   "symbol": "HAS",
+   "name": "Hasbro",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,8 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,9× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 88.78,
+    "pct": 8.81,
+    "cur": "USD",
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    }
   },
   {
@@ -102,7 +134,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,8 %",
+     "value": "+2,5 %",
      "weight": 15
     },
     {
@@ -119,10 +151,10 @@
     }
    ],
    "quote": {
-    "price": 380.05,
-    "pct": 2.84,
+    "price": 378.93,
+    "pct": 2.53,
     "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    },
    "earnings": {
     "date": "2026-07-22",
@@ -140,7 +172,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+12,4 %",
+     "value": "+12,2 %",
      "weight": 45
     },
     {
@@ -151,24 +183,30 @@
     }
    ],
    "quote": {
-    "price": 973.13,
-    "pct": 12.44,
+    "price": 970.82,
+    "pct": 12.17,
     "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    }
   },
   {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
+   "symbol": "BA",
+   "name": "Boeing",
    "score": 60,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,2 %",
-     "weight": 30
+     "value": "-2,2 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
@@ -183,17 +221,16 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "KRX:000660",
    "quote": {
-    "price": 1836000.0,
-    "pct": -4.23,
-    "cur": "KRW",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "price": 204.8,
+    "pct": -2.23,
+    "cur": "USD",
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    },
    "earnings": {
     "date": "2026-07-28",
     "distance_days": 6,
-    "zeit": "tbd"
+    "zeit": "bmo"
    }
   },
   {
@@ -206,7 +243,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+16,1 %",
+     "value": "+18,8 %",
      "weight": 45
     },
     {
@@ -217,10 +254,10 @@
     }
    ],
    "quote": {
-    "price": 212.45,
-    "pct": 16.33,
+    "price": 216.92,
+    "pct": 18.78,
     "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    }
   },
   {
@@ -233,7 +270,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+15,2 %",
+     "value": "+14,8 %",
      "weight": 45
     },
     {
@@ -244,10 +281,10 @@
     }
    ],
    "quote": {
-    "price": 226.975,
-    "pct": 15.18,
+    "price": 226.26,
+    "pct": 14.82,
     "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    }
   },
   {
@@ -260,7 +297,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+7,3 %",
+     "value": "+7,1 %",
      "weight": 45
     },
     {
@@ -271,10 +308,42 @@
     }
    ],
    "quote": {
-    "price": 106.52,
-    "pct": 7.29,
+    "price": 106.36,
+    "pct": 7.13,
     "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
+   }
+  },
+  {
+   "symbol": "GOOGL",
+   "name": "Alphabet",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 347.15,
+    "pct": -1.38,
+    "cur": "USD",
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-22",
+    "distance_days": 0,
+    "zeit": "amc"
    }
   },
   {
@@ -300,46 +369,14 @@
    "tv_symbol": "XETR:SAP",
    "quote": {
     "price": 136.42,
-    "pct": -1.33,
+    "pct": 0.25,
     "cur": "EUR",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    },
    "earnings": {
     "date": "2026-07-23",
     "distance_days": 1,
     "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "GOOGL",
-   "name": "Alphabet",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 348.65,
-    "pct": -0.95,
-    "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-22",
-    "distance_days": 0,
-    "zeit": "amc"
    }
   },
   {
@@ -352,7 +389,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,4 %",
+     "value": "+5,5 %",
      "weight": 30
     },
     {
@@ -363,10 +400,10 @@
     }
    ],
    "quote": {
-    "price": 423.88,
-    "pct": 5.36,
+    "price": 424.61,
+    "pct": 5.55,
     "cur": "USD",
-    "as_of": "2026-07-21T18:36:43.820725+00:00"
+    "as_of": "2026-07-22T06:34:03.824573+00:00"
    }
   }
  ]
