@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-23T06:20:30.011349Z",
+  "generated_at": "2026-07-23T07:20:27.299087Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 133,
-  "with_quote_data": 59,
+  "symbols_total": 132,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -21,68 +21,29 @@
  },
  "items": [
   {
-   "symbol": "AIR.DE",
-   "name": "Airbus",
-   "score": 100,
+   "symbol": "NOW",
+   "name": "ServiceNow",
+   "score": 90,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+7,1 %",
-     "weight": 45
+     "value": "-6,5 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
+     "value": "2,1× Durchschnitt",
      "weight": 15
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 6 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:AIR",
-   "quote": {
-    "price": 208.3,
-    "pct": 7.07,
-    "cur": "EUR",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-29",
-    "distance_days": 6,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "AIR.PA",
-   "name": "Airbus",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,3× Durchschnitt",
-     "weight": 15
+     "value": "Earnings gestern",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -91,12 +52,16 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "EURONEXT:AIR",
    "quote": {
-    "price": 208.3,
-    "pct": 7.04,
-    "cur": "EUR",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
+    "price": 95.46,
+    "pct": -6.47,
+    "cur": "USD",
+    "as_of": "2026-07-23T06:33:45.182540+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-22",
+    "distance_days": -1,
+    "zeit": "amc"
    }
   },
   {
@@ -109,7 +74,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,1 %",
+     "value": "+4,2 %",
      "weight": 30
     },
     {
@@ -127,10 +92,10 @@
    ],
    "tv_symbol": "KRX:000660",
    "quote": {
-    "price": 1830000.0,
-    "pct": 4.08,
+    "price": 1907000.0,
+    "pct": 4.21,
     "cur": "KRW",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
+    "as_of": "2026-07-23T06:33:45.182540+00:00"
    },
    "earnings": {
     "date": "2026-07-28",
@@ -139,23 +104,23 @@
    }
   },
   {
-   "symbol": "VH2.DE",
-   "name": "Friedrich Vorwerk",
-   "score": 65,
+   "symbol": "IBM",
+   "name": "IBM",
+   "score": 60,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+6,2 %",
-     "weight": 30
+     "value": "-2,2 %",
+     "weight": 15
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
-     "weight": 25
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -164,85 +129,60 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:VH2",
    "quote": {
-    "price": 73.35,
-    "pct": 6.15,
-    "cur": "EUR",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
+    "price": 205.77,
+    "pct": -2.25,
+    "cur": "USD",
+    "as_of": "2026-07-23T06:33:45.182540+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-22",
+    "distance_days": -1,
+    "zeit": "amc"
    }
   },
   {
-   "symbol": "G1A.DE",
-   "name": "GEA Group",
-   "score": 65,
+   "symbol": "GM",
+   "name": "General Motors",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,7 %",
-     "weight": 30
+     "value": "+3,3 %",
+     "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
      "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:G1A",
-   "quote": {
-    "price": 62.6,
-    "pct": 5.65,
-    "cur": "EUR",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
-   }
-  },
-  {
-   "symbol": "005930.KS",
-   "name": "Samsung",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,1 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 6 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
     }
    ],
-   "tv_symbol": "KRX:005930",
    "quote": {
-    "price": 260500.0,
-    "pct": 6.15,
-    "cur": "KRW",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
+    "price": 82.13,
+    "pct": 3.28,
+    "cur": "USD",
+    "as_of": "2026-07-23T06:33:45.182540+00:00"
    },
    "earnings": {
-    "date": "2026-07-29",
-    "distance_days": 6,
-    "zeit": "tbd"
+    "date": "2026-07-21",
+    "distance_days": -2,
+    "zeit": "bmo"
    }
   },
   {
@@ -261,15 +201,15 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
+     "value": "4 Videos in 3 Tagen",
      "weight": 20
     }
    ],
    "quote": {
-    "price": 346.55,
-    "pct": -0.17,
+    "price": 342.09,
+    "pct": -1.46,
     "cur": "USD",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
+    "as_of": "2026-07-23T06:33:45.182540+00:00"
    },
    "earnings": {
     "date": "2026-07-22",
@@ -278,23 +218,17 @@
    }
   },
   {
-   "symbol": "ENR.DE",
-   "name": "Siemens Energy",
-   "score": 50,
+   "symbol": "TSLA",
+   "name": "Tesla",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "content_velocity",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,7 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -303,45 +237,16 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:ENR",
    "quote": {
-    "price": 152.32,
-    "pct": -3.68,
-    "cur": "EUR",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
-   }
-  },
-  {
-   "symbol": "SAP.DE",
-   "name": "SAP",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,2 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    }
-   ],
-   "tv_symbol": "XETR:SAP",
-   "quote": {
-    "price": 132.04,
-    "pct": -3.21,
-    "cur": "EUR",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
+    "price": 374.01,
+    "pct": -1.3,
+    "cur": "USD",
+    "as_of": "2026-07-23T06:33:45.182540+00:00"
    },
    "earnings": {
-    "date": "2026-07-23",
-    "distance_days": 0,
-    "zeit": "tbd"
+    "date": "2026-07-22",
+    "distance_days": -1,
+    "zeit": "amc"
    }
   },
   {
@@ -354,7 +259,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,9 %",
+     "value": "+3,5 %",
      "weight": 15
     },
     {
@@ -368,6 +273,38 @@
     "date": "2026-07-22",
     "distance_days": -1,
     "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,7 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    }
+   ],
+   "quote": {
+    "price": 102.62,
+    "pct": -2.68,
+    "cur": "USD",
+    "as_of": "2026-07-23T06:33:45.182540+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-23",
+    "distance_days": 0,
+    "zeit": "amc"
    }
   }
  ]
