@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-22T23:20:35.035365Z",
+  "generated_at": "2026-07-23T00:20:27.484787Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 130,
+  "symbols_total": 133,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -42,7 +42,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     },
     {
@@ -61,7 +61,7 @@
    },
    "earnings": {
     "date": "2026-07-29",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "tbd"
    }
   },
@@ -115,7 +115,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 6 Tagen",
+     "value": "Earnings in 5 Tagen",
      "weight": 20
     },
     {
@@ -134,46 +134,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 6,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "SAP.DE",
-   "name": "SAP",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,2 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings morgen",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:SAP",
-   "quote": {
-    "price": 132.04,
-    "pct": -3.21,
-    "cur": "EUR",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-23",
-    "distance_days": 1,
+    "distance_days": 5,
     "zeit": "tbd"
    }
   },
@@ -261,7 +222,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     },
     {
@@ -280,78 +241,8 @@
    },
    "earnings": {
     "date": "2026-07-29",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "GM",
-   "name": "General Motors",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,9 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 81.86,
-    "pct": 2.94,
-    "cur": "USD",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-21",
-    "distance_days": -1,
-    "zeit": "bmo"
-   }
-  },
-  {
-   "symbol": "TSLA",
-   "name": "Tesla",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 375.4,
-    "pct": -0.93,
-    "cur": "USD",
-    "as_of": "2026-07-22T18:35:08.032922+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-22",
-    "distance_days": 0,
-    "zeit": "amc"
    }
   },
   {
@@ -364,7 +255,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -382,7 +273,7 @@
    },
    "earnings": {
     "date": "2026-07-22",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "amc"
    }
   },
@@ -421,11 +312,44 @@
    }
   },
   {
+   "symbol": "SAP.DE",
+   "name": "SAP",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,2 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    }
+   ],
+   "tv_symbol": "XETR:SAP",
+   "quote": {
+    "price": 132.04,
+    "pct": -3.21,
+    "cur": "EUR",
+    "as_of": "2026-07-22T18:35:08.032922+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-23",
+    "distance_days": 0,
+    "zeit": "tbd"
+   }
+  },
+  {
    "symbol": "T",
    "name": "AT&T",
    "score": 50,
    "priority": "medium",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -436,13 +360,13 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     }
    ],
    "earnings": {
     "date": "2026-07-22",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "tbd"
    }
   }
