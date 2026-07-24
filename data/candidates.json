@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-07-23T06:26:41.125696Z",
-    "trading_day": "2026-07-22",
+    "generated_at": "2026-07-24T06:19:47.256214Z",
+    "trading_day": "2026-07-23",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-07-23T06:26:41.125696Z"
+    "as_of": "2026-07-24T06:19:47.256214Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "JNJ",
-      "name": "Johnson & Johnson",
-      "sector": "Health Care",
-      "as_of": "2026-07-22T13:30:00Z",
+      "ticker": "GS",
+      "name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financials",
+      "as_of": "2026-07-23T13:30:00Z",
       "quote": {
-        "price": 255.63,
+        "price": 1074.72,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/JNJ",
-        "as_of": "2026-07-22T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/GS",
+        "as_of": "2026-07-23T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -46,42 +46,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 11
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 253.11,
-        "entry_high": 255.63,
-        "stop": 245.48,
-        "target": 275.93,
+        "entry_low": 1056.72,
+        "entry_high": 1074.72,
+        "stop": 1011.1,
+        "target": 1201.97,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-01",
-              "price": 220.84
+              "date": "2026-06-10",
+              "price": 1000.04
             },
             "b": {
-              "date": "2026-06-11",
-              "price": 241.6
+              "date": "2026-06-18",
+              "price": 1125.0
             },
             "c": {
-              "date": "2026-06-22",
-              "price": 227.5
+              "date": "2026-07-01",
+              "price": 1003.0
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 248.26
+              "price": 1127.96
             },
             {
               "ratio": 1.272,
-              "price": 253.91
+              "price": 1161.95
             },
             {
               "ratio": 1.618,
-              "price": 261.09
+              "price": 1205.19
             }
           ]
         }
@@ -92,13 +92,13 @@
       "ticker": "NEE",
       "name": "NextEra Energy, Inc.",
       "sector": "Utilities",
-      "as_of": "2026-07-22T13:30:00Z",
+      "as_of": "2026-07-23T13:30:00Z",
       "quote": {
-        "price": 89.41,
+        "price": 89.79,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/NEE",
-        "as_of": "2026-07-22T13:30:00Z"
+        "as_of": "2026-07-23T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -120,10 +120,10 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 88.86,
-        "entry_high": 89.41,
-        "stop": 86.93,
-        "target": 94.44,
+        "entry_low": 89.26,
+        "entry_high": 89.79,
+        "stop": 87.29,
+        "target": 95.91,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -159,156 +159,16 @@
     },
     {
       "rank": 3,
-      "ticker": "CAT",
-      "name": "Caterpillar Inc.",
-      "sector": "Industrials",
-      "as_of": "2026-07-22T13:30:00Z",
-      "quote": {
-        "price": 889.31,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/CAT",
-        "as_of": "2026-07-22T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 870.16,
-        "entry_high": 889.31,
-        "stop": 819.51,
-        "target": 1073.46,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-06-10",
-              "price": 854.73
-            },
-            "b": {
-              "date": "2026-06-30",
-              "price": 1073.46
-            },
-            "c": {
-              "date": "2026-07-07",
-              "price": 909.53
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 1128.26
-            },
-            {
-              "ratio": 1.272,
-              "price": 1187.75
-            },
-            {
-              "ratio": 1.618,
-              "price": 1263.44
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 4,
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "as_of": "2026-07-22T13:30:00Z",
-      "quote": {
-        "price": 1163.01,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/LLY",
-        "as_of": "2026-07-22T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 1145.98,
-        "entry_high": 1163.01,
-        "stop": 1099.38,
-        "target": 1290.27,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-06-23",
-              "price": 1079.22
-            },
-            "b": {
-              "date": "2026-07-07",
-              "price": 1249.45
-            },
-            "c": {
-              "date": "2026-07-15",
-              "price": 1134.4
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 1304.63
-            },
-            {
-              "ratio": 1.272,
-              "price": 1350.93
-            },
-            {
-              "ratio": 1.618,
-              "price": 1409.83
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 5,
       "ticker": "QCOM",
       "name": "QUALCOMM Incorporated",
       "sector": "Information Technology",
-      "as_of": "2026-07-22T13:30:00Z",
+      "as_of": "2026-07-23T13:30:00Z",
       "quote": {
-        "price": 175.63,
+        "price": 171.11,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/QCOM",
-        "as_of": "2026-07-22T13:30:00Z"
+        "as_of": "2026-07-23T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -330,10 +190,10 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 171.96,
-        "entry_high": 175.63,
-        "stop": 158.37,
-        "target": 210.14,
+        "entry_low": 168.36,
+        "entry_high": 171.11,
+        "stop": 155.08,
+        "target": 203.16,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -362,6 +222,145 @@
             {
               "ratio": 1.618,
               "price": 394.74
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices, Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-07-23T13:30:00Z",
+      "quote": {
+        "price": 539.69,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/AMD",
+        "as_of": "2026-07-23T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "near",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 8
+      },
+      "interest_status": "position_or_interest",
+      "levels": {
+        "entry_low": 524.37,
+        "entry_high": 539.69,
+        "stop": 478.29,
+        "target": 662.49,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-06-29",
+              "price": 495.35
+            },
+            "b": {
+              "date": "2026-06-30",
+              "price": 584.73
+            },
+            "c": {
+              "date": "2026-07-08",
+              "price": 498.15
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 587.53
+            },
+            {
+              "ratio": 1.272,
+              "price": 611.84
+            },
+            {
+              "ratio": 1.618,
+              "price": 642.77
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Health Care",
+      "as_of": "2026-07-23T13:30:00Z",
+      "quote": {
+        "price": 259.27,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/JNJ",
+        "as_of": "2026-07-23T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "near",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 8
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 256.33,
+        "entry_high": 259.27,
+        "stop": 248.73,
+        "target": 280.35,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-06-01",
+              "price": 220.84
+            },
+            "b": {
+              "date": "2026-06-11",
+              "price": 241.6
+            },
+            "c": {
+              "date": "2026-06-22",
+              "price": 227.5
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 248.26
+            },
+            {
+              "ratio": 1.272,
+              "price": 253.91
+            },
+            {
+              "ratio": 1.618,
+              "price": 261.09
             }
           ]
         }
