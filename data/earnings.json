@@ -1,8 +1,8 @@
 {
- "updated": "2026-07-24T05:01:12.152147+00:00",
+ "updated": "2026-07-25T05:01:12.004951+00:00",
  "window": {
-  "from": "2026-07-21",
-  "to": "2026-08-14"
+  "from": "2026-07-22",
+  "to": "2026-08-15"
  },
  "universe_meta": {
   "indizes": [
@@ -21,48 +21,6 @@
   "stand": "2026-06-25"
  },
  "eintraege": [
-  {
-   "date": "2026-07-21",
-   "ticker": "0941.HK",
-   "name": "China Mobile",
-   "index": "HSI",
-   "region": "HK",
-   "branche": "Telekommunikation",
-   "zeit": "tbd",
-   "periode": "",
-   "eps_est": null,
-   "rev_est": 276929000000,
-   "status": "scheduled",
-   "eps_act": null,
-   "rev_act": null,
-   "surprise_pct": null,
-   "reaktion_pct": null,
-   "confirmed": false,
-   "source": "yahoo",
-   "source_url": "https://finance.yahoo.com/quote/0941.HK",
-   "as_of": "2026-07-17T05:01:10.058020+00:00"
-  },
-  {
-   "date": "2026-07-21",
-   "ticker": "GM",
-   "name": "General Motors",
-   "index": "S&P 500",
-   "region": "US",
-   "branche": "Automobil",
-   "zeit": "bmo",
-   "periode": "Q2 FY26",
-   "eps_est": 3.279,
-   "rev_est": 48161222452,
-   "status": "scheduled",
-   "eps_act": null,
-   "rev_act": null,
-   "surprise_pct": null,
-   "reaktion_pct": null,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/GM",
-   "as_of": "2026-07-12T05:01:21.873286+00:00"
-  },
   {
    "date": "2026-07-22",
    "ticker": "DB1.DE",
@@ -292,7 +250,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/005380.KS",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-23",
@@ -313,7 +271,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/207940.KS",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-23",
@@ -492,17 +450,17 @@
    "branche": "Automobil",
    "zeit": "tbd",
    "periode": "",
-   "eps_est": 4.83,
-   "rev_est": 81463385800,
-   "status": "scheduled",
-   "eps_act": null,
+   "eps_est": 5.62,
+   "rev_est": 81117988000,
+   "status": "reported",
+   "eps_act": 2.56,
    "rev_act": null,
-   "surprise_pct": null,
+   "surprise_pct": -47.0,
    "reaktion_pct": null,
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/VOW3.DE",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-24",
@@ -513,17 +471,17 @@
    "branche": "Chemie",
    "zeit": "tbd",
    "periode": "",
-   "eps_est": null,
-   "rev_est": 682979875000,
-   "status": "scheduled",
-   "eps_act": null,
+   "eps_est": 67.6953,
+   "rev_est": 717632600000,
+   "status": "reported",
+   "eps_act": 70.39,
    "rev_act": null,
-   "surprise_pct": null,
-   "reaktion_pct": null,
+   "surprise_pct": 3.98,
+   "reaktion_pct": -3.85,
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/4063.T",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-24",
@@ -649,7 +607,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/MBG.DE",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-28",
@@ -670,7 +628,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/6861.T",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-28",
@@ -691,7 +649,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/000660.KS",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-28",
@@ -880,7 +838,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/AIR.DE",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-29",
@@ -901,7 +859,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/BAS.DE",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-29",
@@ -922,7 +880,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/DBK.DE",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-29",
@@ -943,7 +901,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/P911.DE",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-29",
@@ -955,7 +913,7 @@
    "zeit": "tbd",
    "periode": "",
    "eps_est": 11032.471,
-   "rev_est": 170626256720000,
+   "rev_est": 171224791160000,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -964,7 +922,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/005930.KS",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-29",
@@ -985,7 +943,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/2308.TW",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-29",
@@ -1027,7 +985,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/2303.TW",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-29",
@@ -1195,7 +1153,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/ADS.DE",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-30",
@@ -1206,7 +1164,7 @@
    "branche": "Automobil",
    "zeit": "tbd",
    "periode": "",
-   "eps_est": 2.0598,
+   "eps_est": 1.9499,
    "rev_est": 30838434710,
    "status": "scheduled",
    "eps_act": null,
@@ -1216,7 +1174,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/BMW.DE",
-   "as_of": "2026-07-23T05:01:09.370595+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-30",
@@ -1237,7 +1195,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/HEI.DE",
-   "as_of": "2026-07-23T05:01:09.370595+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-30",
@@ -1258,7 +1216,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/MTX.DE",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-30",
@@ -1279,7 +1237,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/NEM.DE",
-   "as_of": "2026-07-23T05:01:09.370595+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-30",
@@ -1291,7 +1249,7 @@
    "zeit": "tbd",
    "periode": "",
    "eps_est": null,
-   "rev_est": 759306500000,
+   "rev_est": 754226993330,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -1300,7 +1258,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/8035.T",
-   "as_of": "2026-07-23T05:01:09.370595+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-30",
@@ -1321,7 +1279,7 @@
    "confirmed": false,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/005490.KS",
-   "as_of": "2026-07-23T05:01:09.370595+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-07-30",
@@ -2088,8 +2046,8 @@
    "branche": "Halbleiter",
    "zeit": "tbd",
    "periode": "",
-   "eps_est": 0.4476,
-   "rev_est": 4133571650,
+   "eps_est": 0.4485,
+   "rev_est": 4135779990,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -2098,7 +2056,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/IFX.DE",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-05",
@@ -2140,7 +2098,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/ENR.DE",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-05",
@@ -2161,7 +2119,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/VNA.DE",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-05",
@@ -2182,7 +2140,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/2412.TW",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-05",
@@ -2518,7 +2476,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/ABNB",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-06",
@@ -2539,7 +2497,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/COP",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-06",
@@ -2707,7 +2665,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/SMCI",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-12",
@@ -2728,7 +2686,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/BNR.DE",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-12",
@@ -2749,7 +2707,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/EOAN.DE",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-12",
@@ -2770,7 +2728,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/HNR1.DE",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-12",
@@ -2812,7 +2770,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/0700.HK",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-12",
@@ -2824,16 +2782,16 @@
    "zeit": "tbd",
    "periode": "",
    "eps_est": 6.106,
-   "rev_est": 962806251380,
+   "rev_est": 971948258070,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
    "surprise_pct": null,
    "reaktion_pct": null,
-   "confirmed": false,
+   "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/2382.TW",
-   "as_of": "2026-07-22T05:01:07.516127+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-13",
@@ -2896,7 +2854,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/AMAT",
-   "as_of": "2026-07-24T05:01:09.276516+00:00"
+   "as_of": "2026-07-25T05:01:09.195274+00:00"
   },
   {
    "date": "2026-08-14",
