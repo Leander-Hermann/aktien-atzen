@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-25T04:20:28.508504Z",
+  "generated_at": "2026-07-25T05:20:30.188240Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -70,7 +70,7 @@
    "name": "Volkswagen",
    "score": 70,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
