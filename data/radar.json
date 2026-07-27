@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-26T23:20:25.623075Z",
+  "generated_at": "2026-07-27T00:20:30.190845Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 136,
+  "symbols_total": 134,
   "with_quote_data": 60,
   "sources": [
    "watchlist",
@@ -21,99 +21,10 @@
  },
  "items": [
   {
-   "symbol": "SAP.DE",
-   "name": "SAP",
-   "score": 95,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:SAP",
-   "quote": {
-    "price": 140.2,
-    "pct": 9.26,
-    "cur": "EUR",
-    "as_of": "2026-07-26T18:32:12.892883+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-23",
-    "distance_days": -3,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "INTC",
-   "name": "Intel",
-   "score": 95,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 92.32,
-    "pct": -7.89,
-    "cur": "USD",
-    "as_of": "2026-07-26T18:32:12.892883+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-23",
-    "distance_days": -3,
-    "zeit": "amc"
-   }
-  },
-  {
    "symbol": "000660.KS",
    "name": "SK Hynix",
-   "score": 65,
-   "priority": "medium",
+   "score": 80,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -125,8 +36,8 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
+     "value": "Earnings morgen",
+     "weight": 35
     }
    ],
    "tv_symbol": "KRX:000660",
@@ -138,7 +49,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 2,
+    "distance_days": 1,
     "zeit": "tbd"
    }
   },
@@ -158,7 +69,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 3 Tagen",
+     "value": "Earnings in 2 Tagen",
      "weight": 20
     }
    ],
@@ -171,119 +82,63 @@
    },
    "earnings": {
     "date": "2026-07-29",
-    "distance_days": 3,
+    "distance_days": 2,
     "zeit": "tbd"
    }
   },
   {
-   "symbol": "TMUS",
-   "name": "T-Mobile US",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,7 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 180.09,
-    "pct": 5.67,
-    "cur": "USD",
-    "as_of": "2026-07-26T18:32:12.892883+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-23",
-    "distance_days": -3,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "NOKIA.HE",
-   "name": "Nokia",
-   "score": 55,
+   "symbol": "SAP.DE",
+   "name": "SAP",
+   "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-5,5 %",
-     "weight": 30
+     "value": "+9,3 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
      "value": "1,7× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
-   "tv_symbol": "OMXHEX:NOKIA",
+   "tv_symbol": "XETR:SAP",
    "quote": {
-    "price": 8.222,
-    "pct": -5.52,
+    "price": 140.2,
+    "pct": 9.26,
     "cur": "EUR",
     "as_of": "2026-07-26T18:32:12.892883+00:00"
    }
   },
   {
-   "symbol": "VOW3.DE",
-   "name": "Volkswagen",
-   "score": 50,
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 60,
    "priority": "medium",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,0 %",
-     "weight": 15
+     "value": "-7,9 %",
+     "weight": 45
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
     }
    ],
-   "tv_symbol": "XETR:VOW3",
    "quote": {
-    "price": 71.46,
-    "pct": -2.03,
-    "cur": "EUR",
+    "price": 92.32,
+    "pct": -7.89,
+    "cur": "USD",
     "as_of": "2026-07-26T18:32:12.892883+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-24",
-    "distance_days": -2,
-    "zeit": "tbd"
    }
   }
  ]
