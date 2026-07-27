@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T06:20:26.482855Z",
+  "generated_at": "2026-07-27T07:20:32.679274Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 134,
-  "with_quote_data": 60,
+  "symbols_total": 133,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -21,76 +21,10 @@
  },
  "items": [
   {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-8,3 %",
-     "weight": 45
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings morgen",
-     "weight": 35
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1759000.0,
-    "pct": -8.34,
-    "cur": "KRW",
-    "as_of": "2026-07-26T18:32:12.892883+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-28",
-    "distance_days": 1,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "005930.KS",
-   "name": "Samsung",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,6 %",
-     "weight": 45
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "KRX:005930",
-   "quote": {
-    "price": 249500.0,
-    "pct": -7.59,
-    "cur": "KRW",
-    "as_of": "2026-07-26T18:32:12.892883+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-29",
-    "distance_days": 2,
-    "zeit": "tbd"
-   }
-  },
-  {
    "symbol": "SAP.DE",
    "name": "SAP",
-   "score": 60,
-   "priority": "medium",
+   "score": 70,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -104,6 +38,12 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "1,7× Durchschnitt",
      "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "tv_symbol": "XETR:SAP",
@@ -111,7 +51,7 @@
     "price": 140.2,
     "pct": 9.26,
     "cur": "EUR",
-    "as_of": "2026-07-26T18:32:12.892883+00:00"
+    "as_of": "2026-07-27T06:33:25.519379+00:00"
    }
   },
   {
@@ -138,7 +78,79 @@
     "price": 92.32,
     "pct": -7.89,
     "cur": "USD",
-    "as_of": "2026-07-26T18:32:12.892883+00:00"
+    "as_of": "2026-07-27T06:33:25.519379+00:00"
+   }
+  },
+  {
+   "symbol": "NEM.DE",
+   "name": "Nemetschek",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,0 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 3 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:NEM",
+   "quote": {
+    "price": 57.15,
+    "pct": 6.03,
+    "cur": "EUR",
+    "as_of": "2026-07-27T06:33:25.519379+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-30",
+    "distance_days": 3,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,2 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    }
+   ],
+   "tv_symbol": "KRX:000660",
+   "quote": {
+    "price": 1816000.0,
+    "pct": 3.24,
+    "cur": "KRW",
+    "as_of": "2026-07-27T06:33:25.519379+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-28",
+    "distance_days": 1,
+    "zeit": "tbd"
    }
   }
  ]
