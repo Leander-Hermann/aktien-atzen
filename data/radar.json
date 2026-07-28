@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T23:20:28.357295Z",
+  "generated_at": "2026-07-28T00:20:28.301395Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 133,
+  "symbols_total": 142,
   "with_quote_data": 57,
   "sources": [
    "watchlist",
@@ -25,7 +25,7 @@
    "name": "SK Hynix",
    "score": 80,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -36,7 +36,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     }
    ],
@@ -49,7 +49,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "tbd"
    }
   },
@@ -85,6 +85,38 @@
     "pct": 7.9,
     "cur": "EUR",
     "as_of": "2026-07-27T18:35:03.955207+00:00"
+   }
+  },
+  {
+   "symbol": "AMD",
+   "name": "AMD",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,4 %",
+     "weight": 45
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 7 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 483.08,
+    "pct": -7.45,
+    "cur": "USD",
+    "as_of": "2026-07-27T18:35:03.955207+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-04",
+    "distance_days": 7,
+    "zeit": "amc"
    }
   },
   {
@@ -137,7 +169,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     },
     {
@@ -155,7 +187,7 @@
    },
    "earnings": {
     "date": "2026-08-03",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "tbd"
    }
   },
@@ -175,7 +207,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 3 Tagen",
+     "value": "Earnings in 2 Tagen",
      "weight": 20
     },
     {
@@ -194,7 +226,7 @@
    },
    "earnings": {
     "date": "2026-07-30",
-    "distance_days": 3,
+    "distance_days": 2,
     "zeit": "tbd"
    }
   },
@@ -258,7 +290,7 @@
    "name": "Microsoft",
    "score": 50,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -269,7 +301,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     }
    ],
@@ -281,7 +313,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "amc"
    }
   }
