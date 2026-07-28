@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-07-25T06:12:03.250938Z",
-    "trading_day": "2026-07-24",
+    "generated_at": "2026-07-28T06:19:32.786306Z",
+    "trading_day": "2026-07-27",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-07-25T06:12:03.250938Z"
+    "as_of": "2026-07-28T06:19:32.786306Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "SBUX",
-      "name": "Starbucks Corporation",
-      "sector": "Consumer Discretionary",
-      "as_of": "2026-07-24T13:30:00Z",
+      "ticker": "CVX",
+      "name": "Chevron Corporation",
+      "sector": "Energy",
+      "as_of": "2026-07-27T13:30:00Z",
       "quote": {
-        "price": 103.25,
+        "price": 190.0,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/SBUX",
-        "as_of": "2026-07-24T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/CVX",
+        "as_of": "2026-07-27T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -51,38 +51,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 102.27,
-        "entry_high": 103.25,
-        "stop": 98.92,
-        "target": 111.91,
+        "entry_low": 188.77,
+        "entry_high": 190.0,
+        "stop": 183.88,
+        "target": 214.71,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-05",
-              "price": 93.64
+              "date": "2026-05-07",
+              "price": 179.53
             },
             "b": {
-              "date": "2026-06-12",
-              "price": 103.69
+              "date": "2026-05-19",
+              "price": 198.87
             },
             "c": {
-              "date": "2026-07-06",
-              "price": 100.09
+              "date": "2026-05-29",
+              "price": 180.4
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 110.14
+              "price": 199.74
             },
             {
               "ratio": 1.272,
-              "price": 112.87
+              "price": 205.0
             },
             {
               "ratio": 1.618,
-              "price": 116.35
+              "price": 211.69
             }
           ]
         }
@@ -90,16 +90,155 @@
     },
     {
       "rank": 2,
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc. (Class A)",
+      "sector": "Communication Services",
+      "as_of": "2026-07-27T13:30:00Z",
+      "quote": {
+        "price": 326.56,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/GOOGL",
+        "as_of": "2026-07-27T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 8
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 321.31,
+        "entry_high": 326.56,
+        "stop": 306.62,
+        "target": 373.16,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-06-26",
+              "price": 330.2
+            },
+            "b": {
+              "date": "2026-07-07",
+              "price": 373.16
+            },
+            "c": {
+              "date": "2026-07-09",
+              "price": 351.08
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 394.04
+            },
+            {
+              "ratio": 1.272,
+              "price": 405.73
+            },
+            {
+              "ratio": 1.618,
+              "price": 420.59
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation",
+      "sector": "Information Technology",
+      "as_of": "2026-07-27T13:30:00Z",
+      "quote": {
+        "price": 196.51,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/NVDA",
+        "as_of": "2026-07-27T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 8
+      },
+      "interest_status": "position_or_interest",
+      "levels": {
+        "entry_low": 192.82,
+        "entry_high": 196.51,
+        "stop": 183.21,
+        "target": 223.11,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-05-04",
+              "price": 194.74
+            },
+            "b": {
+              "date": "2026-05-14",
+              "price": 236.54
+            },
+            "c": {
+              "date": "2026-05-27",
+              "price": 208.78
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 250.58
+            },
+            {
+              "ratio": 1.272,
+              "price": 261.95
+            },
+            {
+              "ratio": 1.618,
+              "price": 276.41
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 4,
       "ticker": "NEE",
       "name": "NextEra Energy, Inc.",
       "sector": "Utilities",
-      "as_of": "2026-07-24T13:30:00Z",
+      "as_of": "2026-07-27T13:30:00Z",
       "quote": {
-        "price": 89.78,
+        "price": 88.83,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/NEE",
-        "as_of": "2026-07-24T13:30:00Z"
+        "as_of": "2026-07-27T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -121,9 +260,9 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 89.24,
-        "entry_high": 89.78,
-        "stop": 87.19,
+        "entry_low": 88.01,
+        "entry_high": 88.83,
+        "stop": 85.94,
         "target": 95.91,
         "horizon_sessions": 30,
         "fib": {
@@ -159,86 +298,17 @@
       }
     },
     {
-      "rank": 3,
-      "ticker": "HON",
-      "name": "Honeywell International Inc.",
-      "sector": "Industrials",
-      "as_of": "2026-07-24T13:30:00Z",
-      "quote": {
-        "price": 243.15,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/HON",
-        "as_of": "2026-07-24T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 240.01,
-        "entry_high": 243.15,
-        "stop": 229.85,
-        "target": 269.75,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-06-10",
-              "price": 215.54
-            },
-            "b": {
-              "date": "2026-06-29",
-              "price": 252.0
-            },
-            "c": {
-              "date": "2026-07-09",
-              "price": 218.1
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 254.56
-            },
-            {
-              "ratio": 1.272,
-              "price": 264.47
-            },
-            {
-              "ratio": 1.618,
-              "price": 277.09
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 4,
+      "rank": 5,
       "ticker": "PLD",
       "name": "Prologis, Inc.",
       "sector": "Real Estate",
-      "as_of": "2026-07-24T13:30:00Z",
+      "as_of": "2026-07-27T13:30:00Z",
       "quote": {
-        "price": 147.63,
+        "price": 147.26,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/PLD",
-        "as_of": "2026-07-24T13:30:00Z"
+        "as_of": "2026-07-27T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -259,10 +329,10 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 146.28,
-        "entry_high": 147.63,
-        "stop": 141.69,
-        "target": 159.5,
+        "entry_low": 146.31,
+        "entry_high": 147.26,
+        "stop": 141.87,
+        "target": 158.04,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -291,76 +361,6 @@
             {
               "ratio": 1.618,
               "price": 152.05
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 5,
-      "ticker": "SO",
-      "name": "The Southern Company",
-      "sector": "Utilities",
-      "as_of": "2026-07-24T13:30:00Z",
-      "quote": {
-        "price": 97.25,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/SO",
-        "as_of": "2026-07-24T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 96.65,
-        "entry_high": 97.25,
-        "stop": 94.45,
-        "target": 102.84,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-05-08",
-              "price": 91.61
-            },
-            "b": {
-              "date": "2026-05-19",
-              "price": 94.95
-            },
-            "c": {
-              "date": "2026-06-17",
-              "price": 92.31
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 95.65
-            },
-            {
-              "ratio": 1.272,
-              "price": 96.56
-            },
-            {
-              "ratio": 1.618,
-              "price": 97.71
             }
           ]
         }
