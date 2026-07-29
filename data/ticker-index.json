@@ -1,6 +1,920 @@
 {
- "updated": "2026-07-29T06:32:34.529739+00:00",
+ "updated": "2026-07-29T18:35:29.418763+00:00",
  "ticker": {
+  "000660.KS": {
+   "name": "SK Hynix",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "wOWTV_pDNkE",
+     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=134s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SK Hynix meldet einen Rekord-Betriebsgewinn, verfehlt damit jedoch die Erwartungen. Höhere Investitionsausgaben belasten zusätzlich, sodass die Aktie vorbörslich rund 15 Prozent verliert und seit dem…",
+     "einordnung": "Ein Rekordgewinn schützt eine stark erwartungsgetriebene Halbleiteraktie nicht vor einer Neubewertung, wenn Investitionen und Ausblick die hohen Erwartungen nicht erfüllen. Nach einem derart scharfen…",
+     "figures": "Betriebsgewinn 60,6 Billionen Won beziehungsweise 36,5 Milliarden Euro, plus 557 Prozent zum Vorjahr; Aktie vorbörslich rund minus 15 Prozent; seit dem Rekordhoch rund minus 60 Prozent"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=3502s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "SK Hynix verfehlt den Konsens leicht, obwohl die fundamentalen Rekordzahlen sehr stark ausfallen. Nach einem Kurseinbruch von 58 Prozent in 23 Tagen sprechen eine Bruttomarge von 83 Prozent, die HBM-…",
+     "einordnung": "Die Diskrepanz zwischen Rekordprofitabilität und massivem Kursverlust deutet auf eine Bereinigung überzogener Erwartungen und Zwangsverkäufe hin, nicht automatisch auf einen fundamentalen Einbruch. D…",
+     "figures": "Umsatz plus 51 Prozent gegenüber dem Vorquartal, operativer Gewinn plus 61 Prozent gegenüber dem Vorquartal, Nettogewinn plus 133 Prozent gegenüber dem Vorquartal, Bruttomarge 83 Prozent, EBITDA-Marg…"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=122s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Egmond Haidt warnt seit dem 17. Juli, dass die Blase bei Speicherchip-Aktien geplatzt sei. Trotz einer kurzen Erholung nach dem AMD-Deal stuft er die Aktie klar negativ ein.",
+     "einordnung": "Die Skepsis ist angesichts der extrem zyklischen Speicherbranche und des abrupt gedrehten Sentiments nachvollziehbar. Entscheidend bleibt, ob der KI-Ausbau die Nachfrage dauerhaft stützt oder ob Über…"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "VXiNR-XoDz0",
+     "url": "https://www.youtube.com/watch?v=VXiNR-XoDz0&t=3412s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "SK Hynix verliert laut Host im GDR 8 Prozent und bleibt unter Druck. Trotz einer neuen Kooperation mit Nvidia für HBM4 sieht der Host bei 700 US-Dollar, an der 200-Tage-Linie, eine wichtige charttech…",
+     "einordnung": "Die Nvidia-Kooperation ist strategisch positiv, kann den kurzfristigen Verkaufsdruck bei Speicherwerten aber nicht automatisch stoppen. Solange die 200-Tage-Linie nicht verteidigt ist, bleibt das Cha…",
+     "figures": "GDR -8 Prozent; Unterstützung bei 700 USD; mögliches Abwärtsrisiko bis 700 USD von 23 Prozent."
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=511s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "SK Hynix steigt laut Egmond um 45 Prozent, was er im gegebenen Marktumfeld für völlig unlogisch hält.",
+     "einordnung": "Die starke Gegenbewegung illustriert die extreme Uneinheitlichkeit des KI- und Halbleitermarktes. Sie kann auf sehr hohe Erwartungen an Speicherbedarf hindeuten, steht aber im Video bewusst im Kontra…",
+     "figures": "plus 45 Prozent"
+    },
+    {
+     "date": "2026-07-22",
+     "video_id": "CnKfJ6qJVrA",
+     "url": "https://www.youtube.com/watch?v=CnKfJ6qJVrA&t=2944s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "SK Hynix fiel um 5,6 Prozent, nachdem Gerüchte über eine Intel-Übernahme dementiert wurden. Der Host bleibt wegen der langfristig erwarteten KI-Nachfrage bullish und betrachtet den Rücksetzer als Kau…",
+     "einordnung": "Die Reaktion zeigt, wie stark kurzfristiges Sentiment und Übernahmespekulationen die Bewertung von Halbleiterwerten bewegen können. Langfristig bleibt die KI-Nachfrage ein stützender Faktor, doch der…",
+     "figures": "Kursrückgang 5,6 Prozent"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "J6gUTUPHems",
+     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=140s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Egmond hält die Erholung der Aktie für technisch und erwartet nach einer Seitwärtsphase eine weitere Abwärtsbewegung, weil die Blase bei Speicherchip-Herstellern aus seiner Sicht geplatzt ist.",
+     "einordnung": "Die Kombination aus extremer Vorbewegung und zyklischer Gewinnabhängigkeit macht den Wert besonders anfällig für Gewinnmitnahmen. Die aktuelle Erholung ändert an diesem Risikoprofil zunächst wenig.",
+     "figures": "In New York lag der Aufschlag bei 50 Prozent; anschließend gab es einen Tagesgewinn von 5 Prozent. Für 2027 wird ein EBIT von 418,28 Billionen Won geschätzt."
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=204s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Nach dem Kursrutsch der vergangenen Tage sprang SK Hynix am 14. Juli um 17 Prozent nach oben. Egmond befürchtet dennoch, dass die Blase bei Speicherchips geplatzt sein könnte, und mahnt zur Vorsicht.",
+     "einordnung": "Der starke Gegenschlag ändert zunächst wenig am übergeordneten Risiko: Ein Kurssprung nach einem Einbruch kann ebenso technische Gegenbewegung wie fundamentale Entwarnung sein. Die Marktdaten zeigen…",
+     "figures": "Tagesplus 17 Prozent; Börsendebüt 168,01 US-Dollar, plus 12,8 Prozent"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "8EytmuiphH4",
+     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=2835s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Das Nasdaq-Debüt startete bei 170 US-Dollar und endete bei 168,33 US-Dollar; anschließend fiel der Wert in Seoul auf etwa 150 US-Dollar und verlor dort 15 Prozent. Die Emission war siebenfach überzei…",
+     "einordnung": "Der starke Rückgang ist weniger ein Beweis gegen die KI-Story als ein Hinweis auf extrem hohe Erwartungen und Gewinnmitnahmen nach dem viel beachteten US-Start. Das niedrige Forward-KGV wirkt attrakt…",
+     "figures": "IPO-Preis 149 US-Dollar, Eröffnung 170 US-Dollar, Schlusskurs 168,33 US-Dollar, aktuell etwa 150 US-Dollar, Tagesverlust in Korea 15 Prozent, Emissionserlös 26 Mrd. US-Dollar, 178 Mio. ADRs, siebenfa…"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=980s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "SK Hynix feiert am Freitag sein US-Börsendebüt. Haidt sieht Risiko durch Überinvestitionen und bleibt sehr vorsichtig.",
+     "einordnung": "Ein US-Listing zur Zyklusspitze ist oft ein Verkaufssignal — die Kapitalbeschaffung erfolgt, wenn die Bewertungen am höchsten sind. Die Skepsis ist angebracht."
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=268s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "SK Hynix strebt ein US-Listing mit Kapitalerhöhung von 29,4 Milliarden Dollar an und investiert 516 Milliarden Dollar in Korea. Nach dem Rebalancing sieht Haidt kurzfristig Seitwärtsbewegung.",
+     "einordnung": "Ein US-Listing ist ein kluger Schachzug, um die Bewertungslücke zu Nvidia und Micron zu schließen. Die Kapitalerhöhung bedeutet aber kurzfristig Verwässerung – der Markt muss erst verdauen, dass hier…",
+     "figures": "Kapitalerhöhung 29,4 Mrd USD, Investition 516 Mrd USD"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "F6cTDl0_v6Q",
+     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=228s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "SK Hynix profitiert im Sog von Micron vom Speicherboom und bereitet parallel ein US-Listing über 29 Mrd. USD vor. Der Host betont die Dominanz mit 60% HBM-Marktanteil.",
+     "einordnung": "Mit einem KGV von 6,3 ist SK Hynix deutlich günstiger als Micron bei ähnlichem Zyklus-Hebel. Das US-Listing könnte den 'Korea Discount' teilweise schließen und Kapital für HBM-Kapazitätserweiterungen…",
+     "figures": "KGV 6,3 für 2026/27; 60% HBM-Marktanteil; IPO-Volumen 29 Mrd. USD"
+    }
+   ]
+  },
+  "V": {
+   "name": "Visa",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "wOWTV_pDNkE",
+     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=243s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Visa übertrifft im dritten Geschäftsquartal die Erwartungen. Trotz des starken Wachstums gibt die Aktie vorbörslich leicht nach, was der Host mit Gewinnmitnahmen erklärt; zugleich kündigt das Unterne…",
+     "einordnung": "Visa bleibt ein struktureller Profiteur des Trends zu elektronischen Zahlungen, doch bei einem Qualitätswert reicht gutes Wachstum oft nicht aus, wenn der Markt noch mehr erwartet. Der leichte Kursrü…",
+     "figures": "Umsatz 11,6 Milliarden Euro, plus 14 Prozent; Nettogewinn 6,3 Milliarden Euro, plus 8 Prozent; Rückstellungen von 500 Millionen Euro; Abbau von 7 Prozent der Stellen beziehungsweise 2.600 Arbeitsplät…"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=2396s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Visa meldet solide Zahlen mit 14 Prozent Umsatzwachstum, doch das Zahlungsvolumen bleibt hinter den Erwartungen zurück. Der Ausblick für das Gesamtjahr fällt daher etwas gedämpfter aus.",
+     "einordnung": "Visa bleibt fundamental ein sehr profitables und strukturell wachsendes Zahlungsnetzwerk. Die leichte Enttäuschung beim Volumen ist dennoch wichtig, weil sie direkt die Grundlage für künftiges Umsatz…",
+     "figures": "Umsatz plus 14 Prozent auf 11,6 Mrd. USD, EPS 3,32 USD, plus 11 Prozent und 10 Cent über Erwartung, Zahlungsvolumen plus 10 Prozent, Serviceumsatz 4,9 Mrd. USD, plus 14 Prozent, Datenverarbeitung 6 M…"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "tV-qzX1rLwU",
+     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=2286s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der bullische Ausbruch über 340 US-Dollar hat sich laut Host bestätigt. Visa gilt als qualitativ hochwertiger Titel mit gutem Gewinntrend; eine kleine Position ist bereits offen.",
+     "einordnung": "Visa gehört damit zu den konstruktivsten Charts der Sendung, weil Ausbruch, Qualität und Gewinntrend in dieselbe Richtung zeigen. Nach einem bestätigten Ausbruch bleibt dennoch die Rückeroberung der…",
+     "figures": "340 US-Dollar als Ausbruchsniveau; 370 und 415 US-Dollar als Ziele."
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=3208s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Ausbruch über den Clusterpunkt bei 341 USD mit Dynamik, spricht für mittelfristigen Anstieg.",
+     "einordnung": "Der dynamische Ausbruch über einen Clusterpunkt ist ein hochwertiges Signal. Visa als Zahlungsnetzwerk profitiert von globaler Konsumstärke und Digitalisierung — die Dip-Kauf-Strategie ist für etabli…",
+     "figures": "341 USD (Clusterpunkt), 370 USD, 417 USD (Ziele)"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "zXPxhjz_nX0",
+     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=1588s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Visa zeigt relative Stärke im Finanzsektor. Die Aktie hat eine inverse SKS-Bodenbildung gebildet und testet den Clusterpunkt bei 341-342 Dollar. Ein dynamischer Ausbruch über 342-343 Dollar wäre ein…",
+     "einordnung": "Eine inverse SKS-Bodenbildung ist das Spiegelbild eines bärischen Musters und signalisiert eine Trendwende nach oben. Visa als Konsum-Proxy mit duopolartiger Marktstellung ist fundamental solide – de…",
+     "figures": "317 Dollar (EMA100 Support), 341-342 Dollar (Clusterpunkt/Widerstand)"
+    }
+   ]
+  },
+  "F": {
+   "name": "Ford",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "wOWTV_pDNkE",
+     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=350s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Ford hebt die Gewinnprognose für 2026 an. Obwohl der Quartalsumsatz sinkt, erreicht der Konzern beim Nettoergebnis eine schwarze Null; vorbörslich legt die Aktie wegen der angehobenen Prognose und de…",
+     "einordnung": "Die Anhebung der Prognose ist für einen zyklischen Autobauer das stärkere Signal als der rückläufige Umsatz. Der Kursanstieg bleibt dennoch erklärungsbedürftig, weil die SUV-Stärke zwar den Mix stütz…",
+     "figures": "Vorsteuerergebnis 2026 von 10 bis 11 Milliarden US-Dollar, zuvor 8,5 bis 10,5 Milliarden US-Dollar; Quartalsumsatz 50,2 Milliarden US-Dollar, minus 4 Prozent; Nettoergebnis schwarze Null nach einem V…"
+    }
+   ]
+  },
+  "RWE.DE": {
+   "name": "RWE",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "wOWTV_pDNkE",
+     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=463s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "RWE legt starke Halbjahreszahlen vor und hebt die Prognosen für 2026 und 2027 an. Die Aktie steigt vorbörslich um 2,9 Prozent, nachdem sie bereits am Vortag 4,5 Prozent zugelegt hatte.",
+     "einordnung": "RWE liefert im Vergleich zu den übrigen Werten das klarste positive Gewinnsignal: Nicht nur die Ist-Zahlen, auch der Ausblick wurde angehoben. Nach dem kräftigen Kurssprung ist allerdings ein Teil de…",
+     "figures": "EBITDA im ersten Halbjahr 3,01 Milliarden Euro, plus 41 Prozent; Nettoergebnis 1,26 Milliarden Euro, plus 62 Prozent; EBITDA-Prognose 2026 bis zu 6,35 Milliarden Euro, zuvor 5,8 Milliarden Euro; Nett…"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=702s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Jefferies führt RWE auf einer Favoritenliste, bestätigt die Kaufempfehlung und nennt ein Kursziel von 68 Euro. Als Wachstumstreiber werden Elektrifizierung, Dekarbonisierung und der steigende Energie…",
+     "einordnung": "Die RWE-Story verbindet strukturell steigenden Strombedarf mit dem Ausbau dekarbonisierter Erzeugung und passt damit zu einem langfristigen Infrastrukturthema. Gleichzeitig bleiben Strompreise, Regul…",
+     "figures": "Kursziel 68 Euro"
+    },
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1394s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Relativ stabil im schwachen Markt. UBS hebt Kursziel von 65 auf 66 EUR. KGV 20, nicht billig. Diversifikation ins Netzgeschäft positiv.",
+     "einordnung": "KGV 20 für einen Versorger ist ambitioniert — das Netzgeschäft ist zwar strategisch richtig, aber die Re-Rating-Premise braucht Geduld. Bei 50 EUR wäre die Risiko-Rendite deutlich attraktiver als auf…",
+     "figures": "Kursziel UBS 66 EUR (vorher 65 EUR), KGV 20, Unterstützung 43-44 EUR"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1774s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Fast-Kaufsignal: Noch nicht über 58 EUR ausgebrochen, aber der positive Sektortrend (E.ON bereits ausgebrochen) lässt einen Ausbruch erwarten.",
+     "einordnung": "Das Catch-up-Argument innerhalb des Versorgersektors ist stichhaltig — wenn E.ON ausbricht, zieht RWE meist nach. Der konventionelle Stromgeschäftsanteil bei RWE macht den Titel zyklischer als E.ON,…",
+     "figures": "58 EUR (Clusterpunkt), 62,50 EUR (Ziel), 67-69 EUR (höhere Ziele)"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "RWE will Anteil an Ampion (Höchstspannungsnetz Nordsee-Alpen) von 25,1% auf 55% aufstocken, Kosten ca. 4 Mrd. Euro. Aktie unter Gewinnmitnahmen.",
+     "einordnung": "Eine 4-Mrd.-Euro-Investition in ein Höchstspannungsnetz ist strategisch sinnvoll, aber kurzfristig belastend. Die Aktie reagiert mit Gewinnmitnahmen – das ist typisch für eine Kapitalerhöhung oder gr…",
+     "figures": "25,1% auf 55%, 4 Milliarden Euro"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=1256s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "RWE stockt Anteil an Amprion auf 55% auf, Kaufpreis 3,6 Milliarden Euro, finanziert durch Kapitalerhöhung und Aktienverkauf. Gewinnziel 2031: 4,40 auf 4,55 Euro je Aktie. Kurzfristig seitwärts.",
+     "einordnung": "Die Aufstockung des Amprion-Anteils ist strategisch sinnvoll, weil regulierte Netzbetriebe stabile Erträge liefern, aber die Finanzierung über Kapitalerhöhung und Aktienverkauf bedeutet Verwässerung…",
+     "figures": "3,6 Mrd. Euro Kaufpreis, Anteil 55%, Gewinnziel 4,40-4,55 Euro/Aktie"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "t04FPU9gZbI",
+     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=1496s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "RWE erhöht Anteil an Amprion auf 55% für 3,6 Mrd. €, teilweise über Aktienemission. Schritt in Richtung regulierten Netzbetrieb, stabilisiert Erträge.",
+     "einordnung": "Die Aufstockung der Amprion-Beteiligung ist ein strategisch sinnvoller Schritt hin zu regulierten, planbaren Erträgen. Die Finanzierung über Aktienemission verdünnt jedoch kurzfristig, und bei einem…",
+     "figures": "3,6 Mrd. €, KGV 19, Dividendenrendite 2,4%"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
+     "einordnung": "RWE leidet ebenfalls unter dem Momentum-Wechsel – als Underperformer könnte die Aktie jedoch kurzfristig Rotationsgelder anziehen."
+    }
+   ]
+  },
+  "BAS.DE": {
+   "name": "BASF",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "wOWTV_pDNkE",
+     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=558s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BASF bestätigt die vorläufigen Zahlen und berichtet über einen weiteren deutlichen Stellenabbau. In Ludwigshafen sinkt die Beschäftigtenzahl unter 30.000, während ein neues Aktienrückkaufprogramm ang…",
+     "einordnung": "BASF befindet sich sichtbar in einer Phase der strukturellen Anpassung und nicht in einer klassischen Wachstumsstory. Das Rückkaufprogramm kann den Aktienkurs stützen, ersetzt aber keine überzeugende…",
+     "figures": "7.000 abgebaute Stellen; Beschäftigtenzahl in Ludwigshafen unter 30.000; Aktienrückkaufprogramm bis zu 1 Milliarde Aktien von August 2024 bis April 2027"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "J6gUTUPHems",
+     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=308s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "BASF meldete starke Zahlen für das zweite Quartal, doch die Anhebung der Prognose blieb leicht hinter den Analystenerwartungen zurück und enttäuschte damit den Markt.",
+     "einordnung": "Die operative Überraschung im Quartal ist positiv, wird aber durch den nur vorsichtig angehobenen Ausblick und den negativen Quartals-Free-Cashflow relativiert. Bei einem zyklischen Chemiewert zählt…",
+     "figures": "Umsatz: 17,2 Mrd. Euro gegenüber erwarteten 16,5 Mrd. Euro; bereinigtes EBITDA: 2,4 Mrd. Euro gegenüber erwarteten 2,15 Mrd. Euro; Free Cashflow: minus 0,2 Mrd. Euro. EBITDA-Prognose: 6,9 bis 7,7 Mrd…"
+    },
+    {
+     "date": "2026-07-16",
+     "video_id": "8n4SjPW9E8M",
+     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=612s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "BASF fokussiert sich auf das Kerngeschäft, spaltet die Agrarsparte ab und verkauft das Coatings-Geschäft. Der Host hebt BASF als guten Dividendenzahler hervor und sieht Potenzial über 50.",
+     "einordnung": "Die Neuausrichtung kann den Konzern fokussieren und Kapital freisetzen, ist aber zunächst mit Umbaukosten und Ausführungsrisiken verbunden. Die Dividende bietet einen Puffer, ersetzt bei einem zyklis…",
+     "figures": "Potenzial über 50; konkrete Währung beziehungsweise Kursziel im Video nicht genannt"
+    },
+    {
+     "date": "2026-07-16",
+     "video_id": "l9xly8aiYMM",
+     "url": "https://www.youtube.com/watch?v=l9xly8aiYMM&t=986s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "MWB Research stuft BASF von 'Halten' auf 'Kaufen' hoch. Der vorläufige Umsatz im zweiten Quartal liegt über den Erwartungen, das EBITDA steigt deutlich.",
+     "einordnung": "Die Zahlen sprechen für eine operative Verbesserung, doch BASF bleibt ein zyklischer Chemiewert, bei dem Preis- und Mengeneffekte nicht automatisch dauerhaft sind. Der Hinweis auf die Mitte einer Sei…",
+     "figures": "Kursziel 55 Euro nach zuvor 52 Euro; Umsatz 17,2 Mrd. Euro bei erwarteten 16,5 Mrd. Euro; EBITDA 2,4 Mrd. Euro bei erwarteten 2,1 Mrd. Euro; Preise +11 %, Mengen +7 %; Prognose 2026: 6,9 bis 7,7 Mrd.…"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "8EytmuiphH4",
+     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=1448s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Für die Agrarsparte ist ein Börsengang mit einem Unternehmenswert von 20 bis 30 Mrd. Euro geplant. BASF selbst kommt auf eine Marktkapitalisierung von 42,6 Mrd. Euro und ein KGV von 18; charttechnisc…",
+     "einordnung": "Ein möglicher Börsengang kann verborgene Werte sichtbar machen, ist aber zunächst eine Bewertungs- und Umsetzungsstory. Befindet sich der Kurs zugleich mitten in der Handelsspanne, fehlt aus charttec…",
+     "figures": "Marktkapitalisierung BASF 42,6 Mrd. Euro, erwarteter Wert der Agrarsparte 20 bis 30 Mrd. Euro, KGV 18, Tagesplus 1,2 Prozent"
+    }
+   ]
+  },
+  "^GDAXI": {
+   "name": "DAX und Marktüberblick",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der DAX notiert bei rund 25.500 Punkten weitgehend unbewegt, während der Ölpreis nach Iran-Angriffen auf 83 USD steigt. Die bevorstehende Fed-Sitzung dürfte die Märkte bewegen: Eine Zinserhöhung mit…",
+     "einordnung": "Das Marktbild ist widersprüchlich: Die breite US-Aktienbasis hält sich, während die hoch bewerteten Halbleiterwerte unter Gewinnmitnahmen leiden. Der Fear-and-Greed-Wert von 36,6 und die schwächeren…",
+     "figures": "DAX 25.500 Punkte, Ölpreis 83 USD, Wahrscheinlichkeit einer Fed-Zinserhöhung 30 bis 35 Prozent"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "ldobjNsL7sM",
+     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt sich stark, stieg am Vortag trotz Gewinnmitnahmen um 1,04 Prozent und bleibt auf dem Weg zum Rekordhoch.",
+     "einordnung": "Meine Einordnung: Die relative Stärke des DAX trotz schwächerer asiatischer und amerikanischer Technologiebörsen spricht kurzfristig für eine robuste Marktbreite und Rückenwind durch niedrigere Energ…",
+     "figures": "25.361 Punkte, +1,04 Prozent"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=2073s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX profitiert von Umschichtungen aus den USA und steigt trotz schwacher Konjunktur. Seit Jahresanfang liegt er nur leicht im Plus, wobei Dividenden stützen.",
+     "einordnung": "Die relative Stärke gegenüber dem Nasdaq ist zunächst eine Kapitalflussgeschichte und kein Beweis für eine kräftige deutsche Konjunkturerholung. Der aktuelle Stand nahe 25.464 Punkten passt zu einem…",
+     "figures": "Plus 3,84 Prozent seit Jahresanfang; DAX laut Marktdaten 25.464 Punkte, plus 0,41 Prozent"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "savtLkkJPbY",
+     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=0s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Der Host sieht den DAX bei 25.500 Punkten und damit in der Nähe des Allzeithochs. Kurzfristig werden 27.000 und langfristig 29.000 Punkte als mögliche Ziele genannt; fallende Ölpreise wirken dabei un…",
+     "einordnung": "Der DAX zeigt relative Stärke, obwohl der Fear-and-Greed-Index mit 39,7 weiterhin eine ängstliche Marktverfassung signalisiert. Die genannten Ziele setzen voraus, dass der Ölpreisrückgang und die geo…",
+     "figures": "Host: 25.500 Punkte; aktuell laut Marktdaten: 25.361 Punkte (+1,04%); 25.900; 83,30 USD (WTI); 27.000; 29.000; +60% (KOSPI seit Jahresbeginn); +110% (KOSPI auf 12 Monate)"
+    },
+    {
+     "date": "2026-07-24",
+     "video_id": "CchW9uxHhuM",
+     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=444s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "SAP und Volkswagen liefern positive Ansätze für den DAX, doch fehlende Vorgaben und die Zinsangst in den USA belasten. Der Handel am Vortag war schwach.",
+     "einordnung": "Der DAX bleibt damit stark von Einzelwerten und den internationalen Leitbörsen abhängig. Positive Unternehmensnachrichten können den Index kurzfristig stützen, werden aber von Makrofaktoren überlager…"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "JJawjyNF_GQ",
+     "url": "https://www.youtube.com/watch?v=JJawjyNF_GQ&t=603s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX stieg am Vortag um 0,58 Prozent auf 25.155 Punkte. Für den heutigen Handelsstart rechnet der Host eher mit einem flachen bis leicht schwächeren Auftakt; außerdem steht die EZB-Zinsentscheidun…",
+     "einordnung": "Der DAX bleibt stark, ist nach dem bisherigen Lauf aber anfällig für Gewinnmitnahmen. Der EZB-Termin kann den nächsten Impuls liefern, wobei die Reaktion stärker von der Kommunikation als vom bloßen…",
+     "figures": "25.155 Punkte, +0,58%"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=585s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt hohe Volatilität und fällt laut Host von 25.200 auf 24.800 Punkte. Im Index gibt es nur wenige Gewinner, darunter Diamond Truck und Rheinmetall; aktuell liegt der DAX laut Marktdaten be…",
+     "einordnung": "Die Bewegung bestätigt einen Markt, der auf steigende Energiepreise und Zinsen empfindlich reagiert. Dass der aktuelle Datenstand sogar leicht unter dem vom Host genannten Niveau liegt, unterstreicht…",
+     "figures": "Host: 25.200 auf 24.800 Punkte; aktuell laut Marktdaten: 24.763 Punkte, minus 1,56 Prozent"
+    },
+    {
+     "date": "2026-07-22",
+     "video_id": "CnKfJ6qJVrA",
+     "url": "https://www.youtube.com/watch?v=CnKfJ6qJVrA&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der DAX stieg auf 25.270 Punkte, gab einen Teil der Gewinne jedoch wieder ab. Der Host verweist auf steigende Ölpreise, eine US-Rendite von 4,63 Prozent und die deutlich gestiegene Margin Debt als mö…",
+     "einordnung": "Die Kombination aus hohen Indexständen, steigenden Finanzierungskosten und wachsender spekulativer Verschuldung mahnt zur Vorsicht. Der aktuelle Fear-and-Greed-Wert von 43,3 signalisiert allerdings n…",
+     "figures": "DAX +0,4 Prozent; DAX-Hoch 25.270 Punkte; Ölpreis von 67 bis fast 90 USD; US-Rendite 4,63 Prozent; Margin Debt +54 Prozent gegenüber dem Vorjahr"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "nPEPzB9N_5o",
+     "url": "https://www.youtube.com/watch?v=nPEPzB9N_5o&t=432s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX dürfte laut Host rund 0,1 Prozent schwächer eröffnen. Diese Bewegung könne innerhalb kurzer Zeit wieder korrigiert werden.",
+     "einordnung": "Eine erwartete Eröffnung von minus 0,1 Prozent ist im Tagesgeschäft kaum richtungsweisend. Solange keine neuen Impulse aus den Quartalszahlen oder der Geopolitik kommen, bleibt der Index eher ein Spi…",
+     "figures": "Erwartete Eröffnung -0,1 Prozent; Schluss am Vortag 24.846 Punkte; aktuell laut Marktdaten 24.847 Punkte und +0,06 Prozent"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "J6gUTUPHems",
+     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=1793s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX zog im Zuge der Chip-Rallye an, bleibt fundamental aber unverändert und wird von Egmond weiterhin seitwärts gesehen.",
+     "einordnung": "Der aktuelle DAX liegt bei 25.011 Punkten und damit 0,66 Prozent im Plus. Die Abweichung zum im Video genannten Intraday-Niveau zeigt, wie schnell diese Bewegung wieder abbröckeln kann; der Hinweis a…",
+     "figures": "Intraday stieg der DAX von 24.850 auf 25.500 Punkte, ein Anstieg um 200 Punkte."
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "Tlc2EJIAJeo",
+     "url": "https://www.youtube.com/watch?v=Tlc2EJIAJeo&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der DAX legte laut Host um 0,33 Prozent auf rund 24.900 Punkte zu, obwohl der Nahost-Konflikt, neue US-Zölle auf kanadische Waren und der Ölpreisanstieg belasten. Der Nasdaq 100 kämpft um 29.000 Punk…",
+     "einordnung": "Die freundliche Tagesbewegung darf nicht mit einer Entwarnung verwechselt werden. Bei steigender Verschuldung und höheren Anleiherenditen bleibt der Markt anfällig für eine abrupte Neubewertung hoch…",
+     "figures": "Host: DAX +0,33 Prozent bei rund 24.900 Punkten; aktuell laut Marktdaten: 25.011 Punkte; Nasdaq 100 bei rund 29.000 Punkten, aktuell laut Marktdaten: 29.340 Punkte; Margin-Schulden +54 Prozent gegenü…"
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=294s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt sich am Morgen etwas fester, nachdem er am Freitag schwach geschlossen hatte. Auf Wochensicht liegt der Index wieder unter 25.000 Punkten und ungefähr auf dem Niveau des Jahresbeginns.",
+     "einordnung": "Die Erholung am Morgen ist zunächst nur ein Stabilisierungsversuch und noch kein neues Kaufsignal. Dass der Index auf das Jahresanfangsniveau zurückgefallen ist, unterstreicht die verlorene Dynamik n…",
+     "figures": "Unter 25.000 Punkten; aktuell laut Marktdaten 24.831 Punkte"
+    }
+   ]
+  },
+  "NDX1.DE": {
+   "name": "Nordex",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=403s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nordex übertrifft die Erwartungen mit starkem Umsatz- und Gewinnwachstum. Erstmals liegt die EBITDA-Marge über 10 Prozent; der operative Turnaround schreitet voran, und der hohe Auftragsbestand siche…",
+     "einordnung": "Nordex zeigt eine für einen zyklischen Anlagenbauer bemerkenswerte Kombination aus Wachstum, Marge und Netto-Cash. Der Auftragsbestand reduziert zwar das kurzfristige Auslastungsrisiko, ersetzt aber…",
+     "figures": "Umsatz plus 16 Prozent auf 2,18 Mrd. EUR, EBITDA 224 Mio. EUR, EBITDA-Marge über 10 Prozent, Nettoergebnis 111 Mio. EUR, Auftragseingang 3 Mrd. EUR, Auftragsbestand 18,4 Mrd. EUR, Free Cashflow 164 M…"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
+     "einordnung": "Nordex leidet unter dem Momentum-Wechsel, nicht unter 'Sell in May' – das ist ein wichtiger Unterschied, da der Momentum-Wechsel temporär sein kann."
+    }
+   ]
+  },
+  "P911.DE": {
+   "name": "Porsche",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=627s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Porsche legt gemischte Halbjahreszahlen vor: Der Umsatz sinkt, gleichzeitig steigt der Gewinn dank Kostendisziplin und der Strategie 'Value over Volume'. Der Elektroanteil bleibt hinter den Erwartung…",
+     "einordnung": "Porsche beweist kurzfristig Preissetzungsmacht und Kostenkontrolle, bezahlt dies aber mit rückläufigen Stückzahlen. Die schwache Elektro-Dynamik bleibt der strategische Makel, weil sie die langfristi…",
+     "figures": "Umsatz minus 5 Prozent, operatives Ergebnis plus 33 Prozent auf 1,35 Mrd. EUR, Nettogewinn plus 50 Prozent auf 1,7 Mrd. EUR, operative Rendite von 5,5 auf 7,8 Prozent, Auslieferungen minus 16,5 Proze…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=433s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Der weltweite Absatz lag im ersten Halbjahr 18,2 Prozent unter dem Vorjahresniveau. In China betrug der Rückgang im zweiten Quartal 41 Prozent; Egmond stuft die Aktie als klaren Verkauf ein.",
+     "einordnung": "Porsche ist stärker als viele Volumenhersteller vom Premium- und Chinazyklus abhängig; entsprechend hart trifft ein solcher Absatzrückgang die Gewinnfantasie. Die Aussage ist deshalb fundamental nach…",
+     "figures": "Q2 weltweit 61.315 Fahrzeuge; China minus 41 Prozent auf 6.982 Fahrzeuge; H1 China minus 32 Prozent auf 14.500 Fahrzeuge; Prognose 2026: 30.000 Fahrzeuge in China"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "rGKDA0JAU4I",
+     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=1966s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Auslieferungen im 1. Halbjahr bei 122.300 Fahrzeugen, -16% zum Vorjahr. China bricht um 32% ein, Nordamerika bei 37.700 Fahrzeugen (-13%). Der 911 legt +20% zu. Strategiewechsel hin zu margenstarken…",
+     "einordnung": "Ein Kurssturz von 115€ auf 45€ bei einem KGV von 22 über dem historischen Schnitt spricht Bände über die Neubewertung der Autoindustrie. Der 911 als margenstarker Anker ist positiv, aber der China-Ei…",
+     "figures": "122.300 Fahrzeuge, -16%, China -32%, Nordamerika 37.700 (-13%), 911 +20%, KGV 22, Hoch 115€, aktuell 45€"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=927s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Porsche will die Produktion von Bratislava nach Leipzig verlagern, Mitarbeiter sollen auf Gehalt verzichten. Haidt ordnet dies in die Branchenkrise ein.",
+     "einordnung": "Die Verlagerung von Bratislava nach Leipzig ist politisch klug, aber betriebswirtschaftlich fragwürdig – höhere deutsche Lohnkosten lassen sich nicht durch Gehaltsverzicht kompensieren. Porsche als P…"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
+     "einordnung": "Porsche als Underperformer leidet unter der Schwäche im Luxus-Auto-Sektor – kurzfristig könnte die Aktie vom Momentum-Wechsel profitieren, aber die strukturellen Herausforderungen bleiben."
+    }
+   ]
+  },
+  "DBK.DE": {
+   "name": "Deutsche Bank",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=846s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Die Deutsche Bank übertrifft im zweiten Quartal die Erwartungen mit breitem Ertragswachstum und steigender Profitabilität. Aktienrückkäufe und eine steigende Dividende stützen die Aktie.",
+     "einordnung": "Mit einem KGV von 9 und einer verbesserten Kapitalrückgabe ist die Deutsche Bank deutlich weniger anspruchsvoll bewertet als viele Wachstumswerte. Der Abschlag ist allerdings typisch für Banken, dere…",
+     "figures": "Konzerngewinn 1,91 Mrd. EUR gegenüber erwarteten 1,67 Mrd. EUR, Vorsteuergewinn 2,7 Mrd. EUR, Erträge plus 8 Prozent auf 8,5 Mrd. EUR, Eigenkapitalrendite 11 Prozent, Dividendenrendite 3,7 Prozent, k…"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "htTDw4hrfRo",
+     "url": "https://www.youtube.com/watch?v=htTDw4hrfRo&t=144s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bruch der 200-Tage-Linie mit schnellem Pullback, danach weiter gestiegen. Stärkster Titel im europäischen Bankenverband. Aufwärtstrend intakt.",
+     "einordnung": "Der schnelle Pullback nach dem 200-Tage-Bruch ist ein klassisches bullisches Zeichen — die Verkäufer hatten nicht genug Druck, die Linie zu halten. Die Deutsche Bank profitiert von der Sektorrotation…"
+    },
+    {
+     "date": "2026-07-03",
+     "video_id": "XVi3pNFu4dA",
+     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=322s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Deutsche Bank profitiert von einem Reformpaket und war gestern der stärkste Wert im europäischen Bankensektor. Kursziel wird bei 33-34€ gesehen.",
+     "einordnung": "Ein Reformpaket als Katalysator für Bankaktien ist ein vertrautes Muster — das erinnert an die EU-Bankensektor-Reformen 2014/15, die damals den gesamten Sektor beflügelten. Wenn die 33-34€-Zone saube…",
+     "figures": "Kursziel 33-34€"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=906s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Morgan Stanley hebt das Kursziel moderat an und sieht deutliches Potenzial. Chart zeigt Widerstand bei 34 Euro, Ziel bei 40 Euro möglich. Bewertung mit Buchwert von 0,7 günstig.",
+     "einordnung": "Die Deutsche Bank profitiert vom Zinsumfeld und der Rotation in Finanzwerte. Ein Buchwert von 0,7 ist für eine systemrelevante Bank nach wie vor attraktiv, aber der Widerstand bei 34 Euro muss erst ü…",
+     "figures": "Kursziel 34 € auf 36 €, Buchwert 0,7, Ziel 40 € (161,8% Extension)"
+    }
+   ]
+  },
+  "UPS": {
+   "name": "UPS",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=1110s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "UPS meldet solide bereinigte Zahlen mit Umsatz- und Gewinnwachstum, doch der GAAP-Gewinn bricht wegen Restrukturierungskosten ein. Der Transformationsprozess belastet weiterhin.",
+     "einordnung": "UPS liefert operativ besser als die Schlagzeile vermuten lässt, doch die hohen Transformationskosten erschweren eine klare Neubewertung. Für ein zyklisches Logistikunternehmen ist zudem entscheidend,…",
+     "figures": "Umsatz plus 8 Prozent auf 22,8 Mrd. USD, 1 Mrd. USD über Konsens, bereinigter Gewinn 1,76 USD, plus 14 Prozent und 10 Cent über Erwartung, GAAP-Gewinn 0,71 USD gegenüber 1,51 USD im Vorjahr, Guidance…"
+    }
+   ]
+  },
+  "KO": {
+   "name": "Coca-Cola",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=1382s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Coca-Cola übertrifft die Erwartungen mit starkem organischem Umsatzwachstum und einer verbesserten Marge. Analysten bestätigen ihre Kaufempfehlungen, doch die hohe Bewertung spricht für Zurückhaltung.",
+     "einordnung": "Coca-Cola bleibt ein Qualitätswert mit hoher Margenstabilität und Preissetzungsmacht. Der Nachteil: Bei einer bereits hohen Bewertung kann selbst ein gutes Quartal zu wenig sein, wenn die Aktie die d…",
+     "figures": "Umsatz plus 7,2 Prozent auf 13,4 Mrd. USD, Non-GAAP-EPS 0,97 USD, organisches Wachstum plus 6 Prozent gegenüber erwarteten 3,6 Prozent, operative Marge 35,6 Prozent, Kursziele 90 bis 95 USD"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "tV-qzX1rLwU",
+     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=1572s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Coca-Cola zeigt als defensiver Value-Titel ein steigendes Dreieck. Die Aktie läuft auf dem EMA20 bei 73,8 US-Dollar und verfügt über Projektionsziele bei 90 und 112 US-Dollar.",
+     "einordnung": "Das ist im Vergleich zu den spekulativeren Wachstumswerten der sauberere, defensivere Chart. Die Attraktivität des Setups hängt jedoch daran, dass der Rücksetzer an der Kreuzunterstützung tatsächlich…",
+     "figures": "73,8 US-Dollar als EMA20; 67,4 US-Dollar als EMA50; 90 und 112 US-Dollar als Projektionsziele."
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=124s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Coca-Cola schloss ebenfalls auf Rekordniveau. Es gab leichte Gewinnmitnahmen, die der Host aber als nicht dramatisch einstuft.",
+     "einordnung": "Defensive Konsumwerte an der Rekordspitze sind ein typisches Spätzyklus-Phänomen — Anleger suchen Sicherheit bei gleichzeitigem Momentum. Coca-Cola profitiert von Preissetzungsmacht und stabilem Cash…"
+    }
+   ]
+  },
+  "BA": {
+   "name": "Boeing",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=1543s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Boeing steigert den Umsatz und reduziert den Verlust, bleibt aber klar unprofitabel. Hohe Auftragsbestände und Festpreisrisiken belasten; charttechnisch deutet sich ein Dreiecksausbruch nach oben an.",
+     "einordnung": "Der Auftragsbestand bietet Boeing eine langfristige Nachfragebasis, kann wegen der Festpreisverträge aber zugleich zur Belastung werden. Das charttechnische Erholungspotenzial steht deshalb unter dem…",
+     "figures": "Umsatz plus 8 Prozent auf 24,6 Mrd. USD, Verlust je Aktie 0,76 USD gegenüber erwarteten 0,45 USD, Auftragsbestand 6.200 Flugzeuge, Kostenüberschreitung bei Air Force One über 1 Mrd. USD plus 280 Mio.…"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "tV-qzX1rLwU",
+     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=1078s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Boeing unterperformt Airbus seit Jahren und bewegt sich weiterhin unter der entscheidenden Barriere bei 267 US-Dollar. Die Zahlen und der Ausblick werden am folgenden Morgen vorbörslich veröffentlich…",
+     "einordnung": "Die Unterperformance gegenüber Airbus spricht für ein strukturelles Problem und nicht nur für eine vorübergehende Delle. Solange die Barriere nicht fällt, bleibt ein technischer Befreiungsschlag unbe…",
+     "figures": "267 US-Dollar als Barriere; 242 US-Dollar als Unterstützung."
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "hcmndcPAbxk",
+     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=1881s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Boeing kämpft beim 787 Dreamliner mit Lieferkettenproblemen, will aber die Produktion der 737 Max hochfahren. Der Host sieht bei 210 US-Dollar eine interessante Unterstützung und bei deren Halten ein…",
+     "einordnung": "Boeing ist derzeit stärker eine Sanierungs- und Ausführungsgeschichte als ein klassischer Bewertungsfall. Ein KGV von 553 unterstreicht, dass der Markt eine operative Verbesserung bereits weitgehend…",
+     "figures": "737-Max-Monatsproduktion aktuell 42 bis 37, Ziel 63; Aktienkurs etwa 215 US-Dollar; Kursziel 240 US-Dollar; KGV 553"
+    },
+    {
+     "date": "2025-12-05",
+     "video_id": "BADYwmZH114",
+     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Der CFO kündigt höhere Auslieferungen der 737 und 787 an, positiver Free Cashflow wird für 2026 erwartet. Die Aktie reagierte mit +10%.",
+     "einordnung": "Boeing ist ein klassisches Turnaround-Narrativ — die +10%-Reaktion zeigt, dass der Markt hungrig nach positiven Signalen ist. Aber Boeing bleibt ein Unternehmen mit massiven operativen und regulatori…",
+     "figures": "+10% Kursreaktion"
+    }
+   ]
+  },
+  "GLW": {
+   "name": "Corning",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=1789s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Corning übertrifft die Erwartungen mit starkem Wachstum, das vor allem von Optical Communications und KI-Infrastruktur getragen wird. Der langfristige Ausblick des Springboard-Plans wurde deutlich an…",
+     "einordnung": "Corning profitiert hier nicht nur vom allgemeinen KI-Sentiment, sondern von konkretem Infrastrukturbedarf bei optischen Verbindungen. Ein KGV von 34 forward verlangt allerdings, dass das hohe Wachstu…",
+     "figures": "Umsatz plus 17 Prozent, Gewinnwachstum plus 30 Prozent, Umsatz 4,7 Mrd. USD, Optical Communications plus 32 Prozent auf 2,07 Mrd. USD, Enterprise Networks plus 65 Prozent, Guidance für Q3: 4,9 bis 5…"
+    }
+   ]
+  },
+  "PYPL": {
+   "name": "PayPal",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=2159s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "PayPal übertrifft die Erwartungen bei Umsatz und Gewinn, während das Zahlungsvolumen zweistellig wächst. Das Nutzerwachstum bleibt jedoch schwach; charttechnisch deutet sich eine Bodenbildung an.",
+     "einordnung": "Die starke Transaktionsbasis und der hohe Free Cashflow sprechen für ein weiterhin robustes Kerngeschäft. Das schwache Nutzerwachstum verhindert aber, dass die Aktie ohne Weiteres wieder als dynamisc…",
+     "figures": "Umsatz plus 5 Prozent auf 8,7 Mrd. USD, 230 Mio. USD über Konsens, EPS 1,38 USD, 10 Cent über Erwartung, Zahlungsvolumen plus 10 Prozent auf 490 Mrd. USD, Free Cashflow 1,8 Mrd. USD"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "tV-qzX1rLwU",
+     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=678s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Die Aktie steht vor den Zahlen an einer wichtigen Schaltstelle bei 56,5 US-Dollar. Ein Doppelboden ist möglich, doch Gaps innerhalb einer Bodenbildung erhöhen das technische Risiko.",
+     "einordnung": "Das Setup ist klar ereignisgetrieben: Vor den Zahlen ist die technische Marke zwar sichtbar, aber ihre Aussagekraft bleibt begrenzt. Bei einem Fear-and-Greed-Wert von 40 ist ein fragiler Boden zudem…",
+     "figures": "56,5 US-Dollar als Schlüsselunterstützung; 90 US-Dollar als von einem Zuschauer genanntes Ziel."
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "B79xh8kdYI8",
+     "url": "https://www.youtube.com/watch?v=B79xh8kdYI8&t=658s",
+     "channel": "BerneckerTV",
+     "kategorie": "news",
+     "note": "Stripe und Advent bieten laut Host 60,50 $ je PayPal-Aktie, was einem Transaktionswert von 53 Mrd. $ und einem Aufschlag von 28 % entspricht. Die Aktie stieg um 17,2 %, blieb aber unter dem Angebotsp…",
+     "einordnung": "Der Abschlag zum Angebotspreis ist der sichtbare Preis des Übernahmerisikos und keine Gratisrendite. Solange Finanzierung, Kartellprüfung und die Zustimmung aller Beteiligten offen sind, handelt es s…",
+     "figures": "Angebot: 60,50 $ je Aktie; Transaktionswert: 53 Mrd. $; Aufschlag: 28 %; unbelasteter Kurs: 47,37 $; Bankfinanzierung: 50 Mrd. $; Kurs am Mittwoch: 55,52 $ bei plus 17,2 %; KGV: unter 10; mögliches e…"
+    },
+    {
+     "date": "2026-07-16",
+     "video_id": "8n4SjPW9E8M",
+     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=142s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Host berichtet über das Gerücht einer Übernahme durch Stripe zu 60 Dollar je Aktie. Die PayPal-Aktie notiert wegen der bestehenden Unsicherheit bei etwa 55 Dollar; der Host hält eine Bewertung vo…",
+     "einordnung": "Der Kursabstand zum kolportierten Angebot ist eine klassische Risikoprämie für die Unsicherheit, nicht automatisch ein Geschenk. Entscheidend wäre, ob aus dem Gerücht ein belastbares Angebot und ansc…",
+     "figures": "60 Dollar je Aktie; etwa 55 Dollar aktueller Kurs im Video; 50 Milliarden Dollar Kaufpreis; 80 Prozent Wertverlust"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=137s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Advent und Stripe sollen ein mögliches Übernahmeangebot für PayPal von 60,50 Dollar je Aktie prüfen. Weitere Details wurden für die Sendung Opening Bell angekündigt.",
+     "einordnung": "Übernahmefantasie kann einen angeschlagenen Zahlungsdienstleister kurzfristig neu bewerten, ersetzt aber keine Klarheit über Finanzierung und behördliche Genehmigungen. Solange es sich nur um ein mög…",
+     "figures": "60,50 Dollar je Aktie, insgesamt 53 Mrd. Dollar"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "KiAPpoAsovw",
+     "url": "https://www.youtube.com/watch?v=KiAPpoAsovw&t=3245s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "Stripe und Advent International sollen ein Übernahmeangebot für PayPal über 53 Milliarden Dollar beziehungsweise rund 60,50 Dollar je Aktie vorgelegt haben. Die Aktie stieg um 20 Prozent auf etwa 55…",
+     "einordnung": "Bei einem Kurs von etwa 55 Dollar bleibt bis zum kolportierten Angebot rechnerisch nur ein begrenzter Abstand, während das Abschluss- und Finanzierungsrisiko bestehen bleibt. Die Übernahmefantasie is…",
+     "figures": "Angebot 53 Milliarden Dollar; 60,50 Dollar je Aktie; Aktienkurs etwa 55 Dollar; rund 50 Milliarden Dollar schuldenfinanziert; Abschlag von etwa 10 Prozent zum Angebot; früherer Kurs über 300 Dollar"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "PayPal beantragt eine Banklizenz für die eigene Kreditvergabe.",
+     "einordnung": "Eine Banklizenz wäre ein strategischer Meilenstein für PayPal — sie würde das Geschäftsmodell vom reinen Zahlungsabwickler zum Finanzdienstleister erweitern. Das erinnert an die Bestrebungen von Squa…"
+    }
+   ]
+  },
+  "STX": {
+   "name": "Seagate",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=2594s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Seagate liefert starke Zahlen mit Rekord-Free-Cashflow und Schuldenabbau. Die Wachstumsdynamik bleibt intakt; nach dem Rücksetzer wird die Aktie als günstig bewertet eingeschätzt.",
+     "einordnung": "Die Bilanzverbesserung ist bei einem zyklischen Speicherhersteller ein wesentlicher Pluspunkt, weil sie die Abhängigkeit von günstigen Finanzierungskonditionen reduziert. Die hohe ausgewiesene Bewert…",
+     "figures": "KGV 60,6, KGV 29 beziehungsweise 18 forward, Free Cashflow über 3 Mrd. USD, Schuldenabbau 1,4 Mrd. USD, Cash 1,7 Mrd. USD"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Seagate-Management warnt vor zu langen Fabrikbauzeiten, was auf einen Kapazitätsengpass hindeutet.",
+     "einordnung": "Seagates Warnung vor langen Fabrikbauzeiten ist ein Signal für Kapazitätsengpässe im Speichermarkt – das könnte mittelfristig die Preise stützen, kurzfristig aber die Aktie belasten."
+    },
+    {
+     "date": "2025-11-13",
+     "video_id": "DdOoAO1ztKo",
+     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1055s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Loop Capital erhöht das Kursziel von 350 auf 465 USD – ein deutliches Vertrauensvotum für den Speicherspezialisten.",
+     "einordnung": "Seagate profitiert vom gleichen KI-Trend wie Sandisk, nur mit anderer Marktdynamik. Die Kurszielerhöhung um rund 33% ist signifikant und spiegelt die Erwartung wider, dass der Speicherzyklus länger u…",
+     "figures": "350 USD, 465 USD"
+    }
+   ]
+  },
+  "KLAC": {
+   "name": "KLA",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=2833s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "KLA übertrifft die Erwartungen leicht, dennoch fällt die Aktie vorbörslich um 8,2 Prozent. KI-Infrastruktur und Prozesskontrolle bleiben die Wachstumstreiber; durch den Rückgang ist die Bewertung auf…",
+     "einordnung": "Die Reaktion ist ein Lehrbuchfall für eine Aktie, bei der gute Zahlen an zu hohen Erwartungen gemessen werden. Der Bewertungsrückgang verbessert das Chance-Risiko-Verhältnis, aber ein KGV von 37 forw…",
+     "figures": "Umsatz plus 15 Prozent, EPS 1,05 USD, 5 Cent über Erwartung, KGV von über 50 auf 37 forward gefallen, Guidance für EPS 1,06 bis 1,26 USD"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "tV-qzX1rLwU",
+     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=2051s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der wichtige Chiptitel korrigiert nach einem phänomenalen Anstieg scharf und hat die Kreuzunterstützung bei 194 bis 196 US-Dollar erreicht. Die Zahlen stehen am folgenden Tag an.",
+     "einordnung": "Die Kombination aus scharfer Korrektur und unmittelbar bevorstehenden Zahlen macht KLA zu einem klassischen Bestätigungsfall. Gerade bei Halbleiterwerten sollte man eine einzelne Unterstützung nicht…",
+     "figures": "194 bis 196 US-Dollar als Kreuzunterstützung."
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "savtLkkJPbY",
+     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=2695s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Morgan Stanley sieht KLA als Profiteur steigender Intel-Investitionen von bis zu 28 Mrd. USD. Der KLA-Umsatz mit Intel könnte sich zwischen 2025 und 2027 versechsfachen, doch die Aktie bleibt mit KGV…",
+     "einordnung": "KLA profitiert als Anlagen- und Prozesskontrollanbieter vom Ausbau moderner Fertigung, ist aber stark von der Investitionsdisziplin weniger Großkunden abhängig. Nach der schnellen Korrektur verbesser…",
+     "figures": "bis zu 28 Mrd. USD Intel-Investitionen; 6,4-faches Umsatzwachstum von KLA mit Intel zwischen 2025 und 2027; KGV 44; PEG 2,1; minus 30% Korrektur in 12 Tagen; knapp 200 USD Unterstützung"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Jefferies erhöht das Kursziel von 1100 auf 1500 Dollar. Die Aktie notiert bei knapp 1200 Dollar und hat +30% zugelegt.",
+     "einordnung": "KLA ist der Qualitäts-Spieler im Halbleiter-Equipment-Sektor — ein Kursziel-Sprung von 1100 auf 1500 Dollar bei Jefferies ist ein starkes Signal. Mit +30% im Jahr und einem Aufwärtspotenzial von weit…",
+     "figures": "Kursziel Jefferies 1500$ (vorher 1100$), Aktie bei knapp 1200$, +30% Jahresperformance"
+    }
+   ]
+  },
+  "BE": {
+   "name": "Bloom Energy",
+   "auftritte": [
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=3186s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Bloom Energy überrascht mit extrem starken Quartalszahlen: Der Umsatz verdoppelt sich nahezu, erstmals wird ein deutlicher Nettogewinn erzielt. Die Prognose wird wegen der Nachfrage nach Stromversorg…",
+     "einordnung": "Bloom Energy zeigt eine außergewöhnliche operative Beschleunigung und hat mit dem positiven Cashflow ein wichtiges Qualitätsmerkmal geliefert. Ein Forward-KGV von 53 macht die Aktie jedoch stark abhä…",
+     "figures": "Umsatz plus 166 Prozent auf über 1 Mrd. USD, EPS 0,78 USD gegenüber erwarteten 0,37 USD, Nettogewinn 196 Mio. USD, EBITDA 250 Mio. USD, Free Cashflow 226 Mio. USD, neue Guidance: Umsatz 3,9 bis 4,2 M…"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "tV-qzX1rLwU",
+     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=1830s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Nach dem starken Anstieg bis 290 US-Dollar korrigiert Bloom Energy in den Bereich des früheren Clusters bei 160 US-Dollar. Die Zahlen werden am folgenden Abend nachbörslich veröffentlicht.",
+     "einordnung": "Nach einer derart ausgeprägten Rally ist die Korrektur zunächst keine Überraschung, sondern eine Bewährungsprobe. Ohne bestätigte Reaktion an der Unterstützungszone ist das Chance-Risiko-Verhältnis s…",
+     "figures": "160 US-Dollar als Cluster und Unterstützung; 170 US-Dollar als EMA50 auf Wochenbasis; 216 und 290 US-Dollar als frühere Ziele."
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "savtLkkJPbY",
+     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=3382s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Bloom Energy verliert nach Shortseller-Reports rund 50% in 26 Handelstagen, notiert vorbörslich aber 5% höher. Fundamental bleibt das Unternehmen wegen möglicher Nachfrage aus Rechenzentren interessa…",
+     "einordnung": "Nach einem derart starken Rückgang kann eine technische Gegenbewegung schnell entstehen, ohne dass die Vorwürfe fundamental erledigt sind. Die Rechenzentrumsfantasie bietet einen strukturellen Anker,…",
+     "figures": "minus 50% in 26 Handelstagen; +5% vorbörslich"
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "hcmndcPAbxk",
+     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=3550s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "In den Zuschauerfragen geht es um eine Short-Attacke bei Bloom Energy und die Frage, ob der Rückschlag eine Kaufchance eröffnet. Der Host sieht bei Schwäche eine mögliche Einstiegschance und nennt ei…",
+     "einordnung": "Nach einer Short-Attacke kann der Kurs zwar überproportional reagieren, aber auch die fundamentalen Vorwürfe werden vom Markt neu bewertet. Das ist eher eine Spekulations- als eine klassische Bewertu…",
+     "figures": "Kursziel 300 bis 350 US-Dollar"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "rGKDA0JAU4I",
+     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=3464s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "Short-Report von Hunter Brook Capital ('Blooms Big Lie') wirft Abhängigkeit von chinesischen Lieferketten vor. Technisch mögliches Kopf-Schulter-Muster. Vorbörse +6%, aber Risiko weiter.",
+     "einordnung": "Ein Short-Report nach einem Anstieg von 1800-1900% ist das klassische Muster — je steiler die Rally, desto größer das Ziel für Leerverkäufer. Das Kopf-Schulter-Muster in Kombination mit dem Short-Rep…",
+     "figures": "Anstieg 1800-1900% seit Mitte 2025, Vorbörse +6%, mögliches Ziel 170$ (200er GD)"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "kbhs3X-LW2E",
+     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=2948s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Ausweitung der Brookfield-Partnerschaft von 5 auf 25 Mrd. USD für KI-Infrastruktur. Nach Russell-Rebalancing (Kursrutsch) deutliche Erholung. Kursziel 400-450 USD bei aktuellem Kurs um 330 USD. Hebel…",
+     "einordnung": "Die Verfünffachung des Brookfield-Rahmens von 5 auf 25 Mrd. USD ist ein struktureller Meilenstein — das validiert Bloom Energy als KI-Strom-Infrastruktur-Provider. Der Hebeltrade ist aggressiv, aber…",
+     "figures": "Finanzierungsrahmen von 5 auf 25 Mrd. USD ausgeweitet; aktueller Kurs um 330 USD; Kursziel 400-450 USD"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=1749s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Rücksetzer wegen Index-Rebalancing (Wechsel von Russell 2000 zu Russell 1000); die fundamentale Story (Stromversorgung für KI-Rechenzentren) bleibt intakt.",
+     "einordnung": "Ein KGV von 108 ist himmelhoch, aber bei 130% Umsatzwachstum und einem Oracle-Vertrag ändert sich die Dynamik schnell. Der Index-Rebalancing-Effekt ist temporär — das erinnert an Tesla 2020, als der…",
+     "figures": "Unterstützung 250$; KGV 108; Umsatzwachstum Q1 130%, Produktumsatz +200%; Vertrag mit Oracle in 90 Tagen"
+    }
+   ]
+  },
   "CL=F": {
    "name": "Öl",
    "auftritte": [
@@ -611,130 +1525,6 @@
     }
    ]
   },
-  "^GDAXI": {
-   "name": "DAX",
-   "auftritte": [
-    {
-     "date": "2026-07-28",
-     "video_id": "ldobjNsL7sM",
-     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt sich stark, stieg am Vortag trotz Gewinnmitnahmen um 1,04 Prozent und bleibt auf dem Weg zum Rekordhoch.",
-     "einordnung": "Meine Einordnung: Die relative Stärke des DAX trotz schwächerer asiatischer und amerikanischer Technologiebörsen spricht kurzfristig für eine robuste Marktbreite und Rückenwind durch niedrigere Energ…",
-     "figures": "25.361 Punkte, +1,04 Prozent"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=2073s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX profitiert von Umschichtungen aus den USA und steigt trotz schwacher Konjunktur. Seit Jahresanfang liegt er nur leicht im Plus, wobei Dividenden stützen.",
-     "einordnung": "Die relative Stärke gegenüber dem Nasdaq ist zunächst eine Kapitalflussgeschichte und kein Beweis für eine kräftige deutsche Konjunkturerholung. Der aktuelle Stand nahe 25.464 Punkten passt zu einem…",
-     "figures": "Plus 3,84 Prozent seit Jahresanfang; DAX laut Marktdaten 25.464 Punkte, plus 0,41 Prozent"
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "savtLkkJPbY",
-     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=0s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Der Host sieht den DAX bei 25.500 Punkten und damit in der Nähe des Allzeithochs. Kurzfristig werden 27.000 und langfristig 29.000 Punkte als mögliche Ziele genannt; fallende Ölpreise wirken dabei un…",
-     "einordnung": "Der DAX zeigt relative Stärke, obwohl der Fear-and-Greed-Index mit 39,7 weiterhin eine ängstliche Marktverfassung signalisiert. Die genannten Ziele setzen voraus, dass der Ölpreisrückgang und die geo…",
-     "figures": "Host: 25.500 Punkte; aktuell laut Marktdaten: 25.361 Punkte (+1,04%); 25.900; 83,30 USD (WTI); 27.000; 29.000; +60% (KOSPI seit Jahresbeginn); +110% (KOSPI auf 12 Monate)"
-    },
-    {
-     "date": "2026-07-24",
-     "video_id": "CchW9uxHhuM",
-     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=444s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "SAP und Volkswagen liefern positive Ansätze für den DAX, doch fehlende Vorgaben und die Zinsangst in den USA belasten. Der Handel am Vortag war schwach.",
-     "einordnung": "Der DAX bleibt damit stark von Einzelwerten und den internationalen Leitbörsen abhängig. Positive Unternehmensnachrichten können den Index kurzfristig stützen, werden aber von Makrofaktoren überlager…"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "JJawjyNF_GQ",
-     "url": "https://www.youtube.com/watch?v=JJawjyNF_GQ&t=603s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX stieg am Vortag um 0,58 Prozent auf 25.155 Punkte. Für den heutigen Handelsstart rechnet der Host eher mit einem flachen bis leicht schwächeren Auftakt; außerdem steht die EZB-Zinsentscheidun…",
-     "einordnung": "Der DAX bleibt stark, ist nach dem bisherigen Lauf aber anfällig für Gewinnmitnahmen. Der EZB-Termin kann den nächsten Impuls liefern, wobei die Reaktion stärker von der Kommunikation als vom bloßen…",
-     "figures": "25.155 Punkte, +0,58%"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=585s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt hohe Volatilität und fällt laut Host von 25.200 auf 24.800 Punkte. Im Index gibt es nur wenige Gewinner, darunter Diamond Truck und Rheinmetall; aktuell liegt der DAX laut Marktdaten be…",
-     "einordnung": "Die Bewegung bestätigt einen Markt, der auf steigende Energiepreise und Zinsen empfindlich reagiert. Dass der aktuelle Datenstand sogar leicht unter dem vom Host genannten Niveau liegt, unterstreicht…",
-     "figures": "Host: 25.200 auf 24.800 Punkte; aktuell laut Marktdaten: 24.763 Punkte, minus 1,56 Prozent"
-    },
-    {
-     "date": "2026-07-22",
-     "video_id": "CnKfJ6qJVrA",
-     "url": "https://www.youtube.com/watch?v=CnKfJ6qJVrA&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Der DAX stieg auf 25.270 Punkte, gab einen Teil der Gewinne jedoch wieder ab. Der Host verweist auf steigende Ölpreise, eine US-Rendite von 4,63 Prozent und die deutlich gestiegene Margin Debt als mö…",
-     "einordnung": "Die Kombination aus hohen Indexständen, steigenden Finanzierungskosten und wachsender spekulativer Verschuldung mahnt zur Vorsicht. Der aktuelle Fear-and-Greed-Wert von 43,3 signalisiert allerdings n…",
-     "figures": "DAX +0,4 Prozent; DAX-Hoch 25.270 Punkte; Ölpreis von 67 bis fast 90 USD; US-Rendite 4,63 Prozent; Margin Debt +54 Prozent gegenüber dem Vorjahr"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "nPEPzB9N_5o",
-     "url": "https://www.youtube.com/watch?v=nPEPzB9N_5o&t=432s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX dürfte laut Host rund 0,1 Prozent schwächer eröffnen. Diese Bewegung könne innerhalb kurzer Zeit wieder korrigiert werden.",
-     "einordnung": "Eine erwartete Eröffnung von minus 0,1 Prozent ist im Tagesgeschäft kaum richtungsweisend. Solange keine neuen Impulse aus den Quartalszahlen oder der Geopolitik kommen, bleibt der Index eher ein Spi…",
-     "figures": "Erwartete Eröffnung -0,1 Prozent; Schluss am Vortag 24.846 Punkte; aktuell laut Marktdaten 24.847 Punkte und +0,06 Prozent"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "J6gUTUPHems",
-     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=1793s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX zog im Zuge der Chip-Rallye an, bleibt fundamental aber unverändert und wird von Egmond weiterhin seitwärts gesehen.",
-     "einordnung": "Der aktuelle DAX liegt bei 25.011 Punkten und damit 0,66 Prozent im Plus. Die Abweichung zum im Video genannten Intraday-Niveau zeigt, wie schnell diese Bewegung wieder abbröckeln kann; der Hinweis a…",
-     "figures": "Intraday stieg der DAX von 24.850 auf 25.500 Punkte, ein Anstieg um 200 Punkte."
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "Tlc2EJIAJeo",
-     "url": "https://www.youtube.com/watch?v=Tlc2EJIAJeo&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Der DAX legte laut Host um 0,33 Prozent auf rund 24.900 Punkte zu, obwohl der Nahost-Konflikt, neue US-Zölle auf kanadische Waren und der Ölpreisanstieg belasten. Der Nasdaq 100 kämpft um 29.000 Punk…",
-     "einordnung": "Die freundliche Tagesbewegung darf nicht mit einer Entwarnung verwechselt werden. Bei steigender Verschuldung und höheren Anleiherenditen bleibt der Markt anfällig für eine abrupte Neubewertung hoch…",
-     "figures": "Host: DAX +0,33 Prozent bei rund 24.900 Punkten; aktuell laut Marktdaten: 25.011 Punkte; Nasdaq 100 bei rund 29.000 Punkten, aktuell laut Marktdaten: 29.340 Punkte; Margin-Schulden +54 Prozent gegenü…"
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "0kdieabN3vU",
-     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=294s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt sich am Morgen etwas fester, nachdem er am Freitag schwach geschlossen hatte. Auf Wochensicht liegt der Index wieder unter 25.000 Punkten und ungefähr auf dem Niveau des Jahresbeginns.",
-     "einordnung": "Die Erholung am Morgen ist zunächst nur ein Stabilisierungsversuch und noch kein neues Kaufsignal. Dass der Index auf das Jahresanfangsniveau zurückgefallen ist, unterstreicht die verlorene Dynamik n…",
-     "figures": "Unter 25.000 Punkten; aktuell laut Marktdaten 24.831 Punkte"
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "zu5dhkcdtR0",
-     "url": "https://www.youtube.com/watch?v=zu5dhkcdtR0&t=599s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Nach einem Fehlausbruch nach oben hält Harry eine mittelfristige Aufwärtsbewegung für wahrscheinlich. Der EMA200 bei 24.252 Punkten dient dabei als wichtige technische Unterstützung; als mittelfristi…",
-     "einordnung": "Die konstruktive Einschätzung steht und fällt mit der Verteidigung des EMA200. Bei einem DAX-Stand von 24.847 Punkten liegt der Markt aktuell nur moderat über dieser technischen Leitplanke.",
-     "figures": "24.252 Punkte (EMA200), 28.800 Punkte (Ziel)"
-    }
-   ]
-  },
   "SAP.DE": {
    "name": "SAP",
    "auftritte": [
@@ -1152,129 +1942,6 @@
      "note": "BNP Paribas stuft K+S von Underperform auf Outperform hoch und hebt das Kursziel von 12 auf 19 Euro an. Die Aktie steigt laut Host um 4,9 Prozent auf 15 Euro; das KGV liegt bei 11, wobei Kali- und Dü…",
      "einordnung": "Das Analysten-Upgrade verbessert das Sentiment, ersetzt aber keine belastbare Trendwende bei den Düngemittelpreisen. Die moderate Bewertung bietet einen Puffer, doch die Ertragskraft bleibt zyklisch…",
      "figures": "Kursziel 19 Euro, zuvor 12 Euro; Kurs 15 Euro; Tagesplus 4,9 Prozent; KGV 11."
-    }
-   ]
-  },
-  "000660.KS": {
-   "name": "SK Hynix",
-   "auftritte": [
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=122s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Egmond Haidt warnt seit dem 17. Juli, dass die Blase bei Speicherchip-Aktien geplatzt sei. Trotz einer kurzen Erholung nach dem AMD-Deal stuft er die Aktie klar negativ ein.",
-     "einordnung": "Die Skepsis ist angesichts der extrem zyklischen Speicherbranche und des abrupt gedrehten Sentiments nachvollziehbar. Entscheidend bleibt, ob der KI-Ausbau die Nachfrage dauerhaft stützt oder ob Über…"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "VXiNR-XoDz0",
-     "url": "https://www.youtube.com/watch?v=VXiNR-XoDz0&t=3412s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "SK Hynix verliert laut Host im GDR 8 Prozent und bleibt unter Druck. Trotz einer neuen Kooperation mit Nvidia für HBM4 sieht der Host bei 700 US-Dollar, an der 200-Tage-Linie, eine wichtige charttech…",
-     "einordnung": "Die Nvidia-Kooperation ist strategisch positiv, kann den kurzfristigen Verkaufsdruck bei Speicherwerten aber nicht automatisch stoppen. Solange die 200-Tage-Linie nicht verteidigt ist, bleibt das Cha…",
-     "figures": "GDR -8 Prozent; Unterstützung bei 700 USD; mögliches Abwärtsrisiko bis 700 USD von 23 Prozent."
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=511s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "SK Hynix steigt laut Egmond um 45 Prozent, was er im gegebenen Marktumfeld für völlig unlogisch hält.",
-     "einordnung": "Die starke Gegenbewegung illustriert die extreme Uneinheitlichkeit des KI- und Halbleitermarktes. Sie kann auf sehr hohe Erwartungen an Speicherbedarf hindeuten, steht aber im Video bewusst im Kontra…",
-     "figures": "plus 45 Prozent"
-    },
-    {
-     "date": "2026-07-22",
-     "video_id": "CnKfJ6qJVrA",
-     "url": "https://www.youtube.com/watch?v=CnKfJ6qJVrA&t=2944s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "SK Hynix fiel um 5,6 Prozent, nachdem Gerüchte über eine Intel-Übernahme dementiert wurden. Der Host bleibt wegen der langfristig erwarteten KI-Nachfrage bullish und betrachtet den Rücksetzer als Kau…",
-     "einordnung": "Die Reaktion zeigt, wie stark kurzfristiges Sentiment und Übernahmespekulationen die Bewertung von Halbleiterwerten bewegen können. Langfristig bleibt die KI-Nachfrage ein stützender Faktor, doch der…",
-     "figures": "Kursrückgang 5,6 Prozent"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "J6gUTUPHems",
-     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=140s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Egmond hält die Erholung der Aktie für technisch und erwartet nach einer Seitwärtsphase eine weitere Abwärtsbewegung, weil die Blase bei Speicherchip-Herstellern aus seiner Sicht geplatzt ist.",
-     "einordnung": "Die Kombination aus extremer Vorbewegung und zyklischer Gewinnabhängigkeit macht den Wert besonders anfällig für Gewinnmitnahmen. Die aktuelle Erholung ändert an diesem Risikoprofil zunächst wenig.",
-     "figures": "In New York lag der Aufschlag bei 50 Prozent; anschließend gab es einen Tagesgewinn von 5 Prozent. Für 2027 wird ein EBIT von 418,28 Billionen Won geschätzt."
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=204s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Nach dem Kursrutsch der vergangenen Tage sprang SK Hynix am 14. Juli um 17 Prozent nach oben. Egmond befürchtet dennoch, dass die Blase bei Speicherchips geplatzt sein könnte, und mahnt zur Vorsicht.",
-     "einordnung": "Der starke Gegenschlag ändert zunächst wenig am übergeordneten Risiko: Ein Kurssprung nach einem Einbruch kann ebenso technische Gegenbewegung wie fundamentale Entwarnung sein. Die Marktdaten zeigen…",
-     "figures": "Tagesplus 17 Prozent; Börsendebüt 168,01 US-Dollar, plus 12,8 Prozent"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "8EytmuiphH4",
-     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=2835s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Das Nasdaq-Debüt startete bei 170 US-Dollar und endete bei 168,33 US-Dollar; anschließend fiel der Wert in Seoul auf etwa 150 US-Dollar und verlor dort 15 Prozent. Die Emission war siebenfach überzei…",
-     "einordnung": "Der starke Rückgang ist weniger ein Beweis gegen die KI-Story als ein Hinweis auf extrem hohe Erwartungen und Gewinnmitnahmen nach dem viel beachteten US-Start. Das niedrige Forward-KGV wirkt attrakt…",
-     "figures": "IPO-Preis 149 US-Dollar, Eröffnung 170 US-Dollar, Schlusskurs 168,33 US-Dollar, aktuell etwa 150 US-Dollar, Tagesverlust in Korea 15 Prozent, Emissionserlös 26 Mrd. US-Dollar, 178 Mio. ADRs, siebenfa…"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=980s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "SK Hynix feiert am Freitag sein US-Börsendebüt. Haidt sieht Risiko durch Überinvestitionen und bleibt sehr vorsichtig.",
-     "einordnung": "Ein US-Listing zur Zyklusspitze ist oft ein Verkaufssignal — die Kapitalbeschaffung erfolgt, wenn die Bewertungen am höchsten sind. Die Skepsis ist angebracht."
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=268s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "SK Hynix strebt ein US-Listing mit Kapitalerhöhung von 29,4 Milliarden Dollar an und investiert 516 Milliarden Dollar in Korea. Nach dem Rebalancing sieht Haidt kurzfristig Seitwärtsbewegung.",
-     "einordnung": "Ein US-Listing ist ein kluger Schachzug, um die Bewertungslücke zu Nvidia und Micron zu schließen. Die Kapitalerhöhung bedeutet aber kurzfristig Verwässerung – der Markt muss erst verdauen, dass hier…",
-     "figures": "Kapitalerhöhung 29,4 Mrd USD, Investition 516 Mrd USD"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "F6cTDl0_v6Q",
-     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=228s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "SK Hynix profitiert im Sog von Micron vom Speicherboom und bereitet parallel ein US-Listing über 29 Mrd. USD vor. Der Host betont die Dominanz mit 60% HBM-Marktanteil.",
-     "einordnung": "Mit einem KGV von 6,3 ist SK Hynix deutlich günstiger als Micron bei ähnlichem Zyklus-Hebel. Das US-Listing könnte den 'Korea Discount' teilweise schließen und Kapital für HBM-Kapazitätserweiterungen…",
-     "figures": "KGV 6,3 für 2026/27; 60% HBM-Marktanteil; IPO-Volumen 29 Mrd. USD"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=1300s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Neues Rekordhoch, plus 15 Prozent in Folge von Micron-Zahlen. Plus 300 Prozent auf Jahressicht. ADR/GDR-Diskussion: ADR an NASDAQ wegen Liquidität bevorzugt, physische Aktie aber ebenfalls interessan…",
-     "einordnung": "SK hynix ist der heimliche Gewinner des KI-Speicherbooms — 60 Prozent HBM-Marktanteil sind eine Burg. Aber ein parabolischer Anstieg von 300 Prozent auf Jahressicht ist charttechnisch ein Warnsignal;…",
-     "figures": "+15% Tagesbewegung, +300% auf Jahressicht"
-    },
-    {
-     "date": "2026-06-24",
-     "video_id": "4K4U0fRfM0A",
-     "url": "https://www.youtube.com/watch?v=4K4U0fRfM0A&t=3186s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Das Unternehmen plant ein ADR-Listing mit 18 Mio. neuen Aktien und erwartet einen Erlös von ca. 26 Mrd. Euro für den HBM-Produktionsausbau. Der Marktanteil bei HBM liegt bei 57 Prozent. KGV 7, PEG 0,…",
-     "einordnung": "Das ADR-Listing ist ein strategischer Schachzug: Kapitalbeschaffung und Sichtbarkeit bei US-Investoren in einem Zug. KGV 7 und PEG 0,08 spiegeln den extremen Korea-Discount wider. HBM ist der Flasche…",
-     "figures": "18 Mio. ADRs, Erlös 26 Mrd. Euro, KGV 7, PEG 0,08, Marktanteil HBM 57%, Korrektur 18%"
     }
    ]
   },
@@ -2623,264 +3290,6 @@
      "note": "Bausoftware-Spezialist. Hohe Wechselkosten, starkes Wachstum. Nach -62% vom Hoch. Bewertung günstig (KGV 19,3).",
      "einordnung": "Nemetschek ist ein Qualitäts-Titel mit starkem Burggraben (Bausoftware, hohe Wechselkosten). Nach -62% vom Hoch ist die Bewertung günstig (KGV 19,3 = 10-Jahres-Tief). Morningstar-Ziel 90€ impliziert…",
      "figures": "Q1 Umsatz +17%; EBT-Marge 31,4%; KGV Forward 19,3 (10-Jahres-Tief); Kursziel Morningstar 90€, Durchschnitt 89€"
-    }
-   ]
-  },
-  "PYPL": {
-   "name": "PayPal",
-   "auftritte": [
-    {
-     "date": "2026-07-27",
-     "video_id": "tV-qzX1rLwU",
-     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=678s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Die Aktie steht vor den Zahlen an einer wichtigen Schaltstelle bei 56,5 US-Dollar. Ein Doppelboden ist möglich, doch Gaps innerhalb einer Bodenbildung erhöhen das technische Risiko.",
-     "einordnung": "Das Setup ist klar ereignisgetrieben: Vor den Zahlen ist die technische Marke zwar sichtbar, aber ihre Aussagekraft bleibt begrenzt. Bei einem Fear-and-Greed-Wert von 40 ist ein fragiler Boden zudem…",
-     "figures": "56,5 US-Dollar als Schlüsselunterstützung; 90 US-Dollar als von einem Zuschauer genanntes Ziel."
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "B79xh8kdYI8",
-     "url": "https://www.youtube.com/watch?v=B79xh8kdYI8&t=658s",
-     "channel": "BerneckerTV",
-     "kategorie": "news",
-     "note": "Stripe und Advent bieten laut Host 60,50 $ je PayPal-Aktie, was einem Transaktionswert von 53 Mrd. $ und einem Aufschlag von 28 % entspricht. Die Aktie stieg um 17,2 %, blieb aber unter dem Angebotsp…",
-     "einordnung": "Der Abschlag zum Angebotspreis ist der sichtbare Preis des Übernahmerisikos und keine Gratisrendite. Solange Finanzierung, Kartellprüfung und die Zustimmung aller Beteiligten offen sind, handelt es s…",
-     "figures": "Angebot: 60,50 $ je Aktie; Transaktionswert: 53 Mrd. $; Aufschlag: 28 %; unbelasteter Kurs: 47,37 $; Bankfinanzierung: 50 Mrd. $; Kurs am Mittwoch: 55,52 $ bei plus 17,2 %; KGV: unter 10; mögliches e…"
-    },
-    {
-     "date": "2026-07-16",
-     "video_id": "8n4SjPW9E8M",
-     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=142s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Host berichtet über das Gerücht einer Übernahme durch Stripe zu 60 Dollar je Aktie. Die PayPal-Aktie notiert wegen der bestehenden Unsicherheit bei etwa 55 Dollar; der Host hält eine Bewertung vo…",
-     "einordnung": "Der Kursabstand zum kolportierten Angebot ist eine klassische Risikoprämie für die Unsicherheit, nicht automatisch ein Geschenk. Entscheidend wäre, ob aus dem Gerücht ein belastbares Angebot und ansc…",
-     "figures": "60 Dollar je Aktie; etwa 55 Dollar aktueller Kurs im Video; 50 Milliarden Dollar Kaufpreis; 80 Prozent Wertverlust"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "6LLJagAsqAI",
-     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=137s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Advent und Stripe sollen ein mögliches Übernahmeangebot für PayPal von 60,50 Dollar je Aktie prüfen. Weitere Details wurden für die Sendung Opening Bell angekündigt.",
-     "einordnung": "Übernahmefantasie kann einen angeschlagenen Zahlungsdienstleister kurzfristig neu bewerten, ersetzt aber keine Klarheit über Finanzierung und behördliche Genehmigungen. Solange es sich nur um ein mög…",
-     "figures": "60,50 Dollar je Aktie, insgesamt 53 Mrd. Dollar"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "KiAPpoAsovw",
-     "url": "https://www.youtube.com/watch?v=KiAPpoAsovw&t=3245s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Stripe und Advent International sollen ein Übernahmeangebot für PayPal über 53 Milliarden Dollar beziehungsweise rund 60,50 Dollar je Aktie vorgelegt haben. Die Aktie stieg um 20 Prozent auf etwa 55…",
-     "einordnung": "Bei einem Kurs von etwa 55 Dollar bleibt bis zum kolportierten Angebot rechnerisch nur ein begrenzter Abstand, während das Abschluss- und Finanzierungsrisiko bestehen bleibt. Die Übernahmefantasie is…",
-     "figures": "Angebot 53 Milliarden Dollar; 60,50 Dollar je Aktie; Aktienkurs etwa 55 Dollar; rund 50 Milliarden Dollar schuldenfinanziert; Abschlag von etwa 10 Prozent zum Angebot; früherer Kurs über 300 Dollar"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "PayPal beantragt eine Banklizenz für die eigene Kreditvergabe.",
-     "einordnung": "Eine Banklizenz wäre ein strategischer Meilenstein für PayPal — sie würde das Geschäftsmodell vom reinen Zahlungsabwickler zum Finanzdienstleister erweitern. Das erinnert an die Bestrebungen von Squa…"
-    }
-   ]
-  },
-  "BA": {
-   "name": "Boeing",
-   "auftritte": [
-    {
-     "date": "2026-07-27",
-     "video_id": "tV-qzX1rLwU",
-     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=1078s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Boeing unterperformt Airbus seit Jahren und bewegt sich weiterhin unter der entscheidenden Barriere bei 267 US-Dollar. Die Zahlen und der Ausblick werden am folgenden Morgen vorbörslich veröffentlich…",
-     "einordnung": "Die Unterperformance gegenüber Airbus spricht für ein strukturelles Problem und nicht nur für eine vorübergehende Delle. Solange die Barriere nicht fällt, bleibt ein technischer Befreiungsschlag unbe…",
-     "figures": "267 US-Dollar als Barriere; 242 US-Dollar als Unterstützung."
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "hcmndcPAbxk",
-     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=1881s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Boeing kämpft beim 787 Dreamliner mit Lieferkettenproblemen, will aber die Produktion der 737 Max hochfahren. Der Host sieht bei 210 US-Dollar eine interessante Unterstützung und bei deren Halten ein…",
-     "einordnung": "Boeing ist derzeit stärker eine Sanierungs- und Ausführungsgeschichte als ein klassischer Bewertungsfall. Ein KGV von 553 unterstreicht, dass der Markt eine operative Verbesserung bereits weitgehend…",
-     "figures": "737-Max-Monatsproduktion aktuell 42 bis 37, Ziel 63; Aktienkurs etwa 215 US-Dollar; Kursziel 240 US-Dollar; KGV 553"
-    },
-    {
-     "date": "2025-12-05",
-     "video_id": "BADYwmZH114",
-     "url": "https://www.youtube.com/watch?v=BADYwmZH114&t=1352s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Der CFO kündigt höhere Auslieferungen der 737 und 787 an, positiver Free Cashflow wird für 2026 erwartet. Die Aktie reagierte mit +10%.",
-     "einordnung": "Boeing ist ein klassisches Turnaround-Narrativ — die +10%-Reaktion zeigt, dass der Markt hungrig nach positiven Signalen ist. Aber Boeing bleibt ein Unternehmen mit massiven operativen und regulatori…",
-     "figures": "+10% Kursreaktion"
-    }
-   ]
-  },
-  "KO": {
-   "name": "Coca-Cola",
-   "auftritte": [
-    {
-     "date": "2026-07-27",
-     "video_id": "tV-qzX1rLwU",
-     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=1572s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Coca-Cola zeigt als defensiver Value-Titel ein steigendes Dreieck. Die Aktie läuft auf dem EMA20 bei 73,8 US-Dollar und verfügt über Projektionsziele bei 90 und 112 US-Dollar.",
-     "einordnung": "Das ist im Vergleich zu den spekulativeren Wachstumswerten der sauberere, defensivere Chart. Die Attraktivität des Setups hängt jedoch daran, dass der Rücksetzer an der Kreuzunterstützung tatsächlich…",
-     "figures": "73,8 US-Dollar als EMA20; 67,4 US-Dollar als EMA50; 90 und 112 US-Dollar als Projektionsziele."
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "nPsSsD7zbI8",
-     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=124s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Coca-Cola schloss ebenfalls auf Rekordniveau. Es gab leichte Gewinnmitnahmen, die der Host aber als nicht dramatisch einstuft.",
-     "einordnung": "Defensive Konsumwerte an der Rekordspitze sind ein typisches Spätzyklus-Phänomen — Anleger suchen Sicherheit bei gleichzeitigem Momentum. Coca-Cola profitiert von Preissetzungsmacht und stabilem Cash…"
-    }
-   ]
-  },
-  "BE": {
-   "name": "Bloom Energy",
-   "auftritte": [
-    {
-     "date": "2026-07-27",
-     "video_id": "tV-qzX1rLwU",
-     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=1830s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Nach dem starken Anstieg bis 290 US-Dollar korrigiert Bloom Energy in den Bereich des früheren Clusters bei 160 US-Dollar. Die Zahlen werden am folgenden Abend nachbörslich veröffentlicht.",
-     "einordnung": "Nach einer derart ausgeprägten Rally ist die Korrektur zunächst keine Überraschung, sondern eine Bewährungsprobe. Ohne bestätigte Reaktion an der Unterstützungszone ist das Chance-Risiko-Verhältnis s…",
-     "figures": "160 US-Dollar als Cluster und Unterstützung; 170 US-Dollar als EMA50 auf Wochenbasis; 216 und 290 US-Dollar als frühere Ziele."
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "savtLkkJPbY",
-     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=3382s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Bloom Energy verliert nach Shortseller-Reports rund 50% in 26 Handelstagen, notiert vorbörslich aber 5% höher. Fundamental bleibt das Unternehmen wegen möglicher Nachfrage aus Rechenzentren interessa…",
-     "einordnung": "Nach einem derart starken Rückgang kann eine technische Gegenbewegung schnell entstehen, ohne dass die Vorwürfe fundamental erledigt sind. Die Rechenzentrumsfantasie bietet einen strukturellen Anker,…",
-     "figures": "minus 50% in 26 Handelstagen; +5% vorbörslich"
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "hcmndcPAbxk",
-     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=3550s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "In den Zuschauerfragen geht es um eine Short-Attacke bei Bloom Energy und die Frage, ob der Rückschlag eine Kaufchance eröffnet. Der Host sieht bei Schwäche eine mögliche Einstiegschance und nennt ei…",
-     "einordnung": "Nach einer Short-Attacke kann der Kurs zwar überproportional reagieren, aber auch die fundamentalen Vorwürfe werden vom Markt neu bewertet. Das ist eher eine Spekulations- als eine klassische Bewertu…",
-     "figures": "Kursziel 300 bis 350 US-Dollar"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "rGKDA0JAU4I",
-     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=3464s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Short-Report von Hunter Brook Capital ('Blooms Big Lie') wirft Abhängigkeit von chinesischen Lieferketten vor. Technisch mögliches Kopf-Schulter-Muster. Vorbörse +6%, aber Risiko weiter.",
-     "einordnung": "Ein Short-Report nach einem Anstieg von 1800-1900% ist das klassische Muster — je steiler die Rally, desto größer das Ziel für Leerverkäufer. Das Kopf-Schulter-Muster in Kombination mit dem Short-Rep…",
-     "figures": "Anstieg 1800-1900% seit Mitte 2025, Vorbörse +6%, mögliches Ziel 170$ (200er GD)"
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "kbhs3X-LW2E",
-     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=2948s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Ausweitung der Brookfield-Partnerschaft von 5 auf 25 Mrd. USD für KI-Infrastruktur. Nach Russell-Rebalancing (Kursrutsch) deutliche Erholung. Kursziel 400-450 USD bei aktuellem Kurs um 330 USD. Hebel…",
-     "einordnung": "Die Verfünffachung des Brookfield-Rahmens von 5 auf 25 Mrd. USD ist ein struktureller Meilenstein — das validiert Bloom Energy als KI-Strom-Infrastruktur-Provider. Der Hebeltrade ist aggressiv, aber…",
-     "figures": "Finanzierungsrahmen von 5 auf 25 Mrd. USD ausgeweitet; aktueller Kurs um 330 USD; Kursziel 400-450 USD"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=1749s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Rücksetzer wegen Index-Rebalancing (Wechsel von Russell 2000 zu Russell 1000); die fundamentale Story (Stromversorgung für KI-Rechenzentren) bleibt intakt.",
-     "einordnung": "Ein KGV von 108 ist himmelhoch, aber bei 130% Umsatzwachstum und einem Oracle-Vertrag ändert sich die Dynamik schnell. Der Index-Rebalancing-Effekt ist temporär — das erinnert an Tesla 2020, als der…",
-     "figures": "Unterstützung 250$; KGV 108; Umsatzwachstum Q1 130%, Produktumsatz +200%; Vertrag mit Oracle in 90 Tagen"
-    }
-   ]
-  },
-  "KLAC": {
-   "name": "KLA Corporation",
-   "auftritte": [
-    {
-     "date": "2026-07-27",
-     "video_id": "tV-qzX1rLwU",
-     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=2051s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der wichtige Chiptitel korrigiert nach einem phänomenalen Anstieg scharf und hat die Kreuzunterstützung bei 194 bis 196 US-Dollar erreicht. Die Zahlen stehen am folgenden Tag an.",
-     "einordnung": "Die Kombination aus scharfer Korrektur und unmittelbar bevorstehenden Zahlen macht KLA zu einem klassischen Bestätigungsfall. Gerade bei Halbleiterwerten sollte man eine einzelne Unterstützung nicht…",
-     "figures": "194 bis 196 US-Dollar als Kreuzunterstützung."
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "savtLkkJPbY",
-     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=2695s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Morgan Stanley sieht KLA als Profiteur steigender Intel-Investitionen von bis zu 28 Mrd. USD. Der KLA-Umsatz mit Intel könnte sich zwischen 2025 und 2027 versechsfachen, doch die Aktie bleibt mit KGV…",
-     "einordnung": "KLA profitiert als Anlagen- und Prozesskontrollanbieter vom Ausbau moderner Fertigung, ist aber stark von der Investitionsdisziplin weniger Großkunden abhängig. Nach der schnellen Korrektur verbesser…",
-     "figures": "bis zu 28 Mrd. USD Intel-Investitionen; 6,4-faches Umsatzwachstum von KLA mit Intel zwischen 2025 und 2027; KGV 44; PEG 2,1; minus 30% Korrektur in 12 Tagen; knapp 200 USD Unterstützung"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1310s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Jefferies erhöht das Kursziel von 1100 auf 1500 Dollar. Die Aktie notiert bei knapp 1200 Dollar und hat +30% zugelegt.",
-     "einordnung": "KLA ist der Qualitäts-Spieler im Halbleiter-Equipment-Sektor — ein Kursziel-Sprung von 1100 auf 1500 Dollar bei Jefferies ist ein starkes Signal. Mit +30% im Jahr und einem Aufwärtspotenzial von weit…",
-     "figures": "Kursziel Jefferies 1500$ (vorher 1100$), Aktie bei knapp 1200$, +30% Jahresperformance"
-    }
-   ]
-  },
-  "V": {
-   "name": "Visa",
-   "auftritte": [
-    {
-     "date": "2026-07-27",
-     "video_id": "tV-qzX1rLwU",
-     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=2286s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der bullische Ausbruch über 340 US-Dollar hat sich laut Host bestätigt. Visa gilt als qualitativ hochwertiger Titel mit gutem Gewinntrend; eine kleine Position ist bereits offen.",
-     "einordnung": "Visa gehört damit zu den konstruktivsten Charts der Sendung, weil Ausbruch, Qualität und Gewinntrend in dieselbe Richtung zeigen. Nach einem bestätigten Ausbruch bleibt dennoch die Rückeroberung der…",
-     "figures": "340 US-Dollar als Ausbruchsniveau; 370 und 415 US-Dollar als Ziele."
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "gOPRrqA_L38",
-     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=3208s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Ausbruch über den Clusterpunkt bei 341 USD mit Dynamik, spricht für mittelfristigen Anstieg.",
-     "einordnung": "Der dynamische Ausbruch über einen Clusterpunkt ist ein hochwertiges Signal. Visa als Zahlungsnetzwerk profitiert von globaler Konsumstärke und Digitalisierung — die Dip-Kauf-Strategie ist für etabli…",
-     "figures": "341 USD (Clusterpunkt), 370 USD, 417 USD (Ziele)"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "zXPxhjz_nX0",
-     "url": "https://www.youtube.com/watch?v=zXPxhjz_nX0&t=1588s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Visa zeigt relative Stärke im Finanzsektor. Die Aktie hat eine inverse SKS-Bodenbildung gebildet und testet den Clusterpunkt bei 341-342 Dollar. Ein dynamischer Ausbruch über 342-343 Dollar wäre ein…",
-     "einordnung": "Eine inverse SKS-Bodenbildung ist das Spiegelbild eines bärischen Musters und signalisiert eine Trendwende nach oben. Visa als Konsum-Proxy mit duopolartiger Marktstellung ist fundamental solide – de…",
-     "figures": "317 Dollar (EMA100 Support), 341-342 Dollar (Clusterpunkt/Widerstand)"
     }
    ]
   },
@@ -5332,51 +5741,6 @@
     }
    ]
   },
-  "BAS.DE": {
-   "name": "BASF",
-   "auftritte": [
-    {
-     "date": "2026-07-21",
-     "video_id": "J6gUTUPHems",
-     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=308s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "BASF meldete starke Zahlen für das zweite Quartal, doch die Anhebung der Prognose blieb leicht hinter den Analystenerwartungen zurück und enttäuschte damit den Markt.",
-     "einordnung": "Die operative Überraschung im Quartal ist positiv, wird aber durch den nur vorsichtig angehobenen Ausblick und den negativen Quartals-Free-Cashflow relativiert. Bei einem zyklischen Chemiewert zählt…",
-     "figures": "Umsatz: 17,2 Mrd. Euro gegenüber erwarteten 16,5 Mrd. Euro; bereinigtes EBITDA: 2,4 Mrd. Euro gegenüber erwarteten 2,15 Mrd. Euro; Free Cashflow: minus 0,2 Mrd. Euro. EBITDA-Prognose: 6,9 bis 7,7 Mrd…"
-    },
-    {
-     "date": "2026-07-16",
-     "video_id": "8n4SjPW9E8M",
-     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=612s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "BASF fokussiert sich auf das Kerngeschäft, spaltet die Agrarsparte ab und verkauft das Coatings-Geschäft. Der Host hebt BASF als guten Dividendenzahler hervor und sieht Potenzial über 50.",
-     "einordnung": "Die Neuausrichtung kann den Konzern fokussieren und Kapital freisetzen, ist aber zunächst mit Umbaukosten und Ausführungsrisiken verbunden. Die Dividende bietet einen Puffer, ersetzt bei einem zyklis…",
-     "figures": "Potenzial über 50; konkrete Währung beziehungsweise Kursziel im Video nicht genannt"
-    },
-    {
-     "date": "2026-07-16",
-     "video_id": "l9xly8aiYMM",
-     "url": "https://www.youtube.com/watch?v=l9xly8aiYMM&t=986s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "MWB Research stuft BASF von 'Halten' auf 'Kaufen' hoch. Der vorläufige Umsatz im zweiten Quartal liegt über den Erwartungen, das EBITDA steigt deutlich.",
-     "einordnung": "Die Zahlen sprechen für eine operative Verbesserung, doch BASF bleibt ein zyklischer Chemiewert, bei dem Preis- und Mengeneffekte nicht automatisch dauerhaft sind. Der Hinweis auf die Mitte einer Sei…",
-     "figures": "Kursziel 55 Euro nach zuvor 52 Euro; Umsatz 17,2 Mrd. Euro bei erwarteten 16,5 Mrd. Euro; EBITDA 2,4 Mrd. Euro bei erwarteten 2,1 Mrd. Euro; Preise +11 %, Mengen +7 %; Prognose 2026: 6,9 bis 7,7 Mrd.…"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "8EytmuiphH4",
-     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=1448s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Für die Agrarsparte ist ein Börsengang mit einem Unternehmenswert von 20 bis 30 Mrd. Euro geplant. BASF selbst kommt auf eine Marktkapitalisierung von 42,6 Mrd. Euro und ein KGV von 18; charttechnisc…",
-     "einordnung": "Ein möglicher Börsengang kann verborgene Werte sichtbar machen, ist aber zunächst eine Bewertungs- und Umsetzungsstory. Befindet sich der Kurs zugleich mitten in der Handelsspanne, fehlt aus charttec…",
-     "figures": "Marktkapitalisierung BASF 42,6 Mrd. Euro, erwarteter Wert der Agrarsparte 20 bis 30 Mrd. Euro, KGV 18, Tagesplus 1,2 Prozent"
-    }
-   ]
-  },
   "PNR": {
    "name": "Pentair",
    "auftritte": [
@@ -6834,80 +7198,6 @@
     }
    ]
   },
-  "RWE.DE": {
-   "name": "RWE",
-   "auftritte": [
-    {
-     "date": "2026-07-15",
-     "video_id": "6LLJagAsqAI",
-     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=702s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Jefferies führt RWE auf einer Favoritenliste, bestätigt die Kaufempfehlung und nennt ein Kursziel von 68 Euro. Als Wachstumstreiber werden Elektrifizierung, Dekarbonisierung und der steigende Energie…",
-     "einordnung": "Die RWE-Story verbindet strukturell steigenden Strombedarf mit dem Ausbau dekarbonisierter Erzeugung und passt damit zu einem langfristigen Infrastrukturthema. Gleichzeitig bleiben Strompreise, Regul…",
-     "figures": "Kursziel 68 Euro"
-    },
-    {
-     "date": "2026-07-08",
-     "video_id": "e11CVmyBuR8",
-     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=1394s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Relativ stabil im schwachen Markt. UBS hebt Kursziel von 65 auf 66 EUR. KGV 20, nicht billig. Diversifikation ins Netzgeschäft positiv.",
-     "einordnung": "KGV 20 für einen Versorger ist ambitioniert — das Netzgeschäft ist zwar strategisch richtig, aber die Re-Rating-Premise braucht Geduld. Bei 50 EUR wäre die Risiko-Rendite deutlich attraktiver als auf…",
-     "figures": "Kursziel UBS 66 EUR (vorher 65 EUR), KGV 20, Unterstützung 43-44 EUR"
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "gOPRrqA_L38",
-     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1774s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Fast-Kaufsignal: Noch nicht über 58 EUR ausgebrochen, aber der positive Sektortrend (E.ON bereits ausgebrochen) lässt einen Ausbruch erwarten.",
-     "einordnung": "Das Catch-up-Argument innerhalb des Versorgersektors ist stichhaltig — wenn E.ON ausbricht, zieht RWE meist nach. Der konventionelle Stromgeschäftsanteil bei RWE macht den Titel zyklischer als E.ON,…",
-     "figures": "58 EUR (Clusterpunkt), 62,50 EUR (Ziel), 67-69 EUR (höhere Ziele)"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=460s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "RWE will Anteil an Ampion (Höchstspannungsnetz Nordsee-Alpen) von 25,1% auf 55% aufstocken, Kosten ca. 4 Mrd. Euro. Aktie unter Gewinnmitnahmen.",
-     "einordnung": "Eine 4-Mrd.-Euro-Investition in ein Höchstspannungsnetz ist strategisch sinnvoll, aber kurzfristig belastend. Die Aktie reagiert mit Gewinnmitnahmen – das ist typisch für eine Kapitalerhöhung oder gr…",
-     "figures": "25,1% auf 55%, 4 Milliarden Euro"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=1256s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "RWE stockt Anteil an Amprion auf 55% auf, Kaufpreis 3,6 Milliarden Euro, finanziert durch Kapitalerhöhung und Aktienverkauf. Gewinnziel 2031: 4,40 auf 4,55 Euro je Aktie. Kurzfristig seitwärts.",
-     "einordnung": "Die Aufstockung des Amprion-Anteils ist strategisch sinnvoll, weil regulierte Netzbetriebe stabile Erträge liefern, aber die Finanzierung über Kapitalerhöhung und Aktienverkauf bedeutet Verwässerung…",
-     "figures": "3,6 Mrd. Euro Kaufpreis, Anteil 55%, Gewinnziel 4,40-4,55 Euro/Aktie"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=1496s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "RWE erhöht Anteil an Amprion auf 55% für 3,6 Mrd. €, teilweise über Aktienemission. Schritt in Richtung regulierten Netzbetrieb, stabilisiert Erträge.",
-     "einordnung": "Die Aufstockung der Amprion-Beteiligung ist ein strategisch sinnvoller Schritt hin zu regulierten, planbaren Erträgen. Die Finanzierung über Aktienemission verdünnt jedoch kurzfristig, und bei einem…",
-     "figures": "3,6 Mrd. €, KGV 19, Dividendenrendite 2,4%"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
-     "einordnung": "RWE leidet ebenfalls unter dem Momentum-Wechsel – als Underperformer könnte die Aktie jedoch kurzfristig Rotationsgelder anziehen."
-    }
-   ]
-  },
   "SMHN.DE": {
    "name": "Süss MicroTec",
    "auftritte": [
@@ -7265,49 +7555,6 @@
      "note": "Evotec meldet schwache vorläufige Halbjahreszahlen: Der Umsatz bleibt hinter den Erwartungen zurück, der Verlust weitet sich deutlich aus und der Ausblick wird massiv gesenkt. Die Aktie bricht um meh…",
      "einordnung": "Eine derart starke Prognosekürzung ist mehr als ein gewöhnlicher Quartalsrückschlag und rechtfertigt zunächst eine vorsichtige Haltung. Charttechnisch liegt die Aktie nach dem Absturz zwar am Jahrest…",
      "figures": "Umsatz 300 Millionen Euro; bereinigtes EBITDA -43 Millionen Euro; neuer Umsatzausblick 570 bis 610 Millionen Euro nach zuvor 700 bis 780 Millionen Euro; EBITDA-Ausblick -70 bis -105 Millionen Euro; 5…"
-    }
-   ]
-  },
-  "P911.DE": {
-   "name": "Porsche AG",
-   "auftritte": [
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=433s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Der weltweite Absatz lag im ersten Halbjahr 18,2 Prozent unter dem Vorjahresniveau. In China betrug der Rückgang im zweiten Quartal 41 Prozent; Egmond stuft die Aktie als klaren Verkauf ein.",
-     "einordnung": "Porsche ist stärker als viele Volumenhersteller vom Premium- und Chinazyklus abhängig; entsprechend hart trifft ein solcher Absatzrückgang die Gewinnfantasie. Die Aussage ist deshalb fundamental nach…",
-     "figures": "Q2 weltweit 61.315 Fahrzeuge; China minus 41 Prozent auf 6.982 Fahrzeuge; H1 China minus 32 Prozent auf 14.500 Fahrzeuge; Prognose 2026: 30.000 Fahrzeuge in China"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "rGKDA0JAU4I",
-     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=1966s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Auslieferungen im 1. Halbjahr bei 122.300 Fahrzeugen, -16% zum Vorjahr. China bricht um 32% ein, Nordamerika bei 37.700 Fahrzeugen (-13%). Der 911 legt +20% zu. Strategiewechsel hin zu margenstarken…",
-     "einordnung": "Ein Kurssturz von 115€ auf 45€ bei einem KGV von 22 über dem historischen Schnitt spricht Bände über die Neubewertung der Autoindustrie. Der 911 als margenstarker Anker ist positiv, aber der China-Ei…",
-     "figures": "122.300 Fahrzeuge, -16%, China -32%, Nordamerika 37.700 (-13%), 911 +20%, KGV 22, Hoch 115€, aktuell 45€"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=927s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Porsche will die Produktion von Bratislava nach Leipzig verlagern, Mitarbeiter sollen auf Gehalt verzichten. Haidt ordnet dies in die Branchenkrise ein.",
-     "einordnung": "Die Verlagerung von Bratislava nach Leipzig ist politisch klug, aber betriebswirtschaftlich fragwürdig – höhere deutsche Lohnkosten lassen sich nicht durch Gehaltsverzicht kompensieren. Porsche als P…"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
-     "einordnung": "Porsche als Underperformer leidet unter der Schwäche im Luxus-Auto-Sektor – kurzfristig könnte die Aktie vom Momentum-Wechsel profitieren, aber die strukturellen Herausforderungen bleiben."
     }
    ]
   },
@@ -8138,40 +8385,6 @@
      "kategorie": "makro",
      "note": "Im Video nur kurz erwähnt, im Kontext der US-Tech-Korrektur besprochen.",
      "einordnung": "Der Nasdaq ist das Epizentrum der KI-Korrektur – Apple, Microsoft, Nvidia und Meta machen einen erheblichen Teil des Index aus. Wenn diese Werte weiter unter Druck stehen, ist ein nachhaltiger Nasdaq…"
-    }
-   ]
-  },
-  "DBK.DE": {
-   "name": "Deutsche Bank",
-   "auftritte": [
-    {
-     "date": "2026-07-06",
-     "video_id": "htTDw4hrfRo",
-     "url": "https://www.youtube.com/watch?v=htTDw4hrfRo&t=144s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Bruch der 200-Tage-Linie mit schnellem Pullback, danach weiter gestiegen. Stärkster Titel im europäischen Bankenverband. Aufwärtstrend intakt.",
-     "einordnung": "Der schnelle Pullback nach dem 200-Tage-Bruch ist ein klassisches bullisches Zeichen — die Verkäufer hatten nicht genug Druck, die Linie zu halten. Die Deutsche Bank profitiert von der Sektorrotation…"
-    },
-    {
-     "date": "2026-07-03",
-     "video_id": "XVi3pNFu4dA",
-     "url": "https://www.youtube.com/watch?v=XVi3pNFu4dA&t=322s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Die Deutsche Bank profitiert von einem Reformpaket und war gestern der stärkste Wert im europäischen Bankensektor. Kursziel wird bei 33-34€ gesehen.",
-     "einordnung": "Ein Reformpaket als Katalysator für Bankaktien ist ein vertrautes Muster — das erinnert an die EU-Bankensektor-Reformen 2014/15, die damals den gesamten Sektor beflügelten. Wenn die 33-34€-Zone saube…",
-     "figures": "Kursziel 33-34€"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=906s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Morgan Stanley hebt das Kursziel moderat an und sieht deutliches Potenzial. Chart zeigt Widerstand bei 34 Euro, Ziel bei 40 Euro möglich. Bewertung mit Buchwert von 0,7 günstig.",
-     "einordnung": "Die Deutsche Bank profitiert vom Zinsumfeld und der Rotation in Finanzwerte. Ein Buchwert von 0,7 ist für eine systemrelevante Bank nach wie vor attraktiv, aber der Widerstand bei 34 Euro muss erst ü…",
-     "figures": "Kursziel 34 € auf 36 €, Buchwert 0,7, Ziel 40 € (161,8% Extension)"
     }
    ]
   },
@@ -10103,44 +10316,6 @@
      "note": "Cisco legte starke Zahlen vor: Rekordumsatz von 15,84 Milliarden Dollar (+12 %), KI-Aufträge von Hyperscalern von 5 auf 9 Milliarden Dollar angehoben. Die Aktie stieg auf ein Rekordhoch. Bewertung mi…",
      "einordnung": "Cisco zeigt, dass der KI-Capex-Zyklus auch Netzwerkausrüster erreicht – das KGV von 24,3 ist für einen Konzern dieser Größe moderat. Die Verdopplung der KI-Aufträge ist ein starkes Signal, auch wenn…",
      "figures": "15,84 Mrd. $ (Umsatz), +12 % (Wachstum), 9 Mrd. $ (KI-Aufträge, zuvor 5 Mrd. $), 469,6 Mrd. $ (Börsenwert), 24,3 (KGV)"
-    }
-   ]
-  },
-  "NDX1.DE": {
-   "name": "Nordex",
-   "auftritte": [
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
-     "einordnung": "Nordex leidet unter dem Momentum-Wechsel, nicht unter 'Sell in May' – das ist ein wichtiger Unterschied, da der Momentum-Wechsel temporär sein kann."
-    }
-   ]
-  },
-  "STX": {
-   "name": "Seagate",
-   "auftritte": [
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Im Video im Rahmen der Zuschauerfragen erwähnt: Seagate-Management warnt vor zu langen Fabrikbauzeiten, was auf einen Kapazitätsengpass hindeutet.",
-     "einordnung": "Seagates Warnung vor langen Fabrikbauzeiten ist ein Signal für Kapazitätsengpässe im Speichermarkt – das könnte mittelfristig die Preise stützen, kurzfristig aber die Aktie belasten."
-    },
-    {
-     "date": "2025-11-13",
-     "video_id": "DdOoAO1ztKo",
-     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1055s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Loop Capital erhöht das Kursziel von 350 auf 465 USD – ein deutliches Vertrauensvotum für den Speicherspezialisten.",
-     "einordnung": "Seagate profitiert vom gleichen KI-Trend wie Sandisk, nur mit anderer Marktdynamik. Die Kurszielerhöhung um rund 33% ist signifikant und spiegelt die Erwartung wider, dass der Speicherzyklus länger u…",
-     "figures": "350 USD, 465 USD"
     }
    ]
   },
