@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-29T21:20:39.585818Z",
+  "generated_at": "2026-07-29T22:20:34.988523Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -44,12 +44,6 @@
      "label": "Video-Erwähnungen",
      "value": "4 Videos in 3 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "KRX:000660",
@@ -68,7 +62,7 @@
   {
    "symbol": "005930.KS",
    "name": "Samsung",
-   "score": 95,
+   "score": 90,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
@@ -89,12 +83,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "KRX:005930",
@@ -113,7 +101,7 @@
   {
    "symbol": "UPS",
    "name": "UPS",
-   "score": 95,
+   "score": 90,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -134,12 +122,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -152,45 +134,6 @@
     "date": "2026-07-28",
     "distance_days": -1,
     "zeit": "bmo"
-   }
-  },
-  {
-   "symbol": "BE",
-   "name": "Bloom Energy",
-   "score": 85,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-10,5 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,3× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 168.34,
-    "pct": -10.54,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
    }
   },
   {
@@ -270,9 +213,42 @@
    }
   },
   {
+   "symbol": "BE",
+   "name": "Bloom Energy",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-10,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,3× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 168.34,
+    "pct": -10.54,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
    "symbol": "AMD",
    "name": "Advanced Micro Devices",
-   "score": 80,
+   "score": 75,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -293,12 +269,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -311,90 +281,6 @@
     "date": "2026-08-04",
     "distance_days": 6,
     "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "AMKR",
-   "name": "Amkor",
-   "score": 75,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-26,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 44.68,
-    "pct": -26.4,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   }
-  },
-  {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
-   "score": 75,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,7 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
-    }
-   ],
-   "tv_symbol": "XETR:IFX",
-   "quote": {
-    "price": 54.48,
-    "pct": -5.69,
-    "cur": "EUR",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-05",
-    "distance_days": 7,
-    "zeit": "tbd"
    }
   },
   {
@@ -481,10 +367,82 @@
    }
   },
   {
-   "symbol": "KLAC",
-   "name": "KLA",
+   "symbol": "AMKR",
+   "name": "Amkor",
    "score": 70,
    "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-26,4 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 44.68,
+    "pct": -26.4,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,7 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 7 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:IFX",
+   "quote": {
+    "price": 54.48,
+    "pct": -5.69,
+    "cur": "EUR",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-05",
+    "distance_days": 7,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "KLAC",
+   "name": "KLA",
+   "score": 65,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -498,12 +456,6 @@
      "label": "Video-Erwähnungen",
      "value": "3 Videos in 3 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -576,171 +528,6 @@
    }
   },
   {
-   "symbol": "SNDK",
-   "name": "SanDisk",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-17,5 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 1054.18,
-    "pct": -17.53,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   }
-  },
-  {
-   "symbol": "GLW",
-   "name": "Corning",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-13,1 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 124.55,
-    "pct": -13.12,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   }
-  },
-  {
-   "symbol": "NVTS",
-   "name": "Navitas Semiconductor",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 10.125,
-    "pct": -11.31,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   }
-  },
-  {
-   "symbol": "APLD",
-   "name": "Applied Digital",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-9,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 23.935,
-    "pct": -9.29,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   }
-  },
-  {
-   "symbol": "STM",
-   "name": "STMicroelectronics",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,4 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future -1,7 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 49.5,
-    "pct": -7.39,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   }
-  },
-  {
    "symbol": "UBER",
    "name": "Uber",
    "score": 60,
@@ -776,6 +563,175 @@
     "date": "2026-08-04",
     "distance_days": 6,
     "zeit": "bmo"
+   }
+  },
+  {
+   "symbol": "F",
+   "name": "Ford",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,7 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 15.565,
+    "pct": 5.99,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-28",
+    "distance_days": -1,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "MSFT",
+   "name": "Microsoft",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,4 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 398.34,
+    "pct": 2.37,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-29",
+    "distance_days": 0,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "DBK.DE",
+   "name": "Deutsche Bank",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,1× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:DBK",
+   "quote": {
+    "price": 31.265,
+    "pct": 1.07,
+    "cur": "EUR",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-29",
+    "distance_days": 0,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "SNDK",
+   "name": "SanDisk",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-17,5 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 1054.18,
+    "pct": -17.53,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "GLW",
+   "name": "Corning",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-13,1 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 124.55,
+    "pct": -13.12,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
    }
   }
  ]
