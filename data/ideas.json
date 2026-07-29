@@ -1,57 +1,72 @@
 {
- "updated": "2026-07-28T18:36:20.356281+00:00",
- "date": "2026-07-28",
+ "updated": "2026-07-29T06:33:09.495087+00:00",
+ "date": "2026-07-29",
  "ideas": [
   {
-   "title": "KI- und Speicherchipwerte unter Druck halten",
-   "thesis": "Die Kombination aus Zweifeln an der Rentabilität hoher KI-Investitionen und wachsender chinesischer Konkurrenz belastet den Halbleitersektor. Besonders bei SK Hynix und AMD wird im Briefing trotz positiver Einzelmeldungen eine anhaltende Überbewertung beziehungsweise ein mögliches Ende der Blase gesehen.",
+   "title": "Halbleiter-Abverkauf weiter untergewichten",
+   "thesis": "Der Einbruch des KOSPI um 9,6 Prozent, die enttäuschenden Zusatzkennzahlen von SK Hynix und die Zweifel an der Rendite hoher KI-Ausgaben sprechen für anhaltenden Druck auf Speicher- und Halbleiterwerte. Besonders bei SK Hynix und Infineon überlagern China-Konkurrenz und die Neubewertung des KI-Investitionszyklus die operativen Chancen.",
    "values": [
     "SK Hynix",
-    "Advanced Micro Devices",
-    "Halbleitersektor",
-    "Nasdaq 100"
+    "Infineon",
+    "Halbleitersektor"
    ],
    "angle": "Short",
-   "risk": "Eine weiterhin intakte Nachfrage nach KI-Rechenleistung oder positive Quartalszahlen der Hyperscaler könnte die Titel schnell stabilisieren.",
-   "source": "Fundamentalanalyse mit Egmond",
-   "source_url": ""
+   "risk": "Eine schnelle Stabilisierung der KI-Nachfrage oder eine technische Gegenbewegung könnte den Abwärtsdruck rasch umkehren.",
+   "source": "News: Chip-Ausverkauf verschärft sich, KOSPI verliert 9,6 Prozent",
+   "source_url": "https://x.com/FirstSquawk/status/2082317302452953250"
   },
   {
-   "title": "SAP als vergleichsweise robuster Softwarewert",
-   "thesis": "SAP überzeugte mit steigenden Cloud-Erlösen, einem hohen Cloud-Auftragsbestand und starkem Free Cashflow, obwohl bereinigtes EBIT und Gewinn je Aktie unter den Erwartungen lagen. Nach der positiven Kursreaktion bleibt kurzfristiges Erholungspotenzial bestehen, sofern die Zahlen der großen Cloud- und Technologiekonzerne nicht erneut für Belastung sorgen.",
-   "values": [
-    "SAP",
-    "europäische Softwareaktien"
-   ],
-   "angle": "Long",
-   "risk": "Eine enttäuschende Entwicklung bei Microsoft oder Meta könnte trotz der soliden SAP-Zahlen den gesamten Technologiebereich belasten.",
-   "source": "Fundamentalanalyse mit Egmond",
-   "source_url": ""
-  },
-  {
-   "title": "Tesla wegen sinkender Profitabilität meiden oder absichern",
-   "thesis": "Bei Tesla steht einem Umsatzwachstum ein deutlich rückläufiges EBIT und ein negativer Free Cashflow gegenüber. Das Briefing bewertet die hohe Bewertung vor diesem Hintergrund skeptisch und erwartet weiteren Abgabedruck.",
+   "title": "Tesla wegen Profitabilitäts- und Bewertungsrisiken meiden",
+   "thesis": "Bei Tesla stehen steigender Umsatz, deutlich sinkendes EBIT, negativer Free Cashflow und eine sehr hohe Bewertung gleichzeitig im Raum. Die im Video geäußerte Skepsis spricht eher für eine weitere Schwächephase als für einen kurzfristigen Einstieg.",
    "values": [
     "Tesla",
-    "US-Elektroauto- und Wachstumsaktien"
+    "Elektrofahrzeugsektor"
    ],
    "angle": "Short",
-   "risk": "Eine positive Überraschung bei neuen Geschäftsbereichen oder eine starke Erholung der Tesla-Nachfrage könnte die Short-These entkräften.",
+   "risk": "Positive Nachrichten zu Absatz, Margen oder autonomen Fahrfunktionen könnten die hohe Bewertung erneut stützen.",
    "source": "Fundamentalanalyse mit Egmond",
    "source_url": ""
   },
   {
-   "title": "Defensive Konsumwerte als Gegenpol zur Technologieschwäche",
-   "thesis": "Unilever meldete starke Quartalszahlen, stieg aus einer bullischen Konsolidierung aus und kann laut Briefing sowohl Preiserhöhungen als auch höhere Absatzmengen durchsetzen. Das vergleichsweise moderate Bewertungsniveau spricht für eine defensive Positionierung, falls die Risikoaversion bei Technologieaktien anhält.",
+   "title": "Bankenrückkäufe als relativer Stärke-Trade",
+   "thesis": "UBS und Deutsche Bank planen weitere Aktienrückkäufe und berichten zugleich von höheren Ergebnissen. Das schafft einen konkreten Nachfrageimpuls für die eigenen Aktien und könnte Finanzwerte gegenüber dem angeschlagenen Technologiesektor relativ stabilisieren.",
    "values": [
-    "Unilever",
-    "Basiskonsumgüter",
-    "defensive Aktien"
+    "UBS",
+    "Deutsche Bank",
+    "Standard Chartered",
+    "europäische Banken"
    ],
    "angle": "Long",
-   "risk": "Schwächeres globales Konsumwachstum oder eine enttäuschende operative Entwicklung könnte die positive Chart- und Ergebnisperspektive verschlechtern.",
-   "source": "[onvista]",
+   "risk": "Schwächere Konjunktur, regulatorische Einschränkungen oder Probleme bei der Integration der Credit Suisse könnten den Rückkaufimpuls überlagern.",
+   "source": "News: UBS und Deutsche Bank planen weitere Aktienrückkäufe",
+   "source_url": "https://x.com/FirstSquawk/status/2082342050004140206"
+  },
+  {
+   "title": "SAP als konstruktive Qualitätsposition beobachten",
+   "thesis": "SAP überzeugte mit steigenden Cloud-Erlösen, einem hohen Current Cloud Backlog und starkem Free Cashflow, auch wenn bereinigtes EBIT und Gewinn je Aktie unter den Erwartungen lagen. Die positive Kursreaktion ist daher fundamental nachvollziehbar, die weitere Entwicklung hängt laut Briefing jedoch auch von den Zahlen der Hyperscaler ab.",
+   "values": [
+    "SAP",
+    "europäische Softwareaktien",
+    "DAX"
+   ],
+   "angle": "Beobachten",
+   "risk": "Schwache Ergebnisse oder vorsichtige Investitionssignale von Microsoft und Meta könnten die positive SAP-Reaktion wieder abschwächen.",
+   "source": "Fundamentalanalyse mit Egmond",
    "source_url": ""
+  },
+  {
+   "title": "Japanisches Erdbeben als Lieferkettenrisiko für Auto- und Chipwerte",
+   "thesis": "Die Produktionsstopps bei Toyota und Renesas zeigen, dass das Erdbeben in Südjapan bereits konkrete Auswirkungen auf wichtige Fertigungsstandorte und Lieferketten hat. Bis zur Klärung von Schäden und Beständen bleiben Toyota, Renesas und abhängige Auto- und Elektronikzulieferer anfällig für weitere Unterbrechungen.",
+   "values": [
+    "Toyota",
+    "Renesas Electronics",
+    "japanische Autozulieferer",
+    "japanischer Halbleitersektor"
+   ],
+   "angle": "Beobachten",
+   "risk": "Eine schnelle Wiederaufnahme der Produktion und geringe Schäden an Anlagen und Beständen könnten die Lieferkettenängste rasch reduzieren.",
+   "source": "News: Japans Erdbeben belastet weitere Auto- und Chipwerke",
+   "source_url": "https://x.com/ReutersWorld/status/2082292687500083339"
   }
  ]
 }
