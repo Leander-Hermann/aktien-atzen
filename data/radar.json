@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-28T23:20:30.213095Z",
+  "generated_at": "2026-07-29T00:20:33.424936Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "NEM.DE",
    "name": "Nemetschek",
-   "score": 90,
+   "score": 100,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -42,8 +42,8 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
+     "value": "Earnings morgen",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -61,7 +61,7 @@
    },
    "earnings": {
     "date": "2026-07-30",
-    "distance_days": 2,
+    "distance_days": 1,
     "zeit": "tbd"
    }
   },
@@ -70,7 +70,7 @@
    "name": "Coca-Cola",
    "score": 90,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -87,7 +87,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -105,7 +105,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "bmo"
    }
   },
@@ -114,7 +114,7 @@
    "name": "Boeing",
    "score": 90,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -131,7 +131,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -149,8 +149,53 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "bmo"
+   }
+  },
+  {
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 85,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-6,0 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,2× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 7 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:IFX",
+   "quote": {
+    "price": 57.77,
+    "pct": -6.05,
+    "cur": "EUR",
+    "as_of": "2026-07-28T18:35:33.084322+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-05",
+    "distance_days": 7,
+    "zeit": "tbd"
    }
   },
   {
@@ -269,7 +314,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     },
     {
@@ -287,7 +332,7 @@
    },
    "earnings": {
     "date": "2026-08-04",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "amc"
    }
   },
@@ -296,7 +341,7 @@
    "name": "PayPal",
    "score": 75,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -307,7 +352,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -325,7 +370,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "amc"
    }
   },
@@ -402,7 +447,7 @@
    "name": "SK Hynix",
    "score": 70,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -413,7 +458,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -432,7 +477,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "tbd"
    }
   },
@@ -441,7 +486,7 @@
    "name": "Mercedes-Benz",
    "score": 70,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -452,7 +497,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -471,7 +516,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "tbd"
    }
   },
@@ -503,40 +548,6 @@
    }
   },
   {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-6,0 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,2× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:IFX",
-   "quote": {
-    "price": 57.77,
-    "pct": -6.05,
-    "cur": "EUR",
-    "as_of": "2026-07-28T18:35:33.084322+00:00"
-   }
-  },
-  {
    "symbol": "PLTR",
    "name": "Palantir",
    "score": 60,
@@ -552,7 +563,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 6 Tagen",
+     "value": "Earnings in 5 Tagen",
      "weight": 20
     },
     {
@@ -570,7 +581,7 @@
    },
    "earnings": {
     "date": "2026-08-03",
-    "distance_days": 6,
+    "distance_days": 5,
     "zeit": "tbd"
    }
   },
@@ -579,7 +590,7 @@
    "name": "Alphabet",
    "score": 60,
    "priority": "medium",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -590,7 +601,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -608,7 +619,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "amc"
    }
   },
@@ -617,7 +628,7 @@
    "name": "Visa",
    "score": 60,
    "priority": "medium",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -628,7 +639,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -646,7 +657,7 @@
    },
    "earnings": {
     "date": "2026-07-28",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "amc"
    }
   },
@@ -683,7 +694,7 @@
     "as_of": "2026-07-28T18:35:33.084322+00:00"
    },
    "earnings": {
-    "date": "2026-07-28",
+    "date": "2026-07-29",
     "distance_days": 0,
     "zeit": "amc"
    }
