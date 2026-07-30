@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-29T23:20:28.748719Z",
+  "generated_at": "2026-07-30T00:20:28.038505Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 138,
-  "with_quote_data": 56,
+  "symbols_total": 137,
+  "with_quote_data": 55,
   "sources": [
    "watchlist",
    "videos",
@@ -21,50 +21,11 @@
  },
  "items": [
   {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 100,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-14,6 %",
-     "weight": 45
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "4 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1401000.0,
-    "pct": -14.65,
-    "cur": "KRW",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-28",
-    "distance_days": -1,
-    "zeit": "tbd"
-   }
-  },
-  {
    "symbol": "005930.KS",
    "name": "Samsung",
    "score": 90,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
@@ -75,7 +36,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -94,155 +55,47 @@
    },
    "earnings": {
     "date": "2026-07-29",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "tbd"
    }
   },
   {
-   "symbol": "UPS",
-   "name": "UPS",
-   "score": 90,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,7 %",
-     "weight": 45
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 104.29,
-    "pct": -7.67,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-28",
-    "distance_days": -1,
-    "zeit": "bmo"
-   }
-  },
-  {
-   "symbol": "KO",
-   "name": "Coca-Cola",
-   "score": 85,
-   "priority": "high",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,9 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 89.065,
-    "pct": 5.95,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-28",
-    "distance_days": -1,
-    "zeit": "bmo"
-   }
-  },
-  {
-   "symbol": "PYPL",
-   "name": "PayPal",
-   "score": 85,
-   "priority": "high",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,8 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 59.33,
-    "pct": 5.81,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-28",
-    "distance_days": -1,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "BE",
-   "name": "Bloom Energy",
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
    "score": 80,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-10,5 %",
+     "value": "-14,6 %",
      "weight": 45
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,3× Durchschnitt",
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
      "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
+     "value": "4 Videos in 3 Tagen",
      "weight": 20
     }
    ],
+   "tv_symbol": "KRX:000660",
    "quote": {
-    "price": 168.34,
-    "pct": -10.54,
-    "cur": "USD",
+    "price": 1401000.0,
+    "pct": -14.65,
+    "cur": "KRW",
     "as_of": "2026-07-29T18:35:29.418763+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-28",
+    "distance_days": -2,
+    "zeit": "tbd"
    }
   },
   {
@@ -261,7 +114,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 6 Tagen",
+     "value": "Earnings in 5 Tagen",
      "weight": 20
     },
     {
@@ -279,45 +132,7 @@
    },
    "earnings": {
     "date": "2026-08-04",
-    "distance_days": 6,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "GOOGL",
-   "name": "Alphabet",
-   "score": 75,
-   "priority": "high",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,0 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 339.72,
-    "pct": 4.03,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-28",
-    "distance_days": -1,
+    "distance_days": 5,
     "zeit": "amc"
    }
   },
@@ -326,7 +141,7 @@
    "name": "BASF",
    "score": 75,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -343,7 +158,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -362,7 +177,7 @@
    },
    "earnings": {
     "date": "2026-07-29",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "tbd"
    }
   },
@@ -400,6 +215,77 @@
    }
   },
   {
+   "symbol": "BE",
+   "name": "Bloom Energy",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-10,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,3× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 168.34,
+    "pct": -10.54,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "UPS",
+   "name": "UPS",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,7 %",
+     "weight": 45
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 104.29,
+    "pct": -7.67,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-28",
+    "distance_days": -2,
+    "zeit": "bmo"
+   }
+  },
+  {
    "symbol": "IFX.DE",
    "name": "Infineon",
    "score": 70,
@@ -415,13 +301,13 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
+     "value": "2 Videos in 3 Tagen",
      "weight": 20
     }
    ],
@@ -434,63 +320,8 @@
    },
    "earnings": {
     "date": "2026-08-05",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "KLAC",
-   "name": "KLA",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-14,5 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 173.87,
-    "pct": -14.5,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   }
-  },
-  {
-   "symbol": "BZ=F",
-   "name": "Öl",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+8,2 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "TVC:UKOIL",
-   "quote": {
-    "price": 91.02,
-    "pct": 8.24,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
    }
   },
   {
@@ -528,120 +359,6 @@
    }
   },
   {
-   "symbol": "UBER",
-   "name": "Uber",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,6 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 6 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 71.33,
-    "pct": 4.62,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-04",
-    "distance_days": 6,
-    "zeit": "bmo"
-   }
-  },
-  {
-   "symbol": "F",
-   "name": "Ford",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,7 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 15.565,
-    "pct": 5.99,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-28",
-    "distance_days": -1,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "MSFT",
-   "name": "Microsoft",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,4 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 398.34,
-    "pct": 2.37,
-    "cur": "USD",
-    "as_of": "2026-07-29T18:35:29.418763+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-29",
-    "distance_days": 0,
-    "zeit": "amc"
-   }
-  },
-  {
    "symbol": "DBK.DE",
    "name": "Deutsche Bank",
    "score": 60,
@@ -657,7 +374,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -676,7 +393,7 @@
    },
    "earnings": {
     "date": "2026-07-29",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "tbd"
    }
   },
@@ -708,6 +425,33 @@
    }
   },
   {
+   "symbol": "KLAC",
+   "name": "KLA",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-14,5 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 173.87,
+    "pct": -14.5,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
    "symbol": "GLW",
    "name": "Corning",
    "score": 55,
@@ -732,6 +476,219 @@
     "pct": -13.12,
     "cur": "USD",
     "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "NVTS",
+   "name": "Navitas Semiconductor",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-11,3 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 10.125,
+    "pct": -11.31,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "APLD",
+   "name": "Applied Digital",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-9,3 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 23.935,
+    "pct": -9.29,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "BZ=F",
+   "name": "Öl",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,2 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "TVC:UKOIL",
+   "quote": {
+    "price": 91.02,
+    "pct": 8.24,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "STM",
+   "name": "STMicroelectronics",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,4 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 49.5,
+    "pct": -7.39,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "CL=F",
+   "name": "Öl",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,1 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "TVC:USOIL",
+   "quote": {
+    "price": 84.88,
+    "pct": 7.09,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   }
+  },
+  {
+   "symbol": "KO",
+   "name": "Coca-Cola",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,9 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 89.065,
+    "pct": 5.95,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-28",
+    "distance_days": -2,
+    "zeit": "bmo"
+   }
+  },
+  {
+   "symbol": "PYPL",
+   "name": "PayPal",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,8 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 59.33,
+    "pct": 5.81,
+    "cur": "USD",
+    "as_of": "2026-07-29T18:35:29.418763+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-28",
+    "distance_days": -2,
+    "zeit": "amc"
    }
   }
  ]
