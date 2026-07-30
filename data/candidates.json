@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-07-29T06:25:47.740144Z",
-    "trading_day": "2026-07-28",
+    "generated_at": "2026-07-30T06:17:18.167070Z",
+    "trading_day": "2026-07-29",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-07-29T06:25:47.740144Z"
+    "as_of": "2026-07-30T06:17:18.167070Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "MA",
-      "name": "Mastercard Incorporated",
-      "sector": "Financials",
-      "as_of": "2026-07-28T13:30:00Z",
+      "ticker": "CVX",
+      "name": "Chevron Corporation",
+      "sector": "Energy",
+      "as_of": "2026-07-29T13:30:00Z",
       "quote": {
-        "price": 562.75,
+        "price": 191.86,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/MA",
-        "as_of": "2026-07-28T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/CVX",
+        "as_of": "2026-07-29T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -47,14 +47,222 @@
       ],
       "data_quality": {
         "status": "partial",
+        "warnings_count": 7
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 189.89,
+        "entry_high": 191.86,
+        "stop": 184.71,
+        "target": 214.71,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-05-07",
+              "price": 179.53
+            },
+            "b": {
+              "date": "2026-05-19",
+              "price": 198.87
+            },
+            "c": {
+              "date": "2026-05-29",
+              "price": 180.4
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 199.74
+            },
+            {
+              "ratio": 1.272,
+              "price": 205.0
+            },
+            {
+              "ratio": 1.618,
+              "price": 211.69
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-07-29T13:30:00Z",
+      "quote": {
+        "price": 15.28,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/F",
+        "as_of": "2026-07-29T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 8
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 15.1,
+        "entry_high": 15.28,
+        "stop": 14.45,
+        "target": 17.78,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-05-04",
+              "price": 11.46
+            },
+            "b": {
+              "date": "2026-06-15",
+              "price": 15.48
+            },
+            "c": {
+              "date": "2026-07-02",
+              "price": 13.22
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 17.24
+            },
+            {
+              "ratio": 1.272,
+              "price": 18.33
+            },
+            {
+              "ratio": 1.618,
+              "price": 19.72
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "ticker": "TXN",
+      "name": "Texas Instruments Incorporated",
+      "sector": "Information Technology",
+      "as_of": "2026-07-29T13:30:00Z",
+      "quote": {
+        "price": 271.3,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/TXN",
+        "as_of": "2026-07-29T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 12
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 267.53,
+        "entry_high": 271.3,
+        "stop": 250.88,
+        "target": 315.34,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-06-09",
+              "price": 273.88
+            },
+            "b": {
+              "date": "2026-06-22",
+              "price": 334.03
+            },
+            "c": {
+              "date": "2026-06-29",
+              "price": 275.78
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 335.93
+            },
+            {
+              "ratio": 1.272,
+              "price": 352.29
+            },
+            {
+              "ratio": 1.618,
+              "price": 373.1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "ticker": "MA",
+      "name": "Mastercard Incorporated",
+      "sector": "Financials",
+      "as_of": "2026-07-29T13:30:00Z",
+      "quote": {
+        "price": 563.32,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/MA",
+        "as_of": "2026-07-29T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "near",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
         "warnings_count": 11
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 559.54,
-        "entry_high": 562.75,
-        "stop": 544.68,
-        "target": 598.9,
+        "entry_low": 559.48,
+        "entry_high": 563.32,
+        "stop": 544.34,
+        "target": 601.29,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -89,226 +297,17 @@
       }
     },
     {
-      "rank": 2,
-      "ticker": "NEE",
-      "name": "NextEra Energy, Inc.",
-      "sector": "Utilities",
-      "as_of": "2026-07-28T13:30:00Z",
-      "quote": {
-        "price": 89.28,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/NEE",
-        "as_of": "2026-07-28T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 11
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 88.83,
-        "entry_high": 89.28,
-        "stop": 86.71,
-        "target": 94.44,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-04-22",
-              "price": 89.9
-            },
-            "b": {
-              "date": "2026-05-01",
-              "price": 98.75
-            },
-            "c": {
-              "date": "2026-05-08",
-              "price": 92.58
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 101.43
-            },
-            {
-              "ratio": 1.272,
-              "price": 103.84
-            },
-            {
-              "ratio": 1.618,
-              "price": 106.9
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 3,
-      "ticker": "CAT",
-      "name": "Caterpillar Inc.",
-      "sector": "Industrials",
-      "as_of": "2026-07-28T13:30:00Z",
-      "quote": {
-        "price": 840.85,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/CAT",
-        "as_of": "2026-07-28T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 828.29,
-        "entry_high": 840.85,
-        "stop": 778.07,
-        "target": 1073.46,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-06-10",
-              "price": 854.73
-            },
-            "b": {
-              "date": "2026-06-30",
-              "price": 1073.46
-            },
-            "c": {
-              "date": "2026-07-07",
-              "price": 909.53
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 1128.26
-            },
-            {
-              "ratio": 1.272,
-              "price": 1187.75
-            },
-            {
-              "ratio": 1.618,
-              "price": 1263.44
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 4,
-      "ticker": "UPS",
-      "name": "United Parcel Service, Inc.",
-      "sector": "Industrials",
-      "as_of": "2026-07-28T13:30:00Z",
-      "quote": {
-        "price": 105.53,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/UPS",
-        "as_of": "2026-07-28T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 103.93,
-        "entry_high": 105.53,
-        "stop": 99.74,
-        "target": 117.11,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-06-10",
-              "price": 102.83
-            },
-            "b": {
-              "date": "2026-06-16",
-              "price": 110.83
-            },
-            "c": {
-              "date": "2026-06-24",
-              "price": 102.85
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 110.85
-            },
-            {
-              "ratio": 1.272,
-              "price": 113.03
-            },
-            {
-              "ratio": 1.618,
-              "price": 115.79
-            }
-          ]
-        }
-      }
-    },
-    {
       "rank": 5,
-      "ticker": "COST",
-      "name": "Costco Wholesale Corporation",
-      "sector": "Consumer Staples",
-      "as_of": "2026-07-28T13:30:00Z",
+      "ticker": "SBUX",
+      "name": "Starbucks Corporation",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-07-29T13:30:00Z",
       "quote": {
-        "price": 966.58,
+        "price": 104.14,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/COST",
-        "as_of": "2026-07-28T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/SBUX",
+        "as_of": "2026-07-29T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -325,42 +324,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 11
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 960.98,
-        "entry_high": 966.58,
-        "stop": 935.88,
-        "target": 1027.98,
+        "entry_low": 102.99,
+        "entry_high": 104.14,
+        "stop": 99.68,
+        "target": 113.05,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-04-29",
-              "price": 985.12
+              "date": "2026-06-05",
+              "price": 93.64
             },
             "b": {
-              "date": "2026-05-01",
-              "price": 1031.27
+              "date": "2026-06-12",
+              "price": 103.69
             },
             "c": {
-              "date": "2026-05-11",
-              "price": 985.15
+              "date": "2026-07-06",
+              "price": 100.09
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 1031.3
+              "price": 110.14
             },
             {
               "ratio": 1.272,
-              "price": 1043.85
+              "price": 112.87
             },
             {
               "ratio": 1.618,
-              "price": 1059.82
+              "price": 116.35
             }
           ]
         }
