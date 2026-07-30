@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-30T04:20:38.245538Z",
+  "generated_at": "2026-07-30T05:20:33.767001Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -141,7 +141,7 @@
    "name": "BASF",
    "score": 75,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
