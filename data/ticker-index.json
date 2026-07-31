@@ -1,6 +1,661 @@
 {
- "updated": "2026-07-30T18:35:40.637975+00:00",
+ "updated": "2026-07-31T06:33:56.793541+00:00",
  "ticker": {
+  "AMZN": {
+   "name": "Amazon",
+   "auftritte": [
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=96s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Amazon überschritt beim Quartalsumsatz erstmals die Schwelle von 200 Milliarden Dollar. Besonders stark entwickelten sich AWS, das KI-Geschäft und die Werbung; nachbörslich stieg die Aktie um 10 Proz…",
+     "einordnung": "Die Kombination aus Cloud-Wachstum, KI-Monetarisierung und einem margenstarken Werbegeschäft liefert dem Kurs fundamental mehr als nur ein Strohfeuer. Nach einem solchen Kurssprung bleibt allerdings…",
+     "figures": "Umsatz über 200 Mrd. $, operativer Gewinn 27 Mrd. $, AWS-Wachstum 37 %, KI-Runrate 25 Mrd. $, Werbegeschäft plus 26 %, nachbörslich plus 10 %"
+    },
+    {
+     "date": "2026-07-24",
+     "video_id": "3SE8SaUYqTc",
+     "url": "https://www.youtube.com/watch?v=3SE8SaUYqTc&t=3201s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Amazon wird in den Zuschauerfragen bärisch beurteilt. Als mögliche Zielzone werden 212 bis 220 Dollar genannt.",
+     "einordnung": "Die Zielzone ist eine technische Abwartezone und keine Aussage über die langfristige Geschäftsentwicklung. Sie setzt voraus, dass die aktuelle Schwäche zunächst anhält und dort eine Stabilisierung ei…",
+     "figures": "Kursziel 212-220$"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=502s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Amazon wird vom Abverkauf bei Alphabet nach unten gezogen.",
+     "einordnung": "Das ist ein typischer Sippenhaft-Effekt im Technologiesektor: Anleger reduzieren zunächst ganze Themenkörbe, bevor sie zwischen den Geschäftsmodellen differenzieren. Für Amazon wirkt der Zinsanstieg…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=174s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Amazon platziert eine Anleihe über 25 Milliarden US-Dollar; die Nachfrage belief sich lediglich auf 62 Milliarden US-Dollar. Egmond erwartet kurzfristig eine Seitwärtsbewegung und rät, die Quartalsza…",
+     "einordnung": "Die hohe Nachfrage zeigt zwar weiterhin Zugang zum Kapitalmarkt, ist im Verhältnis zum Emissionsvolumen aber kein außergewöhnliches Signal. Vor Zahlen bleibt die Aktie damit eher ein Ereignis- als ei…",
+     "figures": "Anleihevolumen 25 Milliarden US-Dollar; Nachfrage 62 Milliarden US-Dollar"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "1NCf_rpMGr8",
+     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=2153s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Amazon befindet sich in einer langen Konsolidierung. Der Host sieht eine Rotation aus den Halbleitern in den Wert hinein.",
+     "einordnung": "Amazon profitiert in dieser Lesart zunächst vom relativen Kapitalfluss und nicht von einem bereits bestätigten Ausbruch. Eine lange Konsolidierung kann Chancen eröffnen, verlangt aber Geduld, weil di…"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "rGKDA0JAU4I",
+     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=2722s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "TD Cowen erwartet AWS-Wachstum von 35,5% im Q2, deutlich über Konsens von 32%. Capex von 200 Mrd. $. KGV 29 historisch niedrig. Technisch Fehlbreakout nach unten.",
+     "einordnung": "AWS-Wachstum von 35,5% gegenüber 28,4% im Vorquartal wäre eine deutliche Beschleunigung — das würde die KI-Nachfrage für Cloud-Infrastruktur eindrucksvoll bestätigen. Ein KGV von 29 als historisch ni…",
+     "figures": "AWS-Wachstum 35,5% (Q2), Vorquartal 28,4%, KGV 29, Capex 200 Mrd. $, Kursziel 310-330$"
+    },
+    {
+     "date": "2026-07-08",
+     "video_id": "e11CVmyBuR8",
+     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=3240s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Plant 25 Mrd. $ Anleihe (Nachfrage 62 Mrd. $), vermutlich für KI-Infrastruktur. Capex 200 Mrd. $ erwartet. Aktie in Korrektur, Widerstand bei 250 $.",
+     "einordnung": "Eine 2,5-fach übersubskribierte Anleihe bei 25 Mrd. $ zeigt extremen Investorenappetit für Amazon-Kredit — das ist ein Vertrauenssignal. 200 Mrd. $ Capex für AI-Infrastruktur ist gewaltig, aber bei A…",
+     "figures": "25 Mrd. $ Anleihe, 62 Mrd. $ Nachfrage (2,5x übersubskribiert), 200 Mrd. $ Capex erwartet, Widerstand 250 $, Ziel 280 $"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=3230s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Prime Day entwickelt sich zum zweiten großen Shopping-Fenster; Umsatz über 26 Mrd. $ (+9,3%), starkes mobiles Shopping und KI-gestützte Produktsuche. Aktie mit niedrigem KGV und guter Chartstruktur.",
+     "einordnung": "Prime Day mit 26,4 Mrd. $ und +9,3% Wachstum zeigt, dass Amazon den Konsum nicht nur bedient, sondern aktiv formt. Ein KGV von 28 bei diesem Wachstum ist fair bewertet, und die Chartstruktur mit Unte…",
+     "figures": "Prime Day Umsatz 26,4 Mrd. $ (+9,3%); Black Friday/Cyber Monday 32,5 Mrd. $; KGV 28; Unterstützung 220$, Ziel 250$/270$"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=246s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Amazon fiel gestern um 4,7%, obwohl es mit KGV von knapp über 20 nicht teuer bewertet ist, bietet mögliche Chance.",
+     "einordnung": "Ein KGV von knapp über 20 für Amazon ist historisch gesehen ein ausgesprochen niedriges Niveau. Wenn hier Unterstützungen halten, könnte das eine antizyklische Chance sein – vorausgesetzt, der Gesamt…",
+     "figures": "4,7%, KGV knapp über 20"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=4010s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Amazon veranstaltet den Prime Day im Juni. Bank of America erhöht das Kursziel, der Chart ist bullisch.",
+     "einordnung": "Amazon profitiert von der KI-Infrastruktur (AWS) und dem robusten Konsum. Der vorgezogene Prime Day ist ein kluger Schachzug. Das Kaufsignal ist intakt, die 293$ sind das nächste Etappenziel.",
+     "figures": "Kursziel Bank of America 310$; Prime Day zusätzlicher Umsatz 8,5 Mrd. $; Prognose 199 Mrd. $; Kursziel 353$; Zwischenziel 293$"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=611s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Amazon zeigt eine Nullperformance im Jahresverlauf. Das KGV für 2026 liegt knapp bei 30. Im Einzelhandel wächst der Wettbewerb durch Walmart.",
+     "einordnung": "Eine Nullperformance bei einem KGV von 30 signalisiert, dass der Markt bereits viel einpreist und auf den Beweis wartet, dass AWS das KI-Rennen nicht verliert. Walmart als Einzelhandels-Konkurrent is…",
+     "figures": "KGV 2026 knapp 30, Jahresperformance 0%"
+    }
+   ]
+  },
+  "MSFT": {
+   "name": "Microsoft",
+   "auftritte": [
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=237s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Microsoft stieg an einem Tag um 16 Prozent und erhöhte damit seine Marktkapitalisierung um 150 Milliarden Dollar. Die Aktie überwand die 200-Tage-Linie bei rund 440 Dollar, was der Host als Kaufsigna…",
+     "einordnung": "Der charttechnische Befreiungsschlag gewinnt durch die wiedergewonnene KI-Fantasie an Gewicht, ist nach 16 Prozent Tagesplus aber kurzfristig stark überdehnt. Für die Nachhaltigkeit zählt weniger das…",
+     "figures": "Tagesgewinn 16 %, Anstieg der Marktkapitalisierung um 150 Mrd. $, 200-Tage-Linie bei rund 440 $"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "RefnY01hhvw",
+     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=351s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Microsoft überzeugte mit starken Quartalszahlen. Der Host verweist auf 30 Millionen Copilot-Nutzer, ein Azure-Wachstum von 43 Prozent und auf Investitionen von 175 Milliarden Dollar; die Aktie legte…",
+     "einordnung": "Microsoft liefert im Vergleich zu vielen Technologiewerten derzeit die überzeugendste Kombination aus Wachstum und KI-Monetarisierung. Die Reaktion zeigt aber auch, wie hoch die Erwartungen bereits w…",
+     "figures": "30 Mio. Copilot-Nutzer, Azure-Wachstum 43 %, Investitionen 175 Mrd. $, Kurs +7 %"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "IpdIeeA0GLM",
+     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=3477s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Microsoft erzielt ein Rekordquartal und überrascht mit einer Beschleunigung im Cloudgeschäft. Azure wächst um 43 Prozent, während die langfristigen Verpflichtungen für Rechenzentren massiv gestiegen…",
+     "einordnung": "Microsoft liefert derzeit die überzeugendste operative Antwort auf die KI-Investitionsdebatte, weil Azure-Wachstum und Gewinnschlag gleichzeitig überzeugen. Die Verpflichtungen von 330 Milliarden US-…",
+     "figures": "Umsatz: plus 18 Prozent auf 90 Milliarden US-Dollar, 2,4 Milliarden US-Dollar über den Erwartungen; EPS: 4,74 US-Dollar, Konsens 4,24 US-Dollar; Cloud-Umsatz: 59,3 Milliarden US-Dollar, plus 27 Proze…"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "tV-qzX1rLwU",
+     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=2690s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Microsoft pendelt als einer der wichtigsten Marktwerte auf dem Schlüssel-Support bei 350 US-Dollar. Im Mittelpunkt stehen die Zahlen am Mittwoch und die Frage, wie der Markt die hohen Investitionen i…",
+     "einordnung": "Microsoft ist in dieser Sendung der wichtigste Prüfstein für die Debatte über KI-Capex und Cashflow. Der Chart ist noch nicht beschädigt, aber die Nähe zur Schlüsselunterstützung macht die Reaktion a…",
+     "figures": "350 US-Dollar als Schlüsselunterstützung; 309 bis 310 US-Dollar als nächste Unterstützung; 440 US-Dollar als Widerstand."
+    },
+    {
+     "date": "2026-07-24",
+     "video_id": "3SE8SaUYqTc",
+     "url": "https://www.youtube.com/watch?v=3SE8SaUYqTc&t=3201s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Microsoft wird in den Zuschauerfragen bärisch eingeschätzt. Als mögliches Ziel werden 330 bis 350 Dollar genannt.",
+     "einordnung": "Das Szenario ist rein charttechnisch und setzt voraus, dass die bestehende Schwäche anhält. Ohne zusätzliche Marken aus dem Video ist die Zielzone vor allem als Risikokorridor zu verstehen.",
+     "figures": "Kursziel 330-350$"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=504s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Microsoft wird vom Abverkauf bei Alphabet mitgerissen.",
+     "einordnung": "Auch Microsoft wird im Video als Teil des belasteten Hyperscaler-Komplexes behandelt. Die steigenden Renditen treffen den Titel über die Bewertung und die Erwartung hoher KI-Investitionen, unabhängig…"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=284s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Microsoft verlor laut Host im schwachen Umfeld für Softwarewerte 1,3 Prozent.",
+     "einordnung": "Die vergleichsweise geringere Bewegung unterstreicht die größere Diversifikation des Konzerns gegenüber reinen Software- oder IT-Dienstleistern. Dennoch bleibt auch Microsoft von der Frage abhängig,…",
+     "figures": "Tagesverlust -1,3 Prozent"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "1NCf_rpMGr8",
+     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=1058s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Microsoft zeigt laut Host einen möglichen Doppelboden. Dirk Siebenhaar hat den Trade nach dem Muster 'Undercut & Rally' mit 1 Prozent Risiko umgesetzt.",
+     "einordnung": "Das teilweise realisierte Risiko verbessert die Positionskontrolle, ändert aber nichts daran, dass der Doppelboden erst durch eine nachhaltige Aufwärtsbewegung bestätigt werden muss. Technisch ist da…",
+     "figures": "1 Prozent Risiko"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=414s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Laut Medienbericht plant Microsoft einen deutlichen Personalabbau, insbesondere im Xbox-Bereich. Die Aktie erholt sich dennoch.",
+     "einordnung": "Restrukturierungen bei Tech-Giganten werden vom Markt oft als Kostendisziplin gefeiert. Dass die Aktie trotz Abbau-Meldung steigt, zeigt, wie dominant die KI-Narrative derzeit ist — Effizienzgewinne…"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=579s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Microsoft erhöht Xbox-Preise und fällt auf ein 52-Wochen-Tief. Haidt bleibt vorsichtig.",
+     "einordnung": "Ein 52-Wochen-Tief bei Microsoft ist ein seltenes Signal – das letzte Mal sahen wir so etwas in der Zinswende-Phase 2022/23. Die Xbox-Preiserhöhung ist marginal, aber das Tiefer-Rutschen deutet darau…",
+     "figures": "52-Wochen-Tief"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=1264s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Unter Druck, Doppeltop bei 493$ gebrochen. Langfristig günstig bewertet (Morningstar 37% Discount, Kursziel 600$). Risiken: hohe Investitionen, regulatorischer Druck.",
+     "einordnung": "Microsoft ist ein klassisches Value-Paradoxon: Starkes Gewinnwachstum (23%, 15%), aber Kurs unter Druck. Das Morningstar-Kursziel von 600$ impliziert 37% Upside – attraktiv für Geduld-Anleger, aber c…",
+     "figures": "KGV 20,5; Morningstar Fair Value 600$; Gewinnwachstum 23% im laufenden Jahr, 15% im nächsten Jahr; Doppeltop 493$"
+    },
+    {
+     "date": "2025-11-28",
+     "video_id": "fQxlQW1Y5LQ",
+     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=2429s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Aktie bei 485 USD unter der 500er-Marke; Konsolidierung seit Juli; Host sieht attraktive Preiszone für spekulative Trendwende mit Stop bei 452.",
+     "einordnung": "Microsoft konsolidiert seit Monaten in einer engen Range — das ist für einen Mega-Cap ungewöhnlich und spricht für eine ausgereifte Bewertung. Der Stop bei 452 bietet ein angemessenes Risiko-Reward-V…",
+     "figures": "485, 500, 452"
+    }
+   ]
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "auftritte": [
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=359s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Infineon legte gestern im Sog der KI-Rallye um 9 Prozent zu. Der Host hält es für möglich, dass die Korrektur beendet ist, sieht eine nachhaltige Trendwende aber noch nicht bestätigt.",
+     "einordnung": "Infineon profitiert vom Sektorimpuls, bleibt als zyklischer Halbleiterwert aber anfälliger für Konjunktur- und Auftragsschwankungen als die großen KI-Plattformanbieter. Der Kursanstieg ist deshalb zu…",
+     "figures": "Tagesgewinn 9 %"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "ldobjNsL7sM",
+     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=452s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Die Schwäche im Chipsektor belastet Infineon. Der Kurs könnte laut Host in Richtung der 200-Tage-Linie tendieren.",
+     "einordnung": "Meine Einordnung: Infineon ist stärker vom europäischen und globalen Halbleiterzyklus abhängig als ein klassischer defensiver DAX-Wert; der Sektordruck wiegt daher schwerer als die gute DAX-Verfassun…"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=527s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon wird vom Kursrutsch bei STMicroelectronics mit nach unten gezogen, weil viele Investoren den Titel als KI-Profiteur einordnen.",
+     "einordnung": "Die Kopplung an den KI-Trade kann kurzfristig überzeichnet sein, erhöht aber die Schwankungsanfälligkeit der Aktie. Fundamental bleibt Infineon stärker von Automobil- und Industriezyklen abhängig, we…"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "i5q2OHZUl84",
+     "url": "https://www.youtube.com/watch?v=i5q2OHZUl84&t=503s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon zeigt vorbörslich einen kleinen Rebound, ohne dass es neue fundamentale Nachrichten gibt.",
+     "einordnung": "Ohne neue Unternehmensnachrichten ist die Bewegung vor allem als technische und sektorale Reaktion einzuordnen. Für eine belastbare Trendwende bräuchte es Signale aus der Nachfrage nach Auto- und Lei…",
+     "figures": "Vorbörslich rund 3 bis 4 Prozent Plus"
+    },
+    {
+     "date": "2026-07-24",
+     "video_id": "CchW9uxHhuM",
+     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=673s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Infineon steht wegen des allgemeinen Abverkaufs im Chipsektor unter Druck, obwohl das operative Geschäft laut Host gut läuft. Nach dem starken Kursanstieg werden zudem Gewinnmitnahmen erwartet.",
+     "einordnung": "Das Beispiel zeigt, wie stark Halbleiterwerte vom Sektorsentiment abhängig sind: Gute operative Nachrichten schützen kurzfristig nicht vor einer branchenweiten Neubewertung. Nach einem starken Lauf i…"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=561s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon bricht wegen des schwachen Ausblicks von STMicroelectronics ein. Egmond warnt vor einem weiteren Rückgang, falls die eigenen Zahlen ebenfalls negativ ausfallen.",
+     "einordnung": "Die Reaktion ist ein klassischer Vorlaufeffekt innerhalb eines zyklischen Sektors: Ein schwacher Ausblick des Wettbewerbers wird als Warnsignal für die gesamte Branche gelesen. Bei Infineon zählt des…"
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "hcmndcPAbxk",
+     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=1409s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "MWB Research hebt Infineon von 'Sell' auf 'Hold' an und nennt ein Kursziel von 60 Euro. Das KGV von 29 bleibt anspruchsvoll, auch wenn der Host auf Wachstum in den KI- und Kernsegmenten verweist; ein…",
+     "einordnung": "Infineon ist qualitativ interessant, aber die Bewertung verlangt bereits eine überzeugende operative Trendwende. Nach dem erreichten 50-Prozent-Retracement fehlt aus technischer Sicht noch die Bestät…",
+     "figures": "KGV 29; Kursziel 60 Euro bei MWB Research; Worst Case 48 bis 49 Euro; 50-Prozent-Retracement erreicht"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "ZtKFU4SJtbQ",
+     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=378s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Infineon steht im Zuge des allgemeinen Drucks auf den Chipsektor unter Druck. Der Host hält einen Rückgang in Richtung 60 Euro für möglich und verweist darauf, dass die Aktie weit von ihrem gleitende…",
+     "einordnung": "Die Entfernung vom gleitenden Durchschnitt kann auf eine überdehnte Abwärtsbewegung hindeuten, ist aber noch kein eigenständiges Kaufsignal. Solange der gesamte Halbleitersektor schwach bleibt, dürft…",
+     "figures": "60 Euro"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon profitierte laut Host von der positiven ASML-Reaktion und legte um 1 Prozent zu.",
+     "einordnung": "Die Bewegung zeigt die Ausstrahlung guter Nachrichten des europäischen Halbleitersektors. Für Infineon selbst liefert der ASML-Bericht jedoch nur einen indirekten Impuls, da die Geschäftsprofile nich…",
+     "figures": "Tagesplus +1 Prozent"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "nPsSsD7zbI8",
+     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=539s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon voraussichtlich -4% wegen Sippenhaft nach der Samsung-Enttäuschung. Die Aktie hatte sich zu weit von der 200-Tage-Linie entfernt; Kurse kehren zu gleitenden Durchschnitten zurück.",
+     "einordnung": "Die Sippenhaft-Logik im Halbleitersektor ist kurzfristig wirksam, aber fundamental fragwürdig: Infineon ist ein Automobil- und Industriechip-Spezialist, Samsung ein Memory-Chip-Gigant — die Geschäfts…",
+     "figures": "Voraussichtlich -4%"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1063s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Infineon gerät durch den Chip-Ausverkauf massiv unter Druck mit einem Tagesverlust von 8 bis 9%.",
+     "einordnung": "Infineon leidet unter Sippenhaft: Samsungs Enttäuschung zieht den gesamten Halbleitersektor mit. Ein Tagesverlust von 8-9% bei einem Blue-Chip ist ein klares Risiko-Signal.",
+     "figures": "-8 bis 9% an einem Tag"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "sax3NJ-Q6tc",
+     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=338s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon eröffnet am 2. Juli eine neue Chipfabrik und verdoppelt Kapazitäten. Aktie konsolidiert nach Anstieg von 40 auf 80.",
+     "einordnung": "Die Fabrikeröffnung ist ein Meilenstein, aber Kapazitätsverdopplung bedeutet auch höhere Abschreibungen. Die Konsolidierung nach dem Lauf von 40 auf 80 ist gesund.",
+     "figures": "Kursanstieg von 40 auf 80"
+    }
+   ]
+  },
+  "ADS.DE": {
+   "name": "Adidas",
+   "auftritte": [
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=396s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas eröffnete vier bis fünf Prozent schwächer und erholte sich anschließend. Der Host verweist auf die Belastung durch Zölle, sieht die einmaligen Werbeausgaben rund um die Fußball-Weltmeisterscha…",
+     "einordnung": "Die Erholung spricht für Nachfrage auf dem niedrigeren Niveau, beseitigt aber weder Zollrisiken noch die Unsicherheit über die Kosten der WM-Kampagne. Bei Adidas sollte man daher stärker zwischen ein…",
+     "figures": "Eröffnung minus 4 % bis minus 5 %"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "RefnY01hhvw",
+     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=563s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas steigerte den Umsatz im zweiten Quartal um 13 Prozent auf 6,7 Milliarden Euro und hob die Prognose für 2026 an. Das Ergebnis fiel wegen höherer Marketingausgaben und Zölle schwächer aus, die A…",
+     "einordnung": "Das ist ein typischer Fall, in dem der operative Umsatzimpuls durch die Kosten- und Margenseite überlagert wird. Die angehobene Prognose ist konstruktiv, doch der Markt verlangt Belege, dass Marketin…",
+     "figures": "Umsatz +13 % auf 6,7 Mrd. €, Prognose für 2026 angehoben"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "IpdIeeA0GLM",
+     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=1076s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Adidas profitiert von der starken Nachfrage rund um die Fußball-WM und steigert den Umsatz deutlich. Der Gewinn wächst jedoch wesentlich langsamer, weil Kosten und Zölle belasten; der unveränderte Au…",
+     "einordnung": "Adidas zeigt derzeit das klassische Bild eines Umsatzwachstums ohne ausreichenden operativen Hebel. Solange die Margen nicht sichtbar stärker anziehen, bleibt ein hohes Kursziel schwer zu rechtfertig…",
+     "figures": "Umsatz: plus 13 Prozent auf 6,7 Milliarden Euro; EBIT: plus 5 Prozent auf 574 Millionen Euro; Prognose: 2,3 Milliarden Euro; Analystenkonsens: 2,4 Milliarden Euro; Jefferies-Kursziel: 205 Euro."
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "hcmndcPAbxk",
+     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=1647s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Adidas profitiert von der Fußball-Weltmeisterschaft, an der beide Finalisten mit Adidas-Ausrüstung beteiligt sind, sowie von hohen Trikotverkäufen und großer Markenpräsenz. Piper Sandler erhöht das K…",
+     "einordnung": "Die WM liefert einen starken kurzfristigen Marketingimpuls, entscheidend ist aber, ob daraus auch nach dem Turnier ein nachhaltiger Absatz- und Margeneffekt entsteht. Ein KGV von 18 wirkt im Markenar…",
+     "figures": "Earned Media Value 49 Millionen US-Dollar; Kursziel 200 Euro bei Piper Sandler; KGV 18; technisches Ziel 210 Euro"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2015s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Bull-Keil deutet auf Erholung, aber bisher noch kein überzeugendes Kaufsignal (Ausbruch über 172-173 EUR fehlt).",
+     "einordnung": "Das Bull-Keil ist ein klassisches Erholungsmuster, aber ohne überzeugenden Ausbruch bleibt die Geduld die bessere Strategie. Die ambitionierten Ziele bei 242 und 262 EUR setzen eine fundamentale Best…",
+     "figures": "172-173 EUR (Clusterpunkt), 242 EUR, 262 EUR (Ziele)"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "rtqIeordQFo",
+     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=283s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Wartet auf Ausbruch über 180 € Richtung 200 €. Das EM-Aus der deutschen Nationalmannschaft hat nicht geholfen, ist wirtschaftlich aber nicht dramatisch.",
+     "einordnung": "Das EM-Aus ist sentimentaler Natur — die Trikotverkäufe laufen bereits, und Adidas profitiert ohnehin vom Turnier-Halo unabhängig vom deutschen Weiterkommen. Charttechnisch ist die 180 € der Schlüsse…",
+     "figures": "180 €, 200 €"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "sax3NJ-Q6tc",
+     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=292s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas technisch stark, beginnender Aufwärtstrend. Ein Kollege sieht ein Kursziel bei 200 €. Das WM-Aus der deutschen Mannschaft belastet die Aktie nicht.",
+     "einordnung": "Das WM-Aus ist für Adidas irrelevant — das Unternehmen profitiert von globalen Markenzyklen, nicht vom deutschen Nationalteam. Ein 200-€-Ziel ist ambitioniert, aber im Chartbild nicht abwegig.",
+     "figures": "Kursziel 200 €"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1691s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Aktie nach oben geschossen wegen WM-Hoffnung, Deutschland ist ausgeschieden. Haidt sieht Korrekturrisiko.",
+     "einordnung": "Der WM-Effekt bei Adidas ist ein klassisches 'Buy the rumor, sell the news'-Szenario. Das deutsche Aus bei der WM entzieht der Aktie den kurzfristigen Katalysator – das erinnert an 2018, als Adidas n…"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "Nxn0NmV-hnM",
+     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=2790s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "ABC Outperform, Kursziel von 170 auf 210 Euro. KGV 13 für FY27, Abschlag 10-15 Prozent zu Konkurrenz. Gewinnwachstum 25 Prozent p.a. (3 Jahre). Marktanteile: Sportschuhe 11,2 Prozent (plus 80 BP), Sp…",
+     "einordnung": "Adidas ist im Turnaround-Modus — Marktanteilgewinne bei Sportschuhen von 80 Basispunkten sind handfest. KGV 13 für 2027 bei 25 Prozent Gewinnwachstum ist ein PEG unter 1; das ist attraktiv. Die 170-E…",
+     "figures": "Kursziel 210€, KGV 13, Gewinnwachstum 25% p.a., Marktanteile 11,2% (Schuhe) und 5,9% (Bekleidung)"
+    },
+    {
+     "date": "2026-06-02",
+     "video_id": "aMB3cXXBiiI",
+     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=201s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Aktionäre setzen auf WM-Erfolg, der Kurs ist seit April 20-30% gestiegen. Die Erholung könnte weitergehen, die fundamentalen Aussichten seien jedoch unverändert.",
+     "einordnung": "Der WM-Hype treibt die Aktie, doch ein Vorauslauf auf sportliche Events ist oft zyklisch begrenzt. Ohne fundamentale Aufwärtsrevisionen droht nach dem Turnier ein Kater.",
+     "figures": "20-30% seit April"
+    },
+    {
+     "date": "2020-03-12",
+     "video_id": "GxBbuNh6f1Y",
+     "url": "https://www.youtube.com/watch?v=GxBbuNh6f1Y&t=614s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Die Adidas-Aktie rutschte nach den Zahlen unter die wichtige Marke von 200 Euro. Der Host erwartet weitere Verluste; eine historisch günstige Bewertung werde vom Markt derzeit ignoriert.",
+     "einordnung": "Die Reaktion zeigt, dass selbst eine auf den ersten Blick attraktivere Bewertung in einem Schockmarkt kein ausreichendes Argument ist. Bei Adidas überlagert die Sorge um Filialgeschäft, Konsum und in…",
+     "figures": "200 Euro"
+    },
+    {
+     "date": "2020-03-11",
+     "video_id": "D-uLGxGKUsU",
+     "url": "https://www.youtube.com/watch?v=D-uLGxGKUsU&t=82s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Adidas erhöhte die Dividende auf 3,85 Euro je Aktie; die Aktie notierte vorbörslich leicht im Minus.",
+     "einordnung": "Die Dividendenerhöhung war grundsätzlich ein positives Signal, wurde aber vom damaligen Corona-Risiko überlagert. Das vorbörsliche Minus zeigt, dass Anleger in einer breiten Krisenphase gute Unterneh…",
+     "figures": "Dividende 3,85 Euro je Aktie"
+    }
+   ]
+  },
+  "ALV.DE": {
+   "name": "Allianz",
+   "auftritte": [
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=455s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Allianz-Aktie zeigt sich laut Host weiterhin stark.",
+     "einordnung": "Die relative Stärke passt zum defensiveren Charakter eines breit aufgestellten Versicherers. Ohne aktuelle Kennzahlen im Video bleibt die Aussage allerdings eine Trend- und Qualitätsmeinung, keine ne…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "tIXIrS3cz1s",
+     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=474s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Allianz wird vom Host als Top-Versicherer eingestuft, der bei Kursrücksetzern zugekauft werden sollte.",
+     "einordnung": "Die Allianz ist der Bluechip unter den Versicherern mit diversifiziertem Geschäftsmodell und verlässlicher Dividende. Die 'bei Schwäche kaufen'-Strategie ist für solche Werte historisch gut aufgegang…"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "Nxn0NmV-hnM",
+     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=3266s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Ausbruch über Hoch aus 2000, Kursprojektion 430 Euro. Rekordgewinn operativ, Jahresprognose bestätigt. Hohe Aktionärsrenditen, Dividende, Aktienrückkauf.",
+     "einordnung": "Ein Ausbruch über ein 26 Jahre altes Hoch ist ein seltenes und massives Signal — Allianz ist nach zwei Jahrzehnten endlich wieder dort, wo sie 2000 stand. Das sagt viel über die langfristige Rendite…",
+     "figures": "Kursprojektion 430€"
+    }
+   ]
+  },
+  "DHL.DE": {
+   "name": "DHL Group",
+   "auftritte": [
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=474s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Host sieht die Logistikbranche gut aufgestellt. Positive Zahlen von UPS stützen dabei auch die Einschätzung für DHL Group.",
+     "einordnung": "Die Ableitung von UPS auf DHL ist als Sektorindikator plausibel, ersetzt aber keine Prüfung der regionalen Nachfrage, der Frachtpreise und der Margenentwicklung bei DHL. Positiv ist vor allem die Bra…"
+    }
+   ]
+  },
+  "NBIS": {
+   "name": "Nebius",
+   "auftritte": [
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=500s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Nebius korrigierte zuvor um 30 bis 50 Prozent und zeigte nun eine starke Gegenbewegung. Der Host sieht darin ein weiteres Zeichen dafür, dass der KI-Trade wieder lebt.",
+     "einordnung": "Eine kräftige Gegenbewegung nach einem Einbruch ist bei einem hochvolatilen KI-Wert zunächst vor allem ein Sentimentsignal. Sie kann Chancen eröffnen, erhöht aber zugleich das Risiko, dass Anleger ei…",
+     "figures": "Vorherige Korrektur um 30 % bis 50 %"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "Tlc2EJIAJeo",
+     "url": "https://www.youtube.com/watch?v=Tlc2EJIAJeo&t=2239s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nvidia hält bereits 1,2 Millionen Nebius-Aktien und besitzt Warrants auf weitere 21 Millionen Aktien, was einem Anteil von mehr als 9 Prozent entspricht. Den hohen Investitionen von mehr als 25 Milli…",
+     "einordnung": "Nebius ist eine Wachstumswette auf KI-Rechenzentren, bei der die Finanzierung deutlich wichtiger ist als klassische Bewertungskennzahlen. Der starke Kursrückgang zeigt, dass der Markt die ambitionier…",
+     "figures": "Nvidia-Anteil über 9 Prozent; 1,2 Millionen Aktien plus Warrants auf 21 Millionen weitere Aktien; Investitionen über 25 Milliarden US-Dollar; erwarteter Umsatz 2026: 3 Milliarden US-Dollar, 2027: 10…"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "jbBenx99pmg",
+     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=3830s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "In den Zuschauerfragen geht es um den starken Kursrückgang bei Nebius und einen Rücksetzer auf frühere Hochs. Belastend wirkt laut Host auch ein Verbot von Rechenzentren in New York.",
+     "einordnung": "Die Rückkehr auf frühere Hochs kann charttechnisch eine Unterstützung darstellen, ist bei einem stark volatilen KI-Infrastrukturwert aber kein belastbarer Boden. Ein Discountzertifikat kann das Risik…",
+     "figures": "Kurs 260 Euro, Rücksetzer auf frühere Hochs"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=3565s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Größter Verlierer nach Meta-Cloud-News. Basis-Rücksetzer auf 200$ (50%-Retracement). Langfristige Story intakt, Nachfrage größer als Angebot.",
+     "einordnung": "Der Rücksetzer bei Nebius ist eine typische Überreaktion auf Konkurrenzängste. Wenn Meta in den Cloud-Markt einsteigt, validiert das das Geschäftsmodell von Neo-Cloud-Anbietern.",
+     "figures": "Hoch ca. 300 $, aktuell ca. ? , Ziel 200 $ (Basecase), 150 $ (worst case), 20 Mrd. $ pro Gigawatt"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2357s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Nebius führte KI-Agent 'Echo' ein, charttechnisch aber Abschwächung; wichtig ist Halten des 50-Tage-Durchschnitts.",
+     "einordnung": "Nebius ist ein hochspekulativer KI-Titel, bei dem die charttechnische Abschwächung im Widerspruch zur produktseitigen Innovation steht. Der Bruch unter 227$ würde den Trend eindeutig negativ wenden —…",
+     "figures": "Widerstand 141$, Unterstützung 227$, Ziel 320$ (nicht erreicht), Bruch unter 227$ könnte auf 183$ fallen"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "a6FF2tGXbok",
+     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2080s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blac…",
+     "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktu…",
+     "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd"
+    }
+   ]
+  },
+  "ASML": {
+   "name": "ASML",
+   "auftritte": [
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=500s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "ASML fiel im Zuge der vorherigen Korrektur weniger stark als Nebius und profitiert nun ebenfalls von der wiederbelebten KI-Rallye.",
+     "einordnung": "Die geringere Korrekturanfälligkeit spricht für die höhere Marktstellung und die breitere industrielle Verankerung von ASML im Vergleich zu spekulativeren KI-Werten. Dennoch bleibt auch ASML vom Inve…"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "J6gUTUPHems",
+     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=181s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Die Zahlen und der Ausblick übertrafen die Erwartungen. Dennoch nutzten Anleger die Kursgewinne für Gewinnmitnahmen; Egmond erwartet zunächst eine Seitwärtsbewegung und danach einen Abwärtstrend.",
+     "einordnung": "ASML bleibt fundamental ein qualitativ herausragender Ausrüster, ist aber im Halbleiterzyklus kein defensiver Titel. Gute Nachrichten können bei anspruchsvoller Erwartungshaltung deshalb bereits im K…"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "B79xh8kdYI8",
+     "url": "https://www.youtube.com/watch?v=B79xh8kdYI8&t=0s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Der Host hebt das phänomenale Quartal und die deutlich angehobene Prognose für 2026 hervor. Die KI-Investitionen treiben den Bedarf an moderner Chipfertigung, dennoch gab die Aktie Gewinne ab, weil d…",
+     "einordnung": "Operativ bleibt ASML ein herausragender Profiteur des strukturellen Halbleiter- und KI-Ausbaus. Die Kursreaktion zeigt jedoch den alten Börsenmechanismus: Gute Nachrichten reichen nicht, wenn sie die…",
+     "figures": "Umsatzprognose 2026: 43 bis 45 Mrd. €; Q3-Umsatz: 11 bis 12 Mrd. €; Bruttomarge Q3: 55 bis 57 %; Q2-Umsatz: 9,3 Mrd. €; Bruttomarge Q2: 54,0 %; Q2-EPS: 7,59 €"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "ASML steigerte den Umsatz im zweiten Quartal und hob die Jahresprognose erneut an. Die Aktie lag vorbörslich im Plus; auch mehrere Halbleiterzulieferer profitierten von der Nachricht.",
+     "einordnung": "Die erneute Prognoseanhebung ist ein starkes Signal für die Nachfrage nach moderner Chipfertigung und hebt ASML positiv vom zyklischen Halbleiterumfeld ab. Die Bewertung bleibt allerdings eng an daue…",
+     "figures": "Umsatz Q2 9,3 Mrd. Euro, Q1 8,8 Mrd. Euro, Bruttomarge Q2 54 Prozent, Q1 53 Prozent, Jahresumsatzprognose 43 bis 45 Mrd. Euro nach zuvor 30 bis 40 Mrd. Euro, erwartete Bruttomarge 54 bis 56 Prozent,…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Investoren warten auf die Zahlen von ASML am Mittwochmorgen. Der Wert wird im Video im Zusammenhang mit dem angespannten Halbleiterumfeld genannt.",
+     "einordnung": "ASML ist ein zentraler Prüfstein für die Investitionsbereitschaft der Halbleiterindustrie. Gerade nach den starken Ausschlägen bei Speicherwerten dürfte der Ausblick wichtiger sein als ein einzelnes…"
+    },
+    {
+     "date": "2026-06-15",
+     "video_id": "GAF_7ULoiQ0",
+     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=540s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Neues Rekordhoch vorbörslich; volle Auftragsbücher, Analysten rechnen für das nächste Jahr mit 90 ausgelieferten Anlagen (vs. zuletzt ~80) und 15–20 % Umsatzwachstum.",
+     "einordnung": "ASML ist und bleibt das Monopol im EUV-Segment — kein Wettbewerber in Sichtweite. Rekordstände auf Rekordkurs bei solcher Visibilität der Auftragslage sind fundamental gerechtfertigt. Das erinnert an…",
+     "figures": "80 Anlagen aktuell, ~90 Anlagen nächstes Jahr erwartet; Wachstumsprognose 15–20 %"
+    }
+   ]
+  },
   "BZ=F": {
    "name": "Energiepreise",
    "auftritte": [
@@ -674,128 +1329,6 @@
     }
    ]
   },
-  "MSFT": {
-   "name": "Microsoft",
-   "auftritte": [
-    {
-     "date": "2026-07-30",
-     "video_id": "RefnY01hhvw",
-     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=351s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Microsoft überzeugte mit starken Quartalszahlen. Der Host verweist auf 30 Millionen Copilot-Nutzer, ein Azure-Wachstum von 43 Prozent und auf Investitionen von 175 Milliarden Dollar; die Aktie legte…",
-     "einordnung": "Microsoft liefert im Vergleich zu vielen Technologiewerten derzeit die überzeugendste Kombination aus Wachstum und KI-Monetarisierung. Die Reaktion zeigt aber auch, wie hoch die Erwartungen bereits w…",
-     "figures": "30 Mio. Copilot-Nutzer, Azure-Wachstum 43 %, Investitionen 175 Mrd. $, Kurs +7 %"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "IpdIeeA0GLM",
-     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=3477s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Microsoft erzielt ein Rekordquartal und überrascht mit einer Beschleunigung im Cloudgeschäft. Azure wächst um 43 Prozent, während die langfristigen Verpflichtungen für Rechenzentren massiv gestiegen…",
-     "einordnung": "Microsoft liefert derzeit die überzeugendste operative Antwort auf die KI-Investitionsdebatte, weil Azure-Wachstum und Gewinnschlag gleichzeitig überzeugen. Die Verpflichtungen von 330 Milliarden US-…",
-     "figures": "Umsatz: plus 18 Prozent auf 90 Milliarden US-Dollar, 2,4 Milliarden US-Dollar über den Erwartungen; EPS: 4,74 US-Dollar, Konsens 4,24 US-Dollar; Cloud-Umsatz: 59,3 Milliarden US-Dollar, plus 27 Proze…"
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "tV-qzX1rLwU",
-     "url": "https://www.youtube.com/watch?v=tV-qzX1rLwU&t=2690s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Microsoft pendelt als einer der wichtigsten Marktwerte auf dem Schlüssel-Support bei 350 US-Dollar. Im Mittelpunkt stehen die Zahlen am Mittwoch und die Frage, wie der Markt die hohen Investitionen i…",
-     "einordnung": "Microsoft ist in dieser Sendung der wichtigste Prüfstein für die Debatte über KI-Capex und Cashflow. Der Chart ist noch nicht beschädigt, aber die Nähe zur Schlüsselunterstützung macht die Reaktion a…",
-     "figures": "350 US-Dollar als Schlüsselunterstützung; 309 bis 310 US-Dollar als nächste Unterstützung; 440 US-Dollar als Widerstand."
-    },
-    {
-     "date": "2026-07-24",
-     "video_id": "3SE8SaUYqTc",
-     "url": "https://www.youtube.com/watch?v=3SE8SaUYqTc&t=3201s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Microsoft wird in den Zuschauerfragen bärisch eingeschätzt. Als mögliches Ziel werden 330 bis 350 Dollar genannt.",
-     "einordnung": "Das Szenario ist rein charttechnisch und setzt voraus, dass die bestehende Schwäche anhält. Ohne zusätzliche Marken aus dem Video ist die Zielzone vor allem als Risikokorridor zu verstehen.",
-     "figures": "Kursziel 330-350$"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=504s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Microsoft wird vom Abverkauf bei Alphabet mitgerissen.",
-     "einordnung": "Auch Microsoft wird im Video als Teil des belasteten Hyperscaler-Komplexes behandelt. Die steigenden Renditen treffen den Titel über die Bewertung und die Erwartung hoher KI-Investitionen, unabhängig…"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "6LLJagAsqAI",
-     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=284s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Microsoft verlor laut Host im schwachen Umfeld für Softwarewerte 1,3 Prozent.",
-     "einordnung": "Die vergleichsweise geringere Bewegung unterstreicht die größere Diversifikation des Konzerns gegenüber reinen Software- oder IT-Dienstleistern. Dennoch bleibt auch Microsoft von der Frage abhängig,…",
-     "figures": "Tagesverlust -1,3 Prozent"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "1NCf_rpMGr8",
-     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=1058s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Microsoft zeigt laut Host einen möglichen Doppelboden. Dirk Siebenhaar hat den Trade nach dem Muster 'Undercut & Rally' mit 1 Prozent Risiko umgesetzt.",
-     "einordnung": "Das teilweise realisierte Risiko verbessert die Positionskontrolle, ändert aber nichts daran, dass der Doppelboden erst durch eine nachhaltige Aufwärtsbewegung bestätigt werden muss. Technisch ist da…",
-     "figures": "1 Prozent Risiko"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=414s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Laut Medienbericht plant Microsoft einen deutlichen Personalabbau, insbesondere im Xbox-Bereich. Die Aktie erholt sich dennoch.",
-     "einordnung": "Restrukturierungen bei Tech-Giganten werden vom Markt oft als Kostendisziplin gefeiert. Dass die Aktie trotz Abbau-Meldung steigt, zeigt, wie dominant die KI-Narrative derzeit ist — Effizienzgewinne…"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=579s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Microsoft erhöht Xbox-Preise und fällt auf ein 52-Wochen-Tief. Haidt bleibt vorsichtig.",
-     "einordnung": "Ein 52-Wochen-Tief bei Microsoft ist ein seltenes Signal – das letzte Mal sahen wir so etwas in der Zinswende-Phase 2022/23. Die Xbox-Preiserhöhung ist marginal, aber das Tiefer-Rutschen deutet darau…",
-     "figures": "52-Wochen-Tief"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=1264s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Unter Druck, Doppeltop bei 493$ gebrochen. Langfristig günstig bewertet (Morningstar 37% Discount, Kursziel 600$). Risiken: hohe Investitionen, regulatorischer Druck.",
-     "einordnung": "Microsoft ist ein klassisches Value-Paradoxon: Starkes Gewinnwachstum (23%, 15%), aber Kurs unter Druck. Das Morningstar-Kursziel von 600$ impliziert 37% Upside – attraktiv für Geduld-Anleger, aber c…",
-     "figures": "KGV 20,5; Morningstar Fair Value 600$; Gewinnwachstum 23% im laufenden Jahr, 15% im nächsten Jahr; Doppeltop 493$"
-    },
-    {
-     "date": "2025-11-28",
-     "video_id": "fQxlQW1Y5LQ",
-     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=2429s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Aktie bei 485 USD unter der 500er-Marke; Konsolidierung seit Juli; Host sieht attraktive Preiszone für spekulative Trendwende mit Stop bei 452.",
-     "einordnung": "Microsoft konsolidiert seit Monaten in einer engen Range — das ist für einen Mega-Cap ungewöhnlich und spricht für eine ausgereifte Bewertung. Der Stop bei 452 bietet ein angemessenes Risiko-Reward-V…",
-     "figures": "485, 500, 452"
-    },
-    {
-     "date": "2025-11-20",
-     "video_id": "HNPb_J0F96o",
-     "url": "https://www.youtube.com/watch?v=HNPb_J0F96o&t=474s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Microsoft liegt erneut hinter Apple in der Marktkapitalisierung und zeigt damit relative Schwäche im Vergleich zum iPhone-Konzern.",
-     "einordnung": "Microsoft ist im aktuellen Umfeld weniger der defensive Tech-Titel als vielmehr Apple. Die Cloud-Konkurrenz durch Alphabet zusätzlich macht die Position nicht leichter."
-    }
-   ]
-  },
   "META": {
    "name": "Meta",
    "auftritte": [
@@ -1039,120 +1572,6 @@
      "note": "Der DAX dürfte laut Host rund 0,1 Prozent schwächer eröffnen. Diese Bewegung könne innerhalb kurzer Zeit wieder korrigiert werden.",
      "einordnung": "Eine erwartete Eröffnung von minus 0,1 Prozent ist im Tagesgeschäft kaum richtungsweisend. Solange keine neuen Impulse aus den Quartalszahlen oder der Geopolitik kommen, bleibt der Index eher ein Spi…",
      "figures": "Erwartete Eröffnung -0,1 Prozent; Schluss am Vortag 24.846 Punkte; aktuell laut Marktdaten 24.847 Punkte und +0,06 Prozent"
-    }
-   ]
-  },
-  "ADS.DE": {
-   "name": "Adidas",
-   "auftritte": [
-    {
-     "date": "2026-07-30",
-     "video_id": "RefnY01hhvw",
-     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=563s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adidas steigerte den Umsatz im zweiten Quartal um 13 Prozent auf 6,7 Milliarden Euro und hob die Prognose für 2026 an. Das Ergebnis fiel wegen höherer Marketingausgaben und Zölle schwächer aus, die A…",
-     "einordnung": "Das ist ein typischer Fall, in dem der operative Umsatzimpuls durch die Kosten- und Margenseite überlagert wird. Die angehobene Prognose ist konstruktiv, doch der Markt verlangt Belege, dass Marketin…",
-     "figures": "Umsatz +13 % auf 6,7 Mrd. €, Prognose für 2026 angehoben"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "IpdIeeA0GLM",
-     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=1076s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Adidas profitiert von der starken Nachfrage rund um die Fußball-WM und steigert den Umsatz deutlich. Der Gewinn wächst jedoch wesentlich langsamer, weil Kosten und Zölle belasten; der unveränderte Au…",
-     "einordnung": "Adidas zeigt derzeit das klassische Bild eines Umsatzwachstums ohne ausreichenden operativen Hebel. Solange die Margen nicht sichtbar stärker anziehen, bleibt ein hohes Kursziel schwer zu rechtfertig…",
-     "figures": "Umsatz: plus 13 Prozent auf 6,7 Milliarden Euro; EBIT: plus 5 Prozent auf 574 Millionen Euro; Prognose: 2,3 Milliarden Euro; Analystenkonsens: 2,4 Milliarden Euro; Jefferies-Kursziel: 205 Euro."
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "hcmndcPAbxk",
-     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=1647s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Adidas profitiert von der Fußball-Weltmeisterschaft, an der beide Finalisten mit Adidas-Ausrüstung beteiligt sind, sowie von hohen Trikotverkäufen und großer Markenpräsenz. Piper Sandler erhöht das K…",
-     "einordnung": "Die WM liefert einen starken kurzfristigen Marketingimpuls, entscheidend ist aber, ob daraus auch nach dem Turnier ein nachhaltiger Absatz- und Margeneffekt entsteht. Ein KGV von 18 wirkt im Markenar…",
-     "figures": "Earned Media Value 49 Millionen US-Dollar; Kursziel 200 Euro bei Piper Sandler; KGV 18; technisches Ziel 210 Euro"
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "gOPRrqA_L38",
-     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=2015s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Bull-Keil deutet auf Erholung, aber bisher noch kein überzeugendes Kaufsignal (Ausbruch über 172-173 EUR fehlt).",
-     "einordnung": "Das Bull-Keil ist ein klassisches Erholungsmuster, aber ohne überzeugenden Ausbruch bleibt die Geduld die bessere Strategie. Die ambitionierten Ziele bei 242 und 262 EUR setzen eine fundamentale Best…",
-     "figures": "172-173 EUR (Clusterpunkt), 242 EUR, 262 EUR (Ziele)"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "rtqIeordQFo",
-     "url": "https://www.youtube.com/watch?v=rtqIeordQFo&t=283s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Wartet auf Ausbruch über 180 € Richtung 200 €. Das EM-Aus der deutschen Nationalmannschaft hat nicht geholfen, ist wirtschaftlich aber nicht dramatisch.",
-     "einordnung": "Das EM-Aus ist sentimentaler Natur — die Trikotverkäufe laufen bereits, und Adidas profitiert ohnehin vom Turnier-Halo unabhängig vom deutschen Weiterkommen. Charttechnisch ist die 180 € der Schlüsse…",
-     "figures": "180 €, 200 €"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "sax3NJ-Q6tc",
-     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=292s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adidas technisch stark, beginnender Aufwärtstrend. Ein Kollege sieht ein Kursziel bei 200 €. Das WM-Aus der deutschen Mannschaft belastet die Aktie nicht.",
-     "einordnung": "Das WM-Aus ist für Adidas irrelevant — das Unternehmen profitiert von globalen Markenzyklen, nicht vom deutschen Nationalteam. Ein 200-€-Ziel ist ambitioniert, aber im Chartbild nicht abwegig.",
-     "figures": "Kursziel 200 €"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1691s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Aktie nach oben geschossen wegen WM-Hoffnung, Deutschland ist ausgeschieden. Haidt sieht Korrekturrisiko.",
-     "einordnung": "Der WM-Effekt bei Adidas ist ein klassisches 'Buy the rumor, sell the news'-Szenario. Das deutsche Aus bei der WM entzieht der Aktie den kurzfristigen Katalysator – das erinnert an 2018, als Adidas n…"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=2790s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "ABC Outperform, Kursziel von 170 auf 210 Euro. KGV 13 für FY27, Abschlag 10-15 Prozent zu Konkurrenz. Gewinnwachstum 25 Prozent p.a. (3 Jahre). Marktanteile: Sportschuhe 11,2 Prozent (plus 80 BP), Sp…",
-     "einordnung": "Adidas ist im Turnaround-Modus — Marktanteilgewinne bei Sportschuhen von 80 Basispunkten sind handfest. KGV 13 für 2027 bei 25 Prozent Gewinnwachstum ist ein PEG unter 1; das ist attraktiv. Die 170-E…",
-     "figures": "Kursziel 210€, KGV 13, Gewinnwachstum 25% p.a., Marktanteile 11,2% (Schuhe) und 5,9% (Bekleidung)"
-    },
-    {
-     "date": "2026-06-02",
-     "video_id": "aMB3cXXBiiI",
-     "url": "https://www.youtube.com/watch?v=aMB3cXXBiiI&t=201s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktionäre setzen auf WM-Erfolg, der Kurs ist seit April 20-30% gestiegen. Die Erholung könnte weitergehen, die fundamentalen Aussichten seien jedoch unverändert.",
-     "einordnung": "Der WM-Hype treibt die Aktie, doch ein Vorauslauf auf sportliche Events ist oft zyklisch begrenzt. Ohne fundamentale Aufwärtsrevisionen droht nach dem Turnier ein Kater.",
-     "figures": "20-30% seit April"
-    },
-    {
-     "date": "2020-03-12",
-     "video_id": "GxBbuNh6f1Y",
-     "url": "https://www.youtube.com/watch?v=GxBbuNh6f1Y&t=614s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Die Adidas-Aktie rutschte nach den Zahlen unter die wichtige Marke von 200 Euro. Der Host erwartet weitere Verluste; eine historisch günstige Bewertung werde vom Markt derzeit ignoriert.",
-     "einordnung": "Die Reaktion zeigt, dass selbst eine auf den ersten Blick attraktivere Bewertung in einem Schockmarkt kein ausreichendes Argument ist. Bei Adidas überlagert die Sorge um Filialgeschäft, Konsum und in…",
-     "figures": "200 Euro"
-    },
-    {
-     "date": "2020-03-11",
-     "video_id": "D-uLGxGKUsU",
-     "url": "https://www.youtube.com/watch?v=D-uLGxGKUsU&t=82s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Adidas erhöhte die Dividende auf 3,85 Euro je Aktie; die Aktie notierte vorbörslich leicht im Minus.",
-     "einordnung": "Die Dividendenerhöhung war grundsätzlich ein positives Signal, wurde aber vom damaligen Corona-Risiko überlagert. Das vorbörsliche Minus zeigt, dass Anleger in einer breiten Krisenphase gute Unterneh…",
-     "figures": "Dividende 3,85 Euro je Aktie"
     }
    ]
   },
@@ -3333,126 +3752,6 @@
     }
    ]
   },
-  "IFX.DE": {
-   "name": "Infineon",
-   "auftritte": [
-    {
-     "date": "2026-07-28",
-     "video_id": "ldobjNsL7sM",
-     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=452s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Die Schwäche im Chipsektor belastet Infineon. Der Kurs könnte laut Host in Richtung der 200-Tage-Linie tendieren.",
-     "einordnung": "Meine Einordnung: Infineon ist stärker vom europäischen und globalen Halbleiterzyklus abhängig als ein klassischer defensiver DAX-Wert; der Sektordruck wiegt daher schwerer als die gute DAX-Verfassun…"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=527s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon wird vom Kursrutsch bei STMicroelectronics mit nach unten gezogen, weil viele Investoren den Titel als KI-Profiteur einordnen.",
-     "einordnung": "Die Kopplung an den KI-Trade kann kurzfristig überzeichnet sein, erhöht aber die Schwankungsanfälligkeit der Aktie. Fundamental bleibt Infineon stärker von Automobil- und Industriezyklen abhängig, we…"
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "i5q2OHZUl84",
-     "url": "https://www.youtube.com/watch?v=i5q2OHZUl84&t=503s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon zeigt vorbörslich einen kleinen Rebound, ohne dass es neue fundamentale Nachrichten gibt.",
-     "einordnung": "Ohne neue Unternehmensnachrichten ist die Bewegung vor allem als technische und sektorale Reaktion einzuordnen. Für eine belastbare Trendwende bräuchte es Signale aus der Nachfrage nach Auto- und Lei…",
-     "figures": "Vorbörslich rund 3 bis 4 Prozent Plus"
-    },
-    {
-     "date": "2026-07-24",
-     "video_id": "CchW9uxHhuM",
-     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=673s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Infineon steht wegen des allgemeinen Abverkaufs im Chipsektor unter Druck, obwohl das operative Geschäft laut Host gut läuft. Nach dem starken Kursanstieg werden zudem Gewinnmitnahmen erwartet.",
-     "einordnung": "Das Beispiel zeigt, wie stark Halbleiterwerte vom Sektorsentiment abhängig sind: Gute operative Nachrichten schützen kurzfristig nicht vor einer branchenweiten Neubewertung. Nach einem starken Lauf i…"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=561s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon bricht wegen des schwachen Ausblicks von STMicroelectronics ein. Egmond warnt vor einem weiteren Rückgang, falls die eigenen Zahlen ebenfalls negativ ausfallen.",
-     "einordnung": "Die Reaktion ist ein klassischer Vorlaufeffekt innerhalb eines zyklischen Sektors: Ein schwacher Ausblick des Wettbewerbers wird als Warnsignal für die gesamte Branche gelesen. Bei Infineon zählt des…"
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "hcmndcPAbxk",
-     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=1409s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "MWB Research hebt Infineon von 'Sell' auf 'Hold' an und nennt ein Kursziel von 60 Euro. Das KGV von 29 bleibt anspruchsvoll, auch wenn der Host auf Wachstum in den KI- und Kernsegmenten verweist; ein…",
-     "einordnung": "Infineon ist qualitativ interessant, aber die Bewertung verlangt bereits eine überzeugende operative Trendwende. Nach dem erreichten 50-Prozent-Retracement fehlt aus technischer Sicht noch die Bestät…",
-     "figures": "KGV 29; Kursziel 60 Euro bei MWB Research; Worst Case 48 bis 49 Euro; 50-Prozent-Retracement erreicht"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "ZtKFU4SJtbQ",
-     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=378s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Infineon steht im Zuge des allgemeinen Drucks auf den Chipsektor unter Druck. Der Host hält einen Rückgang in Richtung 60 Euro für möglich und verweist darauf, dass die Aktie weit von ihrem gleitende…",
-     "einordnung": "Die Entfernung vom gleitenden Durchschnitt kann auf eine überdehnte Abwärtsbewegung hindeuten, ist aber noch kein eigenständiges Kaufsignal. Solange der gesamte Halbleitersektor schwach bleibt, dürft…",
-     "figures": "60 Euro"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "6LLJagAsqAI",
-     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon profitierte laut Host von der positiven ASML-Reaktion und legte um 1 Prozent zu.",
-     "einordnung": "Die Bewegung zeigt die Ausstrahlung guter Nachrichten des europäischen Halbleitersektors. Für Infineon selbst liefert der ASML-Bericht jedoch nur einen indirekten Impuls, da die Geschäftsprofile nich…",
-     "figures": "Tagesplus +1 Prozent"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "nPsSsD7zbI8",
-     "url": "https://www.youtube.com/watch?v=nPsSsD7zbI8&t=539s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon voraussichtlich -4% wegen Sippenhaft nach der Samsung-Enttäuschung. Die Aktie hatte sich zu weit von der 200-Tage-Linie entfernt; Kurse kehren zu gleitenden Durchschnitten zurück.",
-     "einordnung": "Die Sippenhaft-Logik im Halbleitersektor ist kurzfristig wirksam, aber fundamental fragwürdig: Infineon ist ein Automobil- und Industriechip-Spezialist, Samsung ein Memory-Chip-Gigant — die Geschäfts…",
-     "figures": "Voraussichtlich -4%"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1063s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Infineon gerät durch den Chip-Ausverkauf massiv unter Druck mit einem Tagesverlust von 8 bis 9%.",
-     "einordnung": "Infineon leidet unter Sippenhaft: Samsungs Enttäuschung zieht den gesamten Halbleitersektor mit. Ein Tagesverlust von 8-9% bei einem Blue-Chip ist ein klares Risiko-Signal.",
-     "figures": "-8 bis 9% an einem Tag"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "sax3NJ-Q6tc",
-     "url": "https://www.youtube.com/watch?v=sax3NJ-Q6tc&t=338s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon eröffnet am 2. Juli eine neue Chipfabrik und verdoppelt Kapazitäten. Aktie konsolidiert nach Anstieg von 40 auf 80.",
-     "einordnung": "Die Fabrikeröffnung ist ein Meilenstein, aber Kapazitätsverdopplung bedeutet auch höhere Abschreibungen. Die Konsolidierung nach dem Lauf von 40 auf 80 ist gesund.",
-     "figures": "Kursanstieg von 40 auf 80"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=771s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Aktie bricht im Zuge von KI-Zweifeln ein. Haidt rät zu kurzfristiger Vorsicht.",
-     "einordnung": "Infineon ist stark zyklisch und wird bei jeder KI-Skepsis als Erster abgestraft. Die Bewertung ist nicht günstig genug, um einen echten Kontrahalt zu bieten – das KGV bleibt hoch für einen Halbleiter…"
-    }
-   ]
-  },
   "MBG.DE": {
    "name": "Mercedes-Benz",
    "auftritte": [
@@ -5355,109 +5654,6 @@
     }
    ]
   },
-  "AMZN": {
-   "name": "Amazon",
-   "auftritte": [
-    {
-     "date": "2026-07-24",
-     "video_id": "3SE8SaUYqTc",
-     "url": "https://www.youtube.com/watch?v=3SE8SaUYqTc&t=3201s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Amazon wird in den Zuschauerfragen bärisch beurteilt. Als mögliche Zielzone werden 212 bis 220 Dollar genannt.",
-     "einordnung": "Die Zielzone ist eine technische Abwartezone und keine Aussage über die langfristige Geschäftsentwicklung. Sie setzt voraus, dass die aktuelle Schwäche zunächst anhält und dort eine Stabilisierung ei…",
-     "figures": "Kursziel 212-220$"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=502s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Amazon wird vom Abverkauf bei Alphabet nach unten gezogen.",
-     "einordnung": "Das ist ein typischer Sippenhaft-Effekt im Technologiesektor: Anleger reduzieren zunächst ganze Themenkörbe, bevor sie zwischen den Geschäftsmodellen differenzieren. Für Amazon wirkt der Zinsanstieg…"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=174s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Amazon platziert eine Anleihe über 25 Milliarden US-Dollar; die Nachfrage belief sich lediglich auf 62 Milliarden US-Dollar. Egmond erwartet kurzfristig eine Seitwärtsbewegung und rät, die Quartalsza…",
-     "einordnung": "Die hohe Nachfrage zeigt zwar weiterhin Zugang zum Kapitalmarkt, ist im Verhältnis zum Emissionsvolumen aber kein außergewöhnliches Signal. Vor Zahlen bleibt die Aktie damit eher ein Ereignis- als ei…",
-     "figures": "Anleihevolumen 25 Milliarden US-Dollar; Nachfrage 62 Milliarden US-Dollar"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "1NCf_rpMGr8",
-     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=2153s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Amazon befindet sich in einer langen Konsolidierung. Der Host sieht eine Rotation aus den Halbleitern in den Wert hinein.",
-     "einordnung": "Amazon profitiert in dieser Lesart zunächst vom relativen Kapitalfluss und nicht von einem bereits bestätigten Ausbruch. Eine lange Konsolidierung kann Chancen eröffnen, verlangt aber Geduld, weil di…"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "rGKDA0JAU4I",
-     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=2722s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "TD Cowen erwartet AWS-Wachstum von 35,5% im Q2, deutlich über Konsens von 32%. Capex von 200 Mrd. $. KGV 29 historisch niedrig. Technisch Fehlbreakout nach unten.",
-     "einordnung": "AWS-Wachstum von 35,5% gegenüber 28,4% im Vorquartal wäre eine deutliche Beschleunigung — das würde die KI-Nachfrage für Cloud-Infrastruktur eindrucksvoll bestätigen. Ein KGV von 29 als historisch ni…",
-     "figures": "AWS-Wachstum 35,5% (Q2), Vorquartal 28,4%, KGV 29, Capex 200 Mrd. $, Kursziel 310-330$"
-    },
-    {
-     "date": "2026-07-08",
-     "video_id": "e11CVmyBuR8",
-     "url": "https://www.youtube.com/watch?v=e11CVmyBuR8&t=3240s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Plant 25 Mrd. $ Anleihe (Nachfrage 62 Mrd. $), vermutlich für KI-Infrastruktur. Capex 200 Mrd. $ erwartet. Aktie in Korrektur, Widerstand bei 250 $.",
-     "einordnung": "Eine 2,5-fach übersubskribierte Anleihe bei 25 Mrd. $ zeigt extremen Investorenappetit für Amazon-Kredit — das ist ein Vertrauenssignal. 200 Mrd. $ Capex für AI-Infrastruktur ist gewaltig, aber bei A…",
-     "figures": "25 Mrd. $ Anleihe, 62 Mrd. $ Nachfrage (2,5x übersubskribiert), 200 Mrd. $ Capex erwartet, Widerstand 250 $, Ziel 280 $"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=3230s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Prime Day entwickelt sich zum zweiten großen Shopping-Fenster; Umsatz über 26 Mrd. $ (+9,3%), starkes mobiles Shopping und KI-gestützte Produktsuche. Aktie mit niedrigem KGV und guter Chartstruktur.",
-     "einordnung": "Prime Day mit 26,4 Mrd. $ und +9,3% Wachstum zeigt, dass Amazon den Konsum nicht nur bedient, sondern aktiv formt. Ein KGV von 28 bei diesem Wachstum ist fair bewertet, und die Chartstruktur mit Unte…",
-     "figures": "Prime Day Umsatz 26,4 Mrd. $ (+9,3%); Black Friday/Cyber Monday 32,5 Mrd. $; KGV 28; Unterstützung 220$, Ziel 250$/270$"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=246s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Amazon fiel gestern um 4,7%, obwohl es mit KGV von knapp über 20 nicht teuer bewertet ist, bietet mögliche Chance.",
-     "einordnung": "Ein KGV von knapp über 20 für Amazon ist historisch gesehen ein ausgesprochen niedriges Niveau. Wenn hier Unterstützungen halten, könnte das eine antizyklische Chance sein – vorausgesetzt, der Gesamt…",
-     "figures": "4,7%, KGV knapp über 20"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=4010s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Amazon veranstaltet den Prime Day im Juni. Bank of America erhöht das Kursziel, der Chart ist bullisch.",
-     "einordnung": "Amazon profitiert von der KI-Infrastruktur (AWS) und dem robusten Konsum. Der vorgezogene Prime Day ist ein kluger Schachzug. Das Kaufsignal ist intakt, die 293$ sind das nächste Etappenziel.",
-     "figures": "Kursziel Bank of America 310$; Prime Day zusätzlicher Umsatz 8,5 Mrd. $; Prognose 199 Mrd. $; Kursziel 353$; Zwischenziel 293$"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=611s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Amazon zeigt eine Nullperformance im Jahresverlauf. Das KGV für 2026 liegt knapp bei 30. Im Einzelhandel wächst der Wettbewerb durch Walmart.",
-     "einordnung": "Eine Nullperformance bei einem KGV von 30 signalisiert, dass der Markt bereits viel einpreist und auf den Beweis wartet, dass AWS das KI-Rennen nicht verliert. Walmart als Einzelhandels-Konkurrent is…",
-     "figures": "KGV 2026 knapp 30, Jahresperformance 0%"
-    }
-   ]
-  },
   "IBM": {
    "name": "IBM",
    "auftritte": [
@@ -6158,59 +6354,6 @@
     }
    ]
   },
-  "ASML": {
-   "name": "ASML",
-   "auftritte": [
-    {
-     "date": "2026-07-21",
-     "video_id": "J6gUTUPHems",
-     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=181s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Die Zahlen und der Ausblick übertrafen die Erwartungen. Dennoch nutzten Anleger die Kursgewinne für Gewinnmitnahmen; Egmond erwartet zunächst eine Seitwärtsbewegung und danach einen Abwärtstrend.",
-     "einordnung": "ASML bleibt fundamental ein qualitativ herausragender Ausrüster, ist aber im Halbleiterzyklus kein defensiver Titel. Gute Nachrichten können bei anspruchsvoller Erwartungshaltung deshalb bereits im K…"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "B79xh8kdYI8",
-     "url": "https://www.youtube.com/watch?v=B79xh8kdYI8&t=0s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Der Host hebt das phänomenale Quartal und die deutlich angehobene Prognose für 2026 hervor. Die KI-Investitionen treiben den Bedarf an moderner Chipfertigung, dennoch gab die Aktie Gewinne ab, weil d…",
-     "einordnung": "Operativ bleibt ASML ein herausragender Profiteur des strukturellen Halbleiter- und KI-Ausbaus. Die Kursreaktion zeigt jedoch den alten Börsenmechanismus: Gute Nachrichten reichen nicht, wenn sie die…",
-     "figures": "Umsatzprognose 2026: 43 bis 45 Mrd. €; Q3-Umsatz: 11 bis 12 Mrd. €; Bruttomarge Q3: 55 bis 57 %; Q2-Umsatz: 9,3 Mrd. €; Bruttomarge Q2: 54,0 %; Q2-EPS: 7,59 €"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "6LLJagAsqAI",
-     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "ASML steigerte den Umsatz im zweiten Quartal und hob die Jahresprognose erneut an. Die Aktie lag vorbörslich im Plus; auch mehrere Halbleiterzulieferer profitierten von der Nachricht.",
-     "einordnung": "Die erneute Prognoseanhebung ist ein starkes Signal für die Nachfrage nach moderner Chipfertigung und hebt ASML positiv vom zyklischen Halbleiterumfeld ab. Die Bewertung bleibt allerdings eng an daue…",
-     "figures": "Umsatz Q2 9,3 Mrd. Euro, Q1 8,8 Mrd. Euro, Bruttomarge Q2 54 Prozent, Q1 53 Prozent, Jahresumsatzprognose 43 bis 45 Mrd. Euro nach zuvor 30 bis 40 Mrd. Euro, erwartete Bruttomarge 54 bis 56 Prozent,…"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Investoren warten auf die Zahlen von ASML am Mittwochmorgen. Der Wert wird im Video im Zusammenhang mit dem angespannten Halbleiterumfeld genannt.",
-     "einordnung": "ASML ist ein zentraler Prüfstein für die Investitionsbereitschaft der Halbleiterindustrie. Gerade nach den starken Ausschlägen bei Speicherwerten dürfte der Ausblick wichtiger sein als ein einzelnes…"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=540s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Neues Rekordhoch vorbörslich; volle Auftragsbücher, Analysten rechnen für das nächste Jahr mit 90 ausgelieferten Anlagen (vs. zuletzt ~80) und 15–20 % Umsatzwachstum.",
-     "einordnung": "ASML ist und bleibt das Monopol im EUV-Segment — kein Wettbewerber in Sichtweite. Rekordstände auf Rekordkurs bei solcher Visibilität der Auftragslage sind fundamental gerechtfertigt. Das erinnert an…",
-     "figures": "80 Anlagen aktuell, ~90 Anlagen nächstes Jahr erwartet; Wachstumsprognose 15–20 %"
-    }
-   ]
-  },
   "PNR": {
    "name": "Pentair",
    "auftritte": [
@@ -6440,61 +6583,6 @@
      "note": "Adobe hat gute Zahlen geliefert und kooperiert mit OpenAI. Der KI-Umsatz erreicht 250 Mio. USD.",
      "einordnung": "250 Mio. USD KI-Umsatz zeigt, dass Adobe Monetarisierung schafft, bleibt aber hinter reinen KI-Playern zurück. Die OpenAI-Kooperation ist strategisch klug — Adobe integriert KI statt sie zu bekämpfen.",
      "figures": "250 Mio. USD KI-Umsatz"
-    }
-   ]
-  },
-  "NBIS": {
-   "name": "Nebius",
-   "auftritte": [
-    {
-     "date": "2026-07-21",
-     "video_id": "Tlc2EJIAJeo",
-     "url": "https://www.youtube.com/watch?v=Tlc2EJIAJeo&t=2239s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nvidia hält bereits 1,2 Millionen Nebius-Aktien und besitzt Warrants auf weitere 21 Millionen Aktien, was einem Anteil von mehr als 9 Prozent entspricht. Den hohen Investitionen von mehr als 25 Milli…",
-     "einordnung": "Nebius ist eine Wachstumswette auf KI-Rechenzentren, bei der die Finanzierung deutlich wichtiger ist als klassische Bewertungskennzahlen. Der starke Kursrückgang zeigt, dass der Markt die ambitionier…",
-     "figures": "Nvidia-Anteil über 9 Prozent; 1,2 Millionen Aktien plus Warrants auf 21 Millionen weitere Aktien; Investitionen über 25 Milliarden US-Dollar; erwarteter Umsatz 2026: 3 Milliarden US-Dollar, 2027: 10…"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "jbBenx99pmg",
-     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=3830s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "In den Zuschauerfragen geht es um den starken Kursrückgang bei Nebius und einen Rücksetzer auf frühere Hochs. Belastend wirkt laut Host auch ein Verbot von Rechenzentren in New York.",
-     "einordnung": "Die Rückkehr auf frühere Hochs kann charttechnisch eine Unterstützung darstellen, ist bei einem stark volatilen KI-Infrastrukturwert aber kein belastbarer Boden. Ein Discountzertifikat kann das Risik…",
-     "figures": "Kurs 260 Euro, Rücksetzer auf frühere Hochs"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=3565s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Größter Verlierer nach Meta-Cloud-News. Basis-Rücksetzer auf 200$ (50%-Retracement). Langfristige Story intakt, Nachfrage größer als Angebot.",
-     "einordnung": "Der Rücksetzer bei Nebius ist eine typische Überreaktion auf Konkurrenzängste. Wenn Meta in den Cloud-Markt einsteigt, validiert das das Geschäftsmodell von Neo-Cloud-Anbietern.",
-     "figures": "Hoch ca. 300 $, aktuell ca. ? , Ziel 200 $ (Basecase), 150 $ (worst case), 20 Mrd. $ pro Gigawatt"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "1_zNnqdriM4",
-     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2357s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Nebius führte KI-Agent 'Echo' ein, charttechnisch aber Abschwächung; wichtig ist Halten des 50-Tage-Durchschnitts.",
-     "einordnung": "Nebius ist ein hochspekulativer KI-Titel, bei dem die charttechnische Abschwächung im Widerspruch zur produktseitigen Innovation steht. Der Bruch unter 227$ würde den Trend eindeutig negativ wenden —…",
-     "figures": "Widerstand 141$, Unterstützung 227$, Ziel 320$ (nicht erreicht), Bruch unter 227$ könnte auf 183$ fallen"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "a6FF2tGXbok",
-     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2080s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blac…",
-     "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktu…",
-     "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd"
     }
    ]
   },
@@ -9273,30 +9361,6 @@
      "note": "Q1: Bruttowarenvolumen 4,3 Mrd. Euro (plus 21,7 Prozent), aktive Kunden 62,3 Mio. (plus 18,8 Prozent). B2B EBIT-Marge 8,6 Prozent. Chart: hält 19,18 Euro, Widerstände 26,80 Euro, 29,40 Euro, 31,80 Eu…",
      "einordnung": "Zalando liefert starke Wachstumszahlen — 21,7 Prozent BWV-Wachstum bei 18,8 Prozent mehr Kunden ist beeindruckend. Die B2B-Marge von 8,6 Prozent zeigt, dass das Plattformgeschäft profitabel skaliert.…",
      "figures": "Bruttowarenvolumen 4,3 Mrd€, +21,7%, aktive Kunden 62,3 Mio, +18,8%, B2B EBIT-Marge 8,6%"
-    }
-   ]
-  },
-  "ALV.DE": {
-   "name": "Allianz",
-   "auftritte": [
-    {
-     "date": "2026-06-29",
-     "video_id": "tIXIrS3cz1s",
-     "url": "https://www.youtube.com/watch?v=tIXIrS3cz1s&t=474s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Allianz wird vom Host als Top-Versicherer eingestuft, der bei Kursrücksetzern zugekauft werden sollte.",
-     "einordnung": "Die Allianz ist der Bluechip unter den Versicherern mit diversifiziertem Geschäftsmodell und verlässlicher Dividende. Die 'bei Schwäche kaufen'-Strategie ist für solche Werte historisch gut aufgegang…"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=3266s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Ausbruch über Hoch aus 2000, Kursprojektion 430 Euro. Rekordgewinn operativ, Jahresprognose bestätigt. Hohe Aktionärsrenditen, Dividende, Aktienrückkauf.",
-     "einordnung": "Ein Ausbruch über ein 26 Jahre altes Hoch ist ein seltenes und massives Signal — Allianz ist nach zwei Jahrzehnten endlich wieder dort, wo sie 2000 stand. Das sagt viel über die langfristige Rendite…",
-     "figures": "Kursprojektion 430€"
     }
    ]
   },
