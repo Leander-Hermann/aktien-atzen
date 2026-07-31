@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-31T02:20:34.517634Z",
+  "generated_at": "2026-07-31T03:20:29.933918Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -50,12 +50,6 @@
      "label": "Video-Erwähnungen",
      "value": "2 Videos in 3 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -252,7 +246,7 @@
   {
    "symbol": "IFX.DE",
    "name": "Infineon",
-   "score": 85,
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -273,12 +267,6 @@
      "label": "Earnings-Termin",
      "value": "Earnings in 5 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:IFX",
@@ -297,7 +285,7 @@
   {
    "symbol": "BE",
    "name": "Bloom Energy",
-   "score": 75,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -318,12 +306,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -336,7 +318,7 @@
   {
    "symbol": "LRCX",
    "name": "Lam Research",
-   "score": 75,
+   "score": 70,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
@@ -357,12 +339,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -374,44 +350,6 @@
    "earnings": {
     "date": "2026-07-29",
     "distance_days": -2,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "AMD",
-   "name": "Advanced Micro Devices",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+13,6 %",
-     "weight": 45
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 4 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 487.955,
-    "pct": 13.59,
-    "cur": "USD",
-    "as_of": "2026-07-30T18:35:40.637975+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-04",
-    "distance_days": 4,
     "zeit": "amc"
    }
   },
@@ -461,9 +399,41 @@
    }
   },
   {
+   "symbol": "AMD",
+   "name": "Advanced Micro Devices",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+13,6 %",
+     "weight": 45
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 4 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 487.955,
+    "pct": 13.59,
+    "cur": "USD",
+    "as_of": "2026-07-30T18:35:40.637975+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-04",
+    "distance_days": 4,
+    "zeit": "amc"
+   }
+  },
+  {
    "symbol": "GC=F",
    "name": "Gold",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "volume_spike",
    "triggers": [
@@ -484,12 +454,6 @@
      "label": "Video-Erwähnungen",
      "value": "3 Videos in 3 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "TVC:GOLD",
@@ -503,7 +467,7 @@
   {
    "symbol": "MU",
    "name": "Micron",
-   "score": 60,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -518,12 +482,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -536,7 +494,7 @@
   {
    "symbol": "STX",
    "name": "Seagate",
-   "score": 60,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -551,12 +509,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -569,7 +521,7 @@
   {
    "symbol": "GLW",
    "name": "Corning",
-   "score": 60,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -584,12 +536,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -602,7 +548,7 @@
   {
    "symbol": "ARM",
    "name": "Arm",
-   "score": 60,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -623,12 +569,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -641,7 +581,7 @@
   {
    "symbol": "INGA.AS",
    "name": "ING",
-   "score": 60,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -662,12 +602,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "EURONEXT:INGA",
@@ -677,90 +611,6 @@
     "cur": "EUR",
     "as_of": "2026-07-30T18:35:40.637975+00:00"
    }
-  },
-  {
-   "symbol": "CORT",
-   "name": "Corcept Therapeutics Incorporat",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+27,0 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "NBIS",
-   "name": "Nebius",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+26,6 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "IREN",
-   "name": "Iren Ltd.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+25,9 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "SNDK",
-   "name": "SanDisk",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+23,9 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
   }
  ]
 }
