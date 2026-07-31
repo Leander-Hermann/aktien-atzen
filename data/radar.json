@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-07-31T04:20:33.135465Z",
+  "generated_at": "2026-07-31T05:20:35.234542Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -69,7 +69,7 @@
    "name": "Nemetschek",
    "score": 100,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -114,7 +114,7 @@
    "name": "Adidas",
    "score": 100,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
