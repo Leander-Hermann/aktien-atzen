@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-01T06:20:36.557220Z",
+  "generated_at": "2026-08-01T07:20:27.883993Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,21 +23,21 @@
   {
    "symbol": "AMZN",
    "name": "Amazon",
-   "score": 95,
+   "score": 100,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+15,0 %",
+     "value": "+15,3 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,3× Durchschnitt",
-     "weight": 15
+     "value": "3,1× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "earnings_watch",
@@ -53,10 +53,144 @@
     }
    ],
    "quote": {
-    "price": 270.62,
-    "pct": 14.91,
+    "price": 271.58,
+    "pct": 15.32,
     "cur": "USD",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-30",
+    "distance_days": -2,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "ADS.DE",
+   "name": "Adidas",
+   "score": 100,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-11,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "10,2× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:ADS",
+   "quote": {
+    "price": 159.4,
+    "pct": -11.52,
+    "cur": "EUR",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-30",
+    "distance_days": -2,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "NEM.DE",
+   "name": "Nemetschek",
+   "score": 95,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-13,7 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,5× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:NEM",
+   "quote": {
+    "price": 58.05,
+    "pct": -13.69,
+    "cur": "EUR",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-30",
+    "distance_days": -2,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "COIN",
+   "name": "Coinbase",
+   "score": 95,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-10,6 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,1× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 146.26,
+    "pct": -10.59,
+    "cur": "USD",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
    },
    "earnings": {
     "date": "2026-07-30",
@@ -67,208 +201,64 @@
   {
    "symbol": "AAPL",
    "name": "Apple",
-   "score": 85,
+   "score": 95,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,4 %",
+     "value": "-7,3 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 308.91,
+    "pct": -7.35,
+    "cur": "USD",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
+   },
+   "earnings": {
+    "date": "2026-07-30",
+    "distance_days": -2,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 90,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,2 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
      "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 302.11,
-    "pct": -9.39,
-    "cur": "USD",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-30",
-    "distance_days": -2,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "COIN",
-   "name": "Coinbase",
-   "score": 85,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-8,5 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,2× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 149.75,
-    "pct": -8.45,
-    "cur": "USD",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-30",
-    "distance_days": -2,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "RBLX",
-   "name": "Roblox",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-29,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,3× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 34.5,
-    "pct": -29.11,
-    "cur": "USD",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
-   }
-  },
-  {
-   "symbol": "RDDT",
-   "name": "Reddit",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-20,8 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "5,6× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 140.955,
-    "pct": -20.83,
-    "cur": "USD",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
-   }
-  },
-  {
-   "symbol": "HAG.DE",
-   "name": "Hensoldt",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,0 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,7× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:HAG",
-   "quote": {
-    "price": 79.76,
-    "pct": -5.03,
-    "cur": "EUR",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
-   }
-  },
-  {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,7 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
      "weight": 15
     },
     {
@@ -287,9 +277,9 @@
    "tv_symbol": "XETR:IFX",
    "quote": {
     "price": 61.67,
-    "pct": 3.7,
+    "pct": 9.16,
     "cur": "EUR",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
    },
    "earnings": {
     "date": "2026-08-05",
@@ -298,23 +288,29 @@
    }
   },
   {
-   "symbol": "SHL.DE",
-   "name": "Siemens Healthineers",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
+   "symbol": "005930.KS",
+   "name": "Samsung",
+   "score": 85,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+26,8 %",
+     "weight": 45
+    },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
+     "value": "1,9× Durchschnitt",
      "weight": 15
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "Earnings vor 3 Tagen",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -323,58 +319,37 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:SHL",
+   "tv_symbol": "KRX:005930",
    "quote": {
-    "price": 36.86,
-    "pct": -0.91,
-    "cur": "EUR",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
+    "price": 262500.0,
+    "pct": 26.81,
+    "cur": "KRW",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
    },
    "earnings": {
-    "date": "2026-07-31",
-    "distance_days": -1,
+    "date": "2026-07-29",
+    "distance_days": -3,
     "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "VRT",
-   "name": "Vertiv",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,5 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 244.48,
-    "pct": 7.46,
-    "cur": "USD",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
    }
   },
   {
    "symbol": "000660.KS",
    "name": "SK Hynix",
-   "score": 50,
-   "priority": "medium",
+   "score": 80,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-5,6 %",
-     "weight": 30
+     "value": "+30,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -386,22 +361,94 @@
    "tv_symbol": "KRX:000660",
    "quote": {
     "price": 1718000.0,
-    "pct": -5.64,
+    "pct": 29.95,
     "cur": "KRW",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
+   }
+  },
+  {
+   "symbol": "RBLX",
+   "name": "Roblox",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-26,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "8,1× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 35.6,
+    "pct": -26.85,
+    "cur": "USD",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
+   }
+  },
+  {
+   "symbol": "RDDT",
+   "name": "Reddit",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-21,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "6,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 140.67,
+    "pct": -20.99,
+    "cur": "USD",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
    }
   },
   {
    "symbol": "MSFT",
    "name": "Microsoft",
-   "score": 50,
+   "score": 65,
    "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,6 %",
+     "value": "+3,0 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
      "weight": 15
     },
     {
@@ -418,15 +465,82 @@
     }
    ],
    "quote": {
-    "price": 462.94,
-    "pct": 2.62,
+    "price": 464.72,
+    "pct": 3.02,
     "cur": "USD",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
    },
    "earnings": {
     "date": "2026-07-29",
     "distance_days": -3,
     "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "VRT",
+   "name": "Vertiv",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,2 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 241.57,
+    "pct": 6.18,
+    "cur": "USD",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
+   }
+  },
+  {
+   "symbol": "INGA.AS",
+   "name": "ING",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "EURONEXT:INGA",
+   "quote": {
+    "price": 30.44,
+    "pct": 5.11,
+    "cur": "EUR",
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
    }
   },
   {
@@ -439,7 +553,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,1 %",
+     "value": "+3,3 %",
      "weight": 15
     },
     {
@@ -456,54 +570,15 @@
     }
    ],
    "quote": {
-    "price": 550.22,
-    "pct": 2.08,
+    "price": 556.71,
+    "pct": 3.28,
     "cur": "USD",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
+    "as_of": "2026-08-01T06:32:28.762012+00:00"
    },
    "earnings": {
     "date": "2026-07-29",
     "distance_days": -3,
     "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "ADS.DE",
-   "name": "Adidas",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:ADS",
-   "quote": {
-    "price": 159.4,
-    "pct": -1.15,
-    "cur": "EUR",
-    "as_of": "2026-07-31T18:34:37.980392+00:00"
-   },
-   "earnings": {
-    "date": "2026-07-30",
-    "distance_days": -2,
-    "zeit": "tbd"
    }
   }
  ]
