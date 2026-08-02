@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-01T05:01:44.144898+00:00",
+ "updated": "2026-08-02T05:01:39.510808+00:00",
  "date": "2026-07-31",
  "label": "Freitag, 31.07.2026",
  "tabelle": [
@@ -20,26 +20,7 @@
    "reaktion_pct": 9.89,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/2454.TW",
-   "as_of": "2026-08-01T05:01:25.024621+00:00"
-  },
-  {
-   "ticker": "6758.T",
-   "name": "Sony Group",
-   "index": "Nikkei 225",
-   "region": "JP",
-   "branche": "Elektronik",
-   "periode": "",
-   "eps_est": 34.3422,
-   "eps_act": 13.95,
-   "rev_est": 2717507260600,
-   "rev_act": null,
-   "eps_surprise_pct": -59.38,
-   "rev_surprise_pct": null,
-   "ergebnis": "miss",
-   "reaktion_pct": -0.58,
-   "source": "yahoo",
-   "source_url": "https://finance.yahoo.com/quote/6758.T",
-   "as_of": "2026-08-01T05:01:25.024621+00:00"
+   "as_of": "2026-08-02T05:01:21.812165+00:00"
   },
   {
    "ticker": "SHL.DE",
@@ -48,17 +29,36 @@
    "region": "DE",
    "branche": "Medizintechnik",
    "periode": "",
-   "eps_est": 0.5259,
-   "eps_act": 0.53,
-   "rev_est": 5663978380,
+   "eps_est": 0.6879,
+   "eps_act": 0.7,
+   "rev_est": 6877540480,
    "rev_act": null,
-   "eps_surprise_pct": 0.78,
+   "eps_surprise_pct": 1.76,
    "rev_surprise_pct": null,
-   "ergebnis": "inline",
-   "reaktion_pct": null,
+   "ergebnis": "beat",
+   "reaktion_pct": -0.91,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/SHL.DE",
-   "as_of": "2026-08-01T05:01:25.024621+00:00"
+   "as_of": "2026-08-02T05:01:21.812165+00:00"
+  },
+  {
+   "ticker": "6758.T",
+   "name": "Sony Group",
+   "index": "Nikkei 225",
+   "region": "JP",
+   "branche": "Elektronik",
+   "periode": "",
+   "eps_est": 44.6742,
+   "eps_act": 58.07,
+   "rev_est": 3152755037000,
+   "rev_act": null,
+   "eps_surprise_pct": 29.99,
+   "rev_surprise_pct": null,
+   "ergebnis": "beat",
+   "reaktion_pct": -0.58,
+   "source": "yahoo",
+   "source_url": "https://finance.yahoo.com/quote/6758.T",
+   "as_of": "2026-08-02T05:01:21.812165+00:00"
   }
  ],
  "signale": []
