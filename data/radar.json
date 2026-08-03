@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-03T18:20:31.088708Z",
+  "generated_at": "2026-08-03T19:20:40.950463Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 136,
-  "with_quote_data": 59,
+  "symbols_total": 138,
+  "with_quote_data": 57,
   "sources": [
    "watchlist",
    "videos",
@@ -21,16 +21,16 @@
  },
  "items": [
   {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
-   "score": 85,
-   "priority": "high",
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
+   "score": 65,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+9,2 %",
+     "value": "+30,0 %",
      "weight": 45
     },
     {
@@ -40,10 +40,38 @@
      "weight": 15
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "tv_symbol": "KRX:000660",
+   "quote": {
+    "price": 1567000.0,
+    "pct": 29.95,
+    "cur": "KRW",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   }
+  },
+  {
+   "symbol": "005930.KS",
+   "name": "Samsung",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+26,8 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "market_regime",
@@ -52,37 +80,117 @@
      "weight": 5
     }
    ],
-   "tv_symbol": "XETR:IFX",
+   "tv_symbol": "KRX:005930",
    "quote": {
-    "price": 61.67,
-    "pct": 9.16,
+    "price": 239500.0,
+    "pct": 26.81,
+    "cur": "KRW",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   }
+  },
+  {
+   "symbol": "HAG.DE",
+   "name": "Hensoldt",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,2× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "tv_symbol": "XETR:HAG",
+   "quote": {
+    "price": 86.34,
+    "pct": 8.25,
     "cur": "EUR",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   }
+  },
+  {
+   "symbol": "SHL.DE",
+   "name": "Siemens Healthineers",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 3 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "tv_symbol": "XETR:SHL",
+   "quote": {
+    "price": 39.11,
+    "pct": 6.1,
+    "cur": "EUR",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
    },
    "earnings": {
-    "date": "2026-08-05",
-    "distance_days": 2,
+    "date": "2026-07-31",
+    "distance_days": -3,
     "zeit": "tbd"
    }
   },
   {
-   "symbol": "AMZN",
-   "name": "Amazon",
-   "score": 75,
-   "priority": "high",
-   "alert_type": "large_move",
+   "symbol": "PLTR",
+   "name": "Palantir",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+15,3 %",
-     "weight": 45
+     "value": "+2,4 %",
+     "weight": 15
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,1× Durchschnitt",
-     "weight": 25
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     },
     {
      "type": "market_regime",
@@ -92,154 +200,22 @@
     }
    ],
    "quote": {
-    "price": 271.58,
-    "pct": 15.32,
+    "price": 125.96,
+    "pct": 2.36,
     "cur": "USD",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-03",
+    "distance_days": 0,
+    "zeit": "tbd"
    }
   },
   {
-   "symbol": "RBLX",
-   "name": "Roblox",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-26,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "8,1× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 35.6,
-    "pct": -26.85,
-    "cur": "USD",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
-   }
-  },
-  {
-   "symbol": "RDDT",
-   "name": "Reddit",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-21,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,8× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 140.67,
-    "pct": -20.99,
-    "cur": "USD",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
-   }
-  },
-  {
-   "symbol": "NEM.DE",
-   "name": "Nemetschek",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-13,7 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "XETR:NEM",
-   "quote": {
-    "price": 58.05,
-    "pct": -13.69,
-    "cur": "EUR",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
-   }
-  },
-  {
-   "symbol": "ADS.DE",
-   "name": "Adidas",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,5 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "10,2× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "XETR:ADS",
-   "quote": {
-    "price": 159.4,
-    "pct": -11.52,
-    "cur": "EUR",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
-   }
-  },
-  {
-   "symbol": "COIN",
-   "name": "Coinbase",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-10,6 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,1× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 146.26,
-    "pct": -10.59,
-    "cur": "USD",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
-   }
-  },
-  {
-   "symbol": "AAPL",
-   "name": "Apple",
-   "score": 70,
-   "priority": "high",
+   "symbol": "BZ=F",
+   "name": "Öl Brent",
+   "score": 55,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -249,22 +225,23 @@
      "weight": 45
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
+   "tv_symbol": "TVC:UKOIL",
    "quote": {
-    "price": 308.91,
-    "pct": -7.35,
+    "price": 83.57,
+    "pct": -7.27,
     "cur": "USD",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
    }
   },
   {
-   "symbol": "IESC",
-   "name": "IES Holdings, Inc.",
+   "symbol": "CRWV",
+   "name": "CoreWeave",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -272,7 +249,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+30,3 %",
+     "value": "+16,8 %",
      "weight": 45
     },
     {
@@ -284,8 +261,8 @@
    ]
   },
   {
-   "symbol": "BSBR",
-   "name": "Banco Santander Brasil SA",
+   "symbol": "NBIS",
+   "name": "Nebius",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -293,7 +270,34 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+12,3 %",
+     "value": "+15,5 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 219.84,
+    "pct": 15.46,
+    "cur": "USD",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   }
+  },
+  {
+   "symbol": "CIFR",
+   "name": "Cipher Digital Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+12,0 %",
      "weight": 45
     },
     {
@@ -305,8 +309,8 @@
    ]
   },
   {
-   "symbol": "DXCM",
-   "name": "DexCom, Inc.",
+   "symbol": "FSLR",
+   "name": "First Solar, Inc.",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -314,7 +318,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+11,9 %",
+     "value": "+11,8 %",
      "weight": 45
     },
     {
@@ -326,8 +330,8 @@
    ]
   },
   {
-   "symbol": "ARXS",
-   "name": "Arxis, Inc.",
+   "symbol": "COHR",
+   "name": "Coherent Corp.",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -335,7 +339,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+10,9 %",
+     "value": "+10,7 %",
      "weight": 45
     },
     {
@@ -345,6 +349,60 @@
      "weight": 5
     }
    ]
+  },
+  {
+   "symbol": "RDDT",
+   "name": "Reddit",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,0 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 154.805,
+    "pct": 10.04,
+    "cur": "USD",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   }
+  },
+  {
+   "symbol": "SOFI",
+   "name": "SoFi",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,1 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 17.81,
+    "pct": 9.2,
+    "cur": "USD",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   }
   },
   {
    "symbol": "VRT",
@@ -356,14 +414,8 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+6,2 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
+     "value": "+8,8 %",
+     "weight": 45
     },
     {
      "type": "market_regime",
@@ -373,15 +425,15 @@
     }
    ],
    "quote": {
-    "price": 241.57,
-    "pct": 6.18,
+    "price": 262.88,
+    "pct": 8.82,
     "cur": "USD",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
    }
   },
   {
-   "symbol": "INGA.AS",
-   "name": "ING",
+   "symbol": "IREN",
+   "name": "Iren",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -389,13 +441,67 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,1 %",
+     "value": "+8,1 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 39.79,
+    "pct": 8.13,
+    "cur": "USD",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   }
+  },
+  {
+   "symbol": "BA",
+   "name": "Boeing",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,2 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 231.75,
+    "pct": 7.22,
+    "cur": "USD",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
+   }
+  },
+  {
+   "symbol": "RBLX",
+   "name": "Roblox",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,3 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "1,6× Durchschnitt",
      "weight": 15
     },
     {
@@ -405,12 +511,11 @@
      "weight": 5
     }
    ],
-   "tv_symbol": "EURONEXT:INGA",
    "quote": {
-    "price": 30.44,
-    "pct": 5.11,
-    "cur": "EUR",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
+    "price": 37.85,
+    "pct": 6.32,
+    "cur": "USD",
+    "as_of": "2026-08-03T18:34:03.442535+00:00"
    }
   }
  ]
