@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-03T17:20:33.049655Z",
+  "generated_at": "2026-08-03T18:20:31.088708Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "IFX.DE",
    "name": "Infineon",
-   "score": 80,
+   "score": 85,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -44,6 +44,12 @@
      "label": "Earnings-Termin",
      "value": "Earnings in 2 Tagen",
      "weight": 20
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
     }
    ],
    "tv_symbol": "XETR:IFX",
@@ -57,6 +63,39 @@
     "date": "2026-08-05",
     "distance_days": 2,
     "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "AMZN",
+   "name": "Amazon",
+   "score": 75,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+15,3 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,1× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 271.58,
+    "pct": 15.32,
+    "cur": "USD",
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
    }
   },
   {
@@ -109,33 +148,6 @@
    "quote": {
     "price": 140.67,
     "pct": -20.99,
-    "cur": "USD",
-    "as_of": "2026-08-03T06:32:53.721906+00:00"
-   }
-  },
-  {
-   "symbol": "AMZN",
-   "name": "Amazon",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+15,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,1× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 271.58,
-    "pct": 15.32,
     "cur": "USD",
     "as_of": "2026-08-03T06:32:53.721906+00:00"
    }
@@ -247,6 +259,157 @@
     "price": 308.91,
     "pct": -7.35,
     "cur": "USD",
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
+   }
+  },
+  {
+   "symbol": "IESC",
+   "name": "IES Holdings, Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+30,3 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "BSBR",
+   "name": "Banco Santander Brasil SA",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+12,3 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "DXCM",
+   "name": "DexCom, Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,9 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "ARXS",
+   "name": "Arxis, Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,9 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "VRT",
+   "name": "Vertiv",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,2 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 241.57,
+    "pct": 6.18,
+    "cur": "USD",
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
+   }
+  },
+  {
+   "symbol": "INGA.AS",
+   "name": "ING",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,5 %",
+     "weight": 5
+    }
+   ],
+   "tv_symbol": "EURONEXT:INGA",
+   "quote": {
+    "price": 30.44,
+    "pct": 5.11,
+    "cur": "EUR",
     "as_of": "2026-08-03T06:32:53.721906+00:00"
    }
   }
