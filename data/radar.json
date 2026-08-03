@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-03T06:20:27.608991Z",
+  "generated_at": "2026-08-03T07:20:37.002484Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -20,6 +20,45 @@
   ]
  },
  "items": [
+  {
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 2 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:IFX",
+   "quote": {
+    "price": 61.67,
+    "pct": 9.16,
+    "cur": "EUR",
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-05",
+    "distance_days": 2,
+    "zeit": "tbd"
+   }
+  },
   {
    "symbol": "RBLX",
    "name": "Roblox",
@@ -44,7 +83,7 @@
     "price": 35.6,
     "pct": -26.85,
     "cur": "USD",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
    }
   },
   {
@@ -71,7 +110,7 @@
     "price": 140.67,
     "pct": -20.99,
     "cur": "USD",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
    }
   },
   {
@@ -98,7 +137,63 @@
     "price": 271.58,
     "pct": 15.32,
     "cur": "USD",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
+   }
+  },
+  {
+   "symbol": "NEM.DE",
+   "name": "Nemetschek",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-13,7 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,5× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "XETR:NEM",
+   "quote": {
+    "price": 58.05,
+    "pct": -13.69,
+    "cur": "EUR",
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
+   }
+  },
+  {
+   "symbol": "ADS.DE",
+   "name": "Adidas",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-11,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "10,2× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "XETR:ADS",
+   "quote": {
+    "price": 159.4,
+    "pct": -11.52,
+    "cur": "EUR",
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
    }
   },
   {
@@ -125,7 +220,7 @@
     "price": 146.26,
     "pct": -10.59,
     "cur": "USD",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
    }
   },
   {
@@ -152,130 +247,7 @@
     "price": 308.91,
     "pct": -7.35,
     "cur": "USD",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
-   }
-  },
-  {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+30,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1718000.0,
-    "pct": 29.95,
-    "cur": "KRW",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
-   }
-  },
-  {
-   "symbol": "005930.KS",
-   "name": "Samsung",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+26,8 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "tv_symbol": "KRX:005930",
-   "quote": {
-    "price": 262500.0,
-    "pct": 26.81,
-    "cur": "KRW",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
-   }
-  },
-  {
-   "symbol": "HAG.DE",
-   "name": "Hensoldt",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,0 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,7× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "XETR:HAG",
-   "quote": {
-    "price": 79.76,
-    "pct": -5.03,
-    "cur": "EUR",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
-   }
-  },
-  {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,7 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:IFX",
-   "quote": {
-    "price": 61.67,
-    "pct": 3.7,
-    "cur": "EUR",
-    "as_of": "2026-08-02T18:32:32.611193+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-05",
-    "distance_days": 2,
-    "zeit": "tbd"
+    "as_of": "2026-08-03T06:32:53.721906+00:00"
    }
   }
  ]
