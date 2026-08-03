@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-03T19:20:40.950463Z",
+  "generated_at": "2026-08-03T20:20:27.738363Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "000660.KS",
    "name": "SK Hynix",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -38,12 +38,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "1,6× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "KRX:000660",
@@ -57,7 +51,7 @@
   {
    "symbol": "005930.KS",
    "name": "Samsung",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -72,12 +66,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "1,9× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "KRX:005930",
@@ -91,7 +79,7 @@
   {
    "symbol": "HAG.DE",
    "name": "Hensoldt",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -106,12 +94,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "2,2× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:HAG",
@@ -125,7 +107,7 @@
   {
    "symbol": "SHL.DE",
    "name": "Siemens Healthineers",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
@@ -146,12 +128,6 @@
      "label": "Earnings-Termin",
      "value": "Earnings vor 3 Tagen",
      "weight": 15
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:SHL",
@@ -170,7 +146,7 @@
   {
    "symbol": "PLTR",
    "name": "Palantir",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
@@ -191,12 +167,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -235,285 +205,6 @@
    "quote": {
     "price": 83.57,
     "pct": -7.27,
-    "cur": "USD",
-    "as_of": "2026-08-03T18:34:03.442535+00:00"
-   }
-  },
-  {
-   "symbol": "CRWV",
-   "name": "CoreWeave",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+16,8 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "NBIS",
-   "name": "Nebius",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+15,5 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 219.84,
-    "pct": 15.46,
-    "cur": "USD",
-    "as_of": "2026-08-03T18:34:03.442535+00:00"
-   }
-  },
-  {
-   "symbol": "CIFR",
-   "name": "Cipher Digital Inc.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+12,0 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "FSLR",
-   "name": "First Solar, Inc.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+11,8 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "COHR",
-   "name": "Coherent Corp.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,7 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "RDDT",
-   "name": "Reddit",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,0 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 154.805,
-    "pct": 10.04,
-    "cur": "USD",
-    "as_of": "2026-08-03T18:34:03.442535+00:00"
-   }
-  },
-  {
-   "symbol": "SOFI",
-   "name": "SoFi",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,1 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 17.81,
-    "pct": 9.2,
-    "cur": "USD",
-    "as_of": "2026-08-03T18:34:03.442535+00:00"
-   }
-  },
-  {
-   "symbol": "VRT",
-   "name": "Vertiv",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+8,8 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 262.88,
-    "pct": 8.82,
-    "cur": "USD",
-    "as_of": "2026-08-03T18:34:03.442535+00:00"
-   }
-  },
-  {
-   "symbol": "IREN",
-   "name": "Iren",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+8,1 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 39.79,
-    "pct": 8.13,
-    "cur": "USD",
-    "as_of": "2026-08-03T18:34:03.442535+00:00"
-   }
-  },
-  {
-   "symbol": "BA",
-   "name": "Boeing",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,2 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 231.75,
-    "pct": 7.22,
-    "cur": "USD",
-    "as_of": "2026-08-03T18:34:03.442535+00:00"
-   }
-  },
-  {
-   "symbol": "RBLX",
-   "name": "Roblox",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,3 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,5 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 37.85,
-    "pct": 6.32,
     "cur": "USD",
     "as_of": "2026-08-03T18:34:03.442535+00:00"
    }
