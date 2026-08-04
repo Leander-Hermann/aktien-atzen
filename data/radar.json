@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-04T16:20:44.513792Z",
+  "generated_at": "2026-08-04T17:20:41.806020Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "IFX.DE",
    "name": "Infineon",
-   "score": 95,
+   "score": 100,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -44,6 +44,12 @@
      "label": "Earnings-Termin",
      "value": "Earnings morgen",
      "weight": 35
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
     }
    ],
    "tv_symbol": "XETR:IFX",
@@ -60,15 +66,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Infineon steigt bei erhöhtem Volumen deutlich",
-    "why_now": "Die Infineon-Aktie liegt bei 61,47 EUR und ist um 9,16 % gestiegen. Das Handelsvolumen beträgt das 1,6-Fache des Durchschnitts. Zudem steht morgen ein Earnings-Termin an, der die erhöhte Aufmerksamkeit plausibel mit erklären dürfte. Ursache unklar.",
+    "headline": "Infineon mit starkem Kursanstieg bei erhöhtem Volumen",
+    "why_now": "Infineon liegt bei 61,47 EUR und steigt um 9,16 %, bei einem Volumen von 1,6× des Durchschnitts. Zudem steht der Earnings-Termin für morgen an, während der S&P 500 Future um 1,8 % steigt. Der bevorstehende Termin und die marktbreite Bewegung könnten den Anstieg begünstigen. Ursache unklar.",
     "watch_next": [
-     "Earnings-Termin morgen",
-     "Handelsvolumen",
-     "Kursbewegung"
+     "Earnings morgen",
+     "Volumen im weiteren Handelsverlauf",
+     "Entwicklung des S&P 500 Future"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-04T13:39:15.133602Z"
+    "generated_at": "2026-08-04T17:20:41.806020Z"
    }
   },
   {
@@ -119,7 +125,7 @@
   {
    "symbol": "AMZN",
    "name": "Amazon",
-   "score": 75,
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -140,6 +146,12 @@
      "label": "Video-Erwähnungen",
      "value": "3 Videos in 3 Tagen",
      "weight": 20
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
     }
    ],
    "quote": {
@@ -150,15 +162,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Amazon mit auffälliger Kursbewegung und hohem Volumen",
-    "why_now": "Die Amazon-Aktie zeigt eine starke Kursbewegung von +4,6 %; im Kursblock ist zudem eine Veränderung von 15,32 % ausgewiesen. Das Handelsvolumen liegt beim 3,1-Fachen des Durchschnitts, und es gab 3 Videos in 3 Tagen. Diese erhöhte Aktivität könnte die auffällige Bewegung begleiten, belegt aber keine Ursache. Ursache unklar.",
+    "headline": "Amazon fällt heute durch starke Bewegung auf",
+    "why_now": "Die Daten zeigen eine starke Kursbewegung von +4,6 % bei ungewöhnlich hohem Volumen von 3,1× des Durchschnitts. Zusätzlich werden 3 Videos in 3 Tagen sowie eine marktbreite Bewegung mit einem S&P 500 Future von +1,8 % ausgewiesen. Das erhöhte Volumen und die Marktbewegung könnten die auffällige Entwicklung mitgetragen haben; die Video-Erwähnungen dürften zusätzliche Aufmerksamkeit anzeigen. Ursache unklar.",
     "watch_next": [
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Kursbewegung",
-     "Entwicklung der Video-Erwähnungen"
+     "Kursbewegung",
+     "Handelsvolumen",
+     "S&P 500 Future"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-04T13:39:15.133602Z"
+    "generated_at": "2026-08-04T17:20:41.806020Z"
    }
   },
   {
@@ -337,6 +349,45 @@
    }
   },
   {
+   "symbol": "MSFT",
+   "name": "Microsoft",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,0 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 487.65,
+    "pct": 3.02,
+    "cur": "USD",
+    "as_of": "2026-08-04T06:34:28.968317+00:00"
+   }
+  },
+  {
    "symbol": "PLTR",
    "name": "Palantir",
    "score": 55,
@@ -369,34 +420,151 @@
    }
   },
   {
-   "symbol": "MSFT",
-   "name": "Microsoft",
+   "symbol": "CRWV",
+   "name": "CoreWeave",
    "score": 50,
    "priority": "medium",
-   "alert_type": "content_velocity",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+3,0 %",
-     "weight": 15
+     "value": "+19,5 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "NBIS",
+   "name": "Nebius",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,6 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 212.58,
+    "pct": 1.05,
+    "cur": "USD",
+    "as_of": "2026-08-04T06:34:28.968317+00:00"
+   }
+  },
+  {
+   "symbol": "CBRS",
+   "name": "Cerebras Systems Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,7 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "SOFI",
+   "name": "SoFi",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,6 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 18.03,
+    "pct": -0.97,
+    "cur": "USD",
+    "as_of": "2026-08-04T06:34:28.968317+00:00"
+   }
+  },
+  {
+   "symbol": "FSLR",
+   "name": "First Solar, Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,3 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "VRT",
+   "name": "Vertiv",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,2 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
+     "value": "1,8× Durchschnitt",
      "weight": 15
     },
     {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
     }
    ],
    "quote": {
-    "price": 487.65,
-    "pct": 3.02,
+    "price": 263.05,
+    "pct": 6.18,
     "cur": "USD",
     "as_of": "2026-08-04T06:34:28.968317+00:00"
    }
