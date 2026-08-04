@@ -213,6 +213,24 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .wlbar input:focus{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
   .wlbar button{border:none;background:var(--accent2);color:var(--bg1);border-radius:14px;padding:0 18px;font-size:14.5px;font-weight:600;cursor:pointer;white-space:nowrap}/* Kupfer-CTA — max. einer je Screen (§1.3) */
   [data-theme="light"] .wlbar button{color:#fff}
+  .wlbar{flex-wrap:wrap}
+  .wlbar select{border:1px solid var(--line);background:var(--card);border-radius:14px;padding:11px 12px;font-size:14.5px;font-family:inherit;font-weight:600;color:var(--ink);outline:none;cursor:pointer;min-height:44px}
+  .wlbar select:focus{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+  .bstlink{border:none;background:transparent;color:var(--accent-ink);font-family:inherit;font-size:12.5px;font-weight:600;cursor:pointer;padding:8px 0;margin:0 0 4px;min-height:44px}
+  .bstdetail{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px var(--sp-5) 4px;margin:0 0 12px;box-shadow:var(--shadow-card)}
+  .bstgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0 var(--sp-4)}
+  .bstgrid .bstnote{grid-column:1/-1}
+  .bstnote{color:var(--muted);font-size:12.5px;line-height:1.5;margin:2px 0 12px}
+  .bstmsg{font-size:12.5px;font-weight:600;margin:0 0 12px;color:var(--muted)}
+  .bstmsg:empty{margin:0}
+  .bstmsg.err{color:var(--down)}
+  .bstmsg.ok{color:var(--accent-ink)}
+  .bstio{margin-top:var(--sp-6)}
+  .bstio summary{font-size:12.5px;font-weight:600;color:var(--muted);cursor:pointer;padding:8px 0}
+  .bstio textarea{width:100%;min-height:80px;border:1px solid var(--line);background:var(--bg1);border-radius:12px;padding:10px 12px;font-size:12.5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink);outline:none;resize:vertical;word-break:break-all}
+  .bstio textarea:focus{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+  .bstio .row{display:flex;gap:8px;margin:10px 0 12px;flex-wrap:wrap}
+  .bstio .row button{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:12px;padding:11px 16px;font-size:12.5px;font-weight:600;font-family:inherit;cursor:pointer;min-height:44px}
   .wlgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:var(--sp-3)}
   .wlc{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px;cursor:pointer;transition:transform var(--dur-fast) var(--ease-out),box-shadow var(--dur-fast) var(--ease-out);box-shadow:var(--shadow-card)}
   .wlc .s{font-size:14.5px;font-weight:700;letter-spacing:-.01em}
@@ -534,10 +552,44 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   <div class="cal hidden" id="vidCal" style="margin-top:10px"><button class="navbtn" id="vidPrev">‹</button><div class="dateBtn" id="vidDateBtn"><span id="vidDateLabel">…</span><span style="opacity:.5">▾</span></div><button class="navbtn" id="vidNext">›</button><div class="calpop" id="vidCalpop"></div></div>
   <div class="topicnav hidden" id="vidChanBar" style="margin-top:8px"></div>
   <div id="videoBriefings" style="margin-top:14px"></div>
-  <div class="sec"><h2>Meine Watchlist</h2></div>
-  <p style="color:var(--muted);font-size:12.5px;margin:0 0 12px">Lokal in deinem Browser gespeichert – jeder Besucher hat seine eigene. Symbole wie AAPL, NVDA, SAP.DE eingeben, oder einen TradingView-Export (NASDAQ:AAPL, …) einfügen. Live-Kurse über Yahoo; der Prozentwert „Tag“ ist die Veränderung zum vorherigen Tagesschluss.</p>
-  <div class="wlbar"><input id="wlInput" placeholder="Symbol(e) hinzufügen, z. B. AAPL, NVDA, SAP.DE"><button id="wlAdd">Hinzufügen</button></div>
+  <div class="sec"><h2>Mein Bestand</h2></div>
+  <p style="color:var(--muted);font-size:12.5px;margin:0 0 12px">Lokal in deinem Browser gespeichert – jeder Besucher hat seinen eigenen. Symbole wie AAPL, NVDA, SAP.DE eingeben, oder einen TradingView-Export (NASDAQ:AAPL, …) einfügen. Live-Kurse über Yahoo; der Prozentwert „Tag“ ist die Veränderung zum vorherigen Tagesschluss. Keine Anlageberatung.</p>
+  <div class="wlbar">
+   <input id="bstSym" placeholder="Symbol(e) hinzufügen, z. B. AAPL, NVDA, SAP.DE">
+   <select id="bstTyp" aria-label="Art der Position">
+    <option value="beobachtung">Beobachtung</option>
+    <option value="aktie">Aktie</option>
+    <option value="etf">ETF</option>
+    <option value="krypto">Krypto</option>
+    <option value="derivat">Derivat</option>
+   </select>
+   <button id="bstAdd">Hinzufügen</button>
+  </div>
+  <button type="button" class="bstlink" id="bstDetailBtn" aria-expanded="false" aria-controls="bstDetail">Details ergänzen (Stück, Einstand, Derivat) ▾</button>
+  <div class="bstdetail hidden" id="bstDetail">
+   <div class="bstgrid">
+    <div class="kofield"><label for="bstStueck">Stück <span class="h">(optional)</span></label><input id="bstStueck" class="koinput" inputmode="decimal" placeholder="z. B. 25"></div>
+    <div class="kofield"><label for="bstEinstand">Einstand je Stück <span class="h">(optional)</span></label><input id="bstEinstand" class="koinput" inputmode="decimal" placeholder="z. B. 118,40"></div>
+    <div class="kofield"><label for="bstWaehrung">Währung <span class="h">(optional)</span></label><input id="bstWaehrung" class="koinput" maxlength="3" placeholder="z. B. EUR"></div>
+   </div>
+   <div class="bstgrid hidden" id="bstDeriv">
+    <div class="kofield"><label for="bstArt">Art</label><select id="bstArt" class="koinput"><option value="">– bitte wählen –</option><option value="knockout">Knockout</option><option value="optionsschein">Optionsschein</option><option value="faktor">Faktor-Zertifikat</option><option value="sonstiges">Sonstiges</option></select></div>
+    <div class="kofield"><label for="bstRichtung">Richtung</label><select id="bstRichtung" class="koinput"><option value="">– bitte wählen –</option><option value="long">Long</option><option value="short">Short</option></select></div>
+    <div class="kofield"><label for="bstHebel">Hebel <span class="h">(optional)</span></label><input id="bstHebel" class="koinput" inputmode="decimal" placeholder="z. B. 8,5"></div>
+    <div class="kofield"><label for="bstKO">KO-Schwelle <span class="h">(optional)</span></label><input id="bstKO" class="koinput" inputmode="decimal" placeholder="z. B. 28,40"></div>
+    <div class="kofield"><label for="bstWkn">WKN <span class="h">(optional)</span></label><input id="bstWkn" class="koinput" maxlength="12" placeholder="z. B. MJ1ABC"></div>
+    <p class="bstnote">Das Symbol ist immer der <b>Basiswert</b> (z. B. IFX.DE) – News, Termine und Historie laufen über ihn. Hebel und KO-Schwelle dienen nur zwei lokalen Anzeigen.</p>
+   </div>
+  </div>
+  <p id="bstMsg" class="bstmsg" role="status" aria-live="polite"></p>
   <div class="wlgrid" id="wlGrid"></div>
+  <details class="bstio">
+   <summary>Bestand übertragen (Export / Import)</summary>
+   <p class="bstnote">Der Code enthält deinen kompletten Bestand als Text – zum Umzug auf ein anderes Gerät. Er wird nirgends hochgeladen.</p>
+   <textarea id="bstCode" spellcheck="false" placeholder="AA-BESTAND-1:…"></textarea>
+   <div class="row"><button type="button" id="bstExportBtn">Code erzeugen</button><button type="button" id="bstImportBtn">Code einlesen</button></div>
+   <p id="bstIoMsg" class="bstmsg" role="status" aria-live="polite"></p>
+  </details>
  </div>
 
  <div id="pageIdeen" class="hidden">
@@ -600,7 +652,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     <div class="efrow"><span class="eflabel">Zeitraum</span><div class="filterbar" id="earnRangeBar"><button class="fpill" data-er="today">Heute</button><button class="fpill on" data-er="week">Diese Woche</button><button class="fpill" data-er="next">Nächste Woche</button><button class="fpill" data-er="all">Alle</button></div></div>
     <div class="efrow"><span class="eflabel">Region</span><div class="filterbar escroll" id="earnRegionBar"></div></div>
     <div class="efrow"><span class="eflabel">Index</span><div class="filterbar escroll" id="earnIndexBar"></div></div>
-    <div class="efrow"><span class="eflabel">Watchlist</span><div class="filterbar"><button class="fpill" id="earnWLbtn" title="Nur Werte aus deiner Watchlist anzeigen">★ Nur meine Watchlist</button></div></div>
+    <div class="efrow"><span class="eflabel">Bestand</span><div class="filterbar"><button class="fpill" id="earnWLbtn" title="Nur Werte aus deinem Bestand anzeigen">★ Nur mein Bestand</button></div></div>
    </div>
    <div class="eupdated" id="earnUpdated"></div>
    <div id="earnCalList"></div>
@@ -1094,12 +1146,12 @@ const LEGAL={
    <h4>2. Programmbibliothek (CDN)</h4>
    <p>Für die Chart-Darstellung wird die Bibliothek „lightweight-charts" von jsDelivr (<code>cdn.jsdelivr.net</code>) geladen. Dabei wird Ihre IP-Adresse an den CDN-Anbieter übertragen.</p>
    <h4>3. Kurs- und Marktdaten</h4>
-   <p>Für Live-Kurse (Watchlist, Top-Mover) werden Anfragen an Yahoo Finance (<code>query1.finance.yahoo.com</code>) gestellt. Da ein direkter Browser-Abruf nicht möglich ist, laufen diese über öffentliche CORS-Proxy-Dienste (<code>api.allorigins.win</code>, <code>corsproxy.io</code>); die von Ihnen abgefragten Börsensymbole und Ihre IP-Adresse werden dabei an diese Dritt-Dienste übermittelt. Der Fear-&amp;-Greed-Index wird von CNN (<code>production.dataviz.cnn.io</code>) abgerufen.</p>
+   <p>Für Live-Kurse (Bestand/Watchlist, Top-Mover) werden Anfragen an Yahoo Finance (<code>query1.finance.yahoo.com</code>) gestellt. Da ein direkter Browser-Abruf nicht möglich ist, laufen diese über öffentliche CORS-Proxy-Dienste (<code>api.allorigins.win</code>, <code>corsproxy.io</code>); die von Ihnen abgefragten Börsensymbole und Ihre IP-Adresse werden dabei an diese Dritt-Dienste übermittelt. Der Fear-&amp;-Greed-Index wird von CNN (<code>production.dataviz.cnn.io</code>) abgerufen.</p>
    <h4>4. Eingebundene Drittinhalte</h4>
    <p><b>YouTube-Vorschaubilder:</b> In den Video-Briefings werden Vorschaubilder von <code>i.ytimg.com</code> (Google/YouTube) angezeigt. Diese laden erst, wenn Sie eine Analyse-Kachel anklicken und die ausführliche Ansicht öffnen – nicht automatisch beim Seitenaufruf. Dabei wird Ihre IP-Adresse an YouTube übertragen.</p>
    <p><b>TradingView:</b> Zu einzelnen Börsenwerten bieten wir einen Verweis-Link auf den passenden TradingView-Chart (<code>tradingview.com</code>) an. Es werden keine TradingView-Skripte, -Widgets oder -Inhalte in diese Seite eingebettet oder automatisch geladen; erst wenn Sie den Link aktiv anklicken, öffnet sich TradingView in einem neuen Tab und Ihre IP-Adresse wird an TradingView übertragen.</p>
    <h4>5. Lokale Speicherung (localStorage)</h4>
-   <p>Ihre Watchlist und die Hell-/Dunkel-Einstellung werden ausschließlich lokal in Ihrem Browser gespeichert (<code>localStorage</code>). Diese Daten verbleiben auf Ihrem Gerät, werden nicht an einen Server übertragen und sind für uns nicht einsehbar. Es werden keine Tracking-Cookies gesetzt; zur Reichweitenmessung kommt ein cookieloses, datenschutzfreundliches Verfahren zum Einsatz (siehe Abschnitt 6).</p>
+   <p>Ihr Bestand (beobachtete Werte und optional von Ihnen selbst eingetragene Positionsangaben) sowie die Hell-/Dunkel-Einstellung werden ausschließlich lokal in Ihrem Browser gespeichert (<code>localStorage</code>). Diese Daten verbleiben auf Ihrem Gerät, werden nicht an einen Server übertragen und sind für uns nicht einsehbar. Es werden keine Tracking-Cookies gesetzt; zur Reichweitenmessung kommt ein cookieloses, datenschutzfreundliches Verfahren zum Einsatz (siehe Abschnitt 6).</p>
    <h4>6. Reichweitenmessung (GoatCounter)</h4>
    <p>Zur Verbesserung des Angebots messen wir die Reichweite und die Nutzung einzelner Funktionen (z. B. welche Bereiche/Tabs aufgerufen werden, Mobil- vs. Desktop-Zugriff) mit dem Dienst <b>GoatCounter</b>. Die Verarbeitung erfolgt auf Servern innerhalb der EU (Deutschland/Finnland), eine Übermittlung in ein Drittland findet dabei nicht statt. GoatCounter arbeitet <b>cookielos</b>, setzt also keine Cookies und legt keine Kennungen auf Ihrem Gerät ab. Es werden <b>keine personenbezogenen Daten gespeichert</b>: Ihre IP-Adresse wird ausschließlich kurzzeitig und <b>anonymisiert</b> zur Aufrufzählung verwendet und nicht dauerhaft gespeichert; es findet <b>kein Profiling</b> und keine geräte- oder personenübergreifende Wiedererkennung statt. Erhoben werden nur aggregierte, nicht auf eine Person rückführbare Statistiken. Eine <b>„Do Not Track"</b>-Einstellung Ihres Browsers wird respektiert (in diesem Fall erfolgt keine Zählung). Da weder Cookies gesetzt noch personenbezogene Daten verarbeitet werden, ist hierfür keine Einwilligung erforderlich; Rechtsgrundlage ist das berechtigte Interesse an einer bedarfsgerechten Gestaltung des Angebots (Art. 6 Abs. 1 lit. f DSGVO).</p>
    <h4>7. Ihre Rechte</h4>
@@ -1262,11 +1314,119 @@ function koCalc(){const out=document.getElementById('koOut');if(!out)return;cons
 function koFib(){const out=document.getElementById('fibOut');if(!out)return;const H=knum('fibH'),L=knum('fibL');if(H==null||L==null||H<=L){out.innerHTML='<p style="color:var(--muted);font-size:12.5px">Hoch und Tief eingeben (Hoch &gt; Tief).</p>';return}const diff=H-L;const lv=[['0,0 · Hoch',H],['0,236',H-diff*0.236],['0,382',H-diff*0.382],['0,5',H-diff*0.5],['0,618',H-diff*0.618],['0,786',H-diff*0.786],['1,0 · Tief',L],['1,272 · Ext',L-diff*0.272],['1,618 · Ext',L-diff*0.618]];out.innerHTML=lv.map(([lab,v])=>`<div class="fibrow"><span class="fl">Fib ${lab}</span><span class="fv">${nv(v,2)}<span class="fibset" data-v="${v.toFixed(2)}" data-set="tp">→TP</span><span class="fibset" data-v="${v.toFixed(2)}" data-set="sl">→SL</span></span></div>`).join('');out.querySelectorAll('.fibset').forEach(s=>s.onclick=()=>{const id=s.dataset.set==='tp'?'koTP':'koSL';const f=document.getElementById(id);f.value=s.dataset.v.replace('.',',');koCalc();f.focus()})}
 function koInit(){document.querySelectorAll('#koType button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#koType button').forEach(x=>x.classList.remove('on'));b.classList.add('on');koTypeVal=b.dataset.t;koCalc()});['koS','koBV','koStrike','koCert','koKO','koTP','koSL','koStake'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',koCalc)});['fibH','fibL'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',koFib)});koCalc();koFib()}
 const WLKEY='aa-wl';let WLCACHE={},WLINFLIGHT={};
-function wlLoad(){try{return JSON.parse(localStorage.getItem(WLKEY))||[]}catch(e){return []}}
-function wlSave(a){try{localStorage.setItem(WLKEY,JSON.stringify(a))}catch(e){}}
 function normSym(raw){let s=(raw||'').trim().toUpperCase();if(!s)return '';if(s.includes(':')){const parts=s.split(':'),ex=parts[0],tk=parts[1]||'';const map={NASDAQ:'',NYSE:'',AMEX:'',ARCA:'',BATS:'',CBOE:'',OTC:'',XETR:'.DE',ETR:'.DE',FWB:'.F',FRA:'.F',GETTEX:'.DE',TRADEGATE:'.DE',LSE:'.L',LON:'.L',EURONEXT:'.PA',EPA:'.PA',TSE:'.T',TYO:'.T',HKEX:'.HK',HKG:'.HK',SWX:'.SW',SIX:'.SW',TSX:'.TO',ASX:'.AX',BME:'.MC',MIL:'.MI',BIT:'.MI',AMS:'.AS'};s=tk+(ex in map?map[ex]:'')}return s.replace(/[^A-Z0-9.\-]/g,'')}
-function wlAddInput(){const inp=document.getElementById('wlInput');if(!inp||!inp.value.trim())return;const cur=wlLoad();inp.value.split(/[,;\n\s]+/).forEach(part=>{const s=normSym(part);if(s&&!cur.includes(s))cur.push(s)});wlSave(cur);inp.value='';renderWatchlist()}
-function wlRemove(sym){wlSave(wlLoad().filter(s=>s!==sym));renderWatchlist()}
+/* ===== Mein Bestand — Datenmodell (ADR-906, Contract v0.15 `_frontend_only.bestand`) =====
+   Bewusst als geschlossener Block geschrieben: Modell, Validierung, Migration und Export/Import
+   sind vom Layout unabhaengig, damit der spaetere V2-Umbau sie unveraendert uebernimmt.
+   Die Daten liegen AUSSCHLIESSLICH im localStorage — sie gehen nie in einen Prompt, nie in ein
+   Backend-Log und nie in einen oeffentlichen Feed (ADR-906 §1). */
+const BSTKEY='aa-bestand',BSTMIGKEY='aa-bestand-mig',BST_SCHEMA=1;
+const BST_TYP={beobachtung:'Beobachtung',aktie:'Aktie',etf:'ETF',krypto:'Krypto',derivat:'Derivat'};
+const BST_ART={knockout:'Knockout',optionsschein:'Optionsschein',faktor:'Faktor',sonstiges:'Sonstiges'};
+const BST_RICHTUNG={long:'Long',short:'Short'};
+const BST_CODE_PREFIX='AA-BESTAND-1:';
+let BESTAND=null;
+// ADR-025: nur diese Zeichen duerfen in eine URL, einen Fetch oder ins DOM.
+function bstSymOk(s){return /^[A-Z0-9.\-=^]+$/.test(String(s==null?'':s))}
+// Rohe Nutzereingabe: optionales Boersenpraefix + erlaubte Zeichen. Alles andere wird ABGELEHNT
+// (nicht stillschweigend zurechtgeschnitten).
+function bstRawOk(t){return /^(?:[A-Za-z]{2,12}:)?[A-Za-z0-9.\-=^]+$/.test(String(t==null?'':t).trim())}
+function bstNormEingabe(raw){
+  const t=String(raw==null?'':raw).trim();if(!t||!bstRawOk(t))return '';
+  const up=t.toUpperCase();
+  // Futures/Indizes (CL=F, ^GDAXI) unveraendert lassen — normSym() wuerde '='/'^' entfernen.
+  if(up.indexOf(':')<0&&bstSymOk(up))return up;
+  const s=normSym(up);return bstSymOk(s)?s:'';
+}
+// Deutsche Eingabe tolerieren: '118,40' und '1.234,56' ebenso wie '118.40'.
+function bstNum(v){if(v==null)return null;let t=String(v).trim().replace(/\s/g,'');if(!t)return null;if(t.indexOf(',')>-1)t=t.replace(/\./g,'').replace(',','.');const n=parseFloat(t);return isFinite(n)?n:null}
+function bstToday(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function bstNextId(store){let m=0;((store&&store.positionen)||[]).forEach(p=>{const n=parseInt(String(p.id||'').replace(/^p/,''),10);if(isFinite(n)&&n>m)m=n});return 'p'+(m+1)}
+// EINE Validierung fuer localStorage UND Import: Pflichtfelder, Enums, Zahlen. Unbekannte Felder
+// werden nicht uebernommen, unbekannte Enum-Werte verworfen; eine Position ohne Pflichtfeld faellt raus.
+function bstValidPos(raw){
+  if(!raw||typeof raw!=='object')return null;
+  const sym=String(raw.symbol==null?'':raw.symbol).trim().toUpperCase();
+  if(!sym||!bstSymOk(sym))return null;
+  const typ=String(raw.typ==null?'':raw.typ);if(!BST_TYP[typ])return null;
+  const id=String(raw.id==null?'':raw.id);if(!/^[A-Za-z0-9_-]{1,24}$/.test(id))return null;
+  const added=String(raw.added_at==null?'':raw.added_at);if(!/^\d{4}-\d{2}-\d{2}$/.test(added))return null;
+  const st=bstNum(raw.stueck),ein=bstNum(raw.einstand);
+  const w=String(raw.waehrung==null?'':raw.waehrung).trim().toUpperCase();
+  let der=null;
+  if(typ==='derivat'&&raw.derivat&&typeof raw.derivat==='object'){
+    const d=raw.derivat,o={};
+    if(BST_ART[String(d.art||'')])o.art=String(d.art);
+    if(BST_RICHTUNG[String(d.richtung||'')])o.richtung=String(d.richtung);
+    const h=bstNum(d.hebel),ko=bstNum(d.ko_schwelle);
+    if(h!=null&&h>0)o.hebel=h;
+    if(ko!=null&&ko>0)o.ko_schwelle=ko;
+    const wkn=String(d.wkn==null?'':d.wkn).trim().toUpperCase();
+    if(/^[A-Z0-9]{1,12}$/.test(wkn))o.wkn=wkn;
+    if(Object.keys(o).length)der=o;
+  }
+  const p={id:id,symbol:sym,typ:typ};                       // Feldreihenfolge wie im Contract-Beispiel
+  if(st!=null&&st>0)p.stueck=st;
+  if(ein!=null&&ein>0)p.einstand=ein;
+  if(/^[A-Z]{3}$/.test(w))p.waehrung=w;
+  p.added_at=added;
+  if(der)p.derivat=der;
+  return p;
+}
+function bstSanitize(raw){
+  const clean={schema:BST_SCHEMA,positionen:[]},seen={};
+  ((raw&&raw.positionen)||[]).forEach(p=>{
+    const v=bstValidPos(p);if(!v)return;
+    if(seen[v.id])v.id=bstNextId(clean);                    // ID-Kollision heilen, Position behalten
+    seen[v.id]=1;clean.positionen.push(v);
+  });
+  return clean;
+}
+/* Verlustfreie, automatische Migration der Alt-Watchlist: 'aa-wl' haelt laut Contract v0.15
+   Symbol-STRINGS. Der Alt-Key bleibt als Rueckfallnetz stehen und wird nie wieder fortgeschrieben;
+   ein eigener Marker-Key macht den Lauf idempotent — ein zweiter Seitenaufruf erzeugt keine
+   Dublette, und eine geloeschte Position kommt nicht zurueck. */
+function bstMigDone(){try{return !!localStorage.getItem(BSTMIGKEY)}catch(e){return true}}
+function bstMigMark(){try{localStorage.setItem(BSTMIGKEY,String(BST_SCHEMA))}catch(e){}}
+function bstMigrate(store){
+  let alt=[];try{const r=JSON.parse(localStorage.getItem(WLKEY));if(Array.isArray(r))alt=r}catch(e){alt=[]}
+  const have={};store.positionen.forEach(p=>{have[p.symbol+'|'+p.typ]=1});
+  const heute=bstToday();let n=0;
+  alt.forEach(roh=>{
+    const s=bstNormEingabe(roh);if(!s)return;
+    const k=s+'|beobachtung';if(have[k])return;have[k]=1;
+    store.positionen.push({id:bstNextId(store),symbol:s,typ:'beobachtung',added_at:heute});n++;
+  });
+  return n;
+}
+function bstLoad(){
+  if(BESTAND)return BESTAND;
+  let roh=null;try{roh=JSON.parse(localStorage.getItem(BSTKEY))}catch(e){roh=null}
+  BESTAND=bstSanitize(roh);
+  if(!bstMigDone()){const n=bstMigrate(BESTAND);if(n>0)bstSave();bstMigMark()}
+  return BESTAND;
+}
+function bstSave(){try{localStorage.setItem(BSTKEY,JSON.stringify(BESTAND))}catch(e){}}
+function bstPositionen(){return bstLoad().positionen}
+function bstSymbole(){const out=[],seen={};bstPositionen().forEach(p=>{if(!seen[p.symbol]){seen[p.symbol]=1;out.push(p.symbol)}});return out}
+function bstById(id){const l=bstPositionen();for(let i=0;i<l.length;i++)if(l[i].id===id)return l[i];return null}
+function bstAdd(pos){const v=bstValidPos(pos);if(!v)return null;bstLoad().positionen.push(v);bstSave();return v}
+function bstRemove(id){const b=bstLoad();for(let i=0;i<b.positionen.length;i++)if(b.positionen[i].id===id){b.positionen.splice(i,1);bstSave();return true}return false}
+// Export/Import als Text-Code (Contract `_export`): verlustfreie Serialisierung des ganzen Objekts,
+// Base64 nur als Transportverpackung — nichts wird hochgeladen.
+function bstB64(s){const b=new TextEncoder().encode(s);let o='';for(let i=0;i<b.length;i++)o+=String.fromCharCode(b[i]);return btoa(o)}
+function bstUnB64(b64){const bin=atob(b64),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);return new TextDecoder().decode(a)}
+function bstExportCode(){return BST_CODE_PREFIX+bstB64(JSON.stringify(bstLoad()))}
+function bstImportCode(code){
+  const t=String(code==null?'':code).trim().replace(/\s+/g,'');
+  if(t.indexOf(BST_CODE_PREFIX)!==0)return {ok:false,fehler:'Code nicht erkannt – er beginnt mit '+BST_CODE_PREFIX};
+  let obj=null;try{obj=JSON.parse(bstUnB64(t.slice(BST_CODE_PREFIX.length)))}catch(e){return {ok:false,fehler:'Code ist beschädigt und konnte nicht gelesen werden.'}}
+  if(!obj||typeof obj!=='object'||!Array.isArray(obj.positionen))return {ok:false,fehler:'Code enthält keinen Bestand.'};
+  if(obj.schema!==BST_SCHEMA)return {ok:false,fehler:'Code stammt aus einer anderen Modellversion und wird nicht übernommen.'};
+  const roh=obj.positionen.length,clean=bstSanitize(obj);
+  BESTAND=clean;bstSave();bstMigMark();
+  return {ok:true,uebernommen:clean.positionen.length,verworfen:roh-clean.positionen.length};
+}
 // In-Flight-Dedupe: parallele Aufrufe (Prefetch + Klick) teilen sich EINEN Request; Ergebnis bleibt in WLCACHE.
 function ywFetch(sym){
   if(WLCACHE[sym]&&WLCACHE[sym].candles)return Promise.resolve(WLCACHE[sym]);
@@ -1298,14 +1458,75 @@ function ywFetch(sym){
 }
 function wlValFmt(v){if(v==null)return '–';return Math.abs(v)<1000?v.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2}):Math.round(v).toLocaleString('de-DE')}
 function wlCur(c){return c==='EUR'?' €':c==='USD'?' $':c==='GBP'?' £':c?(' '+c):''}
-function renderWatchlist(){const grid=document.getElementById('wlGrid');if(!grid)return;const syms=wlLoad();if(!syms.length){grid.innerHTML='<p class="wlempty">Noch keine Werte. Oben Symbole hinzufügen – sie bleiben in diesem Browser gespeichert.</p>';return}
-  grid.innerHTML=syms.map(s=>{const id=s.replace(/[^A-Z0-9]/g,'_'),es=escapeHtml(s);return `<div class="wlc" data-s="${es}"><button class="rm" data-rm="${es}">×</button><div class="s">${es}</div><div class="v" id="wlv-${id}">…</div><div class="p" id="wlp-${id}"></div></div>`}).join('');
-  grid.querySelectorAll('.rm').forEach(b=>b.onclick=e=>{e.stopPropagation();wlRemove(b.dataset.rm)});
+// Kurzbeschriftung einer Position (Derivate: Art/Richtung/Hebel als reine Stammangabe, keine Bewertung).
+function bstBadge(p){
+  if(p.typ==='beobachtung')return '';
+  const t=[BST_TYP[p.typ]||p.typ];
+  if(p.typ==='derivat'&&p.derivat){
+    if(p.derivat.art)t.push(BST_ART[p.derivat.art]);
+    if(p.derivat.richtung)t.push(BST_RICHTUNG[p.derivat.richtung]);
+    if(p.derivat.hebel!=null)t.push('× '+nv(p.derivat.hebel,p.derivat.hebel%1?1:0));
+  }else if(p.stueck!=null)t.push(nv(p.stueck,p.stueck%1?2:0)+' Stück');
+  return `<span class="ibadge">${escapeHtml(t.join(' · '))}</span>`;
+}
+function renderBestand(){const grid=document.getElementById('wlGrid');if(!grid)return;const pos=bstPositionen();
+  if(!pos.length){grid.innerHTML='<p class="wlempty">Noch keine Werte. Oben Symbole hinzufügen – sie bleiben in diesem Browser gespeichert.</p>';return}
+  grid.innerHTML=pos.map(p=>{const es=escapeHtml(p.symbol),eid=escapeHtml(p.id);return `<div class="wlc" data-id="${eid}" data-s="${es}"><button class="rm" data-rm="${eid}" aria-label="Position entfernen">×</button><div class="s">${es}</div>${bstBadge(p)}<div class="v" id="wlv-${eid}">…</div><div class="p" id="wlp-${eid}"></div></div>`}).join('');
+  grid.querySelectorAll('.rm').forEach(b=>b.onclick=e=>{e.stopPropagation();bstRemove(b.dataset.rm);renderBestand()});
   grid.querySelectorAll('.wlc').forEach(c=>c.onclick=()=>wlOpen(c.dataset.s));
-  syms.forEach(async s=>{const d=await ywFetch(s);const id=s.replace(/[^A-Z0-9]/g,'_'),ve=document.getElementById('wlv-'+id),pe=document.getElementById('wlp-'+id);if(!ve)return;if(d&&d.price!=null){ve.textContent=wlValFmt(d.price)+wlCur(d.cur);pe.innerHTML=(d.pct==null?'–':fp(d.pct))+'<span class="pu">Tag</span>';pe.style.color=d.pct==null?'var(--muted)':ink(d.pct,3)}else{ve.textContent='n/v';pe.textContent='Symbol prüfen';pe.style.color='var(--muted)'}});
+  pos.forEach(async p=>{const d=await ywFetch(p.symbol);const ve=document.getElementById('wlv-'+p.id),pe=document.getElementById('wlp-'+p.id);if(!ve||!pe)return;if(d&&d.price!=null){ve.textContent=wlValFmt(d.price)+wlCur(d.cur);pe.innerHTML=(d.pct==null?'–':fp(d.pct))+'<span class="pu">Tag</span>';pe.style.color=d.pct==null?'var(--muted)':ink(d.pct,3)}else{ve.textContent='n/v';pe.textContent='Symbol prüfen';pe.style.color='var(--muted)'}});
 }
 async function wlOpen(sym){let d=WLCACHE[sym];if(!d)d=await ywFetch(sym);if(!d||!d.candles||!d.candles.length)return;openStock({t:sym,n:sym,p:d.pct,pp:d.pctPer,pf:d.perFrom,candles:{d1:d.candles}})}
-function initWatchlist(){const add=document.getElementById('wlAdd'),inp=document.getElementById('wlInput');if(add)add.onclick=wlAddInput;if(inp)inp.addEventListener('keydown',e=>{if(e.key==='Enter')wlAddInput()});renderWatchlist()}
+function bstVal(id){const e=document.getElementById(id);return e?e.value:''}
+function bstSetMsg(el,text,cls){const e=document.getElementById(el);if(!e)return;e.textContent=text||'';e.className='bstmsg'+(cls?' '+cls:'')}
+function bstResetForm(){['bstStueck','bstEinstand','bstWaehrung','bstHebel','bstKO','bstWkn'].forEach(id=>{const e=document.getElementById(id);if(e)e.value=''});['bstArt','bstRichtung'].forEach(id=>{const e=document.getElementById(id);if(e)e.value=''})}
+function bstSyncTyp(){const typ=bstVal('bstTyp'),d=document.getElementById('bstDeriv');if(d)d.classList.toggle('hidden',typ!=='derivat')}
+function bstAddInput(){
+  const inp=document.getElementById('bstSym');if(!inp)return;
+  const teile=inp.value.split(/[,;\n\s]+/).filter(Boolean);
+  if(!teile.length){bstSetMsg('bstMsg','Bitte ein Symbol eingeben.','err');return}
+  const typ=BST_TYP[bstVal('bstTyp')]?bstVal('bstTyp'):'beobachtung';
+  const stueck=bstNum(bstVal('bstStueck')),einstand=bstNum(bstVal('bstEinstand')),waehrung=bstVal('bstWaehrung');
+  const der=typ==='derivat'?{art:bstVal('bstArt'),richtung:bstVal('bstRichtung'),hebel:bstNum(bstVal('bstHebel')),ko_schwelle:bstNum(bstVal('bstKO')),wkn:bstVal('bstWkn')}:null;
+  let ok=0;const schlecht=[],dop=[];
+  teile.forEach(roh=>{
+    const s=bstNormEingabe(roh);
+    if(!s){schlecht.push(roh);return}
+    // Mehrere Derivate auf denselben Basiswert sind zulaessig; sonst je Symbol EIN Eintrag je Typ.
+    if(typ!=='derivat'&&bstPositionen().some(p=>p.symbol===s&&p.typ===typ)){dop.push(s);return}
+    const p={id:bstNextId(bstLoad()),symbol:s,typ:typ,stueck:stueck,einstand:einstand,waehrung:waehrung,added_at:bstToday()};
+    if(der)p.derivat=der;
+    if(bstAdd(p))ok++;else schlecht.push(roh);
+  });
+  const teil=[];
+  if(ok)teil.push(ok===1?'1 Position hinzugefügt.':ok+' Positionen hinzugefügt.');
+  if(dop.length)teil.push('Schon vorhanden: '+dop.join(', ')+'.');
+  if(schlecht.length)teil.push('Nicht übernommen (ungültiges Symbol): '+schlecht.join(', ')+'.');
+  bstSetMsg('bstMsg',teil.join(' '),schlecht.length?'err':(ok?'ok':''));
+  if(ok){inp.value='';bstResetForm()}
+  renderBestand();
+}
+function initBestand(){
+  const add=document.getElementById('bstAdd'),inp=document.getElementById('bstSym'),typ=document.getElementById('bstTyp');
+  if(add)add.onclick=bstAddInput;
+  if(inp)inp.addEventListener('keydown',e=>{if(e.key==='Enter')bstAddInput()});
+  if(typ)typ.addEventListener('change',()=>{bstSyncTyp();if(typ.value==='derivat'){const d=document.getElementById('bstDetail'),b=document.getElementById('bstDetailBtn');if(d&&d.classList.contains('hidden')){d.classList.remove('hidden');if(b)b.setAttribute('aria-expanded','true')}}});
+  const dbtn=document.getElementById('bstDetailBtn'),dbox=document.getElementById('bstDetail');
+  if(dbtn&&dbox)dbtn.onclick=()=>{const zu=dbox.classList.toggle('hidden');dbtn.setAttribute('aria-expanded',zu?'false':'true')};
+  const ex=document.getElementById('bstExportBtn'),im=document.getElementById('bstImportBtn'),ta=document.getElementById('bstCode');
+  if(ex&&ta)ex.onclick=()=>{const n=bstPositionen().length;if(!n){bstSetMsg('bstIoMsg','Noch kein Bestand zum Übertragen.','');return}ta.value=bstExportCode();ta.select();bstSetMsg('bstIoMsg',n===1?'Code für 1 Position erzeugt – kopieren und auf dem anderen Gerät einlesen.':'Code für '+n+' Positionen erzeugt – kopieren und auf dem anderen Gerät einlesen.','ok')};
+  let scharf=false;
+  if(im&&ta)im.onclick=()=>{
+    const vorher=bstPositionen().length;
+    if(vorher&&!scharf){scharf=true;bstSetMsg('bstIoMsg','Das ersetzt deine '+vorher+' vorhandenen Positionen. Zum Bestätigen erneut auf „Code einlesen" tippen.','err');return}
+    scharf=false;
+    const r=bstImportCode(ta.value);
+    if(!r.ok){bstSetMsg('bstIoMsg',r.fehler,'err');return}
+    bstSetMsg('bstIoMsg',r.uebernommen+' Positionen übernommen'+(r.verworfen?', '+r.verworfen+' verworfen (passen nicht ins Modell)':'')+'.',r.verworfen?'err':'ok');
+    renderBestand();
+  };
+  bstSyncTyp();renderBestand();
+}
 // ===== Quartalszahlen (ADR-901/902): Kalender (earnings.json) + Nachlese (earnings-recap.json) =====
 // Blind auf Contract v0.9. earnings-recap.json-Schema folgt im Contract noch (ADR-902) → defensiv gegen
 // die Auftrags-Felder gebaut; angenommene Feldnamen als Backend-Anforderung in projekt_status.md notiert.
@@ -1365,7 +1586,7 @@ function renderEarnCal(){
   const wrap=document.getElementById('earnCalList');if(!wrap)return;
   const up=document.getElementById('earnUpdated');
   if(up){const u=EARN&&EARN.updated?eDateTime(EARN.updated):'';up.innerHTML=(u?'Stand: '+escapeHtml(u)+' · ':'')+'Termine sind vorläufig und können sich verschieben.'}
-  EARNWL=new Set(wlLoad().map(s=>String(s).toUpperCase()));
+  EARNWL=new Set(bstSymbole().map(s=>String(s).toUpperCase()));
   const list=eFilteredEntries();
   if(!list.length){wrap.innerHTML='<div class="eempty">Keine Termine in diesem Zeitraum. Wähle einen anderen Zeitraum oder Filter.</div>';return}
   list.sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:(((EZEITORD[a.zeit]!=null?EZEITORD[a.zeit]:3)-(EZEITORD[b.zeit]!=null?EZEITORD[b.zeit]:3))||String(a.name||a.ticker||'').localeCompare(String(b.name||b.ticker||''))));
@@ -1449,7 +1670,7 @@ function initEarnings(){
   if(hasCal)buildEarnFilters();
   setEarnMode(hasCal?'cal':'recap');
 }
-koInit();initWatchlist();initMobileNav();boot();
+koInit();initBestand();initMobileNav();boot();
 </script>
 </body>
 </html>
