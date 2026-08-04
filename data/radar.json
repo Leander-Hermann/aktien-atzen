@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-04T10:20:28.824532Z",
+  "generated_at": "2026-08-04T11:20:34.190140Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "IFX.DE",
    "name": "Infineon",
-   "score": 100,
+   "score": 95,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -44,12 +44,6 @@
      "label": "Earnings-Termin",
      "value": "Earnings morgen",
      "weight": 35
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:IFX",
@@ -101,7 +95,7 @@
   {
    "symbol": "AMZN",
    "name": "Amazon",
-   "score": 80,
+   "score": 75,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -122,12 +116,6 @@
      "label": "Video-Erwähnungen",
      "value": "3 Videos in 3 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -313,45 +301,6 @@
    }
   },
   {
-   "symbol": "MSFT",
-   "name": "Microsoft",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,0 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 487.65,
-    "pct": 3.02,
-    "cur": "USD",
-    "as_of": "2026-08-04T06:34:28.968317+00:00"
-   }
-  },
-  {
    "symbol": "PLTR",
    "name": "Palantir",
    "score": 55,
@@ -384,151 +333,34 @@
    }
   },
   {
-   "symbol": "CRWV",
-   "name": "CoreWeave",
+   "symbol": "MSFT",
+   "name": "Microsoft",
    "score": 50,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "content_velocity",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+19,5 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "NBIS",
-   "name": "Nebius",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+11,6 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 212.58,
-    "pct": 1.05,
-    "cur": "USD",
-    "as_of": "2026-08-04T06:34:28.968317+00:00"
-   }
-  },
-  {
-   "symbol": "CBRS",
-   "name": "Cerebras Systems Inc.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,7 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "SOFI",
-   "name": "SoFi",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,6 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 18.03,
-    "pct": -0.97,
-    "cur": "USD",
-    "as_of": "2026-08-04T06:34:28.968317+00:00"
-   }
-  },
-  {
-   "symbol": "FSLR",
-   "name": "First Solar, Inc.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,3 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "VRT",
-   "name": "Vertiv",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,2 %",
-     "weight": 30
+     "value": "+3,0 %",
+     "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "1,7× Durchschnitt",
      "weight": 15
     },
     {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,6 %",
-     "weight": 5
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 263.05,
-    "pct": 6.18,
+    "price": 487.65,
+    "pct": 3.02,
     "cur": "USD",
     "as_of": "2026-08-04T06:34:28.968317+00:00"
    }
