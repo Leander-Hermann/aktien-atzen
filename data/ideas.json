@@ -1,69 +1,72 @@
 {
- "updated": "2026-08-04T06:35:04.400852+00:00",
+ "updated": "2026-08-04T18:36:28.594631+00:00",
  "date": "2026-08-04",
  "ideas": [
   {
-   "title": "Ölversorgungsschock als Treiber für Energieaktien",
-   "thesis": "Die Ölhandelsströme durch die Straße von Hormus sind laut Aramco auf ein Zehntel des Vorkriegsniveaus gefallen, während mögliche Ausfälle von bis zu 11 Millionen Barrel pro Tag genannt werden. Die Ablehnung einer vollständigen Öffnung durch Iran erhöht das Risiko eines anhaltend hohen geopolitischen Aufschlags bei Brent und stützt Energieproduzenten wie Aramco.",
+   "title": "Entspannung an Hormus belastet den Ölpreis weiter",
+   "thesis": "Positive Signale aus den Gesprächen zwischen Iran und Oman haben den geopolitischen Risikoaufschlag im Ölpreis bereits reduziert. Solange jedoch keine finale Vereinbarung vorliegt und Schifffahrtsanalysten vor einer schnellen Normalisierung warnen, bleibt das Chance-Risiko-Verhältnis bei einer Short- oder Beobachtungsposition asymmetrisch.",
    "values": [
     "Brent-Öl",
-    "Aramco",
-    "Energieaktien"
-   ],
-   "angle": "Long",
-   "risk": "Eine rasche Deeskalation oder eine Wiederöffnung der Straße von Hormus könnte den geopolitischen Risikoaufschlag schnell abbauen.",
-   "source": "News: Aramco warnt vor historischem Ölversorgungsschock",
-   "source_url": "https://x.com/FirstSquawk/status/2084522181095235826"
-  },
-  {
-   "title": "Microsoft als belastbarer KI-Infrastrukturwert",
-   "thesis": "Microsoft verbindet ein Umsatzwachstum von 18 Prozent mit einem Azure-Wachstum von 43 Prozent und einem auf 678 Milliarden US-Dollar gestiegenen Auftragsbestand. Das spricht laut Briefing dafür, dass sich die hohen KI-Investitionen zunehmend in belastbare Nachfrage übersetzen.",
-   "values": [
-    "Microsoft",
-    "Azure",
-    "US-Technologieaktien"
-   ],
-   "angle": "Long",
-   "risk": "Die hohe Erwartung an KI-Wachstum und Investitionen könnte bei einer Abschwächung der Nachfrage zu einer Neubewertung führen.",
-   "source": "BerneckerTV",
-   "source_url": ""
-  },
-  {
-   "title": "Zalando nach enttäuschendem Quartal unter Druck",
-   "thesis": "Zalando blieb im zweiten Quartal bei Umsatz und Gewinn hinter den Erwartungen zurück und erwartet das Wachstum von GMV und Umsatz am unteren Ende der bisherigen Spanne. Die auf 680 bis 720 Millionen Euro eingeengte EBIT-Spanne sowie der vorbörsliche Kursrückgang von 14 Prozent sprechen für anhaltenden Abgabedruck.",
-   "values": [
-    "Zalando",
-    "europäische Onlinehandel-Aktien"
+    "WTI-Öl",
+    "Öl-ETFs"
    ],
    "angle": "Short",
-   "risk": "Eine operative Erholung oder ein besser als erwarteter Konsum- und Auftragseingang könnte die negative Reaktion begrenzen.",
-   "source": "Der Aktionär - Märkte am Morgen",
+   "risk": "Ein Scheitern der Verhandlungen oder ein neuer Zwischenfall in der Region könnte den Ölpreis schnell wieder nach oben treiben.",
+   "source": "News: Fortschritte bei Hormus-Gesprächen drücken Ölpreise, Einigung bleibt offen",
+   "source_url": "https://x.com/FirstSquawk/status/2084696152746946706"
+  },
+  {
+   "title": "US-Polysiliziumschutz erhöht Unsicherheit für Solar- und Chipzulieferer",
+   "thesis": "Eine geplante Preisuntergrenze mit zusätzlichen Zöllen könnte US-Produzenten von Polysilizium schützen, zugleich aber die Kosten für Solarzellen, Chips, KI-Infrastruktur und Energiesysteme erhöhen. Bis Details zu Umfang und Umsetzung vorliegen, ist eine sektorweite Positionierung eher eine Beobachtungsidee als ein klarer Kauf.",
+   "values": [
+    "Polysilizium",
+    "Solarsektor",
+    "Halbleitersektor",
+    "KI-Infrastruktur"
+   ],
+   "angle": "Beobachten",
+   "risk": "Die Maßnahmen sind laut Vorlage noch in Vorbereitung und könnten in Umfang, Zeitplan oder betroffenen Produkten deutlich anders ausfallen.",
+   "source": "News: USA planen Preisuntergrenze und Zölle für Polysilizium",
+   "source_url": "https://x.com/DeItaone/status/2084671559432634684"
+  },
+  {
+   "title": "Amazon bleibt ein bevorzugter KI- und Cloud-Profiteur",
+   "thesis": "Amazon verbindet laut den Briefings starkes AWS-Wachstum mit einer Beschleunigung der KI-Nachfrage und erreichte nach den Quartalszahlen ein neues Allzeithoch. Der operative Ergebnisanstieg und die Aussicht auf weiteres AWS-Wachstum sprechen für eine Fortsetzung der positiven Dynamik, auch wenn die hohe Investitionsintensität berücksichtigt werden muss.",
+   "values": [
+    "Amazon",
+    "AWS",
+    "US-Technologiesektor"
+   ],
+   "angle": "Long",
+   "risk": "Die Bewertung und das hohe Investitionswachstum könnten enttäuschen, falls sich das AWS- oder KI-Wachstum verlangsamt.",
+   "source": "Amazon: Amazon-Zahlen treiben laut Egmond die US-Chip- und KI-Aktien weiter an.",
    "source_url": ""
   },
   {
-   "title": "Relative Stärke von Eli Lilly gegenüber Novo Nordisk",
-   "thesis": "Das Briefing stellt Eli Lillys deutlich bessere Entwicklung im Abnehm- und Diabetesgeschäft der schwächeren Entwicklung von Novo Nordisk gegenüber. Während Eli Lilly im Jahresvergleich um 50 Prozent zulegte, belasteten Novo eine enttäuschende Studie und eine Jahresperformance von minus 3 Prozent.",
+   "title": "Relative Stärke bei Eli Lilly gegenüber Novo Nordisk",
+   "thesis": "Die Briefings stellen Eli Lillys deutlich bessere Entwicklung im Abnehm- und Diabetesgeschäft der schwächeren Entwicklung von Novo Nordisk gegenüber. Eine relative Long-Position in Eli Lilly gegenüber Novo Nordisk setzt darauf, dass sich dieser operative und marktseitige Abstand fortsetzt.",
    "values": [
     "Eli Lilly",
     "Novo Nordisk",
-    "Abnehm- und Diabetesaktien"
+    "GLP-1- und Diabetes-Sektor"
    ],
    "angle": "Long",
-   "risk": "Eine mögliche Kostenübernahme von Abnehmspritzen durch deutsche Krankenkassen oder neue positive Studiendaten könnten Novo Nordisk relativ stärken.",
+   "risk": "Studienergebnisse, Erstattungsentscheidungen, Wettbewerb oder eine bessere operative Entwicklung bei Novo Nordisk könnten den Abstand rasch verringern.",
    "source": "Der Aktionär - Märkte am Morgen",
    "source_url": ""
   },
   {
-   "title": "Rheinmetall erst bei bestätigtem Ausbruch interessant",
-   "thesis": "Rheinmetall weist laut Briefing einen charttechnischen Doppelboden bei 934 Euro auf, ein belastbares Kaufsignal entstünde jedoch erst bei einem Anstieg über die Neckline bei 1.148 beziehungsweise 1.149 Euro. Bis dahin bietet sich eine Beobachtungsposition an, wobei auch das Volumen den Ausbruch bestätigen sollte.",
+   "title": "Rheinmetall erst nach bestätigtem Ausbruch interessant",
+   "thesis": "Rheinmetall meldete kräftiges Umsatz- und EBIT-Wachstum sowie einen hohen Auftragseingang und Auftragsbestand. Charttechnisch wird jedoch erst ein Anstieg über die Neckline bei rund 1.148 bis 1.149 Euro als Kaufsignal beschrieben; bis dahin bleibt die Aktie eine Ausbruchskandidatin statt einer bestätigten Long-Position.",
    "values": [
     "Rheinmetall",
-    "europäische Rüstungsaktien"
+    "europäische Rüstungsaktien",
+    "Verteidigungssektor"
    ],
    "angle": "Beobachten",
-   "risk": "Ein Scheitern an der Neckline oder ein Rückfall unter die Bodenbildungszone würde das charttechnische Szenario entkräften.",
-   "source": "Rendezvous mit Harry: SpaceX, SAP, Alibaba, Micron, Amazon, Rheinmetall, Microsoft – Rendezvous mit Harry vom 03.08.2026",
-   "source_url": "https://www.youtube.com/watch?v=n8967zUx9oE"
+   "risk": "Der negative freie Cashflow oder ein ausbleibender Ausbruch über die genannte Neckline könnte die erwartete Seitwärtsbewegung verlängern.",
+   "source": "Rheinmetall: Rheinmetall meldet vorläufige Quartalszahlen mit kräftigem Wachstum",
+   "source_url": ""
   }
  ]
 }
