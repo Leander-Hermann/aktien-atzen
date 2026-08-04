@@ -262,6 +262,24 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .fokusleer .bstnote{margin:12px 0 6px}
   .fokuschips{display:flex;gap:6px;flex-wrap:wrap}
   .fokuschips .fpill{background:var(--chip);min-height:44px}
+  /* --- Positions-Detail im bestehenden Chart-Overlay (Teil C) --- */
+  .stkmodal{max-height:88vh;overflow:auto}
+  #stkPos:not(:empty){margin-top:var(--sp-5)}
+  .stkblock{border-top:1px solid var(--line);padding-top:var(--sp-4);margin-top:var(--sp-4)}
+  .stkblock h4{margin:0 0 10px;font-size:16px;font-weight:650;letter-spacing:-.01em}
+  .stkzeile{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-3);padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+  .stkzeile:last-of-type{border-bottom:none}
+  .stkzeile span{color:var(--muted);font-size:12.5px;font-weight:600}
+  .stkzeile b{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+  .stknote{color:var(--muted);font-size:12.5px;line-height:1.5;margin:8px 0 0}
+  .stkauf{padding:10px 0;border-bottom:1px solid var(--line)}
+  .stkauf:last-of-type{border-bottom:none}
+  .stkaufh{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+  .stkauft{font-size:14.5px;line-height:1.55;margin-top:4px}
+  .stkaufz{font-size:12.5px;line-height:1.5;color:var(--muted);margin-top:4px}
+  .stkaufl{margin-top:6px}
+  .stklnk{color:var(--accent-ink);font-weight:600;font-size:12.5px;text-decoration:none}
+  .stklnk:hover,.stklnk:focus{text-decoration:underline}
   .bstrow .rm{position:absolute;top:10px;right:10px;width:24px;height:24px;border:none;background:var(--chip);color:var(--muted);border-radius:50%;font-size:14.5px;cursor:pointer;line-height:1;transition:opacity var(--dur-fast)}
   .wlempty{color:var(--muted);font-size:14.5px}
   /* --- Video-Kalender + Themen-Expand (ADR-020/021) --- */
@@ -721,11 +739,12 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   <p style="font-size:12.5px;color:var(--muted);margin:10px 0 0">0–25 Extreme Angst · 25–45 Angst · 45–55 Neutral · 55–75 Gier · 75–100 Extreme Gier</p>
 </div></div>
 
-<div class="overlay" id="stkOverlay"><div class="modal">
+<div class="overlay" id="stkOverlay"><div class="modal stkmodal">
   <div class="top"><h3 id="stkTitle">Aktie</h3><button class="x" aria-label="Dialog schließen" onclick="closeStk()">×</button></div>
   <p id="stkSub" style="color:var(--muted);margin:2px 0 0;font-size:14.5px"></p>
   <div class="seg" id="stkseg"><button data-d="30">1M</button><button data-d="90" class="on">3M</button><button data-d="180">6M</button><button data-d="0">Max</button></div>
   <div style="position:relative;width:100%;height:360px"><div id="stklw" style="position:absolute;inset:0"></div></div>
+  <div id="stkPos"></div>
 </div></div>
 
 <div class="overlay" id="vidOverlay"><div class="modal vidmodal">
@@ -1158,7 +1177,8 @@ function buildFG(days){const cont=document.getElementById('fglw');cont.innerHTML
 function closeFG(){document.getElementById('fgOverlay').classList.remove('open');if(fgChart){fgChart.remove();fgChart=null}}
 document.querySelectorAll('#fgseg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#fgseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(fgChart){fgChart.remove();fgChart=null}buildFG(+b.dataset.d)});
 document.getElementById('fgOverlay').addEventListener('click',e=>{if(e.target.id==='fgOverlay')closeFG()});
-function openStock(a,levels){if(!a||!a.candles||!a.candles.d1||!a.candles.d1.length)return;stkIx=a;stkLevels=(levels&&typeof levels==='object')?levels:null;document.getElementById('stkTitle').textContent=a.n||a.t;document.getElementById('stkSub').textContent=a.t+' · '+fpLab(a.p,'Tag')+(a.pp!=null?' · '+fpLab(a.pp,perLabel(a.pf)):'');document.querySelectorAll('#stkseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='90'));document.getElementById('stkOverlay').classList.add('open');setTimeout(()=>buildStk(90),30)}
+function openStock(a,levels,detail){if(!a||!a.candles||!a.candles.d1||!a.candles.d1.length)return;stkIx=a;stkLevels=(levels&&typeof levels==='object')?levels:null;
+  const pb=document.getElementById('stkPos');if(pb){pb.innerHTML=detail?bstDetailHTML(detail):'';pb.scrollTop=0}document.getElementById('stkTitle').textContent=a.n||a.t;document.getElementById('stkSub').textContent=a.t+' · '+fpLab(a.p,'Tag')+(a.pp!=null?' · '+fpLab(a.pp,perLabel(a.pf)):'');document.querySelectorAll('#stkseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='90'));document.getElementById('stkOverlay').classList.add('open');setTimeout(()=>buildStk(90),30)}
 function buildStk(days){const cont=document.getElementById('stklw');cont.innerHTML='';stkChart=LightweightCharts.createChart(cont,chartOpts(cont,360));const cUp=tok('--up'),cDn=tok('--down');const s=stkChart.addCandlestickSeries({upColor:cUp,downColor:cDn,wickUpColor:cUp,wickDownColor:cDn,borderVisible:false});let data=stkIx.candles.d1;if(days){const cut=Math.floor(Date.now()/1000)-days*86400;const f=data.filter(c=>c.time>=cut);if(f.length)data=f}s.setData(data);applyStkLevels(stkChart,s,stkLevels);stkChart.timeScale().fitContent()}
 function closeStk(){document.getElementById('stkOverlay').classList.remove('open');if(stkChart){stkChart.remove();stkChart=null}}
 document.querySelectorAll('#stkseg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#stkseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(stkChart){stkChart.remove();stkChart=null}buildStk(+b.dataset.d)});
@@ -1608,7 +1628,7 @@ function renderBestand(){
   grid.innerHTML=joins.map(bstZeileHTML).join('');
   grid.querySelectorAll('.rm').forEach(b=>b.onclick=e=>{e.stopPropagation();bstRemove(b.dataset.rm);renderBestand();renderFokus()});
   grid.querySelectorAll('.bstrow').forEach(c=>{
-    const go=()=>wlOpen(c.dataset.s);
+    const go=()=>bstOpenDetail(c.dataset.id);
     c.onclick=go;c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}};
   });
   bstKurseLeiste(joins.filter(j=>!j.kurs).map(j=>j.symbol));
@@ -1628,6 +1648,99 @@ function bstKurseLeiste(fehlend){
   };
 }
 async function wlOpen(sym){let d=WLCACHE[sym];if(!d)d=await ywFetch(sym);if(!d||!d.candles||!d.candles.length)return;openStock({t:sym,n:sym,p:d.pct,pp:d.pctPer,pf:d.perFrom,candles:{d1:d.candles}})}
+/* ===== Positions-Detail (Teil C, ADR-906 §3/§4) =====
+   Baut auf dem BESTEHENDEN On-Site-Chart auf (openTicker→openStock→buildStk) — keine neue
+   Chart-Bibliothek, keine neue Quelle. Gezeigt werden Ereignis, Ursache, Termin und Historie;
+   ausdruecklich KEINE Positionsbewertung, Handlungsaussage oder Gewinn-/Verlustprognose. */
+function bstKuerzen(s,n){s=String(s==null?'':s).trim();return s.length>n?s.slice(0,n-1).replace(/\s+\S*$/,'')+'…':s}
+function bstAuftrittHTML(a){
+  const kopf=[shortDate(a.date+'T00:00:00'),a.channel].filter(Boolean).map(x=>escapeHtml(String(x))).join(' · ');
+  const text=a.note||a.einordnung||'';
+  // Deeplink samt vorhandener Zeitmarke unveraendert uebernehmen (nur https, nur escaped).
+  const link=a.url?safeLink(a.url,'Zur Stelle im Video ›',' class="stklnk"'):'';
+  return `<div class="stkauf"><div class="stkaufh">${kopf}</div>`
+    +(text?`<div class="stkauft">${escapeHtml(bstKuerzen(text,220))}</div>`:'')
+    +(a.figures?`<div class="stkaufz">${escapeHtml(bstKuerzen(a.figures,160))}</div>`:'')
+    +(link?`<div class="stkaufl">${link}</div>`:'')+`</div>`;
+}
+/* Derivate-Anzeigen nach ADR-906 §3 — Kennzeichnungspflicht:
+   Hebelwirkung NUR bei knockout/faktor und immer als idealisierte Naeherung beschriftet;
+   bei Optionsscheinen KEINE Hochrechnung (linear waere dort schlicht falsch). */
+function bstDerivatHTML(j){
+  const d=j.pos.derivat;if(j.pos.typ!=='derivat'||!d)return '';
+  const kopf=['Derivat',BST_ART[d.art]||'',BST_RICHTUNG[d.richtung]||''].filter(Boolean).join(' · ');
+  const zeilen=[];
+  const tag=j.kurs?j.kurs.pct:null;
+  const rechenbar=(d.art==='knockout'||d.art==='faktor');
+  if(rechenbar&&d.hebel!=null&&tag!=null){
+    const wirkung=tag*d.hebel*(d.richtung==='short'?-1:1);
+    zeilen.push(['Hebelwirkung heute',fp(wirkung)+' (Basiswert '+fp(tag)+' × Hebel '+nv(d.hebel,d.hebel%1?1:0)+')']);
+  }else if(d.art==='optionsschein'){
+    zeilen.push(['Basiswert bewegt sich',tag==null?'–':fpLab(tag,'Tag')]);
+  }else if(d.hebel!=null){
+    zeilen.push(['Hebel laut deiner Eingabe','× '+nv(d.hebel,d.hebel%1?1:0)]);
+  }
+  if(d.ko_schwelle!=null&&j.kurs&&j.kurs.price!=null){
+    const ab=(d.richtung==='short'?(d.ko_schwelle-j.kurs.price):(j.kurs.price-d.ko_schwelle))/j.kurs.price*100;
+    zeilen.push(['Abstand zur KO-Schwelle',fp(ab)+' (Schwelle '+nv(d.ko_schwelle,2)+')']);
+  }
+  if(d.wkn)zeilen.push(['WKN laut deiner Eingabe',d.wkn]);
+  if(!zeilen.length)return '';
+  const hinweis=rechenbar&&d.hebel!=null&&tag!=null
+    ? 'Idealisierte Näherung ohne Spread, Aufgeld, Bezugsverhältnis und Währungseffekt — kein Produktpreis.'
+    : (d.art==='optionsschein'
+      ? 'Für Optionsscheine wird hier bewusst nicht hochgerechnet: der Preis hängt zusätzlich von Volatilität und Restlaufzeit ab.'
+      : 'Reine Rechengröße aus deinen Eingaben — kein Produktpreis.');
+  return `<div class="stkblock"><h4>${escapeHtml(kopf)}</h4>`
+    +zeilen.map(([l,v])=>`<div class="stkzeile"><span>${escapeHtml(l)}</span><b>${escapeHtml(String(v))}</b></div>`).join('')
+    +`<p class="stknote">${escapeHtml(hinweis)}</p></div>`;
+}
+function bstDetailHTML(j){
+  if(!j)return '';
+  let h='';
+  // 1) Trigger-Erklaerung: ALLE Trigger der Position, Text kommt anzeigefertig aus radar.json.
+  if(j.radar&&Array.isArray(j.radar.triggers)&&j.radar.triggers.length){
+    h+=`<div class="stkblock"><h4>Was heute auffällt</h4>`
+      +j.radar.triggers.filter(t=>t&&t.label).map(t=>`<div class="stkzeile"><span>${escapeHtml(t.label)}</span><b>${escapeHtml(String(t.value==null?'':t.value))}</b></div>`).join('')
+      +`<p class="stknote">Aus dem automatisch erzeugten Radar — eine Auswahl von Auffälligkeiten, keine Bewertung deiner Position.</p></div>`;
+  }
+  // 2) Termine aus earnings.json
+  if(j.earn&&(j.earn.naechster||j.earn.letzter)){
+    const z=[];
+    if(j.earn.naechster){
+      const e=j.earn.naechster,zt=(EZEIT[e.zeit]||{}).l;
+      z.push(['Nächste Zahlen',shortDate(e.date+'T00:00:00')+(zt?' · '+zt:'')+(j.earn.tage!=null?' · '+(j.earn.tage===0?'heute':j.earn.tage===1?'morgen':'in '+j.earn.tage+' Tagen'):'')]);
+    }
+    if(j.earn.letzter){
+      const e=j.earn.letzter,r=eNum(e.reaktion_pct);
+      z.push(['Zuletzt berichtet',shortDate(e.date+'T00:00:00')+(r!=null?' · Kursreaktion '+fp(r):'')]);
+    }
+    h+=`<div class="stkblock"><h4>Termine</h4>`+z.map(([l,v])=>`<div class="stkzeile"><span>${escapeHtml(l)}</span><b>${escapeHtml(v)}</b></div>`).join('')
+      +`<p class="stknote">Termine sind vorläufig und können sich verschieben.</p></div>`;
+  }
+  // 3) Derivate-Anzeigen
+  h+=bstDerivatHTML(j);
+  // 4) Auftrittshistorie — der inhaltliche Kern: was in den Briefings zu diesem Wert gesagt wurde.
+  if(j.auftritte.length){
+    h+=`<div class="stkblock"><h4>In den Briefings (${j.auftritte.length})</h4>`
+      +j.auftritte.slice(0,12).map(bstAuftrittHTML).join('')
+      +(j.auftritte.length>12?`<p class="stknote">Ältere Auftritte findest du über die Suche.</p>`:'')+`</div>`;
+  }else if(TICKIDX){
+    h+=`<div class="stkblock"><h4>In den Briefings</h4><p class="stknote">Zu diesem Wert liegt bisher kein Auftritt im Archiv.</p></div>`;
+  }
+  if(j.kandidat)h+=`<div class="stkblock"><h4>Beobachtungskandidat</h4><p class="stknote">Dieser Wert steht heute in der Liste der Beobachtungskandidaten (Tab „Analysen").</p></div>`;
+  return h;
+}
+// Oeffnet das Detail einer Position. Der Klick IST die ausdrueckliche Nutzeraktion (ADR-906 §4.3):
+// Kerzen kommen bevorzugt aus quotes.json, erst danach live ueber den bestehenden Proxy-Pfad.
+async function bstOpenDetail(id){
+  const p=bstById(id);if(!p)return;
+  const j=bstJoin(p);
+  let candles=(j.kurs&&j.kurs.candles&&j.kurs.candles.length)?j.kurs.candles:null;
+  if(!candles){const d=await ywFetch(p.symbol);if(d&&d.candles&&d.candles.length){candles=d.candles;j.kurs=bstQuote(p.symbol)}}
+  if(!candles)return;
+  openStock({t:p.symbol,n:j.name||p.symbol,p:(j.kurs?j.kurs.pct:null),candles:{d1:candles}},null,j);
+}
 /* „Dein Fokus" — Auswahl, keine Bewertung (ADR-906 §5): gezeigt werden Ereignis, Ursache, Termin
    und Historie. Kein Sortierwert, keine Handlungsaussage, keine Gewinn-/Verlustaussage. */
 function bstHatEreignis(j){return !!(j.trigger||(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)||j.neuerAuftritt)}
@@ -1639,7 +1752,7 @@ function fokusKarteHTML(j){
   if(j.neuerAuftritt&&j.auftritte.length)zeilen.push('Neu im Briefing vom '+escapeHtml(shortDate(j.auftritte[0].date+'T00:00:00')));
   const k=j.kurs;
   const kurs=k?`<span class="fkp" style="color:${k.pct==null?'var(--muted)':ink(k.pct,3)}">${k.pct==null?'–':escapeHtml(fp(k.pct))}<span class="pu">Tag</span></span>`:'';
-  return `<div class="fokuskarte" data-s="${es}" role="button" tabindex="0"><div class="fkh"><span class="fkt">${titel}</span>${kurs}</div>`
+  return `<div class="fokuskarte" data-id="${escapeHtml(j.pos.id)}" data-s="${es}" role="button" tabindex="0"><div class="fkh"><span class="fkt">${titel}</span>${kurs}</div>`
     +`<div class="fkm">${j.name?es+' · ':''}${escapeHtml(BST_TYP[j.pos.typ]||j.pos.typ)}</div>`
     +zeilen.map(z=>`<div class="fkz">${z}</div>`).join('')+`</div>`;
 }
@@ -1664,7 +1777,7 @@ function renderFokus(){
     ? 'Betrifft '+mit.length+' von '+joins.length+(joins.length===1?' hinterlegten Wert':' hinterlegten Werten')+'.'
     : (joins.length===1?'Zu deinem hinterlegten Wert liegt heute kein Ereignis vor.':'Zu deinen '+joins.length+' hinterlegten Werten liegt heute kein Ereignis vor.');
   box.innerHTML=`<p class="fokuszeile">${escapeHtml(zeile)}</p><div class="fokusgrid">${top.map(fokusKarteHTML).join('')}</div>`;
-  box.querySelectorAll('.fokuskarte').forEach(c=>{const go=()=>wlOpen(c.dataset.s);c.onclick=go;c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}}});
+  box.querySelectorAll('.fokuskarte').forEach(c=>{const go=()=>bstOpenDetail(c.dataset.id);c.onclick=go;c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}}});
 }
 function bstVal(id){const e=document.getElementById(id);return e?e.value:''}
 function bstSetMsg(el,text,cls){const e=document.getElementById(el);if(!e)return;e.textContent=text||'';e.className='bstmsg'+(cls?' '+cls:'')}
