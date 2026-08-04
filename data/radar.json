@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-04T13:20:29.573203Z",
+  "generated_at": "2026-08-04T13:39:15.133602Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -57,6 +57,18 @@
     "date": "2026-08-05",
     "distance_days": 1,
     "zeit": "tbd"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Infineon steigt bei erhöhtem Volumen deutlich",
+    "why_now": "Die Infineon-Aktie liegt bei 61,47 EUR und ist um 9,16 % gestiegen. Das Handelsvolumen beträgt das 1,6-Fache des Durchschnitts. Zudem steht morgen ein Earnings-Termin an, der die erhöhte Aufmerksamkeit plausibel mit erklären dürfte. Ursache unklar.",
+    "watch_next": [
+     "Earnings-Termin morgen",
+     "Handelsvolumen",
+     "Kursbewegung"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-04T13:39:15.133602Z"
    }
   },
   {
@@ -90,6 +102,18 @@
     "pct": -8.78,
     "cur": "USD",
     "as_of": "2026-08-04T06:34:28.968317+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Novo Nordisk fällt bei erhöhtem Handelsvolumen",
+    "why_now": "Die Aktie von Novo Nordisk liegt bei 47,09 USD und fällt um 8,78 %. Das Handelsvolumen beträgt das 3,0-Fache des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-04T13:39:15.133602Z"
    }
   },
   {
@@ -123,6 +147,18 @@
     "pct": 15.32,
     "cur": "USD",
     "as_of": "2026-08-04T06:34:28.968317+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Amazon mit auffälliger Kursbewegung und hohem Volumen",
+    "why_now": "Die Amazon-Aktie zeigt eine starke Kursbewegung von +4,6 %; im Kursblock ist zudem eine Veränderung von 15,32 % ausgewiesen. Das Handelsvolumen liegt beim 3,1-Fachen des Durchschnitts, und es gab 3 Videos in 3 Tagen. Diese erhöhte Aktivität könnte die auffällige Bewegung begleiten, belegt aber keine Ursache. Ursache unklar.",
+    "watch_next": [
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Kursbewegung",
+     "Entwicklung der Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-04T13:39:15.133602Z"
    }
   },
   {
