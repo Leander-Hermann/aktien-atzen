@@ -51,7 +51,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   button:not(:disabled):active{transform:scale(.97);filter:brightness(.94)}
   button:disabled{opacity:.5;color:var(--muted);cursor:default}
   :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-  .idx .val,.idx .pct,.mvrow .p,.wlc .v,.wlc .p,.kores .kv,.fgval,.emetrics,.etable td,.ereaktion{font-variant-numeric:tabular-nums}
+  .idx .val,.idx .pct,.mvrow .p,.kores .kv,.fgval,.emetrics,.etable td,.ereaktion{font-variant-numeric:tabular-nums}
   .wrap{max-width:1180px;margin:0 auto;padding:0 var(--sp-4) 90px}/* Container = §4-Desktop-Maß (1180) statt historisch 1100 */
   .appbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);background:var(--bar);border-bottom:1px solid var(--line)}
   @supports not (backdrop-filter:blur(12px)){.appbar{background:color-mix(in srgb,var(--card) 94%,transparent)}}
@@ -231,13 +231,38 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .bstio textarea:focus{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
   .bstio .row{display:flex;gap:8px;margin:10px 0 12px;flex-wrap:wrap}
   .bstio .row button{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:12px;padding:11px 16px;font-size:12.5px;font-weight:600;font-family:inherit;cursor:pointer;min-height:44px}
-  .wlgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:var(--sp-3)}
-  .wlc{position:relative;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px;cursor:pointer;transition:transform var(--dur-fast) var(--ease-out),box-shadow var(--dur-fast) var(--ease-out);box-shadow:var(--shadow-card)}
-  .wlc .s{font-size:14.5px;font-weight:700;letter-spacing:-.01em}
-  .wlc .v{font-size:19px;font-weight:700;margin-top:6px;letter-spacing:-.015em;line-height:1.2}
-  .wlc .p{font-size:12.5px;font-weight:700;margin-top:2px}
-  .wlc .p .pu{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);margin-left:5px}
-  .wlc .rm{position:absolute;top:8px;right:8px;width:24px;height:24px;border:none;background:var(--chip);color:var(--muted);border-radius:50%;font-size:14.5px;cursor:pointer;line-height:1;transition:opacity var(--dur-fast)}
+  /* --- Bestandsliste (E1-Karten, §14.1) --- */
+  .bstlist{display:flex;flex-direction:column;gap:var(--sp-2)}
+  .bstrow{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp-3);background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 44px 14px 16px;cursor:pointer;box-shadow:var(--shadow-card)}
+  .bstrow .bl{min-width:0}
+  .bstrow .bt{font-size:16px;font-weight:650;letter-spacing:-.01em;line-height:1.3}
+  .bstrow .bm{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);margin-top:3px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .bsig{font-size:12.5px;font-weight:600;color:var(--ink);margin-top:8px;line-height:1.45}
+  .bterm{font-size:12.5px;font-weight:500;color:var(--muted);margin-top:4px}
+  .bneu{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--accent-ink);background:color-mix(in srgb,var(--accent) 14%,transparent);border-radius:999px;padding:3px 8px;margin-left:8px;white-space:nowrap}
+  .bstrow .bk{text-align:right;white-space:nowrap;flex:0 0 auto}
+  .bstrow .bkv{display:block;font-size:16px;font-weight:700;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+  .bstrow .bkp{display:block;font-size:12.5px;font-weight:700;margin-top:2px;font-variant-numeric:tabular-nums}
+  .bstrow .bkp .pu,.fokuskarte .pu{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);margin-left:5px}
+  .bstrow .bkna{font-size:12.5px;font-weight:500;color:var(--muted)}
+  .bstkurse{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);flex-wrap:wrap;background:var(--chip);border-radius:14px;padding:10px 14px;margin:0 0 12px;font-size:12.5px;color:var(--muted);font-weight:500}
+  .bstkurse button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:9px 14px;font-size:12.5px;font-weight:600;font-family:inherit;cursor:pointer;min-height:44px}
+  .bstkurse button[disabled]{color:var(--muted);cursor:default;opacity:.5}
+  /* --- Dein Fokus --- */
+  .fokuszeile{font-size:12.5px;font-weight:500;color:var(--muted);margin:0 0 12px}
+  .fokusgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:var(--sp-3)}
+  .fokuskarte{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;cursor:pointer;box-shadow:var(--shadow-card)}
+  .fokuskarte .fkh{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+  .fokuskarte .fkt{font-size:16px;font-weight:650;letter-spacing:-.01em;line-height:1.3;min-width:0;overflow-wrap:anywhere}
+  .fokuskarte .fkp{font-size:12.5px;font-weight:700;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .fokuskarte .fkm{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);margin-top:3px}
+  .fokuskarte .fkz{font-size:12.5px;font-weight:500;color:var(--ink);margin-top:8px;line-height:1.45}
+  .fokusleer{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px var(--sp-5);box-shadow:var(--shadow-card)}
+  .fokusleer p{margin:0 0 8px;font-size:14.5px;line-height:1.55}
+  .fokusleer .bstnote{margin:12px 0 6px}
+  .fokuschips{display:flex;gap:6px;flex-wrap:wrap}
+  .fokuschips .fpill{background:var(--chip);min-height:44px}
+  .bstrow .rm{position:absolute;top:10px;right:10px;width:24px;height:24px;border:none;background:var(--chip);color:var(--muted);border-radius:50%;font-size:14.5px;cursor:pointer;line-height:1;transition:opacity var(--dur-fast)}
   .wlempty{color:var(--muted);font-size:14.5px}
   /* --- Video-Kalender + Themen-Expand (ADR-020/021) --- */
   .vidnote{font-size:12.5px;color:var(--muted);margin:2px 0 12px}
@@ -410,14 +435,14 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .ekonf{font-size:11px;font-weight:600;border-radius:7px;padding:2px 8px;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
   .konf-hoch{color:var(--up);background:color-mix(in srgb,var(--up) 15%,transparent)}.konf-mittel{color:var(--warn);background:color-mix(in srgb,var(--warn) 15%,transparent)}.konf-niedrig{color:var(--muted);background:var(--chip)}
   /* --- §14.2 Hover-/Press-Standard: nur GPU-Props animieren (transform/box-shadow/border-color) --- */
-  .idx,.read,.vtile,.wlc,.fgcard,.ecard,.topic,.tn,.mvrow{transition:transform .18s var(--ease-out),box-shadow .18s,border-color .18s}
+  .idx,.read,.vtile,.bstrow,.fokuskarte,.fgcard,.ecard,.topic,.tn,.mvrow{transition:transform .18s var(--ease-out),box-shadow .18s,border-color .18s}
   /* Hover NUR bei echtem Zeiger (§14.2 „Nur echte Zeiger" — Touch bekommt nie klebrige Hover) */
   @media(hover:hover) and (pointer:fine){
     /* E1-Karten: Elevation eine Stufe + Border-Aufhellung (Translation separat, s. u. — reduced-motion) */
-    .idx:hover,.read:hover,.vtile:hover,.wlc:hover,.fgcard.clickable:hover,.ecard:hover,.topic.clickable:hover{box-shadow:var(--shadow-hover);border-color:var(--hover-line)}
+    .idx:hover,.read:hover,.vtile:hover,.bstrow:hover,.fokuskarte:hover,.fgcard.clickable:hover,.ecard:hover,.topic.clickable:hover{box-shadow:var(--shadow-hover);border-color:var(--hover-line)}
     .idx:hover{z-index:2}.idx:hover .hint{opacity:1}
     .mvrow:hover,.tn:hover{box-shadow:var(--shadow-card)}
-    .wlc .rm{opacity:0}.wlc:hover .rm{opacity:1}
+    .bstrow .rm{opacity:0}.bstrow:hover .rm{opacity:1}
     /* Zeilen/Links/Chips: dezente Flächen-/Text-Rückmeldung, keine Elevation */
     .results .r:hover,.fibrow:hover,.etable tbody tr:hover,.footlink:hover{background:var(--chip)}
     .vtitle:hover,.vname-lnk:hover,.cand-name:hover,.footlink:hover,.tv-link:hover{color:var(--accent-ink)}
@@ -430,12 +455,12 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   }
   /* Translation nur wenn Motion erlaubt (§14.2 reduced-motion → nur Border/Schatten, kein Versatz) */
   @media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
-    .idx:hover,.read:hover,.vtile:hover,.wlc:hover,.fgcard.clickable:hover,.ecard:hover,.topic.clickable:hover{transform:translateY(-3px)}
+    .idx:hover,.read:hover,.vtile:hover,.bstrow:hover,.fokuskarte:hover,.fgcard.clickable:hover,.ecard:hover,.topic.clickable:hover{transform:translateY(-3px)}
     .mvrow:hover,.tn:hover{transform:translateY(-2px)}
   }
   /* Press/Active ÜBERALL (auch Touch — §8 Pflicht-Feedback); Versatz nur bei erlaubter Motion */
   @media(prefers-reduced-motion:no-preference){
-    .idx:active,.read:active,.vtile:active,.wlc:active,.fgcard.clickable:active,.ecard:active,.topic.clickable:active,.mvrow:active,.tn:active{transform:translateY(-1px) scale(.98);transition:transform .12s ease-out}
+    .idx:active,.read:active,.vtile:active,.bstrow:active,.fokuskarte:active,.fgcard.clickable:active,.ecard:active,.topic.clickable:active,.mvrow:active,.tn:active{transform:translateY(-1px) scale(.98);transition:transform .12s ease-out}
   }
   /* ===== Phase 2b: Mobile-Shell — floating Glass-Bottom-Nav + Snap-Slide-Tabs (§10/§7, ADR-704) ===== */
   /* Chart-Flächen: sauberes touch-action vorbereiten (künftiger Stufe-2-Edge-Swipe darf nicht mit dem
@@ -525,6 +550,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   <div class="filterbar hidden" id="filterbar"><button class="fpill on" data-f="0">Alle</button><button class="fpill" data-f="3">Hoch</button><button class="fpill" data-f="2">Mittel</button><button class="fpill" data-f="1">Niedrig</button></div>
   <div class="results hidden" id="results"></div>
 
+  <section id="secFokus" aria-labelledby="fokusTitle"><div class="sec"><h2 id="fokusTitle">Dein Fokus</h2></div><div id="fokusBody"></div></section>
   <div id="secFG" class="hidden"><div class="fgcard"><div class="fgtop"><span class="fglabel">Fear &amp; Greed Index · CNN</span><span class="fgval" id="fgval"></span></div><div class="fgbar"><div class="fgmarker" id="fgmarker"></div></div><div class="fgsub" id="fgsub"></div><div class="fghint" id="fghint"></div></div></div>
   <div id="secMarket"><div class="sec"><h2>Märkte heute</h2></div><div class="idxgrid" id="idx"></div></div>
   <div id="secMovers"><div class="sec"><h2>Top-Mover</h2></div><div class="mvgrid"><div class="mvcol"><h3>Gewinner</h3><div id="gain"></div></div><div class="mvcol"><h3>Verlierer</h3><div id="lose"></div></div></div></div>
@@ -582,7 +608,8 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
    </div>
   </div>
   <p id="bstMsg" class="bstmsg" role="status" aria-live="polite"></p>
-  <div class="wlgrid" id="wlGrid"></div>
+  <div id="bstKurse"></div>
+  <div class="bstlist" id="wlGrid"></div>
   <details class="bstio">
    <summary>Bestand übertragen (Export / Import)</summary>
    <p class="bstnote">Der Code enthält deinen kompletten Bestand als Text – zum Umzug auf ein anderes Gerät. Er wird nirgends hochgeladen.</p>
@@ -777,6 +804,7 @@ const DEMO={
 };
 let DATA={},order=[],labels={},current=null,calView=new Date(),DEMOMODE=false,allLoaded=false,MARKET=null,filterPrio=0,VIDEOS=null,IDEAS=null,CANDIDATES=null,FGDATA=null,FGHIST=null;
 let VIDIDX=null,VIDDAYS=[],vidCurrent=null,vidCalView=new Date(),vidMode='latest',VIDDAY={},VIDLABELS={},vidChannel=null,vidAllLoaded=false;
+let RADAR=null,QUOTES=null,TICKIDX=null,BSTFEEDS=false;
 let EARN=null,ERECAP=null,earnMode='cal',earnRange='week',earnRegion='',earnIndex='',earnWLonly=false,earnSortKey='reaktion',earnSortDir=-1,EARNWL=new Set();
 function mkt(){return (!DEMOMODE && MARKET && MARKET.indices)?MARKET:(DATA[current]||{})}
 
@@ -810,7 +838,23 @@ async function boot(){
   try{const rr=await fetch('data/earnings-recap.json',{cache:'no-store'});if(rr.ok)ERECAP=await rr.json()}catch(e){}
   try{const cr=await fetch('data/candidates.json',{cache:'no-store'});if(cr.ok)CANDIDATES=await cr.json()}catch(e){}
   if(MARKET&&MARKET.feargreed)FGDATA=MARKET.feargreed;
-  calView=new Date(current);render();renderCandidates();initVideos();renderIdeas();initEarnings();loadFG()
+  calView=new Date(current);render();renderCandidates();initVideos();renderIdeas();initEarnings();loadFG();
+  bstLoadFeeds()
+}
+/* Die drei Bestand-Feeds sind gross (quotes.json ~1,1 MB, ticker-index.json ~0,7 MB, radar.json ~11 KB)
+   und werden deshalb NACH dem ersten Rendern und NUR bei nicht leerem Bestand geladen — parallel,
+   nicht blockierend. Alle drei sind lokale Dateien derselben Origin: keine neue Drittquelle,
+   kein CDN-Zuwachs, keine CSP-Aenderung. Faellt eine aus, degradiert nur ihr Beitrag (§8.1). */
+async function bstLoadFeeds(){
+  if(BSTFEEDS||!bstPositionen().length)return;
+  BSTFEEDS=true;
+  const hol=async(datei,set)=>{try{const r=await fetch('data/'+datei,{cache:'no-store'});if(r.ok)set(await r.json())}catch(e){}};
+  await Promise.all([
+    hol('radar.json',j=>{RADAR=j}),
+    hol('quotes.json',j=>{QUOTES=j}),
+    hol('ticker-index.json',j=>{TICKIDX=j})
+  ]);
+  renderBestand();renderFokus();
 }
 async function go(date){current=date;calView=new Date(date);if(!DEMOMODE){try{await loadDay(date)}catch(e){}}render()}
 function shift(s){const i=order.indexOf(current)+s;if(i>=0&&i<order.length)go(order[i])}
@@ -1458,6 +1502,72 @@ function ywFetch(sym){
 }
 function wlValFmt(v){if(v==null)return '–';return Math.abs(v)<1000?v.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2}):Math.round(v).toLocaleString('de-DE')}
 function wlCur(c){return c==='EUR'?' €':c==='USD'?' $':c==='GBP'?' £':c?(' '+c):''}
+/* ===== Relevanz-Join (ADR-906 §5.3) =====
+   EINE gekapselte Stelle verbindet eine Position mit allen Feeds. Der Join-Schluessel ist
+   ausschliesslich das Yahoo-Symbol; er heisst je Datei anders (radar: items[].symbol,
+   quotes: quotes[<symbol>], earnings: eintraege[].ticker, ticker-index: ticker[<SYMBOL>],
+   candidates: items[].ticker). Fehlende Quellen fuehren zu fehlenden Feldern, nie zu Fehlern. */
+const BSTBESUCHKEY='aa-bestand-besuch';let BST_LETZTER_BESUCH=null;
+function bstBesuchLesen(){try{const v=localStorage.getItem(BSTBESUCHKEY);return /^\d{4}-\d{2}-\d{2}$/.test(String(v))?v:null}catch(e){return null}}
+function bstBesuchSchreiben(){try{localStorage.setItem(BSTBESUCHKEY,bstToday())}catch(e){}}
+// radar.json ist optional: fehlt sie, ist sie ungueltig oder steht _meta.status auf 'failed',
+// entfaellt NUR die Signal-Spalte (Contract _meta.optionale_dateien, design-system §8.1).
+function radarOk(){return !!(RADAR&&RADAR._meta&&RADAR._meta.status!=='failed'&&Array.isArray(RADAR.items))}
+function radarItem(sym){if(!radarOk())return null;const l=RADAR.items;for(let i=0;i<l.length;i++)if(l[i]&&l[i].symbol===sym)return l[i];return null}
+function radarTopTrigger(it){if(!it||!Array.isArray(it.triggers)||!it.triggers.length)return null;let b=null;it.triggers.forEach(t=>{if(!t||!t.label)return;if(!b||(+t.weight||0)>(+b.weight||0))b=t});return b}
+// Kurs aus quotes.json — Tagesmove IMMER aus den letzten zwei Kerzen, NIE aus 'pct'
+// (Contract v0.15: pct ist die Perioden-Aenderung). Kein Netzaufruf.
+function bstQuote(sym){
+  const q=(QUOTES&&QUOTES.quotes)?QUOTES.quotes[sym]:null;
+  if(q&&q.price!=null){
+    const c=Array.isArray(q.candles)?q.candles:[],n=c.length;
+    const tag=(n>1&&c[n-2]&&c[n-2].close)?(c[n-1].close-c[n-2].close)/c[n-2].close*100:null;
+    return {price:+q.price,cur:q.cur||'',pct:tag,candles:c,quelle:'feed'};
+  }
+  const d=WLCACHE[sym];
+  if(d&&d.price!=null)return {price:d.price,cur:d.cur||'',pct:d.pct,candles:d.candles||[],quelle:'live'};
+  return null;
+}
+function bstEarnings(sym){
+  if(!(EARN&&Array.isArray(EARN.eintraege)))return {naechster:null,letzter:null,tage:null};
+  const heute=bstToday();let naechster=null,letzter=null;
+  EARN.eintraege.forEach(e=>{
+    if(!e||String(e.ticker||'').toUpperCase()!==sym.toUpperCase())return;
+    const d=String(e.date||'');if(!/^\d{4}-\d{2}-\d{2}$/.test(d))return;
+    if(d>=heute&&String(e.status||'')!=='reported'){if(!naechster||d<naechster.date)naechster=e}
+    else if(!letzter||d>letzter.date)letzter=e;
+  });
+  let tage=null;
+  if(naechster)tage=Math.round((new Date(naechster.date+'T00:00:00')-new Date(heute+'T00:00:00'))/86400000);
+  return {naechster:naechster,letzter:letzter,tage:tage};
+}
+function bstAuftritte(sym){
+  const t=(TICKIDX&&TICKIDX.ticker)?TICKIDX.ticker[sym.toUpperCase()]:null;
+  if(!t||!Array.isArray(t.auftritte))return {name:(t&&t.name)||'',liste:[]};
+  const l=t.auftritte.filter(a=>a&&/^\d{4}-\d{2}-\d{2}$/.test(String(a.date||''))).slice();
+  l.sort((a,b)=>a.date<b.date?1:a.date>b.date?-1:0);
+  return {name:t.name||'',liste:l};
+}
+function bstKandidat(sym){if(!(CANDIDATES&&Array.isArray(CANDIDATES.items)))return null;const l=CANDIDATES.items;for(let i=0;i<l.length;i++)if(l[i]&&String(l[i].ticker||'').toUpperCase()===sym.toUpperCase())return l[i];return null}
+function bstJoin(p){
+  const sym=p.symbol;
+  const r=radarItem(sym),auf=bstAuftritte(sym),ea=bstEarnings(sym),ka=bstKandidat(sym),ku=bstQuote(sym);
+  const neu=!!(BST_LETZTER_BESUCH&&auf.liste.length&&auf.liste[0].date>BST_LETZTER_BESUCH);
+  const name=auf.name||(r&&r.name)||(ea.naechster&&ea.naechster.name)||(ea.letzter&&ea.letzter.name)||(ka&&ka.name)||'';
+  return {pos:p,symbol:sym,name:name,kurs:ku,radar:r,trigger:radarTopTrigger(r),
+    earn:ea,auftritte:auf.liste,neuerAuftritt:neu,kandidat:ka};
+}
+/* Sortierwert nach ADR-906 §5.3. Er wird NIE angezeigt und NIE "Score" genannt — er sortiert nur.
+   Fuer Symbole ohne Radar-Eintrag gilt radar_score = 0; es wird kein Ersatzsignal erfunden. */
+function bstRelevanz(j){
+  let r=(j.radar&&isFinite(+j.radar.score))?+j.radar.score:0;
+  if(j.pos.typ!=='beobachtung')r+=20;
+  if(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)r+=15;
+  if(j.pos.typ==='derivat')r+=10;
+  if(j.neuerAuftritt)r+=10;
+  return r;
+}
+function bstJoinAlle(){const l=bstPositionen().map(bstJoin);l.forEach(j=>{j._r=bstRelevanz(j)});l.sort((a,b)=>b._r-a._r||String(a.symbol).localeCompare(String(b.symbol)));return l}
 // Kurzbeschriftung einer Position (Derivate: Art/Richtung/Hebel als reine Stammangabe, keine Bewertung).
 function bstBadge(p){
   if(p.typ==='beobachtung')return '';
@@ -1469,14 +1579,93 @@ function bstBadge(p){
   }else if(p.stueck!=null)t.push(nv(p.stueck,p.stueck%1?2:0)+' Stück');
   return `<span class="ibadge">${escapeHtml(t.join(' · '))}</span>`;
 }
-function renderBestand(){const grid=document.getElementById('wlGrid');if(!grid)return;const pos=bstPositionen();
-  if(!pos.length){grid.innerHTML='<p class="wlempty">Noch keine Werte. Oben Symbole hinzufügen – sie bleiben in diesem Browser gespeichert.</p>';return}
-  grid.innerHTML=pos.map(p=>{const es=escapeHtml(p.symbol),eid=escapeHtml(p.id);return `<div class="wlc" data-id="${eid}" data-s="${es}"><button class="rm" data-rm="${eid}" aria-label="Position entfernen">×</button><div class="s">${es}</div>${bstBadge(p)}<div class="v" id="wlv-${eid}">…</div><div class="p" id="wlp-${eid}"></div></div>`}).join('');
-  grid.querySelectorAll('.rm').forEach(b=>b.onclick=e=>{e.stopPropagation();bstRemove(b.dataset.rm);renderBestand()});
-  grid.querySelectorAll('.wlc').forEach(c=>c.onclick=()=>wlOpen(c.dataset.s));
-  pos.forEach(async p=>{const d=await ywFetch(p.symbol);const ve=document.getElementById('wlv-'+p.id),pe=document.getElementById('wlp-'+p.id);if(!ve||!pe)return;if(d&&d.price!=null){ve.textContent=wlValFmt(d.price)+wlCur(d.cur);pe.innerHTML=(d.pct==null?'–':fp(d.pct))+'<span class="pu">Tag</span>';pe.style.color=d.pct==null?'var(--muted)':ink(d.pct,3)}else{ve.textContent='n/v';pe.textContent='Symbol prüfen';pe.style.color='var(--muted)'}});
+// Kursblock einer Zeile. OHNE Netzaufruf: quotes.json hat Vorrang, sonst der bereits geladene
+// Live-Cache; fehlt beides, bleibt die Stelle ehrlich leer (ADR-906 §4.3).
+function bstKursHTML(j){
+  const k=j.kurs;
+  if(!k)return '<div class="bk"><span class="bkna">Kurs nicht im Datensatz</span></div>';
+  const p=k.pct;
+  return `<div class="bk"><span class="bkv">${escapeHtml(wlValFmt(k.price)+wlCur(k.cur))}</span>`
+    +`<span class="bkp" style="color:${p==null?'var(--muted)':ink(p,3)}">${p==null?'–':escapeHtml(fp(p))}<span class="pu">Tag</span></span></div>`;
+}
+function bstZeileHTML(j){
+  const p=j.pos,es=escapeHtml(p.symbol),eid=escapeHtml(p.id);
+  const titel=j.name?escapeHtml(j.name):es;
+  const meta=j.name?es:'';
+  // Trigger-Text kommt anzeigefertig aus dem Feed (label + value) — nur escapen, nicht umformulieren.
+  const trg=j.trigger?`<div class="bsig">${escapeHtml(j.trigger.label)}${j.trigger.value?' · '+escapeHtml(j.trigger.value):''}</div>`:'';
+  const term=(j.earn&&j.earn.naechster)?`<div class="bterm">Zahlen ${escapeHtml(shortDate(j.earn.naechster.date+'T00:00:00'))}${j.earn.tage!=null?' · '+(j.earn.tage===0?'heute':j.earn.tage===1?'morgen':'in '+j.earn.tage+' Tagen'):''}</div>`:'';
+  const neu=j.neuerAuftritt?'<span class="bneu">Neuer Auftritt</span>':'';
+  return `<div class="bstrow" data-id="${eid}" data-s="${es}" role="button" tabindex="0">`
+    +`<button class="rm" data-rm="${eid}" aria-label="Position entfernen">×</button>`
+    +`<div class="bl"><div class="bt">${titel}${neu}</div><div class="bm">${meta?escapeHtml(meta)+' ':''}${bstBadge(p)}</div>${trg}${term}</div>`
+    +bstKursHTML(j)+`</div>`;
+}
+function renderBestand(){
+  const grid=document.getElementById('wlGrid');if(!grid)return;
+  const joins=bstJoinAlle();
+  if(!joins.length){grid.innerHTML='<p class="wlempty">Noch keine Werte. Oben Symbole hinzufügen – sie bleiben in diesem Browser gespeichert.</p>';bstKurseLeiste([]);return}
+  grid.innerHTML=joins.map(bstZeileHTML).join('');
+  grid.querySelectorAll('.rm').forEach(b=>b.onclick=e=>{e.stopPropagation();bstRemove(b.dataset.rm);renderBestand();renderFokus()});
+  grid.querySelectorAll('.bstrow').forEach(c=>{
+    const go=()=>wlOpen(c.dataset.s);
+    c.onclick=go;c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}};
+  });
+  bstKurseLeiste(joins.filter(j=>!j.kurs).map(j=>j.symbol));
+}
+/* Live-Kurse NUR auf ausdrueckliche Nutzeraktion (ADR-906 §4.3): kein Prefetch ueber die
+   Bestandsliste beim Seitenaufruf. Der Knopf sagt vorher, was passiert — die Symbole gehen dabei
+   ueber oeffentliche CORS-Proxys (Datenschutzhinweis Abschnitt 3). */
+function bstKurseLeiste(fehlend){
+  const box=document.getElementById('bstKurse');if(!box)return;
+  if(!fehlend.length){box.innerHTML='';return}
+  box.innerHTML=`<div class="bstkurse"><span>${fehlend.length===1?'Für 1 Wert liegt kein Kurs im Datensatz.':'Für '+fehlend.length+' Werte liegt kein Kurs im Datensatz.'}</span><button type="button" id="bstKurseBtn">Kurse jetzt laden</button></div>`;
+  const b=document.getElementById('bstKurseBtn');
+  if(b)b.onclick=async()=>{
+    b.disabled=true;b.textContent='Lädt …';
+    for(let i=0;i<fehlend.length;i++){try{await ywFetch(fehlend[i])}catch(e){}}
+    renderBestand();renderFokus();
+  };
 }
 async function wlOpen(sym){let d=WLCACHE[sym];if(!d)d=await ywFetch(sym);if(!d||!d.candles||!d.candles.length)return;openStock({t:sym,n:sym,p:d.pct,pp:d.pctPer,pf:d.perFrom,candles:{d1:d.candles}})}
+/* „Dein Fokus" — Auswahl, keine Bewertung (ADR-906 §5): gezeigt werden Ereignis, Ursache, Termin
+   und Historie. Kein Sortierwert, keine Handlungsaussage, keine Gewinn-/Verlustaussage. */
+function bstHatEreignis(j){return !!(j.trigger||(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)||j.neuerAuftritt)}
+function fokusKarteHTML(j){
+  const es=escapeHtml(j.symbol),titel=j.name?escapeHtml(j.name):es;
+  const zeilen=[];
+  if(j.trigger)zeilen.push(escapeHtml(j.trigger.label)+(j.trigger.value?' · '+escapeHtml(j.trigger.value):''));
+  if(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)zeilen.push('Zahlen '+(j.earn.tage===0?'heute':j.earn.tage===1?'morgen':'in '+j.earn.tage+' Tagen'));
+  if(j.neuerAuftritt&&j.auftritte.length)zeilen.push('Neu im Briefing vom '+escapeHtml(shortDate(j.auftritte[0].date+'T00:00:00')));
+  const k=j.kurs;
+  const kurs=k?`<span class="fkp" style="color:${k.pct==null?'var(--muted)':ink(k.pct,3)}">${k.pct==null?'–':escapeHtml(fp(k.pct))}<span class="pu">Tag</span></span>`:'';
+  return `<div class="fokuskarte" data-s="${es}" role="button" tabindex="0"><div class="fkh"><span class="fkt">${titel}</span>${kurs}</div>`
+    +`<div class="fkm">${j.name?es+' · ':''}${escapeHtml(BST_TYP[j.pos.typ]||j.pos.typ)}</div>`
+    +zeilen.map(z=>`<div class="fkz">${z}</div>`).join('')+`</div>`;
+}
+function renderFokus(){
+  const box=document.getElementById('fokusBody');if(!box)return;
+  const joins=bstJoinAlle();
+  if(!joins.length){
+    box.innerHTML='<div class="fokusleer"><p>Hinterlege deine Werte – danach steht hier, bei welchem davon gerade etwas passiert, warum, und wann Zahlen kommen.</p>'
+      +'<p class="bstnote">Drei Beispiele zum Ausprobieren (Format, keine Empfehlung):</p>'
+      +'<div class="fokuschips"><button type="button" class="fpill" data-add="AAPL">AAPL</button><button type="button" class="fpill" data-add="SAP.DE">SAP.DE</button><button type="button" class="fpill" data-add="^GDAXI">^GDAXI</button></div>'
+      +'<p class="bstnote">Eine bestehende TradingView-Liste kannst du unter „Analysen → Mein Bestand" als Ganzes einfügen (NASDAQ:AAPL, …).</p></div>';
+    box.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>{
+      const s=bstNormEingabe(b.dataset.add);
+      if(s&&!bstPositionen().some(p=>p.symbol===s&&p.typ==='beobachtung'))bstAdd({id:bstNextId(bstLoad()),symbol:s,typ:'beobachtung',added_at:bstToday()});
+      renderFokus();renderBestand();bstLoadFeeds();
+    });
+    return;
+  }
+  const mit=joins.filter(bstHatEreignis);
+  const top=(mit.length?mit:joins).slice(0,3);
+  const zeile=mit.length
+    ? 'Betrifft '+mit.length+' von '+joins.length+(joins.length===1?' hinterlegten Wert':' hinterlegten Werten')+'.'
+    : (joins.length===1?'Zu deinem hinterlegten Wert liegt heute kein Ereignis vor.':'Zu deinen '+joins.length+' hinterlegten Werten liegt heute kein Ereignis vor.');
+  box.innerHTML=`<p class="fokuszeile">${escapeHtml(zeile)}</p><div class="fokusgrid">${top.map(fokusKarteHTML).join('')}</div>`;
+  box.querySelectorAll('.fokuskarte').forEach(c=>{const go=()=>wlOpen(c.dataset.s);c.onclick=go;c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}}});
+}
 function bstVal(id){const e=document.getElementById(id);return e?e.value:''}
 function bstSetMsg(el,text,cls){const e=document.getElementById(el);if(!e)return;e.textContent=text||'';e.className='bstmsg'+(cls?' '+cls:'')}
 function bstResetForm(){['bstStueck','bstEinstand','bstWaehrung','bstHebel','bstKO','bstWkn'].forEach(id=>{const e=document.getElementById(id);if(e)e.value=''});['bstArt','bstRichtung'].forEach(id=>{const e=document.getElementById(id);if(e)e.value=''})}
@@ -1504,7 +1693,7 @@ function bstAddInput(){
   if(schlecht.length)teil.push('Nicht übernommen (ungültiges Symbol): '+schlecht.join(', ')+'.');
   bstSetMsg('bstMsg',teil.join(' '),schlecht.length?'err':(ok?'ok':''));
   if(ok){inp.value='';bstResetForm()}
-  renderBestand();
+  renderBestand();renderFokus();if(ok)bstLoadFeeds();
 }
 function initBestand(){
   const add=document.getElementById('bstAdd'),inp=document.getElementById('bstSym'),typ=document.getElementById('bstTyp');
@@ -1523,9 +1712,11 @@ function initBestand(){
     const r=bstImportCode(ta.value);
     if(!r.ok){bstSetMsg('bstIoMsg',r.fehler,'err');return}
     bstSetMsg('bstIoMsg',r.uebernommen+' Positionen übernommen'+(r.verworfen?', '+r.verworfen+' verworfen (passen nicht ins Modell)':'')+'.',r.verworfen?'err':'ok');
-    renderBestand();
+    renderBestand();renderFokus();bstLoadFeeds();
   };
-  bstSyncTyp();renderBestand();
+  // Fuer "neuer Auftritt seit letztem Besuch" (ADR-906 §5.3): erst lesen, dann fuer heute markieren.
+  BST_LETZTER_BESUCH=bstBesuchLesen();bstBesuchSchreiben();
+  bstSyncTyp();renderBestand();renderFokus();
 }
 // ===== Quartalszahlen (ADR-901/902): Kalender (earnings.json) + Nachlese (earnings-recap.json) =====
 // Blind auf Contract v0.9. earnings-recap.json-Schema folgt im Contract noch (ADR-902) → defensiv gegen
