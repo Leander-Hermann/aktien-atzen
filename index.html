@@ -218,6 +218,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .wlc .s{font-size:14.5px;font-weight:700;letter-spacing:-.01em}
   .wlc .v{font-size:19px;font-weight:700;margin-top:6px;letter-spacing:-.015em;line-height:1.2}
   .wlc .p{font-size:12.5px;font-weight:700;margin-top:2px}
+  .wlc .p .pu{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);margin-left:5px}
   .wlc .rm{position:absolute;top:8px;right:8px;width:24px;height:24px;border:none;background:var(--chip);color:var(--muted);border-radius:50%;font-size:14.5px;cursor:pointer;line-height:1;transition:opacity var(--dur-fast)}
   .wlempty{color:var(--muted);font-size:14.5px}
   /* --- Video-Kalender + Themen-Expand (ADR-020/021) --- */
@@ -534,7 +535,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   <div class="topicnav hidden" id="vidChanBar" style="margin-top:8px"></div>
   <div id="videoBriefings" style="margin-top:14px"></div>
   <div class="sec"><h2>Meine Watchlist</h2></div>
-  <p style="color:var(--muted);font-size:12.5px;margin:0 0 12px">Lokal in deinem Browser gespeichert – jeder Besucher hat seine eigene. Symbole wie AAPL, NVDA, SAP.DE eingeben, oder einen TradingView-Export (NASDAQ:AAPL, …) einfügen. Live-Kurse über Yahoo.</p>
+  <p style="color:var(--muted);font-size:12.5px;margin:0 0 12px">Lokal in deinem Browser gespeichert – jeder Besucher hat seine eigene. Symbole wie AAPL, NVDA, SAP.DE eingeben, oder einen TradingView-Export (NASDAQ:AAPL, …) einfügen. Live-Kurse über Yahoo; der Prozentwert „Tag“ ist die Veränderung zum vorherigen Tagesschluss.</p>
   <div class="wlbar"><input id="wlInput" placeholder="Symbol(e) hinzufügen, z. B. AAPL, NVDA, SAP.DE"><button id="wlAdd">Hinzufügen</button></div>
   <div class="wlgrid" id="wlGrid"></div>
  </div>
@@ -734,6 +735,9 @@ function hexA(h,a){h=String(h).replace('#','');if(h.length===3)h=h.split('').map
 function tint(p,cap){const d=isDark(),m=Math.min(Math.abs(p)/(cap||2.5),1);if(p>=0)return d?`hsl(155 ${26+m*18}% ${14+m*11}%)`:`hsl(155 ${28+m*20}% ${96-m*17}%)`;return d?`hsl(9 ${30+m*22}% ${16+m*11}%)`:`hsl(9 ${34+m*22}% ${96-m*15}%)`}
 function ink(p,cap){const d=isDark(),m=Math.min(Math.abs(p)/(cap||2.5),1);if(d)return p>=0?`hsl(155 48% ${68+m*12}%)`:`hsl(9 64% ${70+m*10}%)`;return p>=0?`hsl(156 45% ${27-m*6}%)`:`hsl(9 48% ${35-m*8}%)`}
 function fp(p){return (p>=0?"+":"")+(+p).toFixed(2)+" %"}
+// Prozentwerte tragen IMMER ihren Bezugszeitraum (Contract: "%-Anzeige = Vortag (gekennzeichnet)").
+function fpLab(p,lab){return (p==null||!isFinite(p))?'–':fp(p)+(lab?' '+lab:'')}
+function perLabel(fromTs){if(!fromTs)return 'Zeitraum';try{return 'seit '+shortDate(fromTs*1000)}catch(e){return 'Zeitraum'}}
 function escapeHtml(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function safeUrl(u){u=String(u==null?'':u).trim();if(/[\u0000-\u001F\u007F<>"'`\\]/.test(u))return '';try{return new URL(u).protocol==='https:'?u:''}catch(e){return ''}}
 function safeLink(u,label,extra){const h=safeUrl(u),t=escapeHtml(label==null?'':label);return h?`<a href="${h}" target="_blank" rel="noopener noreferrer"${extra||''}>${t}</a>`:t}
@@ -763,10 +767,10 @@ function indices(){const day=mkt(),g=document.getElementById('idx');g.innerHTML=
 function mrow(m){const k=ink(m.p,8);return `<div class="mvrow" style="background:${tint(m.p,8)}"><div><div class="t" style="color:${k}">${escapeHtml(m.t)}</div><div class="n" style="color:${k}">${escapeHtml(m.n||'')}</div></div><div class="p" style="color:${k}">${fp(m.p)}</div></div>`}
 // Mover anklickbar → Chart wie bei Watchlist/Meistgehandelt. Hat der Eintrag (Meistgehandelt)
 // bereits Kerzen, direkt öffnen; sonst (Gewinner/Verlierer) on-demand von Yahoo nachladen (ADR-025: Ticker als Symbol).
-function mvOpen(el,m){if(el.dataset.busy)return;if(m.candles&&m.candles.d1&&m.candles.d1.length){openStock(m);return}if(!m.t)return;el.dataset.busy='1';el.classList.add('mvloading');ywFetch(m.t).then(d=>{el.classList.remove('mvloading');delete el.dataset.busy;if(d&&d.candles&&d.candles.length)openStock({t:m.t,n:m.n||m.t,p:(m.p!=null?m.p:(d.pct||0)),candles:{d1:d.candles}})}).catch(()=>{el.classList.remove('mvloading');delete el.dataset.busy})}
+function mvOpen(el,m){if(el.dataset.busy)return;if(m.candles&&m.candles.d1&&m.candles.d1.length){openStock(m);return}if(!m.t)return;el.dataset.busy='1';el.classList.add('mvloading');ywFetch(m.t).then(d=>{el.classList.remove('mvloading');delete el.dataset.busy;if(d&&d.candles&&d.candles.length)openStock({t:m.t,n:m.n||m.t,p:(m.p!=null?m.p:d.pct),pp:d.pctPer,pf:d.perFrom,candles:{d1:d.candles}})}).catch(()=>{el.classList.remove('mvloading');delete el.dataset.busy})}
 function mvEl(m){const d=document.createElement('div');d.innerHTML=mrow(m);const el=d.firstElementChild;el.classList.add('clk');el.onclick=()=>mvOpen(el,m);return el}
 // ADR-701: Klick auf Name/Chip mit validem Ticker → On-Site-Kurs-Chart (Mover-Muster: ywFetch + Loading + graceful Fallback, kein Overlay-Crash).
-function openTicker(el,ticker,name,levels){const tk=validTicker(ticker);if(!tk)return;if(el&&el.dataset.busy)return;if(el){el.dataset.busy='1';el.classList.add('mvloading')}ywFetch(tk).then(d=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}if(d&&d.candles&&d.candles.length)openStock({t:tk,n:name||tk,p:d.pct||0,candles:{d1:d.candles}},levels)}).catch(()=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}})}
+function openTicker(el,ticker,name,levels){const tk=validTicker(ticker);if(!tk)return;if(el&&el.dataset.busy)return;if(el){el.dataset.busy='1';el.classList.add('mvloading')}ywFetch(tk).then(d=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}if(d&&d.candles&&d.candles.length)openStock({t:tk,n:name||tk,p:d.pct,pp:d.pctPer,pf:d.perFrom,candles:{d1:d.candles}},levels)}).catch(()=>{if(el){el.classList.remove('mvloading');delete el.dataset.busy}})}
 // Verdrahtet alle klickbaren Werte (Themen-Chips + Item-Kopf-Namen) in scope auf den Chart-Pfad (Tastatur + Maus).
 function wireTopicChips(scope){if(!scope)return;scope.querySelectorAll('.vtchip-lnk,.vname-lnk').forEach(el=>{const go=e=>{e.stopPropagation();openTicker(el,el.dataset.tk,el.dataset.nm)};el.onclick=go;el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go(e)}}})}
 // Kerzen für Gewinner/Verlierer im Hintergrund vorladen → Klick öffnet den Chart aus dem Cache (sofort).
@@ -1058,7 +1062,7 @@ function buildFG(days){const cont=document.getElementById('fglw');cont.innerHTML
 function closeFG(){document.getElementById('fgOverlay').classList.remove('open');if(fgChart){fgChart.remove();fgChart=null}}
 document.querySelectorAll('#fgseg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#fgseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(fgChart){fgChart.remove();fgChart=null}buildFG(+b.dataset.d)});
 document.getElementById('fgOverlay').addEventListener('click',e=>{if(e.target.id==='fgOverlay')closeFG()});
-function openStock(a,levels){if(!a||!a.candles||!a.candles.d1||!a.candles.d1.length)return;stkIx=a;stkLevels=(levels&&typeof levels==='object')?levels:null;document.getElementById('stkTitle').textContent=a.n||a.t;document.getElementById('stkSub').textContent=a.t+' · '+fp(a.p);document.querySelectorAll('#stkseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='90'));document.getElementById('stkOverlay').classList.add('open');setTimeout(()=>buildStk(90),30)}
+function openStock(a,levels){if(!a||!a.candles||!a.candles.d1||!a.candles.d1.length)return;stkIx=a;stkLevels=(levels&&typeof levels==='object')?levels:null;document.getElementById('stkTitle').textContent=a.n||a.t;document.getElementById('stkSub').textContent=a.t+' · '+fpLab(a.p,'Tag')+(a.pp!=null?' · '+fpLab(a.pp,perLabel(a.pf)):'');document.querySelectorAll('#stkseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='90'));document.getElementById('stkOverlay').classList.add('open');setTimeout(()=>buildStk(90),30)}
 function buildStk(days){const cont=document.getElementById('stklw');cont.innerHTML='';stkChart=LightweightCharts.createChart(cont,chartOpts(cont,360));const cUp=tok('--up'),cDn=tok('--down');const s=stkChart.addCandlestickSeries({upColor:cUp,downColor:cDn,wickUpColor:cUp,wickDownColor:cDn,borderVisible:false});let data=stkIx.candles.d1;if(days){const cut=Math.floor(Date.now()/1000)-days*86400;const f=data.filter(c=>c.time>=cut);if(f.length)data=f}s.setData(data);applyStkLevels(stkChart,s,stkLevels);stkChart.timeScale().fitContent()}
 function closeStk(){document.getElementById('stkOverlay').classList.remove('open');if(stkChart){stkChart.remove();stkChart=null}}
 document.querySelectorAll('#stkseg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#stkseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(stkChart){stkChart.remove();stkChart=null}buildStk(+b.dataset.d)});
@@ -1276,8 +1280,16 @@ function ywFetch(sym){
         const j=await r.json(),res=j.chart&&j.chart.result&&j.chart.result[0];if(!res)continue;
         const meta=res.meta||{},ts=res.timestamp||[],q=((res.indicators&&res.indicators.quote)||[{}])[0]||{};
         const candles=[];for(let i=0;i<ts.length;i++){const o=q.open&&q.open[i],h=q.high&&q.high[i],l=q.low&&q.low[i],c=q.close&&q.close[i];if(o==null||h==null||l==null||c==null)continue;candles.push({time:ts[i],open:+(+o).toFixed(2),high:+(+h).toFixed(2),low:+(+l).toFixed(2),close:+(+c).toFixed(2),volume:(q.volume&&q.volume[i])||0})}
-        let price=meta.regularMarketPrice;if(price==null&&candles.length)price=candles[candles.length-1].close;let prev=meta.chartPreviousClose||meta.previousClose;if(prev==null&&candles.length>1)prev=candles[candles.length-2].close;
-        const pct=(price!=null&&prev)?(price-prev)/prev*100:0;const out={sym,price,pct,candles,cur:meta.currency||''};WLCACHE[sym]=out;return out;
+        let price=meta.regularMarketPrice;if(price==null&&candles.length)price=candles[candles.length-1].close;
+        // Tagesmove AUSSCHLIESSLICH aus den letzten zwei Kerzen (Bug-Log 03.08.): Yahoos
+        // meta.chartPreviousClose ist der Schluss VOR dem Beginn des angefragten range (hier 1y),
+        // also NICHT der Vortagesschluss; meta.previousClose fehlt in dieser Antwort ganz. Genau so
+        // leitet radar.py den Tagesmove ab. pctPer ist getrennt die Veraenderung ueber den geladenen
+        // Zeitraum — jede Prozentzahl wird mit ihrem Bezugszeitraum beschriftet.
+        const n=candles.length;
+        const pct=(n>1&&candles[n-2].close)?(candles[n-1].close-candles[n-2].close)/candles[n-2].close*100:null;
+        const pctPer=(n>1&&candles[0].close)?(candles[n-1].close-candles[0].close)/candles[0].close*100:null;
+        const out={sym,price,pct,pctPer,perFrom:n>1?candles[0].time:null,candles,cur:meta.currency||''};WLCACHE[sym]=out;return out;
       }catch(e){}
     }
     return null;
@@ -1290,9 +1302,9 @@ function renderWatchlist(){const grid=document.getElementById('wlGrid');if(!grid
   grid.innerHTML=syms.map(s=>{const id=s.replace(/[^A-Z0-9]/g,'_'),es=escapeHtml(s);return `<div class="wlc" data-s="${es}"><button class="rm" data-rm="${es}">×</button><div class="s">${es}</div><div class="v" id="wlv-${id}">…</div><div class="p" id="wlp-${id}"></div></div>`}).join('');
   grid.querySelectorAll('.rm').forEach(b=>b.onclick=e=>{e.stopPropagation();wlRemove(b.dataset.rm)});
   grid.querySelectorAll('.wlc').forEach(c=>c.onclick=()=>wlOpen(c.dataset.s));
-  syms.forEach(async s=>{const d=await ywFetch(s);const id=s.replace(/[^A-Z0-9]/g,'_'),ve=document.getElementById('wlv-'+id),pe=document.getElementById('wlp-'+id);if(!ve)return;if(d&&d.price!=null){ve.textContent=wlValFmt(d.price)+wlCur(d.cur);pe.textContent=fp(d.pct);pe.style.color=ink(d.pct,3)}else{ve.textContent='n/v';pe.textContent='Symbol prüfen';pe.style.color='var(--muted)'}});
+  syms.forEach(async s=>{const d=await ywFetch(s);const id=s.replace(/[^A-Z0-9]/g,'_'),ve=document.getElementById('wlv-'+id),pe=document.getElementById('wlp-'+id);if(!ve)return;if(d&&d.price!=null){ve.textContent=wlValFmt(d.price)+wlCur(d.cur);pe.innerHTML=(d.pct==null?'–':fp(d.pct))+'<span class="pu">Tag</span>';pe.style.color=d.pct==null?'var(--muted)':ink(d.pct,3)}else{ve.textContent='n/v';pe.textContent='Symbol prüfen';pe.style.color='var(--muted)'}});
 }
-async function wlOpen(sym){let d=WLCACHE[sym];if(!d)d=await ywFetch(sym);if(!d||!d.candles||!d.candles.length)return;openStock({t:sym,n:sym,p:d.pct||0,candles:{d1:d.candles}})}
+async function wlOpen(sym){let d=WLCACHE[sym];if(!d)d=await ywFetch(sym);if(!d||!d.candles||!d.candles.length)return;openStock({t:sym,n:sym,p:d.pct,pp:d.pctPer,pf:d.perFrom,candles:{d1:d.candles}})}
 function initWatchlist(){const add=document.getElementById('wlAdd'),inp=document.getElementById('wlInput');if(add)add.onclick=wlAddInput;if(inp)inp.addEventListener('keydown',e=>{if(e.key==='Enter')wlAddInput()});renderWatchlist()}
 // ===== Quartalszahlen (ADR-901/902): Kalender (earnings.json) + Nachlese (earnings-recap.json) =====
 // Blind auf Contract v0.9. earnings-recap.json-Schema folgt im Contract noch (ADR-902) → defensiv gegen
