@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-05T04:20:29.420755Z",
+  "generated_at": "2026-08-05T05:20:33.310096Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -54,7 +54,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -71,15 +71,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Palantir mit starker Bewegung nach Earnings-Termin",
-    "why_now": "Die Palantir-Aktie liegt bei 162,75 USD und ist heute um 29,53 % gestiegen; zugleich lag das Handelsvolumen beim 3,8-Fachen des Durchschnitts. Ursache unklar. Der Earnings-Termin vor 2 Tagen dürfte im Zusammenhang mit der Bewegung stehen; die erhöhte Aktivität könnte auf eine Reaktion nach den Ergebnissen hindeuten.",
+    "headline": "Palantir nach Earnings deutlich höher",
+    "why_now": "Die Palantir-Aktie liegt bei 162,75 USD und ist um 29,53 % gestiegen. Das Handelsvolumen beträgt das 3,8-Fache des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen; zugleich notiert der S&P 500 Future 2,2 % höher. Ursache unklar.",
     "watch_next": [
-     "Weitere Kursbewegung",
+     "Kursbewegung",
      "Handelsvolumen",
-     "Reaktion nach dem Earnings-Termin"
+     "S&P 500 Future"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-05T03:20:38.092191Z"
+    "generated_at": "2026-08-05T05:20:33.310096Z"
    }
   },
   {
@@ -87,7 +87,7 @@
    "name": "Zalando",
    "score": 100,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -128,15 +128,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Zalando mit deutlichem Kursrückgang bei hohem Volumen",
-    "why_now": "Die Zalando-Aktie fällt um 13,4 % auf 25,22 EUR. Gleichzeitig liegt das Handelsvolumen beim 6,7-Fachen des Durchschnitts. Der Earnings-Termin war gestern und könnte im zeitlichen Zusammenhang mit der Bewegung stehen. Ursache unklar.",
+    "headline": "Zalando nach Earnings deutlich unter Druck",
+    "why_now": "Die Zalando-Aktie fällt um 13,4 %, begleitet von einem Handelsvolumen in Höhe des 6,7-Fachen des Durchschnitts. Der Earnings-Termin war gestern; der zeitliche Zusammenhang könnte die auffällige Bewegung erklären. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
+     "Weitere Kursentwicklung nach dem Earnings-Termin",
+     "Entwicklung des Handelsvolumens",
+     "Neue Unternehmensmeldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-05T00:20:33.850270Z"
+    "generated_at": "2026-08-05T05:20:33.310096Z"
    }
   },
   {
@@ -144,7 +144,7 @@
    "name": "Deutsche Lufthansa",
    "score": 100,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -185,15 +185,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Lufthansa fällt bei ungewöhnlich hohem Volumen",
-    "why_now": "Die Lufthansa-Aktie verlor 8,23 % auf 8,48 EUR. Gleichzeitig lag das Handelsvolumen beim 7,1-Fachen des Durchschnitts. Der Earnings-Termin war gestern, was als möglicher Auslöser der Bewegung infrage kommt. Ursache unklar.",
+    "headline": "Lufthansa nach Earnings mit deutlichem Kursrückgang",
+    "why_now": "Die Lufthansa-Aktie gab um 8,2 % nach, begleitet von einem Volumen von 7,1× des Durchschnitts. Die Bewegung erfolgte zeitlich nahe am Earnings-Termin gestern und dürfte damit zusammenhängen. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung nach dem Earnings-Termin",
      "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
+     "Weitere Unternehmensmeldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-05T00:20:33.850270Z"
+    "generated_at": "2026-08-05T05:20:33.310096Z"
    }
   },
   {
@@ -224,7 +224,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -279,7 +279,7 @@
    "name": "Bayer",
    "score": 80,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -308,7 +308,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -353,7 +353,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -392,7 +392,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -431,7 +431,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -470,7 +470,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -509,7 +509,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -582,7 +582,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -627,7 +627,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -738,7 +738,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ],
@@ -766,7 +766,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ]
@@ -787,7 +787,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ]
@@ -808,7 +808,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,1 %",
+     "value": "S&P 500 Future +2,2 %",
      "weight": 5
     }
    ]
