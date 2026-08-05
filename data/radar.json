@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-05T06:20:30.059250Z",
+  "generated_at": "2026-08-05T07:20:25.925186Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -30,13 +30,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+29,6 %",
+     "value": "+29,4 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,8× Durchschnitt",
+     "value": "4,8× Durchschnitt",
      "weight": 25
     },
     {
@@ -53,10 +53,10 @@
     }
    ],
    "quote": {
-    "price": 162.75,
-    "pct": 29.53,
+    "price": 162.66,
+    "pct": 29.45,
     "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    },
    "earnings": {
     "date": "2026-08-03",
@@ -66,142 +66,34 @@
    "llm": {
     "status": "ready",
     "headline": "Palantir mit starker Bewegung nach Earnings-Termin",
-    "why_now": "Die Aktie liegt bei 162.75 USD und ist um 29,53 % gestiegen. Zugleich lag das Handelsvolumen beim 3,8-Fachen des Durchschnitts. Der Earnings-Termin war vor 2 Tagen, daher dürfte die Bewegung mit der Reaktion auf die Veröffentlichung zusammenhängen. Die Ursache ist damit plausibel eingegrenzt, aber nicht eindeutig belegt.",
+    "why_now": "Die Aktie liegt bei einer Kursbewegung von +29,4 % und das Handelsvolumen beträgt 4,8× des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen, was als zeitlicher Zusammenhang infrage kommt. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung nach der Earnings-Reaktion",
      "Handelsvolumen im weiteren Verlauf",
-     "Weitere Earnings-Termine"
-    ],
-    "confidence": "medium",
-    "generated_at": "2026-08-05T06:20:30.059250Z"
-   }
-  },
-  {
-   "symbol": "ZAL.DE",
-   "name": "Zalando",
-   "score": 100,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-13,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,7× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:ZAL",
-   "quote": {
-    "price": 25.22,
-    "pct": -13.36,
-    "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-04",
-    "distance_days": -1,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Zalando nach Earnings deutlich unter Druck",
-    "why_now": "Die Zalando-Aktie fällt um 13,4 %, begleitet von einem Handelsvolumen in Höhe des 6,7-Fachen des Durchschnitts. Der Earnings-Termin war gestern; der zeitliche Zusammenhang könnte die auffällige Bewegung erklären. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursentwicklung nach dem Earnings-Termin",
-     "Entwicklung des Handelsvolumens",
-     "Neue Unternehmensmeldungen"
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-05T05:20:33.310096Z"
-   }
-  },
-  {
-   "symbol": "LHA.DE",
-   "name": "Deutsche Lufthansa",
-   "score": 100,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-8,2 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "7,1× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:LHA",
-   "quote": {
-    "price": 8.48,
-    "pct": -8.23,
-    "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-04",
-    "distance_days": -1,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Lufthansa nach Earnings mit deutlichem Kursrückgang",
-    "why_now": "Die Lufthansa-Aktie gab um 8,2 % nach, begleitet von einem Volumen von 7,1× des Durchschnitts. Die Bewegung erfolgte zeitlich nahe am Earnings-Termin gestern und dürfte damit zusammenhängen. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Unternehmensmeldungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-05T05:20:33.310096Z"
+    "generated_at": "2026-08-05T07:20:25.925186Z"
    }
   },
   {
    "symbol": "AMD",
    "name": "AMD",
-   "score": 90,
+   "score": 100,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+8,7 %",
+     "value": "+7,0 %",
      "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
@@ -212,25 +104,37 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 526.93,
-    "pct": 8.73,
+    "price": 518.58,
+    "pct": 7.0,
     "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    },
    "earnings": {
     "date": "2026-08-04",
     "distance_days": -1,
     "zeit": "amc"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "AMD mit deutlichem Kursanstieg und hohem Volumen",
+    "why_now": "Die AMD-Aktie legte um 7,0 % auf 518,58 USD zu. Das Handelsvolumen lag beim 1,7-Fachen des Durchschnitts. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin am Vortag könnte eine Rolle spielen; zusätzlich wurden 2 Videos in 3 Tagen verzeichnet.",
+    "watch_next": [
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-05T07:20:25.925186Z"
    }
   },
   {
-   "symbol": "FME.DE",
-   "name": "Fresenius Medical Care",
+   "symbol": "SNAP",
+   "name": "Snap",
    "score": 80,
    "priority": "high",
    "alert_type": "large_move",
@@ -238,13 +142,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-7,6 %",
+     "value": "+14,9 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,9× Durchschnitt",
+     "value": "2,5× Durchschnitt",
      "weight": 25
     },
     {
@@ -254,57 +158,56 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:FME",
    "quote": {
-    "price": 41.46,
-    "pct": -7.58,
-    "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "price": 5.79,
+    "pct": 14.88,
+    "cur": "USD",
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Snap fällt heute durch starke Kursbewegung auf",
+    "why_now": "Die Snap-Aktie liegt bei 5,79 USD und ist um 14,88 % gestiegen. Das Handelsvolumen beträgt das 2,5-Fache des Durchschnitts. Zudem wurde in drei Tagen ein Video erwähnt, was als möglicher Aufmerksamkeitsfaktor infrage kommt. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Video-Erwähnungen beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-05T07:20:25.925186Z"
    }
   },
   {
-   "symbol": "BAYN.DE",
-   "name": "Bayer",
+   "symbol": "NVO",
+   "name": "Novo Nordisk",
    "score": 75,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,4 %",
-     "weight": 15
+     "value": "-6,0 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "4,9× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
-   "tv_symbol": "XETR:BAYN",
    "quote": {
-    "price": 48.25,
-    "pct": 2.4,
-    "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-04",
-    "distance_days": -1,
-    "zeit": "tbd"
+    "price": 44.28,
+    "pct": -5.97,
+    "cur": "USD",
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    }
   },
   {
@@ -317,13 +220,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+23,4 %",
+     "value": "+19,4 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "2,4× Durchschnitt",
      "weight": 15
     },
     {
@@ -334,15 +237,15 @@
     }
    ],
    "quote": {
-    "price": 135.58,
-    "pct": 23.02,
+    "price": 131.63,
+    "pct": 19.44,
     "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    }
   },
   {
-   "symbol": "SNAP",
-   "name": "Snap",
+   "symbol": "ICHR",
+   "name": "Ichor Holdings",
    "score": 70,
    "priority": "high",
    "alert_type": "large_move",
@@ -350,13 +253,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+12,7 %",
+     "value": "-11,2 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
+     "value": "2,5× Durchschnitt",
      "weight": 15
     },
     {
@@ -367,10 +270,10 @@
     }
    ],
    "quote": {
-    "price": 5.68,
-    "pct": 12.7,
+    "price": 71.27,
+    "pct": -11.17,
     "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    }
   },
   {
@@ -383,7 +286,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,2 %",
+     "value": "+3,1 %",
      "weight": 15
     },
     {
@@ -402,9 +305,9 @@
    "tv_symbol": "XETR:RHM",
    "quote": {
     "price": 1200.8,
-    "pct": 2.2,
+    "pct": 3.11,
     "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    },
    "earnings": {
     "date": "2026-08-06",
@@ -422,7 +325,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+7,9 %",
+     "value": "+7,6 %",
      "weight": 45
     },
     {
@@ -433,77 +336,10 @@
     }
    ],
    "quote": {
-    "price": 895.38,
-    "pct": 7.94,
+    "price": 892.67,
+    "pct": 7.62,
     "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
-   }
-  },
-  {
-   "symbol": "NVO",
-   "name": "Novo Nordisk",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-6,7 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,7× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 43.935,
-    "pct": -6.69,
-    "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
-   }
-  },
-  {
-   "symbol": "SI=F",
-   "name": "Silber",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,0 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "107,9× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "TVC:SILVER",
-   "quote": {
-    "price": 59.995,
-    "pct": 4.02,
-    "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    }
   },
   {
@@ -516,7 +352,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+3,7 %",
+     "value": "+3,4 %",
      "weight": 15
     },
     {
@@ -535,9 +371,9 @@
    "tv_symbol": "XETR:IFX",
    "quote": {
     "price": 63.72,
-    "pct": 3.66,
+    "pct": 3.36,
     "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    },
    "earnings": {
     "date": "2026-08-05",
@@ -546,8 +382,8 @@
    }
   },
   {
-   "symbol": "ENR.DE",
-   "name": "Siemens Energy",
+   "symbol": "BAYN.DE",
+   "name": "Bayer",
    "score": 60,
    "priority": "medium",
    "alert_type": "post_earnings_reaction",
@@ -555,46 +391,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,3 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:ENR",
-   "quote": {
-    "price": 150.86,
-    "pct": 2.25,
-    "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-05",
-    "distance_days": 0,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "CON.DE",
-   "name": "Continental",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
+     "value": "-2,7 %",
      "weight": 15
     },
     {
@@ -610,12 +407,12 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:CON",
+   "tv_symbol": "XETR:BAYN",
    "quote": {
-    "price": 71.24,
-    "pct": -1.55,
+    "price": 48.25,
+    "pct": -2.73,
     "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    },
    "earnings": {
     "date": "2026-08-04",
@@ -624,17 +421,101 @@
    }
   },
   {
-   "symbol": "ICHR",
-   "name": "Ichor Holdings",
-   "score": 55,
+   "symbol": "LHA.DE",
+   "name": "Deutsche Lufthansa",
+   "score": 60,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-11,7 %",
-     "weight": 45
+     "value": "+2,1 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:LHA",
+   "quote": {
+    "price": 8.48,
+    "pct": 2.1,
+    "cur": "EUR",
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-04",
+    "distance_days": -1,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "ZAL.DE",
+   "name": "Zalando",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:ZAL",
+   "quote": {
+    "price": 25.22,
+    "pct": 0.55,
+    "cur": "EUR",
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-04",
+    "distance_days": -1,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "LLY",
+   "name": "Eli Lilly",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -644,24 +525,29 @@
     }
    ],
    "quote": {
-    "price": 70.84,
-    "pct": -11.7,
+    "price": 1115.68,
+    "pct": -0.51,
     "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-05",
+    "distance_days": 0,
+    "zeit": "tbd"
    }
   },
   {
-   "symbol": "BZ=F",
-   "name": "Ölpreis",
-   "score": 50,
+   "symbol": "ENR.DE",
+   "name": "Siemens Energy",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,4 %",
-     "weight": 30
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -670,46 +556,17 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "TVC:UKOIL",
+   "tv_symbol": "XETR:ENR",
    "quote": {
-    "price": 79.25,
-    "pct": -5.4,
-    "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
-   }
-  },
-  {
-   "symbol": "ELG.DE",
-   "name": "Elmos Semiconductor",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,9 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:ELG",
-   "quote": {
-    "price": 143.2,
-    "pct": -3.89,
+    "price": 150.86,
+    "pct": 0.94,
     "cur": "EUR",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-05",
+    "distance_days": 0,
+    "zeit": "tbd"
    }
   },
   {
@@ -722,13 +579,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,7 %",
+     "value": "+3,2 %",
      "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "18,7× Durchschnitt",
+     "value": "8,8× Durchschnitt",
      "weight": 25
     },
     {
@@ -740,10 +597,44 @@
    ],
    "tv_symbol": "TVC:GOLD",
    "quote": {
-    "price": 4144.6,
-    "pct": 2.75,
+    "price": 4226.3,
+    "pct": 3.2,
     "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
+   }
+  },
+  {
+   "symbol": "SI=F",
+   "name": "Silber",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,8 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "27,5× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "TVC:SILVER",
+   "quote": {
+    "price": 61.745,
+    "pct": 2.8,
+    "cur": "USD",
+    "as_of": "2026-08-05T06:33:40.132915+00:00"
    }
   }
  ]
