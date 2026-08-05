@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-05T05:20:33.310096Z",
+  "generated_at": "2026-08-05T06:20:30.059250Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -50,12 +50,6 @@
      "label": "Video-Erwähnungen",
      "value": "3 Videos in 3 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -71,15 +65,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Palantir nach Earnings deutlich höher",
-    "why_now": "Die Palantir-Aktie liegt bei 162,75 USD und ist um 29,53 % gestiegen. Das Handelsvolumen beträgt das 3,8-Fache des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen; zugleich notiert der S&P 500 Future 2,2 % höher. Ursache unklar.",
+    "headline": "Palantir mit starker Bewegung nach Earnings-Termin",
+    "why_now": "Die Aktie liegt bei 162.75 USD und ist um 29,53 % gestiegen. Zugleich lag das Handelsvolumen beim 3,8-Fachen des Durchschnitts. Der Earnings-Termin war vor 2 Tagen, daher dürfte die Bewegung mit der Reaktion auf die Veröffentlichung zusammenhängen. Die Ursache ist damit plausibel eingegrenzt, aber nicht eindeutig belegt.",
     "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "S&P 500 Future"
+     "Kursentwicklung nach der Earnings-Reaktion",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Earnings-Termine"
     ],
-    "confidence": "low",
-    "generated_at": "2026-08-05T05:20:33.310096Z"
+    "confidence": "medium",
+    "generated_at": "2026-08-05T06:20:30.059250Z"
    }
   },
   {
@@ -199,7 +193,7 @@
   {
    "symbol": "AMD",
    "name": "AMD",
-   "score": 95,
+   "score": 90,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -220,12 +214,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -277,7 +265,7 @@
   {
    "symbol": "BAYN.DE",
    "name": "Bayer",
-   "score": 80,
+   "score": 75,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
@@ -304,12 +292,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:BAYN",
@@ -328,7 +310,7 @@
   {
    "symbol": "AAOI",
    "name": "Applied Optoeletronics",
-   "score": 75,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -349,12 +331,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -367,7 +343,7 @@
   {
    "symbol": "SNAP",
    "name": "Snap",
-   "score": 75,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -388,12 +364,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -406,7 +376,7 @@
   {
    "symbol": "RHM.DE",
    "name": "Rheinmetall",
-   "score": 75,
+   "score": 70,
    "priority": "high",
    "alert_type": "earnings_watch",
    "triggers": [
@@ -427,12 +397,6 @@
      "label": "Video-Erwähnungen",
      "value": "2 Videos in 3 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:RHM",
@@ -451,8 +415,8 @@
   {
    "symbol": "MU",
    "name": "Micron",
-   "score": 70,
-   "priority": "high",
+   "score": 65,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -466,57 +430,11 @@
      "label": "Video-Erwähnungen",
      "value": "2 Videos in 3 Tagen",
      "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "quote": {
     "price": 895.38,
     "pct": 7.94,
-    "cur": "USD",
-    "as_of": "2026-08-04T18:35:52.965594+00:00"
-   }
-  },
-  {
-   "symbol": "SI=F",
-   "name": "Silber",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,0 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "107,9× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
-    }
-   ],
-   "tv_symbol": "TVC:SILVER",
-   "quote": {
-    "price": 59.995,
-    "pct": 4.02,
     "cur": "USD",
     "as_of": "2026-08-04T18:35:52.965594+00:00"
    }
@@ -555,9 +473,43 @@
    }
   },
   {
+   "symbol": "SI=F",
+   "name": "Silber",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,0 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "107,9× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "TVC:SILVER",
+   "quote": {
+    "price": 59.995,
+    "pct": 4.02,
+    "cur": "USD",
+    "as_of": "2026-08-04T18:35:52.965594+00:00"
+   }
+  },
+  {
    "symbol": "IFX.DE",
    "name": "Infineon",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
@@ -578,12 +530,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:IFX",
@@ -602,7 +548,7 @@
   {
    "symbol": "ENR.DE",
    "name": "Siemens Energy",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
@@ -623,12 +569,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:ENR",
@@ -711,9 +651,71 @@
    }
   },
   {
+   "symbol": "BZ=F",
+   "name": "Ölpreis",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,4 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "TVC:UKOIL",
+   "quote": {
+    "price": 79.25,
+    "pct": -5.4,
+    "cur": "USD",
+    "as_of": "2026-08-04T18:35:52.965594+00:00"
+   }
+  },
+  {
+   "symbol": "ELG.DE",
+   "name": "Elmos Semiconductor",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,9 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:ELG",
+   "quote": {
+    "price": 143.2,
+    "pct": -3.89,
+    "cur": "EUR",
+    "as_of": "2026-08-04T18:35:52.965594+00:00"
+   }
+  },
+  {
    "symbol": "GC=F",
    "name": "Gold",
-   "score": 55,
+   "score": 50,
    "priority": "medium",
    "alert_type": "volume_spike",
    "triggers": [
@@ -734,12 +736,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "TVC:GOLD",
@@ -749,69 +745,6 @@
     "cur": "USD",
     "as_of": "2026-08-04T18:35:52.965594+00:00"
    }
-  },
-  {
-   "symbol": "W",
-   "name": "Wayfair Inc.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+29,6 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "ZBRA",
-   "name": "Zebra Technologies Corporation",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+23,9 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "IT",
-   "name": "Gartner, Inc.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+22,4 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,2 %",
-     "weight": 5
-    }
-   ]
   }
  ]
 }
