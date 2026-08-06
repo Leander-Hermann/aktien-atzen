@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-06T01:20:30.256920Z",
+  "generated_at": "2026-08-06T02:20:34.110185Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "FRE.DE",
    "name": "Fresenius",
-   "score": 90,
+   "score": 95,
    "priority": "high",
    "alert_type": "earnings_watch",
    "triggers": [
@@ -50,6 +50,12 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
     }
    ],
    "tv_symbol": "XETR:FRE",
@@ -66,15 +72,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Fresenius mit deutlichem Kursanstieg bei hohem Volumen",
-    "why_now": "Die Fresenius-Aktie stieg um 5,2 %, zugleich lag das Handelsvolumen beim 1,9-Fachen des Durchschnitts. Der Earnings-Termin war gestern. Die zeitliche Nähe dürfte die auffällige Bewegung plausibel erklären, ein konkreter Zusammenhang ist aus den Daten jedoch nicht belegt. Ursache unklar.",
+    "headline": "Fresenius mit deutlicher Bewegung und erhöhtem Volumen",
+    "why_now": "Die Fresenius-Aktie legte um 5,16 % auf 46,65 EUR zu; zugleich lag das Handelsvolumen beim 1,9-Fachen des Durchschnitts. Der Earnings-Termin war gestern, außerdem stieg der S&P 500 Future um 1,8 %. Ursache unklar. Die zeitliche Nähe zum Earnings-Termin und die marktbreite Bewegung könnten die auffällige Entwicklung mitgeprägt haben.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
+     "Weitere Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Entwicklung des S&P 500 Future"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-06T00:20:35.670195Z"
+    "generated_at": "2026-08-06T02:20:34.110185Z"
    }
   },
   {
@@ -131,7 +137,7 @@
   {
    "symbol": "GC=F",
    "name": "Gold",
-   "score": 75,
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -152,6 +158,12 @@
      "label": "Video-Erwähnungen",
      "value": "3 Videos in 3 Tagen",
      "weight": 20
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
     }
    ],
    "tv_symbol": "TVC:GOLD",
@@ -163,15 +175,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Gold mit starkem Tagesanstieg und ungewöhnlichem Volumen",
-    "why_now": "Gold liegt bei 4.324,0 USD und ist um 5,58 % gestiegen. Das Handelsvolumen beträgt 34,1× des Durchschnitts; zudem wurden 3 Videos in 3 Tagen erfasst. Die erhöhte Aufmerksamkeit dürfte mit der starken Bewegung zusammenhängen, belegt ist das jedoch nicht. Ursache unklar.",
+    "headline": "Gold fällt durch starke Bewegung und hohes Volumen auf",
+    "why_now": "Gold stieg um 5,6 % auf 4324,0 USD. Das Volumen lag beim 34,1-Fachen des Durchschnitts, zudem gab es 3 Video-Erwähnungen in 3 Tagen. Auch der S&P 500 Future bewegte sich mit einem Plus von 1,8 %. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung in USD",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Kursbewegung von Gold",
+     "Volumen im Vergleich zum Durchschnitt",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-06T00:20:35.670195Z"
+    "generated_at": "2026-08-06T02:20:34.110185Z"
    }
   },
   {
@@ -220,6 +232,90 @@
    }
   },
   {
+   "symbol": "SI=F",
+   "name": "Silber",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "128,9× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ],
+   "tv_symbol": "TVC:SILVER",
+   "quote": {
+    "price": 62.53,
+    "pct": 4.11,
+    "cur": "USD",
+    "as_of": "2026-08-05T18:35:45.732595+00:00"
+   }
+  },
+  {
+   "symbol": "LLY",
+   "name": "Eli Lilly",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,9 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 1159.38,
+    "pct": 3.92,
+    "cur": "USD",
+    "as_of": "2026-08-05T18:35:45.732595+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-05",
+    "distance_days": -1,
+    "zeit": "tbd"
+   }
+  },
+  {
    "symbol": "AMD",
    "name": "AMD",
    "score": 65,
@@ -258,75 +354,86 @@
    }
   },
   {
-   "symbol": "SI=F",
-   "name": "Silber",
-   "score": 65,
+   "symbol": "BKNG",
+   "name": "Booking Holdings",
+   "score": 60,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,1 %",
+     "value": "+6,6 %",
      "weight": 30
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "128,9× Durchschnitt",
-     "weight": 25
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    }
-   ],
-   "tv_symbol": "TVC:SILVER",
-   "quote": {
-    "price": 62.53,
-    "pct": 4.11,
-    "cur": "USD",
-    "as_of": "2026-08-05T18:35:45.732595+00:00"
-   }
-  },
-  {
-   "symbol": "LLY",
-   "name": "Eli Lilly",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,9 %",
-     "weight": 15
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
     }
    ],
    "quote": {
-    "price": 1159.38,
-    "pct": 3.92,
+    "price": 207.163,
+    "pct": 6.64,
     "cur": "USD",
     "as_of": "2026-08-05T18:35:45.732595+00:00"
    },
    "earnings": {
-    "date": "2026-08-05",
-    "distance_days": -1,
-    "zeit": "tbd"
+    "date": "2026-08-04",
+    "distance_days": -2,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "ANET",
+   "name": "Arista Networks",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,4 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 202.72,
+    "pct": 6.41,
+    "cur": "USD",
+    "as_of": "2026-08-05T18:35:45.732595+00:00"
    }
   },
   {
@@ -379,77 +486,6 @@
    "quote": {
     "price": 5.305,
     "pct": -8.46,
-    "cur": "USD",
-    "as_of": "2026-08-05T18:35:45.732595+00:00"
-   }
-  },
-  {
-   "symbol": "BKNG",
-   "name": "Booking Holdings",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,6 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 207.163,
-    "pct": 6.64,
-    "cur": "USD",
-    "as_of": "2026-08-05T18:35:45.732595+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-04",
-    "distance_days": -2,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "ANET",
-   "name": "Arista Networks",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,4 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 202.72,
-    "pct": 6.41,
     "cur": "USD",
     "as_of": "2026-08-05T18:35:45.732595+00:00"
    }
@@ -576,6 +612,111 @@
     "distance_days": -1,
     "zeit": "tbd"
    }
+  },
+  {
+   "symbol": "SHOP",
+   "name": "Shopify",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+19,0 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "BSP",
+   "name": "Bending Spoons S.p.A.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+17,4 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "DT",
+   "name": "Dynatrace, Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+12,0 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "GFI",
+   "name": "Gold Fields Limited",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,9 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "CRL",
+   "name": "Charles River Laboratories Inte",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,3 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
   }
  ]
 }
