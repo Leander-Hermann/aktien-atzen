@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-06T04:20:29.413351Z",
+  "generated_at": "2026-08-06T05:21:04.674348Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -25,7 +25,7 @@
    "name": "Fresenius",
    "score": 90,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -66,15 +66,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Fresenius mit starker Bewegung nach Earnings-Termin",
-    "why_now": "Die Fresenius-Aktie legte heute 5,2 % zu. Gleichzeitig lag das Handelsvolumen beim 1,9-Fachen des Durchschnitts. Earnings waren gestern; dies könnte im Zusammenhang mit der Bewegung stehen, die konkrete Ursache ist jedoch unklar. Ursache unklar.",
+    "headline": "Fresenius mit deutlicher Bewegung nach Earnings-Termin",
+    "why_now": "Die Fresenius-Aktie legte heute 5,2 % zu, begleitet von einem Volumen von 1,9× des Durchschnitts. Der Earnings-Termin vom Vortag dürfte dabei als zeitnaher möglicher Auslöser eine Rolle spielen. Ursache unklar.",
     "watch_next": [
-     "Earnings-Termin vom 2026-08-05",
-     "Handelsvolumen von 1,9× Durchschnitt",
-     "Video-Erwähnungen: 1 Video in 3 Tagen"
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-06T03:20:24.926774Z"
+    "generated_at": "2026-08-06T05:21:04.674348Z"
    }
   },
   {
@@ -82,7 +82,7 @@
    "name": "Infineon",
    "score": 85,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -118,14 +118,14 @@
    "llm": {
     "status": "ready",
     "headline": "Infineon fällt nach Earnings-Termin deutlich",
-    "why_now": "Die Infineon-Aktie liegt bei 60,08 EUR und verliert 5,71 %. Der Earnings-Termin war gestern, daher könnte die Bewegung zeitlich damit zusammenhängen. Zudem wurden in den vergangenen drei Tagen zwei Videos erwähnt. Ursache unklar.",
+    "why_now": "Infineon notiert bei 60,08 EUR und liegt 5,71 % im Minus. Der Earnings-Termin war gestern, und der Datenblock ordnet die Bewegung als Reaktion nach den Ergebnissen ein. Der zeitliche Zusammenhang dürfte die auffällige Bewegung erklären, die konkrete Ursache ist jedoch unklar. Ursache unklar.",
     "watch_next": [
-     "Weitere Kursbewegung",
-     "Neue Earnings-Informationen",
-     "Weitere Video-Erwähnungen"
+     "Weitere Kursbewegung nach dem Earnings-Termin",
+     "Neue Video-Erwähnungen",
+     "Entwicklung des Tagesverlusts"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-06T00:20:35.670195Z"
+    "generated_at": "2026-08-06T05:21:04.674348Z"
    }
   },
   {
@@ -179,7 +179,7 @@
    "name": "Deutsche Post",
    "score": 75,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
