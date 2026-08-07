@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-07T18:20:30.459392Z",
+  "generated_at": "2026-08-07T19:20:31.317816Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 136,
+  "symbols_total": 134,
   "with_quote_data": 58,
   "sources": [
    "watchlist",
@@ -21,108 +21,23 @@
  },
  "items": [
   {
-   "symbol": "FRE.DE",
-   "name": "Fresenius",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,2 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:FRE",
-   "quote": {
-    "price": 46.68,
-    "pct": 5.16,
-    "cur": "EUR",
-    "as_of": "2026-08-07T06:33:50.419981+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-05",
-    "distance_days": -2,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Fresenius nach Earnings deutlich fester",
-    "why_now": "Die Fresenius-Aktie liegt 5,2 % höher, begleitet von einem Volumen von 1,9× des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen, daher dürfte die Bewegung zeitlich damit zusammenhängen. Ursache unklar. Zusätzlich wurde Fresenius in 3 Tagen in 1 Video erwähnt.",
-    "watch_next": [
-     "Kursentwicklung nach der starken Bewegung",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-07T07:20:31.160970Z"
-   }
-  },
-  {
-   "symbol": "GC=F",
-   "name": "Gold",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,5 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "5,2× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "TVC:GOLD",
-   "quote": {
-    "price": 4347.9,
-    "pct": 2.5,
-    "cur": "USD",
-    "as_of": "2026-08-07T06:33:50.419981+00:00"
-   }
-  },
-  {
    "symbol": "ABNB",
    "name": "Airbnb",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
+   "score": 100,
+   "priority": "high",
+   "alert_type": "large_move",
    "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+15,3 %",
+     "weight": 45
+    },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
+     "value": "3,3× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "earnings_watch",
@@ -138,79 +53,148 @@
     }
    ],
    "quote": {
-    "price": 151.64,
-    "pct": -0.56,
+    "price": 174.78,
+    "pct": 15.26,
     "cur": "USD",
-    "as_of": "2026-08-07T06:33:50.419981+00:00"
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
    },
    "earnings": {
     "date": "2026-08-06",
     "distance_days": -1,
     "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,7 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:IFX",
-   "quote": {
-    "price": 60.32,
-    "pct": -5.71,
-    "cur": "EUR",
-    "as_of": "2026-08-07T06:33:50.419981+00:00"
    },
-   "earnings": {
-    "date": "2026-08-05",
-    "distance_days": -2,
-    "zeit": "tbd"
+   "llm": {
+    "status": "ready",
+    "headline": "Airbnb mit starkem Kursanstieg und hohem Volumen",
+    "why_now": "Die Airbnb-Aktie liegt bei 174,78 USD und ist um 15,3 % gestiegen. Das Handelsvolumen beträgt das 3,3-Fache des Durchschnitts. Der Earnings-Termin war gestern, daher könnte der Bericht mit der Bewegung zusammenhängen. Ursache unklar.",
+    "watch_next": [
+     "Weitere Kursbewegung",
+     "Entwicklung des Handelsvolumens",
+     "Neue Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-07T19:20:31.317816Z"
    }
   },
   {
-   "symbol": "DHL.DE",
-   "name": "Deutsche Post",
-   "score": 55,
-   "priority": "medium",
+   "symbol": "DTG.DE",
+   "name": "Daimler Truck",
+   "score": 85,
+   "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-3,7 %",
+     "value": "-2,8 %",
      "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
+     "value": "2,0× Durchschnitt",
      "weight": 15
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:DTG",
+   "quote": {
+    "price": 46.72,
+    "pct": -2.81,
+    "cur": "EUR",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-07",
+    "distance_days": 0,
+    "zeit": "tbd"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Daimler Truck fällt bei erhöhtem Handelsvolumen",
+    "why_now": "Die Aktie von Daimler Truck liegt bei 46,72 EUR und damit 2,81 % im Minus. Das Handelsvolumen beträgt das 2,0-Fache des Durchschnitts. Heute ist ein Earnings-Termin vermerkt; der zeitliche Zusammenhang könnte die Bewegung erklären. Ursache unklar.",
+    "watch_next": [
+     "Weitere Kursentwicklung",
+     "Handelsvolumen",
+     "Earnings-Termin heute"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-07T19:20:31.317816Z"
+   }
+  },
+  {
+   "symbol": "TTD",
+   "name": "The Trade Desk",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-21,6 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "6,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 13.855,
+    "pct": -21.62,
+    "cur": "USD",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "The Trade Desk fällt bei hohem Handelsvolumen deutlich",
+    "why_now": "Die Aktie von The Trade Desk liegt bei 13,855 USD und ist um 21,62 % gefallen. Das Handelsvolumen beträgt das 6,0-Fache des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar. Die Daten könnten auf eine erhöhte Aufmerksamkeit rund um den Wert hindeuten, belegen aber keinen konkreten Auslöser.",
+    "watch_next": [
+     "Kursbewegung und Handelsvolumen",
+     "Weitere Video-Erwähnungen",
+     "Neue Hinweise zum Auslöser"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-07T19:20:31.317816Z"
+   }
+  },
+  {
+   "symbol": "AAOI",
+   "name": "Applied Optoelectronics",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,1× Durchschnitt",
      "weight": 15
     },
     {
@@ -220,16 +204,253 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:DHL",
    "quote": {
-    "price": 55.3,
-    "pct": -3.71,
+    "price": 137.3,
+    "pct": 10.53,
+    "cur": "USD",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   }
+  },
+  {
+   "symbol": "SIE.DE",
+   "name": "Siemens",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,5 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:SIE",
+   "quote": {
+    "price": 279.8,
+    "pct": 2.45,
     "cur": "EUR",
-    "as_of": "2026-08-07T06:33:50.419981+00:00"
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
    },
    "earnings": {
-    "date": "2026-08-05",
-    "distance_days": -2,
+    "date": "2026-08-06",
+    "distance_days": -1,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "GC=F",
+   "name": "Gold",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,6 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "29,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "TVC:GOLD",
+   "quote": {
+    "price": 4393.9,
+    "pct": 3.58,
+    "cur": "USD",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   }
+  },
+  {
+   "symbol": "MUV2.DE",
+   "name": "Münchener Rück",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:MUV2",
+   "quote": {
+    "price": 515.4,
+    "pct": -1.38,
+    "cur": "EUR",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-07",
+    "distance_days": 0,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "AXON",
+   "name": "Axon Enterprise",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,3 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 565.96,
+    "pct": 8.33,
+    "cur": "USD",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   }
+  },
+  {
+   "symbol": "NET",
+   "name": "Cloudflare",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,0 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,1× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 298.655,
+    "pct": 5.0,
+    "cur": "USD",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   }
+  },
+  {
+   "symbol": "AMD",
+   "name": "AMD",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,1 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 3 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 478.92,
+    "pct": -2.12,
+    "cur": "USD",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-04",
+    "distance_days": -3,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "ALV.DE",
+   "name": "Allianz",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,1× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    }
+   ],
+   "tv_symbol": "XETR:ALV",
+   "quote": {
+    "price": 433.5,
+    "pct": -1.63,
+    "cur": "EUR",
+    "as_of": "2026-08-07T18:35:58.955933+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-07",
+    "distance_days": 0,
     "zeit": "tbd"
    }
   }
