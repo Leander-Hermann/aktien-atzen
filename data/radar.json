@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-08T18:20:25.192204Z",
+  "generated_at": "2026-08-08T19:20:28.085336Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -56,7 +56,7 @@
     "price": 178.07,
     "pct": 17.43,
     "cur": "USD",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
    },
    "earnings": {
     "date": "2026-08-06",
@@ -77,29 +77,29 @@
    }
   },
   {
-   "symbol": "SIE.DE",
-   "name": "Siemens",
-   "score": 90,
+   "symbol": "DTG.DE",
+   "name": "Daimler Truck",
+   "score": 85,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,5 %",
-     "weight": 30
+     "value": "-2,8 %",
+     "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
+     "value": "2,0× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
+     "value": "Earnings gestern",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -108,29 +108,29 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:SIE",
+   "tv_symbol": "XETR:DTG",
    "quote": {
-    "price": 279.8,
-    "pct": -4.49,
+    "price": 46.72,
+    "pct": -2.81,
     "cur": "EUR",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
    },
    "earnings": {
-    "date": "2026-08-06",
-    "distance_days": -2,
+    "date": "2026-08-07",
+    "distance_days": -1,
     "zeit": "tbd"
    },
    "llm": {
     "status": "ready",
-    "headline": "Siemens fällt nach Earnings-Termin deutlich",
-    "why_now": "Siemens notiert bei 279,8 EUR und liegt 4,49 % im Minus. Das Handelsvolumen beträgt 2,6× des Durchschnitts; zudem lag der Earnings-Termin vor zwei Tagen. Die zeitliche Nähe zu diesem Termin könnte mit der Bewegung zusammenhängen, die Ursache unklar.",
+    "headline": "Daimler Truck fällt bei erhöhtem Handelsvolumen",
+    "why_now": "Daimler Truck verzeichnete eine Kursbewegung von -2,8 % bei einem Handelsvolumen von 2,0× des Durchschnitts. Der Earnings-Termin war gestern. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin und das erhöhte Volumen könnten für eine Reaktion auf die Veröffentlichung sprechen.",
     "watch_next": [
-     "Kursbewegung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Verlauf",
+     "Kursentwicklung nach den Earnings gestern",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-08T07:20:27.300282Z"
+    "generated_at": "2026-08-08T19:20:28.085336Z"
    }
   },
   {
@@ -163,7 +163,7 @@
     "price": 13.8,
     "pct": -21.9,
     "cur": "USD",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
    },
    "llm": {
     "status": "ready",
@@ -208,7 +208,7 @@
     "price": 571.01,
     "pct": 9.29,
     "cur": "USD",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
    }
   },
   {
@@ -241,52 +241,7 @@
     "price": 135.63,
     "pct": 9.19,
     "cur": "USD",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
-   }
-  },
-  {
-   "symbol": "DTE.DE",
-   "name": "Deutsche Telekom",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,3 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:DTE",
-   "quote": {
-    "price": 29.04,
-    "pct": 6.31,
-    "cur": "EUR",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-06",
-    "distance_days": -2,
-    "zeit": "tbd"
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
    }
   },
   {
@@ -319,7 +274,7 @@
     "price": 300.27,
     "pct": 5.57,
     "cur": "USD",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
    }
   },
   {
@@ -346,16 +301,22 @@
     "price": 172.01,
     "pct": 10.32,
     "cur": "USD",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
    }
   },
   {
-   "symbol": "DTG.DE",
-   "name": "Daimler Truck",
-   "score": 55,
+   "symbol": "MUV2.DE",
+   "name": "Münchener Rück",
+   "score": 60,
    "priority": "medium",
    "alert_type": "earnings_watch",
    "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
@@ -365,16 +326,88 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:MUV2",
+   "quote": {
+    "price": 515.4,
+    "pct": -1.38,
+    "cur": "EUR",
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-07",
+    "distance_days": -1,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "SIE.DE",
+   "name": "Siemens",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,5 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
      "value": "2 Videos in 3 Tagen",
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:DTG",
+   "tv_symbol": "XETR:SIE",
    "quote": {
-    "price": 46.72,
-    "pct": -0.1,
+    "price": 279.8,
+    "pct": 2.45,
     "cur": "EUR",
-    "as_of": "2026-08-08T06:32:32.242743+00:00"
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-06",
+    "distance_days": -2,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "ALV.DE",
+   "name": "Allianz",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,1× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    }
+   ],
+   "tv_symbol": "XETR:ALV",
+   "quote": {
+    "price": 433.5,
+    "pct": -1.63,
+    "cur": "EUR",
+    "as_of": "2026-08-08T18:32:23.002854+00:00"
    },
    "earnings": {
     "date": "2026-08-07",
