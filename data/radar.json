@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-08T04:20:33.393726Z",
+  "generated_at": "2026-08-08T05:20:28.048680Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -81,7 +81,7 @@
    "name": "Daimler Truck",
    "score": 85,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -122,15 +122,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Daimler Truck fällt bei erhöhtem Handelsvolumen",
-    "why_now": "Die Aktie von Daimler Truck liegt bei 46,72 EUR und ist heute um 2,81 % gefallen. Das Handelsvolumen beträgt 2,0× des Durchschnitts. Der Rückgang fällt zeitlich mit dem Earnings-Termin gestern zusammen; ein Zusammenhang könnte bestehen. Ursache unklar.",
+    "headline": "Daimler Truck fällt nach Earnings-Termin auffällig",
+    "why_now": "Die Daimler-Truck-Aktie liegt bei 46,72 EUR und damit 2,81 % im Minus. Das Handelsvolumen beträgt 2,0× des Durchschnitts. Der Earnings-Termin lag gestern, daher dürfte die Bewegung zeitlich damit zusammenhängen. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung nach dem Earnings-Termin",
      "Handelsvolumen im weiteren Verlauf",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-08T00:20:37.839694Z"
+    "generated_at": "2026-08-08T05:20:28.048680Z"
    }
   },
   {
