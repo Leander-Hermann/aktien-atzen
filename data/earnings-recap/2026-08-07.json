@@ -1,8 +1,27 @@
 {
- "updated": "2026-08-08T05:01:49.087013+00:00",
+ "updated": "2026-08-09T05:01:59.754568+00:00",
  "date": "2026-08-07",
  "label": "Freitag, 07.08.2026",
  "tabelle": [
+  {
+   "ticker": "DTG.DE",
+   "name": "Daimler Truck",
+   "index": "DAX",
+   "region": "DE",
+   "branche": "Nutzfahrzeuge",
+   "periode": "",
+   "eps_est": 0.9828,
+   "eps_act": 2.1159,
+   "rev_est": 12999413750,
+   "rev_act": null,
+   "eps_surprise_pct": 115.29,
+   "rev_surprise_pct": null,
+   "ergebnis": "beat",
+   "reaktion_pct": -2.81,
+   "source": "yahoo",
+   "source_url": "https://finance.yahoo.com/quote/DTG.DE",
+   "as_of": "2026-08-09T05:01:31.816317+00:00"
+  },
   {
    "ticker": "6098.T",
    "name": "Recruit Holdings",
@@ -20,7 +39,7 @@
    "reaktion_pct": 2.49,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/6098.T",
-   "as_of": "2026-08-08T05:01:17.680101+00:00"
+   "as_of": "2026-08-09T05:01:31.816317+00:00"
   },
   {
    "ticker": "ALV.DE",
@@ -36,29 +55,10 @@
    "eps_surprise_pct": -13.87,
    "rev_surprise_pct": null,
    "ergebnis": "miss",
-   "reaktion_pct": null,
+   "reaktion_pct": -1.63,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/ALV.DE",
-   "as_of": "2026-08-08T05:01:17.680101+00:00"
-  },
-  {
-   "ticker": "DTG.DE",
-   "name": "Daimler Truck",
-   "index": "DAX",
-   "region": "DE",
-   "branche": "Nutzfahrzeuge",
-   "periode": "",
-   "eps_est": 0.9828,
-   "eps_act": 2.1159,
-   "rev_est": 12999413750,
-   "rev_act": null,
-   "eps_surprise_pct": 115.29,
-   "rev_surprise_pct": null,
-   "ergebnis": "beat",
-   "reaktion_pct": null,
-   "source": "yahoo",
-   "source_url": "https://finance.yahoo.com/quote/DTG.DE",
-   "as_of": "2026-08-08T05:01:17.680101+00:00"
+   "as_of": "2026-08-09T05:01:31.816317+00:00"
   },
   {
    "ticker": "MUV2.DE",
@@ -74,10 +74,10 @@
    "eps_surprise_pct": 74.09,
    "rev_surprise_pct": null,
    "ergebnis": "beat",
-   "reaktion_pct": null,
+   "reaktion_pct": -1.38,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/MUV2.DE",
-   "as_of": "2026-08-08T05:01:17.680101+00:00"
+   "as_of": "2026-08-09T05:01:31.816317+00:00"
   }
  ],
  "signale": []
