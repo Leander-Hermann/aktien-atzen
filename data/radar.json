@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-10T06:20:28.152605Z",
+  "generated_at": "2026-08-10T07:20:36.842153Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 114,
-  "with_quote_data": 58,
+  "symbols_total": 111,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -44,7 +44,7 @@
     "price": 13.8,
     "pct": -21.9,
     "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
+    "as_of": "2026-08-10T06:33:34.327580+00:00"
    },
    "llm": {
     "status": "ready",
@@ -83,7 +83,7 @@
     "price": 178.07,
     "pct": 17.43,
     "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
+    "as_of": "2026-08-10T06:33:34.327580+00:00"
    },
    "llm": {
     "status": "ready",
@@ -96,33 +96,6 @@
     ],
     "confidence": "low",
     "generated_at": "2026-08-10T00:20:35.431748Z"
-   }
-  },
-  {
-   "symbol": "PLTR",
-   "name": "Palantir",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 172.01,
-    "pct": 10.32,
-    "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
    }
   },
   {
@@ -149,7 +122,7 @@
     "price": 571.01,
     "pct": 9.29,
     "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
+    "as_of": "2026-08-10T06:33:34.327580+00:00"
    }
   },
   {
@@ -176,7 +149,7 @@
     "price": 135.63,
     "pct": 9.19,
     "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
+    "as_of": "2026-08-10T06:33:34.327580+00:00"
    }
   },
   {
@@ -203,7 +176,7 @@
     "price": 300.27,
     "pct": 5.57,
     "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
+    "as_of": "2026-08-10T06:33:34.327580+00:00"
    }
   }
  ]
