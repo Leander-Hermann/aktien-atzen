@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-09T23:20:30.330336Z",
+  "generated_at": "2026-08-10T00:20:35.431748Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 120,
+  "symbols_total": 114,
   "with_quote_data": 58,
   "sources": [
    "watchlist",
@@ -21,65 +21,9 @@
  },
  "items": [
   {
-   "symbol": "ABNB",
-   "name": "Airbnb",
-   "score": 95,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+17,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,4× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 178.07,
-    "pct": 17.43,
-    "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-06",
-    "distance_days": -3,
-    "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Airbnb mit deutlicher Bewegung nach Earnings-Termin",
-    "why_now": "Die Airbnb-Aktie legte um 17,43 % auf 178,07 USD zu; zugleich lag das Handelsvolumen beim 4,4-Fachen des Durchschnitts. Der Earnings-Termin liegt drei Tage zurück, was für eine Reaktion im Anschluss an die Veröffentlichung sprechen könnte. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach der starken Bewegung",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-09T00:20:25.928519Z"
-   }
-  },
-  {
    "symbol": "TTD",
    "name": "The Trade Desk",
-   "score": 80,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -94,12 +38,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "7,1× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "quote": {
@@ -110,20 +48,20 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "The Trade Desk fällt heute deutlich",
-    "why_now": "Die Aktie von The Trade Desk liegt bei 13,8 USD und damit 21,9 % im Minus. Gleichzeitig liegt das Handelsvolumen beim 7,1-Fachen des Durchschnitts. Ursache unklar. Die eine Video-Erwähnung in drei Tagen belegt keinen konkreten Auslöser.",
+    "headline": "The Trade Desk fällt bei ungewöhnlich hohem Volumen",
+    "why_now": "Die Aktie von The Trade Desk liegt bei 13,8 USD und damit 21,9 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 7,1-Fache des Durchschnitts. Ursache unklar. Das hohe Volumen könnte die starke Kursbewegung begleiten, belegt aber keinen konkreten Auslöser.",
     "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
+     "Kursentwicklung der Aktie",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Meldungen zum Unternehmen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-08T07:20:27.300282Z"
+    "generated_at": "2026-08-10T00:20:35.431748Z"
    }
   },
   {
-   "symbol": "AXON",
-   "name": "Axon Enterprise",
+   "symbol": "ABNB",
+   "name": "Airbnb",
    "score": 70,
    "priority": "high",
    "alert_type": "large_move",
@@ -131,150 +69,33 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+9,3 %",
+     "value": "+17,4 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "4,4× Durchschnitt",
+     "weight": 25
     }
    ],
    "quote": {
-    "price": 571.01,
-    "pct": 9.29,
+    "price": 178.07,
+    "pct": 17.43,
     "cur": "USD",
     "as_of": "2026-08-09T18:32:32.287708+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Axon steigt heute deutlich bei erhöhtem Volumen",
-    "why_now": "Die Aktie von Axon Enterprise legte heute um 9,29 % auf 571,01 USD zu. Das Handelsvolumen lag beim 1,9-Fachen des Durchschnitts. Zusätzlich wurde das Unternehmen in den vergangenen drei Tagen in einem Video erwähnt. Diese Faktoren könnten die auffällige Bewegung begleitet haben, die konkrete Ursache bleibt jedoch unklar.",
+    "headline": "Airbnb mit starker Kursbewegung und hohem Volumen",
+    "why_now": "Die Airbnb-Aktie liegt bei 178,07 USD und ist um 17,43 % gestiegen. Das Handelsvolumen beträgt das 4,4-Fache des Durchschnitts. Ursache unklar.",
     "watch_next": [
-     "Kursbewegung und Handelsvolumen",
-     "Weitere Video-Erwähnungen",
-     "Entwicklung der Aktie"
+     "Kursentwicklung von Airbnb",
+     "Handelsvolumen",
+     "Weitere auffällige Bewegungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-09T00:20:25.928519Z"
-   }
-  },
-  {
-   "symbol": "AAOI",
-   "name": "Applied Optoelectronics",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,2 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 135.63,
-    "pct": 9.19,
-    "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
-   }
-  },
-  {
-   "symbol": "NET",
-   "name": "Cloudflare",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,6 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,7× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 300.27,
-    "pct": 5.57,
-    "cur": "USD",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
-   }
-  },
-  {
-   "symbol": "DTG.DE",
-   "name": "Daimler Truck",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,8 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:DTG",
-   "quote": {
-    "price": 46.72,
-    "pct": -2.81,
-    "cur": "EUR",
-    "as_of": "2026-08-09T18:32:32.287708+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-07",
-    "distance_days": -2,
-    "zeit": "tbd"
+    "generated_at": "2026-08-10T00:20:35.431748Z"
    }
   },
   {
@@ -305,42 +126,84 @@
    }
   },
   {
-   "symbol": "SIE.DE",
-   "name": "Siemens",
-   "score": 50,
+   "symbol": "AXON",
+   "name": "Axon Enterprise",
+   "score": 60,
    "priority": "medium",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,5 %",
-     "weight": 15
+     "value": "+9,3 %",
+     "weight": 45
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
     }
    ],
-   "tv_symbol": "XETR:SIE",
    "quote": {
-    "price": 279.8,
-    "pct": 2.45,
-    "cur": "EUR",
+    "price": 571.01,
+    "pct": 9.29,
+    "cur": "USD",
     "as_of": "2026-08-09T18:32:32.287708+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-06",
-    "distance_days": -3,
-    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "AAOI",
+   "name": "Applied Optoelectronics",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,4× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "quote": {
+    "price": 135.63,
+    "pct": 9.19,
+    "cur": "USD",
+    "as_of": "2026-08-09T18:32:32.287708+00:00"
+   }
+  },
+  {
+   "symbol": "NET",
+   "name": "Cloudflare",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,6 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,7× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "quote": {
+    "price": 300.27,
+    "pct": 5.57,
+    "cur": "USD",
+    "as_of": "2026-08-09T18:32:32.287708+00:00"
    }
   }
  ]
