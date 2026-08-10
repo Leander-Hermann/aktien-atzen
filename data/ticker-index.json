@@ -1,6 +1,749 @@
 {
- "updated": "2026-08-09T18:32:32.287708+00:00",
+ "updated": "2026-08-10T06:33:34.327580+00:00",
  "ticker": {
+  "^GSPC": {
+   "name": "S&P 500",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=70s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der S&P 500 legte am Freitag zu und profitierte von sinkenden Zinserwartungen in den USA.",
+     "einordnung": "Der Index bleibt der zentrale Gradmesser für die globale Risikoneigung. Die positive Reaktion auf schwache Arbeitsmarktdaten zeigt, dass aktuell die Liquiditäts- und Zinsseite stärker gewichtet wird…",
+     "figures": "S&P-500-Future 7.790 Punkte (+0,13 Prozent)"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=2089s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Pfeil beim S&P 500 hat laut Egmond von seitwärts auf aufwärts gedreht. Eine kurzfristige Fortsetzung der Rekordfahrt wird erwartet.",
+     "einordnung": "Die Marktdaten bestätigen das konstruktive Momentum mit einem S&P-500-Future von 7.774 Punkten und einem Plus von 1,92 Prozent. Nach einer schnellen Erholung bleibt das Rückschlagrisiko jedoch höher,…"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "iTOUC2QhmzM",
+     "url": "https://www.youtube.com/watch?v=iTOUC2QhmzM&t=405s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Der S&P 500 zeigt nach der Fed-Sitzung eine Berg- und Talfahrt und dreht nach einer Erholung wieder ins Minus. Egmond führt die Schwäche vor allem auf fallende Chip- und KI-Aktien zurück.",
+     "einordnung": "Die leichte positive Bewegung des Futures steht im Kontrast zur im Video beschriebenen intraday schwachen Reaktion und spricht für ein nervöses, aber noch nicht eindeutig gekipptes Marktbild. Eine To…",
+     "figures": "S&P-500-Future laut Marktdaten aktuell: 7.362 Punkte, plus 0,15 Prozent"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=2005s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der S&P 500 gibt im Wochenverlauf nach, und Egmond Haidt erkennt Anzeichen einer klaren Topbildung. Eine mögliche technische Erholung soll seiner Einschätzung nach eher zum Abbau von Positionen genut…",
+     "einordnung": "Die Marktdaten zeigen beim S&P-500-Future aktuell ein Plus von 0,24 Prozent, was die kurzfristige Gegenbewegung stützt, aber die übergeordnete Warnung nicht widerlegt. Der Fear-and-Greed-Wert von 37,…",
+     "figures": "Rückgang um 1,1 Prozent im Wochenverlauf"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=480s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Der S&P 500 gibt etwas nach. Egmond sieht eine klare Topbildung und erwartet weiteren Druck.",
+     "einordnung": "Die Topbildungs-These passt zum Zusammenspiel aus hohen Bewertungen, steigenden Renditen und nachlassender Risikobereitschaft. Sie ist allerdings erst dann belastbar, wenn die Schwäche über einzelne…"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "J6gUTUPHems",
+     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=1732s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Egmond sieht beim S&P 500 weiterhin die Gefahr einer Topbildung und erwartet eine Seitwärtsbewegung.",
+     "einordnung": "Der aktuelle Future liegt mit 7.546 Punkten 0,82 Prozent im Plus, doch eine positive Tagesbewegung beseitigt die vom Host angesprochenen Zins- und Bewertungsrisiken nicht. Gerade nahe möglicher Hochs…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=1767s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Am 17. Juli steht ein Verfallstag an. Egmond warnt vor einer möglichen Topbildung und erwartet eher einen Seitwärtstrend.",
+     "einordnung": "Die Marktdaten zeigen den S&P-500-Future bei 7.597 Punkten und 0,45 Prozent im Plus, was kurzfristig stabil wirkt, aber die vom Host angesprochene Topbildungsgefahr nicht beseitigt. Nach starken Anst…"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1586s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Der S&P 500 bewegt sich seit eineinhalb Monaten seitwärts. Haidt sieht das Risiko einer Topbildung.",
+     "einordnung": "Eine 1,5-monatige Seitwärtsbewegung nach einem starken Lauf ist ein klassisches Verteilungsmuster. Wenn der Index nicht bald neue Hochs macht, droht ein charttechnischer Bruch."
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1316s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Heute kaum Veränderung, nach Rebalancing und Beruhigung der Chipaktien könnte Höhenflug weitergehen. Haidt sieht Aufwärtschancen, warnt aber vor KI-Blasenrisiko.",
+     "einordnung": "Der S&P 500 ist nach dem Rebalancing in einer interessanten Position: Die Breite könnte zunehmen, wenn das Geld von KI in zyklische Werte rotiert. Aber das Blasenrisiko im Tech-Segment ist real – Bof…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "yJiIB_gEJsI",
+     "url": "https://www.youtube.com/watch?v=yJiIB_gEJsI&t=375s",
+     "channel": "BerneckerTV",
+     "kategorie": "makro",
+     "note": "Bernecker hinterfragt die hohen US-Bewertungen und diskutiert eine mögliche Blase. Der S&P 500 hat einen Marktwert von 624 Billionen Dollar, zu 80% in amerikanischer Hand. Die starke Eigenkapitalbasi…",
+     "einordnung": "Die Frage nach einer Blase ist berechtigt, aber gefährlich: Blasen platzen meist erst, wenn der letzte Skeptiker kapituliert. Dass Bernecker eine Korrektur in 'drei Jahren' sieht, ist typisch für die…",
+     "figures": "S&P 500 Marktwert 624 Billionen Dollar; 80% Amerikaner"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=290s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Index stabilisiert sich an der 7330er-Marke (50-Tage-Linie); Ausbruch über 7676 Punkte könnte Rally beschleunigen.",
+     "einordnung": "Der S&P 500 zeigt einen klassischen gesunden Konsolidierungsverlauf an der 50-Tage-Linie — solange 7330 hält, bleibt die Aufwärtstrend-Struktur intakt. Das Goldman-Ziel von 8000 Punkten wirkt ambitio…",
+     "figures": "7330 Punkte (Unterstützung), 7620/7676 (Widerstände), 8000 Punkte (Goldman-Ziel)"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "UiGfSVJW8nk",
+     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=445s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "S&P 500 +5 Bio. USD, aber KI-Aktien allein +6 Bio. USD; alle anderen Sektoren verloren 1 Bio. USD. KI-Anteil am Index 47% (2023: 27%).",
+     "einordnung": "Das ist eine extreme Konzentration – der Index wird von einer Handvoll Mega-Cap-KI-Titel getragen, während der Rest des Marktes abverkauft wird. Das erinnert an Blasen-Phasen und birgt Risiko für Kor…",
+     "figures": "S&P 500 +5 Bio. USD; KI-Aktien +6 Bio. USD; Energie +200 Mrd. USD; andere Sektoren -1 Bio. USD; KI-Anteil 47% (2023: 27%)"
+    }
+   ]
+  },
+  "^NDX": {
+   "name": "Nasdaq",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=70s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Die Nasdaq zeigte sich am Freitag besonders fest; der Host führt dies auf sinkende Fed-Zinserwartungen zurück.",
+     "einordnung": "Die Nasdaq reagiert typischerweise überproportional auf fallende Renditen, weil ihre großen Wachstumswerte stark von langfristigen Bewertungsannahmen abhängen. Das macht den Index zugleich anfälliger…",
+     "figures": "Nasdaq +1,3 Prozent; Nasdaq-100-Future 29.942 Punkte (+0,36 Prozent)"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "ldobjNsL7sM",
+     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=188s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der Nasdaq 100 rutschte unter eine horizontale Unterstützung. Nach Einschätzung des Hosts könnte dadurch der Abgabedruck zunehmen.",
+     "einordnung": "Meine Einordnung: Der Bruch einer horizontalen Unterstützung verschlechtert das kurzfristige Chancen-Risiko-Verhältnis, besonders wenn gleichzeitig Nvidia und Speicherchipwerte schwächeln.",
+     "figures": "Nasdaq-100-Future laut Marktdaten: 27.874 Punkte, -1,12 Prozent"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Nasdaq gehört im Umfeld des Chip- und KI-Ausverkaufs zu den besonders anfälligen Leitindizes. Der weitere Verlauf hängt laut Sendung maßgeblich von der Fed und den anstehenden Zahlen der großen T…",
+     "einordnung": "Der Nasdaq-100-Future entwickelt sich damit deutlich schwächer als der S&P-500-Future. Das bestätigt die laufende Rotation weg von hoch bewerteten Wachstums- und KI-Titeln, ohne bereits einen endgült…",
+     "figures": "Nasdaq-100-Future aktuell 27.943 Punkte, minus 0,88 Prozent"
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "zu5dhkcdtR0",
+     "url": "https://www.youtube.com/watch?v=zu5dhkcdtR0&t=1811s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Das mittelfristige Kaufsignal aus dem April ist weiterhin intakt. Harry nennt 33.710 Punkte als Projektionsziel, während der Index seit Monaten unter 29.920 Punkten pendelt; 26.170 Punkte fungieren a…",
+     "einordnung": "Der Nasdaq-100-Future liegt laut Marktdaten bei 29.119 Punkten und damit noch unter dem vom Host genannten Etappenziel von 29.920 Punkten. Das bestätigt die positive Grundtendenz, zeigt aber zugleich…",
+     "figures": "26.170 Punkte (Barriere), 29.920 Punkte (Etappenziel), 33.710 Punkte (Projektionsziel)"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "WFyYyqhoiVo",
+     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=255s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der Nasdaq 100 gab nach, während der Chipindex nach dem starken Anstieg seit April konsolidiert. Der Host nennt bei den Halbleitern eine wichtige Unterstützung im Bereich von 12.300 bis 12.200 Punkte…",
+     "einordnung": "Nach einer starken Aufwärtsphase ist eine Konsolidierung zunächst gesund, sie macht den Sektor aber anfällig für weitere Gewinnmitnahmen. Entscheidend ist, ob die genannte Unterstützung hält oder aus…",
+     "figures": "Nasdaq 100: -1,8 %; Unterstützung im Chipindex bei 12.300/12.200 Punkten; aktuell laut Marktdaten: Nasdaq-100-Future 29.626 (+0,51 %)"
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1182s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Neue Fast-Entry-Regel ab Mai: Freefloat-Anforderung entfällt, Aufstieg nach 15 Tagen statt 3 Monaten, Gewichtungsfaktor verdreifacht. SpaceX-IPO am 12. Juni, Börsenwert 1,75 Billionen $, Erlös 75 Mrd…",
+     "einordnung": "Die Regeländerung ist im Grunde maßgeschneidert für SpaceX — ohne Freefloat-Anforderung und mit verkürzter Wartezeit wird der IPO mechanisch zum Index-Turbo. Das ist Index-Front-Running auf größter B…",
+     "figures": "SpaceX-Bewertung 1,75 Billionen $, IPO-Erlös 75 Mrd. $, Freefloat 4,3%, potenzielles Indexgewicht 1% = 7,5 Mrd. $ Käufe, Gewichtungsfaktor verdreifacht, Eintritt nach 15 Tagen"
+    },
+    {
+     "date": "2020-03-12",
+     "video_id": "GxBbuNh6f1Y",
+     "url": "https://www.youtube.com/watch?v=GxBbuNh6f1Y&t=414s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der Nasdaq 100 verzeichnete ähnlich starke Verluste wie der Dow Jones und testete eine charttechnisch wichtige Unterstützung.",
+     "einordnung": "Die relative Stabilität wachstumsstarker Technologiewerte bietet in einem solchen Ausverkauf keinen verlässlichen Schutz. Ein Unterstützungstest ist erst dann belastbar, wenn sich anschließend tatsäc…"
+    }
+   ]
+  },
+  "NBIS": {
+   "name": "Nebius",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=165s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nebius gehört zu den Unternehmen, deren nächste Quartalszahlen in dieser Woche im Fokus stehen.",
+     "einordnung": "Bei einem wachstumsorientierten Technologieunternehmen dürften die Erwartungen an Umsatzdynamik und Investitionen wichtiger sein als eine isolierte Betrachtung des Quartalsgewinns. Ohne konkrete Zahl…"
+    },
+    {
+     "date": "2026-07-31",
+     "video_id": "fZr7Rfgj3xg",
+     "url": "https://www.youtube.com/watch?v=fZr7Rfgj3xg",
+     "channel": "BerneckerTV",
+     "kategorie": "news",
+     "note": "Nebius wird im Zusammenhang mit dem Einbruch der Neocloud-Werte genannt. Der Host führt die Schwäche des Segments vor allem auf die allgemeine KI-Sektormüdigkeit und den Liquidationsdruck eines geheb…",
+     "einordnung": "Bei Nebius sollte die Kursbewegung deshalb nicht vorschnell als isolierte operative Neubewertung gelesen werden. Der Titel bleibt besonders anfällig für Positionierungs- und Finanzierungsrisiken, wie…"
+    },
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=500s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Nebius korrigierte zuvor um 30 bis 50 Prozent und zeigte nun eine starke Gegenbewegung. Der Host sieht darin ein weiteres Zeichen dafür, dass der KI-Trade wieder lebt.",
+     "einordnung": "Eine kräftige Gegenbewegung nach einem Einbruch ist bei einem hochvolatilen KI-Wert zunächst vor allem ein Sentimentsignal. Sie kann Chancen eröffnen, erhöht aber zugleich das Risiko, dass Anleger ei…",
+     "figures": "Vorherige Korrektur um 30 % bis 50 %"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "Tlc2EJIAJeo",
+     "url": "https://www.youtube.com/watch?v=Tlc2EJIAJeo&t=2239s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nvidia hält bereits 1,2 Millionen Nebius-Aktien und besitzt Warrants auf weitere 21 Millionen Aktien, was einem Anteil von mehr als 9 Prozent entspricht. Den hohen Investitionen von mehr als 25 Milli…",
+     "einordnung": "Nebius ist eine Wachstumswette auf KI-Rechenzentren, bei der die Finanzierung deutlich wichtiger ist als klassische Bewertungskennzahlen. Der starke Kursrückgang zeigt, dass der Markt die ambitionier…",
+     "figures": "Nvidia-Anteil über 9 Prozent; 1,2 Millionen Aktien plus Warrants auf 21 Millionen weitere Aktien; Investitionen über 25 Milliarden US-Dollar; erwarteter Umsatz 2026: 3 Milliarden US-Dollar, 2027: 10…"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "jbBenx99pmg",
+     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=3830s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "In den Zuschauerfragen geht es um den starken Kursrückgang bei Nebius und einen Rücksetzer auf frühere Hochs. Belastend wirkt laut Host auch ein Verbot von Rechenzentren in New York.",
+     "einordnung": "Die Rückkehr auf frühere Hochs kann charttechnisch eine Unterstützung darstellen, ist bei einem stark volatilen KI-Infrastrukturwert aber kein belastbarer Boden. Ein Discountzertifikat kann das Risik…",
+     "figures": "Kurs 260 Euro, Rücksetzer auf frühere Hochs"
+    },
+    {
+     "date": "2026-07-02",
+     "video_id": "v4LJjhUTTGk",
+     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=3565s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Größter Verlierer nach Meta-Cloud-News. Basis-Rücksetzer auf 200$ (50%-Retracement). Langfristige Story intakt, Nachfrage größer als Angebot.",
+     "einordnung": "Der Rücksetzer bei Nebius ist eine typische Überreaktion auf Konkurrenzängste. Wenn Meta in den Cloud-Markt einsteigt, validiert das das Geschäftsmodell von Neo-Cloud-Anbietern.",
+     "figures": "Hoch ca. 300 $, aktuell ca. ? , Ziel 200 $ (Basecase), 150 $ (worst case), 20 Mrd. $ pro Gigawatt"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2357s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Nebius führte KI-Agent 'Echo' ein, charttechnisch aber Abschwächung; wichtig ist Halten des 50-Tage-Durchschnitts.",
+     "einordnung": "Nebius ist ein hochspekulativer KI-Titel, bei dem die charttechnische Abschwächung im Widerspruch zur produktseitigen Innovation steht. Der Bruch unter 227$ würde den Trend eindeutig negativ wenden —…",
+     "figures": "Widerstand 141$, Unterstützung 227$, Ziel 320$ (nicht erreicht), Bruch unter 227$ könnte auf 183$ fallen"
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "a6FF2tGXbok",
+     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2080s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blac…",
+     "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktu…",
+     "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd"
+    }
+   ]
+  },
+  "AMAT": {
+   "name": "Applied Materials",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=165s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Applied Materials steht ebenfalls vor der Veröffentlichung der nächsten Quartalszahlen.",
+     "einordnung": "Der Wert ist eng mit dem Investitionszyklus der Halbleiterindustrie verbunden. Entscheidend wird daher sein, ob die Nachfrage der Chipproduzenten die zyklischen Schwankungen im Ausrüstungsmarkt weite…"
+    },
+    {
+     "date": "2026-07-10",
+     "video_id": "H5zYVH8xlRI",
+     "url": "https://www.youtube.com/watch?v=H5zYVH8xlRI&t=206s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Aktie legt 3% zu, nachdem CEO Gary Dickinson signalisierte, dass sich Kunden auf jahrelange Mehrproduktion von Chips einstellen — ein positives Branchensignal.",
+     "einordnung": "Wenn der CEO eines großen Halbleiter-Ausrüsters von mehrjähriger Kapazitätserweiterung spricht, ist das ein konjunktureller Frühindikator für den gesamten Sektor. Applied Materials profitiert als Pic…",
+     "figures": "+3%"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "mNobFjJKrNE",
+     "url": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=176s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Chipausrüster notiert auf einem neuen Rekordhoch nach rasantem Anstieg. Der Host rät, einen Neueinstieg abzuwarten, bis die Überhitzung sich legt.",
+     "einordnung": "Ein Rekordhoch nach solchem Anstieg ist charttechnisch ein zweischneidiges Schwert: bullisch, weil der Trend intakt ist, aber auch ein klassisches Überkaufungssignal. Geduld ist hier die bessere Tuge…",
+     "figures": "Neues Rekordhoch"
+    },
+    {
+     "date": "2025-11-28",
+     "video_id": "fQxlQW1Y5LQ",
+     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1752s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Host nennt Applied Materials mit 20% erwartetem Wachstum und großem Marktvolumen im Halbleiter-Equipment-Markt.",
+     "einordnung": "Applied Materials profitiert von der KI-getriebenen Halbleiter-Kapazitätserweiterung. 20% Wachstum bei einem etablierten Equipment-Lieferanten ist robust, doch der Titel ist zyklisch und reagiert emp…",
+     "figures": "20% Wachstumserwartung, 136 Mrd. Marktvolumen"
+    }
+   ]
+  },
+  "ASTS": {
+   "name": "AST SpaceMobile",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=165s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Auch AST SpaceMobile zählt zu den Unternehmen, deren Quartalszahlen in dieser Woche erwartet werden.",
+     "einordnung": "Bei einem solchen Zukunftswert dürfte der Kapitalmarkt besonders sensibel auf Fortschritte bei Technologie, Finanzierung und Kommerzialisierung reagieren. Die fehlenden konkreten Host-Zahlen erlauben…"
+    }
+   ]
+  },
+  "^GDAXI": {
+   "name": "DAX",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=240s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX bewegt sich laut Host auf Rekordhoch, obwohl geopolitische Risiken und der Ölpreis als mögliche Belastungsfaktoren bestehen bleiben.",
+     "einordnung": "Die relative Stärke des DAX zeigt, dass Anleger die geopolitischen Risiken derzeit nicht vollständig in den Kursen abbilden. Je näher ein Index am Rekordhoch notiert, desto wichtiger wird allerdings…",
+     "figures": "DAX 26.319 Punkte (+0,69 Prozent)"
+    },
+    {
+     "date": "2026-08-06",
+     "video_id": "MkZjn-BH5v4",
+     "url": "https://www.youtube.com/watch?v=MkZjn-BH5v4&t=40s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Bernecker wertet den Ausbruch des DAX aus der Bandbreite von 24.500 bis 25.500 Punkten als Befreiungsschlag. Er sieht ein Ziel von 30.000 Punkten und langfristig ein Aufholpotenzial von 30 Prozent ge…",
+     "einordnung": "Die charttechnische Ausgangslage ist nach dem Überschreiten der bisherigen Zone konstruktiv, allerdings liegt der DAX laut Marktdaten bereits über dem vom Host beschriebenen Ausbruchsbereich. Das 30.…",
+     "figures": "Bandbreite 24.500-25.500 Punkte; Ziel 30.000 Punkte; Sondervermögen 500 Mrd. Euro; erwarteter Wachstumsschub 0,2-0,3 Prozent; Potenzial 30 Prozent gegenüber Europa und 50 Prozent gegenüber den USA; a…"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=2100s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX erreicht ein Rekordhoch bei 26.250 Punkten und der Pfeil zeigt nach oben. Egmond nennt für das Jahr einen Anstieg von 6,67 Prozent einschließlich Dividenden.",
+     "einordnung": "Der DAX liegt laut Marktdaten bei 26.202 Punkten und damit nahe der vom Host genannten Rekordmarke, zugleich steigt er um 0,77 Prozent. Der Rückhalt durch fallendes Öl und internationale Risikofreude…",
+     "figures": "26.250 Punkte; Jahresanstieg 6,67 Prozent einschließlich Dividenden; 3,5 Prozent Kursanstieg plus Dividende"
+    },
+    {
+     "date": "2026-08-03",
+     "video_id": "n8967zUx9oE",
+     "url": "https://www.youtube.com/watch?v=n8967zUx9oE&t=3215s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der Host ist für den DAX bullish und erkennt ein inverses Schulter-Kopf-Schulter-Muster mit einem Trigger bei 25.430 Punkten. Das Zwischenziel von 26.150 Punkten sei erreicht, als Projektionsziel nen…",
+     "einordnung": "Die technische Konstellation bleibt konstruktiv, solange der Ausbruch nicht wieder preisgegeben wird. Der aktuelle DAX-Stand von 26.001 Punkten liegt laut Marktdaten nur knapp über dem genannten Zwis…",
+     "figures": "Trigger bei 25.430 Punkten; Zwischenziel 26.150 Punkte; Projektionsziel 28.800 Punkte; aktuell laut Marktdaten 26.001 Punkte"
+    },
+    {
+     "date": "2026-07-31",
+     "video_id": "hlNiwYp_P2c",
+     "url": "https://www.youtube.com/watch?v=hlNiwYp_P2c&t=0s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX testet das Allzeithoch bei 27.900 Punkten. Der Trendkanal bleibt bullisch; zugleich erklärt der Host die vorherige Tech-Korrektur vor allem mit Positionierungseffekten.",
+     "einordnung": "Die Markttechnik wirkt konstruktiv, aber die Differenz zwischen dem genannten Allzeithoch und dem aktuellen DAX-Stand zeigt, dass der Ausbruch noch bestätigt werden muss. Das neutrale bis ängstliche…",
+     "figures": "27.900 Punkte getestetes Allzeithoch; Ziel im Trendkanal 27.000 Punkte; DAX laut Marktdaten 25.629 Punkte (+0,07 %); S&P-500-Future 7.514 Punkte (+0,56 %); Nasdaq-100-Future 28.441 Punkte (+0,72 %);…"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "RefnY01hhvw",
+     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=545s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der DAX schloss nahezu unverändert bei 25.460 Punkten. Wegen gemischter Vorgaben aus Asien und den USA erwartet der Host einen volatilen Handelstag.",
+     "einordnung": "Die geringe Tagesbewegung darf nicht mit Ruhe verwechselt werden: Fed-Unsicherheit, Nahost-Risiken und die Berichtssaison sprechen für eine erhöhte Nachrichtenempfindlichkeit. Der DAX bleibt damit vo…",
+     "figures": "Schlussstand 25.460 Punkte; Veränderung laut Marktdaten: -0,01 %"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "IpdIeeA0GLM",
+     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Die Fed ließ die Zinsen unverändert; die Abstimmung fiel mit 9:3 aus, der Ton blieb jedoch hawkish. Der Nasdaq hat rund 11 Prozent korrigiert, ist nach Einschätzung des Hosts wegen des gesunkenen KGV…",
+     "einordnung": "Die Kombination aus fallender Bewertung und weiter steigenden Indexständen ist konstruktiv, aber nicht automatisch ein Freifahrtschein. Bei einem Fear-&-Greed-Wert von 38,2 bleibt das Sentiment vorsi…",
+     "figures": "Nasdaq: 661 US-Dollar, vor einem Jahr 570 US-Dollar; KGV von 29 auf 21,6 gefallen. DAX laut Marktdaten: 25.612 Punkte, S&P-500-Future: 7.457 Punkte, Nasdaq-100-Future: 28.185 Punkte; Fear & Greed: 38…"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "iTOUC2QhmzM",
+     "url": "https://www.youtube.com/watch?v=iTOUC2QhmzM&t=456s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX entwickelt sich besser als der S&P 500, weil im deutschen Leitindex weniger hoch bewertete Technologie- und KI-Werte enthalten sind. Egmond erwartet kurzfristig relative Stärke.",
+     "einordnung": "Die aktuelle nahezu unveränderte DAX-Notierung bei 25.460 Punkten bestätigt die relative Stabilität, sagt aber noch wenig über einen neuen Aufwärtstrend aus. Der strukturelle Vorteil der geringeren K…",
+     "figures": "DAX laut Marktdaten aktuell: 25.460 Punkte, minus 0,01 Prozent"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der DAX notiert bei rund 25.500 Punkten weitgehend unbewegt, während der Ölpreis nach Iran-Angriffen auf 83 USD steigt. Die bevorstehende Fed-Sitzung dürfte die Märkte bewegen: Eine Zinserhöhung mit…",
+     "einordnung": "Das Marktbild ist widersprüchlich: Die breite US-Aktienbasis hält sich, während die hoch bewerteten Halbleiterwerte unter Gewinnmitnahmen leiden. Der Fear-and-Greed-Wert von 36,6 und die schwächeren…",
+     "figures": "DAX 25.500 Punkte, Ölpreis 83 USD, Wahrscheinlichkeit einer Fed-Zinserhöhung 30 bis 35 Prozent"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "ldobjNsL7sM",
+     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt sich stark, stieg am Vortag trotz Gewinnmitnahmen um 1,04 Prozent und bleibt auf dem Weg zum Rekordhoch.",
+     "einordnung": "Meine Einordnung: Die relative Stärke des DAX trotz schwächerer asiatischer und amerikanischer Technologiebörsen spricht kurzfristig für eine robuste Marktbreite und Rückenwind durch niedrigere Energ…",
+     "figures": "25.361 Punkte, +1,04 Prozent"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=2073s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX profitiert von Umschichtungen aus den USA und steigt trotz schwacher Konjunktur. Seit Jahresanfang liegt er nur leicht im Plus, wobei Dividenden stützen.",
+     "einordnung": "Die relative Stärke gegenüber dem Nasdaq ist zunächst eine Kapitalflussgeschichte und kein Beweis für eine kräftige deutsche Konjunkturerholung. Der aktuelle Stand nahe 25.464 Punkten passt zu einem…",
+     "figures": "Plus 3,84 Prozent seit Jahresanfang; DAX laut Marktdaten 25.464 Punkte, plus 0,41 Prozent"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "savtLkkJPbY",
+     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=0s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Der Host sieht den DAX bei 25.500 Punkten und damit in der Nähe des Allzeithochs. Kurzfristig werden 27.000 und langfristig 29.000 Punkte als mögliche Ziele genannt; fallende Ölpreise wirken dabei un…",
+     "einordnung": "Der DAX zeigt relative Stärke, obwohl der Fear-and-Greed-Index mit 39,7 weiterhin eine ängstliche Marktverfassung signalisiert. Die genannten Ziele setzen voraus, dass der Ölpreisrückgang und die geo…",
+     "figures": "Host: 25.500 Punkte; aktuell laut Marktdaten: 25.361 Punkte (+1,04%); 25.900; 83,30 USD (WTI); 27.000; 29.000; +60% (KOSPI seit Jahresbeginn); +110% (KOSPI auf 12 Monate)"
+    }
+   ]
+  },
+  "SAP.DE": {
+   "name": "SAP",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=289s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "SAP überzeugte mit einem Wochenplus von 12,9 Prozent und übersprang wichtige charttechnische Marken, darunter die 200-Tage-Linie. Der Host spricht von einem technischen Kaufsignal, hält aber eine lei…",
+     "einordnung": "Der Ausbruch über eine vielbeachtete Durchschnittslinie verbessert das technische Bild deutlich. Nach einem Wochenanstieg von 12,9 Prozent ist eine Verschnaufpause jedoch eher normal als ein Widerspr…",
+     "figures": "+12,9 Prozent Wochenplus"
+    },
+    {
+     "date": "2026-08-06",
+     "video_id": "MkZjn-BH5v4",
+     "url": "https://www.youtube.com/watch?v=MkZjn-BH5v4&t=267s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "SAP dient Bernecker als Vorbild für die Dynamik ausgewählter DAX-Titel: Die Aktie erholte sich innerhalb von zehn Tagen von 130 auf 160 Euro.",
+     "einordnung": "SAP illustriert, wie schnell sich ein großer Qualitätswert nach einer Vertrauenswende bewegen kann. Das Beispiel ist aber nicht ohne Weiteres auf den gesamten DAX übertragbar, weil Geschäftsmodell, M…",
+     "figures": "Anstieg von 130 auf 160 Euro innerhalb von zehn Tagen"
+    },
+    {
+     "date": "2026-08-03",
+     "video_id": "n8967zUx9oE",
+     "url": "https://www.youtube.com/watch?v=n8967zUx9oE&t=703s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der Host beschreibt nach der Korrektur eine Bodenbildung. Ein Wochenschluss über 173 Euro würde aus seiner Sicht den Weg in Richtung 225 Euro öffnen.",
+     "einordnung": "Die enge Schwelle von 173 Euro macht das Setup gut beobachtbar, beweist aber noch keine Trendwende. Entscheidend ist, ob SAP nach dem Ausbruch Anschlusskäufe findet und nicht lediglich kurzfristig üb…",
+     "figures": "Aktuell 172,70 Euro; Ausbruchsschwelle 173 Euro; Projektionsziel 225 Euro; weitere Marken 128, 118 und 170 Euro"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "RefnY01hhvw",
+     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=613s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SAP wird wie Salesforce als Erholungstrade eingeordnet. Die Aktie hat sich vom Tief gelöst und zeigt Momentum, eine nachhaltige Trendwende ist laut Host jedoch noch nicht bestätigt.",
+     "einordnung": "Die Erholung ist zunächst ein technisches Signal und noch keine neue fundamentale Story. Bei einem Qualitätswert wie SAP ist für eine dauerhafte Neubewertung vor allem die Bestätigung des Wachstumspf…"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "ldobjNsL7sM",
+     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "SAP treibt den DAX an und könnte sich nach der jüngsten Erholung weiter nach oben schrauben.",
+     "einordnung": "Meine Einordnung: SAP bleibt für den DAX ein zentraler Taktgeber; die Stärke ist konstruktiv, erhöht aber zugleich die Bedeutung einer möglichen Verschnaufpause für den Gesamtindex."
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=578s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "SAP legt solide Quartalszahlen vor und die Aktie steigt deutlich. Die Cloud-Erlöse liegen leicht über den Erwartungen, während bereinigtes EBIT und Gewinn je Aktie darunter bleiben; das Management ve…",
+     "einordnung": "Der wachsende Cloud-Auftragsbestand spricht für eine strukturelle Verbesserung der Erlösqualität, während die verfehlten Ergebniskennzahlen zur Vorsicht mahnen. Mit einem KGV von 17,3 wirkt SAP im Ve…",
+     "figures": "Umsatz im zweiten Quartal 9,8 Milliarden Euro, plus 9 Prozent; Cloud-Erlöse 6,28 Milliarden Euro, plus 22 Prozent; bereinigtes EBIT 2,74 Milliarden Euro, plus 7 Prozent; Gewinn je Aktie 1,59 Euro; Fr…"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "i5q2OHZUl84",
+     "url": "https://www.youtube.com/watch?v=i5q2OHZUl84&t=443s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SAP steht nach überzeugenden Geschäftszahlen im Mittelpunkt und profitiert laut Host insbesondere von kurzfristigen Cloud-Verträgen. Ein nachhaltigerer Anstieg wird erst bei einem Bruch der Marke von…",
+     "einordnung": "SAP bleibt der wichtigste positive Einzelimpuls für den DAX, wobei der charttechnische Ausbruch noch bestätigt werden muss. Die Reaktion zeigt, wie stark der Markt derzeit auf Cloud-Wachstum und die…",
+     "figures": "150 €"
+    },
+    {
+     "date": "2026-07-24",
+     "video_id": "CchW9uxHhuM",
+     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=472s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SAP überraschte mit starken Cloud-Verträgen. Insgesamt lagen die Zahlen zwar unter den Erwartungen, fielen aber besser aus als befürchtet; die Aktie lag vorbörslich im Plus.",
+     "einordnung": "Die Reaktion zeigt, dass an der Börse nicht nur der absolute Zahlenkranz zählt, sondern vor allem die Abweichung vom Erwartungsbild. Starke Cloud-Verträge stabilisieren die Wachstumsstory, auch wenn…"
+    },
+    {
+     "date": "2026-07-24",
+     "video_id": "3SE8SaUYqTc",
+     "url": "https://www.youtube.com/watch?v=3SE8SaUYqTc&t=831s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "SAP überzeugt im Cloudgeschäft: Cloud-Umsatz und Auftragsbestand wachsen deutlich, der Aktienkurs steigt um 5,6 Prozent. Gleichzeitig liegt das EBIT unter den Erwartungen, und die operative Marge ist…",
+     "einordnung": "Operativ liefert SAP genau die Art von wiederkehrendem Wachstum, die der Markt honoriert, doch die nachlassende Marge begrenzt den positiven Überraschungseffekt. Das KGV von 16,6 wirkt im Verhältnis…",
+     "figures": "Cloud-Umsatz +22% auf 6,3 Mrd., Cloud ERP Suite +25% auf 5,53 Mrd., Gesamtumsatz +9% auf 9,8 Mrd., Cloud Backlog +27% auf 22,93 Mrd., EBIT +7% auf 2,74 Mrd., operative Marge 27,8% gegenüber 28,5% zuv…"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "JJawjyNF_GQ",
+     "url": "https://www.youtube.com/watch?v=JJawjyNF_GQ&t=631s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SAP könnte von den starken Zahlen und dem angehobenen Ausblick von ServiceNow profitieren. Der Host verweist zugleich auf eine Unterstützungszone, die die Aktie testen könnte.",
+     "einordnung": "Der mögliche Impuls für SAP ist vor allem ein Sektorsignal und keine eigene Unternehmensmeldung. Für die Aktie bleibt daher entscheidend, ob sie die Unterstützung verteidigt und die Anleger die struk…"
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=313s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Bei SAP werden Quartalszahlen erwartet. Der Markt rechnet mit einem Cloud-Wachstum von 25 Prozent, einem Umsatz von rund 10 Milliarden Euro und einem operativen Ergebnis von 2,9 Milliarden Euro; char…",
+     "einordnung": "Bei einem Qualitäts- und Wachstumswert kann ein schwacher Chart tatsächlich eine niedrige Erwartungshaltung widerspiegeln, aber nur eine überzeugende Bestätigung des Cloud-Trends würde den Abschlag n…",
+     "figures": "Erwartetes Cloud-Wachstum 25 Prozent; Umsatz rund 10 Milliarden Euro; operatives Ergebnis 2,9 Milliarden Euro"
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "zu5dhkcdtR0",
+     "url": "https://www.youtube.com/watch?v=zu5dhkcdtR0&t=1157s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Vor den Quartalszahlen erwartet Harry eine Stabilisierung im Bereich von 115 bis 120 Euro. Die langfristigen Unterstützungen liegen bei 128 und 115 Euro; ein neues Kaufsignal sieht er vor den Zahlen…",
+     "einordnung": "Bei SAP ist der Zahlenimpuls wichtiger als eine kurzfristige Kursbewegung innerhalb der genannten Zone. Das Chance-Risiko-Profil bleibt vor der Veröffentlichung asymmetrisch, weil eine Stabilisierung…",
+     "figures": "115–120 Euro, 128 Euro, 115 Euro"
+    }
+   ]
+  },
+  "BAS.DE": {
+   "name": "BASF",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=361s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BASF profitiert von der freundlichen Marktstimmung, wird aber durch Niedrigwasser im Rhein und dadurch steigende Transportkosten belastet. Die Marke von 50 Euro hält laut Host zunächst.",
+     "einordnung": "Bei BASF treffen günstige Stimmung und ein realwirtschaftlicher Kostenfaktor unmittelbar aufeinander. Die gehaltene 50-Euro-Marke stabilisiert zwar das Chartbild, ersetzt aber keine Verbesserung der…",
+     "figures": "50-Euro-Marke"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "wOWTV_pDNkE",
+     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=558s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BASF bestätigt die vorläufigen Zahlen und berichtet über einen weiteren deutlichen Stellenabbau. In Ludwigshafen sinkt die Beschäftigtenzahl unter 30.000, während ein neues Aktienrückkaufprogramm ang…",
+     "einordnung": "BASF befindet sich sichtbar in einer Phase der strukturellen Anpassung und nicht in einer klassischen Wachstumsstory. Das Rückkaufprogramm kann den Aktienkurs stützen, ersetzt aber keine überzeugende…",
+     "figures": "7.000 abgebaute Stellen; Beschäftigtenzahl in Ludwigshafen unter 30.000; Aktienrückkaufprogramm bis zu 1 Milliarde Aktien von August 2024 bis April 2027"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "J6gUTUPHems",
+     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=308s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "BASF meldete starke Zahlen für das zweite Quartal, doch die Anhebung der Prognose blieb leicht hinter den Analystenerwartungen zurück und enttäuschte damit den Markt.",
+     "einordnung": "Die operative Überraschung im Quartal ist positiv, wird aber durch den nur vorsichtig angehobenen Ausblick und den negativen Quartals-Free-Cashflow relativiert. Bei einem zyklischen Chemiewert zählt…",
+     "figures": "Umsatz: 17,2 Mrd. Euro gegenüber erwarteten 16,5 Mrd. Euro; bereinigtes EBITDA: 2,4 Mrd. Euro gegenüber erwarteten 2,15 Mrd. Euro; Free Cashflow: minus 0,2 Mrd. Euro. EBITDA-Prognose: 6,9 bis 7,7 Mrd…"
+    },
+    {
+     "date": "2026-07-16",
+     "video_id": "8n4SjPW9E8M",
+     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=612s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "BASF fokussiert sich auf das Kerngeschäft, spaltet die Agrarsparte ab und verkauft das Coatings-Geschäft. Der Host hebt BASF als guten Dividendenzahler hervor und sieht Potenzial über 50.",
+     "einordnung": "Die Neuausrichtung kann den Konzern fokussieren und Kapital freisetzen, ist aber zunächst mit Umbaukosten und Ausführungsrisiken verbunden. Die Dividende bietet einen Puffer, ersetzt bei einem zyklis…",
+     "figures": "Potenzial über 50; konkrete Währung beziehungsweise Kursziel im Video nicht genannt"
+    },
+    {
+     "date": "2026-07-16",
+     "video_id": "l9xly8aiYMM",
+     "url": "https://www.youtube.com/watch?v=l9xly8aiYMM&t=986s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "MWB Research stuft BASF von 'Halten' auf 'Kaufen' hoch. Der vorläufige Umsatz im zweiten Quartal liegt über den Erwartungen, das EBITDA steigt deutlich.",
+     "einordnung": "Die Zahlen sprechen für eine operative Verbesserung, doch BASF bleibt ein zyklischer Chemiewert, bei dem Preis- und Mengeneffekte nicht automatisch dauerhaft sind. Der Hinweis auf die Mitte einer Sei…",
+     "figures": "Kursziel 55 Euro nach zuvor 52 Euro; Umsatz 17,2 Mrd. Euro bei erwarteten 16,5 Mrd. Euro; EBITDA 2,4 Mrd. Euro bei erwarteten 2,1 Mrd. Euro; Preise +11 %, Mengen +7 %; Prognose 2026: 6,9 bis 7,7 Mrd.…"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "8EytmuiphH4",
+     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=1448s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Für die Agrarsparte ist ein Börsengang mit einem Unternehmenswert von 20 bis 30 Mrd. Euro geplant. BASF selbst kommt auf eine Marktkapitalisierung von 42,6 Mrd. Euro und ein KGV von 18; charttechnisc…",
+     "einordnung": "Ein möglicher Börsengang kann verborgene Werte sichtbar machen, ist aber zunächst eine Bewertungs- und Umsetzungsstory. Befindet sich der Kurs zugleich mitten in der Handelsspanne, fehlt aus charttec…",
+     "figures": "Marktkapitalisierung BASF 42,6 Mrd. Euro, erwarteter Wert der Agrarsparte 20 bis 30 Mrd. Euro, KGV 18, Tagesplus 1,2 Prozent"
+    }
+   ]
+  },
+  "DTE.DE": {
+   "name": "Deutsche Telekom",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=445s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Die Deutsche Telekom hat ihr Aktienrückkaufprogramm um 3 Milliarden auf 5 Milliarden Euro ausgeweitet. Nach einem Quartalsumsatz von knapp 30 Milliarden Euro rückt charttechnisch die Marke von 30 Eur…",
+     "einordnung": "Das erweiterte Rückkaufprogramm liefert einen klaren kapitalmarktseitigen Impuls und kann die Aktie je Anteil zusätzlich unterstützen. Für den charttechnischen Durchbruch über 30 Euro braucht es denn…",
+     "figures": "Aktienrückkauf um 3 Milliarden auf 5 Milliarden Euro ausgeweitet; Q2-Umsatz knapp unter 30 Milliarden Euro; 30-Euro-Marke"
+    },
+    {
+     "date": "2026-08-06",
+     "video_id": "MkZjn-BH5v4",
+     "url": "https://www.youtube.com/watch?v=MkZjn-BH5v4&t=419s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Die Deutsche Telekom dient als historisches Beispiel für eine Liquiditäts- und Euphoriephase: Beim Börsengang vor 28 Jahren wurden Kurse von etwa 10 bis 13 Euro genannt. Außerdem verweist Bernecker a…",
+     "einordnung": "Die Telekom steht hier weniger für eine kurzfristige Kursprognose als für den Wert strategischer Entscheidungen über mehrere Jahre. Der Vergleich mit der damaligen Euphorie mahnt zugleich, Liquidität…",
+     "figures": "Börsengang vor 28 Jahren; Kurse von etwa 10, 12 und 13 Euro"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=730s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Die Deutsche Telekom leidet laut Egmond unter ihrer hohen Verschuldung, weil steigende Zinsen die Finanzierung belasten.",
+     "einordnung": "Telekomwerte werden oft als defensiv wahrgenommen, sind wegen ihrer Kapitalstruktur aber nicht immun gegen höhere Zinsen. Der Belastung steht grundsätzlich die relativ stabile Nachfrage im operativen…"
+    },
+    {
+     "date": "2026-07-10",
+     "video_id": "H5zYVH8xlRI",
+     "url": "https://www.youtube.com/watch?v=H5zYVH8xlRI&t=413s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Aktie unter Druck durch Sorgen um Satelliten-Konkurrenz. JP Morgan stuft jedoch auf Kauf auf aktuellem Niveau ein. Langfristig wenig falsch zu machen, attraktive Dividendenrendite.",
+     "einordnung": "Die Satelliten-Konkurrenz-Sorge ist ein bekanntes Narrativ, das immer wieder aufschlägt — ähnlich wie bei 2021, als Starlink den Mobilfunkmarkt 'revolutionieren' sollte. Die Realität: Regulatorische…"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1049s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Talfahrt nach SpaceX/Charter-Gerücht, Indexgewicht ca. 4-5 Prozent im DAX. Haidt rät zu Vorsicht bei Telekom und T-Mobile US.",
+     "einordnung": "Die Telekom war lange ein DAX-Stabilitätsanker – wenn sie ins Wackeln gerät, hat das Signalcharakter für den gesamten Index. Das SpaceX/Charter-Gerücht könnte ein Branchenwechsel einläuten, der klass…",
+     "figures": "Indexgewicht 4-5%"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=818s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Q1-Zahlen: Umsatz 29,87 Mrd. € (organisch +4,7 %), bereinigtes EBITDA 11,52 Mrd. €, Free Cashflow 5,69 Mrd. €. Partnerschaft mit Starlink vereinbart. S&P-Rating auf A- angehoben. Investoren sorgen si…",
+     "einordnung": "Die Telekom ist ein Musterbeispiel für einen defensiven Cashflow-Konzern, der in einem zinssensitiven Umfeld als Zuflucht dient. Das KGV von 11,6 ist günstig, die Starlink-Partnerschaft strategisch w…",
+     "figures": "29,87 Mrd. € (Umsatz), +4,7 % (organisch), 11,52 Mrd. € (EBITDA), 5,69 Mrd. € (Free Cashflow), 0,54 € (Gewinn je Aktie), 53,8 % (Anteil T-Mobile US), 11,6 (KGV)"
+    }
+   ]
+  },
+  "HAG.DE": {
+   "name": "Hensoldt",
+   "auftritte": [
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=545s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Hensoldt meldete laut Host solide Zahlen, einen Auftragsbestand auf Rekordhoch und ein Umsatzwachstum von mehr als 25 Prozent im ersten Halbjahr.",
+     "einordnung": "Die Kombination aus starkem Umsatzwachstum und hohem Auftragsbestand spricht für eine gute Visibilität des Geschäfts. Bei Rüstungswerten muss der Markt aber stets zwischen operativer Dynamik und bere…",
+     "figures": "Umsatz im ersten Halbjahr um mehr als 25 Prozent gewachsen; Auftragsbestand auf Rekordhoch"
+    },
+    {
+     "date": "2026-07-31",
+     "video_id": "hlNiwYp_P2c",
+     "url": "https://www.youtube.com/watch?v=hlNiwYp_P2c&t=796s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Der Auftragseingang hat sich verdoppelt, der Auftragsbestand ist sehr stark. Weil der Ausblick lediglich bestätigt wurde und die Bewertung hoch ist, fällt die Aktie dennoch um 5 %.",
+     "einordnung": "Operativ ist Hensoldt gut abgesichert, doch ein KGV von 42 lässt wenig Raum für Enttäuschungen. Der Kursrückgang zeigt exemplarisch, dass ein starker Auftragseingang allein nicht genügt, wenn der Aus…",
+     "figures": "Auftragseingang 2,81 Mrd. €; Book-to-Bill 2,4; Auftragsbestand 10,3 Mrd. €; Umsatzwachstum 23 %; EBITDA-Wachstum 29 %; Free Cashflow -136 Mio. €; KGV 42; Kursrückgang 5 %"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "rGKDA0JAU4I",
+     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=1342s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "MWB Research stuft auf Verkaufen (von Halten) herab — die NATO-Rally sei ohne Substanz. Verschiebung der Verteidigungsausgaben hin zu Marine und Luftwaffe trifft Hensoldt jedoch nicht direkt. Hohe Be…",
+     "einordnung": "Ein KGV von 40 für 2027 ist selbst für Verteidigungswerte extrem. Dass MWB die NATO-Rally als substanzlos einstuft, erinnert an die Kritik an Rüstungsaktien nach Ereignisrallyes, die regelmäßig korri…",
+     "figures": "+25% Rally von 64 auf 81€, Kursziel 62€, KGV 40 (2027), 27 (2028), -5% Kursreaktion"
+    }
+   ]
+  },
   "VIE.PA": {
    "name": "Veolia",
    "auftritte": [
@@ -873,303 +1616,6 @@
      "note": "In den Zuschauerfragen wird Applied Optoelectronics als stark gefallener, aber spekulativ interessanter Wert besprochen. Die Aktie steigt vorbörslich um 26%; der Host nennt ein Kursziel von 175 bis 2…",
      "einordnung": "Der massive Abstand zwischen dem genannten Kursziel und dem zuvor genannten Kursniveau macht den Wert hochspekulativ. Ein solcher Rebound-Ansatz hängt stärker an Momentum und Nachrichtenfluss als an…",
      "figures": "Rückgang von 224 auf 75 USD; vorbörslicher Anstieg +26%; Kursziel 175 bis 200 USD"
-    }
-   ]
-  },
-  "^GDAXI": {
-   "name": "DAX",
-   "auftritte": [
-    {
-     "date": "2026-08-06",
-     "video_id": "MkZjn-BH5v4",
-     "url": "https://www.youtube.com/watch?v=MkZjn-BH5v4&t=40s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Bernecker wertet den Ausbruch des DAX aus der Bandbreite von 24.500 bis 25.500 Punkten als Befreiungsschlag. Er sieht ein Ziel von 30.000 Punkten und langfristig ein Aufholpotenzial von 30 Prozent ge…",
-     "einordnung": "Die charttechnische Ausgangslage ist nach dem Überschreiten der bisherigen Zone konstruktiv, allerdings liegt der DAX laut Marktdaten bereits über dem vom Host beschriebenen Ausbruchsbereich. Das 30.…",
-     "figures": "Bandbreite 24.500-25.500 Punkte; Ziel 30.000 Punkte; Sondervermögen 500 Mrd. Euro; erwarteter Wachstumsschub 0,2-0,3 Prozent; Potenzial 30 Prozent gegenüber Europa und 50 Prozent gegenüber den USA; a…"
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=2100s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX erreicht ein Rekordhoch bei 26.250 Punkten und der Pfeil zeigt nach oben. Egmond nennt für das Jahr einen Anstieg von 6,67 Prozent einschließlich Dividenden.",
-     "einordnung": "Der DAX liegt laut Marktdaten bei 26.202 Punkten und damit nahe der vom Host genannten Rekordmarke, zugleich steigt er um 0,77 Prozent. Der Rückhalt durch fallendes Öl und internationale Risikofreude…",
-     "figures": "26.250 Punkte; Jahresanstieg 6,67 Prozent einschließlich Dividenden; 3,5 Prozent Kursanstieg plus Dividende"
-    },
-    {
-     "date": "2026-08-03",
-     "video_id": "n8967zUx9oE",
-     "url": "https://www.youtube.com/watch?v=n8967zUx9oE&t=3215s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der Host ist für den DAX bullish und erkennt ein inverses Schulter-Kopf-Schulter-Muster mit einem Trigger bei 25.430 Punkten. Das Zwischenziel von 26.150 Punkten sei erreicht, als Projektionsziel nen…",
-     "einordnung": "Die technische Konstellation bleibt konstruktiv, solange der Ausbruch nicht wieder preisgegeben wird. Der aktuelle DAX-Stand von 26.001 Punkten liegt laut Marktdaten nur knapp über dem genannten Zwis…",
-     "figures": "Trigger bei 25.430 Punkten; Zwischenziel 26.150 Punkte; Projektionsziel 28.800 Punkte; aktuell laut Marktdaten 26.001 Punkte"
-    },
-    {
-     "date": "2026-07-31",
-     "video_id": "hlNiwYp_P2c",
-     "url": "https://www.youtube.com/watch?v=hlNiwYp_P2c&t=0s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX testet das Allzeithoch bei 27.900 Punkten. Der Trendkanal bleibt bullisch; zugleich erklärt der Host die vorherige Tech-Korrektur vor allem mit Positionierungseffekten.",
-     "einordnung": "Die Markttechnik wirkt konstruktiv, aber die Differenz zwischen dem genannten Allzeithoch und dem aktuellen DAX-Stand zeigt, dass der Ausbruch noch bestätigt werden muss. Das neutrale bis ängstliche…",
-     "figures": "27.900 Punkte getestetes Allzeithoch; Ziel im Trendkanal 27.000 Punkte; DAX laut Marktdaten 25.629 Punkte (+0,07 %); S&P-500-Future 7.514 Punkte (+0,56 %); Nasdaq-100-Future 28.441 Punkte (+0,72 %);…"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "RefnY01hhvw",
-     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=545s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der DAX schloss nahezu unverändert bei 25.460 Punkten. Wegen gemischter Vorgaben aus Asien und den USA erwartet der Host einen volatilen Handelstag.",
-     "einordnung": "Die geringe Tagesbewegung darf nicht mit Ruhe verwechselt werden: Fed-Unsicherheit, Nahost-Risiken und die Berichtssaison sprechen für eine erhöhte Nachrichtenempfindlichkeit. Der DAX bleibt damit vo…",
-     "figures": "Schlussstand 25.460 Punkte; Veränderung laut Marktdaten: -0,01 %"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "IpdIeeA0GLM",
-     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Die Fed ließ die Zinsen unverändert; die Abstimmung fiel mit 9:3 aus, der Ton blieb jedoch hawkish. Der Nasdaq hat rund 11 Prozent korrigiert, ist nach Einschätzung des Hosts wegen des gesunkenen KGV…",
-     "einordnung": "Die Kombination aus fallender Bewertung und weiter steigenden Indexständen ist konstruktiv, aber nicht automatisch ein Freifahrtschein. Bei einem Fear-&-Greed-Wert von 38,2 bleibt das Sentiment vorsi…",
-     "figures": "Nasdaq: 661 US-Dollar, vor einem Jahr 570 US-Dollar; KGV von 29 auf 21,6 gefallen. DAX laut Marktdaten: 25.612 Punkte, S&P-500-Future: 7.457 Punkte, Nasdaq-100-Future: 28.185 Punkte; Fear & Greed: 38…"
-    },
-    {
-     "date": "2026-07-29",
-     "video_id": "iTOUC2QhmzM",
-     "url": "https://www.youtube.com/watch?v=iTOUC2QhmzM&t=456s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX entwickelt sich besser als der S&P 500, weil im deutschen Leitindex weniger hoch bewertete Technologie- und KI-Werte enthalten sind. Egmond erwartet kurzfristig relative Stärke.",
-     "einordnung": "Die aktuelle nahezu unveränderte DAX-Notierung bei 25.460 Punkten bestätigt die relative Stabilität, sagt aber noch wenig über einen neuen Aufwärtstrend aus. Der strukturelle Vorteil der geringeren K…",
-     "figures": "DAX laut Marktdaten aktuell: 25.460 Punkte, minus 0,01 Prozent"
-    },
-    {
-     "date": "2026-07-29",
-     "video_id": "JRUiVhwgTqA",
-     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Der DAX notiert bei rund 25.500 Punkten weitgehend unbewegt, während der Ölpreis nach Iran-Angriffen auf 83 USD steigt. Die bevorstehende Fed-Sitzung dürfte die Märkte bewegen: Eine Zinserhöhung mit…",
-     "einordnung": "Das Marktbild ist widersprüchlich: Die breite US-Aktienbasis hält sich, während die hoch bewerteten Halbleiterwerte unter Gewinnmitnahmen leiden. Der Fear-and-Greed-Wert von 36,6 und die schwächeren…",
-     "figures": "DAX 25.500 Punkte, Ölpreis 83 USD, Wahrscheinlichkeit einer Fed-Zinserhöhung 30 bis 35 Prozent"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "ldobjNsL7sM",
-     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt sich stark, stieg am Vortag trotz Gewinnmitnahmen um 1,04 Prozent und bleibt auf dem Weg zum Rekordhoch.",
-     "einordnung": "Meine Einordnung: Die relative Stärke des DAX trotz schwächerer asiatischer und amerikanischer Technologiebörsen spricht kurzfristig für eine robuste Marktbreite und Rückenwind durch niedrigere Energ…",
-     "figures": "25.361 Punkte, +1,04 Prozent"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=2073s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX profitiert von Umschichtungen aus den USA und steigt trotz schwacher Konjunktur. Seit Jahresanfang liegt er nur leicht im Plus, wobei Dividenden stützen.",
-     "einordnung": "Die relative Stärke gegenüber dem Nasdaq ist zunächst eine Kapitalflussgeschichte und kein Beweis für eine kräftige deutsche Konjunkturerholung. Der aktuelle Stand nahe 25.464 Punkten passt zu einem…",
-     "figures": "Plus 3,84 Prozent seit Jahresanfang; DAX laut Marktdaten 25.464 Punkte, plus 0,41 Prozent"
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "savtLkkJPbY",
-     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=0s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Der Host sieht den DAX bei 25.500 Punkten und damit in der Nähe des Allzeithochs. Kurzfristig werden 27.000 und langfristig 29.000 Punkte als mögliche Ziele genannt; fallende Ölpreise wirken dabei un…",
-     "einordnung": "Der DAX zeigt relative Stärke, obwohl der Fear-and-Greed-Index mit 39,7 weiterhin eine ängstliche Marktverfassung signalisiert. Die genannten Ziele setzen voraus, dass der Ölpreisrückgang und die geo…",
-     "figures": "Host: 25.500 Punkte; aktuell laut Marktdaten: 25.361 Punkte (+1,04%); 25.900; 83,30 USD (WTI); 27.000; 29.000; +60% (KOSPI seit Jahresbeginn); +110% (KOSPI auf 12 Monate)"
-    },
-    {
-     "date": "2026-07-24",
-     "video_id": "CchW9uxHhuM",
-     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=444s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "SAP und Volkswagen liefern positive Ansätze für den DAX, doch fehlende Vorgaben und die Zinsangst in den USA belasten. Der Handel am Vortag war schwach.",
-     "einordnung": "Der DAX bleibt damit stark von Einzelwerten und den internationalen Leitbörsen abhängig. Positive Unternehmensnachrichten können den Index kurzfristig stützen, werden aber von Makrofaktoren überlager…"
-    }
-   ]
-  },
-  "SAP.DE": {
-   "name": "SAP",
-   "auftritte": [
-    {
-     "date": "2026-08-06",
-     "video_id": "MkZjn-BH5v4",
-     "url": "https://www.youtube.com/watch?v=MkZjn-BH5v4&t=267s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "SAP dient Bernecker als Vorbild für die Dynamik ausgewählter DAX-Titel: Die Aktie erholte sich innerhalb von zehn Tagen von 130 auf 160 Euro.",
-     "einordnung": "SAP illustriert, wie schnell sich ein großer Qualitätswert nach einer Vertrauenswende bewegen kann. Das Beispiel ist aber nicht ohne Weiteres auf den gesamten DAX übertragbar, weil Geschäftsmodell, M…",
-     "figures": "Anstieg von 130 auf 160 Euro innerhalb von zehn Tagen"
-    },
-    {
-     "date": "2026-08-03",
-     "video_id": "n8967zUx9oE",
-     "url": "https://www.youtube.com/watch?v=n8967zUx9oE&t=703s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der Host beschreibt nach der Korrektur eine Bodenbildung. Ein Wochenschluss über 173 Euro würde aus seiner Sicht den Weg in Richtung 225 Euro öffnen.",
-     "einordnung": "Die enge Schwelle von 173 Euro macht das Setup gut beobachtbar, beweist aber noch keine Trendwende. Entscheidend ist, ob SAP nach dem Ausbruch Anschlusskäufe findet und nicht lediglich kurzfristig üb…",
-     "figures": "Aktuell 172,70 Euro; Ausbruchsschwelle 173 Euro; Projektionsziel 225 Euro; weitere Marken 128, 118 und 170 Euro"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "RefnY01hhvw",
-     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=613s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SAP wird wie Salesforce als Erholungstrade eingeordnet. Die Aktie hat sich vom Tief gelöst und zeigt Momentum, eine nachhaltige Trendwende ist laut Host jedoch noch nicht bestätigt.",
-     "einordnung": "Die Erholung ist zunächst ein technisches Signal und noch keine neue fundamentale Story. Bei einem Qualitätswert wie SAP ist für eine dauerhafte Neubewertung vor allem die Bestätigung des Wachstumspf…"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "ldobjNsL7sM",
-     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "SAP treibt den DAX an und könnte sich nach der jüngsten Erholung weiter nach oben schrauben.",
-     "einordnung": "Meine Einordnung: SAP bleibt für den DAX ein zentraler Taktgeber; die Stärke ist konstruktiv, erhöht aber zugleich die Bedeutung einer möglichen Verschnaufpause für den Gesamtindex."
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=578s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "SAP legt solide Quartalszahlen vor und die Aktie steigt deutlich. Die Cloud-Erlöse liegen leicht über den Erwartungen, während bereinigtes EBIT und Gewinn je Aktie darunter bleiben; das Management ve…",
-     "einordnung": "Der wachsende Cloud-Auftragsbestand spricht für eine strukturelle Verbesserung der Erlösqualität, während die verfehlten Ergebniskennzahlen zur Vorsicht mahnen. Mit einem KGV von 17,3 wirkt SAP im Ve…",
-     "figures": "Umsatz im zweiten Quartal 9,8 Milliarden Euro, plus 9 Prozent; Cloud-Erlöse 6,28 Milliarden Euro, plus 22 Prozent; bereinigtes EBIT 2,74 Milliarden Euro, plus 7 Prozent; Gewinn je Aktie 1,59 Euro; Fr…"
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "i5q2OHZUl84",
-     "url": "https://www.youtube.com/watch?v=i5q2OHZUl84&t=443s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "SAP steht nach überzeugenden Geschäftszahlen im Mittelpunkt und profitiert laut Host insbesondere von kurzfristigen Cloud-Verträgen. Ein nachhaltigerer Anstieg wird erst bei einem Bruch der Marke von…",
-     "einordnung": "SAP bleibt der wichtigste positive Einzelimpuls für den DAX, wobei der charttechnische Ausbruch noch bestätigt werden muss. Die Reaktion zeigt, wie stark der Markt derzeit auf Cloud-Wachstum und die…",
-     "figures": "150 €"
-    },
-    {
-     "date": "2026-07-24",
-     "video_id": "CchW9uxHhuM",
-     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=472s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "SAP überraschte mit starken Cloud-Verträgen. Insgesamt lagen die Zahlen zwar unter den Erwartungen, fielen aber besser aus als befürchtet; die Aktie lag vorbörslich im Plus.",
-     "einordnung": "Die Reaktion zeigt, dass an der Börse nicht nur der absolute Zahlenkranz zählt, sondern vor allem die Abweichung vom Erwartungsbild. Starke Cloud-Verträge stabilisieren die Wachstumsstory, auch wenn…"
-    },
-    {
-     "date": "2026-07-24",
-     "video_id": "3SE8SaUYqTc",
-     "url": "https://www.youtube.com/watch?v=3SE8SaUYqTc&t=831s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "SAP überzeugt im Cloudgeschäft: Cloud-Umsatz und Auftragsbestand wachsen deutlich, der Aktienkurs steigt um 5,6 Prozent. Gleichzeitig liegt das EBIT unter den Erwartungen, und die operative Marge ist…",
-     "einordnung": "Operativ liefert SAP genau die Art von wiederkehrendem Wachstum, die der Markt honoriert, doch die nachlassende Marge begrenzt den positiven Überraschungseffekt. Das KGV von 16,6 wirkt im Verhältnis…",
-     "figures": "Cloud-Umsatz +22% auf 6,3 Mrd., Cloud ERP Suite +25% auf 5,53 Mrd., Gesamtumsatz +9% auf 9,8 Mrd., Cloud Backlog +27% auf 22,93 Mrd., EBIT +7% auf 2,74 Mrd., operative Marge 27,8% gegenüber 28,5% zuv…"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "JJawjyNF_GQ",
-     "url": "https://www.youtube.com/watch?v=JJawjyNF_GQ&t=631s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SAP könnte von den starken Zahlen und dem angehobenen Ausblick von ServiceNow profitieren. Der Host verweist zugleich auf eine Unterstützungszone, die die Aktie testen könnte.",
-     "einordnung": "Der mögliche Impuls für SAP ist vor allem ein Sektorsignal und keine eigene Unternehmensmeldung. Für die Aktie bleibt daher entscheidend, ob sie die Unterstützung verteidigt und die Anleger die struk…"
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "0kdieabN3vU",
-     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=313s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Bei SAP werden Quartalszahlen erwartet. Der Markt rechnet mit einem Cloud-Wachstum von 25 Prozent, einem Umsatz von rund 10 Milliarden Euro und einem operativen Ergebnis von 2,9 Milliarden Euro; char…",
-     "einordnung": "Bei einem Qualitäts- und Wachstumswert kann ein schwacher Chart tatsächlich eine niedrige Erwartungshaltung widerspiegeln, aber nur eine überzeugende Bestätigung des Cloud-Trends würde den Abschlag n…",
-     "figures": "Erwartetes Cloud-Wachstum 25 Prozent; Umsatz rund 10 Milliarden Euro; operatives Ergebnis 2,9 Milliarden Euro"
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "zu5dhkcdtR0",
-     "url": "https://www.youtube.com/watch?v=zu5dhkcdtR0&t=1157s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Vor den Quartalszahlen erwartet Harry eine Stabilisierung im Bereich von 115 bis 120 Euro. Die langfristigen Unterstützungen liegen bei 128 und 115 Euro; ein neues Kaufsignal sieht er vor den Zahlen…",
-     "einordnung": "Bei SAP ist der Zahlenimpuls wichtiger als eine kurzfristige Kursbewegung innerhalb der genannten Zone. Das Chance-Risiko-Profil bleibt vor der Veröffentlichung asymmetrisch, weil eine Stabilisierung…",
-     "figures": "115–120 Euro, 128 Euro, 115 Euro"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "WFyYyqhoiVo",
-     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=419s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SAP fiel nach längerer Schwäche positiv auf. Der Host sieht eine mögliche Kapitalrotation aus spekulativen Werten in defensivere oder zuvor gebeutelte Titel.",
-     "einordnung": "SAP kann in einem nervösen Markt als Qualitäts- und Stabilitätsanker innerhalb des Technologiesektors wahrgenommen werden. Ob daraus ein nachhaltiger Trend wird, hängt allerdings davon ab, ob die Rot…"
-    }
-   ]
-  },
-  "DTE.DE": {
-   "name": "Deutsche Telekom",
-   "auftritte": [
-    {
-     "date": "2026-08-06",
-     "video_id": "MkZjn-BH5v4",
-     "url": "https://www.youtube.com/watch?v=MkZjn-BH5v4&t=419s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Die Deutsche Telekom dient als historisches Beispiel für eine Liquiditäts- und Euphoriephase: Beim Börsengang vor 28 Jahren wurden Kurse von etwa 10 bis 13 Euro genannt. Außerdem verweist Bernecker a…",
-     "einordnung": "Die Telekom steht hier weniger für eine kurzfristige Kursprognose als für den Wert strategischer Entscheidungen über mehrere Jahre. Der Vergleich mit der damaligen Euphorie mahnt zugleich, Liquidität…",
-     "figures": "Börsengang vor 28 Jahren; Kurse von etwa 10, 12 und 13 Euro"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=730s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Die Deutsche Telekom leidet laut Egmond unter ihrer hohen Verschuldung, weil steigende Zinsen die Finanzierung belasten.",
-     "einordnung": "Telekomwerte werden oft als defensiv wahrgenommen, sind wegen ihrer Kapitalstruktur aber nicht immun gegen höhere Zinsen. Der Belastung steht grundsätzlich die relativ stabile Nachfrage im operativen…"
-    },
-    {
-     "date": "2026-07-10",
-     "video_id": "H5zYVH8xlRI",
-     "url": "https://www.youtube.com/watch?v=H5zYVH8xlRI&t=413s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Aktie unter Druck durch Sorgen um Satelliten-Konkurrenz. JP Morgan stuft jedoch auf Kauf auf aktuellem Niveau ein. Langfristig wenig falsch zu machen, attraktive Dividendenrendite.",
-     "einordnung": "Die Satelliten-Konkurrenz-Sorge ist ein bekanntes Narrativ, das immer wieder aufschlägt — ähnlich wie bei 2021, als Starlink den Mobilfunkmarkt 'revolutionieren' sollte. Die Realität: Regulatorische…"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1049s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Talfahrt nach SpaceX/Charter-Gerücht, Indexgewicht ca. 4-5 Prozent im DAX. Haidt rät zu Vorsicht bei Telekom und T-Mobile US.",
-     "einordnung": "Die Telekom war lange ein DAX-Stabilitätsanker – wenn sie ins Wackeln gerät, hat das Signalcharakter für den gesamten Index. Das SpaceX/Charter-Gerücht könnte ein Branchenwechsel einläuten, der klass…",
-     "figures": "Indexgewicht 4-5%"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=818s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Q1-Zahlen: Umsatz 29,87 Mrd. € (organisch +4,7 %), bereinigtes EBITDA 11,52 Mrd. €, Free Cashflow 5,69 Mrd. €. Partnerschaft mit Starlink vereinbart. S&P-Rating auf A- angehoben. Investoren sorgen si…",
-     "einordnung": "Die Telekom ist ein Musterbeispiel für einen defensiven Cashflow-Konzern, der in einem zinssensitiven Umfeld als Zuflucht dient. Das KGV von 11,6 ist günstig, die Starlink-Partnerschaft strategisch w…",
-     "figures": "29,87 Mrd. € (Umsatz), +4,7 % (organisch), 11,52 Mrd. € (EBITDA), 5,69 Mrd. € (Free Cashflow), 0,54 € (Gewinn je Aktie), 53,8 % (Anteil T-Mobile US), 11,6 (KGV)"
     }
    ]
   },
@@ -3142,124 +3588,6 @@
     }
    ]
   },
-  "^GSPC": {
-   "name": "S&P 500",
-   "auftritte": [
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=2089s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Pfeil beim S&P 500 hat laut Egmond von seitwärts auf aufwärts gedreht. Eine kurzfristige Fortsetzung der Rekordfahrt wird erwartet.",
-     "einordnung": "Die Marktdaten bestätigen das konstruktive Momentum mit einem S&P-500-Future von 7.774 Punkten und einem Plus von 1,92 Prozent. Nach einer schnellen Erholung bleibt das Rückschlagrisiko jedoch höher,…"
-    },
-    {
-     "date": "2026-07-29",
-     "video_id": "iTOUC2QhmzM",
-     "url": "https://www.youtube.com/watch?v=iTOUC2QhmzM&t=405s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der S&P 500 zeigt nach der Fed-Sitzung eine Berg- und Talfahrt und dreht nach einer Erholung wieder ins Minus. Egmond führt die Schwäche vor allem auf fallende Chip- und KI-Aktien zurück.",
-     "einordnung": "Die leichte positive Bewegung des Futures steht im Kontrast zur im Video beschriebenen intraday schwachen Reaktion und spricht für ein nervöses, aber noch nicht eindeutig gekipptes Marktbild. Eine To…",
-     "figures": "S&P-500-Future laut Marktdaten aktuell: 7.362 Punkte, plus 0,15 Prozent"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=2005s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der S&P 500 gibt im Wochenverlauf nach, und Egmond Haidt erkennt Anzeichen einer klaren Topbildung. Eine mögliche technische Erholung soll seiner Einschätzung nach eher zum Abbau von Positionen genut…",
-     "einordnung": "Die Marktdaten zeigen beim S&P-500-Future aktuell ein Plus von 0,24 Prozent, was die kurzfristige Gegenbewegung stützt, aber die übergeordnete Warnung nicht widerlegt. Der Fear-and-Greed-Wert von 37,…",
-     "figures": "Rückgang um 1,1 Prozent im Wochenverlauf"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=480s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der S&P 500 gibt etwas nach. Egmond sieht eine klare Topbildung und erwartet weiteren Druck.",
-     "einordnung": "Die Topbildungs-These passt zum Zusammenspiel aus hohen Bewertungen, steigenden Renditen und nachlassender Risikobereitschaft. Sie ist allerdings erst dann belastbar, wenn die Schwäche über einzelne…"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "J6gUTUPHems",
-     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=1732s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Egmond sieht beim S&P 500 weiterhin die Gefahr einer Topbildung und erwartet eine Seitwärtsbewegung.",
-     "einordnung": "Der aktuelle Future liegt mit 7.546 Punkten 0,82 Prozent im Plus, doch eine positive Tagesbewegung beseitigt die vom Host angesprochenen Zins- und Bewertungsrisiken nicht. Gerade nahe möglicher Hochs…"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=1767s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Am 17. Juli steht ein Verfallstag an. Egmond warnt vor einer möglichen Topbildung und erwartet eher einen Seitwärtstrend.",
-     "einordnung": "Die Marktdaten zeigen den S&P-500-Future bei 7.597 Punkten und 0,45 Prozent im Plus, was kurzfristig stabil wirkt, aber die vom Host angesprochene Topbildungsgefahr nicht beseitigt. Nach starken Anst…"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1586s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der S&P 500 bewegt sich seit eineinhalb Monaten seitwärts. Haidt sieht das Risiko einer Topbildung.",
-     "einordnung": "Eine 1,5-monatige Seitwärtsbewegung nach einem starken Lauf ist ein klassisches Verteilungsmuster. Wenn der Index nicht bald neue Hochs macht, droht ein charttechnischer Bruch."
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1316s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Heute kaum Veränderung, nach Rebalancing und Beruhigung der Chipaktien könnte Höhenflug weitergehen. Haidt sieht Aufwärtschancen, warnt aber vor KI-Blasenrisiko.",
-     "einordnung": "Der S&P 500 ist nach dem Rebalancing in einer interessanten Position: Die Breite könnte zunehmen, wenn das Geld von KI in zyklische Werte rotiert. Aber das Blasenrisiko im Tech-Segment ist real – Bof…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "yJiIB_gEJsI",
-     "url": "https://www.youtube.com/watch?v=yJiIB_gEJsI&t=375s",
-     "channel": "BerneckerTV",
-     "kategorie": "makro",
-     "note": "Bernecker hinterfragt die hohen US-Bewertungen und diskutiert eine mögliche Blase. Der S&P 500 hat einen Marktwert von 624 Billionen Dollar, zu 80% in amerikanischer Hand. Die starke Eigenkapitalbasi…",
-     "einordnung": "Die Frage nach einer Blase ist berechtigt, aber gefährlich: Blasen platzen meist erst, wenn der letzte Skeptiker kapituliert. Dass Bernecker eine Korrektur in 'drei Jahren' sieht, ist typisch für die…",
-     "figures": "S&P 500 Marktwert 624 Billionen Dollar; 80% Amerikaner"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "1_zNnqdriM4",
-     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=290s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Index stabilisiert sich an der 7330er-Marke (50-Tage-Linie); Ausbruch über 7676 Punkte könnte Rally beschleunigen.",
-     "einordnung": "Der S&P 500 zeigt einen klassischen gesunden Konsolidierungsverlauf an der 50-Tage-Linie — solange 7330 hält, bleibt die Aufwärtstrend-Struktur intakt. Das Goldman-Ziel von 8000 Punkten wirkt ambitio…",
-     "figures": "7330 Punkte (Unterstützung), 7620/7676 (Widerstände), 8000 Punkte (Goldman-Ziel)"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "UiGfSVJW8nk",
-     "url": "https://www.youtube.com/watch?v=UiGfSVJW8nk&t=445s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "S&P 500 +5 Bio. USD, aber KI-Aktien allein +6 Bio. USD; alle anderen Sektoren verloren 1 Bio. USD. KI-Anteil am Index 47% (2023: 27%).",
-     "einordnung": "Das ist eine extreme Konzentration – der Index wird von einer Handvoll Mega-Cap-KI-Titel getragen, während der Rest des Marktes abverkauft wird. Das erinnert an Blasen-Phasen und birgt Risiko für Kor…",
-     "figures": "S&P 500 +5 Bio. USD; KI-Aktien +6 Bio. USD; Energie +200 Mrd. USD; andere Sektoren -1 Bio. USD; KI-Anteil 47% (2023: 27%)"
-    },
-    {
-     "date": "2026-06-15",
-     "video_id": "GAF_7ULoiQ0",
-     "url": "https://www.youtube.com/watch?v=GAF_7ULoiQ0&t=258s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Freitag war laut Host ein starker Tag für den S&P 500, u.a. befeuert durch das SpaceX-IPO; heute erneut klare Gewinne erwartet.",
-     "einordnung": "Der S&P 500 im Aufwind durch geopolitische Entspannung und ein Mega-IPO — das ist eine selten günstige Kombination. Kurzfristig bullish, aber Vorsicht vor überkauften Signalen."
-    }
-   ]
-  },
   "SI=F": {
    "name": "Silber",
    "auftritte": [
@@ -4248,80 +4576,6 @@
     }
    ]
   },
-  "NBIS": {
-   "name": "Nebius",
-   "auftritte": [
-    {
-     "date": "2026-07-31",
-     "video_id": "fZr7Rfgj3xg",
-     "url": "https://www.youtube.com/watch?v=fZr7Rfgj3xg",
-     "channel": "BerneckerTV",
-     "kategorie": "news",
-     "note": "Nebius wird im Zusammenhang mit dem Einbruch der Neocloud-Werte genannt. Der Host führt die Schwäche des Segments vor allem auf die allgemeine KI-Sektormüdigkeit und den Liquidationsdruck eines geheb…",
-     "einordnung": "Bei Nebius sollte die Kursbewegung deshalb nicht vorschnell als isolierte operative Neubewertung gelesen werden. Der Titel bleibt besonders anfällig für Positionierungs- und Finanzierungsrisiken, wie…"
-    },
-    {
-     "date": "2026-07-31",
-     "video_id": "SQ7RGehrHSw",
-     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=500s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Nebius korrigierte zuvor um 30 bis 50 Prozent und zeigte nun eine starke Gegenbewegung. Der Host sieht darin ein weiteres Zeichen dafür, dass der KI-Trade wieder lebt.",
-     "einordnung": "Eine kräftige Gegenbewegung nach einem Einbruch ist bei einem hochvolatilen KI-Wert zunächst vor allem ein Sentimentsignal. Sie kann Chancen eröffnen, erhöht aber zugleich das Risiko, dass Anleger ei…",
-     "figures": "Vorherige Korrektur um 30 % bis 50 %"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "Tlc2EJIAJeo",
-     "url": "https://www.youtube.com/watch?v=Tlc2EJIAJeo&t=2239s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nvidia hält bereits 1,2 Millionen Nebius-Aktien und besitzt Warrants auf weitere 21 Millionen Aktien, was einem Anteil von mehr als 9 Prozent entspricht. Den hohen Investitionen von mehr als 25 Milli…",
-     "einordnung": "Nebius ist eine Wachstumswette auf KI-Rechenzentren, bei der die Finanzierung deutlich wichtiger ist als klassische Bewertungskennzahlen. Der starke Kursrückgang zeigt, dass der Markt die ambitionier…",
-     "figures": "Nvidia-Anteil über 9 Prozent; 1,2 Millionen Aktien plus Warrants auf 21 Millionen weitere Aktien; Investitionen über 25 Milliarden US-Dollar; erwarteter Umsatz 2026: 3 Milliarden US-Dollar, 2027: 10…"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "jbBenx99pmg",
-     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=3830s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "In den Zuschauerfragen geht es um den starken Kursrückgang bei Nebius und einen Rücksetzer auf frühere Hochs. Belastend wirkt laut Host auch ein Verbot von Rechenzentren in New York.",
-     "einordnung": "Die Rückkehr auf frühere Hochs kann charttechnisch eine Unterstützung darstellen, ist bei einem stark volatilen KI-Infrastrukturwert aber kein belastbarer Boden. Ein Discountzertifikat kann das Risik…",
-     "figures": "Kurs 260 Euro, Rücksetzer auf frühere Hochs"
-    },
-    {
-     "date": "2026-07-02",
-     "video_id": "v4LJjhUTTGk",
-     "url": "https://www.youtube.com/watch?v=v4LJjhUTTGk&t=3565s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Größter Verlierer nach Meta-Cloud-News. Basis-Rücksetzer auf 200$ (50%-Retracement). Langfristige Story intakt, Nachfrage größer als Angebot.",
-     "einordnung": "Der Rücksetzer bei Nebius ist eine typische Überreaktion auf Konkurrenzängste. Wenn Meta in den Cloud-Markt einsteigt, validiert das das Geschäftsmodell von Neo-Cloud-Anbietern.",
-     "figures": "Hoch ca. 300 $, aktuell ca. ? , Ziel 200 $ (Basecase), 150 $ (worst case), 20 Mrd. $ pro Gigawatt"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "1_zNnqdriM4",
-     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2357s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Nebius führte KI-Agent 'Echo' ein, charttechnisch aber Abschwächung; wichtig ist Halten des 50-Tage-Durchschnitts.",
-     "einordnung": "Nebius ist ein hochspekulativer KI-Titel, bei dem die charttechnische Abschwächung im Widerspruch zur produktseitigen Innovation steht. Der Bruch unter 227$ würde den Trend eindeutig negativ wenden —…",
-     "figures": "Widerstand 141$, Unterstützung 227$, Ziel 320$ (nicht erreicht), Bruch unter 227$ könnte auf 183$ fallen"
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "a6FF2tGXbok",
-     "url": "https://www.youtube.com/watch?v=a6FF2tGXbok&t=2080s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blac…",
-     "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktu…",
-     "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd"
-    }
-   ]
-  },
   "IREN": {
    "name": "Iren",
    "auftritte": [
@@ -4405,31 +4659,6 @@
      "note": "Neues Rekordhoch vorbörslich; volle Auftragsbücher, Analysten rechnen für das nächste Jahr mit 90 ausgelieferten Anlagen (vs. zuletzt ~80) und 15–20 % Umsatzwachstum.",
      "einordnung": "ASML ist und bleibt das Monopol im EUV-Segment — kein Wettbewerber in Sichtweite. Rekordstände auf Rekordkurs bei solcher Visibilität der Auftragslage sind fundamental gerechtfertigt. Das erinnert an…",
      "figures": "80 Anlagen aktuell, ~90 Anlagen nächstes Jahr erwartet; Wachstumsprognose 15–20 %"
-    }
-   ]
-  },
-  "HAG.DE": {
-   "name": "Hensoldt",
-   "auftritte": [
-    {
-     "date": "2026-07-31",
-     "video_id": "hlNiwYp_P2c",
-     "url": "https://www.youtube.com/watch?v=hlNiwYp_P2c&t=796s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Der Auftragseingang hat sich verdoppelt, der Auftragsbestand ist sehr stark. Weil der Ausblick lediglich bestätigt wurde und die Bewertung hoch ist, fällt die Aktie dennoch um 5 %.",
-     "einordnung": "Operativ ist Hensoldt gut abgesichert, doch ein KGV von 42 lässt wenig Raum für Enttäuschungen. Der Kursrückgang zeigt exemplarisch, dass ein starker Auftragseingang allein nicht genügt, wenn der Aus…",
-     "figures": "Auftragseingang 2,81 Mrd. €; Book-to-Bill 2,4; Auftragsbestand 10,3 Mrd. €; Umsatzwachstum 23 %; EBITDA-Wachstum 29 %; Free Cashflow -136 Mio. €; KGV 42; Kursrückgang 5 %"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "rGKDA0JAU4I",
-     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=1342s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "MWB Research stuft auf Verkaufen (von Halten) herab — die NATO-Rally sei ohne Substanz. Verschiebung der Verteidigungsausgaben hin zu Marine und Luftwaffe trifft Hensoldt jedoch nicht direkt. Hohe Be…",
-     "einordnung": "Ein KGV von 40 für 2027 ist selbst für Verteidigungswerte extrem. Dass MWB die NATO-Rally als substanzlos einstuft, erinnert an die Kritik an Rüstungsaktien nach Ereignisrallyes, die regelmäßig korri…",
-     "figures": "+25% Rally von 64 auf 81€, Kursziel 62€, KGV 40 (2027), 27 (2028), -5% Kursreaktion"
     }
    ]
   },
@@ -5302,61 +5531,6 @@
     }
    ]
   },
-  "BAS.DE": {
-   "name": "BASF",
-   "auftritte": [
-    {
-     "date": "2026-07-29",
-     "video_id": "wOWTV_pDNkE",
-     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=558s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "BASF bestätigt die vorläufigen Zahlen und berichtet über einen weiteren deutlichen Stellenabbau. In Ludwigshafen sinkt die Beschäftigtenzahl unter 30.000, während ein neues Aktienrückkaufprogramm ang…",
-     "einordnung": "BASF befindet sich sichtbar in einer Phase der strukturellen Anpassung und nicht in einer klassischen Wachstumsstory. Das Rückkaufprogramm kann den Aktienkurs stützen, ersetzt aber keine überzeugende…",
-     "figures": "7.000 abgebaute Stellen; Beschäftigtenzahl in Ludwigshafen unter 30.000; Aktienrückkaufprogramm bis zu 1 Milliarde Aktien von August 2024 bis April 2027"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "J6gUTUPHems",
-     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=308s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "BASF meldete starke Zahlen für das zweite Quartal, doch die Anhebung der Prognose blieb leicht hinter den Analystenerwartungen zurück und enttäuschte damit den Markt.",
-     "einordnung": "Die operative Überraschung im Quartal ist positiv, wird aber durch den nur vorsichtig angehobenen Ausblick und den negativen Quartals-Free-Cashflow relativiert. Bei einem zyklischen Chemiewert zählt…",
-     "figures": "Umsatz: 17,2 Mrd. Euro gegenüber erwarteten 16,5 Mrd. Euro; bereinigtes EBITDA: 2,4 Mrd. Euro gegenüber erwarteten 2,15 Mrd. Euro; Free Cashflow: minus 0,2 Mrd. Euro. EBITDA-Prognose: 6,9 bis 7,7 Mrd…"
-    },
-    {
-     "date": "2026-07-16",
-     "video_id": "8n4SjPW9E8M",
-     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=612s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "BASF fokussiert sich auf das Kerngeschäft, spaltet die Agrarsparte ab und verkauft das Coatings-Geschäft. Der Host hebt BASF als guten Dividendenzahler hervor und sieht Potenzial über 50.",
-     "einordnung": "Die Neuausrichtung kann den Konzern fokussieren und Kapital freisetzen, ist aber zunächst mit Umbaukosten und Ausführungsrisiken verbunden. Die Dividende bietet einen Puffer, ersetzt bei einem zyklis…",
-     "figures": "Potenzial über 50; konkrete Währung beziehungsweise Kursziel im Video nicht genannt"
-    },
-    {
-     "date": "2026-07-16",
-     "video_id": "l9xly8aiYMM",
-     "url": "https://www.youtube.com/watch?v=l9xly8aiYMM&t=986s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "MWB Research stuft BASF von 'Halten' auf 'Kaufen' hoch. Der vorläufige Umsatz im zweiten Quartal liegt über den Erwartungen, das EBITDA steigt deutlich.",
-     "einordnung": "Die Zahlen sprechen für eine operative Verbesserung, doch BASF bleibt ein zyklischer Chemiewert, bei dem Preis- und Mengeneffekte nicht automatisch dauerhaft sind. Der Hinweis auf die Mitte einer Sei…",
-     "figures": "Kursziel 55 Euro nach zuvor 52 Euro; Umsatz 17,2 Mrd. Euro bei erwarteten 16,5 Mrd. Euro; EBITDA 2,4 Mrd. Euro bei erwarteten 2,1 Mrd. Euro; Preise +11 %, Mengen +7 %; Prognose 2026: 6,9 bis 7,7 Mrd.…"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "8EytmuiphH4",
-     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=1448s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Für die Agrarsparte ist ein Börsengang mit einem Unternehmenswert von 20 bis 30 Mrd. Euro geplant. BASF selbst kommt auf eine Marktkapitalisierung von 42,6 Mrd. Euro und ein KGV von 18; charttechnisc…",
-     "einordnung": "Ein möglicher Börsengang kann verborgene Werte sichtbar machen, ist aber zunächst eine Bewertungs- und Umsetzungsstory. Befindet sich der Kurs zugleich mitten in der Handelsspanne, fehlt aus charttec…",
-     "figures": "Marktkapitalisierung BASF 42,6 Mrd. Euro, erwarteter Wert der Agrarsparte 20 bis 30 Mrd. Euro, KGV 18, Tagesplus 1,2 Prozent"
-    }
-   ]
-  },
   "^TNX": {
    "name": "US-Zehnjährige Staatsanleihe",
    "auftritte": [
@@ -5930,70 +6104,6 @@
      "note": "NVIDIA zeigt relative Schwäche, Konsolidierung unter 195$; längerfristig Kursziel 250$.",
      "einordnung": "NVIDIAs relative Schwäche nach der beispiellosen Rally ist ein gesundes Zeichen — kein Baum wächst in den Himmel. Die 195$-Unterstützung ist charttechnisch der Dreh- und Angelpunkt: Hält sie, bleibt…",
      "figures": "Unterstützung 195$, Ziele 178$, 164$ (bei Bruch), langfristig 250$"
-    }
-   ]
-  },
-  "^NDX": {
-   "name": "Nasdaq 100",
-   "auftritte": [
-    {
-     "date": "2026-07-28",
-     "video_id": "ldobjNsL7sM",
-     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=188s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der Nasdaq 100 rutschte unter eine horizontale Unterstützung. Nach Einschätzung des Hosts könnte dadurch der Abgabedruck zunehmen.",
-     "einordnung": "Meine Einordnung: Der Bruch einer horizontalen Unterstützung verschlechtert das kurzfristige Chancen-Risiko-Verhältnis, besonders wenn gleichzeitig Nvidia und Speicherchipwerte schwächeln.",
-     "figures": "Nasdaq-100-Future laut Marktdaten: 27.874 Punkte, -1,12 Prozent"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Nasdaq gehört im Umfeld des Chip- und KI-Ausverkaufs zu den besonders anfälligen Leitindizes. Der weitere Verlauf hängt laut Sendung maßgeblich von der Fed und den anstehenden Zahlen der großen T…",
-     "einordnung": "Der Nasdaq-100-Future entwickelt sich damit deutlich schwächer als der S&P-500-Future. Das bestätigt die laufende Rotation weg von hoch bewerteten Wachstums- und KI-Titeln, ohne bereits einen endgült…",
-     "figures": "Nasdaq-100-Future aktuell 27.943 Punkte, minus 0,88 Prozent"
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "zu5dhkcdtR0",
-     "url": "https://www.youtube.com/watch?v=zu5dhkcdtR0&t=1811s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Das mittelfristige Kaufsignal aus dem April ist weiterhin intakt. Harry nennt 33.710 Punkte als Projektionsziel, während der Index seit Monaten unter 29.920 Punkten pendelt; 26.170 Punkte fungieren a…",
-     "einordnung": "Der Nasdaq-100-Future liegt laut Marktdaten bei 29.119 Punkten und damit noch unter dem vom Host genannten Etappenziel von 29.920 Punkten. Das bestätigt die positive Grundtendenz, zeigt aber zugleich…",
-     "figures": "26.170 Punkte (Barriere), 29.920 Punkte (Etappenziel), 33.710 Punkte (Projektionsziel)"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "WFyYyqhoiVo",
-     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=255s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der Nasdaq 100 gab nach, während der Chipindex nach dem starken Anstieg seit April konsolidiert. Der Host nennt bei den Halbleitern eine wichtige Unterstützung im Bereich von 12.300 bis 12.200 Punkte…",
-     "einordnung": "Nach einer starken Aufwärtsphase ist eine Konsolidierung zunächst gesund, sie macht den Sektor aber anfällig für weitere Gewinnmitnahmen. Entscheidend ist, ob die genannte Unterstützung hält oder aus…",
-     "figures": "Nasdaq 100: -1,8 %; Unterstützung im Chipindex bei 12.300/12.200 Punkten; aktuell laut Marktdaten: Nasdaq-100-Future 29.626 (+0,51 %)"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM&t=1182s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Neue Fast-Entry-Regel ab Mai: Freefloat-Anforderung entfällt, Aufstieg nach 15 Tagen statt 3 Monaten, Gewichtungsfaktor verdreifacht. SpaceX-IPO am 12. Juni, Börsenwert 1,75 Billionen $, Erlös 75 Mrd…",
-     "einordnung": "Die Regeländerung ist im Grunde maßgeschneidert für SpaceX — ohne Freefloat-Anforderung und mit verkürzter Wartezeit wird der IPO mechanisch zum Index-Turbo. Das ist Index-Front-Running auf größter B…",
-     "figures": "SpaceX-Bewertung 1,75 Billionen $, IPO-Erlös 75 Mrd. $, Freefloat 4,3%, potenzielles Indexgewicht 1% = 7,5 Mrd. $ Käufe, Gewichtungsfaktor verdreifacht, Eintritt nach 15 Tagen"
-    },
-    {
-     "date": "2020-03-12",
-     "video_id": "GxBbuNh6f1Y",
-     "url": "https://www.youtube.com/watch?v=GxBbuNh6f1Y&t=414s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der Nasdaq 100 verzeichnete ähnlich starke Verluste wie der Dow Jones und testete eine charttechnisch wichtige Unterstützung.",
-     "einordnung": "Die relative Stabilität wachstumsstarker Technologiewerte bietet in einem solchen Ausverkauf keinen verlässlichen Schutz. Ein Unterstützungstest ist erst dann belastbar, wenn sich anschließend tatsäc…"
     }
    ]
   },
@@ -9389,41 +9499,6 @@
      "note": "In den Zuschauerfragen wird Sea Limited als Aktie in einer Bodenbildung mit einem Widerstand bei etwa 100 Euro beziehungsweise US-Dollar besprochen. Der Host nennt einen Einstieg bei 100 US-Dollar un…",
      "einordnung": "Die vorgestellte Bodenbildungs-These ist klar technisch und bietet nur dann ein überzeugendes Profil, wenn die Unterstützungs- und Ausbruchszone tatsächlich bestätigt werden. Der große Abstand zwisch…",
      "figures": "Widerstand und Einstiegsbereich etwa 100 Euro beziehungsweise US-Dollar, Stopp 75 US-Dollar"
-    }
-   ]
-  },
-  "AMAT": {
-   "name": "Applied Materials",
-   "auftritte": [
-    {
-     "date": "2026-07-10",
-     "video_id": "H5zYVH8xlRI",
-     "url": "https://www.youtube.com/watch?v=H5zYVH8xlRI&t=206s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Aktie legt 3% zu, nachdem CEO Gary Dickinson signalisierte, dass sich Kunden auf jahrelange Mehrproduktion von Chips einstellen — ein positives Branchensignal.",
-     "einordnung": "Wenn der CEO eines großen Halbleiter-Ausrüsters von mehrjähriger Kapazitätserweiterung spricht, ist das ein konjunktureller Frühindikator für den gesamten Sektor. Applied Materials profitiert als Pic…",
-     "figures": "+3%"
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "mNobFjJKrNE",
-     "url": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=176s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Chipausrüster notiert auf einem neuen Rekordhoch nach rasantem Anstieg. Der Host rät, einen Neueinstieg abzuwarten, bis die Überhitzung sich legt.",
-     "einordnung": "Ein Rekordhoch nach solchem Anstieg ist charttechnisch ein zweischneidiges Schwert: bullisch, weil der Trend intakt ist, aber auch ein klassisches Überkaufungssignal. Geduld ist hier die bessere Tuge…",
-     "figures": "Neues Rekordhoch"
-    },
-    {
-     "date": "2025-11-28",
-     "video_id": "fQxlQW1Y5LQ",
-     "url": "https://www.youtube.com/watch?v=fQxlQW1Y5LQ&t=1752s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Host nennt Applied Materials mit 20% erwartetem Wachstum und großem Marktvolumen im Halbleiter-Equipment-Markt.",
-     "einordnung": "Applied Materials profitiert von der KI-getriebenen Halbleiter-Kapazitätserweiterung. 20% Wachstum bei einem etablierten Equipment-Lieferanten ist robust, doch der Titel ist zyklisch und reagiert emp…",
-     "figures": "20% Wachstumserwartung, 136 Mrd. Marktvolumen"
     }
    ]
   },
