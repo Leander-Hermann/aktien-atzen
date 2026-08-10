@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-10T18:20:28.433745Z",
+  "generated_at": "2026-08-10T19:20:31.458569Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 111,
-  "with_quote_data": 56,
+  "symbols_total": 113,
+  "with_quote_data": 60,
   "sources": [
    "watchlist",
    "videos",
@@ -21,140 +21,8 @@
  },
  "items": [
   {
-   "symbol": "TTD",
-   "name": "The Trade Desk",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-21,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "7,1× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 13.8,
-    "pct": -21.9,
-    "cur": "USD",
-    "as_of": "2026-08-10T06:33:34.327580+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "The Trade Desk fällt bei ungewöhnlich hohem Volumen",
-    "why_now": "Die Aktie von The Trade Desk liegt bei 13,8 USD und damit 21,9 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 7,1-Fache des Durchschnitts. Ursache unklar. Das hohe Volumen könnte die starke Kursbewegung begleiten, belegt aber keinen konkreten Auslöser.",
-    "watch_next": [
-     "Kursentwicklung der Aktie",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Meldungen zum Unternehmen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-10T00:20:35.431748Z"
-   }
-  },
-  {
-   "symbol": "ABNB",
-   "name": "Airbnb",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+17,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,4× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 178.07,
-    "pct": 17.43,
-    "cur": "USD",
-    "as_of": "2026-08-10T06:33:34.327580+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Airbnb mit starker Kursbewegung und hohem Volumen",
-    "why_now": "Die Airbnb-Aktie liegt bei 178,07 USD und ist um 17,43 % gestiegen. Das Handelsvolumen beträgt das 4,4-Fache des Durchschnitts. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung von Airbnb",
-     "Handelsvolumen",
-     "Weitere auffällige Bewegungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-10T00:20:35.431748Z"
-   }
-  },
-  {
-   "symbol": "AXON",
-   "name": "Axon Enterprise",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 571.01,
-    "pct": 9.29,
-    "cur": "USD",
-    "as_of": "2026-08-10T06:33:34.327580+00:00"
-   }
-  },
-  {
-   "symbol": "AAOI",
-   "name": "Applied Optoelectronics",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,2 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 135.63,
-    "pct": 9.19,
-    "cur": "USD",
-    "as_of": "2026-08-10T06:33:34.327580+00:00"
-   }
-  },
-  {
-   "symbol": "NET",
-   "name": "Cloudflare",
+   "symbol": "RBRK",
+   "name": "Rubrik",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -162,21 +30,21 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,6 %",
-     "weight": 30
+     "value": "+10,5 %",
+     "weight": 45
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,7× Durchschnitt",
-     "weight": 25
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
-    "price": 300.27,
-    "pct": 5.57,
+    "price": 99.84,
+    "pct": 10.85,
     "cur": "USD",
-    "as_of": "2026-08-10T06:33:34.327580+00:00"
+    "as_of": "2026-08-10T18:36:17.336371+00:00"
    }
   }
  ]
