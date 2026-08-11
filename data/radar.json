@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-11T06:20:39.033273Z",
+  "generated_at": "2026-08-11T07:20:27.511713Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -11,7 +11,7 @@
  "mode": "batch",
  "universe": {
   "symbols_total": 111,
-  "with_quote_data": 60,
+  "with_quote_data": 59,
   "sources": [
    "watchlist",
    "videos",
@@ -23,15 +23,21 @@
   {
    "symbol": "RBRK",
    "name": "Rubrik",
-   "score": 55,
-   "priority": "medium",
+   "score": 70,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+10,5 %",
+     "value": "+8,7 %",
      "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,3× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -41,10 +47,142 @@
     }
    ],
    "quote": {
-    "price": 99.84,
-    "pct": 10.85,
+    "price": 97.91,
+    "pct": 8.7,
     "cur": "USD",
-    "as_of": "2026-08-10T18:36:17.336371+00:00"
+    "as_of": "2026-08-11T06:34:20.604744+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Rubrik fällt mit starkem Kursanstieg und hohem Volumen auf",
+    "why_now": "Die Rubrik-Aktie liegt bei 97,91 USD und ist um 8,7 % gestiegen. Das Handelsvolumen beträgt 2,3× des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst, die damit zusammenhängen könnte. Ursache unklar.",
+    "watch_next": [
+     "Weitere Kursbewegung",
+     "Entwicklung des Handelsvolumens",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-11T07:20:27.511713Z"
+   }
+  },
+  {
+   "symbol": "DDOG",
+   "name": "Datadog",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "quote": {
+    "price": 260.78,
+    "pct": 11.48,
+    "cur": "USD",
+    "as_of": "2026-08-11T06:34:20.604744+00:00"
+   }
+  },
+  {
+   "symbol": "PANW",
+   "name": "Palo Alto Networks",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,8 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 6 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 385.04,
+    "pct": 5.82,
+    "cur": "USD",
+    "as_of": "2026-08-11T06:34:20.604744+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-17",
+    "distance_days": 6,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "ASTS",
+   "name": "AST SpaceMobile",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,4 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 68.76,
+    "pct": -4.42,
+    "cur": "USD",
+    "as_of": "2026-08-11T06:34:20.604744+00:00"
+   }
+  },
+  {
+   "symbol": "SAP.DE",
+   "name": "SAP",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,1 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:SAP",
+   "quote": {
+    "price": 179.3,
+    "pct": 4.08,
+    "cur": "EUR",
+    "as_of": "2026-08-11T06:34:20.604744+00:00"
    }
   }
  ]
