@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-12T18:20:28.625966Z",
+  "generated_at": "2026-08-12T19:20:30.880413Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 111,
-  "with_quote_data": 56,
+  "symbols_total": 110,
+  "with_quote_data": 59,
   "sources": [
    "watchlist",
    "videos",
@@ -23,15 +23,21 @@
   {
    "symbol": "SMCI",
    "name": "Super Micro Computer",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
+   "score": 100,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+19,5 %",
+     "weight": 45
+    },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
+     "value": "2,6× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "earnings_watch",
@@ -42,25 +48,222 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 31.6,
-    "pct": 0.45,
+    "price": 37.61,
+    "pct": 19.02,
     "cur": "USD",
-    "as_of": "2026-08-12T06:34:32.026140+00:00"
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
    },
    "earnings": {
     "date": "2026-08-11",
     "distance_days": -1,
     "zeit": "amc"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Super Micro Computer steigt nach Earnings deutlich",
+    "why_now": "Die Aktie von Super Micro Computer liegt bei 37,61 USD und notiert 19,02 % höher. Das Handelsvolumen beträgt 2,6× des Durchschnitts, zudem fanden gestern Earnings statt. Die zeitliche Nähe spricht dafür, dass die Bewegung mit dem Earnings-Termin zusammenhängen könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach den Earnings",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-12T19:20:30.880413Z"
+   }
+  },
+  {
+   "symbol": "CRWV",
+   "name": "CoreWeave",
+   "score": 90,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+19,7 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 107.985,
+    "pct": 19.56,
+    "cur": "USD",
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "CoreWeave mit deutlichem Kurssprung und hohem Volumen",
+    "why_now": "Die Aktie legte um 19,7 % zu. Das Handelsvolumen lag beim 2,6-Fachen des Durchschnitts. Zusätzlich wurden 2 Videos in 3 Tagen verzeichnet, was auf erhöhte Aufmerksamkeit hindeuten könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-12T19:20:30.880413Z"
    }
   },
   {
    "symbol": "NBIS",
    "name": "Nebius",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+28,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 249.68,
+    "pct": 29.21,
+    "cur": "USD",
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Nebius mit starkem Tagesanstieg und hohem Volumen",
+    "why_now": "Nebius legte laut Kursdaten um 29,21 % auf 249,68 USD zu; als Auslöser ist zudem eine starke Kursbewegung von +28,9 % ausgewiesen. Das Handelsvolumen lag beim 2,0-Fachen des Durchschnitts, außerdem wurden 2 Videos in 3 Tagen erfasst. Die erhöhte Sichtbarkeit könnte die Bewegung begleitet haben, belegt aber keine Ursache. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach dem starken Anstieg",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-12T19:20:30.880413Z"
+   }
+  },
+  {
+   "symbol": "LITE",
+   "name": "Lumentum",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+16,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 944.81,
+    "pct": 15.14,
+    "cur": "USD",
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
+   }
+  },
+  {
+   "symbol": "SZU.DE",
+   "name": "Südzucker",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,3 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,4× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:SZU",
+   "quote": {
+    "price": 11.76,
+    "pct": 4.26,
+    "cur": "EUR",
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
+   }
+  },
+  {
+   "symbol": "ATS.VI",
+   "name": "AT&S",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,5 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "VIE:ATS",
+   "quote": {
+    "price": 165.2,
+    "pct": 8.54,
+    "cur": "EUR",
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
+   }
+  },
+  {
+   "symbol": "INTC",
+   "name": "Intel",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -68,7 +271,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,0 %",
+     "value": "+4,5 %",
      "weight": 30
     },
     {
@@ -79,70 +282,44 @@
     }
    ],
    "quote": {
-    "price": 193.23,
-    "pct": 4.95,
+    "price": 102.115,
+    "pct": 4.5,
     "cur": "USD",
-    "as_of": "2026-08-12T06:34:32.026140+00:00"
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
    }
   },
   {
-   "symbol": "ASTS",
-   "name": "AST SpaceMobile",
+   "symbol": "NCH2.DE",
+   "name": "thyssenkrupp nucera",
    "score": 50,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "volume_spike",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,2 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 71.63,
-    "pct": 4.17,
-    "cur": "USD",
-    "as_of": "2026-08-12T06:34:32.026140+00:00"
-   }
-  },
-  {
-   "symbol": "HIMS",
-   "name": "Hims & Hers",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,0 %",
+     "value": "-3,5 %",
      "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
+     "value": "2,6× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
+   "tv_symbol": "XETR:NCH2",
    "quote": {
-    "price": 30.51,
-    "pct": -3.97,
-    "cur": "USD",
-    "as_of": "2026-08-12T06:34:32.026140+00:00"
+    "price": 7.77,
+    "pct": -3.48,
+    "cur": "EUR",
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
    }
   }
  ]
