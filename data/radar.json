@@ -1,17 +1,17 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-12T06:20:28.022946Z",
+  "generated_at": "2026-08-12T07:20:34.453442Z",
   "source": "radar",
-  "status": "empty",
+  "status": "fresh",
   "partial": false,
   "warnings": [],
   "errors": []
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 112,
-  "with_quote_data": 55,
+  "symbols_total": 111,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -19,5 +19,131 @@
    "movers"
   ]
  },
- "items": []
+ "items": [
+  {
+   "symbol": "SMCI",
+   "name": "Super Micro Computer",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 31.6,
+    "pct": 0.45,
+    "cur": "USD",
+    "as_of": "2026-08-12T06:34:32.026140+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-11",
+    "distance_days": -1,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "NBIS",
+   "name": "Nebius",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,0 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 193.23,
+    "pct": 4.95,
+    "cur": "USD",
+    "as_of": "2026-08-12T06:34:32.026140+00:00"
+   }
+  },
+  {
+   "symbol": "ASTS",
+   "name": "AST SpaceMobile",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,2 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 71.63,
+    "pct": 4.17,
+    "cur": "USD",
+    "as_of": "2026-08-12T06:34:32.026140+00:00"
+   }
+  },
+  {
+   "symbol": "HIMS",
+   "name": "Hims & Hers",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,0 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 30.51,
+    "pct": -3.97,
+    "cur": "USD",
+    "as_of": "2026-08-12T06:34:32.026140+00:00"
+   }
+  }
+ ]
 }
