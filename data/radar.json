@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-12T23:20:28.790996Z",
+  "generated_at": "2026-08-13T00:20:27.968025Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 110,
+  "symbols_total": 115,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -42,8 +42,8 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -60,26 +60,26 @@
    },
    "earnings": {
     "date": "2026-08-11",
-    "distance_days": -1,
+    "distance_days": -2,
     "zeit": "amc"
    },
    "llm": {
     "status": "ready",
-    "headline": "Super Micro Computer steigt nach Earnings deutlich",
-    "why_now": "Die Aktie von Super Micro Computer liegt bei 37,61 USD und notiert 19,02 % höher. Das Handelsvolumen beträgt 2,6× des Durchschnitts, zudem fanden gestern Earnings statt. Die zeitliche Nähe spricht dafür, dass die Bewegung mit dem Earnings-Termin zusammenhängen könnte. Ursache unklar.",
+    "headline": "SMCI nach Earnings mit deutlicher Kursbewegung",
+    "why_now": "Die Aktie liegt bei 37,61 USD und ist um 19,02 % gestiegen; zugleich lag das Handelsvolumen beim 2,6-Fachen des Durchschnitts. Der Earnings-Termin vor 2 Tagen dürfte im zeitlichen Zusammenhang mit der Bewegung stehen. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach den Earnings",
+     "Kursentwicklung nach der Earnings-Reaktion",
      "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
+     "Weitere Earnings-bezogene Meldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-12T19:20:30.880413Z"
+    "generated_at": "2026-08-13T00:20:27.968025Z"
    }
   },
   {
    "symbol": "CRWV",
    "name": "CoreWeave",
-   "score": 90,
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -98,8 +98,8 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
@@ -110,60 +110,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "CoreWeave mit deutlichem Kurssprung und hohem Volumen",
-    "why_now": "Die Aktie legte um 19,7 % zu. Das Handelsvolumen lag beim 2,6-Fachen des Durchschnitts. Zusätzlich wurden 2 Videos in 3 Tagen verzeichnet, was auf erhöhte Aufmerksamkeit hindeuten könnte. Ursache unklar.",
+    "headline": "CoreWeave mit deutlicher Kurs- und Volumenbewegung",
+    "why_now": "Die CoreWeave-Aktie legte 19,56 % auf 107,985 USD zu. Das Handelsvolumen lag beim 2,6-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
     "watch_next": [
      "Kursbewegung",
      "Handelsvolumen",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-12T19:20:30.880413Z"
-   }
-  },
-  {
-   "symbol": "NBIS",
-   "name": "Nebius",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+28,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 249.68,
-    "pct": 29.21,
-    "cur": "USD",
-    "as_of": "2026-08-12T18:35:30.791417+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Nebius mit starkem Tagesanstieg und hohem Volumen",
-    "why_now": "Nebius legte laut Kursdaten um 29,21 % auf 249,68 USD zu; als Auslöser ist zudem eine starke Kursbewegung von +28,9 % ausgewiesen. Das Handelsvolumen lag beim 2,0-Fachen des Durchschnitts, außerdem wurden 2 Videos in 3 Tagen erfasst. Die erhöhte Sichtbarkeit könnte die Bewegung begleitet haben, belegt aber keine Ursache. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem starken Anstieg",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-12T19:20:30.880413Z"
+    "generated_at": "2026-08-13T00:20:27.968025Z"
    }
   },
   {
@@ -195,6 +150,51 @@
    "quote": {
     "price": 944.81,
     "pct": 15.14,
+    "cur": "USD",
+    "as_of": "2026-08-12T18:35:30.791417+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Lumentum mit starker Kursbewegung und hohem Volumen",
+    "why_now": "Die Aktie von Lumentum legte um 15,14 % zu; im Datenblock wird eine starke Kursbewegung von +16,0 % ausgewiesen. Das Handelsvolumen lag beim 2,0-Fachen des Durchschnitts. Zudem wurden 2 Videos in 3 Tagen erwähnt, ein Zusammenhang mit der Kursbewegung ist daraus jedoch nicht ableitbar. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-13T00:20:27.968025Z"
+   }
+  },
+  {
+   "symbol": "NBIS",
+   "name": "Nebius",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+28,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 249.68,
+    "pct": 29.21,
     "cur": "USD",
     "as_of": "2026-08-12T18:35:30.791417+00:00"
    }
