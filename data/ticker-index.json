@@ -1,6 +1,536 @@
 {
- "updated": "2026-08-13T06:33:59.604967+00:00",
+ "updated": "2026-08-13T18:35:42.247327+00:00",
  "ticker": {
+  "NVDA": {
+   "name": "Nvidia",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "smkyeECHjv8",
+     "url": "https://www.youtube.com/watch?v=smkyeECHjv8&t=817s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Nvidia profitiert nach Einschätzung des Hosts als technischer Rückgrat-Anbieter von der möglichen neuen Anlageklasse Rechenkapazität.",
+     "einordnung": "Nvidia besitzt im KI-Ökosystem eine außergewöhnlich starke Position, doch genau diese Qualität ist im Kurs- und Erwartungsniveau typischerweise besonders weit vorweggenommen. Der entscheidende Prüfst…"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "pWfog8GURyw",
+     "url": "https://www.youtube.com/watch?v=pWfog8GURyw&t=1926s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Nvidia arbeitet mit Partnern an einer KI-Finanzierung im Volumen von 500 Mrd. US-Dollar. Egmond Haidt bezweifelt die Umsetzung und warnt vor steigenden Zinsen als Belastung.",
+     "einordnung": "Nvidia bleibt der zentrale Profiteur des KI-Infrastrukturzyklus, aber die Größenordnung der Finanzierung erhöht die Abhängigkeit vom Kapitalmarkt. Meine Einschätzung: Vor den Zahlen ist das Chance-Ri…",
+     "figures": "KI-Finanzierung: 500 Mrd. US-Dollar"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "ldobjNsL7sM",
+     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=162s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nvidia gab deutlich nach und belastete dadurch die US-Technologieindizes, während andere Aktien den Rückgang teilweise auffingen.",
+     "einordnung": "Meine Einordnung: Bei Nvidia genügt inzwischen schon eine kleine Verschiebung bei Wachstumserwartungen oder Bewertung, um überproportionale Kursreaktionen auszulösen."
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "WFyYyqhoiVo",
+     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=335s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Nvidia gab im schwachen Branchenumfeld nach. Die 200-Tage-Linie ist laut Host noch ein gutes Stück entfernt.",
+     "einordnung": "Bei Nvidia ist die relative Stärke des langfristigen Trends wichtiger als ein einzelner schwacher Handelstag. Die Aktie bleibt jedoch ein besonders sensibler Gradmesser für die Risikobereitschaft im…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "BfRCptZ2OAI",
+     "url": "https://www.youtube.com/watch?v=BfRCptZ2OAI&t=3919s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Die Bank of America hebt ihre Umsatzprognosen für Nvidia deutlich an: Für 2026 werden 25 Prozent, für 2027 23 Prozent, für 2028 21 Prozent, für 2029 24 Prozent und für 2030 30 Prozent Wachstum genann…",
+     "einordnung": "Die Aktie wirkt auf Basis des genannten Forward-KGV im Vergleich zum Nasdaq 100 nicht überteuert, sofern die angehobenen Umsatzpfade tatsächlich erreicht werden. Der technische Ausbruch bleibt jedoch…",
+     "figures": "Umsatzprognose: 2026 +25 Prozent, 2027 +23 Prozent, 2028 +21 Prozent, 2029 +24 Prozent, 2030 +30 Prozent; KGV auf Basis der vergangenen zwölf Monate 31; Forward-KGV 21; Nasdaq-100-KGV 24; KUV 0,5; An…"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "1NCf_rpMGr8",
+     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=2199s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Nvidia konsolidiert unterhalb der 50-Tage-Linie und bildet Inside Days. Dirk Siebenhaar hält die Position im großen Depot ohne engen Stop.",
+     "einordnung": "Die Position ohne engen Stop ist ein bewusst großzügigerer Ansatz für das große Depot, erhöht aber das Risiko einer längeren Seitwärts- oder Abwärtsphase. 210 US-Dollar markieren laut Host die Schwel…",
+     "figures": "210 US-Dollar als potenzielles Ausbruchsniveau"
+    },
+    {
+     "date": "2026-07-10",
+     "video_id": "WhBpYiqY-KA",
+     "url": "https://www.youtube.com/watch?v=WhBpYiqY-KA&t=430s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Nvidia verlor innerhalb weniger Wochen rund eine Billion US-Dollar Börsenwert. Trotz eines Marktanteils von 97 Prozent bei Server-GPUs ist die Aktie günstig bewertet. Langfristig könnte der Anteil au…",
+     "einordnung": "Das KGV-Gefälle von 22,7 auf 12,5 in 2029 zeigt, dass die Wall Street massives Gewinnwachstum einpreist. Das ist typisch für einen Zyklusführer – billig auf dem Papier, teuer im Risiko, falls das KI-…",
+     "figures": "KGV 22,7 (GJ26/27), 18,5 (12M), 15,8 (2027/28), 12,5 (2029); FCF-Rendite 6,3% (GJ28); Netto-Cash ~1 Billion USD bis Ende Jahrzehnt; Marktanteil 97% Server-GPUs"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "eGLSmVJce2U",
+     "url": "https://www.youtube.com/watch?v=eGLSmVJce2U&t=178s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nvidia steigt rund 4% auf 200 USD, nachdem China die H200-Chips freigegeben hat. Der Host merkt jedoch an, dass dieser Kurs nicht ausreicht, um den Gesamtmarkt zu stützen.",
+     "einordnung": "Die H200-Freigabe für China ist ein struktureller Positiv, doch bei 200 USD steht Nvidia an einer charttechnisch sensiblen Marke. Die Frage bleibt, ob der KI-Hype-Sog ausreicht, den Nasdaq wieder nac…",
+     "figures": "Kurs 200 USD, rund 4% gestiegen"
+    },
+    {
+     "date": "2026-07-09",
+     "video_id": "rGKDA0JAU4I",
+     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=3179s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Open-Source-Modell Nemotron 3 Ultra senkt Inference-Kosten auf ein Zehntel. Strategie der Kooperation mit Wettbewerbern. Bewertung von 36er KGV auf 20er gefallen, weiter 50-80% Wachstum erwartet.",
+     "einordnung": "Dass Nvidia ein Open-Source-Modell veröffentlicht, ist strategisch klug — es senkt die Wechselkosten für KI-Entwickler und bindet sie an die CUDA-Plattform. Ein KGV von 20 bei 50-80% Wachstum ist ger…",
+     "figures": "+3,6%, Inference-Kosten 10x niedriger, KGV von 36 auf 20 (-43%), erwartetes Wachstum 50-80%"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1410s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Nach dem Ausverkauf fließt Geld wieder in Nvidia als Stabilitätsanker. Haidt warnt jedoch: Falls die gesamte KI-Blase platzt, ist auch Nvidia betroffen.",
+     "einordnung": "Nvidia als Stabilitätsanker in einem KI-korrigierenden Markt ist ein Widerspruch in sich. Die Aktie mag kurzfristig Kapital anziehen, aber bei einem echten KI-Sentiment-Bruch ist Nvidia der erste Kan…"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "-DiygCxAXrc",
+     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=3411s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Die Kyber-Plattform (Rubin Ultra) verschiebt sich um 12 Monate wegen Fertigungsproblemen. Die Aktie notiert mit einem KGV unter 20 und einem PEG von 0,4. Goersch sieht Nvidia als langfristigen Kaufwe…",
+     "einordnung": "Eine 12-monatige Verzögerung der nächsten Plattform-Generation ist signifikant — sie gibt Wettbewerbern wie AMD und nun auch Meta mit Eigenentwicklungen Zeit, Marktanteile zu gewinnen. Dennoch ist ei…",
+     "figures": "12 Monate, 236$, 194$, KGV unter 20, PEG 0,4"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1877s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Zuletzt gut gelaufen und relativ stabil, gestützt durch Micron-Zahlen. Haidt tendiert zu leicht aufwärts.",
+     "einordnung": "Nvidia bleibt der unangefochtene KI-Champion, aber die Stabilität nach Microns Gewinnmitnahmen ist ein zweischneidiges Signal: Entweder der Markt vertraut weiterhin auf Nvidias Monopol oder die Korre…"
+    }
+   ]
+  },
+  "BZ=F": {
+   "name": "Ölpreis",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "smkyeECHjv8",
+     "url": "https://www.youtube.com/watch?v=smkyeECHjv8&t=866s",
+     "channel": "BerneckerTV",
+     "kategorie": "makro",
+     "note": "Der Ölpreis bleibt wegen des Iran-Konflikts volatil, doch die Märkte gewöhnen sich nach Einschätzung des Hosts zunehmend an die geopolitische Belastung. Die US-Eigenförderung mildert die Versorgungsr…",
+     "einordnung": "Die fallende Brent-Notierung trotz der geopolitischen Risiken zeigt, dass der Markt derzeit keinen dauerhaften globalen Versorgungsausfall einpreist. Die Lage bleibt jedoch asymmetrisch: Eine tatsäch…",
+     "figures": "Psychologische Marke von 6 Dollar je Gallone; Brent aktuell laut Marktdaten 87,36 Dollar je Barrel und 1,82 Prozent im Minus"
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "Hwf_CXhBgJU",
+     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=347s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Die Spannungen um die Straße von Hormus machen den Ölpreis zum geopolitischen Spielball. Der Host nennt 70 bis 71 Dollar als wichtige Zone sowie 67 Dollar als weitere charttechnische Marke.",
+     "einordnung": "Der aktuelle Brent-Anstieg auf 87,87 Dollar zeigt, dass der Risikoaufschlag den Markt kurzfristig dominiert. Für eine belastbare Trendanalyse müsste sich die Lage an der wichtigen Transportroute zunä…",
+     "figures": "67 $, 70–71 $, Brent aktuell laut Marktdaten: 87,87 $ (+5,17 %)"
+    },
+    {
+     "date": "2026-08-05",
+     "video_id": "hmqZDddNkEc",
+     "url": "https://www.youtube.com/watch?v=hmqZDddNkEc&t=255s",
+     "channel": "BerneckerTV",
+     "kategorie": "makro",
+     "note": "Thieme sieht den Ölpreis als wichtigen Hebel für die Aktienmärkte: Bei einer geopolitischen Eskalation hält er 120 bis 130 US-Dollar für möglich, bei Entspannung etwa 60 US-Dollar. Zwischen Ölpreisan…",
+     "einordnung": "Bei einem Brent-Preis von 79,49 US-Dollar liegt der Markt zwischen den beiden vom Host skizzierten Extremszenarien. Für Aktien ist weniger das absolute Niveau als die Geschwindigkeit eines Anstiegs e…",
+     "figures": "Szenario Eskalation: 120 bis 130 US-Dollar; Szenario Entspannung: 60 US-Dollar; Brent laut Marktdaten 79,49 US-Dollar, plus 0,16 Prozent"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=1686s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Ölpreis fiel nach Trumps Ankündigung neuer Iran-Verhandlungen intraday um 10 Prozent und gab auf Wochenbasis 2 Prozent nach. Egmond erwartet bei hoher Volatilität eine Seitwärtsbewegung.",
+     "einordnung": "Die Marktdaten bestätigen den starken Druck auf Brent mit 79,28 US-Dollar und einem Tagesminus von 5,36 Prozent; der Host nennt zusätzlich den intraday deutlich stärkeren Einbruch. Die Diskrepanz erk…",
+     "figures": "Intraday-Rückgang 10 Prozent; Wochenrückgang 2 Prozent; Brent laut Marktdaten 79,28 US-Dollar, minus 5,36 Prozent"
+    },
+    {
+     "date": "2026-08-03",
+     "video_id": "CZa-I4ZurbI",
+     "url": "https://www.youtube.com/watch?v=CZa-I4ZurbI&t=125s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Ölpreise gaben kräftig nach, nachdem der geplante US-Militärschlag gegen Iran abgesagt wurde. Die Aussicht auf eine Wiederaufnahme der Verhandlungen nahm einen Teil des geopolitischen Risikoaufsc…",
+     "einordnung": "Der Rückgang ist zunächst eine Entspannung bei der Risikoprämie und kein Beleg für eine dauerhaft schwache Ölnachfrage. Die widersprüchlichen Signale aus Washington sprechen dafür, geopolitische Auss…",
+     "figures": "Brent laut Host -4,8 Prozent, zwischenzeitlich bis zu -10 Prozent; WTI 79,88 Dollar und -5,6 Prozent; aktuell laut Marktdaten: Brent 83,49 Dollar und -7,36 Prozent"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "oMLNBWy4nh8",
+     "url": "https://www.youtube.com/watch?v=oMLNBWy4nh8&t=694s",
+     "channel": "BerneckerTV",
+     "kategorie": "news",
+     "note": "Steigende Energiepreise bewertet der Host als negativen Kostenschock, der die Bevölkerung verarmen lässt. Das Geldmengenwachstum sei derzeit mit 5 Prozent in den USA, 3 Prozent im Euroraum und 2,2 Pr…",
+     "einordnung": "Energie ist der klassische Transmissionskanal von Geopolitik in die Inflation. Der aktuelle Brent-Rückgang bei gleichzeitig erhöhtem geopolitischem Risiko zeigt, wie schnell dieser Faktor drehen kann…",
+     "figures": "Geldmengenwachstum: USA 5%, Euroraum 3%, Japan 2,2%; Brent-Öl laut Marktdaten 89,14 USD (-1,76%)"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "iTOUC2QhmzM",
+     "url": "https://www.youtube.com/watch?v=iTOUC2QhmzM&t=373s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Ölpreis stabilisiert sich nach dem Angriff auf einen LNG-Tanker in Ägypten und steigt im Tagesverlauf um 7 Prozent.",
+     "einordnung": "Der aktuelle Brent-Stand von 92,60 US-Dollar bestätigt, dass der Energiemarkt die geopolitische Risikoprämie bereits sichtbar einpreist. Steigende Ölpreise sind für die Fed ein unangenehmer Faktor, w…",
+     "figures": "Tagesanstieg: 7 Prozent; Brent laut Marktdaten aktuell: 92,60 US-Dollar"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=1949s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Ölpreis fällt nach dem Ausbleiben neuer Angriffe im Iran-Krieg massiv. Kurzfristig erwartet Egmond Haidt eine Seitwärtsbewegung, warnt jedoch vor einer erneuten Eskalation.",
+     "einordnung": "Der aktuelle Brent-Rückgang bestätigt die hohe geopolitische Risikoprämie und deren schnellen Abbau bei Entspannungshoffnungen. Für Aktien ist das zunächst positiv über den Inflationskanal, doch die…",
+     "figures": "Von über 100 US-Dollar auf knapp über 80 US-Dollar; Einbruch um fast 20 Prozent in zwei Tagen; Brent laut Marktdaten 83,91 US-Dollar, minus 5,04 Prozent"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "i5q2OHZUl84",
+     "url": "https://www.youtube.com/watch?v=i5q2OHZUl84&t=159s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der Ölpreis gibt wegen der Hoffnung auf eine Feuerpause im Nahen Osten nach. Charttechnisch bleibt der Aufwärtstrend laut Host jedoch intakt, solange die 200-Tage-Linie nicht unterschritten wird.",
+     "einordnung": "Der aktuelle Rückgang entlastet zunächst inflations- und zinssensible Märkte, doch der geopolitische Abschlag ist fragil. Solange die technische Unterstützung hält, ist das eher eine Korrektur im Auf…",
+     "figures": "Host: 4 bis 5 Prozent Minus und 100 USD; aktuell laut Marktdaten: Brent 90,57 USD, minus 6,42 Prozent; 200-Tage-Linie"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "JJawjyNF_GQ",
+     "url": "https://www.youtube.com/watch?v=JJawjyNF_GQ&t=104s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "makro",
+     "note": "Die Ölpreise ziehen wegen der unsicheren Lage im Iran weiter an. Der Host nennt Brent bei 96,70 US-Dollar; aktuell weist der Datenblock 96,01 US-Dollar aus.",
+     "einordnung": "Der Ölpreisanstieg ist zunächst ein geopolitischer Risikoaufschlag, nicht automatisch der Beginn eines nachhaltigen Rohstoffzyklus. Für die Aktienmärkte wäre eine längere Hochpreisphase problematisch…",
+     "figures": "Host: Brent 96,70 USD; aktuell laut Marktdaten: 96,01 USD, +2,06%"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=118s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Brent steigt über 100 US-Dollar und legt seit Monatsbeginn um 30 bis 35 Prozent zu. Als Treiber nennt der Host geopolitische Spannungen rund um Iran und das Rote Meer.",
+     "einordnung": "Der Ölpreis ist derzeit der zentrale makroökonomische Verstärker: Er erhöht den Inflationsdruck und verschlechtert zugleich die Gewinnperspektiven energieintensiver Unternehmen. Die aktuelle Notierun…",
+     "figures": "über 100 US-Dollar; plus 30 bis 35 Prozent seit Monatsbeginn; aktuell laut Marktdaten: 101,23 US-Dollar, plus 7,61 Prozent"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "nPEPzB9N_5o",
+     "url": "https://www.youtube.com/watch?v=nPEPzB9N_5o&t=198s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Die Ölpreise stabilisieren sich laut Host oberhalb der 200-Tage-Linie. Ein Anstieg in Richtung 95 US-Dollar je Barrel bleibt aus charttechnischer Sicht möglich.",
+     "einordnung": "Der Abstand zwischen der vom Host genannten Notierung und den aktuellen Marktdaten unterstreicht die hohe Intraday-Volatilität. Charttechnisch ist die 200-Tage-Linie eine relevante Orientierungsmarke…",
+     "figures": "200-Tage-Linie bei etwa 88,60 USD; Host nennt aktuell etwa 90 USD; mögliches Ziel 95 USD; aktuell laut Marktdaten: Brent 88,40 USD und -0,92 Prozent"
+    }
+   ]
+  },
+  "JPY=X": {
+   "name": "Yen und mögliche Intervention",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "smkyeECHjv8",
+     "url": "https://www.youtube.com/watch?v=smkyeECHjv8&t=1254s",
+     "channel": "BerneckerTV",
+     "kategorie": "makro",
+     "note": "Eine mögliche Yen-Intervention, gegebenenfalls über den Euro, bremst nach Einschätzung des Hosts die Abwertung, irritiert den Markt aber nicht nachhaltig. Japan bleibt für ihn eine günstige Liquiditä…",
+     "einordnung": "Deviseninterventionen können Bewegungen verlangsamen, aber selten einen fundamentalen Zins- und Liquiditätsunterschied dauerhaft aufheben. Solange Japan relativ günstige Finanzierung ermöglicht, blei…"
+    },
+    {
+     "date": "2026-08-12",
+     "video_id": "wNEk0PB02MQ",
+     "url": "https://www.youtube.com/watch?v=wNEk0PB02MQ&t=557s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der Host warnt vor einem möglichen Stress im Yen-Carry-Trade. Eine kräftige Yen-Aufwertung könnte Short-Positionen zur Eindeckung zwingen und dadurch panikartige Verkäufe in globalen Risikoanlagen au…",
+     "einordnung": "Das ist kein normales Währungsthema, sondern ein potenzieller Liquiditätshebel für Aktien, Kredite und spekulative Wachstumswerte. Entscheidend ist weniger der absolute Yen-Kurs als die Geschwindigke…",
+     "figures": "118.000 Kontrakte bei einer historischen Short-Eindeckung, 53 Mrd. $ beziehungsweise 8,45 Billionen Yen Intervention an einem Tag, 74 Mrd. $ während der Golden Week, kritisches Niveau bei 160"
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "_CPZNQv1cns",
+     "url": "https://www.youtube.com/watch?v=_CPZNQv1cns&t=2715s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der Carry Trade bleibt laut Host trotz Interventionen der Bank of Japan intakt. Technisch wird eine Bewegung in Richtung 173 bis 176 Yen und langfristig bis 200 Yen genannt.",
+     "einordnung": "Die Aussage ist klar trendfolgend und setzt darauf, dass Interventionen der Bank of Japan den übergeordneten Abwertungstrend des Yen nicht dauerhaft brechen. Das ist ein spekulatives Setup, weil poli…",
+     "figures": "173 und 176 Yen als technische Ziele; 200 Yen als langfristiges Ziel."
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=1349s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Dollar-Yen fiel nach massiven Interventionen der USA und Japans von 163 auf 156 bis 158. Egmond beschreibt damit einen deutlichen Eingriff in den Währungsmarkt.",
+     "einordnung": "Die Bewegung ist weniger ein normaler Trend als ein politisch beeinflusster Wechselkursimpuls. Interventionen können die Richtung kurzfristig drehen, ändern aber nicht automatisch die zugrunde liegen…",
+     "figures": "Rückgang von 163 auf 156 bis 158"
+    }
+   ]
+  },
+  "GC=F": {
+   "name": "Gold",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "smkyeECHjv8",
+     "url": "https://www.youtube.com/watch?v=smkyeECHjv8&t=1344s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Der Host sieht die Konsolidierung beim Gold um 4.000 Dollar als möglicherweise beendet, nachdem die 50-Tage-Linie überwunden wurde. Die anhaltenden Käufe der Notenbanken und die hohe US-Verschuldung…",
+     "einordnung": "Gold profitiert von der Kombination aus geopolitischer Unsicherheit, Verschuldung und Misstrauen gegenüber Papierwährungen. Nach einer starken Aufwärtsbewegung bleibt eine Konsolidierung dennoch norm…",
+     "figures": "Gold um 4.000 Dollar als Konsolidierungsbasis; 50-Tage-Linie überwunden; US-Staatsverschuldung 40 Billionen Dollar öffentlich und 90 Billionen Dollar insgesamt"
+    },
+    {
+     "date": "2026-08-13",
+     "video_id": "mH0gLyCp4xk",
+     "url": "https://www.youtube.com/watch?v=mH0gLyCp4xk&t=126s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gold hat rund um 4.000 Dollar einen Boden gefunden und stabilisiert sich. Sinkende Zinsängste und geopolitische Spannungen stützen das Edelmetall.",
+     "einordnung": "Gold bleibt damit ein Spiegelbild der Unsicherheit: Es profitiert sowohl von geopolitischen Risiken als auch von nachlassenden Zinssorgen. Die Marke um 4.000 Dollar wirkt als psychologische Unterstüt…",
+     "figures": "Rund 4.000 Dollar; 200-Tage-Linie"
+    },
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=860s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Gold hat sich seit Ende 2024 besser als der S&P 500 entwickelt. Der Host sieht die Korrektur als beendet, nennt bei 4.390 bis 4.400 Dollar einen Widerstand und leitet aus der Geldmengenausweitung ein…",
+     "einordnung": "Gold profitiert hier gleichzeitig von Inflationsschutz, geopolitischer Unsicherheit und der Sorge um die Tragfähigkeit hoher Staatsschulden. Nach einer starken Bewegung bleibt das Chance-Risiko-Verhä…",
+     "figures": "Potenzial fast 4500$, Widerstand 4390-4400$, Ziele 4500-4700$"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "mREZgmSkQCI",
+     "url": "https://www.youtube.com/watch?v=mREZgmSkQCI&t=197s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Gold profitiert von der geopolitischen Unsicherheit und neuen Hoffnungen auf Zinssenkungen. Die 200-Tagelinie wird als mögliches Kaufsignal genannt.",
+     "einordnung": "Gold bleibt damit ein klassischer Stabilisator für ein Umfeld aus politischen Risiken und sinkenden Renditeerwartungen. Die 200-Tagelinie ist als Orientierung sinnvoll, ersetzt aber keine Prüfung, ob…"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "pWfog8GURyw",
+     "url": "https://www.youtube.com/watch?v=pWfog8GURyw&t=2671s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Goldpreis ist innerhalb einer Woche um 7,6 Prozent gestiegen, obwohl die Zinsen zugleich nach oben gingen. Egmond Haidt interpretiert dies als Vorgriff des Marktes auf künftige geldpolitische Loc…",
+     "einordnung": "Der Anstieg zeigt, dass Gold derzeit nicht nur auf die laufenden Realzinsen, sondern stark auf Geldpolitik und geopolitische Risiken reagiert. Meine Einschätzung: Der Trend ist konstruktiv, doch ein…",
+     "figures": "Goldpreisanstieg in einer Woche: 7,6 Prozent"
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "_CPZNQv1cns",
+     "url": "https://www.youtube.com/watch?v=_CPZNQv1cns&t=3257s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Gold steht laut Host an der charttechnischen Schaltstelle von 4.350 US-Dollar. Ein Wochenschluss oberhalb dieser Marke würde demnach die Chance auf einen Anstieg bis 5.670 US-Dollar eröffnen.",
+     "einordnung": "Das ist ein klassisches Bestätigungssignal: Nicht der kurzfristige Überschuss über die Marke, sondern der Wochenschluss soll die Aussagekraft liefern. Die im Video genannten Goldmarken weichen deutli…",
+     "figures": "4.350 US-Dollar als Schaltstelle; 5.670 US-Dollar als genanntes Kursziel."
+    },
+    {
+     "date": "2026-08-05",
+     "video_id": "hmqZDddNkEc",
+     "url": "https://www.youtube.com/watch?v=hmqZDddNkEc&t=1679s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Thieme hält Gold bei 4.000 US-Dollar für kaufenswert und empfiehlt, maximal 5 Prozent beizumischen. Als Einzelwert nennt er Barrick Gold, dessen Aktie um mehr als 30 Prozent gefallen sei; dort sieht…",
+     "einordnung": "Gold kann als Krisen- und Diversifikationsbaustein sinnvoll sein, erzeugt aber keinen laufenden Cashflow und unterliegt bei steigenden Realzinsen oft Bewertungsdruck. Bei Barrick Gold kommt zum Goldp…",
+     "figures": "Goldpreis 4.000 US-Dollar; mögliches Goldpreisniveau 5.500 US-Dollar; maximale Beimischung 5 Prozent; Barrick Gold mehr als 30 Prozent gefallen"
+    },
+    {
+     "date": "2026-08-05",
+     "video_id": "EGrlj8Bmvr0",
+     "url": "https://www.youtube.com/watch?v=EGrlj8Bmvr0&t=3727s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der Host bleibt für Gold langfristig bullish. Der Goldpreis steigt an diesem Tag deutlich und liegt über 4.150 US-Dollar.",
+     "einordnung": "Gold erhält Unterstützung aus sinkenden Renditen und einem schwächeren US-Dollar. Nach dem starken Tagesanstieg ist die langfristig positive Einschätzung plausibler als eine kurzfristige Geradeausbew…",
+     "figures": "Gold +2,9 %; Goldpreis über 4.150 US-Dollar; Jahresendziel 4.500 bis 4.600 US-Dollar"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=1942s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Gold stabilisiert sich bei 4.077 US-Dollar, die Erholung bleibt bislang gering. Egmond sieht jedoch Potenzial für einen Short Squeeze und erwartet kurzfristig eine Seitwärtsbewegung.",
+     "einordnung": "Die Stabilisierung zeigt, dass der sichere Hafen trotz der Aktienrally nicht vollständig aus dem Blick gerät. Der vom Host genannte Short-Squeeze-Ansatz ist charttechnisch möglich, bleibt aber ohne z…",
+     "figures": "4.077 US-Dollar"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "oMLNBWy4nh8",
+     "url": "https://www.youtube.com/watch?v=oMLNBWy4nh8&t=1332s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Polleit sieht Gold langfristig als wichtigen Inflationsschutz und als monetären Anker. Der Goldpreis konsolidiere aktuell bei etwa 4.000 US-Dollar, die Unterstützung liege bei 3.800 bis 3.900 US-Doll…",
+     "einordnung": "Gold bleibt in einer Welt hoher Schulden und unsicherer Geldpolitik der plausiblere monetäre Versicherungsbaustein als eine reine Konjunkturwette. Die genannte Unterstützung macht aus Sicht des Hosts…",
+     "figures": "Goldpreis seit 2000 durchschnittlich +11-12% p.a., aktuell rund 4.000 USD, Unterstützung 3.800-3.900 USD"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "RefnY01hhvw",
+     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=169s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Gold hält sich stabil über 4.000 Dollar. Der Host sieht als nächstes technisches Ziel die 200-Tage-Linie bei 4.200 Dollar, wobei die geopolitische Lage den Preis stützt.",
+     "einordnung": "Gold profitiert hier gleichzeitig von geopolitischer Unsicherheit und dem Bedürfnis nach Absicherung. Der Abstand zwischen aktuellem Niveau und genanntem Ziel ist jedoch kein Ersatz für einen neuen f…",
+     "figures": "über 4.000 $, Ziel 4.200 $"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "iTOUC2QhmzM",
+     "url": "https://www.youtube.com/watch?v=iTOUC2QhmzM&t=477s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Der Goldpreis steigt kurz über 4.100 US-Dollar, fällt anschließend zurück und stabilisiert sich oberhalb von 4.000 US-Dollar.",
+     "einordnung": "Die genannte Zone oberhalb von 4.000 US-Dollar bleibt aus technischer Sicht konstruktiv, doch der Rückfall nach dem Ausbruch über 4.100 US-Dollar zeigt fehlende Dynamik. Gold profitiert von geopoliti…",
+     "figures": "4.100 US-Dollar; 4.000 US-Dollar"
+    }
+   ]
+  },
+  "SI=F": {
+   "name": "Silber",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "smkyeECHjv8",
+     "url": "https://www.youtube.com/watch?v=smkyeECHjv8&t=1344s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Silber bleibt nach Einschätzung des Hosts nicht nur Edelmetall, sondern auch Industriemetall und profitiert deshalb von der industriellen Nachfrage. Gemeinsam mit Gold soll es im Depot als Inflations…",
+     "einordnung": "Silber besitzt durch seine industrielle Komponente einen stärkeren Konjunkturhebel als Gold. Das erhöht bei einer globalen Erholung die Chancen, führt aber in einer Wachstumsabschwächung auch zu größ…"
+    },
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=860s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Silber konsolidiert laut Host unterhalb der 200-Tage-Linie. Ein Ausbruch über 63 Dollar könnte den Weg in Richtung 70 bis 71 Dollar öffnen.",
+     "einordnung": "Silber besitzt neben der monetären auch eine industrielle Nachfragekomponente, weshalb es in einem KI- und Solarumfeld zusätzlichen Fantasiebezug erhält. Es schwankt aber deutlich stärker als Gold un…",
+     "figures": "Widerstand 63$, nächster Widerstand beziehungsweise Zielbereich 70-71$; EMA 200"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "pWfog8GURyw",
+     "url": "https://www.youtube.com/watch?v=pWfog8GURyw",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Silber wird im Ausblick zusammen mit Gold als Edelmetallthema behandelt; eine konkrete Kursaussage oder Zahl wurde im Rohmaterial nicht festgehalten.",
+     "einordnung": "Silber verbindet monetäre Nachfrage mit industrieller Zyklik und ist deshalb volatiler als Gold. Ohne konkrete Host-Aussage bleibt meine Einordnung hier bewusst allgemein."
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=3443s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Silber hängt laut Egmond stark von der Entwicklung des Goldpreises ab und könnte bei einem Goldanstieg überdurchschnittlich zulegen.",
+     "einordnung": "Silber besitzt wegen seiner höheren Schwankungsintensität einen größeren Hebel auf Edelmetallbewegungen. Das macht den möglichen Mehrertrag attraktiv, erhöht aber ebenso das Rückschlagrisiko bei eine…"
+    },
+    {
+     "date": "2026-07-28",
+     "video_id": "i-tlI6mhB8Y",
+     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Silber wird im Rohstoffausblick der Sendung zusammen mit Gold behandelt; eine eigenständige Kurs- oder Richtungsaussage ist im vorliegenden Auszug nicht enthalten.",
+     "einordnung": "Ohne konkrete Host-Aussage oder Zahl ist bei Silber keine belastbare zusätzliche Einordnung möglich. Der Rohstoff bleibt typischerweise stärker von Industrieerwartungen abhängig als Gold, doch das is…"
+    },
+    {
+     "date": "2026-07-24",
+     "video_id": "3SE8SaUYqTc",
+     "url": "https://www.youtube.com/watch?v=3SE8SaUYqTc&t=3201s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "In den Zuschauerfragen wird Silber anhand einer bullischen Divergenz besprochen. Als charttechnisches Ziel werden 63 bis 65 Dollar genannt.",
+     "einordnung": "Eine bullische Divergenz kann auf nachlassenden Verkaufsdruck hindeuten, ist aber erst mit einer bestätigten Bewegung belastbar. Das Ziel bleibt daher ein technisches Szenario und keine fundamentale…",
+     "figures": "Kursziel 63-65$"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "im Video nur kurz erwähnt",
+     "einordnung": ""
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Im Video nur kurz erwähnt, im Kontext der Edelmetall-Bewertung besprochen.",
+     "einordnung": "Silber folgt typischerweise Gold mit einem Lag, ist aber volatiler. Wenn Gold korrigiert, fällt Silber überproportional. Industrielle Nachfrage durch Solar und Elektronik stützt langfristig, aber kur…"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "9G1WNKY6uuY",
+     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY&t=3335s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Silber zeigt extreme Volatilität und könnte auf 56 Dollar korrigieren; Harry warnt vor dieser 'Silber in der Falle'-Situation.",
+     "einordnung": "Silber ist traditionell volatiler als Gold und oft ein Frühindikator für Edelmetall-Schwäche. Die Warnung vor einem Fall auf 56 Dollar ist dramatisch – das wäre ein massiver Einschnitt. Das erinnert…",
+     "figures": "97, 105, 56"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=923s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Silber leidet unter einem strukturellen Angebotsdefizit seit 2019, angetrieben durch industrielle Nachfrage und Zentralbankenkäufe. Charttechnisch ist die Korrektur noch nicht abgeschlossen.",
+     "einordnung": "Das Silberdefizit ist real und durch den KI- und Solarboom strukturell verankert. Dass die Korrektur noch nicht fertig ist, ist gesund – das schüttet die Schwäche aus. Die Gold-Silber-Ratio von 64 ze…",
+     "figures": "Silberplus ca. 9% in diesem Jahr; Kursziel 56-58$; 55$; Gold/Silber Ratio 64 (10-Jahres-Schnitt 70)"
+    },
+    {
+     "date": "2026-05-26",
+     "video_id": "LU60d_3fNcM",
+     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt im Rahmen der Übersicht über Edelmetalle und Rohstoffe.",
+     "einordnung": "Silber wird im Video nicht eigenständig analysiert — es taucht lediglich in der Themenliste der VIDEOBESCHREIBUNG auf. Typischerweise folgt Silber Gold mit höherer Volatilität."
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video in der Videobeschreibung erwähnt, aber im Transkript nicht näher behandelt.",
+     "einordnung": "Silber wird in der Videobeschreibung erwähnt, aber nicht näher behandelt – es verhält sich typischerweise wie ein Hybrid aus Gold und Industrierohstoff, sodass es im zinssensitiven Umfeld ebenfalls u…"
+    }
+   ]
+  },
   "CL=F": {
    "name": "Öl Brent",
    "auftritte": [
@@ -126,128 +656,6 @@
     }
    ]
   },
-  "GC=F": {
-   "name": "Gold",
-   "auftritte": [
-    {
-     "date": "2026-08-13",
-     "video_id": "mH0gLyCp4xk",
-     "url": "https://www.youtube.com/watch?v=mH0gLyCp4xk&t=126s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Gold hat rund um 4.000 Dollar einen Boden gefunden und stabilisiert sich. Sinkende Zinsängste und geopolitische Spannungen stützen das Edelmetall.",
-     "einordnung": "Gold bleibt damit ein Spiegelbild der Unsicherheit: Es profitiert sowohl von geopolitischen Risiken als auch von nachlassenden Zinssorgen. Die Marke um 4.000 Dollar wirkt als psychologische Unterstüt…",
-     "figures": "Rund 4.000 Dollar; 200-Tage-Linie"
-    },
-    {
-     "date": "2026-08-11",
-     "video_id": "mREZgmSkQCI",
-     "url": "https://www.youtube.com/watch?v=mREZgmSkQCI&t=197s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Gold profitiert von der geopolitischen Unsicherheit und neuen Hoffnungen auf Zinssenkungen. Die 200-Tagelinie wird als mögliches Kaufsignal genannt.",
-     "einordnung": "Gold bleibt damit ein klassischer Stabilisator für ein Umfeld aus politischen Risiken und sinkenden Renditeerwartungen. Die 200-Tagelinie ist als Orientierung sinnvoll, ersetzt aber keine Prüfung, ob…"
-    },
-    {
-     "date": "2026-08-11",
-     "video_id": "pWfog8GURyw",
-     "url": "https://www.youtube.com/watch?v=pWfog8GURyw&t=2671s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Goldpreis ist innerhalb einer Woche um 7,6 Prozent gestiegen, obwohl die Zinsen zugleich nach oben gingen. Egmond Haidt interpretiert dies als Vorgriff des Marktes auf künftige geldpolitische Loc…",
-     "einordnung": "Der Anstieg zeigt, dass Gold derzeit nicht nur auf die laufenden Realzinsen, sondern stark auf Geldpolitik und geopolitische Risiken reagiert. Meine Einschätzung: Der Trend ist konstruktiv, doch ein…",
-     "figures": "Goldpreisanstieg in einer Woche: 7,6 Prozent"
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "_CPZNQv1cns",
-     "url": "https://www.youtube.com/watch?v=_CPZNQv1cns&t=3257s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Gold steht laut Host an der charttechnischen Schaltstelle von 4.350 US-Dollar. Ein Wochenschluss oberhalb dieser Marke würde demnach die Chance auf einen Anstieg bis 5.670 US-Dollar eröffnen.",
-     "einordnung": "Das ist ein klassisches Bestätigungssignal: Nicht der kurzfristige Überschuss über die Marke, sondern der Wochenschluss soll die Aussagekraft liefern. Die im Video genannten Goldmarken weichen deutli…",
-     "figures": "4.350 US-Dollar als Schaltstelle; 5.670 US-Dollar als genanntes Kursziel."
-    },
-    {
-     "date": "2026-08-05",
-     "video_id": "hmqZDddNkEc",
-     "url": "https://www.youtube.com/watch?v=hmqZDddNkEc&t=1679s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Thieme hält Gold bei 4.000 US-Dollar für kaufenswert und empfiehlt, maximal 5 Prozent beizumischen. Als Einzelwert nennt er Barrick Gold, dessen Aktie um mehr als 30 Prozent gefallen sei; dort sieht…",
-     "einordnung": "Gold kann als Krisen- und Diversifikationsbaustein sinnvoll sein, erzeugt aber keinen laufenden Cashflow und unterliegt bei steigenden Realzinsen oft Bewertungsdruck. Bei Barrick Gold kommt zum Goldp…",
-     "figures": "Goldpreis 4.000 US-Dollar; mögliches Goldpreisniveau 5.500 US-Dollar; maximale Beimischung 5 Prozent; Barrick Gold mehr als 30 Prozent gefallen"
-    },
-    {
-     "date": "2026-08-05",
-     "video_id": "EGrlj8Bmvr0",
-     "url": "https://www.youtube.com/watch?v=EGrlj8Bmvr0&t=3727s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Der Host bleibt für Gold langfristig bullish. Der Goldpreis steigt an diesem Tag deutlich und liegt über 4.150 US-Dollar.",
-     "einordnung": "Gold erhält Unterstützung aus sinkenden Renditen und einem schwächeren US-Dollar. Nach dem starken Tagesanstieg ist die langfristig positive Einschätzung plausibler als eine kurzfristige Geradeausbew…",
-     "figures": "Gold +2,9 %; Goldpreis über 4.150 US-Dollar; Jahresendziel 4.500 bis 4.600 US-Dollar"
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=1942s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Gold stabilisiert sich bei 4.077 US-Dollar, die Erholung bleibt bislang gering. Egmond sieht jedoch Potenzial für einen Short Squeeze und erwartet kurzfristig eine Seitwärtsbewegung.",
-     "einordnung": "Die Stabilisierung zeigt, dass der sichere Hafen trotz der Aktienrally nicht vollständig aus dem Blick gerät. Der vom Host genannte Short-Squeeze-Ansatz ist charttechnisch möglich, bleibt aber ohne z…",
-     "figures": "4.077 US-Dollar"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "oMLNBWy4nh8",
-     "url": "https://www.youtube.com/watch?v=oMLNBWy4nh8&t=1332s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Polleit sieht Gold langfristig als wichtigen Inflationsschutz und als monetären Anker. Der Goldpreis konsolidiere aktuell bei etwa 4.000 US-Dollar, die Unterstützung liege bei 3.800 bis 3.900 US-Doll…",
-     "einordnung": "Gold bleibt in einer Welt hoher Schulden und unsicherer Geldpolitik der plausiblere monetäre Versicherungsbaustein als eine reine Konjunkturwette. Die genannte Unterstützung macht aus Sicht des Hosts…",
-     "figures": "Goldpreis seit 2000 durchschnittlich +11-12% p.a., aktuell rund 4.000 USD, Unterstützung 3.800-3.900 USD"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "RefnY01hhvw",
-     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=169s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Gold hält sich stabil über 4.000 Dollar. Der Host sieht als nächstes technisches Ziel die 200-Tage-Linie bei 4.200 Dollar, wobei die geopolitische Lage den Preis stützt.",
-     "einordnung": "Gold profitiert hier gleichzeitig von geopolitischer Unsicherheit und dem Bedürfnis nach Absicherung. Der Abstand zwischen aktuellem Niveau und genanntem Ziel ist jedoch kein Ersatz für einen neuen f…",
-     "figures": "über 4.000 $, Ziel 4.200 $"
-    },
-    {
-     "date": "2026-07-29",
-     "video_id": "iTOUC2QhmzM",
-     "url": "https://www.youtube.com/watch?v=iTOUC2QhmzM&t=477s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der Goldpreis steigt kurz über 4.100 US-Dollar, fällt anschließend zurück und stabilisiert sich oberhalb von 4.000 US-Dollar.",
-     "einordnung": "Die genannte Zone oberhalb von 4.000 US-Dollar bleibt aus technischer Sicht konstruktiv, doch der Rückfall nach dem Ausbruch über 4.100 US-Dollar zeigt fehlende Dynamik. Gold profitiert von geopoliti…",
-     "figures": "4.100 US-Dollar; 4.000 US-Dollar"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=2179s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Gold gibt trotz leicht sinkender Zinsen nach. Egmond Haidt vermutet als Ursache Liquiditätsdruck durch Verluste bei Chipaktien.",
-     "einordnung": "Gold ist in Stressphasen nicht automatisch ein sicherer Hafen, wenn Anleger liquide Mittel benötigen und Positionen mit Gewinn verkaufen. Der Rückgang wirkt deshalb eher wie ein Liquiditäts- und Posi…"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=607s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der Goldpreis sinkt wegen steigender US-Zinsen und eines stärkeren Dollars. Der technische Pfeil habe nach unten gedreht.",
-     "einordnung": "Gold verliert in diesem Szenario nicht wegen nachlassender geopolitischer Risiken, sondern wegen des höheren Opportunitätskostendrucks durch US-Renditen und Dollarstärke. Das ist ein klassischer Hinw…"
-    }
-   ]
-  },
   "^NDX": {
    "name": "Nasdaq 100",
    "auftritte": [
@@ -354,6 +762,16 @@
      "note": "Cisco meldete starke Quartalszahlen mit 17 Milliarden Dollar Umsatz, einem Wachstum von 18 Prozent und 1,22 Dollar Gewinn je Aktie. Das KI-Infrastrukturgeschäft steuerte 4 Milliarden Dollar Umsatz be…",
      "einordnung": "Cisco zeigt, dass der KI-Boom nicht nur bei den offensichtlichen Chipherstellern ankommt, sondern auch bei Netzwerkausrüstern. Der nachbörsliche Rückgang trotz guter Zahlen ist allerdings ein Warnsig…",
      "figures": "17 Milliarden Dollar Umsatz; Umsatzplus von 18 Prozent; 1,22 Dollar Gewinn je Aktie; 4 Milliarden Dollar Umsatz im KI-Infrastrukturgeschäft"
+    },
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=2720s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Cisco meldete im vierten Quartal einen Rekordumsatz von 17,3 Milliarden Dollar und ein EPS von 1,22 Dollar. Die KI-Aufträge summieren sich auf 9,3 Milliarden Dollar, gleichzeitig steht die Bruttomarg…",
+     "einordnung": "Die Zahlen zeigen, dass Cisco vom KI-Ausbau profitiert, die Bewertung von 26,4 bleibt für einen reiferen Netzwerkkonzern aber anspruchsvoll. Der Abstand zum genannten fairen Wert von 115 Dollar begre…",
+     "figures": "Q4-Umsatz 17,3 Mrd $ (+18%), EPS 1,22$ (+23%), Jahresumsatz 63 Mrd $ (+12%), KI-Aufträge 9,3 Mrd $, Bruttomarge 66%, Morningstar fairer Wert 115$, KGV 26,4, Unterstützungen 118-119$ und Stopp unter 1…"
     },
     {
      "date": "2026-05-19",
@@ -696,6 +1114,16 @@
      "figures": "Umsatzplus von 450 Prozent; operative Marge rund 40 Prozent; weiterhin Nettoverlust"
     },
     {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=1765s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nebius meldete laut Host einen Rekordumsatz mit einem Plus von 454 Prozent im Jahresvergleich, ein EBITDA von 236 Millionen Dollar und eine Marge von 41 Prozent. Dem stehen ein hoher Cashburn und ein…",
+     "einordnung": "Die operative Dynamik ist außergewöhnlich, doch die Finanzierungsfrage ist bei einem kapitalintensiven KI-Modell der entscheidende Gegenpol. Ein Kursziel von 300 Dollar setzt deshalb nicht nur Wachst…",
+     "figures": "Umsatz +454% (Q2), EBITDA +236 Mio $, Marge 41%, Barmittel 8 Mrd $, Jahresumsatz 3,2 Mrd $, Cashburn bis 10 Mrd $ pro Jahr, Kursziel 300$"
+    },
+    {
      "date": "2026-08-12",
      "video_id": "2-BDtC2an94",
      "url": "https://www.youtube.com/watch?v=2-BDtC2an94&t=427s",
@@ -782,6 +1210,359 @@
      "note": "Eintritt in Nasdaq 100 am 22.06. treibt heute +4% (gestern +5%); YTD +176% (von 280 $ auf aktuell ~200 $). Marktcap ~60 Mrd, Analyst-Durchschnitt 240 $ (schon nah dran). 1,7 Mrd UK-Expansion mit Blac…",
      "einordnung": "Nebius ist der GPU-Infrastruktur-Boom in drei Buchstaben – Backlog real, aber 20–25 Mrd Capex ohne proportionalen Umsatzgrowth bedeutet Dilution (Eigenkapital, Schulden). Das ist hochriskant bei aktu…",
      "figures": "YTD +176%, Analyst-Schnitt 240 $, Marktcap ~60 Mrd, UK-Initiative 1,7 Mrd, Capex 20–25 Mrd"
+    }
+   ]
+  },
+  "EURCHF=X": {
+   "name": "Euro und Schweizer Franken",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=1365s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der Schweizer Franken wertet gegenüber dem Euro strukturell um 1,5 bis 2 Prozent pro Jahr auf. Kurzfristig sieht der Host eine leichte Erholung des Euro mit einem Ziel von 0,94 bis 0,96, langfristig…",
+     "einordnung": "Für Euro-Anleger kann ein starker Franken die Rendite Schweizer Aktien unterstützen, er erhöht aber auch das Währungsrisiko beim Einstieg. Der langfristige Vorteil ist daher kein kostenloser Zusatzer…",
+     "figures": "Aufwertung des Franken 1,5-2% pro Jahr; kumuliert über 10 Jahre 16-22%; Euro-Ziel 0,94-0,96"
+    }
+   ]
+  },
+  "SIKA.SW": {
+   "name": "Sika",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=1656s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Sika hat laut Host bei 121 Franken einen Boden in einem inversen Muster ausgebildet. Die Aktie trifft nun bei 193 Franken auf Widerstand; darüber liegen zunächst 200 bis 206 Franken und bei einem nac…",
+     "einordnung": "Das Chartbild verbessert sich, aber der Abstand zum beschriebenen Boden zeigt, dass ein großer Teil der Erholung bereits gelaufen ist. Der Bereich um 193 Franken ist damit die entscheidende Bewährung…",
+     "figures": "Boden 121 CHF, Widerstand 193 CHF, Ziel 200-206 CHF, Ausbruchsniveau 211-212 CHF"
+    }
+   ]
+  },
+  "HNR1.DE": {
+   "name": "Hannover Rück",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=2040s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Hannover Rück erzielte im ersten Halbjahr einen Nettogewinn von 1,4 Milliarden Euro und eine Eigenkapitalrendite von 21,5 Prozent. Die Aktie bewegt sich charttechnisch neutral zwischen 236 und 270 Eu…",
+     "einordnung": "Die Kapital- und Ertragskennzahlen sind solide, aber die Zyklik spricht gegen eine geradlinige Fortschreibung der aktuellen Spitzenprofitabilität. Die neutrale Range passt daher besser zur Datenlage…",
+     "figures": "Nettogewinn 1,4 Mrd € (+7%), EBIT 1,9 Mrd € (+9,7%), Eigenkapitalrendite 21,5%, Solvenzquote 254%, Morningstar fairer Wert 260€; Chart-Range 236-270€"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "Nxn0NmV-hnM",
+     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=3307s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Q1 sehr gut, Eigenkapitalrendite 21,2 Prozent (Ziel 14 Prozent). Konzernergebnis am oberen Ende der Spanne. Chart: wichtige Zone 238 Euro, bei Bruch Ziel 216 Euro.",
+     "einordnung": "Eine Eigenkapitalrendite von 21,2 Prozent bei einem Rückversicherer ist außergewöhnlich — das Ziel lag bei 14 Prozent, also 700 Basispunkte darunter. Hannover Rück ist eine Qualitätsaktie, aber die 2…",
+     "figures": "Eigenkapitalrendite 21,2%"
+    }
+   ]
+  },
+  "EOAN.DE": {
+   "name": "E.ON",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=2280s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "E.ON steigerte das bereinigte EBITDA um 1 Prozent auf 5,4 Milliarden Euro und den Nettogewinn um 5 Prozent auf 1,92 Milliarden Euro. Bis 2030 sind Investitionen von 48 Milliarden Euro geplant; chartt…",
+     "einordnung": "E.ON verbindet defensive Infrastruktur mit hohem Investitionsbedarf. Das kann langfristig Wachstum sichern, erhöht aber die Sensitivität gegenüber Finanzierungskosten und regulatorischen Rahmenbeding…",
+     "figures": "Bereinigtes EBITDA 5,4 Mrd € (+1%), Nettogewinn 1,92 Mrd € (+5%), Investitionen bis 2030 48 Mrd €, Dividendenwachstum 5% pro Jahr, Morningstar fairer Wert 18,50€"
+    },
+    {
+     "date": "2026-07-06",
+     "video_id": "gOPRrqA_L38",
+     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1585s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Kaufsignal ausgelöst durch dynamischen Anstieg über 18,50 EUR nach langer Korrektur innerhalb eines Bull-Keils.",
+     "einordnung": "Der Ausbruch aus einem Bull-Keil nach langer Seitwärtsphase ist ein klassisches Fortsetzungssignal. Mit einem mittelfristigen Ziel bei 23,30 EUR sieht Harry rund 26 Prozent Aufwärtspotenzial — ambiti…",
+     "figures": "18,50 EUR (Ausbruchsmarke), 20,60 EUR (Zwischenziel), 23,30 EUR (mittelfristiges Ziel)"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "noEcrTOC8ok",
+     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=4076s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "E.ON befindet sich in einer bullischen Konsolidierung und profitiert von der intelligenten Netzinfrastruktur.",
+     "einordnung": "Netzbetreiber sind die Gewinner der Energiewende – sie verdienen an der Volatilität, egal woher der Strom kommt. E.ON in einer bullischen Konsolidierung ist ein solides Basis-Investment. Über 19€ wir…"
+    }
+   ]
+  },
+  "GBF.DE": {
+   "name": "Bilfinger",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=2460s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Bilfinger enttäuschte mit einer EBIT-Marge am unteren Ende der Spanne von 5,8 bis 6,2 Prozent. Der Auftragseingang sank um 16 Prozent auf 1,5 Milliarden Euro, während der Umsatz um 7 Prozent wuchs; c…",
+     "einordnung": "Das Auseinanderlaufen von Umsatz und Auftragseingang ist das eigentliche Warnsignal. Solange die Nachfragebasis nicht stabilisiert ist, bleibt die charttechnische Schwäche fundamental nachvollziehbar.",
+     "figures": "EBIT-Marge 5,8-6,2%, Auftragseingang -16% auf 1,5 Mrd €, Umsatzwachstum +7%, Unterstützungen 76€ und 70-66€"
+    }
+   ]
+  },
+  "TEM": {
+   "name": "Tempus AI",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=2618s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Tempus AI steigerte den Umsatz um 22 Prozent und hob die Jahresprognose auf 25 bis 26 Prozent Wachstum an. Die Bruttomarge liegt bei 64 Prozent, allerdings entstand ein Nettoverlust von 254 Millionen…",
+     "einordnung": "Die hohe Bruttomarge und das Wachstum sprechen für ein skalierbares Modell, der hohe Nettoverlust aber gegen eine bereits bewiesene Ertragskraft. Die Range ist deshalb ein sinnvoller Ausdruck der noc…",
+     "figures": "Umsatz +22%, Jahresprognose 25-26% Wachstum, Bruttomarge 64%, Nettoverlust 254 Mio $, BTIG-Kursziel 70$, Range 42-60$, Ziele 80$ oberhalb 60$ und 32$ unterhalb 42$"
+    }
+   ]
+  },
+  "CRDO": {
+   "name": "Credo",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=2972s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Credo steigerte den Umsatz um 200 Prozent und erzielte eine Bruttomarge von 68 Prozent. Das Unternehmen gilt laut Host als Marktführer bei Active Electrical Cables für KI-Rechenzentren; charttechnisc…",
+     "einordnung": "Credo ist ein klassischer Hochwachstumswert: operativ beeindruckend, aber mit einem KGV von über 80 extrem erwartungssensitiv. Schon eine kleine Enttäuschung beim Wachstum kann daher überproportional…",
+     "figures": "Umsatz +200%, Bruttomarge 68%, durchschnittliches Kursziel 280$, KGV über 80, Ausbruchsniveau 276$, Ziel 309$, mögliche Rücksetzerzone 195-190$"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "Nxn0NmV-hnM",
+     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=3397s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Needham Kursziel von 250 auf 350 US-Dollar, Buy. Drei Produktlinien mit Milliardenpotential: ZF AOC 300-400 Mio, optische DSPs 100 Mio, Silizium Photonic 100 Mio. Produktion wird verdoppelt/verdreifa…",
+     "einordnung": "Credo ist ein Nischenplayer im Hochgeschwindigkeitsdatenverkehr — die Produktlinien mit Milliardenpotential sind reifizierbar, aber die Bewertung ist extrem. Die 194-Dollar-Marke ist die letzte Verte…",
+     "figures": "Kursziel 350$, ZF AOC 300-400 Mio$"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "t04FPU9gZbI",
+     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=2704s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Credo Technology mit positiver Analystenbewertung von BNP, aber heute -8,4% vorbörslich. Adressierbarer Markt für KI-Interconnect auf über 10 Mrd. $ verdreifacht.",
+     "einordnung": "Ein KGV von 445 ist selbst für KI-Hype exorbitant, aber ein PEG von 1,3 deutet auf starkes Gewinnwachstum hin. Der verdreifachte adressierbare Markt für KI-Interconnect ist die eigentliche Story. Wer…",
+     "figures": "-8,4% vorbörslich, KGV 445, PEG 1,3, adressierbarer Markt >10 Mrd. $"
+    },
+    {
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=652s",
+     "channel": "Calling USA",
+     "kategorie": "fundamental",
+     "note": "Credo Technology ist ein KI-Zulieferer für Datencenter-Konnektivität mit hohem Wachstum, wird vom Host aber als spekulativ eingestuft aufgrund der hohen Bewertung und geopolitischer Risiken.",
+     "einordnung": "KGV 102 bei rund 1,2 Mrd. USD Umsatz preist bereits erhebliche Zukunftserwartungen ein. Das erinnert an die Bewertungsexzesse kleinerer KI-Zulieferer Ende 2023 — solange das KI-Kapex-Narrativ trägt,…",
+     "figures": "600 Mitarbeiter, 28 Mrd. USD Marktkapitalisierung, erwarteter Umsatz 1,2 Mrd. USD (laufendes Jahr), Nettogewinn 52 Mio. USD, KGV 102, Analysten-Kurspotenzial 40-50%, Kursziele 165-240 USD"
+    }
+   ]
+  },
+  "CBRS": {
+   "name": "Cerebras",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=3092s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Cerebras verfehlte mit einem bereinigten Umsatz von 180 Millionen Dollar den Konsens und meldete einen bereinigten Verlust von 2,98 Dollar. Der Kernumsatz wuchs zwar um 103 Prozent, charttechnisch we…",
+     "einordnung": "Cerebras zeigt die Kehrseite der KI-Infrastruktur: Starkes Kernwachstum genügt nicht, wenn Umsatz und Verlust die Erwartungen verfehlen. Das Fehlsignal ist deshalb fundamental unterfüttert und nicht…",
+     "figures": "GAAP-Umsatz 180 Mio $ (-7%), bereinigter Verlust 2,98$, Kernumsatz +103% auf 210 Mio $, RPO 25,4 Mrd $, Unterstützung 162$, Kursbereich 217$"
+    }
+   ]
+  },
+  "NFLX": {
+   "name": "Netflix",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=3260s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Bill Ackman hat laut Host 3,15 Millionen Netflix-Aktien gekauft, die rund 5 Prozent seines Portfolios ausmachen. Netflix strebt eine operative Marge von 31,5 Prozent und einen freien Cashflow von 11…",
+     "einordnung": "Ackmans Einstieg liefert Aufmerksamkeit, ersetzt aber keine charttechnische Bestätigung. Die Kombination aus hoher Zielmarge, freiem Cashflow und wachsendem Werbegeschäft ist überzeugend, sofern Netf…",
+     "figures": "Ackman-Position 3,15 Mio Aktien und 5% des Portfolios, Ziel operative Marge 31,5%, freier Cashflow 11 Mrd $, Werbeumsatz 3 Mrd $, Widerstand 75$, mögliches Rücksetzerziel 61$"
+    },
+    {
+     "date": "2026-07-20",
+     "video_id": "0kdieabN3vU",
+     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=222s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Netflix verzeichnete schwache Zahlen; der Kurs fiel zunächst um 13 Prozent und erholte sich anschließend etwas. Der Host sieht das Chartbild nach dem Bruch jüngster Tiefs als negativ, obwohl der Umsa…",
+     "einordnung": "Der Fall zeigt, dass solides Umsatzwachstum bei einem hoch bewerteten Plattformwert nicht genügt, wenn der Markt mehr Transparenz und belastbare Belege für die langfristige Skalierung verlangt. Nach…",
+     "figures": "13 Prozent Kursverlust; 13 Prozent Umsatzwachstum; Ziel einer Umsatzverdopplung bis 2030"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "ZtKFU4SJtbQ",
+     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=227s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Netflix fiel nach den Quartalszahlen nachbörslich um mehr als 9 Prozent. Obwohl der Umsatz um 13 Prozent zulegte, sah der Host keinen ausreichenden neuen Impuls für die Aktie; zuvor war Netflix eine…",
+     "einordnung": "Die Reaktion zeigt, dass bei hoch bewerteten Wachstumswerten ein gutes Umsatzwachstum allein nicht genügt, wenn der Markt einen stärkeren Katalysator erwartet. Das Sentiment bleibt dadurch anfällig f…",
+     "figures": "Mehr als 9 Prozent nachbörslicher Kursverlust; Umsatz plus 13 Prozent"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "jbBenx99pmg",
+     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=3601s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Netflix verlor vorbörslich 11 Prozent. Trotz eines Umsatzwachstums von 11 Prozent traf der Gewinn nur exakt den Konsens, während der Free Cashflow mit 1,5 Mrd. US-Dollar deutlich hinter den erwartete…",
+     "einordnung": "Netflix wächst weiterhin zweistellig, doch der Markt bewertet inzwischen die Qualität und Planbarkeit dieses Wachstums. Der schwache Cashflow ist der entscheidende Makel, weil er die hohe Erwartung a…",
+     "figures": "Kurs -11 Prozent, Gewinn 0,80 US-Dollar je Aktie, Umsatz +11 Prozent, Free Cashflow 1,5 Mrd. US-Dollar gegenüber 2,9 Mrd. US-Dollar erwartet, Werbeerlöse 3 Mrd. US-Dollar, USA/Kanada +10 Prozent, EME…"
+    },
+    {
+     "date": "2026-07-14",
+     "video_id": "9KH3-qOwztc",
+     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=2118s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Die Netflix-Aktie befindet sich in einer herben Talfahrt; zugleich erwägt das Unternehmen werbefinanzierte Abonnements. Egmond rät, die Zahlen am Donnerstagabend abzuwarten.",
+     "einordnung": "Ein werbefinanziertes Modell kann zusätzliche Erlöse und niedrigere Einstiegspreise ermöglichen, bringt aber den klassischen Zielkonflikt zwischen Reichweite, Werbepreisen und Nutzerqualität. Nach ei…"
+    },
+    {
+     "date": "2026-06-29",
+     "video_id": "3nuyTnmhYuE",
+     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=2033s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Abwärtstrend und charttechnische Schwäche, aber die Bewertung ist mit einem KGV von 22 günstig und Analysten bleiben positiv. YTD -23%.",
+     "einordnung": "Die Divergenz zwischen charttechnischem Abwärtstrend und fundamentaler Bewertung (KGV 22, Analysten positiv) ist genau die Konstellation, in der konträre Investoren fündig werden. Der Vorschlag mit D…",
+     "figures": "Kursziel Bernstein 110$, Wolfe 107$; KGV 22; YTD -23%"
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "bhEDxdYRGpA",
+     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=295s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Netflix leidet unter Bewertungszweifeln, ist unter die 200-Tagelinie gerutscht und könnte bei 80$ Unterstützung finden.",
+     "einordnung": "Der Bruch der 200-Tagelinie ist ein charttechnisches Warnsignal. Bei 80$ würde ich nicht blind kaufen, sondern erst sehen, ob der Markt dort überhaupt reagiert. Das erinnert an 2022, als Netflix nach…",
+     "figures": "200-Tagelinie, 80$"
+    },
+    {
+     "date": "2026-06-19",
+     "video_id": "10_Fe8OVqnk",
+     "url": "https://www.youtube.com/watch?v=10_Fe8OVqnk&t=18s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Netflix hat rund 40% vom Hoch verloren, das KGV halbierte sich von 52 auf 22. Operativ bleibt das Unternehmen mit 16% Umsatzwachstum im Q1 2026 stark, allerdings belastet ein einmaliger Warner-Bros.-…",
+     "einordnung": "Ein KGV von 22 bei 16% Umsatzwachstum und über 30% operativer Marge ist für einen Qualitäts-Tech-Titel ungewöhnlich attraktiv — das erinnert an die Netflix-Korrektur 2022, die sich als hervorragende…",
+     "figures": "KGV von 52 auf 22 halbiert, Umsatz Q1 2026 +16%, operatives Ergebnis +18%, Warner-Bros.-Termination-Fee 2,8 Mrd. $, Umsatzguidance 2026: 50,7-51,7 Mrd. $, operative Marge 31,5%, 50-Tage-Linie 87 $, 2…"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=839s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Netflix kommt auf eine Jahresperformance von +7% und liegt damit unter dem S&P 500 mit +14,5%.",
+     "einordnung": "Netflix mit +7% deutlich hinter dem Markt ist ein Zeichen, dass Streaming als Thema aus dem Fokus geraten ist — KI dominiert das Sentiment. Für einen defensiven Ansatz kann das ein Qualitätswert sein…",
+     "figures": "+7% Jahresperformance, S&P 500 +14,5%"
+    },
+    {
+     "date": "2025-12-11",
+     "video_id": "f0pcBA15wVI",
+     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=2211s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Netflix zeigt sich charttechnisch als Kandidat für eine bullische Trendwende. Kurzfristig könnte die Aktie bis zur Widerstandszone von 106-114 USD steigen, Unterstützung bei 90 USD.",
+     "einordnung": "Charttechnischer Trendwende-Kandidat mit klar definiertem Risiko-Reward — Einstieg bei 90, Ziel 106-114 USD. Die Übernahme-Story um Warner Bros. bietet zusätzlichen katalytischen Zündstoff.",
+     "figures": "Kursziel 106-114 USD, Unterstützung bei 90 USD"
+    }
+   ]
+  },
+  "PRY.MI": {
+   "name": "Prysmian",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=3376s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Prysmian steigerte den Umsatz um 7 Prozent auf 6 Milliarden Euro und hob die EBIT-Prognose auf 2,8 bis 2,9 Milliarden Euro an. Berenberg stufte die Aktie auf Buy mit einem Ziel von 150 Euro hoch, wäh…",
+     "einordnung": "Operativ liefert Prysmian, doch die große Lücke zwischen Analystenziel und Morningstar-Wert zeigt eine anspruchsvolle Bewertungsspanne. Der Host stellt daher die Kursdisziplin über die gute Nachricht…",
+     "figures": "Umsatz 6 Mrd € (+7%), EBIT-Ziel 2,8-2,9 Mrd €, Berenberg-Kursziel 150€, Morningstar fairer Wert 90€, Kursbereich 157€, Rücksetzerzonen 106€, 92€ und 72€"
+    }
+   ]
+  },
+  "STLAM.MI": {
+   "name": "Stellantis",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=3619s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "UBS hat Stellantis laut Host auf ein Kursziel von 5,80 Euro herabgestuft; die Marge liegt nur bei 1,9 Prozent. Nordamerika verzeichnet zwar ein Auslieferungsplus von 38 Prozent, Europa bleibt jedoch…",
+     "einordnung": "Die niedrige Marge lässt wenig Puffer für Zölle, Rabatte oder Modellwechsel. Der starke Absatz in Nordamerika ist positiv, reicht aber nicht aus, um die europäische Verlustzone und den schwachen Char…",
+     "figures": "UBS-Kursziel 5,80€, operative Marge 1,9% und erwartete Marge 2,9% für 2027, Auslieferungen Nordamerika +38%, Marktanteilsverluste 5% in USA und Europa, Morningstar fairer Wert 8€, Kursziele 4,61€ und…"
+    }
+   ]
+  },
+  "SBUX": {
+   "name": "Starbucks",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=3814s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Starbucks erzielte einen Umsatz von 9,3 Milliarden Dollar und übertraf damit den Konsens. Die Same-Store-Umsätze in Nordamerika stiegen um 8,1 Prozent; charttechnisch konsolidiert die Aktie oberhalb…",
+     "einordnung": "Die operative Erholung ist klar erkennbar, aber die Bewertung verlangt bereits eine anhaltende Verbesserung. Damit ist Starbucks eher eine Bestätigungs- als eine Entdeckungsgeschichte.",
+     "figures": "Umsatz 9,3 Mrd $ gegenüber 9,1 Mrd $ Konsens, Same-Store-Umsatz Nordamerika +8,1%, Transaktionen +4,5%, Belege +3,5%, KGV 46, Analystenziele 110-130$, Morningstar fairer Wert 87$, Ziele 115$ und 126$"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "IpdIeeA0GLM",
+     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=2419s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Der Umsatz von Starbucks ist leicht rückläufig, liegt aber über den Erwartungen. Beim Gewinn übertrifft das Unternehmen den Konsens deutlich; der Host sieht zudem wieder Käufe durch Fonds und einen i…",
+     "einordnung": "Die Gewinnüberraschung trotz leicht rückläufiger Erlöse spricht zunächst für operative Verbesserungen. Für eine nachhaltige Trendfortsetzung müsste Starbucks allerdings zeigen, dass die Erholung nich…",
+     "figures": "Umsatz: minus 1 Prozent, rund 200 Millionen US-Dollar über den Erwartungen; EPS: 0,85 US-Dollar, erwartet 0,65 US-Dollar."
+    }
+   ]
+  },
+  "DLG.MI": {
+   "name": "DeLonghi",
+   "auftritte": [
+    {
+     "date": "2026-08-13",
+     "video_id": "bKikI7s3uNc",
+     "url": "https://www.youtube.com/watch?v=bKikI7s3uNc&t=3944s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "DeLonghi steigerte den Umsatz um 8 Prozent, das EBITDA um 17,8 Prozent und das Nettoergebnis um 21,2 Prozent. Goldman Sachs empfiehlt die Aktie mit einem Kursziel von 51 Euro; charttechnisch gelang d…",
+     "einordnung": "DeLonghi bietet im Vergleich zu vielen KI- und Plattformwerten ein deutlich moderateres KGV von 16,3 bei zweistelligem Ergebniswachstum. Das technische Fehlen von Dynamik mahnt dennoch, eine gute Fun…",
+     "figures": "Umsatz +8%, EBITDA +17,8%, EBITDA-Marge 16,9%, Nettoergebnis +21,2%, Goldman-Sachs-Kursziel 51€, KGV 16,3, Ausbruchsniveau 40,20€"
     }
    ]
   },
@@ -967,41 +1748,6 @@
      "kategorie": "news",
      "note": "TUI wird im Video als Einzelthema angekündigt, im vorliegenden Rohmaterial jedoch nicht näher erläutert.",
      "einordnung": "Für einen Reiseveranstalter war die Corona-Krise ein unmittelbarer Nachfrage- und Liquiditätsschock. Ohne konkrete Host-Zahlen bleibt offen, ob im Video eher die operative Entwicklung oder die chartt…"
-    }
-   ]
-  },
-  "JPY=X": {
-   "name": "USD/JPY und Yen-Carry-Trade",
-   "auftritte": [
-    {
-     "date": "2026-08-12",
-     "video_id": "wNEk0PB02MQ",
-     "url": "https://www.youtube.com/watch?v=wNEk0PB02MQ&t=557s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Der Host warnt vor einem möglichen Stress im Yen-Carry-Trade. Eine kräftige Yen-Aufwertung könnte Short-Positionen zur Eindeckung zwingen und dadurch panikartige Verkäufe in globalen Risikoanlagen au…",
-     "einordnung": "Das ist kein normales Währungsthema, sondern ein potenzieller Liquiditätshebel für Aktien, Kredite und spekulative Wachstumswerte. Entscheidend ist weniger der absolute Yen-Kurs als die Geschwindigke…",
-     "figures": "118.000 Kontrakte bei einer historischen Short-Eindeckung, 53 Mrd. $ beziehungsweise 8,45 Billionen Yen Intervention an einem Tag, 74 Mrd. $ während der Golden Week, kritisches Niveau bei 160"
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "_CPZNQv1cns",
-     "url": "https://www.youtube.com/watch?v=_CPZNQv1cns&t=2715s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der Carry Trade bleibt laut Host trotz Interventionen der Bank of Japan intakt. Technisch wird eine Bewegung in Richtung 173 bis 176 Yen und langfristig bis 200 Yen genannt.",
-     "einordnung": "Die Aussage ist klar trendfolgend und setzt darauf, dass Interventionen der Bank of Japan den übergeordneten Abwertungstrend des Yen nicht dauerhaft brechen. Das ist ein spekulatives Setup, weil poli…",
-     "figures": "173 und 176 Yen als technische Ziele; 200 Yen als langfristiges Ziel."
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=1349s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Dollar-Yen fiel nach massiven Interventionen der USA und Japans von 163 auf 156 bis 158. Egmond beschreibt damit einen deutlichen Eingriff in den Währungsmarkt.",
-     "einordnung": "Die Bewegung ist weniger ein normaler Trend als ein politisch beeinflusster Wechselkursimpuls. Interventionen können die Richtung kurzfristig drehen, ändern aber nicht automatisch die zugrunde liegen…",
-     "figures": "Rückgang von 163 auf 156 bis 158"
     }
    ]
   },
@@ -2686,127 +3432,6 @@
     }
    ]
   },
-  "NVDA": {
-   "name": "Nvidia",
-   "auftritte": [
-    {
-     "date": "2026-08-11",
-     "video_id": "pWfog8GURyw",
-     "url": "https://www.youtube.com/watch?v=pWfog8GURyw&t=1926s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Nvidia arbeitet mit Partnern an einer KI-Finanzierung im Volumen von 500 Mrd. US-Dollar. Egmond Haidt bezweifelt die Umsetzung und warnt vor steigenden Zinsen als Belastung.",
-     "einordnung": "Nvidia bleibt der zentrale Profiteur des KI-Infrastrukturzyklus, aber die Größenordnung der Finanzierung erhöht die Abhängigkeit vom Kapitalmarkt. Meine Einschätzung: Vor den Zahlen ist das Chance-Ri…",
-     "figures": "KI-Finanzierung: 500 Mrd. US-Dollar"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "ldobjNsL7sM",
-     "url": "https://www.youtube.com/watch?v=ldobjNsL7sM&t=162s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nvidia gab deutlich nach und belastete dadurch die US-Technologieindizes, während andere Aktien den Rückgang teilweise auffingen.",
-     "einordnung": "Meine Einordnung: Bei Nvidia genügt inzwischen schon eine kleine Verschiebung bei Wachstumserwartungen oder Bewertung, um überproportionale Kursreaktionen auszulösen."
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "WFyYyqhoiVo",
-     "url": "https://www.youtube.com/watch?v=WFyYyqhoiVo&t=335s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Nvidia gab im schwachen Branchenumfeld nach. Die 200-Tage-Linie ist laut Host noch ein gutes Stück entfernt.",
-     "einordnung": "Bei Nvidia ist die relative Stärke des langfristigen Trends wichtiger als ein einzelner schwacher Handelstag. Die Aktie bleibt jedoch ein besonders sensibler Gradmesser für die Risikobereitschaft im…"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "BfRCptZ2OAI",
-     "url": "https://www.youtube.com/watch?v=BfRCptZ2OAI&t=3919s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Die Bank of America hebt ihre Umsatzprognosen für Nvidia deutlich an: Für 2026 werden 25 Prozent, für 2027 23 Prozent, für 2028 21 Prozent, für 2029 24 Prozent und für 2030 30 Prozent Wachstum genann…",
-     "einordnung": "Die Aktie wirkt auf Basis des genannten Forward-KGV im Vergleich zum Nasdaq 100 nicht überteuert, sofern die angehobenen Umsatzpfade tatsächlich erreicht werden. Der technische Ausbruch bleibt jedoch…",
-     "figures": "Umsatzprognose: 2026 +25 Prozent, 2027 +23 Prozent, 2028 +21 Prozent, 2029 +24 Prozent, 2030 +30 Prozent; KGV auf Basis der vergangenen zwölf Monate 31; Forward-KGV 21; Nasdaq-100-KGV 24; KUV 0,5; An…"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "1NCf_rpMGr8",
-     "url": "https://www.youtube.com/watch?v=1NCf_rpMGr8&t=2199s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Nvidia konsolidiert unterhalb der 50-Tage-Linie und bildet Inside Days. Dirk Siebenhaar hält die Position im großen Depot ohne engen Stop.",
-     "einordnung": "Die Position ohne engen Stop ist ein bewusst großzügigerer Ansatz für das große Depot, erhöht aber das Risiko einer längeren Seitwärts- oder Abwärtsphase. 210 US-Dollar markieren laut Host die Schwel…",
-     "figures": "210 US-Dollar als potenzielles Ausbruchsniveau"
-    },
-    {
-     "date": "2026-07-10",
-     "video_id": "WhBpYiqY-KA",
-     "url": "https://www.youtube.com/watch?v=WhBpYiqY-KA&t=430s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Nvidia verlor innerhalb weniger Wochen rund eine Billion US-Dollar Börsenwert. Trotz eines Marktanteils von 97 Prozent bei Server-GPUs ist die Aktie günstig bewertet. Langfristig könnte der Anteil au…",
-     "einordnung": "Das KGV-Gefälle von 22,7 auf 12,5 in 2029 zeigt, dass die Wall Street massives Gewinnwachstum einpreist. Das ist typisch für einen Zyklusführer – billig auf dem Papier, teuer im Risiko, falls das KI-…",
-     "figures": "KGV 22,7 (GJ26/27), 18,5 (12M), 15,8 (2027/28), 12,5 (2029); FCF-Rendite 6,3% (GJ28); Netto-Cash ~1 Billion USD bis Ende Jahrzehnt; Marktanteil 97% Server-GPUs"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "eGLSmVJce2U",
-     "url": "https://www.youtube.com/watch?v=eGLSmVJce2U&t=178s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nvidia steigt rund 4% auf 200 USD, nachdem China die H200-Chips freigegeben hat. Der Host merkt jedoch an, dass dieser Kurs nicht ausreicht, um den Gesamtmarkt zu stützen.",
-     "einordnung": "Die H200-Freigabe für China ist ein struktureller Positiv, doch bei 200 USD steht Nvidia an einer charttechnisch sensiblen Marke. Die Frage bleibt, ob der KI-Hype-Sog ausreicht, den Nasdaq wieder nac…",
-     "figures": "Kurs 200 USD, rund 4% gestiegen"
-    },
-    {
-     "date": "2026-07-09",
-     "video_id": "rGKDA0JAU4I",
-     "url": "https://www.youtube.com/watch?v=rGKDA0JAU4I&t=3179s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Open-Source-Modell Nemotron 3 Ultra senkt Inference-Kosten auf ein Zehntel. Strategie der Kooperation mit Wettbewerbern. Bewertung von 36er KGV auf 20er gefallen, weiter 50-80% Wachstum erwartet.",
-     "einordnung": "Dass Nvidia ein Open-Source-Modell veröffentlicht, ist strategisch klug — es senkt die Wechselkosten für KI-Entwickler und bindet sie an die CUDA-Plattform. Ein KGV von 20 bei 50-80% Wachstum ist ger…",
-     "figures": "+3,6%, Inference-Kosten 10x niedriger, KGV von 36 auf 20 (-43%), erwartetes Wachstum 50-80%"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1410s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Nach dem Ausverkauf fließt Geld wieder in Nvidia als Stabilitätsanker. Haidt warnt jedoch: Falls die gesamte KI-Blase platzt, ist auch Nvidia betroffen.",
-     "einordnung": "Nvidia als Stabilitätsanker in einem KI-korrigierenden Markt ist ein Widerspruch in sich. Die Aktie mag kurzfristig Kapital anziehen, aber bei einem echten KI-Sentiment-Bruch ist Nvidia der erste Kan…"
-    },
-    {
-     "date": "2026-07-06",
-     "video_id": "-DiygCxAXrc",
-     "url": "https://www.youtube.com/watch?v=-DiygCxAXrc&t=3411s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Die Kyber-Plattform (Rubin Ultra) verschiebt sich um 12 Monate wegen Fertigungsproblemen. Die Aktie notiert mit einem KGV unter 20 und einem PEG von 0,4. Goersch sieht Nvidia als langfristigen Kaufwe…",
-     "einordnung": "Eine 12-monatige Verzögerung der nächsten Plattform-Generation ist signifikant — sie gibt Wettbewerbern wie AMD und nun auch Meta mit Eigenentwicklungen Zeit, Marktanteile zu gewinnen. Dennoch ist ei…",
-     "figures": "12 Monate, 236$, 194$, KGV unter 20, PEG 0,4"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1877s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Zuletzt gut gelaufen und relativ stabil, gestützt durch Micron-Zahlen. Haidt tendiert zu leicht aufwärts.",
-     "einordnung": "Nvidia bleibt der unangefochtene KI-Champion, aber die Stabilität nach Microns Gewinnmitnahmen ist ein zweischneidiges Signal: Entweder der Markt vertraut weiterhin auf Nvidias Monopol oder die Korre…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "yJiIB_gEJsI",
-     "url": "https://www.youtube.com/watch?v=yJiIB_gEJsI&t=375s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Nvidia wird im Kontext der Blasendiskussion genannt, mit einem Marktwert von über 5 Billionen Dollar. Bernecker erwartet, dass Tech-Aktien wie Nvidia in drei Jahren korrigieren, da Konkurrenz durch A…",
-     "einordnung": "Eine Marktkapitalisierung von 5 Billionen Dollar für ein einzelnes Unternehmen ist historisch beispiellos und rechtfertigt die Frage nach Nachhaltigkeit. Der Verweis auf AMD als aufholende Konkurrenz…",
-     "figures": "Nvidia Marktwert über 5 Billionen Dollar"
-    }
-   ]
-  },
   "NPO": {
    "name": "Enpro",
    "auftritte": [
@@ -2961,104 +3586,6 @@
      "note": "Euro gab 0,6% nach; Zinsanstieg USA stützt Dollar leicht, belastet Euro durch Zins-Divergenz.",
      "einordnung": "Typische Divergenz: Fed ggü. EZB straffet, USD profitiert. Aber europäische Inflation (3,2% Mai) zwingt auch EZB zu Erhöhungen – Zins-Differential bleibt eher eng. EUR/USD sollte Bewegung stabilisier…",
      "figures": "Rückgang -0,6%"
-    }
-   ]
-  },
-  "SI=F": {
-   "name": "Silber",
-   "auftritte": [
-    {
-     "date": "2026-08-11",
-     "video_id": "pWfog8GURyw",
-     "url": "https://www.youtube.com/watch?v=pWfog8GURyw",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Silber wird im Ausblick zusammen mit Gold als Edelmetallthema behandelt; eine konkrete Kursaussage oder Zahl wurde im Rohmaterial nicht festgehalten.",
-     "einordnung": "Silber verbindet monetäre Nachfrage mit industrieller Zyklik und ist deshalb volatiler als Gold. Ohne konkrete Host-Aussage bleibt meine Einordnung hier bewusst allgemein."
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=3443s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Silber hängt laut Egmond stark von der Entwicklung des Goldpreises ab und könnte bei einem Goldanstieg überdurchschnittlich zulegen.",
-     "einordnung": "Silber besitzt wegen seiner höheren Schwankungsintensität einen größeren Hebel auf Edelmetallbewegungen. Das macht den möglichen Mehrertrag attraktiv, erhöht aber ebenso das Rückschlagrisiko bei eine…"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Silber wird im Rohstoffausblick der Sendung zusammen mit Gold behandelt; eine eigenständige Kurs- oder Richtungsaussage ist im vorliegenden Auszug nicht enthalten.",
-     "einordnung": "Ohne konkrete Host-Aussage oder Zahl ist bei Silber keine belastbare zusätzliche Einordnung möglich. Der Rohstoff bleibt typischerweise stärker von Industrieerwartungen abhängig als Gold, doch das is…"
-    },
-    {
-     "date": "2026-07-24",
-     "video_id": "3SE8SaUYqTc",
-     "url": "https://www.youtube.com/watch?v=3SE8SaUYqTc&t=3201s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "In den Zuschauerfragen wird Silber anhand einer bullischen Divergenz besprochen. Als charttechnisches Ziel werden 63 bis 65 Dollar genannt.",
-     "einordnung": "Eine bullische Divergenz kann auf nachlassenden Verkaufsdruck hindeuten, ist aber erst mit einer bestätigten Bewegung belastbar. Das Ziel bleibt daher ein technisches Szenario und keine fundamentale…",
-     "figures": "Kursziel 63-65$"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "im Video nur kurz erwähnt",
-     "einordnung": ""
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Im Video nur kurz erwähnt, im Kontext der Edelmetall-Bewertung besprochen.",
-     "einordnung": "Silber folgt typischerweise Gold mit einem Lag, ist aber volatiler. Wenn Gold korrigiert, fällt Silber überproportional. Industrielle Nachfrage durch Solar und Elektronik stützt langfristig, aber kur…"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "9G1WNKY6uuY",
-     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY&t=3335s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Silber zeigt extreme Volatilität und könnte auf 56 Dollar korrigieren; Harry warnt vor dieser 'Silber in der Falle'-Situation.",
-     "einordnung": "Silber ist traditionell volatiler als Gold und oft ein Frühindikator für Edelmetall-Schwäche. Die Warnung vor einem Fall auf 56 Dollar ist dramatisch – das wäre ein massiver Einschnitt. Das erinnert…",
-     "figures": "97, 105, 56"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=923s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Silber leidet unter einem strukturellen Angebotsdefizit seit 2019, angetrieben durch industrielle Nachfrage und Zentralbankenkäufe. Charttechnisch ist die Korrektur noch nicht abgeschlossen.",
-     "einordnung": "Das Silberdefizit ist real und durch den KI- und Solarboom strukturell verankert. Dass die Korrektur noch nicht fertig ist, ist gesund – das schüttet die Schwäche aus. Die Gold-Silber-Ratio von 64 ze…",
-     "figures": "Silberplus ca. 9% in diesem Jahr; Kursziel 56-58$; 55$; Gold/Silber Ratio 64 (10-Jahres-Schnitt 70)"
-    },
-    {
-     "date": "2026-05-26",
-     "video_id": "LU60d_3fNcM",
-     "url": "https://www.youtube.com/watch?v=LU60d_3fNcM",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Übersicht über Edelmetalle und Rohstoffe.",
-     "einordnung": "Silber wird im Video nicht eigenständig analysiert — es taucht lediglich in der Themenliste der VIDEOBESCHREIBUNG auf. Typischerweise folgt Silber Gold mit höherer Volatilität."
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video in der Videobeschreibung erwähnt, aber im Transkript nicht näher behandelt.",
-     "einordnung": "Silber wird in der Videobeschreibung erwähnt, aber nicht näher behandelt – es verhält sich typischerweise wie ein Hybrid aus Gold und Industrierohstoff, sodass es im zinssensitiven Umfeld ebenfalls u…"
     }
    ]
   },
@@ -3988,131 +4515,6 @@
      "kategorie": "chartanalyse",
      "note": "Tapestry wird in der Videobeschreibung als weiterer Wert im Zusammenhang mit Quartalsberichten genannt; im Rohmaterial liegen dazu keine konkreten Aussagen vor.",
      "einordnung": "Für eine eigene charttechnische Einordnung fehlen im Rohmaterial Kursmarken, Trendbeschreibung und Quartalsdetails. Mehr wäre an dieser Stelle Spekulation."
-    }
-   ]
-  },
-  "BZ=F": {
-   "name": "Ölpreise und Geopolitik",
-   "auftritte": [
-    {
-     "date": "2026-08-10",
-     "video_id": "Hwf_CXhBgJU",
-     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=347s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Die Spannungen um die Straße von Hormus machen den Ölpreis zum geopolitischen Spielball. Der Host nennt 70 bis 71 Dollar als wichtige Zone sowie 67 Dollar als weitere charttechnische Marke.",
-     "einordnung": "Der aktuelle Brent-Anstieg auf 87,87 Dollar zeigt, dass der Risikoaufschlag den Markt kurzfristig dominiert. Für eine belastbare Trendanalyse müsste sich die Lage an der wichtigen Transportroute zunä…",
-     "figures": "67 $, 70–71 $, Brent aktuell laut Marktdaten: 87,87 $ (+5,17 %)"
-    },
-    {
-     "date": "2026-08-05",
-     "video_id": "hmqZDddNkEc",
-     "url": "https://www.youtube.com/watch?v=hmqZDddNkEc&t=255s",
-     "channel": "BerneckerTV",
-     "kategorie": "makro",
-     "note": "Thieme sieht den Ölpreis als wichtigen Hebel für die Aktienmärkte: Bei einer geopolitischen Eskalation hält er 120 bis 130 US-Dollar für möglich, bei Entspannung etwa 60 US-Dollar. Zwischen Ölpreisan…",
-     "einordnung": "Bei einem Brent-Preis von 79,49 US-Dollar liegt der Markt zwischen den beiden vom Host skizzierten Extremszenarien. Für Aktien ist weniger das absolute Niveau als die Geschwindigkeit eines Anstiegs e…",
-     "figures": "Szenario Eskalation: 120 bis 130 US-Dollar; Szenario Entspannung: 60 US-Dollar; Brent laut Marktdaten 79,49 US-Dollar, plus 0,16 Prozent"
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=1686s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Ölpreis fiel nach Trumps Ankündigung neuer Iran-Verhandlungen intraday um 10 Prozent und gab auf Wochenbasis 2 Prozent nach. Egmond erwartet bei hoher Volatilität eine Seitwärtsbewegung.",
-     "einordnung": "Die Marktdaten bestätigen den starken Druck auf Brent mit 79,28 US-Dollar und einem Tagesminus von 5,36 Prozent; der Host nennt zusätzlich den intraday deutlich stärkeren Einbruch. Die Diskrepanz erk…",
-     "figures": "Intraday-Rückgang 10 Prozent; Wochenrückgang 2 Prozent; Brent laut Marktdaten 79,28 US-Dollar, minus 5,36 Prozent"
-    },
-    {
-     "date": "2026-08-03",
-     "video_id": "CZa-I4ZurbI",
-     "url": "https://www.youtube.com/watch?v=CZa-I4ZurbI&t=125s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Die Ölpreise gaben kräftig nach, nachdem der geplante US-Militärschlag gegen Iran abgesagt wurde. Die Aussicht auf eine Wiederaufnahme der Verhandlungen nahm einen Teil des geopolitischen Risikoaufsc…",
-     "einordnung": "Der Rückgang ist zunächst eine Entspannung bei der Risikoprämie und kein Beleg für eine dauerhaft schwache Ölnachfrage. Die widersprüchlichen Signale aus Washington sprechen dafür, geopolitische Auss…",
-     "figures": "Brent laut Host -4,8 Prozent, zwischenzeitlich bis zu -10 Prozent; WTI 79,88 Dollar und -5,6 Prozent; aktuell laut Marktdaten: Brent 83,49 Dollar und -7,36 Prozent"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "oMLNBWy4nh8",
-     "url": "https://www.youtube.com/watch?v=oMLNBWy4nh8&t=694s",
-     "channel": "BerneckerTV",
-     "kategorie": "news",
-     "note": "Steigende Energiepreise bewertet der Host als negativen Kostenschock, der die Bevölkerung verarmen lässt. Das Geldmengenwachstum sei derzeit mit 5 Prozent in den USA, 3 Prozent im Euroraum und 2,2 Pr…",
-     "einordnung": "Energie ist der klassische Transmissionskanal von Geopolitik in die Inflation. Der aktuelle Brent-Rückgang bei gleichzeitig erhöhtem geopolitischem Risiko zeigt, wie schnell dieser Faktor drehen kann…",
-     "figures": "Geldmengenwachstum: USA 5%, Euroraum 3%, Japan 2,2%; Brent-Öl laut Marktdaten 89,14 USD (-1,76%)"
-    },
-    {
-     "date": "2026-07-29",
-     "video_id": "iTOUC2QhmzM",
-     "url": "https://www.youtube.com/watch?v=iTOUC2QhmzM&t=373s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Ölpreis stabilisiert sich nach dem Angriff auf einen LNG-Tanker in Ägypten und steigt im Tagesverlauf um 7 Prozent.",
-     "einordnung": "Der aktuelle Brent-Stand von 92,60 US-Dollar bestätigt, dass der Energiemarkt die geopolitische Risikoprämie bereits sichtbar einpreist. Steigende Ölpreise sind für die Fed ein unangenehmer Faktor, w…",
-     "figures": "Tagesanstieg: 7 Prozent; Brent laut Marktdaten aktuell: 92,60 US-Dollar"
-    },
-    {
-     "date": "2026-07-28",
-     "video_id": "i-tlI6mhB8Y",
-     "url": "https://www.youtube.com/watch?v=i-tlI6mhB8Y&t=1949s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Ölpreis fällt nach dem Ausbleiben neuer Angriffe im Iran-Krieg massiv. Kurzfristig erwartet Egmond Haidt eine Seitwärtsbewegung, warnt jedoch vor einer erneuten Eskalation.",
-     "einordnung": "Der aktuelle Brent-Rückgang bestätigt die hohe geopolitische Risikoprämie und deren schnellen Abbau bei Entspannungshoffnungen. Für Aktien ist das zunächst positiv über den Inflationskanal, doch die…",
-     "figures": "Von über 100 US-Dollar auf knapp über 80 US-Dollar; Einbruch um fast 20 Prozent in zwei Tagen; Brent laut Marktdaten 83,91 US-Dollar, minus 5,04 Prozent"
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "i5q2OHZUl84",
-     "url": "https://www.youtube.com/watch?v=i5q2OHZUl84&t=159s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der Ölpreis gibt wegen der Hoffnung auf eine Feuerpause im Nahen Osten nach. Charttechnisch bleibt der Aufwärtstrend laut Host jedoch intakt, solange die 200-Tage-Linie nicht unterschritten wird.",
-     "einordnung": "Der aktuelle Rückgang entlastet zunächst inflations- und zinssensible Märkte, doch der geopolitische Abschlag ist fragil. Solange die technische Unterstützung hält, ist das eher eine Korrektur im Auf…",
-     "figures": "Host: 4 bis 5 Prozent Minus und 100 USD; aktuell laut Marktdaten: Brent 90,57 USD, minus 6,42 Prozent; 200-Tage-Linie"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "JJawjyNF_GQ",
-     "url": "https://www.youtube.com/watch?v=JJawjyNF_GQ&t=104s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "makro",
-     "note": "Die Ölpreise ziehen wegen der unsicheren Lage im Iran weiter an. Der Host nennt Brent bei 96,70 US-Dollar; aktuell weist der Datenblock 96,01 US-Dollar aus.",
-     "einordnung": "Der Ölpreisanstieg ist zunächst ein geopolitischer Risikoaufschlag, nicht automatisch der Beginn eines nachhaltigen Rohstoffzyklus. Für die Aktienmärkte wäre eine längere Hochpreisphase problematisch…",
-     "figures": "Host: Brent 96,70 USD; aktuell laut Marktdaten: 96,01 USD, +2,06%"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=118s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Brent steigt über 100 US-Dollar und legt seit Monatsbeginn um 30 bis 35 Prozent zu. Als Treiber nennt der Host geopolitische Spannungen rund um Iran und das Rote Meer.",
-     "einordnung": "Der Ölpreis ist derzeit der zentrale makroökonomische Verstärker: Er erhöht den Inflationsdruck und verschlechtert zugleich die Gewinnperspektiven energieintensiver Unternehmen. Die aktuelle Notierun…",
-     "figures": "über 100 US-Dollar; plus 30 bis 35 Prozent seit Monatsbeginn; aktuell laut Marktdaten: 101,23 US-Dollar, plus 7,61 Prozent"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "nPEPzB9N_5o",
-     "url": "https://www.youtube.com/watch?v=nPEPzB9N_5o&t=198s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Die Ölpreise stabilisieren sich laut Host oberhalb der 200-Tage-Linie. Ein Anstieg in Richtung 95 US-Dollar je Barrel bleibt aus charttechnischer Sicht möglich.",
-     "einordnung": "Der Abstand zwischen der vom Host genannten Notierung und den aktuellen Marktdaten unterstreicht die hohe Intraday-Volatilität. Charttechnisch ist die 200-Tage-Linie eine relevante Orientierungsmarke…",
-     "figures": "200-Tage-Linie bei etwa 88,60 USD; Host nennt aktuell etwa 90 USD; mögliches Ziel 95 USD; aktuell laut Marktdaten: Brent 88,40 USD und -0,92 Prozent"
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "0kdieabN3vU",
-     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=59s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "makro",
-     "note": "Die Ölpreise steigen wegen der Spannungen im Iran. Brent notiert über der 200-Tage-Linie; der Host nennt 100 Dollar als nächste Marke und 87 Dollar als Unterstützung.",
-     "einordnung": "Der Sprung über die 200-Tage-Linie verbessert das kurzfristige Chartbild für Brent, macht den Markt aber zugleich anfällig für politische Entspannung oder Gewinnmitnahmen. Für die Gesamtbörse ist ein…",
-     "figures": "Host: Brent knapp 90 Dollar, nächste Marke 100 Dollar, Unterstützung 87 Dollar; aktuell laut Marktdaten 91,04 Dollar, plus 3,34 Prozent"
     }
    ]
   },
@@ -7565,21 +7967,6 @@
     }
    ]
   },
-  "SBUX": {
-   "name": "Starbucks",
-   "auftritte": [
-    {
-     "date": "2026-07-30",
-     "video_id": "IpdIeeA0GLM",
-     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=2419s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Der Umsatz von Starbucks ist leicht rückläufig, liegt aber über den Erwartungen. Beim Gewinn übertrifft das Unternehmen den Konsens deutlich; der Host sieht zudem wieder Käufe durch Fonds und einen i…",
-     "einordnung": "Die Gewinnüberraschung trotz leicht rückläufiger Erlöse spricht zunächst für operative Verbesserungen. Für eine nachhaltige Trendfortsetzung müsste Starbucks allerdings zeigen, dass die Erholung nich…",
-     "figures": "Umsatz: minus 1 Prozent, rund 200 Millionen US-Dollar über den Erwartungen; EPS: 0,85 US-Dollar, erwartet 0,65 US-Dollar."
-    }
-   ]
-  },
   "QCOM": {
    "name": "Qualcomm",
    "auftritte": [
@@ -9592,100 +9979,6 @@
     }
    ]
   },
-  "NFLX": {
-   "name": "Netflix",
-   "auftritte": [
-    {
-     "date": "2026-07-20",
-     "video_id": "0kdieabN3vU",
-     "url": "https://www.youtube.com/watch?v=0kdieabN3vU&t=222s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Netflix verzeichnete schwache Zahlen; der Kurs fiel zunächst um 13 Prozent und erholte sich anschließend etwas. Der Host sieht das Chartbild nach dem Bruch jüngster Tiefs als negativ, obwohl der Umsa…",
-     "einordnung": "Der Fall zeigt, dass solides Umsatzwachstum bei einem hoch bewerteten Plattformwert nicht genügt, wenn der Markt mehr Transparenz und belastbare Belege für die langfristige Skalierung verlangt. Nach…",
-     "figures": "13 Prozent Kursverlust; 13 Prozent Umsatzwachstum; Ziel einer Umsatzverdopplung bis 2030"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "ZtKFU4SJtbQ",
-     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=227s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Netflix fiel nach den Quartalszahlen nachbörslich um mehr als 9 Prozent. Obwohl der Umsatz um 13 Prozent zulegte, sah der Host keinen ausreichenden neuen Impuls für die Aktie; zuvor war Netflix eine…",
-     "einordnung": "Die Reaktion zeigt, dass bei hoch bewerteten Wachstumswerten ein gutes Umsatzwachstum allein nicht genügt, wenn der Markt einen stärkeren Katalysator erwartet. Das Sentiment bleibt dadurch anfällig f…",
-     "figures": "Mehr als 9 Prozent nachbörslicher Kursverlust; Umsatz plus 13 Prozent"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "jbBenx99pmg",
-     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=3601s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Netflix verlor vorbörslich 11 Prozent. Trotz eines Umsatzwachstums von 11 Prozent traf der Gewinn nur exakt den Konsens, während der Free Cashflow mit 1,5 Mrd. US-Dollar deutlich hinter den erwartete…",
-     "einordnung": "Netflix wächst weiterhin zweistellig, doch der Markt bewertet inzwischen die Qualität und Planbarkeit dieses Wachstums. Der schwache Cashflow ist der entscheidende Makel, weil er die hohe Erwartung a…",
-     "figures": "Kurs -11 Prozent, Gewinn 0,80 US-Dollar je Aktie, Umsatz +11 Prozent, Free Cashflow 1,5 Mrd. US-Dollar gegenüber 2,9 Mrd. US-Dollar erwartet, Werbeerlöse 3 Mrd. US-Dollar, USA/Kanada +10 Prozent, EME…"
-    },
-    {
-     "date": "2026-07-14",
-     "video_id": "9KH3-qOwztc",
-     "url": "https://www.youtube.com/watch?v=9KH3-qOwztc&t=2118s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Die Netflix-Aktie befindet sich in einer herben Talfahrt; zugleich erwägt das Unternehmen werbefinanzierte Abonnements. Egmond rät, die Zahlen am Donnerstagabend abzuwarten.",
-     "einordnung": "Ein werbefinanziertes Modell kann zusätzliche Erlöse und niedrigere Einstiegspreise ermöglichen, bringt aber den klassischen Zielkonflikt zwischen Reichweite, Werbepreisen und Nutzerqualität. Nach ei…"
-    },
-    {
-     "date": "2026-06-29",
-     "video_id": "3nuyTnmhYuE",
-     "url": "https://www.youtube.com/watch?v=3nuyTnmhYuE&t=2033s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Abwärtstrend und charttechnische Schwäche, aber die Bewertung ist mit einem KGV von 22 günstig und Analysten bleiben positiv. YTD -23%.",
-     "einordnung": "Die Divergenz zwischen charttechnischem Abwärtstrend und fundamentaler Bewertung (KGV 22, Analysten positiv) ist genau die Konstellation, in der konträre Investoren fündig werden. Der Vorschlag mit D…",
-     "figures": "Kursziel Bernstein 110$, Wolfe 107$; KGV 22; YTD -23%"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "bhEDxdYRGpA",
-     "url": "https://www.youtube.com/watch?v=bhEDxdYRGpA&t=295s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Netflix leidet unter Bewertungszweifeln, ist unter die 200-Tagelinie gerutscht und könnte bei 80$ Unterstützung finden.",
-     "einordnung": "Der Bruch der 200-Tagelinie ist ein charttechnisches Warnsignal. Bei 80$ würde ich nicht blind kaufen, sondern erst sehen, ob der Markt dort überhaupt reagiert. Das erinnert an 2022, als Netflix nach…",
-     "figures": "200-Tagelinie, 80$"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "10_Fe8OVqnk",
-     "url": "https://www.youtube.com/watch?v=10_Fe8OVqnk&t=18s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Netflix hat rund 40% vom Hoch verloren, das KGV halbierte sich von 52 auf 22. Operativ bleibt das Unternehmen mit 16% Umsatzwachstum im Q1 2026 stark, allerdings belastet ein einmaliger Warner-Bros.-…",
-     "einordnung": "Ein KGV von 22 bei 16% Umsatzwachstum und über 30% operativer Marge ist für einen Qualitäts-Tech-Titel ungewöhnlich attraktiv — das erinnert an die Netflix-Korrektur 2022, die sich als hervorragende…",
-     "figures": "KGV von 52 auf 22 halbiert, Umsatz Q1 2026 +16%, operatives Ergebnis +18%, Warner-Bros.-Termination-Fee 2,8 Mrd. $, Umsatzguidance 2026: 50,7-51,7 Mrd. $, operative Marge 31,5%, 50-Tage-Linie 87 $, 2…"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=839s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Netflix kommt auf eine Jahresperformance von +7% und liegt damit unter dem S&P 500 mit +14,5%.",
-     "einordnung": "Netflix mit +7% deutlich hinter dem Markt ist ein Zeichen, dass Streaming als Thema aus dem Fokus geraten ist — KI dominiert das Sentiment. Für einen defensiven Ansatz kann das ein Qualitätswert sein…",
-     "figures": "+7% Jahresperformance, S&P 500 +14,5%"
-    },
-    {
-     "date": "2025-12-11",
-     "video_id": "f0pcBA15wVI",
-     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=2211s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Netflix zeigt sich charttechnisch als Kandidat für eine bullische Trendwende. Kurzfristig könnte die Aktie bis zur Widerstandszone von 106-114 USD steigen, Unterstützung bei 90 USD.",
-     "einordnung": "Charttechnischer Trendwende-Kandidat mit klar definiertem Risiko-Reward — Einstieg bei 90, Ziel 106-114 USD. Die Übernahme-Story um Warner Bros. bietet zusätzlichen katalytischen Zündstoff.",
-     "figures": "Kursziel 106-114 USD, Unterstützung bei 90 USD"
-    }
-   ]
-  },
   "SZG.DE": {
    "name": "Salzgitter",
    "auftritte": [
@@ -11108,30 +11401,6 @@
     }
    ]
   },
-  "EOAN.DE": {
-   "name": "E.ON",
-   "auftritte": [
-    {
-     "date": "2026-07-06",
-     "video_id": "gOPRrqA_L38",
-     "url": "https://www.youtube.com/watch?v=gOPRrqA_L38&t=1585s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Kaufsignal ausgelöst durch dynamischen Anstieg über 18,50 EUR nach langer Korrektur innerhalb eines Bull-Keils.",
-     "einordnung": "Der Ausbruch aus einem Bull-Keil nach langer Seitwärtsphase ist ein klassisches Fortsetzungssignal. Mit einem mittelfristigen Ziel bei 23,30 EUR sieht Harry rund 26 Prozent Aufwärtspotenzial — ambiti…",
-     "figures": "18,50 EUR (Ausbruchsmarke), 20,60 EUR (Zwischenziel), 23,30 EUR (mittelfristiges Ziel)"
-    },
-    {
-     "date": "2026-06-19",
-     "video_id": "noEcrTOC8ok",
-     "url": "https://www.youtube.com/watch?v=noEcrTOC8ok&t=4076s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "E.ON befindet sich in einer bullischen Konsolidierung und profitiert von der intelligenten Netzinfrastruktur.",
-     "einordnung": "Netzbetreiber sind die Gewinner der Energiewende – sie verdienen an der Volatilität, egal woher der Strom kommt. E.ON in einer bullischen Konsolidierung ist ein solides Basis-Investment. Über 19€ wir…"
-    }
-   ]
-  },
   "LIN": {
    "name": "Linde (USD)",
    "auftritte": [
@@ -11581,56 +11850,6 @@
      "note": "Gewinnprognose FY27 plus 10,3 Prozent. Dividende steigt auf 140 JPY (von 115 in FY26, 100 in FY25). Aktienrückkauf. Chart: Ziel 3.650, dann 3.350. Korrektur noch nicht beendet.",
      "einordnung": "Mitsui ist das dynamischere der beiden Handelshäuser — 10,3 Prozent Gewinnwachstum bei einer Dividende, die von 100 auf 140 JPY in drei Jahren steigt, ist ein starkes Signal. Wie bei Itochu ist die K…",
      "figures": "Gewinnwachstum +10,3%, Dividende 140 JPY (FY27), 115 JPY (FY26), 100 JPY (FY25)"
-    }
-   ]
-  },
-  "HNR1.DE": {
-   "name": "Hannover Rück",
-   "auftritte": [
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=3307s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Q1 sehr gut, Eigenkapitalrendite 21,2 Prozent (Ziel 14 Prozent). Konzernergebnis am oberen Ende der Spanne. Chart: wichtige Zone 238 Euro, bei Bruch Ziel 216 Euro.",
-     "einordnung": "Eine Eigenkapitalrendite von 21,2 Prozent bei einem Rückversicherer ist außergewöhnlich — das Ziel lag bei 14 Prozent, also 700 Basispunkte darunter. Hannover Rück ist eine Qualitätsaktie, aber die 2…",
-     "figures": "Eigenkapitalrendite 21,2%"
-    }
-   ]
-  },
-  "CRDO": {
-   "name": "Credo Technology",
-   "auftritte": [
-    {
-     "date": "2026-06-26",
-     "video_id": "Nxn0NmV-hnM",
-     "url": "https://www.youtube.com/watch?v=Nxn0NmV-hnM&t=3397s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Needham Kursziel von 250 auf 350 US-Dollar, Buy. Drei Produktlinien mit Milliardenpotential: ZF AOC 300-400 Mio, optische DSPs 100 Mio, Silizium Photonic 100 Mio. Produktion wird verdoppelt/verdreifa…",
-     "einordnung": "Credo ist ein Nischenplayer im Hochgeschwindigkeitsdatenverkehr — die Produktlinien mit Milliardenpotential sind reifizierbar, aber die Bewertung ist extrem. Die 194-Dollar-Marke ist die letzte Verte…",
-     "figures": "Kursziel 350$, ZF AOC 300-400 Mio$"
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "t04FPU9gZbI",
-     "url": "https://www.youtube.com/watch?v=t04FPU9gZbI&t=2704s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Credo Technology mit positiver Analystenbewertung von BNP, aber heute -8,4% vorbörslich. Adressierbarer Markt für KI-Interconnect auf über 10 Mrd. $ verdreifacht.",
-     "einordnung": "Ein KGV von 445 ist selbst für KI-Hype exorbitant, aber ein PEG von 1,3 deutet auf starkes Gewinnwachstum hin. Der verdreifachte adressierbare Markt für KI-Interconnect ist die eigentliche Story. Wer…",
-     "figures": "-8,4% vorbörslich, KGV 445, PEG 1,3, adressierbarer Markt >10 Mrd. $"
-    },
-    {
-     "date": "2025-12-11",
-     "video_id": "f0pcBA15wVI",
-     "url": "https://www.youtube.com/watch?v=f0pcBA15wVI&t=652s",
-     "channel": "Calling USA",
-     "kategorie": "fundamental",
-     "note": "Credo Technology ist ein KI-Zulieferer für Datencenter-Konnektivität mit hohem Wachstum, wird vom Host aber als spekulativ eingestuft aufgrund der hohen Bewertung und geopolitischer Risiken.",
-     "einordnung": "KGV 102 bei rund 1,2 Mrd. USD Umsatz preist bereits erhebliche Zukunftserwartungen ein. Das erinnert an die Bewertungsexzesse kleinerer KI-Zulieferer Ende 2023 — solange das KI-Kapex-Narrativ trägt,…",
-     "figures": "600 Mitarbeiter, 28 Mrd. USD Marktkapitalisierung, erwarteter Umsatz 1,2 Mrd. USD (laufendes Jahr), Nettogewinn 52 Mio. USD, KGV 102, Analysten-Kurspotenzial 40-50%, Kursziele 165-240 USD"
     }
    ]
   },
