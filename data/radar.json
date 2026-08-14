@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T06:20:28.853755Z",
+  "generated_at": "2026-08-14T07:20:30.745223Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 120,
+  "symbols_total": 122,
   "with_quote_data": 52,
   "sources": [
    "watchlist",
@@ -23,21 +23,21 @@
   {
    "symbol": "CSCO",
    "name": "Cisco Systems",
-   "score": 95,
+   "score": 100,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,6 %",
+     "value": "-8,4 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,1× Durchschnitt",
-     "weight": 15
+     "value": "3,0× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "earnings_watch",
@@ -53,10 +53,10 @@
     }
    ],
    "quote": {
-    "price": 112.13,
-    "pct": -9.48,
+    "price": 113.47,
+    "pct": -8.4,
     "cur": "USD",
-    "as_of": "2026-08-13T18:35:42.247327+00:00"
+    "as_of": "2026-08-14T06:32:24.808587+00:00"
    },
    "earnings": {
     "date": "2026-08-12",
@@ -65,20 +65,20 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Cisco nach Earnings deutlich schwächer",
-    "why_now": "Die Aktie von Cisco Systems fällt um 9,48 % auf 112,13 USD. Gleichzeitig liegt das Handelsvolumen bei 2,1× des Durchschnitts. Der Earnings-Termin liegt zwei Tage zurück; der zeitliche Zusammenhang dürfte die Reaktion erklären, die konkrete Ursache ist jedoch unklar.",
+    "headline": "Cisco fällt nach Earnings deutlich bei hohem Volumen",
+    "why_now": "Die Cisco-Aktie liegt bei 113,47 USD und ist um 8,4 % gefallen. Das Handelsvolumen beträgt das 3,0-Fache des Durchschnitts. Zwei Tage zuvor fand der Earnings-Termin statt, daher dürfte die Bewegung damit zusammenhängen. Ursache unklar.",
     "watch_next": [
-     "Weitere Kursbewegung",
-     "Handelsvolumen",
-     "Neue Earnings-Reaktionen"
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-14T00:20:25.795839Z"
+    "generated_at": "2026-08-14T07:20:30.745223Z"
    }
   },
   {
-   "symbol": "ADYEN.AS",
-   "name": "Adyen",
+   "symbol": "CBRS",
+   "name": "Cerebras",
    "score": 80,
    "priority": "high",
    "alert_type": "large_move",
@@ -86,13 +86,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+16,4 %",
+     "value": "-11,8 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,6× Durchschnitt",
+     "value": "3,0× Durchschnitt",
      "weight": 25
     },
     {
@@ -102,24 +102,23 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "EURONEXT:ADYEN",
    "quote": {
-    "price": 1059.2,
-    "pct": 16.4,
-    "cur": "EUR",
-    "as_of": "2026-08-13T18:35:42.247327+00:00"
+    "price": 231.01,
+    "pct": -11.85,
+    "cur": "USD",
+    "as_of": "2026-08-14T06:32:24.808587+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Adyen mit starkem Kursanstieg und hohem Volumen",
-    "why_now": "Die Adyen-Aktie legte um 16,4 % auf 1059,2 EUR zu. Gleichzeitig lag das Handelsvolumen beim 4,6-Fachen des Durchschnitts. Zudem wurde Adyen in den vergangenen 3 Tagen in 1 Video erwähnt. Ursache unklar.",
+    "headline": "Cerebras fällt bei ungewöhnlich hohem Volumen",
+    "why_now": "Die Aktie von Cerebras fiel um 11,85 % auf 231,01 USD. Gleichzeitig lag das Handelsvolumen beim 3,0-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
     "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
+     "Kursbewegung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Video-Erwähnungen prüfen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-13T19:20:39.193421Z"
+    "generated_at": "2026-08-14T07:20:30.745223Z"
    }
   },
   {
@@ -132,13 +131,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+10,2 %",
+     "value": "+8,5 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,7× Durchschnitt",
+     "value": "6,2× Durchschnitt",
      "weight": 25
     },
     {
@@ -151,21 +150,21 @@
    "tv_symbol": "XETR:TKMS",
    "quote": {
     "price": 103.8,
-    "pct": 10.19,
+    "pct": 8.53,
     "cur": "EUR",
-    "as_of": "2026-08-13T18:35:42.247327+00:00"
+    "as_of": "2026-08-14T06:32:24.808587+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "TKMS mit starker Kursbewegung und hohem Volumen",
-    "why_now": "Die TKMS-Aktie stieg um 10,2 % auf 103,8 EUR. Das Handelsvolumen lag beim 2,7-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Diese erhöhte Aufmerksamkeit könnte die Bewegung begleitet haben, die genaue Ursache bleibt jedoch unklar.",
+    "headline": "TKMS mit deutlichem Kursanstieg und hohem Volumen",
+    "why_now": "Die TKMS-Aktie stieg um 8,53 % auf 103,8 EUR. Das Handelsvolumen lag beim 6,2-Fachen des Durchschnitts. Zusätzlich wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
     "watch_next": [
-     "Kursbewegung beobachten",
-     "Handelsvolumen mit dem Durchschnitt vergleichen",
-     "Weitere Video-Erwähnungen prüfen"
+     "Kursentwicklung nach dem Anstieg",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-13T19:20:39.193421Z"
+    "generated_at": "2026-08-14T07:20:30.745223Z"
    }
   },
   {
@@ -178,13 +177,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,2 %",
+     "value": "+4,1 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "2,2× Durchschnitt",
      "weight": 15
     },
     {
@@ -201,10 +200,10 @@
     }
    ],
    "quote": {
-    "price": 39.55,
-    "pct": 5.16,
+    "price": 39.16,
+    "pct": 4.12,
     "cur": "USD",
-    "as_of": "2026-08-13T18:35:42.247327+00:00"
+    "as_of": "2026-08-14T06:32:24.808587+00:00"
    },
    "earnings": {
     "date": "2026-08-11",
@@ -213,22 +212,62 @@
    }
   },
   {
-   "symbol": "CBRS",
-   "name": "Cerebras",
-   "score": 70,
-   "priority": "high",
+   "symbol": "GBF.DE",
+   "name": "Bilfinger",
+   "score": 65,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-13,2 %",
-     "weight": 45
+     "value": "-5,4 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
+     "value": "5,2× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:GBF",
+   "quote": {
+    "price": 77.6,
+    "pct": -5.41,
+    "cur": "EUR",
+    "as_of": "2026-08-14T06:32:24.808587+00:00"
+   }
+  },
+  {
+   "symbol": "EOAN.DE",
+   "name": "E.ON",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,2 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,1× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
      "weight": 15
     },
     {
@@ -238,11 +277,17 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "XETR:EOAN",
    "quote": {
-    "price": 227.167,
-    "pct": -13.31,
-    "cur": "USD",
-    "as_of": "2026-08-13T18:35:42.247327+00:00"
+    "price": 18.25,
+    "pct": -3.15,
+    "cur": "EUR",
+    "as_of": "2026-08-14T06:32:24.808587+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-12",
+    "distance_days": -2,
+    "zeit": "tbd"
    }
   },
   {
@@ -255,7 +300,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,3 %",
+     "value": "-3,5 %",
      "weight": 15
     },
     {
@@ -274,9 +319,9 @@
    "tv_symbol": "XETR:NCH2",
    "quote": {
     "price": 7.95,
-    "pct": 2.32,
+    "pct": -3.48,
     "cur": "EUR",
-    "as_of": "2026-08-13T18:35:42.247327+00:00"
+    "as_of": "2026-08-14T06:32:24.808587+00:00"
    }
   }
  ]
