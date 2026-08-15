@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T04:20:34.671498Z",
+  "generated_at": "2026-08-15T05:20:25.475538Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -82,7 +82,7 @@
    "name": "Talanx",
    "score": 75,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -123,15 +123,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Talanx steigt bei erhöhtem Handelsvolumen",
-    "why_now": "Die Talanx-Aktie liegt bei 118,5 EUR und ist um 3,5 % gestiegen. Das Handelsvolumen beträgt das 1,6-Fache des Durchschnitts. Der Anstieg fällt zeitlich mit dem Earnings-Termin gestern und einer Video-Erwähnung in den vergangenen 3 Tagen zusammen. Ursache unklar. Die zeitliche Nähe zu den Geschäftszahlen könnte als Auslöser infrage kommen, ist durch die Daten aber nicht belegt.",
+    "headline": "Talanx nach Earnings mit auffälliger Kursbewegung",
+    "why_now": "Die Talanx-Aktie stieg um 3,5 %, begleitet von einem Handelsvolumen von 1,6× des Durchschnitts. Earnings fanden gestern statt. Ursache unklar; der zeitliche Zusammenhang dürfte die auffällige Bewegung plausibel einordnen.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
+     "Kursentwicklung nach der Reaktion auf Earnings",
      "Handelsvolumen im weiteren Verlauf",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-15T00:20:27.475176Z"
+    "generated_at": "2026-08-15T05:20:25.475538Z"
    }
   },
   {
