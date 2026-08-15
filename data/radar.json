@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T06:20:28.973020Z",
+  "generated_at": "2026-08-15T07:20:26.609101Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -21,8 +21,100 @@
  },
  "items": [
   {
-   "symbol": "EOAN.DE",
-   "name": "E.ON",
+   "symbol": "ADYEN.AS",
+   "name": "Adyen",
+   "score": 90,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+16,4 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,5× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "EURONEXT:ADYEN",
+   "quote": {
+    "price": 1061.6,
+    "pct": 16.4,
+    "cur": "EUR",
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Adyen mit starkem Kursanstieg und hohem Volumen",
+    "why_now": "Die Adyen-Aktie steigt um 16,4 % auf 1061,6 EUR. Das Handelsvolumen liegt beim 4,5-Fachen des Durchschnitts. Zudem wurden in den vergangenen drei Tagen zwei Videos erwähnt, was als möglicher Begleitumstand infrage kommt. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung von 16,4 %",
+     "Handelsvolumen beim 4,5-Fachen des Durchschnitts",
+     "Zwei Video-Erwähnungen in drei Tagen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-15T07:20:26.609101Z"
+   }
+  },
+  {
+   "symbol": "TKMS.DE",
+   "name": "TKMS",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,7× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:TKMS",
+   "quote": {
+    "price": 104.0,
+    "pct": 10.19,
+    "cur": "EUR",
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "TKMS mit deutlichem Kursanstieg bei hohem Volumen",
+    "why_now": "Die TKMS-Aktie legte um 10,2 % auf 104,0 EUR zu. Das Handelsvolumen lag beim 2,7-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst, was auf erhöhte Aufmerksamkeit hindeuten könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-15T07:20:26.609101Z"
+   }
+  },
+  {
+   "symbol": "AMAT",
+   "name": "Applied Materials",
    "score": 80,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
@@ -30,246 +122,14 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,4 %",
+     "value": "-5,1 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
+     "value": "1,7× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:EOAN",
-   "quote": {
-    "price": 17.45,
-    "pct": -4.38,
-    "cur": "EUR",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-12",
-    "distance_days": -3,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "E.ON fällt nach Earnings-Termin bei hohem Volumen",
-    "why_now": "Die E.ON-Aktie liegt bei 17,45 EUR und damit 4,38 % im Minus. Das Handelsvolumen beträgt das 3,8-Fache des Durchschnitts. Der Earnings-Termin liegt drei Tage zurück; zudem wurde in diesem Zeitraum ein Video erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach der Bewegung",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Erwähnungen nach dem Earnings-Termin"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-15T00:20:27.475176Z"
-   }
-  },
-  {
-   "symbol": "TLX.DE",
-   "name": "Talanx",
-   "score": 75,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,5 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:TLX",
-   "quote": {
-    "price": 118.5,
-    "pct": 3.49,
-    "cur": "EUR",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-14",
-    "distance_days": -1,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Talanx nach Earnings mit auffälliger Kursbewegung",
-    "why_now": "Die Talanx-Aktie stieg um 3,5 %, begleitet von einem Handelsvolumen von 1,6× des Durchschnitts. Earnings fanden gestern statt. Ursache unklar; der zeitliche Zusammenhang dürfte die auffällige Bewegung plausibel einordnen.",
-    "watch_next": [
-     "Kursentwicklung nach der Reaktion auf Earnings",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-15T05:20:25.475538Z"
-   }
-  },
-  {
-   "symbol": "LUNR",
-   "name": "Intuitive Machines",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,6 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 18.89,
-    "pct": 7.57,
-    "cur": "USD",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Intuitive Machines mit deutlichem Tagesplus",
-    "why_now": "Die Aktie von Intuitive Machines legte um 7,57 % auf 18,89 USD zu. Das Handelsvolumen lag beim 1,5-Fachen des Durchschnitts, zudem wurde die Aktie in einem Video innerhalb von 3 Tagen erwähnt. Diese erhöhte Aufmerksamkeit könnte die Bewegung begünstigt haben, eine eindeutige Ursache ist daraus jedoch nicht ableitbar. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursentwicklung",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-15T00:20:27.475176Z"
-   }
-  },
-  {
-   "symbol": "0700.HK",
-   "name": "Tencent",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,5 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "HKEX:700",
-   "quote": {
-    "price": 440.0,
-    "pct": -4.46,
-    "cur": "HKD",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-12",
-    "distance_days": -3,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "HFG.DE",
-   "name": "HelloFresh",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,4 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:HFG",
-   "quote": {
-    "price": 3.15,
-    "pct": -5.41,
-    "cur": "EUR",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
-   }
-  },
-  {
-   "symbol": "AMAT",
-   "name": "Applied Materials",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,4 %",
-     "weight": 30
     },
     {
      "type": "earnings_watch",
@@ -285,89 +145,47 @@
     }
    ],
    "quote": {
-    "price": 505.77,
-    "pct": -5.38,
+    "price": 507.18,
+    "pct": -5.12,
     "cur": "USD",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
    },
    "earnings": {
     "date": "2026-08-13",
     "distance_days": -2,
     "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "CBRS",
-   "name": "Cerebras",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,6 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 218.145,
-    "pct": -5.57,
-    "cur": "USD",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
-   }
-  },
-  {
-   "symbol": "NBIS",
-   "name": "Nebius",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,4 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 271.26,
-    "pct": 6.36,
-    "cur": "USD",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Applied Materials fällt nach Earnings-Termin deutlich",
+    "why_now": "Die Aktie von Applied Materials fällt um 5,12 % auf 507,18 USD. Das Handelsvolumen liegt beim 1,7-Fachen des Durchschnitts, und der Earnings-Termin war vor 2 Tagen. Ursache unklar. Die zeitliche Nähe zum Earnings-Termin könnte mit der Bewegung zusammenhängen, ist durch die Daten aber nicht belegt.",
+    "watch_next": [
+     "Kursentwicklung nach dem Rückgang",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Reaktionen nach dem Earnings-Termin"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-15T07:20:26.609101Z"
    }
   },
   {
    "symbol": "RWE.DE",
    "name": "RWE",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
+   "score": 75,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,6 %",
+     "weight": 15
+    },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
+     "value": "2,7× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "earnings_watch",
@@ -385,14 +203,168 @@
    "tv_symbol": "XETR:RWE",
    "quote": {
     "price": 58.9,
-    "pct": -0.41,
+    "pct": 2.64,
     "cur": "EUR",
-    "as_of": "2026-08-14T18:35:16.201878+00:00"
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
    },
    "earnings": {
     "date": "2026-08-13",
     "distance_days": -2,
     "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "LUNR",
+   "name": "Intuitive Machines",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,3 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 19.01,
+    "pct": 8.26,
+    "cur": "USD",
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
+   }
+  },
+  {
+   "symbol": "NBIS",
+   "name": "Nebius",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,9 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 277.68,
+    "pct": 8.88,
+    "cur": "USD",
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
+   }
+  },
+  {
+   "symbol": "SNDK",
+   "name": "SanDisk",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,4 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 1641.11,
+    "pct": 7.39,
+    "cur": "USD",
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
+   }
+  },
+  {
+   "symbol": "CBRS",
+   "name": "Cerebras",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,2 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,4× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 218.98,
+    "pct": -5.21,
+    "cur": "USD",
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
+   }
+  },
+  {
+   "symbol": "SIX2.DE",
+   "name": "Sixt SE Vorzugsaktie",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,1 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "5,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:SIX2",
+   "quote": {
+    "price": 73.15,
+    "pct": 3.06,
+    "cur": "EUR",
+    "as_of": "2026-08-15T06:32:23.918264+00:00"
    }
   }
  ]
