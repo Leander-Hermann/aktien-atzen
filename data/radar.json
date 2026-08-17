@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-17T06:20:28.784748Z",
+  "generated_at": "2026-08-17T07:20:28.228077Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 113,
-  "with_quote_data": 57,
+  "symbols_total": 112,
+  "with_quote_data": 59,
   "sources": [
    "watchlist",
    "videos",
@@ -20,6 +20,40 @@
   ]
  },
  "items": [
+  {
+   "symbol": "HFG.DE",
+   "name": "HelloFresh",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,4 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:HFG",
+   "quote": {
+    "price": 3.15,
+    "pct": -5.41,
+    "cur": "EUR",
+    "as_of": "2026-08-17T06:33:16.542788+00:00"
+   }
+  },
   {
    "symbol": "LUNR",
    "name": "Intuitive Machines",
@@ -44,35 +78,7 @@
     "price": 19.01,
     "pct": 8.26,
     "cur": "USD",
-    "as_of": "2026-08-16T18:32:22.596506+00:00"
-   }
-  },
-  {
-   "symbol": "HFG.DE",
-   "name": "HelloFresh",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,4 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,0× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "XETR:HFG",
-   "quote": {
-    "price": 3.15,
-    "pct": -5.41,
-    "cur": "EUR",
-    "as_of": "2026-08-16T18:32:22.596506+00:00"
+    "as_of": "2026-08-17T06:33:16.542788+00:00"
    }
   },
   {
@@ -100,7 +106,7 @@
     "price": 17.45,
     "pct": -4.38,
     "cur": "EUR",
-    "as_of": "2026-08-16T18:32:22.596506+00:00"
+    "as_of": "2026-08-17T06:33:16.542788+00:00"
    }
   }
  ]
