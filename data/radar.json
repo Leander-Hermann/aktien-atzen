@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-16T23:20:28.403966Z",
+  "generated_at": "2026-08-17T00:20:37.525149Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 117,
+  "symbols_total": 113,
   "with_quote_data": 57,
   "sources": [
    "watchlist",
@@ -21,66 +21,10 @@
  },
  "items": [
   {
-   "symbol": "AMAT",
-   "name": "Applied Materials",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,1 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 507.18,
-    "pct": -5.12,
-    "cur": "USD",
-    "as_of": "2026-08-16T18:32:22.596506+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-13",
-    "distance_days": -3,
-    "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Applied Materials fällt nach Earnings deutlich",
-    "why_now": "Die Aktie von Applied Materials liegt bei 507,18 USD und ist um 5,12 % gefallen. Gleichzeitig lag das Handelsvolumen beim 1,7-Fachen des Durchschnitts. Der zeitliche Zusammenhang mit dem Earnings-Termin vor 3 Tagen dürfte auf eine Reaktion im Anschluss an die Veröffentlichung hindeuten. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-16T00:20:25.565884Z"
-   }
-  },
-  {
    "symbol": "LUNR",
    "name": "Intuitive Machines",
-   "score": 70,
-   "priority": "high",
+   "score": 60,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -94,12 +38,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "1,9× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "quote": {
@@ -107,24 +45,12 @@
     "pct": 8.26,
     "cur": "USD",
     "as_of": "2026-08-16T18:32:22.596506+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Intuitive Machines mit deutlichem Tagesplus",
-    "why_now": "Die Aktie von Intuitive Machines legte um 8,3 % auf 19,01 USD zu. Das Handelsvolumen lag beim 1,9-Fachen des Durchschnitts. Zudem wurde in drei Tagen ein Video erwähnt, was für zusätzliche Aufmerksamkeit sprechen könnte. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-16T00:20:25.565884Z"
    }
   },
   {
    "symbol": "HFG.DE",
    "name": "HelloFresh",
-   "score": 65,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -139,12 +65,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "3,0× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "tv_symbol": "XETR:HFG",
@@ -152,33 +72,6 @@
     "price": 3.15,
     "pct": -5.41,
     "cur": "EUR",
-    "as_of": "2026-08-16T18:32:22.596506+00:00"
-   }
-  },
-  {
-   "symbol": "SNDK",
-   "name": "SanDisk",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,4 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 1641.11,
-    "pct": 7.39,
-    "cur": "USD",
     "as_of": "2026-08-16T18:32:22.596506+00:00"
    }
   },
@@ -208,90 +101,6 @@
     "pct": -4.38,
     "cur": "EUR",
     "as_of": "2026-08-16T18:32:22.596506+00:00"
-   }
-  },
-  {
-   "symbol": "TLX.DE",
-   "name": "Talanx",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,5 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:TLX",
-   "quote": {
-    "price": 118.5,
-    "pct": 3.49,
-    "cur": "EUR",
-    "as_of": "2026-08-16T18:32:22.596506+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-14",
-    "distance_days": -2,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "RWE.DE",
-   "name": "RWE",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:RWE",
-   "quote": {
-    "price": 58.9,
-    "pct": -0.41,
-    "cur": "EUR",
-    "as_of": "2026-08-16T18:32:22.596506+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-13",
-    "distance_days": -3,
-    "zeit": "tbd"
    }
   }
  ]
