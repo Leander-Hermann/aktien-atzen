@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-18T18:20:34.643465Z",
+  "generated_at": "2026-08-18T19:20:28.793116Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 113,
+  "symbols_total": 112,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -21,8 +21,8 @@
  },
  "items": [
   {
-   "symbol": "HFG.DE",
-   "name": "HelloFresh",
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
    "score": 65,
    "priority": "medium",
    "alert_type": "large_move",
@@ -30,110 +30,52 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-5,4 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:HFG",
-   "quote": {
-    "price": 3.065,
-    "pct": -5.41,
-    "cur": "EUR",
-    "as_of": "2026-08-18T06:33:00.161710+00:00"
-   }
-  },
-  {
-   "symbol": "CBRS",
-   "name": "Cerebras",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+15,1 %",
+     "value": "-9,1 %",
      "weight": 45
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 2 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 251.98,
-    "pct": -5.21,
+    "price": 212.925,
+    "pct": -9.13,
     "cur": "USD",
-    "as_of": "2026-08-18T06:33:00.161710+00:00"
+    "as_of": "2026-08-18T18:33:12.887271+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-20",
+    "distance_days": 2,
+    "zeit": "tbd"
    }
   },
   {
-   "symbol": "LUNR",
-   "name": "Intuitive Machines",
-   "score": 60,
+   "symbol": "INTU",
+   "name": "Intuit",
+   "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+8,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 20.38,
-    "pct": 8.26,
-    "cur": "USD",
-    "as_of": "2026-08-18T06:33:00.161710+00:00"
-   }
-  },
-  {
-   "symbol": "EOAN.DE",
-   "name": "E.ON",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,4 %",
+     "value": "+6,0 %",
      "weight": 30
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,8× Durchschnitt",
-     "weight": 25
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 2 Tagen",
+     "weight": 20
     }
    ],
-   "tv_symbol": "XETR:EOAN",
-   "quote": {
-    "price": 17.385,
-    "pct": -4.38,
-    "cur": "EUR",
-    "as_of": "2026-08-18T06:33:00.161710+00:00"
+   "earnings": {
+    "date": "2026-08-20",
+    "distance_days": 2,
+    "zeit": "amc"
    }
   }
  ]
