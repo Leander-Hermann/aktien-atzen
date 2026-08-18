@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-18T06:20:29.221747Z",
+  "generated_at": "2026-08-18T07:20:30.783607Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 112,
+  "symbols_total": 113,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -48,10 +48,37 @@
    ],
    "tv_symbol": "XETR:HFG",
    "quote": {
-    "price": 3.15,
+    "price": 3.065,
     "pct": -5.41,
     "cur": "EUR",
-    "as_of": "2026-08-17T06:33:16.542788+00:00"
+    "as_of": "2026-08-18T06:33:00.161710+00:00"
+   }
+  },
+  {
+   "symbol": "CBRS",
+   "name": "Cerebras",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+15,1 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,4× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "quote": {
+    "price": 251.98,
+    "pct": -5.21,
+    "cur": "USD",
+    "as_of": "2026-08-18T06:33:00.161710+00:00"
    }
   },
   {
@@ -75,10 +102,10 @@
     }
    ],
    "quote": {
-    "price": 19.01,
+    "price": 20.38,
     "pct": 8.26,
     "cur": "USD",
-    "as_of": "2026-08-17T06:33:16.542788+00:00"
+    "as_of": "2026-08-18T06:33:00.161710+00:00"
    }
   },
   {
@@ -103,10 +130,10 @@
    ],
    "tv_symbol": "XETR:EOAN",
    "quote": {
-    "price": 17.45,
+    "price": 17.385,
     "pct": -4.38,
     "cur": "EUR",
-    "as_of": "2026-08-17T06:33:16.542788+00:00"
+    "as_of": "2026-08-18T06:33:00.161710+00:00"
    }
   }
  ]
