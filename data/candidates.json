@@ -1,7 +1,7 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-08-15T04:14:06.709711Z",
+    "generated_at": "2026-08-18T04:19:07.781931Z",
     "trading_day": "2026-08-14",
     "status": "fresh",
     "partial": false,
@@ -15,7 +15,7 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-08-15T04:14:06.709711Z"
+    "as_of": "2026-08-18T04:19:07.781931Z"
   },
   "items": [
     {
@@ -47,7 +47,7 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 8
       },
       "interest_status": "none_declared",
       "levels": {
@@ -117,7 +117,7 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 8
       },
       "interest_status": "none_declared",
       "levels": {
@@ -187,7 +187,7 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 8
       },
       "interest_status": "none_declared",
       "levels": {
@@ -257,14 +257,14 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 8
+        "warnings_count": 9
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 247.82,
+        "entry_low": 247.86,
         "entry_high": 249.46,
-        "stop": 240.1,
-        "target": 268.18,
+        "stop": 240.35,
+        "target": 267.67,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -327,7 +327,7 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 8
+        "warnings_count": 9
       },
       "interest_status": "none_declared",
       "levels": {
