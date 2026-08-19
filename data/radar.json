@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T06:20:26.618312Z",
+  "generated_at": "2026-08-19T07:20:29.054984Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 113,
+  "symbols_total": 114,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -30,7 +30,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,1 %",
+     "value": "-7,8 %",
      "weight": 45
     },
     {
@@ -41,10 +41,10 @@
     }
    ],
    "quote": {
-    "price": 212.925,
-    "pct": -9.13,
+    "price": 216.0,
+    "pct": -7.82,
     "cur": "USD",
-    "as_of": "2026-08-18T18:33:12.887271+00:00"
+    "as_of": "2026-08-19T06:32:43.287424+00:00"
    },
    "earnings": {
     "date": "2026-08-20",
@@ -53,73 +53,107 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Marvell Technology fällt vor dem Earnings-Termin deutlich",
-    "why_now": "Die Aktie liegt bei 212,925 USD und verzeichnet eine Bewegung von -9,13 %. Ursache unklar. Der anstehende Earnings-Termin morgen könnte die auffällige Bewegung mitprägen.",
+    "headline": "Marvell fällt vor dem Earnings-Termin deutlich",
+    "why_now": "Die Marvell-Aktie liegt bei 216,0 USD und ist um 7,82 % gefallen. Für morgen ist ein Earnings-Termin ausgewiesen. Ursache unklar. Die zeitliche Nähe zum Termin könnte mit der auffälligen Bewegung zusammenhängen, belegt ist das durch die Daten jedoch nicht.",
     "watch_next": [
-     "Earnings-Termin morgen",
-     "Weitere Kursbewegung",
-     "Zeitpunkt der Veröffentlichung"
+     "Kursentwicklung bis zum Earnings-Termin",
+     "Veröffentlichung der Earnings",
+     "Zeitpunkt des Earnings-Termins"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-19T00:20:25.309634Z"
+    "generated_at": "2026-08-19T07:20:29.054984Z"
    }
   },
   {
-   "symbol": "INTU",
-   "name": "Intuit",
+   "symbol": "1810.HK",
+   "name": "Xiaomi",
    "score": 65,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+6,0 %",
+     "value": "+6,1 %",
      "weight": 30
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings gestern",
      "weight": 35
     }
    ],
+   "tv_symbol": "HKEX:1810",
+   "quote": {
+    "price": 27.78,
+    "pct": 6.11,
+    "cur": "HKD",
+    "as_of": "2026-08-19T06:32:43.287424+00:00"
+   },
    "earnings": {
-    "date": "2026-08-20",
-    "distance_days": 1,
-    "zeit": "amc"
+    "date": "2026-08-18",
+    "distance_days": -1,
+    "zeit": "tbd"
    }
   },
   {
-   "symbol": "CRM",
-   "name": "Salesforce",
-   "score": 50,
+   "symbol": "CBRS",
+   "name": "Cerebras",
+   "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,2 %",
-     "weight": 30
+     "value": "-12,7 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,2× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "quote": {
+    "price": 220.01,
+    "pct": 15.07,
+    "cur": "USD",
+    "as_of": "2026-08-19T06:32:43.287424+00:00"
+   }
+  },
+  {
+   "symbol": "TGT",
+   "name": "Target",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
-     "weight": 20
+     "value": "Earnings heute",
+     "weight": 35
     }
    ],
    "quote": {
-    "price": 199.01,
-    "pct": 4.21,
+    "price": 152.48,
+    "pct": 0.97,
     "cur": "USD",
-    "as_of": "2026-08-18T18:33:12.887271+00:00"
+    "as_of": "2026-08-19T06:32:43.287424+00:00"
    },
    "earnings": {
-    "date": "2026-08-26",
-    "distance_days": 7,
-    "zeit": "amc"
+    "date": "2026-08-19",
+    "distance_days": 0,
+    "zeit": "bmo"
    }
   }
  ]
