@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-18T23:20:27.082427Z",
+  "generated_at": "2026-08-19T00:20:25.309634Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 112,
+  "symbols_total": 113,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -23,8 +23,8 @@
   {
    "symbol": "MRVL",
    "name": "Marvell Technology",
-   "score": 65,
-   "priority": "medium",
+   "score": 80,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -36,8 +36,8 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
+     "value": "Earnings morgen",
+     "weight": 35
     }
    ],
    "quote": {
@@ -48,16 +48,28 @@
    },
    "earnings": {
     "date": "2026-08-20",
-    "distance_days": 2,
+    "distance_days": 1,
     "zeit": "tbd"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Marvell Technology fällt vor dem Earnings-Termin deutlich",
+    "why_now": "Die Aktie liegt bei 212,925 USD und verzeichnet eine Bewegung von -9,13 %. Ursache unklar. Der anstehende Earnings-Termin morgen könnte die auffällige Bewegung mitprägen.",
+    "watch_next": [
+     "Earnings-Termin morgen",
+     "Weitere Kursbewegung",
+     "Zeitpunkt der Veröffentlichung"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-19T00:20:25.309634Z"
    }
   },
   {
    "symbol": "INTU",
    "name": "Intuit",
-   "score": 50,
+   "score": 65,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -68,13 +80,45 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
+     "value": "Earnings morgen",
+     "weight": 35
     }
    ],
    "earnings": {
     "date": "2026-08-20",
-    "distance_days": 2,
+    "distance_days": 1,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "CRM",
+   "name": "Salesforce",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,2 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 7 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 199.01,
+    "pct": 4.21,
+    "cur": "USD",
+    "as_of": "2026-08-18T18:33:12.887271+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-26",
+    "distance_days": 7,
     "zeit": "amc"
    }
   }
