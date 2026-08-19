@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T18:20:28.456950Z",
+  "generated_at": "2026-08-19T19:20:32.184154Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 114,
+  "symbols_total": 113,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -30,7 +30,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-7,8 %",
+     "value": "+8,2 %",
      "weight": 45
     },
     {
@@ -41,100 +41,34 @@
     }
    ],
    "quote": {
-    "price": 216.0,
-    "pct": -7.82,
+    "price": 233.77,
+    "pct": 8.23,
     "cur": "USD",
-    "as_of": "2026-08-19T06:32:43.287424+00:00"
+    "as_of": "2026-08-19T18:33:04.054009+00:00"
    },
    "earnings": {
     "date": "2026-08-20",
     "distance_days": 1,
     "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Marvell fällt vor dem Earnings-Termin deutlich",
-    "why_now": "Die Marvell-Aktie liegt bei 216,0 USD und ist um 7,82 % gefallen. Für morgen ist ein Earnings-Termin ausgewiesen. Ursache unklar. Die zeitliche Nähe zum Termin könnte mit der auffälligen Bewegung zusammenhängen, belegt ist das durch die Daten jedoch nicht.",
-    "watch_next": [
-     "Kursentwicklung bis zum Earnings-Termin",
-     "Veröffentlichung der Earnings",
-     "Zeitpunkt des Earnings-Termins"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-19T07:20:29.054984Z"
-   }
-  },
-  {
-   "symbol": "1810.HK",
-   "name": "Xiaomi",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,1 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    }
-   ],
-   "tv_symbol": "HKEX:1810",
-   "quote": {
-    "price": 27.78,
-    "pct": 6.11,
-    "cur": "HKD",
-    "as_of": "2026-08-19T06:32:43.287424+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-18",
-    "distance_days": -1,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "CBRS",
-   "name": "Cerebras",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-12,7 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,2× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 220.01,
-    "pct": 15.07,
-    "cur": "USD",
-    "as_of": "2026-08-19T06:32:43.287424+00:00"
    }
   },
   {
    "symbol": "TGT",
    "name": "Target",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,7 %",
+     "weight": 30
+    },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
+     "value": "1,7× Durchschnitt",
      "weight": 15
     },
     {
@@ -145,15 +79,126 @@
     }
    ],
    "quote": {
-    "price": 152.48,
-    "pct": 0.97,
+    "price": 161.095,
+    "pct": 5.65,
     "cur": "USD",
-    "as_of": "2026-08-19T06:32:43.287424+00:00"
+    "as_of": "2026-08-19T18:33:04.054009+00:00"
    },
    "earnings": {
     "date": "2026-08-19",
     "distance_days": 0,
     "zeit": "bmo"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Target nach Earnings-Termin deutlich im Plus",
+    "why_now": "Die Target-Aktie liegt heute 5,7 % im Plus bei einem ungewöhnlich hohen Volumen von 1,7× des Durchschnitts. Der Earnings-Termin ist für heute ausgewiesen, daher dürfte die Bewegung zeitlich damit zusammenhängen. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen im weiteren Tagesverlauf",
+     "Weitere Kursbewegung in USD"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-19T19:20:32.184154Z"
+   }
+  },
+  {
+   "symbol": "TEM",
+   "name": "Tempus AI",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+22,1 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,3× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "quote": {
+    "price": 60.28,
+    "pct": 22.12,
+    "cur": "USD",
+    "as_of": "2026-08-19T18:33:04.054009+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Tempus AI mit starkem Kursanstieg und hohem Volumen",
+    "why_now": "Die Aktie von Tempus AI liegt bei 60,28 USD und verzeichnet einen Anstieg von 22,12 %. Das Handelsvolumen beträgt das 3,3-Fache des Durchschnitts. Ursache unklar. Die Daten zeigen damit eine starke Kursbewegung, die von ungewöhnlich hohem Volumen begleitet wird.",
+    "watch_next": [
+     "Kursentwicklung nach dem Anstieg",
+     "Handelsvolumen im weiteren Verlauf",
+     "Bestand der auffälligen Bewegung"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-19T19:20:32.184154Z"
+   }
+  },
+  {
+   "symbol": "GC=F",
+   "name": "Gold",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,0 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "35,3× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "TVC:GOLD",
+   "quote": {
+    "price": 4541.2,
+    "pct": 4.01,
+    "cur": "USD",
+    "as_of": "2026-08-19T18:33:04.054009+00:00"
+   }
+  },
+  {
+   "symbol": "CRM",
+   "name": "Salesforce",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,4 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 7 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 206.73,
+    "pct": 5.4,
+    "cur": "USD",
+    "as_of": "2026-08-19T18:33:04.054009+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-26",
+    "distance_days": 7,
+    "zeit": "amc"
    }
   }
  ]
