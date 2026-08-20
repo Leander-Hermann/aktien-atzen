@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T06:20:29.194014Z",
+  "generated_at": "2026-08-20T07:20:30.202497Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,15 +23,21 @@
   {
    "symbol": "MRVL",
    "name": "Marvell Technology",
-   "score": 80,
+   "score": 95,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+8,2 %",
+     "value": "+9,8 %",
      "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
@@ -41,10 +47,10 @@
     }
    ],
    "quote": {
-    "price": 233.77,
-    "pct": 8.23,
+    "price": 237.27,
+    "pct": 9.85,
     "cur": "USD",
-    "as_of": "2026-08-19T18:33:04.054009+00:00"
+    "as_of": "2026-08-20T06:32:49.272503+00:00"
    },
    "earnings": {
     "date": "2026-08-20",
@@ -53,15 +59,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Marvell Technology heute deutlich fester",
-    "why_now": "Die Aktie von Marvell Technology liegt heute bei 233,77 USD und damit 8,23 % im Plus. Im Datenblock ist zugleich ein Earnings-Termin für heute vermerkt. Die Bewegung dürfte damit im Zusammenhang stehen, eine konkrete Ursache lässt sich daraus jedoch nicht ableiten. Ursache unklar.",
+    "headline": "Marvell Technology steigt am Earnings-Tag deutlich",
+    "why_now": "Die Aktie von Marvell Technology steigt heute um 9,85 % auf 237,27 USD. Das Handelsvolumen liegt beim 2,0-Fachen des Durchschnitts. Ursache unklar. Der zeitgleiche Earnings-Termin könnte mit der Bewegung zusammenhängen, konkrete Ergebnisse nennt der Datenblock jedoch nicht.",
     "watch_next": [
-     "Weitere Kursbewegung heute",
-     "Earnings-Termin heute",
-     "Zeitpunkt der Veröffentlichung"
+     "Earnings heute",
+     "Weitere Kursbewegung",
+     "Handelsvolumen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-20T00:20:25.760774Z"
+    "generated_at": "2026-08-20T07:20:30.202497Z"
    }
   },
   {
@@ -74,13 +80,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,7 %",
+     "value": "+4,3 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
+     "value": "2,5× Durchschnitt",
      "weight": 15
     },
     {
@@ -91,10 +97,10 @@
     }
    ],
    "quote": {
-    "price": 161.095,
-    "pct": 5.65,
+    "price": 159.0,
+    "pct": 4.28,
     "cur": "USD",
-    "as_of": "2026-08-19T18:33:04.054009+00:00"
+    "as_of": "2026-08-20T06:32:49.272503+00:00"
    },
    "earnings": {
     "date": "2026-08-19",
@@ -103,15 +109,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Target nach Earnings mit deutlichem Kursanstieg",
-    "why_now": "Die Target-Aktie liegt bei 161,095 USD und ist heute um 5,65 % gestiegen. Das Handelsvolumen beträgt das 1,7-Fache des Durchschnitts. Der Anstieg dürfte zeitlich mit dem Earnings-Termin am Vortag zusammenhängen. Ursache unklar.",
+    "headline": "Target nach Earnings mit deutlicher Kursbewegung",
+    "why_now": "Die Target-Aktie steigt heute um 4,3 %, begleitet von einem Volumen von 2,5× des Durchschnitts. Der Earnings-Termin lag gestern. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin könnte die Bewegung erklären, konkrete Ergebnisse oder deren Bewertung sind im Datenblock jedoch nicht angegeben.",
     "watch_next": [
-     "Kursentwicklung nach der Earnings-Reaktion",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Unternehmensmeldungen"
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Kursbewegungen bei Target"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-20T05:20:26.469348Z"
+    "generated_at": "2026-08-20T07:20:30.202497Z"
    }
   },
   {
@@ -124,61 +130,60 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+22,1 %",
+     "value": "+24,1 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,3× Durchschnitt",
+     "value": "4,8× Durchschnitt",
      "weight": 25
     }
    ],
    "quote": {
-    "price": 60.28,
-    "pct": 22.12,
+    "price": 61.25,
+    "pct": 24.09,
     "cur": "USD",
-    "as_of": "2026-08-19T18:33:04.054009+00:00"
+    "as_of": "2026-08-20T06:32:49.272503+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Tempus AI mit starkem Kursanstieg und hohem Volumen",
-    "why_now": "Die Aktie von Tempus AI liegt bei 60,28 USD und verzeichnet einen Anstieg von 22,12 %. Das Handelsvolumen beträgt das 3,3-Fache des Durchschnitts. Ursache unklar. Die Daten zeigen damit eine starke Kursbewegung, die von ungewöhnlich hohem Volumen begleitet wird.",
+    "headline": "Tempus AI mit starker Kursbewegung und hohem Volumen",
+    "why_now": "Die Aktie von Tempus AI steigt um 24,1 % auf 61,25 USD. Das Handelsvolumen liegt beim 4,8-Fachen des Durchschnitts. Ursache unklar. Das hohe Volumen dürfte die auffällige Kursbewegung begleiten, belegt aber keinen konkreten Auslöser.",
     "watch_next": [
      "Kursentwicklung nach dem Anstieg",
      "Handelsvolumen im weiteren Verlauf",
-     "Bestand der auffälligen Bewegung"
+     "Weitere auffällige Bewegungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-19T19:20:32.184154Z"
+    "generated_at": "2026-08-20T07:20:30.202497Z"
    }
   },
   {
-   "symbol": "GC=F",
-   "name": "Gold",
-   "score": 55,
+   "symbol": "NBIS",
+   "name": "Nebius",
+   "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,0 %",
-     "weight": 30
+     "value": "-9,9 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "35,3× Durchschnitt",
-     "weight": 25
+     "value": "1,9× Durchschnitt",
+     "weight": 15
     }
    ],
-   "tv_symbol": "TVC:GOLD",
    "quote": {
-    "price": 4541.2,
-    "pct": 4.01,
+    "price": 223.9,
+    "pct": -9.87,
     "cur": "USD",
-    "as_of": "2026-08-19T18:33:04.054009+00:00"
+    "as_of": "2026-08-20T06:32:49.272503+00:00"
    }
   },
   {
@@ -191,7 +196,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,4 %",
+     "value": "+5,1 %",
      "weight": 30
     },
     {
@@ -202,10 +207,10 @@
     }
    ],
    "quote": {
-    "price": 206.73,
-    "pct": 5.4,
+    "price": 206.09,
+    "pct": 5.07,
     "cur": "USD",
-    "as_of": "2026-08-19T18:33:04.054009+00:00"
+    "as_of": "2026-08-20T06:32:49.272503+00:00"
    },
    "earnings": {
     "date": "2026-08-26",
