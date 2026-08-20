@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-08-19T04:18:57.489137Z",
-    "trading_day": "2026-08-17",
+    "generated_at": "2026-08-20T04:17:41.535610Z",
+    "trading_day": "2026-08-19",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-08-19T04:18:57.489137Z"
+    "as_of": "2026-08-20T04:17:41.535610Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "ABBV",
-      "name": "AbbVie Inc.",
-      "sector": "Health Care",
-      "as_of": "2026-08-17T13:30:00Z",
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-08-19T13:30:00Z",
       "quote": {
-        "price": 250.33,
+        "price": 14.5,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/ABBV",
-        "as_of": "2026-08-17T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/F",
+        "as_of": "2026-08-19T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -47,42 +47,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 8
+        "warnings_count": 7
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 247.91,
-        "entry_high": 250.33,
-        "stop": 240.66,
-        "target": 269.68,
+        "entry_low": 14.33,
+        "entry_high": 14.5,
+        "stop": 13.78,
+        "target": 16.29,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-18",
-              "price": 215.37
+              "date": "2026-07-02",
+              "price": 13.22
             },
             "b": {
-              "date": "2026-07-02",
-              "price": 261.64
+              "date": "2026-07-29",
+              "price": 16.29
             },
             "c": {
-              "date": "2026-07-15",
-              "price": 243.07
+              "date": "2026-08-06",
+              "price": 13.75
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 289.34
+              "price": 16.82
             },
             {
               "ratio": 1.272,
-              "price": 301.93
+              "price": 17.66
             },
             {
               "ratio": 1.618,
-              "price": 317.93
+              "price": 18.72
             }
           ]
         }
@@ -90,16 +90,16 @@
     },
     {
       "rank": 2,
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "as_of": "2026-08-17T13:30:00Z",
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "sector": "Financials",
+      "as_of": "2026-08-19T13:30:00Z",
       "quote": {
-        "price": 506.0,
+        "price": 365.54,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/AMD",
-        "as_of": "2026-08-17T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/V",
+        "as_of": "2026-08-19T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -117,42 +117,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 8
+        "warnings_count": 7
       },
-      "interest_status": "position_or_interest",
+      "interest_status": "none_declared",
       "levels": {
-        "entry_low": 492.14,
-        "entry_high": 506.0,
-        "stop": 453.44,
-        "target": 611.13,
+        "entry_low": 362.02,
+        "entry_high": 365.54,
+        "stop": 353.08,
+        "target": 390.47,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-29",
-              "price": 495.35
+              "date": "2026-06-03",
+              "price": 309.0
             },
             "b": {
-              "date": "2026-06-30",
-              "price": 584.73
+              "date": "2026-07-16",
+              "price": 365.14
             },
             "c": {
-              "date": "2026-07-08",
-              "price": 498.15
+              "date": "2026-07-23",
+              "price": 348.5
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 587.53
+              "price": 404.64
             },
             {
               "ratio": 1.272,
-              "price": 611.84
+              "price": 419.91
             },
             {
               "ratio": 1.618,
-              "price": 642.77
+              "price": 439.33
             }
           ]
         }
@@ -160,16 +160,16 @@
     },
     {
       "rank": 3,
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "sector": "Energy",
-      "as_of": "2026-08-17T13:30:00Z",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-08-19T13:30:00Z",
       "quote": {
-        "price": 161.46,
+        "price": 316.83,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/XOM",
-        "as_of": "2026-08-17T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/AAPL",
+        "as_of": "2026-08-19T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -191,38 +191,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 159.67,
-        "entry_high": 161.46,
-        "stop": 155.13,
-        "target": 176.41,
+        "entry_low": 314.12,
+        "entry_high": 316.83,
+        "stop": 304.54,
+        "target": 344.57,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
               "date": "2026-06-25",
-              "price": 134.95
+              "price": 273.75
             },
             "b": {
-              "date": "2026-07-29",
-              "price": 159.07
+              "date": "2026-07-17",
+              "price": 334.99
             },
             "c": {
-              "date": "2026-08-04",
-              "price": 149.09
+              "date": "2026-07-23",
+              "price": 319.35
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 173.21
+              "price": 380.59
             },
             {
               "ratio": 1.272,
-              "price": 179.77
+              "price": 397.25
             },
             {
               "ratio": 1.618,
-              "price": 188.12
+              "price": 418.44
             }
           ]
         }
@@ -230,16 +230,16 @@
     },
     {
       "rank": 4,
-      "ticker": "KHC",
-      "name": "The Kraft Heinz Company",
-      "sector": "Consumer Staples",
-      "as_of": "2026-08-17T13:30:00Z",
+      "ticker": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "sector": "Financials",
+      "as_of": "2026-08-19T13:30:00Z",
       "quote": {
-        "price": 24.75,
+        "price": 357.26,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/KHC",
-        "as_of": "2026-08-17T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/JPM",
+        "as_of": "2026-08-19T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -257,42 +257,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 11
+        "warnings_count": 9
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 24.37,
-        "entry_high": 24.75,
-        "stop": 23.4,
-        "target": 27.45,
+        "entry_low": 355.53,
+        "entry_high": 357.26,
+        "stop": 347.79,
+        "target": 376.2,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-22",
-              "price": 22.0
+              "date": "2026-07-14",
+              "price": 325.75
             },
             "b": {
-              "date": "2026-07-17",
-              "price": 27.13
+              "date": "2026-07-15",
+              "price": 351.24
             },
             "c": {
-              "date": "2026-07-23",
-              "price": 25.17
+              "date": "2026-07-29",
+              "price": 343.78
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 30.29
+              "price": 369.27
             },
             {
               "ratio": 1.272,
-              "price": 31.69
+              "price": 376.2
             },
             {
               "ratio": 1.618,
-              "price": 33.46
+              "price": 385.02
             }
           ]
         }
@@ -303,13 +303,13 @@
       "ticker": "MA",
       "name": "Mastercard Incorporated",
       "sector": "Financials",
-      "as_of": "2026-08-17T13:30:00Z",
+      "as_of": "2026-08-19T13:30:00Z",
       "quote": {
-        "price": 562.26,
+        "price": 573.72,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/MA",
-        "as_of": "2026-08-17T13:30:00Z"
+        "as_of": "2026-08-19T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -331,38 +331,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 557.46,
-        "entry_high": 562.26,
-        "stop": 544.07,
-        "target": 598.63,
+        "entry_low": 568.2,
+        "entry_high": 573.72,
+        "stop": 554.18,
+        "target": 612.8,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-22",
-              "price": 483.14
-            },
-            "b": {
-              "date": "2026-07-17",
-              "price": 551.72
-            },
-            "c": {
               "date": "2026-07-23",
               "price": 523.61
+            },
+            "b": {
+              "date": "2026-08-03",
+              "price": 583.71
+            },
+            "c": {
+              "date": "2026-08-12",
+              "price": 556.06
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 592.19
+              "price": 616.16
             },
             {
               "ratio": 1.272,
-              "price": 610.84
+              "price": 632.51
             },
             {
               "ratio": 1.618,
-              "price": 634.57
+              "price": 653.3
             }
           ]
         }
