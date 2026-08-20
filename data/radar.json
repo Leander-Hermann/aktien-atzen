@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T04:20:25.883270Z",
+  "generated_at": "2026-08-20T05:20:26.469348Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -69,7 +69,7 @@
    "name": "Target",
    "score": 80,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -103,15 +103,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Target nach Earnings deutlich fester",
-    "why_now": "Die Target-Aktie liegt heute 5,7 % höher bei 161,095 USD. Das Handelsvolumen beträgt das 1,7-Fache des Durchschnitts. Der Earnings-Termin war gestern, daher dürfte die Kursbewegung mit der Veröffentlichung zusammenhängen. Die konkreten Inhalte oder Ergebnisse der Earnings sind aus dem Datenblock nicht ersichtlich.",
+    "headline": "Target nach Earnings mit deutlichem Kursanstieg",
+    "why_now": "Die Target-Aktie liegt bei 161,095 USD und ist heute um 5,65 % gestiegen. Das Handelsvolumen beträgt das 1,7-Fache des Durchschnitts. Der Anstieg dürfte zeitlich mit dem Earnings-Termin am Vortag zusammenhängen. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Tagesverlauf",
+     "Kursentwicklung nach der Earnings-Reaktion",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
      "Weitere Unternehmensmeldungen"
     ],
-    "confidence": "medium",
-    "generated_at": "2026-08-20T00:20:25.760774Z"
+    "confidence": "low",
+    "generated_at": "2026-08-20T05:20:26.469348Z"
    }
   },
   {
