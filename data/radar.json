@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-19T23:20:28.577657Z",
+  "generated_at": "2026-08-20T00:20:25.760774Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 113,
+  "symbols_total": 116,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -25,7 +25,7 @@
    "name": "Marvell Technology",
    "score": 80,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -36,7 +36,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     }
    ],
@@ -48,20 +48,20 @@
    },
    "earnings": {
     "date": "2026-08-20",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "tbd"
    },
    "llm": {
     "status": "ready",
-    "headline": "Marvell Technology steigt vor Earnings-Termin deutlich",
-    "why_now": "Die Aktie stieg um 8,23 % auf 233,77 USD. Ein Earnings-Termin ist für morgen angegeben. Die zeitliche Nähe könnte die auffällige Bewegung mitgeprägt haben, belegt ist dieser Zusammenhang nicht. Ursache unklar.",
+    "headline": "Marvell Technology heute deutlich fester",
+    "why_now": "Die Aktie von Marvell Technology liegt heute bei 233,77 USD und damit 8,23 % im Plus. Im Datenblock ist zugleich ein Earnings-Termin für heute vermerkt. Die Bewegung dürfte damit im Zusammenhang stehen, eine konkrete Ursache lässt sich daraus jedoch nicht ableiten. Ursache unklar.",
     "watch_next": [
-     "Earnings-Termin morgen",
-     "Zeitpunkt der Veröffentlichung",
-     "Weitere Kursbewegung"
+     "Weitere Kursbewegung heute",
+     "Earnings-Termin heute",
+     "Zeitpunkt der Veröffentlichung"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-19T20:20:28.410793Z"
+    "generated_at": "2026-08-20T00:20:25.760774Z"
    }
   },
   {
@@ -69,7 +69,7 @@
    "name": "Target",
    "score": 80,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -86,7 +86,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     }
    ],
@@ -98,20 +98,20 @@
    },
    "earnings": {
     "date": "2026-08-19",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "bmo"
    },
    "llm": {
     "status": "ready",
-    "headline": "Target nach Earnings-Termin deutlich im Plus",
-    "why_now": "Die Target-Aktie liegt heute 5,7 % im Plus bei einem ungewöhnlich hohen Volumen von 1,7× des Durchschnitts. Der Earnings-Termin ist für heute ausgewiesen, daher dürfte die Bewegung zeitlich damit zusammenhängen. Ursache unklar.",
+    "headline": "Target nach Earnings deutlich fester",
+    "why_now": "Die Target-Aktie liegt heute 5,7 % höher bei 161,095 USD. Das Handelsvolumen beträgt das 1,7-Fache des Durchschnitts. Der Earnings-Termin war gestern, daher dürfte die Kursbewegung mit der Veröffentlichung zusammenhängen. Die konkreten Inhalte oder Ergebnisse der Earnings sind aus dem Datenblock nicht ersichtlich.",
     "watch_next": [
      "Kursentwicklung nach dem Earnings-Termin",
      "Handelsvolumen im weiteren Tagesverlauf",
-     "Weitere Kursbewegung in USD"
+     "Weitere Unternehmensmeldungen"
     ],
-    "confidence": "low",
-    "generated_at": "2026-08-19T19:20:32.184154Z"
+    "confidence": "medium",
+    "generated_at": "2026-08-20T00:20:25.760774Z"
    }
   },
   {
@@ -197,7 +197,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     }
    ],
@@ -209,7 +209,7 @@
    },
    "earnings": {
     "date": "2026-08-26",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "amc"
    }
   }
