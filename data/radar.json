@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-20T18:20:30.223730Z",
+  "generated_at": "2026-08-20T19:20:33.942159Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 116,
+  "symbols_total": 117,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -21,23 +21,17 @@
  },
  "items": [
   {
-   "symbol": "MRVL",
-   "name": "Marvell Technology",
-   "score": 95,
+   "symbol": "WMT",
+   "name": "Walmart",
+   "score": 80,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+9,8 %",
+     "value": "-9,5 %",
      "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
     },
     {
      "type": "earnings_watch",
@@ -46,78 +40,62 @@
      "weight": 35
     }
    ],
-   "quote": {
-    "price": 237.27,
-    "pct": 9.85,
-    "cur": "USD",
-    "as_of": "2026-08-20T06:32:49.272503+00:00"
-   },
    "earnings": {
     "date": "2026-08-20",
     "distance_days": 0,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Marvell Technology steigt am Earnings-Tag deutlich",
-    "why_now": "Die Aktie von Marvell Technology steigt heute um 9,85 % auf 237,27 USD. Das Handelsvolumen liegt beim 2,0-Fachen des Durchschnitts. Ursache unklar. Der zeitgleiche Earnings-Termin könnte mit der Bewegung zusammenhängen, konkrete Ergebnisse nennt der Datenblock jedoch nicht.",
-    "watch_next": [
-     "Earnings heute",
-     "Weitere Kursbewegung",
-     "Handelsvolumen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-20T07:20:30.202497Z"
-   }
-  },
-  {
-   "symbol": "TGT",
-   "name": "Target",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,3 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    }
-   ],
-   "quote": {
-    "price": 159.0,
-    "pct": 4.28,
-    "cur": "USD",
-    "as_of": "2026-08-20T06:32:49.272503+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-19",
-    "distance_days": -1,
     "zeit": "bmo"
    },
    "llm": {
     "status": "ready",
-    "headline": "Target nach Earnings mit deutlicher Kursbewegung",
-    "why_now": "Die Target-Aktie steigt heute um 4,3 %, begleitet von einem Volumen von 2,5× des Durchschnitts. Der Earnings-Termin lag gestern. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin könnte die Bewegung erklären, konkrete Ergebnisse oder deren Bewertung sind im Datenblock jedoch nicht angegeben.",
+    "headline": "Walmart fällt am Earnings-Tag deutlich",
+    "why_now": "Die Walmart-Aktie verzeichnet heute eine starke Kursbewegung von -9,5 %. Gleichzeitig ist für heute ein Earnings-Termin ausgewiesen. Die zeitliche Nähe spricht dafür, dass die Bewegung mit dem Termin zusammenhängen könnte. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Kursbewegungen bei Target"
+     "Weitere Kursbewegung heute",
+     "Verlauf nach dem Earnings-Termin",
+     "Nächste veröffentlichte Unternehmensdaten"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-20T07:20:30.202497Z"
+    "generated_at": "2026-08-20T19:20:33.942159Z"
+   }
+  },
+  {
+   "symbol": "HAUTO.OL",
+   "name": "Hoegh Autoliners",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-11,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "6,9× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "OSL:HAUTO",
+   "quote": {
+    "price": 169.5,
+    "pct": -11.86,
+    "cur": "NOK",
+    "as_of": "2026-08-20T18:32:52.537097+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Hoegh Autoliners fällt bei hohem Handelsvolumen",
+    "why_now": "Die Aktie von Hoegh Autoliners liegt bei 169,5 NOK und damit 11,86 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 6,9-Fache des Durchschnitts. Ursache unklar. Das ungewöhnlich hohe Volumen dürfte die starke Kursbewegung begleiten, belegt aber keinen konkreten Auslöser.",
+    "watch_next": [
+     "Weitere Kursbewegung",
+     "Handelsvolumen",
+     "Neue Unternehmensmeldungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-20T19:20:33.942159Z"
    }
   },
   {
@@ -130,92 +108,104 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+24,1 %",
+     "value": "+8,8 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,8× Durchschnitt",
+     "value": "2,9× Durchschnitt",
      "weight": 25
     }
    ],
    "quote": {
-    "price": 61.25,
-    "pct": 24.09,
+    "price": 66.465,
+    "pct": 8.51,
     "cur": "USD",
-    "as_of": "2026-08-20T06:32:49.272503+00:00"
+    "as_of": "2026-08-20T18:32:52.537097+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Tempus AI mit starker Kursbewegung und hohem Volumen",
-    "why_now": "Die Aktie von Tempus AI steigt um 24,1 % auf 61,25 USD. Das Handelsvolumen liegt beim 4,8-Fachen des Durchschnitts. Ursache unklar. Das hohe Volumen dürfte die auffällige Kursbewegung begleiten, belegt aber keinen konkreten Auslöser.",
+    "headline": "Tempus AI mit starkem Kurs- und Volumenanstieg",
+    "why_now": "Die Aktie von Tempus AI liegt bei 66,465 USD und verzeichnet einen Anstieg von 8,51 %. Als Auslöser ist zudem eine starke Kursbewegung von 8,8 % dokumentiert. Das Handelsvolumen beträgt 2,9× des Durchschnitts und dürfte die auffällige Bewegung begleitet haben. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung nach dem Anstieg",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere auffällige Bewegungen"
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere starke Kursbewegungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-20T07:20:30.202497Z"
+    "generated_at": "2026-08-20T19:20:33.942159Z"
    }
   },
   {
-   "symbol": "NBIS",
-   "name": "Nebius",
+   "symbol": "1810.HK",
+   "name": "Xiaomi",
    "score": 60,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,9 %",
-     "weight": 45
+     "value": "+4,8 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
+     "value": "1,8× Durchschnitt",
      "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 223.9,
-    "pct": -9.87,
-    "cur": "USD",
-    "as_of": "2026-08-20T06:32:49.272503+00:00"
-   }
-  },
-  {
-   "symbol": "CRM",
-   "name": "Salesforce",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,1 %",
-     "weight": 30
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 6 Tagen",
-     "weight": 20
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    }
+   ],
+   "tv_symbol": "HKEX:1810",
+   "quote": {
+    "price": 27.76,
+    "pct": 4.81,
+    "cur": "HKD",
+    "as_of": "2026-08-20T18:32:52.537097+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-18",
+    "distance_days": -2,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,7 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
     }
    ],
    "quote": {
-    "price": 206.09,
-    "pct": 5.07,
+    "price": 243.72,
+    "pct": 2.72,
     "cur": "USD",
-    "as_of": "2026-08-20T06:32:49.272503+00:00"
+    "as_of": "2026-08-20T18:32:52.537097+00:00"
    },
    "earnings": {
-    "date": "2026-08-26",
-    "distance_days": 6,
-    "zeit": "amc"
+    "date": "2026-08-20",
+    "distance_days": 0,
+    "zeit": "tbd"
    }
   }
  ]
