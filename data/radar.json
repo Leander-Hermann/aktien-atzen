@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T06:20:27.656087Z",
+  "generated_at": "2026-08-21T07:20:28.365427Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 118,
+  "symbols_total": 119,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -30,7 +30,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,5 %",
+     "value": "-9,2 %",
      "weight": 45
     },
     {
@@ -47,55 +47,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Walmart nach Earnings deutlich im Minus",
-    "why_now": "Die Walmart-Aktie fällt heute um 9,5 %. Als zeitlicher Auslöser ist ein Earnings-Termin am Vortag dokumentiert. Ursache unklar. Die Bewegung könnte daher mit der Reaktion auf die Veröffentlichung zusammenhängen, konkrete Inhalte der Zahlen sind im Datenblock jedoch nicht angegeben.",
+    "headline": "Walmart nach Earnings gestern deutlich schwächer",
+    "why_now": "Die Walmart-Aktie verzeichnete eine starke Kursbewegung von -9,2 %. Der Earnings-Termin war gestern und lag vor Handelsbeginn. Der zeitliche Zusammenhang spricht dafür, dass die Bewegung mit der Veröffentlichung der Ergebnisse zusammenhängen könnte. Ursache unklar.",
     "watch_next": [
-     "Weitere Kursreaktion nach den Earnings",
-     "Entwicklung der Tagesveränderung",
-     "Neue Unternehmensmeldungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-21T05:20:28.612191Z"
-   }
-  },
-  {
-   "symbol": "HAUTO.OL",
-   "name": "Hoegh Autoliners",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,9× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "OSL:HAUTO",
-   "quote": {
-    "price": 169.5,
-    "pct": -11.86,
-    "cur": "NOK",
-    "as_of": "2026-08-20T18:32:52.537097+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Hoegh Autoliners fällt bei hohem Handelsvolumen",
-    "why_now": "Die Aktie von Hoegh Autoliners liegt bei 169,5 NOK und damit 11,86 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 6,9-Fache des Durchschnitts. Ursache unklar. Das ungewöhnlich hohe Volumen dürfte die starke Kursbewegung begleiten, belegt aber keinen konkreten Auslöser.",
-    "watch_next": [
+     "Kursreaktion nach den Earnings",
      "Weitere Kursbewegung",
-     "Handelsvolumen",
-     "Neue Unternehmensmeldungen"
+     "Nächste Unternehmensmeldung"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-20T19:20:33.942159Z"
+    "generated_at": "2026-08-21T07:20:28.365427Z"
    }
   },
   {
@@ -114,80 +74,41 @@
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,9× Durchschnitt",
+     "value": "3,6× Durchschnitt",
      "weight": 25
     }
    ],
    "quote": {
-    "price": 66.465,
-    "pct": 8.51,
+    "price": 66.65,
+    "pct": 8.82,
     "cur": "USD",
-    "as_of": "2026-08-20T18:32:52.537097+00:00"
+    "as_of": "2026-08-21T06:32:46.545186+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Tempus AI mit starkem Kurs- und Volumenanstieg",
-    "why_now": "Die Aktie von Tempus AI liegt bei 66,465 USD und verzeichnet einen Anstieg von 8,51 %. Als Auslöser ist zudem eine starke Kursbewegung von 8,8 % dokumentiert. Das Handelsvolumen beträgt 2,9× des Durchschnitts und dürfte die auffällige Bewegung begleitet haben. Ursache unklar.",
+    "headline": "Tempus AI mit deutlichem Kurs- und Volumenanstieg",
+    "why_now": "Die Aktie von Tempus AI steigt um 8,8 % auf 66,65 USD. Gleichzeitig liegt das Handelsvolumen beim 3,6-Fachen des Durchschnitts. Das spricht für eine erhöhte Marktaktivität, die den starken Anstieg begleitet haben dürfte. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung nach dem Anstieg",
      "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere starke Kursbewegungen"
+     "Weitere ungewöhnliche Bewegungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-20T19:20:33.942159Z"
-   }
-  },
-  {
-   "symbol": "1810.HK",
-   "name": "Xiaomi",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,8 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    }
-   ],
-   "tv_symbol": "HKEX:1810",
-   "quote": {
-    "price": 27.76,
-    "pct": 4.81,
-    "cur": "HKD",
-    "as_of": "2026-08-20T18:32:52.537097+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-18",
-    "distance_days": -3,
-    "zeit": "tbd"
+    "generated_at": "2026-08-21T07:20:28.365427Z"
    }
   },
   {
    "symbol": "MRVL",
    "name": "Marvell Technology",
-   "score": 50,
+   "score": 65,
    "priority": "medium",
    "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,7 %",
-     "weight": 15
+     "value": "+5,8 %",
+     "weight": 30
     },
     {
      "type": "earnings_watch",
@@ -197,10 +118,10 @@
     }
    ],
    "quote": {
-    "price": 243.72,
-    "pct": 2.72,
+    "price": 251.01,
+    "pct": 5.79,
     "cur": "USD",
-    "as_of": "2026-08-20T18:32:52.537097+00:00"
+    "as_of": "2026-08-21T06:32:46.545186+00:00"
    },
    "earnings": {
     "date": "2026-08-20",
