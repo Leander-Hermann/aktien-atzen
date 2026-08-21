@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T18:20:37.965205Z",
+  "generated_at": "2026-08-21T19:20:36.021470Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 119,
+  "symbols_total": 118,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -21,83 +21,6 @@
  },
  "items": [
   {
-   "symbol": "WMT",
-   "name": "Walmart",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-9,2 %",
-     "weight": 45
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    }
-   ],
-   "earnings": {
-    "date": "2026-08-20",
-    "distance_days": -1,
-    "zeit": "bmo"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Walmart nach Earnings gestern deutlich schwächer",
-    "why_now": "Die Walmart-Aktie verzeichnete eine starke Kursbewegung von -9,2 %. Der Earnings-Termin war gestern und lag vor Handelsbeginn. Der zeitliche Zusammenhang spricht dafür, dass die Bewegung mit der Veröffentlichung der Ergebnisse zusammenhängen könnte. Ursache unklar.",
-    "watch_next": [
-     "Kursreaktion nach den Earnings",
-     "Weitere Kursbewegung",
-     "Nächste Unternehmensmeldung"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-21T07:20:28.365427Z"
-   }
-  },
-  {
-   "symbol": "TEM",
-   "name": "Tempus AI",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+8,8 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,6× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 66.65,
-    "pct": 8.82,
-    "cur": "USD",
-    "as_of": "2026-08-21T06:32:46.545186+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Tempus AI mit deutlichem Kurs- und Volumenanstieg",
-    "why_now": "Die Aktie von Tempus AI steigt um 8,8 % auf 66,65 USD. Gleichzeitig liegt das Handelsvolumen beim 3,6-Fachen des Durchschnitts. Das spricht für eine erhöhte Marktaktivität, die den starken Anstieg begleitet haben dürfte. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Anstieg",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere ungewöhnliche Bewegungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-21T07:20:28.365427Z"
-   }
-  },
-  {
    "symbol": "MRVL",
    "name": "Marvell Technology",
    "score": 65,
@@ -107,7 +30,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,8 %",
+     "value": "-5,7 %",
      "weight": 30
     },
     {
@@ -118,15 +41,42 @@
     }
    ],
    "quote": {
-    "price": 251.01,
-    "pct": 5.79,
+    "price": 237.115,
+    "pct": -5.53,
     "cur": "USD",
-    "as_of": "2026-08-21T06:32:46.545186+00:00"
+    "as_of": "2026-08-21T18:33:10.923917+00:00"
    },
    "earnings": {
     "date": "2026-08-20",
     "distance_days": -1,
     "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "TEM",
+   "name": "Tempus AI",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,3 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "quote": {
+    "price": 71.49,
+    "pct": 7.26,
+    "cur": "USD",
+    "as_of": "2026-08-21T18:33:10.923917+00:00"
    }
   }
  ]
