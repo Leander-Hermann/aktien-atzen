@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T04:20:28.586237Z",
+  "generated_at": "2026-08-21T05:20:28.612191Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -25,7 +25,7 @@
    "name": "Walmart",
    "score": 80,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -47,14 +47,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Walmart fällt nach starker Tagesbewegung auf",
-    "why_now": "Die Walmart-Aktie verzeichnet eine starke Kursbewegung von -9,5 %. Als weiterer Datenpunkt ist ein Earnings-Termin für gestern ausgewiesen. Ursache unklar.",
+    "headline": "Walmart nach Earnings deutlich im Minus",
+    "why_now": "Die Walmart-Aktie fällt heute um 9,5 %. Als zeitlicher Auslöser ist ein Earnings-Termin am Vortag dokumentiert. Ursache unklar. Die Bewegung könnte daher mit der Reaktion auf die Veröffentlichung zusammenhängen, konkrete Inhalte der Zahlen sind im Datenblock jedoch nicht angegeben.",
     "watch_next": [
-     "Weitere Kursbewegung beobachten",
-     "Nächste Unternehmensmeldungen beachten"
+     "Weitere Kursreaktion nach den Earnings",
+     "Entwicklung der Tagesveränderung",
+     "Neue Unternehmensmeldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-21T00:20:30.605051Z"
+    "generated_at": "2026-08-21T05:20:28.612191Z"
    }
   },
   {
