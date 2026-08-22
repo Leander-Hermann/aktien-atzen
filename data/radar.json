@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-21T23:20:29.975050Z",
+  "generated_at": "2026-08-22T00:20:25.525209Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -20,38 +20,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "MRVL",
-   "name": "Marvell Technology",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,7 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    }
-   ],
-   "quote": {
-    "price": 237.115,
-    "pct": -5.53,
-    "cur": "USD",
-    "as_of": "2026-08-21T18:33:10.923917+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-20",
-    "distance_days": -1,
-    "zeit": "tbd"
-   }
-  },
   {
    "symbol": "TEM",
    "name": "Tempus AI",
