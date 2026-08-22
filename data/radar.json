@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-22T06:20:25.951587Z",
+  "generated_at": "2026-08-22T07:20:31.646222Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 118,
+  "symbols_total": 116,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -21,6 +21,46 @@
  },
  "items": [
   {
+   "symbol": "HAUTO.OL",
+   "name": "Hoegh Autoliners",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-11,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "6,9× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "OSL:HAUTO",
+   "quote": {
+    "price": 173.6,
+    "pct": -11.86,
+    "cur": "NOK",
+    "as_of": "2026-08-22T06:33:00.590342+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Hoegh Autoliners mit starkem Kursrückgang",
+    "why_now": "Die Aktie von Hoegh Autoliners fällt um 11,9 % auf 173,6 NOK. Gleichzeitig liegt das Handelsvolumen beim 6,9-Fachen des Durchschnitts. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach dem Rückgang",
+     "Handelsvolumen",
+     "Weitere Tagesbewegung"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-08-22T07:20:31.646222Z"
+   }
+  },
+  {
    "symbol": "TEM",
    "name": "Tempus AI",
    "score": 60,
@@ -30,21 +70,54 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+7,3 %",
+     "value": "+9,1 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
+     "value": "2,5× Durchschnitt",
      "weight": 15
     }
    ],
    "quote": {
-    "price": 71.49,
-    "pct": 7.26,
+    "price": 72.69,
+    "pct": 9.06,
     "cur": "USD",
-    "as_of": "2026-08-21T18:33:10.923917+00:00"
+    "as_of": "2026-08-22T06:33:00.590342+00:00"
+   }
+  },
+  {
+   "symbol": "1810.HK",
+   "name": "Xiaomi",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,5 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "HKEX:1810",
+   "quote": {
+    "price": 29.02,
+    "pct": 4.54,
+    "cur": "HKD",
+    "as_of": "2026-08-22T06:33:00.590342+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-25",
+    "distance_days": 3,
+    "zeit": "tbd"
    }
   }
  ]
