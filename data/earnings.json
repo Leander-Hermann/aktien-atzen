@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-21T05:01:21.622235+00:00",
+ "updated": "2026-08-22T05:01:27.018910+00:00",
  "window": {
-  "from": "2026-08-18",
-  "to": "2026-09-11"
+  "from": "2026-08-19",
+  "to": "2026-09-12"
  },
  "universe_meta": {
   "indizes": [
@@ -22,48 +22,6 @@
  },
  "eintraege": [
   {
-   "date": "2026-08-18",
-   "ticker": "1810.HK",
-   "name": "Xiaomi",
-   "index": "HSI",
-   "region": "HK",
-   "branche": "Elektronik",
-   "zeit": "tbd",
-   "periode": "",
-   "eps_est": 0.2295,
-   "rev_est": 108218623910,
-   "status": "reported",
-   "eps_act": 0.2296,
-   "rev_act": null,
-   "surprise_pct": 7.32,
-   "reaktion_pct": 1.16,
-   "confirmed": true,
-   "source": "yahoo",
-   "source_url": "https://finance.yahoo.com/quote/1810.HK",
-   "as_of": "2026-08-19T05:01:19.508259+00:00"
-  },
-  {
-   "date": "2026-08-18",
-   "ticker": "HD",
-   "name": "Home Depot",
-   "index": "S&P 500",
-   "region": "US",
-   "branche": "Einzelhandel",
-   "zeit": "bmo",
-   "periode": "Q2 FY27",
-   "eps_est": 4.8762,
-   "rev_est": 48694759166,
-   "status": "reported",
-   "eps_act": 4.92,
-   "rev_act": 47861000000,
-   "surprise_pct": 0.9,
-   "reaktion_pct": -0.12,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/HD",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
-  },
-  {
    "date": "2026-08-19",
    "ticker": "1299.HK",
    "name": "AIA Group",
@@ -82,7 +40,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/1299.HK",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-19",
@@ -134,18 +92,18 @@
    "region": "US",
    "branche": "Einzelhandel",
    "zeit": "bmo",
-   "periode": "Q2 FY27",
-   "eps_est": 2.3095,
-   "rev_est": 26324568724,
+   "periode": "Q2 FY26",
+   "eps_est": null,
+   "rev_est": null,
    "status": "reported",
    "eps_act": 2.46,
    "rev_act": 26539000000,
-   "surprise_pct": 6.52,
+   "surprise_pct": null,
    "reaktion_pct": 4.28,
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/TGT",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-20",
@@ -187,7 +145,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/9988.HK",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-20",
@@ -208,7 +166,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/DE",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-20",
@@ -271,7 +229,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/WMT",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-24",
@@ -334,7 +292,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/INTU",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-26",
@@ -355,7 +313,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/CRWD",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-26",
@@ -376,7 +334,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/NVDA",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-26",
@@ -397,7 +355,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/CRM",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-27",
@@ -418,7 +376,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/DHER.DE",
-   "as_of": "2026-08-20T05:01:23.519483+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-27",
@@ -481,7 +439,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/MRVL",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-08-28",
@@ -586,7 +544,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/PANW",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-09-02",
@@ -607,7 +565,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/AVGO",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-09-02",
@@ -628,7 +586,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/LULU",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-09-02",
@@ -649,7 +607,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/SNOW",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-09-03",
@@ -670,7 +628,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/DELL",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   },
   {
    "date": "2026-09-07",
@@ -712,7 +670,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/ADBE",
-   "as_of": "2026-08-21T05:01:17.408282+00:00"
+   "as_of": "2026-08-22T05:01:22.810380+00:00"
   }
  ]
 }
