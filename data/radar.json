@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-23T06:20:32.868283Z",
+  "generated_at": "2026-08-23T07:20:29.664742Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -20,46 +20,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "HAUTO.OL",
-   "name": "Hoegh Autoliners",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,9× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "OSL:HAUTO",
-   "quote": {
-    "price": 173.6,
-    "pct": -11.86,
-    "cur": "NOK",
-    "as_of": "2026-08-22T18:32:53.825009+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Hoegh Autoliners mit starkem Kursrückgang",
-    "why_now": "Die Aktie von Hoegh Autoliners fällt um 11,9 % auf 173,6 NOK. Gleichzeitig liegt das Handelsvolumen beim 6,9-Fachen des Durchschnitts. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Rückgang",
-     "Handelsvolumen",
-     "Weitere Tagesbewegung"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-22T07:20:31.646222Z"
-   }
-  },
   {
    "symbol": "TEM",
    "name": "Tempus AI",
@@ -84,7 +44,7 @@
     "price": 72.69,
     "pct": 9.06,
     "cur": "USD",
-    "as_of": "2026-08-22T18:32:53.825009+00:00"
+    "as_of": "2026-08-23T06:33:14.384340+00:00"
    }
   },
   {
@@ -112,7 +72,7 @@
     "price": 29.02,
     "pct": 4.54,
     "cur": "HKD",
-    "as_of": "2026-08-22T18:32:53.825009+00:00"
+    "as_of": "2026-08-23T06:33:14.384340+00:00"
    },
    "earnings": {
     "date": "2026-08-25",
