@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-23T23:20:30.004104Z",
+  "generated_at": "2026-08-24T00:20:25.756363Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 115,
+  "symbols_total": 112,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -20,6 +20,39 @@
   ]
  },
  "items": [
+  {
+   "symbol": "1810.HK",
+   "name": "Xiaomi",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,5 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    }
+   ],
+   "tv_symbol": "HKEX:1810",
+   "quote": {
+    "price": 29.02,
+    "pct": 4.54,
+    "cur": "HKD",
+    "as_of": "2026-08-23T18:32:53.990383+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-25",
+    "distance_days": 1,
+    "zeit": "tbd"
+   }
+  },
   {
    "symbol": "TEM",
    "name": "Tempus AI",
@@ -48,8 +81,8 @@
    }
   },
   {
-   "symbol": "1810.HK",
-   "name": "Xiaomi",
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -57,27 +90,26 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,5 %",
+     "value": "-5,6 %",
      "weight": 30
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
+     "value": "Earnings in 3 Tagen",
      "weight": 20
     }
    ],
-   "tv_symbol": "HKEX:1810",
    "quote": {
-    "price": 29.02,
-    "pct": 4.54,
-    "cur": "HKD",
+    "price": 237.04,
+    "pct": -5.57,
+    "cur": "USD",
     "as_of": "2026-08-23T18:32:53.990383+00:00"
    },
    "earnings": {
-    "date": "2026-08-25",
-    "distance_days": 2,
-    "zeit": "tbd"
+    "date": "2026-08-27",
+    "distance_days": 3,
+    "zeit": "amc"
    }
   }
  ]
