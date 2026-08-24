@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-24T18:20:30.346006Z",
+  "generated_at": "2026-08-24T19:20:30.616025Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 112,
+  "symbols_total": 113,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -21,76 +21,17 @@
  },
  "items": [
   {
-   "symbol": "TEM",
-   "name": "Tempus AI",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,1 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 72.69,
-    "pct": 9.06,
-    "cur": "USD",
-    "as_of": "2026-08-24T06:33:02.743996+00:00"
-   }
-  },
-  {
-   "symbol": "MRVL",
-   "name": "Marvell Technology",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,6 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 237.04,
-    "pct": -5.57,
-    "cur": "USD",
-    "as_of": "2026-08-24T06:33:02.743996+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-27",
-    "distance_days": 3,
-    "zeit": "amc"
-   }
-  },
-  {
    "symbol": "1810.HK",
    "name": "Xiaomi",
-   "score": 50,
+   "score": 65,
    "priority": "medium",
    "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-3,6 %",
-     "weight": 15
+     "value": "+4,5 %",
+     "weight": 30
     },
     {
      "type": "earnings_watch",
@@ -101,15 +42,43 @@
    ],
    "tv_symbol": "HKEX:1810",
    "quote": {
-    "price": 27.98,
-    "pct": -3.58,
+    "price": 27.82,
+    "pct": 4.54,
     "cur": "HKD",
-    "as_of": "2026-08-24T06:33:02.743996+00:00"
+    "as_of": "2026-08-24T18:33:58.129467+00:00"
    },
    "earnings": {
     "date": "2026-08-25",
     "distance_days": 1,
     "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "OHB.DE",
+   "name": "OHB",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-8,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,4× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "tv_symbol": "XETR:OHB",
+   "quote": {
+    "price": 200.5,
+    "pct": -8.86,
+    "cur": "EUR",
+    "as_of": "2026-08-24T18:33:58.129467+00:00"
    }
   }
  ]
