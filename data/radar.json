@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-24T06:20:30.507162Z",
+  "generated_at": "2026-08-24T07:20:29.027577Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -20,39 +20,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "1810.HK",
-   "name": "Xiaomi",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,5 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings morgen",
-     "weight": 35
-    }
-   ],
-   "tv_symbol": "HKEX:1810",
-   "quote": {
-    "price": 29.02,
-    "pct": 4.54,
-    "cur": "HKD",
-    "as_of": "2026-08-23T18:32:53.990383+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-25",
-    "distance_days": 1,
-    "zeit": "tbd"
-   }
-  },
   {
    "symbol": "TEM",
    "name": "Tempus AI",
@@ -77,7 +44,7 @@
     "price": 72.69,
     "pct": 9.06,
     "cur": "USD",
-    "as_of": "2026-08-23T18:32:53.990383+00:00"
+    "as_of": "2026-08-24T06:33:02.743996+00:00"
    }
   },
   {
@@ -104,12 +71,45 @@
     "price": 237.04,
     "pct": -5.57,
     "cur": "USD",
-    "as_of": "2026-08-23T18:32:53.990383+00:00"
+    "as_of": "2026-08-24T06:33:02.743996+00:00"
    },
    "earnings": {
     "date": "2026-08-27",
     "distance_days": 3,
     "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "1810.HK",
+   "name": "Xiaomi",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,6 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    }
+   ],
+   "tv_symbol": "HKEX:1810",
+   "quote": {
+    "price": 27.98,
+    "pct": -3.58,
+    "cur": "HKD",
+    "as_of": "2026-08-24T06:33:02.743996+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-25",
+    "distance_days": 1,
+    "zeit": "tbd"
    }
   }
  ]
