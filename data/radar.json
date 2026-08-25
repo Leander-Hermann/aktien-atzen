@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T06:20:25.915291Z",
+  "generated_at": "2026-08-25T07:20:26.412834Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -21,41 +21,8 @@
  },
  "items": [
   {
-   "symbol": "1810.HK",
-   "name": "Xiaomi",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,5 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    }
-   ],
-   "tv_symbol": "HKEX:1810",
-   "quote": {
-    "price": 27.82,
-    "pct": 4.54,
-    "cur": "HKD",
-    "as_of": "2026-08-24T18:33:58.129467+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-25",
-    "distance_days": 0,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "OHB.DE",
-   "name": "OHB",
+   "symbol": "TEM",
+   "name": "Tempus AI",
    "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
@@ -63,22 +30,21 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-8,9 %",
+     "value": "-9,0 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
+     "value": "1,7× Durchschnitt",
      "weight": 15
     }
    ],
-   "tv_symbol": "XETR:OHB",
    "quote": {
-    "price": 200.5,
-    "pct": -8.86,
-    "cur": "EUR",
-    "as_of": "2026-08-24T18:33:58.129467+00:00"
+    "price": 66.17,
+    "pct": -8.97,
+    "cur": "USD",
+    "as_of": "2026-08-25T06:33:09.191535+00:00"
    }
   },
   {
@@ -91,7 +57,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,1 %",
+     "value": "-2,9 %",
      "weight": 15
     },
     {
@@ -102,10 +68,10 @@
     }
    ],
    "quote": {
-    "price": 210.23,
-    "pct": -2.09,
+    "price": 208.48,
+    "pct": -2.91,
     "cur": "USD",
-    "as_of": "2026-08-24T18:33:58.129467+00:00"
+    "as_of": "2026-08-25T06:33:09.191535+00:00"
    },
    "earnings": {
     "date": "2026-08-26",
