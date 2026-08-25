@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-24T23:20:29.585810Z",
+  "generated_at": "2026-08-25T00:20:25.410955Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 113,
+  "symbols_total": 112,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -25,7 +25,7 @@
    "name": "Xiaomi",
    "score": 65,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -36,7 +36,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     }
    ],
@@ -49,7 +49,7 @@
    },
    "earnings": {
     "date": "2026-08-25",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "tbd"
    }
   },
@@ -79,6 +79,38 @@
     "pct": -8.86,
     "cur": "EUR",
     "as_of": "2026-08-24T18:33:58.129467+00:00"
+   }
+  },
+  {
+   "symbol": "NVDA",
+   "name": "Nvidia",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,1 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    }
+   ],
+   "quote": {
+    "price": 210.23,
+    "pct": -2.09,
+    "cur": "USD",
+    "as_of": "2026-08-24T18:33:58.129467+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-26",
+    "distance_days": 1,
+    "zeit": "amc"
    }
   }
  ]
