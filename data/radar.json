@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-25T18:20:35.446342Z",
+  "generated_at": "2026-08-25T19:20:35.775992Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 112,
+  "symbols_total": 114,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -21,30 +21,68 @@
  },
  "items": [
   {
-   "symbol": "TEM",
-   "name": "Tempus AI",
-   "score": 60,
+   "symbol": "1810.HK",
+   "name": "Xiaomi",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,1 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    }
+   ],
+   "tv_symbol": "HKEX:1810",
+   "quote": {
+    "price": 27.76,
+    "pct": -4.14,
+    "cur": "HKD",
+    "as_of": "2026-08-25T18:33:51.003336+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-25",
+    "distance_days": 0,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
+   "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,0 %",
-     "weight": 45
+     "value": "+5,7 %",
+     "weight": 30
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 2 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 66.17,
-    "pct": -8.97,
+    "price": 242.3,
+    "pct": 5.67,
     "cur": "USD",
-    "as_of": "2026-08-25T06:33:09.191535+00:00"
+    "as_of": "2026-08-25T18:33:51.003336+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-27",
+    "distance_days": 2,
+    "zeit": "amc"
    }
   },
   {
@@ -57,7 +95,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,9 %",
+     "value": "+2,0 %",
      "weight": 15
     },
     {
@@ -68,10 +106,10 @@
     }
    ],
    "quote": {
-    "price": 208.48,
-    "pct": -2.91,
+    "price": 212.74,
+    "pct": 2.04,
     "cur": "USD",
-    "as_of": "2026-08-25T06:33:09.191535+00:00"
+    "as_of": "2026-08-25T18:33:51.003336+00:00"
    },
    "earnings": {
     "date": "2026-08-26",
