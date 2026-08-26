@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T06:20:32.318154Z",
+  "generated_at": "2026-08-26T07:20:33.946522Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -30,7 +30,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,7 %",
+     "value": "+4,8 %",
      "weight": 30
     },
     {
@@ -41,10 +41,10 @@
     }
    ],
    "quote": {
-    "price": 242.3,
-    "pct": 5.67,
+    "price": 240.38,
+    "pct": 4.84,
     "cur": "USD",
-    "as_of": "2026-08-25T18:33:51.003336+00:00"
+    "as_of": "2026-08-26T06:33:40.231754+00:00"
    },
    "earnings": {
     "date": "2026-08-27",
@@ -53,17 +53,45 @@
    }
   },
   {
+   "symbol": "OHB.DE",
+   "name": "OHB",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-8,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,4× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "tv_symbol": "XETR:OHB",
+   "quote": {
+    "price": 192.2,
+    "pct": -8.86,
+    "cur": "EUR",
+    "as_of": "2026-08-26T06:33:40.231754+00:00"
+   }
+  },
+  {
    "symbol": "1810.HK",
    "name": "Xiaomi",
-   "score": 65,
+   "score": 50,
    "priority": "medium",
    "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,1 %",
-     "weight": 30
+     "value": "+3,2 %",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
@@ -74,10 +102,10 @@
    ],
    "tv_symbol": "HKEX:1810",
    "quote": {
-    "price": 27.76,
-    "pct": -4.14,
+    "price": 28.66,
+    "pct": 3.24,
     "cur": "HKD",
-    "as_of": "2026-08-25T18:33:51.003336+00:00"
+    "as_of": "2026-08-26T06:33:40.231754+00:00"
    },
    "earnings": {
     "date": "2026-08-25",
@@ -95,7 +123,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,0 %",
+     "value": "+2,2 %",
      "weight": 15
     },
     {
@@ -106,10 +134,10 @@
     }
    ],
    "quote": {
-    "price": 212.74,
-    "pct": 2.04,
+    "price": 213.05,
+    "pct": 2.19,
     "cur": "USD",
-    "as_of": "2026-08-25T18:33:51.003336+00:00"
+    "as_of": "2026-08-26T06:33:40.231754+00:00"
    },
    "earnings": {
     "date": "2026-08-26",
