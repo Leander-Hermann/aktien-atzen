@@ -1,6 +1,384 @@
 {
- "updated": "2026-08-26T06:33:40.231754+00:00",
+ "updated": "2026-08-26T18:36:39.393769+00:00",
  "videos": [
+  {
+   "channel": "Fundamentalanalyse mit Egmond",
+   "playlist": "Fundamentalanalyse",
+   "id": "BxOBsfGofLs",
+   "title": "CoreWeave, SAP, TKMS, Infineon, Siemens Energy – Euer Egmond vom 18.08.2026",
+   "date": "20260818",
+   "url": "https://www.youtube.com/watch?v=BxOBsfGofLs",
+   "thumbnail": "https://i.ytimg.com/vi/BxOBsfGofLs/hqdefault.jpg",
+   "summarized_at": "2026-08-26T18:36:39.393561+00:00",
+   "summary": "Egmond Haidt stellt die starke Erholung der Chip- und KI-Aktien dem wachsenden Gegenwind durch steigende Langfristrenditen gegenüber. Gute Zahlen von CoreWeave und Super Micro treiben den Nasdaq, doch die hohe Verschuldung der Hyperscaler, begrenzte Stromerzeugungskapazitäten und ambitionierte Bewertungen nähren seine Skepsis gegenüber einer möglichen KI-Blase. Gleichzeitig zeichnet er ein schwaches Bild der deutschen Konjunktur und erwartet bei DAX, S&P 500, Gold, Öl, Euro-Dollar und Bitcoin kurzfristig überwiegend Seitwärtsbewegungen. Der zentrale Markttreiber der kommenden Tage ist aus seiner Sicht das Notenbankertreffen in Jackson Hole.",
+   "items": [
+    {
+     "name": "CoreWeave",
+     "ticker": "CRWV",
+     "note": "Der Host bezeichnet die Zahlen als gut und den Ausblick als bombastisch, sieht die Aktie wegen des Zinsanstiegs aber als nervös an.",
+     "figures": "Im späteren Verlauf wird ein Kurseinbruch von 8 % genannt.",
+     "tip": "Kurzfristig eher seitwärts; nach dem Rückgang abwarten.",
+     "einordnung": "CoreWeave steht exemplarisch für den Konflikt zwischen starkem KI-Wachstum und hoher Kapitalintensität. Bei solchen Geschäftsmodellen können steigende Finanzierungskosten die Gewinn- und Bewertungsfantasie gleichzeitig treffen.",
+     "detail": "Die Reaktion auf die Zahlen zeigt, wie stark der Markt derzeit auf die Umsatz- und Nachfrageerzählung von KI-Infrastruktur fokussiert ist. Der Gegenspieler ist die Finanzierung: Wenn Rechenzentren, Chips und Stromkapazitäten überwiegend über Schulden aufgebaut werden, steigt die Abhängigkeit von Kapitalmarktrenditen und von dauerhaft hohen Auslastungsraten. Das bullische Szenario setzt daher voraus, dass die Nachfrage nach KI-Rechenleistung schnell genug wächst, um die zusätzlichen Finanzierungskosten zu überkompensieren. Im bearischen Szenario führen höhere Renditen, verzögerte Stromanschlüsse oder eine vorsichtigere Investitionspolitik der großen Cloud-Anbieter zu einer Neubewertung des gesamten Segments.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Die Meldung über eine Kreditlinie von mehr als zehn Milliarden Dollar für Anthropic unterstreicht den im Video angesprochenen hohen Finanzierungsbedarf von KI-Unternehmen."
+      },
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Der globale Anleihe-Ausverkauf erklärt, warum kapitalintensive Wachstumswerte trotz guter operativer Nachrichten unter Bewertungsdruck geraten können."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 224,
+     "t": "03:44",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=224s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "SAP",
+     "ticker": "SAP.DE",
+     "note": "Ein Gerücht über eine mögliche Silver-Lake-Übernahme von Workday machte SAP zum größten DAX-Gewinner; der Kurs stieg auf 185,04 Euro. Der Host sieht die Erholung als potenziell fortsetzbar.",
+     "figures": "Kurs 185,04 Euro",
+     "tip": "Die Erholung könnte weitergehen.",
+     "einordnung": "Die Bewegung war nach Darstellung des Hosts vor allem nachrichten- und sentimentgetrieben. Für einen etablierten Softwarewert ist entscheidend, ob sich daraus ein belastbarer Impuls für die Bewertung ergibt oder lediglich eine kurzfristige Branchenrotation.",
+     "detail": "Übernahmegerüchte im Cloud-Softwaresektor wirken häufig als Bewertungsanker für vergleichbare Unternehmen. Der Markt fragt dann weniger nach einer unmittelbaren Veränderung bei SAP als nach der Frage, welche Multiplikatoren strategische Käufer für wiederkehrende Softwareumsätze zu zahlen bereit sind. Das bullische Argument ist eine anhaltende Konsolidierung des Sektors mit höheren strategischen Prämien. Dagegen spricht, dass ein einzelnes Gerücht schnell aus dem Kurs verschwinden kann, wenn keine Transaktion zustande kommt oder die steigenden Renditen den Bewertungsaufschlag großer Wachstumswerte begrenzen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 698,
+     "t": "11:38",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=698s",
+     "tv_symbol": "XETR:SAP"
+    },
+    {
+     "name": "TKMS",
+     "ticker": null,
+     "note": "TKMS steigerte den Umsatz um 19 % auf 1,89 Milliarden Euro und verfügt über einen Rekordauftragsbestand von 20,1 Milliarden Euro. Der negative Free Cashflow und die hohe Bewertung mahnen jedoch zur Vorsicht.",
+     "figures": "Umsatz 1,89 Mrd. Euro, +19 %; Auftragseingang 3,6 Mrd. Euro; Auftragsbestand 20,1 Mrd. Euro; EBIT 110 Mio. Euro; EBIT-Marge 5,8 %; Free Cashflow -204 Mio. Euro; Umsatzprognose +10 bis 12 %; KGV 38,5; EV 5,37 Mrd. Euro",
+     "tip": "Kurzfristig eher seitwärts; Gewinnmitnahmen sind möglich. Die hohe Bewertung beachten.",
+     "einordnung": "Der Auftragsbestand bietet eine ungewöhnlich gute Visibilität, doch das KGV von 38,5 verlangt eine deutliche operative Verbesserung. Entscheidend ist, ob aus dem Auftragspolster künftig auch nachhaltig positiver Cashflow und höhere Margen entstehen.",
+     "detail": "Das Kernproblem liegt in der Umwandlung von Aufträgen in Liquidität. Ein hoher Bestand kann durch lange Projektlaufzeiten, Vorfinanzierung und Kostensteigerungen zunächst sogar zusätzliches Kapital binden; der negative Free Cashflow ist deshalb mehr als eine kosmetische Kennzahl. Das bullische Szenario beruht auf steigenden Verteidigungsbudgets und einer verbesserten Kapazitätsauslastung. Das bearische Szenario wäre eine Verzögerung bei Projekten oder eine Margenerosion, wodurch die bereits eingepreiste Wachstumsperspektive nicht ausreicht, um die Bewertung zu rechtfertigen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 398,
+     "t": "06:38",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=398s"
+    },
+    {
+     "name": "Infineon",
+     "ticker": "IFX.DE",
+     "note": "Infineon wird vom Host als KI-Profiteur eingeordnet und stieg zunächst nach den CoreWeave-Zahlen deutlich. Später belastete der Zinsanstieg die Aktie, sodass die vorherige Erholung nur vorübergehend wirkte.",
+     "figures": "10-jährige US-Rendite 4,75 %",
+     "tip": "Kurzfristig eher seitwärts; die Zinsentwicklung beobachten.",
+     "einordnung": "Infineon verbindet strukturelle Halbleiternachfrage mit zyklischer Industrieexponierung. Damit ist die Aktie weniger ein reiner KI-Wert als ein Mischfall, bei dem Zinsen, Investitionszyklus und Konjunktur gemeinsam die Richtung bestimmen.",
+     "detail": "Die im Video beschriebene Kursreaktion illustriert die hohe Korrelation zwischen KI-Sentiment und europäischen Halbleiterwerten: Positive Nachrichten aus der US-Infrastrukturkette werden zunächst als Beleg für eine breitere Nachfrage gelesen. Steigende Anleiherenditen wirken anschließend über den Bewertungsmechanismus und über die Sorge, dass industrielle Investitionen schwächer ausfallen könnten. Für die Bullen bleibt der Ausbau von Rechenzentren ein struktureller Nachfragefaktor; die Bären verweisen auf die Abhängigkeit von Investitionsbudgets und darauf, dass eine KI-Rallye nicht automatisch alle Geschäftsbereiche gleichermaßen belebt.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Der globale Anleihe-Ausverkauf liefert den im Video genannten makroökonomischen Gegenwind für hoch bewertete Wachstums- und Technologiewerte."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 271,
+     "t": "04:31",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=271s",
+     "tv_symbol": "XETR:IFX"
+    },
+    {
+     "name": "Siemens Energy",
+     "ticker": "ENR.DE",
+     "note": "Siemens Energy wurde nach den CoreWeave-Zahlen als KI-Profiteur betrachtet und stieg zunächst kräftig. Der anschließende Zinsanstieg führte laut Host zu einem deutlichen Kurseinbruch.",
+     "figures": "10-jährige US-Rendite 4,75 %",
+     "tip": "Kurzfristig eher seitwärts; die Zinsentwicklung beobachten.",
+     "einordnung": "Die KI-Fantasie greift bei Siemens Energy über den steigenden Strom- und Netzausbaubedarf. Das macht die Aktie interessant, aber auch anfällig für Übertreibungen, wenn der Markt künftiges Wachstum schneller einpreist, als es sich in Aufträgen und Cashflows materialisiert.",
+     "detail": "Die Verbindung zur KI läuft hier über die physische Infrastruktur: Mehr Rechenleistung benötigt zusätzliche Erzeugungs-, Netz- und Übertragungskapazitäten. Genau deshalb kann der Wert bei positiven KI-Nachrichten stärker reagieren als ein klassischer Versorger. Gleichzeitig erhöhen steigende Renditen die Hürde für kapitalintensive Projekte und drücken auf die Barwerte langfristiger Erwartungen. Das bullische Szenario setzt eine anhaltende Investitionswelle voraus, während das bearische Szenario in einer Verzögerung von Projekten oder einer zu hohen Vorwegnahme dieser Nachfrage besteht.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Die Meldung über den globalen Renditeanstieg verdeutlicht den Finanzierungs- und Bewertungsdruck auf kapitalintensive Infrastrukturunternehmen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 271,
+     "t": "04:31",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=271s",
+     "tv_symbol": "XETR:ENR"
+    },
+    {
+     "name": "Hochtief",
+     "ticker": "HOT.DE",
+     "note": "Hochtief wird im Zusammenhang mit Infineon und Siemens Energy als weiterer KI-Profiteur genannt, der nach den CoreWeave-Zahlen nach oben schoss.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Die KI-Verbindung ist bei Hochtief vor allem indirekt und läuft über Bau- und Infrastrukturinvestitionen. Solche Themen können die Fantasie beleben, bleiben aber stärker von konkreten Projektvergaben und Margen abhängig als von der reinen KI-Nachfrage.",
+     "detail": "Der Markt behandelt Infrastrukturunternehmen in einer KI-Phase gerne als Nachzügler der Technologiekette. Das kann zu einer Rotation in weniger teure oder materiell stärker unterlegte Werte führen, birgt aber die Gefahr, dass der thematische Zusammenhang überschätzt wird. Entscheidend wäre, ob zusätzliche Rechenzentren und Energieprojekte tatsächlich in den Auftragseingang und in profitables Wachstum übersetzt werden.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 271,
+     "t": "04:31",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=271s",
+     "tv_symbol": "XETR:HOT"
+    },
+    {
+     "name": "Super Micro Computer",
+     "ticker": "SMCI",
+     "note": "Die Zahlen von Super Micro trieben gemeinsam mit CoreWeave die Chip- und KI-Aktien im Nasdaq 100 an.",
+     "figures": "Kursanstieg nach den Zahlen um 10 bis 15 %",
+     "tip": "",
+     "einordnung": "Die Reaktion zeigt, wie stark der Markt auf die unmittelbare Monetarisierung von KI-Rechenzentren setzt. Nach derartigen Sprüngen steigt jedoch die Bedeutung der folgenden Quartale, weil Erwartungen schneller wachsen als die operative Basis.",
+     "detail": "Super Micro steht näher an der Hardwareauslieferung als viele reine Softwareanbieter und gilt deshalb als Konjunkturindikator innerhalb der KI-Investitionskette. Gute Zahlen können eine Kettenreaktion auslösen: Sie bestätigen die Nachfrage bei Servern, stützen Chipwerte und erhöhen die Risikobereitschaft im Nasdaq. Die Kehrseite ist eine hohe Erwartungssensitivität; schon eine Verzögerung bei Bestellungen oder eine Verschlechterung der Margen kann eine zuvor euphorische Kursreaktion umkehren.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 289,
+     "t": "04:49",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=289s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Regal Rexnord",
+     "ticker": "RRX",
+     "note": "Der Host verweist auf einen Beitrag zum neuen Vorstandschef von Regal Rexnord und empfiehlt, die dortigen Ausführungen zu beachten.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Bei einem Führungswechsel ist weniger die Schlagzeile als die operative Präzisierung der Strategie relevant. Ohne zusätzliche Zahlen bleibt die Aktie im Video ein Beobachtungsthema, keine ausgearbeitete Investmentthese.",
+     "detail": "Ein neuer Vorstand kann Erwartungen zunächst dämpfen, weil er Probleme realistischer bilanziert oder Ziele neu kalibriert. Das ist kurzfristig unangenehm, kann aber langfristig die Glaubwürdigkeit erhöhen, wenn darauf eine bessere Kapitalallokation und eine stabilere Margenentwicklung folgen. Ohne Angaben zu Segmenten, Auftragslage oder Bewertung lässt sich der Wechsel aus dem vorliegenden Material nicht weiter fundamental einordnen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 1838,
+     "t": "30:38",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1838s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Reddit",
+     "ticker": "RDDT",
+     "note": "Reddit wird im Zusammenhang mit dem Aufstieg in den S&P 500 kurz erwähnt; der Host verweist auf einen separaten Beitrag.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Die Aufnahme in einen wichtigen Index kann die Nachfrage institutioneller Anleger erhöhen, sagt aber allein nichts über die langfristige Ertragskraft aus. Bei jungen Plattformwerten bleiben Monetarisierung und Bewertung die entscheidenden Prüfsteine.",
+     "detail": "Indexaufnahmen erzeugen häufig technische Nachfrage, weil Fonds mit Indexbindung ihre Gewichtung anpassen müssen. Dieser Effekt ist von der fundamentalen Entwicklung zu trennen und kann daher vorübergehend sein. Für die nachhaltige Bewertung wären im vorliegenden Video jedoch keine Angaben zu Werbeumsätzen, Nutzerentwicklung oder Cashflow enthalten.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 1850,
+     "t": "30:50",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1850s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Jersey Mike's Subs",
+     "ticker": null,
+     "note": "Die US-Sandwichkette wird im Video nur kurz erwähnt; der Host verweist auf einen separaten Beitrag.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Ohne operative Kennzahlen bleibt die Erwähnung eine reine Themennotiz. Bei Gastronomie- und Franchiseunternehmen wären insbesondere vergleichbare Filialumsätze, Kosteninflation und die Entwicklung der Margen entscheidend.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "sonstiges",
+     "sec": 1861,
+     "t": "31:01",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1861s"
+    },
+    {
+     "name": "Gold",
+     "ticker": "GC=F",
+     "note": "Gold notiert laut Host bei 4.350 US-Dollar und steht wegen des Zinsanstiegs unter Druck. Kurzfristig sieht Egmond Abwärtsrisiken, mittelfristig bleibt er bullish.",
+     "figures": "4.350 US-Dollar",
+     "tip": "Kurzfristig vorsichtig, mittelfristig bullish.",
+     "einordnung": "Gold reagiert derzeit nicht nur auf Inflationssorgen, sondern auch auf die Opportunitätskosten durch steigende Renditen. Der mittelfristig positive Blick steht und fällt damit, ob die Verschuldungs- und geopolitischen Risiken stärker wirken als der aktuelle Zinsdruck.",
+     "detail": "Der Mechanismus ist klassisch: Höhere Real- und Nominalrenditen machen eine unverzinsliche Anlage relativ weniger attraktiv und können Gewinnmitnahmen auslösen. Gleichzeitig bleibt Gold als Absicherung gegen fiskalische Instabilität, geopolitische Risiken und Vertrauensfragen im Währungssystem gefragt. Das erklärt, warum der Host kurzfristig und mittelfristig unterschiedliche Richtungen erwartet. Die im Nachrichtenblock genannte Eskalation rund um Iran und die Straße von Hormus kann den Sicherheitsaspekt stärken, während ein weiterer Renditeanstieg zunächst dagegenarbeitet.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Die Meldung über die geopolitische Eskalation im Umfeld der Straße von Hormus ergänzt die im Video angesprochene Rolle geopolitischer Risiken für den Goldpreis."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 1937,
+     "t": "32:17",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1937s",
+     "tv_symbol": "TVC:GOLD"
+    },
+    {
+     "name": "WTI-Öl",
+     "ticker": "CL=F",
+     "note": "Der Ölpreis bewegt sich laut Host seitwärts bei rund 85 US-Dollar und liegt in der Woche 1 % höher. Die geschlossene Straße von Hormus stützt den Preis, während eine schwache chinesische Nachfrage bremst.",
+     "figures": "Rund 85 US-Dollar; +1 % in der Woche; Crackspread über 100 US-Dollar",
+     "tip": "Seitwärts.",
+     "einordnung": "Das Marktbild ist von einem ungewöhnlich direkten Tauziehen zwischen geopolitischem Angebotsrisiko und konjunktureller Nachfrageschwäche geprägt. Der aktuelle Marktdatenblock weist für Brent 86,85 US-Dollar aus; das ist eine andere Rohölsorte als WTI und daher kein Widerspruch zum genannten WTI-Niveau.",
+     "detail": "Die geschilderte Situation zeigt, weshalb Ölpreise trotz einer geopolitischen Störung nicht zwangsläufig dauerhaft steigen: Der Markt preist die mögliche Unterbrechung des Angebots gegen die erwartete Nachfrage. Ein hoher Crackspread, insbesondere bei Diesel, signalisiert zusätzlichen Druck im Verarbeitungs- und Versorgungsmarkt und kann über Transport- und Heizkosten wieder in die Inflation einfließen. Die Tages-News verschärfen dieses Bild mit dem Hinweis auf Versorgungsengpässe und Rekordmargen bei Diesel. Für die Bullen wäre eine tatsächliche physische Verknappung entscheidend; die Bären setzen auf Nachfrageausfälle und eine schwächere chinesische Wirtschaft.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Die Meldungen über die Zurückweisung einer Waffenruhe und über rekordhohe Diesel-Margen bestätigen sowohl das geopolitische Angebotsrisiko als auch den erhöhten Raffinerie- und Inflationsdruck."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 1753,
+     "t": "29:13",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1753s",
+     "tv_symbol": "TVC:USOIL"
+    },
+    {
+     "name": "S&P 500",
+     "ticker": "^GSPC",
+     "note": "Der Host erwartet nach dem Verfallstag am 21. August und angesichts steigender Zinsen kurzfristig eine Seitwärtsbewegung.",
+     "figures": "Verfallstag 21. August; S&P-500-Future laut Marktdaten 7.689 Punkte, -0,04 %",
+     "tip": "Seitwärts.",
+     "einordnung": "Die Indexnähe zum Rekordhoch wirkt zunächst stabil, doch die Marktbreite und die Zinsentwicklung bleiben die Achillesferse. Der Fear-and-Greed-Wert von 55,2 signalisiert zudem eher moderate Gier als eine uneingeschränkte Euphorie.",
+     "detail": "Der Host beschreibt einen Markt, dessen Dynamik stark von wenigen KI- und Halbleiterwerten getragen wird. Das ist typisch für späte Phasen eines Aufwärtstrends: Der Index kann nahe am Hoch bleiben, obwohl der Renditeanstieg die Bewertungsbasis verschlechtert. Der Verfallstag kann kurzfristig zusätzliche technische Bewegungen erzeugen, ändert aber nichts an der fundamentalen Frage, ob Gewinnwachstum und Investitionsboom die höheren Kapitalkosten rechtfertigen. Jackson Hole ist deshalb der nächste potenzielle Katalysator für eine Ausweitung der Schwankungsbreite.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Der globale Anleihe-Ausverkauf liefert die zentrale Erklärung für den im Video erwarteten Gegenwind bei der Bewertung des S&P 500."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1791,
+     "t": "29:51",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1791s",
+     "tv_symbol": "SP:SPX"
+    },
+    {
+     "name": "DAX",
+     "ticker": "^GDAXI",
+     "note": "Für den DAX erwartet Egmond nach dem Verfallstag am 21. August kurzfristig eine Seitwärtsbewegung. Steigende Zinsen belasten insbesondere die zyklischen Werte.",
+     "figures": "Verfallstag 21. August; DAX laut Marktdaten 26.286 Punkte, +0,08 %",
+     "tip": "Seitwärts.",
+     "einordnung": "Der DAX notiert laut Marktdaten ebenfalls auf hohem Niveau, obwohl die deutsche Konjunktur im Video schwach beschrieben wird. Das ist ein klassischer Hinweis darauf, dass Indexstärke und Binnenwirtschaft derzeit auseinanderlaufen können.",
+     "detail": "Die Schere zwischen einem starken Aktienindex und einer schwachen Unternehmenslandschaft erklärt sich teilweise durch die internationale Umsatzstruktur vieler DAX-Konzerne. Sie schützt den Index jedoch nicht vollständig vor höheren Finanzierungskosten und einer Abkühlung des globalen Investitionszyklus. Zykliker reagieren besonders empfindlich, wenn der Markt die künftige Nachfrage neu bewertet. Der Verfallstag kann die kurzfristige Richtung überlagern, während die konjunkturellen Daten für den mittleren Horizont wichtiger bleiben.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Der globale Renditeanstieg verstärkt den im Video beschriebenen Bewertungsdruck auf zyklische und kapitalintensive DAX-Unternehmen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1871,
+     "t": "31:11",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1871s",
+     "tv_symbol": "XETR:DAX"
+    },
+    {
+     "name": "Bitcoin",
+     "ticker": "BTC-USD",
+     "note": "Bitcoin bewegt sich seitwärts und liegt in der Woche 0,9 % im Plus; der Host hebt die geringe Volatilität hervor.",
+     "figures": "+0,9 % in der Woche",
+     "tip": "Seitwärts.",
+     "einordnung": "Die geringe Bewegung spricht für eine vorübergehende Balance zwischen Liquiditäts- und Zinsdruck einerseits und der Nachfrage nach digitalen Risikoanlagen andererseits. Im Vergleich zu den KI-Aktien fehlt derzeit der unmittelbare fundamentale Nachrichtenimpuls.",
+     "detail": "Bitcoin reagiert in solchen Marktphasen häufig als Liquiditätsbarometer: Steigende Langfristrenditen können Kapital aus spekulativeren Anlagen abziehen, während eine stabile Risikobereitschaft den Kurs stützt. Die Seitwärtsbewegung passt daher zum gemischten Gesamtbild aus Rekordnähe bei den Aktienindizes und gleichzeitigem Gegenwind am Anleihemarkt. Ein nachhaltiger Ausbruch würde wahrscheinlich einen klareren Impuls bei Liquidität, Regulierung oder institutioneller Nachfrage benötigen; solche Faktoren werden im vorliegenden Material nicht konkretisiert.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2011,
+     "t": "33:31",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=2011s",
+     "tv_symbol": "CRYPTO:BTCUSD"
+    },
+    {
+     "name": "PepsiCo",
+     "ticker": "PEP",
+     "note": "PepsiCo steigerte im zweiten Quartal den Umsatz, doch der Absatz in Nordamerika stagnierte trotz Preissenkungen. Der Host bleibt kurzfristig vorsichtig.",
+     "figures": "Umsatz 24,18 Mrd. US-Dollar, +6,4 %; organisches Wachstum +2,4 %; EBIT 4,07 Mrd. US-Dollar, +4 %; EBIT-Marge 16,8 %; KGV 15,5; EV 231,2 Mrd. US-Dollar; Umsatzprognose +4 bis 6 %",
+     "tip": "Kurzfristig vorsichtig.",
+     "einordnung": "Die Zahlen zeigen solide Umsatz- und Ergebniszuwächse, aber die stagnierende Absatzmenge verweist auf die Grenzen der Preissetzungsmacht. Das vergleichsweise moderate KGV bietet einen gewissen Puffer, beseitigt jedoch nicht das Risiko eines schwächeren Konsumumfelds.",
+     "detail": "Der entscheidende Qualitätsunterschied liegt zwischen nominalem Umsatzwachstum und realem Volumenwachstum. Wenn Preissenkungen keinen zusätzlichen Absatz erzeugen, kann das auf eine empfindlichere Konsumentennachfrage und einen intensiveren Wettbewerb hindeuten. Gleichzeitig bleibt die Marge robust, was für starke Marken und Effizienz spricht. Das bullische Szenario ist eine Stabilisierung des Volumens bei weiterem moderatem Preiswachstum; im bearischen Szenario drücken Promotionen und Kostensteigerungen stärker auf die Profitabilität.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2196,
+     "t": "36:36",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=2196s",
+     "tv_symbol": ""
+    }
+   ],
+   "macro": [
+    {
+     "text": "Die US-Inflation entwickelte sich im Juli wie erwartet: Der Verbraucherpreisindex stieg monatlich um 0,1 %, die Jahresrate sank von 3,5 % auf 3,4 %, und die Kernrate lag bei 2,5 %.",
+     "sec": 338,
+     "t": "05:38",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=338s"
+    },
+    {
+     "text": "Der Anstieg der Rendite zehnjähriger US-Anleihen auf 4,75 % wird laut Host durch die Schuldenaufnahme der Hyperscaler und höhere Risikoprämien verstärkt.",
+     "sec": 1694,
+     "t": "28:14",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1694s"
+    },
+    {
+     "text": "In Deutschland schlossen 2025 fast 190.000 Unternehmen, 10 % mehr als zuvor; besonders betroffen waren Gastgewerbe, Fahrzeugbau und Arztpraxen, wobei nur etwa jede achte Schließung eine Insolvenz war.",
+     "sec": 1467,
+     "t": "24:27",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1467s"
+    },
+    {
+     "text": "Das Notenbankertreffen in Jackson Hole findet vom 27. bis 29. August statt; die Rede des Fed-Chefs am 28. August gilt als entscheidend für die Zinserwartungen.",
+     "sec": 1559,
+     "t": "25:59",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1559s"
+    },
+    {
+     "text": "Schwache Einzelhandelsumsätze und ein nachlassender US-Immobilienmarkt belasten die Konjunktur, während KI-Investitionen laut Host der wichtigste verbliebene Wachstumstreiber sind.",
+     "sec": 1791,
+     "t": "29:51",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1791s"
+    },
+    {
+     "text": "Der Ölpreis bewegt sich trotz geopolitischer Risiken und eines Crackspreads von über 100 US-Dollar seitwärts, weil die schwache chinesische Nachfrage den Angebotsdruck ausgleicht.",
+     "sec": 1753,
+     "t": "29:13",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1753s"
+    },
+    {
+     "text": "Wood Mackenzie erwartet, dass von 1.066 Gigawatt zusätzlich beantragter US-Stromerzeugungskapazität nur 28 % realisiert werden, wodurch das mögliche KI-Wachstum von 50 % auf 15 % sinken könnte.",
+     "sec": 731,
+     "t": "12:11",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=731s"
+    },
+    {
+     "text": "Die Inflationserwartungen liegen für fünf Jahre bei 2,25 % und damit nahe einem Zweijahrestief, während die hohen Diesel-Margen ein gegenläufiges kurzfristiges Inflationsrisiko darstellen.",
+     "sec": 1646,
+     "t": "27:26",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1646s"
+    },
+    {
+     "text": "Der Euro-Dollar bewegt sich laut Host ohne klare Richtung seitwärts.",
+     "sec": 1726,
+     "t": "28:46",
+     "tlink": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=1726s"
+    }
+   ]
+  },
   {
    "channel": "Der Aktionär - Märkte am Morgen",
    "playlist": "Märkte am Morgen",
