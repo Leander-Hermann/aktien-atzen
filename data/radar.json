@@ -1,9 +1,9 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-26T18:20:30.509151Z",
+  "generated_at": "2026-08-26T19:20:28.707022Z",
   "source": "radar",
-  "status": "fresh",
+  "status": "empty",
   "partial": false,
   "warnings": [],
   "errors": []
@@ -11,7 +11,7 @@
  "mode": "batch",
  "universe": {
   "symbols_total": 116,
-  "with_quote_data": 59,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -19,131 +19,5 @@
    "movers"
   ]
  },
- "items": [
-  {
-   "symbol": "MRVL",
-   "name": "Marvell Technology",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,8 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings morgen",
-     "weight": 35
-    }
-   ],
-   "quote": {
-    "price": 240.38,
-    "pct": 4.84,
-    "cur": "USD",
-    "as_of": "2026-08-26T06:33:40.231754+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-27",
-    "distance_days": 1,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "OHB.DE",
-   "name": "OHB",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-8,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "tv_symbol": "XETR:OHB",
-   "quote": {
-    "price": 192.2,
-    "pct": -8.86,
-    "cur": "EUR",
-    "as_of": "2026-08-26T06:33:40.231754+00:00"
-   }
-  },
-  {
-   "symbol": "1810.HK",
-   "name": "Xiaomi",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,2 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    }
-   ],
-   "tv_symbol": "HKEX:1810",
-   "quote": {
-    "price": 28.66,
-    "pct": 3.24,
-    "cur": "HKD",
-    "as_of": "2026-08-26T06:33:40.231754+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-25",
-    "distance_days": -1,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "NVDA",
-   "name": "Nvidia",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,2 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    }
-   ],
-   "quote": {
-    "price": 213.05,
-    "pct": 2.19,
-    "cur": "USD",
-    "as_of": "2026-08-26T06:33:40.231754+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-26",
-    "distance_days": 0,
-    "zeit": "amc"
-   }
-  }
- ]
+ "items": []
 }
