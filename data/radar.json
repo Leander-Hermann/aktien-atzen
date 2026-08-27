@@ -1,9 +1,9 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-27T06:20:25.332829Z",
+  "generated_at": "2026-08-27T07:20:27.047980Z",
   "source": "radar",
-  "status": "empty",
+  "status": "fresh",
   "partial": false,
   "warnings": [],
   "errors": []
@@ -19,5 +19,38 @@
    "movers"
   ]
  },
- "items": []
+ "items": [
+  {
+   "symbol": "NVDA",
+   "name": "Nvidia",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    }
+   ],
+   "quote": {
+    "price": 209.66,
+    "pct": -1.59,
+    "cur": "USD",
+    "as_of": "2026-08-27T06:33:20.743272+00:00"
+   },
+   "earnings": {
+    "date": "2026-08-26",
+    "distance_days": -1,
+    "zeit": "amc"
+   }
+  }
+ ]
 }
