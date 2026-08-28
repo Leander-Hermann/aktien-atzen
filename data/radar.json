@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-27T23:20:28.472122Z",
+  "generated_at": "2026-08-28T00:20:28.536231Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 116,
-  "with_quote_data": 56,
+  "symbols_total": 102,
+  "with_quote_data": 47,
   "sources": [
    "watchlist",
    "videos",
@@ -23,9 +23,9 @@
   {
    "symbol": "CRM",
    "name": "Salesforce",
-   "score": 100,
+   "score": 85,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -42,8 +42,8 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
     }
    ],
    "quote": {
@@ -54,28 +54,28 @@
    },
    "earnings": {
     "date": "2026-08-26",
-    "distance_days": -1,
+    "distance_days": -2,
     "zeit": "amc"
    },
    "llm": {
     "status": "ready",
-    "headline": "Salesforce mit starkem Kurssprung nach Earnings-Termin",
-    "why_now": "Die Salesforce-Aktie stieg um 22,05 % auf 250,945 USD und das Handelsvolumen lag beim 3,7-Fachen des Durchschnitts. Der Earnings-Termin war am 26. August, also am Vortag. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin könnte die auffällige Bewegung erklären.",
+    "headline": "Salesforce nach Earnings deutlich höher",
+    "why_now": "Die Salesforce-Aktie liegt bei 250,945 USD und ist um 22,05 % gestiegen. Das Handelsvolumen beträgt das 3,7-Fache des Durchschnitts. Der Earnings-Termin lag zwei Tage zurück; die zeitliche Nähe könnte auf eine Reaktion nach den Ergebnissen hindeuten. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Kurssprung",
-     "Handelsvolumen im weiteren Verlauf",
-     "Reaktion auf den Earnings-Termin"
+     "Kursbewegung nach dem Earnings-Termin",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Unternehmensmeldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-27T19:20:32.460291Z"
+    "generated_at": "2026-08-28T00:20:28.536231Z"
    }
   },
   {
    "symbol": "NVDA",
    "name": "Nvidia",
-   "score": 95,
+   "score": 75,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -92,8 +92,8 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
     }
    ],
    "quote": {
@@ -104,27 +104,27 @@
    },
    "earnings": {
     "date": "2026-08-26",
-    "distance_days": -1,
+    "distance_days": -2,
     "zeit": "amc"
    },
    "llm": {
     "status": "ready",
-    "headline": "Nvidia steigt bei hohem Volumen deutlich",
-    "why_now": "Die Nvidia-Aktie legte um 7,73 % auf 225,87 USD zu. Das Handelsvolumen lag beim 1,9-Fachen des Durchschnitts. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin am Vortag könnte für einen Einfluss der veröffentlichten Ergebnisse sprechen.",
+    "headline": "Nvidia nach Earnings mit deutlicher Kursbewegung",
+    "why_now": "Nvidia liegt bei 225,87 USD und verzeichnet eine Kursbewegung von 7,73 %. Das Handelsvolumen liegt beim 1,9-Fachen des Durchschnitts. Der zeitliche Zusammenhang mit dem Earnings-Termin vor 2 Tagen könnte die Reaktion erklären, Ursache unklar.",
     "watch_next": [
-     "Kursbewegung nach dem Earnings-Termin",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Entwicklung der Aktie"
+     "Kursentwicklung nach der Earnings-Reaktion",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Unternehmensmeldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-27T19:20:32.460291Z"
+    "generated_at": "2026-08-28T00:20:28.536231Z"
    }
   },
   {
    "symbol": "CRWD",
    "name": "CrowdStrike",
-   "score": 80,
-   "priority": "high",
+   "score": 60,
+   "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
@@ -136,26 +136,14 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
     }
    ],
    "earnings": {
     "date": "2026-08-26",
-    "distance_days": -1,
+    "distance_days": -2,
     "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "CrowdStrike nach Earnings deutlich bewegt",
-    "why_now": "Die Daten zeigen eine starke Kursbewegung von +19,6 %. Der Earnings-Termin lag gestern. Der zeitliche Zusammenhang und die Einstufung als Reaktion nach den Earnings sprechen dafür, dass die Bewegung damit zusammenhängt.",
-    "watch_next": [
-     "Weitere Kursbewegung",
-     "Nächste Unternehmensmeldungen",
-     "Reaktion auf die Earnings"
-    ],
-    "confidence": "high",
-    "generated_at": "2026-08-27T19:20:32.460291Z"
    }
   }
  ]
