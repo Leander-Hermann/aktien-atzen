@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-28T23:20:29.443757Z",
+  "generated_at": "2026-08-29T00:20:27.437626Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 101,
-  "with_quote_data": 48,
+  "symbols_total": 79,
+  "with_quote_data": 27,
   "sources": [
    "watchlist",
    "videos",
@@ -23,9 +23,9 @@
   {
    "symbol": "MRVL",
    "name": "Marvell Technology",
-   "score": 95,
+   "score": 75,
    "priority": "high",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -42,8 +42,8 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
     }
    ],
    "quote": {
@@ -54,20 +54,20 @@
    },
    "earnings": {
     "date": "2026-08-27",
-    "distance_days": -1,
+    "distance_days": -2,
     "zeit": "amc"
    },
    "llm": {
     "status": "ready",
-    "headline": "Marvell Technology fällt nach Earnings-Termin deutlich",
-    "why_now": "Die Aktie von Marvell Technology fällt um 10,52 % auf 216,05 USD. Gleichzeitig liegt das Handelsvolumen beim 1,6-Fachen des Durchschnitts. Der Earnings-Termin war gestern; der zeitliche Zusammenhang könnte die auffällige Bewegung erklären. Ursache unklar.",
+    "headline": "Marvell Technology fällt nach Earnings deutlich",
+    "why_now": "Die Aktie von Marvell Technology liegt bei 216,05 USD und notiert 10,52 % niedriger. Das Handelsvolumen beträgt das 1,6-Fache des Durchschnitts. Der zeitliche Zusammenhang mit dem Earnings-Termin vor 2 Tagen spricht für eine Reaktion auf die Zahlen oder deren Einordnung, die konkrete Ursache ist jedoch unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
+     "Kursentwicklung nach der Earnings-Reaktion",
      "Handelsvolumen im weiteren Verlauf",
      "Weitere Unternehmensmeldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-28T19:20:30.796049Z"
+    "generated_at": "2026-08-29T00:20:27.437626Z"
    }
   }
  ]
