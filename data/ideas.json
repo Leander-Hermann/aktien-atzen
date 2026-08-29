@@ -1,37 +1,23 @@
 {
- "updated": "2026-08-29T06:33:36.240661+00:00",
+ "updated": "2026-08-29T18:33:52.800454+00:00",
  "date": "2026-08-29",
  "ideas": [
   {
-   "title": "Öl als Absicherung gegen eine mögliche Hormus-Störung",
-   "thesis": "Die widersprüchlichen Aussagen zum Status der Straße von Hormus erhöhen das Risiko für die globale Ölversorgung. Zusammen mit den laut Briefing niedrigen OECD-Reserven könnte eine anhaltende Störung den Ölpreis kurzfristig weiter nach oben treiben.",
+   "title": "Öl bleibt anfällig für einen geopolitischen Risikoaufschlag",
+   "thesis": "Der Informationskonflikt zwischen Washington und Teheran über die Sicherheit der Straße von Hormus erhöht die Unsicherheit an einer zentralen Ölroute. Trotz des bislang nicht unabhängig bestätigten Venezuela-Abkommens spricht das Risiko weiterer Versorgungsstörungen kurzfristig für Aufwärtsdruck beim Ölpreis.",
    "values": [
     "Brent-Öl",
-    "Ölproduzenten",
-    "ENI"
+    "WTI-Öl",
+    "Energie-ETFs"
    ],
    "angle": "Long",
-   "risk": "Eine tatsächliche Entspannung im Nahen Osten oder eine rasche Ausweitung des Angebots könnte den Ölpreis deutlich zurückwerfen.",
-   "source": "News: Iran weist US-Darstellung zu offenem Hormus zurück",
-   "source_url": "https://x.com/FirstSquawk/status/2093527510306984293"
+   "risk": "Eine tatsächliche Entspannung in Hormus oder eine glaubhafte Ausweitung des Venezuela-Angebots könnte den Ölpreis deutlich zurücksetzen.",
+   "source": "News: Iran weist US-Darstellung zum Öltransport durch Hormus zurück",
+   "source_url": "https://x.com/DeItaone/status/2093750536159801782"
   },
   {
-   "title": "Steigende US-Renditen als Gegenwind für hoch bewertete KI-Aktien",
-   "thesis": "Die Warsh-Rede hat die Wahrscheinlichkeit einer US-Zinserhöhung erhöht und die Anleiherenditen nach oben getrieben. Besonders zinssensitive und hoch bewertete KI- sowie Halbleiterwerte könnten dadurch kurzfristig unter Druck geraten, obwohl ihre langfristigen Wachstumsperspektiven intakt bleiben.",
-   "values": [
-    "Nasdaq 100",
-    "CoreWeave",
-    "Infineon",
-    "Siemens Energy"
-   ],
-   "angle": "Short",
-   "risk": "Starke Unternehmenszahlen oder erneut sinkende Renditen könnten die KI-Aktien weiter antreiben.",
-   "source": "News: Warsh-Rede belastet US-Aktien und treibt Anleiherenditen",
-   "source_url": "https://x.com/WSJmarkets/status/2093452092660674961"
-  },
-  {
-   "title": "Rüstungswerte profitieren von Nachholbedarf bei US-Munitionsbeständen",
-   "thesis": "Die im Briefing genannten geschrumpften Bestände an Patriot-, THAAD- und Präzisionsmunition sowie das geplante US-Notfallpaket sprechen für längerfristige Nachfrage bei Verteidigungsunternehmen. Lockheed Martin wird zusätzlich mit einem großen Patriot-Auftrag und einer geplanten Produktionsausweitung hervorgehoben.",
+   "title": "Rüstungswerte profitieren vom Wiederauffüllungsbedarf der US-Munitionsdepots",
+   "thesis": "Die im Briefing genannten geschrumpften US-Bestände bei Patriot-, THAAD- und Präzisionsmunition sowie das geplante Notfallpaket stützen die langfristige Nachfrageperspektive für US-Rüstungskonzerne. Lockheed Martin erscheint dabei als besonders konkreter Profiteur des Patriot-Geschäfts, während auch RTX, General Dynamics, L3Harris und Northrop Grumman genannt werden.",
    "values": [
     "Lockheed Martin",
     "RTX",
@@ -40,34 +26,45 @@
     "Northrop Grumman"
    ],
    "angle": "Long",
-   "risk": "Budgetpolitische Verzögerungen, bereits eingepreiste Erwartungen oder eine geopolitische Entspannung könnten die Kursdynamik bremsen.",
-   "source": "US-Munitionsvorräte",
+   "risk": "Budgetverzögerungen, politische Prioritätswechsel oder bereits eingepreiste Auftragserwartungen könnten die Aktien belasten.",
+   "source": "onvista",
    "source_url": ""
   },
   {
-   "title": "Gold bleibt strategische Beimischung bei Inflations- und Geopolitikrisiken",
-   "thesis": "Hartnäckige Inflation, erhöhte geopolitische Unsicherheit und eine positive Korrelation von Aktien und Anleihen sprechen für eine begrenzte Goldbeimischung. Das Briefing sieht nach einer beendeten Korrektur weiteres Potenzial, verlangt aber eine technische Bestätigung über dem genannten Widerstandsbereich.",
-   "values": [
-    "Gold",
-    "Gold-ETFs",
-    "Silber"
-   ],
-   "angle": "Beobachten",
-   "risk": "Steigende Realrenditen oder eine nachhaltige Entspannung der geopolitischen Lage könnten Edelmetalle belasten.",
-   "source": "US-Renditen",
-   "source_url": ""
-  },
-  {
-   "title": "HelloFresh bleibt ein struktureller Schwächekandidat",
-   "thesis": "Der Rückgang der Bestellungen um rund 15 Prozent und die rückläufigen Ready-to-Eat-Bestellungen zeigen anhaltenden operativen Druck. Das wiederholte Rekordtief und die skeptische Analystenhaltung sprechen eher für eine defensive oder bärische Positionierung als für eine kurzfristige Erholung.",
+   "title": "HelloFresh bleibt ein Short-Kandidat bei anhaltender Nachfrageschwäche",
+   "thesis": "Der Rückgang der Bestellungen um rund 15 Prozent und die ebenfalls rückläufigen Ready-to-Eat-Bestellungen zeichnen ein weiterhin schwieriges operatives Bild. Zusätzlich wird die Aktie im Briefing als charttechnisch unter Druck und auf einem weiteren Rekordtief beschrieben.",
    "values": [
     "HelloFresh",
-    "Europäische Konsumtitel",
-    "Lebensmittel-Lieferdienste"
+    "Europäische Konsumtitel"
    ],
    "angle": "Short",
-   "risk": "Eine operative Stabilisierung, bessere Margen oder positive Unternehmensnachrichten könnten eine Gegenbewegung auslösen.",
-   "source": "HelloFresh: HelloFresh verzeichnet einen Auftragsrückgang von rund 15 Prozent",
+   "risk": "Eine unerwartet schnelle Stabilisierung der Bestellungen oder positive Maßnahmen zur Margenverbesserung könnte eine Gegenbewegung auslösen.",
+   "source": "Der Aktionär - Märkte am Morgen",
+   "source_url": ""
+  },
+  {
+   "title": "KI-Infrastruktur breiter spielen als nur über Chipdesigner",
+   "thesis": "Der Ausbau der KI wird im Briefing nicht nur Nvidia, sondern auch Finanzierer, Fertigungspartner sowie Anbieter von Strom- und Kühllösungen zugerechnet. Apollo, Celestica und Vertiv bieten damit unterschiedliche Zugänge zum gleichen Infrastrukturtrend, wobei die jeweiligen Bewertungen und beim Fertigungspartner der freie Cashflow beachtet werden müssen.",
+   "values": [
+    "Apollo Global Management",
+    "Celestica",
+    "Vertiv"
+   ],
+   "angle": "Long",
+   "risk": "Hohe Investitionskosten, steigende Renditen oder eine Verzögerung der Rechenzentrumsausgaben könnten die Bewertung und das Wachstum der Titel unter Druck setzen.",
+   "source": "BerneckerTV: KI-Power als neue Investmentklasse? | Robert Halver als Gast im BerneckerTV",
+   "source_url": "https://www.youtube.com/watch?v=smkyeECHjv8"
+  },
+  {
+   "title": "SAP-Erholung unter Übernahmefantasie beobachten",
+   "thesis": "Spekulationen über eine mögliche Silver-Lake-Übernahme von Workday haben SAP zum größten DAX-Gewinner gemacht und die Aktie laut Briefing über 180 Euro beziehungsweise auf 185,04 Euro getrieben. Der Host hält eine Fortsetzung der Erholung für möglich, die These bleibt jedoch stark von der nicht bestätigten Übernahmefantasie abhängig.",
+   "values": [
+    "SAP",
+    "DAX"
+   ],
+   "angle": "Beobachten",
+   "risk": "Sollte sich das Gerücht nicht bestätigen oder der Gesamtmarkt wegen steigender Langfristrenditen nachgeben, kann die Erholung schnell auslaufen.",
+   "source": "Fundamentalanalyse mit Egmond",
    "source_url": ""
   }
  ]
