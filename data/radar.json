@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T18:20:36.585207Z",
+  "generated_at": "2026-08-29T19:20:27.064994Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -21,56 +21,6 @@
  },
  "items": [
   {
-   "symbol": "CRM",
-   "name": "Salesforce",
-   "score": 85,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+22,6 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,7× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 256.0,
-    "pct": 22.58,
-    "cur": "USD",
-    "as_of": "2026-08-29T06:33:06.846694+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-26",
-    "distance_days": -3,
-    "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Salesforce nach Earnings mit starkem Kursanstieg",
-    "why_now": "Die Salesforce-Aktie liegt bei 256,0 USD und ist um 22,58 % gestiegen. Das Handelsvolumen beträgt das 4,7-Fache des Durchschnitts. Der zeitliche Zusammenhang mit dem Earnings-Termin vor 3 Tagen könnte auf eine Reaktion auf die Ergebnisse hindeuten, die konkrete Ursache ist aus den Daten jedoch nicht ableitbar. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach der Earnings-Reaktion",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Unternehmensmeldungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-29T07:20:29.991091Z"
-   }
-  },
-  {
    "symbol": "MRVL",
    "name": "Marvell Technology",
    "score": 75,
@@ -86,7 +36,7 @@
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "2,1× Durchschnitt",
      "weight": 15
     },
     {
@@ -98,9 +48,9 @@
    ],
    "quote": {
     "price": 216.62,
-    "pct": -1.49,
+    "pct": -10.28,
     "cur": "USD",
-    "as_of": "2026-08-29T06:33:06.846694+00:00"
+    "as_of": "2026-08-29T18:33:18.521991+00:00"
    },
    "earnings": {
     "date": "2026-08-27",
@@ -109,22 +59,22 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Marvell Technology nach Earnings auffällig bewegt",
-    "why_now": "Marvell Technology verzeichnete eine starke Kursbewegung von -10,3 % bei einem ungewöhnlich hohen Volumen von 1,8× des Durchschnitts. Die Bewegung trat zwei Tage nach dem Earnings-Termin auf und dürfte damit zeitlich im Zusammenhang stehen. Ursache unklar.",
+    "headline": "Marvell fällt nach Earnings deutlich",
+    "why_now": "Die Aktie von Marvell Technology liegt bei 216,62 USD und verzeichnet eine Kursbewegung von -10,3 %. Das Handelsvolumen beträgt 2,1× des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Kursbewegungen"
+     "Kursentwicklung nach der Earnings-Reaktion",
+     "Handelsvolumen",
+     "Weitere Unternehmensmeldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-29T07:20:29.991091Z"
+    "generated_at": "2026-08-29T19:20:27.064994Z"
    }
   },
   {
    "symbol": "NVDA",
    "name": "Nvidia",
-   "score": 70,
-   "priority": "high",
+   "score": 60,
+   "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
@@ -136,8 +86,8 @@
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
+     "value": "1,6× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
@@ -148,26 +98,14 @@
    ],
    "quote": {
     "price": 217.55,
-    "pct": 8.74,
+    "pct": -4.57,
     "cur": "USD",
-    "as_of": "2026-08-29T06:33:06.846694+00:00"
+    "as_of": "2026-08-29T18:33:18.521991+00:00"
    },
    "earnings": {
     "date": "2026-08-26",
     "distance_days": -3,
     "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Nvidia nach Earnings mit auffälliger Kursbewegung",
-    "why_now": "Die Daten zeigen eine starke Kursbewegung von -4,6 % bei einem ungewöhnlich hohen Volumen von 2,6× des Durchschnitts. Der Earnings-Termin lag vor 3 Tagen; zugleich weist der Kursdatensatz eine Veränderung von 8,74 % bei 217,55 USD aus. Die zeitliche Nähe zu den Earnings könnte mit der auffälligen Bewegung zusammenhängen. Ursache unklar.",
-    "watch_next": [
-     "Kursveränderung",
-     "Handelsvolumen",
-     "Weitere Reaktion nach den Earnings"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-08-29T07:20:29.991091Z"
    }
   }
  ]
