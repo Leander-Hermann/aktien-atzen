@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-29T05:01:28.934015+00:00",
+ "updated": "2026-08-30T05:01:33.730687+00:00",
  "window": {
-  "from": "2026-08-26",
-  "to": "2026-09-19"
+  "from": "2026-08-27",
+  "to": "2026-09-20"
  },
  "universe_meta": {
   "indizes": [
@@ -22,69 +22,6 @@
  },
  "eintraege": [
   {
-   "date": "2026-08-26",
-   "ticker": "CRWD",
-   "name": "CrowdStrike",
-   "index": "Nasdaq 100",
-   "region": "US",
-   "branche": "Cybersicherheit",
-   "zeit": "amc",
-   "periode": "Q2 FY27",
-   "eps_est": 0.2986,
-   "rev_est": 1468832374,
-   "status": "reported",
-   "eps_act": 0.31,
-   "rev_act": 1470897000,
-   "surprise_pct": 3.82,
-   "reaktion_pct": 20.5,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/CRWD",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
-  },
-  {
-   "date": "2026-08-26",
-   "ticker": "NVDA",
-   "name": "Nvidia",
-   "index": "Nasdaq 100",
-   "region": "US",
-   "branche": "Halbleiter",
-   "zeit": "amc",
-   "periode": "Q2 FY27",
-   "eps_est": 2.1384,
-   "rev_est": 94008645045,
-   "status": "reported",
-   "eps_act": 2.22,
-   "rev_act": 96221000000,
-   "surprise_pct": 3.82,
-   "reaktion_pct": 8.74,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/NVDA",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
-  },
-  {
-   "date": "2026-08-26",
-   "ticker": "CRM",
-   "name": "Salesforce",
-   "index": "S&P 500",
-   "region": "US",
-   "branche": "Software",
-   "zeit": "amc",
-   "periode": "Q2 FY27",
-   "eps_est": 3.3065,
-   "rev_est": 11433452176,
-   "status": "reported",
-   "eps_act": 5.9,
-   "rev_act": 11345000000,
-   "surprise_pct": 78.44,
-   "reaktion_pct": 22.58,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/CRM",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
-  },
-  {
    "date": "2026-08-27",
    "ticker": "DHER.DE",
    "name": "Delivery Hero",
@@ -94,7 +31,7 @@
    "zeit": "tbd",
    "periode": "",
    "eps_est": null,
-   "rev_est": 3903000000,
+   "rev_est": 4058000000,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -103,7 +40,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/DHER.DE",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   },
   {
    "date": "2026-08-27",
@@ -162,11 +99,11 @@
    "eps_act": 0.94,
    "rev_act": 2739300000,
    "surprise_pct": -0.3,
-   "reaktion_pct": null,
+   "reaktion_pct": -10.28,
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/MRVL",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   },
   {
    "date": "2026-08-28",
@@ -271,7 +208,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/DELL",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   },
   {
    "date": "2026-09-01",
@@ -292,7 +229,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/PANW",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   },
   {
    "date": "2026-09-02",
@@ -313,7 +250,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/AVGO",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   },
   {
    "date": "2026-09-02",
@@ -355,7 +292,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/SNOW",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   },
   {
    "date": "2026-09-03",
@@ -397,7 +334,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/LULU",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   },
   {
    "date": "2026-09-07",
@@ -439,7 +376,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/ADBE",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   },
   {
    "date": "2026-09-14",
@@ -460,7 +397,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/ORCL",
-   "as_of": "2026-08-29T05:01:24.903687+00:00"
+   "as_of": "2026-08-30T05:01:30.298712+00:00"
   }
  ]
 }
