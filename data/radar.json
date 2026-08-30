@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-29T23:20:32.073485Z",
+  "generated_at": "2026-08-30T00:20:36.828755Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 79,
+  "symbols_total": 78,
   "with_quote_data": 27,
   "sources": [
    "watchlist",
@@ -42,7 +42,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
+     "value": "Earnings vor 3 Tagen",
      "weight": 15
     }
    ],
@@ -54,58 +54,20 @@
    },
    "earnings": {
     "date": "2026-08-27",
-    "distance_days": -2,
+    "distance_days": -3,
     "zeit": "amc"
    },
    "llm": {
     "status": "ready",
-    "headline": "Marvell fällt nach Earnings deutlich",
-    "why_now": "Die Aktie von Marvell Technology liegt bei 216,62 USD und verzeichnet eine Kursbewegung von -10,3 %. Das Handelsvolumen beträgt 2,1× des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen. Ursache unklar.",
+    "headline": "Marvell nach Earnings deutlich schwächer",
+    "why_now": "Die Aktie von Marvell Technology fiel um 10,3 %. Gleichzeitig lag das Handelsvolumen beim 2,1-Fachen des Durchschnitts. Der Earnings-Termin war vor 3 Tagen. Ursache unklar. Der zeitliche Zusammenhang spricht dafür, dass die Bewegung mit der Veröffentlichung zusammenhängen könnte.",
     "watch_next": [
      "Kursentwicklung nach der Earnings-Reaktion",
-     "Handelsvolumen",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
      "Weitere Unternehmensmeldungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-08-29T19:20:27.064994Z"
-   }
-  },
-  {
-   "symbol": "NVDA",
-   "name": "Nvidia",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,6 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 217.55,
-    "pct": -4.57,
-    "cur": "USD",
-    "as_of": "2026-08-29T18:33:18.521991+00:00"
-   },
-   "earnings": {
-    "date": "2026-08-26",
-    "distance_days": -3,
-    "zeit": "amc"
+    "generated_at": "2026-08-30T00:20:36.828755Z"
    }
   }
  ]
