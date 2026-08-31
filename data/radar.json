@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-31T18:20:32.848292Z",
+  "generated_at": "2026-08-31T19:20:29.412906Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 79,
-  "with_quote_data": 29,
+  "symbols_total": 77,
+  "with_quote_data": 27,
   "sources": [
    "watchlist",
    "videos",
@@ -21,30 +21,31 @@
  },
  "items": [
   {
-   "symbol": "MRVL",
-   "name": "Marvell Technology",
-   "score": 60,
+   "symbol": "OHB.DE",
+   "name": "OHB",
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-10,3 %",
-     "weight": 45
+     "value": "+5,9 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,1× Durchschnitt",
-     "weight": 15
+     "value": "10,3× Durchschnitt",
+     "weight": 25
     }
    ],
+   "tv_symbol": "XETR:OHB",
    "quote": {
-    "price": 216.62,
-    "pct": -10.28,
-    "cur": "USD",
-    "as_of": "2026-08-31T06:32:59.440523+00:00"
+    "price": 201.5,
+    "pct": 5.94,
+    "cur": "EUR",
+    "as_of": "2026-08-31T18:33:45.033633+00:00"
    }
   }
  ]
