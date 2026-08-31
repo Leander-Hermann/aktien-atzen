@@ -1,24 +1,23 @@
 {
- "updated": "2026-08-31T06:33:37.654044+00:00",
+ "updated": "2026-08-31T18:34:27.490906+00:00",
  "date": "2026-08-31",
  "ideas": [
   {
-   "title": "Öl- und Energie-Exposure wegen eskalierender Hormus-Risiken",
-   "thesis": "Die erneuten Kämpfe zwischen den USA und Iran sowie der Zwischenfall mit einem Supertanker erhöhen das Risiko weiterer Lieferstörungen in der Straße von Hormus. Der bereits gestiegene Brent-Preis könnte bei anhaltenden Spannungen zusätzlichen Aufwärtsdruck erhalten, wovon Ölproduzenten und Energie-ETFs profitieren könnten.",
+   "title": "Hormus-Risiko hält Ölpreis und Energieaktien unter Spannung",
+   "thesis": "Die erwogenen US-Angriffe auf iranische Stellungen rund um die Straße von Hormus erhöhen das Risiko weiterer Lieferstörungen. Das könnte Brent-Öl und exportorientierte Energieunternehmen wie ENI stützen, solange die geopolitische Unsicherheit anhält.",
    "values": [
-    "Brent",
-    "WTI",
+    "Brent-Öl",
     "ENI",
-    "Energie-ETFs"
+    "Öl- und LNG-Transportsektor"
    ],
    "angle": "Long",
-   "risk": "Eine schnelle Deeskalation oder eine schwächere globale Nachfrage könnte den Ölpreis deutlich zurücksetzen.",
-   "source": "News: USA und Iran nehmen Kämpfe wieder auf – Ölpreis steigt",
-   "source_url": "https://x.com/ReutersWorld/status/2094299176687255838"
+   "risk": "Eine schnelle Deeskalation oder eine rasche Normalisierung des Schiffsverkehrs könnte den Ölpreis und Energieaktien deutlich belasten.",
+   "source": "News: Trump erwägt neue US-Angriffe auf Iran wegen Hormus",
+   "source_url": "https://x.com/FirstSquawk/status/2094487256895725917"
   },
   {
    "title": "Rüstungswerte als Profiteure knapper US-Munitionsbestände",
-   "thesis": "Die laut Briefing geschrumpften Bestände an Patriot-, THAAD- und Präzisionsmunition erhöhen den politischen Druck zur Wiederauffüllung der Depots. Lockheed Martin, RTX, General Dynamics, L3Harris und Northrop Grumman könnten von zusätzlichen Verteidigungsaufträgen profitieren.",
+   "thesis": "Die laut Video deutlich geschrumpften US-Bestände an Patriot-, THAAD- und Präzisionsmunition erhöhen den politischen Druck zur Wiederauffüllung der Depots. Lockheed Martin, RTX, General Dynamics, L3Harris und Northrop Grumman könnten von zusätzlichen Beschaffungsprogrammen profitieren.",
    "values": [
     "Lockheed Martin",
     "RTX",
@@ -27,50 +26,36 @@
     "Northrop Grumman"
    ],
    "angle": "Long",
-   "risk": "Haushaltsverzögerungen, politische Prioritätenwechsel oder bereits eingepreiste Auftragserwartungen könnten die Aktien belasten.",
-   "source": "US-Munitionsvorräte",
+   "risk": "Verzögerungen bei Haushaltsentscheidungen oder eine Entspannung der geopolitischen Lage könnten neue Aufträge und Bewertungen dämpfen.",
+   "source": "onvista – US-Munitionsvorräte",
    "source_url": ""
   },
   {
-   "title": "Steigende Langfristrenditen als Gegenwind für hoch bewertete KI-Werte",
-   "thesis": "Die höheren deutschen und US-amerikanischen Langfristrenditen erhöhen den Bewertungsdruck auf wachstumsorientierte Technologieaktien. Besonders zinssensitive und hoch volatile Titel wie CoreWeave sowie KI-nahe Halbleiterwerte könnten bei einem weiteren Renditeanstieg schwächer abschneiden.",
+   "title": "Steigende US-Renditen als Belastungstest für den KI-Trade",
+   "thesis": "Die zehnjährige US-Rendite liegt über 4,75 Prozent, während eine weitere Bewegung über 4,8 Prozent laut Briefing zusätzliche Belastungen für Aktien auslösen könnte. Besonders zinssensitive und ambitioniert bewertete KI- und Halbleiterwerte wie CoreWeave, Super Micro Computer und der Philadelphia Semiconductor Index bleiben daher anfällig.",
    "values": [
+    "Nasdaq 100",
+    "Philadelphia Semiconductor Index",
     "CoreWeave",
-    "Infineon",
-    "Siemens Energy",
-    "Nasdaq 100"
-   ],
-   "angle": "Short",
-   "risk": "Überraschend starke Unternehmenszahlen oder sinkende Renditen könnten den KI-Trade erneut beschleunigen.",
-   "source": "Fundamentalanalyse mit Egmond",
-   "source_url": ""
-  },
-  {
-   "title": "Gold und Goldminen als geopolitische und monetäre Absicherung",
-   "thesis": "Gold notiert laut Briefing über der 200-Tage-Linie und oberhalb von 4.500 Dollar, unterstützt durch geopolitische Spannungen, sinkende Zinsängste und einen schwächeren Dollar. Bei anhaltender Unsicherheit könnten Goldminenwerte wie Barrick und Newmont zusätzlichen Rückenwind erhalten.",
-   "values": [
-    "Gold",
-    "Barrick Gold",
-    "Newmont",
-    "Goldminen-ETFs"
-   ],
-   "angle": "Long",
-   "risk": "Steigende Realrenditen, ein stärkerer Dollar oder eine Entspannung der geopolitischen Lage könnten Gold und Minenaktien korrigieren lassen.",
-   "source": "Der Aktionär - Märkte am Morgen",
-   "source_url": ""
-  },
-  {
-   "title": "Selektive KI-Infrastruktur statt ausschließlicher Chipwette",
-   "thesis": "Der Ausbau von KI-Rechenzentren schafft laut Briefing neben der Chipnachfrage auch Finanzierungsbedarf sowie Bedarf an Netzwerktechnik, Stromversorgung und Kühlung. Apollo, Celestica und Vertiv bieten dadurch unterschiedliche Zugänge zum KI-Infrastrukturthema, wobei insbesondere Finanzierung und Rechenzentrumsbetrieb im Fokus stehen.",
-   "values": [
-    "Apollo Global Management",
-    "Celestica",
-    "Vertiv"
+    "Super Micro Computer"
    ],
    "angle": "Beobachten",
-   "risk": "Hohe Bewertungen, ein schwächerer freier Cashflow und eine Kürzung der KI-Investitionen könnten die These entkräften.",
-   "source": "BerneckerTV: KI-Power als neue Investmentklasse? | Robert Halver als Gast im BerneckerTV",
-   "source_url": "https://www.youtube.com/watch?v=smkyeECHjv8"
+   "risk": "Überraschend schwache Inflations- oder Arbeitsmarktdaten könnten die Zinserwartungen senken und den KI-Trade erneut antreiben.",
+   "source": "News: Ölrisiken treiben US-Renditen und Fed-Zinserwartungen hoch",
+   "source_url": "https://x.com/DeItaone/status/2094405339416269089"
+  },
+  {
+   "title": "Nvidia und MediaTek vertiefen die KI-Chip-Infrastruktur",
+   "thesis": "Nvidias geplante Investition von 3,5 Milliarden Dollar in MediaTek soll die Partnerschaft bei KI-Chips und deren Verbindung in Rechenzentren ausbauen. Das stärkt die Position beider Unternehmen im wachsenden KI-Ökosystem und macht MediaTek zu einem zusätzlichen Profiteur neben Nvidia.",
+   "values": [
+    "Nvidia",
+    "MediaTek",
+    "KI-Chip-Sektor"
+   ],
+   "angle": "Long",
+   "risk": "Die These hängt davon ab, dass die gemeinsame Technologie erfolgreich umgesetzt wird und die KI-Investitionen trotz hoher Bewertungen weiter zunehmen.",
+   "source": "News: Nvidia investiert 3,5 Milliarden Dollar in MediaTek",
+   "source_url": "https://x.com/DeItaone/status/2094415322220540213"
   }
  ]
 }
