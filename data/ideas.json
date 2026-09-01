@@ -1,23 +1,49 @@
 {
- "updated": "2026-08-31T18:34:27.490906+00:00",
- "date": "2026-08-31",
+ "updated": "2026-09-01T06:33:58.235148+00:00",
+ "date": "2026-09-01",
  "ideas": [
   {
-   "title": "Hormus-Risiko hält Ölpreis und Energieaktien unter Spannung",
-   "thesis": "Die erwogenen US-Angriffe auf iranische Stellungen rund um die Straße von Hormus erhöhen das Risiko weiterer Lieferstörungen. Das könnte Brent-Öl und exportorientierte Energieunternehmen wie ENI stützen, solange die geopolitische Unsicherheit anhält.",
+   "title": "Anhaltende Hormus-Störung stützt Öl und integrierte Energiekonzerne",
+   "thesis": "Der Frachtschiffsverkehr durch die Straße von Hormus bleibt im einstelligen Bereich, während zugleich vor länger anhaltenden Angebotsrisiken und höherer Inflation gewarnt wird. Das spricht kurzfristig für anhaltenden Aufwärtsdruck bei Brent und für integrierte Ölkonzerne wie ENI.",
    "values": [
     "Brent-Öl",
     "ENI",
-    "Öl- und LNG-Transportsektor"
+    "Energieaktien"
    ],
    "angle": "Long",
-   "risk": "Eine schnelle Deeskalation oder eine rasche Normalisierung des Schiffsverkehrs könnte den Ölpreis und Energieaktien deutlich belasten.",
-   "source": "News: Trump erwägt neue US-Angriffe auf Iran wegen Hormus",
-   "source_url": "https://x.com/FirstSquawk/status/2094487256895725917"
+   "risk": "Eine rasche Deeskalation oder eine Normalisierung der Transporte könnte den Ölpreis und Energiewerte deutlich belasten.",
+   "source": "News: Hormus-Verkehr bleibt fast zum Erliegen gekommen",
+   "source_url": "https://x.com/FirstSquawk/status/2094617621643792648"
   },
   {
-   "title": "Rüstungswerte als Profiteure knapper US-Munitionsbestände",
-   "thesis": "Die laut Video deutlich geschrumpften US-Bestände an Patriot-, THAAD- und Präzisionsmunition erhöhen den politischen Druck zur Wiederauffüllung der Depots. Lockheed Martin, RTX, General Dynamics, L3Harris und Northrop Grumman könnten von zusätzlichen Beschaffungsprogrammen profitieren.",
+   "title": "Steigende Langfristrenditen belasten zinssensitive Wachstumswerte",
+   "thesis": "Die Rendite der deutschen Bundesanleihe erreichte den höchsten Stand seit 15 Jahren, während auch US-, japanische und andere asiatische Langfristrenditen weiter steigen. Das erhöht den Bewertungsdruck auf langlaufende Anleihen und hoch bewertete Wachstums- beziehungsweise Technologiewerte.",
+   "values": [
+    "Langlaufende Staatsanleihen",
+    "Nasdaq 100",
+    "hoch bewertete Technologieaktien"
+   ],
+   "angle": "Short",
+   "risk": "Sollten die Renditen unerwartet wieder fallen, könnten zinssensitive Wachstumswerte schnell eine Gegenbewegung starten.",
+   "source": "News: Renditen steigen in Asien und Europa weiter",
+   "source_url": "https://x.com/FirstSquawk/status/2094647182330822692"
+  },
+  {
+   "title": "KI-Infrastruktur statt reiner Chipwetten",
+   "thesis": "Die Briefings beschreiben den KI-Ausbau als langfristigen Investitionszyklus, der neben Nvidia auch Finanzierung, Netzwerktechnik sowie Stromversorgung und Kühlung von Rechenzentren benötigt. Apollo, Celestica und Vertiv bieten dadurch unterschiedliche Zugänge zum Thema, wobei die Bewertungen und der freie Cashflow sorgfältig beobachtet werden sollten.",
+   "values": [
+    "Apollo Global Management",
+    "Celestica",
+    "Vertiv"
+   ],
+   "angle": "Long",
+   "risk": "Hohe Bewertungen, verschobene Rechenzentrumsinvestitionen oder Finanzierungsschwierigkeiten der Hyperscaler könnten die gesamte KI-Infrastrukturkette belasten.",
+   "source": "BerneckerTV: KI-Power als neue Investmentklasse? | Robert Halver als Gast im BerneckerTV",
+   "source_url": "https://www.youtube.com/watch?v=smkyeECHjv8"
+  },
+  {
+   "title": "Verteidigungswerte profitieren von Wiederauffüllung der Munitionsbestände",
+   "thesis": "Die Briefings verweisen auf deutlich geschrumpfte US-Bestände bei Patriot-, THAAD- und Präzisionsmunition sowie auf ein geplantes Notfallpaket zur Auffüllung der Depots. Die anhaltenden Angriffe auf die Ukraine verstärken den politischen Druck, Verteidigungs- und Luftabwehrkapazitäten auszubauen.",
    "values": [
     "Lockheed Martin",
     "RTX",
@@ -26,36 +52,22 @@
     "Northrop Grumman"
    ],
    "angle": "Long",
-   "risk": "Verzögerungen bei Haushaltsentscheidungen oder eine Entspannung der geopolitischen Lage könnten neue Aufträge und Bewertungen dämpfen.",
-   "source": "onvista – US-Munitionsvorräte",
+   "risk": "Verzögerungen bei Haushaltsentscheidungen, Produktionsengpässe oder eine geopolitische Entspannung könnten die erwartete Nachfrage abschwächen.",
+   "source": "US-Munitionsvorräte",
    "source_url": ""
   },
   {
-   "title": "Steigende US-Renditen als Belastungstest für den KI-Trade",
-   "thesis": "Die zehnjährige US-Rendite liegt über 4,75 Prozent, während eine weitere Bewegung über 4,8 Prozent laut Briefing zusätzliche Belastungen für Aktien auslösen könnte. Besonders zinssensitive und ambitioniert bewertete KI- und Halbleiterwerte wie CoreWeave, Super Micro Computer und der Philadelphia Semiconductor Index bleiben daher anfällig.",
+   "title": "Shein bleibt nach schwachem Börsendebüt ein Beobachtungs- oder Short-Kandidat",
+   "thesis": "Die Shein-Aktie fiel beim Hongkong-Debüt, obwohl der Börsengang lange erwartet worden war. Der schwache Start trifft auf nachlassende Wachstumserwartungen und signalisiert, dass der Markt die weitere Expansion des Online-Modehändlers kritisch bewertet.",
    "values": [
-    "Nasdaq 100",
-    "Philadelphia Semiconductor Index",
-    "CoreWeave",
-    "Super Micro Computer"
+    "Shein",
+    "Hongkonger Konsumaktien",
+    "Online-Modehandel"
    ],
    "angle": "Beobachten",
-   "risk": "Überraschend schwache Inflations- oder Arbeitsmarktdaten könnten die Zinserwartungen senken und den KI-Trade erneut antreiben.",
-   "source": "News: Ölrisiken treiben US-Renditen und Fed-Zinserwartungen hoch",
-   "source_url": "https://x.com/DeItaone/status/2094405339416269089"
-  },
-  {
-   "title": "Nvidia und MediaTek vertiefen die KI-Chip-Infrastruktur",
-   "thesis": "Nvidias geplante Investition von 3,5 Milliarden Dollar in MediaTek soll die Partnerschaft bei KI-Chips und deren Verbindung in Rechenzentren ausbauen. Das stärkt die Position beider Unternehmen im wachsenden KI-Ökosystem und macht MediaTek zu einem zusätzlichen Profiteur neben Nvidia.",
-   "values": [
-    "Nvidia",
-    "MediaTek",
-    "KI-Chip-Sektor"
-   ],
-   "angle": "Long",
-   "risk": "Die These hängt davon ab, dass die gemeinsame Technologie erfolgreich umgesetzt wird und die KI-Investitionen trotz hoher Bewertungen weiter zunehmen.",
-   "source": "News: Nvidia investiert 3,5 Milliarden Dollar in MediaTek",
-   "source_url": "https://x.com/DeItaone/status/2094415322220540213"
+   "risk": "Eine erfolgreiche Wachstumsbeschleunigung oder eine bessere Anlegerstimmung gegenüber chinesischen Konsumwerten könnte die Aktie trotz des schwachen Starts stützen.",
+   "source": "News: Shein-Aktien fallen beim Hongkong-Debüt",
+   "source_url": "https://x.com/WSJmarkets/status/2094357334315118822"
   }
  ]
 }
