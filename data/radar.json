@@ -1,17 +1,17 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-08-31T23:20:32.537840Z",
+  "generated_at": "2026-09-01T00:20:35.010743Z",
   "source": "radar",
-  "status": "fresh",
+  "status": "empty",
   "partial": false,
   "warnings": [],
   "errors": []
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 77,
-  "with_quote_data": 27,
+  "symbols_total": 69,
+  "with_quote_data": 23,
   "sources": [
    "watchlist",
    "videos",
@@ -19,34 +19,5 @@
    "movers"
   ]
  },
- "items": [
-  {
-   "symbol": "OHB.DE",
-   "name": "OHB",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,9 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "10,3× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "XETR:OHB",
-   "quote": {
-    "price": 201.5,
-    "pct": 5.94,
-    "cur": "EUR",
-    "as_of": "2026-08-31T18:33:45.033633+00:00"
-   }
-  }
- ]
+ "items": []
 }
