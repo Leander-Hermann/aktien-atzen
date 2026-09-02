@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-09-01T09:01:05.948263Z",
-    "trading_day": "2026-08-31",
+    "generated_at": "2026-09-02T08:13:28.810288Z",
+    "trading_day": "2026-09-01",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-09-01T09:01:05.948263Z"
+    "as_of": "2026-09-02T08:13:28.810288Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "F",
-      "name": "Ford Motor Company",
-      "sector": "Consumer Discretionary",
-      "as_of": "2026-08-31T13:30:00Z",
+      "ticker": "GS",
+      "name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financials",
+      "as_of": "2026-09-01T13:30:00Z",
       "quote": {
-        "price": 13.94,
+        "price": 1002.56,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/F",
-        "as_of": "2026-08-31T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/GS",
+        "as_of": "2026-09-01T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -47,42 +47,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 9
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 13.74,
-        "entry_high": 13.94,
-        "stop": 13.23,
-        "target": 15.36,
+        "entry_low": 994.81,
+        "entry_high": 1002.56,
+        "stop": 960.44,
+        "target": 1098.36,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-07-02",
-              "price": 13.22
+              "date": "2026-07-29",
+              "price": 977.7
             },
             "b": {
-              "date": "2026-07-29",
-              "price": 16.29
+              "date": "2026-08-05",
+              "price": 1077.21
             },
             "c": {
-              "date": "2026-08-06",
-              "price": 13.75
+              "date": "2026-08-20",
+              "price": 1001.68
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 16.82
+              "price": 1101.19
             },
             {
               "ratio": 1.272,
-              "price": 17.66
+              "price": 1128.26
             },
             {
               "ratio": 1.618,
-              "price": 18.72
+              "price": 1162.69
             }
           ]
         }
@@ -90,16 +90,16 @@
     },
     {
       "rank": 2,
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "sector": "Energy",
-      "as_of": "2026-08-31T13:30:00Z",
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-09-01T13:30:00Z",
       "quote": {
-        "price": 160.95,
+        "price": 369.68,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/XOM",
-        "as_of": "2026-08-31T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/AVGO",
+        "as_of": "2026-09-01T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -117,42 +117,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 12
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 159.67,
-        "entry_high": 160.95,
-        "stop": 155.17,
-        "target": 176.41,
+        "entry_low": 366.23,
+        "entry_high": 369.68,
+        "stop": 349.81,
+        "target": 409.42,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-25",
-              "price": 134.95
+              "date": "2026-07-02",
+              "price": 356.43
             },
             "b": {
-              "date": "2026-07-29",
-              "price": 159.07
+              "date": "2026-07-09",
+              "price": 407.52
             },
             "c": {
-              "date": "2026-08-04",
-              "price": 149.09
+              "date": "2026-07-29",
+              "price": 369.51
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 173.21
+              "price": 420.6
             },
             {
               "ratio": 1.272,
-              "price": 179.77
+              "price": 434.5
             },
             {
               "ratio": 1.618,
-              "price": 188.12
+              "price": 452.17
             }
           ]
         }
@@ -160,156 +160,16 @@
     },
     {
       "rank": 3,
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "sector": "Information Technology",
-      "as_of": "2026-08-31T13:30:00Z",
-      "quote": {
-        "price": 507.29,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/MSFT",
-        "as_of": "2026-08-31T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 8
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 503.07,
-        "entry_high": 507.29,
-        "stop": 488.42,
-        "target": 545.03,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-07-23",
-              "price": 377.39
-            },
-            "b": {
-              "date": "2026-08-10",
-              "price": 513.73
-            },
-            "c": {
-              "date": "2026-08-18",
-              "price": 477.15
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 613.49
-            },
-            {
-              "ratio": 1.272,
-              "price": 650.57
-            },
-            {
-              "ratio": 1.618,
-              "price": 697.75
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 4,
-      "ticker": "CAT",
-      "name": "Caterpillar Inc.",
-      "sector": "Industrials",
-      "as_of": "2026-08-31T13:30:00Z",
-      "quote": {
-        "price": 797.47,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/CAT",
-        "as_of": "2026-08-31T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 784.05,
-        "entry_high": 797.47,
-        "stop": 745.01,
-        "target": 909.6,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-07-29",
-              "price": 776.0
-            },
-            "b": {
-              "date": "2026-08-17",
-              "price": 887.91
-            },
-            "c": {
-              "date": "2026-08-20",
-              "price": 801.0
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 912.91
-            },
-            {
-              "ratio": 1.272,
-              "price": 943.35
-            },
-            {
-              "ratio": 1.618,
-              "price": 982.07
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 5,
       "ticker": "LIN",
       "name": "Linde plc",
       "sector": "Materials",
-      "as_of": "2026-08-31T13:30:00Z",
+      "as_of": "2026-09-01T13:30:00Z",
       "quote": {
-        "price": 489.58,
+        "price": 486.76,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/LIN",
-        "as_of": "2026-08-31T13:30:00Z"
+        "as_of": "2026-09-01T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -331,9 +191,9 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 486.61,
-        "entry_high": 489.58,
-        "stop": 475.25,
+        "entry_low": 483.33,
+        "entry_high": 486.76,
+        "stop": 472.12,
         "target": 521.23,
         "horizon_sessions": 30,
         "fib": {
@@ -363,6 +223,146 @@
             {
               "ratio": 1.618,
               "price": 566.63
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "sector": "Industrials",
+      "as_of": "2026-09-01T13:30:00Z",
+      "quote": {
+        "price": 205.16,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/RTX",
+        "as_of": "2026-09-01T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 12
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 203.22,
+        "entry_high": 205.16,
+        "stop": 197.4,
+        "target": 220.68,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-06-22",
+              "price": 180.97
+            },
+            "b": {
+              "date": "2026-07-07",
+              "price": 203.94
+            },
+            "c": {
+              "date": "2026-07-21",
+              "price": 190.02
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 212.99
+            },
+            {
+              "ratio": 1.272,
+              "price": 219.24
+            },
+            {
+              "ratio": 1.618,
+              "price": 227.19
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "ticker": "PLD",
+      "name": "Prologis, Inc.",
+      "sector": "Real Estate",
+      "as_of": "2026-09-01T13:30:00Z",
+      "quote": {
+        "price": 139.68,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/PLD",
+        "as_of": "2026-09-01T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 13
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 139.05,
+        "entry_high": 139.68,
+        "stop": 136.16,
+        "target": 146.72,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-07-01",
+              "price": 135.1
+            },
+            "b": {
+              "date": "2026-07-17",
+              "price": 153.35
+            },
+            "c": {
+              "date": "2026-08-10",
+              "price": 137.22
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 155.47
+            },
+            {
+              "ratio": 1.272,
+              "price": 160.43
+            },
+            {
+              "ratio": 1.618,
+              "price": 166.75
             }
           ]
         }
