@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-03T06:20:36.915037Z",
+  "generated_at": "2026-09-03T07:20:34.514865Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -30,33 +30,33 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-20,6 %",
+     "value": "-20,0 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "5,1× Durchschnitt",
+     "value": "6,6× Durchschnitt",
      "weight": 25
     }
    ],
    "quote": {
-    "price": 164.58,
-    "pct": -20.35,
+    "price": 165.22,
+    "pct": -20.04,
     "cur": "USD",
-    "as_of": "2026-09-02T18:33:33.393512+00:00"
+    "as_of": "2026-09-03T06:33:10.138198+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Credo fällt bei ungewöhnlich hohem Volumen deutlich",
-    "why_now": "Die Credo-Aktie liegt bei 164,58 USD und damit 20,35 % im Minus. Als Auslöser sind eine starke Kursbewegung von -20,6 % und ein ungewöhnlich hohes Volumen von 5,1× des Durchschnitts belegt. Die erhöhte Handelsaktivität dürfte die deutliche Bewegung begleitet haben. Ursache unklar.",
+    "headline": "Credo fällt bei ungewöhnlich hohem Handelsvolumen",
+    "why_now": "Die Credo-Aktie liegt bei 165,22 USD und verzeichnet eine Kursbewegung von -20,0 %. Das Handelsvolumen beträgt das 6,6-Fache des Durchschnitts. Ursache unklar. Das Zusammenspiel aus starkem Rückgang und ungewöhnlich hohem Volumen dürfte auf eine erhöhte Marktreaktion hindeuten, der konkrete Auslöser ist aus den Daten jedoch nicht ableitbar.",
     "watch_next": [
-     "Kursentwicklung der Aktie",
+     "Kursentwicklung bei 165,22 USD",
      "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere starke Kursbewegungen"
+     "Weitere Stärke der Kursbewegung"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-02T19:20:30.309016Z"
+    "generated_at": "2026-09-03T07:20:34.514865Z"
    }
   }
  ]
