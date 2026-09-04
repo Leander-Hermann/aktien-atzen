@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-04T18:20:34.568118Z",
+  "generated_at": "2026-09-04T19:20:34.418865Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 67,
-  "with_quote_data": 17,
+  "symbols_total": 64,
+  "with_quote_data": 18,
   "sources": [
    "watchlist",
    "videos",
@@ -21,29 +21,41 @@
  },
  "items": [
   {
-   "symbol": "SNOW",
-   "name": "Snowflake",
-   "score": 60,
-   "priority": "medium",
+   "symbol": "LULU",
+   "name": "Lululemon",
+   "score": 80,
+   "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+16,6 %",
+     "value": "-17,5 %",
      "weight": 45
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
+     "value": "Earnings gestern",
+     "weight": 35
     }
    ],
    "earnings": {
-    "date": "2026-09-02",
-    "distance_days": -2,
+    "date": "2026-09-03",
+    "distance_days": -1,
     "zeit": "amc"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Lululemon fällt nach Earnings um 17,5 %",
+    "why_now": "Die Aktie von Lululemon verzeichnet eine Kursbewegung von minus 17,5 %. Als zeitlicher Bezug ist ein Earnings-Termin am Vortag ausgewiesen. Ursache unklar. Die Einordnung als Reaktion auf den Earnings-Termin ist daher nur eine Vermutung.",
+    "watch_next": [
+     "Weitere Kursbewegung",
+     "Einordnung des Earnings-Termins",
+     "Entwicklung der Reaktion"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-04T19:20:34.418865Z"
    }
   }
  ]
