@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-03T23:20:35.578961Z",
+  "generated_at": "2026-09-04T00:20:33.891842Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,8 +23,8 @@
   {
    "symbol": "SNOW",
    "name": "Snowflake",
-   "score": 80,
-   "priority": "high",
+   "score": 60,
+   "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
@@ -36,26 +36,14 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
     }
    ],
    "earnings": {
     "date": "2026-09-02",
-    "distance_days": -1,
+    "distance_days": -2,
     "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Snowflake steigt nach Earnings deutlich",
-    "why_now": "Die Snowflake-Aktie verzeichnet heute eine Kursbewegung von plus 19,7 %. Als Auslöser ist im Datenblock eine Reaktion auf die Earnings vom Vortag gekennzeichnet. Die Bewegung dürfte daher mit dem Earnings-Termin zusammenhängen. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach der Earnings-Reaktion",
-     "Weitere Unternehmensmeldungen",
-     "Nächster Earnings-Termin"
-    ],
-    "confidence": "medium",
-    "generated_at": "2026-09-03T19:20:31.067451Z"
    }
   }
  ]
