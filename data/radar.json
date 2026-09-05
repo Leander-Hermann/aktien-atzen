@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-05T06:20:32.485614Z",
+  "generated_at": "2026-09-05T07:20:31.986725Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 63,
-  "with_quote_data": 18,
+  "symbols_total": 62,
+  "with_quote_data": 13,
   "sources": [
    "watchlist",
    "videos",
@@ -30,7 +30,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-17,5 %",
+     "value": "-17,4 %",
      "weight": 45
     },
     {
@@ -43,6 +43,32 @@
    "earnings": {
     "date": "2026-09-03",
     "distance_days": -2,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "ADBE",
+   "name": "Adobe",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-6,7 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 5 Tagen",
+     "weight": 20
+    }
+   ],
+   "earnings": {
+    "date": "2026-09-10",
+    "distance_days": 5,
     "zeit": "amc"
    }
   }
