@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--
+  Aktien Atzen · © 2026 — Alle Rechte vorbehalten / All Rights Reserved.
+  Proprietär (kein MIT/Apache/GPL): keine Vervielfältigung, Veränderung oder kommerzielle
+  Nutzung von Code/Inhalten ohne ausdrückliche schriftliche Genehmigung. Siehe Datei LICENSE.
+
+  V2 „Marktcockpit" — im Bau neben der unveränderten index.html (ADR-710 §5).
+  Verbindliche Grundlage: design/v2-freeze-2026-09-05.md · Design-Werte AUSSCHLIESSLICH aus
+  design/design-system.md (der V2-Prototyp ist Layout-Vorlage, keine Wertequelle).
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://production.dataviz.cnn.io https://query1.finance.yahoo.com https://api.allorigins.win https://corsproxy.io https://aktienatzen.goatcounter.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+<title>Aktien Atzen · Marktcockpit</title>
+<!-- Grundfarbe je Theme = --bg1 aus design-system.md §1.2 (dark 05.09. auf #070E13 entschieden, Freeze B7) -->
+<meta name="theme-color" content="#070E13" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#F7F5F1" media="(prefers-color-scheme: light)" />
+<script>/* Gespeicherte Theme-Wahl vor dem ersten Paint anwenden (kein Flash).
+   OHNE gespeicherte Wahl bleibt data-theme absichtlich leer: dann entscheidet
+   prefers-color-scheme (Auftrag V2-1 Teil A4 — beide Wege müssen wirken). */
+try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')document.documentElement.dataset.theme=_t}catch(e){}</script>
+<link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+<!-- Reichweitenmessung: GoatCounter (cookielos, IP-anonymisiert, EU-Hosting; ADR-304). src explizit https:// (gehärtet ggü. protokoll-relativem Default-Snippet). -->
+<script data-goatcounter="https://aktienatzen.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+<style>
+  /* ============================================================================
+     Design-Tokens „Tiefsee & Kupfer" — design/design-system.md v1.1
+     §1.2 Farben · §3 Abstände · §5/§14.1 Elevation · §7 Motion · §1.2 Radien
+     Dark ist Standard (ADR-703). Jeder Wert stammt aus dem Design-System;
+     abweichende Werte des V2-Prototyps wurden bewusst NICHT übernommen.
+     ============================================================================ */
+  :root{
+    color-scheme:dark;
+    /* §1.2 Dark (Standard) — --bg1/--bg2 am 05.09. abgedunkelt, V2-Freeze B7 */
+    --bg1:#070E13;--bg2:#0B141B;--card:#17252E;--chip:#1E2E38;--ink:#EDF3F5;--muted:#8FA6B0;
+    --line:rgba(255,255,255,.10);--accent:#3D89A0;--accent-ink:#7FC0D2;--accent2:#C87E4B;
+    --up:#4CC38A;--down:#E4695B;--warn:#C9A23F;--bar:rgba(16,25,30,.66);
+    /* §1.3 Prio-/Status-Ampeln: eigene Alias-Tokens, damit up/down/warn ihre Kurs-/Warn-Semantik behalten */
+    --prio-high:#E4695B;--prio-med:#C9A23F;--prio-low:#4CC38A;
+    /* §5 + §14.1: Dark bildet Tiefe über hellere Flächen, NICHT über Schatten. E2 darf ambient. */
+    --shadow-1:0 0 0 1px var(--line);--shadow-card:none;--shadow-pop:0 16px 40px rgba(0,0,0,.45);
+    --shadow-hover:0 12px 28px rgba(0,0,0,.38);--hover-line:rgba(255,255,255,.18);
+    /* §1.2 Radien */
+    --radius:22px;--radius-sm:14px;--radius-pill:999px;
+    /* §3 4-Punkt-System */
+    --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:20px;--sp-6:24px;--sp-8:32px;--sp-10:40px;--sp-12:48px;
+    /* §7 Motion */
+    --dur-fast:150ms;--dur-base:220ms;--dur-slide:300ms;
+    --ease-out:cubic-bezier(.25,.8,.25,1);--ease-snap:cubic-bezier(.32,.72,0,1);
+  }
+  /* §1.2 Light — greift ohne ausdrückliche Wahl über die Systemeinstellung ... */
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      color-scheme:light;
+      --bg1:#F7F5F1;--bg2:#EFECE5;--card:#FFFFFF;--chip:#F0EDE7;--ink:#1C262B;--muted:#66757C;
+      --line:rgba(28,38,43,.08);--accent:#2C6E83;--accent-ink:#2C6E83;--accent2:#B06B39;
+      --up:#2E7D5E;--down:#AB5140;--warn:#9A7A25;--bar:rgba(252,251,248,.72);
+      --prio-high:#AB5140;--prio-med:#9A7A25;--prio-low:#2E7D5E;
+      --shadow-1:0 1px 3px rgba(23,37,46,.10);--shadow-card:0 8px 24px rgba(23,37,46,.08);
+      --shadow-pop:0 20px 50px rgba(23,37,46,.16);--shadow-hover:0 12px 28px rgba(23,37,46,.14);
+      --hover-line:rgba(28,38,43,.16);
+    }
+  }
+  /* ... und identisch bei ausdrücklicher Wahl über den Schalter (schlägt die Systemeinstellung) */
+  :root[data-theme="light"]{
+    color-scheme:light;
+    --bg1:#F7F5F1;--bg2:#EFECE5;--card:#FFFFFF;--chip:#F0EDE7;--ink:#1C262B;--muted:#66757C;
+    --line:rgba(28,38,43,.08);--accent:#2C6E83;--accent-ink:#2C6E83;--accent2:#B06B39;
+    --up:#2E7D5E;--down:#AB5140;--warn:#9A7A25;--bar:rgba(252,251,248,.72);
+    --prio-high:#AB5140;--prio-med:#9A7A25;--prio-low:#2E7D5E;
+    --shadow-1:0 1px 3px rgba(23,37,46,.10);--shadow-card:0 8px 24px rgba(23,37,46,.08);
+    --shadow-pop:0 20px 50px rgba(23,37,46,.16);--shadow-hover:0 12px 28px rgba(23,37,46,.14);
+    --hover-line:rgba(28,38,43,.16);
+  }
+
+  /* ===== §2 Typografie: Inter Variable, self-hosted (DSGVO: nie Google-Fonts-CDN) ===== */
+  @font-face{font-family:'InterVariable';src:url('fonts/InterVariable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  /* §14.4 Scrollbar: dezent (Chip-Grau, kein Petrol) — Werkzeug, kein Schmuck */
+  html{scrollbar-width:thin;scrollbar-color:var(--chip) transparent}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--chip);border:3px solid transparent;background-clip:padding-box;border-radius:var(--radius-pill)}
+  ::-webkit-scrollbar-thumb:hover{background:var(--muted);border:3px solid transparent;background-clip:padding-box}
+
+  body{margin:0;color:var(--ink);
+    font-family:InterVariable,-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
+    background:linear-gradient(180deg,var(--bg1),var(--bg2));background-attachment:fixed;min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+    font-size:14.5px;line-height:1.55;font-weight:400;   /* §2.1 Body */
+    transition:background var(--dur-base),color var(--dur-base)}
+  @media (max-width:639px){body{font-size:15px;line-height:1.6}} /* §2.1 Body mobil */
+
+  /* §2.1 Typo-Skala — exakt sechs Größen, nichts über 24 px */
+  h1,.t-h1{font-size:24px;line-height:1.15;font-weight:800;letter-spacing:-.02em;margin:0}
+  @media (max-width:639px){h1,.t-h1{font-size:22px}}
+  h2,.t-h2{font-size:19px;line-height:1.2;font-weight:700;letter-spacing:-.015em;margin:0}
+  h3,.t-h3{font-size:16px;line-height:1.3;font-weight:650;letter-spacing:-.01em;margin:0}
+  .t-small{font-size:12.5px;line-height:1.45;font-weight:500}
+  .t-caption{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em}
+  p{margin:0}
+  b,strong{font-weight:600}        /* §2.1: nie 700 im Fließtext */
+  em,i{font-style:italic}          /* §2.1: nur Zitate/Disclaimer */
+  a{color:var(--accent-ink);font-weight:600;text-decoration:none}
+  a:hover,a:focus-visible{text-decoration:underline}
+  /* §2.1: Zahlen springen nicht */
+  .num,.t-num{font-variant-numeric:tabular-nums}
+
+  button,input,select,textarea{font:inherit;color:inherit}
+  /* §8: Fokus immer sichtbar, nie outline:none ohne Ersatz */
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  /* §8: vier Button-States — Press-Feedback auch auf Touch (§14.2) */
+  button:not(:disabled):active{transform:translateY(-1px) scale(.98);transition:transform .12s ease-out}
+  button:disabled{opacity:.5;color:var(--muted);cursor:default}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    button:not(:disabled):active{transform:none}
+    *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  }
+
+  /* §4 Raster: zwei Breakpoints (640/1024), Container max 1180 px zentriert */
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding-left:var(--sp-4);padding-right:var(--sp-4)}
+  @media (min-width:640px){.wrap{padding-left:var(--sp-6);padding-right:var(--sp-6)}}
+  @media (min-width:1024px){.wrap{padding-left:var(--sp-8);padding-right:var(--sp-8)}}
+
+  /* §14.1 E1: Standard-Karte — Light mit weichem Schatten, Dark ohne (Tiefe via hellerem --card) */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:var(--sp-4);box-shadow:var(--shadow-card)}
+  @media (min-width:1024px){.card{padding:var(--sp-5)}}
+</style>
+</head>
+<body>
+
+<main class="wrap" id="app">
+  <h1>Aktien Atzen · Marktcockpit</h1>
+  <p class="t-small" style="color:var(--muted);margin-top:var(--sp-2)">
+    V2 im Aufbau. Die Räume, die Navigation und die Datenanbindung folgen in den nächsten
+    Schritten dieser Auftragsserie.
+  </p>
+</main>
+
+<script>
+/* ===== Theme-Schalter (§1.2/ADR-703) ===============================================
+   Drei Zustände: keine Wahl → prefers-color-scheme entscheidet; 'dark'/'light' →
+   data-theme gewinnt gegen die Systemeinstellung. Die Wahl überlebt den Reload. */
+function themeAktuell(){
+  const r=document.documentElement.getAttribute('data-theme');
+  if(r==='dark'||r==='light')return r;
+  return matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+}
+function themeSetzen(t){
+  if(t!=='dark'&&t!=='light')return;
+  document.documentElement.setAttribute('data-theme',t);
+  try{localStorage.setItem('aa-theme',t)}catch(e){}
+}
+function themeUmschalten(){themeSetzen(themeAktuell()==='dark'?'light':'dark')}
+</script>
+
+</body>
+</html>
