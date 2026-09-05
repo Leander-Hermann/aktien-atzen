@@ -188,6 +188,10 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .raum > h2{margin-bottom:var(--sp-2)}
   .raum > h2:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
   .platzhalter{margin-top:var(--sp-4);color:var(--muted);font-size:12.5px;line-height:1.45;font-weight:500}
+  /* Datenstand: reiner Text aus einem real gelieferten Feld. Fehlt der Zeitstempel,
+     entfällt die Zeile ganz — § 8.1 verbietet, Frische aus irgendetwas abzuleiten. */
+  .stand{margin-top:var(--sp-1);color:var(--muted);font-variant-numeric:tabular-nums}
+  .stand[hidden]{display:none}
   .raumfeld{display:flex;align-items:center;gap:var(--sp-2);margin-top:var(--sp-4);padding:0 var(--sp-4);
     min-height:48px;background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill)}
   .raumfeld svg{width:20px;height:20px;flex:0 0 auto;color:var(--muted)}
@@ -293,24 +297,28 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   <section class="raum" id="raum-jetzt" data-raum="jetzt" aria-labelledby="h-jetzt">
     <h2 id="h-jetzt" tabindex="-1">Jetzt</h2>
+    <p class="stand t-caption" hidden></p>
     <p class="platzhalter">Was heute Aufmerksamkeit verdient: Fokusgeschichte, Folgesignale,
       dein persönlicher Bezug und das Marktregime. Die Inhalte folgen im nächsten Schritt.</p>
   </section>
 
   <section class="raum" id="raum-radar" data-raum="radar" aria-labelledby="h-radar" hidden>
     <h2 id="h-radar" tabindex="-1">Radar</h2>
+    <p class="stand t-caption" hidden></p>
     <p class="platzhalter">Welche Bewegungen und Termine Aufmerksamkeit brauchen — und warum.
       Die Inhalte folgen im nächsten Schritt.</p>
   </section>
 
   <section class="raum" id="raum-recherche" data-raum="recherche" aria-labelledby="h-recherche" hidden>
     <h2 id="h-recherche" tabindex="-1">Recherche</h2>
+    <p class="stand t-caption" hidden></p>
     <p class="platzhalter">Was zu einem Wert oder Thema bereits erklärt wurde: Videoanalysen,
       Ticker und Archiv. Die Inhalte folgen im nächsten Schritt.</p>
   </section>
 
   <section class="raum" id="raum-werte" data-raum="werte" aria-labelledby="h-werte" hidden>
     <h2 id="h-werte" tabindex="-1">Meine Werte</h2>
+    <p class="stand t-caption" hidden></p>
     <p class="platzhalter">Welche deiner Werte betroffen sind — und wo in den Videoanalysen über
       sie gesprochen wurde. Die Inhalte folgen im nächsten Schritt.</p>
   </section>
@@ -439,6 +447,322 @@ raumZeigen('jetzt',false);
 themeKnoepfeSpiegeln();
 /* Die Pill braucht die endgültigen Slot-Maße; nach Schriftladen erneut messen */
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(pillSetzen);
+
+/* ================================================================================
+   Sicherheits-Helfer (ADR-025) — aus index.html:840–844 unveraendert uebernommen.
+   Jede fremde, gescrapte oder LLM-erzeugte Zeichenkette laeuft durch sie, bevor sie
+   ins DOM oder in eine URL geht. Nicht nachbauen, nicht umbenennen.
+   ================================================================================ */
+function escapeHtml(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function safeUrl(u){u=String(u==null?'':u).trim();if(/[\u0000-\u001F\u007F<>"'`\\]/.test(u))return '';try{return new URL(u).protocol==='https:'?u:''}catch(e){return ''}}
+function safeLink(u,label,extra){const h=safeUrl(u),t=escapeHtml(label==null?'':label);return h?`<a href="${h}" target="_blank" rel="noopener noreferrer"${extra||''}>${t}</a>`:t}
+// ADR-025/701: Ticker ist LLM-Fremdtext → strikte Whitelist. Nur valide Symbole werden Chart-/Link-Ziel; sonst kein Link.
+function validTicker(t){t=String(t==null?'':t).trim();return /^[A-Z0-9.=^-]+$/.test(t)?t:''}
+
+/* ================================================================================
+   Feeds — elf Dateien, alle von derselben Origin, keine neue Drittquelle.
+   ================================================================================ */
+let DATA={},order=[],labels={},current=null;
+let MARKET=null,VIDEOS=null,VIDIDX=null,IDEAS=null,EARN=null,ERECAP=null,CANDIDATES=null;
+let RADAR=null,QUOTES=null,TICKIDX=null,FGDATA=null;
+
+/* Der fail-softe Helfer aus index.html:870 — unveraendert uebernommen und nur von der
+   lokalen Funktion auf Modulebene gehoben, damit ALLE elf Feeds denselben Pfad nehmen.
+   Er faengt jeden Fehler ab und setzt nur bei r.ok; genau das ist die Grundlage des
+   graceful degrade (design-system.md §8.1). */
+const hol=async(datei,set)=>{try{const r=await fetch('data/'+datei,{cache:'no-store'});if(r.ok)set(await r.json())}catch(e){}};
+
+async function loadDay(date){if(DATA[date])return;const r=await fetch('data/'+date+'.json',{cache:'no-store'});if(!r.ok)throw 0;const d=await r.json();DATA[date]=d;labels[date]=d.label||date}
+
+/* Acht kleine Feeds sofort. Ein Ausfall entfernt genau seinen Beitrag, nie die Seite. */
+async function feedsKlein(){
+  await Promise.all([
+    hol('index.json',j=>{if(Array.isArray(j)&&j.length){order=j.map(d=>d.date);j.forEach(d=>labels[d.date]=d.label);current=order[0]}}),
+    hol('market.json',j=>{MARKET=j;if(j&&j.feargreed)FGDATA=j.feargreed}),
+    hol('videos.json',j=>{VIDEOS=j}),
+    hol('videos-index.json',j=>{VIDIDX=j}),
+    hol('ideas.json',j=>{IDEAS=j}),
+    hol('earnings.json',j=>{EARN=j}),
+    hol('earnings-recap.json',j=>{ERECAP=j}),
+    hol('candidates.json',j=>{CANDIDATES=j})
+  ]);
+  // Die Tagesdatei haengt am Index; fehlt er, entfaellt nur der Tagesstand.
+  if(current){try{await loadDay(current)}catch(e){}}
+}
+/* Die drei grossen Feeds NACH dem ersten Rendern, parallel und nicht blockierend
+   (quotes.json ~1,1 MB, ticker-index.json ~0,7 MB, radar.json ~11 KB).
+   Abweichung zu index.html, bewusst: dort haengt dieser Block am nicht leeren Bestand.
+   In V2 braucht der Raum „Radar" die radar.json und „Recherche" den ticker-index auch
+   ohne jede Position — die Bindung an den Bestand waere hier schlicht falsch. */
+let FEEDSGROSS=false;
+async function feedsGross(){
+  if(FEEDSGROSS)return;FEEDSGROSS=true;
+  await Promise.all([
+    hol('radar.json',j=>{RADAR=j}),
+    hol('quotes.json',j=>{QUOTES=j}),
+    hol('ticker-index.json',j=>{TICKIDX=j})
+  ]);
+  standAnzeigen();
+}
+
+/* ===== Datenstand je Raum (§8.1: keine erfundene Frische) =======================
+   Angezeigt wird ausschliesslich ein real geliefertes Feld — `updated` auf oberster
+   Ebene oder `_meta.generated_at`. Fehlt es, bleibt die Zeile leer statt zu raten.
+   Ein Status-Badge (fresh/stale/failed) gibt es hier bewusst NICHT: das verlangt nach
+   §8.1 `_meta.status`, und den fuehren nicht alle Feeds. */
+function feedStand(j){
+  if(!j||typeof j!=='object')return null;
+  const roh=(typeof j.updated==='string'&&j.updated)||(j._meta&&typeof j._meta.generated_at==='string'&&j._meta.generated_at)||null;
+  if(!roh)return null;
+  const d=new Date(roh);
+  return isFinite(d.getTime())?d:null;
+}
+function standText(feeds){
+  const daten=feeds.map(feedStand).filter(Boolean);
+  if(!daten.length)return '';
+  const j=new Date(Math.max.apply(null,daten.map(d=>d.getTime())));
+  return 'Stand: '+j.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit'})+', '+
+         j.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'})+' Uhr';
+}
+const RAUMFEEDS={
+  jetzt:()=>[MARKET,current&&DATA[current]],
+  radar:()=>[RADAR,CANDIDATES,EARN],
+  recherche:()=>[VIDEOS,VIDIDX],
+  werte:()=>[QUOTES,TICKIDX]
+};
+function standAnzeigen(){
+  Object.keys(RAUMFEEDS).forEach(id=>{
+    const el=document.querySelector('#raum-'+id+' .stand');
+    if(!el)return;
+    const t=standText(RAUMFEEDS[id]().filter(Boolean));
+    el.textContent=t;
+    el.hidden=!t;            // fehlt der Zeitstempel, entfaellt genau diese Flaeche
+  });
+}
+
+/* ================================================================================
+   Mein Bestand — Datenmodell (ADR-906, Contract v0.15 `_frontend_only.bestand`).
+   Aus index.html UNVERAENDERT uebernommen, inklusive beider technischer Marker
+   `aa-bestand-mig` und `aa-bestand-besuch`. Es gibt kein zweites Datenmodell und
+   keine zweite Watchlist. Die Daten liegen AUSSCHLIESSLICH im localStorage — sie
+   gehen nie in einen Prompt, nie in ein Backend-Log und nie in einen oeffentlichen
+   Feed (ADR-906 §1).
+   ================================================================================ */
+const WLKEY='aa-wl';let WLCACHE={},WLINFLIGHT={};
+function normSym(raw){let s=(raw||'').trim().toUpperCase();if(!s)return '';if(s.includes(':')){const parts=s.split(':'),ex=parts[0],tk=parts[1]||'';const map={NASDAQ:'',NYSE:'',AMEX:'',ARCA:'',BATS:'',CBOE:'',OTC:'',XETR:'.DE',ETR:'.DE',FWB:'.F',FRA:'.F',GETTEX:'.DE',TRADEGATE:'.DE',LSE:'.L',LON:'.L',EURONEXT:'.PA',EPA:'.PA',TSE:'.T',TYO:'.T',HKEX:'.HK',HKG:'.HK',SWX:'.SW',SIX:'.SW',TSX:'.TO',ASX:'.AX',BME:'.MC',MIL:'.MI',BIT:'.MI',AMS:'.AS'};s=tk+(ex in map?map[ex]:'')}return s.replace(/[^A-Z0-9.\-]/g,'')}
+const BSTKEY='aa-bestand',BSTMIGKEY='aa-bestand-mig',BST_SCHEMA=1;
+const BST_TYP={beobachtung:'Beobachtung',aktie:'Aktie',etf:'ETF',krypto:'Krypto',derivat:'Derivat'};
+const BST_ART={knockout:'Knockout',optionsschein:'Optionsschein',faktor:'Faktor',sonstiges:'Sonstiges'};
+const BST_RICHTUNG={long:'Long',short:'Short'};
+const BST_CODE_PREFIX='AA-BESTAND-1:';
+let BESTAND=null;
+// ADR-025: nur diese Zeichen duerfen in eine URL, einen Fetch oder ins DOM.
+function bstSymOk(s){return /^[A-Z0-9.\-=^]+$/.test(String(s==null?'':s))}
+function bstRawOk(t){return /^(?:[A-Za-z]{2,12}:)?[A-Za-z0-9.\-=^]+$/.test(String(t==null?'':t).trim())}
+function bstNormEingabe(raw){
+  const t=String(raw==null?'':raw).trim();if(!t||!bstRawOk(t))return '';
+  const up=t.toUpperCase();
+  // Futures/Indizes (CL=F, ^GDAXI) unveraendert lassen — normSym() wuerde '='/'^' entfernen.
+  if(up.indexOf(':')<0&&bstSymOk(up))return up;
+  const s=normSym(up);return bstSymOk(s)?s:'';
+}
+function bstNum(v){if(v==null)return null;let t=String(v).trim().replace(/\s/g,'');if(!t)return null;if(t.indexOf(',')>-1)t=t.replace(/\./g,'').replace(',','.');const n=parseFloat(t);return isFinite(n)?n:null}
+function bstToday(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function bstNextId(store){let m=0;((store&&store.positionen)||[]).forEach(p=>{const n=parseInt(String(p.id||'').replace(/^p/,''),10);if(isFinite(n)&&n>m)m=n});return 'p'+(m+1)}
+// EINE Validierung fuer localStorage UND Import.
+function bstValidPos(raw){
+  if(!raw||typeof raw!=='object')return null;
+  const sym=String(raw.symbol==null?'':raw.symbol).trim().toUpperCase();
+  if(!sym||!bstSymOk(sym))return null;
+  const typ=String(raw.typ==null?'':raw.typ);if(!BST_TYP[typ])return null;
+  const id=String(raw.id==null?'':raw.id);if(!/^[A-Za-z0-9_-]{1,24}$/.test(id))return null;
+  const added=String(raw.added_at==null?'':raw.added_at);if(!/^\d{4}-\d{2}-\d{2}$/.test(added))return null;
+  const st=bstNum(raw.stueck),ein=bstNum(raw.einstand);
+  const w=String(raw.waehrung==null?'':raw.waehrung).trim().toUpperCase();
+  let der=null;
+  if(typ==='derivat'&&raw.derivat&&typeof raw.derivat==='object'){
+    const d=raw.derivat,o={};
+    if(BST_ART[String(d.art||'')])o.art=String(d.art);
+    if(BST_RICHTUNG[String(d.richtung||'')])o.richtung=String(d.richtung);
+    const h=bstNum(d.hebel),ko=bstNum(d.ko_schwelle);
+    if(h!=null&&h>0)o.hebel=h;
+    if(ko!=null&&ko>0)o.ko_schwelle=ko;
+    const wkn=String(d.wkn==null?'':d.wkn).trim().toUpperCase();
+    if(/^[A-Z0-9]{1,12}$/.test(wkn))o.wkn=wkn;
+    if(Object.keys(o).length)der=o;
+  }
+  const p={id:id,symbol:sym,typ:typ};                       // Feldreihenfolge wie im Contract-Beispiel
+  if(st!=null&&st>0)p.stueck=st;
+  if(ein!=null&&ein>0)p.einstand=ein;
+  if(/^[A-Z]{3}$/.test(w))p.waehrung=w;
+  p.added_at=added;
+  if(der)p.derivat=der;
+  return p;
+}
+function bstSanitize(raw){
+  const clean={schema:BST_SCHEMA,positionen:[]},seen={};
+  ((raw&&raw.positionen)||[]).forEach(p=>{
+    const v=bstValidPos(p);if(!v)return;
+    if(seen[v.id])v.id=bstNextId(clean);                    // ID-Kollision heilen, Position behalten
+    seen[v.id]=1;clean.positionen.push(v);
+  });
+  return clean;
+}
+/* Verlustfreie, automatische Migration der Alt-Watchlist. Der Alt-Key bleibt als
+   Rueckfallnetz stehen und wird nie wieder fortgeschrieben; der Marker-Key macht den
+   Lauf idempotent — ein zweiter Seitenaufruf erzeugt keine Dublette, und eine
+   geloeschte Position kommt nicht zurueck. */
+function bstMigDone(){try{return !!localStorage.getItem(BSTMIGKEY)}catch(e){return true}}
+function bstMigMark(){try{localStorage.setItem(BSTMIGKEY,String(BST_SCHEMA))}catch(e){}}
+function bstMigrate(store){
+  let alt=[];try{const r=JSON.parse(localStorage.getItem(WLKEY));if(Array.isArray(r))alt=r}catch(e){alt=[]}
+  const have={};store.positionen.forEach(p=>{have[p.symbol+'|'+p.typ]=1});
+  const heute=bstToday();let n=0;
+  alt.forEach(roh=>{
+    const s=bstNormEingabe(roh);if(!s)return;
+    const k=s+'|beobachtung';if(have[k])return;have[k]=1;
+    store.positionen.push({id:bstNextId(store),symbol:s,typ:'beobachtung',added_at:heute});n++;
+  });
+  return n;
+}
+function bstLoad(){
+  if(BESTAND)return BESTAND;
+  let roh=null;try{roh=JSON.parse(localStorage.getItem(BSTKEY))}catch(e){roh=null}
+  BESTAND=bstSanitize(roh);
+  if(!bstMigDone()){const n=bstMigrate(BESTAND);if(n>0)bstSave();bstMigMark()}
+  return BESTAND;
+}
+function bstSave(){try{localStorage.setItem(BSTKEY,JSON.stringify(BESTAND))}catch(e){}}
+function bstPositionen(){return bstLoad().positionen}
+function bstSymbole(){const out=[],seen={};bstPositionen().forEach(p=>{if(!seen[p.symbol]){seen[p.symbol]=1;out.push(p.symbol)}});return out}
+function bstById(id){const l=bstPositionen();for(let i=0;i<l.length;i++)if(l[i].id===id)return l[i];return null}
+function bstAdd(pos){const v=bstValidPos(pos);if(!v)return null;bstLoad().positionen.push(v);bstSave();return v}
+function bstRemove(id){const b=bstLoad();for(let i=0;i<b.positionen.length;i++)if(b.positionen[i].id===id){b.positionen.splice(i,1);bstSave();return true}return false}
+// Export/Import als Text-Code (Contract `_export`): Base64 nur als Transportverpackung — nichts wird hochgeladen.
+function bstB64(s){const b=new TextEncoder().encode(s);let o='';for(let i=0;i<b.length;i++)o+=String.fromCharCode(b[i]);return btoa(o)}
+function bstUnB64(b64){const bin=atob(b64),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);return new TextDecoder().decode(a)}
+function bstExportCode(){return BST_CODE_PREFIX+bstB64(JSON.stringify(bstLoad()))}
+function bstImportCode(code){
+  const t=String(code==null?'':code).trim().replace(/\s+/g,'');
+  if(t.indexOf(BST_CODE_PREFIX)!==0)return {ok:false,fehler:'Code nicht erkannt – er beginnt mit '+BST_CODE_PREFIX};
+  let obj=null;try{obj=JSON.parse(bstUnB64(t.slice(BST_CODE_PREFIX.length)))}catch(e){return {ok:false,fehler:'Code ist beschädigt und konnte nicht gelesen werden.'}}
+  if(!obj||typeof obj!=='object'||!Array.isArray(obj.positionen))return {ok:false,fehler:'Code enthält keinen Bestand.'};
+  if(obj.schema!==BST_SCHEMA)return {ok:false,fehler:'Code stammt aus einer anderen Modellversion und wird nicht übernommen.'};
+  const roh=obj.positionen.length,clean=bstSanitize(obj);
+  BESTAND=clean;bstSave();bstMigMark();
+  return {ok:true,uebernommen:clean.positionen.length,verworfen:roh-clean.positionen.length};
+}
+// In-Flight-Dedupe: parallele Aufrufe teilen sich EINEN Request; Ergebnis bleibt in WLCACHE.
+// Wird in V2-1 DEFINIERT, aber nicht aufgerufen — es gibt noch keine Flaeche, die Live-Kurse
+// braucht, und ohne Nutzeraktion geht kein Positionssymbol ins Netz (ADR-906).
+function ywFetch(sym){
+  if(WLCACHE[sym]&&WLCACHE[sym].candles)return Promise.resolve(WLCACHE[sym]);
+  if(WLINFLIGHT[sym])return WLINFLIGHT[sym];
+  const p=(async()=>{
+    const u='https://query1.finance.yahoo.com/v8/finance/chart/'+encodeURIComponent(sym)+'?interval=1d&range=1y';
+    const proxies=['https://api.allorigins.win/raw?url=','https://corsproxy.io/?url='];
+    for(const px of proxies){
+      try{
+        const r=await fetch(px+encodeURIComponent(u),{cache:'no-store'});if(!r.ok)continue;
+        const j=await r.json(),res=j.chart&&j.chart.result&&j.chart.result[0];if(!res)continue;
+        const meta=res.meta||{},ts=res.timestamp||[],q=((res.indicators&&res.indicators.quote)||[{}])[0]||{};
+        const candles=[];for(let i=0;i<ts.length;i++){const o=q.open&&q.open[i],h=q.high&&q.high[i],l=q.low&&q.low[i],c=q.close&&q.close[i];if(o==null||h==null||l==null||c==null)continue;candles.push({time:ts[i],open:+(+o).toFixed(2),high:+(+h).toFixed(2),low:+(+l).toFixed(2),close:+(+c).toFixed(2),volume:(q.volume&&q.volume[i])||0})}
+        let price=meta.regularMarketPrice;if(price==null&&candles.length)price=candles[candles.length-1].close;
+        // Tagesmove AUSSCHLIESSLICH aus den letzten zwei Kerzen (Bug-Log 03.08.): Yahoos
+        // meta.chartPreviousClose ist der Schluss VOR dem Beginn des angefragten range (hier 1y),
+        // also NICHT der Vortagesschluss; meta.previousClose fehlt in dieser Antwort ganz. Genau so
+        // leitet radar.py den Tagesmove ab. pctPer ist getrennt die Veraenderung ueber den geladenen
+        // Zeitraum — jede Prozentzahl wird mit ihrem Bezugszeitraum beschriftet.
+        const n=candles.length;
+        const pct=(n>1&&candles[n-2].close)?(candles[n-1].close-candles[n-2].close)/candles[n-2].close*100:null;
+        const pctPer=(n>1&&candles[0].close)?(candles[n-1].close-candles[0].close)/candles[0].close*100:null;
+        const out={sym,price,pct,pctPer,perFrom:n>1?candles[0].time:null,candles,cur:meta.currency||''};WLCACHE[sym]=out;return out;
+      }catch(e){}
+    }
+    return null;
+  })();
+  WLINFLIGHT[sym]=p;p.finally(()=>{delete WLINFLIGHT[sym]});return p;
+}
+// Kerzen der Mover im Hintergrund vorladen. Ebenfalls nur DEFINIERT — die Mover-Flaeche
+// entsteht erst in V2-2, und erst dort wird ueber den Aufrufzeitpunkt entschieden.
+function mvPrefetch(){const day=(MARKET&&MARKET)||{};[].concat(day.gainers||[],day.losers||[]).forEach(m=>{if(m&&m.t&&!(m.candles&&m.candles.d1)&&!(WLCACHE[m.t]&&WLCACHE[m.t].candles))ywFetch(m.t).catch(()=>{})})}
+
+/* ===== Relevanz-Join (ADR-906 §5.3) — unveraendert uebernommen ===================
+   EINE gekapselte Stelle verbindet eine Position mit allen Feeds. Der Join-Schluessel
+   ist ausschliesslich das Yahoo-Symbol; er heisst je Datei anders (radar: items[].symbol,
+   quotes: quotes[<symbol>], earnings: eintraege[].ticker, ticker-index: ticker[<SYMBOL>],
+   candidates: items[].ticker). Fehlende Quellen fuehren zu fehlenden Feldern, nie zu Fehlern. */
+const BSTBESUCHKEY='aa-bestand-besuch';let BST_LETZTER_BESUCH=null;
+function bstBesuchLesen(){try{const v=localStorage.getItem(BSTBESUCHKEY);return /^\d{4}-\d{2}-\d{2}$/.test(String(v))?v:null}catch(e){return null}}
+function bstBesuchSchreiben(){try{localStorage.setItem(BSTBESUCHKEY,bstToday())}catch(e){}}
+// radar.json ist optional: fehlt sie, ist sie ungueltig oder steht _meta.status auf 'failed',
+// entfaellt NUR die Signal-Spalte (Contract _meta.optionale_dateien, design-system §8.1).
+function radarOk(){return !!(RADAR&&RADAR._meta&&RADAR._meta.status!=='failed'&&Array.isArray(RADAR.items))}
+function radarItem(sym){if(!radarOk())return null;const l=RADAR.items;for(let i=0;i<l.length;i++)if(l[i]&&l[i].symbol===sym)return l[i];return null}
+function radarTopTrigger(it){if(!it||!Array.isArray(it.triggers)||!it.triggers.length)return null;let b=null;it.triggers.forEach(t=>{if(!t||!t.label)return;if(!b||(+t.weight||0)>(+b.weight||0))b=t});return b}
+// Kurs aus quotes.json — Tagesmove IMMER aus den letzten zwei Kerzen, NIE aus 'pct'
+// (Contract v0.15: pct ist die Perioden-Aenderung). Kein Netzaufruf.
+function bstQuote(sym){
+  const q=(QUOTES&&QUOTES.quotes)?QUOTES.quotes[sym]:null;
+  if(q&&q.price!=null){
+    const c=Array.isArray(q.candles)?q.candles:[],n=c.length;
+    const tag=(n>1&&c[n-2]&&c[n-2].close)?(c[n-1].close-c[n-2].close)/c[n-2].close*100:null;
+    return {price:+q.price,cur:q.cur||'',pct:tag,candles:c,quelle:'feed'};
+  }
+  const d=WLCACHE[sym];
+  if(d&&d.price!=null)return {price:d.price,cur:d.cur||'',pct:d.pct,candles:d.candles||[],quelle:'live'};
+  return null;
+}
+function bstEarnings(sym){
+  if(!(EARN&&Array.isArray(EARN.eintraege)))return {naechster:null,letzter:null,tage:null};
+  const heute=bstToday();let naechster=null,letzter=null;
+  EARN.eintraege.forEach(e=>{
+    if(!e||String(e.ticker||'').toUpperCase()!==sym.toUpperCase())return;
+    const d=String(e.date||'');if(!/^\d{4}-\d{2}-\d{2}$/.test(d))return;
+    if(d>=heute&&String(e.status||'')!=='reported'){if(!naechster||d<naechster.date)naechster=e}
+    else if(!letzter||d>letzter.date)letzter=e;
+  });
+  let tage=null;
+  if(naechster)tage=Math.round((new Date(naechster.date+'T00:00:00')-new Date(heute+'T00:00:00'))/86400000);
+  return {naechster:naechster,letzter:letzter,tage:tage};
+}
+function bstAuftritte(sym){
+  const t=(TICKIDX&&TICKIDX.ticker)?TICKIDX.ticker[sym.toUpperCase()]:null;
+  if(!t||!Array.isArray(t.auftritte))return {name:(t&&t.name)||'',liste:[]};
+  const l=t.auftritte.filter(a=>a&&/^\d{4}-\d{2}-\d{2}$/.test(String(a.date||''))).slice();
+  l.sort((a,b)=>a.date<b.date?1:a.date>b.date?-1:0);
+  return {name:t.name||'',liste:l};
+}
+function bstKandidat(sym){if(!(CANDIDATES&&Array.isArray(CANDIDATES.items)))return null;const l=CANDIDATES.items;for(let i=0;i<l.length;i++)if(l[i]&&String(l[i].ticker||'').toUpperCase()===sym.toUpperCase())return l[i];return null}
+function bstJoin(p){
+  const sym=p.symbol;
+  const r=radarItem(sym),auf=bstAuftritte(sym),ea=bstEarnings(sym),ka=bstKandidat(sym),ku=bstQuote(sym);
+  const neu=!!(BST_LETZTER_BESUCH&&auf.liste.length&&auf.liste[0].date>BST_LETZTER_BESUCH);
+  const name=auf.name||(r&&r.name)||(ea.naechster&&ea.naechster.name)||(ea.letzter&&ea.letzter.name)||(ka&&ka.name)||'';
+  return {pos:p,symbol:sym,name:name,kurs:ku,radar:r,trigger:radarTopTrigger(r),
+    earn:ea,auftritte:auf.liste,neuerAuftritt:neu,kandidat:ka};
+}
+/* Sortierwert nach ADR-906 §5.3. Er wird NIE angezeigt und NIE "Score" genannt — er sortiert nur.
+   Fuer Symbole ohne Radar-Eintrag gilt radar_score = 0; es wird kein Ersatzsignal erfunden. */
+function bstRelevanz(j){
+  let r=(j.radar&&isFinite(+j.radar.score))?+j.radar.score:0;
+  if(j.pos.typ!=='beobachtung')r+=20;
+  if(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)r+=15;
+  if(j.pos.typ==='derivat')r+=10;
+  if(j.neuerAuftritt)r+=10;
+  return r;
+}
+function bstJoinAlle(){const l=bstPositionen().map(bstJoin);l.forEach(j=>{j._r=bstRelevanz(j)});l.sort((a,b)=>b._r-a._r||String(a.symbol).localeCompare(String(b.symbol)));return l}
+
+/* ===== Start ==================================================================== */
+(async function boot(){
+  BST_LETZTER_BESUCH=bstBesuchLesen();
+  bstLoad();                    // Migration laeuft hier genau einmal, idempotent
+  bstBesuchSchreiben();
+  await feedsKlein();
+  standAnzeigen();
+  feedsGross();                 // bewusst ohne await — blockiert das erste Rendern nicht
+})();
 </script>
 
 </body>
