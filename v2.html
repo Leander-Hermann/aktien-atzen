@@ -133,17 +133,237 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
     padding:var(--sp-4);box-shadow:var(--shadow-card)}
   @media (min-width:1024px){.card{padding:var(--sp-5)}}
+
+  /* ==========================================================================
+     App-Bar — Glass-Fläche 1 von höchstens 3 (§6). Die zweite ist die
+     Bottom-Nav; bei Konflikt degradiert laut §14.5 der Header zuerst.
+     ========================================================================== */
+  .appbar{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
+    background:var(--bar);backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%)}
+  @supports not (backdrop-filter:blur(12px)){.appbar{background:color-mix(in srgb,var(--card) 94%,transparent)}}
+  @media (prefers-reduced-transparency:reduce){.appbar{background:var(--card);backdrop-filter:none;-webkit-backdrop-filter:none}}
+  .appbar-inner{display:flex;align-items:center;gap:var(--sp-3);min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;min-width:0;margin-right:auto}
+  .logo{width:36px;height:36px;flex:0 0 auto;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--accent),#1F5266);color:#EDF3F5;font-weight:800;font-size:16px;letter-spacing:-.03em}
+  .brand .nm{font-size:16px;font-weight:650;letter-spacing:-.01em;line-height:1.3;white-space:nowrap}
+  .brand .sub{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);white-space:nowrap}
+
+  /* Desktop-Textnavigation (≥1024 px) — §10: die Top-Nav bleibt dem Desktop vorbehalten */
+  .dnav{display:none;gap:var(--sp-1);background:var(--chip);border-radius:var(--radius-sm);padding:3px}
+  .dnav button{border:0;background:transparent;border-radius:11px;padding:8px 14px;
+    font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--muted);cursor:pointer;
+    transition:color var(--dur-fast) var(--ease-out),background var(--dur-fast) var(--ease-out)}
+  .dnav button.on{background:var(--card);color:var(--ink);box-shadow:var(--shadow-1)}
+  @media (hover:hover) and (pointer:fine){.dnav button:not(.on):hover{color:var(--ink)}}
+
+  /* Desktop-Suchfeld — auf dem Handy übernimmt der eigene Nav-Slot (Freeze B5) */
+  .dsearch{display:none;align-items:center;gap:var(--sp-2);min-width:0;width:clamp(160px,22vw,260px);
+    min-height:38px;padding:0 14px;background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill)}
+  .dsearch svg{width:18px;height:18px;flex:0 0 auto;color:var(--muted)}
+  .dsearch input{flex:1;min-width:0;min-height:36px;border:0;background:transparent;color:var(--ink);font-size:12.5px}
+  .dsearch input::placeholder{color:var(--muted)}
+
+  /* Kopfmenü: einziger Weg in den Raum „Mehr" auf dem Handy (Freeze B6) */
+  .iconbtn{width:44px;height:44px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--line);background:var(--card);border-radius:var(--radius-sm);color:var(--ink);cursor:pointer;
+    transition:border-color var(--dur-fast) var(--ease-out)}
+  .iconbtn svg{width:22px;height:22px}
+  @media (hover:hover) and (pointer:fine){.iconbtn:hover{border-color:var(--hover-line)}}
+
+  @media (min-width:1024px){
+    .dnav{display:flex}
+    .dsearch{display:flex}
+    .iconbtn.kopfmenue{display:none}
+  }
+
+  /* ===== Räume ===== */
+  /* Nur der aktive Raum liegt im Layout. Die übrigen sind zusätzlich inert und
+     aria-hidden (Auftrag Teil B6) — display:none allein genügt uns nicht, weil
+     eine spätere Slide-Animation die Flächen wieder sichtbar machen könnte. */
+  .raum[hidden]{display:none}
+  .raum{padding-top:var(--sp-6);animation:raumEin var(--dur-base) var(--ease-out) both}
+  @keyframes raumEin{from{opacity:0;transform:translateX(8px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.raum{animation:none}}
+  .raum > h2{margin-bottom:var(--sp-2)}
+  .raum > h2:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  .platzhalter{margin-top:var(--sp-4);color:var(--muted);font-size:12.5px;line-height:1.45;font-weight:500}
+  .raumfeld{display:flex;align-items:center;gap:var(--sp-2);margin-top:var(--sp-4);padding:0 var(--sp-4);
+    min-height:48px;background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill)}
+  .raumfeld svg{width:20px;height:20px;flex:0 0 auto;color:var(--muted)}
+  .raumfeld input{flex:1;min-width:0;min-height:46px;border:0;background:transparent;color:var(--ink)}
+  .raumfeld input::placeholder{color:var(--muted)}
+  /* Ghost-Buttons (§8) für die Werkzeuge im Raum „Mehr" */
+  .ghostreihe{display:flex;flex-wrap:wrap;gap:var(--sp-2);margin-top:var(--sp-3)}
+  .ghost{min-height:44px;padding:0 var(--sp-4);border:1px solid var(--line);border-radius:var(--radius-pill);
+    background:transparent;color:var(--ink);font-size:12.5px;font-weight:600;cursor:pointer;
+    transition:background var(--dur-fast) var(--ease-out),border-color var(--dur-fast) var(--ease-out)}
+  .ghost[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 16%,transparent);border-color:transparent;color:var(--accent-ink)}
+  @media (hover:hover) and (pointer:fine){.ghost:hover{background:var(--chip)}}
+
+  /* ==========================================================================
+     Bottom-Navigation < 1024 px — §10, Glass nach §6 (Fläche 2 von 3).
+     Fünf Slots: Jetzt · Radar · Suche · Recherche · Meine Werte (Freeze B5).
+     „Mehr" belegt bewusst KEINEN Slot und sitzt im Kopfmenü.
+     ========================================================================== */
+  .bnav{position:fixed;z-index:60;left:50%;bottom:calc(10px + env(safe-area-inset-bottom));
+    width:min(94%,440px);height:58px;padding:0 var(--sp-1);
+    display:flex;align-items:center;
+    border:1px solid var(--line);border-radius:var(--radius-pill);
+    background:var(--bar);backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);
+    /* Highlight-Oberkante: innerer 1-px-Lichtsaum aus --line, dazu der E2-Schatten (§14.1).
+       Bewusst KEINE SVG-Refraktion — die trägt nur in Chromium und fällt ausgerechnet
+       auf iPhone-Safari aus (Auftrag Teil B5). */
+    box-shadow:inset 0 1px 0 var(--line),var(--shadow-pop);
+    /* transform gehört der Zentrierung; der Indikator bewegt sich getrennt */
+    transform:translateX(-50%)}
+  @supports not (backdrop-filter:blur(12px)){.bnav{background:color-mix(in srgb,var(--card) 94%,transparent)}}
+  @media (prefers-reduced-transparency:reduce){.bnav{background:var(--card);backdrop-filter:none;-webkit-backdrop-filter:none}}
+  .bnav-pill{position:absolute;left:0;top:5px;height:48px;width:0;border-radius:var(--radius-sm);
+    background:color-mix(in srgb,var(--accent) 16%,transparent);pointer-events:none;
+    transition:transform var(--dur-slide) var(--ease-snap),width var(--dur-slide) var(--ease-snap)}
+  @media (prefers-reduced-motion:reduce){.bnav-pill{transition:none}}
+  /* padding:0 ist Pflicht, nicht Kosmetik: der Browser-Default (1px 6px) nimmt dem Label
+     12 px und beschneidet sonst „Meine Werte" auf einem 375-px-Gerät. */
+  .bnav button{position:relative;z-index:1;flex:1 1 0;min-width:48px;min-height:48px;height:48px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+    border:0;padding:0;background:transparent;color:var(--muted);cursor:pointer;border-radius:var(--radius-sm);
+    transition:color var(--dur-fast) var(--ease-out)}
+  .bnav button.on{color:var(--ink)}
+  .bnav svg{width:24px;height:24px;flex:0 0 auto}
+  /* §9: Die Lupe trägt kein Label und braucht daher nur ihr Touch-Ziel. Der frei werdende
+     Platz geht an die vier beschrifteten Slots — sonst reicht die Breite auf einem
+     375-px-Gerät nicht für „Meine Werte" (gemessen 70 px) und das Label wird beschnitten. */
+  .bnav button[data-raum="suche"]{flex:0 0 48px}
+  .bnav .lbl{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;
+    max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  /* §10: nichts verschwindet hinter der Bar */
+  #app{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+  @media (min-width:1024px){
+    .bnav{display:none}
+    #app{padding-bottom:var(--sp-12)}
+  }
 </style>
 </head>
 <body>
 
+<!-- Lucide-Icons als Inline-SVG (§9: kein CDN, kein Webfont — die CSP bleibt dicht).
+     Einmal als <symbol> definiert, je Slot per <use> referenziert. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="i-jetzt"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></g>
+    <g id="i-radar"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"/><path d="M4 6h.01"/><path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"/><path d="M16.24 7.76A6 6 0 1 0 8.23 16.67"/><path d="M12 18h.01"/><path d="M17.99 11.66A6 6 0 0 1 15.77 16.67"/><circle cx="12" cy="12" r="2"/><path d="m13.41 10.59 5.66-5.66"/></g>
+    <g id="i-suche"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g>
+    <g id="i-recherche"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></g>
+    <g id="i-werte"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></g>
+    <g id="i-mehr"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></g>
+  </defs>
+</svg>
+
+<header class="appbar">
+  <div class="appbar-inner wrap">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">AA</span>
+      <span>
+        <span class="nm">Aktien Atzen</span><br>
+        <span class="sub">MARKTCOCKPIT</span>
+      </span>
+    </div>
+
+    <nav class="dnav" aria-label="Räume">
+      <button type="button" data-raum="jetzt">Jetzt</button>
+      <button type="button" data-raum="radar">Radar</button>
+      <button type="button" data-raum="recherche">Recherche</button>
+      <button type="button" data-raum="werte">Meine Werte</button>
+      <button type="button" data-raum="mehr">Mehr</button>
+    </nav>
+
+    <div class="dsearch">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+      <input type="search" id="suche-desktop" placeholder="Werte, Themen, Analysen" aria-label="Suche">
+    </div>
+
+    <button type="button" class="iconbtn kopfmenue" data-raum="mehr" aria-label="Mehr — Werkzeuge und Rechtliches">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mehr"/></svg>
+    </button>
+  </div>
+</header>
+
 <main class="wrap" id="app">
-  <h1>Aktien Atzen · Marktcockpit</h1>
-  <p class="t-small" style="color:var(--muted);margin-top:var(--sp-2)">
-    V2 im Aufbau. Die Räume, die Navigation und die Datenanbindung folgen in den nächsten
-    Schritten dieser Auftragsserie.
-  </p>
+
+  <section class="raum" id="raum-jetzt" data-raum="jetzt" aria-labelledby="h-jetzt">
+    <h2 id="h-jetzt" tabindex="-1">Jetzt</h2>
+    <p class="platzhalter">Was heute Aufmerksamkeit verdient: Fokusgeschichte, Folgesignale,
+      dein persönlicher Bezug und das Marktregime. Die Inhalte folgen im nächsten Schritt.</p>
+  </section>
+
+  <section class="raum" id="raum-radar" data-raum="radar" aria-labelledby="h-radar" hidden>
+    <h2 id="h-radar" tabindex="-1">Radar</h2>
+    <p class="platzhalter">Welche Bewegungen und Termine Aufmerksamkeit brauchen — und warum.
+      Die Inhalte folgen im nächsten Schritt.</p>
+  </section>
+
+  <section class="raum" id="raum-recherche" data-raum="recherche" aria-labelledby="h-recherche" hidden>
+    <h2 id="h-recherche" tabindex="-1">Recherche</h2>
+    <p class="platzhalter">Was zu einem Wert oder Thema bereits erklärt wurde: Videoanalysen,
+      Ticker und Archiv. Die Inhalte folgen im nächsten Schritt.</p>
+  </section>
+
+  <section class="raum" id="raum-werte" data-raum="werte" aria-labelledby="h-werte" hidden>
+    <h2 id="h-werte" tabindex="-1">Meine Werte</h2>
+    <p class="platzhalter">Welche deiner Werte betroffen sind — und wo in den Videoanalysen über
+      sie gesprochen wurde. Die Inhalte folgen im nächsten Schritt.</p>
+  </section>
+
+  <section class="raum" id="raum-mehr" data-raum="mehr" aria-labelledby="h-mehr" hidden>
+    <h2 id="h-mehr" tabindex="-1">Mehr</h2>
+    <p class="platzhalter">Werkzeuge und Rechtliches. Die Inhalte folgen im nächsten Schritt.</p>
+    <h3 style="margin-top:var(--sp-6)">Darstellung</h3>
+    <div class="ghostreihe" role="group" aria-label="Farbschema">
+      <button type="button" class="ghost" data-theme-wahl="auto">Automatisch</button>
+      <button type="button" class="ghost" data-theme-wahl="light">Hell</button>
+      <button type="button" class="ghost" data-theme-wahl="dark">Dunkel</button>
+    </div>
+  </section>
+
+  <!-- Die Suche ist KEIN sechster Raum (der Freeze kennt fünf), sondern die Vollbildfläche
+       hinter dem eigenen Bottom-Nav-Slot. Sie wird technisch wie ein Raum geschaltet, damit
+       dieselbe Fokus- und inert-Regel für sie gilt. Die Funktion selbst baut V2-5. -->
+  <section class="raum" id="raum-suche" data-raum="suche" aria-labelledby="h-suche" hidden>
+    <h2 id="h-suche" tabindex="-1">Suche</h2>
+    <div class="raumfeld">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+      <input type="search" id="suche-vollbild" placeholder="Werte, Themen, Analysen" aria-label="Suche">
+    </div>
+    <p class="platzhalter">Die Suche über Videoanalysen, Ticker und Archiv folgt im Schritt V2-5.
+      Eingaben bleiben bis dahin ohne Wirkung.</p>
+  </section>
+
 </main>
+
+<nav class="bnav" aria-label="Hauptnavigation">
+  <span class="bnav-pill" aria-hidden="true"></span>
+  <button type="button" data-raum="jetzt">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-jetzt"/></svg>
+    <span class="lbl">Jetzt</span>
+  </button>
+  <button type="button" data-raum="radar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-radar"/></svg>
+    <span class="lbl">Radar</span>
+  </button>
+  <!-- §9: die Lupe trägt bewusst KEIN Label -->
+  <button type="button" data-raum="suche" aria-label="Suche">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+  </button>
+  <button type="button" data-raum="recherche">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-recherche"/></svg>
+    <span class="lbl">Recherche</span>
+  </button>
+  <button type="button" data-raum="werte">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-werte"/></svg>
+    <span class="lbl">Meine Werte</span>
+  </button>
+</nav>
 
 <script>
 /* ===== Theme-Schalter (§1.2/ADR-703) ===============================================
@@ -160,6 +380,65 @@ function themeSetzen(t){
   try{localStorage.setItem('aa-theme',t)}catch(e){}
 }
 function themeUmschalten(){themeSetzen(themeAktuell()==='dark'?'light':'dark')}
+function themeAuto(){document.documentElement.removeAttribute('data-theme');try{localStorage.removeItem('aa-theme')}catch(e){}}
+/* Gewählter Zustand als Signifier (§0.1), nicht als Erklärtext */
+function themeKnoepfeSpiegeln(){
+  let wahl='auto';try{const g=localStorage.getItem('aa-theme');if(g==='light'||g==='dark')wahl=g}catch(e){}
+  document.querySelectorAll('[data-theme-wahl]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.themeWahl===wahl)));
+}
+document.querySelectorAll('[data-theme-wahl]').forEach(b=>{
+  b.addEventListener('click',()=>{const w=b.dataset.themeWahl;w==='auto'?themeAuto():themeSetzen(w);themeKnoepfeSpiegeln()});
+});
+
+/* ===== Räume (§10, Auftrag V2-1 Teil B) =========================================
+   Fünf Räume plus die Vollbildfläche „Suche". Nur die aktive Fläche liegt im
+   Layout; jede andere bekommt zusätzlich inert und aria-hidden, damit sie auch
+   dann kein Tastaturziel wird, wenn sie später einmal sichtbar animiert wird.
+   Genau das ist die Fokusfalle, die in der V1 noch offen ist. */
+const RAEUME=[].slice.call(document.querySelectorAll('.raum'));
+const NAVKNOEPFE=[].slice.call(document.querySelectorAll('[data-raum]')).filter(el=>el.tagName==='BUTTON');
+let RAUM_AKTIV='jetzt';
+
+function raumZeigen(id,fokus){
+  if(!RAEUME.some(r=>r.dataset.raum===id))return;
+  RAUM_AKTIV=id;
+  RAEUME.forEach(r=>{
+    const an=r.dataset.raum===id;
+    r.hidden=!an;
+    if(an){r.removeAttribute('inert');r.removeAttribute('aria-hidden')}
+    else{r.setAttribute('inert','');r.setAttribute('aria-hidden','true')}
+  });
+  NAVKNOEPFE.forEach(b=>{
+    const an=b.dataset.raum===id;
+    b.classList.toggle('on',an);
+    /* Der Kopfmenü-Knopf ist kein Reiter — er bekommt keinen aria-current */
+    if(b.closest('.bnav')||b.closest('.dnav'))b.setAttribute('aria-current',an?'page':'false');
+  });
+  pillSetzen();
+  if(fokus){
+    const h=document.querySelector('#raum-'+id+' > h2');
+    if(h)h.focus({preventScroll:true});
+    window.scrollTo({top:0,behavior:'auto'});
+  }
+}
+
+/* Aktiv-Indikator gleitet hinter den Slot (§10, --dur-slide/--ease-snap) */
+function pillSetzen(){
+  const nav=document.querySelector('.bnav'),pill=document.querySelector('.bnav-pill');
+  if(!nav||!pill)return;
+  const ziel=nav.querySelector('button[data-raum="'+RAUM_AKTIV+'"]');
+  if(!ziel){pill.style.width='0px';return}
+  pill.style.width=ziel.offsetWidth+'px';
+  pill.style.transform='translateX('+ziel.offsetLeft+'px)';
+}
+
+NAVKNOEPFE.forEach(b=>b.addEventListener('click',()=>raumZeigen(b.dataset.raum,true)));
+addEventListener('resize',pillSetzen);
+/* Der Startraum wird ohne Fokussprung gesetzt — Fokus wandert nur bei echtem Wechsel */
+raumZeigen('jetzt',false);
+themeKnoepfeSpiegeln();
+/* Die Pill braucht die endgültigen Slot-Maße; nach Schriftladen erneut messen */
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(pillSetzen);
 </script>
 
 </body>
