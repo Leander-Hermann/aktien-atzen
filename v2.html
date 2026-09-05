@@ -207,8 +207,12 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   /* ==========================================================================
      Bottom-Navigation < 1024 px — §10, Glass nach §6 (Fläche 2 von 3).
-     Fünf Slots: Jetzt · Radar · Suche · Recherche · Meine Werte (Freeze B5).
+     Fünf Slots: Jetzt · Radar · Suche · Recherche · Werte (Freeze B5).
      „Mehr" belegt bewusst KEINEN Slot und sitzt im Kopfmenü.
+     Slot-Label vs. Raumname (Nutzerentscheid 05.09.): Die vier beschrifteten Slots tragen
+     einwortige Kurzlabel, damit bei 320 px nichts per Ellipsis abgeschnitten wird und die
+     Reihe als ein Satz wirkt. Der Raum heißt unverändert „Meine Werte" (Freeze B2); der
+     vollständige Name bleibt als aria-label zugänglich.
      ========================================================================== */
   .bnav{position:fixed;z-index:60;left:50%;bottom:calc(10px + env(safe-area-inset-bottom));
     width:min(94%,440px);height:58px;padding:0 var(--sp-1);
@@ -228,7 +232,8 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     transition:transform var(--dur-slide) var(--ease-snap),width var(--dur-slide) var(--ease-snap)}
   @media (prefers-reduced-motion:reduce){.bnav-pill{transition:none}}
   /* padding:0 ist Pflicht, nicht Kosmetik: der Browser-Default (1px 6px) nimmt dem Label
-     12 px und beschneidet sonst „Meine Werte" auf einem 375-px-Gerät. */
+     12 px und beschneidet sonst „Recherche" auf einem 320-px-Gerät (05.09. gegengeprüft,
+     indem der Default kurzzeitig zurückgesetzt wurde). */
   .bnav button{position:relative;z-index:1;flex:1 1 0;min-width:48px;min-height:48px;height:48px;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
     border:0;padding:0;background:transparent;color:var(--muted);cursor:pointer;border-radius:var(--radius-sm);
@@ -237,8 +242,14 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .bnav svg{width:24px;height:24px;flex:0 0 auto}
   /* §9: Die Lupe trägt kein Label und braucht daher nur ihr Touch-Ziel. Der frei werdende
      Platz geht an die vier beschrifteten Slots — sonst reicht die Breite auf einem
-     375-px-Gerät nicht für „Meine Werte" (gemessen 70 px) und das Label wird beschnitten. */
+     320-px-Gerät nicht für „Recherche" und das Label wird beschnitten (05.09. gegengeprüft,
+     indem die Lupe kurzzeitig einen flexiblen Slot bekam). */
   .bnav button[data-raum="suche"]{flex:0 0 48px}
+  /* Die Ellipsis ist seit dem Nutzerentscheid vom 05.09. nur noch Rückfallnetz für Fälle
+     außerhalb unserer Kontrolle (erzwungene Schriftvergrößerung, fehlende Inter-Datei):
+     im Normalfall passt jedes Label vollständig. Engster gemessener Fall ist „Recherche"
+     mit 59 px in einem 60,7-px-Slot bei 320 px — 1,7 px Reserve. Ein längeres Slot-Label
+     braucht deshalb eine neue Messung und darf sich nicht auf die Ellipsis verlassen. */
   .bnav .lbl{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;
     max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   /* §10: nichts verschwindet hinter der Bar */
@@ -367,9 +378,13 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-recherche"/></svg>
     <span class="lbl">Recherche</span>
   </button>
-  <button type="button" data-raum="werte">
+  <!-- Kurzlabel „Werte" statt „Meine Werte": bei 320 px ist der Slot 60,7 px breit, der volle
+       Name braucht 70 px und wurde beschnitten. Der zugängliche Name bleibt vollständig und
+       enthält das sichtbare Wort (WCAG 2.5.3 „Label in Name"); der Raumtitel bleibt „Meine
+       Werte" (Freeze B2). -->
+  <button type="button" data-raum="werte" aria-label="Meine Werte">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-werte"/></svg>
-    <span class="lbl">Meine Werte</span>
+    <span class="lbl">Werte</span>
   </button>
 </nav>
 
