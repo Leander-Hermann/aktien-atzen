@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<!--
+  Aktien Atzen · © 2026 — Alle Rechte vorbehalten / All Rights Reserved.
+  Proprietär (kein MIT/Apache/GPL): keine Vervielfältigung, Veränderung oder kommerzielle
+  Nutzung von Code/Inhalten ohne ausdrückliche schriftliche Genehmigung. Siehe Datei LICENSE.
+
+  V2 „Marktcockpit" — im Bau neben der unveränderten index.html (ADR-710 §5).
+  Verbindliche Grundlage: design/v2-freeze-2026-09-05.md · Design-Werte AUSSCHLIESSLICH aus
+  design/design-system.md (der V2-Prototyp ist Layout-Vorlage, keine Wertequelle).
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://gc.zgo.at; style-src 'self' 'unsafe-inline'; img-src 'self' https: data:; connect-src 'self' https://production.dataviz.cnn.io https://query1.finance.yahoo.com https://api.allorigins.win https://corsproxy.io https://aktienatzen.goatcounter.com; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+<title>Aktien Atzen · Marktcockpit · GPT-Version</title>
+<!-- Grundfarbe je Theme = --bg1 aus design-system.md §1.2 (dark 05.09. auf #070E13 entschieden, Freeze B7) -->
+<meta name="theme-color" content="#070E13" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#F7F5F1" media="(prefers-color-scheme: light)" />
+<script>/* Gespeicherte Theme-Wahl vor dem ersten Paint anwenden (kein Flash).
+   OHNE gespeicherte Wahl bleibt data-theme absichtlich leer: dann entscheidet
+   prefers-color-scheme (Auftrag V2-1 Teil A4 — beide Wege müssen wirken). */
+try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')document.documentElement.dataset.theme=_t}catch(e){}</script>
+<link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
+<!-- Reichweitenmessung: GoatCounter (cookielos, IP-anonymisiert, EU-Hosting; ADR-304). src explizit https:// (gehärtet ggü. protokoll-relativem Default-Snippet). -->
+<script data-goatcounter="https://aktienatzen.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
+<style>
+  /* ============================================================================
+     Design-Tokens „Tiefsee & Kupfer" — design/design-system.md v1.1
+     §1.2 Farben · §3 Abstände · §5/§14.1 Elevation · §7 Motion · §1.2 Radien
+     Dark ist Standard (ADR-703). Jeder Wert stammt aus dem Design-System;
+     abweichende Werte des V2-Prototyps wurden bewusst NICHT übernommen.
+     ============================================================================ */
+  :root{
+    color-scheme:dark;
+    /* §1.2 Dark (Standard) — --bg1/--bg2 am 05.09. abgedunkelt, V2-Freeze B7 */
+    --bg1:#070E13;--bg2:#0B141B;--card:#17252E;--chip:#1E2E38;--ink:#EDF3F5;--muted:#8FA6B0;
+    --line:rgba(255,255,255,.10);--accent:#3D89A0;--accent-ink:#7FC0D2;--accent2:#C87E4B;
+    --up:#4CC38A;--down:#E4695B;--warn:#C9A23F;--bar:rgba(16,25,30,.66);
+    /* §1.3 Prio-/Status-Ampeln: eigene Alias-Tokens, damit up/down/warn ihre Kurs-/Warn-Semantik behalten */
+    --prio-high:#E4695B;--prio-med:#C9A23F;--prio-low:#4CC38A;
+    /* §5 + §14.1: Dark bildet Tiefe über hellere Flächen, NICHT über Schatten. E2 darf ambient. */
+    --shadow-1:0 0 0 1px var(--line);--shadow-card:none;--shadow-pop:0 16px 40px rgba(0,0,0,.45);
+    --shadow-hover:0 12px 28px rgba(0,0,0,.38);--hover-line:rgba(255,255,255,.18);
+    /* §1.2 Radien */
+    --radius:22px;--radius-sm:14px;--radius-pill:999px;
+    /* §3 4-Punkt-System */
+    --sp-1:4px;--sp-2:8px;--sp-3:12px;--sp-4:16px;--sp-5:20px;--sp-6:24px;--sp-8:32px;--sp-10:40px;--sp-12:48px;
+    /* §7 Motion */
+    --dur-fast:150ms;--dur-base:220ms;--dur-slide:300ms;
+    --ease-out:cubic-bezier(.25,.8,.25,1);--ease-snap:cubic-bezier(.32,.72,0,1);
+  }
+  /* §1.2 Light — greift ohne ausdrückliche Wahl über die Systemeinstellung ... */
+  @media (prefers-color-scheme: light){
+    :root:not([data-theme="dark"]){
+      color-scheme:light;
+      --bg1:#F7F5F1;--bg2:#EFECE5;--card:#FFFFFF;--chip:#F0EDE7;--ink:#1C262B;--muted:#66757C;
+      --line:rgba(28,38,43,.08);--accent:#2C6E83;--accent-ink:#2C6E83;--accent2:#B06B39;
+      --up:#2E7D5E;--down:#AB5140;--warn:#9A7A25;--bar:rgba(252,251,248,.72);
+      --prio-high:#AB5140;--prio-med:#9A7A25;--prio-low:#2E7D5E;
+      --shadow-1:0 1px 3px rgba(23,37,46,.10);--shadow-card:0 8px 24px rgba(23,37,46,.08);
+      --shadow-pop:0 20px 50px rgba(23,37,46,.16);--shadow-hover:0 12px 28px rgba(23,37,46,.14);
+      --hover-line:rgba(28,38,43,.16);
+    }
+  }
+  /* ... und identisch bei ausdrücklicher Wahl über den Schalter (schlägt die Systemeinstellung) */
+  :root[data-theme="light"]{
+    color-scheme:light;
+    --bg1:#F7F5F1;--bg2:#EFECE5;--card:#FFFFFF;--chip:#F0EDE7;--ink:#1C262B;--muted:#66757C;
+    --line:rgba(28,38,43,.08);--accent:#2C6E83;--accent-ink:#2C6E83;--accent2:#B06B39;
+    --up:#2E7D5E;--down:#AB5140;--warn:#9A7A25;--bar:rgba(252,251,248,.72);
+    --prio-high:#AB5140;--prio-med:#9A7A25;--prio-low:#2E7D5E;
+    --shadow-1:0 1px 3px rgba(23,37,46,.10);--shadow-card:0 8px 24px rgba(23,37,46,.08);
+    --shadow-pop:0 20px 50px rgba(23,37,46,.16);--shadow-hover:0 12px 28px rgba(23,37,46,.14);
+    --hover-line:rgba(28,38,43,.16);
+  }
+
+  /* ===== §2 Typografie: Inter Variable, self-hosted (DSGVO: nie Google-Fonts-CDN) ===== */
+  @font-face{font-family:'InterVariable';src:url('fonts/InterVariable.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:swap}
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  /* §14.4 Scrollbar: dezent (Chip-Grau, kein Petrol) — Werkzeug, kein Schmuck */
+  html{scrollbar-width:thin;scrollbar-color:var(--chip) transparent}
+  ::-webkit-scrollbar{width:10px;height:10px}
+  ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar-thumb{background:var(--chip);border:3px solid transparent;background-clip:padding-box;border-radius:var(--radius-pill)}
+  ::-webkit-scrollbar-thumb:hover{background:var(--muted);border:3px solid transparent;background-clip:padding-box}
+
+  body{margin:0;color:var(--ink);
+    font-family:InterVariable,-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
+    background:linear-gradient(180deg,var(--bg1),var(--bg2));background-attachment:fixed;min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+    font-size:14.5px;line-height:1.55;font-weight:400;   /* §2.1 Body */
+    transition:background var(--dur-base),color var(--dur-base)}
+  @media (max-width:639px){body{font-size:15px;line-height:1.6}} /* §2.1 Body mobil */
+
+  /* §2.1 Typo-Skala — exakt sechs Größen, nichts über 24 px */
+  h1,.t-h1{font-size:24px;line-height:1.15;font-weight:800;letter-spacing:-.02em;margin:0}
+  @media (max-width:639px){h1,.t-h1{font-size:22px}}
+  h2,.t-h2{font-size:19px;line-height:1.2;font-weight:700;letter-spacing:-.015em;margin:0}
+  h3,.t-h3{font-size:16px;line-height:1.3;font-weight:650;letter-spacing:-.01em;margin:0}
+  .t-small{font-size:12.5px;line-height:1.45;font-weight:500}
+  .t-caption{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em}
+  p{margin:0}
+  b,strong{font-weight:600}        /* §2.1: nie 700 im Fließtext */
+  em,i{font-style:italic}          /* §2.1: nur Zitate/Disclaimer */
+  a{color:var(--accent-ink);font-weight:600;text-decoration:none}
+  a:hover,a:focus-visible{text-decoration:underline}
+  /* §2.1: Zahlen springen nicht */
+  .num,.t-num{font-variant-numeric:tabular-nums}
+
+  button,input,select,textarea{font:inherit;color:inherit}
+  /* §8: Fokus immer sichtbar, nie outline:none ohne Ersatz */
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  /* §8: vier Button-States — Press-Feedback auch auf Touch (§14.2) */
+  button:not(:disabled):active{transform:translateY(-1px) scale(.98);transition:transform .12s ease-out}
+  button:disabled{opacity:.5;color:var(--muted);cursor:default}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    button:not(:disabled):active{transform:none}
+    *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  }
+
+  /* §4 Raster: zwei Breakpoints (640/1024), Container max 1180 px zentriert */
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding-left:var(--sp-4);padding-right:var(--sp-4)}
+  @media (min-width:640px){.wrap{padding-left:var(--sp-6);padding-right:var(--sp-6)}}
+  @media (min-width:1024px){.wrap{padding-left:var(--sp-8);padding-right:var(--sp-8)}}
+
+  /* §14.1 E1: Standard-Karte — Light mit weichem Schatten, Dark ohne (Tiefe via hellerem --card) */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    padding:var(--sp-4);box-shadow:var(--shadow-card)}
+  @media (min-width:1024px){.card{padding:var(--sp-5)}}
+
+  /* ==========================================================================
+     App-Bar — Glass-Fläche 1 von höchstens 3 (§6). Die zweite ist die
+     Bottom-Nav; bei Konflikt degradiert laut §14.5 der Header zuerst.
+     ========================================================================== */
+  .appbar{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
+    background:var(--bar);backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%)}
+  @supports not (backdrop-filter:blur(12px)){.appbar{background:color-mix(in srgb,var(--card) 94%,transparent)}}
+  @media (prefers-reduced-transparency:reduce){.appbar{background:var(--card);backdrop-filter:none;-webkit-backdrop-filter:none}}
+  .appbar-inner{display:flex;align-items:center;gap:var(--sp-3);min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;min-width:0;margin-right:auto}
+  .logo{width:36px;height:36px;flex:0 0 auto;border-radius:11px;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--accent),#1F5266);color:#EDF3F5;font-weight:800;font-size:16px;letter-spacing:-.03em}
+  .brand .nm{font-size:16px;font-weight:650;letter-spacing:-.01em;line-height:1.3;white-space:nowrap}
+  .brand .sub{font-size:11px;font-weight:600;letter-spacing:.02em;color:var(--muted);white-space:nowrap}
+
+  /* Desktop-Textnavigation (≥1024 px) — §10: die Top-Nav bleibt dem Desktop vorbehalten */
+  .dnav{display:none;gap:var(--sp-1);background:var(--chip);border-radius:var(--radius-sm);padding:3px}
+  .dnav button{border:0;background:transparent;border-radius:11px;padding:8px 14px;
+    font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--muted);cursor:pointer;
+    transition:color var(--dur-fast) var(--ease-out),background var(--dur-fast) var(--ease-out)}
+  .dnav button.on{background:var(--card);color:var(--ink);box-shadow:var(--shadow-1)}
+  @media (hover:hover) and (pointer:fine){.dnav button:not(.on):hover{color:var(--ink)}}
+
+  /* Desktop-Suchfeld — auf dem Handy übernimmt der eigene Nav-Slot (Freeze B5) */
+  .dsearch{display:none;align-items:center;gap:var(--sp-2);min-width:0;width:clamp(160px,22vw,260px);
+    min-height:38px;padding:0 14px;background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill)}
+  .dsearch svg{width:18px;height:18px;flex:0 0 auto;color:var(--muted)}
+  .dsearch input{flex:1;min-width:0;min-height:36px;border:0;background:transparent;color:var(--ink);font-size:12.5px}
+  .dsearch input::placeholder{color:var(--muted)}
+
+  /* Kopfmenü: einziger Weg in den Raum „Mehr" auf dem Handy (Freeze B6) */
+  .iconbtn{width:44px;height:44px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+    border:1px solid var(--line);background:var(--card);border-radius:var(--radius-sm);color:var(--ink);cursor:pointer;
+    transition:border-color var(--dur-fast) var(--ease-out)}
+  .iconbtn svg{width:22px;height:22px}
+  @media (hover:hover) and (pointer:fine){.iconbtn:hover{border-color:var(--hover-line)}}
+
+  @media (min-width:1024px){
+    .dnav{display:flex}
+    .dsearch{display:flex}
+    .iconbtn.kopfmenue{display:none}
+  }
+
+  /* ===== Räume ===== */
+  /* Nur der aktive Raum liegt im Layout. Die übrigen sind zusätzlich inert und
+     aria-hidden (Auftrag Teil B6) — display:none allein genügt uns nicht, weil
+     eine spätere Slide-Animation die Flächen wieder sichtbar machen könnte. */
+  .raum[hidden]{display:none}
+  .raum{padding-top:var(--sp-6);animation:raumEin var(--dur-base) var(--ease-out) both}
+  @keyframes raumEin{from{opacity:0;transform:translateX(8px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.raum{animation:none}}
+  .raum > h2{margin-bottom:var(--sp-2)}
+  .raum > h2:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  .platzhalter{margin-top:var(--sp-4);color:var(--muted);font-size:12.5px;line-height:1.45;font-weight:500}
+  /* Datenstand: reiner Text aus einem real gelieferten Feld. Fehlt der Zeitstempel,
+     entfällt die Zeile ganz — § 8.1 verbietet, Frische aus irgendetwas abzuleiten. */
+  .stand{margin-top:var(--sp-1);color:var(--muted);font-variant-numeric:tabular-nums}
+  .stand[hidden]{display:none}
+  .raumfeld{display:flex;align-items:center;gap:var(--sp-2);margin-top:var(--sp-4);padding:0 var(--sp-4);
+    min-height:48px;background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill)}
+  .raumfeld svg{width:20px;height:20px;flex:0 0 auto;color:var(--muted)}
+  .raumfeld input{flex:1;min-width:0;min-height:46px;border:0;background:transparent;color:var(--ink)}
+  .raumfeld input::placeholder{color:var(--muted)}
+  /* Ghost-Buttons (§8) für die Werkzeuge im Raum „Mehr" */
+  .ghostreihe{display:flex;flex-wrap:wrap;gap:var(--sp-2);margin-top:var(--sp-3)}
+  .ghost{min-height:44px;padding:0 var(--sp-4);border:1px solid var(--line);border-radius:var(--radius-pill);
+    background:transparent;color:var(--ink);font-size:12.5px;font-weight:600;cursor:pointer;
+    transition:background var(--dur-fast) var(--ease-out),border-color var(--dur-fast) var(--ease-out)}
+  .ghost[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 16%,transparent);border-color:transparent;color:var(--accent-ink)}
+  @media (hover:hover) and (pointer:fine){.ghost:hover{background:var(--chip)}}
+
+  /* ==========================================================================
+     Bottom-Navigation < 1024 px — §10, Glass nach §6 (Fläche 2 von 3).
+     Fünf Slots: Jetzt · Radar · Suche · Recherche · Werte (Freeze B5).
+     „Mehr" belegt bewusst KEINEN Slot und sitzt im Kopfmenü.
+     Slot-Label vs. Raumname (Nutzerentscheid 05.09.): Die vier beschrifteten Slots tragen
+     einwortige Kurzlabel, damit bei 320 px nichts per Ellipsis abgeschnitten wird und die
+     Reihe als ein Satz wirkt. Der Raum heißt unverändert „Meine Werte" (Freeze B2); der
+     vollständige Name bleibt als aria-label zugänglich.
+     ========================================================================== */
+  .bnav{position:fixed;z-index:60;left:50%;bottom:calc(10px + env(safe-area-inset-bottom));
+    width:min(94%,440px);height:58px;padding:0 var(--sp-1);
+    display:flex;align-items:center;
+    border:1px solid var(--line);border-radius:var(--radius-pill);
+    background:var(--bar);backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%);
+    /* Highlight-Oberkante: innerer 1-px-Lichtsaum aus --line, dazu der E2-Schatten (§14.1).
+       Bewusst KEINE SVG-Refraktion — die trägt nur in Chromium und fällt ausgerechnet
+       auf iPhone-Safari aus (Auftrag Teil B5). */
+    box-shadow:inset 0 1px 0 var(--line),var(--shadow-pop);
+    /* transform gehört der Zentrierung; der Indikator bewegt sich getrennt */
+    transform:translateX(-50%)}
+  @supports not (backdrop-filter:blur(12px)){.bnav{background:color-mix(in srgb,var(--card) 94%,transparent)}}
+  @media (prefers-reduced-transparency:reduce){.bnav{background:var(--card);backdrop-filter:none;-webkit-backdrop-filter:none}}
+  .bnav-pill{position:absolute;left:0;top:5px;height:48px;width:0;border-radius:var(--radius-sm);
+    background:color-mix(in srgb,var(--accent) 16%,transparent);pointer-events:none;
+    transition:transform var(--dur-slide) var(--ease-snap),width var(--dur-slide) var(--ease-snap)}
+  @media (prefers-reduced-motion:reduce){.bnav-pill{transition:none}}
+  /* padding:0 ist Pflicht, nicht Kosmetik: der Browser-Default (1px 6px) nimmt dem Label
+     12 px und beschneidet sonst „Recherche" auf einem 320-px-Gerät (05.09. gegengeprüft,
+     indem der Default kurzzeitig zurückgesetzt wurde). */
+  .bnav button{position:relative;z-index:1;flex:1 1 0;min-width:48px;min-height:48px;height:48px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;
+    border:0;padding:0;background:transparent;color:var(--muted);cursor:pointer;border-radius:var(--radius-sm);
+    transition:color var(--dur-fast) var(--ease-out)}
+  .bnav button.on{color:var(--ink)}
+  .bnav svg{width:24px;height:24px;flex:0 0 auto}
+  /* §9: Die Lupe trägt kein Label und braucht daher nur ihr Touch-Ziel. Der frei werdende
+     Platz geht an die vier beschrifteten Slots — sonst reicht die Breite auf einem
+     320-px-Gerät nicht für „Recherche" und das Label wird beschnitten (05.09. gegengeprüft,
+     indem die Lupe kurzzeitig einen flexiblen Slot bekam). */
+  .bnav button[data-raum="suche"]{flex:0 0 48px}
+  /* SLOT-LABEL-REGEL (Nutzerentscheid 05.09., gilt für jedes künftige Nav-Label):
+     Ein Slot-Label ist einwortig und höchstens so breit wie „Recherche" — 59 px bei 11 px/600
+     mit 0,02em Sperrung. Wird ein Raum umbenannt, wird bei 320 px NEU GEMESSEN
+     (`scrollWidth` gegen `clientWidth`), nicht geschätzt.
+     Budget bei 320 px: Slot 60,7 px, ein Zeichen 6,9 px — die Reserve ist ein Viertel Zeichen.
+     Gemessene Wortbreiten für Umbenennungen: Titel 24,4 · Werte 33,1 · Depot 33 ·
+     Papiere 41,8 · Bestand 45,2 · Portfolio 47 · Favoriten 51,7 · Positionen 58,3 |
+     Grenze 60,7 | Mein Depot 63,1 · Nachrichten 67,7 · Meine Werte 70.
+     Die Ellipsis unten ist NUR Rückfallnetz für Fälle außerhalb unserer Kontrolle (erzwungene
+     Schriftvergrößerung, fehlende Inter-Datei) — kein Sicherheitsgurt für zu lange Labels.
+     Mehr Platz gäbe es nur über § 10- oder Typo-Werte (gemessen: Leiste 98 % ohne Seitenrand
+     +5,2 px, Schrift 10 px +5,0 px). Beides ist Architekten-Entscheid, nicht Frontend. */
+  .bnav .lbl{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;
+    max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  /* §10: nichts verschwindet hinter der Bar */
+  #app{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+  @media (min-width:1024px){
+    .bnav{display:none}
+    #app{padding-bottom:var(--sp-12)}
+  }
+
+  /* GPT: Raum Jetzt. Bestehende Token und sechs Typografiestufen. */
+  [hidden]{display:none !important}
+  .version-label{display:inline-block;margin-left:var(--sp-2);font-size:11px;line-height:1.35;font-weight:600;color:var(--muted);vertical-align:middle}
+  .muted{color:var(--muted)}
+  .now-section{margin-top:var(--sp-6)}
+  .section-head{display:flex;gap:var(--sp-3);align-items:baseline;justify-content:space-between;flex-wrap:wrap;margin-bottom:var(--sp-3)}
+  .now-stack{display:grid;gap:var(--sp-3)}
+  .now-grid{display:grid;gap:var(--sp-3)}
+  .now-section p + p{margin-top:var(--sp-3)}
+  .digest-meta{display:flex;flex-wrap:wrap;gap:var(--sp-2);margin-bottom:var(--sp-3);color:var(--muted)}
+  .digest-lead{border-top:2px solid var(--accent);padding:var(--sp-5)}
+  .digest-lead h3{font-size:24px;line-height:1.15;font-weight:800;letter-spacing:-.02em;max-width:44ch;margin-bottom:var(--sp-3)}
+  .digest-lead .excerpt{max-width:80ch;margin-bottom:var(--sp-4)}
+  .now-section button,.now-section a,.overlay button,.overlay a{min-height:44px;min-width:44px}
+  .now-section a,.overlay a{display:inline-flex;align-items:center;padding:var(--sp-2) 0;overflow-wrap:anywhere}
+  .primary{border:0;border-radius:var(--radius-pill);padding:var(--sp-3) var(--sp-5);background:var(--accent2);color:var(--bg1);font-weight:600;cursor:pointer}
+  :root[data-theme="light"] .primary{background:#8C5430;color:#FFFFFF}
+  @media(prefers-color-scheme:light){:root:not([data-theme="dark"]) .primary{background:#8C5430;color:#FFFFFF}}
+  .follow-signals{margin-top:var(--sp-3)}
+  .topic-button{display:block;text-align:left;width:100%;cursor:pointer;color:var(--ink)}
+  .topic-button:hover{border-color:var(--hover-line)}
+  .topic-button .t-small{display:block;color:var(--muted);margin-bottom:var(--sp-2)}
+  .news-list{margin-top:var(--sp-5)}
+  .news-list h3{margin-bottom:var(--sp-2)}
+  .news-row{padding:var(--sp-3) 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent}
+  .read-links{margin-top:var(--sp-4)}
+  .read-links ul{margin:var(--sp-2) 0 0;padding:0;list-style:none}
+  .focus-card{display:grid;gap:var(--sp-3)}
+  .focus-top{display:flex;gap:var(--sp-3);justify-content:space-between;align-items:flex-start}
+  .focus-name{min-width:0}
+  .focus-name h4{margin:0;font-size:16px;line-height:1.3;font-weight:650;overflow-wrap:anywhere}
+  .focus-price{text-align:right;flex-shrink:0}
+  .focus-events{padding-left:var(--sp-4);margin:0}
+  .focus-video{border-top:1px solid var(--line);padding-top:var(--sp-3)}
+  .focus-actions{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-2);flex-wrap:wrap}
+  .day-note{margin-top:var(--sp-3)}
+  .up{color:var(--up)}.down{color:var(--down)}
+  .market-overview{display:grid;gap:var(--sp-3)}
+  .fg-card{display:flex;align-items:center;gap:var(--sp-4)}
+  .fg-arc{width:130px;height:84px;flex:0 0 130px;color:var(--accent)}
+  .index-compact{display:grid;gap:var(--sp-2)}
+  .index-row,.mover-row{display:flex;justify-content:space-between;align-items:center;gap:var(--sp-3);padding:var(--sp-3) 0;border-bottom:1px solid var(--line)}
+  .index-row>div,.mover-row>div{min-width:0;overflow-wrap:anywhere}
+  .index-number{text-align:right;flex-shrink:0}
+  .index-row button,.mover-row button{flex-shrink:0}
+  .market-toggle{margin-top:var(--sp-4)}
+  .market-detail{margin-top:var(--sp-3)}
+  .market-detail h4{margin:var(--sp-4) 0 0;font-size:16px;font-weight:650}
+  .movements{margin-top:var(--sp-5)}
+  .overlay{color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--radius);width:calc(100% - 32px);max-width:860px;max-height:calc(100dvh - 32px);padding:var(--sp-4);box-shadow:var(--shadow-pop);overflow:auto;overscroll-behavior:contain}
+  .overlay::backdrop{background:rgba(0,0,0,.5);backdrop-filter:blur(8px)}
+  .overlay .top{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--sp-4);margin-bottom:var(--sp-3)}
+  .overlay .top h3{padding-top:var(--sp-3);overflow-wrap:anywhere}
+  .overlay .x{background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill);width:44px;flex-shrink:0;cursor:pointer}
+  .article-content{max-width:76ch;margin:0 auto;overflow-wrap:anywhere}
+  .article-content section{margin-top:var(--sp-5)}
+  .article-content h4{font-size:16px;line-height:1.3;font-weight:650;margin:0 0 var(--sp-2)}
+  .article-content p{white-space:pre-line}
+  .article-content img{display:block;max-width:100%;max-height:320px;object-fit:cover;border-radius:var(--radius-sm);margin:var(--sp-4) auto}
+  .article-content dl{margin:0}.article-content dt{font-weight:600;margin-top:var(--sp-3)}.article-content dd{margin:var(--sp-1) 0 0}
+  .seg{display:flex;gap:var(--sp-2);flex-wrap:wrap;margin:var(--sp-4) 0}
+  .seg button{background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill);padding:var(--sp-2) var(--sp-3);cursor:pointer}
+  .seg button.on{color:var(--accent-ink);border-color:var(--accent)}
+  .chart-area{position:relative;width:100%;height:360px;min-width:0}.chart-area>div{position:absolute;inset:0}
+  .dnav button,.dsearch input{min-height:44px}
+  @media(max-width:639px){.digest-lead{padding:var(--sp-4)}.digest-lead h3{font-size:22px}.focus-top{flex-wrap:wrap}.focus-price{text-align:left}.fg-card{gap:var(--sp-3)}}
+  @media(min-width:640px){.follow-signals{grid-template-columns:repeat(2,minmax(0,1fr))}.market-overview{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+  @media(min-width:1024px){.focus-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.overlay{padding:var(--sp-5)}}
+
+</style>
+</head>
+<body>
+
+<!-- Lucide-Icons als Inline-SVG (§9: kein CDN, kein Webfont — die CSP bleibt dicht).
+     Einmal als <symbol> definiert, je Slot per <use> referenziert. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="i-jetzt"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></g>
+    <g id="i-radar"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"/><path d="M4 6h.01"/><path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"/><path d="M16.24 7.76A6 6 0 1 0 8.23 16.67"/><path d="M12 18h.01"/><path d="M17.99 11.66A6 6 0 0 1 15.77 16.67"/><circle cx="12" cy="12" r="2"/><path d="m13.41 10.59 5.66-5.66"/></g>
+    <g id="i-suche"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></g>
+    <g id="i-recherche"><circle cx="12" cy="12" r="10"/><path d="m10 8 6 4-6 4z"/></g>
+    <g id="i-werte"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></g>
+    <g id="i-mehr"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></g>
+  </defs>
+</svg>
+
+<header class="appbar">
+  <div class="appbar-inner wrap">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">AA</span>
+      <span>
+        <span class="nm">Aktien Atzen</span><br>
+        <span class="sub">MARKTCOCKPIT · GPT</span>
+      </span>
+    </div>
+
+    <nav class="dnav" aria-label="Räume">
+      <button type="button" data-raum="jetzt">Jetzt</button>
+      <button type="button" data-raum="radar">Radar</button>
+      <button type="button" data-raum="recherche">Recherche</button>
+      <button type="button" data-raum="werte">Meine Werte</button>
+      <button type="button" data-raum="mehr">Mehr</button>
+    </nav>
+
+    <div class="dsearch">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+      <input type="search" id="suche-desktop" placeholder="Werte, Themen, Analysen" aria-label="Suche">
+    </div>
+
+    <button type="button" class="iconbtn kopfmenue" data-raum="mehr" aria-label="Mehr — Werkzeuge und Rechtliches">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-mehr"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="wrap" id="app">
+
+  <section class="raum" id="raum-jetzt" data-raum="jetzt" aria-labelledby="h-jetzt">
+    <h2 id="h-jetzt" tabindex="-1">Jetzt <span class="version-label">GPT-Version</span></h2>
+    <div id="jetztDigest" class="now-section"><p class="muted" role="status">Digest wird geladen …</p></div>
+    <section id="jetztFokus" class="now-section" aria-labelledby="fokusTitel"><div class="section-head"><h3 id="fokusTitel" tabindex="-1">Dein Fokus</h3><span id="fokusAnzahl" class="t-small muted"></span></div><div id="fokusBody"></div><p class="t-small muted day-note">Tag vergleicht die letzten zwei verfügbaren Schlusskurse.</p></section>
+    <section id="jetztMarkt" class="now-section" aria-labelledby="marktTitel" hidden><div class="section-head"><h3 id="marktTitel">Marktübersicht</h3><span id="marktStand" class="t-small muted num"></span></div><div id="marktBody"></div></section>
+  </section>
+
+  <section class="raum" id="raum-radar" data-raum="radar" aria-labelledby="h-radar" hidden>
+    <h2 id="h-radar" tabindex="-1">Radar</h2>
+    <p class="stand t-caption" hidden></p>
+    <p class="platzhalter">Welche Bewegungen und Termine Aufmerksamkeit brauchen — und warum.
+      Die Inhalte folgen im nächsten Schritt.</p>
+  </section>
+
+  <section class="raum" id="raum-recherche" data-raum="recherche" aria-labelledby="h-recherche" hidden>
+    <h2 id="h-recherche" tabindex="-1">Recherche</h2>
+    <p class="stand t-caption" hidden></p>
+    <p class="platzhalter">Was zu einem Wert oder Thema bereits erklärt wurde: Videoanalysen,
+      Ticker und Archiv. Die Inhalte folgen im nächsten Schritt.</p>
+  </section>
+
+  <section class="raum" id="raum-werte" data-raum="werte" aria-labelledby="h-werte" hidden>
+    <h2 id="h-werte" tabindex="-1">Meine Werte</h2>
+    <p class="stand t-caption" hidden></p>
+    <p class="platzhalter">Welche deiner Werte betroffen sind — und wo in den Videoanalysen über
+      sie gesprochen wurde. Die Inhalte folgen im nächsten Schritt.</p>
+  </section>
+
+  <section class="raum" id="raum-mehr" data-raum="mehr" aria-labelledby="h-mehr" hidden>
+    <h2 id="h-mehr" tabindex="-1">Mehr</h2>
+    <p class="platzhalter">Werkzeuge und Rechtliches. Die Inhalte folgen im nächsten Schritt.</p>
+    <h3 style="margin-top:var(--sp-6)">Darstellung</h3>
+    <div class="ghostreihe" role="group" aria-label="Farbschema">
+      <button type="button" class="ghost" data-theme-wahl="auto">Automatisch</button>
+      <button type="button" class="ghost" data-theme-wahl="light">Hell</button>
+      <button type="button" class="ghost" data-theme-wahl="dark">Dunkel</button>
+    </div>
+  </section>
+
+  <!-- Die Suche ist KEIN sechster Raum (der Freeze kennt fünf), sondern die Vollbildfläche
+       hinter dem eigenen Bottom-Nav-Slot. Sie wird technisch wie ein Raum geschaltet, damit
+       dieselbe Fokus- und inert-Regel für sie gilt. Die Funktion selbst baut V2-5. -->
+  <section class="raum" id="raum-suche" data-raum="suche" aria-labelledby="h-suche" hidden>
+    <h2 id="h-suche" tabindex="-1">Suche</h2>
+    <div class="raumfeld">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+      <input type="search" id="suche-vollbild" placeholder="Werte, Themen, Analysen" aria-label="Suche">
+    </div>
+    <p class="platzhalter">Die Suche über Videoanalysen, Ticker und Archiv folgt im Schritt V2-5.
+      Eingaben bleiben bis dahin ohne Wirkung.</p>
+  </section>
+
+</main>
+
+<nav class="bnav" aria-label="Hauptnavigation">
+  <span class="bnav-pill" aria-hidden="true"></span>
+  <button type="button" data-raum="jetzt">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-jetzt"/></svg>
+    <span class="lbl">Jetzt</span>
+  </button>
+  <button type="button" data-raum="radar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-radar"/></svg>
+    <span class="lbl">Radar</span>
+  </button>
+  <!-- §9: die Lupe trägt bewusst KEIN Label -->
+  <button type="button" data-raum="suche" aria-label="Suche">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+  </button>
+  <button type="button" data-raum="recherche">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-recherche"/></svg>
+    <span class="lbl">Recherche</span>
+  </button>
+  <!-- Kurzlabel „Werte" statt „Meine Werte": bei 320 px ist der Slot 60,7 px breit, der volle
+       Name braucht 70 px und wurde beschnitten. Der zugängliche Name bleibt vollständig und
+       enthält das sichtbare Wort (WCAG 2.5.3 „Label in Name"); der Raumtitel bleibt „Meine
+       Werte" (Freeze B2). -->
+  <button type="button" data-raum="werte" aria-label="Meine Werte">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-werte"/></svg>
+    <span class="lbl">Werte</span>
+  </button>
+</nav>
+
+<dialog class="overlay" id="articleOverlay" aria-labelledby="articleTitle">
+  <div class="top"><h3 id="articleTitle" tabindex="-1"></h3><button class="x" type="button" data-close aria-label="Artikel schließen">×</button></div>
+  <div id="articleBody" class="article-content"></div>
+</dialog>
+<dialog class="overlay stkmodal" id="stkOverlay" aria-labelledby="stkTitle">
+  <div class="top"><h3 id="stkTitle" tabindex="-1">Kurschart</h3><button class="x" type="button" data-close aria-label="Chart schließen">×</button></div>
+  <p id="stkSub" class="muted num"></p>
+  <p id="stkStatus" role="status" class="muted"></p>
+  <div class="seg" id="stkseg" aria-label="Chartzeitraum" hidden><button type="button" data-d="30">1M</button><button type="button" data-d="90" class="on">3M</button><button type="button" data-d="180">6M</button><button type="button" data-d="0">Max</button></div>
+  <div id="stockArea" class="chart-area" hidden><div id="stklw"></div></div>
+  <p class="t-small muted day-note">Tag vergleicht die letzten zwei verfügbaren Schlusskurse. Der Chart zeigt die gewählte Zeitspanne.</p>
+</dialog>
+<dialog class="overlay" id="indexOverlay" aria-labelledby="indexTitle">
+  <div class="top"><h3 id="indexTitle" tabindex="-1">Indexchart</h3><button class="x" type="button" data-close aria-label="Indexchart schließen">×</button></div>
+  <p id="indexSub" class="num muted"></p><p id="indexStatus" role="status" class="muted"></p>
+  <div class="seg" id="indexIntervals" aria-label="Kerzenintervall"></div>
+  <div class="seg" id="indexPresets" aria-label="Chartzeitraum"><button type="button" data-days="1">1T</button><button type="button" data-days="7">1W</button><button type="button" data-days="30">1M</button><button type="button" data-days="365">1J</button><button type="button" data-days="1825">5J</button></div>
+  <div id="indexArea" class="chart-area"><div id="indexLw"></div></div>
+  <p class="t-small muted day-note">Tag: Veränderung zum vorherigen Schluss. Es werden nur gelieferte Kerzen gezeigt.</p>
+</dialog>
+
+<script>
+/* ===== Theme-Schalter (§1.2/ADR-703) ===============================================
+   Drei Zustände: keine Wahl → prefers-color-scheme entscheidet; 'dark'/'light' →
+   data-theme gewinnt gegen die Systemeinstellung. Die Wahl überlebt den Reload. */
+function themeAktuell(){
+  const r=document.documentElement.getAttribute('data-theme');
+  if(r==='dark'||r==='light')return r;
+  return matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';
+}
+function themeSetzen(t){
+  if(t!=='dark'&&t!=='light')return;
+  document.documentElement.setAttribute('data-theme',t);
+  try{localStorage.setItem('aa-theme',t)}catch(e){}
+}
+function themeUmschalten(){themeSetzen(themeAktuell()==='dark'?'light':'dark')}
+function themeAuto(){document.documentElement.removeAttribute('data-theme');try{localStorage.removeItem('aa-theme')}catch(e){}}
+/* Gewählter Zustand als Signifier (§0.1), nicht als Erklärtext */
+function themeKnoepfeSpiegeln(){
+  let wahl='auto';try{const g=localStorage.getItem('aa-theme');if(g==='light'||g==='dark')wahl=g}catch(e){}
+  document.querySelectorAll('[data-theme-wahl]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.themeWahl===wahl)));
+}
+document.querySelectorAll('[data-theme-wahl]').forEach(b=>{
+  b.addEventListener('click',()=>{const w=b.dataset.themeWahl;w==='auto'?themeAuto():themeSetzen(w);themeKnoepfeSpiegeln()});
+});
+
+/* ===== Räume (§10, Auftrag V2-1 Teil B) =========================================
+   Fünf Räume plus die Vollbildfläche „Suche". Nur die aktive Fläche liegt im
+   Layout; jede andere bekommt zusätzlich inert und aria-hidden, damit sie auch
+   dann kein Tastaturziel wird, wenn sie später einmal sichtbar animiert wird.
+   Genau das ist die Fokusfalle, die in der V1 noch offen ist. */
+const RAEUME=[].slice.call(document.querySelectorAll('.raum'));
+const NAVKNOEPFE=[].slice.call(document.querySelectorAll('[data-raum]')).filter(el=>el.tagName==='BUTTON');
+let RAUM_AKTIV='jetzt';
+
+function raumZeigen(id,fokus){
+  if(!RAEUME.some(r=>r.dataset.raum===id))return;
+  RAUM_AKTIV=id;
+  RAEUME.forEach(r=>{
+    const an=r.dataset.raum===id;
+    r.hidden=!an;
+    if(an){r.removeAttribute('inert');r.removeAttribute('aria-hidden')}
+    else{r.setAttribute('inert','');r.setAttribute('aria-hidden','true')}
+  });
+  NAVKNOEPFE.forEach(b=>{
+    const an=b.dataset.raum===id;
+    b.classList.toggle('on',an);
+    /* Der Kopfmenü-Knopf ist kein Reiter — er bekommt keinen aria-current */
+    if(b.closest('.bnav')||b.closest('.dnav'))b.setAttribute('aria-current',an?'page':'false');
+  });
+  pillSetzen();
+  if(fokus){
+    const h=document.querySelector('#raum-'+id+' > h2');
+    if(h)h.focus({preventScroll:true});
+    window.scrollTo({top:0,behavior:'auto'});
+  }
+}
+
+/* Aktiv-Indikator gleitet hinter den Slot (§10, --dur-slide/--ease-snap) */
+function pillSetzen(){
+  const nav=document.querySelector('.bnav'),pill=document.querySelector('.bnav-pill');
+  if(!nav||!pill)return;
+  const ziel=nav.querySelector('button[data-raum="'+RAUM_AKTIV+'"]');
+  if(!ziel){pill.style.width='0px';return}
+  pill.style.width=ziel.offsetWidth+'px';
+  pill.style.transform='translateX('+ziel.offsetLeft+'px)';
+}
+
+NAVKNOEPFE.forEach(b=>b.addEventListener('click',()=>raumZeigen(b.dataset.raum,true)));
+addEventListener('resize',pillSetzen);
+/* Der Startraum wird ohne Fokussprung gesetzt — Fokus wandert nur bei echtem Wechsel */
+raumZeigen('jetzt',false);
+themeKnoepfeSpiegeln();
+/* Die Pill braucht die endgültigen Slot-Maße; nach Schriftladen erneut messen */
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(pillSetzen);
+
+/* ================================================================================
+   Sicherheits-Helfer (ADR-025) — aus index.html:840–844 unveraendert uebernommen.
+   Jede fremde, gescrapte oder LLM-erzeugte Zeichenkette laeuft durch sie, bevor sie
+   ins DOM oder in eine URL geht. Nicht nachbauen, nicht umbenennen.
+   ================================================================================ */
+function escapeHtml(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function safeUrl(u){u=String(u==null?'':u).trim();if(/[\u0000-\u001F\u007F<>"'`\\]/.test(u))return '';try{return new URL(u).protocol==='https:'?u:''}catch(e){return ''}}
+function safeLink(u,label,extra){const h=safeUrl(u),t=escapeHtml(label==null?'':label);return h?`<a href="${h}" target="_blank" rel="noopener noreferrer"${extra||''}>${t}</a>`:t}
+// ADR-025/701: Ticker ist LLM-Fremdtext → strikte Whitelist. Nur valide Symbole werden Chart-/Link-Ziel; sonst kein Link.
+function validTicker(t){t=String(t==null?'':t).trim();return /^[A-Z0-9.=^-]+$/.test(t)?t:''}
+
+/* ================================================================================
+   Feeds — elf Dateien, alle von derselben Origin, keine neue Drittquelle.
+   ================================================================================ */
+let DATA={},order=[],labels={},current=null;
+let MARKET=null,VIDEOS=null,VIDIDX=null,IDEAS=null,EARN=null,ERECAP=null,CANDIDATES=null;
+let RADAR=null,QUOTES=null,TICKIDX=null,FGDATA=null;
+
+/* Der fail-softe Helfer aus index.html:870 — unveraendert uebernommen und nur von der
+   lokalen Funktion auf Modulebene gehoben, damit ALLE elf Feeds denselben Pfad nehmen.
+   Er faengt jeden Fehler ab und setzt nur bei r.ok; genau das ist die Grundlage des
+   graceful degrade (design-system.md §8.1). */
+const hol=async(datei,set)=>{try{const r=await fetch('data/'+datei,{cache:'no-store'});if(r.ok)set(await r.json())}catch(e){}};
+
+async function loadDay(date){if(DATA[date]||!nowISO(date))return;const r=await fetch('data/'+date+'.json',{cache:'no-store'});if(!r.ok)throw 0;const d=await r.json();if(!nowObj(d)||!Array.isArray(d.topics))return;DATA[date]=d;labels[date]=nowText(d.label)||date}
+
+/* Acht kleine Feeds sofort. Ein Ausfall entfernt genau seinen Beitrag, nie die Seite. */
+async function feedsKlein(){
+  await Promise.all([
+    hol('index.json',j=>{if(Array.isArray(j)){const rows=j.filter(d=>nowObj(d)&&nowISO(d.date));order=rows.map(d=>d.date).sort().reverse();rows.forEach(d=>labels[d.date]=nowText(d.label));current=order[0]||null}}),
+    hol('market.json',j=>{MARKET=nowObj(j)?j:null;FGDATA=MARKET&&MARKET.feargreed}),
+    hol('videos.json',j=>{VIDEOS=j}),
+    hol('videos-index.json',j=>{VIDIDX=j}),
+    hol('ideas.json',j=>{IDEAS=j}),
+    hol('earnings.json',j=>{EARN=nowObj(j)&&Array.isArray(j.eintraege)?{...j,eintraege:j.eintraege.filter(e=>nowObj(e)&&nowISO(e.date))}:null}),
+    hol('earnings-recap.json',j=>{ERECAP=j}),
+    hol('candidates.json',j=>{CANDIDATES=nowObj(j)&&Array.isArray(j.items)?j:null})
+  ]);
+  // Die Tagesdatei haengt am Index; fehlt er, entfaellt nur der Tagesstand.
+  if(current){try{await loadDay(current)}catch(e){}}
+}
+/* Die drei grossen Feeds NACH dem ersten Rendern, parallel und nicht blockierend
+   (quotes.json ~1,1 MB, ticker-index.json ~0,7 MB, radar.json ~11 KB).
+   Abweichung zu index.html, bewusst: dort haengt dieser Block am nicht leeren Bestand.
+   In V2 braucht der Raum „Radar" die radar.json und „Recherche" den ticker-index auch
+   ohne jede Position — die Bindung an den Bestand waere hier schlicht falsch. */
+let FEEDSGROSS=false;
+async function feedsGross(){
+  if(FEEDSGROSS)return;FEEDSGROSS=true;
+  await Promise.all([
+    hol('radar.json',j=>{RADAR=nowObj(j)&&Array.isArray(j.items)?j:null}),
+    hol('quotes.json',j=>{QUOTES=nowQuoteFeed(j)}),
+    hol('ticker-index.json',j=>{TICKIDX=nowObj(j)&&nowObj(j.ticker)?j:null})
+  ]);
+  NOW_GROSS_DONE=true;
+  standAnzeigen();
+  renderFokus();
+}
+
+/* ===== Datenstand je Raum (§8.1: keine erfundene Frische) =======================
+   Angezeigt wird ausschliesslich ein real geliefertes Feld — `updated` auf oberster
+   Ebene oder `_meta.generated_at`. Fehlt es, bleibt die Zeile leer statt zu raten.
+   Ein Status-Badge (fresh/stale/failed) gibt es hier bewusst NICHT: das verlangt nach
+   §8.1 `_meta.status`, und den fuehren nicht alle Feeds. */
+function feedStand(j){
+  if(!j||typeof j!=='object')return null;
+  const roh=(typeof j.updated==='string'&&j.updated)||(j._meta&&typeof j._meta.generated_at==='string'&&j._meta.generated_at)||null;
+  if(!roh)return null;
+  const d=new Date(roh);
+  return isFinite(d.getTime())?d:null;
+}
+function standText(feeds){
+  const daten=feeds.map(feedStand).filter(Boolean);
+  if(!daten.length)return '';
+  const j=new Date(Math.max.apply(null,daten.map(d=>d.getTime())));
+  return 'Stand: '+j.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit'})+', '+
+         j.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'})+' Uhr';
+}
+const RAUMFEEDS={
+  radar:()=>[RADAR,CANDIDATES,EARN],
+  recherche:()=>[VIDEOS,VIDIDX],
+  werte:()=>[QUOTES,TICKIDX]
+};
+function standAnzeigen(){
+  Object.keys(RAUMFEEDS).forEach(id=>{
+    const el=document.querySelector('#raum-'+id+' .stand');
+    if(!el)return;
+    const t=standText(RAUMFEEDS[id]().filter(Boolean));
+    el.textContent=t;
+    el.hidden=!t;            // fehlt der Zeitstempel, entfaellt genau diese Flaeche
+  });
+}
+
+/* ================================================================================
+   Mein Bestand — Datenmodell (ADR-906, Contract v0.15 `_frontend_only.bestand`).
+   Aus index.html UNVERAENDERT uebernommen, inklusive beider technischer Marker
+   `aa-bestand-mig` und `aa-bestand-besuch`. Es gibt kein zweites Datenmodell und
+   keine zweite Watchlist. Die Daten liegen AUSSCHLIESSLICH im localStorage — sie
+   gehen nie in einen Prompt, nie in ein Backend-Log und nie in einen oeffentlichen
+   Feed (ADR-906 §1).
+   ================================================================================ */
+const WLKEY='aa-wl';let WLCACHE={},WLINFLIGHT={};
+function normSym(raw){let s=(raw||'').trim().toUpperCase();if(!s)return '';if(s.includes(':')){const parts=s.split(':'),ex=parts[0],tk=parts[1]||'';const map={NASDAQ:'',NYSE:'',AMEX:'',ARCA:'',BATS:'',CBOE:'',OTC:'',XETR:'.DE',ETR:'.DE',FWB:'.F',FRA:'.F',GETTEX:'.DE',TRADEGATE:'.DE',LSE:'.L',LON:'.L',EURONEXT:'.PA',EPA:'.PA',TSE:'.T',TYO:'.T',HKEX:'.HK',HKG:'.HK',SWX:'.SW',SIX:'.SW',TSX:'.TO',ASX:'.AX',BME:'.MC',MIL:'.MI',BIT:'.MI',AMS:'.AS'};s=tk+(ex in map?map[ex]:'')}return s.replace(/[^A-Z0-9.\-]/g,'')}
+const BSTKEY='aa-bestand',BSTMIGKEY='aa-bestand-mig',BST_SCHEMA=1;
+const BST_TYP={beobachtung:'Beobachtung',aktie:'Aktie',etf:'ETF',krypto:'Krypto',derivat:'Derivat'};
+const BST_ART={knockout:'Knockout',optionsschein:'Optionsschein',faktor:'Faktor',sonstiges:'Sonstiges'};
+const BST_RICHTUNG={long:'Long',short:'Short'};
+const BST_CODE_PREFIX='AA-BESTAND-1:';
+let BESTAND=null;
+// ADR-025: nur diese Zeichen duerfen in eine URL, einen Fetch oder ins DOM.
+function bstSymOk(s){return /^[A-Z0-9.\-=^]+$/.test(String(s==null?'':s))}
+function bstRawOk(t){return /^(?:[A-Za-z]{2,12}:)?[A-Za-z0-9.\-=^]+$/.test(String(t==null?'':t).trim())}
+function bstNormEingabe(raw){
+  const t=String(raw==null?'':raw).trim();if(!t||!bstRawOk(t))return '';
+  const up=t.toUpperCase();
+  // Futures/Indizes (CL=F, ^GDAXI) unveraendert lassen — normSym() wuerde '='/'^' entfernen.
+  if(up.indexOf(':')<0&&bstSymOk(up))return up;
+  const s=normSym(up);return bstSymOk(s)?s:'';
+}
+function bstNum(v){if(v==null)return null;let t=String(v).trim().replace(/\s/g,'');if(!t)return null;if(t.indexOf(',')>-1)t=t.replace(/\./g,'').replace(',','.');const n=parseFloat(t);return isFinite(n)?n:null}
+function bstToday(){const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function bstNextId(store){let m=0;((store&&store.positionen)||[]).forEach(p=>{const n=parseInt(String(p.id||'').replace(/^p/,''),10);if(isFinite(n)&&n>m)m=n});return 'p'+(m+1)}
+// EINE Validierung fuer localStorage UND Import.
+function bstValidPos(raw){
+  if(!raw||typeof raw!=='object')return null;
+  const sym=String(raw.symbol==null?'':raw.symbol).trim().toUpperCase();
+  if(!sym||!bstSymOk(sym))return null;
+  const typ=String(raw.typ==null?'':raw.typ);if(!BST_TYP[typ])return null;
+  const id=String(raw.id==null?'':raw.id);if(!/^[A-Za-z0-9_-]{1,24}$/.test(id))return null;
+  const added=String(raw.added_at==null?'':raw.added_at);if(!/^\d{4}-\d{2}-\d{2}$/.test(added))return null;
+  const st=bstNum(raw.stueck),ein=bstNum(raw.einstand);
+  const w=String(raw.waehrung==null?'':raw.waehrung).trim().toUpperCase();
+  let der=null;
+  if(typ==='derivat'&&raw.derivat&&typeof raw.derivat==='object'){
+    const d=raw.derivat,o={};
+    if(BST_ART[String(d.art||'')])o.art=String(d.art);
+    if(BST_RICHTUNG[String(d.richtung||'')])o.richtung=String(d.richtung);
+    const h=bstNum(d.hebel),ko=bstNum(d.ko_schwelle);
+    if(h!=null&&h>0)o.hebel=h;
+    if(ko!=null&&ko>0)o.ko_schwelle=ko;
+    const wkn=String(d.wkn==null?'':d.wkn).trim().toUpperCase();
+    if(/^[A-Z0-9]{1,12}$/.test(wkn))o.wkn=wkn;
+    if(Object.keys(o).length)der=o;
+  }
+  const p={id:id,symbol:sym,typ:typ};                       // Feldreihenfolge wie im Contract-Beispiel
+  if(st!=null&&st>0)p.stueck=st;
+  if(ein!=null&&ein>0)p.einstand=ein;
+  if(/^[A-Z]{3}$/.test(w))p.waehrung=w;
+  p.added_at=added;
+  if(der)p.derivat=der;
+  return p;
+}
+function bstSanitize(raw){
+  const clean={schema:BST_SCHEMA,positionen:[]},seen={};
+  ((raw&&raw.positionen)||[]).forEach(p=>{
+    const v=bstValidPos(p);if(!v)return;
+    if(seen[v.id])v.id=bstNextId(clean);                    // ID-Kollision heilen, Position behalten
+    seen[v.id]=1;clean.positionen.push(v);
+  });
+  return clean;
+}
+/* Verlustfreie, automatische Migration der Alt-Watchlist. Der Alt-Key bleibt als
+   Rueckfallnetz stehen und wird nie wieder fortgeschrieben; der Marker-Key macht den
+   Lauf idempotent — ein zweiter Seitenaufruf erzeugt keine Dublette, und eine
+   geloeschte Position kommt nicht zurueck. */
+function bstMigDone(){try{return !!localStorage.getItem(BSTMIGKEY)}catch(e){return true}}
+function bstMigMark(){try{localStorage.setItem(BSTMIGKEY,String(BST_SCHEMA))}catch(e){}}
+function bstMigrate(store){
+  let alt=[];try{const r=JSON.parse(localStorage.getItem(WLKEY));if(Array.isArray(r))alt=r}catch(e){alt=[]}
+  const have={};store.positionen.forEach(p=>{have[p.symbol+'|'+p.typ]=1});
+  const heute=bstToday();let n=0;
+  alt.forEach(roh=>{
+    const s=bstNormEingabe(roh);if(!s)return;
+    const k=s+'|beobachtung';if(have[k])return;have[k]=1;
+    store.positionen.push({id:bstNextId(store),symbol:s,typ:'beobachtung',added_at:heute});n++;
+  });
+  return n;
+}
+function bstLoad(){
+  if(BESTAND)return BESTAND;
+  let roh=null;try{roh=JSON.parse(localStorage.getItem(BSTKEY))}catch(e){roh=null}
+  BESTAND=bstSanitize(roh);
+  if(!bstMigDone()){const n=bstMigrate(BESTAND);if(n>0)bstSave();bstMigMark()}
+  return BESTAND;
+}
+function bstSave(){try{localStorage.setItem(BSTKEY,JSON.stringify(BESTAND))}catch(e){}}
+function bstPositionen(){return bstLoad().positionen}
+function bstSymbole(){const out=[],seen={};bstPositionen().forEach(p=>{if(!seen[p.symbol]){seen[p.symbol]=1;out.push(p.symbol)}});return out}
+function bstById(id){const l=bstPositionen();for(let i=0;i<l.length;i++)if(l[i].id===id)return l[i];return null}
+function bstAdd(pos){const v=bstValidPos(pos);if(!v)return null;bstLoad().positionen.push(v);bstSave();return v}
+function bstRemove(id){const b=bstLoad();for(let i=0;i<b.positionen.length;i++)if(b.positionen[i].id===id){b.positionen.splice(i,1);bstSave();return true}return false}
+// Export/Import als Text-Code (Contract `_export`): Base64 nur als Transportverpackung — nichts wird hochgeladen.
+function bstB64(s){const b=new TextEncoder().encode(s);let o='';for(let i=0;i<b.length;i++)o+=String.fromCharCode(b[i]);return btoa(o)}
+function bstUnB64(b64){const bin=atob(b64),a=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)a[i]=bin.charCodeAt(i);return new TextDecoder().decode(a)}
+function bstExportCode(){return BST_CODE_PREFIX+bstB64(JSON.stringify(bstLoad()))}
+function bstImportCode(code){
+  const t=String(code==null?'':code).trim().replace(/\s+/g,'');
+  if(t.indexOf(BST_CODE_PREFIX)!==0)return {ok:false,fehler:'Code nicht erkannt – er beginnt mit '+BST_CODE_PREFIX};
+  let obj=null;try{obj=JSON.parse(bstUnB64(t.slice(BST_CODE_PREFIX.length)))}catch(e){return {ok:false,fehler:'Code ist beschädigt und konnte nicht gelesen werden.'}}
+  if(!obj||typeof obj!=='object'||!Array.isArray(obj.positionen))return {ok:false,fehler:'Code enthält keinen Bestand.'};
+  if(obj.schema!==BST_SCHEMA)return {ok:false,fehler:'Code stammt aus einer anderen Modellversion und wird nicht übernommen.'};
+  const roh=obj.positionen.length,clean=bstSanitize(obj);
+  BESTAND=clean;bstSave();bstMigMark();
+  return {ok:true,uebernommen:clean.positionen.length,verworfen:roh-clean.positionen.length};
+}
+// In-Flight-Dedupe: parallele Aufrufe teilen sich EINEN Request; Ergebnis bleibt in WLCACHE.
+// Wird in V2-1 DEFINIERT, aber nicht aufgerufen — es gibt noch keine Flaeche, die Live-Kurse
+// braucht, und ohne Nutzeraktion geht kein Positionssymbol ins Netz (ADR-906).
+function ywFetch(sym){
+  if(WLCACHE[sym]&&WLCACHE[sym].candles)return Promise.resolve(WLCACHE[sym]);
+  if(WLINFLIGHT[sym])return WLINFLIGHT[sym];
+  const p=(async()=>{
+    const u='https://query1.finance.yahoo.com/v8/finance/chart/'+encodeURIComponent(sym)+'?interval=1d&range=1y';
+    const proxies=['https://api.allorigins.win/raw?url=','https://corsproxy.io/?url='];
+    for(const px of proxies){
+      try{
+        const r=await fetch(px+encodeURIComponent(u),{cache:'no-store'});if(!r.ok)continue;
+        const j=await r.json(),res=j.chart&&j.chart.result&&j.chart.result[0];if(!res)continue;
+        const meta=res.meta||{},ts=res.timestamp||[],q=((res.indicators&&res.indicators.quote)||[{}])[0]||{};
+        const candles=[];for(let i=0;i<ts.length;i++){const o=q.open&&q.open[i],h=q.high&&q.high[i],l=q.low&&q.low[i],c=q.close&&q.close[i];if(o==null||h==null||l==null||c==null)continue;candles.push({time:ts[i],open:+(+o).toFixed(2),high:+(+h).toFixed(2),low:+(+l).toFixed(2),close:+(+c).toFixed(2),volume:(q.volume&&q.volume[i])||0})}
+        let price=meta.regularMarketPrice;if(price==null&&candles.length)price=candles[candles.length-1].close;
+        // Tagesmove AUSSCHLIESSLICH aus den letzten zwei Kerzen (Bug-Log 03.08.): Yahoos
+        // meta.chartPreviousClose ist der Schluss VOR dem Beginn des angefragten range (hier 1y),
+        // also NICHT der Vortagesschluss; meta.previousClose fehlt in dieser Antwort ganz. Genau so
+        // leitet radar.py den Tagesmove ab. pctPer ist getrennt die Veraenderung ueber den geladenen
+        // Zeitraum — jede Prozentzahl wird mit ihrem Bezugszeitraum beschriftet.
+        const n=candles.length;
+        const pct=(n>1&&candles[n-2].close)?(candles[n-1].close-candles[n-2].close)/candles[n-2].close*100:null;
+        const pctPer=(n>1&&candles[0].close)?(candles[n-1].close-candles[0].close)/candles[0].close*100:null;
+        const out={sym,price,pct,pctPer,perFrom:n>1?candles[0].time:null,candles,cur:meta.currency||''};WLCACHE[sym]=out;return out;
+      }catch(e){}
+    }
+    return null;
+  })();
+  WLINFLIGHT[sym]=p;p.finally(()=>{delete WLINFLIGHT[sym]});return p;
+}
+// Kerzen der Mover im Hintergrund vorladen. Ebenfalls nur DEFINIERT — die Mover-Flaeche
+// entsteht erst in V2-2, und erst dort wird ueber den Aufrufzeitpunkt entschieden.
+function mvPrefetch(){const day=(MARKET&&MARKET)||{};[].concat(day.gainers||[],day.losers||[]).forEach(m=>{if(m&&m.t&&!(m.candles&&m.candles.d1)&&!(WLCACHE[m.t]&&WLCACHE[m.t].candles))ywFetch(m.t).catch(()=>{})})}
+
+/* ===== Relevanz-Join (ADR-906 §5.3) — unveraendert uebernommen ===================
+   EINE gekapselte Stelle verbindet eine Position mit allen Feeds. Der Join-Schluessel
+   ist ausschliesslich das Yahoo-Symbol; er heisst je Datei anders (radar: items[].symbol,
+   quotes: quotes[<symbol>], earnings: eintraege[].ticker, ticker-index: ticker[<SYMBOL>],
+   candidates: items[].ticker). Fehlende Quellen fuehren zu fehlenden Feldern, nie zu Fehlern. */
+const BSTBESUCHKEY='aa-bestand-besuch';let BST_LETZTER_BESUCH=null;
+function bstBesuchLesen(){try{const v=localStorage.getItem(BSTBESUCHKEY);return /^\d{4}-\d{2}-\d{2}$/.test(String(v))?v:null}catch(e){return null}}
+function bstBesuchSchreiben(){try{localStorage.setItem(BSTBESUCHKEY,bstToday())}catch(e){}}
+// radar.json ist optional: fehlt sie, ist sie ungueltig oder steht _meta.status auf 'failed',
+// entfaellt NUR die Signal-Spalte (Contract _meta.optionale_dateien, design-system §8.1).
+function radarOk(){return !!(RADAR&&RADAR._meta&&RADAR._meta.status!=='failed'&&Array.isArray(RADAR.items))}
+function radarItem(sym){if(!radarOk())return null;const l=RADAR.items;for(let i=0;i<l.length;i++)if(l[i]&&l[i].symbol===sym)return l[i];return null}
+function radarTopTrigger(it){if(!it||!Array.isArray(it.triggers)||!it.triggers.length)return null;let b=null;it.triggers.forEach(t=>{if(!t||!t.label)return;if(!b||(+t.weight||0)>(+b.weight||0))b=t});return b}
+// Kurs aus quotes.json — Tagesmove IMMER aus den letzten zwei Kerzen, NIE aus 'pct'
+// (Contract v0.15: pct ist die Perioden-Aenderung). Kein Netzaufruf.
+function bstQuote(sym){
+  const q=(QUOTES&&QUOTES.quotes)?QUOTES.quotes[sym]:null;
+  if(q&&q.price!=null){
+    const c=Array.isArray(q.candles)?q.candles:[],n=c.length;
+    const tag=(n>1&&c[n-2]&&c[n-2].close)?(c[n-1].close-c[n-2].close)/c[n-2].close*100:null;
+    return {price:+q.price,cur:q.cur||'',pct:tag,candles:c,quelle:'feed'};
+  }
+  const d=WLCACHE[sym];
+  if(d&&d.price!=null)return {price:d.price,cur:d.cur||'',pct:d.pct,candles:d.candles||[],quelle:'live'};
+  return null;
+}
+function bstEarnings(sym){
+  if(!(EARN&&Array.isArray(EARN.eintraege)))return {naechster:null,letzter:null,tage:null};
+  const heute=bstToday();let naechster=null,letzter=null;
+  EARN.eintraege.forEach(e=>{
+    if(!e||String(e.ticker||'').toUpperCase()!==sym.toUpperCase())return;
+    const d=String(e.date||'');if(!/^\d{4}-\d{2}-\d{2}$/.test(d))return;
+    if(d>=heute&&String(e.status||'')!=='reported'){if(!naechster||d<naechster.date)naechster=e}
+    else if(!letzter||d>letzter.date)letzter=e;
+  });
+  let tage=null;
+  if(naechster)tage=Math.round((new Date(naechster.date+'T00:00:00')-new Date(heute+'T00:00:00'))/86400000);
+  return {naechster:naechster,letzter:letzter,tage:tage};
+}
+function bstAuftritte(sym){
+  const t=(TICKIDX&&TICKIDX.ticker)?TICKIDX.ticker[sym.toUpperCase()]:null;
+  if(!t||!Array.isArray(t.auftritte))return {name:(t&&t.name)||'',liste:[]};
+  const l=t.auftritte.filter(a=>a&&/^\d{4}-\d{2}-\d{2}$/.test(String(a.date||''))).slice();
+  l.sort((a,b)=>a.date<b.date?1:a.date>b.date?-1:0);
+  return {name:t.name||'',liste:l};
+}
+function bstKandidat(sym){if(!(CANDIDATES&&Array.isArray(CANDIDATES.items)))return null;const l=CANDIDATES.items;for(let i=0;i<l.length;i++)if(l[i]&&String(l[i].ticker||'').toUpperCase()===sym.toUpperCase())return l[i];return null}
+function bstJoin(p){
+  const sym=p.symbol;
+  const r=radarItem(sym),auf=bstAuftritte(sym),ea=bstEarnings(sym),ka=bstKandidat(sym),ku=bstQuote(sym);
+  const neu=!!(BST_LETZTER_BESUCH&&auf.liste.length&&auf.liste[0].date>BST_LETZTER_BESUCH);
+  const name=auf.name||(r&&r.name)||(ea.naechster&&ea.naechster.name)||(ea.letzter&&ea.letzter.name)||(ka&&ka.name)||'';
+  return {pos:p,symbol:sym,name:name,kurs:ku,radar:r,trigger:radarTopTrigger(r),
+    earn:ea,auftritte:auf.liste,neuerAuftritt:neu,kandidat:ka};
+}
+/* Sortierwert nach ADR-906 §5.3. Er wird NIE angezeigt und NIE "Score" genannt — er sortiert nur.
+   Fuer Symbole ohne Radar-Eintrag gilt radar_score = 0; es wird kein Ersatzsignal erfunden. */
+function bstRelevanz(j){
+  let r=(j.radar&&isFinite(+j.radar.score))?+j.radar.score:0;
+  if(j.pos.typ!=='beobachtung')r+=20;
+  if(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)r+=15;
+  if(j.pos.typ==='derivat')r+=10;
+  if(j.neuerAuftritt)r+=10;
+  return r;
+}
+function bstJoinAlle(){const l=bstPositionen().map(bstJoin);l.forEach(j=>{j._r=bstRelevanz(j)});l.sort((a,b)=>b._r-a._r||String(a.symbol).localeCompare(String(b.symbol)));return l}
+
+/* ===== GPT · Jetzt: reine Auswahlfunktionen, kein Bestandsversand ============== */
+const nowObj=v=>!!v&&typeof v==='object'&&!Array.isArray(v);
+const nowText=v=>typeof v==='string'?v.trim():'';
+const nowNum=v=>typeof v==='number'&&Number.isFinite(v);
+const nowArray=v=>Array.isArray(v)?v:[];
+function nowISO(v){return typeof v==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&!isNaN(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v}
+function nowDate(v){if(!nowText(v))return '';const d=new Date(v);return Number.isFinite(d.getTime())?d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'}):''}
+function nowStamp(v){if(!nowText(v))return '';const d=new Date(v);return Number.isFinite(d.getTime())?d.toLocaleString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'})+' Uhr':''}
+function nowBold(v){return escapeHtml(nowText(v)).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')}
+function nowLink(u,label){return safeUrl(u)?safeLink(escapeHtml(safeUrl(u)),label):escapeHtml(label)}
+function nowPct(p){return nowNum(p)?`<span class="num ${p>0?'up':p<0?'down':'muted'}">${escapeHtml(fp(p))} <span class="t-small">Tag</span></span>`:'<span class="muted">Tag unbekannt</span>'}
+function nowPrio(t){return Number.isInteger(t.prio)&&t.prio>=1&&t.prio<=3?t.prio:0}
+function nowPrioText(t){return ({3:'Hohe Digest-Priorität',2:'Mittlere Digest-Priorität',1:'Niedrige Digest-Priorität'})[nowPrio(t)]||'Ohne Digest-Priorität'}
+function nowTopics(day){return nowArray(day&&day.topics).filter(t=>nowObj(t)&&nowText(t.title)).slice().sort((a,b)=>nowPrio(b)-nowPrio(a))}
+function nowCandles(rows){
+  if(!Array.isArray(rows)||!rows.length)return [];
+  let prev=-Infinity;
+  for(const c of rows){
+    if(!nowObj(c)||!['time','open','high','low','close'].every(k=>nowNum(c[k]))||!Number.isInteger(c.time)||c.time<=prev||c.high<Math.max(c.open,c.close)||c.low>Math.min(c.open,c.close)||c.low>c.high)return [];
+    prev=c.time;
+  }
+  return rows.map(c=>({time:c.time,open:c.open,high:c.high,low:c.low,close:c.close}));
+}
+// Auch bei einer defekten OHLC-Reihe können zwei gültige Schlusskurse vorliegen.
+// Nur der Close-Pfad wird dafür gefiltert; der Chart erhält weiterhin die Originalreihe.
+function nowCloses(rows){let prev=-Infinity;const out=[];for(const c of nowArray(rows)){if(!nowObj(c)||!nowNum(c.time)||!nowNum(c.close))continue;if(c.time<=prev)return [];prev=c.time;out.push(c)}return out}
+function nowDayMove(rows){const c=nowCloses(rows),n=c.length;return n>1&&c[n-2].close!==0?(c[n-1].close-c[n-2].close)/c[n-2].close*100:null}
+function nowQuoteFeed(j){
+  if(!nowObj(j)||!nowObj(j.quotes))return null;
+  const quotes=Object.create(null);
+  Object.entries(j.quotes).forEach(([sym,q])=>{if(!validTicker(sym)||!nowObj(q))return;quotes[sym]={...q,price:nowNum(q.price)?q.price:null,rawCandles:nowArray(q.candles),candles:nowCloses(q.candles),cur:nowText(q.cur),as_of:nowText(q.as_of)}});
+  return {...j,quotes};
+}
+function nowQuote(sym){
+  const q=bstQuote(sym);if(!q)return null;
+  const raw=q.quelle==='feed'?QUOTES.quotes[sym]:WLCACHE[sym];
+  const rows=q.quelle==='feed'?raw.rawCandles:raw.candles;
+  return {price:nowNum(q.price)?q.price:null,cur:nowText(q.cur),pct:nowDayMove(rows),candles:nowCandles(rows),as_of:q.quelle==='feed'?nowStamp(raw.as_of):''};
+}
+let NOW_TOPICS=[],NOW_GROSS_DONE=false;
+function renderDigest(){
+  const box=document.getElementById('jetztDigest'),day=DATA[current];NOW_TOPICS=nowTopics(day);
+  const date=nowDate(current),meta=t=>[date,nowText(t.time),nowPrioText(t)].filter(Boolean).map(escapeHtml).join(' · ');
+  let html='';
+  if(NOW_TOPICS.length){
+    const t=NOW_TOPICS[0],excerpt=nowText(t.einordnung)||nowText(t.body),short=excerpt.length>280?excerpt.slice(0,280).replace(/\s+\S*$/,'')+' …':excerpt;
+    const source=nowArray(t.sources).find(s=>nowObj(s)&&nowText(s.l));
+    html=`<article class="card digest-lead"><div class="digest-meta t-small num"><span>Fokusgeschichte · ${meta(t)}</span>${source?`<span>${escapeHtml(source.l)}</span>`:''}</div><h3>${escapeHtml(t.title)}</h3>${short?`<p class="excerpt">${nowBold(short)}</p>`:''}<button type="button" class="primary" data-topic="0" data-focus-key="topic-0">Vollständigen Artikel lesen <span aria-hidden="true">↗</span></button></article>`;
+    if(NOW_TOPICS.length>1)html+='<div class="now-grid follow-signals">'+NOW_TOPICS.slice(1,3).map((t,i)=>`<button type="button" class="card topic-button" data-topic="${i+1}" data-focus-key="topic-${i+1}"><span class="t-small num">${meta(t)}</span><span class="t-h3">${escapeHtml(t.title)}</span></button>`).join('')+'</div>';
+    if(NOW_TOPICS.length>3)html+='<section class="news-list" aria-labelledby="weitereTitel"><h3 id="weitereTitel">Weitere Meldungen</h3>'+NOW_TOPICS.slice(3).map((t,i)=>`<button type="button" class="topic-button news-row" data-topic="${i+3}" data-focus-key="topic-${i+3}"><span class="t-small num">${meta(t)}</span><span>${escapeHtml(t.title)}</span></button>`).join('')+'</section>';
+  }else html='<p class="muted">Kein Tagesdigest verfügbar.</p>';
+  const reads=nowArray(day&&day.reads).filter(r=>nowObj(r)&&nowText(r.h));
+  if(reads.length)html+='<section class="read-links"><h3>Weiterlesen</h3><ul>'+reads.map(r=>`<li>${nowLink(r.u,r.h)}${nowText(r.s)?` <span class="t-small muted">· ${escapeHtml(r.s)}</span>`:''}</li>`).join('')+'</ul></section>';
+  box.innerHTML=html;
+}
+function openArticle(i,trigger){
+  const t=NOW_TOPICS[i];if(!t)return;
+  document.getElementById('articleTitle').textContent=t.title;
+  let html=`<p class="t-small muted num">${[nowDate(current),nowText(t.time),nowPrioText(t)].filter(Boolean).map(escapeHtml).join(' · ')}</p>`;
+  if(safeUrl(t.img))html+=`<img src="${escapeHtml(safeUrl(t.img))}" alt="" loading="lazy">`;
+  if(nowText(t.body))html+=`<section><p>${nowBold(t.body)}</p></section>`;
+  [['timing','Zeitlicher Bezug'],['verlauf','Verlauf'],['einordnung','Einordnung']].forEach(([k,title])=>{if(nowText(t[k]))html+=`<section><h4>${title}</h4><p>${nowBold(t[k])}</p></section>`});
+  const terms=nowArray(t.begriffe).filter(b=>nowObj(b)&&nowText(b.term));
+  if(terms.length)html+='<section><h4>Begriffe</h4><dl>'+terms.map(b=>`<dt>${escapeHtml(b.term)}</dt><dd>${nowBold(b.erklaerung)}</dd>`).join('')+'</dl></section>';
+  const sources=nowArray(t.sources).filter(s=>nowObj(s)&&nowText(s.l));
+  if(sources.length)html+='<section><h4>Quellen</h4>'+sources.map(s=>`<div>${nowLink(s.u,s.l)}</div>`).join('')+'</section>';
+  const body=document.getElementById('articleBody');body.innerHTML=html;
+  body.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>img.remove(),{once:true}));
+  nowOpenDialog('articleOverlay',trigger);
+}
+function bstHatEreignis(j){return !!(j.trigger||(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)||j.neuerAuftritt)}
+function nowVideo(a){
+  if(!a)return '<p class="t-small muted">Kein Videoauftritt verfügbar.</p>';
+  let u=safeUrl(a.url),timed=false;
+  if(u){const parsed=new URL(u);if(!['youtube.com','www.youtube.com','m.youtube.com','youtu.be'].includes(parsed.hostname))u='';else timed=!!parsed.searchParams.get('t')}
+  return `<div class="focus-video"><p class="t-small muted">Letzter Videoauftritt · <span class="num">${escapeHtml(nowDate(a.date))}</span>${nowText(a.channel)?'<br>'+escapeHtml(a.channel):''}</p>${u?nowLink(u,timed?'Zur Stelle im Video ↗':'Zum Video (ohne Zeitmarke)'):'<p class="t-small muted">Kein sicherer Videolink verfügbar.</p>'}</div>`;
+}
+function nowFocusCard(j){
+  const q=nowQuote(j.symbol),events=[];
+  if(j.trigger)events.push(escapeHtml(j.trigger.label)+(j.trigger.value!=null?' · '+escapeHtml(j.trigger.value):''));
+  if(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)events.push('Earnings · '+escapeHtml(nowDate(j.earn.naechster.date))+(j.earn.tage===0?' · heute':''));
+  if(j.neuerAuftritt&&j.auftritte.length)events.push('Neuer Videoauftritt · '+escapeHtml(nowDate(j.auftritte[0].date)));
+  return `<article class="card focus-card" data-position="${escapeHtml(j.pos.id)}"><div class="focus-top"><div class="focus-name"><h4>${escapeHtml(j.name||j.symbol)}</h4><p class="t-small muted">${escapeHtml(j.symbol)} · ${escapeHtml(BST_TYP[j.pos.typ])}</p></div><div class="focus-price">${q&&q.price!=null?`<p class="num">${q.price.toLocaleString('de-DE',{maximumFractionDigits:2})} ${escapeHtml(q.cur)}</p>`:''}${nowPct(q&&q.pct)}</div></div>${events.length?'<ul class="focus-events t-small">'+events.map(t=>'<li>'+t+'</li>').join('')+'</ul>':''}${nowVideo(j.auftritte[0])}<div class="focus-actions">${q&&q.as_of?'<span class="t-small muted num">Kursstand: '+escapeHtml(q.as_of)+'</span>':''}<button type="button" class="ghost" data-stock="${escapeHtml(j.symbol)}" data-focus-key="stock-${escapeHtml(j.pos.id)}" aria-label="Chart für ${escapeHtml(j.name||j.symbol)} öffnen">Chart ansehen</button></div></article>`;
+}
+function renderFokus(){
+  const box=document.getElementById('fokusBody'),active=box.contains(document.activeElement)?document.activeElement:null,key=active&&active.dataset.focusKey;
+  const joins=bstJoinAlle(),matches=joins.filter(bstHatEreignis),rows=(matches.length?matches:joins).slice(0,3);
+  document.getElementById('fokusAnzahl').textContent=joins.length?`${rows.length} von ${joins.length} Positionen`:'';
+  if(!joins.length)box.innerHTML='<div class="card"><p>Hinterlege deine Werte – danach siehst du hier passende Ereignisse, Termine und Videoauftritte.</p><p class="t-small muted">Formatbeispiele, keine Empfehlung:</p><div class="ghostreihe">'+['AAPL','SAP.DE','^GDAXI'].map(s=>`<button type="button" class="ghost" data-add="${s}" data-focus-key="add-${s}">${s}</button>`).join('')+'</div></div>';
+  else{
+    const availability=[radarOk(),!!(EARN&&EARN._meta?.status!=='failed'),!!(TICKIDX&&TICKIDX._meta?.status!=='failed')];
+    let note='';if(!NOW_GROSS_DONE)note='Ereignisdaten werden ergänzt.';
+    else if(!availability.some(Boolean))note='Keine Ereignisdaten verfügbar.';
+    else if(!availability.every(Boolean))note='Ereignisdaten teilweise nicht verfügbar.';
+    else if(!matches.length)note='Keine passenden Ereignisse in den verfügbaren Daten.';
+    box.innerHTML=(note?`<p class="t-small muted" style="margin-bottom:var(--sp-3)">${note}</p>`:'')+'<div class="now-grid focus-grid">'+rows.map(nowFocusCard).join('')+'</div>';
+  }
+  if(active){const replacement=key&&Array.from(box.querySelectorAll('[data-focus-key]')).find(el=>el.dataset.focusKey===key);(replacement||document.getElementById('fokusTitel')).focus({preventScroll:true})}
+}
+function nowAdd(raw){const symbol=bstNormEingabe(raw);if(!symbol||bstPositionen().some(p=>p.symbol===symbol&&p.typ==='beobachtung'))return;bstAdd({id:bstNextId(bstLoad()),symbol,typ:'beobachtung',added_at:bstToday()});renderFokus()}
+function nowIndices(){return nowArray(MARKET&&MARKET.indices).filter(i=>nowObj(i)&&nowText(i.nm)&&nowText(i.val)&&nowNum(i.pct))}
+function nowMovers(){
+  const valid=a=>nowArray(a).filter(m=>nowObj(m)&&validTicker(m.t)&&nowText(m.n)&&nowNum(m.p));
+  const groups=[['Gewinner',valid(MARKET&&MARKET.gainers)],['Verlierer',valid(MARKET&&MARKET.losers)],['Aktiv',valid(MARKET&&MARKET.actives)]].filter(g=>g[1].length);
+  const moves=valid(MARKET&&MARKET.gainers).concat(valid(MARKET&&MARKET.losers)).sort((a,b)=>Math.abs(b.p)-Math.abs(a.p));
+  const compact=[],seen=new Set();moves.concat(valid(MARKET&&MARKET.actives)).forEach(m=>{if(compact.length<5&&!seen.has(m.t)){seen.add(m.t);compact.push(m)}});
+  return {groups,compact,extra:groups.reduce((n,g)=>n+g[1].length,0)>compact.length};
+}
+let NOW_INDICES=[],NOW_MOVERS=null,NOW_MOVERS_OPEN=false;
+function nowIndexRow(i,index,chart){
+  const has=['m15','h1','d1','wk1'].some(k=>nowCandles(i.candles&&i.candles[k]).length);
+  return `<div class="index-row"><div><p>${escapeHtml(i.nm)}</p>${chart&&!has?'<span class="t-small muted">Keine Chartdaten verfügbar</span>':''}</div><div class="index-number num"><p>${escapeHtml(i.val)}</p>${nowPct(i.pct)}</div>${chart&&has?`<button type="button" class="ghost" data-index="${index}" data-focus-key="index-${index}" aria-label="Chart für ${escapeHtml(i.nm)} öffnen">Chart</button>`:''}</div>`;
+}
+function renderMarkt(){
+  NOW_INDICES=nowIndices();NOW_MOVERS=nowMovers();
+  const fg=MARKET&&MARKET.feargreed,fgOK=nowObj(fg)&&nowNum(fg.score)&&fg.score>=0&&fg.score<=100;
+  const section=document.getElementById('jetztMarkt');section.hidden=!fgOK&&!NOW_INDICES.length&&!NOW_MOVERS.groups.length;if(section.hidden)return;
+  document.getElementById('marktStand').textContent=nowStamp(MARKET.updated)?'Marktstand: '+nowStamp(MARKET.updated):'';
+  let html='<div class="market-overview">';
+  if(fgOK){const theta=Math.PI*(1-fg.score/100),x=65+50*Math.cos(theta),y=62-50*Math.sin(theta);html+=`<div class="card fg-card"><svg class="fg-arc" viewBox="0 0 130 84" role="img" aria-label="Fear and Greed: ${fg.score} von 100, ${escapeHtml(nowText(fg.rating))}"><path d="M15 62 A50 50 0 0 1 115 62" fill="none" stroke="var(--line)" stroke-width="8"/><path d="M15 62 A50 50 0 0 1 115 62" fill="none" stroke="currentColor" stroke-width="8" pathLength="100" stroke-dasharray="${fg.score} 100"/><circle cx="${x}" cy="${y}" r="5" fill="var(--ink)"/><text x="14" y="81" fill="var(--muted)" font-size="11">0</text><text x="97" y="81" fill="var(--muted)" font-size="11">100</text></svg><div><p class="t-small muted">Fear &amp; Greed</p><p class="t-h1 num">${fg.score}<span class="t-small muted"> / 100</span></p><p class="t-small">${escapeHtml(nowText(fg.rating))}</p></div></div>`}
+  const selected=['Nasdaq 100 Future','DAX','Brent Öl'].map(n=>NOW_INDICES.find(i=>i.nm===n)).filter(Boolean);
+  if(selected.length)html+='<div class="card index-compact">'+selected.map(i=>nowIndexRow(i,0,false)).join('')+'</div>';
+  html+='</div>';
+  if(NOW_INDICES.length)html+='<button type="button" class="ghost market-toggle" id="indicesToggle" aria-expanded="false" aria-controls="allIndices">Alle Indizes &amp; Charts <span aria-hidden="true">⌄</span></button><div class="card market-detail" id="allIndices" hidden>'+NOW_INDICES.map((i,n)=>nowIndexRow(i,n,true)).join('')+'</div>';
+  if(NOW_MOVERS.groups.length)html+='<section class="movements"><h3>Auffällige Bewegungen</h3><p class="t-small muted">Nach absoluter Tagesänderung · zum vorherigen Schluss</p><div id="moverRows"></div>'+(NOW_MOVERS.extra?'<button type="button" class="ghost market-toggle" id="moversToggle" aria-expanded="false" aria-controls="moverRows">Alle Bewegungen <span aria-hidden="true">⌄</span></button>':'')+'</section>';
+  document.getElementById('marktBody').innerHTML=html;renderMoverRows();
+}
+function nowMoverRow(m,n){return `<div class="mover-row"><div><p>${escapeHtml(m.n)}</p><p class="t-small muted">${escapeHtml(m.t)}</p></div><div class="index-number">${nowPct(m.p)}</div><button type="button" class="ghost" data-mover="${n}" data-focus-key="mover-${n}" aria-label="Chart für ${escapeHtml(m.n)} öffnen">Chart</button></div>`}
+let NOW_VISIBLE_MOVERS=[];
+function renderMoverRows(){
+  const box=document.getElementById('moverRows');if(!box)return;NOW_VISIBLE_MOVERS=[];
+  const row=m=>{const n=NOW_VISIBLE_MOVERS.push(m)-1;return nowMoverRow(m,n)};
+  box.innerHTML=NOW_MOVERS_OPEN?NOW_MOVERS.groups.map(([label,rows])=>'<section class="market-detail"><h4>'+label+'</h4>'+rows.map(row).join('')+'</section>').join(''):NOW_MOVERS.compact.map(row).join('');
+}
+document.getElementById('raum-jetzt').addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  if(b.dataset.topic!=null)openArticle(+b.dataset.topic,b);
+  else if(b.dataset.add)nowAdd(b.dataset.add);
+  else if(b.dataset.stock)nowOpenStock({t:b.dataset.stock,n:bstJoinAlle().find(j=>j.symbol===b.dataset.stock)?.name||b.dataset.stock},b);
+  else if(b.dataset.mover!=null)nowOpenStock(NOW_VISIBLE_MOVERS[+b.dataset.mover],b);
+  else if(b.dataset.index!=null)nowOpenIndex(NOW_INDICES[+b.dataset.index],b);
+  else if(b.id==='indicesToggle'){const open=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(open));document.getElementById('allIndices').hidden=!open}
+  else if(b.id==='moversToggle'){NOW_MOVERS_OPEN=!NOW_MOVERS_OPEN;b.setAttribute('aria-expanded',String(NOW_MOVERS_OPEN));b.textContent=NOW_MOVERS_OPEN?'Weniger Bewegungen ⌃':'Alle Bewegungen ⌄';renderMoverRows();b.focus({preventScroll:true})}
+});
+
+function chartOpts(cont,h){return {width:cont.clientWidth,height:h,layout:{background:{color:'transparent'},textColor:tok('--muted'),fontFamily:'InterVariable,-apple-system,system-ui,sans-serif'},grid:{vertLines:{color:tok('--line')},horzLines:{color:tok('--line')}},timeScale:{borderColor:tok('--line')},rightPriceScale:{borderColor:tok('--line')},crosshair:{mode:0}}}
+let stkChart=null,stkIx=null,stkLevels=null;
+function applyStkLevels(chart,series,ctx){
+  if(!ctx)return;
+  if(ctx.levels){
+    const lv=ctx.levels;
+    series.createPriceLine({price:lv.entry_low,color:tok('--accent'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:'Zone'});
+    series.createPriceLine({price:lv.entry_high,color:tok('--accent'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:'Zone'});
+    series.createPriceLine({price:lv.stop,color:tok('--down'),lineWidth:1,lineStyle:0,axisLabelVisible:true,title:'Stop'});
+    series.createPriceLine({price:lv.target,color:tok('--up'),lineWidth:1,lineStyle:0,axisLabelVisible:true,title:'Ziel'});
+  }
+  if(ctx.fib){
+    const pts=['a','b','c'].map(k=>({t:candFibDate(ctx.fib.anchors[k].date),v:Number(ctx.fib.anchors[k].price)})).filter(p=>p.t!=null).sort((x,y)=>x.t-y.t);
+    if(pts.length===3){
+      const abc=chart.addLineSeries({color:tok('--muted'),lineWidth:1,priceLineVisible:false,lastValueVisible:false});
+      abc.setData(pts.map(p=>({time:p.t,value:p.v})));
+    }
+    ctx.fib.extensions.forEach(e=>{
+      const r=Number(e.ratio),label=CAND_FIB_RATIO_LABEL[r]||r.toFixed(3);
+      series.createPriceLine({price:Number(e.price),color:tok('--accent'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:label+' · '+candNum(e.price,2)});
+    });
+  }
+}
+function openStock(a,levels,detail){if(!a||!a.candles||!a.candles.d1||!a.candles.d1.length)return;stkIx=a;stkLevels=(levels&&typeof levels==='object')?levels:null;
+  const pb=document.getElementById('stkPos');if(pb){pb.innerHTML=detail?bstDetailHTML(detail):'';pb.scrollTop=0}document.getElementById('stkTitle').textContent=a.n||a.t;document.getElementById('stkSub').textContent=a.t+' · '+fpLab(a.p,'Tag')+(a.pp!=null?' · '+fpLab(a.pp,perLabel(a.pf)):'');document.querySelectorAll('#stkseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='90'));document.getElementById('stkOverlay').classList.add('open');setTimeout(()=>buildStk(90),30)}
+function buildStk(days){const cont=document.getElementById('stklw');cont.innerHTML='';stkChart=LightweightCharts.createChart(cont,chartOpts(cont,360));const cUp=tok('--up'),cDn=tok('--down');const s=stkChart.addCandlestickSeries({upColor:cUp,downColor:cDn,wickUpColor:cUp,wickDownColor:cDn,borderVisible:false});let data=stkIx.candles.d1;if(days){const cut=Math.floor(Date.now()/1000)-days*86400;const f=data.filter(c=>c.time>=cut);if(f.length)data=f}s.setData(data);applyStkLevels(stkChart,s,stkLevels);stkChart.timeScale().fitContent()}
+
+/* Zugänglichkeit und Degrade um den unveränderten V1-Stockkern. */
+function tok(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
+function fp(p){return (p>=0?'+':'')+(+p).toFixed(2)+' %'}
+function fpLab(p,lab){return (p==null||!isFinite(p))?'–':fp(p)+(lab?' '+lab:'')}
+function shortDate(d){return new Date(d).toLocaleDateString('de-DE',{day:'2-digit',month:'short'})}
+function perLabel(fromTs){if(!fromTs)return 'Zeitraum';try{return 'seit '+shortDate(fromTs*1000)}catch(e){return 'Zeitraum'}}
+let NOW_DIALOG=null,NOW_RETURN=null,NOW_INERT=[],NOW_STOCK_TICKET=0,NOW_STOCK_DAYS=90;
+function nowOpenDialog(id,trigger){
+  const dialog=document.getElementById(id);if(NOW_DIALOG)nowCloseDialog();NOW_RETURN={node:trigger,key:trigger&&trigger.dataset.focusKey};
+  NOW_INERT=Array.from(document.querySelectorAll('body > header,body > main,body > nav')).map(el=>[el,el.inert]);NOW_INERT.forEach(([el])=>el.inert=true);
+  NOW_DIALOG=dialog;dialog.showModal();dialog.querySelector('h3').focus({preventScroll:true});
+}
+function nowCloseDialog(){
+  if(!NOW_DIALOG)return;const d=NOW_DIALOG;NOW_DIALOG=null;NOW_STOCK_TICKET++;
+  if(stkChart){stkChart.remove();stkChart=null}if(NOW_INDEX_CHART){NOW_INDEX_CHART.remove();NOW_INDEX_CHART=null}
+  d.classList.remove('open');d.close();NOW_INERT.forEach(([el,v])=>el.inert=v);NOW_INERT=[];
+  const ret=NOW_RETURN;NOW_RETURN=null;
+  const target=ret&&(ret.node?.isConnected?ret.node:Array.from(document.querySelectorAll('[data-focus-key]')).find(e=>e.dataset.focusKey===ret.key));
+  (target||document.getElementById('fokusTitel')).focus({preventScroll:true});
+}
+function closeStk(){nowCloseDialog()}
+document.querySelectorAll('dialog.overlay').forEach(d=>{
+  d.addEventListener('cancel',e=>{e.preventDefault();nowCloseDialog()});
+  d.querySelector('[data-close]').addEventListener('click',nowCloseDialog);
+  d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)nowCloseDialog()}});
+  d.addEventListener('keydown',e=>{
+    if(e.key!=='Tab')return;const targets=Array.from(d.querySelectorAll('button:not(:disabled),a[href],input,[tabindex="0"]')).filter(el=>el.getClientRects().length&&!el.closest('[hidden]'));
+    if(!targets.length){e.preventDefault();return}const first=targets[0],last=targets[targets.length-1];
+    if(e.shiftKey&&(document.activeElement===first||!targets.includes(document.activeElement))){e.preventDefault();last.focus()}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
+  });
+});
+function nowStockStatus(text){document.getElementById('stkStatus').textContent=text;document.getElementById('stockArea').hidden=!!text;document.getElementById('stkseg').hidden=!!text}
+async function nowOpenStock(a,trigger){
+  if(!a||!validTicker(a.t))return;
+  document.getElementById('stkTitle').textContent=nowText(a.n)||a.t;document.getElementById('stkSub').textContent=a.t;
+  nowStockStatus('Chartdaten werden geladen …');nowOpenDialog('stkOverlay',trigger);const ticket=++NOW_STOCK_TICKET;
+  if(!window.LightweightCharts){nowStockStatus('Chartbibliothek nicht verfügbar. Bitte später erneut versuchen.');return}
+  let candles=nowCandles(a.candles&&a.candles.d1);if(!candles.length)candles=nowCandles(QUOTES?.quotes?.[a.t]?.rawCandles);
+  if(!candles.length)candles=nowCandles(WLCACHE[a.t]?.candles);
+  if(!candles.length){const live=await ywFetch(a.t);candles=nowCandles(live&&live.candles)}
+  if(ticket!==NOW_STOCK_TICKET||!NOW_DIALOG||NOW_DIALOG.id!=='stkOverlay')return;
+  if(!candles.length){nowStockStatus('Keine Chartdaten verfügbar.');return}
+  nowStockStatus('');NOW_STOCK_DAYS=90;
+  const daily=nowNum(a.p)?a.p:nowDayMove(candles);
+  openStock({t:a.t,n:nowText(a.n)||a.t,p:nowNum(daily)?daily:null,candles:{d1:candles}});
+}
+// Der Text der obigen Funktionsdeklaration bleibt exakt V1. Dieser Adapter verhindert
+// den verzögerten Neuaufbau nach Schließen und fängt Bibliotheksfehler am Rand ab.
+const nowBuildStkCore=buildStk;
+buildStk=function(days){
+  if(NOW_DIALOG?.id!=='stkOverlay')return;
+  if(stkChart){stkChart.remove();stkChart=null}
+  NOW_STOCK_DAYS=days;
+  try{nowBuildStkCore(days);document.querySelectorAll('#stkseg button').forEach(b=>{b.classList.toggle('on',+b.dataset.d===days);b.setAttribute('aria-pressed',String(+b.dataset.d===days))})}
+  catch(e){if(stkChart){stkChart.remove();stkChart=null}nowStockStatus('Chart konnte nicht angezeigt werden.')}
+};
+document.querySelectorAll('#stkseg button').forEach(b=>b.addEventListener('click',()=>buildStk(+b.dataset.d)));
+const NOW_INTERVALS={m15:'15 Minuten',h1:'1 Stunde',d1:'1 Tag',wk1:'1 Woche'};
+let NOW_INDEX=null,NOW_INDEX_CHART=null,NOW_INDEX_RES=null,NOW_INDEX_DAYS=30;
+function nowOpenIndex(ix,trigger){
+  if(!ix)return;NOW_INDEX={...ix,candles:{}};Object.keys(NOW_INTERVALS).forEach(k=>NOW_INDEX.candles[k]=nowCandles(ix.candles&&ix.candles[k]));
+  NOW_INDEX_RES=['d1','h1','m15','wk1'].find(k=>NOW_INDEX.candles[k].length)||null;NOW_INDEX_DAYS=30;
+  document.getElementById('indexTitle').textContent=ix.nm;document.getElementById('indexSub').textContent=ix.val+' · '+fpLab(ix.pct,'Tag');
+  document.getElementById('indexIntervals').innerHTML=Object.entries(NOW_INTERVALS).map(([k,label])=>`<button type="button" data-res="${k}" ${NOW_INDEX.candles[k].length?'':'disabled'}>${label}</button>`).join('');
+  nowOpenDialog('indexOverlay',trigger);nowBuildIndex();
+}
+function nowBuildIndex(){
+  if(NOW_INDEX_CHART){NOW_INDEX_CHART.remove();NOW_INDEX_CHART=null}
+  const status=document.getElementById('indexStatus'),area=document.getElementById('indexArea');status.textContent='';area.hidden=false;
+  if(!window.LightweightCharts||!NOW_INDEX_RES){status.textContent=!window.LightweightCharts?'Chartbibliothek nicht verfügbar.':'Keine Chartdaten verfügbar.';area.hidden=true;return}
+  try{
+    const cont=document.getElementById('indexLw');cont.innerHTML='';NOW_INDEX_CHART=LightweightCharts.createChart(cont,chartOpts(cont,360));
+    const s=NOW_INDEX_CHART.addCandlestickSeries({upColor:tok('--up'),downColor:tok('--down'),wickUpColor:tok('--up'),wickDownColor:tok('--down'),borderVisible:false});
+    const data=NOW_INDEX.candles[NOW_INDEX_RES];s.setData(data);NOW_INDEX_CHART.timeScale().applyOptions({timeVisible:NOW_INDEX_RES==='m15'||NOW_INDEX_RES==='h1'});
+    const end=data[data.length-1].time,from=Math.max(data[0].time,end-NOW_INDEX_DAYS*86400);if(from<end)NOW_INDEX_CHART.timeScale().setVisibleRange({from,to:end});else NOW_INDEX_CHART.timeScale().fitContent();
+    document.querySelectorAll('#indexIntervals button').forEach(b=>{b.classList.toggle('on',b.dataset.res===NOW_INDEX_RES);b.setAttribute('aria-pressed',String(b.dataset.res===NOW_INDEX_RES))});
+    document.querySelectorAll('#indexPresets button').forEach(b=>{b.classList.toggle('on',+b.dataset.days===NOW_INDEX_DAYS);b.setAttribute('aria-pressed',String(+b.dataset.days===NOW_INDEX_DAYS))});
+  }catch(e){if(NOW_INDEX_CHART){NOW_INDEX_CHART.remove();NOW_INDEX_CHART=null}status.textContent='Chart konnte nicht angezeigt werden.';area.hidden=true}
+}
+document.getElementById('indexIntervals').addEventListener('click',e=>{const b=e.target.closest('button[data-res]');if(!b||b.disabled)return;NOW_INDEX_RES=b.dataset.res;nowBuildIndex()});
+document.getElementById('indexPresets').addEventListener('click',e=>{const b=e.target.closest('button[data-days]');if(!b)return;NOW_INDEX_DAYS=+b.dataset.days;nowBuildIndex()});
+function nowChartTheme(){if(stkChart)buildStk(NOW_STOCK_DAYS);if(NOW_INDEX_CHART)nowBuildIndex()}
+new MutationObserver(nowChartTheme).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+matchMedia('(prefers-color-scheme: light)').addEventListener('change',nowChartTheme);
+new ResizeObserver(()=>{if(stkChart)stkChart.resize(document.getElementById('stklw').clientWidth,360);if(NOW_INDEX_CHART)NOW_INDEX_CHART.resize(document.getElementById('indexLw').clientWidth,360)}).observe(document.body);
+
+/* ===== Start ==================================================================== */
+(async function boot(){
+  BST_LETZTER_BESUCH=bstBesuchLesen();
+  bstLoad();                    // Migration laeuft hier genau einmal, idempotent
+  bstBesuchSchreiben();
+  await feedsKlein();
+  renderDigest();renderFokus();renderMarkt();
+  standAnzeigen();
+  feedsGross();                 // bewusst ohne await — blockiert das erste Rendern nicht
+})();
+</script>
+
+</body>
+</html>
