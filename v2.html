@@ -245,11 +245,18 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
      320-px-Gerät nicht für „Recherche" und das Label wird beschnitten (05.09. gegengeprüft,
      indem die Lupe kurzzeitig einen flexiblen Slot bekam). */
   .bnav button[data-raum="suche"]{flex:0 0 48px}
-  /* Die Ellipsis ist seit dem Nutzerentscheid vom 05.09. nur noch Rückfallnetz für Fälle
-     außerhalb unserer Kontrolle (erzwungene Schriftvergrößerung, fehlende Inter-Datei):
-     im Normalfall passt jedes Label vollständig. Engster gemessener Fall ist „Recherche"
-     mit 59 px in einem 60,7-px-Slot bei 320 px — 1,7 px Reserve. Ein längeres Slot-Label
-     braucht deshalb eine neue Messung und darf sich nicht auf die Ellipsis verlassen. */
+  /* SLOT-LABEL-REGEL (Nutzerentscheid 05.09., gilt für jedes künftige Nav-Label):
+     Ein Slot-Label ist einwortig und höchstens so breit wie „Recherche" — 59 px bei 11 px/600
+     mit 0,02em Sperrung. Wird ein Raum umbenannt, wird bei 320 px NEU GEMESSEN
+     (`scrollWidth` gegen `clientWidth`), nicht geschätzt.
+     Budget bei 320 px: Slot 60,7 px, ein Zeichen 6,9 px — die Reserve ist ein Viertel Zeichen.
+     Gemessene Wortbreiten für Umbenennungen: Titel 24,4 · Werte 33,1 · Depot 33 ·
+     Papiere 41,8 · Bestand 45,2 · Portfolio 47 · Favoriten 51,7 · Positionen 58,3 |
+     Grenze 60,7 | Mein Depot 63,1 · Nachrichten 67,7 · Meine Werte 70.
+     Die Ellipsis unten ist NUR Rückfallnetz für Fälle außerhalb unserer Kontrolle (erzwungene
+     Schriftvergrößerung, fehlende Inter-Datei) — kein Sicherheitsgurt für zu lange Labels.
+     Mehr Platz gäbe es nur über § 10- oder Typo-Werte (gemessen: Leiste 98 % ohne Seitenrand
+     +5,2 px, Schrift 10 px +5,0 px). Beides ist Architekten-Entscheid, nicht Frontend. */
   .bnav .lbl{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;
     max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   /* §10: nichts verschwindet hinter der Bar */
