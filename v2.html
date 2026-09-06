@@ -124,19 +124,19 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
   }
 
-  /* §4 Raster (ADR-711): zwei Breakpoints (640/1024), Container
-     min(100% - 2 × Außenrand, 1600px) mit margin-inline:auto.
-     Der Außenrand steckt bewusst NICHT mehr im Innenabstand, sondern ist genau der
-     Rand, den die Formel frei lässt. Zöge er zweimal (einmal aus 100% - 2×Rand,
-     einmal aus dem Padding), wäre der Inhalt bei 1600 px Fenster 1472 statt der in
-     § 4 gerechneten 1536 px — und die Deckel-Schwelle läge bei 1600 statt bei
-     1664 px. So stimmt beides: 1664 - 64 = 1600.
-     Unterhalb von 1244 px (= alter Deckel 1180 + 2×32) ist das Ergebnis
-     zeichengleich zum Vorzustand; dazwischen wächst der Inhalt weiter, was der
-     erklärte Zweck von ADR-711 ist. */
-  .wrap{--rand:var(--sp-4);width:min(100% - 2*var(--rand),1600px);margin-inline:auto}
+  /* §4 Raster (ADR-712, revidiert ADR-711 Punkt 1): zwei Breakpoints (640/1024),
+     Container `calc(100% - 2 × Außenrand)` mit margin-inline:auto — OHNE Deckel.
+     Der 1600er-Deckel liess auf einem 4K-Schirm 2240 px ungenutzt, also 58 % der
+     Flaeche; die Grenze sitzt jetzt am Inhalt (Zeilenlaengen-Deckel § 4.1 und die
+     Spurenregel § 4.2) statt an der Seite.
+     Der Aussenrand steckt bewusst nicht im Innenabstand, sondern ist genau der Rand,
+     den die Formel frei laesst — sonst zoege er zweimal. Ab 1024 px waechst er mit:
+     clamp(32px, 2.5vw, 80px) ergibt 32 px bei 1280, 48 bei 1920, 64 bei 2560 und
+     80 bei 3840 (die Obergrenze greift ab 3200 px). Er ist damit das einzige
+     verbleibende Rahmenmittel der Seite. Mobile 16 px und Tablet 24 px unveraendert. */
+  .wrap{--rand:var(--sp-4);width:calc(100% - 2*var(--rand));margin-inline:auto}
   @media (min-width:640px){.wrap{--rand:var(--sp-6)}}
-  @media (min-width:1024px){.wrap{--rand:var(--sp-8)}}
+  @media (min-width:1024px){.wrap{--rand:clamp(32px,2.5vw,80px)}}
 
   /* §14.1 E1: Standard-Karte — Light mit weichem Schatten, Dark ohne (Tiefe via hellerem --card) */
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
@@ -406,8 +406,36 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   @media (hover:hover) and (pointer:fine){.jz-cta:hover{filter:brightness(1.08)}}
 
   /* §4.2: wiederholende Raster fluid, auto-fit statt zusaetzlicher Breakpoints */
-  .jz-grid{display:grid;gap:var(--sp-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
-  .jz-grid.weit{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+  /* §4.2 Punkt 3 (ADR-712): Ueberzaehlige Breite wird zu zusaetzlichen SPUREN, nie zu
+     gedehntem Inhalt. Die Idealbreite 35rem ist hergeleitet, nicht gesetzt: der
+     gemessene Zeilenlaengen-Deckel 54ch = 493,6 px plus zweimal 24 px Karteninnenrand
+     ergibt 541,6 px, aufgerundet 560 px = 35rem. Eine Inhaltskarte ist damit genau so
+     breit, dass ihr Fliesstext die Zielspanne 60-75 Zeichen trifft.
+     Die Obergrenze 45rem ist PFLICHT: mit einem blossen `1fr` dehnte eine einzelne
+     Karte bei 3680 px Inhalt ueber die ganze Flaeche — genau die Regression, die die
+     Regel verhindern soll. `min(100%, 35rem)` als Untergrenze, damit in einer
+     schmaleren Spalte kein Ueberlauf entsteht.
+
+     WARUM DIE OBERGRENZE AM KIND STEHT UND NICHT IM minmax():
+     Bei `minmax(35rem, 45rem)` sind beide Werte definit, und `auto-fit` bestimmt die
+     Spurenzahl dann nach der GROESSEREN — gemessen am 06.09.: 2098 px Flaeche ergaben
+     `720px 720px`, also zwei Spuren statt der drei, die der Auftrag erwartet
+     (2098 / 560 = 3,7). Mit flexibler Obergrenze richtet sich die Zahl nach den
+     35rem, und der Deckel wirkt am Kind. Damit sind beide Zusagen zugleich erfuellt:
+     die erwartete Spurenzahl 1 / 2 / 3 bei 1920 / 2560 / 3840 px UND „eine einzelne
+     Karte dehnt sich nicht ueber die Flaeche". Interpretations-Entscheid, im Tagebuch
+     festgehalten; die Werte 35rem und 45rem sind unveraendert die aus ADR-712. */
+  .jz-grid{display:grid;gap:var(--sp-4);
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,35rem),1fr))}
+  /* Der Deckel. Eine offene Stelle rechts bleibt dadurch sichtbar, statt kaschiert zu
+     werden (ADR-712, Begruendung — dort steht, wo Inhalt fehlt). */
+  .jz-grid>*,#jzMoverListe>*,#jzMeldungenListe>*{max-width:45rem}
+  /* `.weit` trug frueher eine groessere Mindestbreite; mit der hergeleiteten
+     Idealbreite gibt es nur noch einen Wert. Klasse bleibt fuer das Markup bestehen. */
+  /* Begriffskacheln im Volltextdialog sind KEINE Fliesstextkarten — ein Begriff mit
+     zwei Zeilen Erklaerung braucht keine 35rem. Eigene, ebenfalls schriftrelative
+     Mindestbreite (280 px = 17.5rem), damit sie im Dialog nebeneinander stehen. */
+  .jz-grid.eng{grid-template-columns:repeat(auto-fit,minmax(min(100%,17.5rem),1fr))}
 
   /* Karten, die als Button funktionieren: Text bleibt linksbuendig, Typo geerbt */
   .jz-karte{text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;
@@ -415,8 +443,9 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   /* §4.2 Beispielhafte Containerreaktion: dieselbe Karte steht bei 1600 px links in
      889 px und rechts in 631 px. Ab 700 px Containerbreite bekommt sie eine Stufe
      mehr Luft (--sp-2 -> --sp-3), darunter bleibt sie dicht. Ein Viewport-Breakpoint
-     koennte die beiden Faelle nicht unterscheiden — sie haben dieselbe Fensterbreite. */
-  @container (min-width:700px){.jz-karte{gap:var(--sp-3)}}
+     koennte die beiden Faelle nicht unterscheiden — sie haben dieselbe Fensterbreite.
+     Schwelle in rem (ADR-712 Punkt 6): 700/16 = 43.75rem. */
+  @container (min-width:43.75rem){.jz-karte{gap:var(--sp-3)}}
   @media (hover:hover) and (pointer:fine){
     .jz-karte:hover{border-color:rgba(255,255,255,.18)}
     :root[data-theme="light"] .jz-karte:hover,
@@ -425,16 +454,18 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   /* E0-Listenzeilen in einer Karte: nur --line-Trenner, kein eigener Grund (§14.1) */
   .jz-liste{display:flex;flex-direction:column}
-  /* §4.2 auto-fit fuer das wiederholende Moverraster. Die Mindestbreite ist
-     gemessen, nicht gesetzt: eine Moverzeile braucht 315,7 px, um ohne Kuerzung
-     lesbar zu bleiben (max-content, Messung 06.09.); 320 px geben etwas Reserve
-     fuer laengere Namen. Ehrlich dazugesagt: bei den heutigen Spaltenbreiten
-     ergibt das immer genau EINE Spalte — die Moverliste steht in der 631-px-
-     Kontextspalte, und 2x320+16 sind 656 px. Die Regel ist Vorsorge fuer breitere
-     Spalten, keine sichtbare Aenderung. Nur die Moverliste, nicht .jz-liste
-     allgemein: die Meldungsliste steht in der 889-px-Hauptspalte und wuerde sonst
-     zweispaltig brechen. */
-  #jzMoverListe{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+  /* §4.2 Punkt 3: dieselbe Spurenregel wie bei .jz-grid, damit die Moverliste in
+     einer breiten Kontextspalte zweispurig wird statt jede Zeile zu dehnen.
+     Ohne Deckel ist das keine Vorsorge mehr, sondern der Regelfall: bei 3840 px
+     Fensterbreite ist die Kontextspalte 1524 px breit und traegt zwei Spuren. */
+  #jzMoverListe{display:grid;column-gap:var(--sp-6);
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,35rem),1fr))}
+  /* Die Meldungsliste folgt derselben Regel. Sie stand bisher als Flex-Spalte, weil
+     die Hauptspalte nie breit genug fuer eine zweite Spur war — mit dem entfallenen
+     Deckel traegt sie bei 2560 px zwei und bei 3840 px drei Spuren. Zeilenabstand
+     bleibt 0: die Trennlinie der Zeile ist der Abstand. */
+  #jzMeldungenListe{display:grid;column-gap:var(--sp-6);row-gap:0;
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,35rem),1fr))}
   .jz-zeile{display:grid;align-items:center;gap:var(--sp-3);min-height:56px;padding:var(--sp-2) 0;
     border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit;
     font:inherit;text-align:left;cursor:pointer;width:100%}
@@ -444,8 +475,11 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   /* Frueher @media (min-width:640px). Der Umschaltpunkt ist derselbe, nur richtig
      gemessen: bei 640 px Fenster ist die Sektion 640 - 2x24 = 592 px breit. Jetzt
      entscheidet die Spaltenbreite, nicht die Fensterbreite — in der schmalen
-     Kontextspalte bliebe die dritte Spalte sonst faelschlich stehen. */
-  @container (min-width:592px){.jz-meldung{grid-template-columns:64px minmax(0,1fr) auto}}
+     Kontextspalte bliebe die dritte Spalte sonst faelschlich stehen.
+     Schwelle in rem statt px (ADR-712 Punkt 6): 592/16 = 37rem. Bei vergroesserter
+     Basisschrift oder Browser-Zoom zieht die Regel damit mit, statt an einer festen
+     Pixelzahl haengenzubleiben. */
+  @container (min-width:37rem){.jz-meldung{grid-template-columns:64px minmax(0,1fr) auto}}
   .jz-sym{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;
     color:var(--accent-ink);font-variant-numeric:tabular-nums}
   .jz-kurz{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -1307,7 +1341,7 @@ function dtOeffnen(top,ausloeser){
   if(Array.isArray(top.begriffe)&&top.begriffe.length){
     const b=top.begriffe.filter(x=>x&&typeof x.term==='string'&&x.term.trim());
     if(b.length)h+='<div class="dt-abschnitt"><span class="dt-marke">Begriffe</span>'+
-      '<div class="jz-grid" style="margin-top:var(--sp-1)">'+b.map(x=>
+      '<div class="jz-grid eng" style="margin-top:var(--sp-1)">'+b.map(x=>
         '<div class="dt-begriff"><span class="t-h3">'+escapeHtml(x.term)+'</span>'+
         (x.erklaerung?'<span class="t-small jz-fliess" style="color:var(--muted)">'+escapeHtml(x.erklaerung)+'</span>':'')+'</div>').join('')+'</div></div>';
   }

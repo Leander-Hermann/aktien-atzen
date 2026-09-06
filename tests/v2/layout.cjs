@@ -53,25 +53,29 @@ function containerRegel(q) {
   const r = m[1];
   return {
     gefunden: true,
-    formel: /width:min\(100% ?- ?2\*var\(--rand\) ?, ?1600px\)/.test(r),
+    formel: /width:calc\(100% ?- ?2\*var\(--rand\)\)/.test(r),
     zentriert: /margin-inline:auto/.test(r),
-    keinAltdeckel: !/max-width:1180px/.test(r),
+    /* ADR-712 Punkt 1: KEIN Maximalwert mehr — weder als max-width noch im min() */
+    keinDeckel: !/max-width/.test(r) && !/min\(/.test(r),
     keinPadding: !/padding/.test(r)
   };
 }
-gruppe('Kriterium 1 — Container min(100% - 2*Rand, 1600px), zentriert, ohne Padding', () => {
-  pruef('.wrap-Regel', containerRegel(html), { gefunden: true, formel: true, zentriert: true, keinAltdeckel: true, keinPadding: true });
-  pruef('Aussenraender 16/24/32 als --rand je Breakpoint', [
+gruppe('Kriterium 1 — Container calc(100% - 2*Rand) ohne Deckel, zentriert, ohne Padding', () => {
+  pruef('.wrap-Regel', containerRegel(html), { gefunden: true, formel: true, zentriert: true, keinDeckel: true, keinPadding: true });
+  pruef('Aussenrand: 16 mobil, 24 Tablet, ab 1024 clamp(32px,2.5vw,80px)', [
     /\.wrap\{--rand:var\(--sp-4\)/.test(stil(html)),
     /min-width:640px\)\{\.wrap\{--rand:var\(--sp-6\)\}\}/.test(stil(html)),
-    /min-width:1024px\)\{\.wrap\{--rand:var\(--sp-8\)\}\}/.test(stil(html))
+    /min-width:1024px\)\{\.wrap\{--rand:clamp\(32px,2\.5vw,80px\)\}\}/.test(stil(html))
   ], [true, true, true]);
-  pruef('Tokenwerte --sp-4/6/8 sind 16/24/32 px', [
-    /--sp-4:16px/.test(html), /--sp-6:24px/.test(html), /--sp-8:32px/.test(html)
-  ], [true, true, true]);
-  negativ('alter 1180er-Deckel wieder eingesetzt',
-    html.replace('width:min(100% - 2*var(--rand),1600px)', 'width:100%;max-width:1180px'),
+  pruef('Tokenwerte --sp-4/6 sind 16/24 px', [
+    /--sp-4:16px/.test(html), /--sp-6:24px/.test(html)
+  ], [true, true]);
+  negativ('Deckel wieder eingesetzt',
+    html.replace('width:calc(100% - 2*var(--rand))', 'width:min(100% - 2*var(--rand),1600px)'),
     containerRegel);
+  negativ('Aussenrand wieder fest bei 32 px',
+    html.replace('--rand:clamp(32px,2.5vw,80px)', '--rand:var(--sp-8)'),
+    q => (stil(q).match(/min-width:1024px\)\{\.wrap\{--rand:[^}]*\}/) || [''])[0]);
 });
 
 /* --- Kriterium 2: genau zwei Viewport-Breakpoints ----------------------------- */
@@ -167,8 +171,18 @@ function fluid(q) {
     containerTraeger: /#jzLead,#jzFolge,#jzFokus,#jzMarkt,#jzMeldungen\{container-type:inline-size\}/.test(s),
     nichtAufBody: !/body\{[^}]*container-type/.test(s),
     containerAbfragen: (s.match(/@container \(min-width:/g) || []).length,
+    /* ADR-712 Punkt 6: Schwellen, die ueber Spurenzahl oder Textbreite entscheiden,
+       stehen schriftrelativ. Die zwei Viewport-Breakpoints bleiben laut § 4 in px. */
+    containerAbfragenInPx: (s.match(/@container \(min-width:\s*[\d.]+px\)/g) || []).length,
     autoFit: (s.match(/repeat\(auto-fit,minmax\(/g) || []).length,
     keinAutoFill: !/auto-fill/.test(s),
+    /* ADR-712 Punkte 3 und 4: Spurenzahl nach der hergeleiteten Idealbreite 35rem,
+       Obergrenze 45rem als Deckel am Kind — siehe die Begruendung im Stylesheet:
+       zwei definite Werte im minmax() haetten die Spurenzahl nach der Obergrenze
+       bestimmt und die im Auftrag erwarteten 1/2/3 Spuren verfehlt. */
+    spurenregel: (s.match(/repeat\(auto-fit,minmax\(min\(100%,35rem\),1fr\)\)/g) || []).length,
+    obergrenzeAmKind: /\{max-width:45rem\}/.test(s),
+    keineAltbreite: !/minmax\(min\(100%,(280|320)px\)/.test(s),
     /* nicht [^)]*: var(--sp-4) enthaelt selbst eine Klammer und wuerde den Treffer abschneiden */
     clampCqi: (s.match(/clamp\([\s\S]{0,80}?cqi/g) || []).length,
     fallback: /@supports not \(container-type:inline-size\)/.test(s)
@@ -184,6 +198,18 @@ gruppe('Kriterium 5 — Zeilendeckel, Container Queries, clamp, auto-fit, Fallba
   pruef('auto-fit statt auto-fill', [f.autoFit >= 3, f.keinAutoFill], [true, true]);
   pruef('mindestens zwei clamp() an cqi gebunden', f.clampCqi >= 2, true);
   pruef('@supports-Fallback vorhanden', f.fallback, true);
+  /* --- ADR-712: Spurenregel mit Obergrenze, schriftrelative Schwellen ---------- */
+  pruef('Spurenregel auf der hergeleiteten Idealbreite 35rem, mindestens drei Flaechen',
+    f.spurenregel >= 3, true);
+  pruef('Obergrenze 45rem als Deckel am Kind vorhanden', f.obergrenzeAmKind, true);
+  pruef('keine px-Mindestbreiten aus dem Vorzustand mehr', f.keineAltbreite, true);
+  pruef('keine @container-Schwelle mehr in px', f.containerAbfragenInPx, 0);
+  negativ('Obergrenze entfernt (die Dehnung, die ADR-712 verbietet)',
+    html.replace(/\.jz-grid>\*,#jzMoverListe>\*,#jzMeldungenListe>\*\{max-width:45rem\}/, ''),
+    fluid);
+  negativ('Container-Query-Schwelle wieder in px',
+    html.replace('@container (min-width:37rem)', '@container (min-width:592px)'),
+    fluid);
   pruef('Fliesstext-Deckel im gerenderten Markup und in den Renderfunktionen',
     (html.match(/jz-fliess/g) || []).length >= 4, true);
   negativ('Fallback-Bedingung umgedreht',
@@ -192,8 +218,10 @@ gruppe('Kriterium 5 — Zeilendeckel, Container Queries, clamp, auto-fit, Fallba
   negativ('Deckel zurueck auf den ungemessenen Entwurfswert',
     html.replace('.jz-fliess{max-width:min(54ch,100%)', '.jz-fliess{max-width:min(62ch,100%)'),
     fluid);
+  /* Schwelle steht seit ADR-712 in rem — der Ersetzungsstring musste mitziehen,
+     sonst traf er nichts mehr und der negative Fall lief ins Leere. */
   negativ('Container Queries wieder durch einen Viewport-Breakpoint ersetzt',
-    html.replace('@container (min-width:592px)', '@media (min-width:592px)'),
+    html.replace('@container (min-width:37rem)', '@media (min-width:37rem)'),
     fluid);
 });
 

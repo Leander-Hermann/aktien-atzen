@@ -157,6 +157,40 @@
     };
   }
 
+  /* --- Spuren (ADR-712 Punkt 3) ------------------------------------------------
+     Die Spurenzahl wird NICHT aus dem CSS abgelesen, sondern aus der gerenderten
+     Geometrie: wie viele Kinder liegen auf derselben Oberkante wie das erste? So
+     zaehlt gemessen, was der Nutzer sieht. Zusaetzlich die tatsaechliche Breite
+     eines Kindes, um die 45rem-Obergrenze zu pruefen. */
+  function spuren(sel) {
+    const el = document.querySelector(sel);
+    if (!el) return { fehler: 'nicht gefunden: ' + sel };
+    const kinder = [...el.children].filter(k => k.offsetParent !== null || k.getBoundingClientRect().height > 0);
+    if (!kinder.length) return { selektor: sel, kinder: 0, spuren: 0 };
+    const ersteOben = Math.round(kinder[0].getBoundingClientRect().top);
+    const inReihe = kinder.filter(k => Math.round(k.getBoundingClientRect().top) === ersteOben);
+    const remPx = parseFloat(cs(document.documentElement).fontSize);
+    return {
+      selektor: sel,
+      kinder: kinder.length,
+      spuren: inReihe.length,
+      containerBreite: rund(el.getBoundingClientRect().width),
+      kindBreite: rund(kinder[0].getBoundingClientRect().width),
+      obergrenze45rem: rund(45 * remPx),
+      unterObergrenze: kinder[0].getBoundingClientRect().width <= 45 * remPx + 1,
+      spalten: cs(el).gridTemplateColumns,
+      remBasis: remPx
+    };
+  }
+  function alleSpuren() {
+    return {
+      meldungen: spuren('#jzMeldungenListe'),
+      mover: spuren('#jzMoverListe'),
+      markt: spuren('#jzMarktInhalt'),
+      folge: spuren('#jzFolgeInhalt')
+    };
+  }
+
   /* --- Container Queries ------------------------------------------------------- */
   function containertyp() {
     const traeger = [...document.querySelectorAll('body,body *')]
@@ -266,6 +300,61 @@
     };
   }
 
-  window.V2MESSUNG = { wrap, raster, spalten, ueberlauf, touchziele, zeilen, containertyp, dezimal, sticky, alles };
+  /* --- Gegenprobe zur Schriftrelativitaet (ADR-712 Punkt 6) ---------------------
+     Setzt die Basisschriftgroesse hoch und misst die Spurenzahl erneut. Steht eine
+     Schwelle in px, aendert sich nichts — dann ist die Zusage „schriftrelativ"
+     widerlegt. Der Wert wird danach zurueckgesetzt. */
+  async function schriftprobe(px) {
+    const neu = px || 20;
+    const vorher = alleSpuren();
+    const alt = document.documentElement.style.fontSize;
+    document.documentElement.style.fontSize = neu + 'px';
+    await new Promise(r => setTimeout(r, 120));
+    const nachher = alleSpuren();
+    document.documentElement.style.fontSize = alt;
+    await new Promise(r => setTimeout(r, 60));
+    const felder = ['meldungen', 'mover', 'markt', 'folge'];
+    const gesunken = felder.filter(k => nachher[k] && vorher[k] && nachher[k].spuren < vorher[k].spuren);
+    /* ADR-317.5: Eine Flaeche, die schon vorher nur EINE Spur trug, kann nicht sinken —
+       ihr gruener oder roter Wert belegt nichts. Solche Faelle werden getrennt
+       ausgewiesen, damit ein „false" nicht faelschlich als Widerlegung gelesen wird. */
+    const aussagekraeftig = felder.filter(k => vorher[k] && vorher[k].spuren > 1);
+    return {
+      basisVorher: vorher.meldungen && vorher.meldungen.remBasis,
+      basisNachher: neu,
+      spurenVorher: { meldungen: vorher.meldungen.spuren, mover: vorher.mover.spuren, markt: vorher.markt.spuren },
+      spurenNachher: { meldungen: nachher.meldungen.spuren, mover: nachher.mover.spuren, markt: nachher.markt.spuren },
+      gesunkenBei: gesunken,
+      aussagekraeftigeFlaechen: aussagekraeftig,
+      /* nur wahr, wenn es ueberhaupt einen pruefbaren Fall gab UND er angeschlagen hat */
+      wirktSchriftrelativ: aussagekraeftig.length > 0 && gesunken.length > 0,
+      hinweis: aussagekraeftig.length ? '' :
+        'kein pruefbarer Fall bei dieser Breite — alle Flaechen trugen schon eine Spur; bei groesserer Breite wiederholen'
+    };
+  }
+
+  /* --- Negativer Testfall: EINE Karte darf sich nicht ueber die Flaeche dehnen --- */
+  async function einzelkarte(sel) {
+    const s = sel || '#jzMeldungenListe';
+    const el = document.querySelector(s);
+    if (!el) return { fehler: 'nicht gefunden: ' + s };
+    const sicherung = el.innerHTML;
+    const erstes = el.firstElementChild ? el.firstElementChild.outerHTML : null;
+    if (!erstes) return { fehler: 'kein Kind vorhanden' };
+    el.innerHTML = erstes;
+    await new Promise(r => setTimeout(r, 120));
+    const remPx = parseFloat(cs(document.documentElement).fontSize);
+    const b = rund(el.firstElementChild.getBoundingClientRect().width);
+    el.innerHTML = sicherung;
+    await new Promise(r => setTimeout(r, 60));
+    return {
+      selektor: s, containerBreite: rund(el.getBoundingClientRect().width),
+      breiteEinzelkarte: b, obergrenze45rem: rund(45 * remPx),
+      bleibtUnterObergrenze: b <= 45 * remPx + 1
+    };
+  }
+
+  window.V2MESSUNG = { wrap, raster, spalten, ueberlauf, touchziele, zeilen, containertyp,
+    dezimal, sticky, spuren, alleSpuren, schriftprobe, einzelkarte, alles };
   return 'V2MESSUNG bereit';
 })();
