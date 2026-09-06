@@ -3,6 +3,26 @@
 Die separate Vorschau liegt in `v2-gpt.html`. Die bestehende `v2.html` und die
 öffentliche Startseite `index.html` werden durch diesen Änderungssatz nicht bearbeitet.
 
+## Lokale Vorschau
+
+Die HTML-Datei braucht HTTP, weil die Inhalte aus benachbarten JSON-Dateien geladen
+werden. Direktes Öffnen als `file://` verhindert diese Abrufe im Browser.
+
+```powershell
+node tests/v2-gpt/preview.cjs
+```
+
+Die ausgegebene `http://127.0.0.1:…/v2-gpt.html`-Adresse im Browser öffnen.
+Der Server bindet ausschließlich an den eigenen Rechner und liefert nur die öffentlichen
+HTML-/Daten-/Fontdateien. `GPT_PREVIEW_PORT` kann einen festen Port vorgeben.
+Beenden mit Strg+C. Die veröffentlichte Variante liegt unter
+https://leander-hermann.github.io/aktien-atzen/v2-gpt.html.
+
+`node tests/v2-gpt/preview-check.cjs <ausgegebene-URL>` prüft die Gegenprobe:
+`file://` blockiert die JSON-Abrufe, dieselbe Datei über HTTP lädt Digest und Markt.
+Die Prüfung verwendet die Chartdatei aus dem Hauptprüflauf oder `CHART_LIBRARY_FILE`
+und schreibt `preview-report.json` in denselben Ausgabeordner.
+
 ## Ausführen
 
 Voraussetzungen: Node.js ab 20, Playwright mit Clock-API (ab 1.45) im Modulpfad,
@@ -28,7 +48,7 @@ ein erfolgreicher Lauf legt sie im Ausgabeordner ab. Feeds werden mit
 
 ## Abdeckung und Grenzen
 
-52 Prüfgruppen: Digest-Auswahl und Volltext, XSS/URLs/Bildfehler, Fokus einschließlich
+53 Prüfgruppen: Digest-Auswahl und Volltext, XSS/URLs/Bildfehler, Fokus einschließlich
 Duplikatprüfung und spätem Nachladen, Videos, Quellenstände, Markt-/F&G-Grenzen,
 Mover-Auswahl, echte Chartkerzen, ungültige OHLC-Reihen, Bibliotheks-/Proxyfehler,
 Chartabbau, Theme/Resize sowie 320/375/1280 px in dark/light.
@@ -49,3 +69,9 @@ Die zwölf absichtlich ausgelösten HTTP-404-Ressourcenmeldungen werden separat
 als `expectedTransportErrors` gezählt. Der Bericht enthält Laufzeit und SHA-256
 der geprüften GPT-Datei. Screenshots erlauben ergänzende manuelle Sichtprüfung;
 die visuelle Bewertung selbst ist keine deterministische Prüfung.
+
+Der Reihenfolge-Nachtrag wird zusätzlich in zwölf Browserkontexten geprüft:
+375/1280 px × dark/light × leer/Position mit Ereignis/Position ohne Ereignis.
+Gemessen wird die DOM-Reihenfolge vor und nach Großfeeds; die Entscheidung hängt
+ausschließlich vom Bestand beim Start ab. Quick-Add verschiebt die aktuelle Ansicht
+nicht. Die Digestfläche ist ausdrücklich als „Allgemeine Marktlage“ überschrieben.
