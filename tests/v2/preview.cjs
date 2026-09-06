@@ -29,6 +29,16 @@ if (argStoer > -1 && process.argv[argStoer + 1]) {
    unveraendert, es wird also der echte Rueckfallpfad gerendert, nicht ein
    nachgebauter.
    Aufruf:  node tests/v2/preview.cjs 8742 --fallback */
+/* Steuerbarer Stoermodus fuer die Ausfallmatrix (V2-6 Teil F.1):
+   GET /__stoere?<datei>=<art>  setzt die aktive Stoerung zur Laufzeit
+   GET /__stoere?reset=1        loescht sie
+   GET /__stoere                gibt den aktuellen Stand zurueck
+   Damit laeuft die ganze Matrix gegen EINEN Server, statt ihn sechsunddreissig
+   Mal neu zu starten. Nur mit --steuerbar, nur ueber Loopback, nur lesend.
+   Aufruf:  node tests/v2/preview.cjs 8744 --steuerbar */
+const steuerbar = process.argv.includes('--steuerbar');
+if (steuerbar) console.log('Steuerbarer Stoermodus aktiv: /__stoere?<datei>=<art> | ?reset=1');
+
 const fallback = process.argv.includes('--fallback');
 if (fallback) console.log('Fallback-Modus: @supports not (container-type:inline-size) wird erzwungen');
 
@@ -46,6 +56,16 @@ const TYP = {
 
 http.createServer((req, res) => {
   const roh = decodeURIComponent(req.url.split('?')[0]);
+
+  if (steuerbar && roh === '/__stoere') {
+    const q = new URLSearchParams(req.url.split('?')[1] || '');
+    if (q.has('reset')) { Object.keys(stoerung).forEach(k => delete stoerung[k]); }
+    else for (const [k, v] of q) { if (v) stoerung[k] = v; }
+    res.writeHead(200, { 'content-type': 'application/json; charset=utf-8' });
+    res.end(JSON.stringify({ aktiv: stoerung }));
+    return;
+  }
+
   const rel = roh === '/' ? '/v2.html' : roh;
   const ziel = path.join(wurzel, rel);
   // Kein Ausbruch aus dem Repoordner
@@ -58,6 +78,17 @@ http.createServer((req, res) => {
     if (art === '404') { res.writeHead(404, { 'content-type': 'text/plain' }).end('gestoert: fehlt'); return; }
     if (art === 'muell') { res.writeHead(200, { 'content-type': 'application/json' }).end('{das ist kein json,,,'); return; }
     if (art === 'struktur') { res.writeHead(200, { 'content-type': 'application/json' }).end('{"unerwartet":[1,2,3]}'); return; }
+    /* langsam = korrekte Antwort, aber erst nach 4 s. Prueft, ob die Seite
+       waehrenddessen bedienbar bleibt (V2-6 Teil F.1). */
+    if (art === 'langsam') {
+      setTimeout(() => {
+        fs.readFile(ziel, (e, b) => {
+          if (e) { res.writeHead(404).end('nicht gefunden'); return; }
+          res.writeHead(200, { 'content-type': 'application/json; charset=utf-8' }).end(b);
+        });
+      }, 4000);
+      return;
+    }
   }
   fs.readFile(ziel, (err, buf) => {
     if (err) {
