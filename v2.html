@@ -124,10 +124,19 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
   }
 
-  /* §4 Raster: zwei Breakpoints (640/1024), Container max 1180 px zentriert */
-  .wrap{width:100%;max-width:1180px;margin:0 auto;padding-left:var(--sp-4);padding-right:var(--sp-4)}
-  @media (min-width:640px){.wrap{padding-left:var(--sp-6);padding-right:var(--sp-6)}}
-  @media (min-width:1024px){.wrap{padding-left:var(--sp-8);padding-right:var(--sp-8)}}
+  /* §4 Raster (ADR-711): zwei Breakpoints (640/1024), Container
+     min(100% - 2 × Außenrand, 1600px) mit margin-inline:auto.
+     Der Außenrand steckt bewusst NICHT mehr im Innenabstand, sondern ist genau der
+     Rand, den die Formel frei lässt. Zöge er zweimal (einmal aus 100% - 2×Rand,
+     einmal aus dem Padding), wäre der Inhalt bei 1600 px Fenster 1472 statt der in
+     § 4 gerechneten 1536 px — und die Deckel-Schwelle läge bei 1600 statt bei
+     1664 px. So stimmt beides: 1664 - 64 = 1600.
+     Unterhalb von 1244 px (= alter Deckel 1180 + 2×32) ist das Ergebnis
+     zeichengleich zum Vorzustand; dazwischen wächst der Inhalt weiter, was der
+     erklärte Zweck von ADR-711 ist. */
+  .wrap{--rand:var(--sp-4);width:min(100% - 2*var(--rand),1600px);margin-inline:auto}
+  @media (min-width:640px){.wrap{--rand:var(--sp-6)}}
+  @media (min-width:1024px){.wrap{--rand:var(--sp-8)}}
 
   /* §14.1 E1: Standard-Karte — Light mit weichem Schatten, Dark ohne (Tiefe via hellerem --card) */
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
@@ -138,6 +147,10 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
      App-Bar — Glass-Fläche 1 von höchstens 3 (§6). Die zweite ist die
      Bottom-Nav; bei Konflikt degradiert laut §14.5 der Header zuerst.
      ========================================================================== */
+  /* Höhe der Leiste als Token: 64 px Innenhöhe + 1 px Unterkante. Die sticky
+     Kontextspalte (V2-6 Teil B.3) rechnet ihren Abstand daraus, statt die Zahl
+     ein zweites Mal zu führen. */
+  :root{--appbar-h:65px}
   .appbar{position:sticky;top:0;z-index:50;border-bottom:1px solid var(--line);
     background:var(--bar);backdrop-filter:blur(12px) saturate(140%);-webkit-backdrop-filter:blur(12px) saturate(140%)}
   @supports not (backdrop-filter:blur(12px)){.appbar{background:color-mix(in srgb,var(--card) 94%,transparent)}}
@@ -283,6 +296,48 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .jz{display:flex;flex-direction:column;gap:var(--sp-8);margin-top:var(--sp-6)}
   .jz-sek{display:flex;flex-direction:column;gap:var(--sp-3)}
   .jz-sek[hidden]{display:none}
+
+  /* ==========================================================================
+     V2-6 Teil B — 7/5-Raster ab 1024 px.
+     Unter 1024 px ist die Kontextspalte kein Kasten, sondern durchsichtig
+     (display:contents): ihre beiden Sektionen fliessen an genau der Stelle in die
+     eine Spalte, an der sie im Quelltext stehen — Lead, Folge, Fokus, Markt,
+     Meldungen. Deshalb bleibt die Lesereihenfolge gleich der Tabreihenfolge, und
+     jzReihenfolge() kann „Dein Fokus" fuer den Bestandsfall weiterhin als echten
+     DOM-Knoten nach vorn ziehen statt nur optisch.
+     Ab 1024 px ist derselbe Kasten ein echtes Rasterfeld und traegt das sticky
+     Verhalten als EIN Element — nur so kann er nach Teil B.3 „in sich" scrollen.
+     ========================================================================== */
+  .jz-kontext{display:contents}
+
+  @media (min-width:1024px){
+    /* Zwoelf Spalten, Gutter 16 px (§4 Desktop). Bei 1536 px Inhalt ergibt das
+       113,33 px je Spalte, 889,33 px fuer die 7er- und 630,67 px fuer die
+       5er-Spalte — die Zahlen aus ADR-711. Zeilenabstand bleibt --sp-8 wie im
+       Einspalter. */
+    .jz{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));
+      column-gap:var(--sp-4);row-gap:var(--sp-8);align-items:start}
+    /* Explizite Platzierung (Auftrag Teil B.4): das Raster haengt NICHT an der
+       Dokumentreihenfolge, damit jzReihenfolge() es nicht verschieben kann. */
+    #jzLead,#jzFolge,#jzMeldungen{grid-column:1 / span 7}
+    #jzKontext{grid-column:8 / span 5;grid-row:1 / span 3;
+      display:flex;flex-direction:column;gap:var(--sp-8);align-self:start;
+      position:sticky;top:calc(var(--appbar-h) + var(--sp-4));
+      max-height:calc(100vh - var(--appbar-h) - 2*var(--sp-4));
+      overflow-y:auto;overscroll-behavior:contain}
+    /* dvh, wo vorhanden: auf dem Handy-Desktop-Modus ist vh sonst zu gross.
+       Als zweite Deklaration, damit aeltere Engines die erste behalten. */
+    @supports (height:100dvh){
+      #jzKontext{max-height:calc(100dvh - var(--appbar-h) - 2*var(--sp-4))}
+    }
+    /* Pflicht-Fallback (§4.2): ohne Container-Query-Unterstuetzung faellt die
+       Seite auf die einspaltige Basisdarstellung zurueck — kein halbes Raster. */
+    @supports not (container-type:inline-size){
+      .jz{display:flex;flex-direction:column;gap:var(--sp-8)}
+      /* per ID, sonst schlaegt die #jzKontext-Regel oben die Klasse */
+      #jzKontext{display:contents;position:static;max-height:none;overflow:visible}
+    }
+  }
   .jz-kopf{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap}
   .jz-kopf .t-caption{color:var(--muted)}
   /* Quellenstaende getrennt (Teil D.7) — je Feld ein eigener Chip, kein Maximum */
@@ -460,9 +515,11 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     <p class="jz-staende t-caption" id="jzStaende" hidden></p>
 
     <div class="jz" id="jzInhalt">
-      <!-- Grundreihenfolge = Fall „kein Bestand". Liegt mindestens eine Position vor,
-           schiebt jzReihenfolge() „Dein Fokus" EINMALIG vor die Fokusgeschichte
-           (Nachtrag vom 06.09., Punkt 1/2). Danach ändert feedsGross() nichts mehr. -->
+      <!-- Grundreihenfolge = Fall „kein Bestand". Liegt in der schmalen Ansicht
+           mindestens eine Position vor, schiebt jzReihenfolge() „Dein Fokus" vor die
+           Fokusgeschichte (Nachtrag vom 06.09., Punkt 1/2). Ab 1024 px ist die Regel
+           gegenstandslos (V2-6 Teil B.4): dort steht „Dein Fokus" fest in der
+           Kontextspalte rechts. Danach ändert feedsGross() nichts mehr. -->
 
       <section class="jz-sek" id="jzLead" aria-labelledby="jzLeadH" hidden>
         <div class="jz-kopf">
@@ -479,6 +536,11 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
         </div>
         <div class="jz-grid" id="jzFolgeInhalt"></div>
       </section>
+
+      <!-- Kontextspalte: unter 1024 px durchsichtig (display:contents), darueber das
+           sticky Rasterfeld rechts. Der Kasten existiert nur, damit die Spalte ab
+           1024 px als EIN Element kleben und in sich scrollen kann (Teil B.3). -->
+      <div class="jz-kontext" id="jzKontext">
 
       <section class="jz-sek" id="jzFokus" aria-labelledby="jzFokusH" hidden>
         <div class="jz-kopf">
@@ -521,6 +583,8 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
           <div class="jz-grid" id="jzIdxListe" hidden></div>
         </div>
       </section>
+
+      </div><!-- /#jzKontext -->
 
       <section class="jz-sek" id="jzMeldungen" aria-labelledby="jzMeldungenH" hidden>
         <div class="jz-kopf">
@@ -1452,16 +1516,30 @@ function jzStaendeRender(){
    Bedingung ist „hat Positionen", nicht „hat Positionen mit Ereignis": der
    Bestand liegt synchron im localStorage, die Ereignisse kommen erst mit
    feedsGross(). Haenge die Reihenfolge am Ereignis, spraenge das Layout nach dem
-   Nachladen — genau der Shift, den Teil D.6 verbietet. */
-let JZ_REIHENFOLGE_STEHT=false;
+   Nachladen — genau der Shift, den Teil D.6 verbietet.
+
+   V2-6 Teil B.4: Ab dem Zweispalter ist die Regel gegenstandslos. Beide Flaechen
+   sind dann gleichzeitig sichtbar, und die sticky Kontextspalte haelt „Dein Fokus"
+   sogar dauerhaft praesent. Der Umbau haengt deshalb an derselben 1024-px-Schwelle
+   wie das Raster — das ist kein dritter Breakpoint, sondern die zweite von zwei.
+   Warum matchMedia und nicht ein einmaliger Lauf: der Knoten muss ab 1024 px
+   wieder IN der Kontextspalte liegen, sonst stuende er ausserhalb des sticky
+   Kastens. Der Wechsel loest nur beim echten Breitenwechsel aus, nie beim
+   Nachladen der Feeds — der Layout-Shift aus § 7.1 bleibt damit ausgeschlossen.
+   Die Funktion ist idempotent; ein zweiter Aufruf im selben Zustand bewegt nichts. */
+const JZ_SCHMAL=window.matchMedia('(max-width:1023px)');
 function jzReihenfolge(){
-  if(JZ_REIHENFOLGE_STEHT)return;
-  JZ_REIHENFOLGE_STEHT=true;
-  if(!bstPositionen().length)return;              // Grundreihenfolge im HTML gilt
   const wrap=document.getElementById('jzInhalt'),fokus=document.getElementById('jzFokus'),
-        lead=document.getElementById('jzLead');
-  if(wrap&&fokus&&lead)wrap.insertBefore(fokus,lead);
+        lead=document.getElementById('jzLead'),kontext=document.getElementById('jzKontext');
+  if(!wrap||!fokus||!lead||!kontext)return;
+  // Bedingung: schmale Ansicht UND mindestens eine Position im aa-bestand-Modell.
+  if(JZ_SCHMAL.matches&&bstPositionen().length){
+    if(fokus.nextElementSibling!==lead||fokus.parentNode!==wrap)wrap.insertBefore(fokus,lead);
+  }else if(fokus.parentNode!==kontext){
+    kontext.insertBefore(fokus,kontext.firstElementChild);  // zurueck an den Kopf der Spalte
+  }
 }
+JZ_SCHMAL.addEventListener('change',jzReihenfolge);
 
 /* --- Zusammenbau -------------------------------------------------------------- */
 function jetztRendern(){
