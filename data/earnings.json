@@ -1,8 +1,8 @@
 {
- "updated": "2026-09-05T05:01:31.129955+00:00",
+ "updated": "2026-09-06T05:01:36.934486+00:00",
  "window": {
-  "from": "2026-09-02",
-  "to": "2026-09-26"
+  "from": "2026-09-03",
+  "to": "2026-09-27"
  },
  "universe_meta": {
   "indizes": [
@@ -21,69 +21,6 @@
   "stand": "2026-06-25"
  },
  "eintraege": [
-  {
-   "date": "2026-09-02",
-   "ticker": "AVGO",
-   "name": "Broadcom",
-   "index": "Nasdaq 100",
-   "region": "US",
-   "branche": "Halbleiter",
-   "zeit": "amc",
-   "periode": "Q3 FY26",
-   "eps_est": 3.3013,
-   "rev_est": 29949335931,
-   "status": "reported",
-   "eps_act": 3.32,
-   "rev_act": 29591000000,
-   "surprise_pct": 0.57,
-   "reaktion_pct": -2.74,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/AVGO",
-   "as_of": "2026-09-05T05:01:27.241541+00:00"
-  },
-  {
-   "date": "2026-09-02",
-   "ticker": "LULU",
-   "name": "Lululemon",
-   "index": "Nasdaq 100",
-   "region": "US",
-   "branche": "Konsumgueter",
-   "zeit": "amc",
-   "periode": "Q2 FY27",
-   "eps_est": 1.8353,
-   "rev_est": 2509611355,
-   "status": "scheduled",
-   "eps_act": null,
-   "rev_act": null,
-   "surprise_pct": null,
-   "reaktion_pct": null,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/LULU",
-   "as_of": "2026-08-27T05:01:27.949729+00:00"
-  },
-  {
-   "date": "2026-09-02",
-   "ticker": "SNOW",
-   "name": "Snowflake",
-   "index": "S&P 500",
-   "region": "US",
-   "branche": "Software",
-   "zeit": "amc",
-   "periode": "Q2 FY27",
-   "eps_est": 0.4552,
-   "rev_est": 1512000855,
-   "status": "reported",
-   "eps_act": 0.62,
-   "rev_act": 1546790000,
-   "surprise_pct": 36.2,
-   "reaktion_pct": 16.55,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/SNOW",
-   "as_of": "2026-09-05T05:01:27.241541+00:00"
-  },
   {
    "date": "2026-09-03",
    "ticker": "DELL",
@@ -124,7 +61,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/LULU",
-   "as_of": "2026-09-05T05:01:27.241541+00:00"
+   "as_of": "2026-09-06T05:01:31.243579+00:00"
   },
   {
    "date": "2026-09-07",
@@ -166,7 +103,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/ADBE",
-   "as_of": "2026-09-05T05:01:27.241541+00:00"
+   "as_of": "2026-09-06T05:01:31.243579+00:00"
   },
   {
    "date": "2026-09-10",
@@ -187,7 +124,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/ORCL",
-   "as_of": "2026-09-05T05:01:27.241541+00:00"
+   "as_of": "2026-09-06T05:01:31.243579+00:00"
   },
   {
    "date": "2026-09-14",
@@ -250,7 +187,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/COST",
-   "as_of": "2026-09-05T05:01:27.241541+00:00"
+   "as_of": "2026-09-06T05:01:31.243579+00:00"
   }
  ]
 }
