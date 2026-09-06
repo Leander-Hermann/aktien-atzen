@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-05T23:20:32.754613Z",
+  "generated_at": "2026-09-06T00:20:32.376792Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 62,
+  "symbols_total": 61,
   "with_quote_data": 13,
   "sources": [
    "watchlist",
@@ -36,13 +36,13 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
+     "value": "Earnings vor 3 Tagen",
      "weight": 15
     }
    ],
    "earnings": {
     "date": "2026-09-03",
-    "distance_days": -2,
+    "distance_days": -3,
     "zeit": "amc"
    }
   },
@@ -62,13 +62,13 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 5 Tagen",
+     "value": "Earnings in 4 Tagen",
      "weight": 20
     }
    ],
    "earnings": {
     "date": "2026-09-10",
-    "distance_days": 5,
+    "distance_days": 4,
     "zeit": "amc"
    }
   }
