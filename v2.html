@@ -265,6 +265,144 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     .bnav{display:none}
     #app{padding-bottom:var(--sp-12)}
   }
+
+  /* ==========================================================================
+     Raum „Jetzt" — V2-2. Gestaltungsvorlage: design/v2-2-canvas/ (2. Nachtrag).
+     Werte ausschliesslich aus design-system.md; die Canvas gibt Anordnung,
+     Dichte und Zustaende vor, keine Farb- oder Groessenwerte.
+     ========================================================================== */
+
+  /* ADR-708: Prio- und Fear-&-Greed-Ampeln bekommen EIGENE Alias-Tokens statt
+     --up/--down/--warn direkt zu referenzieren. Als var()-Verweis geschrieben,
+     damit sie dem Theme-Wechsel ohne zweiten Satz Werte folgen. */
+  :root{
+    --prio-high:var(--down);--prio-med:var(--warn);--prio-low:var(--muted);
+    --fg-low:var(--down);--fg-mid:var(--warn);--fg-high:var(--up);
+  }
+
+  .jz{display:flex;flex-direction:column;gap:var(--sp-8);margin-top:var(--sp-6)}
+  .jz-sek{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .jz-sek[hidden]{display:none}
+  .jz-kopf{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap}
+  .jz-kopf .t-caption{color:var(--muted)}
+  /* Quellenstaende getrennt (Teil D.7) — je Feld ein eigener Chip, kein Maximum */
+  .jz-staende{display:flex;flex-wrap:wrap;gap:var(--sp-2) var(--sp-4)}
+  .jz-staende span{color:var(--muted);font-variant-numeric:tabular-nums}
+
+  /* §1.3-Chipmuster: Flaeche = Farbe mit 16 % Alpha, Text = dieselbe Farbe */
+  .jz-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;
+    border-radius:var(--radius-pill);font-size:11px;line-height:1.35;font-weight:600;
+    letter-spacing:.02em;background:var(--chip);color:var(--muted)}
+  .jz-chip svg{width:13px;height:13px;flex:0 0 auto}
+  .jz-chip.hoch{background:color-mix(in srgb,var(--prio-high) 16%,transparent);color:var(--prio-high)}
+  .jz-chip.mittel{background:color-mix(in srgb,var(--prio-med) 16%,transparent);color:var(--prio-med)}
+  .jz-chip.niedrig{background:var(--chip);color:var(--prio-low)}
+  .jz-chip.brand{background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent-ink)}
+  .jz-chip.warn{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn)}
+
+  /* Fokusgeschichte: einzige Kupferflaeche im Viewport (§1.3 CTA-Knappheit) */
+  .jz-lead{display:flex;flex-direction:column;gap:var(--sp-4)}
+  .jz-lead h3{font-size:22px;line-height:1.15;font-weight:800;letter-spacing:-.02em;text-wrap:pretty}
+  @media (min-width:640px){.jz-lead h3{font-size:24px}}
+  /* §4.1 Zeilenlaengen-Deckel: nur zusammenhaengender Fliesstext */
+  .jz-fliess{max-width:min(62ch,100%);text-wrap:pretty}
+  /* §3: auch der Quellenlink in der Fokuskarte ist ein Touch-Ziel und braucht
+     seine 44 px — als Inline-Flex, damit er im Satz stehen bleibt. */
+  .jz-lead a{display:inline-flex;align-items:center;min-height:44px}
+  .jz-cta{display:inline-flex;align-items:center;justify-content:center;gap:var(--sp-2);
+    min-height:44px;padding:0 var(--sp-5);border:0;border-radius:var(--radius-pill);
+    background:var(--accent2);color:#0B141B;font-size:12.5px;font-weight:700;cursor:pointer;
+    transition:filter var(--dur-fast) var(--ease-out)}
+  /* ADR-708: gefuellter Kupfer-CTA im Light nutzt Kupfer-700 mit weisser Schrift */
+  @media (prefers-color-scheme:light){
+    :root:not([data-theme="dark"]) .jz-cta{background:#8C5430;color:#FFFFFF}
+  }
+  :root[data-theme="light"] .jz-cta{background:#8C5430;color:#FFFFFF}
+  @media (hover:hover) and (pointer:fine){.jz-cta:hover{filter:brightness(1.08)}}
+
+  /* §4.2: wiederholende Raster fluid, auto-fit statt zusaetzlicher Breakpoints */
+  .jz-grid{display:grid;gap:var(--sp-4);grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+  .jz-grid.weit{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+
+  /* Karten, die als Button funktionieren: Text bleibt linksbuendig, Typo geerbt */
+  .jz-karte{text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;
+    flex-direction:column;gap:var(--sp-2);width:100%}
+  @media (hover:hover) and (pointer:fine){
+    .jz-karte:hover{border-color:rgba(255,255,255,.18)}
+    :root[data-theme="light"] .jz-karte:hover,
+    :root:not([data-theme="dark"]) .jz-karte:hover{border-color:rgba(28,38,43,.16)}
+  }
+
+  /* E0-Listenzeilen in einer Karte: nur --line-Trenner, kein eigener Grund (§14.1) */
+  .jz-liste{display:flex;flex-direction:column}
+  .jz-zeile{display:grid;align-items:center;gap:var(--sp-3);min-height:56px;padding:var(--sp-2) 0;
+    border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit;
+    font:inherit;text-align:left;cursor:pointer;width:100%}
+  .jz-zeile:last-child{border-bottom:0}
+  .jz-mover{grid-template-columns:76px minmax(0,1fr) auto}
+  .jz-meldung{grid-template-columns:56px minmax(0,1fr)}
+  @media (min-width:640px){.jz-meldung{grid-template-columns:64px minmax(0,1fr) auto}}
+  .jz-sym{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;
+    color:var(--accent-ink);font-variant-numeric:tabular-nums}
+  .jz-kurz{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .jz-pct{font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+
+  /* Aufklapper-Schalter: volle Breite, Zustand am Pfeil ablesbar */
+  .jz-schalter{width:100%;justify-content:space-between;min-height:52px;padding:0 var(--sp-5)}
+  .jz-schalter svg{transition:transform var(--dur-fast) var(--ease-out)}
+  .jz-schalter[aria-expanded="true"]{background:color-mix(in srgb,var(--accent) 16%,transparent);
+    border-color:transparent;color:var(--accent-ink)}
+  .jz-schalter[aria-expanded="true"] svg{transform:rotate(180deg)}
+
+  /* Fear-&-Greed-Bogen: Geometrie aus dem Prototyp r1, Farben aus den Alias-Tokens */
+  .jz-bogen{display:flex;flex-direction:column;align-items:center;gap:var(--sp-3);text-align:center}
+  .jz-bogen svg{width:100%;max-width:220px;height:auto}
+  .jz-wert{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}
+  .jz-gross{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums}
+
+  .jz-leer{color:var(--muted);font-size:12.5px;line-height:1.45;font-weight:500}
+  .jz-trenn{height:1px;background:var(--line)}
+  .jz-fehler{display:flex;flex-direction:column;gap:var(--sp-3);align-items:flex-start}
+
+  /* ==========================================================================
+     Overlays (E2 schwebend, §14.1). Struktur und Klassennamen aus index.html
+     uebernommen, damit die dort geprueften Chartbausteine unveraendert greifen.
+     ========================================================================== */
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;
+    z-index:100;padding:var(--sp-4)}
+  .overlay.open{display:flex}
+  .modal{background:var(--card);border:1px solid var(--line);border-radius:24px;max-width:860px;
+    width:100%;max-height:88vh;overflow:auto;padding:var(--sp-5);
+    box-shadow:0 20px 50px rgba(23,37,46,.16)}
+  :root[data-theme="dark"] .modal{box-shadow:0 16px 40px rgba(0,0,0,.45)}
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) .modal{box-shadow:0 16px 40px rgba(0,0,0,.45)}
+  }
+  .modal .top{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp-4)}
+  .modal h3{margin:0;font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1.2;text-wrap:pretty}
+  .x{border:none;background:var(--chip);width:44px;height:44px;border-radius:50%;font-size:19px;
+    cursor:pointer;color:var(--muted);flex:0 0 44px}
+  .seg{display:inline-flex;background:var(--chip);border-radius:12px;padding:3px;margin:var(--sp-3) 0}
+  .seg button{border:none;background:transparent;border-radius:9px;padding:8px 15px;font-size:12.5px;
+    font-weight:600;color:var(--muted);cursor:pointer;min-height:40px}
+  .seg button.on{background:var(--card);color:var(--ink)}
+  .seg button:disabled{opacity:.5;cursor:default;text-decoration:line-through}
+  #stklw{touch-action:pan-y}
+  @media (prefers-reduced-transparency:reduce){
+    .overlay{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(0,0,0,.72)}
+  }
+
+  /* Volltextflaeche: Abschnitte mit Marke, Begriffe als E0-Kacheln */
+  .dt-abschnitt{display:flex;flex-direction:column;gap:6px;margin-top:var(--sp-5)}
+  .dt-marke{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+  .dt-begriff{background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-sm);
+    padding:var(--sp-3);display:flex;flex-direction:column;gap:6px}
+  .dt-quelle{display:inline-flex;align-items:center;gap:var(--sp-2);min-height:44px;padding:0 14px;
+    background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill);
+    font-size:12.5px;font-weight:600}
+  .dt-quelle.tot{border-style:dashed;background:transparent;color:var(--muted);font-weight:500}
+  .dt-bild{width:100%;height:auto;border-radius:var(--radius-sm);margin-top:var(--sp-4)}
 </style>
 </head>
 <body>
@@ -315,9 +453,85 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   <section class="raum" id="raum-jetzt" data-raum="jetzt" aria-labelledby="h-jetzt">
     <h2 id="h-jetzt" tabindex="-1">Jetzt</h2>
-    <p class="stand t-caption" hidden></p>
-    <p class="platzhalter">Was heute Aufmerksamkeit verdient: Fokusgeschichte, Folgesignale,
-      dein persönlicher Bezug und das Marktregime. Die Inhalte folgen im nächsten Schritt.</p>
+    <!-- Teil D.7: Quellenstände GETRENNT. Das Maximum aus standText() wäre hier ein
+         Frischeversprechen für Inhalte, die aus vier verschiedenen Feeds stammen —
+         deshalb führt der Raum „Jetzt" seine eigene Zeile und ist bewusst nicht in
+         RAUMFEEDS eingetragen. -->
+    <p class="jz-staende t-caption" id="jzStaende" hidden></p>
+
+    <div class="jz" id="jzInhalt">
+      <!-- Grundreihenfolge = Fall „kein Bestand". Liegt mindestens eine Position vor,
+           schiebt jzReihenfolge() „Dein Fokus" EINMALIG vor die Fokusgeschichte
+           (Nachtrag vom 06.09., Punkt 1/2). Danach ändert feedsGross() nichts mehr. -->
+
+      <section class="jz-sek" id="jzLead" aria-labelledby="jzLeadH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="jzLeadH">Allgemeine Marktlage</h3>
+          <span class="t-caption">höchste gelieferte Digest-Priorität</span>
+        </div>
+        <div id="jzLeadInhalt"></div>
+      </section>
+
+      <section class="jz-sek" id="jzFolge" aria-labelledby="jzFolgeH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="jzFolgeH">Folge-Signale</h3>
+          <span class="t-caption">höchstens zwei</span>
+        </div>
+        <div class="jz-grid" id="jzFolgeInhalt"></div>
+      </section>
+
+      <section class="jz-sek" id="jzFokus" aria-labelledby="jzFokusH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="jzFokusH">Dein Fokus</h3>
+          <span class="t-caption" id="jzFokusMeta"></span>
+        </div>
+        <div id="jzFokusInhalt"></div>
+      </section>
+
+      <section class="jz-sek" id="jzMarkt" aria-labelledby="jzMarktH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="jzMarktH">Marktübersicht</h3>
+          <span class="t-caption" id="jzMarktStand"></span>
+        </div>
+        <div class="jz-grid weit" id="jzMarktInhalt"></div>
+
+        <div class="jz-sek" id="jzMover" hidden style="margin-top:var(--sp-5)">
+          <div class="jz-kopf">
+            <h4 class="t-h3">Auffällige Bewegungen</h4>
+            <span class="t-caption">nach gemessener Tagesbewegung</span>
+          </div>
+          <div class="card" style="padding:var(--sp-2) var(--sp-5)">
+            <div class="jz-liste" id="jzMoverListe"></div>
+          </div>
+          <button type="button" class="ghost jz-schalter" id="jzMoverAlle"
+                  aria-expanded="false" aria-controls="jzMoverListe" hidden>
+            <span>Alle Bewegungen</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="jz-sek" id="jzIdx" hidden style="margin-top:var(--sp-4)">
+          <button type="button" class="ghost jz-schalter" id="jzIdxSchalter"
+                  aria-expanded="false" aria-controls="jzIdxListe">
+            <span id="jzIdxLabel">Alle Indizes &amp; Charts</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="jz-grid" id="jzIdxListe" hidden></div>
+        </div>
+      </section>
+
+      <section class="jz-sek" id="jzMeldungen" aria-labelledby="jzMeldungenH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="jzMeldungenH">Weitere Meldungen</h3>
+          <span class="t-caption" id="jzMeldungenMeta"></span>
+        </div>
+        <div class="card" style="padding:var(--sp-2) var(--sp-5)">
+          <div class="jz-liste" id="jzMeldungenListe"></div>
+        </div>
+      </section>
+    </div>
   </section>
 
   <section class="raum" id="raum-radar" data-raum="radar" aria-labelledby="h-radar" hidden>
@@ -366,6 +580,60 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   </section>
 
 </main>
+
+<!-- ===== Volltextfläche einer Digest-Meldung (Teil A.5) =========================
+     Modaler Dialog: Escape schließt, der Fokus startet im Dialog, bleibt darin und
+     kehrt zum auslösenden Knopf zurück. Geschlossen hat der Dialog null Tab-Ziele —
+     dafür sorgt nicht display:none allein, sondern zusätzlich inert (dieselbe
+     Fokusfalle, die in der V1 noch offen ist). -->
+<div class="overlay" id="dtOverlay" role="dialog" aria-modal="true" aria-labelledby="dtTitel" inert>
+  <div class="modal">
+    <div class="top">
+      <div style="min-width:0;display:flex;flex-direction:column;gap:var(--sp-2)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2)" id="dtMeta"></div>
+        <h3 id="dtTitel">Meldung</h3>
+      </div>
+      <button class="x" type="button" id="dtSchliessen" aria-label="Dialog schließen">&times;</button>
+    </div>
+    <div id="dtInhalt"></div>
+  </div>
+</div>
+
+<!-- ===== Kurschart (Teil D) =====================================================
+     Markup und Klassennamen aus index.html:742–746 übernommen, damit openStock und
+     buildStk dort zeichengleich greifen. `stkPos` fehlt bewusst: V2-2 setzt kein
+     Positionsdetail, damit der Verwaltungsunterbau aus V2-4 nicht vorgezogen wird. -->
+<div class="overlay" id="stkOverlay" role="dialog" aria-modal="true" aria-labelledby="stkTitle" inert>
+  <div class="modal stkmodal">
+    <div class="top"><h3 id="stkTitle">Aktie</h3>
+      <button class="x" type="button" id="stkSchliessen" aria-label="Dialog schließen">&times;</button></div>
+    <p id="stkSub" style="color:var(--muted);margin:2px 0 0;font-size:14.5px;font-variant-numeric:tabular-nums"></p>
+    <div class="seg" id="stkseg" role="group" aria-label="Zeitraum">
+      <button type="button" data-d="30">1M</button>
+      <button type="button" data-d="90" class="on">3M</button>
+      <button type="button" data-d="180">6M</button>
+      <button type="button" data-d="0">Max</button>
+    </div>
+    <div style="position:relative;width:100%;height:360px"><div id="stklw" style="position:absolute;inset:0"></div></div>
+    <p class="jz-leer" id="stkHinweis" hidden></p>
+  </div>
+</div>
+
+<!-- ===== Indexchart (Teil D.4) ===================================================
+     Bewusst ein EIGENES Overlay: Indizes werden nach Intervall umgeschaltet
+     (m15/h1/d1/wk1), Aktien nach Zeitraum. Der V1-Pfad resData() faellt bei
+     fehlendem Intervall auf candlesGen() zurueck und erfindet Zufallskerzen —
+     dieser Fallback ist hier ausgeschlossen; fehlende Reihen werden deaktiviert. -->
+<div class="overlay" id="ixOverlay" role="dialog" aria-modal="true" aria-labelledby="ixTitel" inert>
+  <div class="modal stkmodal">
+    <div class="top"><h3 id="ixTitel">Index</h3>
+      <button class="x" type="button" id="ixSchliessen" aria-label="Dialog schließen">&times;</button></div>
+    <p id="ixSub" style="color:var(--muted);margin:2px 0 0;font-size:14.5px;font-variant-numeric:tabular-nums"></p>
+    <div class="seg" id="ixseg" role="group" aria-label="Intervall"></div>
+    <div style="position:relative;width:100%;height:360px"><div id="ixlw" style="position:absolute;inset:0"></div></div>
+    <p class="jz-leer" id="ixHinweis" hidden></p>
+  </div>
+</div>
 
 <nav class="bnav" aria-label="Hauptnavigation">
   <span class="bnav-pill" aria-hidden="true"></span>
@@ -546,8 +814,10 @@ function standText(feeds){
   return 'Stand: '+j.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit'})+', '+
          j.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'})+' Uhr';
 }
+/* „jetzt" fehlt hier bewusst: der Raum fuehrt seine Quellenstaende nach Teil D.7
+   GETRENNT (Digest, Markt, Kurse), weil das Maximum aus standText() sonst die
+   Frische des juengsten Feeds auf alle Inhalte uebertragen wuerde. */
 const RAUMFEEDS={
-  jetzt:()=>[MARKET,current&&DATA[current]],
   radar:()=>[RADAR,CANDIDATES,EARN],
   recherche:()=>[VIDEOS,VIDIDX],
   werte:()=>[QUOTES,TICKIDX]
@@ -776,14 +1046,714 @@ function bstRelevanz(j){
 }
 function bstJoinAlle(){const l=bstPositionen().map(bstJoin);l.forEach(j=>{j._r=bstRelevanz(j)});l.sort((a,b)=>b._r-a._r||String(a.symbol).localeCompare(String(b.symbol)));return l}
 
+/* ================================================================================
+   Raum „Jetzt" — V2-2 (Auftrag Teile A–D + beide Nachträge vom 06.09.2026).
+   Gestaltungsvorlage: design/v2-2-canvas/. Gerendert wird ausschliesslich, was die
+   Feeds zur Laufzeit liefern; die Canvas ist weder Datenquelle noch Codevorlage.
+   ================================================================================ */
+
+/* --- Formatierung. fp/fpLab/perLabel/tok zeichengleich aus index.html:831–839,
+   damit die uebernommene Chartstrecke unveraendert arbeitet. ------------------- */
+function tok(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
+function fp(p){return (p>=0?"+":"")+(+p).toFixed(2)+" %"}
+function fpLab(p,lab){return (p==null||!isFinite(p))?'–':fp(p)+(lab?' '+lab:'')}
+function shortDate(x){const d=new Date(x);return isFinite(d.getTime())?d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'}):''}
+function perLabel(fromTs){if(!fromTs)return 'Zeitraum';try{return 'seit '+shortDate(fromTs*1000)}catch(e){return 'Zeitraum'}}
+/* ISO-Datum aus einem Feed → deutsches Datum. Ungueltiges bleibt leer, nie geraten. */
+function jzTag(iso){if(!/^\d{4}-\d{2}-\d{2}$/.test(String(iso||'')))return '';const d=new Date(iso+'T00:00:00');return isFinite(d.getTime())?d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'}):''}
+function jzUhr(roh){const d=new Date(roh);if(!isFinite(d.getTime()))return '';return d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit'})+', '+d.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'})}
+/* ADR-025: erst escapen, DANN das einfache **fett** auszeichnen — nie umgekehrt,
+   sonst waere jedes Fremdzeichen zwischen den Sternen ausfuehrbares Markup. */
+function jzFett(s){return escapeHtml(s).replace(/\*\*([^*\n]{1,200})\*\*/g,'<b>$1</b>')}
+function jzFarbe(p){return (p==null||!isFinite(p))?'var(--muted)':(p>=0?'var(--up)':'var(--down)')}
+
+/* --- Digest-Auswahl (Teil A.1) ------------------------------------------------
+   Sortiert wird eine KOPIE; DATA[current].topics bleibt in Lieferreihenfolge.
+   prio 3 hoch → 2 → 1; alles ausserhalb 1–3 gilt als ohne Priorität und landet
+   hinten, wird aber nicht verworfen. Titelloses entfaellt ganz. */
+function jzPrioWert(t){const p=+((t&&t.prio));return (isFinite(p)&&p>=1&&p<=3)?p:0}
+function jzPrioLabel(t){const p=jzPrioWert(t);return p===3?{k:'hoch',l:'Priorität hoch'}:p===2?{k:'mittel',l:'Priorität mittel'}:p===1?{k:'niedrig',l:'Priorität niedrig'}:null}
+function jzTopics(){
+  const d=current&&DATA[current];
+  const roh=(d&&Array.isArray(d.topics))?d.topics:[];
+  const mit=[];
+  roh.forEach((t,i)=>{if(t&&typeof t.title==='string'&&t.title.trim())mit.push({t:t,i:i})});
+  mit.sort((a,b)=>jzPrioWert(b.t)-jzPrioWert(a.t)||a.i-b.i);   // stabil ueber den Eingangsindex
+  return mit.map(x=>x.t);
+}
+
+/* --- Fokusgeschichte (Teil A.2/A.3) ------------------------------------------
+   Nachtrag 06.09. Punkt 4: Solange die Digest-Strukturfelder fehlen, ist die
+   Ueberschrift „Allgemeine Marktlage" — kein persoenlicher Aufhaenger. */
+function jzLeadRender(top){
+  const box=document.getElementById('jzLead'),ziel=document.getElementById('jzLeadInhalt');
+  if(!box||!ziel)return;
+  if(!top){box.hidden=true;ziel.innerHTML='';return}
+  const pr=jzPrioLabel(top);
+  const meta=[];
+  if(current)meta.push(jzTag(current));
+  if(typeof top.time==='string'&&top.time.trim())meta.push(escapeHtml(top.time.trim()));
+  if(typeof top.timing==='string'&&top.timing.trim())meta.push(escapeHtml(top.timing.trim()));
+  /* Kurze vorhandene Einordnung, sonst ein Auszug aus dem body. Nie neu formuliert. */
+  const text=(typeof top.einordnung==='string'&&top.einordnung.trim())?top.einordnung.trim()
+            :(typeof top.body==='string'&&top.body.trim())?top.body.trim().slice(0,320):'';
+  const q=(Array.isArray(top.sources)&&top.sources[0])?top.sources[0]:null;
+  const quelle=(q&&safeUrl(q.u))?('Quelle: '+safeLink(q.u,q.l||q.u)):(q&&q.l?'Quelle: '+escapeHtml(q.l):'');
+  ziel.innerHTML=
+    '<article class="card jz-lead">'+
+      '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2)">'+
+        (pr?'<span class="jz-chip '+pr.k+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Digest-'+pr.l.toLowerCase().replace('priorität ','Priorität ')+'</span>':'')+
+        (meta.length?'<span class="t-caption num" style="color:var(--muted)">'+meta.join(' · ')+'</span>':'')+
+      '</div>'+
+      '<h4 class="jz-lead-titel" style="font-size:22px;line-height:1.15;font-weight:800;letter-spacing:-.02em;text-wrap:pretty;margin:0">'+escapeHtml(top.title)+'</h4>'+
+      (text?'<p class="jz-fliess" style="color:var(--muted)">'+jzFett(text)+'</p>':'')+
+      '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-3) var(--sp-5)">'+
+        (quelle?'<span class="t-small" style="color:var(--muted)">'+quelle+'</span>':'')+
+        '<span class="t-small" style="color:var(--muted)">Auswahl: höchste gelieferte Digest-Priorität — keine eigene Bewertung.</span>'+
+      '</div>'+
+      '<div><button type="button" class="jz-cta" data-dt="0">Ganzen Artikel öffnen'+
+        '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>'+
+      '</button></div>'+
+    '</article>';
+  box.hidden=false;
+}
+
+/* --- Folge-Signale: hoechstens zwei, keine Auffuellung (Teil A.2) ------------- */
+function jzFolgeRender(liste){
+  const box=document.getElementById('jzFolge'),ziel=document.getElementById('jzFolgeInhalt');
+  if(!box||!ziel)return;
+  if(!liste.length){box.hidden=true;ziel.innerHTML='';return}
+  ziel.innerHTML=liste.map((t,i)=>{
+    const pr=jzPrioLabel(t);
+    return '<button type="button" class="card jz-karte" data-dt="'+(i+1)+'">'+
+      '<span style="display:flex;align-items:center;gap:var(--sp-2)">'+
+        (pr?'<span class="jz-chip '+pr.k+'">'+escapeHtml(pr.l)+'</span>':'')+
+        (typeof t.time==='string'&&t.time.trim()?'<span class="t-caption num" style="color:var(--muted)">'+escapeHtml(t.time.trim())+'</span>':'')+
+      '</span>'+
+      '<span class="t-h3">'+escapeHtml(t.title)+'</span>'+
+      '<span class="t-small" style="color:var(--muted)">Vollständiger Text, Quellen und Begriffe im Detail.</span>'+
+    '</button>';
+  }).join('');
+  box.hidden=false;
+}
+
+/* --- Weitere Meldungen: ruhige Kurzliste ohne Duplikate (Teil A.4) ------------ */
+function jzMeldungenRender(liste,offset){
+  const box=document.getElementById('jzMeldungen'),ziel=document.getElementById('jzMeldungenListe'),
+        meta=document.getElementById('jzMeldungenMeta');
+  if(!box||!ziel)return;
+  if(!liste.length){box.hidden=true;ziel.innerHTML='';return}
+  if(meta)meta.textContent=liste.length+(liste.length===1?' weitere':' weitere')+(current?' aus dem Digest vom '+jzTag(current):'');
+  ziel.innerHTML=liste.map((t,i)=>{
+    const pr=jzPrioLabel(t);
+    return '<button type="button" class="jz-zeile jz-meldung" data-dt="'+(offset+i)+'">'+
+      '<span class="t-caption num" style="color:var(--muted)">'+(typeof t.time==='string'?escapeHtml(t.time.trim()):'')+'</span>'+
+      '<span class="t-small">'+escapeHtml(t.title)+'</span>'+
+      (pr?'<span class="jz-chip '+pr.k+'" style="justify-self:end">'+escapeHtml(pr.l)+'</span>':'<span></span>')+
+    '</button>';
+  }).join('');
+  box.hidden=false;
+}
+
+/* --- Volltextfläche (Teil A.5) ------------------------------------------------
+   Fokusfalle: der Dialog bekommt beim Oeffnen den Fokus, behaelt ihn (Tab wandert
+   im Kreis), Escape schliesst, und der Auslöser bekommt ihn zurueck. Geschlossen
+   ist der Dialog `inert` und damit vollstaendig aus der Tabfolge. */
+let DT_AUSLOESER=null;
+function dtFokusFelder(){
+  const d=document.getElementById('dtOverlay');
+  return [].slice.call(d.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'))
+    .filter(el=>el.offsetParent!==null||el===document.activeElement);
+}
+function dtOeffnen(top,ausloeser){
+  if(!top)return;
+  const ov=document.getElementById('dtOverlay');if(!ov)return;
+  DT_AUSLOESER=ausloeser||null;
+  const pr=jzPrioLabel(top),meta=[];
+  if(current)meta.push(jzTag(current));
+  if(typeof top.time==='string'&&top.time.trim())meta.push(escapeHtml(top.time.trim()));
+  if(typeof top.timing==='string'&&top.timing.trim())meta.push(escapeHtml(top.timing.trim()));
+  document.getElementById('dtMeta').innerHTML=
+    (pr?'<span class="jz-chip '+pr.k+'">Digest-'+escapeHtml(pr.l)+'</span>':'')+
+    (meta.length?'<span class="t-caption num" style="color:var(--muted)">'+meta.join(' · ')+'</span>':'');
+  document.getElementById('dtTitel').textContent=top.title;
+
+  let h='';
+  const abschnitt=(marke,txt)=>txt?('<div class="dt-abschnitt"><span class="dt-marke">'+marke+'</span>'+
+    '<p class="jz-fliess"'+(marke==='Meldung'?'':' style="color:var(--muted)"')+'>'+jzFett(txt)+'</p></div>'):'';
+  h+=abschnitt('Meldung',typeof top.body==='string'?top.body.trim():'');
+  h+=abschnitt('Verlauf',typeof top.verlauf==='string'?top.verlauf.trim():'');
+  h+=abschnitt('Einordnung',typeof top.einordnung==='string'?top.einordnung.trim():'');
+  /* Bild ist optional und darf beim Fehler NUR selbst entfallen (Teil A.4) */
+  const bild=safeUrl(top.img);
+  if(bild)h+='<img class="dt-bild" src="'+bild+'" alt="" loading="lazy" onerror="this.remove()">';
+  if(Array.isArray(top.begriffe)&&top.begriffe.length){
+    const b=top.begriffe.filter(x=>x&&typeof x.term==='string'&&x.term.trim());
+    if(b.length)h+='<div class="dt-abschnitt"><span class="dt-marke">Begriffe</span>'+
+      '<div class="jz-grid" style="margin-top:var(--sp-1)">'+b.map(x=>
+        '<div class="dt-begriff"><span class="t-h3">'+escapeHtml(x.term)+'</span>'+
+        (x.erklaerung?'<span class="t-small" style="color:var(--muted)">'+escapeHtml(x.erklaerung)+'</span>':'')+'</div>').join('')+'</div></div>';
+  }
+  const linkReihe=(marke,arr,lab,url)=>{
+    if(!Array.isArray(arr)||!arr.length)return '';
+    const teile=arr.filter(Boolean).map(x=>{
+      const u=safeUrl(url(x)),t=escapeHtml(String(lab(x)||u||'').trim());
+      if(!t)return '';
+      /* Ohne sichere https-URL bleibt der Text stehen — nie eine klickbare Attrappe */
+      return u?('<a class="dt-quelle" href="'+u+'" target="_blank" rel="noopener noreferrer">'+t+
+        '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6"/></svg></a>')
+        :('<span class="dt-quelle tot">'+t+'</span>');
+    }).filter(Boolean);
+    return teile.length?('<div class="dt-abschnitt"><span class="dt-marke">'+marke+'</span>'+
+      '<div style="display:flex;flex-wrap:wrap;gap:var(--sp-2);margin-top:var(--sp-1)">'+teile.join('')+'</div></div>'):'';
+  };
+  h+=linkReihe('Quellen',top.sources,x=>x.l,x=>x.u);
+  h+=linkReihe('Weiterlesen',top.reads,x=>x.h||x.s,x=>x.u);
+  document.getElementById('dtInhalt').innerHTML=h;
+
+  ov.removeAttribute('inert');
+  ov.classList.add('open');
+  jzHintergrundSperren(true);
+  const zu=document.getElementById('dtSchliessen');
+  if(zu)zu.focus();
+}
+function dtSchliessen(){
+  const ov=document.getElementById('dtOverlay');if(!ov||!ov.classList.contains('open'))return;
+  ov.classList.remove('open');
+  ov.setAttribute('inert','');            // geschlossen: null Tab-Ziele
+  document.getElementById('dtInhalt').innerHTML='';
+  jzHintergrundSperren(false);
+  if(DT_AUSLOESER&&document.contains(DT_AUSLOESER))DT_AUSLOESER.focus();
+  DT_AUSLOESER=null;
+}
+/* Solange ein Dialog offen ist, sind Räume, Kopf- und Bottom-Navigation gesperrt. */
+function jzHintergrundSperren(an){
+  ['#app','.appbar','.bnav'].forEach(sel=>{
+    const el=document.querySelector(sel);if(!el)return;
+    if(an){el.setAttribute('inert','')}else{el.removeAttribute('inert')}
+  });
+}
+
+/* --- „Dein Fokus" (Teil B, Reihenfolge nach Nachtrag 06.09.) ------------------ */
+/* Ereignisfilter zeichengleich aus index.html:1746 uebernommen. */
+function bstHatEreignis(j){return !!(j.trigger||(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2)||j.neuerAuftritt)}
+
+/* Zeitmarke aus einem YouTube-Deeplink lesen, ohne sie je zu erfinden. */
+function jzZeitmarke(u){
+  const m=/[?&]t=(\d+)s?(?:&|$)/.exec(String(u||''));
+  if(!m)return null;
+  const s=+m[1];if(!isFinite(s)||s<=0)return null;
+  return Math.floor(s/60)+':'+String(s%60).padStart(2,'0');
+}
+function jzVideoHTML(j){
+  const a=(j.auftritte&&j.auftritte.length)?j.auftritte[0]:null;
+  if(!a)return '<span class="jz-leer">Kein Videoauftritt vorhanden.</span>';
+  const u=safeUrl(a.url),kanal=escapeHtml(String(a.channel||'').trim()),tag=jzTag(a.date);
+  const kopf='<span class="t-small">'+(kanal||'Videoanalyse')+(tag?' · <span class="num">'+tag+'</span>':'')+'</span>';
+  if(!u)return kopf+'<span class="jz-leer">Kein sicherer Link vorhanden.</span>';
+  const zm=jzZeitmarke(a.url);
+  return kopf+'<a class="t-small" href="'+u+'" target="_blank" rel="noopener noreferrer" '+
+    'style="display:inline-flex;align-items:center;gap:6px;min-height:44px">'+
+    (zm?'Zum Video ab '+zm:'Zum Video (ohne Zeitmarke)')+
+    '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6"/></svg></a>';
+}
+function jzEreignisChips(j){
+  const c=[];
+  if(j.trigger)c.push('<span class="jz-chip warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>'+
+    escapeHtml(j.trigger.label)+(j.trigger.value?' '+escapeHtml(j.trigger.value):'')+'</span>');
+  if(j.earn&&j.earn.tage!=null&&j.earn.tage>=0&&j.earn.tage<=2&&j.earn.naechster)
+    c.push('<span class="jz-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Earnings '+jzTag(j.earn.naechster.date)+'</span>');
+  if(j.neuerAuftritt)c.push('<span class="jz-chip brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="4"/><path d="m10 9 5 3-5 3z"/></svg>Neuer Videoauftritt</span>');
+  return c.join('');
+}
+function jzFokusRender(){
+  const box=document.getElementById('jzFokus'),ziel=document.getElementById('jzFokusInhalt'),
+        meta=document.getElementById('jzFokusMeta');
+  if(!box||!ziel)return;
+  const pos=bstPositionen();
+  box.hidden=false;
+
+  if(!pos.length){
+    /* Teil B.5: Onboarding mit ausdruecklichen FORMATBEISPIELEN, keine Empfehlung.
+       Ein Klick legt nur eine Beobachtung an — nichts geschieht automatisch. */
+    if(meta)meta.textContent='';
+    ziel.innerHTML='<article class="card" style="display:flex;flex-direction:column;gap:var(--sp-3)">'+
+      '<span class="t-small" style="color:var(--muted)">Noch kein Wert beobachtet. Lege einen an, dann zeigt „Jetzt" die Ereignisse dazu.</span>'+
+      '<div class="ghostreihe" style="margin-top:0">'+
+        ['AAPL','SAP.DE','^GDAXI'].map(s=>'<button type="button" class="ghost" data-add="'+s+'"><span class="num">'+s+'</span></button>').join('')+
+      '</div>'+
+      '<span class="t-caption" style="color:var(--muted)">Formatbeispiele, keine Empfehlung.</span>'+
+      '<span class="t-caption" style="color:var(--muted)">Die vollständige Verwaltung folgt im Raum „Meine Werte".</span>'+
+    '</article>';
+    return;
+  }
+
+  const alle=bstJoinAlle();
+  const mitE=alle.filter(bstHatEreignis);
+  /* Teil B.1: bstJoinAlle liefert POSITIONEN, nicht eindeutige Symbole — die
+     Mengenangabe sagt deshalb „Positionen", und es wird nichts dedupliziert. */
+  const zeigen=(mitE.length?mitE:alle).slice(0,3);
+  const ereignisse=mitE.length>0;
+  if(meta)meta.textContent=zeigen.length+' von '+alle.length+' Positionen'+
+    (ereignisse?' mit Ereignisbezug':'')+' · Daten bleiben im Browser';
+
+  const kursStand=(QUOTES&&QUOTES.updated)?jzUhr(QUOTES.updated):'';
+  ziel.innerHTML='<div class="jz-grid">'+zeigen.map(j=>{
+    const k=j.kurs,pct=(k&&k.pct!=null&&isFinite(k.pct))?k.pct:null;
+    const chips=jzEreignisChips(j);
+    const chart=!!(k&&Array.isArray(k.candles)&&k.candles.length);
+    return '<article class="card" data-sym="'+escapeHtml(j.symbol)+'" style="display:flex;flex-direction:column;gap:var(--sp-3)">'+
+      '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp-3)">'+
+        '<span style="display:flex;flex-direction:column;gap:2px;min-width:0">'+
+          '<span class="jz-sym">'+escapeHtml(j.symbol)+'</span>'+
+          '<span class="t-h3">'+escapeHtml(j.name||j.symbol)+'</span>'+
+          '<span class="t-caption" style="color:var(--muted)">'+escapeHtml(BST_TYP[j.pos.typ]||j.pos.typ||'')+'</span>'+
+        '</span>'+
+        '<span style="display:flex;flex-direction:column;align-items:flex-end;gap:2px">'+
+          '<span class="jz-gross" style="color:'+jzFarbe(pct)+'">'+(pct==null?'unbekannt':fp(pct))+'</span>'+
+          '<span class="t-caption num" style="color:var(--muted)">Tag</span>'+
+        '</span>'+
+      '</div>'+
+      (chips?'<div style="display:flex;flex-wrap:wrap;gap:6px">'+chips+'</div>':
+        '<span class="jz-leer">Keine Ereignisdaten verfügbar.</span>')+
+      '<div class="jz-trenn"></div>'+
+      '<div style="display:flex;flex-direction:column;gap:var(--sp-1)">'+jzVideoHTML(j)+'</div>'+
+      (chart?'<div><button type="button" class="ghost" data-chart="'+escapeHtml(j.symbol)+'" style="min-height:44px">Kursverlauf ansehen</button></div>':
+        '<span class="jz-leer">Keine Chartdaten verfügbar.</span>')+
+      '<span class="t-caption" style="color:var(--muted)">'+
+        (kursStand?'Kursstand '+kursStand+' · ':'')+'„Tag" vergleicht die letzten zwei verfügbaren Schlusskurse.</span>'+
+    '</article>';
+  }).join('')+'</div>'+
+  (ereignisse?'':'<p class="jz-leer" style="margin-top:var(--sp-3)">Zu diesen Positionen liegt derzeit kein Ereignis vor.</p>');
+}
+
+/* --- Marktübersicht, Bogen und Aufklapper (Teil C) ---------------------------- */
+const JZ_INDEX_HERVOR=['Nasdaq 100 Future','DAX','Brent Öl'];
+function jzIndizes(){
+  const l=(MARKET&&Array.isArray(MARKET.indices))?MARKET.indices:[];
+  return l.filter(x=>x&&typeof x.nm==='string'&&x.nm.trim());
+}
+function jzIndexKarte(x,i,klick){
+  const p=isFinite(+x.pct)?+x.pct:null;
+  return '<'+(klick?'button type="button" data-idx="'+i+'"':'div')+' class="card jz-karte'+(klick?'':'')+'" style="gap:6px">'+
+    '<span class="t-caption" style="color:var(--muted)">'+escapeHtml(x.nm)+'</span>'+
+    '<span class="jz-gross">'+escapeHtml(String(x.val==null?'':x.val))+'</span>'+
+    '<span class="num" style="font-size:16px;font-weight:700;color:'+jzFarbe(p)+'">'+(p==null?'–':fp(p))+'</span>'+
+    '<span class="t-caption" style="color:var(--muted)">zum vorherigen Schluss</span>'+
+  '</'+(klick?'button':'div')+'>';
+}
+/* Bogen aus einem endlichen Score 0–100. 0 ist gueltig; null, Strings und Werte
+   ausserhalb der Skala lassen NUR diese Teilflaeche entfallen (Teil C.2). */
+function jzBogenHTML(){
+  const fg=FGDATA;
+  if(!fg)return '';
+  const s=fg.score;
+  if(typeof s!=='number'||!isFinite(s)||s<0||s>100)return '';
+  const w=(180-s*1.8)*Math.PI/180;
+  const cx=(65+50*Math.cos(w)).toFixed(1),cy=(62-50*Math.sin(w)).toFixed(1);
+  /* Zeigerfarbe folgt dem DRITTEL der Skala, an dem er steht — das ist die Skala
+     selbst und keine eigene Marktbewertung. */
+  const farbe=s<100/3?'var(--fg-low)':s<200/3?'var(--fg-mid)':'var(--fg-high)';
+  const wert=(Math.round(s*10)/10).toLocaleString('de-DE');
+  const rating=(typeof fg.rating==='string'&&fg.rating.trim())?fg.rating.trim():'';
+  return '<article class="card jz-bogen">'+
+    '<svg viewBox="0 0 130 84" role="img" aria-label="Fear-and-Greed-Index: '+escapeHtml(wert)+' von 100'+(rating?', Rating '+escapeHtml(rating):'')+'">'+
+      '<defs><linearGradient id="jzfg" x1="0" y1="0" x2="1" y2="0">'+
+        '<stop offset="0" stop-color="var(--fg-low)"/><stop offset=".5" stop-color="var(--fg-mid)"/><stop offset="1" stop-color="var(--fg-high)"/>'+
+      '</linearGradient></defs>'+
+      '<path d="M15 62 A50 50 0 0 1 115 62" fill="none" stroke="url(#jzfg)" stroke-width="8" stroke-linecap="round" opacity=".9"/>'+
+      '<circle cx="'+cx+'" cy="'+cy+'" r="6.5" fill="var(--card)" stroke="'+farbe+'" stroke-width="3"/>'+
+      '<text x="65" y="52" text-anchor="middle" font-size="24" font-weight="800" fill="var(--ink)">'+escapeHtml(wert)+'</text>'+
+      '<text x="15" y="78" text-anchor="middle" font-size="9" font-weight="600" fill="var(--muted)">0</text>'+
+      '<text x="115" y="78" text-anchor="middle" font-size="9" font-weight="600" fill="var(--muted)">100</text>'+
+    '</svg>'+
+    (rating?'<span class="jz-chip" style="background:color-mix(in srgb,'+farbe+' 16%,transparent);color:'+farbe+'">Rating: '+escapeHtml(rating)+'</span>':'')+
+    '<span class="t-small" style="color:var(--muted)">Fear &amp; Greed · Skala 0–100, gelieferter Wert.</span>'+
+  '</article>';
+}
+/* Teil C.3: hoechstens FÜNF Eintraege insgesamt, nicht fuenf je Gruppe. */
+function jzMoverGruppe(name){
+  const l=(MARKET&&Array.isArray(MARKET[name]))?MARKET[name]:[];
+  return l.filter(e=>e&&typeof e.t==='string'&&e.t.trim()&&isFinite(+e.p));
+}
+function jzMoverAuswahl(){
+  const zus=jzMoverGruppe('gainers').concat(jzMoverGruppe('losers')).map((e,i)=>({e:e,i:i}));
+  zus.sort((a,b)=>Math.abs(+b.e.p)-Math.abs(+a.e.p)||a.i-b.i);
+  const out=[],gesehen={};
+  zus.forEach(x=>{const t=x.e.t.toUpperCase();if(out.length>=5||gesehen[t])return;gesehen[t]=1;out.push(x.e)});
+  jzMoverGruppe('actives').forEach(e=>{const t=e.t.toUpperCase();if(out.length>=5||gesehen[t])return;gesehen[t]=1;out.push(e)});
+  return out;
+}
+function jzMoverZeile(e){
+  const p=+e.p,chart=!!(e.candles&&Array.isArray(e.candles.d1)&&e.candles.d1.length);
+  return '<button type="button" class="jz-zeile jz-mover" data-mover="'+escapeHtml(e.t)+'"'+(chart?'':' data-nochart="1"')+'>'+
+    '<span class="jz-sym">'+escapeHtml(e.t)+'</span>'+
+    '<span class="t-small jz-kurz">'+escapeHtml(String(e.n||e.t))+'</span>'+
+    '<span class="num jz-pct" style="color:'+jzFarbe(p)+'">'+fp(p)+'</span>'+
+  '</button>';
+}
+function jzMoverRender(alle){
+  const box=document.getElementById('jzMover'),ziel=document.getElementById('jzMoverListe'),
+        schalter=document.getElementById('jzMoverAlle');
+  if(!box||!ziel)return;
+  const g=jzMoverGruppe('gainers'),v=jzMoverGruppe('losers'),a=jzMoverGruppe('actives');
+  if(!g.length&&!v.length&&!a.length){box.hidden=true;return}
+  box.hidden=false;
+  if(alle){
+    /* „Alle" ERSETZT die Fünferliste, damit keine doppelte Fläche entsteht. */
+    const gruppe=(titel,l)=>l.length?('<div style="padding:var(--sp-3) 0"><span class="dt-marke">'+titel+' · '+l.length+'</span></div>'+l.map(jzMoverZeile).join('')):'';
+    ziel.innerHTML=gruppe('Gewinner',g)+gruppe('Verlierer',v)+gruppe('Meistgehandelt',a);
+  }else{
+    ziel.innerHTML=jzMoverAuswahl().map(jzMoverZeile).join('');
+  }
+  if(schalter){
+    /* „Alle" nur anbieten, wenn es ueberhaupt mehr zu sehen gibt */
+    const mehr=(g.length+v.length+a.length)>jzMoverAuswahl().length;
+    schalter.hidden=!mehr;
+    schalter.setAttribute('aria-expanded',String(!!alle));
+    schalter.querySelector('span').textContent=alle?'Weniger anzeigen':'Alle Bewegungen';
+  }
+}
+function jzMarktRender(){
+  const box=document.getElementById('jzMarkt'),ziel=document.getElementById('jzMarktInhalt'),
+        stand=document.getElementById('jzMarktStand'),idxBox=document.getElementById('jzIdx');
+  if(!box||!ziel)return;
+  const idx=jzIndizes(),bogen=jzBogenHTML();
+  const hervor=[];
+  JZ_INDEX_HERVOR.forEach(nm=>{const t=idx.filter(x=>x.nm.trim()===nm)[0];if(t)hervor.push(t)});
+  if(!bogen&&!hervor.length&&!idx.length){box.hidden=true;return}
+  box.hidden=false;
+  if(stand)stand.textContent=(MARKET&&MARKET.updated)?('Stand '+jzUhr(MARKET.updated)):'';
+  ziel.innerHTML=bogen+hervor.map(x=>jzIndexKarte(x,idx.indexOf(x),false)).join('');
+  if(idxBox){
+    idxBox.hidden=!idx.length;
+    const lab=document.getElementById('jzIdxLabel');
+    if(lab)lab.textContent='Alle Indizes & Charts · '+idx.length+(idx.length===1?' Index':' Indizes');
+  }
+  jzMoverRender(false);
+}
+function jzIdxListeRender(){
+  const l=document.getElementById('jzIdxListe');if(!l)return;
+  l.innerHTML=jzIndizes().map((x,i)=>jzIndexKarte(x,i,true)).join('');
+}
+
+/* --- Quellenstände getrennt (Teil D.7) --------------------------------------- */
+function jzStaendeRender(){
+  const el=document.getElementById('jzStaende');if(!el)return;
+  const t=[];
+  if(current)t.push('Digest '+jzTag(current));
+  if(MARKET&&MARKET.updated)t.push('Markt '+jzUhr(MARKET.updated));
+  if(QUOTES&&QUOTES.updated)t.push('Kurse '+jzUhr(QUOTES.updated));
+  el.innerHTML=t.map(x=>'<span>'+escapeHtml(x)+'</span>').join('');
+  el.hidden=!t.length;
+}
+
+/* --- Reihenfolge, EINMALIG vor dem ersten Render (Nachtrag 06.09. Punkt 2) -----
+   Bedingung ist „hat Positionen", nicht „hat Positionen mit Ereignis": der
+   Bestand liegt synchron im localStorage, die Ereignisse kommen erst mit
+   feedsGross(). Haenge die Reihenfolge am Ereignis, spraenge das Layout nach dem
+   Nachladen — genau der Shift, den Teil D.6 verbietet. */
+let JZ_REIHENFOLGE_STEHT=false;
+function jzReihenfolge(){
+  if(JZ_REIHENFOLGE_STEHT)return;
+  JZ_REIHENFOLGE_STEHT=true;
+  if(!bstPositionen().length)return;              // Grundreihenfolge im HTML gilt
+  const wrap=document.getElementById('jzInhalt'),fokus=document.getElementById('jzFokus'),
+        lead=document.getElementById('jzLead');
+  if(wrap&&fokus&&lead)wrap.insertBefore(fokus,lead);
+}
+
+/* --- Zusammenbau -------------------------------------------------------------- */
+function jetztRendern(){
+  jzReihenfolge();
+  const tops=jzTopics();
+  jzLeadRender(tops[0]||null);
+  jzFolgeRender(tops.slice(1,3));
+  jzMeldungenRender(tops.slice(3),3);
+  jzMarktRender();
+  jzFokusRender();
+  jzStaendeRender();
+}
+/* Nach feedsGross() bekommen nur die Flaechen neue Daten, die davon abhaengen.
+   Reihenfolge, offene Aufklapper und offene Dialoge bleiben unberuehrt; ein
+   Tastaturfokus innerhalb von „Dein Fokus" wird ueber das Symbol zurueckgeholt. */
+function jetztFokusErgaenzen(){
+  const akt=document.activeElement;
+  const inFokus=akt&&akt.closest&&akt.closest('#jzFokusInhalt');
+  const merk=inFokus?(akt.closest('[data-sym]')||{}).dataset:null;
+  const sym=merk?merk.sym:null;
+  jzFokusRender();
+  jzStaendeRender();
+  if(sym){
+    const neu=document.querySelector('#jzFokusInhalt [data-sym="'+CSS.escape(sym)+'"] button');
+    if(neu)neu.focus();
+  }
+}
+
+/* --- Charts (Teil D) ----------------------------------------------------------
+   chartOpts, applyStkLevels, openStock, buildStk und closeStk stammen aus
+   index.html (Zeilen 1150/1154/1180/1182/1183). openStock und buildStk sind
+   ZEICHENGLEICH uebernommen — der Blockvergleich steht in der Aufgabendatei.
+   Alles Zugaengliche (inert, Initialfokus, Rueckkehr) haengt als Wrapper darum
+   herum, damit der geprüfte Kern unangetastet bleibt (Teil D.2). */
+let stkChart=null,stkIx=null,stkLevels=null,ixChart=null,ixDaten=null;
+
+function chartOpts(cont,h){return {width:cont.clientWidth,height:h,layout:{background:{color:'transparent'},textColor:tok('--muted'),fontFamily:'InterVariable,-apple-system,system-ui,sans-serif'},grid:{vertLines:{color:tok('--line')},horzLines:{color:tok('--line')}},timeScale:{borderColor:tok('--line')},rightPriceScale:{borderColor:tok('--line')},crosshair:{mode:0}}}
+
+/* Aus index.html:1154 uebernommen — OHNE den Fib-Zweig, der auf candFibDate und
+   CAND_FIB_RATIO_LABEL zugreift. Beides gehoert zum Kandidaten-Unterbau, den V2-2
+   ausdruecklich nicht vorzieht; V2-2 ruft ohnehin nie mit levels auf. */
+function applyStkLevels(chart,series,ctx){
+  if(!ctx)return;
+  if(ctx.levels){
+    const lv=ctx.levels;
+    series.createPriceLine({price:lv.entry_low,color:tok('--accent'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:'Zone'});
+    series.createPriceLine({price:lv.entry_high,color:tok('--accent'),lineWidth:1,lineStyle:2,axisLabelVisible:true,title:'Zone'});
+    series.createPriceLine({price:lv.stop,color:tok('--down'),lineWidth:1,lineStyle:0,axisLabelVisible:true,title:'Stop'});
+    series.createPriceLine({price:lv.target,color:tok('--up'),lineWidth:1,lineStyle:0,axisLabelVisible:true,title:'Ziel'});
+  }
+}
+
+function openStock(a,levels,detail){if(!a||!a.candles||!a.candles.d1||!a.candles.d1.length)return;stkIx=a;stkLevels=(levels&&typeof levels==='object')?levels:null;
+  const pb=document.getElementById('stkPos');if(pb){pb.innerHTML=detail?bstDetailHTML(detail):'';pb.scrollTop=0}document.getElementById('stkTitle').textContent=a.n||a.t;document.getElementById('stkSub').textContent=a.t+' · '+fpLab(a.p,'Tag')+(a.pp!=null?' · '+fpLab(a.pp,perLabel(a.pf)):'');document.querySelectorAll('#stkseg button').forEach(b=>b.classList.toggle('on',b.dataset.d==='90'));document.getElementById('stkOverlay').classList.add('open');setTimeout(()=>buildStk(90),30)}
+function buildStk(days){const cont=document.getElementById('stklw');cont.innerHTML='';stkChart=LightweightCharts.createChart(cont,chartOpts(cont,360));const cUp=tok('--up'),cDn=tok('--down');const s=stkChart.addCandlestickSeries({upColor:cUp,downColor:cDn,wickUpColor:cUp,wickDownColor:cDn,borderVisible:false});let data=stkIx.candles.d1;if(days){const cut=Math.floor(Date.now()/1000)-days*86400;const f=data.filter(c=>c.time>=cut);if(f.length)data=f}s.setData(data);applyStkLevels(stkChart,s,stkLevels);stkChart.timeScale().fitContent()}
+function closeStk(){document.getElementById('stkOverlay').classList.remove('open');if(stkChart){stkChart.remove();stkChart=null}}
+document.querySelectorAll('#stkseg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#stkseg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');if(stkChart){stkChart.remove();stkChart=null}buildStk(+b.dataset.d)});
+document.getElementById('stkOverlay').addEventListener('click',e=>{if(e.target.id==='stkOverlay')jzStkSchliessen()});
+
+/* Kerzenvalidierung vor dem Chartkern (Teil D.5): endliche Werte, sinnvolle
+   OHLC-Grenzen, streng aufsteigende und damit eindeutige Zeitpunkte. Eine
+   fehlerhafte Reihe degradiert zu null — sie wird nie repariert oder ersetzt. */
+function jzKerzenOk(l){
+  if(!Array.isArray(l)||!l.length)return null;
+  const out=[];let letzte=-Infinity;
+  for(let i=0;i<l.length;i++){
+    const c=l[i];if(!c)continue;
+    const t=+c.time,o=+c.open,h=+c.high,lo=+c.low,cl=+c.close;
+    if(!isFinite(t)||!isFinite(o)||!isFinite(h)||!isFinite(lo)||!isFinite(cl))continue;
+    if(t<=letzte)continue;
+    if(h<lo||h<o||h<cl||lo>o||lo>cl)continue;
+    out.push({time:t,open:o,high:h,low:lo,close:cl});letzte=t;
+  }
+  return out.length?out:null;
+}
+function jzChartBereit(){return typeof LightweightCharts!=='undefined'&&LightweightCharts&&typeof LightweightCharts.createChart==='function'}
+
+/* A11y-Klammer um den unveraenderten Kern */
+let STK_AUSLOESER=null;
+function jzStkOeffnen(a,ausloeser){
+  const ov=document.getElementById('stkOverlay'),hin=document.getElementById('stkHinweis');
+  if(!ov)return;
+  if(hin){hin.hidden=true;hin.textContent=''}
+  if(!jzChartBereit()){
+    /* Fehlende Bibliothek muss eine lesbare Rueckmeldung erlauben — keine
+       Exception und keine leere Klickwirkung (Teil D.3). */
+    STK_AUSLOESER=ausloeser||null;
+    document.getElementById('stkTitle').textContent=a.n||a.t;
+    document.getElementById('stkSub').textContent='';
+    if(hin){hin.textContent='Die Chartbibliothek konnte nicht geladen werden.';hin.hidden=false}
+    ov.removeAttribute('inert');ov.classList.add('open');jzHintergrundSperren(true);
+    const zu=document.getElementById('stkSchliessen');if(zu)zu.focus();
+    return;
+  }
+  STK_AUSLOESER=ausloeser||null;
+  ov.removeAttribute('inert');
+  openStock(a,null,null);
+  jzHintergrundSperren(true);
+  const zu=document.getElementById('stkSchliessen');if(zu)zu.focus();
+}
+function jzStkSchliessen(){
+  const ov=document.getElementById('stkOverlay');if(!ov||!ov.classList.contains('open'))return;
+  closeStk();
+  ov.setAttribute('inert','');
+  jzHintergrundSperren(false);
+  if(STK_AUSLOESER&&document.contains(STK_AUSLOESER))STK_AUSLOESER.focus();
+  STK_AUSLOESER=null;
+}
+const stkZu=document.getElementById('stkSchliessen');
+if(stkZu)stkZu.addEventListener('click',jzStkSchliessen);
+
+/* Indexchart: nur tatsaechlich gelieferte, validierte Intervalle. */
+const JZ_IV=[{k:'m15',l:'15 Min'},{k:'h1',l:'1 Std'},{k:'d1',l:'1 Tag'},{k:'wk1',l:'1 Woche'}];
+let IX_AUSLOESER=null;
+function jzIxBauen(res){
+  const cont=document.getElementById('ixlw');if(!cont)return;
+  cont.innerHTML='';
+  if(ixChart){ixChart.remove();ixChart=null}
+  const d=ixDaten&&ixDaten[res];
+  if(!d)return;
+  ixChart=LightweightCharts.createChart(cont,chartOpts(cont,360));
+  const cUp=tok('--up'),cDn=tok('--down');
+  const s=ixChart.addCandlestickSeries({upColor:cUp,downColor:cDn,wickUpColor:cUp,wickDownColor:cDn,borderVisible:false});
+  s.setData(d);
+  ixChart.timeScale().fitContent();
+}
+function jzIndexChart(i,ausloeser){
+  const x=jzIndizes()[i];if(!x)return;
+  const ov=document.getElementById('ixOverlay'),seg=document.getElementById('ixseg'),
+        hin=document.getElementById('ixHinweis');
+  if(!ov)return;
+  IX_AUSLOESER=ausloeser||null;
+  document.getElementById('ixTitel').textContent=x.nm;
+  const p=isFinite(+x.pct)?+x.pct:null;
+  document.getElementById('ixSub').textContent=String(x.val==null?'':x.val)+(p==null?'':' · '+fp(p)+' zum vorherigen Schluss');
+  ixDaten={};
+  const c=(x&&x.candles&&typeof x.candles==='object')?x.candles:{};
+  JZ_IV.forEach(iv=>{ixDaten[iv.k]=jzKerzenOk(c[iv.k])});
+  const erst=JZ_IV.filter(iv=>ixDaten[iv.k])[0];
+  if(seg)seg.innerHTML=JZ_IV.map(iv=>'<button type="button" data-iv="'+iv.k+'"'+
+    (ixDaten[iv.k]?'':' disabled aria-disabled="true" title="Für diesen Index nicht geliefert"')+
+    (erst&&erst.k===iv.k?' class="on"':'')+'>'+iv.l+'</button>').join('');
+  if(hin){
+    if(!jzChartBereit()){hin.textContent='Die Chartbibliothek konnte nicht geladen werden.';hin.hidden=false}
+    else if(!erst){hin.textContent='Keine Chartdaten verfügbar.';hin.hidden=false}
+    else{hin.textContent='';hin.hidden=true}
+  }
+  ov.removeAttribute('inert');ov.classList.add('open');jzHintergrundSperren(true);
+  const zu=document.getElementById('ixSchliessen');if(zu)zu.focus();
+  if(erst&&jzChartBereit())setTimeout(()=>jzIxBauen(erst.k),30);
+}
+function jzIxSchliessen(){
+  const ov=document.getElementById('ixOverlay');if(!ov||!ov.classList.contains('open'))return;
+  ov.classList.remove('open');ov.setAttribute('inert','');
+  if(ixChart){ixChart.remove();ixChart=null}
+  ixDaten=null;
+  jzHintergrundSperren(false);
+  if(IX_AUSLOESER&&document.contains(IX_AUSLOESER))IX_AUSLOESER.focus();
+  IX_AUSLOESER=null;
+}
+const ixZu=document.getElementById('ixSchliessen');
+if(ixZu)ixZu.addEventListener('click',jzIxSchliessen);
+const ixSeg=document.getElementById('ixseg');
+if(ixSeg)ixSeg.addEventListener('click',ev=>{
+  const b=ev.target.closest('button[data-iv]');if(!b||b.disabled)return;
+  [].slice.call(ixSeg.querySelectorAll('button')).forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  jzIxBauen(b.dataset.iv);
+});
+const ixOv=document.getElementById('ixOverlay');
+if(ixOv)ixOv.addEventListener('click',e=>{if(e.target.id==='ixOverlay')jzIxSchliessen()});
+
+/* Aufrufer. Teil D.2: es werden ausschliesslich geprüfte echte Tageskerzen als
+   {t,n,p,candles:{d1:…}} weitergereicht; levels und Positionsdetail bleiben leer. */
+function jzMoverEintrag(sym){
+  const s=String(sym).toUpperCase();
+  const alle=jzMoverGruppe('gainers').concat(jzMoverGruppe('losers'),jzMoverGruppe('actives'));
+  for(let i=0;i<alle.length;i++)if(alle[i].t.toUpperCase()===s)return alle[i];
+  return null;
+}
+async function jzMoverKlick(el){
+  const e=jzMoverEintrag(el.dataset.mover);if(!e)return;
+  let d1=jzKerzenOk(e.candles&&e.candles.d1);
+  if(!d1){
+    /* Erst hier, nach ausdruecklichem Chartklick, darf der bestehende Proxy-Pfad
+       greifen — beim Seitenstart und beim blossen Aufklappen nie (Teil D.3). */
+    el.disabled=true;
+    try{const q=await ywFetch(e.t);d1=jzKerzenOk(q&&q.candles)}catch(err){d1=null}
+    el.disabled=false;
+  }
+  if(!d1){jzChartFehler(e.n||e.t,el);return}
+  jzStkOeffnen({t:e.t,n:e.n||e.t,p:+e.p,candles:{d1:d1}},el);
+}
+async function jzSymbolChart(sym,el){
+  const j=bstJoinAlle().filter(x=>x.symbol===sym)[0];
+  const k=j&&j.kurs;
+  let d1=jzKerzenOk(k&&k.candles);
+  if(!d1){
+    el.disabled=true;
+    try{const q=await ywFetch(sym);d1=jzKerzenOk(q&&q.candles)}catch(err){d1=null}
+    el.disabled=false;
+  }
+  if(!d1){jzChartFehler((j&&j.name)||sym,el);return}
+  jzStkOeffnen({t:sym,n:(j&&j.name)||sym,p:(k&&k.pct!=null&&isFinite(k.pct))?k.pct:null,candles:{d1:d1}},el);
+}
+/* Lesbare Rueckmeldung statt leerer Klickwirkung, wenn keine gueltige Reihe da ist */
+function jzChartFehler(titel,ausloeser){
+  const ov=document.getElementById('stkOverlay'),hin=document.getElementById('stkHinweis');
+  if(!ov)return;
+  STK_AUSLOESER=ausloeser||null;
+  document.getElementById('stkTitle').textContent=titel;
+  document.getElementById('stkSub').textContent='';
+  const cont=document.getElementById('stklw');if(cont)cont.innerHTML='';
+  if(hin){hin.textContent='Keine Chartdaten verfügbar.';hin.hidden=false}
+  ov.removeAttribute('inert');ov.classList.add('open');jzHintergrundSperren(true);
+  const zu=document.getElementById('stkSchliessen');if(zu)zu.focus();
+}
+
+/* --- Ereignisse (Delegation, damit Neurendern keine Handler verdoppelt) ------- */
+document.addEventListener('click',ev=>{
+  const t=ev.target;if(!t||!t.closest)return;
+  const dt=t.closest('[data-dt]');
+  if(dt){const tops=jzTopics();dtOeffnen(tops[+dt.dataset.dt],dt);return}
+  const add=t.closest('[data-add]');
+  if(add){
+    /* Teil B.5: nur auf Klick, ueber die bestehende Normalisierung und
+       Duplikatpruefung — kein automatisches Anlegen. bstValidPos verlangt id und
+       added_at, deshalb kommen beide aus den vorhandenen Helfern. */
+    const sym=bstNormEingabe(add.dataset.add);
+    if(sym){
+      const b=bstLoad();
+      if(!b.positionen.some(p=>p.symbol===sym))
+        bstAdd({id:bstNextId(b),symbol:sym,typ:'beobachtung',added_at:bstToday()});
+    }
+    jzFokusRender();
+    return;
+  }
+  const mv=t.closest('[data-mover]');
+  if(mv){jzMoverKlick(mv);return}
+  const ch=t.closest('[data-chart]');
+  if(ch){jzSymbolChart(ch.dataset.chart,ch);return}
+  const ix=t.closest('[data-idx]');
+  if(ix){jzIndexChart(+ix.dataset.idx,ix);return}
+  if(t.closest('#dtSchliessen')){dtSchliessen();return}
+  if(t.id==='dtOverlay'){dtSchliessen();return}
+});
+document.addEventListener('keydown',ev=>{
+  if(ev.key!=='Escape')return;
+  const dt=document.getElementById('dtOverlay');
+  if(dt&&dt.classList.contains('open')){ev.preventDefault();dtSchliessen();return}
+  const stk=document.getElementById('stkOverlay');
+  if(stk&&stk.classList.contains('open')){ev.preventDefault();jzStkSchliessen();return}
+  const ix=document.getElementById('ixOverlay');
+  if(ix&&ix.classList.contains('open')){ev.preventDefault();jzIxSchliessen()}
+});
+/* Fokusbegrenzung: Tab laeuft im offenen Dialog im Kreis. */
+document.addEventListener('keydown',ev=>{
+  if(ev.key!=='Tab')return;
+  const ov=document.querySelector('.overlay.open');if(!ov)return;
+  const f=[].slice.call(ov.querySelectorAll('button:not(:disabled), [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'));
+  if(!f.length)return;
+  const erst=f[0],letzt=f[f.length-1];
+  if(ev.shiftKey&&document.activeElement===erst){ev.preventDefault();letzt.focus()}
+  else if(!ev.shiftKey&&document.activeElement===letzt){ev.preventDefault();erst.focus()}
+});
+const jzMoverSchalter=document.getElementById('jzMoverAlle');
+if(jzMoverSchalter)jzMoverSchalter.addEventListener('click',()=>{
+  const auf=jzMoverSchalter.getAttribute('aria-expanded')==='true';
+  jzMoverRender(!auf);
+  jzMoverSchalter.focus();                 // Fokus bleibt auf dem Schalter
+});
+const jzIdxSchalter=document.getElementById('jzIdxSchalter');
+if(jzIdxSchalter)jzIdxSchalter.addEventListener('click',()=>{
+  const l=document.getElementById('jzIdxListe'),auf=jzIdxSchalter.getAttribute('aria-expanded')==='true';
+  if(!auf&&l&&!l.children.length)jzIdxListeRender();
+  if(l)l.hidden=auf;
+  jzIdxSchalter.setAttribute('aria-expanded',String(!auf));
+});
+
 /* ===== Start ==================================================================== */
 (async function boot(){
+  /* Reihenfolge zaehlt: den letzten Besuch LESEN, bevor der neue geschrieben wird —
+     sonst zerstoert der eigene Bootlauf die Neu-Markierung der Videoauftritte. */
   BST_LETZTER_BESUCH=bstBesuchLesen();
   bstLoad();                    // Migration laeuft hier genau einmal, idempotent
   bstBesuchSchreiben();
   await feedsKlein();
   standAnzeigen();
-  feedsGross();                 // bewusst ohne await — blockiert das erste Rendern nicht
+  jetztRendern();               // erstes Rendern: hier steht die Reihenfolge fest
+  /* Bewusst ohne await — blockiert das erste Rendern nicht. Ein Ausfall der grossen
+     Feeds laesst die bereits gerenderten Flaechen unberuehrt. */
+  feedsGross().then(jetztFokusErgaenzen,jetztFokusErgaenzen);
 })();
 </script>
 
