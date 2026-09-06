@@ -182,9 +182,24 @@
       if (/^(SCRIPT|STYLE)$/.test(n.parentElement.tagName)) continue;
       const t = n.nodeValue;
       const m = t.match(/-?\d+\.\d+/g);
-      if (m) treffer.push({ text: t.trim().slice(0, 80), zahlen: m, in: n.parentElement.className || n.parentElement.tagName });
+      if (!m) continue;
+      /* Nicht jeder Punkt ist ein Dezimalpunkt. Deutsch korrekt und ausdruecklich
+         nicht zu tauschen sind Datumstrenner (06.09.2026) und Tausendergruppen
+         (29.565) — Letztere kommen fertig formatiert aus dem Feed. Echt sind nur
+         die uebrigen. */
+      m.forEach(z => {
+        const datum = /\d{1,2}\.\d{2}\.?(\d{4})?/.test(t) && new RegExp(z.replace('.', '\\.') + '\\.').test(t);
+        const tausender = /^-?\d{1,3}\.\d{3}$/.test(z);
+        treffer.push({
+          zahl: z,
+          art: datum ? 'datum' : (tausender ? 'tausendergruppe' : 'DEZIMALPUNKT'),
+          text: t.trim().slice(0, 60),
+          in: n.parentElement.className || n.parentElement.tagName
+        });
+      });
     }
-    return { anzahl: treffer.length, treffer: treffer.slice(0, 25) };
+    const echt = treffer.filter(x => x.art === 'DEZIMALPUNKT');
+    return { anzahl: treffer.length, echteDezimalpunkte: echt.length, echt, treffer: treffer.slice(0, 25) };
   }
 
   /* --- Sticky: klebt die Kontextspalte beim Scrollen? --------------------------

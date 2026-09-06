@@ -37,10 +37,13 @@ function negativ(name, verdorben, messen) {
   }
 }
 
-/* --- Nur der <style>-Block, nicht das Markup ---------------------------------- */
+/* --- Nur der <style>-Block, nicht das Markup ----------------------------------
+   CSS-Kommentare werden entfernt, sonst zaehlt ein Kommentar wie „frueher @media
+   (min-width:640px)" als echter Breakpoint. Genau das ist beim ersten Lauf
+   passiert und hat den Breakpoint-Test zu Recht rot gemacht. */
 function stil(q) {
   const a = q.indexOf('<style>'), b = q.indexOf('</style>', a);
-  return a < 0 ? '' : q.slice(a, b);
+  return a < 0 ? '' : q.slice(a, b).replace(/\/\*[\s\S]*?\*\//g, ' ');
 }
 
 /* --- Kriterium 1: Container-Formel aus § 4 ------------------------------------ */
@@ -156,8 +159,80 @@ gruppe('Kriterium 4 — jzReihenfolge vorhanden, an 1024 px gebunden, idempotent
     reihenfolge);
 });
 
-/* Kriterium 5 (fluide Mittel) und 6 (Dezimalkomma) folgen mit den Auftragsteilen
-   C/D und E — sie werden hier ergaenzt, sobald der Code dafuer steht. */
+/* --- Kriterium 5: Zeilenlaengen-Deckel und fluide Mittel --------------------- */
+function fluid(q) {
+  const s = stil(q);
+  return {
+    deckelWert: (s.match(/\.jz-fliess\{max-width:min\((\d+)ch,100%\)/) || [])[1] || null,
+    containerTraeger: /#jzLead,#jzFolge,#jzFokus,#jzMarkt,#jzMeldungen\{container-type:inline-size\}/.test(s),
+    nichtAufBody: !/body\{[^}]*container-type/.test(s),
+    containerAbfragen: (s.match(/@container \(min-width:/g) || []).length,
+    autoFit: (s.match(/repeat\(auto-fit,minmax\(/g) || []).length,
+    keinAutoFill: !/auto-fill/.test(s),
+    /* nicht [^)]*: var(--sp-4) enthaelt selbst eine Klammer und wuerde den Treffer abschneiden */
+    clampCqi: (s.match(/clamp\([\s\S]{0,80}?cqi/g) || []).length,
+    fallback: /@supports not \(container-type:inline-size\)/.test(s)
+  };
+}
+gruppe('Kriterium 5 — Zeilendeckel, Container Queries, clamp, auto-fit, Fallback', () => {
+  const f = fluid(html);
+  /* 54ch statt 62ch: gemessener Wert, siehe design/design-system.md § 4.1. */
+  pruef('Zeilenlaengen-Deckel in ch', f.deckelWert, '54');
+  pruef('container-type auf den fuenf Rasterfeldern, nicht auf body',
+    [f.containerTraeger, f.nichtAufBody], [true, true]);
+  pruef('mindestens zwei @container-Abfragen', f.containerAbfragen >= 2, true);
+  pruef('auto-fit statt auto-fill', [f.autoFit >= 3, f.keinAutoFill], [true, true]);
+  pruef('mindestens zwei clamp() an cqi gebunden', f.clampCqi >= 2, true);
+  pruef('@supports-Fallback vorhanden', f.fallback, true);
+  pruef('Fliesstext-Deckel im gerenderten Markup und in den Renderfunktionen',
+    (html.match(/jz-fliess/g) || []).length >= 4, true);
+  negativ('Fallback-Bedingung umgedreht',
+    html.replace('@supports not (container-type:inline-size)', '@supports (container-type:inline-size)'),
+    fluid);
+  negativ('Deckel zurueck auf den ungemessenen Entwurfswert',
+    html.replace('.jz-fliess{max-width:min(54ch,100%)', '.jz-fliess{max-width:min(62ch,100%)'),
+    fluid);
+  negativ('Container Queries wieder durch einen Viewport-Breakpoint ersetzt',
+    html.replace('@container (min-width:592px)', '@media (min-width:592px)'),
+    fluid);
+});
+
+/* --- Kriterium 6: Dezimaltrennzeichen (Teil E) --------------------------------
+   Angezeigte Zahlen tragen das Komma. Ausgenommen sind die Rechenstellen: die
+   Kerzenaufbereitung und die SVG-Koordinaten. Ebenfalls ausgenommen ist x.val —
+   der Wert kommt als bereits deutsch formatierte ZEICHENKETTE aus dem Feed
+   („7.722" ist ein Tausenderpunkt), ein Tausch haette ihn verfaelscht. */
+function dezimal(q) {
+  const fp = (q.match(/function fp\(p\)\{[^\n]*/) || [''])[0];
+  return {
+    fpMitKomma: /toFixed\(2\)\.replace\("\.",","\)/.test(fp),
+    kerzenUnveraendert: /open:\+\(\+o\)\.toFixed\(2\),high:\+\(\+h\)\.toFixed\(2\)/.test(q),
+    koordinatenUnveraendert: /const cx=\(65\+50\*Math\.cos\(w\)\)\.toFixed\(1\),cy=\(62-50\*Math\.sin\(w\)\)\.toFixed\(1\)/.test(q),
+    fgWertDeutsch: /toLocaleString\('de-DE'\)/.test(q),
+    valUnangetastet: /escapeHtml\(String\(x\.val==null\?'':x\.val\)\)/.test(q)
+  };
+}
+gruppe('Kriterium 6 — deutsches Dezimalkomma bei angezeigten Zahlen', () => {
+  pruef('Dezimalstellen', dezimal(html), {
+    fpMitKomma: true, kerzenUnveraendert: true, koordinatenUnveraendert: true,
+    fgWertDeutsch: true, valUnangetastet: true
+  });
+  /* Gegenprobe auf der Funktion selbst, nicht nur auf dem Quelltext. */
+  faelle++;
+  const fpQuelle = (html.match(/function fp\(p\)\{[^\n]*\}/) || [''])[0];
+  const fpFn = new Function('return ' + fpQuelle.replace('function fp', 'function'))();
+  const ist = [fpFn(0.84), fpFn(-0.42), fpFn(0)];
+  const soll = ['+0,84 %', '-0,42 %', '+0,00 %'];
+  if (JSON.stringify(ist) !== JSON.stringify(soll)) {
+    fehler++; console.error('       x fp() liefert nicht das Komma\n         ist:  ' + JSON.stringify(ist) + '\n         soll: ' + JSON.stringify(soll));
+  }
+  negativ('fp() wieder mit Punkt',
+    html.replace('.toFixed(2).replace(".",",")', '.toFixed(2)'),
+    dezimal);
+  negativ('x.val faelschlich mit umformatiert',
+    html.replace("escapeHtml(String(x.val==null?'':x.val))", "escapeHtml(String(x.val==null?'':x.val).replace('.',','))"),
+    dezimal);
+});
 
 /* --- Kriterium 7: nichts ausserhalb des Scope veraendert ---------------------- */
 function hash(p) {

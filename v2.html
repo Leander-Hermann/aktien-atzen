@@ -297,6 +297,14 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .jz-sek{display:flex;flex-direction:column;gap:var(--sp-3)}
   .jz-sek[hidden]{display:none}
 
+  /* §4.2 Container Queries: der Traeger sind die Rasterfelder, ausdruecklich NICHT
+     body. Jede der fuenf Sektionen ist genau so breit wie ihre Spalte — Karten
+     darin fragen also die Spaltenbreite ab und nicht die Fensterbreite. Das ist
+     der Fall, an dem ein Viewport-Breakpoint scheitert: dieselbe Karte steht bei
+     1600 px einmal in der 889-px-Haupt- und einmal in der 631-px-Kontextspalte.
+     Unter 1024 px greift dieselbe Regel; die Sektion ist dann die eine Spalte. */
+  #jzLead,#jzFolge,#jzFokus,#jzMarkt,#jzMeldungen{container-type:inline-size}
+
   /* ==========================================================================
      V2-6 Teil B — 7/5-Raster ab 1024 px.
      Unter 1024 px ist die Kontextspalte kein Kasten, sondern durchsichtig
@@ -333,7 +341,11 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     /* Pflicht-Fallback (§4.2): ohne Container-Query-Unterstuetzung faellt die
        Seite auf die einspaltige Basisdarstellung zurueck — kein halbes Raster. */
     @supports not (container-type:inline-size){
-      .jz{display:flex;flex-direction:column;gap:var(--sp-8)}
+      /* align-items MUSS zurueckgesetzt werden: das start aus der Rasterregel
+         darueber gilt sonst weiter, die Sektionen schrumpfen auf Inhaltsbreite —
+         mit inline-size-Containment sogar auf null. Genau das hat der erzwungene
+         Fallbacklauf (tests/v2/preview.cjs --fallback) gezeigt. */
+      .jz{display:flex;flex-direction:column;gap:var(--sp-8);align-items:stretch}
       /* per ID, sonst schlaegt die #jzKontext-Regel oben die Klasse */
       #jzKontext{display:contents;position:static;max-height:none;overflow:visible}
     }
@@ -357,10 +369,28 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   /* Fokusgeschichte: einzige Kupferflaeche im Viewport (§1.3 CTA-Knappheit) */
   .jz-lead{display:flex;flex-direction:column;gap:var(--sp-4)}
-  .jz-lead h3{font-size:22px;line-height:1.15;font-weight:800;letter-spacing:-.02em;text-wrap:pretty}
-  @media (min-width:640px){.jz-lead h3{font-size:24px}}
-  /* §4.1 Zeilenlaengen-Deckel: nur zusammenhaengender Fliesstext */
-  .jz-fliess{max-width:min(62ch,100%);text-wrap:pretty}
+  /* §2.1 H1/Display: 22 px mobil, 24 px auf voller Spaltenbreite. Der Wert stand
+     bisher inline im gerenderten Titel, waehrend die Regel „.jz-lead h3" ins Leere
+     zeigte — die Karte hat gar kein h3. Jetzt eine Klasse mit clamp() an der
+     CONTAINERbreite (§4.2): Unter- und Obergrenze bleiben die Tokens 22 und 24 px,
+     dazwischen waechst der Titel mit seiner Spalte statt mit dem Fenster. */
+  /* Erst der schlichte Wert, dann der fluide: eine Engine ohne cqi verwirft die
+     zweite Zeile und behaelt 22 px, statt auf die Browservorgabe zu fallen. */
+  .jz-lead-titel{font-size:22px;font-size:clamp(22px,20.5px + 0.4cqi,24px);line-height:1.15;
+    font-weight:800;letter-spacing:-.02em;text-wrap:pretty;margin:0}
+  /* §4.1 Zeilenlaengen-Deckel: nur zusammenhaengender Fliesstext.
+     54ch statt der 62ch aus dem ersten Entwurf — gemessen, nicht geschaetzt: bei
+     62ch (566,7 px) trugen die vollen Zeilen des laengsten Fliesstextes 73, 80 und
+     82 Zeichen, also 6,91 bis 7,76 px je Zeichen. Daraus folgt das zulaessige
+     Breitenfenster 466 bis 518 px fuer die Zielspanne 60-75; 54ch sind 493,6 px und
+     liegen mittig darin (63,6 bis 71,4 Zeichen). Wird die Schrift getauscht, ist
+     die Zahl neu zu messen — sie haengt an der mittleren Zeichenbreite von Inter. */
+  .jz-fliess{max-width:min(54ch,100%);text-wrap:pretty}
+  /* §3/§4.2: Karten-Innenabstand fluid zwischen den Tokens 16 und 20 px, gebunden
+     an die Containerbreite. Schlaegt den Viewport-Stand aus der .card-Regel, weil
+     dort die Fensterbreite entscheidet — in der schmalen Kontextspalte waere das
+     bei 1600 px Fenster zu viel Polster. */
+  .jz .card{padding:var(--sp-4);padding:clamp(var(--sp-4),13px + 0.8cqi,var(--sp-5))}
   /* §3: auch der Quellenlink in der Fokuskarte ist ein Touch-Ziel und braucht
      seine 44 px — als Inline-Flex, damit er im Satz stehen bleibt. */
   .jz-lead a{display:inline-flex;align-items:center;min-height:44px}
@@ -382,6 +412,11 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   /* Karten, die als Button funktionieren: Text bleibt linksbuendig, Typo geerbt */
   .jz-karte{text-align:left;font:inherit;color:inherit;cursor:pointer;display:flex;
     flex-direction:column;gap:var(--sp-2);width:100%}
+  /* §4.2 Beispielhafte Containerreaktion: dieselbe Karte steht bei 1600 px links in
+     889 px und rechts in 631 px. Ab 700 px Containerbreite bekommt sie eine Stufe
+     mehr Luft (--sp-2 -> --sp-3), darunter bleibt sie dicht. Ein Viewport-Breakpoint
+     koennte die beiden Faelle nicht unterscheiden — sie haben dieselbe Fensterbreite. */
+  @container (min-width:700px){.jz-karte{gap:var(--sp-3)}}
   @media (hover:hover) and (pointer:fine){
     .jz-karte:hover{border-color:rgba(255,255,255,.18)}
     :root[data-theme="light"] .jz-karte:hover,
@@ -390,13 +425,27 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   /* E0-Listenzeilen in einer Karte: nur --line-Trenner, kein eigener Grund (§14.1) */
   .jz-liste{display:flex;flex-direction:column}
+  /* §4.2 auto-fit fuer das wiederholende Moverraster. Die Mindestbreite ist
+     gemessen, nicht gesetzt: eine Moverzeile braucht 315,7 px, um ohne Kuerzung
+     lesbar zu bleiben (max-content, Messung 06.09.); 320 px geben etwas Reserve
+     fuer laengere Namen. Ehrlich dazugesagt: bei den heutigen Spaltenbreiten
+     ergibt das immer genau EINE Spalte — die Moverliste steht in der 631-px-
+     Kontextspalte, und 2x320+16 sind 656 px. Die Regel ist Vorsorge fuer breitere
+     Spalten, keine sichtbare Aenderung. Nur die Moverliste, nicht .jz-liste
+     allgemein: die Meldungsliste steht in der 889-px-Hauptspalte und wuerde sonst
+     zweispaltig brechen. */
+  #jzMoverListe{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
   .jz-zeile{display:grid;align-items:center;gap:var(--sp-3);min-height:56px;padding:var(--sp-2) 0;
     border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit;
     font:inherit;text-align:left;cursor:pointer;width:100%}
   .jz-zeile:last-child{border-bottom:0}
   .jz-mover{grid-template-columns:76px minmax(0,1fr) auto}
   .jz-meldung{grid-template-columns:56px minmax(0,1fr)}
-  @media (min-width:640px){.jz-meldung{grid-template-columns:64px minmax(0,1fr) auto}}
+  /* Frueher @media (min-width:640px). Der Umschaltpunkt ist derselbe, nur richtig
+     gemessen: bei 640 px Fenster ist die Sektion 640 - 2x24 = 592 px breit. Jetzt
+     entscheidet die Spaltenbreite, nicht die Fensterbreite — in der schmalen
+     Kontextspalte bliebe die dritte Spalte sonst faelschlich stehen. */
+  @container (min-width:592px){.jz-meldung{grid-template-columns:64px minmax(0,1fr) auto}}
   .jz-sym{font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;
     color:var(--accent-ink);font-variant-numeric:tabular-nums}
   .jz-kurz{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -1119,7 +1168,11 @@ function bstJoinAlle(){const l=bstPositionen().map(bstJoin);l.forEach(j=>{j._r=b
 /* --- Formatierung. fp/fpLab/perLabel/tok zeichengleich aus index.html:831–839,
    damit die uebernommene Chartstrecke unveraendert arbeitet. ------------------- */
 function tok(n){return getComputedStyle(document.documentElement).getPropertyValue(n).trim()}
-function fp(p){return (p>=0?"+":"")+(+p).toFixed(2)+" %"}
+/* §2 (Entscheid 06.09.): jede ANGEZEIGTE Zahl traegt das deutsche Komma. Nur das
+   Dezimaltrennzeichen wird getauscht, keine Tausendergruppen — die sind im
+   Design-System ausdruecklich ungeregelt gelassen. Gerechnet wird weiter mit dem
+   Punkt (Kerzenaufbereitung, SVG-Koordinaten), der bleibt unangetastet. */
+function fp(p){return (p>=0?"+":"")+(+p).toFixed(2).replace(".",",")+" %"}
 function fpLab(p,lab){return (p==null||!isFinite(p))?'–':fp(p)+(lab?' '+lab:'')}
 function shortDate(x){const d=new Date(x);return isFinite(d.getTime())?d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'}):''}
 function perLabel(fromTs){if(!fromTs)return 'Zeitraum';try{return 'seit '+shortDate(fromTs*1000)}catch(e){return 'Zeitraum'}}
@@ -1169,7 +1222,7 @@ function jzLeadRender(top){
         (pr?'<span class="jz-chip '+pr.k+'"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Digest-'+pr.l.toLowerCase().replace('priorität ','Priorität ')+'</span>':'')+
         (meta.length?'<span class="t-caption num" style="color:var(--muted)">'+meta.join(' · ')+'</span>':'')+
       '</div>'+
-      '<h4 class="jz-lead-titel" style="font-size:22px;line-height:1.15;font-weight:800;letter-spacing:-.02em;text-wrap:pretty;margin:0">'+escapeHtml(top.title)+'</h4>'+
+      '<h4 class="jz-lead-titel">'+escapeHtml(top.title)+'</h4>'+
       (text?'<p class="jz-fliess" style="color:var(--muted)">'+jzFett(text)+'</p>':'')+
       '<div style="display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-3) var(--sp-5)">'+
         (quelle?'<span class="t-small" style="color:var(--muted)">'+quelle+'</span>':'')+
@@ -1256,7 +1309,7 @@ function dtOeffnen(top,ausloeser){
     if(b.length)h+='<div class="dt-abschnitt"><span class="dt-marke">Begriffe</span>'+
       '<div class="jz-grid" style="margin-top:var(--sp-1)">'+b.map(x=>
         '<div class="dt-begriff"><span class="t-h3">'+escapeHtml(x.term)+'</span>'+
-        (x.erklaerung?'<span class="t-small" style="color:var(--muted)">'+escapeHtml(x.erklaerung)+'</span>':'')+'</div>').join('')+'</div></div>';
+        (x.erklaerung?'<span class="t-small jz-fliess" style="color:var(--muted)">'+escapeHtml(x.erklaerung)+'</span>':'')+'</div>').join('')+'</div></div>';
   }
   const linkReihe=(marke,arr,lab,url)=>{
     if(!Array.isArray(arr)||!arr.length)return '';
@@ -1397,6 +1450,11 @@ function jzIndizes(){
   const l=(MARKET&&Array.isArray(MARKET.indices))?MARKET.indices:[];
   return l.filter(x=>x&&typeof x.nm==='string'&&x.nm.trim());
 }
+/* x.val kommt bereits deutsch formatiert aus dem Feed und ist eine ZEICHENKETTE:
+   „7.722" ist ein Tausenderpunkt, „96,28" ein Dezimalkomma. Deshalb wird der Wert
+   hier bewusst NICHT umformatiert — ein pauschales Punkt-zu-Komma haette aus
+   7.722 die Zahl 7,722 gemacht. Gegengeprueft am Stand vom 06.09.2026 an allen
+   sechs gelieferten Indizes. */
 function jzIndexKarte(x,i,klick){
   const p=isFinite(+x.pct)?+x.pct:null;
   return '<'+(klick?'button type="button" data-idx="'+i+'"':'div')+' class="card jz-karte'+(klick?'':'')+'" style="gap:6px">'+
