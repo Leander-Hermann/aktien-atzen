@@ -911,11 +911,11 @@ let NOW_TOPICS=[],NOW_GROSS_DONE=false;
 function renderDigest(){
   const box=document.getElementById('jetztDigest'),day=DATA[current];NOW_TOPICS=nowTopics(day);
   const date=nowDate(current),meta=t=>[date,nowText(t.time),nowPrioText(t)].filter(Boolean).map(escapeHtml).join(' · ');
-  let html='';
+  let html='<div class="section-head"><h3 id="digestTitel">Allgemeine Marktlage</h3></div>';
   if(NOW_TOPICS.length){
     const t=NOW_TOPICS[0],excerpt=nowText(t.einordnung)||nowText(t.body),short=excerpt.length>280?excerpt.slice(0,280).replace(/\s+\S*$/,'')+' …':excerpt;
     const source=nowArray(t.sources).find(s=>nowObj(s)&&nowText(s.l));
-    html=`<article class="card digest-lead"><div class="digest-meta t-small num"><span>Fokusgeschichte · ${meta(t)}</span>${source?`<span>${escapeHtml(source.l)}</span>`:''}</div><h3>${escapeHtml(t.title)}</h3>${short?`<p class="excerpt">${nowBold(short)}</p>`:''}<button type="button" class="primary" data-topic="0" data-focus-key="topic-0">Vollständigen Artikel lesen <span aria-hidden="true">↗</span></button></article>`;
+    html+=`<article class="card digest-lead"><div class="digest-meta t-small num"><span>Fokusgeschichte · ${meta(t)}</span>${source?`<span>${escapeHtml(source.l)}</span>`:''}</div><h3>${escapeHtml(t.title)}</h3>${short?`<p class="excerpt">${nowBold(short)}</p>`:''}<button type="button" class="primary" data-topic="0" data-focus-key="topic-0">Vollständigen Artikel lesen <span aria-hidden="true">↗</span></button></article>`;
     if(NOW_TOPICS.length>1)html+='<div class="now-grid follow-signals">'+NOW_TOPICS.slice(1,3).map((t,i)=>`<button type="button" class="card topic-button" data-topic="${i+1}" data-focus-key="topic-${i+1}"><span class="t-small num">${meta(t)}</span><span class="t-h3">${escapeHtml(t.title)}</span></button>`).join('')+'</div>';
     if(NOW_TOPICS.length>3)html+='<section class="news-list" aria-labelledby="weitereTitel"><h3 id="weitereTitel">Weitere Meldungen</h3>'+NOW_TOPICS.slice(3).map((t,i)=>`<button type="button" class="topic-button news-row" data-topic="${i+3}" data-focus-key="topic-${i+3}"><span class="t-small num">${meta(t)}</span><span>${escapeHtml(t.title)}</span></button>`).join('')+'</section>';
   }else html='<p class="muted">Kein Tagesdigest verfügbar.</p>';
@@ -1131,6 +1131,9 @@ new ResizeObserver(()=>{if(stkChart)stkChart.resize(document.getElementById('stk
 (async function boot(){
   BST_LETZTER_BESUCH=bstBesuchLesen();
   bstLoad();                    // Migration laeuft hier genau einmal, idempotent
+  // Reihenfolge einmal vor dem ersten Render aus Positionen festlegen. Ereignisse
+  // und Quick-Add dürfen später weder Leseposition noch Tastaturreihenfolge verschieben.
+  if(bstPositionen().length)document.getElementById('jetztDigest').before(document.getElementById('jetztFokus'));
   bstBesuchSchreiben();
   await feedsKlein();
   renderDigest();renderFokus();renderMarkt();

@@ -10,8 +10,8 @@ let browser,server,base,chartSource;
 function check(name,fn){return Promise.resolve().then(fn).then(()=>{passed.push(name);console.log('PASS '+name)})}
 function block(s,name,next){return s.slice(s.indexOf('function '+name+'('),s.indexOf('function '+next+'('))}
 function chartLib(){return fetch('https://cdn.jsdelivr.net/npm/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js').then(r=>{if(!r.ok)throw Error('Chart CDN '+r.status);return r.text()})}
-async function fresh({data=feeds(),positions=[],missingLib=false,slow=[],fault={},wait=true}={}){
-  const context=await browser.newContext({viewport:{width:1280,height:1000},colorScheme:'dark',timezoneId:'Europe/Berlin'});
+async function fresh({data=feeds(),positions=[],missingLib=false,slow=[],fault={},wait=true,viewportWidth=1280,theme='dark'}={}){
+  const context=await browser.newContext({viewport:{width:viewportWidth,height:1000},colorScheme:theme,timezoneId:'Europe/Berlin'});
   const page=await context.newPage(),errors=[],consoleErrors=[],csp=[],requests=[],gates={};
   await page.clock.install({time:new Date(today+'T10:00:00+02:00')});
   await page.addInitScript(({positions})=>{localStorage.setItem('aa-bestand',JSON.stringify({schema:1,positionen:positions}));localStorage.setItem('aa-bestand-mig','1');localStorage.setItem('aa-bestand-besuch','2026-09-03');window.__csp=[];document.addEventListener('securitypolicyviolation',e=>window.__csp.push(e.violatedDirective));},{positions});
@@ -169,6 +169,18 @@ async function main(){
     }
     for(const id of ['radar','recherche','werte','mehr','suche','jetzt']){await p.evaluate(id=>raumZeigen(id),id);assert.equal(await p.locator('#raum-'+id).isVisible(),true);const hidden=await p.locator('.raum[hidden]').evaluateAll(es=>es.every(e=>e.inert&&e.getClientRects().length===0));assert(hidden)}
     assert.equal(await p.locator('dialog:not([open])').evaluateAll(es=>es.every(e=>e.getClientRects().length===0)),true);await f.close();
+  });
+  await check('Nachtrag: DOM-Reihenfolge nach Bestand, stabil vor/nach Großfeeds',async()=>{
+    for(const width of [375,1280])for(const theme of ['dark','light'])for(const symbol of [null,'AA','CC']){
+      const f=await fresh({positions:symbol?[position('p1',symbol)]:[],slow:['quotes.json'],wait:false,viewportWidth:width,theme}),p=f.page;
+      await p.locator('#digestTitel').waitFor();const expected=symbol?['jetztFokus','jetztDigest','jetztMarkt']:['jetztDigest','jetztFokus','jetztMarkt'];
+      const order=()=>p.locator('#raum-jetzt > .now-section').evaluateAll(es=>es.map(e=>e.id));
+      assert.deepEqual(await order(),expected);assert.equal(await p.locator('#digestTitel').innerText(),'Allgemeine Marktlage');
+      assert.equal(await p.evaluate(()=>NOW_GROSS_DONE),false);while(!f.gates['quotes.json'])await new Promise(r=>setTimeout(r,5));f.gates['quotes.json']();await p.waitForFunction(()=>NOW_GROSS_DONE);assert.deepEqual(await order(),expected);
+      if(!symbol){await p.locator('[data-add="AAPL"]').focus();await p.keyboard.press('Enter');assert.deepEqual(await order(),expected,'Quick-Add verschiebt nicht die aktuelle Leseposition')}
+      else await p.screenshot({path:path.join(out,`fokus-zuerst-${width}-${theme}-${symbol==='AA'?'ereignis':'ohne'}.png`),animations:'disabled'});
+      await f.close();
+    }
   });
   await check('Echte öffentliche lokale Feeds, erste Ansicht und verfügbare Indexcharts',async()=>{
     const f=await fresh({data:null}),p=f.page;assert.equal(await p.locator('.digest-lead').count(),1);assert.equal(await p.evaluate(()=>NOW_INDICES.length>0),true);
