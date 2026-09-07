@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-06T23:20:36.069407Z",
+  "generated_at": "2026-09-07T00:20:34.082050Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 61,
+  "symbols_total": 60,
   "with_quote_data": 13,
   "sources": [
    "watchlist",
@@ -20,32 +20,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "LULU",
-   "name": "Lululemon",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-17,4 %",
-     "weight": 45
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    }
-   ],
-   "earnings": {
-    "date": "2026-09-03",
-    "distance_days": -3,
-    "zeit": "amc"
-   }
-  },
   {
    "symbol": "ADBE",
    "name": "Adobe",
@@ -62,13 +36,13 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 4 Tagen",
+     "value": "Earnings in 3 Tagen",
      "weight": 20
     }
    ],
    "earnings": {
     "date": "2026-09-10",
-    "distance_days": 4,
+    "distance_days": 3,
     "zeit": "amc"
    }
   }
