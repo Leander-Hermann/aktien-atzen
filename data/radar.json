@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-08T18:20:38.350330Z",
+  "generated_at": "2026-09-08T19:20:38.944878Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 94,
-  "with_quote_data": 58,
+  "symbols_total": 96,
+  "with_quote_data": 59,
   "sources": [
    "watchlist",
    "videos",
@@ -21,53 +21,8 @@
  },
  "items": [
   {
-   "symbol": "LULU",
-   "name": "Lululemon",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-17,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "8,7× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 100.61,
-    "pct": -17.38,
-    "cur": "USD",
-    "as_of": "2026-09-08T06:36:23.073649+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Lululemon fällt bei ungewöhnlich hohem Volumen",
-    "why_now": "Die Aktie von Lululemon gab um 17,4 % auf 100,61 USD nach. Dabei lag das Handelsvolumen beim 8,7-Fachen des Durchschnitts. Zusätzlich wurde in drei Tagen ein Video erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-07T18:20:35.278410Z"
-   }
-  },
-  {
-   "symbol": "GPRO",
-   "name": "GoPro",
+   "symbol": "BE",
+   "name": "Bloom Energy",
    "score": 70,
    "priority": "high",
    "alert_type": "large_move",
@@ -75,146 +30,8 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+22,3 %",
+     "value": "+11,7 %",
      "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,3× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 1.7,
-    "pct": 22.3,
-    "cur": "USD",
-    "as_of": "2026-09-08T06:36:23.073649+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "GoPro mit starkem Kursanstieg und hohem Volumen",
-    "why_now": "Die GoPro-Aktie liegt bei 1,7 USD und ist heute um 22,3 % gestiegen. Gleichzeitig lag das Handelsvolumen beim 4,3-Fachen des Durchschnitts. Das spricht für eine außergewöhnlich hohe Marktaktivität, erklärt den Kursanstieg als Ursache aber nicht eindeutig. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Weitere Kursentwicklung"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-07T19:20:37.514763Z"
-   }
-  },
-  {
-   "symbol": "VOW3.DE",
-   "name": "Volkswagen",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,5 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:VOW3",
-   "quote": {
-    "price": 81.02,
-    "pct": 6.47,
-    "cur": "EUR",
-    "as_of": "2026-09-08T06:36:23.073649+00:00"
-   }
-  },
-  {
-   "symbol": "ORCL",
-   "name": "Oracle",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,1 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 158.78,
-    "pct": 3.08,
-    "cur": "USD",
-    "as_of": "2026-09-08T06:36:23.073649+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-07",
-    "distance_days": -1,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "BE",
-   "name": "Bloom Energy",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,4 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 252.87,
-    "pct": 7.35,
-    "cur": "USD",
-    "as_of": "2026-09-08T06:36:23.073649+00:00"
-   }
-  },
-  {
-   "symbol": "TSLA",
-   "name": "Tesla",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,9 %",
-     "weight": 30
     },
     {
      "type": "volume_spike",
@@ -230,50 +47,64 @@
     }
    ],
    "quote": {
-    "price": 354.08,
-    "pct": -5.92,
+    "price": 281.435,
+    "pct": 11.29,
     "cur": "USD",
-    "as_of": "2026-09-08T06:36:23.073649+00:00"
+    "as_of": "2026-09-08T18:35:24.521104+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Bloom Energy mit deutlichem Tagesplus",
+    "why_now": "Bloom Energy verzeichnete eine starke Kursbewegung von +11,7 %. Der Kurs lag bei 281.435 USD und damit 11,29 % im Plus. Das Handelsvolumen betrug das 1,8-Fache des Durchschnitts, zudem wurde 1 Video in 3 Tagen erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Weitere Kursentwicklung",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-08T19:20:38.944878Z"
    }
   },
   {
-   "symbol": "ADBE",
-   "name": "Adobe",
-   "score": 50,
+   "symbol": "NDX1.DE",
+   "name": "Nordex",
+   "score": 65,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-6,7 %",
-     "weight": 30
+     "value": "+10,2 %",
+     "weight": 45
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
      "weight": 20
     }
    ],
-   "earnings": {
-    "date": "2026-09-10",
-    "distance_days": 2,
-    "zeit": "amc"
+   "tv_symbol": "XETR:NDX1",
+   "quote": {
+    "price": 40.5,
+    "pct": 10.17,
+    "cur": "EUR",
+    "as_of": "2026-09-08T18:35:24.521104+00:00"
    }
   },
   {
-   "symbol": "MU",
-   "name": "Micron Technology",
-   "score": 50,
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 65,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+6,1 %",
-     "weight": 30
+     "value": "+9,6 %",
+     "weight": 45
     },
     {
      "type": "content_velocity",
@@ -283,10 +114,134 @@
     }
    ],
    "quote": {
-    "price": 1016.59,
-    "pct": 6.1,
+    "price": 104.76,
+    "pct": 9.35,
     "cur": "USD",
-    "as_of": "2026-09-08T06:36:23.073649+00:00"
+    "as_of": "2026-09-08T18:35:24.521104+00:00"
+   }
+  },
+  {
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,3 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "KRX:000660",
+   "quote": {
+    "price": 1793000.0,
+    "pct": 8.26,
+    "cur": "KRW",
+    "as_of": "2026-09-08T18:35:24.521104+00:00"
+   }
+  },
+  {
+   "symbol": "HNR1.DE",
+   "name": "Hannover Rück",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:HNR1",
+   "quote": {
+    "price": 247.4,
+    "pct": -5.07,
+    "cur": "EUR",
+    "as_of": "2026-09-08T18:35:24.521104+00:00"
+   }
+  },
+  {
+   "symbol": "005930.KS",
+   "name": "Samsung",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,7 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "KRX:005930",
+   "quote": {
+    "price": 269500.0,
+    "pct": 5.68,
+    "cur": "KRW",
+    "as_of": "2026-09-08T18:35:24.521104+00:00"
+   }
+  },
+  {
+   "symbol": "VOW3.DE",
+   "name": "Volkswagen",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,2 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:VOW3",
+   "quote": {
+    "price": 83.1,
+    "pct": 2.21,
+    "cur": "EUR",
+    "as_of": "2026-09-08T18:35:24.521104+00:00"
    }
   }
  ]
