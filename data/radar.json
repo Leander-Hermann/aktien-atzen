@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-08T06:20:35.409383Z",
+  "generated_at": "2026-09-08T07:20:38.029823Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -11,7 +11,7 @@
  "mode": "batch",
  "universe": {
   "symbols_total": 94,
-  "with_quote_data": 59,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -20,52 +20,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "NDX1.DE",
-   "name": "Nordex",
-   "score": 90,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:NDX1",
-   "quote": {
-    "price": 40.42,
-    "pct": 9.96,
-    "cur": "EUR",
-    "as_of": "2026-09-07T18:34:16.951271+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Nordex mit starker Bewegung und hohem Volumen",
-    "why_now": "Die Nordex-Aktie steigt um 9,96 % auf 40,42 EUR. Das Handelsvolumen liegt beim 2,6-Fachen des Durchschnitts, zudem wurden in drei Tagen zwei Videos erwähnt. Das spricht möglicherweise für eine erhöhte Aufmerksamkeit, belegt aber keinen konkreten Auslöser. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-07T18:20:35.278410Z"
-   }
-  },
   {
    "symbol": "LULU",
    "name": "Lululemon",
@@ -96,7 +50,7 @@
     "price": 100.61,
     "pct": -17.38,
     "cur": "USD",
-    "as_of": "2026-09-07T18:34:16.951271+00:00"
+    "as_of": "2026-09-08T06:36:23.073649+00:00"
    },
    "llm": {
     "status": "ready",
@@ -135,7 +89,7 @@
     "price": 1.7,
     "pct": 22.3,
     "cur": "USD",
-    "as_of": "2026-09-07T18:34:16.951271+00:00"
+    "as_of": "2026-09-08T06:36:23.073649+00:00"
    },
    "llm": {
     "status": "ready",
@@ -148,6 +102,40 @@
     ],
     "confidence": "low",
     "generated_at": "2026-09-07T19:20:37.514763Z"
+   }
+  },
+  {
+   "symbol": "VOW3.DE",
+   "name": "Volkswagen",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,5 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:VOW3",
+   "quote": {
+    "price": 81.02,
+    "pct": 6.47,
+    "cur": "EUR",
+    "as_of": "2026-09-08T06:36:23.073649+00:00"
    }
   },
   {
@@ -180,40 +168,12 @@
     "price": 158.78,
     "pct": 3.08,
     "cur": "USD",
-    "as_of": "2026-09-07T18:34:16.951271+00:00"
+    "as_of": "2026-09-08T06:36:23.073649+00:00"
    },
    "earnings": {
     "date": "2026-09-07",
     "distance_days": -1,
     "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+8,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1783000.0,
-    "pct": 8.26,
-    "cur": "KRW",
-    "as_of": "2026-09-07T18:34:16.951271+00:00"
    }
   },
   {
@@ -240,7 +200,7 @@
     "price": 252.87,
     "pct": 7.35,
     "cur": "USD",
-    "as_of": "2026-09-07T18:34:16.951271+00:00"
+    "as_of": "2026-09-08T06:36:23.073649+00:00"
    }
   },
   {
@@ -273,7 +233,7 @@
     "price": 354.08,
     "pct": -5.92,
     "cur": "USD",
-    "as_of": "2026-09-07T18:34:16.951271+00:00"
+    "as_of": "2026-09-08T06:36:23.073649+00:00"
    }
   },
   {
@@ -300,6 +260,33 @@
     "date": "2026-09-10",
     "distance_days": 2,
     "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron Technology",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,1 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 1016.59,
+    "pct": 6.1,
+    "cur": "USD",
+    "as_of": "2026-09-08T06:36:23.073649+00:00"
    }
   }
  ]
