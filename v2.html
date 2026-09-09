@@ -164,17 +164,27 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   /* Desktop-Textnavigation (≥1024 px) — §10: die Top-Nav bleibt dem Desktop vorbehalten */
   .dnav{display:none;gap:var(--sp-1);background:var(--chip);border-radius:var(--radius-sm);padding:3px}
+  /* §3: 44 px gelten auch ab 1024 px (V2-3 Teil G, Architektenentscheid 06.09.2026).
+     Der Breakpoint kennt den Zeigertyp nicht — Tablets im Querformat und
+     Touch-Notebooks landen hier. Erreicht ueber min-height, NICHT ueber die
+     Appbar-Hoehe: 44 px Knopf plus 2 x 3 px Innenrand der .dnav ergeben 50 px und
+     bleiben damit unter der min-height von 64 px der .appbar-inner. `--appbar-h`
+     und die Navigationsstruktur sind unveraendert. */
   .dnav button{border:0;background:transparent;border-radius:11px;padding:8px 14px;
+    min-height:44px;
     font-size:12.5px;font-weight:600;letter-spacing:.02em;color:var(--muted);cursor:pointer;
     transition:color var(--dur-fast) var(--ease-out),background var(--dur-fast) var(--ease-out)}
   .dnav button.on{background:var(--card);color:var(--ink);box-shadow:var(--shadow-1)}
   @media (hover:hover) and (pointer:fine){.dnav button:not(.on):hover{color:var(--ink)}}
 
   /* Desktop-Suchfeld — auf dem Handy übernimmt der eigene Nav-Slot (Freeze B5) */
+  /* Teil G: dasselbe fuer das Suchfeld — das Klickziel ist das input, also traegt es
+     die 44 px; der Rahmen darum waechst mit und bleibt mit 46 px (44 + 2 x 1 px Rand)
+     unter der 64-px-Zeile. */
   .dsearch{display:none;align-items:center;gap:var(--sp-2);min-width:0;width:clamp(160px,22vw,260px);
-    min-height:38px;padding:0 14px;background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill)}
+    min-height:44px;padding:0 14px;background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill)}
   .dsearch svg{width:18px;height:18px;flex:0 0 auto;color:var(--muted)}
-  .dsearch input{flex:1;min-width:0;min-height:36px;border:0;background:transparent;color:var(--ink);font-size:12.5px}
+  .dsearch input{flex:1;min-width:0;min-height:44px;border:0;background:transparent;color:var(--ink);font-size:12.5px}
   .dsearch input::placeholder{color:var(--muted)}
 
   /* Kopfmenü: einziger Weg in den Raum „Mehr" auf dem Handy (Freeze B6) */
@@ -522,6 +532,10 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
      Nutzer muss ohne Nachdenken sehen, welcher Teil gerechnet und welcher
      geschrieben ist. Bedeutung nie durch Farbe allein (§11): die Herkunft steht
      als Text im Chip, der Rand ist nur die Verstaerkung. */
+  /* §3: auch der Kontaktlink der Offenlegung ist ein Touch-Ziel (Teil G gilt fuer
+     jedes Klickziel, nicht nur die Navigation) — als Inline-Flex, damit er im Satz
+     stehen bleibt. Dieselbe Loesung wie bei .jz-lead a. */
+  .rd a{display:inline-flex;align-items:center;min-height:44px}
   .rd-llm{display:flex;flex-direction:column;gap:var(--sp-2);padding:var(--sp-3);
     border:1px dashed var(--line);border-radius:var(--radius);background:var(--chip)}
   .rd-llm-titel{font-size:14.5px;line-height:1.3;font-weight:600;margin:0;text-wrap:pretty}
@@ -990,13 +1004,16 @@ async function feedsKlein(){
     hol('videos.json',j=>{VIDEOS=j}),
     hol('videos-index.json',j=>{VIDIDX=j}),
     hol('ideas.json',j=>{IDEAS=j}),
-    hol('earnings.json',j=>{EARN=j}),
+    /* Teil F.2: die beiden Radar-Feeds melden ihren EIGENEN Abschluss. hol() bleibt
+       unveraendert — angehaengt ist nur sein Promise, kein Orchestrator. Damit
+       rendert jede Sektion, sobald ihre Datei da ist, statt auf die langsamste
+       Datei der Welle zu warten. */
+    hol('earnings.json',j=>{EARN=j}).then(rdTermineFertig),
     hol('earnings-recap.json',j=>{ERECAP=j}),
-    hol('candidates.json',j=>{CANDIDATES=j})
+    hol('candidates.json',j=>{CANDIDATES=j}).then(rdKandidatenFertig)
   ]);
   // Die Tagesdatei haengt am Index; fehlt er, entfaellt nur der Tagesstand.
   if(current){try{await loadDay(current)}catch(e){}}
-  RD_VERSUCH.termine=true;RD_VERSUCH.kandidaten=true;
 }
 /* Die drei grossen Feeds NACH dem ersten Rendern, parallel und nicht blockierend
    (quotes.json ~1,1 MB, ticker-index.json ~0,7 MB, radar.json ~11 KB).
@@ -1007,12 +1024,15 @@ let FEEDSGROSS=false;
 async function feedsGross(){
   if(FEEDSGROSS)return;FEEDSGROSS=true;
   await Promise.all([
-    hol('radar.json',j=>{RADAR=j}),
+    hol('radar.json',j=>{RADAR=j}).then(rdSignaleFertig),
     hol('quotes.json',j=>{QUOTES=j}),
     hol('ticker-index.json',j=>{TICKIDX=j})
   ]);
-  RD_VERSUCH.signale=true;
   standAnzeigen();
+  /* Zweiter Durchgang, bewusst: die Signalkarte selbst haengt nur an radar.json und
+     steht oben schon; der Knopf „Kursverlauf ansehen" haengt zusaetzlich an
+     quotes.json (Teil B.6) und kann erst hier dazukommen. Der Nachzug ergaenzt je
+     Karte eine Zeile, er baut die Flaeche nicht neu auf. */
   radarRendern();
 }
 
@@ -1750,6 +1770,14 @@ function jetztFokusErgaenzen(){
    ein Ausfall vom Ladezustand nicht zu unterscheiden. */
 const RD_VERSUCH={signale:false,termine:false,kandidaten:false};
 
+/* Teil F.2: ruhiger Ladezustand nach design-system.md §8 — ein Satz, keine Animation,
+   kein Fehler-Look. Er steht in derselben Karte, die spaeter den Inhalt traegt, damit
+   der Aufbau an Ort und Stelle geschieht statt als Einblendung. */
+function rdLadeHTML(was){
+  return '<article class="card rd-laden"><span class="t-small" style="color:var(--muted)">'+
+    escapeHtml(was)+' werden geladen.</span></article>';
+}
+
 /* Teil A.4: drei Feeds, drei Staende. Fallen sie auf dieselbe Minute, steht eine
    gemeinsame Zeile; laufen sie auseinander, wird jeder Stand einzeln genannt. Die
    Frische des juengsten Feeds darf nicht auf die anderen abfaerben — dieselbe
@@ -1882,9 +1910,9 @@ function rdSignaleRender(){
   const sek=document.getElementById('rdSignale'),ziel=document.getElementById('rdSignaleInhalt'),
         meta=document.getElementById('rdSignaleMeta');
   if(!sek||!ziel)return;
-  /* Solange der Ladeversuch laeuft, bleibt die Sektion aus — der Ladezustand kommt
-     mit der Staffelung (Teil F). */
-  if(!RD_VERSUCH.signale){sek.hidden=true;return}
+  /* Teil F.2: solange der eigene Feed aussteht, steht hier der Ladezustand — die
+     Sektion ist von Anfang an im Layout und baut sich an Ort und Stelle auf. */
+  if(!RD_VERSUCH.signale){sek.hidden=false;if(meta)meta.textContent='';ziel.innerHTML=rdLadeHTML('Signale');return}
   /* failed, Datei fehlt oder JSON ungueltig: die GESAMTE Sektion entfaellt. */
   if(!radarOk()){sek.hidden=true;ziel.innerHTML='';if(meta)meta.textContent='';return}
   const st=String((RADAR._meta&&RADAR._meta.status)||'');
@@ -1938,7 +1966,7 @@ function rdTermineRender(){
   const sek=document.getElementById('rdTermine'),ziel=document.getElementById('rdTermineInhalt'),
         meta=document.getElementById('rdTermineMeta');
   if(!sek||!ziel)return;
-  if(!RD_VERSUCH.termine){sek.hidden=true;return}
+  if(!RD_VERSUCH.termine){sek.hidden=false;if(meta)meta.textContent='';ziel.innerHTML=rdLadeHTML('Termine');return}
   const tage=rdTermineFenster();
   /* Datei fehlt oder ist ungueltig: die Sektion entfaellt ganz (Teil C.4). */
   if(!tage){sek.hidden=true;ziel.innerHTML='';if(meta)meta.textContent='';return}
@@ -2054,7 +2082,7 @@ function rdKandidatenRender(){
   const sek=document.getElementById('rdKandidaten'),ziel=document.getElementById('rdKandidatenInhalt'),
         meta=document.getElementById('rdKandidatenMeta');
   if(!sek||!ziel)return;
-  if(!RD_VERSUCH.kandidaten){sek.hidden=true;return}
+  if(!RD_VERSUCH.kandidaten){sek.hidden=false;if(meta)meta.textContent='';ziel.innerHTML=rdLadeHTML('Beobachtungskandidaten');return}
   const items=(CANDIDATES&&Array.isArray(CANDIDATES.items))?CANDIDATES.items.filter(x=>x&&x.ticker):[];
   /* Teil D.6: fehlt die Datei, ist sie ungueltig oder leer, entfaellt die GESAMTE
      Sektion inklusive Legende und Offenlegung. */
@@ -2084,6 +2112,12 @@ function rdKandidatenRender(){
         (kontakt?'<p class="t-small" style="margin:0">'+kontakt+'</p>':'')+
       '</div></details>':'');
 }
+
+/* Teil F.2: je Feed ein Abschlussmelder. Sie sind die einzige Verbindung zwischen
+   Ladepfad und Flaeche — mehr Orchestrierung gibt es nicht. */
+function rdSignaleFertig(){RD_VERSUCH.signale=true;rdSignaleRender();rdStaendeRender()}
+function rdTermineFertig(){RD_VERSUCH.termine=true;rdTermineRender();rdStaendeRender()}
+function rdKandidatenFertig(){RD_VERSUCH.kandidaten=true;rdKandidatenRender();rdStaendeRender()}
 
 function radarRendern(){
   rdStaendeRender();
@@ -2354,10 +2388,13 @@ if(jzIdxSchalter)jzIdxSchalter.addEventListener('click',()=>{
   BST_LETZTER_BESUCH=bstBesuchLesen();
   bstLoad();                    // Migration laeuft hier genau einmal, idempotent
   bstBesuchSchreiben();
+  /* VOR dem ersten Ladeversuch: der Radar setzt seine drei Ladezustaende, damit die
+     Sektionen von Anfang an im Layout stehen und sich spaeter an Ort und Stelle
+     fuellen, statt nacheinander aufzuklappen (Teil F.2). */
+  radarRendern();
   await feedsKlein();
   standAnzeigen();
   jetztRendern();               // erstes Rendern: hier steht die Reihenfolge fest
-  radarRendern();               // Radar: Termine und Kandidaten haengen an feedsKlein
   /* Bewusst ohne await — blockiert das erste Rendern nicht. Ein Ausfall der grossen
      Feeds laesst die bereits gerenderten Flaechen unberuehrt. */
   feedsGross().then(jetztFokusErgaenzen,jetztFokusErgaenzen);
