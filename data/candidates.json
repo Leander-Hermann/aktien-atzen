@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-09-08T08:26:26.773232Z",
-    "trading_day": "2026-09-04",
+    "generated_at": "2026-09-09T08:30:39.111551Z",
+    "trading_day": "2026-09-08",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-09-08T08:26:26.773232Z"
+    "as_of": "2026-09-09T08:30:39.111551Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "UNH",
-      "name": "UnitedHealth Group Incorporated",
-      "sector": "Health Care",
-      "as_of": "2026-09-04T13:30:00Z",
+      "ticker": "KO",
+      "name": "The Coca-Cola Company",
+      "sector": "Consumer Staples",
+      "as_of": "2026-09-08T13:30:00Z",
       "quote": {
-        "price": 397.14,
+        "price": 88.36,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/UNH",
-        "as_of": "2026-09-04T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/KO",
+        "as_of": "2026-09-08T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -47,42 +47,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 8
+        "warnings_count": 6
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 394.75,
-        "entry_high": 397.14,
-        "stop": 383.94,
-        "target": 461.62,
+        "entry_low": 87.79,
+        "entry_high": 88.36,
+        "stop": 86.02,
+        "target": 93.03,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-02",
-              "price": 374.72
+              "date": "2026-07-17",
+              "price": 80.83
             },
             "b": {
-              "date": "2026-06-10",
-              "price": 415.98
+              "date": "2026-07-29",
+              "price": 90.92
             },
             "c": {
-              "date": "2026-07-15",
-              "price": 414.37
+              "date": "2026-08-12",
+              "price": 85.66
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 455.63
+              "price": 95.75
             },
             {
               "ratio": 1.272,
-              "price": 466.85
+              "price": 98.49
             },
             {
               "ratio": 1.618,
-              "price": 481.13
+              "price": 101.99
             }
           ]
         }
@@ -90,16 +90,86 @@
     },
     {
       "rank": 2,
-      "ticker": "JPM",
-      "name": "JPMorgan Chase & Co.",
-      "sector": "Financials",
-      "as_of": "2026-09-04T13:30:00Z",
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "as_of": "2026-09-08T13:30:00Z",
       "quote": {
-        "price": 358.64,
+        "price": 160.66,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/JPM",
-        "as_of": "2026-09-04T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/XOM",
+        "as_of": "2026-09-08T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 7
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 159.71,
+        "entry_high": 160.66,
+        "stop": 155.37,
+        "target": 176.41,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-08-04",
+              "price": 149.09
+            },
+            "b": {
+              "date": "2026-08-20",
+              "price": 168.64
+            },
+            "c": {
+              "date": "2026-08-28",
+              "price": 155.32
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 174.87
+            },
+            {
+              "ratio": 1.272,
+              "price": 180.19
+            },
+            {
+              "ratio": 1.618,
+              "price": 186.95
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "ticker": "KHC",
+      "name": "The Kraft Heinz Company",
+      "sector": "Consumer Staples",
+      "as_of": "2026-09-08T13:30:00Z",
+      "quote": {
+        "price": 24.9,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/KHC",
+        "as_of": "2026-09-08T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -121,108 +191,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 356.85,
-        "entry_high": 358.64,
-        "stop": 349.4,
-        "target": 377.12,
+        "entry_low": 24.62,
+        "entry_high": 24.9,
+        "stop": 23.74,
+        "target": 27.21,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-07-29",
-              "price": 343.78
-            },
-            "b": {
-              "date": "2026-08-13",
-              "price": 366.5
-            },
-            "c": {
-              "date": "2026-08-21",
-              "price": 350.37
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 373.09
-            },
-            {
-              "ratio": 1.272,
-              "price": 379.27
-            },
-            {
-              "ratio": 1.618,
-              "price": 387.13
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 3,
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "sector": "Information Technology",
-      "as_of": "2026-09-04T13:30:00Z",
-      "quote": {
-        "price": 319.97,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/AAPL",
-        "as_of": "2026-09-04T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "near",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 8
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 317.44,
-        "entry_high": 319.97,
-        "stop": 307.89,
-        "target": 344.57,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-06-25",
-              "price": 273.75
+              "date": "2026-06-22",
+              "price": 22.0
             },
             "b": {
               "date": "2026-07-17",
-              "price": 334.99
+              "price": 27.13
             },
             "c": {
               "date": "2026-07-23",
-              "price": 319.35
+              "price": 25.17
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 380.59
+              "price": 30.29
             },
             {
               "ratio": 1.272,
-              "price": 397.25
+              "price": 31.69
             },
             {
               "ratio": 1.618,
-              "price": 418.44
+              "price": 33.46
             }
           ]
         }
@@ -230,20 +230,20 @@
     },
     {
       "rank": 4,
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
-      "sector": "Information Technology",
-      "as_of": "2026-09-04T13:30:00Z",
+      "ticker": "MA",
+      "name": "Mastercard Incorporated",
+      "sector": "Financials",
+      "as_of": "2026-09-08T13:30:00Z",
       "quote": {
-        "price": 477.57,
+        "price": 570.89,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/AMD",
-        "as_of": "2026-09-04T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/MA",
+        "as_of": "2026-09-08T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
-        "readiness": "near",
+        "readiness": "in_zone",
         "distance_to_zone_pct": 0.0
       },
       "rule_hits": [
@@ -257,42 +257,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 9
+        "warnings_count": 11
       },
-      "interest_status": "position_or_interest",
+      "interest_status": "none_declared",
       "levels": {
-        "entry_low": 469.57,
-        "entry_high": 477.57,
-        "stop": 441.43,
-        "target": 549.84,
+        "entry_low": 567.79,
+        "entry_high": 570.89,
+        "stop": 555.24,
+        "target": 602.2,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-07-29",
-              "price": 424.03
+              "date": "2026-07-23",
+              "price": 523.61
             },
             "b": {
-              "date": "2026-08-04",
-              "price": 530.13
+              "date": "2026-08-03",
+              "price": 583.71
             },
             "c": {
-              "date": "2026-08-11",
-              "price": 463.21
+              "date": "2026-08-12",
+              "price": 556.06
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 569.31
+              "price": 616.16
             },
             {
               "ratio": 1.272,
-              "price": 598.17
+              "price": 632.51
             },
             {
               "ratio": 1.618,
-              "price": 634.88
+              "price": 653.3
             }
           ]
         }
@@ -300,20 +300,20 @@
     },
     {
       "rank": 5,
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc. (Class A)",
-      "sector": "Communication Services",
-      "as_of": "2026-09-04T13:30:00Z",
+      "ticker": "PLD",
+      "name": "Prologis, Inc.",
+      "sector": "Real Estate",
+      "as_of": "2026-09-08T13:30:00Z",
       "quote": {
-        "price": 338.46,
+        "price": 138.48,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/GOOGL",
-        "as_of": "2026-09-04T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/PLD",
+        "as_of": "2026-09-08T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
-        "readiness": "near",
+        "readiness": "in_zone",
         "distance_to_zone_pct": 0.0
       },
       "rule_hits": [
@@ -327,42 +327,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 9
+        "warnings_count": 12
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 335.82,
-        "entry_high": 338.46,
-        "stop": 325.67,
-        "target": 373.16,
+        "entry_low": 137.44,
+        "entry_high": 138.48,
+        "stop": 134.65,
+        "target": 146.14,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-26",
-              "price": 330.2
+              "date": "2026-07-01",
+              "price": 135.1
             },
             "b": {
-              "date": "2026-07-07",
-              "price": 373.16
+              "date": "2026-07-17",
+              "price": 153.35
             },
             "c": {
-              "date": "2026-07-09",
-              "price": 351.08
+              "date": "2026-08-10",
+              "price": 137.22
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 394.04
+              "price": 155.47
             },
             {
               "ratio": 1.272,
-              "price": 405.73
+              "price": 160.43
             },
             {
               "ratio": 1.618,
-              "price": 420.59
+              "price": 166.75
             }
           ]
         }
