@@ -30,13 +30,39 @@ function schneide(name) {
 }
 
 const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel', 'jzTopics',
-  'jzKerzenOk', 'jzMoverGruppe', 'jzMoverAuswahl', 'jzZeitmarke', 'jzFett', 'jzBogenHTML', 'fp'];
+  'jzKerzenOk', 'jzMoverGruppe', 'jzMoverAuswahl', 'jzZeitmarke', 'jzFett', 'jzBogenHTML', 'fp',
+  /* V2-3 Raum „Radar" */
+  'validTicker', 'jzTag', 'jzUhr', 'jzFarbe', 'bstToday', 'bstSymbole', 'rdZeitText', 'rdPrioChip',
+  'rdKerzen', 'rdLlmHTML', 'rdSignalKarte', 'rdWochentag', 'rdTermineFenster', 'rdZahl',
+  'rdLevelsOk', 'rdLevelsHTML', 'rdKandidatKarte'];
+
+/* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
+   werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
+   Deklaration am Zeilenanfang. */
+const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ'];
+function schneideConst(name) {
+  const start = html.indexOf('\nconst ' + name + '=');
+  if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
+  const zeilen = html.slice(start + 1).split('\n');
+  const out = [zeilen[0]];
+  for (let i = 1; i < zeilen.length; i++) {
+    if (NAECHSTE.test(zeilen[i])) break;
+    out.push(zeilen[i]);
+  }
+  return out.join('\n');
+}
 
 /* URL gehört in die Sandbox: safeUrl prüft das Schema über new URL(...) und würde
    ohne die Klasse jede Adresse per catch verwerfen — das wäre ein Testartefakt. */
-const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL };
+const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL,
+  RADAR: null, QUOTES: null, EARN: null, CANDIDATES: null, BESTAND: null };
 vm.createContext(box);
-vm.runInContext(NAMEN.map(schneide).join('\n'), box, { filename: 'v2.html-auszug' });
+vm.runInContext(KONSTANTEN.map(schneideConst).join('\n') + '\n' +
+  NAMEN.map(schneide).join('\n'), box, { filename: 'v2.html-auszug' });
+/* bstSymbole liest den localStorage ueber bstLoad(); in der Sandbox gibt es keinen.
+   Ersetzt wird deshalb genau diese eine Abhaengigkeit, nicht die geprueften
+   Funktionen selbst — der Bestandsbezug der Terminliste wird darueber gesteuert. */
+vm.runInContext('let BST_TEST=[];function bstSymbole(){return BST_TEST}', box);
 
 let gruppen = 0, faelle = 0, fehler = 0;
 function gruppe(titel, fn) {
@@ -175,6 +201,149 @@ gruppe('Teil D.5 — Kerzenvalidierung vor dem Chartkern', () => {
   pruef('leere Liste ergibt null', vm.runInContext('jzKerzenOk([])', box), null);
   pruef('kein Array ergibt null', vm.runInContext('jzKerzenOk("kaputt")', box), null);
   pruef('undefined ergibt null', vm.runInContext('jzKerzenOk(undefined)', box), null);
+});
+
+/* ======================================================================
+   V2-3 Raum „Radar". Zu jedem Kriterium gehoert ein negativer Fall (ADR-315.2).
+   ====================================================================== */
+
+/* --- Teil B: Signalkarte ---------------------------------------------------- */
+gruppe('V2-3 Teil B — Signalkarte: kein Score, kein roher alert_type, quote nur wenn geliefert', () => {
+  box.QUOTES = { quotes: { AAA: { price: 10, cur: 'USD', candles: [
+    { time: 1, open: 1, high: 2, low: 0.5, close: 1.5 }, { time: 2, open: 1.5, high: 2, low: 1, close: 1.8 }] } } };
+  box.it = { symbol: 'AAA', name: 'Alpha', score: 87, priority: 'high', alert_type: 'large_move',
+    triggers: [{ type: 'large_move', label: 'Starke Kursbewegung', value: '+6,5 %', weight: 30 }],
+    quote: { price: 83.1, pct: 6.47, cur: 'EUR', as_of: '2026-09-09T06:34:07Z' },
+    earnings: { date: '2026-09-10', distance_days: 1, zeit: 'amc' } };
+  const h = vm.runInContext('rdSignalKarte(it,"")', box);
+  pruef('Name und Symbol stehen in der Karte', /Alpha/.test(h) && /AAA/.test(h), true);
+  pruef('Triggerlabel und -wert stehen in der Karte', /Starke Kursbewegung/.test(h) && /\+6,5 %/.test(h), true);
+  pruef('Prozentwert mit deutschem Komma', /\+6,47 %/.test(h), true);
+  pruef('Kurs mit deutschem Komma', /83,10 EUR/.test(h), true);
+  pruef('Earnings-Zeit als deutscher Klartext', /nach Handelsschluss/.test(h), true);
+  pruef('Chartknopf, weil Kerzen vorhanden', /data-rdchart="AAA"/.test(h), true);
+  /* NEGATIV: der Zahlenwert score darf nirgends auftauchen (Teil B.4) */
+  pruef('score 87 steht nicht in der Karte', /(^|[^0-9])87([^0-9]|$)/.test(h), false);
+  /* NEGATIV: alert_type wird nicht roh ausgegeben (Teil B.5) */
+  pruef('alert_type nicht roh', /large_move/.test(h), false);
+  /* NEGATIV: ohne quote entfaellt die Kurszeile ersatzlos, kein Ersatzkurs */
+  box.it = { symbol: 'AAA', name: 'Alpha', score: 60, priority: 'medium', triggers: [] };
+  const ohne = vm.runInContext('rdSignalKarte(it,"")', box);
+  pruef('ohne quote keine Kursangabe', /EUR|USD|jz-gross/.test(ohne), false);
+  pruef('ohne Trigger ehrliche Leermeldung', /Keine Auslöser geliefert\./.test(ohne), true);
+  pruef('priority medium ergibt den schwächeren Chip', /Aufmerksamkeit/.test(ohne) && !/hohe Aufmerksamkeit/.test(ohne), true);
+  /* NEGATIV: ohne Kerzen in quotes.json kein Chartknopf (Teil B.6) */
+  box.QUOTES = { quotes: {} };
+  pruef('ohne Kursreihe kein Chartknopf', /data-rdchart/.test(vm.runInContext('rdSignalKarte(it,"")', box)), false);
+  /* NEGATIV: unsauberes Symbol ergibt gar keine Karte */
+  box.it = { symbol: 'AA<script>', name: 'X', triggers: [] };
+  pruef('unsauberes Symbol ergibt keine Karte', vm.runInContext('rdSignalKarte(it,"")', box), '');
+  /* NEGATIV: Feedinhalt wird geescapet */
+  box.QUOTES = null;
+  box.it = { symbol: 'AAA', name: '<img src=x onerror=alert(1)>', triggers: [{ label: '<b>x</b>', value: '"y"' }] };
+  const esc = vm.runInContext('rdSignalKarte(it,"")', box);
+  pruef('Name geescapet', /&lt;img/.test(esc) && !/<img/.test(esc), true);
+  pruef('Triggerlabel geescapet', /&lt;b&gt;x&lt;\/b&gt;/.test(esc), true);
+  pruef('unbekannte Handelszeit entfällt', vm.runInContext('rdZeitText("tbd")', box), '');
+  pruef('leere Priorität ergibt keinen Chip', vm.runInContext('rdPrioChip(undefined)', box), '');
+});
+
+/* --- Teil B.9: die KI-Flaeche ---------------------------------------------- */
+gruppe('V2-3 Teil B.9 — KI-Fläche nur vollständig, gekennzeichnet, ohne Selbsteinschätzung', () => {
+  const voll = { status: 'ready', headline: 'Kopfzeile', why_now: 'Begründung.',
+    watch_next: ['a', 'b', 'c', 'd', 'e'], confidence: 'low', generated_at: '2026-09-09T07:20:37Z' };
+  box.l = { llm: voll };
+  const h = vm.runInContext('rdLlmHTML(l,"")', box);
+  pruef('Herkunft ist gekennzeichnet', /KI-Kurzerklärung, automatisch erzeugt/.test(h), true);
+  pruef('headline und why_now stehen drin', /Kopfzeile/.test(h) && /Begründung\./.test(h), true);
+  pruef('watch_next auf drei begrenzt', (h.match(/<li>/g) || []).length, 3);
+  pruef('Fließtext trägt den Zeilenlängen-Deckel', /jz-fliess/.test(h), true);
+  /* NEGATIV: die Selbsteinschaetzung darf als Wort nirgends erscheinen */
+  pruef('confidence steht nicht im Ausgabetext', /\blow\b|\bmedium\b|\bhigh\b/.test(h), false);
+  /* NEGATIV: unvollstaendige oder fehlerhafte Bloecke entfallen GANZ */
+  box.l = { llm: Object.assign({}, voll, { status: 'error' }) };
+  pruef('status error ergibt keine Fläche', vm.runInContext('rdLlmHTML(l,"")', box), '');
+  box.l = { llm: Object.assign({}, voll, { why_now: '   ' }) };
+  pruef('leeres why_now ergibt keine Fläche', vm.runInContext('rdLlmHTML(l,"")', box), '');
+  box.l = { llm: Object.assign({}, voll, { headline: '' }) };
+  pruef('leere headline ergibt keine Fläche', vm.runInContext('rdLlmHTML(l,"")', box), '');
+  box.l = {};
+  pruef('fehlender Block ergibt keine Fläche', vm.runInContext('rdLlmHTML(l,"")', box), '');
+  box.l = { llm: { status: 'ready', headline: '<script>x<\/script>', why_now: 'ok' } };
+  const esc = vm.runInContext('rdLlmHTML(l,"")', box);
+  pruef('Blockinhalt geescapet', /&lt;script&gt;/.test(esc) && !/<script>/.test(esc), true);
+  pruef('keine URL aus dem Block im DOM', /<a /.test(esc), false);
+  /* generated_at nur, wenn es vom Kartenstand abweicht */
+  box.l = { llm: Object.assign({}, voll) };
+  const gleich = vm.runInContext('rdLlmHTML(l,jzUhr("2026-09-09T07:20:37Z"))', box);
+  pruef('gleicher Stand wird nicht wiederholt', /Text erzeugt/.test(gleich), false);
+});
+
+/* --- Teil C: Termine -------------------------------------------------------- */
+gruppe('V2-3 Teil C — Terminfenster, Sortierung, keine Schätzwerte', () => {
+  const heute = vm.runInContext('bstToday()', box);
+  const tag = (n) => { const d = new Date(heute + 'T00:00:00'); d.setDate(d.getDate() + n);
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+  box.EARN = { eintraege: [
+    { date: tag(20), ticker: 'SPAET', name: 'Zu spät' },
+    { date: tag(3), ticker: 'BBB', name: 'Beta', zeit: 'amc', periode: 'Q1', eps_est: 1.23, rev_est: 999 },
+    { date: tag(-2), ticker: 'ALT', name: 'Vorbei' },
+    { date: tag(3), ticker: 'AAA', name: 'Alpha', zeit: 'bmo', periode: 'Q2' },
+    { date: tag(1), ticker: 'CCC', name: 'Gamma', zeit: 'tbd', periode: 'Q3' },
+    { date: 'kaputt', ticker: 'XXX', name: 'Ungültig' }
+  ] };
+  const f = vm.runInContext('rdTermineFenster()', box);
+  pruef('nur Tage im Fenster heute bis +14', f.map(t => t.datum), [tag(1), tag(3)]);
+  pruef('gleicher Tag wird zu EINER Karte gruppiert', f[1].eintraege.length, 2);
+  pruef('innerhalb des Tages alphabetisch nach Ticker', f[1].eintraege.map(e => e.ticker), ['AAA', 'BBB']);
+  /* NEGATIV: Vergangenes, zu Fernes und kaputte Daten fliegen raus */
+  pruef('Vergangenes fehlt', JSON.stringify(f).indexOf('Vorbei'), -1);
+  pruef('Termin jenseits +14 fehlt', JSON.stringify(f).indexOf('Zu spät'), -1);
+  pruef('kaputtes Datum fliegt raus', JSON.stringify(f).indexOf('Ungültig'), -1);
+  /* NEGATIV: fehlender oder kaputter Feed ergibt null — die Sektion entfaellt dann */
+  box.EARN = null;
+  pruef('fehlender Feed ergibt null', vm.runInContext('rdTermineFenster()', box), null);
+  box.EARN = { eintraege: 'kaputt' };
+  pruef('strukturell falscher Feed ergibt null', vm.runInContext('rdTermineFenster()', box), null);
+  box.EARN = { eintraege: [] };
+  pruef('leerer Feed ergibt eine leere Liste, nicht null', vm.runInContext('rdTermineFenster().length', box), 0);
+  pruef('Wochentag auf Deutsch', vm.runInContext('rdWochentag("2026-09-10")', box), 'Donnerstag');
+});
+
+/* --- Teil D: Kandidaten ----------------------------------------------------- */
+gruppe('V2-3 Teil D — Kandidaten: Wortlaute, Levels-Plausibilität, kein Fib', () => {
+  box.k = { rank: 1, ticker: 'AAA', name: 'Alpha', sector: 'Energy',
+    setup: { readiness: 'in_zone', distance_to_zone_pct: 0 },
+    rule_hits: ['weekly_uptrend', 'above_ma200'], risk_flags: ['data_partial'],
+    data_quality: { status: 'partial' }, quote: { currency: 'USD' },
+    levels: { entry_low: 100, entry_high: 102, stop: 96, target: 118, horizon_sessions: 30,
+      fib: { anchors: { a: { date: '2026-07-01', price: 88.77 } }, levels: { '1.618': 133.44 } } } };
+  const h = vm.runInContext('rdKandidatKarte(k)', box);
+  pruef('die drei Level-Wortlaute stehen zeichengleich',
+    ['Beobachtungszone', 'Stop-Loss (regelbasiert)', 'Kursziel (regelbasiert)'].every(w => h.includes(w)), true);
+  pruef('readiness als deutscher Klartext', /in Beobachtungszone/.test(h), true);
+  pruef('rule_hits und risk_flags als deutsche Chips',
+    /Wochen-Aufwärtstrend/.test(h) && /über 200-Tage-Linie/.test(h) && /Daten teilweise/.test(h), true);
+  pruef('Datenlage als Klartext', /Datenlage teilweise/.test(h), true);
+  pruef('Zahlen mit deutschem Komma', /100,00–102,00 USD/.test(h), true);
+  /* NEGATIV: levels.fib wird NICHT gerendert (Teil D.5, ADR-810) */
+  pruef('kein Fib-Anker im Markup', /88,77|88\.77|133,44|133\.44|fib/i.test(h), false);
+  /* NEGATIV: unplausible levels verschwinden STILL, die Karte bleibt (Teil D.3) */
+  box.k.levels = { entry_low: 100, entry_high: 102, stop: 101, target: 118, horizon_sessions: 30 };
+  const stopHoch = vm.runInContext('rdKandidatKarte(k)', box);
+  pruef('stop >= entry_low verwirft die levels', /Stop-Loss/.test(stopHoch), false);
+  pruef('die Karte selbst bleibt', /Alpha/.test(stopHoch), true);
+  box.k.levels = { entry_low: 100, entry_high: 102, stop: 96, target: 101 };
+  pruef('target <= entry_high verwirft die levels',
+    /Kursziel/.test(vm.runInContext('rdKandidatKarte(k)', box)), false);
+  box.k.levels = { entry_low: 100, entry_high: 102, stop: 96, target: Infinity };
+  pruef('nicht-endlicher Wert verwirft die levels',
+    /Kursziel/.test(vm.runInContext('rdKandidatKarte(k)', box)), false);
+  pruef('plausible levels bestehen', vm.runInContext('rdLevelsOk({entry_low:100,entry_high:102,stop:96,target:118})', box), true);
+  pruef('fehlende levels bestehen nicht', vm.runInContext('rdLevelsOk(null)', box), false);
+  /* NEGATIV: unsauberer Ticker ergibt keine Karte */
+  box.k.ticker = 'A A';
+  pruef('unsauberer Ticker ergibt keine Karte', vm.runInContext('rdKandidatKarte(k)', box), '');
 });
 
 console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +

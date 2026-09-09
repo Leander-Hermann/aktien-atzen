@@ -27,6 +27,8 @@
     'candidates.json', 'ideas.json'];
   const ARTEN = ['404', 'muell', 'struktur'];
   const SEKTIONEN = ['jzLead', 'jzFolge', 'jzFokus', 'jzMarkt', 'jzMeldungen'];
+  /* V2-3: die drei Flaechen des Raums „Radar" */
+  const RD_SEKTIONEN = ['rdSignale', 'rdTermine', 'rdKandidaten'];
 
   async function stoere(datei, art) {
     await fetch('/__stoere?reset=1');
@@ -46,11 +48,23 @@
   function befund(f) {
     const d = f.contentDocument, w = f.contentWindow;
     const sichtbar = SEKTIONEN.filter(id => { const e = d.getElementById(id); return e && !e.hidden; });
+    /* V2-3: dieselbe Prüfung für den Raum „Radar". Erst jetzt hat sie Aussagekraft —
+       vorher trug keiner der drei Feeds dort sichtbare Fläche (Befund 4 aus
+       AA-20260906-FE-01-E01). Ein Ladezustand zählt NICHT als Fläche: sonst
+       meldete ein Ausfall dasselbe wie ein erfolgreicher Lauf. */
+    const rdSichtbar = RD_SEKTIONEN.filter(id => {
+      const e = d.getElementById(id);
+      if (!e || e.hidden) return false;
+      return !/werden geladen\./.test(e.textContent || '');
+    });
     let ausnahme = null;
-    try { w.jetztRendern(); } catch (e) { ausnahme = String(e && e.message || e); }
+    try { w.jetztRendern(); w.radarRendern(); } catch (e) { ausnahme = String(e && e.message || e); }
     const bedienbar = [...d.querySelectorAll('button,a[href]')].filter(e => e.offsetParent !== null).length;
     return {
       sichtbareFlaechen: sichtbar,
+      radarFlaechen: rdSichtbar,
+      radarZeichen: (d.getElementById('rdInhalt') || {}).textContent
+        ? d.getElementById('rdInhalt').textContent.trim().length : 0,
       ausnahmeBeimRendern: ausnahme,
       bedienelemente: bedienbar,
       inhaltZeichen: (d.getElementById('jzInhalt') || {}).textContent

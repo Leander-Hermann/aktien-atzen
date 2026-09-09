@@ -536,6 +536,15 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
      jedes Klickziel, nicht nur die Navigation) — als Inline-Flex, damit er im Satz
      stehen bleibt. Dieselbe Loesung wie bei .jz-lead a. */
   .rd a{display:inline-flex;align-items:center;min-height:44px}
+  /* §4.1 Zeilenlaenge: der 54ch-Deckel bleibt unveraendert — das ist gemessen und
+     nicht angenommen. Bei 3840 px tragen die 36 vollen Zeilen aller Radar-Fliesstexte
+     im Median 66 Zeichen (Mittel 66, Spanne 50-77, eine Zeile ueber 75, sechs unter
+     60). Die Gegenprobe mit 52ch (420 px) und 50ch (403 px) verschiebt den Median auf
+     63 bzw. 62 und erhoeht die Zahl der zu kurzen Zeilen auf 9 bzw. 11, ohne die eine
+     lange Zeile zu beseitigen — sie entsteht aus ungewoehnlich schmalen Zeichen, nicht
+     aus der Breite. Ein Nachziehen des ch-Wertes waere hier also eine Verschlechterung;
+     die Messung vom 09.09.2026 hat die Vermutung widerlegt, die kleinere Schrift
+     brauche einen kleineren Deckel. */
   .rd-llm{display:flex;flex-direction:column;gap:var(--sp-2);padding:var(--sp-3);
     border:1px dashed var(--line);border-radius:var(--radius);background:var(--chip)}
   .rd-llm-titel{font-size:14.5px;line-height:1.3;font-weight:600;margin:0;text-wrap:pretty}
