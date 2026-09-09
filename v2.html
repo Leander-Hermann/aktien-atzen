@@ -1906,9 +1906,190 @@ function rdSignaleRender(){
     items.map(it=>rdSignalKarte(it,stand)).join('')+'</div>';
 }
 
+/* --- Teil C: Termine aus earnings.json ---------------------------------------- */
+
+function rdWochentag(iso){
+  const d=new Date(iso+'T00:00:00');
+  return isFinite(d.getTime())?d.toLocaleDateString('de-DE',{weekday:'long'}):'';
+}
+/* Fenster heute bis +14 Tage. Kuerzlich Berichtetes gehoert NICHT hierher — es steht
+   bereits als Trigger in den Signalen (Teil C.1). Gruppiert wird je Kalendertag; ein
+   Ticker mit mehreren Terminen im Fenster erscheint mehrfach, weil der Feed die
+   Wahrheit ist (Teil C.1: nicht zusammenfassen, nicht deduplizieren). */
+function rdTermineFenster(){
+  if(!(EARN&&Array.isArray(EARN.eintraege)))return null;
+  const heute=bstToday();
+  const bis=new Date(heute+'T00:00:00');bis.setDate(bis.getDate()+14);
+  const ende=bis.getFullYear()+'-'+String(bis.getMonth()+1).padStart(2,'0')+'-'+String(bis.getDate()).padStart(2,'0');
+  const drin=EARN.eintraege.filter(e=>{
+    const d=String((e&&e.date)||'');
+    return /^\d{4}-\d{2}-\d{2}$/.test(d)&&d>=heute&&d<=ende;
+  }).slice().sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:
+    String(a.ticker||'').localeCompare(String(b.ticker||'')));
+  const tage=[];
+  drin.forEach(e=>{
+    const letzter=tage[tage.length-1];
+    if(letzter&&letzter.datum===e.date)letzter.eintraege.push(e);
+    else tage.push({datum:e.date,eintraege:[e]});
+  });
+  return tage;
+}
+function rdTermineRender(){
+  const sek=document.getElementById('rdTermine'),ziel=document.getElementById('rdTermineInhalt'),
+        meta=document.getElementById('rdTermineMeta');
+  if(!sek||!ziel)return;
+  if(!RD_VERSUCH.termine){sek.hidden=true;return}
+  const tage=rdTermineFenster();
+  /* Datei fehlt oder ist ungueltig: die Sektion entfaellt ganz (Teil C.4). */
+  if(!tage){sek.hidden=true;ziel.innerHTML='';if(meta)meta.textContent='';return}
+  sek.hidden=false;
+  if(!tage.length){
+    if(meta)meta.textContent='';
+    ziel.innerHTML='<article class="card"><span class="t-small" style="color:var(--muted)">Keine Termine in den nächsten 14 Tagen.</span></article>';
+    return;
+  }
+  /* Deckel: hoechstens sieben Tageskarten. Er ist Schutz gegen einen vollen Kalender,
+     keine Beschreibung des Ist-Zustands — heute greift er nicht. */
+  const zeigen=tage.slice(0,7),rest=tage.length-zeigen.length;
+  const eigene=bstSymbole();
+  if(meta)meta.textContent=zeigen.length===1?'1 Tag':zeigen.length+' Tage';
+  ziel.innerHTML='<div class="jz-grid">'+zeigen.map(t=>
+    '<article class="card" style="display:flex;flex-direction:column;gap:var(--sp-3)">'+
+      '<div style="display:flex;flex-direction:column;gap:2px">'+
+        '<span class="t-h3 num">'+escapeHtml(jzTag(t.datum))+'</span>'+
+        '<span class="t-caption" style="color:var(--muted)">'+escapeHtml(rdWochentag(t.datum))+'</span>'+
+      '</div>'+
+      '<div class="jz-liste">'+t.eintraege.map(e=>{
+        const tk=validTicker(String(e.ticker||''));
+        /* Teil C.3: rein lokaler Abgleich. Es erscheint AUSSCHLIESSLICH die
+           Markierung — keine Stueckzahl, kein Einstand, kein Bestandsdatum
+           (ADR-906: Positionen verlassen den Browser nie und werden auch im DOM
+           nicht ausgestellt). */
+        const meins=!!(tk&&eigene.indexOf(tk)>-1);
+        const zeit=rdZeitText(e.zeit);
+        return '<span class="rd-trigger">'+
+          '<span class="t-small" style="min-width:0">'+escapeHtml(String(e.name||tk||''))+
+            (tk?' <span class="jz-sym">'+escapeHtml(tk)+'</span>':'')+
+            (meins?' <span class="jz-chip brand">in deiner Liste</span>':'')+'</span>'+
+          '<span class="t-small wert" style="color:var(--muted)">'+
+            escapeHtml([zeit,String(e.periode||'')].filter(Boolean).join(' · '))+'</span>'+
+        '</span>';
+      }).join('')+'</div>'+
+    '</article>').join('')+'</div>'+
+    /* Ohne Link: der Kalenderraum kommt erst in V2-5. */
+    (rest>0?'<p class="jz-leer" style="margin-top:var(--sp-3)">weitere Termine im Kalender</p>':'');
+}
+
+/* --- Teil D: Beobachtungskandidaten aus candidates.json ------------------------
+   Die rechtlich empfindlichste Flaeche des Raums. Wortlaute, Legende und Offenlegung
+   sind der geprueften V1-Umsetzung in index.html entnommen (Zeilen 903/904/905/947/983)
+   und am aktuellen Stand gegengelesen — nicht neu formuliert. */
+const RD_READY={in_zone:'in Beobachtungszone',near:'nah an Zone',watch:'im Blick'};
+const RD_REGEL={weekly_uptrend:'Wochen-Aufwärtstrend',daily_uptrend:'Tages-Aufwärtstrend',
+  above_ma200:'über 200-Tage-Linie',pullback_present:'Rücksetzer vorhanden',
+  support_near:'Unterstützung nahe',momentum_confirmed:'Momentum bestätigt'};
+const RD_RISIKO={data_partial:'Daten teilweise',earnings_near:'Quartalszahlen nah',
+  earnings_date_unverified:'Termin der Quartalszahlen ungeprüft',
+  extended_from_zone:'von Zone entfernt',low_liquidity:'geringe Liquidität',
+  high_volatility:'hohe Volatilität'};
+const RD_DQ={fresh:'vollständig',partial:'teilweise',failed:'nicht verfügbar'};
+function rdZahl(v){return (v==null||!isFinite(+v))?'':(+v).toFixed(2).replace('.',',')}
+/* Teil D.3: Plausibilitaet je Item ist PFLICHT. Ein Stop ueber der Zone oder ein Ziel
+   darunter ist rechnerisch unmoeglich; solche levels werden STILL verworfen, die Karte
+   bleibt. Nicht-endliche Werte ebenso. */
+function rdLevelsOk(lv){
+  if(!lv||typeof lv!=='object')return false;
+  const z=[lv.entry_low,lv.entry_high,lv.stop,lv.target].map(Number);
+  if(z.some(x=>!isFinite(x)))return false;
+  return z[2]<z[0]&&z[3]>z[1];
+}
+function rdLevelsHTML(lv,cur){
+  const w=cur?' '+escapeHtml(String(cur)):'';
+  const h=(lv.horizon_sessions!=null&&isFinite(+lv.horizon_sessions))?
+    '<span class="t-caption" style="color:var(--muted)">Horizont '+escapeHtml(String(+lv.horizon_sessions))+' Handelstage</span>':'';
+  return '<div class="jz-liste">'+
+    '<span class="rd-trigger"><span class="t-small">Beobachtungszone</span>'+
+      '<span class="t-small wert num">'+escapeHtml(rdZahl(lv.entry_low))+'–'+escapeHtml(rdZahl(lv.entry_high))+w+'</span></span>'+
+    '<span class="rd-trigger"><span class="t-small">Stop-Loss (regelbasiert)</span>'+
+      '<span class="t-small wert num" style="color:var(--down)">'+escapeHtml(rdZahl(lv.stop))+w+'</span></span>'+
+    '<span class="rd-trigger"><span class="t-small">Kursziel (regelbasiert)</span>'+
+      '<span class="t-small wert num" style="color:var(--up)">'+escapeHtml(rdZahl(lv.target))+w+'</span></span>'+
+  '</div>'+h;
+}
+function rdKandidatKarte(it){
+  const tk=validTicker(String((it&&it.ticker)==null?'':it.ticker));
+  if(!tk)return '';
+  const setup=it.setup||{};
+  const ready=RD_READY[String(setup.readiness||'')]||'';
+  const dist=(setup.distance_to_zone_pct!=null&&isFinite(+setup.distance_to_zone_pct))?
+    rdZahl(setup.distance_to_zone_pct)+' %':'';
+  const chips=[].concat(
+    (Array.isArray(it.rule_hits)?it.rule_hits:[]).map(r=>RD_REGEL[String(r)]).filter(Boolean)
+      .map(t=>'<span class="jz-chip">'+escapeHtml(t)+'</span>'),
+    (Array.isArray(it.risk_flags)?it.risk_flags:[]).map(r=>RD_RISIKO[String(r)]).filter(Boolean)
+      .map(t=>'<span class="jz-chip warn">'+escapeHtml(t)+'</span>')
+  ).join('');
+  const dq=RD_DQ[String((it.data_quality&&it.data_quality.status)||'')]||'';
+  /* Teil D.5: levels.fib wird bewusst NICHT gerendert — die Fib-Annotation gehoert in
+     den Kandidaten-Chart (ADR-810). Der Block wird gelesen und ignoriert. */
+  const lv=(it.levels&&rdLevelsOk(it.levels))?it.levels:null;
+  const cur=(it.quote&&it.quote.currency)?it.quote.currency:'';
+  return '<article class="card" style="display:flex;flex-direction:column;gap:var(--sp-3)">'+
+    '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp-3)">'+
+      '<span style="display:flex;flex-direction:column;gap:2px;min-width:0">'+
+        '<span class="jz-sym">'+escapeHtml(tk)+'</span>'+
+        '<span class="t-h3">'+escapeHtml(String(it.name||tk))+'</span>'+
+        (it.sector?'<span class="t-caption" style="color:var(--muted)">'+escapeHtml(String(it.sector))+'</span>':'')+
+      '</span>'+
+      ((it.rank!=null&&isFinite(+it.rank))?'<span class="t-caption num" style="color:var(--muted)">Platz '+escapeHtml(String(+it.rank))+'</span>':'')+
+    '</div>'+
+    (ready?'<span class="t-small">'+escapeHtml(ready)+
+      (dist?' <span class="num" style="color:var(--muted)">('+escapeHtml(dist)+' zur Zone)</span>':'')+'</span>':'')+
+    (chips?'<div style="display:flex;flex-wrap:wrap;gap:6px">'+chips+'</div>':'')+
+    (lv?'<div class="jz-trenn"></div>'+rdLevelsHTML(lv,cur):'')+
+    (dq?'<span class="t-caption" style="color:var(--muted)">Datenlage '+escapeHtml(dq)+'</span>':'')+
+  '</article>';
+}
+function rdKandidatenRender(){
+  const sek=document.getElementById('rdKandidaten'),ziel=document.getElementById('rdKandidatenInhalt'),
+        meta=document.getElementById('rdKandidatenMeta');
+  if(!sek||!ziel)return;
+  if(!RD_VERSUCH.kandidaten){sek.hidden=true;return}
+  const items=(CANDIDATES&&Array.isArray(CANDIDATES.items))?CANDIDATES.items.filter(x=>x&&x.ticker):[];
+  /* Teil D.6: fehlt die Datei, ist sie ungueltig oder leer, entfaellt die GESAMTE
+     Sektion inklusive Legende und Offenlegung. */
+  if(!items.length){sek.hidden=true;ziel.innerHTML='';if(meta)meta.textContent='';return}
+  sek.hidden=false;
+  if(meta)meta.textContent=items.length===1?'1 Kandidat':items.length+' Kandidaten';
+  const karten=items.map(rdKandidatKarte).filter(Boolean);
+  const mitLevels=items.some(i=>i.levels&&rdLevelsOk(i.levels));
+  /* Teil D.2: die Sortier-Erklaerung kommt AUS DEM FEED, nicht aus dem Code. */
+  const erkl=String((CANDIDATES._meta&&CANDIDATES._meta.ranking_explanation)||'').trim();
+  const d=CANDIDATES.disclosure||null;
+  const kontakt=d?safeLink(d.contact_url,'Kontakt und Impressum'):'';
+  ziel.innerHTML=
+    (erkl?'<p class="t-small jz-fliess" style="margin:0 0 var(--sp-3)">'+escapeHtml(erkl)+'</p>':'')+
+    '<div class="jz-grid">'+karten.join('')+'</div>'+
+    /* Teil D.3: sobald mindestens ein Item Levels zeigt, steht die Pflicht-Legende
+       darunter — zeichengleich aus der V1 uebernommen (ADR-807). */
+    (mitLevels?'<p class="t-small jz-fliess" style="margin:var(--sp-3) 0 0;color:var(--muted)">Zone, Stop-Loss und Kursziel sind regelbasierte Rechenwerte der offengelegten Systematik – keine Kauf- oder Verkaufsempfehlung, keine Erfolgsprognose.</p>':'')+
+    /* Teil D.4: Offenlegung ohne Umweg — ein Aufklapper, kein zweiter Klickweg. */
+    (d?'<details class="card" style="margin-top:var(--sp-4)">'+
+      '<summary style="min-height:44px;display:flex;align-items:center;cursor:pointer" class="t-small">'+
+        escapeHtml(String(d.label||'Offenlegung'))+'</summary>'+
+      '<div style="display:flex;flex-direction:column;gap:var(--sp-2);margin-top:var(--sp-3)">'+
+        (d.producer?'<p class="t-small jz-fliess" style="margin:0"><b>Herausgeber:</b> '+escapeHtml(String(d.producer))+'</p>':'')+
+        (d.methodology?'<p class="t-small jz-fliess" style="margin:0"><b>Methodik:</b> '+escapeHtml(String(d.methodology))+'</p>':'')+
+        (d.interests?'<p class="t-small jz-fliess" style="margin:0"><b>Interessen:</b> '+escapeHtml(String(d.interests))+'</p>':'')+
+        (kontakt?'<p class="t-small" style="margin:0">'+kontakt+'</p>':'')+
+      '</div></details>':'');
+}
+
 function radarRendern(){
   rdStaendeRender();
   rdSignaleRender();
+  rdTermineRender();
+  rdKandidatenRender();
 }
 
 /* --- Charts (Teil D) ----------------------------------------------------------
