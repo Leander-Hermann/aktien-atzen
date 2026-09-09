@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-09T06:20:33.519945Z",
+  "generated_at": "2026-09-09T07:20:37.210685Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 96,
+  "symbols_total": 97,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -21,6 +21,108 @@
  },
  "items": [
   {
+   "symbol": "VOW3.DE",
+   "name": "Volkswagen",
+   "score": 75,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,5 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:VOW3",
+   "quote": {
+    "price": 83.1,
+    "pct": 6.47,
+    "cur": "EUR",
+    "as_of": "2026-09-09T06:34:07.894808+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Volkswagen fällt heute mit starkem Kursplus auf",
+    "why_now": "Die Volkswagen-Aktie legt 6,5 % zu und weist ein ungewöhnlich hohes Volumen von 4,0× des Durchschnitts auf. Zusätzlich wurden 2 Videos in 3 Tagen erwähnt. Ursache unklar. Das hohe Volumen und die Video-Erwähnungen könnten auf erhöhte Aufmerksamkeit hindeuten, belegen aber keinen konkreten Auslöser.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-09T07:20:37.210685Z"
+   }
+  },
+  {
+   "symbol": "ORCL",
+   "name": "Oracle",
+   "score": 75,
+   "priority": "high",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,4 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 162.52,
+    "pct": 2.36,
+    "cur": "USD",
+    "as_of": "2026-09-09T06:34:07.894808+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-10",
+    "distance_days": 1,
+    "zeit": "amc"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Oracle fällt vor dem Earnings-Termin auf",
+    "why_now": "Die Oracle-Aktie steigt um 2,36 %, begleitet von einem Volumen von 1,7× des Durchschnitts. Der Earnings-Termin ist für morgen angesetzt; dies könnte die erhöhte Aufmerksamkeit und die Bewegung mit erklären. Zusätzlich wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Earnings-Termin morgen",
+     "Handelsvolumen",
+     "Kursbewegung"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-09T07:20:37.210685Z"
+   }
+  },
+  {
    "symbol": "BE",
    "name": "Bloom Energy",
    "score": 70,
@@ -30,13 +132,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+11,7 %",
+     "value": "+9,6 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "2,3× Durchschnitt",
      "weight": 15
     },
     {
@@ -47,50 +149,22 @@
     }
    ],
    "quote": {
-    "price": 281.435,
-    "pct": 11.29,
+    "price": 277.22,
+    "pct": 9.63,
     "cur": "USD",
-    "as_of": "2026-09-08T18:35:24.521104+00:00"
+    "as_of": "2026-09-09T06:34:07.894808+00:00"
    },
    "llm": {
     "status": "ready",
     "headline": "Bloom Energy mit deutlichem Tagesplus",
-    "why_now": "Bloom Energy verzeichnete eine starke Kursbewegung von +11,7 %. Der Kurs lag bei 281.435 USD und damit 11,29 % im Plus. Das Handelsvolumen betrug das 1,8-Fache des Durchschnitts, zudem wurde 1 Video in 3 Tagen erwähnt. Ursache unklar.",
+    "why_now": "Die Aktie von Bloom Energy stieg um 9,63 % auf 277,22 USD. Das Handelsvolumen lag bei 2,3× des Durchschnitts. Zusätzlich wurde in 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
     "watch_next": [
-     "Weitere Kursentwicklung",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-08T19:20:38.944878Z"
-   }
-  },
-  {
-   "symbol": "NDX1.DE",
-   "name": "Nordex",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,2 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:NDX1",
-   "quote": {
-    "price": 40.5,
-    "pct": 10.17,
-    "cur": "EUR",
-    "as_of": "2026-09-08T18:35:24.521104+00:00"
+    "generated_at": "2026-09-09T07:20:37.210685Z"
    }
   },
   {
@@ -103,7 +177,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+9,6 %",
+     "value": "+9,1 %",
      "weight": 45
     },
     {
@@ -114,134 +188,10 @@
     }
    ],
    "quote": {
-    "price": 104.76,
-    "pct": 9.35,
+    "price": 104.47,
+    "pct": 9.05,
     "cur": "USD",
-    "as_of": "2026-09-08T18:35:24.521104+00:00"
-   }
-  },
-  {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+8,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1793000.0,
-    "pct": 8.26,
-    "cur": "KRW",
-    "as_of": "2026-09-08T18:35:24.521104+00:00"
-   }
-  },
-  {
-   "symbol": "HNR1.DE",
-   "name": "Hannover Rück",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,1 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:HNR1",
-   "quote": {
-    "price": 247.4,
-    "pct": -5.07,
-    "cur": "EUR",
-    "as_of": "2026-09-08T18:35:24.521104+00:00"
-   }
-  },
-  {
-   "symbol": "005930.KS",
-   "name": "Samsung",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,7 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "KRX:005930",
-   "quote": {
-    "price": 269500.0,
-    "pct": 5.68,
-    "cur": "KRW",
-    "as_of": "2026-09-08T18:35:24.521104+00:00"
-   }
-  },
-  {
-   "symbol": "VOW3.DE",
-   "name": "Volkswagen",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,2 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:VOW3",
-   "quote": {
-    "price": 83.1,
-    "pct": 2.21,
-    "cur": "EUR",
-    "as_of": "2026-09-08T18:35:24.521104+00:00"
+    "as_of": "2026-09-09T06:34:07.894808+00:00"
    }
   }
  ]
