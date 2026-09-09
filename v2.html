@@ -390,7 +390,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
      an die Containerbreite. Schlaegt den Viewport-Stand aus der .card-Regel, weil
      dort die Fensterbreite entscheidet — in der schmalen Kontextspalte waere das
      bei 1600 px Fenster zu viel Polster. */
-  .jz .card{padding:var(--sp-4);padding:clamp(var(--sp-4),13px + 0.8cqi,var(--sp-5))}
+  .jz .card,.rd .card{padding:var(--sp-4);padding:clamp(var(--sp-4),13px + 0.8cqi,var(--sp-5))}
   /* §3: auch der Quellenlink in der Fokuskarte ist ein Touch-Ziel und braucht
      seine 44 px — als Inline-Flex, damit er im Satz stehen bleibt. */
   .jz-lead a{display:inline-flex;align-items:center;min-height:44px}
@@ -501,6 +501,37 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .jz-leer{color:var(--muted);font-size:12.5px;line-height:1.45;font-weight:500}
   .jz-trenn{height:1px;background:var(--line)}
   .jz-fehler{display:flex;flex-direction:column;gap:var(--sp-3);align-items:flex-start}
+
+  /* ==========================================================================
+     V2-3 Raum „Radar" — Signale, Termine, Beobachtungskandidaten.
+     KEIN zweites 7/5-Raster (Auftrag Teil A.2, bindender Interpretations-Entscheid
+     des Architekten): das asymmetrische Raster traegt eine Hierarchie
+     „Fokusgeschichte plus Kontextspalte"; die drei Radar-Flaechen sind
+     gleichrangig und stehen untereinander. Die Breite verteilt stattdessen die
+     Spurenregel aus §4.2 Punkt 3 (ADR-713) — dieselbe `.jz-grid`, die auch der
+     Raum „Jetzt" verwendet. Keine neue Schwelle, kein neuer Breakpoint.
+     ========================================================================== */
+  .rd{display:flex;flex-direction:column;gap:var(--sp-8);margin-top:var(--sp-6)}
+  /* §4.2 Punkt 1: Traeger der Container-Query ist die SEKTION, nicht body. Ohne
+     7/5-Raster ist sie hier so breit wie der Inhalt; containerbezogen bleibt die
+     Regel trotzdem, damit dieselbe Karte in einer schmaleren Spalte richtig
+     reagiert, sobald eine Sektion einmal woanders steht. */
+  #rdSignale,#rdTermine,#rdKandidaten{container-type:inline-size}
+  /* Teil B.9: Die KI-Kurzerklaerung ist optisch vom gerechneten Teil der Karte
+     abgesetzt — eigener Grund, gestrichelter Rand, eigene Herkunftszeile. Der
+     Nutzer muss ohne Nachdenken sehen, welcher Teil gerechnet und welcher
+     geschrieben ist. Bedeutung nie durch Farbe allein (§11): die Herkunft steht
+     als Text im Chip, der Rand ist nur die Verstaerkung. */
+  .rd-llm{display:flex;flex-direction:column;gap:var(--sp-2);padding:var(--sp-3);
+    border:1px dashed var(--line);border-radius:var(--radius);background:var(--chip)}
+  .rd-llm-titel{font-size:14.5px;line-height:1.3;font-weight:600;margin:0;text-wrap:pretty}
+  .rd-llm ul{margin:0;padding-left:1.15em;display:flex;flex-direction:column;gap:2px}
+  /* Zeile Label -> Wert eines Triggers. Der Wert steht rechts und tabellarisch,
+     damit mehrere Trigger untereinander eine Kolonne bilden (§2.1 tabular-nums). */
+  .rd-trigger{display:flex;align-items:baseline;justify-content:space-between;
+    gap:var(--sp-3);padding:2px 0}
+  .rd-trigger .wert{font-variant-numeric:tabular-nums;font-weight:600;text-align:right;
+    flex:0 0 auto}
 
   /* ==========================================================================
      Overlays (E2 schwebend, §14.1). Struktur und Klassennamen aus index.html
@@ -683,9 +714,49 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   <section class="raum" id="raum-radar" data-raum="radar" aria-labelledby="h-radar" hidden>
     <h2 id="h-radar" tabindex="-1">Radar</h2>
-    <p class="stand t-caption" hidden></p>
-    <p class="platzhalter">Welche Bewegungen und Termine Aufmerksamkeit brauchen — und warum.
-      Die Inhalte folgen im nächsten Schritt.</p>
+    <!-- Teil A.4: drei Feeds mit eigenen Ständen. Fallen sie auf dieselbe Minute,
+         steht eine gemeinsame Zeile; laufen sie auseinander, wird JEDER Stand
+         einzeln genannt — dieselbe Regel wie im Raum „Jetzt" (Teil D.7), damit die
+         Frische des jüngsten Feeds nicht auf die anderen abfärbt. Deshalb ist
+         „radar" auch nicht mehr in RAUMFEEDS eingetragen. -->
+    <p class="jz-staende t-caption" id="rdStaende" hidden></p>
+
+    <div class="rd" id="rdInhalt">
+      <section class="jz-sek" id="rdSignale" aria-labelledby="rdSignaleH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="rdSignaleH">Signale</h3>
+          <span class="t-caption" id="rdSignaleMeta"></span>
+        </div>
+        <!-- Teil A.3: woher die Fläche kommt. Der Zusatz zur KI ist Pflicht, sobald
+             die Fläche überhaupt einen KI-Block tragen kann (Teil B.9). -->
+        <p class="t-small jz-fliess" style="margin:0;color:var(--muted)">Deterministisch aus
+          Kurs-, Volumen-, Termin- und Videodaten berechnet. Wo eine KI-Kurzerklärung
+          vorliegt, ist sie in der Karte einzeln gekennzeichnet.</p>
+        <div id="rdSignaleInhalt"></div>
+      </section>
+
+      <section class="jz-sek" id="rdTermine" aria-labelledby="rdTermineH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="rdTermineH">Termine</h3>
+          <span class="t-caption" id="rdTermineMeta"></span>
+        </div>
+        <p class="t-small jz-fliess" style="margin:0;color:var(--muted)">Aus dem
+          Earnings-Kalender der beobachteten Indizes. Termine sind vorläufig und können sich
+          verschieben.</p>
+        <div id="rdTermineInhalt"></div>
+      </section>
+
+      <section class="jz-sek" id="rdKandidaten" aria-labelledby="rdKandidatenH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="rdKandidatenH">Beobachtungskandidaten</h3>
+          <span class="t-caption" id="rdKandidatenMeta"></span>
+        </div>
+        <p class="t-small jz-fliess" style="margin:0;color:var(--muted)">Regelbasiert aus
+          Kursverläufen berechnet nach einer vorab veröffentlichten Systematik — keine
+          Anlageberatung und keine Empfehlung.</p>
+        <div id="rdKandidatenInhalt"></div>
+      </section>
+    </div>
   </section>
 
   <section class="raum" id="raum-recherche" data-raum="recherche" aria-labelledby="h-recherche" hidden>
@@ -925,6 +996,7 @@ async function feedsKlein(){
   ]);
   // Die Tagesdatei haengt am Index; fehlt er, entfaellt nur der Tagesstand.
   if(current){try{await loadDay(current)}catch(e){}}
+  RD_VERSUCH.termine=true;RD_VERSUCH.kandidaten=true;
 }
 /* Die drei grossen Feeds NACH dem ersten Rendern, parallel und nicht blockierend
    (quotes.json ~1,1 MB, ticker-index.json ~0,7 MB, radar.json ~11 KB).
@@ -939,7 +1011,9 @@ async function feedsGross(){
     hol('quotes.json',j=>{QUOTES=j}),
     hol('ticker-index.json',j=>{TICKIDX=j})
   ]);
+  RD_VERSUCH.signale=true;
   standAnzeigen();
+  radarRendern();
 }
 
 /* ===== Datenstand je Raum (§8.1: keine erfundene Frische) =======================
@@ -964,8 +1038,10 @@ function standText(feeds){
 /* „jetzt" fehlt hier bewusst: der Raum fuehrt seine Quellenstaende nach Teil D.7
    GETRENNT (Digest, Markt, Kurse), weil das Maximum aus standText() sonst die
    Frische des juengsten Feeds auf alle Inhalte uebertragen wuerde. */
+/* „radar" ist seit V2-3 ebenfalls draussen: der Raum fuehrt seine drei Quellenstaende
+   nach Teil A.4 GETRENNT, sobald sie auseinanderlaufen (rdStaendeRender). Das Maximum
+   aus standText() haette die Frische des juengsten Feeds auf alle drei uebertragen. */
 const RAUMFEEDS={
-  radar:()=>[RADAR,CANDIDATES,EARN],
   recherche:()=>[VIDEOS,VIDIDX],
   werte:()=>[QUOTES,TICKIDX]
 };
@@ -1660,6 +1736,181 @@ function jetztFokusErgaenzen(){
   }
 }
 
+/* ================================================================================
+   Raum „Radar" — V2-3 (Auftrag Teile A–G).
+   Drei gleichrangige Sektionen aus drei OPTIONALEN Feeds. Jede traegt ihren eigenen
+   Ausfall: faellt ein Feed aus, verschwindet genau seine Flaeche, der Rest des Raums
+   bleibt bedienbar (design-system.md §8.1, Contract-Hinweis zu radar.json).
+   Gerendert wird ausschliesslich, was die Feeds zur Laufzeit liefern.
+   ================================================================================ */
+
+/* Der Unterschied zwischen „noch nicht da" und „nicht lieferbar" ist sichtbar:
+   hol() setzt seine Variable nur bei r.ok, ein Fehler laesst sie also auf null.
+   Erst dieser Marker sagt, dass der LADEVERSUCH abgeschlossen ist — ohne ihn waere
+   ein Ausfall vom Ladezustand nicht zu unterscheiden. */
+const RD_VERSUCH={signale:false,termine:false,kandidaten:false};
+
+/* Teil A.4: drei Feeds, drei Staende. Fallen sie auf dieselbe Minute, steht eine
+   gemeinsame Zeile; laufen sie auseinander, wird jeder Stand einzeln genannt. Die
+   Frische des juengsten Feeds darf nicht auf die anderen abfaerben — dieselbe
+   Ueberlegung wie bei jzStaendeRender() im Raum „Jetzt". */
+function rdStaendeRender(){
+  const el=document.getElementById('rdStaende');
+  if(!el)return;
+  const quellen=[['Signale',RADAR],['Termine',EARN],['Kandidaten',CANDIDATES]];
+  const da=quellen.map(q=>[q[0],feedStand(q[1])]).filter(q=>!!q[1]);
+  if(!da.length){el.textContent='';el.hidden=true;return}
+  const min=Math.min.apply(null,da.map(q=>q[1].getTime()));
+  const max=Math.max.apply(null,da.map(q=>q[1].getTime()));
+  /* „Auseinander" beginnt bei einer vollen Minute — die Anzeige loest ohnehin nur
+     auf Minuten auf, alles darunter waere eine Unterscheidung ohne Unterschied. */
+  if(max-min<60000){
+    el.innerHTML='<span>Stand: '+escapeHtml(jzUhr(new Date(max).toISOString()))+' Uhr</span>';
+  }else{
+    el.innerHTML=da.map(q=>'<span>'+escapeHtml(q[0])+': '+
+      escapeHtml(jzUhr(q[1].toISOString()))+' Uhr</span>').join('');
+  }
+  el.hidden=false;
+}
+
+/* Teil B.2: bmo/amc als deutscher Klartext. tbd und alles Unbekannte ergeben einen
+   leeren String — die Angabe entfaellt dann ersatzlos, statt geraten zu werden. */
+const RD_ZEIT={bmo:'vor Handelsstart',amc:'nach Handelsschluss'};
+function rdZeitText(z){return RD_ZEIT[String(z==null?'':z).toLowerCase()]||''}
+
+/* Teil B.4: Der Zahlenwert `score` wird NIE angezeigt. Eine Zahl von 0 bis 100 neben
+   einem Aktiennamen liest sich wie eine Bewertung des Wertes — genau das verbietet
+   ADR-906 §5, und ADR-806 §3 verbietet zusaetzlich jede Anmutung von
+   Erfolgswahrscheinlichkeit. Sichtbar wird die Dringlichkeit nur ueber `priority`;
+   die Reihenfolge transportiert den Score bereits. */
+function rdPrioChip(p){
+  const v=String(p==null?'':p);
+  if(v==='high')return '<span class="jz-chip hoch">hohe Aufmerksamkeit</span>';
+  if(v==='medium')return '<span class="jz-chip mittel">Aufmerksamkeit</span>';
+  return '';
+}
+
+/* Teil B.6: klickbar ist eine Karte nur, wenn das Symbol in quotes.json eine
+   gueltige Kerzenreihe hat. Kein Proxy-Fallback wie bei den Movern — ein Radar-Klick
+   darf keine Drittanfrage ausloesen, und ein leerer Dialog waere schlechter als ein
+   fehlender Knopf. */
+function rdKerzen(sym){
+  const q=(QUOTES&&QUOTES.quotes)?QUOTES.quotes[sym]:null;
+  return q?jzKerzenOk(q.candles):null;
+}
+function rdChartOeffnen(sym,el){
+  const s=validTicker(String(sym==null?'':sym));
+  if(!s)return;
+  const d1=rdKerzen(s);
+  const it=radarItem(s);
+  if(!d1){jzChartFehler((it&&it.name)||s,el);return}
+  const pct=(it&&it.quote&&isFinite(+it.quote.pct))?+it.quote.pct:null;
+  jzStkOeffnen({t:s,n:(it&&it.name)||s,p:pct,candles:{d1:d1}},el);
+}
+
+/* Teil B.9 (ADR-907): die „Warum jetzt?"-Flaeche aus dem llm-Block.
+   Sie erscheint NUR bei status „ready" und nur mit nicht leeren Pflichtfeldern; ein
+   halber KI-Block ist schlechter als keiner, also entfaellt sie sonst still.
+   `confidence` wird hier NICHT gelesen — dazu zwei Punkte:
+   (a) als Wort darf der Wert nirgends erscheinen (eine ausgestellte Selbsteinschaetzung
+       des Modells liest sich wie eine Trefferwahrscheinlichkeit, dieselbe Grenze wie
+       beim score);
+   (b) der Auftrag SCHLAEGT VOR, „low" nicht zu rendern. Interpretations-Entscheid der
+       Frontend-Rolle, im Tagebuch begruendet: alle drei am 09.09. real gelieferten
+       Bloecke tragen „low" — dem Vorschlag zu folgen hiesse, die am 07.09. scharf
+       geschaltete Stufe strukturell unsichtbar zu bauen. Gerendert wird deshalb
+       unabhaengig vom Wert; Schutz sind Kennzeichnung, Feldtreue und Verbotsliste,
+       nicht die Selbstauskunft des Modells. Rueckgaengig: eine Bedingung an dieser
+       Stelle. */
+function rdLlmHTML(it,stand){
+  const l=it&&it.llm;
+  if(!l||String(l.status==null?'':l.status)!=='ready')return '';
+  const kopf=String(l.headline==null?'':l.headline).trim();
+  const text=String(l.why_now==null?'':l.why_now).trim();
+  if(!kopf||!text)return '';
+  const naechst=(Array.isArray(l.watch_next)?l.watch_next:[])
+    .map(x=>String(x==null?'':x).trim()).filter(Boolean).slice(0,3);
+  const gen=(typeof l.generated_at==='string')?jzUhr(l.generated_at):'';
+  return '<div class="rd-llm">'+
+    '<span class="jz-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>KI-Kurzerklärung, automatisch erzeugt</span>'+
+    '<p class="rd-llm-titel">'+escapeHtml(kopf)+'</p>'+
+    '<p class="t-small jz-fliess" style="margin:0">'+escapeHtml(text)+'</p>'+
+    (naechst.length?'<ul class="t-small">'+naechst.map(x=>'<li>'+escapeHtml(x)+'</li>').join('')+'</ul>':'')+
+    /* generated_at nur, wenn es vom Datenstand der Karte abweicht (Teil B.9). */
+    ((gen&&gen!==stand)?'<span class="t-caption" style="color:var(--muted)">Text erzeugt '+escapeHtml(gen)+' Uhr</span>':'')+
+  '</div>';
+}
+
+function rdSignalKarte(it,stand){
+  const sym=validTicker(String((it&&it.symbol)==null?'':it.symbol));
+  if(!sym)return '';
+  const name=String((it.name==null||it.name==='')?sym:it.name);
+  const trigger=(Array.isArray(it.triggers)?it.triggers:[]).filter(t=>t&&t.label);
+  /* Teil B.3: quote NUR wenn geliefert. Kein Ersatzkurs aus Mover- oder Yahoo-Daten —
+     der Contract fuehrt quote ausschliesslich aus quotes.json. */
+  const q=(it.quote&&isFinite(+it.quote.price))?it.quote:null;
+  const pct=(q&&isFinite(+q.pct))?+q.pct:null;
+  const ea=(it.earnings&&/^\d{4}-\d{2}-\d{2}$/.test(String(it.earnings.date||'')))?it.earnings:null;
+  const eaZeit=ea?rdZeitText(ea.zeit):'';
+  const d1=rdKerzen(sym);
+  return '<article class="card" data-rdsym="'+escapeHtml(sym)+'" style="display:flex;flex-direction:column;gap:var(--sp-3)">'+
+    '<div style="display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp-3)">'+
+      '<span style="display:flex;flex-direction:column;gap:2px;min-width:0">'+
+        '<span class="jz-sym">'+escapeHtml(sym)+'</span>'+
+        '<span class="t-h3">'+escapeHtml(name)+'</span>'+
+      '</span>'+
+      (q?'<span style="display:flex;flex-direction:column;align-items:flex-end;gap:2px">'+
+        '<span class="jz-gross" style="color:'+jzFarbe(pct)+'">'+(pct==null?'unbekannt':fp(pct))+'</span>'+
+        '<span class="t-caption num" style="color:var(--muted)">'+escapeHtml((+q.price).toFixed(2).replace('.',','))+
+          (q.cur?' '+escapeHtml(String(q.cur)):'')+' · Tag</span>'+
+      '</span>':'')+
+    '</div>'+
+    (rdPrioChip(it.priority)?'<div style="display:flex;flex-wrap:wrap;gap:6px">'+rdPrioChip(it.priority)+'</div>':'')+
+    (trigger.length?'<div class="jz-liste">'+trigger.map(t=>
+      '<span class="rd-trigger"><span class="t-small">'+escapeHtml(String(t.label))+'</span>'+
+      (t.value?'<span class="t-small wert num">'+escapeHtml(String(t.value))+'</span>':'')+'</span>').join('')+'</div>':
+      '<span class="jz-leer">Keine Auslöser geliefert.</span>')+
+    (ea?'<span class="t-small" style="color:var(--muted)">Earnings-Termin '+escapeHtml(jzTag(ea.date))+
+      (eaZeit?', '+escapeHtml(eaZeit):'')+'</span>':'')+
+    rdLlmHTML(it,stand)+
+    (d1?'<div><button type="button" class="ghost" data-rdchart="'+escapeHtml(sym)+'">Kursverlauf ansehen</button></div>':'')+
+  '</article>';
+}
+
+/* Teil B.7: alle drei Statusfaelle des Contracts, jeder ausdruecklich gebaut. */
+function rdSignaleRender(){
+  const sek=document.getElementById('rdSignale'),ziel=document.getElementById('rdSignaleInhalt'),
+        meta=document.getElementById('rdSignaleMeta');
+  if(!sek||!ziel)return;
+  /* Solange der Ladeversuch laeuft, bleibt die Sektion aus — der Ladezustand kommt
+     mit der Staffelung (Teil F). */
+  if(!RD_VERSUCH.signale){sek.hidden=true;return}
+  /* failed, Datei fehlt oder JSON ungueltig: die GESAMTE Sektion entfaellt. */
+  if(!radarOk()){sek.hidden=true;ziel.innerHTML='';if(meta)meta.textContent='';return}
+  const st=String((RADAR._meta&&RADAR._meta.status)||'');
+  const items=RADAR.items.filter(x=>x&&x.symbol);
+  const stand=feedStand(RADAR)?jzUhr(RADAR._meta.generated_at):'';
+  sek.hidden=false;
+  if(!items.length||st==='empty'){
+    /* Ein leeres Ergebnis ist ein ERGEBNIS, kein Fehler (§8.1 Empty State). */
+    if(meta)meta.textContent='';
+    ziel.innerHTML='<article class="card"><span class="t-small" style="color:var(--muted)">Heute nichts Auffälliges.</span></article>';
+    return;
+  }
+  if(meta)meta.textContent=items.length===1?'1 Signal':items.length+' Signale';
+  /* partial: die vorhandenen Items werden gezeigt UND der Vorbehalt ausgewiesen —
+     sinngemaess, ohne Pfade oder Interna aus warnings[] zu nennen. */
+  const warn=(st==='partial'||RADAR._meta.partial===true)?
+    '<p class="jz-leer" style="margin:0 0 var(--sp-3)">Ein Teil der Eingangsdaten stand nicht zur Verfügung — die Liste kann unvollständig sein.</p>':'';
+  ziel.innerHTML=warn+'<div class="jz-grid">'+
+    items.map(it=>rdSignalKarte(it,stand)).join('')+'</div>';
+}
+
+function radarRendern(){
+  rdStaendeRender();
+  rdSignaleRender();
+}
+
 /* --- Charts (Teil D) ----------------------------------------------------------
    chartOpts, applyStkLevels, openStock, buildStk und closeStk stammen aus
    index.html (Zeilen 1150/1154/1180/1182/1183). openStock und buildStk sind
@@ -1873,6 +2124,10 @@ document.addEventListener('click',ev=>{
   if(mv){jzMoverKlick(mv);return}
   const ch=t.closest('[data-chart]');
   if(ch){jzSymbolChart(ch.dataset.chart,ch);return}
+  /* Eigener Pfad statt data-chart: der Radar liest AUSSCHLIESSLICH quotes.json und
+     kennt keinen Proxy-Fallback (Teil B.6). */
+  const rc=t.closest('[data-rdchart]');
+  if(rc){rdChartOeffnen(rc.dataset.rdchart,rc);return}
   const ix=t.closest('[data-idx]');
   if(ix){jzIndexChart(+ix.dataset.idx,ix);return}
   if(t.closest('#dtSchliessen')){dtSchliessen();return}
@@ -1921,6 +2176,7 @@ if(jzIdxSchalter)jzIdxSchalter.addEventListener('click',()=>{
   await feedsKlein();
   standAnzeigen();
   jetztRendern();               // erstes Rendern: hier steht die Reihenfolge fest
+  radarRendern();               // Radar: Termine und Kandidaten haengen an feedsKlein
   /* Bewusst ohne await — blockiert das erste Rendern nicht. Ein Ausfall der grossen
      Feeds laesst die bereits gerenderten Flaechen unberuehrt. */
   feedsGross().then(jetztFokusErgaenzen,jetztFokusErgaenzen);
