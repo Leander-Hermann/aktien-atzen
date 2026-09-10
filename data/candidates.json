@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-09-09T08:30:39.111551Z",
-    "trading_day": "2026-09-08",
+    "generated_at": "2026-09-10T08:29:46.556689Z",
+    "trading_day": "2026-09-09",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-09-09T08:30:39.111551Z"
+    "as_of": "2026-09-10T08:29:46.556689Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "KO",
-      "name": "The Coca-Cola Company",
-      "sector": "Consumer Staples",
-      "as_of": "2026-09-08T13:30:00Z",
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-09-09T13:30:00Z",
       "quote": {
-        "price": 88.36,
+        "price": 252.4,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/KO",
-        "as_of": "2026-09-08T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/AMZN",
+        "as_of": "2026-09-09T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -47,42 +47,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 6
+        "warnings_count": 8
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 87.79,
-        "entry_high": 88.36,
-        "stop": 86.02,
-        "target": 93.03,
+        "entry_low": 250.7,
+        "entry_high": 252.4,
+        "stop": 242.62,
+        "target": 274.75,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-07-17",
-              "price": 80.83
+              "date": "2026-06-25",
+              "price": 225.55
             },
             "b": {
-              "date": "2026-07-29",
-              "price": 90.92
+              "date": "2026-07-16",
+              "price": 258.08
             },
             "c": {
-              "date": "2026-08-12",
-              "price": 85.66
+              "date": "2026-07-29",
+              "price": 226.16
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 95.75
+              "price": 258.69
             },
             {
               "ratio": 1.272,
-              "price": 98.49
+              "price": 267.54
             },
             {
               "ratio": 1.618,
-              "price": 101.99
+              "price": 278.79
             }
           ]
         }
@@ -90,16 +90,16 @@
     },
     {
       "rank": 2,
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "sector": "Energy",
-      "as_of": "2026-09-08T13:30:00Z",
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-09-09T13:30:00Z",
       "quote": {
-        "price": 160.66,
+        "price": 169.53,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/XOM",
-        "as_of": "2026-09-08T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/PLTR",
+        "as_of": "2026-09-09T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -117,42 +117,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 9
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 159.71,
-        "entry_high": 160.66,
-        "stop": 155.37,
-        "target": 176.41,
+        "entry_low": 167.43,
+        "entry_high": 169.53,
+        "stop": 157.47,
+        "target": 193.66,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-08-04",
-              "price": 149.09
+              "date": "2026-06-25",
+              "price": 106.37
             },
             "b": {
-              "date": "2026-08-20",
-              "price": 168.64
+              "date": "2026-07-07",
+              "price": 138.9
             },
             "c": {
-              "date": "2026-08-28",
-              "price": 155.32
+              "date": "2026-07-14",
+              "price": 122.64
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 174.87
+              "price": 155.17
             },
             {
               "ratio": 1.272,
-              "price": 180.19
+              "price": 164.02
             },
             {
               "ratio": 1.618,
-              "price": 186.95
+              "price": 175.27
             }
           ]
         }
@@ -163,13 +163,13 @@
       "ticker": "KHC",
       "name": "The Kraft Heinz Company",
       "sector": "Consumer Staples",
-      "as_of": "2026-09-08T13:30:00Z",
+      "as_of": "2026-09-09T13:30:00Z",
       "quote": {
-        "price": 24.9,
+        "price": 24.61,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/KHC",
-        "as_of": "2026-09-08T13:30:00Z"
+        "as_of": "2026-09-09T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -191,10 +191,10 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 24.62,
-        "entry_high": 24.9,
-        "stop": 23.74,
-        "target": 27.21,
+        "entry_low": 24.39,
+        "entry_high": 24.61,
+        "stop": 23.54,
+        "target": 26.76,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -230,86 +230,16 @@
     },
     {
       "rank": 4,
-      "ticker": "MA",
-      "name": "Mastercard Incorporated",
-      "sector": "Financials",
-      "as_of": "2026-09-08T13:30:00Z",
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "sector": "Health Care",
+      "as_of": "2026-09-09T13:30:00Z",
       "quote": {
-        "price": 570.89,
+        "price": 1124.21,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/MA",
-        "as_of": "2026-09-08T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 11
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 567.79,
-        "entry_high": 570.89,
-        "stop": 555.24,
-        "target": 602.2,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-07-23",
-              "price": 523.61
-            },
-            "b": {
-              "date": "2026-08-03",
-              "price": 583.71
-            },
-            "c": {
-              "date": "2026-08-12",
-              "price": 556.06
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 616.16
-            },
-            {
-              "ratio": 1.272,
-              "price": 632.51
-            },
-            {
-              "ratio": 1.618,
-              "price": 653.3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 5,
-      "ticker": "PLD",
-      "name": "Prologis, Inc.",
-      "sector": "Real Estate",
-      "as_of": "2026-09-08T13:30:00Z",
-      "quote": {
-        "price": 138.48,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/PLD",
-        "as_of": "2026-09-08T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/LLY",
+        "as_of": "2026-09-09T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -331,38 +261,108 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 137.44,
-        "entry_high": 138.48,
-        "stop": 134.65,
-        "target": 146.14,
+        "entry_low": 1115.16,
+        "entry_high": 1124.21,
+        "stop": 1072.21,
+        "target": 1232.0,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-07-01",
-              "price": 135.1
+              "date": "2026-07-15",
+              "price": 1134.4
             },
             "b": {
-              "date": "2026-07-17",
-              "price": 153.35
+              "date": "2026-07-28",
+              "price": 1232.0
             },
             "c": {
-              "date": "2026-08-10",
-              "price": 137.22
+              "date": "2026-08-17",
+              "price": 1163.5
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 155.47
+              "price": 1261.1
             },
             {
               "ratio": 1.272,
-              "price": 160.43
+              "price": 1287.65
             },
             {
               "ratio": 1.618,
-              "price": 166.75
+              "price": 1321.42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "ticker": "MRK",
+      "name": "Merck & Co., Inc.",
+      "sector": "Health Care",
+      "as_of": "2026-09-09T13:30:00Z",
+      "quote": {
+        "price": 147.53,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/MRK",
+        "as_of": "2026-09-09T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 12
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 145.8,
+        "entry_high": 147.53,
+        "stop": 140.98,
+        "target": 160.63,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-08-04",
+              "price": 126.22
+            },
+            "b": {
+              "date": "2026-08-25",
+              "price": 156.92
+            },
+            "c": {
+              "date": "2026-08-28",
+              "price": 145.75
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 176.45
+            },
+            {
+              "ratio": 1.272,
+              "price": 184.8
+            },
+            {
+              "ratio": 1.618,
+              "price": 195.42
             }
           ]
         }
