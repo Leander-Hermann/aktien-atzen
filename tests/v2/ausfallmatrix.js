@@ -29,6 +29,19 @@
   const SEKTIONEN = ['jzLead', 'jzFolge', 'jzFokus', 'jzMarkt', 'jzMeldungen'];
   /* V2-3: die drei Flaechen des Raums „Radar" */
   const RD_SEKTIONEN = ['rdSignale', 'rdTermine', 'rdKandidaten'];
+  /* V2-4: die drei Bereiche des Raums Meine Werte. Er liest quotes.json und
+     ticker-index.json fuer die Karteninhalte sowie earnings.json, radar.json und
+     candidates.json fuer einzelne Zeilen darin. Erwartung: es entfaellt genau die
+     betroffene ZEILE, nie die Karte und nie der Raum. */
+  const MW_SEKTIONEN = ['mwListe', 'mwVerwaltung', 'mwCode'];
+  const MW_TESTBESTAND = { schema: 1, positionen: [
+    { id: 'p1', symbol: 'META', typ: 'aktie', stueck: 25, einstand: 118.4, waehrung: 'USD', added_at: '2026-09-10' },
+    { id: 'p2', symbol: 'SAP.DE', typ: 'beobachtung', added_at: '2026-09-10' },
+    { id: 'p3', symbol: 'AMD', typ: 'derivat', added_at: '2026-09-10',
+      derivat: { art: 'knockout', richtung: 'long', hebel: 8.5, ko_schwelle: 120 } },
+    /* ORCL traegt am 10.09.2026 einen Termin im Fenster — ohne einen solchen Wert
+       bliebe der earnings-Ausfall wirkungslos und damit ungeprueft (ADR-317.5). */
+    { id: 'p4', symbol: 'ORCL', typ: 'aktie', added_at: '2026-09-10' }] };
 
   async function stoere(datei, art) {
     await fetch('/__stoere?reset=1');
@@ -37,6 +50,10 @@
 
   function ladeRahmen(wartezeit) {
     return new Promise((res) => {
+      /* Der Bestand muss VOR dem Laden im localStorage derselben Herkunft stehen —
+         sonst prueft die Matrix den Leerzustand statt der Karten (V2-4). */
+      try { localStorage.setItem('aa-bestand', JSON.stringify(MW_TESTBESTAND));
+        localStorage.setItem('aa-bestand-mig', '1'); } catch (e) {}
       const f = document.createElement('iframe');
       f.style.cssText = 'position:fixed;left:-9999px;top:0;width:1280px;height:900px;border:0';
       f.src = '/v2.html?matrix=' + Date.now();
@@ -57,14 +74,33 @@
       if (!e || e.hidden) return false;
       return !/werden geladen\./.test(e.textContent || '');
     });
+    /* V2-4: der Raum muss sichtbar geschaltet werden, sonst rendert er nicht. */
+    try { w.raumZeigen('werte', false); } catch (e) {}
+    const mwSichtbar = MW_SEKTIONEN.filter(id => { const e = d.getElementById(id); return e && !e.hidden; });
+    const mwKarten = d.querySelectorAll('#mwListeInhalt [data-mwsym]').length;
+    const mwZeilen = {
+      /* Der Kursblock steht nach ADR-714 Punkt 2 IMMER; gezaehlt wird deshalb nur, was
+         wirklich eine Zahl traegt — sonst meldete ein Ausfall dasselbe wie ein Treffer. */
+      kursMitWert: [].slice.call(d.querySelectorAll('#mwListeInhalt .mw-kurs'))
+        .filter(e => /[0-9]/.test(e.textContent || '')).length,
+      kursblock: d.querySelectorAll('#mwListeInhalt .mw-kurs').length,
+      termin: [].slice.call(d.querySelectorAll('#mwListeInhalt .jz-liste span'))
+        .filter(e => /^Zahlen am/.test((e.textContent || '').trim())).length,
+      derivat: d.querySelectorAll('#mwListeInhalt .mw-derivat').length,
+      video: d.querySelectorAll('#mwListeInhalt .mw-video').length,
+      trigger: d.querySelectorAll('#mwListeInhalt .rd-trigger').length
+    };
     let ausnahme = null;
-    try { w.jetztRendern(); w.radarRendern(); } catch (e) { ausnahme = String(e && e.message || e); }
+    try { w.jetztRendern(); w.radarRendern(); w.werteRendern(); } catch (e) { ausnahme = String(e && e.message || e); }
     const bedienbar = [...d.querySelectorAll('button,a[href]')].filter(e => e.offsetParent !== null).length;
     return {
       sichtbareFlaechen: sichtbar,
       radarFlaechen: rdSichtbar,
       radarZeichen: (d.getElementById('rdInhalt') || {}).textContent
         ? d.getElementById('rdInhalt').textContent.trim().length : 0,
+      werteFlaechen: mwSichtbar,
+      werteKarten: mwKarten,
+      werteZeilen: mwZeilen,
       ausnahmeBeimRendern: ausnahme,
       bedienelemente: bedienbar,
       inhaltZeichen: (d.getElementById('jzInhalt') || {}).textContent
