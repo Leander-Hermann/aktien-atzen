@@ -619,6 +619,37 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .mw-derivatfelder{display:flex;flex-direction:column;gap:var(--sp-2);
     margin-top:var(--sp-3);padding-top:var(--sp-3);border-top:1px solid var(--line)}
   .mw-derivatfelder[hidden]{display:none}
+  /* Symbolsuche: Chipreihe, Feld und Vorschlagsliste. Die Liste schwebt über dem
+     Formular (E2 nach §14.1), damit sie die Felder darunter nicht verschiebt. */
+  .mw-chips{display:flex;flex-wrap:wrap;gap:var(--sp-2);margin-bottom:var(--sp-2)}
+  .mw-chips[hidden]{display:none}
+  /* §3: ein Chip mit Bedienelement ist ein Klickziel und erreicht 44 px über sein
+     Padding — genau der dort genannte Fall „Chips mit Padding“. */
+  .mw-chip{min-height:44px;padding-top:0;padding-bottom:0;padding-right:2px;gap:4px}
+  .mw-chip-weg{min-width:44px;min-height:44px;border:0;background:transparent;
+    color:inherit;font-size:18px;line-height:1;cursor:pointer;border-radius:var(--radius-pill);
+    display:inline-flex;align-items:center;justify-content:center}
+  @media (hover:hover) and (pointer:fine){
+    .mw-chip-weg:hover{background:color-mix(in srgb,currentColor 18%,transparent)}
+  }
+  .mw-suchfeld{position:relative}
+  .mw-vorschlaege{position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:40;
+    list-style:none;margin:0;padding:var(--sp-1);max-height:19rem;overflow-y:auto;
+    background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow-2, 0 20px 50px rgba(0,0,0,.35))}
+  .mw-vorschlaege[hidden]{display:none}
+  .mw-vorschlag{display:flex;align-items:center;gap:var(--sp-3);flex-wrap:wrap;
+    min-height:44px;padding:var(--sp-2) var(--sp-3);border-radius:var(--radius);
+    cursor:pointer}
+  .mw-vorschlag.aktiv{background:var(--chip)}
+  @media (hover:hover) and (pointer:fine){.mw-vorschlag:hover{background:var(--chip)}}
+  .mw-v-sym{font-size:12.5px;font-weight:700;letter-spacing:.02em;flex:0 0 auto;
+    min-width:5.5rem;color:var(--muted)}
+  .mw-v-name{font-size:14.5px;font-weight:600;flex:1 1 8rem;min-width:0}
+  .mw-v-hinweis{color:var(--muted);flex:0 0 auto}
+  /* Bedeutung nie durch Farbe allein (§11): der Treffer ist zusätzlich fett. */
+  .mw-vorschlag mark{background:color-mix(in srgb,var(--accent) 26%,transparent);
+    color:var(--accent-ink);font-weight:700;border-radius:3px;padding:0 1px}
   .mw-bestand{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
   .mw-zeile{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);
     flex-wrap:wrap;padding:var(--sp-2) 0;border-bottom:1px solid var(--line)}
@@ -2645,6 +2676,209 @@ function mwListeRender(){
    bstImportCode() sind aus index.html uebernommen und dort seit dem 03.08. im Betrieb.
    ================================================================================ */
 
+/* ================================================================================
+   Symbolsuche (Nutzeranweisung 10.09.2026).
+   Anlass: Drei von sechs angelegten Werten blieben leer, weil ihre Schreibweise in
+   keinem Feed vorkommt — „GOOG" statt GOOGL, „SAP" statt SAP.DE, „AHLA" gar nicht.
+   Die Datenbasis dafuer lag die ganze Zeit im Browser: ticker-index.json liefert
+   409 Symbole MIT Klarnamen, dazu kommen radar, earnings, candidates und quotes.
+
+   Keine neue Datenquelle, kein Contract-Change, keine Drittanfrage: Der Index wird
+   zur Laufzeit aus den bereits geladenen Feeds gebaut. Die Eingabe des Nutzers geht
+   nirgendwohin — sie wird nur lokal verglichen (ADR-906 §1).
+   ================================================================================ */
+let MW_INDEX=null,MW_INDEX_STAND=0;
+/* Der Index wird verworfen, sobald ein neuer Feed eingetroffen ist; gemessen wird das
+   an der Zahl der geladenen Quellen, nicht an einem Zeitstempel. */
+function mwIndexStand(){
+  return (TICKIDX?1:0)+(QUOTES?2:0)+(RADAR?4:0)+(EARN?8:0)+(CANDIDATES?16:0);
+}
+function mwIndex(){
+  const stand=mwIndexStand();
+  if(MW_INDEX&&MW_INDEX_STAND===stand)return MW_INDEX;
+  const map={};
+  const merke=(sym,name)=>{
+    const s=validTicker(String(sym==null?'':sym).toUpperCase());
+    if(!s)return;
+    if(!map[s])map[s]={symbol:s,name:''};
+    const n=String(name==null?'':name).trim();
+    if(n&&!map[s].name)map[s].name=n;
+  };
+  if(TICKIDX&&TICKIDX.ticker)Object.keys(TICKIDX.ticker).forEach(s=>merke(s,TICKIDX.ticker[s].name));
+  if(RADAR&&Array.isArray(RADAR.items))RADAR.items.forEach(i=>i&&merke(i.symbol,i.name));
+  if(EARN&&Array.isArray(EARN.eintraege))EARN.eintraege.forEach(e=>e&&merke(e.ticker,e.name));
+  if(CANDIDATES&&Array.isArray(CANDIDATES.items))CANDIDATES.items.forEach(i=>i&&merke(i.ticker,i.name));
+  if(QUOTES&&QUOTES.quotes)Object.keys(QUOTES.quotes).forEach(s=>merke(s,''));
+  MW_INDEX=Object.keys(map).map(s=>{
+    const e=map[s];
+    e.kurs=!!(QUOTES&&QUOTES.quotes&&QUOTES.quotes[s]);
+    e.auftritte=(TICKIDX&&TICKIDX.ticker&&TICKIDX.ticker[s]&&TICKIDX.ticker[s].auftritte)?TICKIDX.ticker[s].auftritte.length:0;
+    e.such=(e.symbol+' '+e.name).toLowerCase();
+    return e;
+  });
+  MW_INDEX_STAND=stand;
+  return MW_INDEX;
+}
+
+/* Sucheingabe-Hilfe fuer Firmen, die unter einem anderen Namen bekannt sind als unter dem,
+   den die Feeds fuehren. Am 10.09.2026 gegen den Livefeed geprueft: „google" und „facebook"
+   finden dort NICHTS, weil die Firmen als „Alphabet" und „Meta" gefuehrt werden — genau
+   daran ist der Nutzer gescheitert.
+   Das ist KEINE Datenquelle und keine erfundene Angabe: Der angezeigte Name bleibt in jedem
+   Fall der aus dem Feed, der Alias beeinflusst nur, WONACH gesucht wird. Er greift zudem nur,
+   wenn das Zielsymbol tatsaechlich im Index steht. Die Liste bleibt bewusst winzig und
+   enthaelt nur belegte Umbenennungen — sie ist keine Stelle, an der Firmenwissen gepflegt
+   wird. Waechst der Bedarf, gehoert eine echte Symbolquelle in den Contract. */
+const MW_ALIAS={google:'GOOGL',alphabet:'GOOGL',facebook:'META',fb:'META'};
+
+/* Rangfolge, bewusst einfach und erklaerbar statt „intelligent": exakte Symbolgleichheit,
+   dann Symbolanfang, dann Namensanfang, dann Wortanfang im Namen, dann irgendwo enthalten.
+   Bei Gleichstand entscheidet die Datenlage (Auftritte, dann Kurs) und zuletzt das Alphabet —
+   so steht bei „sap" die Notierung oben, zu der es auch wirklich etwas zu zeigen gibt. */
+function mwTrefferRang(e,q){
+  const sym=e.symbol.toLowerCase(),name=(e.name||'').toLowerCase();
+  if(sym===q)return 0;
+  if(sym.indexOf(q)===0)return 1;
+  if(name.indexOf(q)===0)return 2;
+  if(new RegExp('(^|[^a-z0-9])'+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).test(name))return 3;
+  if(e.such.indexOf(q)>-1)return 4;
+  return -1;
+}
+function mwSuche(roh,deckel){
+  const q=String(roh==null?'':roh).trim().toLowerCase();
+  if(q.length<1)return [];
+  const alias=MW_ALIAS[q]||null;
+  const out=[];
+  mwIndex().forEach(e=>{
+    /* Ein Aliastreffer zaehlt wie ein Symbolanfang — nie besser als eine echte
+       Uebereinstimmung, damit eine exakte Eingabe immer gewinnt. */
+    const r=(alias&&e.symbol===alias)?1:mwTrefferRang(e,q);
+    if(r>=0)out.push({e:e,r:r});
+  });
+  out.sort((a,b)=>a.r-b.r||b.e.auftritte-a.e.auftritte||
+    (b.e.kurs?1:0)-(a.e.kurs?1:0)||a.e.symbol.localeCompare(b.e.symbol));
+  return out.slice(0,deckel||8).map(x=>x.e);
+}
+
+/* Hervorhebung der Fundstelle. Gearbeitet wird auf dem GEESCAPTEN Text und mit
+   Positionen, nicht mit einem Ersetzen der Roheingabe — sonst koennte eine Eingabe
+   wie `<b>` als Markup in die Liste geraten (ADR-025). */
+function mwHervor(text,q){
+  const t=String(text==null?'':text);
+  const s=String(q==null?'':q).trim().toLowerCase();
+  const i=s?t.toLowerCase().indexOf(s):-1;
+  if(i<0)return escapeHtml(t);
+  return escapeHtml(t.slice(0,i))+'<mark>'+escapeHtml(t.slice(i,i+s.length))+'</mark>'+
+    escapeHtml(t.slice(i+s.length));
+}
+/* Was der Vorschlag ueber die Datenlage verraet — ohne Wertung: nur, ob es Kurs und
+   Videoauftritte gibt. Genau daran haette der Nutzer „GOOG" von „GOOGL" unterschieden. */
+function mwTrefferHinweis(e){
+  const t=[];
+  if(e.auftritte)t.push(e.auftritte===1?'1 Videoauftritt':e.auftritte+' Videoauftritte');
+  if(e.kurs)t.push('Kurs vorhanden');
+  return t.join(' · ');
+}
+function mwVorschlagHTML(liste,q,aktiv){
+  if(!liste.length)return '';
+  return liste.map((e,i)=>'<li class="mw-vorschlag'+(i===aktiv?' aktiv':'')+'" role="option"'+
+    ' id="mwV'+i+'" aria-selected="'+(i===aktiv?'true':'false')+'" data-mwwahl="'+escapeHtml(e.symbol)+'">'+
+    '<span class="mw-v-sym num">'+mwHervor(e.symbol,q)+'</span>'+
+    '<span class="mw-v-name">'+mwHervor(e.name||'',q)+'</span>'+
+    (mwTrefferHinweis(e)?'<span class="mw-v-hinweis t-caption">'+escapeHtml(mwTrefferHinweis(e))+'</span>':'')+
+  '</li>').join('');
+}
+
+/* --- Gesammelte Werte als Chips (Nutzeranweisung: kein Kommatrennen mehr) --------
+   Erkannte Werte wandern aus dem Textfeld in eine Chipreihe darueber. Das Feld ist
+   danach wieder leer, und der naechste Wert kann sofort getippt werden. Kommagetrennte
+   Eingabe bleibt zusaetzlich moeglich — sie war die bisherige Bedienung und wird nicht
+   weggenommen, nur ueberfluessig. */
+let MW_GEWAEHLT=[];
+function mwChipsRender(){
+  const el=document.getElementById('mwChips');
+  if(!el)return;
+  el.innerHTML=MW_GEWAEHLT.map(s=>'<span class="jz-chip mw-chip"><span class="num">'+escapeHtml(s)+'</span>'+
+    '<button type="button" class="mw-chip-weg" data-mwchipweg="'+escapeHtml(s)+'" '+
+    'aria-label="'+escapeHtml(s)+' aus der Auswahl entfernen">&times;</button></span>').join('');
+  el.hidden=!MW_GEWAEHLT.length;
+  const k=document.getElementById('mwAnlegen');
+  if(k)k.textContent=MW_GEWAEHLT.length>1?('Alle '+MW_GEWAEHLT.length+' hinzufügen'):'Hinzufügen';
+}
+function mwChipZu(sym){
+  const s=bstNormEingabe(sym);
+  if(!s)return false;
+  if(MW_GEWAEHLT.indexOf(s)<0)MW_GEWAEHLT.push(s);
+  mwChipsRender();
+  return true;
+}
+function mwChipWeg(sym){
+  MW_GEWAEHLT=MW_GEWAEHLT.filter(s=>s!==sym);
+  mwChipsRender();
+  const feld=document.getElementById('mwSym');if(feld)feld.focus();
+}
+
+/* --- Zustand der Vorschlagsliste ------------------------------------------------ */
+let MW_TREFFER=[],MW_AKTIV=-1;
+function mwListeSchliessen(){
+  MW_TREFFER=[];MW_AKTIV=-1;
+  const l=document.getElementById('mwVorschlaege'),f=document.getElementById('mwSym');
+  if(l){l.innerHTML='';l.hidden=true}
+  if(f){f.setAttribute('aria-expanded','false');f.removeAttribute('aria-activedescendant')}
+}
+function mwListeZeigen(){
+  const feld=document.getElementById('mwSym'),liste=document.getElementById('mwVorschlaege');
+  if(!feld||!liste)return;
+  /* Nur der Teil NACH dem letzten Komma wird gesucht — so bleibt die alte
+     kommagetrennte Eingabe bedienbar, ohne die Suche zu verwirren. */
+  const roh=String(feld.value||'');
+  const q=roh.split(',').pop().trim();
+  MW_TREFFER=mwSuche(q,8);MW_AKTIV=MW_TREFFER.length?0:-1;
+  if(!MW_TREFFER.length){mwListeSchliessen();return}
+  liste.innerHTML=mwVorschlagHTML(MW_TREFFER,q,MW_AKTIV);
+  liste.hidden=false;
+  feld.setAttribute('aria-expanded','true');
+  if(MW_AKTIV>=0)feld.setAttribute('aria-activedescendant','mwV'+MW_AKTIV);
+}
+function mwListeBewegen(schritt){
+  if(!MW_TREFFER.length)return;
+  MW_AKTIV=(MW_AKTIV+schritt+MW_TREFFER.length)%MW_TREFFER.length;
+  const liste=document.getElementById('mwVorschlaege'),feld=document.getElementById('mwSym');
+  const q=String(feld?feld.value:'').split(',').pop().trim();
+  if(liste)liste.innerHTML=mwVorschlagHTML(MW_TREFFER,q,MW_AKTIV);
+  if(feld)feld.setAttribute('aria-activedescendant','mwV'+MW_AKTIV);
+  const el=liste?liste.querySelector('.mw-vorschlag.aktiv'):null;
+  if(el&&el.scrollIntoView)el.scrollIntoView({block:'nearest'});
+}
+/* Einen Vorschlag oder die Roheingabe uebernehmen. Rueckgabe sagt, ob etwas passiert ist —
+   daran entscheidet die Eingabetaste, ob sie zusaetzlich anlegt. */
+function mwUebernehmen(sym){
+  const feld=document.getElementById('mwSym');
+  if(!feld)return false;
+  const roh=String(feld.value||'');
+  const teile=roh.split(',');
+  const gewaehlt=sym||(MW_AKTIV>=0&&MW_TREFFER[MW_AKTIV]?MW_TREFFER[MW_AKTIV].symbol:teile.pop().trim());
+  if(!gewaehlt)return false;
+  const ok=mwChipZu(gewaehlt);
+  if(!ok){
+    mwMeldung('mwFormMeldung','„'+gewaehlt+'" ist kein gültiges Symbol.','warn');
+    return false;
+  }
+  /* Vorher schon getippte, kommagetrennte Werte gehen nicht verloren. */
+  if(!sym&&MW_AKTIV<0)teile.forEach(t=>{const s=t.trim();if(s)mwChipZu(s)});
+  else if(teile.length>1)teile.slice(0,-1).forEach(t=>{const s=t.trim();if(s)mwChipZu(s)});
+  feld.value='';
+  mwListeSchliessen();
+  /* Kriterium 6: ein Symbol ohne jede Datenlage wird angelegt, aber nicht verschwiegen. */
+  const treffer=mwIndex().filter(e=>e.symbol===bstNormEingabe(gewaehlt))[0];
+  if(!treffer)mwMeldung('mwFormMeldung','Zu „'+bstNormEingabe(gewaehlt)+
+    '" liegen derzeit weder Kurse noch Videoauftritte vor. Anlegen kannst du den Wert '+
+    'trotzdem — die Karte bleibt dann vorerst leer.','warn');
+  else mwMeldung('mwFormMeldung','','');
+  feld.focus();
+  return true;
+}
+
 /* Ruhige Meldung in einer role="status"-Flaeche (Design-System §8: Fehler-Border und
    Meldung in --down, Warnung in --warn). Eine ungueltige Eingabe fuehrt NIE zu einer
    Ausnahme und nie zu einem Dialog. */
@@ -2667,11 +2901,20 @@ function mwFormularHTML(){
   const derRi=Object.keys(BST_RICHTUNG).map(k=>'<option value="'+escapeHtml(k)+'">'+escapeHtml(BST_RICHTUNG[k])+'</option>').join('');
   return '<div class="card mw-form">'+
     '<div class="mw-feld">'+
-      '<label class="t-small" for="mwSym">Symbole</label>'+
-      '<input type="text" id="mwSym" class="mw-input" autocomplete="off" spellcheck="false" '+
-        'placeholder="z. B. SAP.DE, AAPL" aria-describedby="mwSymHilfe">'+
-      '<span class="t-caption" id="mwSymHilfe" style="color:var(--muted)">Mehrere durch Komma '+
-        'getrennt. Börsenkürzel wie XETR:SAP werden auf die Yahoo-Schreibweise umgestellt.</span>'+
+      '<label class="t-small" for="mwSym">Wert suchen</label>'+
+      /* Die Chipreihe steht ueber dem Feld: gesammelte Werte bleiben sichtbar, waehrend
+         der naechste getippt wird. */
+      '<div class="mw-chips" id="mwChips" hidden></div>'+
+      '<div class="mw-suchfeld">'+
+        '<input type="text" id="mwSym" class="mw-input" autocomplete="off" spellcheck="false" '+
+          'placeholder="Name oder Kürzel, z. B. Amazon" aria-describedby="mwSymHilfe" '+
+          'role="combobox" aria-expanded="false" aria-controls="mwVorschlaege" aria-autocomplete="list">'+
+        '<ul class="mw-vorschlaege" id="mwVorschlaege" role="listbox" '+
+          'aria-label="Vorschläge" hidden></ul>'+
+      '</div>'+
+      '<span class="t-caption" id="mwSymHilfe" style="color:var(--muted)">Tippe den Namen oder '+
+        'das Kürzel; die Eingabetaste übernimmt den Vorschlag. Noch einmal Eingabetaste legt '+
+        'die gesammelten Werte an. Börsenkürzel wie XETR:SAP werden umgestellt.</span>'+
     '</div>'+
     '<div class="mw-feld">'+
       '<label class="t-small" for="mwTyp">Art</label>'+
@@ -2734,8 +2977,9 @@ function mwDetailsLesen(){
 function mwAnlegen(){
   const feld=document.getElementById('mwSym'),typEl=document.getElementById('mwTyp');
   if(!feld||!typEl)return;
-  const roh=String(feld.value||'').split(',').map(s=>s.trim()).filter(Boolean);
-  if(!roh.length){mwMeldung('mwFormMeldung','Bitte zuerst ein Symbol eintragen.','warn');feld.focus();return}
+  /* Angelegt wird, was als Chip gesammelt wurde, plus was noch im Feld steht. */
+  const roh=MW_GEWAEHLT.concat(String(feld.value||'').split(',').map(s=>s.trim()).filter(Boolean));
+  if(!roh.length){mwMeldung('mwFormMeldung','Bitte zuerst einen Wert suchen und übernehmen.','warn');feld.focus();return}
   const typ=BST_TYP[typEl.value]?typEl.value:'beobachtung';
   const details=roh.length===1?mwDetailsLesen():{};
   const angelegt=[],doppelt=[],ungueltig=[];
@@ -2759,6 +3003,7 @@ function mwAnlegen(){
   mwMeldung('mwFormMeldung',teile.join(' '),ungueltig.length?'warn':(angelegt.length?'ok':'warn'));
   if(angelegt.length){
     feld.value='';
+    MW_GEWAEHLT=[];mwChipsRender();mwListeSchliessen();
     mwFrostLoesen();            // Teil B.8: eine Bestandsaenderung beendet den Frost
     mwBestandslisteRender();
     werteRendern();
@@ -2825,6 +3070,33 @@ function mwVerwaltungRender(){
     const d=document.getElementById('mwDerivatFelder');
     if(d)d.hidden=typEl.value!=='derivat';
   });
+  /* Suchfeld: tippen zeigt Vorschlaege, die Tastatur bedient sie vollstaendig.
+     Die Handler haengen am Feld selbst, nicht an der Delegation — sie muessen auch
+     dann greifen, wenn die Liste gerade neu gezeichnet wird. */
+  const feld=document.getElementById('mwSym');
+  if(feld){
+    feld.addEventListener('input',mwListeZeigen);
+    feld.addEventListener('keydown',ev=>{
+      if(ev.key==='ArrowDown'){ev.preventDefault();if(!MW_TREFFER.length)mwListeZeigen();else mwListeBewegen(1);return}
+      if(ev.key==='ArrowUp'){ev.preventDefault();mwListeBewegen(-1);return}
+      if(ev.key==='Escape'){if(MW_TREFFER.length){ev.preventDefault();mwListeSchliessen()}return}
+      if(ev.key==='Enter'){
+        ev.preventDefault();
+        /* Steht noch etwas im Feld oder ist ein Vorschlag markiert, uebernimmt Enter.
+           Ist das Feld leer und sind Werte gesammelt, legt Enter sie an — der Nutzer
+           kommt so ohne Mausklick aus. */
+        if(String(feld.value||'').trim()||MW_AKTIV>=0)mwUebernehmen();
+        else if(MW_GEWAEHLT.length)mwAnlegen();
+        return;
+      }
+      /* Rueckschritt im leeren Feld nimmt den letzten Chip zurueck. */
+      if(ev.key==='Backspace'&&!String(feld.value||'').length&&MW_GEWAEHLT.length){
+        ev.preventDefault();mwChipWeg(MW_GEWAEHLT[MW_GEWAEHLT.length-1]);
+      }
+    });
+    feld.addEventListener('blur',()=>{setTimeout(mwListeSchliessen,150)});
+  }
+  MW_GEWAEHLT=[];mwChipsRender();
 }
 
 /* --- Teil D.4: Datenübertragung -------------------------------------------------
@@ -3152,6 +3424,10 @@ document.addEventListener('click',ev=>{
   }
   if(t.closest('#mwNachladen')){mwNachladenStarten(t.closest('#mwNachladen'));return}
   if(t.closest('#mwAnlegen')){mwAnlegen();return}
+  const wahl=t.closest('[data-mwwahl]');
+  if(wahl){mwUebernehmen(wahl.dataset.mwwahl);return}
+  const chipWeg=t.closest('[data-mwchipweg]');
+  if(chipWeg){mwChipWeg(chipWeg.dataset.mwchipweg);return}
   if(t.closest('#mwCodeErzeugen')){mwCodeErzeugen();return}
   if(t.closest('#mwCodeUebernehmen')){mwCodeUebernehmen();return}
   /* Teil D.2: erst fragen, dann entfernen — zwei getrennte Klicks, kein confirm(). */

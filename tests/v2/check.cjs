@@ -40,12 +40,15 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   'mwDerivatHTML', 'mwEreignisHTML', 'mwFremdOk', 'mwKuerzen', 'mwFremdHTML',
   'mwAuftrittTexte', 'mwAuftrittKopf', 'mwVideoHTML', 'mwKarte', 'mwOhneKursHTML',
   /* V2-4 Teil D */
-  'mwFormularHTML', 'mwBestandslisteHTML', 'mwCodeRender'];
+  'mwFormularHTML', 'mwBestandslisteHTML', 'mwCodeRender',
+  /* Symbolsuche (Nutzeranweisung 10.09.) */
+  'mwIndexStand', 'mwIndex', 'mwTrefferRang', 'mwSuche', 'mwHervor',
+  'mwTrefferHinweis', 'mwVorschlagHTML'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
-const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP',
+const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
   'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
@@ -70,6 +73,9 @@ vm.runInContext(KONSTANTEN.map(schneideConst).join('\n') + '\n' +
    Ersetzt wird deshalb genau diese eine Abhaengigkeit, nicht die geprueften
    Funktionen selbst — der Bestandsbezug der Terminliste wird darueber gesteuert. */
 vm.runInContext('let BST_TEST=[];function bstSymbole(){return BST_TEST}', box);
+/* Zustandsvariablen der Symbolsuche: sie stehen in v2.html als let auf Modulebene und
+   werden hier nachgestellt, weil der Schnitt nur Funktionen uebernimmt. */
+vm.runInContext('let MW_INDEX=null,MW_INDEX_STAND=0;', box);
 
 let gruppen = 0, faelle = 0, fehler = 0;
 function gruppe(titel, fn) {
@@ -601,7 +607,16 @@ gruppe('V2-4 Teil C — Videoauftritte: Zeitmarke aus dem Feed, Herkunft sichtba
    die Wortlaute und die Zusagen, die man am Quelltext festmachen kann. */
 gruppe('V2-4 Teil D — Verwaltung: Formularaufbau, Löschweg, Übertragung', () => {
   const f = vm.runInContext('mwFormularHTML()', box);
-  pruef('Eingabefeld für mehrere Symbole', /id="mwSym"/.test(f) && /Mehrere durch Komma/.test(f), true);
+  /* Nutzeranweisung 10.09.2026: gesucht wird über den Klarnamen, gesammelt wird über
+     Chips, und die Eingabetaste übernimmt. Der frühere Fall prüfte auf den Hinweis
+     „Mehrere durch Komma" — das war die abgelöste Bedienung. */
+  pruef('Suchfeld als Combobox mit Vorschlagsliste',
+    /id="mwSym"/.test(f) && /role="combobox"/.test(f) &&
+    /aria-controls="mwVorschlaege"/.test(f) && /aria-autocomplete="list"/.test(f), true);
+  pruef('Chipreihe für gesammelte Werte, anfangs verborgen', /id="mwChips" hidden/.test(f), true);
+  pruef('Vorschlagsliste ist eine Listbox, anfangs verborgen',
+    /id="mwVorschlaege" role="listbox"[\s\S]*?hidden/.test(f), true);
+  pruef('die Hilfe erklärt die Eingabetaste', /Eingabetaste übernimmt den Vorschlag/.test(f), true);
   pruef('alle fünf Arten stehen zur Wahl',
     ['aktie', 'beobachtung', 'derivat', 'etf', 'krypto'].every(k => f.indexOf('value="' + k + '"') > -1), true);
   pruef('Beobachtung ist die Vorauswahl', /value="beobachtung" selected/.test(f), true);
@@ -667,6 +682,67 @@ gruppe('V2-4 Teil D — Verwaltung: Formularaufbau, Löschweg, Übertragung', ()
   pruef('kein zweites Datenmodell und keine zweite Validierung',
     /localStorage\.setItem|JSON\.parse/.test(mw), false);
   pruef('die Migration wird nicht angezeigt', /bstMigrate\(|Migration übernommen/.test(mw), false);
+});
+
+/* --- Symbolsuche (Nutzeranweisung 10.09.2026) ----------------------------------
+   Geprueft wird gegen einen konstruierten Feedstand, nicht gegen die Livedatei: die
+   Zusage ist „findet den Wert ueber seinen Klarnamen", nicht „der Feed enthaelt heute
+   zufaellig Amazon". Die drei Faelle unten sind die real gescheiterten Eingaben des
+   Nutzers vom 10.09. */
+gruppe('V2-4 Nachtrag — Symbolsuche: Klarname findet das Symbol, ohne neue Datenquelle', () => {
+  box.TICKIDX = { ticker: {
+    AMZN: { name: 'Amazon.com, Inc.', auftritte: [{ date: '2026-09-08' }, { date: '2026-09-07' }] },
+    GOOGL: { name: 'Alphabet', auftritte: [{ date: '2026-09-08' }] },
+    'SAP.DE': { name: 'SAP', auftritte: [{ date: '2026-09-05' }] },
+    AAPL: { name: 'Apple', auftritte: [] },
+    'AIR.PA': { name: 'Airbus', auftritte: [] }
+  } };
+  box.QUOTES = { quotes: { AMZN: { price: 1 }, GOOGL: { price: 1 } } };
+  box.RADAR = null; box.EARN = null; box.CANDIDATES = null;
+  vm.runInContext('MW_INDEX=null;MW_INDEX_STAND=-1', box);
+  const idx = vm.runInContext('mwIndex()', box);
+  pruef('Index entsteht aus den geladenen Feeds', idx.length, 5);
+  pruef('Index kennt Kurslage und Auftrittszahl',
+    idx.filter(e => e.symbol === 'AMZN').map(e => [e.kurs, e.auftritte])[0], [true, 2]);
+  const treffer = q => vm.runInContext('mwSuche(' + JSON.stringify(q) + ',8).map(e=>e.symbol)', box);
+  /* Die drei Faelle, an denen der Nutzer am 10.09. gescheitert ist. */
+  pruef('„amazon" findet AMZN', treffer('amazon')[0], 'AMZN');
+  pruef('„sap" findet SAP.DE', treffer('sap')[0], 'SAP.DE');
+  pruef('„google" findet GOOGL', treffer('google')[0], 'GOOGL');
+  pruef('„alphabet" findet GOOGL ebenfalls', treffer('alphabet')[0], 'GOOGL');
+  /* Kuerzel funktionieren weiter, und exakte Gleichheit gewinnt. */
+  pruef('exaktes Symbol steht oben', treffer('aapl')[0], 'AAPL');
+  /* Bei gleichem Rang (beide Symbolanfang) entscheidet die Datenlage, nicht das Alphabet:
+     AMZN hat zwei Auftritte, AAPL keinen. Das ist die gebaute Absicht. */
+  pruef('bei gleichem Rang zaehlt die Datenlage', treffer('a').slice(0, 2), ['AMZN', 'AAPL']);
+  /* NEGATIV: eine Eingabe ohne Entsprechung liefert nichts — daran haette der Nutzer
+     „AHLA" als Fehlgriff erkannt, statt eine leere Karte anzulegen. */
+  pruef('„AHLA" liefert keinen Treffer', treffer('AHLA'), []);
+  pruef('leere Eingabe liefert keinen Treffer', treffer(''), []);
+  /* Rangfolge: bei Gleichstand entscheidet die Datenlage, nicht der Zufall. */
+  pruef('bei gleichem Rang steht der Wert mit mehr Auftritten oben',
+    treffer('a').indexOf('AMZN') < treffer('a').indexOf('AIR.PA'), true);
+  /* NEGATIV (ADR-025): die Hervorhebung baut kein Markup aus der Eingabe. */
+  const boese = vm.runInContext('mwHervor("Amazon <b>x</b>","<b>")', box);
+  pruef('Markup im Namen wird geescapet', /&lt;b&gt;/.test(boese) && !/<b>/.test(boese), true);
+  const treffermarke = vm.runInContext('mwHervor("Amazon","ama")', box);
+  pruef('der Treffer wird markiert', /<mark>Ama<\/mark>zon/.test(treffermarke), true);
+  pruef('ohne Treffer keine Markierung',
+    /<mark>/.test(vm.runInContext('mwHervor("Amazon","zzz")', box)), false);
+  /* Der Vorschlag nennt die Datenlage, wertet sie aber nicht. */
+  box.E = idx.filter(e => e.symbol === 'AMZN')[0];
+  pruef('Hinweis nennt Auftritte und Kurs',
+    vm.runInContext('mwTrefferHinweis(E)', box), '2 Videoauftritte · Kurs vorhanden');
+  box.E = idx.filter(e => e.symbol === 'AAPL')[0];
+  pruef('ohne Daten bleibt der Hinweis leer', vm.runInContext('mwTrefferHinweis(E)', box), '');
+  pruef('kein Werturteil im Hinweis',
+    /gut|schlecht|empfehl|chance|interessant/i.test(vm.runInContext('mwTrefferHinweis(E)', box)), false);
+  /* Die Liste ist als Listbox ausgezeichnet und markiert genau einen Eintrag. */
+  box.L = vm.runInContext('mwSuche("a",8)', box);
+  const html = vm.runInContext('mwVorschlagHTML(L,"a",1)', box);
+  pruef('jeder Vorschlag ist eine Option mit Id', (html.match(/role="option" id="mwV/g) || []).length, box.L.length);
+  pruef('genau ein Eintrag ist ausgewählt', (html.match(/aria-selected="true"/g) || []).length, 1);
+  pruef('leere Trefferliste ergibt kein Markup', vm.runInContext('mwVorschlagHTML([],"a",-1)', box), '');
 });
 
 console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +
