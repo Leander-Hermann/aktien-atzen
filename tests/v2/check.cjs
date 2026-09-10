@@ -38,7 +38,8 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   /* V2-4 Raum „Meine Werte" */
   'jzVideoHTML', 'mwMenge', 'mwGeld', 'mwKursHTML', 'mwDetailsHTML',
   'mwDerivatHTML', 'mwEreignisHTML', 'mwFremdOk', 'mwKuerzen', 'mwFremdHTML',
-  'mwAuftrittTexte', 'mwAuftrittKopf', 'mwVideoHTML', 'mwKarte', 'mwOhneKursHTML',
+  'mwAuftrittTexte', 'mwAuftrittKopf', 'mwVideoHTML', 'mwSparkHTML', 'mwDetailInhaltHTML',
+  'mwKarte', 'mwOhneKursHTML',
   /* V2-4 Teil D */
   'mwFormularHTML', 'mwBestandslisteHTML', 'mwCodeRender',
   /* Symbolsuche (Nutzeranweisung 10.09.) */
@@ -49,7 +50,7 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
-  'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG'];
+  'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -400,14 +401,26 @@ gruppe('V2-4 Teil B — Positionskarte: kein Depotwert, kein Sortierwert, kein P
     earn: { naechster: { date: '2026-09-14', zeit: 'amc', ticker: 'AAA' }, letzter: null, tage: 4 },
     kandidat: { ticker: 'AAA', name: 'Alpha AG' } });
   const h = vm.runInContext('mwKarte(j)', box);
+  /* Seit dem Umbau vom 10.09. traegt die Karte den Ueberblick und die Detailansicht die
+     Tiefe. Beide werden geprueft: was die Karte zeigen MUSS, und was sie NICHT mehr zeigt. */
+  const d = vm.runInContext('mwDetailInhaltHTML(j)', box);
   pruef('Name, Symbol und Art als deutscher Klartext', /Alpha AG/.test(h) && /AAA/.test(h) && /Aktie/.test(h), true);
   pruef('Kurs mit Waehrung und deutschem Komma', /83,10 EUR/.test(h), true);
   pruef('Prozentwert mit Bezugszeitraum', /\+6,47 %/.test(h) && /· Tag/.test(h), true);
-  pruef('Stueckzahl unveraendert, ohne Nachkommastellen', />25<\/span> Stück/.test(h), true);
-  pruef('Einstand mit eigener Waehrung', /Einstand <span class="num">118,40 USD/.test(h), true);
-  pruef('Termin als deutscher Klartext', /Zahlen am <span class="num">14\.09\.2026/.test(h) && /nach Handelsschluss/.test(h), true);
+  pruef('Stueckzahl unveraendert, ohne Nachkommastellen', />25<\/span> Stück/.test(d), true);
+  pruef('die Karte traegt die Stueckzahl NICHT mehr', /Stück/.test(h), false);
+  pruef('Einstand mit eigener Waehrung', /Einstand <span class="num">118,40 USD/.test(d), true);
+  pruef('die Karte traegt den Einstand NICHT mehr', /Einstand/.test(h), false);
+  pruef('Termin als deutscher Klartext', /Zahlen am <span class="num">14\.09\.2026/.test(d) && /nach Handelsschluss/.test(d), true);
   pruef('oberster Trigger als Label-Wert-Paar', /Starke Kursbewegung/.test(h) && /\+6,5 %/.test(h), true);
-  pruef('Kandidatenhinweis ohne Wertung', /Steht auch in den Beobachtungskandidaten/.test(h), true);
+  pruef('Kandidatenhinweis ohne Wertung', /Steht auch in den Beobachtungskandidaten/.test(d), true);
+  /* Die Karte zeigt genau EINEN Anlass — hier den Ausloeser, weil er vorgeht. */
+  pruef('die Karte zeigt nur den obersten Anlass',
+    /Starke Kursbewegung/.test(h) && !/Beobachtungskandidaten/.test(h), true);
+  pruef('die Karte fuehrt zur Detailansicht',
+    /data-mwdetail="AAA"/.test(h) && /Details ansehen/.test(h), true);
+  /* NEGATIV (Nutzerbefund 10.09.): kein verdichteter Fremdtext mehr auf der Karte. */
+  pruef('die Karte traegt keinen Fremdtext mehr', /mw-fremd/.test(h), false);
   /* NEGATIV (Teil B.3): kein Depotwert, keine Verrechnung mit dem Einstand.
      25 x 118,40 = 2960; 25 x 83,10 = 2077,50; (83,10-118,40)/118,40 = -29,81 %. */
   pruef('kein Produkt aus stueck und einstand', /2\.?960/.test(h), false);
@@ -441,7 +454,7 @@ gruppe('V2-4 Teil B.4 — Derivate: Naeherung gekennzeichnet, kein Optionsschein
   /* Knockout long, Hebel 8,5: 6,47 % x 8,5 = 54,995 %, gerundet 54,99 % (toFixed rundet die Gleitkommazahl ab). KO bei 60: (83,10-60)/83,10 = 27,80 %. */
   box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
     derivat: { art: 'knockout', richtung: 'long', hebel: 8.5, ko_schwelle: 60 } }, kurs: KURS });
-  const ko = vm.runInContext('mwKarte(j)', box);
+  const ko = vm.runInContext('mwDetailInhaltHTML(j)', box);
   pruef('Hebelwirkung rechnerisch ausgewiesen', /Hebelwirkung rechnerisch <span class="num">\+54,99 %/.test(ko), true);
   pruef('KO-Abstand ausgewiesen', /KO-Abstand <span class="num">\+27,80 %/.test(ko), true);
   pruef('beide als idealisierte Naeherung gekennzeichnet',
@@ -449,13 +462,13 @@ gruppe('V2-4 Teil B.4 — Derivate: Naeherung gekennzeichnet, kein Optionsschein
   /* Short dreht die Wirkung um und misst den KO-Abstand nach oben. */
   box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
     derivat: { art: 'knockout', richtung: 'short', hebel: 8.5, ko_schwelle: 100 } }, kurs: KURS });
-  const kurz = vm.runInContext('mwKarte(j)', box);
+  const kurz = vm.runInContext('mwDetailInhaltHTML(j)', box);
   pruef('short kehrt die Hebelwirkung um', /Hebelwirkung rechnerisch <span class="num">-54,99 %/.test(kurz), true);
   pruef('short misst den KO-Abstand nach oben', /KO-Abstand <span class="num">\+20,34 %/.test(kurz), true);
   /* NEGATIV (Teil B.4, ADR-906 §3): fuer Optionsscheine wird NICHT hochgerechnet. */
   box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
     derivat: { art: 'optionsschein', richtung: 'long', hebel: 8.5, ko_schwelle: 60 } }, kurs: KURS });
-  const os = vm.runInContext('mwKarte(j)', box);
+  const os = vm.runInContext('mwDetailInhaltHTML(j)', box);
   pruef('Optionsschein ohne Hochrechnung', /Hebelwirkung/.test(os), false);
   pruef('Optionsschein ohne den hochgerechneten Wert', /54,99 %/.test(os), false);
   pruef('Optionsschein nennt nur die Bewegung des Basiswerts',
@@ -463,7 +476,7 @@ gruppe('V2-4 Teil B.4 — Derivate: Naeherung gekennzeichnet, kein Optionsschein
   /* NEGATIV: ohne Kurs kein KO-Abstand und keine Hebelwirkung. */
   box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
     derivat: { art: 'knockout', richtung: 'long', hebel: 8.5, ko_schwelle: 60 } }, kurs: null });
-  const ohneKurs = vm.runInContext('mwKarte(j)', box);
+  const ohneKurs = vm.runInContext('mwDetailInhaltHTML(j)', box);
   pruef('ohne Kurs keine KO-Zeile', /KO-Abstand/.test(ohneKurs), false);
   pruef('ohne Kurs keine Hebelzeile', /Hebelwirkung/.test(ohneKurs), false);
   pruef('ohne Kurs auch kein Naeherungshinweis', /Idealisierte Näherung/.test(ohneKurs), false);
@@ -471,6 +484,8 @@ gruppe('V2-4 Teil B.4 — Derivate: Naeherung gekennzeichnet, kein Optionsschein
   box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
     derivat: { art: 'knockout', richtung: 'long' } }, kurs: KURS });
   pruef('ohne hebel und ko_schwelle kein Derivatblock',
+    /mw-derivat/.test(vm.runInContext('mwDetailInhaltHTML(j)', box)), false);
+  pruef('der Derivatblock steht nie auf der Karte',
     /mw-derivat/.test(vm.runInContext('mwKarte(j)', box)), false);
 });
 
@@ -496,14 +511,24 @@ gruppe('V2-4 Teile B.5 bis B.8 — Kursblock, Chartzugang, Sammelzeile, Leerzust
   pruef('Kursblock in allen Zustaenden strukturgleich aufgebaut',
     [laedt, leer, voll].map(h => /jz-gross/.test(kursblock(h)) && /t-caption/.test(kursblock(h))),
     [true, true, true]);
-  /* Teil B.5: klickbar nur mit Kursreihe, sonst kein leerer Dialog. */
-  pruef('mit Kursreihe ist die Karte klickbar', /data-mwchart="AAA"/.test(voll) && /klickbar/.test(voll), true);
-  pruef('ohne Kursreihe ist die Karte nicht klickbar',
-    /class="card mw-karte klickbar"/.test(leer), false);
-  pruef('der Chartknopf steht trotzdem und nennt den Grund',
-    /data-mwchart="AAA" disabled aria-disabled="true" title="Für diesen Wert nicht geliefert"/.test(leer), true);
+  /* Seit dem Umbau vom 10.09. oeffnet der Kartenklick die DETAILANSICHT; der Chart
+     haengt an seinem Knopf darin. Die Karte ist deshalb immer klickbar — ein leerer
+     Dialog kann daraus nicht entstehen, weil das Detail auch ohne Kurs Inhalt hat. */
+  pruef('die Karte fuehrt in jedem Zustand zur Detailansicht',
+    [voll, leer, laedt].map(x => /data-mwdetail="AAA"/.test(x)), [true, true, true]);
+  box.QUOTES = { quotes: {} }; box.j = mwJoin({ kurs: null });
+  const dLeer = vm.runInContext('mwDetailInhaltHTML(j)', box);
+  box.QUOTES = null;
+  const dLaedt = vm.runInContext('mwDetailInhaltHTML(j)', box);
+  box.QUOTES = { quotes: { AAA: { price: 83.1 } } }; box.j = mwJoin({ kurs: KURS });
+  const dVoll = vm.runInContext('mwDetailInhaltHTML(j)', box);
+  pruef('mit Kursreihe ist der Chartknopf offen', /data-mwchart="AAA"[^>]*>/.test(dVoll) &&
+    !/data-mwchart="AAA" disabled/.test(dVoll), true);
+  pruef('ohne Kursreihe steht der Knopf und nennt den Grund',
+    /data-mwchart="AAA" disabled aria-disabled="true" title="Für diesen Wert nicht geliefert"/.test(dLeer), true);
   pruef('vor dem Eintreffen nennt der Knopf den Ladegrund',
-    /disabled aria-disabled="true" title="Kursdaten werden noch geladen"/.test(laedt), true);
+    /disabled aria-disabled="true" title="Kursdaten werden noch geladen"/.test(dLaedt), true);
+  pruef('der Chartknopf steht nicht mehr auf der Karte', /data-mwchart/.test(voll), false);
   /* Teil B.6: die Sammelzeile nennt die Zahl und die Drittanfrage VOR dem Klick. */
   const sammel = vm.runInContext('mwOhneKursHTML([{},{},{}])', box);
   pruef('Sammelzeile mit Zahl', /Für <span class="num">3<\/span> Werte liegt kein Kurs im Datensatz\./.test(sammel), true);
@@ -743,6 +768,56 @@ gruppe('V2-4 Nachtrag — Symbolsuche: Klarname findet das Symbol, ohne neue Dat
   pruef('jeder Vorschlag ist eine Option mit Id', (html.match(/role="option" id="mwV/g) || []).length, box.L.length);
   pruef('genau ein Eintrag ist ausgewählt', (html.match(/aria-selected="true"/g) || []).length, 1);
   pruef('leere Trefferliste ergibt kein Markup', vm.runInContext('mwVorschlagHTML([],"a",-1)', box), '');
+});
+
+/* --- Sparkline und Detailansicht (Nutzerwunsch 10.09.2026) ---------------------- */
+gruppe('V2-4 Nachtrag — Sparkline zeigt Verlauf ohne Deutung, Detail traegt die Tiefe', () => {
+  const kerzen = n => Array.from({ length: n }, (_, i) => ({ time: i, close: 100 + Math.sin(i / 3) * 5 }));
+  box.QUOTES = { quotes: { AAA: { price: 83.1 } } };
+  /* Kriterium 6: die Linie entsteht nur aus Kerzen und traegt weder Achsen noch Zahlen. */
+  box.K = { price: 100, cur: 'EUR', pct: 1, candles: kerzen(120) };
+  const spark = vm.runInContext('mwSparkHTML(K)', box);
+  pruef('Sparkline ist ein SVG mit einer Linie', /<svg class="mw-spark"[\s\S]*<polyline /.test(spark), true);
+  pruef('keine Zahl im Sparkline-Markup ausser den Koordinaten',
+    /<text|aria-label|title/.test(spark), false);
+  pruef('Sparkline ist fuer Screenreader ausgeblendet', /aria-hidden="true"/.test(spark), true);
+  pruef('hoechstens 90 Punkte, auch bei 120 Kerzen',
+    (spark.match(/,/g) || []).length <= 90, true);
+  /* NEGATIV: ohne ausreichende Kerzen entfaellt sie ersatzlos statt eine Linie zu erfinden. */
+  box.K = { price: 100, candles: kerzen(5) };
+  pruef('zu wenige Kerzen ergeben keine Linie', vm.runInContext('mwSparkHTML(K)', box), '');
+  box.K = null;
+  pruef('ohne Kurs keine Linie', vm.runInContext('mwSparkHTML(K)', box), '');
+  box.K = { price: 100, candles: [] };
+  pruef('leere Kerzenreihe ergibt keine Linie', vm.runInContext('mwSparkHTML(K)', box), '');
+  /* Kriterium 1 und 5: die Karte traegt den Ueberblick, die Fussnote steht im Detail. */
+  box.j = mwJoin({ kurs: { price: 83.1, cur: 'EUR', pct: 6.47, candles: kerzen(60) },
+    auftritte: [mwAuftritt(), mwAuftritt({ date: '2026-09-01', video_id: 'zwei' })] });
+  const karte = vm.runInContext('mwKarte(j)', box);
+  const detail = vm.runInContext('mwDetailInhaltHTML(j)', box);
+  pruef('die Karte zeigt die Sparkline', /mw-spark/.test(karte), true);
+  pruef('die Karte nennt den letzten Auftritt mit Kanal und Datum',
+    /onvista/.test(karte) && /09\.09\.2026/.test(karte), true);
+  pruef('die Karte zaehlt weitere Erwaehnungen statt sie auszubreiten',
+    /und 1 weitere Erwähnung/.test(karte), true);
+  pruef('die Karte traegt keine verdichteten Texte', /mw-fremd/.test(karte), false);
+  pruef('das Detail traegt sie vollstaendig', (detail.match(/mw-fremd/g) || []).length, 6);
+  pruef('das Detail nennt beide Auftritte', (detail.match(/mw-auftritt/g) || []).length, 2);
+  /* Kriterium 5: EINE Fussnote statt drei Beschriftungen je Auftritt. */
+  pruef('genau eine Fussnote im Detail', (detail.match(/mw-fussnote/g) || []).length, 1);
+  pruef('die Fussnote benennt Herkunft und Verdichtung',
+    /maschinell verdichtet/.test(detail) && /nicht die Auffassung dieser Seite/.test(detail), true);
+  pruef('die Zuordnung steht weiterhin an jedem Auftritt',
+    (detail.match(/mw-kanal/g) || []).length, 2);
+  /* NEGATIV: ohne Auftritte gibt es weder Ueberschrift noch Fussnote. */
+  box.j = mwJoin({ kurs: null, auftritte: [] });
+  const ohne = vm.runInContext('mwDetailInhaltHTML(j)', box);
+  pruef('ohne Auftritte keine Videoueberschrift', /In den Videoanalysen/.test(ohne), false);
+  pruef('ohne Auftritte keine Fussnote', /mw-fussnote/.test(ohne), false);
+  pruef('der Chartzugang bleibt trotzdem', /data-mwchart/.test(ohne), true);
+  /* NEGATIV (ADR-025): unsauberes Symbol ergibt kein Detail. */
+  box.j = mwJoin({ symbol: 'AA<script>' });
+  pruef('unsauberes Symbol ergibt kein Detail', vm.runInContext('mwDetailInhaltHTML(j)', box), '');
 });
 
 console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +

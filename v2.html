@@ -567,8 +567,11 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   /* §4.2 Punkt 1: Träger der Container-Query ist die Sektion, nicht body. */
   #mwListe,#mwVerwaltung,#mwCode{container-type:inline-size}
   .mw .card{padding:var(--sp-4);padding:clamp(var(--sp-4),13px + 0.8cqi,var(--sp-5))}
-  /* §3: jedes Klickziel ≥ 44 px — auch ein Link mitten im Satz. */
-  .mw a{display:inline-flex;align-items:center;min-height:44px}
+  /* §3: jedes Klickziel ≥ 44 px — auch ein Link mitten im Satz. Die Detailansicht liegt
+     AUSSERHALB von .mw (sie hängt neben den anderen Overlays am Dokument), deshalb steht
+     sie hier ausdrücklich mit drin — sonst blieben ihre Videolinks bei 19 px
+     (gemessen 10.09.2026, zwölf Verstöße). */
+  .mw a,#mwOverlay a{display:inline-flex;align-items:center;min-height:44px}
   .mw-karte{display:flex;flex-direction:column;gap:var(--sp-3)}
   .mw-leer{display:flex;flex-direction:column;gap:var(--sp-3)}
   .mw-kopf{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp-3)}
@@ -590,9 +593,31 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   /* Teil C.4: fremder, maschinell verdichteter Inhalt ist optisch abgesetzt und trägt
      seine Herkunft als sichtbaren Text. Bedeutung nie durch Farbe allein (§11) — die
      Kante links ist nur die Verstärkung der Herkunftszeile darüber. */
+  /* §2.1: verdichteter Fremdtext ist Fließtext und trägt deshalb Body-Größe (14,5 px),
+     nicht die Meta-Größe. Vorher stand er in 12,5 px — vom Nutzer am Livestand als zu
+     klein benannt (10.09.2026). Der Zeilendeckel aus §4.1 gilt unverändert. */
   .mw-fremd{margin:0;padding-left:var(--sp-3);border-left:2px solid var(--line);
-    display:flex;flex-direction:column;gap:2px;color:var(--ink)}
+    display:flex;flex-direction:column;gap:2px;color:var(--ink);
+    font-size:14.5px;line-height:1.55}
   .mw-herkunft{color:var(--muted);font-weight:600}
+  /* Sparkline: reine Verlaufslinie, volle Kartenbreite, feste Höhe aus dem eigenen CSS. */
+  .mw-spark{display:block;width:100%;height:32px;overflow:visible}
+  /* Detailansicht */
+  .mw-detail-block{display:flex;flex-direction:column;gap:var(--sp-3);
+    padding:var(--sp-3);border:1px solid var(--line);border-radius:var(--radius);
+    background:var(--chip)}
+  .mw-detail-h{font-size:16px;line-height:1.3;font-weight:650;letter-spacing:-.01em;
+    margin:var(--sp-6) 0 0}
+  .mw-detail-auftritte{display:flex;flex-direction:column;gap:var(--sp-6);
+    margin-top:var(--sp-3)}
+  .mw-detail-auftritte .mw-auftritt{padding-bottom:var(--sp-4);
+    border-bottom:1px solid var(--line)}
+  .mw-detail-auftritte .mw-auftritt:last-child{border-bottom:0;padding-bottom:0}
+  #mwDetailInhalt{display:flex;flex-direction:column;gap:var(--sp-4)}
+  /* Das Kleingedruckte: die Kennzeichnung als verdichteter Fremdtext steht einmal je
+     Ansicht statt dreimal je Auftritt (Nutzerentscheid 10.09.). Die ZUORDNUNG selbst
+     bleibt oben an jedem Auftritt sichtbar. */
+  .mw-fussnote{color:var(--muted);margin:var(--sp-4) 0 0;max-width:min(54ch,100%)}
   /* §3: der Aufklapper ist ein Klickziel wie jedes andere. */
   .mw-mehr>summary{display:flex;align-items:center;min-height:44px;cursor:pointer;
     color:var(--accent-ink);font-weight:600;list-style-position:inside}
@@ -984,6 +1009,22 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
      kehrt zum auslösenden Knopf zurück. Geschlossen hat der Dialog null Tab-Ziele —
      dafür sorgt nicht display:none allein, sondern zusätzlich inert (dieselbe
      Fokusfalle, die in der V1 noch offen ist). -->
+<!-- ===== Detailansicht eines Wertes (V2-4, Nutzerwunsch 10.09.2026) =============
+     Dasselbe Muster wie der Digest-Dialog darunter: geschlossen traegt er inert und
+     hat damit null Tab-Ziele, Escape schliesst, der Fokus kehrt zum Ausloeser zurueck. -->
+<div class="overlay" id="mwOverlay" role="dialog" aria-modal="true" aria-labelledby="mwDetailTitel" inert>
+  <div class="modal">
+    <div class="top">
+      <div style="min-width:0;display:flex;flex-direction:column;gap:var(--sp-2)">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2)" id="mwDetailMeta"></div>
+        <h3 id="mwDetailTitel">Wert</h3>
+      </div>
+      <button class="x" type="button" id="mwDetailSchliessen" aria-label="Dialog schließen">&times;</button>
+    </div>
+    <div id="mwDetailInhalt"></div>
+  </div>
+</div>
+
 <div class="overlay" id="dtOverlay" role="dialog" aria-modal="true" aria-labelledby="dtTitel" inert>
   <div class="modal">
     <div class="top">
@@ -2561,15 +2602,139 @@ function mwVideoHTML(j){
   '</div>';
 }
 
-/* --- Die Positionskarte (Teil B.2) --------------------------------------------- */
+/* --- Sparkline (Nutzeranweisung 10.09.: „sieht alles etwas sehr steril aus") -------
+   Gezeichnet wird ausschliesslich aus den Kerzen, die fuer den Chart-Dialog ohnehin
+   geladen sind — keine neue Quelle, kein Contract-Change. Die Linie zeigt den VERLAUF
+   und sonst nichts: keine Achsen, keine Zahlen, keine Zonen, keine Deutung (ADR-906 §5).
+   Sie ist aria-hidden, weil Kurs und Zeitraum daneben als Text stehen; eine Grafik ohne
+   Beschriftung waere fuer einen Screenreader nur Rauschen. */
+const MW_SPARK_TAGE=90;
+function mwSparkHTML(kurs){
+  const c=(kurs&&Array.isArray(kurs.candles))?kurs.candles:[];
+  if(c.length<8)return '';                       // zu wenig Punkte ergeben keine Linie
+  const teil=c.slice(-MW_SPARK_TAGE);
+  const werte=teil.map(k=>+k.close).filter(v=>isFinite(v));
+  if(werte.length<8)return '';
+  const min=Math.min.apply(null,werte),max=Math.max.apply(null,werte);
+  const spanne=(max-min)||1;
+  const B=120,H=32,R=2;                          // Koordinaten sind intern: Punkt statt Komma
+  const punkte=werte.map((v,i)=>{
+    const x=R+i*(B-2*R)/(werte.length-1);
+    const y=H-R-((v-min)/spanne)*(H-2*R);
+    return x.toFixed(1)+','+y.toFixed(1);
+  }).join(' ');
+  /* Die Farbe folgt derselben Regel wie die Prozentzahl daneben — sie ist Verstaerkung,
+     nicht Traeger der Bedeutung (§11). */
+  const auf=werte[werte.length-1]>=werte[0];
+  return '<svg class="mw-spark" viewBox="0 0 '+B+' '+H+'" preserveAspectRatio="none" '+
+    'aria-hidden="true" focusable="false">'+
+    '<polyline points="'+punkte+'" fill="none" stroke="'+(auf?'var(--up)':'var(--down)')+'" '+
+    'stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+}
+
+/* --- Detailansicht je Wert (Nutzeranweisung 10.09.) -------------------------------
+   „man sollte die Moeglichkeit schaffen auf eine Kachel zu druecken und dann die
+   relevanten News und Infos zu diesem Wert zu sehen." Gebaut wird dafuer KEIN neuer
+   Overlay-Typ, sondern dasselbe Muster wie dtOverlay: role=dialog, aria-modal, inert im
+   geschlossenen Zustand, Escape schliesst, der Fokus kehrt zum Ausloeser zurueck. */
+/* Reiner Inhaltsbauer — hier steht alles, was die Karte abgegeben hat: Positionsdetails,
+   Derivatangaben, Termin, Ausloeser, Kandidatenhinweis, Chartzugang und saemtliche
+   Videoauftritte mit ihren verdichteten Texten. */
+function mwDetailInhaltHTML(j){
+  const s=validTicker(String(j.symbol==null?'':j.symbol));
+  if(!s)return '';
+  const k=j.kurs;
+  const details=mwDetailsHTML(j),derivat=mwDerivatHTML(j),ereignis=mwEreignisHTML(j);
+  const chart=!!(k&&jzKerzenOk(k.candles));
+  const auftritte=(j.auftritte&&j.auftritte.length)?j.auftritte.slice(0,12):[];
+  return (details||derivat||ereignis?'<div class="mw-detail-block">'+
+      (details?'<div>'+details+'</div>':'')+derivat+ereignis+'</div>':'')+
+    '<div><button type="button" class="ghost" data-mwchart="'+escapeHtml(s)+'"'+
+      (chart?'':' disabled aria-disabled="true" title="'+
+        ((QUOTES&&QUOTES.quotes)?'Für diesen Wert nicht geliefert':'Kursdaten werden noch geladen')+'"')+
+      '>Kursverlauf ansehen</button></div>'+
+    (auftritte.length?
+      '<h4 class="mw-detail-h">In den Videoanalysen</h4>'+
+      '<div class="mw-detail-auftritte">'+
+        auftritte.map(a=>'<div class="mw-auftritt">'+mwAuftrittKopf(a)+mwAuftrittTexte(a)+'</div>').join('')+
+      '</div>'+
+      /* Teil C.4 bleibt erfuellt, aber platzsparend: Die ZUORDNUNG traegt die Kopfzeile
+         jedes Auftritts (Kanal und Datum), die Kennzeichnung als verdichteter Fremdtext
+         steht einmal hier statt dreimal je Auftritt. Nutzerentscheid vom 10.09. */
+      '<p class="mw-fussnote t-caption">Zusammenfassungen, Einordnungen und genannte Zahlen '+
+      'stammen aus der jeweils darüber genannten Videoanalyse und sind maschinell verdichtet. '+
+      'Sie geben den Beitrag des Kanals wieder, nicht die Auffassung dieser Seite.</p>'
+      :'');
+}
+let MW_AUSLOESER=null;
+function mwDetailOeffnen(sym,ausloeser){
+  const s=validTicker(String(sym==null?'':sym));
+  const ov=document.getElementById('mwOverlay');
+  if(!s||!ov)return;
+  const j=mwJoinFuer(s);
+  if(!j)return;
+  /* Rueckkehrpunkt fuer den Fokus: Wurde die Kartenflaeche selbst geklickt, ist der
+     Ausloeser ein <article> und damit nicht fokussierbar — dann uebernimmt der
+     „Details ansehen"-Knopf derselben Karte. Ohne das landet der Fokus nach dem
+     Schliessen am Dokumentanfang (gemessen 10.09.2026). */
+  MW_AUSLOESER=(function(el){
+    if(!el)return null;
+    if(el.matches&&el.matches('a[href],button,input,select,textarea,summary,[tabindex]'))return el;
+    const karte=el.closest?el.closest('.mw-karte'):null;
+    return (karte&&karte.querySelector('button[data-mwdetail]'))||null;
+  })(ausloeser);
+  const k=j.kurs,pct=(k&&k.pct!=null&&isFinite(k.pct))?k.pct:null;
+  document.getElementById('mwDetailTitel').textContent=j.name||s;
+  document.getElementById('mwDetailMeta').innerHTML=
+    '<span class="jz-sym">'+escapeHtml(s)+'</span>'+
+    '<span class="t-caption" style="color:var(--muted)">'+escapeHtml(BST_TYP[j.pos.typ]||j.pos.typ||'')+'</span>'+
+    (k?'<span class="t-caption num" style="color:'+jzFarbe(pct)+'">'+
+      (pct==null?'':fp(pct)+' · ')+mwGeld(k.price,k.cur)+'</span>':'');
+
+  document.getElementById('mwDetailInhalt').innerHTML=mwDetailInhaltHTML(j);
+
+  ov.removeAttribute('inert');
+  ov.classList.add('open');
+  jzHintergrundSperren(true);
+  const zu=document.getElementById('mwDetailSchliessen');
+  if(zu)zu.focus();
+}
+function mwDetailSchliessen(){
+  const ov=document.getElementById('mwOverlay');
+  if(!ov||!ov.classList.contains('open'))return;
+  ov.classList.remove('open');
+  ov.setAttribute('inert','');            // geschlossen: null Tab-Ziele
+  document.getElementById('mwDetailInhalt').innerHTML='';
+  jzHintergrundSperren(false);
+  if(MW_AUSLOESER&&document.contains(MW_AUSLOESER))MW_AUSLOESER.focus();
+  MW_AUSLOESER=null;
+}
+
+/* --- Die Positionskarte (Teil B.2, Umbau nach Nutzerbefund 10.09.) ---------------
+   Vorher trug die Karte alles: Kurs, Details, Derivatblock, Ereignisse und bis zu drei
+   Fremdtexte je Videoauftritt. Der Nutzer hat das am Livestand gesehen und benannt —
+   „da steht sehr viel auf wenig Raum". Die Karte zeigt jetzt den UEBERBLICK, die Tiefe
+   liegt in der Detailansicht: Kopf, Kurs, Sparkline, eine Ereigniszeile, ein Hinweis auf
+   den letzten Auftritt. Dadurch werden die Karten zugleich aehnlich hoch — vorher standen
+   fast leere neben ueberquellenden. */
 function mwKarte(j){
   const sym=validTicker(String(j.symbol==null?'':j.symbol));
   if(!sym)return '';                                  // ADR-025: kein unsauberes Symbol ins DOM
-  const k=j.kurs,chart=!!(k&&jzKerzenOk(k.candles));
-  const details=mwDetailsHTML(j),derivat=mwDerivatHTML(j),
-        ereignis=mwEreignisHTML(j),video=mwVideoHTML(j);
-  return '<article class="card mw-karte'+(chart?' klickbar':'')+'" data-mwsym="'+escapeHtml(sym)+'"'+
-      (chart?' data-mwchart="'+escapeHtml(sym)+'"':'')+'>'+
+  const k=j.kurs;
+  const jung=(j.auftritte&&j.auftritte.length)?j.auftritte[0]:null;
+  /* Die Ereigniszeile ist bewusst EINE Zeile: der wichtigste Anlass, nach derselben
+     Rangfolge, mit der bstRelevanz sortiert — Auslöser vor nahem Termin vor Kandidat.
+     Fehlt alles, steht hier nichts (kein Pseudo-Trigger, Teil B.3). */
+  let anlass='';
+  if(j.trigger&&j.trigger.label)
+    anlass='<span class="rd-trigger"><span class="t-small">'+escapeHtml(String(j.trigger.label))+'</span>'+
+      (j.trigger.value?'<span class="t-small wert num">'+escapeHtml(String(j.trigger.value))+'</span>':'')+'</span>';
+  else if(j.earn&&j.earn.naechster&&/^\d{4}-\d{2}-\d{2}$/.test(String(j.earn.naechster.date||'')))
+    anlass='<span class="t-small">Zahlen am <span class="num">'+escapeHtml(jzTag(j.earn.naechster.date))+'</span></span>';
+  else if(j.kandidat)
+    anlass='<span class="t-small" style="color:var(--muted)">Steht auch in den Beobachtungskandidaten.</span>';
+  return '<article class="card mw-karte klickbar" data-mwsym="'+escapeHtml(sym)+'"'+
+      ' data-mwdetail="'+escapeHtml(sym)+'">'+
     '<div class="mw-kopf">'+
       '<span class="mw-titel">'+
         '<span class="jz-sym">'+escapeHtml(sym)+'</span>'+
@@ -2578,17 +2743,16 @@ function mwKarte(j){
       '</span>'+
       mwKursHTML(j)+
     '</div>'+
-    (details?'<div>'+details+'</div>':'')+
-    derivat+
-    ereignis+
-    video+
-    /* Der Chartknopf ist der zugaengliche Weg zum Dialog; der Klick auf die Karte ist
-       nur der bequeme. Beides fuehrt in dieselbe Funktion. Ohne Kursreihe gibt es
-       keinen leeren Dialog — der Knopf bleibt gesperrt und nennt den Grund. */
-    '<div><button type="button" class="ghost" data-mwchart="'+escapeHtml(sym)+'"'+
-      (chart?'':' disabled aria-disabled="true" title="'+
-        ((QUOTES&&QUOTES.quotes)?'Für diesen Wert nicht geliefert':'Kursdaten werden noch geladen')+'"')+
-      '>Kursverlauf ansehen</button></div>'+
+    mwSparkHTML(k)+
+    (anlass?'<div class="jz-liste">'+anlass+'</div>':'')+
+    /* Teil C.1 bleibt erfuellt: Der letzte Auftritt steht auf der KARTE, nicht hinter
+       einem Klick — nur seine verdichteten Texte sind ins Detail gewandert. */
+    (jung?'<div class="mw-video">'+mwAuftrittKopf(jung)+
+      ((j.auftritte.length>1)?'<span class="t-caption" style="color:var(--muted)">und '+
+        (j.auftritte.length-1)+' weitere '+(j.auftritte.length-1===1?'Erwähnung':'Erwähnungen')+
+        '</span>':'')+'</div>':'')+
+    (j.neuerAuftritt?'<div><span class="jz-chip brand">Neu seit deinem letzten Besuch</span></div>':'')+
+    '<div><button type="button" class="ghost" data-mwdetail="'+escapeHtml(sym)+'">Details ansehen</button></div>'+
   '</article>';
 }
 
@@ -3438,11 +3602,18 @@ document.addEventListener('click',ev=>{
   const wegNein=t.closest('[data-mwwegnein]');
   if(wegNein){mwBestandslisteRender();return}
   const mc=t.closest('[data-mwchart]');
-  if(mc){
+  if(mc){mwChartOeffnen(mc.dataset.mwchart,mc);return}
+  /* Nutzerwunsch 10.09.: der Klick auf die Kachel oeffnet die Detailansicht. Ein Klick
+     auf ein eigenes Bedienelement INNERHALB der Karte gehoert diesem — sonst risse der
+     Videolink das Detail mit auf. */
+  const md=t.closest('[data-mwdetail]');
+  if(md){
     const eigen=t.closest('a,button,summary,input,select,textarea');
-    if(eigen&&eigen!==mc&&!eigen.hasAttribute('data-mwchart'))return;
-    mwChartOeffnen(mc.dataset.mwchart,mc);return;
+    if(eigen&&eigen!==md&&!eigen.hasAttribute('data-mwdetail'))return;
+    mwDetailOeffnen(md.dataset.mwdetail,eigen||md);return;
   }
+  if(t.closest('#mwDetailSchliessen')){mwDetailSchliessen();return}
+  if(t.id==='mwOverlay'){mwDetailSchliessen();return}
   const ix=t.closest('[data-idx]');
   if(ix){jzIndexChart(+ix.dataset.idx,ix);return}
   if(t.closest('#dtSchliessen')){dtSchliessen();return}
@@ -3450,6 +3621,8 @@ document.addEventListener('click',ev=>{
 });
 document.addEventListener('keydown',ev=>{
   if(ev.key!=='Escape')return;
+  const mwOv=document.getElementById('mwOverlay');
+  if(mwOv&&mwOv.classList.contains('open')){ev.preventDefault();mwDetailSchliessen();return}
   const dt=document.getElementById('dtOverlay');
   if(dt&&dt.classList.contains('open')){ev.preventDefault();dtSchliessen();return}
   const stk=document.getElementById('stkOverlay');
