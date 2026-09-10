@@ -37,12 +37,14 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   'rdLevelsOk', 'rdLevelsHTML', 'rdKandidatKarte',
   /* V2-4 Raum „Meine Werte" */
   'jzVideoHTML', 'mwMenge', 'mwGeld', 'mwKursHTML', 'mwDetailsHTML',
-  'mwDerivatHTML', 'mwEreignisHTML', 'mwVideoHTML', 'mwKarte', 'mwOhneKursHTML'];
+  'mwDerivatHTML', 'mwEreignisHTML', 'mwFremdOk', 'mwKuerzen', 'mwFremdHTML',
+  'mwAuftrittTexte', 'mwAuftrittKopf', 'mwVideoHTML', 'mwKarte', 'mwOhneKursHTML'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
-const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP'];
+const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP',
+  'MW_VERBOTEN', 'MW_TEXTDECKEL'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -504,6 +506,91 @@ gruppe('V2-4 Teile B.5 bis B.8 — Kursblock, Chartzugang, Sammelzeile, Leerzust
     /Stückzahl, Einstand und Derivatangaben verlassen dein Gerät nicht/.test(sammel), true);
   /* NEGATIV: ohne fehlende Kurse gibt es die Zeile gar nicht. */
   pruef('ohne fehlende Kurse keine Sammelzeile', vm.runInContext('mwOhneKursHTML([])', box), '');
+});
+
+/* --- V2-4 Teil C: Videoauftritte ---------------------------------------------- */
+function mwAuftritt(over) {
+  return Object.assign({
+    date: '2026-09-09', video_id: 'abc123',
+    url: 'https://www.youtube.com/watch?v=abc123&t=264s',
+    channel: 'onvista', kategorie: 'chartanalyse',
+    note: 'Der Wert gab nach.', einordnung: 'Der Titel bleibt schwankungsanfällig.',
+    figures: 'Kursziel von 127 auf 140 US-Dollar angehoben'
+  }, over || {});
+}
+
+gruppe('V2-4 Teil C — Videoauftritte: Zeitmarke aus dem Feed, Herkunft sichtbar, Fremdtext sicher', () => {
+  box.j = mwJoin({ auftritte: [mwAuftritt()], neuerAuftritt: true });
+  const h = vm.runInContext('mwVideoHTML(j)', box);
+  pruef('Kanal und Datum auf der Karte', /onvista/.test(h) && /09\.09\.2026/.test(h), true);
+  pruef('Deeplink mit der Zeitmarke AUS DEM FEED', /Zum Video ab 4:24/.test(h), true);
+  pruef('Link geht nur nach https und mit noopener',
+    /href="https:\/\/www\.youtube\.com\/watch\?v=abc123&t=264s" target="_blank" rel="noopener noreferrer"/.test(h), true);
+  pruef('neuer Auftritt wird dezent markiert', /Neu seit deinem letzten Besuch/.test(h), true);
+  pruef('alle drei Fremdfelder mit Herkunftsangabe',
+    [/Zusammenfassung des Beitrags · onvista · maschinell verdichtet/.test(h),
+     /Einordnung des Kanals · onvista · maschinell verdichtet/.test(h),
+     /Im Beitrag genannte Zahlen · onvista · maschinell verdichtet/.test(h)], [true, true, true]);
+  pruef('figures unkommentiert als Zitat', /Kursziel von 127 auf 140 US-Dollar angehoben/.test(h), true);
+  /* NEGATIV (Teil C.3): fehlende Zeitmarke wird benannt, der Link bleibt gueltig. */
+  box.j = mwJoin({ auftritte: [mwAuftritt({ url: 'https://www.youtube.com/watch?v=abc123' })] });
+  const ohneMarke = vm.runInContext('mwVideoHTML(j)', box);
+  pruef('ohne Zeitmarke wird das gesagt', /Zum Video \(ohne Zeitmarke\)/.test(ohneMarke), true);
+  pruef('ohne Zeitmarke bleibt der Link gueltig', /href="https:\/\/www\.youtube\.com\/watch\?v=abc123"/.test(ohneMarke), true);
+  pruef('keine geratene Zeitmarke', /ab 0:00|ab 0:0/.test(ohneMarke), false);
+  /* NEGATIV (ADR-025): unsichere Schemata ergeben KEINEN Link. */
+  box.j = mwJoin({ auftritte: [mwAuftritt({ url: 'http://www.youtube.com/watch?v=abc123&t=10s' })] });
+  const unsicher = vm.runInContext('mwVideoHTML(j)', box);
+  pruef('http-URL ergibt keinen Link', /<a /.test(unsicher), false);
+  pruef('http-URL sagt das auch', /Kein sicherer Link vorhanden\./.test(unsicher), true);
+  box.j = mwJoin({ auftritte: [mwAuftritt({ url: 'javascript:alert(1)' })] });
+  const js = vm.runInContext('mwVideoHTML(j)', box);
+  pruef('javascript-URL ergibt keinen Link', /<a /.test(js), false);
+  pruef('javascript-URL steht nirgends im DOM', /javascript:/.test(js), false);
+  /* NEGATIV (ADR-025): Markup im Fremdtext wird geescapet, nicht ausgefuehrt. */
+  box.j = mwJoin({ auftritte: [mwAuftritt({ note: '<script>alert(1)</script> Text',
+    channel: '<img src=x onerror=alert(1)>' })] });
+  const xss = vm.runInContext('mwVideoHTML(j)', box);
+  pruef('kein rohes script-Tag im DOM', /<script/i.test(xss), false);
+  pruef('script-Tag geescapet', /&lt;script&gt;/.test(xss), true);
+  pruef('Kanalname geescapet', /&lt;img/.test(xss) && !/<img/.test(xss), true);
+  /* NEGATIV (Teil F.1 / ADR-908 Punkt 4): traegt ein Fremdfeld einen Listenbegriff,
+     entfaellt GENAU DIESES FELD — Kanal, Datum und Deeplink bleiben. */
+  box.j = mwJoin({ auftritte: [mwAuftritt({ note: 'Host sieht den Wert als aussichtsreichen Titel.' })] });
+  const verboten = vm.runInContext('mwVideoHTML(j)', box);
+  pruef('Verbotsbegriff steht nicht im DOM', /aussichtsreich/i.test(verboten), false);
+  pruef('das betroffene Feld entfaellt', /Zusammenfassung des Beitrags/.test(verboten), false);
+  pruef('die uebrigen Felder bleiben', /Einordnung des Kanals/.test(verboten) &&
+    /Im Beitrag genannte Zahlen/.test(verboten), true);
+  pruef('Kanal, Datum und Link bleiben erhalten',
+    /onvista/.test(verboten) && /09\.09\.2026/.test(verboten) && /Zum Video ab 4:24/.test(verboten), true);
+  pruef('mwFremdOk erkennt jeden Begriff der Liste',
+    ['Top Picks', 'beste Chancen', 'Erfolgswahrscheinlichkeit', 'Kaufkandidat', 'Einstieg jetzt',
+     'sichere Ziele', 'lohnt sich', 'aussichtsreich', 'dein Risiko', 'zu hoch gewichtet', 'gut gelaufen']
+      .map(w => vm.runInContext('mwFremdOk("Ein Satz mit ' + w + ' darin.")', box)),
+    [false, false, false, false, false, false, false, false, false, false, false]);
+  pruef('ein unverfaenglicher Satz bleibt zulaessig',
+    vm.runInContext('mwFremdOk("Der Umsatz stieg um 12 Prozent.")', box), true);
+  /* Teil C.4: Laengendeckel nach Design-System §4.1. Der Feed liefert heute hoechstens
+     200 Zeichen, der Deckel greift also nicht — geprueft wird er trotzdem, sonst waere
+     er eine ungepruefte Zusage (ADR-317.5). */
+  const lang = 'Wort '.repeat(80);
+  pruef('langer Text wird gekuerzt', vm.runInContext('mwKuerzen("' + lang + '").length', box) <= 221, true);
+  pruef('gekuerzter Text endet mit Auslassungszeichen',
+    /…$/.test(vm.runInContext('mwKuerzen("' + lang + '")', box)), true);
+  pruef('kurzer Text bleibt unveraendert',
+    vm.runInContext('mwKuerzen("Kurzer Satz.")', box), 'Kurzer Satz.');
+  /* Teil C.2 und C.6 */
+  box.j = mwJoin({ auftritte: Array.from({ length: 12 }, (_, i) =>
+    mwAuftritt({ date: '2026-09-' + String(9 - (i % 9) + 1).padStart(2, '0'), video_id: 'v' + i })) });
+  const viele = vm.runInContext('mwVideoHTML(j)', box);
+  pruef('elf weitere Auftritte hinter dem Aufklapper', /Frühere Auftritte \(11\)/.test(viele), true);
+  pruef('der Aufklapper ist ein details-Element, kein zweiter Dialog',
+    /<details class="mw-mehr">/.test(viele) && !/role="dialog"/.test(viele), true);
+  box.j = mwJoin({ auftritte: [] });
+  pruef('ohne Auftritt entfaellt die Flaeche ersatzlos', vm.runInContext('mwVideoHTML(j)', box), '');
+  pruef('kein Etikett wie „bisher nicht besprochen"',
+    /nicht besprochen|kein Videoauftritt/i.test(vm.runInContext('mwKarte(j)', box)), false);
 });
 
 console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +

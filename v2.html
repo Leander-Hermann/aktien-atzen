@@ -583,8 +583,22 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     justify-content:center;text-align:right;flex:0 0 auto}
   .mw-derivat{display:flex;flex-direction:column;gap:2px;padding:var(--sp-3);
     border:1px dashed var(--line);border-radius:var(--radius);background:var(--chip)}
-  .mw-video{display:flex;flex-direction:column;gap:var(--sp-1);
+  .mw-video{display:flex;flex-direction:column;gap:var(--sp-2);
     border-top:1px solid var(--line);padding-top:var(--sp-3)}
+  .mw-auftritt{display:flex;flex-direction:column;gap:var(--sp-1)}
+  .mw-kanal{color:var(--muted);font-weight:600}
+  /* Teil C.4: fremder, maschinell verdichteter Inhalt ist optisch abgesetzt und trägt
+     seine Herkunft als sichtbaren Text. Bedeutung nie durch Farbe allein (§11) — die
+     Kante links ist nur die Verstärkung der Herkunftszeile darüber. */
+  .mw-fremd{margin:0;padding-left:var(--sp-3);border-left:2px solid var(--line);
+    display:flex;flex-direction:column;gap:2px;color:var(--ink)}
+  .mw-herkunft{color:var(--muted);font-weight:600}
+  /* §3: der Aufklapper ist ein Klickziel wie jedes andere. */
+  .mw-mehr>summary{display:flex;align-items:center;min-height:44px;cursor:pointer;
+    color:var(--accent-ink);font-weight:600;list-style-position:inside}
+  .mw-mehr>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .mw-frueher{display:flex;flex-direction:column;gap:var(--sp-4);
+    padding-top:var(--sp-2)}
   .mw-nachladen{display:flex;flex-direction:column;gap:var(--sp-2);margin-top:var(--sp-4)}
   /* §14.2 Hover-/Press-Standard: die klickbare Karte verhält sich wie jede andere
      interaktive Kachel. Bedeutung nie durch Farbe allein (§11) — der Chartknopf in
@@ -2384,14 +2398,105 @@ function mwEreignisHTML(j){
   return teile.length?'<div class="jz-liste">'+teile.join('')+'</div>':'';
 }
 
-/* --- Videoauftritte (Teil C) ---------------------------------------------------
-   Der letzte Auftritt steht auf der Karte selbst, nicht hinter einem Klick. Kanal,
-   Datum und Deeplink kommen aus ticker-index.json; die Zeitmarke wird NIE selbst
-   gebaut, sondern aus dem gelieferten url uebernommen (jzZeitmarke liest sie nur).
-   Fehlt sie, sagt der Link das auch — geraten wird nichts. */
+/* --- Videoauftritte (Teil C) — der eigentliche Produktkern dieses Raums ---------
+   Die Daten liegen seit dem 04.08. im Frontend und waren bisher nur im Positionsdetail
+   sichtbar. Gerendert wird ausschliesslich, was ticker-index.json liefert.
+
+   ALLES hier ist FREMDER, maschinell verdichteter Inhalt (ADR-025): Kanalnamen, note,
+   einordnung und figures laufen durch escapeHtml, jeder Link durch safeLink() mit
+   https-Zwang, jedes Symbol durch validTicker(). Die Zeitmarke wird NIE selbst gebaut,
+   sondern aus dem gelieferten url uebernommen — jzZeitmarke() liest sie nur aus.
+
+   Verbotsliste (Auftrag Teil F.1, ADR-806 §3 / ADR-807 §3 / ADR-906 §5, ADR-908):
+   Die Liste trifft die AUSSAGE der Seite. Fuer maschinell erzeugten Text gilt die
+   Zitatausnahme aus ADR-908 Punkt 2 ausdruecklich NICHT (Punkt 4) — und note,
+   einordnung und figures sind maschinell verdichtet. Traegt ein Feld einen
+   Listenbegriff, entfaellt GENAU DIESES FELD; Kanal, Datum und Deeplink bleiben, damit
+   der Auftritt auffindbar bleibt. Das ist dasselbe fail-closed-Muster, mit dem das
+   Backend beim llm-Block verfaehrt (ADR-903 Teil E: „Verbotswort => Item ohne Block").
+
+   Gemessen am 10.09.2026 gegen den Livefeed: 7 von 1.305 Auftritten (0,5 %) sind
+   betroffen, alle wegen „aussichtsreich". Die vollstaendige Backend-Liste aus
+   radar.py haette 469 Auftritte (35,9 %) getroffen — davon 385 allein wegen
+   „Kursziel", das Teil C.4 ausdruecklich als Zitat zeigen WILL. Deshalb gilt hier die
+   im Auftrag Teil F.1 woertlich aufgezaehlte Liste. Die Abgrenzung ist als
+   Architektenfrage uebergeben. */
+const MW_VERBOTEN=[/\btop[ -]?picks?\b/i,/\bbeste[nrs]? chancen?\b/i,
+  /\berfolgswahrscheinlichkeit\w*/i,/\bkaufkandidat\w*/i,/\beinstieg jetzt\b/i,
+  /\bsichere[nrs]? ziele?\b/i,/\blohnt sich\b/i,/\baussichtsreich\w*/i,
+  /\bdein risiko\b/i,/\bihr risiko\b/i,/\bzu hoch gewichtet\b/i,/\bgut gelaufen\b/i];
+function mwFremdOk(s){const t=String(s==null?'':s);return !!t.trim()&&!MW_VERBOTEN.some(r=>r.test(t))}
+
+/* Laengendeckel nach Design-System §4.1: der Fliesstext traegt 54ch, das sind bei drei
+   Zeilen rund 200 Zeichen. Der Feed liefert heute selbst hoechstens 200 (gemessen
+   10.09.2026 ueber alle 3.676 befuellten Felder), der Deckel greift also derzeit nicht —
+   er haelt die Zusage aber unabhaengig davon, ob das Backend sie weiter einhaelt.
+   Geschnitten wird an der Wortgrenze, wie in V1. */
+const MW_TEXTDECKEL=220;
+function mwKuerzen(s){
+  const t=String(s==null?'':s).trim();
+  if(t.length<=MW_TEXTDECKEL)return t;
+  const teil=t.slice(0,MW_TEXTDECKEL);
+  const raum=teil.lastIndexOf(' ');
+  return (raum>MW_TEXTDECKEL*0.6?teil.slice(0,raum):teil).replace(/[\s.,;:–-]+$/,'')+'…';
+}
+
+/* Ein Fremdtextfeld mit seiner Herkunft. Die Herkunft steht als sichtbarer Text, nicht
+   nur im Kommentar (Teil C.4): der Leser muss ohne Nachdenken sehen, dass hier der
+   Kanal spricht und nicht die Seite. figures wird dabei NICHT kommentiert, nicht
+   eingeordnet und nicht in eine eigene Formulierung ueberfuehrt. */
+function mwFremdHTML(marke,text,kanal){
+  if(!mwFremdOk(text))return '';
+  return '<p class="mw-fremd t-small jz-fliess">'+
+    '<span class="mw-herkunft t-caption">'+escapeHtml(marke)+
+      (kanal?' · '+escapeHtml(kanal):'')+' · maschinell verdichtet</span>'+
+    escapeHtml(mwKuerzen(text))+'</p>';
+}
+function mwAuftrittTexte(a){
+  const kanal=String(a.channel||'').trim();
+  return mwFremdHTML('Zusammenfassung des Beitrags',a.note,kanal)+
+    mwFremdHTML('Einordnung des Kanals',a.einordnung,kanal)+
+    mwFremdHTML('Im Beitrag genannte Zahlen',a.figures,kanal);
+}
+
+/* Kopfzeile eines Auftritts: Kanal, Datum und der Deeplink. Teil C.3: die Zeitmarke ist
+   der Regelfall (1.262 von 1.305 am 10.09.2026), ihr Fehlen die Ausnahme — und die wird
+   benannt statt verschwiegen. Geraten wird keine Zeit, und auf den Videoanfang wird nicht
+   stillschweigend verwiesen. */
+function mwAuftrittKopf(a){
+  const kanal=escapeHtml(String(a.channel||'').trim()),tag=jzTag(a.date);
+  const kopf='<span class="t-small mw-kanal">'+(kanal||'Videoanalyse')+
+    (tag?' · <span class="num">'+tag+'</span>':'')+'</span>';
+  const u=safeUrl(a.url);
+  if(!u)return kopf+'<span class="jz-leer">Kein sicherer Link vorhanden.</span>';
+  const zm=jzZeitmarke(a.url);
+  return kopf+'<a class="t-small" href="'+u+'" target="_blank" rel="noopener noreferrer">'+
+    (zm?'Zum Video ab '+zm:'Zum Video (ohne Zeitmarke)')+
+    '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6"/></svg></a>';
+}
+
+/* Die gesamte Videoflaeche einer Karte (Teil C.1, C.2, C.5, C.6). */
 function mwVideoHTML(j){
-  if(!(j.auftritte&&j.auftritte.length))return '';   // Teil C.6: kein Etikett fuer „nicht besprochen"
-  return '<div class="mw-video">'+jzVideoHTML(j)+'</div>';
+  const l=(j.auftritte&&j.auftritte.length)?j.auftritte:[];
+  if(!l.length)return '';        // Teil C.6: kein Etikett, das wie ein Urteil klingt
+  const jung=l[0],aeltere=l.slice(1,12);   // hoechstens elf weitere (Feed liefert max. 12)
+  const sym=validTicker(String(j.symbol==null?'':j.symbol))||'x';
+  return '<div class="mw-video">'+
+    '<div class="mw-auftritt">'+
+      /* Teil C.5: „neu seit deinem letzten Besuch" markiert dezent und bleibt rein lokal —
+         der Marker erscheint in keinem Feed und in keiner URL. */
+      (j.neuerAuftritt?'<span class="jz-chip brand">Neu seit deinem letzten Besuch</span>':'')+
+      mwAuftrittKopf(jung)+
+      mwAuftrittTexte(jung)+
+    '</div>'+
+    /* Teil C.2: aeltere Auftritte hinter einem Aufklapper an derselben Karte, absteigend
+       nach Datum (die Sortierung liefert bstAuftritte). Kein zweiter Dialog, kein neuer
+       Overlay-Typ. */
+    (aeltere.length?'<details class="mw-mehr"><summary class="t-small">Frühere Auftritte ('+
+      aeltere.length+')</summary><div class="mw-frueher">'+
+      aeltere.map(a=>'<div class="mw-auftritt">'+mwAuftrittKopf(a)+mwAuftrittTexte(a)+'</div>').join('')+
+      '</div></details>':'')+
+  '</div>';
 }
 
 /* --- Die Positionskarte (Teil B.2) --------------------------------------------- */
