@@ -281,6 +281,46 @@ gruppe('Kriterium 7 — CSP zeichengleich, Fremddateien unberuehrt', () => {
     q => (q.match(/<meta http-equiv="Content-Security-Policy"[\s\S]*?>/) || [''])[0]);
 });
 
+/* --- Kriterium 8: Ladewellen nach ADR-714 (V2-4 Teil E) -----------------------
+   Die Netzwerkreihenfolge misst tests/v2/ladewellen.js im Browser; hier steht die
+   Quelltextseite derselben Zusage, damit ein Rueckbau schon vor dem Commit auffaellt. */
+function welle(q, name) {
+  const i = q.indexOf('async function ' + name + '(');
+  if (i < 0) return [];
+  const bis = q.indexOf('\n  ]);', i);
+  if (bis < 0) return [];
+  return (q.slice(i, bis).match(/hol\('([a-z-]+\.json)'/g) || [])
+    .map(s => s.slice(5, -1));
+}
+gruppe('Kriterium 8 — Ladewellen: radar.json in der ersten Welle, Chartknopf nicht nachgereicht', () => {
+  const klein = welle(html, 'feedsKlein'), gross = welle(html, 'feedsGross');
+  pruef('radar.json liegt in der ersten Welle', klein.indexOf('radar.json') > -1, true);
+  pruef('radar.json liegt NICHT in der zweiten Welle', gross.indexOf('radar.json') > -1, false);
+  pruef('die zweite Welle traegt genau die beiden grossen Dateien', gross.slice().sort(),
+    ['quotes.json', 'ticker-index.json']);
+  pruef('die drei Radar-Feeds melden ihren Abschluss in derselben Welle',
+    ['earnings.json', 'candidates.json', 'radar.json'].every(f => klein.indexOf(f) > -1), true);
+  /* ADR-714 Punkt 2: der Knopf wird angelegt, nicht eingefuegt — im Quelltext heisst das,
+     dass rdSignalKarte ihn unbedingt aufruft und die Kerzenpruefung erst IM Knopf sitzt. */
+  pruef('rdSignalKarte ruft den Knopfbauer unbedingt auf',
+    /\n    rdChartKnopfHTML\(sym,\s*d1\)\+/.test(html), true);
+  pruef('kein bedingtes Einfuegen des Chartknopfs mehr',
+    /\(d1\?'<div><button/.test(html), false);
+  pruef('der gesperrte Knopf traegt aria-disabled und einen Grund',
+    /disabled aria-disabled="true" title="/.test(html), true);
+  /* NEGATIVE Faelle: beide Zusagen einzeln verdorben, beide muessen anschlagen. */
+  negativ('radar.json in die zweite Welle zurueckgebaut',
+    html.replace("    hol('radar.json',j=>{RADAR=j}).then(rdSignaleFertig)\r\n  ]);", '  ]);')
+        .replace("    hol('quotes.json',j=>{QUOTES=j}),",
+                 "    hol('radar.json',j=>{RADAR=j}).then(rdSignaleFertig),\r\n    hol('quotes.json',j=>{QUOTES=j}),"),
+    q => [welle(q, 'feedsKlein').indexOf('radar.json') > -1,
+          welle(q, 'feedsGross').indexOf('radar.json') > -1]);
+  negativ('Chartknopf wieder bedingt eingefuegt',
+    html.replace('    rdChartKnopfHTML(sym,d1)+',
+      '    (d1?\'<div><button type="button" class="ghost" data-rdchart="\'+escapeHtml(sym)+\'">Kursverlauf ansehen</button></div>\':\'\')+'),
+    q => /\n    rdChartKnopfHTML\(sym,\s*d1\)\+/.test(q));
+});
+
 console.log((fehler ? 'LAYOUT_CHECK FEHLER' : 'LAYOUT_CHECK OK') +
   ' gruppen=' + gruppen + ' faelle=' + faelle + ' fehler=' + fehler);
 process.exit(fehler ? 1 : 0);

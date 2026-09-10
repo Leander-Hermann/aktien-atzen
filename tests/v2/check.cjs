@@ -33,7 +33,7 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   'jzKerzenOk', 'jzMoverGruppe', 'jzMoverAuswahl', 'jzZeitmarke', 'jzFett', 'jzBogenHTML', 'fp',
   /* V2-3 Raum „Radar" */
   'validTicker', 'jzTag', 'jzUhr', 'jzFarbe', 'bstToday', 'bstSymbole', 'rdZeitText', 'rdPrioChip',
-  'rdKerzen', 'rdLlmHTML', 'rdSignalKarte', 'rdWochentag', 'rdTermineFenster', 'rdZahl',
+  'rdKerzen', 'rdChartKnopfHTML', 'rdLlmHTML', 'rdSignalKarte', 'rdWochentag', 'rdTermineFenster', 'rdZahl',
   'rdLevelsOk', 'rdLevelsHTML', 'rdKandidatKarte'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
@@ -222,6 +222,7 @@ gruppe('V2-3 Teil B — Signalkarte: kein Score, kein roher alert_type, quote nu
   pruef('Kurs mit deutschem Komma', /83,10 EUR/.test(h), true);
   pruef('Earnings-Zeit als deutscher Klartext', /nach Handelsschluss/.test(h), true);
   pruef('Chartknopf, weil Kerzen vorhanden', /data-rdchart="AAA"/.test(h), true);
+  const mitKerzen = h;
   /* NEGATIV: der Zahlenwert score darf nirgends auftauchen (Teil B.4) */
   pruef('score 87 steht nicht in der Karte', /(^|[^0-9])87([^0-9]|$)/.test(h), false);
   /* NEGATIV: alert_type wird nicht roh ausgegeben (Teil B.5) */
@@ -232,9 +233,26 @@ gruppe('V2-3 Teil B — Signalkarte: kein Score, kein roher alert_type, quote nu
   pruef('ohne quote keine Kursangabe', /EUR|USD|jz-gross/.test(ohne), false);
   pruef('ohne Trigger ehrliche Leermeldung', /Keine Auslöser geliefert\./.test(ohne), true);
   pruef('priority medium ergibt den schwächeren Chip', /Aufmerksamkeit/.test(ohne) && !/hohe Aufmerksamkeit/.test(ohne), true);
-  /* NEGATIV: ohne Kerzen in quotes.json kein Chartknopf (Teil B.6) */
+  /* ADR-714 Punkt 2 (V2-4 Teil E.2): der Chartknopf wird NICHT mehr eingefuegt, sondern
+     von Anfang an angelegt und spaeter nur aktiviert. Geprueft werden deshalb alle drei
+     Zustaende — der Knopf steht in jedem, der Text ist in jedem zeichengleich, und die
+     Sperre haengt ausschliesslich an der Kursreihe. Der frueher hier stehende Fall
+     'ohne Kursreihe kein Chartknopf' bildete die vor ADR-714 geltende Lage ab. */
+  pruef('Zustand 1 (Kerzen da): Knopf aktiv, nicht gesperrt',
+    /data-rdchart="AAA"[^>]*>/.test(mitKerzen) && !/data-rdchart="AAA" disabled/.test(mitKerzen), true);
   box.QUOTES = { quotes: {} };
-  pruef('ohne Kursreihe kein Chartknopf', /data-rdchart/.test(vm.runInContext('rdSignalKarte(it,"")', box)), false);
+  const ohneKerzen = vm.runInContext('rdSignalKarte(it,"")', box);
+  pruef('Zustand 2 (quotes da, keine Kerzen): Knopf steht und ist gesperrt',
+    /data-rdchart="AAA" disabled aria-disabled="true" title="Für diesen Wert nicht geliefert"/.test(ohneKerzen), true);
+  box.QUOTES = null;
+  const nochNichtDa = vm.runInContext('rdSignalKarte(it,"")', box);
+  pruef('Zustand 3 (quotes noch nicht geladen): Knopf steht und nennt den Ladegrund',
+    /data-rdchart="AAA" disabled aria-disabled="true" title="Kursdaten werden noch geladen"/.test(nochNichtDa), true);
+  const knopfText = h => { const m = h.match(/>(Kursverlauf ansehen)</); return m ? m[1] : ''; };
+  pruef('Knopftext in allen drei Zustaenden zeichengleich',
+    [knopfText(mitKerzen), knopfText(ohneKerzen), knopfText(nochNichtDa)],
+    ['Kursverlauf ansehen', 'Kursverlauf ansehen', 'Kursverlauf ansehen']);
+  box.QUOTES = { quotes: {} };
   /* NEGATIV: unsauberes Symbol ergibt gar keine Karte */
   box.it = { symbol: 'AA<script>', name: 'X', triggers: [] };
   pruef('unsauberes Symbol ergibt keine Karte', vm.runInContext('rdSignalKarte(it,"")', box), '');

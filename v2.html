@@ -1013,35 +1013,41 @@ async function feedsKlein(){
     hol('videos.json',j=>{VIDEOS=j}),
     hol('videos-index.json',j=>{VIDIDX=j}),
     hol('ideas.json',j=>{IDEAS=j}),
-    /* Teil F.2: die beiden Radar-Feeds melden ihren EIGENEN Abschluss. hol() bleibt
+    /* Teil F.2: die drei Radar-Feeds melden ihren EIGENEN Abschluss. hol() bleibt
        unveraendert — angehaengt ist nur sein Promise, kein Orchestrator. Damit
        rendert jede Sektion, sobald ihre Datei da ist, statt auf die langsamste
        Datei der Welle zu warten. */
     hol('earnings.json',j=>{EARN=j}).then(rdTermineFertig),
     hol('earnings-recap.json',j=>{ERECAP=j}),
-    hol('candidates.json',j=>{CANDIDATES=j}).then(rdKandidatenFertig)
+    hol('candidates.json',j=>{CANDIDATES=j}).then(rdKandidatenFertig),
+    /* ADR-714 Punkt 1: die Welle folgt der DATEIGROESSE, nicht dem Raum. radar.json ist am
+       10.09.2026 2.370 B gross und gehoert damit neben earnings.json (4.567 B) und
+       candidates.json (10.568 B) — nicht hinter quotes.json (1,15 MB) und ticker-index.json
+       (0,98 MB). Vorher trug die kleinste Datei des Raums seine OBERSTE Flaeche und wartete
+       auf die groessten; genau daraus entstand der in V2-3 gemessene 1040-px-Sprung. */
+    hol('radar.json',j=>{RADAR=j}).then(rdSignaleFertig)
   ]);
   // Die Tagesdatei haengt am Index; fehlt er, entfaellt nur der Tagesstand.
   if(current){try{await loadDay(current)}catch(e){}}
 }
-/* Die drei grossen Feeds NACH dem ersten Rendern, parallel und nicht blockierend
-   (quotes.json ~1,1 MB, ticker-index.json ~0,7 MB, radar.json ~11 KB).
+/* Die ZWEI grossen Feeds NACH dem ersten Rendern, parallel und nicht blockierend
+   (quotes.json 1.155.857 B, ticker-index.json 979.235 B; gemessen 10.09.2026).
    Abweichung zu index.html, bewusst: dort haengt dieser Block am nicht leeren Bestand.
-   In V2 braucht der Raum „Radar" die radar.json und „Recherche" den ticker-index auch
-   ohne jede Position — die Bindung an den Bestand waere hier schlicht falsch. */
+   In V2 braucht der Raum „Recherche" den ticker-index auch ohne jede Position — die Bindung
+   an den Bestand waere hier schlicht falsch. radar.json ist seit ADR-714 nicht mehr Teil
+   dieser Welle. */
 let FEEDSGROSS=false;
 async function feedsGross(){
   if(FEEDSGROSS)return;FEEDSGROSS=true;
   await Promise.all([
-    hol('radar.json',j=>{RADAR=j}).then(rdSignaleFertig),
     hol('quotes.json',j=>{QUOTES=j}),
     hol('ticker-index.json',j=>{TICKIDX=j})
   ]);
   standAnzeigen();
-  /* Zweiter Durchgang, bewusst: die Signalkarte selbst haengt nur an radar.json und
-     steht oben schon; der Knopf „Kursverlauf ansehen" haengt zusaetzlich an
-     quotes.json (Teil B.6) und kann erst hier dazukommen. Der Nachzug ergaenzt je
-     Karte eine Zeile, er baut die Flaeche nicht neu auf. */
+  /* Zweiter Durchgang, bewusst: die Signalkarte steht seit der ersten Welle vollstaendig;
+     nur der Knopf „Kursverlauf ansehen" haengt zusaetzlich an quotes.json. Er liegt nach
+     ADR-714 Punkt 2 von Anfang an mit seiner endgueltigen Hoehe da und wird hier lediglich
+     AKTIVIERT — es kommt keine Zeile hinzu, deshalb verschiebt der Nachzug nichts. */
   radarRendern();
 }
 
@@ -1827,13 +1833,24 @@ function rdPrioChip(p){
   return '';
 }
 
-/* Teil B.6: klickbar ist eine Karte nur, wenn das Symbol in quotes.json eine
-   gueltige Kerzenreihe hat. Kein Proxy-Fallback wie bei den Movern — ein Radar-Klick
-   darf keine Drittanfrage ausloesen, und ein leerer Dialog waere schlechter als ein
-   fehlender Knopf. */
+/* Teil B.6: auffuehrbar ist der Chart nur, wenn das Symbol in quotes.json eine gueltige
+   Kerzenreihe hat. Kein Proxy-Fallback wie bei den Movern — ein Radar-Klick darf keine
+   Drittanfrage ausloesen, und ein leerer Dialog waere schlechter als ein gesperrter Knopf. */
 function rdKerzen(sym){
   const q=(QUOTES&&QUOTES.quotes)?QUOTES.quotes[sym]:null;
   return q?jzKerzenOk(q.candles):null;
+}
+/* ADR-714 Punkt 2: quotes.json liegt in der zweiten Welle, die Signalkarte in der ersten.
+   Der Knopf wird deshalb NICHT spaeter eingefuegt, sondern von Anfang an angelegt und beim
+   Nachzug nur aktiviert — seine Hoehe steht in beiden Zustaenden im eigenen CSS (.ghost,
+   min-height 44px) und ist damit keine Schaetzung im Sinne von ADR-016. Der Text bleibt
+   zeichengleich, nur der Grund der Sperre wechselt; das vorhandene Muster dafuer steht an
+   den Index-Chartknoepfen (disabled + aria-disabled + title). */
+function rdChartKnopfHTML(sym,d1){
+  const gesperrt=d1?'':' disabled aria-disabled="true" title="'+
+    ((QUOTES&&QUOTES.quotes)?'Für diesen Wert nicht geliefert':'Kursdaten werden noch geladen')+'"';
+  return '<div><button type="button" class="ghost" data-rdchart="'+escapeHtml(sym)+'"'+gesperrt+
+    '>Kursverlauf ansehen</button></div>';
 }
 function rdChartOeffnen(sym,el){
   const s=validTicker(String(sym==null?'':sym));
@@ -1910,7 +1927,7 @@ function rdSignalKarte(it,stand){
     (ea?'<span class="t-small" style="color:var(--muted)">Earnings-Termin '+escapeHtml(jzTag(ea.date))+
       (eaZeit?', '+escapeHtml(eaZeit):'')+'</span>':'')+
     rdLlmHTML(it,stand)+
-    (d1?'<div><button type="button" class="ghost" data-rdchart="'+escapeHtml(sym)+'">Kursverlauf ansehen</button></div>':'')+
+    rdChartKnopfHTML(sym,d1)+
   '</article>';
 }
 
