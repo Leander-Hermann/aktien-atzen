@@ -599,6 +599,37 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .mw-mehr>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   .mw-frueher{display:flex;flex-direction:column;gap:var(--sp-4);
     padding-top:var(--sp-2)}
+  /* Teil D: Formular, Bestandsliste und Meldungen. §8 Inputs: Fokus-Ring --accent
+     2 px außen, Fehler in --down, Warnung in --warn. §3: jedes Bedienelement ≥ 44 px. */
+  .mw-form{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .mw-feld{display:flex;flex-direction:column;gap:4px;min-width:0}
+  .mw-feld label{color:var(--muted);font-weight:600}
+  .mw-input{min-height:44px;padding:0 var(--sp-3);border:1px solid var(--line);
+    border-radius:var(--radius);background:var(--card);color:var(--ink);
+    font:inherit;font-size:14.5px;width:100%}
+  .mw-input:focus-visible{outline:2px solid var(--accent);outline-offset:2px;
+    border-color:var(--accent)}
+  textarea.mw-input{padding:var(--sp-2) var(--sp-3);line-height:1.45;resize:vertical}
+  .mw-code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;
+    word-break:break-all}
+  /* §4.2 Punkt 3: dieselbe Spurenregel wie überall, hier nur mit schmalerer Idealbreite —
+     ein Zahlenfeld braucht keine 35rem. */
+  .mw-raster{display:grid;gap:var(--sp-3);
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr))}
+  .mw-derivatfelder{display:flex;flex-direction:column;gap:var(--sp-2);
+    margin-top:var(--sp-3);padding-top:var(--sp-3);border-top:1px solid var(--line)}
+  .mw-derivatfelder[hidden]{display:none}
+  .mw-bestand{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+  .mw-zeile{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-3);
+    flex-wrap:wrap;padding:var(--sp-2) 0;border-bottom:1px solid var(--line)}
+  .mw-zeile:last-child{border-bottom:0}
+  .mw-aktion{display:flex;align-items:center;gap:var(--sp-2);flex-wrap:wrap}
+  /* Bedeutung nie durch Farbe allein (§11): jede Meldung ist ein Satz, die Farbe
+     verstärkt ihn nur. */
+  .mw-meldung{margin:0;color:var(--muted)}
+  .mw-meldung.ok{color:var(--up)}
+  .mw-meldung.warn{color:var(--warn)}
+  .mw-meldung.fehler{color:var(--down)}
   .mw-nachladen{display:flex;flex-direction:column;gap:var(--sp-2);margin-top:var(--sp-4)}
   /* §14.2 Hover-/Press-Standard: die klickbare Karte verhält sich wie jede andere
      interaktive Kachel. Bedeutung nie durch Farbe allein (§11) — der Chartknopf in
@@ -2602,10 +2633,262 @@ function mwListeRender(){
   ziel.innerHTML='<div class="jz-grid">'+alle.map(mwKarte).join('')+'</div>'+mwOhneKursHTML(ohne);
 }
 
+/* ================================================================================
+   Teil D — Verwaltung und Datenübertragung.
+   Architektenentscheid: die Bestandsverwaltung gehoert in DIESEN Raum. Ohne sie kann
+   in v2.html niemand eine Position anlegen, und der Raum bliebe fuer jeden neuen
+   Besucher dauerhaft leer — die Seite waere nicht cutover-faehig.
+
+   Geschrieben wird ausschliesslich ueber die vorhandenen bst*-Funktionen. Es gibt hier
+   keine zweite Validierung, keine zweite Normalisierung und kein zweites Datenmodell;
+   bstNormEingabe(), bstValidPos(), bstAdd(), bstRemove(), bstExportCode() und
+   bstImportCode() sind aus index.html uebernommen und dort seit dem 03.08. im Betrieb.
+   ================================================================================ */
+
+/* Ruhige Meldung in einer role="status"-Flaeche (Design-System §8: Fehler-Border und
+   Meldung in --down, Warnung in --warn). Eine ungueltige Eingabe fuehrt NIE zu einer
+   Ausnahme und nie zu einem Dialog. */
+function mwMeldung(id,text,art){
+  const el=document.getElementById(id);
+  if(!el)return;
+  el.className='mw-meldung t-small'+(art?' '+art:'');
+  el.textContent=text||'';
+  el.hidden=!text;
+}
+
+/* --- Teil D.1: Hinzufuegen ------------------------------------------------------
+   Ein Eingabefeld nimmt mehrere Symbole kommagetrennt. Die Detailangaben gelten immer
+   GENAU EINER Position — bei mehreren Symbolen werden sie deshalb nicht stillschweigend
+   auf alle verteilt, sondern ausgelassen, und die Meldung sagt das. */
+function mwFormularHTML(){
+  const arten=Object.keys(BST_TYP).map(k=>
+    '<option value="'+escapeHtml(k)+'"'+(k==='beobachtung'?' selected':'')+'>'+escapeHtml(BST_TYP[k])+'</option>').join('');
+  const derArt=Object.keys(BST_ART).map(k=>'<option value="'+escapeHtml(k)+'">'+escapeHtml(BST_ART[k])+'</option>').join('');
+  const derRi=Object.keys(BST_RICHTUNG).map(k=>'<option value="'+escapeHtml(k)+'">'+escapeHtml(BST_RICHTUNG[k])+'</option>').join('');
+  return '<div class="card mw-form">'+
+    '<div class="mw-feld">'+
+      '<label class="t-small" for="mwSym">Symbole</label>'+
+      '<input type="text" id="mwSym" class="mw-input" autocomplete="off" spellcheck="false" '+
+        'placeholder="z. B. SAP.DE, AAPL" aria-describedby="mwSymHilfe">'+
+      '<span class="t-caption" id="mwSymHilfe" style="color:var(--muted)">Mehrere durch Komma '+
+        'getrennt. Börsenkürzel wie XETR:SAP werden auf die Yahoo-Schreibweise umgestellt.</span>'+
+    '</div>'+
+    '<div class="mw-feld">'+
+      '<label class="t-small" for="mwTyp">Art</label>'+
+      '<select id="mwTyp" class="mw-input">'+arten+'</select>'+
+    '</div>'+
+    '<details class="mw-mehr" id="mwDetails"><summary class="t-small">Weitere Angaben (freiwillig)</summary>'+
+      '<div class="mw-raster">'+
+        '<div class="mw-feld"><label class="t-small" for="mwStueck">Stückzahl</label>'+
+          '<input type="text" inputmode="decimal" id="mwStueck" class="mw-input" autocomplete="off"></div>'+
+        '<div class="mw-feld"><label class="t-small" for="mwEinstand">Einstand</label>'+
+          '<input type="text" inputmode="decimal" id="mwEinstand" class="mw-input" autocomplete="off"></div>'+
+        '<div class="mw-feld"><label class="t-small" for="mwWaehrung">Währung</label>'+
+          '<input type="text" id="mwWaehrung" class="mw-input" maxlength="3" autocomplete="off" placeholder="EUR"></div>'+
+      '</div>'+
+      '<div class="mw-derivatfelder" id="mwDerivatFelder" hidden>'+
+        '<span class="t-caption" style="color:var(--muted)">Nur für Derivate. Hebel und '+
+          'KO-Schwelle dienen ausschließlich zwei lokalen Anzeigen und sind idealisierte '+
+          'Näherungen.</span>'+
+        '<div class="mw-raster">'+
+          '<div class="mw-feld"><label class="t-small" for="mwDerArt">Derivat-Art</label>'+
+            '<select id="mwDerArt" class="mw-input">'+derArt+'</select></div>'+
+          '<div class="mw-feld"><label class="t-small" for="mwDerRichtung">Richtung</label>'+
+            '<select id="mwDerRichtung" class="mw-input">'+derRi+'</select></div>'+
+          '<div class="mw-feld"><label class="t-small" for="mwDerHebel">Hebel</label>'+
+            '<input type="text" inputmode="decimal" id="mwDerHebel" class="mw-input" autocomplete="off"></div>'+
+          '<div class="mw-feld"><label class="t-small" for="mwDerKo">KO-Schwelle</label>'+
+            '<input type="text" inputmode="decimal" id="mwDerKo" class="mw-input" autocomplete="off"></div>'+
+          '<div class="mw-feld"><label class="t-small" for="mwDerWkn">WKN</label>'+
+            '<input type="text" id="mwDerWkn" class="mw-input" maxlength="12" autocomplete="off"></div>'+
+        '</div>'+
+      '</div>'+
+    '</details>'+
+    '<div><button type="button" class="ghost" id="mwAnlegen">Hinzufügen</button></div>'+
+    '<p class="mw-meldung t-small" id="mwFormMeldung" role="status" aria-live="polite" hidden></p>'+
+  '</div>';
+}
+
+/* Liest die Detailfelder. Zahlen laufen ueber bstNum(), das deutsches Komma versteht. */
+function mwDetailsLesen(){
+  const wert=id=>{const el=document.getElementById(id);return el?el.value:''};
+  const p={};
+  const st=bstNum(wert('mwStueck')),ein=bstNum(wert('mwEinstand'));
+  const w=String(wert('mwWaehrung')||'').trim().toUpperCase();
+  if(st!=null&&st>0)p.stueck=st;
+  if(ein!=null&&ein>0)p.einstand=ein;
+  if(/^[A-Z]{3}$/.test(w))p.waehrung=w;
+  if(wert('mwTyp')==='derivat'){
+    const d={art:wert('mwDerArt'),richtung:wert('mwDerRichtung')};
+    const h=bstNum(wert('mwDerHebel')),ko=bstNum(wert('mwDerKo'));
+    if(h!=null&&h>0)d.hebel=h;
+    if(ko!=null&&ko>0)d.ko_schwelle=ko;
+    const wkn=String(wert('mwDerWkn')||'').trim().toUpperCase();
+    if(/^[A-Z0-9]{1,12}$/.test(wkn))d.wkn=wkn;
+    p.derivat=d;
+  }
+  return p;
+}
+/* Der einzige schreibende Pfad beim Anlegen. Er faengt jeden Fall selbst ab: leere
+   Eingabe, unbrauchbares Symbol, Duplikat. Ein Fehler ist eine Meldung, kein Abbruch. */
+function mwAnlegen(){
+  const feld=document.getElementById('mwSym'),typEl=document.getElementById('mwTyp');
+  if(!feld||!typEl)return;
+  const roh=String(feld.value||'').split(',').map(s=>s.trim()).filter(Boolean);
+  if(!roh.length){mwMeldung('mwFormMeldung','Bitte zuerst ein Symbol eintragen.','warn');feld.focus();return}
+  const typ=BST_TYP[typEl.value]?typEl.value:'beobachtung';
+  const details=roh.length===1?mwDetailsLesen():{};
+  const angelegt=[],doppelt=[],ungueltig=[];
+  roh.forEach(r=>{
+    const sym=bstNormEingabe(r);
+    if(!sym){ungueltig.push(r);return}
+    const b=bstLoad();
+    if(b.positionen.some(p=>p.symbol===sym&&p.typ===typ)){doppelt.push(sym);return}
+    const pos=Object.assign({id:bstNextId(b),symbol:sym,typ:typ,added_at:bstToday()},details);
+    if(bstAdd(pos))angelegt.push(sym);else ungueltig.push(r);
+  });
+  const teile=[];
+  if(angelegt.length)teile.push(angelegt.length===1?('„'+angelegt[0]+'" angelegt.'):
+    (angelegt.length+' Werte angelegt: '+angelegt.join(', ')+'.'));
+  if(doppelt.length)teile.push((doppelt.length===1?'„'+doppelt[0]+'" steht':doppelt.join(', ')+' stehen')+
+    ' schon in dieser Art im Bestand.');
+  if(ungueltig.length)teile.push((ungueltig.length===1?'„'+ungueltig[0]+'" ist':ungueltig.join(', ')+' sind')+
+    ' kein gültiges Symbol.');
+  if(roh.length>1&&Object.keys(mwDetailsLesen()).length)
+    teile.push('Die freiwilligen Angaben gelten immer genau einem Wert und wurden hier ausgelassen.');
+  mwMeldung('mwFormMeldung',teile.join(' '),ungueltig.length?'warn':(angelegt.length?'ok':'warn'));
+  if(angelegt.length){
+    feld.value='';
+    mwFrostLoesen();            // Teil B.8: eine Bestandsaenderung beendet den Frost
+    mwBestandslisteRender();
+    werteRendern();
+  }
+  feld.focus();
+}
+
+/* --- Teil D.2: Entfernen --------------------------------------------------------
+   Die einzige zerstoerende Aktion des Raums. Sie braucht einen zweiten, bewussten
+   Schritt — aber KEINEN confirm()-Dialog und kein Modal: der Knopf selbst wechselt in
+   die Rueckfrage, daneben steht ein Abbruch. Ohne zweiten Klick geschieht nichts. */
+function mwBestandslisteHTML(){
+  const pos=bstPositionen();
+  if(!pos.length)return '<p class="t-small" style="color:var(--muted);margin:0">Noch kein Wert '+
+    'angelegt. Trage oben ein Symbol ein.</p>';
+  return '<ul class="mw-bestand">'+pos.map(p=>{
+    const sym=validTicker(p.symbol)||p.symbol;   // escapeHtml folgt unten, genau einmal
+    return '<li class="mw-zeile" data-mwid="'+escapeHtml(p.id)+'">'+
+      '<span class="t-small"><span class="num">'+escapeHtml(sym)+'</span> · '+
+        escapeHtml(BST_TYP[p.typ]||p.typ)+'</span>'+
+      '<span class="mw-aktion">'+
+        '<button type="button" class="ghost mw-weg" data-mwweg="'+escapeHtml(p.id)+'">Entfernen</button>'+
+      '</span>'+
+    '</li>';
+  }).join('')+'</ul>';
+}
+function mwWegFragen(id){
+  const zeile=document.querySelector('[data-mwid="'+(validTicker(id)||String(id).replace(/[^A-Za-z0-9_-]/g,''))+'"]');
+  if(!zeile)return;
+  const box=zeile.querySelector('.mw-aktion');
+  box.innerHTML='<span class="t-small" style="color:var(--warn)">Wirklich entfernen?</span>'+
+    '<button type="button" class="ghost mw-weg" data-mwwegja="'+escapeHtml(id)+'">Ja, entfernen</button>'+
+    '<button type="button" class="ghost" data-mwwegnein="'+escapeHtml(id)+'">Abbrechen</button>';
+  const ja=box.querySelector('[data-mwwegja]');if(ja)ja.focus();
+}
+function mwWegTun(id){
+  const p=bstById(id);
+  const sym=p?p.symbol:'';
+  if(bstRemove(id)){
+    mwFrostLoesen();
+    mwBestandslisteRender();
+    werteRendern();
+    mwMeldung('mwVerwaltungMeldung','„'+sym+'" wurde entfernt.','ok');
+  }
+  const feld=document.getElementById('mwSym');if(feld)feld.focus();
+}
+
+/* Nur die Liste, nicht das Formular: eine begonnene Eingabe bleibt erhalten. */
+function mwBestandslisteRender(){
+  const el=document.getElementById('mwBestandListe');
+  if(el)el.innerHTML=mwBestandslisteHTML();
+}
+function mwVerwaltungRender(){
+  const ziel=document.getElementById('mwVerwaltungInhalt');
+  if(!ziel)return;
+  ziel.innerHTML=mwFormularHTML()+
+    '<div class="card mw-form" style="margin-top:var(--sp-4)">'+
+      '<span class="t-small" style="color:var(--muted)">Angelegte Werte</span>'+
+      '<div id="mwBestandListe">'+mwBestandslisteHTML()+'</div>'+
+      '<p class="mw-meldung t-small" id="mwVerwaltungMeldung" role="status" aria-live="polite" hidden></p>'+
+    '</div>';
+  const typEl=document.getElementById('mwTyp');
+  if(typEl)typEl.addEventListener('change',()=>{
+    const d=document.getElementById('mwDerivatFelder');
+    if(d)d.hidden=typEl.value!=='derivat';
+  });
+}
+
+/* --- Teil D.4: Datenübertragung -------------------------------------------------
+   Base64 ist hier nur Transportverpackung; es wird nichts hochgeladen und nichts in
+   eine URL geschrieben (ADR-102, ADR-906 §1). Der bestehende Bestand wird ERST
+   ueberschrieben, wenn der Code gueltig geparst ist — das entscheidet bstImportCode()
+   selbst, indem es vor dem Schreiben vollstaendig prueft. */
+function mwCodeRender(){
+  const ziel=document.getElementById('mwCodeInhalt');
+  if(!ziel)return;
+  ziel.innerHTML='<div class="card mw-form">'+
+    '<div class="mw-feld">'+
+      '<label class="t-small" for="mwCodeFeld">Übertragungscode</label>'+
+      '<textarea id="mwCodeFeld" class="mw-input mw-code" rows="3" spellcheck="false" '+
+        'autocomplete="off" aria-describedby="mwCodeHilfe"></textarea>'+
+      '<span class="t-caption" id="mwCodeHilfe" style="color:var(--muted)">Erzeugen, kopieren, '+
+        'auf dem anderen Gerät einsetzen und übernehmen. Der Code bleibt in diesem Feld — er '+
+        'wird nirgendwohin gesendet.</span>'+
+    '</div>'+
+    '<div class="ghostreihe" style="margin-top:0">'+
+      '<button type="button" class="ghost" id="mwCodeErzeugen">Code erzeugen</button>'+
+      '<button type="button" class="ghost" id="mwCodeUebernehmen">Code übernehmen</button>'+
+    '</div>'+
+    '<p class="mw-meldung t-small" id="mwCodeMeldung" role="status" aria-live="polite" hidden></p>'+
+  '</div>';
+}
+function mwCodeErzeugen(){
+  const el=document.getElementById('mwCodeFeld');
+  if(!el)return;
+  el.value=bstExportCode();
+  el.select();
+  const n=bstPositionen().length;
+  mwMeldung('mwCodeMeldung','Code für '+n+(n===1?' Wert':' Werte')+' erzeugt. Jetzt kopieren.','ok');
+}
+function mwCodeUebernehmen(){
+  const el=document.getElementById('mwCodeFeld');
+  if(!el)return;
+  const vorher=bstPositionen().length;
+  const r=bstImportCode(el.value);
+  if(!r.ok){
+    /* Teil D.4: ein fehlerhafter Code fuehrt zu einer Meldung, nie zu einem zerstoerten
+       Bestand. bstImportCode schreibt erst nach vollstaendiger Pruefung. */
+    mwMeldung('mwCodeMeldung',r.fehler+' Der bisherige Bestand ('+vorher+
+      (vorher===1?' Wert':' Werte')+') bleibt unverändert.','fehler');
+    return;
+  }
+  mwFrostLoesen();
+  mwBestandslisteRender();
+  werteRendern();
+  mwMeldung('mwCodeMeldung',r.uebernommen+(r.uebernommen===1?' Wert':' Werte')+' übernommen.'+
+    (r.verworfen?' '+r.verworfen+(r.verworfen===1?' Eintrag war':' Einträge waren')+
+      ' unbrauchbar und wurde'+(r.verworfen===1?'':'n')+' ausgelassen.':''),'ok');
+}
+
 /* --- Raumeinstieg -------------------------------------------------------------- */
 function werteRendern(){
   mwStaendeRender();
   mwListeRender();
+  /* Verwaltung und Übertragung werden nur EINMAL aufgebaut: sie hängen an keinem Feed,
+     und ein Neuaufbau bei jedem Nachzug würde eine begonnene Eingabe verwerfen. */
+  const v=document.getElementById('mwVerwaltungInhalt');
+  if(v&&!v.children.length)mwVerwaltungRender();
+  const c=document.getElementById('mwCodeInhalt');
+  if(c&&!c.children.length)mwCodeRender();
 }
 
 /* --- Chart und Nachladen (Teil B.5 und B.6) ----------------------------------- */
@@ -2868,6 +3151,16 @@ document.addEventListener('click',ev=>{
     return;
   }
   if(t.closest('#mwNachladen')){mwNachladenStarten(t.closest('#mwNachladen'));return}
+  if(t.closest('#mwAnlegen')){mwAnlegen();return}
+  if(t.closest('#mwCodeErzeugen')){mwCodeErzeugen();return}
+  if(t.closest('#mwCodeUebernehmen')){mwCodeUebernehmen();return}
+  /* Teil D.2: erst fragen, dann entfernen — zwei getrennte Klicks, kein confirm(). */
+  const weg=t.closest('[data-mwweg]');
+  if(weg){mwWegFragen(weg.dataset.mwweg);return}
+  const wegJa=t.closest('[data-mwwegja]');
+  if(wegJa){mwWegTun(wegJa.dataset.mwwegja);return}
+  const wegNein=t.closest('[data-mwwegnein]');
+  if(wegNein){mwBestandslisteRender();return}
   const mc=t.closest('[data-mwchart]');
   if(mc){
     const eigen=t.closest('a,button,summary,input,select,textarea');

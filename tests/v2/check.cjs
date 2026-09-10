@@ -38,13 +38,15 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   /* V2-4 Raum „Meine Werte" */
   'jzVideoHTML', 'mwMenge', 'mwGeld', 'mwKursHTML', 'mwDetailsHTML',
   'mwDerivatHTML', 'mwEreignisHTML', 'mwFremdOk', 'mwKuerzen', 'mwFremdHTML',
-  'mwAuftrittTexte', 'mwAuftrittKopf', 'mwVideoHTML', 'mwKarte', 'mwOhneKursHTML'];
+  'mwAuftrittTexte', 'mwAuftrittKopf', 'mwVideoHTML', 'mwKarte', 'mwOhneKursHTML',
+  /* V2-4 Teil D */
+  'mwFormularHTML', 'mwBestandslisteHTML', 'mwCodeRender'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP',
-  'MW_VERBOTEN', 'MW_TEXTDECKEL'];
+  'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -59,7 +61,7 @@ function schneideConst(name) {
 
 /* URL gehört in die Sandbox: safeUrl prüft das Schema über new URL(...) und würde
    ohne die Klasse jede Adresse per catch verwerfen — das wäre ein Testartefakt. */
-const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL, j: null, TICKIDX: null,
+const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL, j: null, TICKIDX: null, BST_POS: [],
   RADAR: null, QUOTES: null, EARN: null, CANDIDATES: null, BESTAND: null };
 vm.createContext(box);
 vm.runInContext(KONSTANTEN.map(schneideConst).join('\n') + '\n' +
@@ -591,6 +593,80 @@ gruppe('V2-4 Teil C — Videoauftritte: Zeitmarke aus dem Feed, Herkunft sichtba
   pruef('ohne Auftritt entfaellt die Flaeche ersatzlos', vm.runInContext('mwVideoHTML(j)', box), '');
   pruef('kein Etikett wie „bisher nicht besprochen"',
     /nicht besprochen|kein Videoauftritt/i.test(vm.runInContext('mwKarte(j)', box)), false);
+});
+
+/* --- V2-4 Teil D: Verwaltung und Datenübertragung ------------------------------
+   Die schreibenden Pfade (Anlegen, Entfernen, Import) brauchen ein Dokument und sind
+   im Browser belegt; hier steht, was ohne DOM prüfbar ist: der Aufbau der Formulare,
+   die Wortlaute und die Zusagen, die man am Quelltext festmachen kann. */
+gruppe('V2-4 Teil D — Verwaltung: Formularaufbau, Löschweg, Übertragung', () => {
+  const f = vm.runInContext('mwFormularHTML()', box);
+  pruef('Eingabefeld für mehrere Symbole', /id="mwSym"/.test(f) && /Mehrere durch Komma/.test(f), true);
+  pruef('alle fünf Arten stehen zur Wahl',
+    ['aktie', 'beobachtung', 'derivat', 'etf', 'krypto'].every(k => f.indexOf('value="' + k + '"') > -1), true);
+  pruef('Beobachtung ist die Vorauswahl', /value="beobachtung" selected/.test(f), true);
+  pruef('optionaler Detailbereich mit stueck, einstand, waehrung',
+    /id="mwStueck"/.test(f) && /id="mwEinstand"/.test(f) && /id="mwWaehrung"/.test(f), true);
+  pruef('Derivatblock ist vorhanden und anfangs verborgen',
+    /id="mwDerivatFelder" hidden/.test(f), true);
+  pruef('Derivatfelder vollständig',
+    ['mwDerArt', 'mwDerRichtung', 'mwDerHebel', 'mwDerKo', 'mwDerWkn'].every(k => f.indexOf('id="' + k + '"') > -1), true);
+  pruef('Hebel und KO-Schwelle sind als Näherung gekennzeichnet',
+    /idealisierte\s+Näherungen/.test(f), true);
+  pruef('Meldungsfläche ist eine Statusregion', /role="status" aria-live="polite"/.test(f), true);
+  pruef('jedes Feld hat ein verknüpftes Label',
+    (f.match(/<label class="t-small" for="/g) || []).length >= 8, true);
+  /* NEGATIV: das Formular legt nichts von selbst an und ruft keinen Dialog auf. */
+  pruef('kein confirm im Formular', /confirm\(/.test(f), false);
+  pruef('kein Symbol in einem href oder einer URL', /href=|\?sym|&sym/.test(f), false);
+
+  /* Bestandsliste (Teil D.2). bstPositionen wird in der Sandbox ersetzt. */
+  vm.runInContext('function bstPositionen(){return BST_POS}', box);
+  box.BST_POS = [{ id: 'p1', symbol: 'SAP.DE', typ: 'beobachtung', added_at: '2026-09-10' },
+    { id: 'p2', symbol: 'IFX.DE', typ: 'derivat', added_at: '2026-09-10' }];
+  const l = vm.runInContext('mwBestandslisteHTML()', box);
+  pruef('je Position eine Zeile mit Entfernen-Knopf',
+    (l.match(/data-mwweg="/g) || []).length, 2);
+  pruef('Art als deutscher Klartext', /Beobachtung/.test(l) && /Derivat/.test(l), true);
+  pruef('Symbol läuft durch die Whitelist', /SAP\.DE/.test(l) && /IFX\.DE/.test(l), true);
+  /* NEGATIV: leerer Bestand ergibt einen Satz, keine leere Liste. */
+  box.BST_POS = [];
+  const leer = vm.runInContext('mwBestandslisteHTML()', box);
+  pruef('leerer Bestand: ein Satz statt einer leeren Liste',
+    /Noch kein Wert angelegt/.test(leer) && !/<ul/.test(leer), true);
+  /* NEGATIV: ein unsauberes Symbol wird geescapet, nicht roh ausgegeben. */
+  box.BST_POS = [{ id: 'p1', symbol: '<img src=x>', typ: 'aktie', added_at: '2026-09-10' }];
+  const boese = vm.runInContext('mwBestandslisteHTML()', box);
+  pruef('unsauberes Symbol geescapet', /&lt;img/.test(boese) && !/<img/.test(boese), true);
+
+  /* Datenübertragung (Teil D.4) */
+  const c = vm.runInContext('mwCodeRender.toString()', box);
+  pruef('Textfeld und zwei Knöpfe',
+    /id="mwCodeFeld"/.test(c) && /id="mwCodeErzeugen"/.test(c) && /id="mwCodeUebernehmen"/.test(c), true);
+  pruef('der Satz sagt, wofür der Code da ist',
+    /anderen Gerät/.test(c) && /nirgendwohin gesendet/.test(c), true);
+  /* Zusagen am Quelltext des ganzen Raums (Teil D.2 und D.5). */
+  /* Kommentare fliegen raus, bevor geprueft wird: der Verwaltungsteil ERKLAERT, dass er
+     ohne confirm() auskommt — eine Textsuche wuerde genau diesen Satz als Verstoss melden. */
+  const ohneKommentare = s => s.split('/*').map((teil, i) =>
+    i === 0 ? teil : teil.slice(teil.indexOf('*/') + 2)).join(' ')
+    .split('\n').map(z => { const i = z.indexOf('//'); return i < 0 ? z : z.slice(0, i); }).join('\n');
+  const mw = ohneKommentare(html.slice(html.indexOf('Teil D — Verwaltung und Datenübertragung'),
+    html.indexOf('/* --- Raumeinstieg')));
+  /* Die Dialogsperre gilt fuer die GANZE Datei, nicht nur fuer den Verwaltungsabschnitt:
+     der Loeschweg beginnt in der Ereignisdelegation, und die steht weit darunter. Ein auf
+     den Abschnitt begrenzter Scan hat genau diesen Fall am 10.09. durchgelassen. */
+  const ganz = ohneKommentare(html);
+  pruef('kein confirm-Dialog in der ganzen Datei', /confirm\(/.test(ganz), false);
+  pruef('kein alert und kein prompt in der ganzen Datei', /\balert\(|\bprompt\(/.test(ganz), false);
+  pruef('Löschen läuft über bstRemove', /bstRemove\(id\)/.test(mw), true);
+  pruef('Löschen braucht einen zweiten Schritt',
+    /data-mwwegja/.test(mw) && /Wirklich entfernen\?/.test(mw), true);
+  pruef('Anlegen läuft über die vorhandene Prüfschicht',
+    /bstNormEingabe\(/.test(mw) && /bstAdd\(/.test(mw) && /bstNextId\(/.test(mw), true);
+  pruef('kein zweites Datenmodell und keine zweite Validierung',
+    /localStorage\.setItem|JSON\.parse/.test(mw), false);
+  pruef('die Migration wird nicht angezeigt', /bstMigrate\(|Migration übernommen/.test(mw), false);
 });
 
 console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +
