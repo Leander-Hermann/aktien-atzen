@@ -557,6 +557,45 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     flex:0 0 auto}
 
   /* ==========================================================================
+     V2-4 Raum „Meine Werte" — Positionen, Verwaltung, Datenübertragung.
+     KEIN zweites 7/5-Raster (Auftrag Teil A.2, dieselbe bindende Regel wie im
+     Radar): die Positionskarten liegen in derselben `.jz-grid`, die Breite
+     verteilt allein die Spurenregel aus §4.2 Punkt 3 (ADR-713). Verwaltung und
+     Datenübertragung sind einspaltige Flächen unter der Liste.
+     ========================================================================== */
+  .mw{display:flex;flex-direction:column;gap:var(--sp-8);margin-top:var(--sp-6)}
+  /* §4.2 Punkt 1: Träger der Container-Query ist die Sektion, nicht body. */
+  #mwListe,#mwVerwaltung,#mwCode{container-type:inline-size}
+  .mw .card{padding:var(--sp-4);padding:clamp(var(--sp-4),13px + 0.8cqi,var(--sp-5))}
+  /* §3: jedes Klickziel ≥ 44 px — auch ein Link mitten im Satz. */
+  .mw a{display:inline-flex;align-items:center;min-height:44px}
+  .mw-karte{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .mw-leer{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .mw-kopf{display:flex;align-items:flex-start;justify-content:space-between;gap:var(--sp-3)}
+  .mw-titel{display:flex;flex-direction:column;gap:2px;min-width:0}
+  /* ADR-714 Punkt 2: der Kursblock steht von Anfang an und wird beim Eintreffen von
+     quotes.json nur gefüllt. Seine Höhe kommt aus der Struktur — leer wie gefüllt
+     trägt er eine große Zeile und eine Caption — und nicht aus einer gesetzten
+     Mindesthöhe: eine px- oder rem-Angabe liefe bei geänderter Basisschrift und beim
+     Browser-Zoom aus dem Tritt (§4.3). Gemessen 10.09.2026: strukturgleich in beiden
+     Zuständen dieselbe Höhe. */
+  .mw-kurs{display:flex;flex-direction:column;align-items:flex-end;gap:2px;
+    justify-content:center;text-align:right;flex:0 0 auto}
+  .mw-derivat{display:flex;flex-direction:column;gap:2px;padding:var(--sp-3);
+    border:1px dashed var(--line);border-radius:var(--radius);background:var(--chip)}
+  .mw-video{display:flex;flex-direction:column;gap:var(--sp-1);
+    border-top:1px solid var(--line);padding-top:var(--sp-3)}
+  .mw-nachladen{display:flex;flex-direction:column;gap:var(--sp-2);margin-top:var(--sp-4)}
+  /* §14.2 Hover-/Press-Standard: die klickbare Karte verhält sich wie jede andere
+     interaktive Kachel. Bedeutung nie durch Farbe allein (§11) — der Chartknopf in
+     der Karte bleibt der sichtbare, fokussierbare Weg zum selben Dialog. */
+  .mw-karte.klickbar{cursor:pointer}
+  @media (hover:hover) and (pointer:fine){
+    .mw-karte.klickbar:hover{border-color:color-mix(in srgb,var(--accent) 40%,var(--line))}
+  }
+  .mw-karte.klickbar:focus-within{outline:2px solid var(--accent);outline-offset:2px}
+
+  /* ==========================================================================
      Overlays (E2 schwebend, §14.1). Struktur und Klassennamen aus index.html
      uebernommen, damit die dort geprueften Chartbausteine unveraendert greifen.
      ========================================================================== */
@@ -792,8 +831,50 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   <section class="raum" id="raum-werte" data-raum="werte" aria-labelledby="h-werte" hidden>
     <h2 id="h-werte" tabindex="-1">Meine Werte</h2>
     <p class="stand t-caption" hidden></p>
-    <p class="platzhalter">Welche deiner Werte betroffen sind — und wo in den Videoanalysen über
-      sie gesprochen wurde. Die Inhalte folgen im nächsten Schritt.</p>
+    <!-- Teil A.4: die gemeinsame Standzeile oben kommt aus standAnzeigen() über
+         RAUMFEEDS.werte. Laufen die Stände von quotes.json und ticker-index.json um
+         mehr als eine Minute auseinander, tritt an ihre Stelle die getrennte Zeile —
+         dieselbe Regel wie in „Jetzt" (Teil D.7) und „Radar" (Teil A.4). -->
+    <p class="jz-staende t-caption" id="mwStaende" hidden></p>
+
+    <div class="mw" id="mwInhalt">
+      <section class="jz-sek" id="mwListe" aria-labelledby="mwListeH">
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="mwListeH">Deine Werte</h3>
+          <span class="t-caption" id="mwListeMeta"></span>
+        </div>
+        <!-- Teil A.3: woher die Angaben kommen. Der zweite Halbsatz ist inhaltlich
+             verbindlich und keine Werbezeile — er ist die sichtbare Seite von
+             ADR-906 §1 und ADR-102. -->
+        <p class="t-small jz-fliess" style="margin:0;color:var(--muted)">Dein Bestand, verbunden
+          mit Kursen, Terminen, Radar-Auslösern und Videoanalysen. Die Angaben liegen
+          ausschließlich in diesem Browser und verlassen das Gerät nie.</p>
+        <div id="mwListeInhalt"></div>
+      </section>
+
+      <section class="jz-sek" id="mwVerwaltung" aria-labelledby="mwVerwaltungH">
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="mwVerwaltungH" tabindex="-1">Werte verwalten</h3>
+          <span class="t-caption" id="mwVerwaltungMeta"></span>
+        </div>
+        <!-- Teil D.6: Datenschutz, sichtbar und wörtlich. Das ist die Umsetzung von
+             ADR-906 und ADR-102 und beim Cutover die Grundlage der Datenschutzerklärung. -->
+        <p class="t-small jz-fliess" style="margin:0;color:var(--muted)">Alle Angaben liegen
+          ausschließlich im Browser dieses Geräts. Sie gelangen in keinen Feed, kein Log und
+          keinen Prompt und werden zusammen mit den Browserdaten gelöscht.</p>
+        <div id="mwVerwaltungInhalt"></div>
+      </section>
+
+      <section class="jz-sek" id="mwCode" aria-labelledby="mwCodeH">
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="mwCodeH">Daten übertragen</h3>
+        </div>
+        <p class="t-small jz-fliess" style="margin:0;color:var(--muted)">Ein Textcode, mit dem du
+          deinen Bestand auf ein anderes Gerät bringst — ohne Konto und ohne dass die Daten
+          dabei über einen Server laufen.</p>
+        <div id="mwCodeInhalt"></div>
+      </section>
+    </div>
   </section>
 
   <section class="raum" id="raum-mehr" data-raum="mehr" aria-labelledby="h-mehr" hidden>
@@ -954,6 +1035,12 @@ function raumZeigen(id,fokus){
     if(b.closest('.bnav')||b.closest('.dnav'))b.setAttribute('aria-current',an?'page':'false');
   });
   pillSetzen();
+  /* ADR-714 Punkt 3 (V2-4 Teil B.8): Sprungfreiheit gilt fuer SICHTBARE Flaechen.
+     Wird „Meine Werte" sichtbar, friert die dann gueltige Reihenfolge ein; nachgeladene
+     Daten fuellen danach Zeilen innerhalb der Karten, sortieren aber nicht um. Beim
+     Verlassen des Raums endet der Frost — dann sieht niemand mehr zu. */
+  if(id==='werte'){if(typeof werteRendern==='function')werteRendern()}
+  else if(typeof mwFrostLoesen==='function')mwFrostLoesen();
   if(fokus){
     const h=document.querySelector('#raum-'+id+' > h2');
     if(h)h.focus({preventScroll:true});
@@ -1049,6 +1136,10 @@ async function feedsGross(){
      ADR-714 Punkt 2 von Anfang an mit seiner endgueltigen Hoehe da und wird hier lediglich
      AKTIVIERT — es kommt keine Zeile hinzu, deshalb verschiebt der Nachzug nichts. */
   radarRendern();
+  /* Dasselbe fuer „Meine Werte": quotes.json fuellt den bereits stehenden Kursblock und
+     ticker-index.json die Videozeile. Die Reihenfolge bleibt eingefroren, sobald der Raum
+     sichtbar ist — dafuer sorgt mwReihenfolge(), nicht der Aufrufzeitpunkt. */
+  werteRendern();
 }
 
 /* ===== Datenstand je Raum (§8.1: keine erfundene Frische) =======================
@@ -2152,6 +2243,298 @@ function radarRendern(){
   rdKandidatenRender();
 }
 
+/* ================================================================================
+   Raum „Meine Werte" — V2-4 (Auftrag Teile A bis D).
+   Er beantwortet EINE Frage: Was ist heute mit meinen Werten los, und wo wurde ueber
+   sie gesprochen? Gerendert wird ausschliesslich, was das lokale Bestandsmodell und
+   die bereits geladenen Feeds hergeben.
+
+   Was hier NICHT steht, steht bewusst nicht hier (ADR-906 §5, Auftrag Teil B.3):
+   kein Depotwert, keine Gewinn-/Verlustrechnung, keine Waehrungsumrechnung, kein
+   Sortierwert, keine Pseudo-Trigger und keine Aussage darueber, ob eine Position gut,
+   schlecht, riskant oder aussichtsreich ist. Ein gemischter Depotwert braeuchte
+   Wechselkurse, die kein Feed liefert — er waere eine erfundene Zahl.
+
+   Der Datenbestand selbst wird NICHT hier definiert: bstJoinAlle(), bstRelevanz(),
+   bstQuote() und alle uebrigen bst*-Funktionen stehen weiter oben und sind aus
+   index.html uebernommen. Dieser Abschnitt rendert und verwaltet, er rechnet nicht.
+   ================================================================================ */
+
+/* --- Teil A.4: zwei Quellen, zwei Staende -------------------------------------
+   Dieselbe Regel wie in „Jetzt" (Teil D.7) und „Radar" (Teil A.4): fallen die Staende
+   auf dieselbe Minute, steht eine gemeinsame Zeile; laufen sie auseinander, wird jeder
+   Stand einzeln genannt. Die Frische des juengeren Feeds darf nicht auf den aelteren
+   abfaerben. Die gemeinsame Zeile uebernimmt weiterhin standAnzeigen() ueber
+   RAUMFEEDS.werte — hier steht nur der Fall der Abweichung. */
+function mwStaendeRender(){
+  const el=document.getElementById('mwStaende'),sammel=document.querySelector('#raum-werte .stand');
+  if(!el)return;
+  const quellen=[['Kurse',QUOTES],['Videoauftritte',TICKIDX]];
+  const da=quellen.map(q=>[q[0],feedStand(q[1])]).filter(q=>!!q[1]);
+  if(da.length<2){el.textContent='';el.hidden=true;if(sammel)sammel.hidden=!sammel.textContent;return}
+  const min=Math.min.apply(null,da.map(q=>q[1].getTime()));
+  const max=Math.max.apply(null,da.map(q=>q[1].getTime()));
+  if(max-min<60000){el.textContent='';el.hidden=true;if(sammel)sammel.hidden=!sammel.textContent;return}
+  el.innerHTML=da.map(q=>'<span>'+escapeHtml(q[0])+': '+escapeHtml(jzUhr(q[1].toISOString()))+' Uhr</span>').join('');
+  el.hidden=false;
+  if(sammel)sammel.hidden=true;              // die Sammelzeile waere jetzt irrefuehrend
+}
+
+/* --- Formatierung, ausschliesslich mit den vorhandenen Helfern ---------------- */
+/* Mengen sind keine Kurse: eine ganze Stueckzahl bekommt keine Nachkommastellen,
+   eine gebrochene das deutsche Komma (§2.1). Tausendertrennzeichen bleiben nach
+   Design-System §2.1 bewusst ungeregelt und werden deshalb nicht gesetzt. */
+function mwMenge(n){return Number.isInteger(n)?String(n):rdZahl(n)}
+function mwGeld(n,waehrung){return rdZahl(n)+(waehrung?' '+escapeHtml(String(waehrung)):'')}
+
+/* --- Kursblock (Teil B.2 und E.2) ---------------------------------------------
+   ADR-714 Punkt 2: quotes.json liegt in der zweiten Welle, die Karte steht schon in
+   der ersten. Der Block wird deshalb in ALLEN Zustaenden gerendert und traegt seine
+   Hoehe aus dem eigenen CSS (.mw-kurs) — er wird nicht nachtraeglich eingefuegt.
+   Drei Zustaende, keine erfundene Zahl in keinem davon. */
+function mwKursHTML(j){
+  const k=j.kurs,pct=(k&&k.pct!=null&&isFinite(k.pct))?k.pct:null;
+  if(!k){
+    const laedt=!(QUOTES&&QUOTES.quotes);
+    /* Gleiche STRUKTUR wie der gefuellte Block, nicht nur eine gesetzte Mindesthoehe:
+       grosse Zeile plus Caption. Damit ist die Hoehe in beiden Zustaenden dieselbe —
+       auch bei veraenderter Basisschrift und bei Browser-Zoom, wo eine px-Angabe
+       auseinanderliefe. Gemessen am 10.09.2026: eine gesetzte Mindesthoehe von 2,4rem
+       ergab 38 px gegen 46 px im gefuellten Zustand und haette beim Nachzug von
+       quotes.json genau den Sprung erzeugt, den ADR-714 Punkt 2 ausschliesst. */
+    return '<span class="mw-kurs">'+
+      '<span class="jz-gross" style="color:var(--muted)">–</span>'+
+      '<span class="t-caption" style="color:var(--muted)">'+
+      (laedt?'Kurs wird geladen':'Kein Kurs im Datensatz')+'</span></span>';
+  }
+  return '<span class="mw-kurs">'+
+    '<span class="jz-gross" style="color:'+jzFarbe(pct)+'">'+(pct==null?'unbekannt':fp(pct))+'</span>'+
+    '<span class="t-caption num" style="color:var(--muted)">'+mwGeld(k.price,k.cur)+' · Tag</span>'+
+  '</span>';
+}
+
+/* --- Positionsdetails (Teil B.4) ----------------------------------------------
+   stueck und einstand werden SO angezeigt, wie sie eingegeben wurden — nie
+   multipliziert, nie verrechnet, nie summiert. Das ist keine Sparsamkeit, sondern
+   die Grenze aus ADR-906 §5: aus Menge mal Kurs entstuende ein Depotwert, aus dem
+   Vergleich mit dem Einstand eine Positionsbewertung. */
+function mwDetailsHTML(j){
+  const p=j.pos,teile=[];
+  if(p.stueck!=null)teile.push('<span class="num">'+mwMenge(p.stueck)+'</span> Stück');
+  if(p.einstand!=null)teile.push('Einstand <span class="num">'+mwGeld(p.einstand,p.waehrung)+'</span>');
+  return teile.length?'<span class="t-small" style="color:var(--muted)">'+teile.join(' · ')+'</span>':'';
+}
+
+/* --- Derivate (Teil B.4, ADR-906 §3) ------------------------------------------
+   Zwei lokale Anzeigen, beide aus reinen Nutzereingaben: Hebelwirkung und KO-Abstand.
+   Beide sind idealisierte Naeherungen ohne Spread, Aufgeld, Bezugsverhaeltnis und
+   Waehrungseffekt und tragen diese Kennzeichnung im Text, nicht nur im Kommentar.
+   Fuer Optionsscheine wird KEINE Hochrechnung gezeigt: linear ist dort schlicht
+   falsch (Volatilitaet, Restlaufzeit). Dort steht nur die Bewegung des Basiswerts. */
+function mwDerivatHTML(j){
+  const d=j.pos.derivat;
+  if(!d)return '';
+  const k=j.kurs,pct=(k&&k.pct!=null&&isFinite(k.pct))?k.pct:null;
+  const kurz=String(d.richtung||'')==='short';
+  const zeilen=[];
+  if(pct!=null){
+    if(String(d.art||'')==='optionsschein'){
+      zeilen.push('Basiswert bewegt sich <span class="num">'+fp(pct)+'</span> (Tag) — für '+
+        'Optionsscheine wird hier bewusst nicht hochgerechnet.');
+    }else if(d.hebel!=null){
+      const wirkung=pct*d.hebel*(kurz?-1:1);
+      zeilen.push('Hebelwirkung rechnerisch <span class="num">'+fp(wirkung)+'</span> (Tag, '+
+        '<span class="num">'+mwMenge(d.hebel)+'</span>-fach'+(kurz?', short':'')+')');
+    }
+  }
+  /* Der KO-Abstand braucht einen Kurs — ohne ihn entfaellt die Zeile ersatzlos. */
+  if(d.ko_schwelle!=null&&k&&isFinite(k.price)&&k.price>0){
+    const abstand=(kurz?(d.ko_schwelle-k.price):(k.price-d.ko_schwelle))/k.price*100;
+    zeilen.push('KO-Abstand <span class="num">'+fp(abstand)+'</span> zur Schwelle '+
+      '<span class="num">'+mwGeld(d.ko_schwelle,k.cur||j.pos.waehrung)+'</span>');
+  }
+  if(!zeilen.length)return '';
+  return '<div class="mw-derivat">'+
+    zeilen.map(z=>'<span class="t-small">'+z+'</span>').join('')+
+    '<span class="t-caption" style="color:var(--muted)">Idealisierte Näherung aus deinen eigenen '+
+    'Angaben — ohne Spread, Aufgeld, Bezugsverhältnis und Währungseffekt.</span>'+
+  '</div>';
+}
+
+/* --- Ereigniszeilen (Teil B.2) -------------------------------------------------
+   Termin, oberster Radar-Trigger und Kandidatenhinweis. Fehlt die Quelle, fehlt die
+   Zeile — fuer Symbole ausserhalb des Radar-Universums wird KEIN Ersatzsignal
+   erfunden (Contract `_relevanz_hinweis`). */
+function mwEreignisHTML(j){
+  const teile=[];
+  const ea=j.earn&&j.earn.naechster;
+  if(ea&&/^\d{4}-\d{2}-\d{2}$/.test(String(ea.date||''))){
+    const zeit=rdZeitText(ea.zeit);
+    teile.push('<span class="t-small">Zahlen am <span class="num">'+escapeHtml(jzTag(ea.date))+'</span>'+
+      (zeit?', '+escapeHtml(zeit):'')+'</span>');
+  }
+  if(j.trigger&&j.trigger.label){
+    teile.push('<span class="rd-trigger"><span class="t-small">'+escapeHtml(String(j.trigger.label))+'</span>'+
+      (j.trigger.value?'<span class="t-small wert num">'+escapeHtml(String(j.trigger.value))+'</span>':'')+'</span>');
+  }
+  if(j.kandidat){
+    teile.push('<span class="t-small" style="color:var(--muted)">Steht auch in den '+
+      'Beobachtungskandidaten im Radar.</span>');
+  }
+  return teile.length?'<div class="jz-liste">'+teile.join('')+'</div>':'';
+}
+
+/* --- Videoauftritte (Teil C) ---------------------------------------------------
+   Der letzte Auftritt steht auf der Karte selbst, nicht hinter einem Klick. Kanal,
+   Datum und Deeplink kommen aus ticker-index.json; die Zeitmarke wird NIE selbst
+   gebaut, sondern aus dem gelieferten url uebernommen (jzZeitmarke liest sie nur).
+   Fehlt sie, sagt der Link das auch — geraten wird nichts. */
+function mwVideoHTML(j){
+  if(!(j.auftritte&&j.auftritte.length))return '';   // Teil C.6: kein Etikett fuer „nicht besprochen"
+  return '<div class="mw-video">'+jzVideoHTML(j)+'</div>';
+}
+
+/* --- Die Positionskarte (Teil B.2) --------------------------------------------- */
+function mwKarte(j){
+  const sym=validTicker(String(j.symbol==null?'':j.symbol));
+  if(!sym)return '';                                  // ADR-025: kein unsauberes Symbol ins DOM
+  const k=j.kurs,chart=!!(k&&jzKerzenOk(k.candles));
+  const details=mwDetailsHTML(j),derivat=mwDerivatHTML(j),
+        ereignis=mwEreignisHTML(j),video=mwVideoHTML(j);
+  return '<article class="card mw-karte'+(chart?' klickbar':'')+'" data-mwsym="'+escapeHtml(sym)+'"'+
+      (chart?' data-mwchart="'+escapeHtml(sym)+'"':'')+'>'+
+    '<div class="mw-kopf">'+
+      '<span class="mw-titel">'+
+        '<span class="jz-sym">'+escapeHtml(sym)+'</span>'+
+        '<span class="t-h3">'+escapeHtml(j.name||sym)+'</span>'+
+        '<span class="t-caption" style="color:var(--muted)">'+escapeHtml(BST_TYP[j.pos.typ]||j.pos.typ||'')+'</span>'+
+      '</span>'+
+      mwKursHTML(j)+
+    '</div>'+
+    (details?'<div>'+details+'</div>':'')+
+    derivat+
+    ereignis+
+    video+
+    /* Der Chartknopf ist der zugaengliche Weg zum Dialog; der Klick auf die Karte ist
+       nur der bequeme. Beides fuehrt in dieselbe Funktion. Ohne Kursreihe gibt es
+       keinen leeren Dialog — der Knopf bleibt gesperrt und nennt den Grund. */
+    '<div><button type="button" class="ghost" data-mwchart="'+escapeHtml(sym)+'"'+
+      (chart?'':' disabled aria-disabled="true" title="'+
+        ((QUOTES&&QUOTES.quotes)?'Für diesen Wert nicht geliefert':'Kursdaten werden noch geladen')+'"')+
+      '>Kursverlauf ansehen</button></div>'+
+  '</article>';
+}
+
+/* --- Sammelzeile fuer Werte ohne Kurs (Teil B.6, ADR-906 §6) -------------------
+   Beim Seitenaufruf, beim Raumwechsel und beim Rendern geht KEINE Drittanfrage raus.
+   Der Abruf haengt an einem ausdruecklichen Klick, und der Knopf benennt VOR dem
+   Klick, dass dabei eine Anfrage an einen Drittdienst hinausgeht. Hinaus geht dabei
+   ausschliesslich das Symbol — nie Stueckzahl, Einstand oder Derivatdaten. */
+function mwOhneKursHTML(ohne){
+  if(!ohne.length)return '';
+  return '<div class="card mw-nachladen">'+
+    '<span class="t-small">Für <span class="num">'+ohne.length+'</span> '+
+      (ohne.length===1?'Wert':'Werte')+' liegt kein Kurs im Datensatz.</span>'+
+    '<span class="t-caption" style="color:var(--muted)">Beim Abruf geht das jeweilige Symbol an '+
+      'einen Kursdienst außerhalb dieser Seite. Stückzahl, Einstand und Derivatangaben '+
+      'verlassen dein Gerät nicht.</span>'+
+    '<div><button type="button" class="ghost" id="mwNachladen">Kurse abrufen (Anfrage an '+
+      'einen Drittdienst)</button></div>'+
+  '</div>';
+}
+
+/* --- Reihenfolge einfrieren (Teil B.8, ADR-714 Punkt 3) ------------------------
+   Der Raum ist beim Seitenaufruf hidden und darf beim ersten Sichtbarwerden in
+   beliebiger Reihenfolge aufbauen — niemand sieht dabei zu. Wird er sichtbar,
+   WAEHREND quotes.json oder ticker-index.json noch laufen, gilt die dann gueltige
+   Reihenfolge; nachgeladene Daten fuellen Zeilen INNERHALB der Karten, sortieren aber
+   nicht um. Der Frost endet beim Verlassen des Raums oder bei einer Bestandsaenderung. */
+/* Der Frost haengt bewusst als Eigenschaft AN der Funktion und nicht in einer
+   let-Variablen dieses Abschnitts: raumZeigen() laeuft beim Seitenaufbau einmal,
+   bevor der Rumpf dieses Scripts durchgelaufen ist, und wuerde eine let-Bindung in
+   ihrer temporalen Todeszone antreffen — der ReferenceError bricht dann das GESAMTE
+   Script ab. Funktionsdeklarationen und ihre Eigenschaften sind an dieser Stelle
+   bereits verfuegbar. Befund vom 10.09.2026, im Bug-Log festgehalten. */
+function mwFrostLoesen(){mwReihenfolge.frost=null}
+function mwReihenfolge(){
+  const l=bstJoinAlle();
+  if(!mwReihenfolge.frost){mwReihenfolge.frost=l.map(j=>j.pos.id);return l}
+  const rang={};mwReihenfolge.frost.forEach((id,i)=>{rang[id]=i});
+  /* Neue Positionen kennt der Frost nicht; sie haengen hinten an, statt die
+     bestehende Reihenfolge zu verschieben. */
+  return l.slice().sort((a,b)=>{
+    const ra=rang[a.pos.id],rb=rang[b.pos.id];
+    if(ra==null&&rb==null)return 0;
+    if(ra==null)return 1;
+    if(rb==null)return -1;
+    return ra-rb;
+  });
+}
+
+/* --- Die Liste (Teil B.1 und B.7) ---------------------------------------------- */
+function mwListeRender(){
+  const ziel=document.getElementById('mwListeInhalt'),meta=document.getElementById('mwListeMeta');
+  if(!ziel)return;
+  const pos=bstPositionen();
+  if(!pos.length){
+    /* Teil B.7: der Leerzustand ist der erste zu bauende Zustand, nicht der Randfall.
+       Kein leerer Rahmen, kein Onboarding-Assistent, keine Beispielwerte und vor allem
+       keine erfundene Musterposition — die saehe aus wie eine Empfehlung. */
+    if(meta)meta.textContent='';
+    ziel.innerHTML='<article class="card mw-leer">'+
+      '<p class="t-small jz-fliess" style="margin:0">Hier stehen später deine Werte: was heute mit '+
+        'ihnen los ist und wo in den Videoanalysen zuletzt über sie gesprochen wurde.</p>'+
+      '<p class="t-small jz-fliess" style="margin:0">Was du einträgst, bleibt ausschließlich in '+
+        'diesem Browser. Es geht in keinen Feed, kein Log und keinen Prompt.</p>'+
+      '<div><button type="button" class="ghost" data-mwspring="mwVerwaltung">Werte anlegen</button></div>'+
+    '</article>';
+    return;
+  }
+  const alle=mwReihenfolge();
+  const ohne=alle.filter(j=>!j.kurs);
+  if(meta)meta.textContent=alle.length+(alle.length===1?' Position':' Positionen')+
+    ' · Daten bleiben im Browser';
+  ziel.innerHTML='<div class="jz-grid">'+alle.map(mwKarte).join('')+'</div>'+mwOhneKursHTML(ohne);
+}
+
+/* --- Raumeinstieg -------------------------------------------------------------- */
+function werteRendern(){
+  mwStaendeRender();
+  mwListeRender();
+}
+
+/* --- Chart und Nachladen (Teil B.5 und B.6) ----------------------------------- */
+/* Den Namen liefert der vorhandene Join, nicht eine zweite Namenslogik: bstJoin()
+   kennt die Rangfolge der Quellen bereits (ticker-index, radar, earnings, candidates). */
+function mwJoinFuer(sym){
+  const l=bstPositionen();
+  for(let i=0;i<l.length;i++)if(l[i].symbol===sym)return bstJoin(l[i]);
+  return null;
+}
+function mwChartOeffnen(sym,el){
+  const s=validTicker(String(sym==null?'':sym));
+  if(!s)return;
+  const j=mwJoinFuer(s),k=j&&j.kurs,d1=k?jzKerzenOk(k.candles):null;
+  const name=(j&&j.name)||s;
+  if(!d1){jzChartFehler(name,el);return}
+  jzStkOeffnen({t:s,n:name,p:(k.pct!=null&&isFinite(k.pct))?k.pct:null,candles:{d1:d1}},el);
+}
+/* Der einzige Pfad, auf dem ein Bestandssymbol das Geraet verlaesst — und er haengt an
+   einem ausdruecklichen Klick (ADR-906 §6). Hinaus geht das Symbol, sonst nichts:
+   ywFetch() baut die Adresse allein daraus. Der Zustand des Knopfes ist der
+   Ladezustand aus Design-System §8. */
+function mwNachladenStarten(btn){
+  const symbole=bstJoinAlle().filter(j=>!j.kurs).map(j=>validTicker(j.symbol)).filter(Boolean);
+  if(!symbole.length)return;
+  btn.disabled=true;
+  btn.textContent='Kurse werden abgerufen …';
+  Promise.all(symbole.map(s=>ywFetch(s).catch(()=>null))).then(()=>{
+    mwListeRender();
+    const neu=document.getElementById('mwNachladen');
+    if(neu)neu.focus();                       // Fokus bleibt an der Stelle der Aktion
+  });
+}
+
 /* --- Charts (Teil D) ----------------------------------------------------------
    chartOpts, applyStkLevels, openStock, buildStk und closeStk stammen aus
    index.html (Zeilen 1150/1154/1180/1182/1183). openStock und buildStk sind
@@ -2369,6 +2752,23 @@ document.addEventListener('click',ev=>{
      kennt keinen Proxy-Fallback (Teil B.6). */
   const rc=t.closest('[data-rdchart]');
   if(rc){rdChartOeffnen(rc.dataset.rdchart,rc);return}
+  /* V2-4 Teil B.5: der Klick auf die Karte oeffnet denselben Dialog wie ihr Knopf.
+     Ein Klick auf einen Link, einen anderen Knopf oder einen Aufklapper INNERHALB der
+     Karte gehoert diesem Element — sonst risse der Videolink den Chart mit auf. */
+  const mwSprung=t.closest('[data-mwspring]');
+  if(mwSprung){
+    const ziel=document.getElementById(mwSprung.dataset.mwspring);
+    if(ziel){ziel.scrollIntoView({behavior:'smooth',block:'start'});
+      const h=ziel.querySelector('h3[tabindex="-1"]');if(h)h.focus({preventScroll:true})}
+    return;
+  }
+  if(t.closest('#mwNachladen')){mwNachladenStarten(t.closest('#mwNachladen'));return}
+  const mc=t.closest('[data-mwchart]');
+  if(mc){
+    const eigen=t.closest('a,button,summary,input,select,textarea');
+    if(eigen&&eigen!==mc&&!eigen.hasAttribute('data-mwchart'))return;
+    mwChartOeffnen(mc.dataset.mwchart,mc);return;
+  }
   const ix=t.closest('[data-idx]');
   if(ix){jzIndexChart(+ix.dataset.idx,ix);return}
   if(t.closest('#dtSchliessen')){dtSchliessen();return}

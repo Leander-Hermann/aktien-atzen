@@ -34,12 +34,15 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   /* V2-3 Raum „Radar" */
   'validTicker', 'jzTag', 'jzUhr', 'jzFarbe', 'bstToday', 'bstSymbole', 'rdZeitText', 'rdPrioChip',
   'rdKerzen', 'rdChartKnopfHTML', 'rdLlmHTML', 'rdSignalKarte', 'rdWochentag', 'rdTermineFenster', 'rdZahl',
-  'rdLevelsOk', 'rdLevelsHTML', 'rdKandidatKarte'];
+  'rdLevelsOk', 'rdLevelsHTML', 'rdKandidatKarte',
+  /* V2-4 Raum „Meine Werte" */
+  'jzVideoHTML', 'mwMenge', 'mwGeld', 'mwKursHTML', 'mwDetailsHTML',
+  'mwDerivatHTML', 'mwEreignisHTML', 'mwVideoHTML', 'mwKarte', 'mwOhneKursHTML'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
-const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ'];
+const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -54,7 +57,7 @@ function schneideConst(name) {
 
 /* URL gehört in die Sandbox: safeUrl prüft das Schema über new URL(...) und würde
    ohne die Klasse jede Adresse per catch verwerfen — das wäre ein Testartefakt. */
-const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL,
+const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL, j: null, TICKIDX: null,
   RADAR: null, QUOTES: null, EARN: null, CANDIDATES: null, BESTAND: null };
 vm.createContext(box);
 vm.runInContext(KONSTANTEN.map(schneideConst).join('\n') + '\n' +
@@ -362,6 +365,145 @@ gruppe('V2-3 Teil D — Kandidaten: Wortlaute, Levels-Plausibilität, kein Fib',
   /* NEGATIV: unsauberer Ticker ergibt keine Karte */
   box.k.ticker = 'A A';
   pruef('unsauberer Ticker ergibt keine Karte', vm.runInContext('rdKandidatKarte(k)', box), '');
+});
+
+/* --- V2-4 Teil B: die Positionskarte ------------------------------------------
+   Gebaut werden Join-Objekte in der Form, die bstJoin() liefert; geprueft wird das
+   gerenderte HTML. Jede Zusage aus Teil B.2 bis B.4 hat hier einen positiven und
+   mindestens einen negativen Fall. */
+function mwJoin(over) {
+  return Object.assign({
+    pos: { id: 'p1', symbol: 'AAA', typ: 'aktie', added_at: '2026-09-10' },
+    symbol: 'AAA', name: 'Alpha AG', kurs: null, radar: null, trigger: null,
+    earn: { naechster: null, letzter: null, tage: null }, auftritte: [],
+    neuerAuftritt: false, kandidat: null
+  }, over || {});
+}
+const KURS = { price: 83.1, cur: 'EUR', pct: 6.47, candles: [
+  { time: 1, open: 1, high: 2, low: 0.5, close: 1.5 }, { time: 2, open: 1.5, high: 2, low: 1, close: 1.8 }], quelle: 'feed' };
+
+gruppe('V2-4 Teil B — Positionskarte: kein Depotwert, kein Sortierwert, kein Pseudo-Trigger', () => {
+  box.QUOTES = { quotes: { AAA: { price: 83.1 } } };
+  box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'aktie', stueck: 25, einstand: 118.4, waehrung: 'USD', added_at: '2026-09-10' },
+    kurs: KURS,
+    trigger: { type: 'large_move', label: 'Starke Kursbewegung', value: '+6,5 %', weight: 30 },
+    earn: { naechster: { date: '2026-09-14', zeit: 'amc', ticker: 'AAA' }, letzter: null, tage: 4 },
+    kandidat: { ticker: 'AAA', name: 'Alpha AG' } });
+  const h = vm.runInContext('mwKarte(j)', box);
+  pruef('Name, Symbol und Art als deutscher Klartext', /Alpha AG/.test(h) && /AAA/.test(h) && /Aktie/.test(h), true);
+  pruef('Kurs mit Waehrung und deutschem Komma', /83,10 EUR/.test(h), true);
+  pruef('Prozentwert mit Bezugszeitraum', /\+6,47 %/.test(h) && /· Tag/.test(h), true);
+  pruef('Stueckzahl unveraendert, ohne Nachkommastellen', />25<\/span> Stück/.test(h), true);
+  pruef('Einstand mit eigener Waehrung', /Einstand <span class="num">118,40 USD/.test(h), true);
+  pruef('Termin als deutscher Klartext', /Zahlen am <span class="num">14\.09\.2026/.test(h) && /nach Handelsschluss/.test(h), true);
+  pruef('oberster Trigger als Label-Wert-Paar', /Starke Kursbewegung/.test(h) && /\+6,5 %/.test(h), true);
+  pruef('Kandidatenhinweis ohne Wertung', /Steht auch in den Beobachtungskandidaten/.test(h), true);
+  /* NEGATIV (Teil B.3): kein Depotwert, keine Verrechnung mit dem Einstand.
+     25 x 118,40 = 2960; 25 x 83,10 = 2077,50; (83,10-118,40)/118,40 = -29,81 %. */
+  pruef('kein Produkt aus stueck und einstand', /2\.?960/.test(h), false);
+  pruef('kein Produkt aus stueck und Kurs', /2\.?077/.test(h), false);
+  pruef('kein Prozentwert gegen den Einstand', /-29,8|−29,8/.test(h), false);
+  pruef('keine Summenzeile', /Gesamt|Depotwert|Gesamtwert|Summe/i.test(h), false);
+  /* NEGATIV (Teil B.3): der Sortierwert erscheint nirgends. Der konstruierte Radar-Score
+     ergibt eine unverwechselbare Zahl — 8731 + 20 (eigene Position) = 8751. */
+  box.j = mwJoin({ radar: { symbol: 'AAA', score: 8731 }, kurs: KURS });
+  const sortier = vm.runInContext('mwKarte(j)', box);
+  pruef('weder Score noch Sortierwert im DOM', /8731|8751/.test(sortier), false);
+  pruef('das Wort Score kommt nicht vor', /score/i.test(sortier), false);
+  /* NEGATIV (Teil B.3): ohne Radar-Item kein erfundener Trigger. */
+  box.j = mwJoin({ kurs: KURS });
+  const ohneRadar = vm.runInContext('mwKarte(j)', box);
+  pruef('ohne Radar-Item keine Triggerzeile', /rd-trigger/.test(ohneRadar), false);
+  pruef('ohne Termin keine Terminzeile', /Zahlen am/.test(ohneRadar), false);
+  pruef('ohne Kandidateneintrag kein Hinweis', /Beobachtungskandidaten/.test(ohneRadar), false);
+  /* NEGATIV (ADR-025): unsauberes Symbol ergibt gar keine Karte, Feedinhalt wird geescapet. */
+  box.j = mwJoin({ symbol: 'AA<script>', pos: { id: 'p1', symbol: 'AA<script>', typ: 'aktie', added_at: '2026-09-10' } });
+  pruef('unsauberes Symbol ergibt keine Karte', vm.runInContext('mwKarte(j)', box), '');
+  box.j = mwJoin({ name: '<img src=x onerror=alert(1)>', kurs: KURS,
+    trigger: { label: '<b>x</b>', value: '"y"' } });
+  const esc = vm.runInContext('mwKarte(j)', box);
+  pruef('Name geescapet', /&lt;img/.test(esc) && !/<img/.test(esc), true);
+  pruef('Triggerlabel geescapet', /&lt;b&gt;x&lt;\/b&gt;/.test(esc), true);
+});
+
+gruppe('V2-4 Teil B.4 — Derivate: Naeherung gekennzeichnet, kein Optionsschein-Hochrechnen', () => {
+  box.QUOTES = { quotes: { AAA: { price: 83.1 } } };
+  /* Knockout long, Hebel 8,5: 6,47 % x 8,5 = 54,995 %, gerundet 54,99 % (toFixed rundet die Gleitkommazahl ab). KO bei 60: (83,10-60)/83,10 = 27,80 %. */
+  box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
+    derivat: { art: 'knockout', richtung: 'long', hebel: 8.5, ko_schwelle: 60 } }, kurs: KURS });
+  const ko = vm.runInContext('mwKarte(j)', box);
+  pruef('Hebelwirkung rechnerisch ausgewiesen', /Hebelwirkung rechnerisch <span class="num">\+54,99 %/.test(ko), true);
+  pruef('KO-Abstand ausgewiesen', /KO-Abstand <span class="num">\+27,80 %/.test(ko), true);
+  pruef('beide als idealisierte Naeherung gekennzeichnet',
+    /Idealisierte Näherung[\s\S]*ohne Spread, Aufgeld, Bezugsverhältnis und Währungseffekt/.test(ko), true);
+  /* Short dreht die Wirkung um und misst den KO-Abstand nach oben. */
+  box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
+    derivat: { art: 'knockout', richtung: 'short', hebel: 8.5, ko_schwelle: 100 } }, kurs: KURS });
+  const kurz = vm.runInContext('mwKarte(j)', box);
+  pruef('short kehrt die Hebelwirkung um', /Hebelwirkung rechnerisch <span class="num">-54,99 %/.test(kurz), true);
+  pruef('short misst den KO-Abstand nach oben', /KO-Abstand <span class="num">\+20,34 %/.test(kurz), true);
+  /* NEGATIV (Teil B.4, ADR-906 §3): fuer Optionsscheine wird NICHT hochgerechnet. */
+  box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
+    derivat: { art: 'optionsschein', richtung: 'long', hebel: 8.5, ko_schwelle: 60 } }, kurs: KURS });
+  const os = vm.runInContext('mwKarte(j)', box);
+  pruef('Optionsschein ohne Hochrechnung', /Hebelwirkung/.test(os), false);
+  pruef('Optionsschein ohne den hochgerechneten Wert', /54,99 %/.test(os), false);
+  pruef('Optionsschein nennt nur die Bewegung des Basiswerts',
+    /Basiswert bewegt sich <span class="num">\+6,47 %/.test(os), true);
+  /* NEGATIV: ohne Kurs kein KO-Abstand und keine Hebelwirkung. */
+  box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
+    derivat: { art: 'knockout', richtung: 'long', hebel: 8.5, ko_schwelle: 60 } }, kurs: null });
+  const ohneKurs = vm.runInContext('mwKarte(j)', box);
+  pruef('ohne Kurs keine KO-Zeile', /KO-Abstand/.test(ohneKurs), false);
+  pruef('ohne Kurs keine Hebelzeile', /Hebelwirkung/.test(ohneKurs), false);
+  pruef('ohne Kurs auch kein Naeherungshinweis', /Idealisierte Näherung/.test(ohneKurs), false);
+  /* NEGATIV: fehlen hebel und ko_schwelle, entfaellt der Block ersatzlos. */
+  box.j = mwJoin({ pos: { id: 'p1', symbol: 'AAA', typ: 'derivat', added_at: '2026-09-10',
+    derivat: { art: 'knockout', richtung: 'long' } }, kurs: KURS });
+  pruef('ohne hebel und ko_schwelle kein Derivatblock',
+    /mw-derivat/.test(vm.runInContext('mwKarte(j)', box)), false);
+});
+
+gruppe('V2-4 Teile B.5 bis B.8 — Kursblock, Chartzugang, Sammelzeile, Leerzustand', () => {
+  /* ADR-714 Punkt 2: der Kursblock steht in ALLEN drei Zustaenden und wird nur gefuellt. */
+  box.QUOTES = null;
+  box.j = mwJoin({ kurs: null });
+  const laedt = vm.runInContext('mwKarte(j)', box);
+  box.QUOTES = { quotes: {} };
+  const leer = vm.runInContext('mwKarte(j)', box);
+  box.QUOTES = { quotes: { AAA: { price: 83.1 } } };
+  box.j = mwJoin({ kurs: KURS });
+  const voll = vm.runInContext('mwKarte(j)', box);
+  pruef('Kursblock in allen drei Zustaenden vorhanden',
+    [laedt, leer, voll].map(h => /class="mw-kurs"/.test(h)), [true, true, true]);
+  pruef('vor dem Eintreffen wird der Ladezustand benannt', /Kurs wird geladen/.test(laedt), true);
+  pruef('nach dem Eintreffen ohne Abdeckung: ehrliche Leermeldung', /Kein Kurs im Datensatz/.test(leer), true);
+  /* ADR-714 Punkt 2: der leere Block traegt dieselbe Struktur wie der gefuellte — grosse
+     Zeile plus Caption — damit seine Hoehe beim Nachzug nicht springt. Geprueft wird
+     deshalb die Struktur UND dass darin keine Zahl und keine Waehrung steht. */
+  const kursblock = h => { const i = h.indexOf('<span class="mw-kurs">'); return i < 0 ? '' : h.slice(i, h.indexOf('</div>', i)); };
+  pruef('kein erfundener Kurs im Leerfall', /[0-9]|EUR|USD/.test(kursblock(leer)), false);
+  pruef('Kursblock in allen Zustaenden strukturgleich aufgebaut',
+    [laedt, leer, voll].map(h => /jz-gross/.test(kursblock(h)) && /t-caption/.test(kursblock(h))),
+    [true, true, true]);
+  /* Teil B.5: klickbar nur mit Kursreihe, sonst kein leerer Dialog. */
+  pruef('mit Kursreihe ist die Karte klickbar', /data-mwchart="AAA"/.test(voll) && /klickbar/.test(voll), true);
+  pruef('ohne Kursreihe ist die Karte nicht klickbar',
+    /class="card mw-karte klickbar"/.test(leer), false);
+  pruef('der Chartknopf steht trotzdem und nennt den Grund',
+    /data-mwchart="AAA" disabled aria-disabled="true" title="Für diesen Wert nicht geliefert"/.test(leer), true);
+  pruef('vor dem Eintreffen nennt der Knopf den Ladegrund',
+    /disabled aria-disabled="true" title="Kursdaten werden noch geladen"/.test(laedt), true);
+  /* Teil B.6: die Sammelzeile nennt die Zahl und die Drittanfrage VOR dem Klick. */
+  const sammel = vm.runInContext('mwOhneKursHTML([{},{},{}])', box);
+  pruef('Sammelzeile mit Zahl', /Für <span class="num">3<\/span> Werte liegt kein Kurs im Datensatz\./.test(sammel), true);
+  pruef('Einzahl bei genau einem Wert', /<\/span> Wert liegt/.test(vm.runInContext('mwOhneKursHTML([{}])', box)), true);
+  pruef('die Drittanfrage steht vor dem Klick am Knopf',
+    /Kurse abrufen \(Anfrage an einen Drittdienst\)/.test(sammel), true);
+  pruef('was NICHT hinausgeht, steht auch dort',
+    /Stückzahl, Einstand und Derivatangaben verlassen dein Gerät nicht/.test(sammel), true);
+  /* NEGATIV: ohne fehlende Kurse gibt es die Zeile gar nicht. */
+  pruef('ohne fehlende Kurse keine Sammelzeile', vm.runInContext('mwOhneKursHTML([])', box), '');
 });
 
 console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +
