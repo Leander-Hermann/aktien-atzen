@@ -1255,7 +1255,10 @@ async function feedsGross(){
   radarRendern();
   /* Dasselbe fuer „Meine Werte": quotes.json fuellt den bereits stehenden Kursblock und
      ticker-index.json die Videozeile. Die Reihenfolge bleibt eingefroren, sobald der Raum
-     sichtbar ist — dafuer sorgt mwReihenfolge(), nicht der Aufrufzeitpunkt. */
+     sichtbar ist — dafuer sorgt mwReihenfolge(), nicht der Aufrufzeitpunkt.
+     Kennt kein Feed den Namen eines Bestandswerts, wird vorher die Symbolliste geholt —
+     ein Nachzug statt zwei. */
+  await mwSymboleBeiBedarf();
   werteRendern();
 }
 
@@ -1496,7 +1499,7 @@ function bstJoin(p){
   const sym=p.symbol;
   const r=radarItem(sym),auf=bstAuftritte(sym),ea=bstEarnings(sym),ka=bstKandidat(sym),ku=bstQuote(sym);
   const neu=!!(BST_LETZTER_BESUCH&&auf.liste.length&&auf.liste[0].date>BST_LETZTER_BESUCH);
-  const name=auf.name||(r&&r.name)||(ea.naechster&&ea.naechster.name)||(ea.letzter&&ea.letzter.name)||(ka&&ka.name)||'';
+  const name=auf.name||(r&&r.name)||(ea.naechster&&ea.naechster.name)||(ea.letzter&&ea.letzter.name)||(ka&&ka.name)||mwListenName(sym)||'';
   return {pos:p,symbol:sym,name:name,kurs:ku,radar:r,trigger:radarTopTrigger(r),
     earn:ea,auftritte:auf.liste,neuerAuftritt:neu,kandidat:ka};
 }
@@ -2852,10 +2855,64 @@ function mwListeRender(){
    nirgendwohin — sie wird nur lokal verglichen (ADR-906 §1).
    ================================================================================ */
 let MW_INDEX=null,MW_INDEX_STAND=0;
+
+/* --- Symbolliste (stammdaten/symbole.json; Nutzerentscheid 11.09.2026) -----------
+   13.091 US-Wertpapiere aus den SEC- und Nasdaq-Listen, erzeugt mit tools/symbole_bauen.cjs
+   (Quellen und Ausschlüsse stehen dort). Sie ist Sucheingabe-Hilfe wie MW_ALIAS, nur
+   grösser: Sie sagt, WELCHES Symbol der Nutzer meint, liefert aber weder Kurs noch
+   Auftritte — „Nu Holdings" wird zu NU, mehr nicht.
+   Geladen wird sie erst, wenn sie gebraucht wird: beim ersten Fokus im Suchfeld oder wenn
+   der Bestand ein Symbol trägt, das kein Feed benennen kann (757 KB roh, 167 KB gzip —
+   nach ADR-714 eine eigene Welle nach Bedarf, nie Teil der ersten). Sie liegt ausserhalb
+   von data/, weil data/ die Feeds des Contracts trägt; diese Datei erzeugt das Frontend.
+   Der Zustand hängt an der Funktion, nicht an einer let-Variablen: raumZeigen() läuft beim
+   Start VOR diesem Block (Bug-Log 10.09., TDZ). */
+function mwSymbole(){return mwSymbole.liste||null}
+mwSymbole.liste=null;mwSymbole.map=null;mwSymbole.stand=0;   // 0 nicht angefordert, 1 lädt, 2 da, 3 fehlgeschlagen
+mwSymbole.laden=null;mwSymbole.fehlteName=false;
+/* Hauptbörsen vor Nebenplätzen vor OTC — nur ein Gleichstandsbrecher, keine Bewertung. */
+const MW_BOERSE_RANG={'':0,Nasdaq:0,NYSE:0,'NYSE American':1,'NYSE Arca':1,'Cboe BZX':1,Cboe:1,OTC:2};
+/* Fail-closed: eine Datei, die nicht exakt dem erwarteten Schema folgt, wird verworfen —
+   dann sucht die Seite weiter nur in den Feeds (ADR-025, design-system.md §8.1). */
+function mwSymboleOk(j){
+  if(!j||typeof j!=='object'||!Array.isArray(j.eintraege)||!j.eintraege.length)return false;
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(String(j.stand||'')))return false;
+  return j.eintraege.every(e=>Array.isArray(e)&&e.length>=4&&typeof e[0]==='string'&&
+    validTicker(e[0])===e[0]&&typeof e[1]==='string'&&typeof e[2]==='string'&&
+    (e[3]==='aktie'||e[3]==='etf'));
+}
+function mwSymboleLaden(){
+  if(mwSymbole.stand)return mwSymbole.laden||Promise.resolve();
+  mwSymbole.stand=1;
+  mwSymbole.laden=(async()=>{
+    try{
+      const r=await fetch('stammdaten/symbole.json',{cache:'no-store'});
+      const j=r.ok?await r.json():null;
+      if(mwSymboleOk(j)){
+        const m={};j.eintraege.forEach(e=>{m[e[0]]=e});
+        mwSymbole.liste=j.eintraege;mwSymbole.map=m;mwSymbole.stand=2;
+      }else mwSymbole.stand=3;
+    }catch(e){mwSymbole.stand=3}
+    /* Eine offene Suche läuft mit der grösseren Liste weiter — ohne erneutes Tippen. */
+    const feld=document.getElementById('mwSym');
+    if(mwSymbole.stand===2&&feld&&String(feld.value||'').trim()&&document.activeElement===feld)mwListeZeigen();
+  })();
+  return mwSymbole.laden;
+}
+function mwListenName(sym){const e=mwSymbole.map&&mwSymbole.map[sym];return e?e[1]:''}
+/* Trägt der Bestand ein Symbol, das kein Feed benennen kann, kommt die Liste im selben
+   Nachzug wie die grossen Feeds — feedsGross() wartet darauf, damit der Name nicht als
+   dritter Sprung nachrückt. */
+function mwSymboleBeiBedarf(){
+  const ohne=bstPositionen().some(p=>!bstJoin(p).name);
+  if(!ohne)return Promise.resolve();
+  mwSymbole.fehlteName=true;
+  return mwSymboleLaden();
+}
 /* Der Index wird verworfen, sobald ein neuer Feed eingetroffen ist; gemessen wird das
    an der Zahl der geladenen Quellen, nicht an einem Zeitstempel. */
 function mwIndexStand(){
-  return (TICKIDX?1:0)+(QUOTES?2:0)+(RADAR?4:0)+(EARN?8:0)+(CANDIDATES?16:0);
+  return (TICKIDX?1:0)+(QUOTES?2:0)+(RADAR?4:0)+(EARN?8:0)+(CANDIDATES?16:0)+(mwSymbole.stand===2?32:0);
 }
 function mwIndex(){
   const stand=mwIndexStand();
@@ -2873,8 +2930,14 @@ function mwIndex(){
   if(EARN&&Array.isArray(EARN.eintraege))EARN.eintraege.forEach(e=>e&&merke(e.ticker,e.name));
   if(CANDIDATES&&Array.isArray(CANDIDATES.items))CANDIDATES.items.forEach(i=>i&&merke(i.ticker,i.name));
   if(QUOTES&&QUOTES.quotes)Object.keys(QUOTES.quotes).forEach(s=>merke(s,''));
+  /* Zuletzt die Symbolliste: Sie ergänzt nur, was die Feeds nicht kennen, und benennt
+     Symbole, die ohne Namen aus quotes.json kamen. */
+  const liste=mwSymbole();
+  if(liste)liste.forEach(e=>merke(e[0],e[1]));
   MW_INDEX=Object.keys(map).map(s=>{
     const e=map[s];
+    const l=mwSymbole.map?mwSymbole.map[s]:null;
+    e.boerse=l?l[2]:'';e.typ=l?l[3]:'';
     e.kurs=!!(QUOTES&&QUOTES.quotes&&QUOTES.quotes[s]);
     e.auftritte=(TICKIDX&&TICKIDX.ticker&&TICKIDX.ticker[s]&&TICKIDX.ticker[s].auftritte)?TICKIDX.ticker[s].auftritte.length:0;
     e.such=(e.symbol+' '+e.name).toLowerCase();
@@ -2898,13 +2961,18 @@ const MW_ALIAS={google:'GOOGL',alphabet:'GOOGL',facebook:'META',fb:'META'};
 /* Rangfolge, bewusst einfach und erklaerbar statt „intelligent": exakte Symbolgleichheit,
    dann Symbolanfang, dann Namensanfang, dann Wortanfang im Namen, dann irgendwo enthalten.
    Bei Gleichstand entscheidet die Datenlage (Auftritte, dann Kurs) und zuletzt das Alphabet —
-   so steht bei „sap" die Notierung oben, zu der es auch wirklich etwas zu zeigen gibt. */
-function mwTrefferRang(e,q){
+   so steht bei „sap" die Notierung oben, zu der es auch wirklich etwas zu zeigen gibt.
+   Seit der Symbolliste (11.09.) bilden exakte Gleichheit und Symbolanfang EINE Stufe, in der
+   die Datenlage vor der Exaktheit zaehlt: „sap" trifft jetzt auch das NYSE-Kuerzel SAP exakt —
+   oben stehen soll aber SAP.DE mit Kurs und Auftritten, nicht die Zweitnotierung ohne beides.
+   Ohne Datenunterschied gewinnt weiterhin das exakte Symbol (NU vor NUE). */
+function mwWortanfang(q){return new RegExp('(^|[^a-z0-9])'+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'))}
+function mwTrefferRang(e,q,re){
   const sym=e.symbol.toLowerCase(),name=(e.name||'').toLowerCase();
   if(sym===q)return 0;
   if(sym.indexOf(q)===0)return 1;
   if(name.indexOf(q)===0)return 2;
-  if(new RegExp('(^|[^a-z0-9])'+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).test(name))return 3;
+  if((re||mwWortanfang(q)).test(name))return 3;
   if(e.such.indexOf(q)>-1)return 4;
   return -1;
 }
@@ -2912,15 +2980,20 @@ function mwSuche(roh,deckel){
   const q=String(roh==null?'':roh).trim().toLowerCase();
   if(q.length<1)return [];
   const alias=MW_ALIAS[q]||null;
+  const re=mwWortanfang(q);
   const out=[];
   mwIndex().forEach(e=>{
     /* Ein Aliastreffer zaehlt wie ein Symbolanfang — nie besser als eine echte
        Uebereinstimmung, damit eine exakte Eingabe immer gewinnt. */
-    const r=(alias&&e.symbol===alias)?1:mwTrefferRang(e,q);
+    const r=(alias&&e.symbol===alias)?1:mwTrefferRang(e,q,re);
     if(r>=0)out.push({e:e,r:r});
   });
-  out.sort((a,b)=>a.r-b.r||b.e.auftritte-a.e.auftritte||
-    (b.e.kurs?1:0)-(a.e.kurs?1:0)||a.e.symbol.localeCompare(b.e.symbol));
+  /* Nach Textrang und Datenlage: Aktie vor ETF, Hauptbörse vor OTC — so steht bei „sap"
+     die Xetra-Notierung mit Kurs und Auftritten vor der NYSE-Zweitnotierung ohne beides. */
+  const br=e=>MW_BOERSE_RANG[e.boerse||'']!=null?MW_BOERSE_RANG[e.boerse||'']:1;
+  out.sort((a,b)=>Math.max(a.r,1)-Math.max(b.r,1)||b.e.auftritte-a.e.auftritte||
+    (b.e.kurs?1:0)-(a.e.kurs?1:0)||a.r-b.r||(a.e.typ==='etf'?1:0)-(b.e.typ==='etf'?1:0)||
+    br(a.e)-br(b.e)||a.e.symbol.localeCompare(b.e.symbol));
   return out.slice(0,deckel||8).map(x=>x.e);
 }
 
@@ -2939,6 +3012,7 @@ function mwHervor(text,q){
    Videoauftritte gibt. Genau daran haette der Nutzer „GOOG" von „GOOGL" unterschieden. */
 function mwTrefferHinweis(e){
   const t=[];
+  if(e.boerse)t.push(e.boerse+(e.typ==='etf'?' · ETF':''));
   if(e.auftritte)t.push(e.auftritte===1?'1 Videoauftritt':e.auftritte+' Videoauftritte');
   if(e.kurs)t.push('Kurs vorhanden');
   return t.join(' · ');
@@ -2993,6 +3067,10 @@ function mwListeSchliessen(){
 function mwListeZeigen(){
   const feld=document.getElementById('mwSym'),liste=document.getElementById('mwVorschlaege');
   if(!feld||!liste)return;
+  /* Der Fokus hat die Symbolliste schon angefordert; falls sein Ereignis ausblieb (Fokus per
+     Skript in einem unfokussierten Dokument loest keines aus), holt der erste Tastendruck
+     es nach. Der Aufruf ist idempotent und kostet ohne Bedarf nichts. */
+  mwSymboleLaden();
   /* Nur der Teil NACH dem letzten Komma wird gesucht — so bleibt die alte
      kommagetrennte Eingabe bedienbar, ohne die Suche zu verwirren. */
   const roh=String(feld.value||'');
@@ -3038,6 +3116,9 @@ function mwUebernehmen(sym){
   if(!treffer)mwMeldung('mwFormMeldung','Zu „'+bstNormEingabe(gewaehlt)+
     '" liegen derzeit weder Kurse noch Videoauftritte vor. Anlegen kannst du den Wert '+
     'trotzdem — die Karte bleibt dann vorerst leer.','warn');
+  else if(!treffer.kurs&&!treffer.auftritte)mwMeldung('mwFormMeldung','„'+treffer.symbol+'" ('+
+    (treffer.name||'ohne Namen')+') ist bekannt, aber es liegen derzeit weder Kurse noch '+
+    'Videoauftritte vor. Den Kurs kannst du nach dem Anlegen auf der Karte abrufen.','warn');
   else mwMeldung('mwFormMeldung','','');
   feld.focus();
   return true;
@@ -3239,6 +3320,7 @@ function mwVerwaltungRender(){
      dann greifen, wenn die Liste gerade neu gezeichnet wird. */
   const feld=document.getElementById('mwSym');
   if(feld){
+    feld.addEventListener('focus',()=>{mwSymboleLaden()});
     feld.addEventListener('input',mwListeZeigen);
     feld.addEventListener('keydown',ev=>{
       if(ev.key==='ArrowDown'){ev.preventDefault();if(!MW_TREFFER.length)mwListeZeigen();else mwListeBewegen(1);return}

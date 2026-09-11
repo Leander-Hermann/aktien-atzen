@@ -44,13 +44,15 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   'mwFormularHTML', 'mwBestandslisteHTML', 'mwCodeRender',
   /* Symbolsuche (Nutzeranweisung 10.09.) */
   'mwIndexStand', 'mwIndex', 'mwTrefferRang', 'mwSuche', 'mwHervor',
-  'mwTrefferHinweis', 'mwVorschlagHTML'];
+  'mwTrefferHinweis', 'mwVorschlagHTML',
+  /* Symbolliste (Nutzerentscheid 11.09.) — mwSymbole traegt seinen Zustand als Eigenschaften */
+  'mwSymbole', 'mwSymboleOk', 'mwListenName', 'mwWortanfang'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
-  'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE'];
+  'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -818,6 +820,113 @@ gruppe('V2-4 Nachtrag — Sparkline zeigt Verlauf ohne Deutung, Detail traegt di
   /* NEGATIV (ADR-025): unsauberes Symbol ergibt kein Detail. */
   box.j = mwJoin({ symbol: 'AA<script>' });
   pruef('unsauberes Symbol ergibt kein Detail', vm.runInContext('mwDetailInhaltHTML(j)', box), '');
+});
+
+/* --- Symbolliste (Nutzerentscheid 11.09.2026: US komplett plus Feeds) --------------
+   Die Liste ist eine Sucheingabe-Hilfe: Sie sagt, welches Symbol gemeint ist, liefert aber
+   weder Kurs noch Auftritte. Geprueft wird die AUSGELIEFERTE Datei (Schema, Umfang,
+   Ausschluesse), das Fail-closed beim Laden, die Rangfolge mit der Liste und dass die
+   Liste nie in der ersten Ladewelle steht (ADR-714). */
+gruppe('V2-4 Nachtrag — Symbolliste: Nu Holdings wird gefunden, Feeds behalten Vorrang, Datei faellt geschlossen aus', () => {
+  const datei = path.join(__dirname, '..', '..', 'stammdaten', 'symbole.json');
+  pruef('stammdaten/symbole.json liegt vor', fs.existsSync(datei), true);
+  const roh = JSON.parse(fs.readFileSync(datei, 'utf8'));
+  box.J = roh;
+  pruef('Datei besteht die Schemapruefung', vm.runInContext('mwSymboleOk(J)', box), true);
+  pruef('Stand ist ein Datum', /^\d{4}-\d{2}-\d{2}$/.test(roh.stand), true);
+  pruef('Quellen sind benannt (SEC und Nasdaq)',
+    roh.quellen.length === 2 && /sec\.gov/.test(roh.quellen[0]) && /nasdaqtrader/.test(roh.quellen[1]), true);
+  pruef('mindestens 10.000 Eintraege', roh.eintraege.length >= 10000, true);
+  const nu = roh.eintraege.filter(e => e[0] === 'NU')[0];
+  pruef('NU steht als Nu Holdings Ltd. an der NYSE darin', nu, ['NU', 'Nu Holdings Ltd.', 'NYSE', 'aktie']);
+  pruef('Symbole folgen der Kurskonvention (BRK-B, nicht BRK.B)',
+    roh.eintraege.some(e => e[0] === 'BRK-B') && !roh.eintraege.some(e => /\./.test(e[0])), true);
+  pruef('kein Symbol ausserhalb des Musters',
+    roh.eintraege.filter(e => !/^[A-Z]{1,5}(-[A-Z])?$/.test(e[0])).length, 0);
+  pruef('keine doppelten Symbole', new Set(roh.eintraege.map(e => e[0])).size, roh.eintraege.length);
+  pruef('ETFs sind gekennzeichnet', roh.eintraege.filter(e => e[3] === 'etf').length > 1000, true);
+  /* NEGATIV: Gattungen, die kein Nutzer als Wert anlegt, sind draussen. */
+  pruef('keine Optionsscheine, Rechte, Units, Vorzuege, Anleihen',
+    roh.eintraege.filter(e => /\b(warrants?|rights?|units?|preferred|notes? due|debentures?)\b/i.test(e[1])).length, 0);
+  pruef('OTC-Zweitnotierung SAPGF ist draussen, SAP (NYSE) drin',
+    [roh.eintraege.some(e => e[0] === 'SAPGF'), roh.eintraege.some(e => e[0] === 'SAP')], [false, true]);
+  pruef('Namen tragen keine Gattungszusaetze mehr',
+    roh.eintraege.filter(e => / (Common|Ordinary) (Stock|Shares)$/.test(e[1])).length, 0);
+  pruef('Namen tragen kein Markup', roh.eintraege.filter(e => /[<>]/.test(e[1])).length, 0);
+  /* NEGATIV: Nasdaq-Optionsscheine (fuenfter Buchstabe W/R/U zum Stammsymbol) kommen auch
+     ueber die SEC-Liste nicht unter dem Firmennamen zurueck — NUAIW war der Fund vom 11.09. */
+  const symbole = new Set(roh.eintraege.map(e => e[0]));
+  pruef('keine Optionsscheine/Units/Rechte zu vorhandenen Stammsymbolen',
+    roh.eintraege.filter(e => /^[A-Z]{4}[WRU]$/.test(e[0]) && symbole.has(e[0].slice(0, 4))).length, 0);
+  pruef('NUAIW ist draussen, NUAI drin', [symbole.has('NUAIW'), symbole.has('NUAI')], [false, true]);
+
+  /* NEGATIV: Fail-closed beim Laden — jede Abweichung vom Schema verwirft die Datei. */
+  const ok = j => { box.J = j; return vm.runInContext('mwSymboleOk(J)', box); };
+  pruef('ohne Stand verworfen', ok({ eintraege: [['NU', 'Nu', 'NYSE', 'aktie']] }), false);
+  pruef('leere Liste verworfen', ok({ stand: '2026-09-11', eintraege: [] }), false);
+  pruef('Eintrag mit Markup im Symbol verworfen', ok({ stand: '2026-09-11', eintraege: [['<b>', 'x', 'NYSE', 'aktie']] }), false);
+  pruef('Eintrag mit kleingeschriebenem Symbol verworfen', ok({ stand: '2026-09-11', eintraege: [['nu', 'x', 'NYSE', 'aktie']] }), false);
+  pruef('unbekannte Gattung verworfen', ok({ stand: '2026-09-11', eintraege: [['NU', 'x', 'NYSE', 'option']] }), false);
+  pruef('kein Objekt verworfen', ok([['NU', 'x', 'NYSE', 'aktie']]), false);
+  pruef('sauberer Eintrag angenommen', ok({ stand: '2026-09-11', eintraege: [['NU', 'x', 'NYSE', 'aktie']] }), true);
+
+  /* Rangfolge mit einer kleinen Liste neben den Feeds. */
+  box.TICKIDX = { ticker: {
+    AMZN: { name: 'Amazon.com, Inc.', auftritte: [{ date: '2026-09-08' }, { date: '2026-09-07' }] },
+    'SAP.DE': { name: 'SAP', auftritte: [{ date: '2026-09-05' }] }
+  } };
+  box.QUOTES = { quotes: { AMZN: { price: 1 } } };
+  box.RADAR = null; box.EARN = null; box.CANDIDATES = null;
+  const liste = [['AMZN', 'Amazon.com, Inc.', 'Nasdaq', 'aktie'], ['NU', 'Nu Holdings Ltd.', 'NYSE', 'aktie'],
+    ['NUE', 'Nucor Corporation', 'NYSE', 'aktie'], ['NUX', 'Nux Corp', 'NYSE Arca', 'aktie'],
+    ['NUO', 'Nuo Inc', 'OTC', 'aktie'], ['NUSI', 'Nationwide Nasdaq-100 Income ETF', 'Nasdaq', 'etf'],
+    ['SAP', 'SAP SE', 'NYSE', 'aktie']];
+  const setzen = l => { box.L = l; vm.runInContext(
+    'MW_INDEX=null;MW_INDEX_STAND=-1;mwSymbole.liste=L;mwSymbole.stand=L?2:0;' +
+    'mwSymbole.map=L?Object.fromEntries(L.map(e=>[e[0],e])):null', box); };
+  const treffer = q => vm.runInContext('mwSuche(' + JSON.stringify(q) + ',8).map(e=>e.symbol)', box);
+  /* NEGATIV zuerst: ohne Liste gibt es Nu Holdings nicht — die Liste ist die Quelle. */
+  setzen(null);
+  pruef('ohne Liste findet „nu holdings" nichts', treffer('nu holdings'), []);
+  const standOhne = vm.runInContext('mwIndexStand()', box);
+  setzen(liste);
+  pruef('Indexzustand aendert sich mit der Liste', vm.runInContext('mwIndexStand()', box) - standOhne, 32);
+  pruef('„nu holdings" findet NU', treffer('nu holdings')[0], 'NU');
+  pruef('„nu" reiht exakt, dann Aktien nach Boersenrang, dann ETF',
+    treffer('nu').slice(0, 5), ['NU', 'NUE', 'NUX', 'NUO', 'NUSI']);
+  pruef('„sap": Feed-Notierung mit Auftritten steht vor der Listen-Zweitnotierung', treffer('sap'), ['SAP.DE', 'SAP']);
+  pruef('„amazon" bleibt AMZN, Feedname behaelt Vorrang',
+    vm.runInContext('mwSuche("amazon",8).map(e=>e.symbol+"|"+e.name)', box)[0], 'AMZN|Amazon.com, Inc.');
+  pruef('Listenname ist abrufbar, Unbekanntes bleibt leer',
+    [vm.runInContext('mwListenName("NU")', box), vm.runInContext('mwListenName("ZZZZ")', box)], ['Nu Holdings Ltd.', '']);
+  /* Der Hinweis nennt Boerse und Gattung vor der Datenlage — und wertet nicht. */
+  const hinweis = s => vm.runInContext('mwTrefferHinweis(mwIndex().filter(e=>e.symbol===' + JSON.stringify(s) + ')[0])', box);
+  pruef('Hinweis fuer Listeneintrag nennt die Boerse', hinweis('NU'), 'NYSE');
+  pruef('Hinweis fuer ETF nennt die Gattung', hinweis('NUSI'), 'Nasdaq · ETF');
+  pruef('Hinweis fuer Feedeintrag stellt die Boerse voran', hinweis('AMZN'), 'Nasdaq · 2 Videoauftritte · Kurs vorhanden');
+  pruef('Hinweis fuer reinen Feedeintrag bleibt wie bisher', hinweis('SAP.DE'), '1 Videoauftritt');
+
+  /* Die echte Liste: die Eingaben, um die es dem Nutzer ging, in der Sandbox gegen alle 13.000. */
+  setzen(roh.eintraege);
+  const t0 = Date.now();
+  pruef('echte Liste: „nu holding" findet NU', treffer('nu holding')[0], 'NU');
+  pruef('echte Liste: „nvidia" findet NVDA', treffer('nvidia')[0], 'NVDA');
+  pruef('echte Liste: „berkshire" findet beide Gattungen', treffer('berkshire').slice(0, 2).sort(), ['BRK-A', 'BRK-B']);
+  pruef('echte Liste: „sap" haelt SAP.DE oben', treffer('sap')[0], 'SAP.DE');
+  pruef('echte Liste: „AHLA" liefert weiter nichts', treffer('AHLA'), []);
+  pruef('fuenf Suchen ueber die volle Liste unter zwei Sekunden', Date.now() - t0 < 2000, true);
+  setzen(null);
+
+  /* Ladeweg: ausserhalb von data/, nie in der ersten Welle, mit Fokus angefordert. */
+  pruef('die Liste wird genau einmal und ausserhalb von data/ geladen',
+    (html.match(/fetch\('stammdaten\/symbole\.json'/g) || []).length, 1);
+  /* Die Wellenfunktionen sind async — schneide() kennt nur „function name(" — deshalb der Ausschnitt von Hand. */
+  const welle = name => { const a = html.indexOf('async function ' + name + '('); const b = html.indexOf('\n}', a); return a < 0 ? '' : html.slice(a, b); };
+  pruef('feedsKlein laedt die Liste NICHT (ADR-714)', welle('feedsKlein').length > 100 && !/symbole/i.test(welle('feedsKlein')), true);
+  pruef('feedsGross holt sie nur bei Bedarf und wartet darauf', /await mwSymboleBeiBedarf\(\)/.test(welle('feedsGross')), true);
+  pruef('das Suchfeld fordert sie beim Fokus an', /addEventListener\('focus',\(\)=>\{mwSymboleLaden\(\)\}\)/.test(html), true);
+  pruef('der Join kennt die Liste als LETZTE Namensquelle',
+    /\(ka&&ka\.name\)\|\|mwListenName\(sym\)\|\|''/.test(schneide('bstJoin')), true);
 });
 
 console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +
