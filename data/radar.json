@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T18:20:37.991952Z",
+  "generated_at": "2026-09-11T19:20:36.426778Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,21 +23,15 @@
   {
    "symbol": "ORCL",
    "name": "Oracle",
-   "score": 100,
+   "score": 80,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,4 %",
-     "weight": 30
-    },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
+     "value": "2,6× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "earnings_watch",
@@ -53,10 +47,10 @@
     }
    ],
    "quote": {
-    "price": 152.94,
-    "pct": -5.38,
+    "price": 151.725,
+    "pct": -0.79,
     "cur": "USD",
-    "as_of": "2026-09-11T06:32:58.761010+00:00"
+    "as_of": "2026-09-11T18:32:33.392101+00:00"
    },
    "earnings": {
     "date": "2026-09-10",
@@ -65,15 +59,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Oracle nach Earnings-Termin deutlich schwächer",
-    "why_now": "Die Oracle-Aktie liegt bei 152,94 USD und ist um 5,38 % gefallen. Das Handelsvolumen beträgt das 2,4-Fache des Durchschnitts, zudem fanden gestern die Earnings statt. Der zeitliche Zusammenhang könnte auf eine Reaktion im Anschluss an den Earnings-Termin hindeuten. Ursache unklar.",
+    "headline": "Oracle fällt bei erhöhtem Volumen nach Earnings-Termin",
+    "why_now": "Die Oracle-Aktie notiert bei 151,725 USD und liegt 0,79 % im Minus. Das Handelsvolumen beträgt das 2,6-Fache des Durchschnitts. Der Earnings-Termin war gestern. Die zeitliche Nähe dürfte das erhöhte Handelsinteresse mit erklären, Ursache unklar.",
     "watch_next": [
      "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-11T07:20:32.847893Z"
+    "generated_at": "2026-09-11T19:20:36.426778Z"
    }
   }
  ]
