@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-09-10T08:29:46.556689Z",
-    "trading_day": "2026-09-09",
+    "generated_at": "2026-09-11T08:26:00.530632Z",
+    "trading_day": "2026-09-10",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-09-10T08:29:46.556689Z"
+    "as_of": "2026-09-11T08:26:00.530632Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "sector": "Consumer Discretionary",
-      "as_of": "2026-09-09T13:30:00Z",
+      "ticker": "UNH",
+      "name": "UnitedHealth Group Incorporated",
+      "sector": "Health Care",
+      "as_of": "2026-09-10T13:30:00Z",
       "quote": {
-        "price": 252.4,
+        "price": 388.28,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/AMZN",
-        "as_of": "2026-09-09T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/UNH",
+        "as_of": "2026-09-10T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -51,38 +51,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 250.7,
-        "entry_high": 252.4,
-        "stop": 242.62,
-        "target": 274.75,
+        "entry_low": 385.09,
+        "entry_high": 388.28,
+        "stop": 372.0,
+        "target": 461.62,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-25",
-              "price": 225.55
+              "date": "2026-08-20",
+              "price": 383.83
             },
             "b": {
-              "date": "2026-07-16",
-              "price": 258.08
+              "date": "2026-08-26",
+              "price": 406.25
             },
             "c": {
-              "date": "2026-07-29",
-              "price": 226.16
+              "date": "2026-08-31",
+              "price": 387.71
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 258.69
+              "price": 410.13
             },
             {
               "ratio": 1.272,
-              "price": 267.54
+              "price": 416.23
             },
             {
               "ratio": 1.618,
-              "price": 278.79
+              "price": 423.99
             }
           ]
         }
@@ -93,13 +93,13 @@
       "ticker": "PLTR",
       "name": "Palantir Technologies Inc.",
       "sector": "Information Technology",
-      "as_of": "2026-09-09T13:30:00Z",
+      "as_of": "2026-09-10T13:30:00Z",
       "quote": {
-        "price": 169.53,
+        "price": 165.86,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/PLTR",
-        "as_of": "2026-09-09T13:30:00Z"
+        "as_of": "2026-09-10T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -121,10 +121,10 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 167.43,
-        "entry_high": 169.53,
-        "stop": 157.47,
-        "target": 193.66,
+        "entry_low": 162.62,
+        "entry_high": 165.86,
+        "stop": 152.93,
+        "target": 191.72,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -160,16 +160,16 @@
     },
     {
       "rank": 3,
-      "ticker": "KHC",
-      "name": "The Kraft Heinz Company",
-      "sector": "Consumer Staples",
-      "as_of": "2026-09-09T13:30:00Z",
+      "ticker": "GS",
+      "name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financials",
+      "as_of": "2026-09-10T13:30:00Z",
       "quote": {
-        "price": 24.61,
+        "price": 1019.77,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/KHC",
-        "as_of": "2026-09-09T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/GS",
+        "as_of": "2026-09-10T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -187,42 +187,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 11
+        "warnings_count": 10
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 24.39,
-        "entry_high": 24.61,
-        "stop": 23.54,
-        "target": 26.76,
+        "entry_low": 1011.7,
+        "entry_high": 1019.77,
+        "stop": 980.6,
+        "target": 1098.36,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-22",
-              "price": 22.0
+              "date": "2026-07-29",
+              "price": 977.7
             },
             "b": {
-              "date": "2026-07-17",
-              "price": 27.13
+              "date": "2026-08-05",
+              "price": 1077.21
             },
             "c": {
-              "date": "2026-07-23",
-              "price": 25.17
+              "date": "2026-08-20",
+              "price": 1001.68
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 30.29
+              "price": 1101.19
             },
             {
               "ratio": 1.272,
-              "price": 31.69
+              "price": 1128.26
             },
             {
               "ratio": 1.618,
-              "price": 33.46
+              "price": 1162.69
             }
           ]
         }
@@ -230,16 +230,16 @@
     },
     {
       "rank": 4,
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "as_of": "2026-09-09T13:30:00Z",
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "as_of": "2026-09-10T13:30:00Z",
       "quote": {
-        "price": 1124.21,
+        "price": 805.0,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/LLY",
-        "as_of": "2026-09-09T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/CAT",
+        "as_of": "2026-09-10T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -261,38 +261,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 1115.16,
-        "entry_high": 1124.21,
-        "stop": 1072.21,
-        "target": 1232.0,
+        "entry_low": 794.64,
+        "entry_high": 805.0,
+        "stop": 762.85,
+        "target": 909.6,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-07-15",
-              "price": 1134.4
+              "date": "2026-07-29",
+              "price": 776.0
             },
             "b": {
-              "date": "2026-07-28",
-              "price": 1232.0
+              "date": "2026-08-17",
+              "price": 887.91
             },
             "c": {
-              "date": "2026-08-17",
-              "price": 1163.5
+              "date": "2026-08-20",
+              "price": 801.0
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 1261.1
+              "price": 912.91
             },
             {
               "ratio": 1.272,
-              "price": 1287.65
+              "price": 943.35
             },
             {
               "ratio": 1.618,
-              "price": 1321.42
+              "price": 982.07
             }
           ]
         }
@@ -300,20 +300,20 @@
     },
     {
       "rank": 5,
-      "ticker": "MRK",
-      "name": "Merck & Co., Inc.",
-      "sector": "Health Care",
-      "as_of": "2026-09-09T13:30:00Z",
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-09-10T13:30:00Z",
       "quote": {
-        "price": 147.53,
+        "price": 13.88,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/MRK",
-        "as_of": "2026-09-09T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/F",
+        "as_of": "2026-09-10T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
-        "readiness": "in_zone",
+        "readiness": "near",
         "distance_to_zone_pct": 0.0
       },
       "rule_hits": [
@@ -327,42 +327,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 12
+        "warnings_count": 7
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 145.8,
-        "entry_high": 147.53,
-        "stop": 140.98,
-        "target": 160.63,
+        "entry_low": 13.73,
+        "entry_high": 13.88,
+        "stop": 13.13,
+        "target": 15.37,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-08-04",
-              "price": 126.22
+              "date": "2026-07-02",
+              "price": 13.22
             },
             "b": {
-              "date": "2026-08-25",
-              "price": 156.92
+              "date": "2026-07-29",
+              "price": 16.29
             },
             "c": {
-              "date": "2026-08-28",
-              "price": 145.75
+              "date": "2026-08-06",
+              "price": 13.75
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 176.45
+              "price": 16.82
             },
             {
               "ratio": 1.272,
-              "price": 184.8
+              "price": 17.66
             },
             {
               "ratio": 1.618,
-              "price": 195.42
+              "price": 18.72
             }
           ]
         }
