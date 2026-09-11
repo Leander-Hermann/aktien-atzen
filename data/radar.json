@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T06:20:34.439768Z",
+  "generated_at": "2026-09-11T07:20:32.847893Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 96,
+  "symbols_total": 97,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -23,15 +23,21 @@
   {
    "symbol": "ORCL",
    "name": "Oracle",
-   "score": 75,
+   "score": 100,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,0 %",
+     "value": "-5,4 %",
      "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,4× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
@@ -42,15 +48,15 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 155.125,
-    "pct": -4.03,
+    "price": 152.94,
+    "pct": -5.38,
     "cur": "USD",
-    "as_of": "2026-09-10T18:32:56.114192+00:00"
+    "as_of": "2026-09-11T06:32:58.761010+00:00"
    },
    "earnings": {
     "date": "2026-09-10",
@@ -59,15 +65,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Oracle fällt nach Earnings um 4,0 %",
-    "why_now": "Die Oracle-Aktie notiert bei 155,125 USD und liegt 4,03 % im Minus. Der Earnings-Termin war gestern. Die zeitliche Nähe spricht dafür, dass die Bewegung mit der Reaktion auf den Termin zusammenhängen könnte. Ursache unklar.",
+    "headline": "Oracle nach Earnings-Termin deutlich schwächer",
+    "why_now": "Die Oracle-Aktie liegt bei 152,94 USD und ist um 5,38 % gefallen. Das Handelsvolumen beträgt das 2,4-Fache des Durchschnitts, zudem fanden gestern die Earnings statt. Der zeitliche Zusammenhang könnte auf eine Reaktion im Anschluss an den Earnings-Termin hindeuten. Ursache unklar.",
     "watch_next": [
-     "Weitere Kursreaktion nach dem Earnings-Termin",
-     "Neue Video-Erwähnungen",
-     "Entwicklung der Tagesveränderung"
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-11T05:20:31.858700Z"
+    "generated_at": "2026-09-11T07:20:32.847893Z"
    }
   }
  ]
