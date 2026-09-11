@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T04:20:37.875071Z",
+  "generated_at": "2026-09-11T05:20:31.858700Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -25,7 +25,7 @@
    "name": "Oracle",
    "score": 75,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -59,15 +59,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Oracle fällt nach Earnings-Termin um rund 4 Prozent",
-    "why_now": "Die Oracle-Aktie liegt bei 155,125 USD und fällt um 4,03 %. Der Earnings-Termin war gestern. Die zeitliche Nähe spricht dafür, dass die Bewegung mit dem Termin zusammenhängen könnte. Ursache unklar.",
+    "headline": "Oracle fällt nach Earnings um 4,0 %",
+    "why_now": "Die Oracle-Aktie notiert bei 155,125 USD und liegt 4,03 % im Minus. Der Earnings-Termin war gestern. Die zeitliche Nähe spricht dafür, dass die Bewegung mit der Reaktion auf den Termin zusammenhängen könnte. Ursache unklar.",
     "watch_next": [
-     "Weitere Kursentwicklung",
-     "Neue Informationen zu den Earnings",
-     "Weitere Video-Erwähnungen"
+     "Weitere Kursreaktion nach dem Earnings-Termin",
+     "Neue Video-Erwähnungen",
+     "Entwicklung der Tagesveränderung"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-11T00:20:36.922487Z"
+    "generated_at": "2026-09-11T05:20:31.858700Z"
    }
   }
  ]
