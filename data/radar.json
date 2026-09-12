@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T06:20:36.834441Z",
+  "generated_at": "2026-09-12T07:20:37.576661Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 97,
+  "symbols_total": 99,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -21,6 +21,34 @@
  },
  "items": [
   {
+   "symbol": "SZG.DE",
+   "name": "Salzgitter",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,3 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:SZG",
+   "quote": {
+    "price": 55.5,
+    "pct": -7.32,
+    "cur": "EUR",
+    "as_of": "2026-09-12T06:31:52.995865+00:00"
+   }
+  },
+  {
    "symbol": "ORCL",
    "name": "Oracle",
    "score": 50,
@@ -30,7 +58,7 @@
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
+     "value": "3,3× Durchschnitt",
      "weight": 25
     },
     {
@@ -47,10 +75,10 @@
     }
    ],
    "quote": {
-    "price": 151.725,
-    "pct": -0.79,
+    "price": 150.28,
+    "pct": -1.74,
     "cur": "USD",
-    "as_of": "2026-09-11T18:32:33.392101+00:00"
+    "as_of": "2026-09-12T06:31:52.995865+00:00"
    },
    "earnings": {
     "date": "2026-09-10",
