@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-11T23:20:37.630002Z",
+  "generated_at": "2026-09-12T00:20:35.105852Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,9 +23,9 @@
   {
    "symbol": "ORCL",
    "name": "Oracle",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "earnings_watch",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
    "triggers": [
     {
      "type": "volume_spike",
@@ -36,14 +36,14 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
@@ -54,20 +54,8 @@
    },
    "earnings": {
     "date": "2026-09-10",
-    "distance_days": -1,
+    "distance_days": -2,
     "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Oracle fällt bei erhöhtem Volumen nach Earnings-Termin",
-    "why_now": "Die Oracle-Aktie notiert bei 151,725 USD und liegt 0,79 % im Minus. Das Handelsvolumen beträgt das 2,6-Fache des Durchschnitts. Der Earnings-Termin war gestern. Die zeitliche Nähe dürfte das erhöhte Handelsinteresse mit erklären, Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-11T19:20:36.426778Z"
    }
   }
  ]
