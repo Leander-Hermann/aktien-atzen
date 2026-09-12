@@ -1,27 +1,8 @@
 {
- "updated": "2026-09-11T05:01:55.467321+00:00",
+ "updated": "2026-09-12T05:01:53.083709+00:00",
  "date": "2026-09-10",
  "label": "Donnerstag, 10.09.2026",
  "tabelle": [
-  {
-   "ticker": "ADBE",
-   "name": "Adobe",
-   "index": "Nasdaq 100",
-   "region": "US",
-   "branche": "Software",
-   "periode": "Q3 FY26",
-   "eps_est": 6.1999,
-   "eps_act": 6.13,
-   "rev_est": 6822313594,
-   "rev_act": 6760000000,
-   "eps_surprise_pct": -1.13,
-   "rev_surprise_pct": -0.91,
-   "ergebnis": "miss",
-   "reaktion_pct": null,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/ADBE",
-   "as_of": "2026-09-11T05:01:40.366214+00:00"
-  },
   {
    "ticker": "ORCL",
    "name": "Oracle",
@@ -36,10 +17,29 @@
    "eps_surprise_pct": 8.07,
    "rev_surprise_pct": -0.93,
    "ergebnis": "beat",
-   "reaktion_pct": null,
+   "reaktion_pct": -1.74,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/ORCL",
-   "as_of": "2026-09-11T05:01:40.366214+00:00"
+   "as_of": "2026-09-12T05:01:39.007013+00:00"
+  },
+  {
+   "ticker": "ADBE",
+   "name": "Adobe",
+   "index": "Nasdaq 100",
+   "region": "US",
+   "branche": "Software",
+   "periode": "Q3 FY26",
+   "eps_est": 6.1999,
+   "eps_act": 6.13,
+   "rev_est": 6822313594,
+   "rev_act": 6760000000,
+   "eps_surprise_pct": -1.13,
+   "rev_surprise_pct": -0.91,
+   "ergebnis": "miss",
+   "reaktion_pct": 1.37,
+   "source": "finnhub",
+   "source_url": "https://finance.yahoo.com/quote/ADBE",
+   "as_of": "2026-09-12T05:01:39.007013+00:00"
   }
  ],
  "signale": []
