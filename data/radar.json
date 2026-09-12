@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T18:20:37.423180Z",
+  "generated_at": "2026-09-12T19:20:41.802742Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -20,34 +20,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "SZG.DE",
-   "name": "Salzgitter",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:SZG",
-   "quote": {
-    "price": 55.5,
-    "pct": -7.32,
-    "cur": "EUR",
-    "as_of": "2026-09-12T06:31:52.995865+00:00"
-   }
-  },
   {
    "symbol": "ORCL",
    "name": "Oracle",
@@ -78,7 +50,7 @@
     "price": 150.28,
     "pct": -1.74,
     "cur": "USD",
-    "as_of": "2026-09-12T06:31:52.995865+00:00"
+    "as_of": "2026-09-12T18:31:43.837650+00:00"
    },
    "earnings": {
     "date": "2026-09-10",
