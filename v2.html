@@ -1309,7 +1309,7 @@ function standAnzeigen(){
    gehen nie in einen Prompt, nie in ein Backend-Log und nie in einen oeffentlichen
    Feed (ADR-906 §1).
    ================================================================================ */
-const WLKEY='aa-wl';let WLCACHE={},WLINFLIGHT={};
+const WLKEY='aa-wl';let WLCACHE={},WLINFLIGHT={},YW_FEHLER={};
 function normSym(raw){let s=(raw||'').trim().toUpperCase();if(!s)return '';if(s.includes(':')){const parts=s.split(':'),ex=parts[0],tk=parts[1]||'';const map={NASDAQ:'',NYSE:'',AMEX:'',ARCA:'',BATS:'',CBOE:'',OTC:'',XETR:'.DE',ETR:'.DE',FWB:'.F',FRA:'.F',GETTEX:'.DE',TRADEGATE:'.DE',LSE:'.L',LON:'.L',EURONEXT:'.PA',EPA:'.PA',TSE:'.T',TYO:'.T',HKEX:'.HK',HKG:'.HK',SWX:'.SW',SIX:'.SW',TSX:'.TO',ASX:'.AX',BME:'.MC',MIL:'.MI',BIT:'.MI',AMS:'.AS'};s=tk+(ex in map?map[ex]:'')}return s.replace(/[^A-Z0-9.\-]/g,'')}
 const BSTKEY='aa-bestand',BSTMIGKEY='aa-bestand-mig',BST_SCHEMA=1;
 const BST_TYP={beobachtung:'Beobachtung',aktie:'Aktie',etf:'ETF',krypto:'Krypto',derivat:'Derivat'};
@@ -1416,16 +1416,32 @@ function bstImportCode(code){
 // In-Flight-Dedupe: parallele Aufrufe teilen sich EINEN Request; Ergebnis bleibt in WLCACHE.
 // Wird in V2-1 DEFINIERT, aber nicht aufgerufen — es gibt noch keine Flaeche, die Live-Kurse
 // braucht, und ohne Nutzeraktion geht kein Positionssymbol ins Netz (ADR-906).
+/* Zeitlimit des Proxy-Abrufs. Gemessen am 13.09.2026 gegen allorigins.win: Erfolge kamen nach
+   6-8 s (Nutzerbeobachtung Mover) und einmal nach 15 s (KHC); Fehlschlaege nach 15-17 s
+   (HTTP 500) und 19-20 s (HTTP 522), zwei Versuche je Symbol. Zehn Sekunden schneiden alle
+   gemessenen Fehlschlaege ab und behalten die typischen Erfolge - der 15-s-Ausreisser geht
+   verloren, dafuer wartet niemand mehr zwanzig Sekunden auf einen Fehler. */
+const YW_TIMEOUT_MS=10000;
 function ywFetch(sym){
   if(WLCACHE[sym]&&WLCACHE[sym].candles)return Promise.resolve(WLCACHE[sym]);
   if(WLINFLIGHT[sym])return WLINFLIGHT[sym];
   const p=(async()=>{
     const u='https://query1.finance.yahoo.com/v8/finance/chart/'+encodeURIComponent(sym)+'?interval=1d&range=1y';
-    const proxies=['https://api.allorigins.win/raw?url=','https://corsproxy.io/?url='];
+    /* corsproxy.io verlangt seit September 2026 einen API-Key (HTTP 401, gemessen 13.09.) und
+       ist entfernt - ein Key gehoert nicht in ein oeffentliches Frontend. allorigins.win bleibt
+       der einzige Weg. Der Grund eines Scheiterns steht danach in YW_FEHLER[sym], damit Dialog
+       und Sammelzeile „nicht erreichbar" von „keine Daten" unterscheiden koennen. Die
+       Dauerloesung ist kein Proxy, sondern ein Kursvorrat aus dem Backend (Architektenvorlage
+       vom 13.09.2026). */
+    const proxies=['https://api.allorigins.win/raw?url='];
+    let grund='unerreichbar';
     for(const px of proxies){
+      const ab=(typeof AbortController==='function')?new AbortController():null;
+      const uhr=ab?setTimeout(()=>ab.abort(),YW_TIMEOUT_MS):null;
       try{
-        const r=await fetch(px+encodeURIComponent(u),{cache:'no-store'});if(!r.ok)continue;
-        const j=await r.json(),res=j.chart&&j.chart.result&&j.chart.result[0];if(!res)continue;
+        const r=await fetch(px+encodeURIComponent(u),ab?{cache:'no-store',signal:ab.signal}:{cache:'no-store'});
+        if(!r.ok)continue;
+        const j=await r.json(),res=j.chart&&j.chart.result&&j.chart.result[0];if(!res){grund='leer';continue}
         const meta=res.meta||{},ts=res.timestamp||[],q=((res.indicators&&res.indicators.quote)||[{}])[0]||{};
         const candles=[];for(let i=0;i<ts.length;i++){const o=q.open&&q.open[i],h=q.high&&q.high[i],l=q.low&&q.low[i],c=q.close&&q.close[i];if(o==null||h==null||l==null||c==null)continue;candles.push({time:ts[i],open:+(+o).toFixed(2),high:+(+h).toFixed(2),low:+(+l).toFixed(2),close:+(+c).toFixed(2),volume:(q.volume&&q.volume[i])||0})}
         let price=meta.regularMarketPrice;if(price==null&&candles.length)price=candles[candles.length-1].close;
@@ -1437,12 +1453,28 @@ function ywFetch(sym){
         const n=candles.length;
         const pct=(n>1&&candles[n-2].close)?(candles[n-1].close-candles[n-2].close)/candles[n-2].close*100:null;
         const pctPer=(n>1&&candles[0].close)?(candles[n-1].close-candles[0].close)/candles[0].close*100:null;
-        const out={sym,price,pct,pctPer,perFrom:n>1?candles[0].time:null,candles,cur:meta.currency||''};WLCACHE[sym]=out;return out;
+        const out={sym,price,pct,pctPer,perFrom:n>1?candles[0].time:null,candles,cur:meta.currency||''};WLCACHE[sym]=out;delete YW_FEHLER[sym];return out;
       }catch(e){}
+      finally{if(uhr)clearTimeout(uhr)}
     }
+    YW_FEHLER[sym]=grund;
     return null;
   })();
   WLINFLIGHT[sym]=p;p.finally(()=>{delete WLINFLIGHT[sym]});return p;
+}
+/* Lesbarer Grund fuer Dialog und Sammelzeile - ausschliesslich das, was ywFetch festgestellt
+   hat, keine Vermutung. Ohne Eintrag bleibt der bisherige Standardsatz. */
+function ywFehlerText(sym){
+  const g=YW_FEHLER[sym];
+  if(g==='unerreichbar')return 'Der Kursdienst hat innerhalb von '+Math.round(YW_TIMEOUT_MS/1000)+
+    ' Sekunden nicht geantwortet. Bitte später erneut versuchen.';
+  if(g==='leer')return 'Der Kursdienst liefert für diesen Wert keine Daten.';
+  return '';
+}
+function ywSammelHinweis(symbole){
+  const texte=[];
+  (symbole||[]).forEach(s=>{const x=ywFehlerText(s);if(x&&texte.indexOf(x)<0)texte.push(x)});
+  return texte.join(' ');
 }
 // Kerzen der Mover im Hintergrund vorladen. Ebenfalls nur DEFINIERT — die Mover-Flaeche
 // entsteht erst in V2-2, und erst dort wird ueber den Aufrufzeitpunkt entschieden.
@@ -2766,6 +2798,8 @@ function mwKarte(j){
    ausschliesslich das Symbol — nie Stueckzahl, Einstand oder Derivatdaten. */
 function mwOhneKursHTML(ohne){
   if(!ohne.length)return '';
+  /* Der Grund des letzten Scheiterns je Symbol, ohne Wiederholung gleicher Saetze. */
+  const hinweis=ywSammelHinweis(ohne.map(j=>j.symbol));
   return '<div class="card mw-nachladen">'+
     '<span class="t-small">Für <span class="num">'+ohne.length+'</span> '+
       (ohne.length===1?'Wert':'Werte')+' liegt kein Kurs im Datensatz.</span>'+
@@ -2774,6 +2808,7 @@ function mwOhneKursHTML(ohne){
       'verlassen dein Gerät nicht.</span>'+
     '<div><button type="button" class="ghost" id="mwNachladen">Kurse abrufen (Anfrage an '+
       'einen Drittdienst)</button></div>'+
+    (hinweis?'<p class="mw-meldung t-small warn" role="status">'+escapeHtml(hinweis)+'</p>':'')+
   '</div>';
 }
 
@@ -3422,7 +3457,7 @@ function mwChartOeffnen(sym,el){
   if(!s)return;
   const j=mwJoinFuer(s),k=j&&j.kurs,d1=k?jzKerzenOk(k.candles):null;
   const name=(j&&j.name)||s;
-  if(!d1){jzChartFehler(name,el);return}
+  if(!d1){jzChartFehler(name,el,ywFehlerText(s));return}
   jzStkOeffnen({t:s,n:name,p:(k.pct!=null&&isFinite(k.pct))?k.pct:null,candles:{d1:d1}},el);
 }
 /* Der einzige Pfad, auf dem ein Bestandssymbol das Geraet verlaesst — und er haengt an
@@ -3603,7 +3638,7 @@ async function jzMoverKlick(el){
     try{const q=await ywFetch(e.t);d1=jzKerzenOk(q&&q.candles)}catch(err){d1=null}
     el.disabled=false;
   }
-  if(!d1){jzChartFehler(e.n||e.t,el);return}
+  if(!d1){jzChartFehler(e.n||e.t,el,ywFehlerText(e.t));return}
   jzStkOeffnen({t:e.t,n:e.n||e.t,p:+e.p,candles:{d1:d1}},el);
 }
 async function jzSymbolChart(sym,el){
@@ -3615,18 +3650,18 @@ async function jzSymbolChart(sym,el){
     try{const q=await ywFetch(sym);d1=jzKerzenOk(q&&q.candles)}catch(err){d1=null}
     el.disabled=false;
   }
-  if(!d1){jzChartFehler((j&&j.name)||sym,el);return}
+  if(!d1){jzChartFehler((j&&j.name)||sym,el,ywFehlerText(sym));return}
   jzStkOeffnen({t:sym,n:(j&&j.name)||sym,p:(k&&k.pct!=null&&isFinite(k.pct))?k.pct:null,candles:{d1:d1}},el);
 }
 /* Lesbare Rueckmeldung statt leerer Klickwirkung, wenn keine gueltige Reihe da ist */
-function jzChartFehler(titel,ausloeser){
+function jzChartFehler(titel,ausloeser,text){
   const ov=document.getElementById('stkOverlay'),hin=document.getElementById('stkHinweis');
   if(!ov)return;
   STK_AUSLOESER=ausloeser||null;
   document.getElementById('stkTitle').textContent=titel;
   document.getElementById('stkSub').textContent='';
   const cont=document.getElementById('stklw');if(cont)cont.innerHTML='';
-  if(hin){hin.textContent='Keine Chartdaten verfügbar.';hin.hidden=false}
+  if(hin){hin.textContent=text||'Keine Chartdaten verfügbar.';hin.hidden=false}
   ov.removeAttribute('inert');ov.classList.add('open');jzHintergrundSperren(true);
   const zu=document.getElementById('stkSchliessen');if(zu)zu.focus();
 }

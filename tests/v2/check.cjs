@@ -46,13 +46,16 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   'mwIndexStand', 'mwIndex', 'mwTrefferRang', 'mwSuche', 'mwHervor',
   'mwTrefferHinweis', 'mwVorschlagHTML',
   /* Symbolliste (Nutzerentscheid 11.09.) — mwSymbole traegt seinen Zustand als Eigenschaften */
-  'mwSymbole', 'mwSymboleOk', 'mwListenName', 'mwWortanfang'];
+  'mwSymbole', 'mwSymboleOk', 'mwListenName', 'mwWortanfang',
+  /* Kurspfad ueber den Proxy (Nutzerbefund 13.09.: 6-20 s Wartezeit auf einen Fehler) */
+  'ywFetch', 'ywFehlerText', 'ywSammelHinweis'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
-  'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG'];
+  'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG',
+  'YW_TIMEOUT_MS'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -68,7 +71,10 @@ function schneideConst(name) {
 /* URL gehört in die Sandbox: safeUrl prüft das Schema über new URL(...) und würde
    ohne die Klasse jede Adresse per catch verwerfen — das wäre ein Testartefakt. */
 const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL, j: null, TICKIDX: null, BST_POS: [],
-  RADAR: null, QUOTES: null, EARN: null, CANDIDATES: null, BESTAND: null };
+  RADAR: null, QUOTES: null, EARN: null, CANDIDATES: null, BESTAND: null,
+  /* Kurspfad: Zeitgeber protokollieren statt warten; AbortController aus Node. */
+  TIMER: [], setTimeout: (fn, ms) => { box.TIMER.push(ms); return box.TIMER.length; },
+  clearTimeout: id => { box.GELOESCHT = (box.GELOESCHT || 0) + 1; }, AbortController, fetch: null, GELOESCHT: 0 };
 vm.createContext(box);
 vm.runInContext(KONSTANTEN.map(schneideConst).join('\n') + '\n' +
   NAMEN.map(schneide).join('\n'), box, { filename: 'v2.html-auszug' });
@@ -79,6 +85,8 @@ vm.runInContext('let BST_TEST=[];function bstSymbole(){return BST_TEST}', box);
 /* Zustandsvariablen der Symbolsuche: sie stehen in v2.html als let auf Modulebene und
    werden hier nachgestellt, weil der Schnitt nur Funktionen uebernimmt. */
 vm.runInContext('let MW_INDEX=null,MW_INDEX_STAND=0;', box);
+/* Kurscache und Fehlergrund des Proxy-Pfads (in v2.html eine let-Zeile auf Modulebene). */
+vm.runInContext('let WLCACHE={},WLINFLIGHT={},YW_FEHLER={};', box);
 
 let gruppen = 0, faelle = 0, fehler = 0;
 function gruppe(titel, fn) {
@@ -929,6 +937,77 @@ gruppe('V2-4 Nachtrag — Symbolliste: Nu Holdings wird gefunden, Feeds behalten
     /\(ka&&ka\.name\)\|\|mwListenName\(sym\)\|\|''/.test(schneide('bstJoin')), true);
 });
 
-console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +
-  ' gruppen=' + gruppen + ' faelle=' + faelle + ' fehler=' + fehler);
-process.exit(fehler === 0 ? 0 : 1);
+/* --- Kurspfad ueber den Proxy (Nutzerbefund 13.09.2026) -----------------------------
+   Gemessen: corsproxy.io antwortet 401 (API-Key noetig), allorigins.win braucht 6-8 s fuer
+   einen Erfolg und 15-20 s fuer einen Fehler. Geprueft wird, dass nur noch EIN Proxy
+   angesprochen wird, dass der Abbruch nach YW_TIMEOUT_MS geplant und der Zeitgeber wieder
+   geloescht wird, dass der Grund je Symbol festgehalten wird und dass Dialog und Sammelzeile
+   ihn zeigen - je mit Negativfall. Die Gruppe ist asynchron, weil ywFetch ein Promise ist;
+   fetch wird gestubbt, gewartet wird nicht. */
+async function gruppeAsync(titel, fn) {
+  gruppen++;
+  const vorher = fehler;
+  await fn();
+  console.log((fehler === vorher ? 'ok    ' : 'FEHLER') + ' ' + titel);
+}
+const KURSPFAD = gruppeAsync('Kurspfad - toter Proxy entfernt, Zeitlimit 10 s, ehrlicher Grund statt Stille', async () => {
+  const quelle = schneide('ywFetch');
+  pruef('genau ein Proxy-Host im Abruf', (quelle.match(/https:\/\/[a-z.]+\/[^'\s]*url=/g) || []).length, 1);
+  pruef('corsproxy.io kommt im Abruf nicht mehr vor', /https:\/\/corsproxy/.test(quelle), false);
+  pruef('der Abruf traegt ein Abbruchsignal', /signal:ab\.signal/.test(quelle) && /new AbortController\(\)/.test(quelle), true);
+  pruef('Zeitlimit ist zehn Sekunden', vm.runInContext('YW_TIMEOUT_MS', box), 10000);
+  const reset = () => { vm.runInContext('WLCACHE={};WLINFLIGHT={};YW_FEHLER={}', box); box.TIMER = []; box.GELOESCHT = 0; };
+  const antwort = j => ({ ok: true, json: async () => j });
+  const kerzen = { chart: { result: [{ meta: { regularMarketPrice: 5, currency: 'USD' }, timestamp: [1, 2, 3],
+    indicators: { quote: [{ open: [1, 1, 1], high: [1, 1, 1], low: [1, 1, 1], close: [1, 2, 3] }] } }] } };
+  /* Netzfehler oder Abbruch: null, Grund „unerreichbar", Zeitgeber geplant UND geloescht. */
+  reset(); box.fetch = () => Promise.reject(new TypeError('Failed to fetch'));
+  let r = await vm.runInContext('ywFetch("KO")', box);
+  pruef('Netzfehler liefert null', r, null);
+  pruef('Grund „unerreichbar" steht am Symbol', vm.runInContext('YW_FEHLER.KO', box), 'unerreichbar');
+  pruef('Abbruch wird nach YW_TIMEOUT_MS geplant', box.TIMER, [10000]);
+  pruef('Zeitgeber wird nach dem Versuch geloescht', box.GELOESCHT, 1);
+  /* HTTP-Fehler (500/522 wie gemessen): ebenfalls „unerreichbar". */
+  reset(); box.fetch = () => Promise.resolve({ ok: false, status: 522, json: async () => ({}) });
+  r = await vm.runInContext('ywFetch("MSFT")', box);
+  pruef('HTTP 522 liefert null mit Grund „unerreichbar"', [r, vm.runInContext('YW_FEHLER.MSFT', box)], [null, 'unerreichbar']);
+  /* Antwort ohne Ergebnis: Grund „leer". */
+  reset(); box.fetch = () => Promise.resolve(antwort({ chart: { result: null } }));
+  r = await vm.runInContext('ywFetch("XXXX")', box);
+  pruef('leere Antwort liefert null mit Grund „leer"', [r, vm.runInContext('YW_FEHLER.XXXX', box)], [null, 'leer']);
+  /* Erfolg: Kerzen da, Grund geloescht, Cache gefuellt - der Erfolgspfad ist unveraendert. */
+  reset(); vm.runInContext('YW_FEHLER.KHC="unerreichbar"', box); box.fetch = () => Promise.resolve(antwort(kerzen));
+  r = await vm.runInContext('ywFetch("KHC")', box);
+  pruef('Erfolg liefert drei Kerzen und den Preis', [r.candles.length, r.price, r.cur], [3, 5, 'USD']);
+  pruef('Erfolg loescht einen alten Grund', vm.runInContext('"KHC" in YW_FEHLER', box), false);
+  pruef('Erfolg landet im Cache', vm.runInContext('!!(WLCACHE.KHC&&WLCACHE.KHC.candles)', box), true);
+  pruef('Tagesmove aus den letzten zwei Kerzen (unveraendert)', Math.round(r.pct), 50);
+  /* Lesbarer Grund - und NUR bei bekanntem Grund. */
+  reset(); vm.runInContext('YW_FEHLER.KO="unerreichbar";YW_FEHLER.XXXX="leer"', box);
+  pruef('Text nennt das Zeitlimit in Sekunden', /10 Sekunden/.test(vm.runInContext('ywFehlerText("KO")', box)), true);
+  pruef('Text fuer „leer" nennt fehlende Daten', /keine Daten/.test(vm.runInContext('ywFehlerText("XXXX")', box)), true);
+  pruef('ohne Grund kein Text', vm.runInContext('ywFehlerText("AAPL")', box), '');
+  pruef('Sammelhinweis fasst gleiche Gruende zusammen',
+    vm.runInContext('ywSammelHinweis(["KO","KO","AAPL"])', box) === vm.runInContext('ywFehlerText("KO")', box), true);
+  pruef('kein Werturteil im Text', /gut|schlecht|empfehl|chance/i.test(vm.runInContext('ywFehlerText("KO")+ywFehlerText("XXXX")', box)), false);
+  /* Sammelzeile: nach einem gescheiterten Abruf steht der Grund dabei - vorher nicht. */
+  box.BST_POS = [];
+  const ohne = [{ symbol: 'KO', pos: { typ: 'aktie' } }, { symbol: 'AAPL', pos: { typ: 'aktie' } }];
+  box.OHNE = ohne;
+  let markup = vm.runInContext('mwOhneKursHTML(OHNE)', box);
+  pruef('Sammelzeile zeigt den Grund als Statusmeldung', /role="status"/.test(markup) && /10 Sekunden/.test(markup), true);
+  pruef('Sammelzeile behaelt den Abrufknopf', /id="mwNachladen"/.test(markup), true);
+  reset();
+  markup = vm.runInContext('mwOhneKursHTML(OHNE)', box);
+  pruef('ohne Fehlversuch keine Statusmeldung', /mw-meldung/.test(markup), false);
+  /* Der Dialog uebergibt den Grund; der Standardsatz bleibt fuer den Fall ohne Grund. */
+  pruef('Chartdialog nimmt einen Grund entgegen', /function jzChartFehler\(titel,ausloeser,text\)/.test(html) &&
+    /textContent=text\|\|'Keine Chartdaten verfügbar\.'/.test(html), true);
+  pruef('alle drei Chartaufrufer uebergeben den Grund', (html.match(/,ywFehlerText\(/g) || []).length, 3);
+});
+
+KURSPFAD.then(() => {
+  console.log('V2_CHECK ' + (fehler === 0 ? 'OK' : 'FEHLER') +
+    ' gruppen=' + gruppen + ' faelle=' + faelle + ' fehler=' + fehler);
+  process.exit(fehler === 0 ? 0 : 1);
+});
