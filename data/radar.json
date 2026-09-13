@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-12T23:20:37.577890Z",
+  "generated_at": "2026-09-13T00:20:35.489541Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,9 +23,9 @@
   {
    "symbol": "ORCL",
    "name": "Oracle",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "volume_spike",
@@ -36,8 +36,8 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
+     "value": "Earnings morgen",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -53,9 +53,9 @@
     "as_of": "2026-09-12T18:31:43.837650+00:00"
    },
    "earnings": {
-    "date": "2026-09-10",
-    "distance_days": -2,
-    "zeit": "amc"
+    "date": "2026-09-14",
+    "distance_days": 1,
+    "zeit": "tbd"
    }
   }
  ]
