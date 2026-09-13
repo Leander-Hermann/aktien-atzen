@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-13T00:20:35.489541Z",
+  "generated_at": "2026-09-13T01:20:35.933713Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -56,6 +56,18 @@
     "date": "2026-09-14",
     "distance_days": 1,
     "zeit": "tbd"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Oracle fällt bei hohem Volumen vor den Earnings",
+    "why_now": "Die Oracle-Aktie liegt bei 150,28 USD und damit 1,74 % im Minus. Das Handelsvolumen beträgt 3,3× des Durchschnitts. Zudem stehen die Earnings morgen an, und es gab 1 Video-Erwähnung in 3 Tagen. Die bevorstehende Veröffentlichung könnte die erhöhte Aufmerksamkeit und Bewegung erklären, die konkrete Ursache bleibt jedoch unklar. Ursache unklar.",
+    "watch_next": [
+     "Earnings morgen",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-13T01:20:35.933713Z"
    }
   }
  ]
