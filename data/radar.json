@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-14T18:20:35.646638Z",
+  "generated_at": "2026-09-14T19:20:36.733804Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 98,
-  "with_quote_data": 56,
+  "symbols_total": 99,
+  "with_quote_data": 57,
   "sources": [
    "watchlist",
    "videos",
@@ -22,33 +22,173 @@
   {
    "symbol": "ORCL",
    "name": "Oracle",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
+   "score": 75,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,3× Durchschnitt",
-     "weight": 25
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,6 %",
+     "weight": 30
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
      "value": "Earnings heute",
      "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
-    "price": 150.28,
-    "pct": -1.74,
+    "price": 143.35,
+    "pct": -4.61,
     "cur": "USD",
-    "as_of": "2026-09-14T06:32:36.769511+00:00"
+    "as_of": "2026-09-14T18:33:58.988094+00:00"
    },
    "earnings": {
     "date": "2026-09-14",
     "distance_days": 0,
     "zeit": "tbd"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Oracle fällt am Earnings-Tag um 4,6 %",
+    "why_now": "Die Oracle-Aktie notiert bei 143,35 USD und liegt heute 4,61 % im Minus. Als zeitlicher Auslöser ist ein Earnings-Termin für heute ausgewiesen. Ursache unklar. Die eine Video-Erwähnung in drei Tagen belegt lediglich zusätzliche Aufmerksamkeit, erklärt die Bewegung aber nicht eindeutig.",
+    "watch_next": [
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Weitere Video-Erwähnungen",
+     "Veränderung des Tagesminus"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-14T19:20:36.733804Z"
+   }
+  },
+  {
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,7 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:IFX",
+   "quote": {
+    "price": 54.04,
+    "pct": -7.72,
+    "cur": "EUR",
+    "as_of": "2026-09-14T18:33:58.988094+00:00"
+   }
+  },
+  {
+   "symbol": "ENR.DE",
+   "name": "Siemens Energy",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-8,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,2× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "tv_symbol": "XETR:ENR",
+   "quote": {
+    "price": 132.66,
+    "pct": -8.04,
+    "cur": "EUR",
+    "as_of": "2026-09-14T18:33:58.988094+00:00"
+   }
+  },
+  {
+   "symbol": "SZG.DE",
+   "name": "Salzgitter",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "tv_symbol": "XETR:SZG",
+   "quote": {
+    "price": 51.1,
+    "pct": -7.93,
+    "cur": "EUR",
+    "as_of": "2026-09-14T18:33:58.988094+00:00"
+   }
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,7 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 7 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 929.685,
+    "pct": -4.67,
+    "cur": "USD",
+    "as_of": "2026-09-14T18:33:58.988094+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-21",
+    "distance_days": 7,
+    "zeit": "amc"
    }
   }
  ]
