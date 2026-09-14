@@ -1,8 +1,8 @@
 {
- "updated": "2026-09-13T05:01:42.188573+00:00",
+ "updated": "2026-09-14T05:01:38.648458+00:00",
  "window": {
-  "from": "2026-09-10",
-  "to": "2026-10-04"
+  "from": "2026-09-11",
+  "to": "2026-10-05"
  },
  "universe_meta": {
   "indizes": [
@@ -21,48 +21,6 @@
   "stand": "2026-06-25"
  },
  "eintraege": [
-  {
-   "date": "2026-09-10",
-   "ticker": "ADBE",
-   "name": "Adobe",
-   "index": "Nasdaq 100",
-   "region": "US",
-   "branche": "Software",
-   "zeit": "amc",
-   "periode": "Q3 FY26",
-   "eps_est": 6.1999,
-   "rev_est": 6822313594,
-   "status": "reported",
-   "eps_act": 6.13,
-   "rev_act": 6760000000,
-   "surprise_pct": -1.13,
-   "reaktion_pct": 1.37,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/ADBE",
-   "as_of": "2026-09-13T05:01:38.648463+00:00"
-  },
-  {
-   "date": "2026-09-10",
-   "ticker": "ORCL",
-   "name": "Oracle",
-   "index": "S&P 500",
-   "region": "US",
-   "branche": "Software",
-   "zeit": "amc",
-   "periode": "Q1 FY27",
-   "eps_est": 1.7766,
-   "rev_est": 19527219180,
-   "status": "reported",
-   "eps_act": 1.92,
-   "rev_act": 19345000000,
-   "surprise_pct": 8.07,
-   "reaktion_pct": -1.74,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/ORCL",
-   "as_of": "2026-09-13T05:01:38.648463+00:00"
-  },
   {
    "date": "2026-09-14",
    "ticker": "ORCL",
@@ -114,8 +72,8 @@
    "branche": "Einzelhandel",
    "zeit": "amc",
    "periode": "Q4 FY26",
-   "eps_est": 6.6904,
-   "rev_est": 96474309568,
+   "eps_est": 6.6729,
+   "rev_est": 96745402720,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -124,7 +82,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/COST",
-   "as_of": "2026-09-13T05:01:38.648463+00:00"
+   "as_of": "2026-09-14T05:01:36.134779+00:00"
   },
   {
    "date": "2026-09-28",
@@ -135,8 +93,8 @@
    "branche": "Konsumgueter",
    "zeit": "tbd",
    "periode": "Q1 FY27",
-   "eps_est": 0.4523,
-   "rev_est": 11481667970,
+   "eps_est": 0.4495,
+   "rev_est": 11470137639,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -145,7 +103,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/NKE",
-   "as_of": "2026-09-13T05:01:38.648463+00:00"
+   "as_of": "2026-09-14T05:01:36.134779+00:00"
   },
   {
    "date": "2026-09-30",
@@ -156,8 +114,8 @@
    "branche": "Halbleiter",
    "zeit": "amc",
    "periode": "Q4 FY26",
-   "eps_est": 32.2138,
-   "rev_est": 52101559912,
+   "eps_est": 32.2164,
+   "rev_est": 52104999710,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -166,7 +124,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/MU",
-   "as_of": "2026-09-13T05:01:38.648463+00:00"
+   "as_of": "2026-09-14T05:01:36.134779+00:00"
   }
  ]
 }
