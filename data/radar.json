@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-14T23:20:38.888161Z",
+  "generated_at": "2026-09-15T00:20:33.596051Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -24,7 +24,7 @@
    "name": "Oracle",
    "score": 75,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -35,7 +35,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -53,20 +53,20 @@
    },
    "earnings": {
     "date": "2026-09-14",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "tbd"
    },
    "llm": {
     "status": "ready",
-    "headline": "Oracle fällt am Earnings-Tag um 4,6 %",
-    "why_now": "Die Oracle-Aktie notiert bei 143,35 USD und liegt heute 4,61 % im Minus. Als zeitlicher Auslöser ist ein Earnings-Termin für heute ausgewiesen. Ursache unklar. Die eine Video-Erwähnung in drei Tagen belegt lediglich zusätzliche Aufmerksamkeit, erklärt die Bewegung aber nicht eindeutig.",
+    "headline": "Oracle fällt nach Earnings-Termin um 4,6 %",
+    "why_now": "Die Oracle-Aktie liegt bei 143,35 USD und verzeichnet eine Bewegung von minus 4,61 %. Der Earnings-Termin war gestern, daher könnte der zeitliche Zusammenhang die Auffälligkeit erklären. Ursache unklar. Zudem wurde ein Video in drei Tagen erfasst.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
+     "Kursbewegung nach dem Earnings-Termin",
      "Weitere Video-Erwähnungen",
-     "Veränderung des Tagesminus"
+     "Nächste Earnings-Angabe"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-14T19:20:36.733804Z"
+    "generated_at": "2026-09-15T00:20:33.596051Z"
    }
   },
   {
@@ -169,7 +169,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     },
     {
@@ -187,7 +187,7 @@
    },
    "earnings": {
     "date": "2026-09-21",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "amc"
    }
   }
