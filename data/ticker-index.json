@@ -1,6 +1,875 @@
 {
- "updated": "2026-09-14T18:33:58.988094+00:00",
+ "updated": "2026-09-15T06:32:46.673574+00:00",
  "ticker": {
+  "BZ=F": {
+   "name": "Öl",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=13s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "makro",
+     "note": "Der Host verweist auf steigende Ölpreise und ein technisches Kaufsignal. Als nächste Ziele nennt er 112 und 120 US-Dollar.",
+     "einordnung": "Der Ölpreisanstieg verschärft das Inflations- und Renditethema und ist damit für Aktien zunächst ein Belastungsfaktor. Die genannten Ziele zeigen, dass der Host trotz des bereits erhöhten Niveaus wei…",
+     "figures": "Korrelation zwischen Ölpreisen und Renditen: 0,96; genannte Ölziele: 112 und 120 USD; Brent laut Marktdaten: 107,26 USD, plus 1,50 %"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "vOXfcKwP55o",
+     "url": "https://www.youtube.com/watch?v=vOXfcKwP55o&t=47s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "makro",
+     "note": "Der Host sieht die Ölpreise wegen der geplatzten Gespräche im Nahen Osten wieder anziehen. Das belastet insbesondere die asiatischen Aktienmärkte.",
+     "einordnung": "Meine Einordnung: Ein steigender Ölpreis ist für Energieproduzenten zunächst positiv, für Verbraucher, Industrie und Transport aber ein Kostenfaktor. Die Börse reagiert deshalb meist stärker auf die…",
+     "figures": "Brent laut Marktdaten: 106,81 US-Dollar je Barrel, plus 2,10 %"
+    },
+    {
+     "date": "2026-09-11",
+     "video_id": "gIWKBn6INGI",
+     "url": "https://www.youtube.com/watch?v=gIWKBn6INGI&t=87s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der Host sieht Brent und WTI nach einem technischen Ausbruch weiter im Aufwärtstrend. Als mögliches Ziel nennt er die März-Hochs knapp unter 120 US-Dollar.",
+     "einordnung": "Der Ölpreis bleibt der zentrale Inflationsverstärker für diesen Handelstag. Allerdings zeigt die Abweichung zwischen dem vom Host genannten Niveau und den aktuellen Marktdaten, dass der Ausbruch kurz…",
+     "figures": "Host: Brent 108 US-Dollar und WTI 102,6 US-Dollar; mögliches Ziel knapp unter 120 US-Dollar. Beschreibung: Ölpreis 107 US-Dollar. Aktuell laut Marktdaten: Brent 106,10 US-Dollar, -1,42 Prozent."
+    },
+    {
+     "date": "2026-09-07",
+     "video_id": "tHrMBx5m1QU",
+     "url": "https://www.youtube.com/watch?v=tHrMBx5m1QU&t=86s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Host sieht die Ölpreise weiter im Aufwind und hält einen Anstieg von Brent über 100 Dollar für möglich, solange sich die Lage im Nahen Osten nicht entspannt.",
+     "einordnung": "Der Ölmarkt preist derzeit vor allem das geopolitische Risiko ein, nicht nur die konjunkturelle Nachfrage. Ein Sprung über 100 Dollar wäre für Verbraucher und energieintensive Unternehmen ein klarer…",
+     "figures": "über 100 Dollar; Brent aktuell laut Marktdaten 96,28 Dollar"
+    },
+    {
+     "date": "2026-09-02",
+     "video_id": "dQ9DpBEtuKk",
+     "url": "https://www.youtube.com/watch?v=dQ9DpBEtuKk&t=90s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Ölpreise ziehen wegen der Iran-Eskalation deutlich an. Brent notiert laut Host oberhalb seiner 200-Tage-Linie, während WTI über 90 Dollar steigt.",
+     "einordnung": "Der Sprung über einen viel beachteten langfristigen Durchschnitt verbessert zunächst das charttechnische Bild für Öl. Für den Gesamtmarkt ist ein dauerhaft höherer Ölpreis allerdings eher ein Belastu…",
+     "figures": "Brent: 94 $; aktuell laut Marktdaten: 96,28 $; WTI: über 90 $"
+    },
+    {
+     "date": "2026-09-01",
+     "video_id": "7ZQYsSxRi2M",
+     "url": "https://www.youtube.com/watch?v=7ZQYsSxRi2M&t=26s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Ölpreis stieg nach dem Angriff auf einen Tanker in der Straße von Hormus auf über 90 US-Dollar. Die Marke von 100 US-Dollar wurde laut Host noch nicht erreicht.",
+     "einordnung": "Der aktuelle Brent-Preis liegt bereits nahe 100 US-Dollar und macht den Energieschock für Verbraucher und Unternehmen spürbar. Für Ölproduzenten ist das kurzfristig positiv, für die Gesamtwirtschaft…",
+     "figures": "Brent laut Host: über 90 USD; Brent laut Marktdaten aktuell: 96,28 USD"
+    },
+    {
+     "date": "2026-09-01",
+     "video_id": "WGO1jesdYp4",
+     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=2338s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Host erwartet beim Ölpreis eine Bewegung in einer Bandbreite mit tendenziell höherem Risiko nach oben, falls geopolitische Spannungen zunehmen. Politische Eingriffe könnten diese Bewegung jedoch…",
+     "einordnung": "Bei einem Brent-Preis von 96,28 US-Dollar ist der Inflations- und Margeneffekt für die Märkte bereits relevant. Geopolitische Aufschläge stützen Energieproduzenten, belasten aber Konsumenten, Transpo…",
+     "figures": "Brent laut Marktdaten aktuell: 96,28 US-Dollar"
+    },
+    {
+     "date": "2026-08-31",
+     "video_id": "oTVTqvO9we8",
+     "url": "https://www.youtube.com/watch?v=oTVTqvO9we8&t=151s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nach US-Angriffen auf den Iran steigen die Ölpreise um 1 bis 1,5 Prozent. Brent und WTI notieren dabei jeweils über 90 US-Dollar.",
+     "einordnung": "Der unmittelbare Preisschub ist geopolitisch getrieben und nicht automatisch nachhaltig. Bleiben Transportwege oder Förderanlagen bedroht, würde der Ölpreis jedoch über den Inflationskanal zum Belast…",
+     "figures": "Plus 1 bis 1,5 Prozent; Brent über 90 US-Dollar; WTI über 90 US-Dollar; Brent aktuell laut Marktdaten: 96,28 US-Dollar"
+    },
+    {
+     "date": "2026-08-13",
+     "video_id": "smkyeECHjv8",
+     "url": "https://www.youtube.com/watch?v=smkyeECHjv8&t=866s",
+     "channel": "BerneckerTV",
+     "kategorie": "makro",
+     "note": "Der Ölpreis bleibt wegen des Iran-Konflikts volatil, doch die Märkte gewöhnen sich nach Einschätzung des Hosts zunehmend an die geopolitische Belastung. Die US-Eigenförderung mildert die Versorgungsr…",
+     "einordnung": "Die fallende Brent-Notierung trotz der geopolitischen Risiken zeigt, dass der Markt derzeit keinen dauerhaften globalen Versorgungsausfall einpreist. Die Lage bleibt jedoch asymmetrisch: Eine tatsäch…",
+     "figures": "Psychologische Marke von 6 Dollar je Gallone; Brent aktuell laut Marktdaten 87,36 Dollar je Barrel und 1,82 Prozent im Minus"
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "Hwf_CXhBgJU",
+     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=347s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Die Spannungen um die Straße von Hormus machen den Ölpreis zum geopolitischen Spielball. Der Host nennt 70 bis 71 Dollar als wichtige Zone sowie 67 Dollar als weitere charttechnische Marke.",
+     "einordnung": "Der aktuelle Brent-Anstieg auf 87,87 Dollar zeigt, dass der Risikoaufschlag den Markt kurzfristig dominiert. Für eine belastbare Trendanalyse müsste sich die Lage an der wichtigen Transportroute zunä…",
+     "figures": "67 $, 70–71 $, Brent aktuell laut Marktdaten: 87,87 $ (+5,17 %)"
+    },
+    {
+     "date": "2026-08-05",
+     "video_id": "hmqZDddNkEc",
+     "url": "https://www.youtube.com/watch?v=hmqZDddNkEc&t=255s",
+     "channel": "BerneckerTV",
+     "kategorie": "makro",
+     "note": "Thieme sieht den Ölpreis als wichtigen Hebel für die Aktienmärkte: Bei einer geopolitischen Eskalation hält er 120 bis 130 US-Dollar für möglich, bei Entspannung etwa 60 US-Dollar. Zwischen Ölpreisan…",
+     "einordnung": "Bei einem Brent-Preis von 79,49 US-Dollar liegt der Markt zwischen den beiden vom Host skizzierten Extremszenarien. Für Aktien ist weniger das absolute Niveau als die Geschwindigkeit eines Anstiegs e…",
+     "figures": "Szenario Eskalation: 120 bis 130 US-Dollar; Szenario Entspannung: 60 US-Dollar; Brent laut Marktdaten 79,49 US-Dollar, plus 0,16 Prozent"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=1686s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Ölpreis fiel nach Trumps Ankündigung neuer Iran-Verhandlungen intraday um 10 Prozent und gab auf Wochenbasis 2 Prozent nach. Egmond erwartet bei hoher Volatilität eine Seitwärtsbewegung.",
+     "einordnung": "Die Marktdaten bestätigen den starken Druck auf Brent mit 79,28 US-Dollar und einem Tagesminus von 5,36 Prozent; der Host nennt zusätzlich den intraday deutlich stärkeren Einbruch. Die Diskrepanz erk…",
+     "figures": "Intraday-Rückgang 10 Prozent; Wochenrückgang 2 Prozent; Brent laut Marktdaten 79,28 US-Dollar, minus 5,36 Prozent"
+    }
+   ]
+  },
+  "NVDA": {
+   "name": "Nvidia",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=240s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "KI-Sorgen und warnende Aussagen von Technologiemanagern belasteten Nvidia. Die Aktie gab vom Rekordhoch aus um rund 10 bis 12 Prozent nach.",
+     "einordnung": "Bei einem dominierenden KI-Wert können bereits Zweifel am Tempo der Nachfrage eine überproportionale Kursreaktion auslösen. Der Rückgang ist daher zunächst als Neubewertung der Erwartungen zu versteh…",
+     "figures": "Rückgang vom Rekordhoch: rund 10 bis 12 %"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "i1kvrS7aV-Q",
+     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=1990s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Nach den fulminanten Zahlen bleibt der übergeordnete Aufwärtstrend intakt, auch wenn sich die Aktie Zeit lässt. Ein Rücksetzer wäre aus charttechnischer Sicht eine Kaufgelegenheit.",
+     "einordnung": "Die Aktie muss nach starken Zahlen offenbar nicht sofort weiterlaufen, um bullisch zu bleiben; eine Konsolidierung kann im intakten Trend sogar konstruktiv sein. Gleichzeitig erhöht die hohe Erwartun…",
+     "figures": "Kursziele 246 und 294 Dollar mittel- bis langfristig; frühere Marken bei 152 und 229 Dollar."
+    },
+    {
+     "date": "2026-09-08",
+     "video_id": "6QoAxW6iHuM",
+     "url": "https://www.youtube.com/watch?v=6QoAxW6iHuM&t=627s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Der Host bezeichnet Nvidia als führenden KI-Chiphersteller und verweist auf eine Bruttomarge von 74 Prozent sowie den geplanten milliardenschweren Zukauf der KI-Plattform Hugging Face. Im Optionsmark…",
+     "einordnung": "Nvidia bleibt der zentrale Profiteur des KI-Investitionszyklus, ist aber entsprechend stark von hohen Erwartungen abhängig. Die Optionsstruktur wirkt eher konstruktiv, solange die Zone um die Putwall…",
+     "figures": "Bruttomarge 74 Prozent, Putwall 180 US-Dollar, Callwall 240 US-Dollar"
+    },
+    {
+     "date": "2026-09-03",
+     "video_id": "gVtRC3UkCDQ",
+     "url": "https://www.youtube.com/watch?v=gVtRC3UkCDQ&t=633s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Nvidia habe laut Host Umsatz und Gewinn verdoppelt, die Aktie daraufhin aber zunächst nur um 12 Prozent und anschließend um weitere 6 Prozent zugelegt. Bernecker wertet die nachlassende Kursreaktion…",
+     "einordnung": "Die Reaktion ist tatsächlich ein Sentiment-Signal: Je höher die Erwartungen, desto stärker muss ein Unternehmen positiv überraschen, um den Kurs weiterzutreiben. Bei Nvidia treffen außergewöhnliche o…",
+     "figures": "Umsatz und Gewinn verdoppelt, zunächst +12 %, anschließend +6 %"
+    },
+    {
+     "date": "2026-09-03",
+     "video_id": "gVtRC3UkCDQ",
+     "url": "https://www.youtube.com/watch?v=gVtRC3UkCDQ&t=974s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Der Host setzt Nvidias Marktwert von 5,25 Billionen US-Dollar ins Verhältnis zu einem möglichen Rückgang auf 2,5 Billionen US-Dollar. Er nennt außerdem charttechnische Korrekturzonen bei 150 US-Dolla…",
+     "einordnung": "Die genannten Kurs- und Bewertungsmarken sind ein ausgesprochen negatives Szenario und sollten als Stresstest, nicht als Basisschätzung gelesen werden. Nvidia eignet sich wegen seiner Größe und der s…",
+     "figures": "5,25 Billionen USD, 2,5 Billionen USD, 150 USD, 80–90 USD"
+    },
+    {
+     "date": "2026-09-01",
+     "video_id": "WGO1jesdYp4",
+     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=1174s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Nvidia meldete nach Darstellung des Hosts ein Gewinnwachstum von 70 Prozent. Die Magnificent Seven kamen insgesamt auf 120 Prozent Gewinnwachstum, bereinigt auf 43 Prozent; 66 Prozent der Unternehmen…",
+     "einordnung": "Die operative Dynamik bleibt außergewöhnlich, doch bei Technologiewerten muss das Gewinnwachstum dauerhaft hoch bleiben, um anspruchsvolle Bewertungen zu rechtfertigen. Positiv ist, dass der Gewinnbe…",
+     "figures": "Nvidia: plus 70 Prozent Gewinnwachstum; Magnificent Seven: plus 120 Prozent, bereinigt plus 43 Prozent; Überraschungsquote: 66 Prozent; übrige 493 S&P-500-Unternehmen: plus 32 Prozent"
+    },
+    {
+     "date": "2026-08-31",
+     "video_id": "oTVTqvO9we8",
+     "url": "https://www.youtube.com/watch?v=oTVTqvO9we8&t=294s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Nvidia liefert weiterhin Fabelzahlen, doch eine Kurslücke und eine nachlassende Dynamik zeigen, dass die enorme Unternehmensgröße weiteres Wachstum erschwert.",
+     "einordnung": "Die operative Qualität steht außer Frage, aber bei einem Marktführer steigen mit der Größe auch die Erwartungen. Für die Aktie wird deshalb weniger die absolute Stärke als die Fähigkeit entscheidend,…"
+    },
+    {
+     "date": "2026-08-31",
+     "video_id": "ou1chvjk6G8",
+     "url": "https://www.youtube.com/watch?v=ou1chvjk6G8",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Nvidia wird im großen Chartcheck im Zusammenhang mit der Reaktion auf die Quartalszahlen angekündigt, im vorliegenden Rohmaterial aber nur kurz erwähnt.",
+     "einordnung": "Ohne konkrete Kursmarken oder eine detaillierte Chartanalyse lässt sich aus dem vorliegenden Material kein belastbares Setup ableiten. Bei Nvidia bleibt die Erwartungshaltung im KI-Sektor der entsche…"
+    },
+    {
+     "date": "2026-08-25",
+     "video_id": "OCXT4NAfmag",
+     "url": "https://www.youtube.com/watch?v=OCXT4NAfmag&t=1242s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Nvidia kündigt laut Host eine Preiserhöhung von 15 % an, doch die Aktie gibt dennoch nach. Egmond Haidt bezeichnet die KI-Blase als die größte aller Zeiten und warnt vor fallenden Anleihekursen.",
+     "einordnung": "Eine Preiserhöhung spricht zunächst für starke Nachfrage und Preissetzungsmacht, kann aber bei bereits sehr hohen Erwartungen auch als Belastung für Kundenbudgets wirken. Vor den Zahlen ist die Aktie…",
+     "figures": "15 % Preiserhöhung"
+    },
+    {
+     "date": "2026-08-24",
+     "video_id": "CxBQV7-eeMA",
+     "url": "https://www.youtube.com/watch?v=CxBQV7-eeMA&t=277s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Nvidia ist laut Host der wichtigste Termin der Woche. Die Aktie notiert unter 220 Dollar; bei guten Zahlen könnte sich die Trendwende schnell beschleunigen.",
+     "einordnung": "Nvidia bleibt der Taktgeber des gesamten KI-Komplexes, weshalb die Reaktion auf die Zahlen wichtiger sein dürfte als die reine Gewinnhöhe. Nach dem Druck auf Technologiewerte ist das Chance-Risiko-Ve…",
+     "figures": "Nvidia unter 220 Dollar"
+    },
+    {
+     "date": "2026-08-14",
+     "video_id": "WVCJZEe_LEM",
+     "url": "https://www.youtube.com/watch?v=WVCJZEe_LEM&t=57s",
+     "channel": "BerneckerTV",
+     "kategorie": "news",
+     "note": "Der Host ordnet das 500-Milliarden-Dollar-Finanzierungspaket als Entlastung für Nvidia und als Signal für anhaltend hohe KI-Investitionen ein. Bis 2030 werden AI-Capex von 5,3 Billionen Dollar erwart…",
+     "einordnung": "Meine Einordnung: Die Meldung bestätigt die außergewöhnliche Investitionsbereitschaft rund um KI, beseitigt aber nicht das Risiko, dass sich Erwartungen und tatsächliche Renditen der Rechenzentrumsin…",
+     "figures": "500 Milliarden Dollar Finanzierungspaket; 5,3 Billionen Dollar erwartete AI-Capex bis 2030; KGV Nvidia 25 gegenüber 17 beim S&P 500; rund 60 Prozent des Capex entfallen auf IT"
+    },
+    {
+     "date": "2026-08-14",
+     "video_id": "xV3WKQlNaw4",
+     "url": "https://www.youtube.com/watch?v=xV3WKQlNaw4",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nvidia steht im Zusammenhang mit neuen KI- und Infrastrukturprojekten im Fokus. Der Host verweist auf geplante Investitionen von einer halben Billion US-Dollar in KI-Infrastruktur.",
+     "einordnung": "Die Größenordnung unterstreicht, dass der KI-Zyklus inzwischen als Infrastrukturthema und nicht nur als Chiptrend verstanden wird. Gleichzeitig steigen damit die Erwartungen an die Finanzierung, die…",
+     "figures": "Geplante Investitionen in KI-Infrastruktur: 500 Mrd. USD"
+    }
+   ]
+  },
+  "PANW": {
+   "name": "Palo Alto Networks",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=339s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Cybersecurity-Aktien gehörten zu den großen Gewinnern des Vortags. Der Host führt dies auf die KI-Sorgen und einen gemeldeten Datendiebstahl in Berlin zurück.",
+     "einordnung": "Palo Alto profitiert in diesem Umfeld von einem defensiveren Technologiethema: Sicherheitsausgaben hängen weniger unmittelbar vom kurzfristigen KI-Sentiment ab. Die Kursstärke kann daher sowohl funda…"
+    },
+    {
+     "date": "2026-09-02",
+     "video_id": "dQ9DpBEtuKk",
+     "url": "https://www.youtube.com/watch?v=dQ9DpBEtuKk&t=260s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Palo Alto Networks hat die Erwartungen bei Zahlen und Ausblick übertroffen. Dennoch gibt die Aktie nachbörslich 1,1 Prozent auf rund 358 Dollar nach; der Host bleibt bei seiner positiven Einschätzung.",
+     "einordnung": "Die negative Reaktion trotz guter Nachrichten zeigt, wie hoch die Erwartungen an den Cybersecurity-Sektor inzwischen liegen. Das Chance-Risiko-Verhältnis bleibt interessant, aber die Bewertung verlan…",
+     "figures": "Kursziel: 486 $; Stopp: 318 $; aktuell etwa 358 $; nachbörslich: -1,1 %"
+    },
+    {
+     "date": "2026-09-02",
+     "video_id": "a2-MQZ_9yBM",
+     "url": "https://www.youtube.com/watch?v=a2-MQZ_9yBM&t=2719s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Palo Alto Networks übertrifft die Umsatz- und Gewinnerwartungen und hebt den Ausblick an. Das Wachstum bleibt hoch, doch die sehr teure Bewertung verhindert laut Host bislang neue Höchststände.",
+     "einordnung": "Fundamental ist Palo Alto Networks stark, aber die Bewertung verlangt weiterhin außergewöhnliche Wachstums- und Margenfortschritte. Ein PEG von über 5 macht deutlich, dass der Markt bereits sehr viel…",
+     "figures": "Umsatz plus 34 % auf 3,4 Mrd. USD; Gewinn plus 7 % auf 1,20 USD; KGV 88; PEG über 5; Umsatzprognose 3,3–3,31 Mrd. USD; EPS-Prognose 0,96–0,98 USD; Jahresprognose 14,1–14,2 Mrd. USD"
+    },
+    {
+     "date": "2026-08-31",
+     "video_id": "ou1chvjk6G8",
+     "url": "https://www.youtube.com/watch?v=ou1chvjk6G8&t=1955s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Palo Alto Networks steht vor den Quartalszahlen. Nach dem Ausbruch über 207 US-Dollar nennt der Host Kursziele von 280 und 366 US-Dollar; trotz hoher Bewertung zeige sich die Aktie stabil.",
+     "einordnung": "Cybersecurity bleibt ein strukturell attraktives Wachstumsfeld, doch gerade bei hoher Bewertung muss der operative Ausblick die Vorschusslorbeeren bestätigen. Die Marke bei 207 US-Dollar ist der tech…",
+     "figures": "Ausbruch über 207 US-Dollar; Ziele 280 und 366 US-Dollar"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "mREZgmSkQCI",
+     "url": "https://www.youtube.com/watch?v=mREZgmSkQCI&t=381s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Palo Alto Networks stieg von 150 US-Dollar im April auf ein Rekordhoch von 385 US-Dollar. Der Host sieht KI als Treiber und verweist auch auf die Stärke anderer Cybersecurity-Werte sowie des HACK-ETF.",
+     "einordnung": "Die breite Stärke innerhalb der Cybersecurity spricht für mehr als nur eine isolierte Einzelbewegung. Nach dem starken Anstieg ist allerdings das Sentiment bereits anspruchsvoll; positive Nachrichten…",
+     "figures": "150 US-Dollar; 385 US-Dollar"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "savtLkkJPbY",
+     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=2445s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Morgan Stanley macht Palo Alto Networks zum neuen Top-Pick im Cybersecurity-Sektor und nennt ein Kursziel von 380 USD. KI-Sicherheit, Plattformstrategie und Margenpotenzial überzeugen, doch die Bewer…",
+     "einordnung": "Palo Alto verfügt über eine überzeugende strukturelle Wachstumsstory, aber die Bewertung lässt kaum Raum für operative Enttäuschungen. Der vom Host genannte Rücksetzerbereich ist daher weniger ein Sc…",
+     "figures": "380 USD Morgan-Stanley-Kursziel; KGV 825; PEG 5,4; 40% Free-Cashflow-Marge für 2028; 425 USD Argus-Kursziel; 421 USD Capital-One-Kursziel; 400 USD Citi-Kursziel"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=372s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Palo Alto Networks gehörte laut Host zu den Profiteuren der Nachrichten aus dem Cybersecurity-Sektor und stieg um 6,2 Prozent.",
+     "einordnung": "Palo Alto Networks profitiert als großer Plattformanbieter von der Priorisierung sicherheitskritischer Ausgaben. Der Kurssprung ist jedoch zunächst eine Sentimentreaktion und kein Beleg dafür, dass s…",
+     "figures": "Tagesplus +6,2 Prozent"
+    },
+    {
+     "date": "2025-11-13",
+     "video_id": "DdOoAO1ztKo",
+     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1390s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Zahlen werden am 19.11. erwartet; Übernahme von Cybersecurity-Spezialist für 25 Mrd. USD (2,5 Mrd. Cash + 100 Mio. neue Aktien); Kursziele: Mizuho 230 USD, Jefferies/RBC 250 USD.",
+     "einordnung": "Palo Alto ist der Branchenführer im Cybersecurity-Markt, und eine 25-Mrd.-USD-Übernahme zeigt Größenordnung und Ambition. Die Kursziele von 230-250 USD sind moderat optimistisch. Die Integration der…",
+     "figures": "25 Mrd. USD, 2,5 Mrd. USD, 100 Mio. Aktien, 230 USD, 250 USD"
+    },
+    {
+     "date": "2025-11-13",
+     "video_id": "DdOoAO1ztKo",
+     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1934s",
+     "channel": "Calling USA",
+     "kategorie": "chartanalyse",
+     "note": "Allzeithoch bei 220 USD erreicht; Potenzial bis 231 USD, wenn die 50%-Fibonacci-Retracement bei 198 USD gehalten wird; Rücksetzer auf 198 USD bieten spekulative Kaufchancen.",
+     "einordnung": "Ein Allzeithoch kurz vor den Quartalszahlen am 19.11. ist mutig – der Markt antizipiert offenbar ein gutes Ergebnis. Die 198-USD-Marke als Fibonacci-Unterstützung ist ein solider Einstiegspunkt bei R…",
+     "figures": "220 USD, 231 USD, 198 USD"
+    }
+   ]
+  },
+  "JPM": {
+   "name": "JPMorgan",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=385s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bankaktien standen unter Druck, nachdem die Bank of America eine schwache Prognose für das Investmentbanking abgegeben hatte. JPMorgan wurde dabei als Teil der belasteten Branche genannt.",
+     "einordnung": "Die Reaktion zeigt die hohe Branchensensitivität der Banken: Eine vorsichtigere Aussage eines großen Wettbewerbers kann sofort auf den gesamten Sektor ausstrahlen. Für JPMorgan ist das eher ein Senti…"
+    },
+    {
+     "date": "2026-09-11",
+     "video_id": "gIWKBn6INGI",
+     "url": "https://www.youtube.com/watch?v=gIWKBn6INGI&t=369s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Steigende Zinsen können JPMorgan kurzfristig helfen. Gleichzeitig warnt der Host vor dem Risiko einer konjunkturellen Abkühlung und setzt kurzfristig auf Chancen.",
+     "einordnung": "Banken profitieren grundsätzlich eher von einem höheren Zinsniveau als Immobilienwerte, sofern die Kreditqualität stabil bleibt. Genau dort liegt der Vorbehalt: Eine durch Inflation und hohe Renditen…"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "KiAPpoAsovw",
+     "url": "https://www.youtube.com/watch?v=KiAPpoAsovw&t=1978s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "JPMorgan übertraf die Erwartungen deutlich und steigerte den Umsatz um 27 Prozent. Investment Banking und Eigenkapitalrendite waren besonders stark; die Aktie legte um 2,5 Prozent zu.",
+     "einordnung": "JPMorgan profitiert gleichzeitig von starker Kapitalmarktaktivität und hoher operativer Profitabilität und hebt sich damit von schwächeren Bankreaktionen ab. Die Sondereffekte, darunter der Visa-Beit…",
+     "figures": "EPS 6,14 Dollar, 34 Cent über Konsens; Umsatz 58 Milliarden Dollar, plus 27 Prozent, gegenüber 51,3 Milliarden Dollar erwartet; Nettozinsertrag-Guidance 105,5 Milliarden Dollar; Investment-Banking-Um…"
+    }
+   ]
+  },
+  "^GDAXI": {
+   "name": "DAX",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=448s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX fiel unter seine 50-Tage-Linie, blieb aber oberhalb der 200-Tage-Linie. Der Host bewertet die Lage deshalb vorerst als entspannt.",
+     "einordnung": "Der Bruch der kurzfristigen Durchschnittslinie ist ein Warnsignal, aber der Halt über der 200-Tage-Linie verhindert bislang ein übergeordnetes Verkaufssignal. In einem nervösen Umfeld ist diese techn…",
+     "figures": "Schlussstand laut Videobeschreibung: 25.440 Punkte, minus 0,5 %; laut Marktdaten: 25.441 Punkte, minus 0,50 %"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "vOXfcKwP55o",
+     "url": "https://www.youtube.com/watch?v=vOXfcKwP55o&t=317s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX beendete die vergangene Woche mit einem Minus von rund 1,8 Prozent, nachdem die ersten vier Handelstage schwach verlaufen waren. Am Freitag gelang eine klare Erholung; der Host hält es für mö…",
+     "einordnung": "Meine Einordnung: Der Freitagsanstieg verbessert das kurzfristige Bild, beseitigt den Rendite- und Ölpreisgegenwind aber nicht. Der Markt bleibt damit anfällig für schnelle Richtungswechsel, wie sie…",
+     "figures": "Wochenminus: rund 1,8 %; DAX laut Marktdaten: 25.569 Punkte, plus 0,82 %"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "i1kvrS7aV-Q",
+     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=222s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX bewegt sich trotz negativer Themen seitwärts und zeigt damit relative Stabilität. Harry hält einen Ausbruch in Richtung 28.800 Punkte für eine Frage der Zeit.",
+     "einordnung": "Die relative Stabilität ist bemerkenswert, weil steigende Ölpreise und höhere Zinserwartungen normalerweise stärker auf zyklische Aktien drücken. Der Weg von der aktuellen Marktdaten-Notierung bis zu…",
+     "figures": "Zielbereich 28.800 Punkte; laut Marktdaten aktuell 25.441 Punkte, Tagesveränderung -0,50 Prozent."
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "6VmhA9lWzLk",
+     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=0s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt sich mit einem Minus von 0,3 Prozent relativ stabil, während der Nasdaq 100 mit minus 1,5 Prozent deutlich stärker unter Druck steht. Charttechnisch ist beim DAX eine Korrektur bis in d…",
+     "einordnung": "Die relative DAX-Stärke ist bemerkenswert, bleibt angesichts der Öl- und Zinsrisiken aber zunächst ein Stabilitätssignal und kein bestätigter neuer Aufwärtstrend. Das Nasdaq-100-KGV von 22,2 lässt be…",
+     "figures": "DAX -0,3 Prozent; Nasdaq 100 -1,5 Prozent; DAX-Ziel 25.200 Punkte; Nasdaq-100-KGV 22,2; DAX laut Marktdaten 25.441 Punkte, Nasdaq-100-Future 29.573 Punkte"
+    },
+    {
+     "date": "2026-09-09",
+     "video_id": "jt2Dj1AYn08",
+     "url": "https://www.youtube.com/watch?v=jt2Dj1AYn08&t=585s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX hielt sich zuletzt an der 50-Tage-Linie und schloss am Vortag knapp im Plus. Für den aktuellen Handelstag wird nach den schwachen internationalen Vorgaben ein deutlich schwächerer Start erwar…",
+     "einordnung": "Aus meiner Sicht ist die 50-Tage-Linie aktuell der kurzfristige Taktgeber, aber kein Freibrief für Stabilität. Die Marktdaten zeigen gegenüber dem im Video genannten Niveau bereits einen weiteren Rüc…",
+     "figures": "Vortag 26.008 Punkte; vorbörslich 25.859 Punkte; im Video aktuell 25.863 Punkte; laut Marktdaten aktuell 25.576 Punkte und -1,66 %"
+    },
+    {
+     "date": "2026-09-09",
+     "video_id": "g0GMr_IvZ-o",
+     "url": "https://www.youtube.com/watch?v=g0GMr_IvZ-o&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der DAX fällt um rund 1,6 %. Belastend wirken der starke Ölpreis, geopolitische Spannungen im Nahen Osten und steigende Anleiherenditen.",
+     "einordnung": "Das Umfeld ist für hoch bewertete Wachstumswerte besonders ungünstig, weil steigende Renditen den Bewertungsrahmen einengen. Der Markt zeigt bereits klare Risikoaversion, was der Fear-and-Greed-Wert…",
+     "figures": "DAX 25.576 Punkte und -1,66 % laut Marktdaten; WTI im Video kurz vor 96 USD; Brent laut Marktdaten 101,20 USD und +3,35 %; zehnjährige US-Rendite knapp über 4,8 %; wichtige Nasdaq-100-Marke bei 29.00…"
+    },
+    {
+     "date": "2026-09-02",
+     "video_id": "a2-MQZ_9yBM",
+     "url": "https://www.youtube.com/watch?v=a2-MQZ_9yBM&t=0s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Der Host ordnet die Bewegung als Konsolidierung nach dem Allzeithoch und als mögliches Doppeltop ein. Morgan Stanley sieht angesichts der starken Berichtssaison und der KI-bedingten Margenverbesserun…",
+     "einordnung": "Die aktuelle Marktlage ist klar defensiver als die unverändert starke Gewinnstory vieler Unternehmen. Die im Video genannte DAX-Zielzone liegt allerdings deutlich unter dem aktuellen Marktdatenstand…",
+     "figures": "DAX-Jahresplus rund 5 %; Zielzone des Hosts 15.000–15.200 Punkte; DAX laut Marktdaten aktuell 25.576 Punkte und 1,66 % im Minus; zehnjährige US-Rendite ca. 4,8 %; Marktpreis für eine September-Zinser…"
+    },
+    {
+     "date": "2026-09-01",
+     "video_id": "WGO1jesdYp4",
+     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=1499s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "66 Prozent der DAX-Unternehmen übertrafen die Gewinnprognosen, 74 Prozent die Umsatzprognosen. Die Gewinnerwartungen für das dritte Quartal wurden von 3 auf 10 Prozent angehoben; für das Quartal wird…",
+     "einordnung": "Die Kombination aus moderater Bewertung und positiven Revisionen ist für den DAX konstruktiv. Der Markt braucht nun allerdings Bestätigung durch weitere Gewinnsteigerungen, weil ein günstiges KGV all…",
+     "figures": "Gewinnprognosen übertroffen: 66 Prozent; Umsatzprognosen übertroffen: 74 Prozent; Gewinnerwartungen Q3 von plus 3 auf plus 10 Prozent angehoben; erwartetes Gewinnwachstum Q3: plus 24 Prozent; DAX-KGV…"
+    },
+    {
+     "date": "2026-09-01",
+     "video_id": "WGO1jesdYp4",
+     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=1757s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Historische Verlaufsvergleiche deuten laut Host auf eine kurze Schwäche im September, einen Anstieg im Oktober und eine Konsolidierung im Dezember hin. September und die erste Oktoberhälfte gelten sa…",
+     "einordnung": "Saisonalität ist ein nützlicher Rahmen, aber kein eigenständiger Auslöser. Sie gewinnt erst dann an Aussagekraft, wenn sie mit positiver Gewinnrevision, intakter Marktbreite und nachlassendem Zinsdru…"
+    },
+    {
+     "date": "2026-09-01",
+     "video_id": "WGO1jesdYp4",
+     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=2022s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "In sieben historischen Fällen war ein Einstieg Anfang September erfolgreich, wenn der DAX zwischen 5 und 15 Prozent seit Jahresbeginn gestiegen war und über der 200-Tage-Linie lag. Der DAX lag Ende A…",
+     "einordnung": "Sieben Beobachtungen sind für eine statistische These eine sehr kleine Stichprobe. Die Kombination aus positivem Jahresverlauf und langfristigem Aufwärtstrend ist dennoch ein konstruktives Signal, so…",
+     "figures": "DAX seit Jahresbeginn: plus 7 Prozent; historische Trefferquote: 100 Prozent bei 7 Fällen"
+    },
+    {
+     "date": "2026-09-01",
+     "video_id": "WGO1jesdYp4",
+     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=2123s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Siemens, Allianz und Airbus liegen laut Host nahe ihren Rekordhochs. Infineon, Siemens Energy und Siemens werden als wichtige Treiber des DAX genannt.",
+     "einordnung": "Die Indexperspektive hängt damit stark von wenigen Schwergewichten und zyklischen Führungswerten ab. Das ist positiv, solange die Marktführer bestätigen, erhöht aber die Anfälligkeit bei Gewinn- oder…"
+    },
+    {
+     "date": "2026-09-01",
+     "video_id": "WGO1jesdYp4",
+     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=2210s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Der Host erwartet einen Rücklauf des DAX in den Bereich von 25.500 bis 25.900 Punkten.",
+     "einordnung": "Die Zone liegt laut Marktdaten knapp unter dem aktuellen DAX-Stand und entspricht damit eher einer moderaten Korrektur als einem Trendbruch. Ob sie trägt, hängt von den US-Renditen, der Berichtssaiso…",
+     "figures": "Erwartete Rücklaufzone: 25.500 bis 25.900 Punkte; DAX laut Marktdaten aktuell: 26.007 Punkte"
+    }
+   ]
+  },
+  "ENR.DE": {
+   "name": "Siemens Energy",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=469s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Die Aktie fiel unter die runde Marke von 140 Euro und notierte laut Host bei 132,66 Euro. Charttechnisch sieht er weiteres Abwärtspotenzial bis zur Marke von 120 Euro.",
+     "einordnung": "Der Verlust einer runden Marke verschlechtert das kurzfristige Chartbild deutlich, zumal der Wert zuvor stark gelaufen war. Die 120-Euro-Marke ist nun der naheliegende technische Prüfpunkt, nicht abe…",
+     "figures": "Kurs im Video: 132,66 €; unterschrittene Marke: 140 €; nächste Unterstützung: 120 €"
+    },
+    {
+     "date": "2026-09-11",
+     "video_id": "7KvHvEHCDwY",
+     "url": "https://www.youtube.com/watch?v=7KvHvEHCDwY&t=368s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Der Rückgang von 192 auf 133 € wird vom Host als routinemäßige Gewinnmitnahme und Bewertungsrückschritt eingeordnet, nicht als operative Verschlechterung. SpaceX baut demnach eigene Gaskanäle und gre…",
+     "einordnung": "Die operative Dynamik spricht gegen einen klassischen Trendbruch, die Bewertung verlangt aber weiterhin hohe Gewinn- und Cashflow-Fortschritte. Charttechnisch ist die Zone um 150 bis 155 € der Lackmu…",
+     "figures": "Kursrückgang von 192 auf 133 €; im 3. Quartal Auftragseingang 17,9 Mrd. €, Umsatz plus 18,5 % auf 11,4 Mrd. €, Ergebnis 1,62 Mrd. € und Auftragsbestand 162 Mrd. €; für 2026 Umsatzwachstum von 14 bis…"
+    },
+    {
+     "date": "2026-09-04",
+     "video_id": "JYaFrjI3lJA",
+     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=510s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Chef von Siemens Energy warnt vor Risiken für die Infrastruktur. Zugleich könnten Drohnenhersteller von der veränderten Sicherheitslage profitieren.",
+     "einordnung": "Die Aussage unterstreicht, dass Infrastruktur und Sicherheit zunehmend als zusammenhängende Investitionsthemen betrachtet werden. Für Siemens Energy ist das grundsätzlich ein struktureller Rückenwind…"
+    },
+    {
+     "date": "2026-08-31",
+     "video_id": "ou1chvjk6G8",
+     "url": "https://www.youtube.com/watch?v=ou1chvjk6G8&t=350s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Die Aktie stieg seit 2023 von 7,3 Euro bis auf 190 Euro und zeigt nun ein mögliches Trendwendemuster. Der Bereich um 138 bis 139 Euro ist die zentrale Unterstützung; unter 133 Euro droht eine weiterg…",
+     "einordnung": "Nach einer derart außergewöhnlichen Aufwärtsbewegung ist eine Konsolidierung charttechnisch nicht überraschend. Der Abstand zwischen der Unterstützung bei 138 bis 139 Euro und der kritischen Marke be…",
+     "figures": "Anstieg von 7,3 Euro auf 190 Euro; Unterstützung 138 bis 139 Euro; kritische Marke 133 Euro; Tagesverlust 5 Prozent"
+    },
+    {
+     "date": "2026-08-18",
+     "video_id": "BxOBsfGofLs",
+     "url": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=271s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Siemens Energy wurde nach den CoreWeave-Zahlen als KI-Profiteur betrachtet und stieg zunächst kräftig. Der anschließende Zinsanstieg führte laut Host zu einem deutlichen Kurseinbruch.",
+     "einordnung": "Die KI-Fantasie greift bei Siemens Energy über den steigenden Strom- und Netzausbaubedarf. Das macht die Aktie interessant, aber auch anfällig für Übertreibungen, wenn der Markt künftiges Wachstum sc…",
+     "figures": "10-jährige US-Rendite 4,75 %"
+    },
+    {
+     "date": "2026-08-05",
+     "video_id": "Aw08vlwd9Y8",
+     "url": "https://www.youtube.com/watch?v=Aw08vlwd9Y8&t=475s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Siemens Energy überzeugte mit einem Rekord beim Auftragseingang und einer deutlich verbesserten Profitabilität. Gamesa erzielte erstmals wieder einen operativen Gewinn, die Prognose wurde bestätigt u…",
+     "einordnung": "Hier stehen nicht nur Auftragseingang und Umsatz, sondern vor allem der operative Umschwung bei Gamesa im Mittelpunkt. Die bestätigte Prognose gibt der Erholung Substanz, wobei die nach früheren Prob…",
+     "figures": "Auftragseingang plus 8,5 Prozent; Umsatz plus 18,5 Prozent auf 11,4 Mrd. Euro; Ergebnis vor Sondereffekten mehr als verdreifacht auf 1,6 Mrd. Euro; Gamesa operativer Gewinn 75 Mio. Euro nach einem Ve…"
+    },
+    {
+     "date": "2026-08-05",
+     "video_id": "EGrlj8Bmvr0",
+     "url": "https://www.youtube.com/watch?v=EGrlj8Bmvr0&t=1258s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Die Aktie startet stark und dreht anschließend ins Minus. Der Auftragseingang ist kräftig, die Book-to-Bill-Relation hoch und Gamesa schafft den operativen Turnaround. Analysten sehen Kurspotenzial b…",
+     "einordnung": "Der operative Turnaround bei Gamesa ist der entscheidende Hebel, gleichzeitig ist die Bewertung nach der starken Kursentwicklung nicht mehr niedrig. Ein belastbarer Boden wäre daher wichtiger als ein…",
+     "figures": "Auftragseingang 17,9 Mrd. Euro; Umsatz 11,4 Mrd. Euro; Book-to-Bill etwa 1,7; Gamesa-Betriebsgewinn 75 Mio. Euro nach minus 440 Mio. Euro; Umsatzwachstum 14 bis 16 %; Ergebnismarge 10 bis 12 %; Berns…"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=590s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Siemens Energy steigt im DAX als KI-Profiteur.",
+     "einordnung": "Die Einordnung als KI-Play verweist auf den steigenden Energiebedarf von Rechenzentren, ersetzt aber keine Prüfung der einzelnen Geschäftsbereiche. Der Kursimpuls ist daher zunächst thematisch und se…"
+    },
+    {
+     "date": "2026-07-22",
+     "video_id": "CnKfJ6qJVrA",
+     "url": "https://www.youtube.com/watch?v=CnKfJ6qJVrA&t=3431s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "In den Zuschauerfragen wird Siemens Energy als durch GE Vernova unter Druck beschrieben. Der Host sieht eine mögliche Chance am gleitenden 200-Tage-Durchschnitt.",
+     "einordnung": "Die relative Schwäche gegenüber GE Vernova kann auf Bewertungs-, Ausführungs- oder Erwartungsunterschiede hindeuten. Ohne konkrete Kursmarken bleibt die 200-Tage-Linie eher ein Beobachtungspunkt als…"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "nPEPzB9N_5o",
+     "url": "https://www.youtube.com/watch?v=nPEPzB9N_5o&t=593s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Die Aktie testete laut Host erfolgreich die 200-Tage-Linie und prallte im Bereich von 141 bis 142 Euro nach oben ab. Nun stabilisiert sie sich zwischen 155 und 160 Euro.",
+     "einordnung": "Der erfolgreiche Test der 200-Tage-Linie verbessert das charttechnische Bild, doch die Aktie bleibt nach ihrer starken Erholung anfällig für Gewinnmitnahmen. Der Bereich 155 bis 160 Euro wird damit z…",
+     "figures": "Abprallzone 141 bis 142 EUR; Stabilisierung im Bereich 155 bis 160 EUR"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "KiAPpoAsovw",
+     "url": "https://www.youtube.com/watch?v=KiAPpoAsovw&t=787s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Siemens Energy soll in Omterra umbenannt werden; künftig entfallen Lizenzgebühren von 300 Millionen Euro. JP Morgan bewertet den Titel wegen des möglichen Margenanstiegs positiv. Charttechnisch sieht…",
+     "einordnung": "Die niedrigere Bewertung gegenüber GE Vernova spricht für einen Bewertungsabschlag, der bei anhaltender Margenverbesserung abgebaut werden könnte. Nach dem Anstieg von 6,40 auf 154 Euro ist die Aktie…",
+     "figures": "Lizenzgebühren 300 Millionen Euro; KGV 30 bei Siemens Energy gegenüber 58 bei GE Vernova; PEG 0,5 gegenüber 1,8; Kursanstieg von 6,40 Euro auf 154 Euro; Tagesplus 0,4 Prozent"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "8EytmuiphH4",
+     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=1676s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Barclays stuft Siemens Energy wegen der hohen Bewertung auf Verkaufen ab. Dem stehen starke Perspektiven gegenüber: Der Gewinn je Aktie soll von 4,26 Euro auf 9,20 Euro bis 2028 steigen, der Umsatz v…",
+     "einordnung": "Die Aktie ist mit einem KGV von 29 kein klassischer Value-Titel, doch das PEG von 0,53 signalisiert, dass die Bewertung im Verhältnis zum erwarteten Gewinnwachstum weniger extrem wirkt. Der Streit zw…",
+     "figures": "Marktkapitalisierung 130 Mrd. Euro, EPS von 4,26 auf 9,20 Euro bis 2028, Umsatz von 43 auf 57 Mrd. Euro, KGV 29, PEG 0,53, erwartetes Gewinnwachstum 170 Prozent"
+    }
+   ]
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=517s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Infineon fiel ebenfalls unter die 200-Tage-Linie und gehörte zu den größeren Verlierern.",
+     "einordnung": "Der Fall unter die 200-Tage-Linie ist bei einem zyklischen Halbleiterwert ein ernstzunehmendes technisches Warnsignal. Gleichzeitig macht die Nähe zum KI- und Technologiethema die Aktie besonders anf…"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "i1kvrS7aV-Q",
+     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=1327s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Infineon steht ebenfalls unter Druck und wird als Teil des europäischen Chip-Universums eingeordnet. Eine detaillierte Chartanalyse liefert der Host in diesem Abschnitt nicht.",
+     "einordnung": "Infineon ist damit eher ein Sektorindikator als ein eigenständiges Setup der Sendung. Die Aktie bleibt von der allgemeinen Halbleiterstimmung abhängig, ohne dass hier eine konkrete technische Marke g…"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "6VmhA9lWzLk",
+     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=3821s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Infineon gerät im Zuge der KI-Panik mit 8,5 Prozent unter Druck. Charttechnisch sieht der Host noch Spielraum bis zur Unterstützung bei 48 bis 49 Euro.",
+     "einordnung": "Der Rückgang zeigt, dass die KI-Sicherheitsdebatte auch auf europäische Halbleiterwerte ausstrahlt, obwohl Infineon nicht ausschließlich von Rechenzentrums-KI lebt. Die genannte Unterstützung ist zun…",
+     "figures": "-8,5 Prozent; Unterstützung 48 bis 49 Euro"
+    },
+    {
+     "date": "2026-09-09",
+     "video_id": "jt2Dj1AYn08",
+     "url": "https://www.youtube.com/watch?v=jt2Dj1AYn08&t=630s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Morgan Stanley senkte die Einstufung und das Kursziel, während Berenberg sein Kursziel bestätigte und eine gute Einstiegsgelegenheit sieht. Vorbörslich lag die Aktie mehr als 1 % im Plus.",
+     "einordnung": "Aus meiner Sicht zeigt die große Spanne zwischen den Analystenzielen vor allem die Unsicherheit über den Zyklus und die Erholung der Nachfrage. Ein positives Signal oberhalb der 50-Tage-Linie wäre te…",
+     "figures": "Morgan-Stanley-Kursziel von 81 auf 65 Euro gesenkt; Berenberg-Kursziel 100 Euro; vorbörslich über 1 % im Plus"
+    },
+    {
+     "date": "2026-09-08",
+     "video_id": "fYae2mfR1ps",
+     "url": "https://www.youtube.com/watch?v=fYae2mfR1ps&t=1833s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Morgan Stanley senkt Infineon von Overweight auf Equal Weight und reduziert das Kursziel von 84 auf 65 Euro. Begründet wird dies mit einem möglicherweise nahe dem Hoch stehenden DRAM-Zyklus; der Host…",
+     "einordnung": "Die niedrige PEG-Ratio spricht für ein im Verhältnis zum erwarteten Wachstum moderates Bewertungsniveau, während das KGV von 22,6 bereits eine gewisse Qualität einpreist. Der Konflikt zwischen zyklis…",
+     "figures": "84 € WBG-Research-Ziel, 65 € Morgan-Stanley-Ziel, 60,80 € Schlusskurs vor dem Downgrade, 4 % Kursrückgang, KGV 22,6, PEG 0,56, mögliches Ziel 50 €"
+    },
+    {
+     "date": "2026-09-07",
+     "video_id": "SSFzzcpor7A",
+     "url": "https://www.youtube.com/watch?v=SSFzzcpor7A&t=1429s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Warburg Research stuft Infineon von Halten auf Kaufen hoch und nennt ein Kursziel von 84 Euro. Die Aktie steigt um 3 Prozent. Der Host verweist auf ein KGV von 22, ein PEG von unter 0,6 und ein Chanc…",
+     "einordnung": "Das niedrige PEG deutet im Verhältnis zum erwarteten Wachstum auf eine attraktivere Bewertung hin als das absolute KGV zunächst vermuten lässt. Der konkrete Stopp unter dem Dreifachboden macht jedoch…",
+     "figures": "+3%; Kursziel 84 Euro; KGV 22; PEG unter 0,6; Chance-Risiko-Verhältnis 5:1"
+    },
+    {
+     "date": "2026-08-24",
+     "video_id": "CxBQV7-eeMA",
+     "url": "https://www.youtube.com/watch?v=CxBQV7-eeMA&t=675s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon steht unter dem Druck schwächerer Chipwerte in den USA und Asien und verlor am Morgen 1,5 Prozent. Seit Jahresbeginn liegt die Aktie dennoch mehr als 40 Prozent im Plus.",
+     "einordnung": "Der Tagesverlust wirkt vor allem wie eine sektorweite Reaktion und nicht wie ein isoliertes Infineon-Problem. Nach einem Jahresplus von mehr als 40 Prozent ist die Aktie allerdings anfälliger für Gew…",
+     "figures": "-1,5 Prozent am Morgen; mehr als +40 Prozent seit Jahresbeginn"
+    },
+    {
+     "date": "2026-08-18",
+     "video_id": "BxOBsfGofLs",
+     "url": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=271s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon wird vom Host als KI-Profiteur eingeordnet und stieg zunächst nach den CoreWeave-Zahlen deutlich. Später belastete der Zinsanstieg die Aktie, sodass die vorherige Erholung nur vorübergehend…",
+     "einordnung": "Infineon verbindet strukturelle Halbleiternachfrage mit zyklischer Industrieexponierung. Damit ist die Aktie weniger ein reiner KI-Wert als ein Mischfall, bei dem Zinsen, Investitionszyklus und Konju…",
+     "figures": "10-jährige US-Rendite 4,75 %"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "mREZgmSkQCI",
+     "url": "https://www.youtube.com/watch?v=mREZgmSkQCI&t=539s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon bleibt wegen der Erholung im Chipsektor im Fokus.",
+     "einordnung": "Infineon ist stärker vom Zyklus und der Nachfrage in wichtigen Industrie- und Autoanwendungen abhängig als viele reine Softwarewerte. Eine Sektorerholung kann deshalb kräftig wirken, bleibt aber anfä…"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "pWfog8GURyw",
+     "url": "https://www.youtube.com/watch?v=pWfog8GURyw&t=858s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon steigerte im dritten Quartal den Umsatz um 13 Prozent auf 4,17 Mrd. Euro und das bereinigte EBIT um 19 Prozent auf 797 Mio. Euro. Der KI-Chip-Umsatz für 2025/26 wurde auf 1,6 Mrd. Euro angeh…",
+     "einordnung": "Die operative Verbesserung ist überzeugend, doch ein KGV von 25,8 verlangt bereits mehr als eine normale zyklische Erholung. Meine Einschätzung: Infineon ist qualitativ interessant, aber der Kurs dür…",
+     "figures": "Umsatz: 4,17 Mrd. Euro; bereinigtes EBIT: 797 Mio. Euro; EBIT-Marge: 19,1 Prozent; Free Cashflow: 600 Mio. Euro; Auftragsbestand: 30 Mrd. Euro; KI-Chips 2025/26: 1,6 Mrd. Euro; KGV: 25,8"
+    },
+    {
+     "date": "2026-08-05",
+     "video_id": "EGrlj8Bmvr0",
+     "url": "https://www.youtube.com/watch?v=EGrlj8Bmvr0&t=1596s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Infineon übertrifft beim Umsatz die Erwartungen und konkretisiert den Ausblick, verfehlt aber die Margenerwartungen und senkt die Cashflow-Prognose. Das KI-Geschäft, insbesondere für Rechenzentren, b…",
+     "einordnung": "Infineon liefert beim Umsatz und Ergebnis ordentlich, aber die Margen- und Cashflow-Signale verhindern den uneingeschränkten Befreiungsschlag. Bei einem KGV deutlich über der historischen Bewertung b…",
+     "figures": "Q3-Umsatz 4,2 Mrd. Euro gegenüber erwarteten 4,1 Mrd. Euro; Segmentergebnis 800 Mio. Euro (+22 %); Segmentmarge 19,1 % gegenüber erwarteten 19,6 %; Q4-Umsatzausblick 4,7 Mrd. Euro; Q4-Marge 23 % gege…"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=590s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon profitiert von der KI-Rally und steigt im DAX deutlich.",
+     "einordnung": "Die Bewegung ist vor allem eine Sektorreaktion und noch kein Beleg für eine nachhaltige Verbesserung sämtlicher Halbleiter-Endmärkte. Infineon bleibt daher stärker von Zyklik und Investitionsbereitsc…"
+    }
+   ]
+  },
+  "EVK.DE": {
+   "name": "Evonik",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=553s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Evonik geriet nach einem starken Lauf unter Druck. Zusätzlich belastet ein Sparprogramm, das die Schließung von zwei Werken vorsieht.",
+     "einordnung": "Hier verbinden sich Gewinnmitnahmen mit einer operativen Anpassung, die auf anhaltenden Kostendruck hindeutet. Das macht Evonik im Vergleich zu den reinen Umschichtungsthemen zu einem Wert mit eigene…"
+    }
+   ]
+  },
+  "HEN3.DE": {
+   "name": "Henkel",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=578s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Henkel wird als defensiver Titel eingeordnet, der von Kapitalabflüssen aus dem Technologiesektor profitieren könnte.",
+     "einordnung": "Henkel steht für die klassische defensive Ausweichbewegung, wenn Anleger Zyklik und Technologie vorübergehend meiden. Das schützt nicht vor allgemeinen Marktrisiken, kann aber für relative Stabilität…"
+    }
+   ]
+  },
+  "DTE.DE": {
+   "name": "Deutsche Telekom",
+   "auftritte": [
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=599s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Deutsche Telekom gilt im aktuellen Umfeld als sicherer Hafen und könnte von Mittelzuflüssen profitieren.",
+     "einordnung": "Telekom passt mit ihrem defensiveren Profil in eine Marktphase, in der Anleger Stabilität und planbarere Geschäftsmodelle suchen. Der mögliche Mittelzufluss ist jedoch eine relative Stärke und kein S…"
+    },
+    {
+     "date": "2026-09-04",
+     "video_id": "JYaFrjI3lJA",
+     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=440s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Paul Singer soll bei der Deutschen Telekom eingestiegen sein. Daraus entstehen Hoffnungen auf eine mögliche Fusion mit T-Mobile und höhere Ausschüttungen, doch die Marktreaktion blieb verhalten.",
+     "einordnung": "Der Fall zeigt, dass ein prominenter aktivistischer Investor allein noch keinen Unternehmenswert hebt. Ohne konkrete strategische Schritte bleibt die Fantasie über Fusion und Ausschüttungen zunächst…"
+    },
+    {
+     "date": "2026-09-03",
+     "video_id": "MKffdo9qIGA",
+     "url": "https://www.youtube.com/watch?v=MKffdo9qIGA&t=830s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Elliott Investment Management ist eingestiegen und drängt auf Aktienrückkäufe statt einer Fusion mit T-Mobile. Der Host verweist auf eine Marktkapitalisierung der Deutschen Telekom von rund 140 Milli…",
+     "einordnung": "Aktivistischer Druck kann Kapitalrückführungen beschleunigen, erhöht aber auch die strategische Spannung im Konzern. Das moderate KGV wirkt nicht exzessiv, doch ein Teil der strukturellen Telekom-Fan…",
+     "figures": "Marktkapitalisierung Deutsche Telekom rund 140 Milliarden Euro; T-Mobile 200 Milliarden US-Dollar; Tagesplus 1,5 Prozent; KGV 11,8 bis 13; Kursziel beziehungsweise Zielbereich 33 bis 34 Euro; erwarte…"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "pWfog8GURyw",
+     "url": "https://www.youtube.com/watch?v=pWfog8GURyw&t=1222s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Die Deutsche Telekom hat ihr Aktienrückkaufprogramm erhöht. Ein Übernahmeangebot für T-Mobile US erwartet der Host nicht; steigende Zinsen bleiben ein Belastungsfaktor.",
+     "einordnung": "Die Rückkäufe stützen den Gewinn je Aktie, ändern aber wenig an der Zinssensitivität eines kapitalintensiven Telekomkonzerns. Meine Einordnung bleibt daher neutral, solange kein neuer operativer Impu…"
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=445s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Die Deutsche Telekom hat ihr Aktienrückkaufprogramm um 3 Milliarden auf 5 Milliarden Euro ausgeweitet. Nach einem Quartalsumsatz von knapp 30 Milliarden Euro rückt charttechnisch die Marke von 30 Eur…",
+     "einordnung": "Das erweiterte Rückkaufprogramm liefert einen klaren kapitalmarktseitigen Impuls und kann die Aktie je Anteil zusätzlich unterstützen. Für den charttechnischen Durchbruch über 30 Euro braucht es denn…",
+     "figures": "Aktienrückkauf um 3 Milliarden auf 5 Milliarden Euro ausgeweitet; Q2-Umsatz knapp unter 30 Milliarden Euro; 30-Euro-Marke"
+    },
+    {
+     "date": "2026-08-06",
+     "video_id": "MkZjn-BH5v4",
+     "url": "https://www.youtube.com/watch?v=MkZjn-BH5v4&t=419s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Die Deutsche Telekom dient als historisches Beispiel für eine Liquiditäts- und Euphoriephase: Beim Börsengang vor 28 Jahren wurden Kurse von etwa 10 bis 13 Euro genannt. Außerdem verweist Bernecker a…",
+     "einordnung": "Die Telekom steht hier weniger für eine kurzfristige Kursprognose als für den Wert strategischer Entscheidungen über mehrere Jahre. Der Vergleich mit der damaligen Euphorie mahnt zugleich, Liquidität…",
+     "figures": "Börsengang vor 28 Jahren; Kurse von etwa 10, 12 und 13 Euro"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=730s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Die Deutsche Telekom leidet laut Egmond unter ihrer hohen Verschuldung, weil steigende Zinsen die Finanzierung belasten.",
+     "einordnung": "Telekomwerte werden oft als defensiv wahrgenommen, sind wegen ihrer Kapitalstruktur aber nicht immun gegen höhere Zinsen. Der Belastung steht grundsätzlich die relativ stabile Nachfrage im operativen…"
+    },
+    {
+     "date": "2026-07-10",
+     "video_id": "H5zYVH8xlRI",
+     "url": "https://www.youtube.com/watch?v=H5zYVH8xlRI&t=413s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Aktie unter Druck durch Sorgen um Satelliten-Konkurrenz. JP Morgan stuft jedoch auf Kauf auf aktuellem Niveau ein. Langfristig wenig falsch zu machen, attraktive Dividendenrendite.",
+     "einordnung": "Die Satelliten-Konkurrenz-Sorge ist ein bekanntes Narrativ, das immer wieder aufschlägt — ähnlich wie bei 2021, als Starlink den Mobilfunkmarkt 'revolutionieren' sollte. Die Realität: Regulatorische…"
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1049s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Talfahrt nach SpaceX/Charter-Gerücht, Indexgewicht ca. 4-5 Prozent im DAX. Haidt rät zu Vorsicht bei Telekom und T-Mobile US.",
+     "einordnung": "Die Telekom war lange ein DAX-Stabilitätsanker – wenn sie ins Wackeln gerät, hat das Signalcharakter für den gesamten Index. Das SpaceX/Charter-Gerücht könnte ein Branchenwechsel einläuten, der klass…",
+     "figures": "Indexgewicht 4-5%"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=818s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Q1-Zahlen: Umsatz 29,87 Mrd. € (organisch +4,7 %), bereinigtes EBITDA 11,52 Mrd. €, Free Cashflow 5,69 Mrd. €. Partnerschaft mit Starlink vereinbart. S&P-Rating auf A- angehoben. Investoren sorgen si…",
+     "einordnung": "Die Telekom ist ein Musterbeispiel für einen defensiven Cashflow-Konzern, der in einem zinssensitiven Umfeld als Zuflucht dient. Das KGV von 11,6 ist günstig, die Starlink-Partnerschaft strategisch w…",
+     "figures": "29,87 Mrd. € (Umsatz), +4,7 % (organisch), 11,52 Mrd. € (EBITDA), 5,69 Mrd. € (Free Cashflow), 0,54 € (Gewinn je Aktie), 53,8 % (Anteil T-Mobile US), 11,6 (KGV)"
+    }
+   ]
+  },
   "DPLM.L": {
    "name": "Diploma",
    "auftritte": [
@@ -195,131 +1064,6 @@
     }
    ]
   },
-  "BZ=F": {
-   "name": "Öl",
-   "auftritte": [
-    {
-     "date": "2026-09-14",
-     "video_id": "vOXfcKwP55o",
-     "url": "https://www.youtube.com/watch?v=vOXfcKwP55o&t=47s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "makro",
-     "note": "Der Host sieht die Ölpreise wegen der geplatzten Gespräche im Nahen Osten wieder anziehen. Das belastet insbesondere die asiatischen Aktienmärkte.",
-     "einordnung": "Meine Einordnung: Ein steigender Ölpreis ist für Energieproduzenten zunächst positiv, für Verbraucher, Industrie und Transport aber ein Kostenfaktor. Die Börse reagiert deshalb meist stärker auf die…",
-     "figures": "Brent laut Marktdaten: 106,81 US-Dollar je Barrel, plus 2,10 %"
-    },
-    {
-     "date": "2026-09-11",
-     "video_id": "gIWKBn6INGI",
-     "url": "https://www.youtube.com/watch?v=gIWKBn6INGI&t=87s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der Host sieht Brent und WTI nach einem technischen Ausbruch weiter im Aufwärtstrend. Als mögliches Ziel nennt er die März-Hochs knapp unter 120 US-Dollar.",
-     "einordnung": "Der Ölpreis bleibt der zentrale Inflationsverstärker für diesen Handelstag. Allerdings zeigt die Abweichung zwischen dem vom Host genannten Niveau und den aktuellen Marktdaten, dass der Ausbruch kurz…",
-     "figures": "Host: Brent 108 US-Dollar und WTI 102,6 US-Dollar; mögliches Ziel knapp unter 120 US-Dollar. Beschreibung: Ölpreis 107 US-Dollar. Aktuell laut Marktdaten: Brent 106,10 US-Dollar, -1,42 Prozent."
-    },
-    {
-     "date": "2026-09-07",
-     "video_id": "tHrMBx5m1QU",
-     "url": "https://www.youtube.com/watch?v=tHrMBx5m1QU&t=86s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Host sieht die Ölpreise weiter im Aufwind und hält einen Anstieg von Brent über 100 Dollar für möglich, solange sich die Lage im Nahen Osten nicht entspannt.",
-     "einordnung": "Der Ölmarkt preist derzeit vor allem das geopolitische Risiko ein, nicht nur die konjunkturelle Nachfrage. Ein Sprung über 100 Dollar wäre für Verbraucher und energieintensive Unternehmen ein klarer…",
-     "figures": "über 100 Dollar; Brent aktuell laut Marktdaten 96,28 Dollar"
-    },
-    {
-     "date": "2026-09-02",
-     "video_id": "dQ9DpBEtuKk",
-     "url": "https://www.youtube.com/watch?v=dQ9DpBEtuKk&t=90s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Die Ölpreise ziehen wegen der Iran-Eskalation deutlich an. Brent notiert laut Host oberhalb seiner 200-Tage-Linie, während WTI über 90 Dollar steigt.",
-     "einordnung": "Der Sprung über einen viel beachteten langfristigen Durchschnitt verbessert zunächst das charttechnische Bild für Öl. Für den Gesamtmarkt ist ein dauerhaft höherer Ölpreis allerdings eher ein Belastu…",
-     "figures": "Brent: 94 $; aktuell laut Marktdaten: 96,28 $; WTI: über 90 $"
-    },
-    {
-     "date": "2026-09-01",
-     "video_id": "7ZQYsSxRi2M",
-     "url": "https://www.youtube.com/watch?v=7ZQYsSxRi2M&t=26s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Ölpreis stieg nach dem Angriff auf einen Tanker in der Straße von Hormus auf über 90 US-Dollar. Die Marke von 100 US-Dollar wurde laut Host noch nicht erreicht.",
-     "einordnung": "Der aktuelle Brent-Preis liegt bereits nahe 100 US-Dollar und macht den Energieschock für Verbraucher und Unternehmen spürbar. Für Ölproduzenten ist das kurzfristig positiv, für die Gesamtwirtschaft…",
-     "figures": "Brent laut Host: über 90 USD; Brent laut Marktdaten aktuell: 96,28 USD"
-    },
-    {
-     "date": "2026-09-01",
-     "video_id": "WGO1jesdYp4",
-     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=2338s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Host erwartet beim Ölpreis eine Bewegung in einer Bandbreite mit tendenziell höherem Risiko nach oben, falls geopolitische Spannungen zunehmen. Politische Eingriffe könnten diese Bewegung jedoch…",
-     "einordnung": "Bei einem Brent-Preis von 96,28 US-Dollar ist der Inflations- und Margeneffekt für die Märkte bereits relevant. Geopolitische Aufschläge stützen Energieproduzenten, belasten aber Konsumenten, Transpo…",
-     "figures": "Brent laut Marktdaten aktuell: 96,28 US-Dollar"
-    },
-    {
-     "date": "2026-08-31",
-     "video_id": "oTVTqvO9we8",
-     "url": "https://www.youtube.com/watch?v=oTVTqvO9we8&t=151s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nach US-Angriffen auf den Iran steigen die Ölpreise um 1 bis 1,5 Prozent. Brent und WTI notieren dabei jeweils über 90 US-Dollar.",
-     "einordnung": "Der unmittelbare Preisschub ist geopolitisch getrieben und nicht automatisch nachhaltig. Bleiben Transportwege oder Förderanlagen bedroht, würde der Ölpreis jedoch über den Inflationskanal zum Belast…",
-     "figures": "Plus 1 bis 1,5 Prozent; Brent über 90 US-Dollar; WTI über 90 US-Dollar; Brent aktuell laut Marktdaten: 96,28 US-Dollar"
-    },
-    {
-     "date": "2026-08-13",
-     "video_id": "smkyeECHjv8",
-     "url": "https://www.youtube.com/watch?v=smkyeECHjv8&t=866s",
-     "channel": "BerneckerTV",
-     "kategorie": "makro",
-     "note": "Der Ölpreis bleibt wegen des Iran-Konflikts volatil, doch die Märkte gewöhnen sich nach Einschätzung des Hosts zunehmend an die geopolitische Belastung. Die US-Eigenförderung mildert die Versorgungsr…",
-     "einordnung": "Die fallende Brent-Notierung trotz der geopolitischen Risiken zeigt, dass der Markt derzeit keinen dauerhaften globalen Versorgungsausfall einpreist. Die Lage bleibt jedoch asymmetrisch: Eine tatsäch…",
-     "figures": "Psychologische Marke von 6 Dollar je Gallone; Brent aktuell laut Marktdaten 87,36 Dollar je Barrel und 1,82 Prozent im Minus"
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "Hwf_CXhBgJU",
-     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=347s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Die Spannungen um die Straße von Hormus machen den Ölpreis zum geopolitischen Spielball. Der Host nennt 70 bis 71 Dollar als wichtige Zone sowie 67 Dollar als weitere charttechnische Marke.",
-     "einordnung": "Der aktuelle Brent-Anstieg auf 87,87 Dollar zeigt, dass der Risikoaufschlag den Markt kurzfristig dominiert. Für eine belastbare Trendanalyse müsste sich die Lage an der wichtigen Transportroute zunä…",
-     "figures": "67 $, 70–71 $, Brent aktuell laut Marktdaten: 87,87 $ (+5,17 %)"
-    },
-    {
-     "date": "2026-08-05",
-     "video_id": "hmqZDddNkEc",
-     "url": "https://www.youtube.com/watch?v=hmqZDddNkEc&t=255s",
-     "channel": "BerneckerTV",
-     "kategorie": "makro",
-     "note": "Thieme sieht den Ölpreis als wichtigen Hebel für die Aktienmärkte: Bei einer geopolitischen Eskalation hält er 120 bis 130 US-Dollar für möglich, bei Entspannung etwa 60 US-Dollar. Zwischen Ölpreisan…",
-     "einordnung": "Bei einem Brent-Preis von 79,49 US-Dollar liegt der Markt zwischen den beiden vom Host skizzierten Extremszenarien. Für Aktien ist weniger das absolute Niveau als die Geschwindigkeit eines Anstiegs e…",
-     "figures": "Szenario Eskalation: 120 bis 130 US-Dollar; Szenario Entspannung: 60 US-Dollar; Brent laut Marktdaten 79,49 US-Dollar, plus 0,16 Prozent"
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=1686s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Ölpreis fiel nach Trumps Ankündigung neuer Iran-Verhandlungen intraday um 10 Prozent und gab auf Wochenbasis 2 Prozent nach. Egmond erwartet bei hoher Volatilität eine Seitwärtsbewegung.",
-     "einordnung": "Die Marktdaten bestätigen den starken Druck auf Brent mit 79,28 US-Dollar und einem Tagesminus von 5,36 Prozent; der Host nennt zusätzlich den intraday deutlich stärkeren Einbruch. Die Diskrepanz erk…",
-     "figures": "Intraday-Rückgang 10 Prozent; Wochenrückgang 2 Prozent; Brent laut Marktdaten 79,28 US-Dollar, minus 5,36 Prozent"
-    },
-    {
-     "date": "2026-08-03",
-     "video_id": "CZa-I4ZurbI",
-     "url": "https://www.youtube.com/watch?v=CZa-I4ZurbI&t=125s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Die Ölpreise gaben kräftig nach, nachdem der geplante US-Militärschlag gegen Iran abgesagt wurde. Die Aussicht auf eine Wiederaufnahme der Verhandlungen nahm einen Teil des geopolitischen Risikoaufsc…",
-     "einordnung": "Der Rückgang ist zunächst eine Entspannung bei der Risikoprämie und kein Beleg für eine dauerhaft schwache Ölnachfrage. Die widersprüchlichen Signale aus Washington sprechen dafür, geopolitische Auss…",
-     "figures": "Brent laut Host -4,8 Prozent, zwischenzeitlich bis zu -10 Prozent; WTI 79,88 Dollar und -5,6 Prozent; aktuell laut Marktdaten: Brent 83,49 Dollar und -7,36 Prozent"
-    }
-   ]
-  },
   "GC=F": {
    "name": "Gold",
    "auftritte": [
@@ -439,129 +1183,6 @@
      "kategorie": "chartanalyse",
      "note": "Gold profitiert von der geopolitischen Unsicherheit und neuen Hoffnungen auf Zinssenkungen. Die 200-Tagelinie wird als mögliches Kaufsignal genannt.",
      "einordnung": "Gold bleibt damit ein klassischer Stabilisator für ein Umfeld aus politischen Risiken und sinkenden Renditeerwartungen. Die 200-Tagelinie ist als Orientierung sinnvoll, ersetzt aber keine Prüfung, ob…"
-    }
-   ]
-  },
-  "^GDAXI": {
-   "name": "DAX",
-   "auftritte": [
-    {
-     "date": "2026-09-14",
-     "video_id": "vOXfcKwP55o",
-     "url": "https://www.youtube.com/watch?v=vOXfcKwP55o&t=317s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX beendete die vergangene Woche mit einem Minus von rund 1,8 Prozent, nachdem die ersten vier Handelstage schwach verlaufen waren. Am Freitag gelang eine klare Erholung; der Host hält es für mö…",
-     "einordnung": "Meine Einordnung: Der Freitagsanstieg verbessert das kurzfristige Bild, beseitigt den Rendite- und Ölpreisgegenwind aber nicht. Der Markt bleibt damit anfällig für schnelle Richtungswechsel, wie sie…",
-     "figures": "Wochenminus: rund 1,8 %; DAX laut Marktdaten: 25.569 Punkte, plus 0,82 %"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "i1kvrS7aV-Q",
-     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=222s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX bewegt sich trotz negativer Themen seitwärts und zeigt damit relative Stabilität. Harry hält einen Ausbruch in Richtung 28.800 Punkte für eine Frage der Zeit.",
-     "einordnung": "Die relative Stabilität ist bemerkenswert, weil steigende Ölpreise und höhere Zinserwartungen normalerweise stärker auf zyklische Aktien drücken. Der Weg von der aktuellen Marktdaten-Notierung bis zu…",
-     "figures": "Zielbereich 28.800 Punkte; laut Marktdaten aktuell 25.441 Punkte, Tagesveränderung -0,50 Prozent."
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "6VmhA9lWzLk",
-     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=0s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt sich mit einem Minus von 0,3 Prozent relativ stabil, während der Nasdaq 100 mit minus 1,5 Prozent deutlich stärker unter Druck steht. Charttechnisch ist beim DAX eine Korrektur bis in d…",
-     "einordnung": "Die relative DAX-Stärke ist bemerkenswert, bleibt angesichts der Öl- und Zinsrisiken aber zunächst ein Stabilitätssignal und kein bestätigter neuer Aufwärtstrend. Das Nasdaq-100-KGV von 22,2 lässt be…",
-     "figures": "DAX -0,3 Prozent; Nasdaq 100 -1,5 Prozent; DAX-Ziel 25.200 Punkte; Nasdaq-100-KGV 22,2; DAX laut Marktdaten 25.441 Punkte, Nasdaq-100-Future 29.573 Punkte"
-    },
-    {
-     "date": "2026-09-09",
-     "video_id": "jt2Dj1AYn08",
-     "url": "https://www.youtube.com/watch?v=jt2Dj1AYn08&t=585s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX hielt sich zuletzt an der 50-Tage-Linie und schloss am Vortag knapp im Plus. Für den aktuellen Handelstag wird nach den schwachen internationalen Vorgaben ein deutlich schwächerer Start erwar…",
-     "einordnung": "Aus meiner Sicht ist die 50-Tage-Linie aktuell der kurzfristige Taktgeber, aber kein Freibrief für Stabilität. Die Marktdaten zeigen gegenüber dem im Video genannten Niveau bereits einen weiteren Rüc…",
-     "figures": "Vortag 26.008 Punkte; vorbörslich 25.859 Punkte; im Video aktuell 25.863 Punkte; laut Marktdaten aktuell 25.576 Punkte und -1,66 %"
-    },
-    {
-     "date": "2026-09-09",
-     "video_id": "g0GMr_IvZ-o",
-     "url": "https://www.youtube.com/watch?v=g0GMr_IvZ-o&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Der DAX fällt um rund 1,6 %. Belastend wirken der starke Ölpreis, geopolitische Spannungen im Nahen Osten und steigende Anleiherenditen.",
-     "einordnung": "Das Umfeld ist für hoch bewertete Wachstumswerte besonders ungünstig, weil steigende Renditen den Bewertungsrahmen einengen. Der Markt zeigt bereits klare Risikoaversion, was der Fear-and-Greed-Wert…",
-     "figures": "DAX 25.576 Punkte und -1,66 % laut Marktdaten; WTI im Video kurz vor 96 USD; Brent laut Marktdaten 101,20 USD und +3,35 %; zehnjährige US-Rendite knapp über 4,8 %; wichtige Nasdaq-100-Marke bei 29.00…"
-    },
-    {
-     "date": "2026-09-02",
-     "video_id": "a2-MQZ_9yBM",
-     "url": "https://www.youtube.com/watch?v=a2-MQZ_9yBM&t=0s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Der Host ordnet die Bewegung als Konsolidierung nach dem Allzeithoch und als mögliches Doppeltop ein. Morgan Stanley sieht angesichts der starken Berichtssaison und der KI-bedingten Margenverbesserun…",
-     "einordnung": "Die aktuelle Marktlage ist klar defensiver als die unverändert starke Gewinnstory vieler Unternehmen. Die im Video genannte DAX-Zielzone liegt allerdings deutlich unter dem aktuellen Marktdatenstand…",
-     "figures": "DAX-Jahresplus rund 5 %; Zielzone des Hosts 15.000–15.200 Punkte; DAX laut Marktdaten aktuell 25.576 Punkte und 1,66 % im Minus; zehnjährige US-Rendite ca. 4,8 %; Marktpreis für eine September-Zinser…"
-    },
-    {
-     "date": "2026-09-01",
-     "video_id": "WGO1jesdYp4",
-     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=1499s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "66 Prozent der DAX-Unternehmen übertrafen die Gewinnprognosen, 74 Prozent die Umsatzprognosen. Die Gewinnerwartungen für das dritte Quartal wurden von 3 auf 10 Prozent angehoben; für das Quartal wird…",
-     "einordnung": "Die Kombination aus moderater Bewertung und positiven Revisionen ist für den DAX konstruktiv. Der Markt braucht nun allerdings Bestätigung durch weitere Gewinnsteigerungen, weil ein günstiges KGV all…",
-     "figures": "Gewinnprognosen übertroffen: 66 Prozent; Umsatzprognosen übertroffen: 74 Prozent; Gewinnerwartungen Q3 von plus 3 auf plus 10 Prozent angehoben; erwartetes Gewinnwachstum Q3: plus 24 Prozent; DAX-KGV…"
-    },
-    {
-     "date": "2026-09-01",
-     "video_id": "WGO1jesdYp4",
-     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=1757s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Historische Verlaufsvergleiche deuten laut Host auf eine kurze Schwäche im September, einen Anstieg im Oktober und eine Konsolidierung im Dezember hin. September und die erste Oktoberhälfte gelten sa…",
-     "einordnung": "Saisonalität ist ein nützlicher Rahmen, aber kein eigenständiger Auslöser. Sie gewinnt erst dann an Aussagekraft, wenn sie mit positiver Gewinnrevision, intakter Marktbreite und nachlassendem Zinsdru…"
-    },
-    {
-     "date": "2026-09-01",
-     "video_id": "WGO1jesdYp4",
-     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=2022s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "In sieben historischen Fällen war ein Einstieg Anfang September erfolgreich, wenn der DAX zwischen 5 und 15 Prozent seit Jahresbeginn gestiegen war und über der 200-Tage-Linie lag. Der DAX lag Ende A…",
-     "einordnung": "Sieben Beobachtungen sind für eine statistische These eine sehr kleine Stichprobe. Die Kombination aus positivem Jahresverlauf und langfristigem Aufwärtstrend ist dennoch ein konstruktives Signal, so…",
-     "figures": "DAX seit Jahresbeginn: plus 7 Prozent; historische Trefferquote: 100 Prozent bei 7 Fällen"
-    },
-    {
-     "date": "2026-09-01",
-     "video_id": "WGO1jesdYp4",
-     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=2123s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Siemens, Allianz und Airbus liegen laut Host nahe ihren Rekordhochs. Infineon, Siemens Energy und Siemens werden als wichtige Treiber des DAX genannt.",
-     "einordnung": "Die Indexperspektive hängt damit stark von wenigen Schwergewichten und zyklischen Führungswerten ab. Das ist positiv, solange die Marktführer bestätigen, erhöht aber die Anfälligkeit bei Gewinn- oder…"
-    },
-    {
-     "date": "2026-09-01",
-     "video_id": "WGO1jesdYp4",
-     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=2210s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Der Host erwartet einen Rücklauf des DAX in den Bereich von 25.500 bis 25.900 Punkten.",
-     "einordnung": "Die Zone liegt laut Marktdaten knapp unter dem aktuellen DAX-Stand und entspricht damit eher einer moderaten Korrektur als einem Trendbruch. Ob sie trägt, hängt von den US-Renditen, der Berichtssaiso…",
-     "figures": "Erwartete Rücklaufzone: 25.500 bis 25.900 Punkte; DAX laut Marktdaten aktuell: 26.007 Punkte"
-    },
-    {
-     "date": "2026-08-31",
-     "video_id": "oTVTqvO9we8",
-     "url": "https://www.youtube.com/watch?v=oTVTqvO9we8&t=363s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX erreichte bei 26.618 Punkten ein neues Rekordhoch. Zum Wochenstart wird ein Rückgang auf etwa 26.500 Punkte erwartet, der übergeordnete Trend bleibt laut Host jedoch intakt.",
-     "einordnung": "Ein Rücksetzer nach dem Rekord ist zunächst normal und kein eigenständiges Verkaufssignal. Die schwachen US-Technologiewerte, steigende Zinserwartungen und die geopolitische Unsicherheit sprechen kur…",
-     "figures": "26.618 Punkte als Rekordhoch; etwa 26.500 Punkte erwartet; aktueller DAX laut Marktdaten: 26.007 Punkte; Wochenplus rund 1,5 Prozent"
     }
    ]
   },
@@ -838,128 +1459,6 @@
      "note": "Adyen hat sich von 1600-1700 € auf rund 890 € nahezu halbiert, das KGV 2027 fiel von 34-36 auf 19. Operativ solide mit Nettoumsatzplus von 18% auf 2,36 Mrd. € 2025 und EBDA-Margenverbesserung auf 53%…",
      "einordnung": "Adyen ist ein klassischer Fall, wo der Markt eine Wachstumsprämie abgebaut hat, die operative Substanz aber intakt ist — die EBDA-Margenverbesserung auf 53% bei weiterhin über 20% Volumenwachstum spr…",
      "figures": "Kurs von 1600-1700 € auf 890 €, KGV 2027: 19 (vorher 34-36), KGV 2026: 23, Nettoumsatz 2025 +18% auf 2,36 Mrd. €, EBDA +26%, EBDA-Marge 50% auf 53%, Q1 2026 Nettoumsatz +16% (+20% währungsbereinigt),…"
-    }
-   ]
-  },
-  "NVDA": {
-   "name": "Nvidia",
-   "auftritte": [
-    {
-     "date": "2026-09-14",
-     "video_id": "i1kvrS7aV-Q",
-     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=1990s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Nach den fulminanten Zahlen bleibt der übergeordnete Aufwärtstrend intakt, auch wenn sich die Aktie Zeit lässt. Ein Rücksetzer wäre aus charttechnischer Sicht eine Kaufgelegenheit.",
-     "einordnung": "Die Aktie muss nach starken Zahlen offenbar nicht sofort weiterlaufen, um bullisch zu bleiben; eine Konsolidierung kann im intakten Trend sogar konstruktiv sein. Gleichzeitig erhöht die hohe Erwartun…",
-     "figures": "Kursziele 246 und 294 Dollar mittel- bis langfristig; frühere Marken bei 152 und 229 Dollar."
-    },
-    {
-     "date": "2026-09-08",
-     "video_id": "6QoAxW6iHuM",
-     "url": "https://www.youtube.com/watch?v=6QoAxW6iHuM&t=627s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Der Host bezeichnet Nvidia als führenden KI-Chiphersteller und verweist auf eine Bruttomarge von 74 Prozent sowie den geplanten milliardenschweren Zukauf der KI-Plattform Hugging Face. Im Optionsmark…",
-     "einordnung": "Nvidia bleibt der zentrale Profiteur des KI-Investitionszyklus, ist aber entsprechend stark von hohen Erwartungen abhängig. Die Optionsstruktur wirkt eher konstruktiv, solange die Zone um die Putwall…",
-     "figures": "Bruttomarge 74 Prozent, Putwall 180 US-Dollar, Callwall 240 US-Dollar"
-    },
-    {
-     "date": "2026-09-03",
-     "video_id": "gVtRC3UkCDQ",
-     "url": "https://www.youtube.com/watch?v=gVtRC3UkCDQ&t=633s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Nvidia habe laut Host Umsatz und Gewinn verdoppelt, die Aktie daraufhin aber zunächst nur um 12 Prozent und anschließend um weitere 6 Prozent zugelegt. Bernecker wertet die nachlassende Kursreaktion…",
-     "einordnung": "Die Reaktion ist tatsächlich ein Sentiment-Signal: Je höher die Erwartungen, desto stärker muss ein Unternehmen positiv überraschen, um den Kurs weiterzutreiben. Bei Nvidia treffen außergewöhnliche o…",
-     "figures": "Umsatz und Gewinn verdoppelt, zunächst +12 %, anschließend +6 %"
-    },
-    {
-     "date": "2026-09-03",
-     "video_id": "gVtRC3UkCDQ",
-     "url": "https://www.youtube.com/watch?v=gVtRC3UkCDQ&t=974s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Der Host setzt Nvidias Marktwert von 5,25 Billionen US-Dollar ins Verhältnis zu einem möglichen Rückgang auf 2,5 Billionen US-Dollar. Er nennt außerdem charttechnische Korrekturzonen bei 150 US-Dolla…",
-     "einordnung": "Die genannten Kurs- und Bewertungsmarken sind ein ausgesprochen negatives Szenario und sollten als Stresstest, nicht als Basisschätzung gelesen werden. Nvidia eignet sich wegen seiner Größe und der s…",
-     "figures": "5,25 Billionen USD, 2,5 Billionen USD, 150 USD, 80–90 USD"
-    },
-    {
-     "date": "2026-09-01",
-     "video_id": "WGO1jesdYp4",
-     "url": "https://www.youtube.com/watch?v=WGO1jesdYp4&t=1174s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Nvidia meldete nach Darstellung des Hosts ein Gewinnwachstum von 70 Prozent. Die Magnificent Seven kamen insgesamt auf 120 Prozent Gewinnwachstum, bereinigt auf 43 Prozent; 66 Prozent der Unternehmen…",
-     "einordnung": "Die operative Dynamik bleibt außergewöhnlich, doch bei Technologiewerten muss das Gewinnwachstum dauerhaft hoch bleiben, um anspruchsvolle Bewertungen zu rechtfertigen. Positiv ist, dass der Gewinnbe…",
-     "figures": "Nvidia: plus 70 Prozent Gewinnwachstum; Magnificent Seven: plus 120 Prozent, bereinigt plus 43 Prozent; Überraschungsquote: 66 Prozent; übrige 493 S&P-500-Unternehmen: plus 32 Prozent"
-    },
-    {
-     "date": "2026-08-31",
-     "video_id": "oTVTqvO9we8",
-     "url": "https://www.youtube.com/watch?v=oTVTqvO9we8&t=294s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Nvidia liefert weiterhin Fabelzahlen, doch eine Kurslücke und eine nachlassende Dynamik zeigen, dass die enorme Unternehmensgröße weiteres Wachstum erschwert.",
-     "einordnung": "Die operative Qualität steht außer Frage, aber bei einem Marktführer steigen mit der Größe auch die Erwartungen. Für die Aktie wird deshalb weniger die absolute Stärke als die Fähigkeit entscheidend,…"
-    },
-    {
-     "date": "2026-08-31",
-     "video_id": "ou1chvjk6G8",
-     "url": "https://www.youtube.com/watch?v=ou1chvjk6G8",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Nvidia wird im großen Chartcheck im Zusammenhang mit der Reaktion auf die Quartalszahlen angekündigt, im vorliegenden Rohmaterial aber nur kurz erwähnt.",
-     "einordnung": "Ohne konkrete Kursmarken oder eine detaillierte Chartanalyse lässt sich aus dem vorliegenden Material kein belastbares Setup ableiten. Bei Nvidia bleibt die Erwartungshaltung im KI-Sektor der entsche…"
-    },
-    {
-     "date": "2026-08-25",
-     "video_id": "OCXT4NAfmag",
-     "url": "https://www.youtube.com/watch?v=OCXT4NAfmag&t=1242s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Nvidia kündigt laut Host eine Preiserhöhung von 15 % an, doch die Aktie gibt dennoch nach. Egmond Haidt bezeichnet die KI-Blase als die größte aller Zeiten und warnt vor fallenden Anleihekursen.",
-     "einordnung": "Eine Preiserhöhung spricht zunächst für starke Nachfrage und Preissetzungsmacht, kann aber bei bereits sehr hohen Erwartungen auch als Belastung für Kundenbudgets wirken. Vor den Zahlen ist die Aktie…",
-     "figures": "15 % Preiserhöhung"
-    },
-    {
-     "date": "2026-08-24",
-     "video_id": "CxBQV7-eeMA",
-     "url": "https://www.youtube.com/watch?v=CxBQV7-eeMA&t=277s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Nvidia ist laut Host der wichtigste Termin der Woche. Die Aktie notiert unter 220 Dollar; bei guten Zahlen könnte sich die Trendwende schnell beschleunigen.",
-     "einordnung": "Nvidia bleibt der Taktgeber des gesamten KI-Komplexes, weshalb die Reaktion auf die Zahlen wichtiger sein dürfte als die reine Gewinnhöhe. Nach dem Druck auf Technologiewerte ist das Chance-Risiko-Ve…",
-     "figures": "Nvidia unter 220 Dollar"
-    },
-    {
-     "date": "2026-08-14",
-     "video_id": "WVCJZEe_LEM",
-     "url": "https://www.youtube.com/watch?v=WVCJZEe_LEM&t=57s",
-     "channel": "BerneckerTV",
-     "kategorie": "news",
-     "note": "Der Host ordnet das 500-Milliarden-Dollar-Finanzierungspaket als Entlastung für Nvidia und als Signal für anhaltend hohe KI-Investitionen ein. Bis 2030 werden AI-Capex von 5,3 Billionen Dollar erwart…",
-     "einordnung": "Meine Einordnung: Die Meldung bestätigt die außergewöhnliche Investitionsbereitschaft rund um KI, beseitigt aber nicht das Risiko, dass sich Erwartungen und tatsächliche Renditen der Rechenzentrumsin…",
-     "figures": "500 Milliarden Dollar Finanzierungspaket; 5,3 Billionen Dollar erwartete AI-Capex bis 2030; KGV Nvidia 25 gegenüber 17 beim S&P 500; rund 60 Prozent des Capex entfallen auf IT"
-    },
-    {
-     "date": "2026-08-14",
-     "video_id": "xV3WKQlNaw4",
-     "url": "https://www.youtube.com/watch?v=xV3WKQlNaw4",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nvidia steht im Zusammenhang mit neuen KI- und Infrastrukturprojekten im Fokus. Der Host verweist auf geplante Investitionen von einer halben Billion US-Dollar in KI-Infrastruktur.",
-     "einordnung": "Die Größenordnung unterstreicht, dass der KI-Zyklus inzwischen als Infrastrukturthema und nicht nur als Chiptrend verstanden wird. Gleichzeitig steigen damit die Erwartungen an die Finanzierung, die…",
-     "figures": "Geplante Investitionen in KI-Infrastruktur: 500 Mrd. USD"
-    },
-    {
-     "date": "2026-08-13",
-     "video_id": "smkyeECHjv8",
-     "url": "https://www.youtube.com/watch?v=smkyeECHjv8&t=817s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Nvidia profitiert nach Einschätzung des Hosts als technischer Rückgrat-Anbieter von der möglichen neuen Anlageklasse Rechenkapazität.",
-     "einordnung": "Nvidia besitzt im KI-Ökosystem eine außergewöhnlich starke Position, doch genau diese Qualität ist im Kurs- und Erwartungsniveau typischerweise besonders weit vorweggenommen. Der entscheidende Prüfst…"
     }
    ]
   },
@@ -1267,128 +1766,6 @@
      "note": "Neues Rekordhoch vorbörslich; volle Auftragsbücher, Analysten rechnen für das nächste Jahr mit 90 ausgelieferten Anlagen (vs. zuletzt ~80) und 15–20 % Umsatzwachstum.",
      "einordnung": "ASML ist und bleibt das Monopol im EUV-Segment — kein Wettbewerber in Sichtweite. Rekordstände auf Rekordkurs bei solcher Visibilität der Auftragslage sind fundamental gerechtfertigt. Das erinnert an…",
      "figures": "80 Anlagen aktuell, ~90 Anlagen nächstes Jahr erwartet; Wachstumsprognose 15–20 %"
-    }
-   ]
-  },
-  "IFX.DE": {
-   "name": "Infineon",
-   "auftritte": [
-    {
-     "date": "2026-09-14",
-     "video_id": "i1kvrS7aV-Q",
-     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=1327s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Infineon steht ebenfalls unter Druck und wird als Teil des europäischen Chip-Universums eingeordnet. Eine detaillierte Chartanalyse liefert der Host in diesem Abschnitt nicht.",
-     "einordnung": "Infineon ist damit eher ein Sektorindikator als ein eigenständiges Setup der Sendung. Die Aktie bleibt von der allgemeinen Halbleiterstimmung abhängig, ohne dass hier eine konkrete technische Marke g…"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "6VmhA9lWzLk",
-     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=3821s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Infineon gerät im Zuge der KI-Panik mit 8,5 Prozent unter Druck. Charttechnisch sieht der Host noch Spielraum bis zur Unterstützung bei 48 bis 49 Euro.",
-     "einordnung": "Der Rückgang zeigt, dass die KI-Sicherheitsdebatte auch auf europäische Halbleiterwerte ausstrahlt, obwohl Infineon nicht ausschließlich von Rechenzentrums-KI lebt. Die genannte Unterstützung ist zun…",
-     "figures": "-8,5 Prozent; Unterstützung 48 bis 49 Euro"
-    },
-    {
-     "date": "2026-09-09",
-     "video_id": "jt2Dj1AYn08",
-     "url": "https://www.youtube.com/watch?v=jt2Dj1AYn08&t=630s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Morgan Stanley senkte die Einstufung und das Kursziel, während Berenberg sein Kursziel bestätigte und eine gute Einstiegsgelegenheit sieht. Vorbörslich lag die Aktie mehr als 1 % im Plus.",
-     "einordnung": "Aus meiner Sicht zeigt die große Spanne zwischen den Analystenzielen vor allem die Unsicherheit über den Zyklus und die Erholung der Nachfrage. Ein positives Signal oberhalb der 50-Tage-Linie wäre te…",
-     "figures": "Morgan-Stanley-Kursziel von 81 auf 65 Euro gesenkt; Berenberg-Kursziel 100 Euro; vorbörslich über 1 % im Plus"
-    },
-    {
-     "date": "2026-09-08",
-     "video_id": "fYae2mfR1ps",
-     "url": "https://www.youtube.com/watch?v=fYae2mfR1ps&t=1833s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Morgan Stanley senkt Infineon von Overweight auf Equal Weight und reduziert das Kursziel von 84 auf 65 Euro. Begründet wird dies mit einem möglicherweise nahe dem Hoch stehenden DRAM-Zyklus; der Host…",
-     "einordnung": "Die niedrige PEG-Ratio spricht für ein im Verhältnis zum erwarteten Wachstum moderates Bewertungsniveau, während das KGV von 22,6 bereits eine gewisse Qualität einpreist. Der Konflikt zwischen zyklis…",
-     "figures": "84 € WBG-Research-Ziel, 65 € Morgan-Stanley-Ziel, 60,80 € Schlusskurs vor dem Downgrade, 4 % Kursrückgang, KGV 22,6, PEG 0,56, mögliches Ziel 50 €"
-    },
-    {
-     "date": "2026-09-07",
-     "video_id": "SSFzzcpor7A",
-     "url": "https://www.youtube.com/watch?v=SSFzzcpor7A&t=1429s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Warburg Research stuft Infineon von Halten auf Kaufen hoch und nennt ein Kursziel von 84 Euro. Die Aktie steigt um 3 Prozent. Der Host verweist auf ein KGV von 22, ein PEG von unter 0,6 und ein Chanc…",
-     "einordnung": "Das niedrige PEG deutet im Verhältnis zum erwarteten Wachstum auf eine attraktivere Bewertung hin als das absolute KGV zunächst vermuten lässt. Der konkrete Stopp unter dem Dreifachboden macht jedoch…",
-     "figures": "+3%; Kursziel 84 Euro; KGV 22; PEG unter 0,6; Chance-Risiko-Verhältnis 5:1"
-    },
-    {
-     "date": "2026-08-24",
-     "video_id": "CxBQV7-eeMA",
-     "url": "https://www.youtube.com/watch?v=CxBQV7-eeMA&t=675s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon steht unter dem Druck schwächerer Chipwerte in den USA und Asien und verlor am Morgen 1,5 Prozent. Seit Jahresbeginn liegt die Aktie dennoch mehr als 40 Prozent im Plus.",
-     "einordnung": "Der Tagesverlust wirkt vor allem wie eine sektorweite Reaktion und nicht wie ein isoliertes Infineon-Problem. Nach einem Jahresplus von mehr als 40 Prozent ist die Aktie allerdings anfälliger für Gew…",
-     "figures": "-1,5 Prozent am Morgen; mehr als +40 Prozent seit Jahresbeginn"
-    },
-    {
-     "date": "2026-08-18",
-     "video_id": "BxOBsfGofLs",
-     "url": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=271s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon wird vom Host als KI-Profiteur eingeordnet und stieg zunächst nach den CoreWeave-Zahlen deutlich. Später belastete der Zinsanstieg die Aktie, sodass die vorherige Erholung nur vorübergehend…",
-     "einordnung": "Infineon verbindet strukturelle Halbleiternachfrage mit zyklischer Industrieexponierung. Damit ist die Aktie weniger ein reiner KI-Wert als ein Mischfall, bei dem Zinsen, Investitionszyklus und Konju…",
-     "figures": "10-jährige US-Rendite 4,75 %"
-    },
-    {
-     "date": "2026-08-11",
-     "video_id": "mREZgmSkQCI",
-     "url": "https://www.youtube.com/watch?v=mREZgmSkQCI&t=539s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon bleibt wegen der Erholung im Chipsektor im Fokus.",
-     "einordnung": "Infineon ist stärker vom Zyklus und der Nachfrage in wichtigen Industrie- und Autoanwendungen abhängig als viele reine Softwarewerte. Eine Sektorerholung kann deshalb kräftig wirken, bleibt aber anfä…"
-    },
-    {
-     "date": "2026-08-11",
-     "video_id": "pWfog8GURyw",
-     "url": "https://www.youtube.com/watch?v=pWfog8GURyw&t=858s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon steigerte im dritten Quartal den Umsatz um 13 Prozent auf 4,17 Mrd. Euro und das bereinigte EBIT um 19 Prozent auf 797 Mio. Euro. Der KI-Chip-Umsatz für 2025/26 wurde auf 1,6 Mrd. Euro angeh…",
-     "einordnung": "Die operative Verbesserung ist überzeugend, doch ein KGV von 25,8 verlangt bereits mehr als eine normale zyklische Erholung. Meine Einschätzung: Infineon ist qualitativ interessant, aber der Kurs dür…",
-     "figures": "Umsatz: 4,17 Mrd. Euro; bereinigtes EBIT: 797 Mio. Euro; EBIT-Marge: 19,1 Prozent; Free Cashflow: 600 Mio. Euro; Auftragsbestand: 30 Mrd. Euro; KI-Chips 2025/26: 1,6 Mrd. Euro; KGV: 25,8"
-    },
-    {
-     "date": "2026-08-05",
-     "video_id": "EGrlj8Bmvr0",
-     "url": "https://www.youtube.com/watch?v=EGrlj8Bmvr0&t=1596s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Infineon übertrifft beim Umsatz die Erwartungen und konkretisiert den Ausblick, verfehlt aber die Margenerwartungen und senkt die Cashflow-Prognose. Das KI-Geschäft, insbesondere für Rechenzentren, b…",
-     "einordnung": "Infineon liefert beim Umsatz und Ergebnis ordentlich, aber die Margen- und Cashflow-Signale verhindern den uneingeschränkten Befreiungsschlag. Bei einem KGV deutlich über der historischen Bewertung b…",
-     "figures": "Q3-Umsatz 4,2 Mrd. Euro gegenüber erwarteten 4,1 Mrd. Euro; Segmentergebnis 800 Mio. Euro (+22 %); Segmentmarge 19,1 % gegenüber erwarteten 19,6 %; Q4-Umsatzausblick 4,7 Mrd. Euro; Q4-Marge 23 % gege…"
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=590s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon profitiert von der KI-Rally und steigt im DAX deutlich.",
-     "einordnung": "Die Bewegung ist vor allem eine Sektorreaktion und noch kein Beleg für eine nachhaltige Verbesserung sämtlicher Halbleiter-Endmärkte. Infineon bleibt daher stärker von Zyklik und Investitionsbereitsc…"
-    },
-    {
-     "date": "2026-07-31",
-     "video_id": "SQ7RGehrHSw",
-     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=359s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Infineon legte gestern im Sog der KI-Rallye um 9 Prozent zu. Der Host hält es für möglich, dass die Korrektur beendet ist, sieht eine nachhaltige Trendwende aber noch nicht bestätigt.",
-     "einordnung": "Infineon profitiert vom Sektorimpuls, bleibt als zyklischer Halbleiterwert aber anfälliger für Konjunktur- und Auftragsschwankungen als die großen KI-Plattformanbieter. Der Kursanstieg ist deshalb zu…",
-     "figures": "Tagesgewinn 9 %"
     }
    ]
   },
@@ -2401,128 +2778,6 @@
     }
    ]
   },
-  "ENR.DE": {
-   "name": "Siemens Energy",
-   "auftritte": [
-    {
-     "date": "2026-09-11",
-     "video_id": "7KvHvEHCDwY",
-     "url": "https://www.youtube.com/watch?v=7KvHvEHCDwY&t=368s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Der Rückgang von 192 auf 133 € wird vom Host als routinemäßige Gewinnmitnahme und Bewertungsrückschritt eingeordnet, nicht als operative Verschlechterung. SpaceX baut demnach eigene Gaskanäle und gre…",
-     "einordnung": "Die operative Dynamik spricht gegen einen klassischen Trendbruch, die Bewertung verlangt aber weiterhin hohe Gewinn- und Cashflow-Fortschritte. Charttechnisch ist die Zone um 150 bis 155 € der Lackmu…",
-     "figures": "Kursrückgang von 192 auf 133 €; im 3. Quartal Auftragseingang 17,9 Mrd. €, Umsatz plus 18,5 % auf 11,4 Mrd. €, Ergebnis 1,62 Mrd. € und Auftragsbestand 162 Mrd. €; für 2026 Umsatzwachstum von 14 bis…"
-    },
-    {
-     "date": "2026-09-04",
-     "video_id": "JYaFrjI3lJA",
-     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=510s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Chef von Siemens Energy warnt vor Risiken für die Infrastruktur. Zugleich könnten Drohnenhersteller von der veränderten Sicherheitslage profitieren.",
-     "einordnung": "Die Aussage unterstreicht, dass Infrastruktur und Sicherheit zunehmend als zusammenhängende Investitionsthemen betrachtet werden. Für Siemens Energy ist das grundsätzlich ein struktureller Rückenwind…"
-    },
-    {
-     "date": "2026-08-31",
-     "video_id": "ou1chvjk6G8",
-     "url": "https://www.youtube.com/watch?v=ou1chvjk6G8&t=350s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Die Aktie stieg seit 2023 von 7,3 Euro bis auf 190 Euro und zeigt nun ein mögliches Trendwendemuster. Der Bereich um 138 bis 139 Euro ist die zentrale Unterstützung; unter 133 Euro droht eine weiterg…",
-     "einordnung": "Nach einer derart außergewöhnlichen Aufwärtsbewegung ist eine Konsolidierung charttechnisch nicht überraschend. Der Abstand zwischen der Unterstützung bei 138 bis 139 Euro und der kritischen Marke be…",
-     "figures": "Anstieg von 7,3 Euro auf 190 Euro; Unterstützung 138 bis 139 Euro; kritische Marke 133 Euro; Tagesverlust 5 Prozent"
-    },
-    {
-     "date": "2026-08-18",
-     "video_id": "BxOBsfGofLs",
-     "url": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=271s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Siemens Energy wurde nach den CoreWeave-Zahlen als KI-Profiteur betrachtet und stieg zunächst kräftig. Der anschließende Zinsanstieg führte laut Host zu einem deutlichen Kurseinbruch.",
-     "einordnung": "Die KI-Fantasie greift bei Siemens Energy über den steigenden Strom- und Netzausbaubedarf. Das macht die Aktie interessant, aber auch anfällig für Übertreibungen, wenn der Markt künftiges Wachstum sc…",
-     "figures": "10-jährige US-Rendite 4,75 %"
-    },
-    {
-     "date": "2026-08-05",
-     "video_id": "Aw08vlwd9Y8",
-     "url": "https://www.youtube.com/watch?v=Aw08vlwd9Y8&t=475s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Siemens Energy überzeugte mit einem Rekord beim Auftragseingang und einer deutlich verbesserten Profitabilität. Gamesa erzielte erstmals wieder einen operativen Gewinn, die Prognose wurde bestätigt u…",
-     "einordnung": "Hier stehen nicht nur Auftragseingang und Umsatz, sondern vor allem der operative Umschwung bei Gamesa im Mittelpunkt. Die bestätigte Prognose gibt der Erholung Substanz, wobei die nach früheren Prob…",
-     "figures": "Auftragseingang plus 8,5 Prozent; Umsatz plus 18,5 Prozent auf 11,4 Mrd. Euro; Ergebnis vor Sondereffekten mehr als verdreifacht auf 1,6 Mrd. Euro; Gamesa operativer Gewinn 75 Mio. Euro nach einem Ve…"
-    },
-    {
-     "date": "2026-08-05",
-     "video_id": "EGrlj8Bmvr0",
-     "url": "https://www.youtube.com/watch?v=EGrlj8Bmvr0&t=1258s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Die Aktie startet stark und dreht anschließend ins Minus. Der Auftragseingang ist kräftig, die Book-to-Bill-Relation hoch und Gamesa schafft den operativen Turnaround. Analysten sehen Kurspotenzial b…",
-     "einordnung": "Der operative Turnaround bei Gamesa ist der entscheidende Hebel, gleichzeitig ist die Bewertung nach der starken Kursentwicklung nicht mehr niedrig. Ein belastbarer Boden wäre daher wichtiger als ein…",
-     "figures": "Auftragseingang 17,9 Mrd. Euro; Umsatz 11,4 Mrd. Euro; Book-to-Bill etwa 1,7; Gamesa-Betriebsgewinn 75 Mio. Euro nach minus 440 Mio. Euro; Umsatzwachstum 14 bis 16 %; Ergebnismarge 10 bis 12 %; Berns…"
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=590s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Siemens Energy steigt im DAX als KI-Profiteur.",
-     "einordnung": "Die Einordnung als KI-Play verweist auf den steigenden Energiebedarf von Rechenzentren, ersetzt aber keine Prüfung der einzelnen Geschäftsbereiche. Der Kursimpuls ist daher zunächst thematisch und se…"
-    },
-    {
-     "date": "2026-07-22",
-     "video_id": "CnKfJ6qJVrA",
-     "url": "https://www.youtube.com/watch?v=CnKfJ6qJVrA&t=3431s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "In den Zuschauerfragen wird Siemens Energy als durch GE Vernova unter Druck beschrieben. Der Host sieht eine mögliche Chance am gleitenden 200-Tage-Durchschnitt.",
-     "einordnung": "Die relative Schwäche gegenüber GE Vernova kann auf Bewertungs-, Ausführungs- oder Erwartungsunterschiede hindeuten. Ohne konkrete Kursmarken bleibt die 200-Tage-Linie eher ein Beobachtungspunkt als…"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "nPEPzB9N_5o",
-     "url": "https://www.youtube.com/watch?v=nPEPzB9N_5o&t=593s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Die Aktie testete laut Host erfolgreich die 200-Tage-Linie und prallte im Bereich von 141 bis 142 Euro nach oben ab. Nun stabilisiert sie sich zwischen 155 und 160 Euro.",
-     "einordnung": "Der erfolgreiche Test der 200-Tage-Linie verbessert das charttechnische Bild, doch die Aktie bleibt nach ihrer starken Erholung anfällig für Gewinnmitnahmen. Der Bereich 155 bis 160 Euro wird damit z…",
-     "figures": "Abprallzone 141 bis 142 EUR; Stabilisierung im Bereich 155 bis 160 EUR"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "KiAPpoAsovw",
-     "url": "https://www.youtube.com/watch?v=KiAPpoAsovw&t=787s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Siemens Energy soll in Omterra umbenannt werden; künftig entfallen Lizenzgebühren von 300 Millionen Euro. JP Morgan bewertet den Titel wegen des möglichen Margenanstiegs positiv. Charttechnisch sieht…",
-     "einordnung": "Die niedrigere Bewertung gegenüber GE Vernova spricht für einen Bewertungsabschlag, der bei anhaltender Margenverbesserung abgebaut werden könnte. Nach dem Anstieg von 6,40 auf 154 Euro ist die Aktie…",
-     "figures": "Lizenzgebühren 300 Millionen Euro; KGV 30 bei Siemens Energy gegenüber 58 bei GE Vernova; PEG 0,5 gegenüber 1,8; Kursanstieg von 6,40 Euro auf 154 Euro; Tagesplus 0,4 Prozent"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "8EytmuiphH4",
-     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=1676s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Barclays stuft Siemens Energy wegen der hohen Bewertung auf Verkaufen ab. Dem stehen starke Perspektiven gegenüber: Der Gewinn je Aktie soll von 4,26 Euro auf 9,20 Euro bis 2028 steigen, der Umsatz v…",
-     "einordnung": "Die Aktie ist mit einem KGV von 29 kein klassischer Value-Titel, doch das PEG von 0,53 signalisiert, dass die Bewertung im Verhältnis zum erwarteten Gewinnwachstum weniger extrem wirkt. Der Streit zw…",
-     "figures": "Marktkapitalisierung 130 Mrd. Euro, EPS von 4,26 auf 9,20 Euro bis 2028, Umsatz von 43 auf 57 Mrd. Euro, KGV 29, PEG 0,53, erwartetes Gewinnwachstum 170 Prozent"
-    },
-    {
-     "date": "2026-07-08",
-     "video_id": "S7EqI85pKaM",
-     "url": "https://www.youtube.com/watch?v=S7EqI85pKaM&t=658s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Größter DAX-Verlierer mit -8,9%. Barclays senkt auf Underweight, hebt aber Kursziel auf 130 EUR an. Eigenes Kursziel 240 EUR, Stopp 130 EUR. Host bleibt bullish, rät aber nach der Volatilität abzuwar…",
-     "einordnung": "Ein -8,9% Tag bei Siemens Energy zeigt, wie fragil das Sentiment nach dem gewaltigen Lauf geworden ist. Dass Barclays das Kursziel auf 130 EUR anhebt, aber gleichzeitig auf Underweight senkt, ist ein…",
-     "figures": "-8,9%; Barclays Kursziel 130 EUR (Underweight); eigenes Kursziel 240 EUR; Stopp 130 EUR; 25% Gewinnplus bis 2030 erwartet"
-    }
-   ]
-  },
   "NBIS": {
    "name": "Nebius",
    "auftritte": [
@@ -2767,30 +3022,6 @@
      "note": "Apple befindet sich laut Zuschauerfragen in einem Aufwärtstrend. Die Unterstützung liegt bei 317 bis 318 Dollar.",
      "einordnung": "Die genannte Unterstützung markiert die entscheidende kurzfristige Haltezone des Aufwärtstrends. Solange sie verteidigt wird, bleibt das technische Bild konstruktiv; weitere Aussagen lassen sich aus…",
      "figures": "Unterstützung 317-318$"
-    }
-   ]
-  },
-  "JPM": {
-   "name": "JPMorgan",
-   "auftritte": [
-    {
-     "date": "2026-09-11",
-     "video_id": "gIWKBn6INGI",
-     "url": "https://www.youtube.com/watch?v=gIWKBn6INGI&t=369s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Steigende Zinsen können JPMorgan kurzfristig helfen. Gleichzeitig warnt der Host vor dem Risiko einer konjunkturellen Abkühlung und setzt kurzfristig auf Chancen.",
-     "einordnung": "Banken profitieren grundsätzlich eher von einem höheren Zinsniveau als Immobilienwerte, sofern die Kreditqualität stabil bleibt. Genau dort liegt der Vorbehalt: Eine durch Inflation und hohe Renditen…"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "KiAPpoAsovw",
-     "url": "https://www.youtube.com/watch?v=KiAPpoAsovw&t=1978s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "JPMorgan übertraf die Erwartungen deutlich und steigerte den Umsatz um 27 Prozent. Investment Banking und Eigenkapitalrendite waren besonders stark; die Aktie legte um 2,5 Prozent zu.",
-     "einordnung": "JPMorgan profitiert gleichzeitig von starker Kapitalmarktaktivität und hoher operativer Profitabilität und hebt sich damit von schwächeren Bankreaktionen ab. Die Sondereffekte, darunter der Visa-Beit…",
-     "figures": "EPS 6,14 Dollar, 34 Cent über Konsens; Umsatz 58 Milliarden Dollar, plus 27 Prozent, gegenüber 51,3 Milliarden Dollar erwartet; Nettozinsertrag-Guidance 105,5 Milliarden Dollar; Investment-Banking-Um…"
     }
    ]
   },
@@ -5698,97 +5929,6 @@
     }
    ]
   },
-  "DTE.DE": {
-   "name": "Deutsche Telekom",
-   "auftritte": [
-    {
-     "date": "2026-09-04",
-     "video_id": "JYaFrjI3lJA",
-     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=440s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Paul Singer soll bei der Deutschen Telekom eingestiegen sein. Daraus entstehen Hoffnungen auf eine mögliche Fusion mit T-Mobile und höhere Ausschüttungen, doch die Marktreaktion blieb verhalten.",
-     "einordnung": "Der Fall zeigt, dass ein prominenter aktivistischer Investor allein noch keinen Unternehmenswert hebt. Ohne konkrete strategische Schritte bleibt die Fantasie über Fusion und Ausschüttungen zunächst…"
-    },
-    {
-     "date": "2026-09-03",
-     "video_id": "MKffdo9qIGA",
-     "url": "https://www.youtube.com/watch?v=MKffdo9qIGA&t=830s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Elliott Investment Management ist eingestiegen und drängt auf Aktienrückkäufe statt einer Fusion mit T-Mobile. Der Host verweist auf eine Marktkapitalisierung der Deutschen Telekom von rund 140 Milli…",
-     "einordnung": "Aktivistischer Druck kann Kapitalrückführungen beschleunigen, erhöht aber auch die strategische Spannung im Konzern. Das moderate KGV wirkt nicht exzessiv, doch ein Teil der strukturellen Telekom-Fan…",
-     "figures": "Marktkapitalisierung Deutsche Telekom rund 140 Milliarden Euro; T-Mobile 200 Milliarden US-Dollar; Tagesplus 1,5 Prozent; KGV 11,8 bis 13; Kursziel beziehungsweise Zielbereich 33 bis 34 Euro; erwarte…"
-    },
-    {
-     "date": "2026-08-11",
-     "video_id": "pWfog8GURyw",
-     "url": "https://www.youtube.com/watch?v=pWfog8GURyw&t=1222s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Die Deutsche Telekom hat ihr Aktienrückkaufprogramm erhöht. Ein Übernahmeangebot für T-Mobile US erwartet der Host nicht; steigende Zinsen bleiben ein Belastungsfaktor.",
-     "einordnung": "Die Rückkäufe stützen den Gewinn je Aktie, ändern aber wenig an der Zinssensitivität eines kapitalintensiven Telekomkonzerns. Meine Einordnung bleibt daher neutral, solange kein neuer operativer Impu…"
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "s6VvSYzc1qc",
-     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=445s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Die Deutsche Telekom hat ihr Aktienrückkaufprogramm um 3 Milliarden auf 5 Milliarden Euro ausgeweitet. Nach einem Quartalsumsatz von knapp 30 Milliarden Euro rückt charttechnisch die Marke von 30 Eur…",
-     "einordnung": "Das erweiterte Rückkaufprogramm liefert einen klaren kapitalmarktseitigen Impuls und kann die Aktie je Anteil zusätzlich unterstützen. Für den charttechnischen Durchbruch über 30 Euro braucht es denn…",
-     "figures": "Aktienrückkauf um 3 Milliarden auf 5 Milliarden Euro ausgeweitet; Q2-Umsatz knapp unter 30 Milliarden Euro; 30-Euro-Marke"
-    },
-    {
-     "date": "2026-08-06",
-     "video_id": "MkZjn-BH5v4",
-     "url": "https://www.youtube.com/watch?v=MkZjn-BH5v4&t=419s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Die Deutsche Telekom dient als historisches Beispiel für eine Liquiditäts- und Euphoriephase: Beim Börsengang vor 28 Jahren wurden Kurse von etwa 10 bis 13 Euro genannt. Außerdem verweist Bernecker a…",
-     "einordnung": "Die Telekom steht hier weniger für eine kurzfristige Kursprognose als für den Wert strategischer Entscheidungen über mehrere Jahre. Der Vergleich mit der damaligen Euphorie mahnt zugleich, Liquidität…",
-     "figures": "Börsengang vor 28 Jahren; Kurse von etwa 10, 12 und 13 Euro"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=730s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Die Deutsche Telekom leidet laut Egmond unter ihrer hohen Verschuldung, weil steigende Zinsen die Finanzierung belasten.",
-     "einordnung": "Telekomwerte werden oft als defensiv wahrgenommen, sind wegen ihrer Kapitalstruktur aber nicht immun gegen höhere Zinsen. Der Belastung steht grundsätzlich die relativ stabile Nachfrage im operativen…"
-    },
-    {
-     "date": "2026-07-10",
-     "video_id": "H5zYVH8xlRI",
-     "url": "https://www.youtube.com/watch?v=H5zYVH8xlRI&t=413s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Aktie unter Druck durch Sorgen um Satelliten-Konkurrenz. JP Morgan stuft jedoch auf Kauf auf aktuellem Niveau ein. Langfristig wenig falsch zu machen, attraktive Dividendenrendite.",
-     "einordnung": "Die Satelliten-Konkurrenz-Sorge ist ein bekanntes Narrativ, das immer wieder aufschlägt — ähnlich wie bei 2021, als Starlink den Mobilfunkmarkt 'revolutionieren' sollte. Die Realität: Regulatorische…"
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI&t=1049s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Talfahrt nach SpaceX/Charter-Gerücht, Indexgewicht ca. 4-5 Prozent im DAX. Haidt rät zu Vorsicht bei Telekom und T-Mobile US.",
-     "einordnung": "Die Telekom war lange ein DAX-Stabilitätsanker – wenn sie ins Wackeln gerät, hat das Signalcharakter für den gesamten Index. Das SpaceX/Charter-Gerücht könnte ein Branchenwechsel einläuten, der klass…",
-     "figures": "Indexgewicht 4-5%"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU&t=818s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Q1-Zahlen: Umsatz 29,87 Mrd. € (organisch +4,7 %), bereinigtes EBITDA 11,52 Mrd. €, Free Cashflow 5,69 Mrd. €. Partnerschaft mit Starlink vereinbart. S&P-Rating auf A- angehoben. Investoren sorgen si…",
-     "einordnung": "Die Telekom ist ein Musterbeispiel für einen defensiven Cashflow-Konzern, der in einem zinssensitiven Umfeld als Zuflucht dient. Das KGV von 11,6 ist günstig, die Starlink-Partnerschaft strategisch w…",
-     "figures": "29,87 Mrd. € (Umsatz), +4,7 % (organisch), 11,52 Mrd. € (EBITDA), 5,69 Mrd. € (Free Cashflow), 0,54 € (Gewinn je Aktie), 53,8 % (Anteil T-Mobile US), 11,6 (KGV)"
-    }
-   ]
-  },
   "BAS.DE": {
    "name": "BASF",
    "auftritte": [
@@ -6338,91 +6478,6 @@
      "note": "TotalEnergies profitiert als laufende Empfehlung des AKTIONÄR vom gestiegenen Ölpreis. Der Host verweist außerdem auf die Perspektiven alternativer Brennstoffe und erneuerbarer Energien.",
      "einordnung": "TotalEnergies bietet im aktuellen Umfeld den Vorteil eines integrierten Energiekonzerns, bleibt aber von der politischen Entwicklung und der Zyklik des Ölgeschäfts abhängig. Die Kombination aus fossi…",
      "figures": "Öl: über 100 Dollar je Barrel"
-    }
-   ]
-  },
-  "PANW": {
-   "name": "Palo Alto Networks",
-   "auftritte": [
-    {
-     "date": "2026-09-02",
-     "video_id": "dQ9DpBEtuKk",
-     "url": "https://www.youtube.com/watch?v=dQ9DpBEtuKk&t=260s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Palo Alto Networks hat die Erwartungen bei Zahlen und Ausblick übertroffen. Dennoch gibt die Aktie nachbörslich 1,1 Prozent auf rund 358 Dollar nach; der Host bleibt bei seiner positiven Einschätzung.",
-     "einordnung": "Die negative Reaktion trotz guter Nachrichten zeigt, wie hoch die Erwartungen an den Cybersecurity-Sektor inzwischen liegen. Das Chance-Risiko-Verhältnis bleibt interessant, aber die Bewertung verlan…",
-     "figures": "Kursziel: 486 $; Stopp: 318 $; aktuell etwa 358 $; nachbörslich: -1,1 %"
-    },
-    {
-     "date": "2026-09-02",
-     "video_id": "a2-MQZ_9yBM",
-     "url": "https://www.youtube.com/watch?v=a2-MQZ_9yBM&t=2719s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Palo Alto Networks übertrifft die Umsatz- und Gewinnerwartungen und hebt den Ausblick an. Das Wachstum bleibt hoch, doch die sehr teure Bewertung verhindert laut Host bislang neue Höchststände.",
-     "einordnung": "Fundamental ist Palo Alto Networks stark, aber die Bewertung verlangt weiterhin außergewöhnliche Wachstums- und Margenfortschritte. Ein PEG von über 5 macht deutlich, dass der Markt bereits sehr viel…",
-     "figures": "Umsatz plus 34 % auf 3,4 Mrd. USD; Gewinn plus 7 % auf 1,20 USD; KGV 88; PEG über 5; Umsatzprognose 3,3–3,31 Mrd. USD; EPS-Prognose 0,96–0,98 USD; Jahresprognose 14,1–14,2 Mrd. USD"
-    },
-    {
-     "date": "2026-08-31",
-     "video_id": "ou1chvjk6G8",
-     "url": "https://www.youtube.com/watch?v=ou1chvjk6G8&t=1955s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Palo Alto Networks steht vor den Quartalszahlen. Nach dem Ausbruch über 207 US-Dollar nennt der Host Kursziele von 280 und 366 US-Dollar; trotz hoher Bewertung zeige sich die Aktie stabil.",
-     "einordnung": "Cybersecurity bleibt ein strukturell attraktives Wachstumsfeld, doch gerade bei hoher Bewertung muss der operative Ausblick die Vorschusslorbeeren bestätigen. Die Marke bei 207 US-Dollar ist der tech…",
-     "figures": "Ausbruch über 207 US-Dollar; Ziele 280 und 366 US-Dollar"
-    },
-    {
-     "date": "2026-08-11",
-     "video_id": "mREZgmSkQCI",
-     "url": "https://www.youtube.com/watch?v=mREZgmSkQCI&t=381s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Palo Alto Networks stieg von 150 US-Dollar im April auf ein Rekordhoch von 385 US-Dollar. Der Host sieht KI als Treiber und verweist auch auf die Stärke anderer Cybersecurity-Werte sowie des HACK-ETF.",
-     "einordnung": "Die breite Stärke innerhalb der Cybersecurity spricht für mehr als nur eine isolierte Einzelbewegung. Nach dem starken Anstieg ist allerdings das Sentiment bereits anspruchsvoll; positive Nachrichten…",
-     "figures": "150 US-Dollar; 385 US-Dollar"
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "savtLkkJPbY",
-     "url": "https://www.youtube.com/watch?v=savtLkkJPbY&t=2445s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Morgan Stanley macht Palo Alto Networks zum neuen Top-Pick im Cybersecurity-Sektor und nennt ein Kursziel von 380 USD. KI-Sicherheit, Plattformstrategie und Margenpotenzial überzeugen, doch die Bewer…",
-     "einordnung": "Palo Alto verfügt über eine überzeugende strukturelle Wachstumsstory, aber die Bewertung lässt kaum Raum für operative Enttäuschungen. Der vom Host genannte Rücksetzerbereich ist daher weniger ein Sc…",
-     "figures": "380 USD Morgan-Stanley-Kursziel; KGV 825; PEG 5,4; 40% Free-Cashflow-Marge für 2028; 425 USD Argus-Kursziel; 421 USD Capital-One-Kursziel; 400 USD Citi-Kursziel"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "6LLJagAsqAI",
-     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=372s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Palo Alto Networks gehörte laut Host zu den Profiteuren der Nachrichten aus dem Cybersecurity-Sektor und stieg um 6,2 Prozent.",
-     "einordnung": "Palo Alto Networks profitiert als großer Plattformanbieter von der Priorisierung sicherheitskritischer Ausgaben. Der Kurssprung ist jedoch zunächst eine Sentimentreaktion und kein Beleg dafür, dass s…",
-     "figures": "Tagesplus +6,2 Prozent"
-    },
-    {
-     "date": "2025-11-13",
-     "video_id": "DdOoAO1ztKo",
-     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1390s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Zahlen werden am 19.11. erwartet; Übernahme von Cybersecurity-Spezialist für 25 Mrd. USD (2,5 Mrd. Cash + 100 Mio. neue Aktien); Kursziele: Mizuho 230 USD, Jefferies/RBC 250 USD.",
-     "einordnung": "Palo Alto ist der Branchenführer im Cybersecurity-Markt, und eine 25-Mrd.-USD-Übernahme zeigt Größenordnung und Ambition. Die Kursziele von 230-250 USD sind moderat optimistisch. Die Integration der…",
-     "figures": "25 Mrd. USD, 2,5 Mrd. USD, 100 Mio. Aktien, 230 USD, 250 USD"
-    },
-    {
-     "date": "2025-11-13",
-     "video_id": "DdOoAO1ztKo",
-     "url": "https://www.youtube.com/watch?v=DdOoAO1ztKo&t=1934s",
-     "channel": "Calling USA",
-     "kategorie": "chartanalyse",
-     "note": "Allzeithoch bei 220 USD erreicht; Potenzial bis 231 USD, wenn die 50%-Fibonacci-Retracement bei 198 USD gehalten wird; Rücksetzer auf 198 USD bieten spekulative Kaufchancen.",
-     "einordnung": "Ein Allzeithoch kurz vor den Quartalszahlen am 19.11. ist mutig – der Markt antizipiert offenbar ein gutes Ergebnis. Die 198-USD-Marke als Fibonacci-Unterstützung ist ein solider Einstiegspunkt bei R…",
-     "figures": "220 USD, 231 USD, 198 USD"
     }
    ]
   },
