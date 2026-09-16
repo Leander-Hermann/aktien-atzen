@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-15T23:20:36.169972Z",
+  "generated_at": "2026-09-16T00:20:33.532095Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -19,56 +19,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "ORCL",
-   "name": "Oracle",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,3 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 141.39,
-    "pct": -2.35,
-    "cur": "USD",
-    "as_of": "2026-09-15T18:33:46.723520+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-14",
-    "distance_days": -1,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Oracle fällt nach Earnings-Termin um 2,35 %",
-    "why_now": "Die Oracle-Aktie notiert bei 141,39 USD und liegt 2,35 % im Minus. Der Earnings-Termin war gestern. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin könnte zur auffälligen Bewegung beitragen; zusätzlich wurden in den vergangenen 3 Tagen 2 Videos erwähnt.",
-    "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Weitere Video-Erwähnungen",
-     "Nächste Unternehmensmeldungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-15T19:20:42.031311Z"
-   }
-  },
   {
    "symbol": "EVK.DE",
    "name": "Evonik",
@@ -135,6 +85,44 @@
     "pct": -2.36,
     "cur": "EUR",
     "as_of": "2026-09-15T18:33:46.723520+00:00"
+   }
+  },
+  {
+   "symbol": "ORCL",
+   "name": "Oracle",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,3 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 141.39,
+    "pct": -2.35,
+    "cur": "USD",
+    "as_of": "2026-09-15T18:33:46.723520+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-14",
+    "distance_days": -2,
+    "zeit": "tbd"
    }
   }
  ]
