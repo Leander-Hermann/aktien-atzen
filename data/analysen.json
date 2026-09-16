@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-09-15T18:31:44+00:00",
+  "generated_at": "2026-09-16T06:31:31+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,19 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-768540",
+   "symbol": "AMD",
+   "name": "AMD",
+   "veroeffentlicht": "2026-09-16T06:04:37+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/amd-aktie/amd-analyse/#amd-eine-entscheidung-koennte-naeher-ruecken"
+   }
+  },
   {
    "id": "lynx-768435",
    "symbol": "DELL",
@@ -1076,19 +1089,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/adyen-aktie/adyen-analyse/#adyen-bodenbildung-mit-paukenschlag-vollendet-aber"
-   }
-  },
-  {
-   "id": "lynx-765317",
-   "symbol": "INTC",
-   "name": "Intel",
-   "veroeffentlicht": "2026-08-14T06:20:37+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/intel-aktie/intel-analyse/#intel-bullen-scheinen-zuruck-im-spiel"
    }
   }
  ]
