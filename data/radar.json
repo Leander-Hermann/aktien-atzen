@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T06:20:34.675361Z",
+  "generated_at": "2026-09-16T07:20:34.978903Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 101,
+  "symbols_total": 98,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -20,8 +20,144 @@
  },
  "items": [
   {
-   "symbol": "EVK.DE",
-   "name": "Evonik",
+   "symbol": "ENR.DE",
+   "name": "Siemens Energy",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-8,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,2× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:ENR",
+   "quote": {
+    "price": 133.0,
+    "pct": -8.04,
+    "cur": "EUR",
+    "as_of": "2026-09-16T06:32:27.454990+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Siemens Energy fällt bei erhöhtem Handelsvolumen",
+    "why_now": "Die Aktie von Siemens Energy fällt um 8,04 % auf 133,0 EUR. Das Handelsvolumen liegt beim 2,2-Fachen des Durchschnitts. Zusätzlich wurde ein Video in 3 Tagen erfasst. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-16T07:20:34.978903Z"
+   }
+  },
+  {
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,7 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "4 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:IFX",
+   "quote": {
+    "price": 54.33,
+    "pct": -7.72,
+    "cur": "EUR",
+    "as_of": "2026-09-16T06:32:27.454990+00:00"
+   }
+  },
+  {
+   "symbol": "ASML.AS",
+   "name": "ASML",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-6,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "EURONEXT:ASML",
+   "quote": {
+    "price": 1378.8,
+    "pct": -6.13,
+    "cur": "EUR",
+    "as_of": "2026-09-16T06:32:27.454990+00:00"
+   }
+  },
+  {
+   "symbol": "SAP.DE",
+   "name": "SAP",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,1 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:SAP",
+   "quote": {
+    "price": 187.08,
+    "pct": 5.08,
+    "cur": "EUR",
+    "as_of": "2026-09-16T06:32:27.454990+00:00"
+   }
+  },
+  {
+   "symbol": "HEI.DE",
+   "name": "Heidelberg Materials",
    "score": 50,
    "priority": "medium",
    "alert_type": "content_velocity",
@@ -29,13 +165,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,9 %",
+     "value": "-3,1 %",
      "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
+     "value": "1,8× Durchschnitt",
      "weight": 15
     },
     {
@@ -45,46 +181,12 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:EVK",
+   "tv_symbol": "XETR:HEI",
    "quote": {
-    "price": 17.44,
-    "pct": -2.9,
+    "price": 149.05,
+    "pct": -3.1,
     "cur": "EUR",
-    "as_of": "2026-09-15T18:33:46.723520+00:00"
-   }
-  },
-  {
-   "symbol": "DEZ.DE",
-   "name": "Deutz",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,4 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:DEZ",
-   "quote": {
-    "price": 12.0,
-    "pct": -2.36,
-    "cur": "EUR",
-    "as_of": "2026-09-15T18:33:46.723520+00:00"
+    "as_of": "2026-09-16T06:32:27.454990+00:00"
    }
   },
   {
@@ -97,7 +199,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,3 %",
+     "value": "-3,1 %",
      "weight": 15
     },
     {
@@ -114,10 +216,10 @@
     }
    ],
    "quote": {
-    "price": 141.39,
-    "pct": -2.35,
+    "price": 140.35,
+    "pct": -3.07,
     "cur": "USD",
-    "as_of": "2026-09-15T18:33:46.723520+00:00"
+    "as_of": "2026-09-16T06:32:27.454990+00:00"
    },
    "earnings": {
     "date": "2026-09-14",
