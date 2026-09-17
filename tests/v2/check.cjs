@@ -38,6 +38,8 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   /* V2-4 Raum „Meine Werte" */
   'jzVideoHTML', 'mwMenge', 'mwGeld', 'mwKursHTML', 'mwDetailsHTML',
   'mwDerivatHTML', 'mwEreignisHTML', 'mwFremdOk', 'mwKuerzen', 'mwFremdHTML',
+  /* V2-5 Teil A (ADR-911): Sprecherklassen */
+  'verbotMuster', 'mwEigenHTML',
   'mwAuftrittTexte', 'mwAuftrittKopf', 'mwVideoHTML', 'mwSparkHTML', 'mwDetailInhaltHTML',
   'mwKarte', 'mwOhneKursHTML',
   /* V2-4 Teil D */
@@ -54,7 +56,7 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
-  'MW_VERBOTEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG',
+  'VERBOT_ZITAT', 'VERBOT_EIGEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG',
   'YW_TIMEOUT_MS'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
@@ -570,10 +572,13 @@ gruppe('V2-4 Teil C — Videoauftritte: Zeitmarke aus dem Feed, Herkunft sichtba
   pruef('Link geht nur nach https und mit noopener',
     /href="https:\/\/www\.youtube\.com\/watch\?v=abc123&t=264s" target="_blank" rel="noopener noreferrer"/.test(h), true);
   pruef('neuer Auftritt wird dezent markiert', /Neu seit deinem letzten Besuch/.test(h), true);
-  pruef('alle drei Fremdfelder mit Herkunftsangabe',
+  /* ADR-911 (V2-5 Teil A): note und figures sind S3 mit Kanal in der Herkunftszeile,
+     einordnung ist S2 — die Seite spricht, kein Kanalname in dieser Zeile. */
+  pruef('alle drei Felder mit Herkunftsangabe je Sprecherklasse',
     [/Zusammenfassung des Beitrags · onvista · maschinell verdichtet/.test(h),
-     /Einordnung des Kanals · onvista · maschinell verdichtet/.test(h),
+     /Einordnung dieser Seite · maschinell erzeugt/.test(h),
      /Im Beitrag genannte Zahlen · onvista · maschinell verdichtet/.test(h)], [true, true, true]);
+  pruef('das S2-Etikett nennt keinen Kanal', /Einordnung dieser Seite · onvista/.test(h), false);
   pruef('figures unkommentiert als Zitat', /Kursziel von 127 auf 140 US-Dollar angehoben/.test(h), true);
   /* NEGATIV (Teil C.3): fehlende Zeitmarke wird benannt, der Link bleibt gueltig. */
   box.j = mwJoin({ auftritte: [mwAuftritt({ url: 'https://www.youtube.com/watch?v=abc123' })] });
@@ -603,17 +608,17 @@ gruppe('V2-4 Teil C — Videoauftritte: Zeitmarke aus dem Feed, Herkunft sichtba
   const verboten = vm.runInContext('mwVideoHTML(j)', box);
   pruef('Verbotsbegriff steht nicht im DOM', /aussichtsreich/i.test(verboten), false);
   pruef('das betroffene Feld entfaellt', /Zusammenfassung des Beitrags/.test(verboten), false);
-  pruef('die uebrigen Felder bleiben', /Einordnung des Kanals/.test(verboten) &&
+  pruef('die uebrigen Felder bleiben', /Einordnung dieser Seite/.test(verboten) &&
     /Im Beitrag genannte Zahlen/.test(verboten), true);
   pruef('Kanal, Datum und Link bleiben erhalten',
     /onvista/.test(verboten) && /09\.09\.2026/.test(verboten) && /Zum Video ab 4:24/.test(verboten), true);
-  pruef('mwFremdOk erkennt jeden Begriff der Liste',
+  pruef('mwFremdOk erkennt jeden Begriff der alten Zwoelferliste auch in der Zitat-Liste',
     ['Top Picks', 'beste Chancen', 'Erfolgswahrscheinlichkeit', 'Kaufkandidat', 'Einstieg jetzt',
      'sichere Ziele', 'lohnt sich', 'aussichtsreich', 'dein Risiko', 'zu hoch gewichtet', 'gut gelaufen']
-      .map(w => vm.runInContext('mwFremdOk("Ein Satz mit ' + w + ' darin.")', box)),
+      .map(w => vm.runInContext('mwFremdOk("Ein Satz mit ' + w + ' darin.",VERBOT_ZITAT)', box)),
     [false, false, false, false, false, false, false, false, false, false, false]);
   pruef('ein unverfaenglicher Satz bleibt zulaessig',
-    vm.runInContext('mwFremdOk("Der Umsatz stieg um 12 Prozent.")', box), true);
+    vm.runInContext('mwFremdOk("Der Umsatz stieg um 12 Prozent.",VERBOT_ZITAT)', box), true);
   /* Teil C.4: Laengendeckel nach Design-System §4.1. Der Feed liefert heute hoechstens
      200 Zeichen, der Deckel greift also nicht — geprueft wird er trotzdem, sonst waere
      er eine ungepruefte Zusage (ADR-317.5). */
@@ -816,7 +821,7 @@ gruppe('V2-4 Nachtrag — Sparkline zeigt Verlauf ohne Deutung, Detail traegt di
   /* Kriterium 5: EINE Fussnote statt drei Beschriftungen je Auftritt. */
   pruef('genau eine Fussnote im Detail', (detail.match(/mw-fussnote/g) || []).length, 1);
   pruef('die Fussnote benennt Herkunft und Verdichtung',
-    /maschinell verdichtet/.test(detail) && /nicht die Auffassung dieser Seite/.test(detail), true);
+    /maschinell verdichtet/.test(detail) && /keine Aussage des Kanals/.test(detail), true);
   pruef('die Zuordnung steht weiterhin an jedem Auftritt',
     (detail.match(/mw-kanal/g) || []).length, 2);
   /* NEGATIV: ohne Auftritte gibt es weder Ueberschrift noch Fussnote. */
@@ -935,6 +940,82 @@ gruppe('V2-4 Nachtrag — Symbolliste: Nu Holdings wird gefunden, Feeds behalten
   pruef('das Suchfeld fordert sie beim Fokus an', /addEventListener\('focus',\(\)=>\{mwSymboleLaden\(\)\}\)/.test(html), true);
   pruef('der Join kennt die Liste als LETZTE Namensquelle',
     /\(ka&&ka\.name\)\|\|mwListenName\(sym\)\|\|''/.test(schneide('bstJoin')), true);
+});
+
+/* --- V2-5 Teil A: Sprecherklassen nach ADR-911 (Punkt 8, Pruefregel mit Gegenprobe) ------
+   Vorlage: negativfall.cjs aus AA-20260917-ARCH-02-E01-T01 (NEGATIVFALL OK ok=8 fail=0).
+   Geprueft wird die ausgelieferte Liste: (a) VERBOT_ZITAT ist Teilmenge von VERBOT_EIGEN,
+   (b) die MSFT-Zeile passiert S3 und faellt in S2, (c) fuenf konstruierte Aufforderungen
+   schlagen in S3 an, (d) ein einordnung mit „Kaufsignal" entfaellt, (e) das alte Etikett
+   kommt im Quelltext nicht mehr vor. Dazu die Wortgrenzen-Falle der Uebertragung aus
+   Python: /\büber…/ trifft in JavaScript nie — die kompilierten Muster muessen es. */
+gruppe('V2-5 Teil A — Sprecherklassen nach ADR-911: Zitat-Liste, volle Liste, Etikett, Fussnote', () => {
+  const zitat = vm.runInContext('VERBOT_ZITAT', box), eigen = vm.runInContext('VERBOT_EIGEN', box);
+  pruef('VERBOT_ZITAT traegt 27 Muster', zitat.length, 27);
+  pruef('VERBOT_EIGEN traegt 33 radar.py-Muster plus sechs', eigen.length, 39);
+  /* instanceof scheitert ueber die Realm-Grenze der Sandbox — deshalb der Typname. */
+  pruef('beide Listen sind kompilierte Unicode-Regexe',
+    zitat.concat(eigen).every(r => Object.prototype.toString.call(r) === '[object RegExp]' && r.flags === 'iu'), true);
+  /* (a) Teilmengenbeleg: zu jedem Zitat-Muster ein Probewort, das AUCH die volle Liste trifft. */
+  const proben = ['du solltest', 'sollten Sie', 'sollte man', 'kaufen Sie', 'verkaufen Sie', 'jetzt einsteigen',
+    'Einstieg jetzt', 'zugreifen', 'nachkaufen', 'aufstocken', 'Erfolgswahrscheinlichkeit',
+    'garantiert', 'sichere Gewinne', 'sicheres Ziel', 'risikolos', 'sichere Ziele', 'Top-Pick', 'beste Chancen',
+    'Kaufkandidat', 'Schnäppchen', 'lohnt sich', 'aussichtsreich', 'dein Risiko', 'Ihr Risiko', 'dein Depot',
+    'Ihr Depot', 'zu hoch gewichtet', 'gut gelaufen'];
+  const trifft = (liste, t) => liste.some(r => r.test(t));
+  pruef('jedes Probewort trifft die Zitat-Liste', proben.filter(t => !trifft(zitat, t)), []);
+  pruef('jedes dieser Probewoerter trifft auch die volle Liste (Teilmenge)', proben.filter(t => !trifft(eigen, t)), []);
+  pruef('jedes Zitat-Muster hat mindestens ein Probewort', zitat.filter(r => !proben.some(t => r.test(t))).length, 0);
+  /* BEFUND 17.09.2026 (Architektenfrage, Handoff): „jetzt zusteigen" trifft die Zitat-Liste, aber
+     radar.py kennt nur einsteig/aussteig — die Teilmenge gilt hier nur ueber das Probewort
+     „jetzt einsteigen". Beide Listen wachsen nur per ADR-Nachtrag (ADR-911 Punkt 3); dieser
+     Fall haelt die Luecke sichtbar und kippt, sobald der Nachtrag da ist. */
+  pruef('bekannte Luecke: „zusteigen" fehlt in der vollen Liste', [trifft(zitat, 'jetzt zusteigen'), trifft(eigen, 'jetzt zusteigen')], [true, false]);
+  /* (b) die MSFT-Zeile vom 31.08.: Sachaussage des Kanals in dritter Person. */
+  const msft = 'Microsoft gefällt dem Host charttechnisch. Nach den Quartalszahlen kam es zu einem Gap-up; ' +
+    '350 US-Dollar gelten als zentrale Unterstützung, und der Chart liefert ein mittelfristiges Kaufsignal.';
+  pruef('MSFT-Zeile passiert S3', trifft(zitat, msft), false);
+  pruef('MSFT-Zeile faellt in S2', trifft(eigen, msft), true);
+  pruef('ORCL-Zeile (Wiedergabe ohne Anrede) passiert S3',
+    trifft(zitat, 'Aus meiner Sicht ist das Warten vor den Zahlen vernünftig.'), false);
+  /* (c) fuenf konstruierte Aufforderungen an den Leser. */
+  const boese = ['Der Host rät: Jetzt einsteigen, das lohnt sich.', 'Kaufen Sie die Aktie, bevor es zu spät ist.',
+    'Ein sicherer Gewinn mit garantiertem Kursziel.', 'Dein Depot braucht diesen Top-Pick.',
+    'Man sollte hier nachkaufen und aufstocken.'];
+  pruef('fuenf Aufforderungen schlagen in S3 an', boese.map(t => trifft(zitat, t)), [true, true, true, true, true]);
+  /* (d) ein S2-Feld mit „Kaufsignal" entfaellt, die S3-Felder desselben Auftritts bleiben. */
+  box.j = mwJoin({ auftritte: [mwAuftritt({ einordnung: 'Kein Kaufsignal, der Ausbruch fehlt.',
+    note: 'Der Host sieht ein Kaufsignal im Wochenchart.' })] });
+  const h = vm.runInContext('mwVideoHTML(j)', box);
+  pruef('einordnung mit Kaufsignal entfaellt', /Einordnung dieser Seite/.test(h), false);
+  pruef('note mit Kaufsignal in dritter Person bleibt als S3 stehen',
+    /Zusammenfassung des Beitrags · onvista · maschinell verdichtet/.test(h) && /Kaufsignal im Wochenchart/.test(h), true);
+  pruef('Kopfzeile und Link bleiben', /onvista/.test(h) && /09\.09\.2026/.test(h) && /Zum Video ab 4:24/.test(h), true);
+  pruef('mwFremdOk ohne Listenangabe nimmt die STRENGERE Liste',
+    vm.runInContext('mwFremdOk("Das Kursziel liegt bei 140.")', box), false);
+  pruef('dieselbe Zeile passiert ausdruecklich als S3',
+    vm.runInContext('mwFremdOk("Das Kursziel liegt bei 140.",VERBOT_ZITAT)', box), true);
+  /* (e) Etikett und Fussnote zeichengleich; das alte Etikett ist verschwunden. */
+  pruef('altes Etikett kommt im Quelltext nicht mehr vor', /Einordnung des Kanals/.test(html), false);
+  const eigenHtml = vm.runInContext('mwEigenHTML("Einordnung dieser Seite","Der Titel bleibt schwankungsanfällig.")', box);
+  pruef('S2-Etikett zeichengleich', /<span class="mw-herkunft t-caption">Einordnung dieser Seite · maschinell erzeugt<\/span>/.test(eigenHtml), true);
+  pruef('S2-Flaeche traegt die eigene Klasse', /class="mw-fremd mw-eigen /.test(eigenHtml), true);
+  box.j = mwJoin({ auftritte: [mwAuftritt()] });
+  const detail = vm.runInContext('mwDetailInhaltHTML(j)', box);
+  pruef('Fussnote zeichengleich nach Teil A.3',
+    detail.indexOf('Zusammenfassungen und genannte Zahlen stammen aus der jeweils darüber genannten ' +
+      'Videoanalyse und sind maschinell verdichtet; sie geben den Beitrag des Kanals wieder. Die Einordnung ' +
+      'ist eine maschinell erzeugte Einschätzung dieser Seite und keine Aussage des Kanals.') > -1, true);
+  /* Wortgrenzen: Python-\b ist Unicode-bewusst, das Kompilat muss es auch sein. */
+  const rx = vm.runInContext('verbotMuster', box);
+  pruef('Umlaut am Musteranfang wird getroffen', rx('\\büber(?:gewicht|bewertet)\\w*').test('ist übergewichtet'), true);
+  pruef('kein Treffer mitten im Wort', rx('\\büber(?:gewicht|bewertet)\\w*').test('Rübergewicht'), false);
+  pruef('Wortgrenze am Ende gilt', [rx('\\bkaufen?\\b').test('Verkaufen'), rx('\\bkaufen?\\b').test('Kaufsignal'),
+    rx('\\bkaufen?\\b').test('wir kaufen.')], [false, false, true]);
+  pruef('\\w* laeuft ueber Umlaute', rx('\\bdepot\\w*').test('Depotübersicht') && !rx('\\bdepot\\w*').test('Aktiendepot'), true);
+  /* NEGATIV: eine ASCII-Wortgrenze wuerde das Umlautmuster nie treffen — genau der Fehler,
+     den eine 1:1-Uebernahme als Regex-Literal gemacht haette. */
+  pruef('Gegenprobe: ASCII-\\b trifft das Umlautmuster nicht', /\büber(?:gewicht|bewertet)\w*/i.test('übergewichtet'), false);
 });
 
 /* --- Kurspfad ueber den Proxy (Nutzerbefund 13.09.2026) -----------------------------

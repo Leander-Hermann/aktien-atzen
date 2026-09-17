@@ -600,6 +600,11 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     display:flex;flex-direction:column;gap:2px;color:var(--ink);
     font-size:14.5px;line-height:1.55}
   .mw-herkunft{color:var(--muted);font-weight:600}
+  /* ADR-911: die eigene Stimme des Modells (S2) traegt wie .rd-llm und .mw-derivat die
+     GESTRICHELTE Kante — dasselbe Zeichen, das die Seite ueberall fuer „maschinell
+     geschrieben, nicht gerechnet, nicht zitiert" verwendet. Bedeutung nie durch die Kante
+     allein (§11): das Etikett darueber nennt die Seite als Sprecher. */
+  .mw-eigen{border-left-style:dashed}
   /* Sparkline: reine Verlaufslinie, volle Kartenbreite, feste Höhe aus dem eigenen CSS. */
   .mw-spark{display:block;width:100%;height:32px;overflow:visible}
   /* Detailansicht */
@@ -2545,25 +2550,109 @@ function mwEreignisHTML(j){
    https-Zwang, jedes Symbol durch validTicker(). Die Zeitmarke wird NIE selbst gebaut,
    sondern aus dem gelieferten url uebernommen — jzZeitmarke() liest sie nur aus.
 
-   Verbotsliste (Auftrag Teil F.1, ADR-806 §3 / ADR-807 §3 / ADR-906 §5, ADR-908):
-   Die Liste trifft die AUSSAGE der Seite. Fuer maschinell erzeugten Text gilt die
-   Zitatausnahme aus ADR-908 Punkt 2 ausdruecklich NICHT (Punkt 4) — und note,
-   einordnung und figures sind maschinell verdichtet. Traegt ein Feld einen
-   Listenbegriff, entfaellt GENAU DIESES FELD; Kanal, Datum und Deeplink bleiben, damit
-   der Auftritt auffindbar bleibt. Das ist dasselbe fail-closed-Muster, mit dem das
-   Backend beim llm-Block verfaehrt (ADR-903 Teil E: „Verbotswort => Item ohne Block").
+   Verbotslisten nach dem SPRECHER (ADR-911, bestaetigt 17.09.2026; ADR-806 §3 / ADR-807 §3 /
+   ADR-906 §5, ADR-908): Massgeblich ist, wessen Aussage der Leser vor sich hat.
+   S3 — Wiedergabe eines benannten Dritten (note, figures, Videotitel, summary, tip, macro):
+     darf stehen unter den fuenf Zitatbedingungen aus ADR-911 Punkt 4 — Quelle an derselben
+     Stelle sichtbar, als Wiedergabe gekennzeichnet („maschinell verdichtet"), kein eigener
+     Satz darum, kein Begriff aus VERBOT_ZITAT, Sprecher erkennbar. „Kaufsignal", „Kursziel",
+     „Einstieg" in dritter Person bleiben als Sachaussage des Kanals stehen (Punkt 5).
+   S2 — die Seite durch ihr Modell (einordnung, detail): eigene Stimme, volle Liste
+     VERBOT_EIGEN. einordnung ist laut Contract und Runtime-Prompt die EIGENE Einschaetzung
+     unseres Modells — bis zum 17.09.2026 nannte das Etikett hier den KANAL als Sprecher;
+     das war eine Fehlzuschreibung (ADR-911 Punkt 6).
+   Traegt ein Feld einen Listenbegriff, entfaellt GENAU DIESES FELD; Kanal, Datum und
+   Deeplink bleiben, damit der Auftritt auffindbar bleibt (fail-closed, Muster ADR-903 Teil E).
 
-   Gemessen am 10.09.2026 gegen den Livefeed: 7 von 1.305 Auftritten (0,5 %) sind
-   betroffen, alle wegen „aussichtsreich". Die vollstaendige Backend-Liste aus
-   radar.py haette 469 Auftritte (35,9 %) getroffen — davon 385 allein wegen
-   „Kursziel", das Teil C.4 ausdruecklich als Zitat zeigen WILL. Deshalb gilt hier die
-   im Auftrag Teil F.1 woertlich aufgezaehlte Liste. Die Abgrenzung ist als
-   Architektenfrage uebergeben. */
-const MW_VERBOTEN=[/\btop[ -]?picks?\b/i,/\bbeste[nrs]? chancen?\b/i,
-  /\berfolgswahrscheinlichkeit\w*/i,/\bkaufkandidat\w*/i,/\beinstieg jetzt\b/i,
-  /\bsichere[nrs]? ziele?\b/i,/\blohnt sich\b/i,/\baussichtsreich\w*/i,
-  /\bdein risiko\b/i,/\bihr risiko\b/i,/\bzu hoch gewichtet\b/i,/\bgut gelaufen\b/i];
-function mwFremdOk(s){const t=String(s==null?'':s);return !!t.trim()&&!MW_VERBOTEN.some(r=>r.test(t))}
+   Gemessen vom Architekten am 17.09.2026 (1.371 Auftritte): Zitat-Liste trifft 10 note-Felder
+   (0,7 %) und 0 figures; die volle Liste trifft 168 einordnung-Felder (12,3 %). Die Messung
+   dieser Session steht im Handoff.
+
+   Die Muster stehen als STRINGS zeichengleich zur Referenz — VERBOT_EIGEN zu
+   backend/radar.py LLM_FORBIDDEN_RX, VERBOT_ZITAT zur Vorlage aus AA-20260917-ARCH-02 — und
+   werden mit verbotMuster() kompiliert. Grund: Pythons \b und \w sind Unicode-bewusst,
+   JavaScripts nicht (gemessen 17.09.2026: /\büber(?:gewicht|bewertet)/i trifft
+   „übergewichtet" NIE). Ein 1:1 abgetipptes Regex-Literal waere also zeichengleich und
+   zugleich wirkungslos. Ohne Lookbehind, damit aeltere Engines nicht schon beim Kompilieren
+   scheitern: der Vorlauf einer Grenze wird als Zeichen mitgenommen — fuer test() ohne Folge. */
+function verbotMuster(p){
+  const W='[\\p{L}\\p{N}_]',N='[^\\p{L}\\p{N}_]';
+  return new RegExp(p.replace(/\\b/g,'(?:^|'+N+'|(?!'+W+'))').replace(/\\w/g,W),'iu');
+}
+/* Referenzfassung nach ADR-911 Punkt 3; Änderung nur per ADR. 27 Muster in vier Gruppen:
+   (i) Anrede/Aufforderung, (ii) Erfolgsversprechen, (iii) Marketingbegriffe ADR-806/807,
+   (iv) Bewertung der Leserposition. Teilmenge von VERBOT_EIGEN — geprueft in tests/v2/check.cjs. */
+const VERBOT_ZITAT=String.raw`\bsolltest\b
+\bsollten sie\b
+\bsollte man\b
+\bkaufen sie\b
+\bverkaufen sie\b
+\bjetzt (?:ein|zu)steigen\b
+\beinstieg jetzt\b
+\bzugreifen\b
+\bnachkaufen\b
+\baufstocken\b
+\berfolgswahrscheinlichkeit\w*
+\bgarantier\w*
+\bsicher\w* (?:ziel|gewinn)\w*
+\brisikolos\w*
+\bsichere[nrs]? ziele?\b
+\btop[ -]?picks?\b
+\bbeste[nrs]? chancen?\b
+\bkaufkandidat\w*
+\bschnäppchen\w*
+\blohnt sich\b
+\baussichtsreich\w*
+\bdein risiko\b
+\bihr risiko\b
+\bdein depot\b
+\bihr depot\b
+\bzu hoch gewichtet\b
+\bgut gelaufen\b`.split('\n').map(verbotMuster);
+/* Referenzfassung nach ADR-911 Punkt 3; Änderung nur per ADR. Die ersten 33 Zeilen sind
+   backend/radar.py LLM_FORBIDDEN_RX zeichengleich, die letzten sechs die dort fehlenden
+   Zitat-Begriffe (ADR-911 Punkt 3). Gilt fuer S1 (eigener UI-Text) und S2 (Modelltext). */
+const VERBOT_EIGEN=String.raw`\b(?:nach|zu|ver)?kaufen\b
+\b(?:ver)?kauf(?:s?empfehlung|signal|kandidat)\w*
+\bkaufen?\b
+\bverkauf\b
+\beinsteig\w*
+\baussteig\w*
+\beinstieg\b
+\bausstieg\b
+\bempfehl\w*
+\bempfohlen\b
+\bkursziel\w*
+\bzielkurs\w*
+\btop[ -]?picks?\b
+\bbeste[nrs]? chancen?\b
+\berfolgswahrscheinlichkeit\w*
+\bprognos\w*
+\bgarantier\w*
+\bstop[ -]?loss\b
+\btake[ -]?profit\b
+\bgewinnmitnahme\w*
+\bdepot\w*
+\bposition\w*
+\büber(?:gewicht|bewertet)\w*
+\bunter(?:gewicht|bewertet)\w*
+\bschnäppchen\w*
+\bsicher\w* (?:ziel|gewinn)\w*
+\bsolltest\b
+\bsollten sie\b
+\bsollte man\b
+\bdein risiko\b
+\bihr risiko\b
+\breduzieren\b
+\baufstocken\b
+\bzugreifen\b
+\brisikolos\w*
+\blohnt sich\b
+\baussichtsreich\w*
+\bzu hoch gewichtet\b
+\bgut gelaufen\b`.split('\n').map(verbotMuster);
+/* Ohne Listenangabe gilt die STRENGERE Liste — ein Feld ohne Zuordnung ist S2 (ADR-911 Punkt 2). */
+function mwFremdOk(s,liste){const t=String(s==null?'':s);return !!t.trim()&&!(liste||VERBOT_EIGEN).some(r=>r.test(t))}
 
 /* Laengendeckel nach Design-System §4.1: der Fliesstext traegt 54ch, das sind bei drei
    Zeilen rund 200 Zeichen. Der Feed liefert heute selbst hoechstens 200 (gemessen
@@ -2579,21 +2668,30 @@ function mwKuerzen(s){
   return (raum>MW_TEXTDECKEL*0.6?teil.slice(0,raum):teil).replace(/[\s.,;:–-]+$/,'')+'…';
 }
 
-/* Ein Fremdtextfeld mit seiner Herkunft. Die Herkunft steht als sichtbarer Text, nicht
-   nur im Kommentar (Teil C.4): der Leser muss ohne Nachdenken sehen, dass hier der
-   Kanal spricht und nicht die Seite. figures wird dabei NICHT kommentiert, nicht
-   eingeordnet und nicht in eine eigene Formulierung ueberfuehrt. */
+/* Ein S3-Feld mit seiner Herkunft (ADR-911 Punkt 4 b): Kanal und „maschinell verdichtet"
+   stehen als sichtbarer Text in derselben Zeile — der Leser muss ohne Nachdenken sehen,
+   dass hier der Kanal spricht und nicht die Seite. figures wird dabei NICHT kommentiert,
+   nicht eingeordnet und nicht in eine eigene Formulierung ueberfuehrt. */
 function mwFremdHTML(marke,text,kanal){
-  if(!mwFremdOk(text))return '';
+  if(!mwFremdOk(text,VERBOT_ZITAT))return '';
   return '<p class="mw-fremd t-small jz-fliess">'+
     '<span class="mw-herkunft t-caption">'+escapeHtml(marke)+
       (kanal?' · '+escapeHtml(kanal):'')+' · maschinell verdichtet</span>'+
     escapeHtml(mwKuerzen(text))+'</p>';
 }
+/* Ein S2-Feld: die eigene Stimme der Seite durch ihr Modell (ADR-911 Punkt 6). Das Etikett
+   nennt die SEITE als Sprecher und traegt bewusst KEINEN Kanalnamen — sonst laese es sich
+   wieder als Kanalaussage. Volle Liste, fail-closed. Wortlaut des Etiketts ist bindend. */
+function mwEigenHTML(marke,text){
+  if(!mwFremdOk(text,VERBOT_EIGEN))return '';
+  return '<p class="mw-fremd mw-eigen t-small jz-fliess">'+
+    '<span class="mw-herkunft t-caption">'+escapeHtml(marke)+' · maschinell erzeugt</span>'+
+    escapeHtml(mwKuerzen(text))+'</p>';
+}
 function mwAuftrittTexte(a){
   const kanal=String(a.channel||'').trim();
   return mwFremdHTML('Zusammenfassung des Beitrags',a.note,kanal)+
-    mwFremdHTML('Einordnung des Kanals',a.einordnung,kanal)+
+    mwEigenHTML('Einordnung dieser Seite',a.einordnung)+
     mwFremdHTML('Im Beitrag genannte Zahlen',a.figures,kanal);
 }
 
@@ -2695,10 +2793,12 @@ function mwDetailInhaltHTML(j){
       '</div>'+
       /* Teil C.4 bleibt erfuellt, aber platzsparend: Die ZUORDNUNG traegt die Kopfzeile
          jedes Auftritts (Kanal und Datum), die Kennzeichnung als verdichteter Fremdtext
-         steht einmal hier statt dreimal je Auftritt. Nutzerentscheid vom 10.09. */
-      '<p class="mw-fussnote t-caption">Zusammenfassungen, Einordnungen und genannte Zahlen '+
-      'stammen aus der jeweils darüber genannten Videoanalyse und sind maschinell verdichtet. '+
-      'Sie geben den Beitrag des Kanals wieder, nicht die Auffassung dieser Seite.</p>'
+         steht einmal hier statt dreimal je Auftritt. Nutzerentscheid vom 10.09.
+         Wortlaut seit ADR-911 bindend (V2-5 Teil A.3): die Einordnung ist S2, nicht S3. */
+      '<p class="mw-fussnote t-caption">Zusammenfassungen und genannte Zahlen stammen aus der '+
+      'jeweils darüber genannten Videoanalyse und sind maschinell verdichtet; sie geben den '+
+      'Beitrag des Kanals wieder. Die Einordnung ist eine maschinell erzeugte Einschätzung '+
+      'dieser Seite und keine Aussage des Kanals.</p>'
       :'');
 }
 let MW_AUSLOESER=null;
