@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-17T18:20:39.631368Z",
+  "generated_at": "2026-09-17T19:20:43.858776Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 97,
-  "with_quote_data": 57,
+  "symbols_total": 95,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -21,161 +21,73 @@
  },
  "items": [
   {
-   "symbol": "FPS",
-   "name": "Forgent Power Solutions, Inc.",
-   "score": 50,
-   "priority": "medium",
+   "symbol": "GNRC",
+   "name": "Generac",
+   "score": 85,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+11,1 %",
+     "value": "+17,6 %",
      "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "SMTC",
-   "name": "Semtech Corporation",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+11,0 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "LITE",
-   "name": "Lumentum",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,6 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "FTAI",
-   "name": "FTAI Aviation Ltd.",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,6 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "CRDO",
-   "name": "Credo Technology",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,4 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,0 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "EVK.DE",
-   "name": "Evonik",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,9 %",
-     "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
+     "value": "6,9× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
     }
    ],
-   "tv_symbol": "XETR:EVK",
    "quote": {
-    "price": 17.57,
-    "pct": -2.9,
-    "cur": "EUR",
-    "as_of": "2026-09-17T06:33:16.219133+00:00"
+    "price": 205.8,
+    "pct": 17.53,
+    "cur": "USD",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Generac mit starkem Tagesanstieg und hohem Volumen",
+    "why_now": "Die Generac-Aktie stieg um 17,53 % auf 205,8 USD. Das Handelsvolumen lag beim 6,9-Fachen des Durchschnitts, während der S&P 500 Future um 2,0 % zulegte. Eine Marktbreitenbewegung könnte den Anstieg teilweise begünstigt haben; die einzelne Video-Erwähnung in drei Tagen könnte zusätzlich Aufmerksamkeit widerspiegeln. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach dem Anstieg",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Marktbreitenbewegung"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-17T19:20:43.858776Z"
    }
   },
   {
-   "symbol": "DEZ.DE",
-   "name": "Deutz",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
+   "symbol": "GBF.DE",
+   "name": "Bilfinger",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,4 %",
-     "weight": 15
+     "value": "-21,4 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
+     "value": "12,0× Durchschnitt",
      "weight": 25
     },
     {
@@ -185,13 +97,389 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:DEZ",
+   "tv_symbol": "XETR:GBF",
    "quote": {
-    "price": 11.62,
-    "pct": -2.36,
+    "price": 59.35,
+    "pct": -21.44,
     "cur": "EUR",
-    "as_of": "2026-09-17T06:33:16.219133+00:00"
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Bilfinger mit starkem Kursrückgang und hohem Volumen",
+    "why_now": "Die Bilfinger-Aktie notiert bei 59,35 EUR und liegt 21,44 % im Minus. Das Handelsvolumen beträgt das 12,0-Fache des Durchschnitts. Das könnte auf eine erhöhte Marktaufmerksamkeit hindeuten; zusätzlich wurde 1 Video in 3 Tagen erfasst. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach dem Rückgang",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-17T19:20:43.858776Z"
    }
+  },
+  {
+   "symbol": "ORCL",
+   "name": "Oracle",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,3 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 3 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 149.38,
+    "pct": 4.34,
+    "cur": "USD",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-14",
+    "distance_days": -3,
+    "zeit": "tbd"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Oracle nach Earnings mit deutlichem Kursanstieg",
+    "why_now": "Die Oracle-Aktie liegt bei 149,38 USD und ist um 4,34 % gestiegen. Der Earnings-Termin liegt drei Tage zurück. Ursache unklar. Die zeitliche Nähe zum Termin dürfte für eine Reaktion auf die Ergebnisse sprechen, zugleich könnte die Bewegung durch den S&P 500 Future mitgeprägt sein.",
+    "watch_next": [
+     "Kursentwicklung nach der Earnings-Reaktion",
+     "Weitere Unternehmensmeldungen",
+     "Entwicklung des S&P 500 Future"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-17T19:20:43.858776Z"
+   }
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,3 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 4 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 975.85,
+    "pct": 5.32,
+    "cur": "USD",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-21",
+    "distance_days": 4,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,5 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 110.485,
+    "pct": 9.34,
+    "cur": "USD",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   }
+  },
+  {
+   "symbol": "NNE",
+   "name": "Nano Nuclear Energy",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,0 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 17.039,
+    "pct": 8.95,
+    "cur": "USD",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   }
+  },
+  {
+   "symbol": "P911.DE",
+   "name": "Porsche AG",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,1× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ],
+   "tv_symbol": "XETR:P911",
+   "quote": {
+    "price": 47.58,
+    "pct": 5.1,
+    "cur": "EUR",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   }
+  },
+  {
+   "symbol": "NOKIA.HE",
+   "name": "Nokia",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,6 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ],
+   "tv_symbol": "OMXHEX:NOKIA",
+   "quote": {
+    "price": 9.25,
+    "pct": 4.64,
+    "cur": "EUR",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   }
+  },
+  {
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,1 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ],
+   "tv_symbol": "KRX:000660",
+   "quote": {
+    "price": 1745000.0,
+    "pct": 4.08,
+    "cur": "KRW",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   }
+  },
+  {
+   "symbol": "VICR",
+   "name": "Vicor",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+18,5 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "TEM",
+   "name": "Tempus AI",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+15,1 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "TWST",
+   "name": "Twist Bioscience Corporation",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,4 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "IONQ",
+   "name": "IonQ",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,3 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,0 %",
+     "weight": 5
+    }
+   ]
   }
  ]
 }
