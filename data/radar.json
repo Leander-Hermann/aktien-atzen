@@ -1,17 +1,17 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-17T06:24:24.516657Z",
+  "generated_at": "2026-09-17T07:24:24.839921Z",
   "source": "radar",
-  "status": "empty",
+  "status": "fresh",
   "partial": false,
   "warnings": [],
   "errors": []
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 98,
-  "with_quote_data": 60,
+  "symbols_total": 97,
+  "with_quote_data": 57,
   "sources": [
    "watchlist",
    "videos",
@@ -19,5 +19,179 @@
    "movers"
   ]
  },
- "items": []
+ "items": [
+  {
+   "symbol": "FPS",
+   "name": "Forgent Power Solutions, Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,1 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,7 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "SMTC",
+   "name": "Semtech Corporation",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,0 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,7 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "LITE",
+   "name": "Lumentum",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,6 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,7 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "FTAI",
+   "name": "FTAI Aviation Ltd.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,6 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,7 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "CRDO",
+   "name": "Credo Technology",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,4 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,7 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "EVK.DE",
+   "name": "Evonik",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,9 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:EVK",
+   "quote": {
+    "price": 17.57,
+    "pct": -2.9,
+    "cur": "EUR",
+    "as_of": "2026-09-17T06:33:16.219133+00:00"
+   }
+  },
+  {
+   "symbol": "DEZ.DE",
+   "name": "Deutz",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,4 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:DEZ",
+   "quote": {
+    "price": 11.62,
+    "pct": -2.36,
+    "cur": "EUR",
+    "as_of": "2026-09-17T06:33:16.219133+00:00"
+   }
+  }
+ ]
 }
