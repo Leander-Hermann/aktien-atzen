@@ -1,61 +1,23 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-16T23:20:39.322710Z",
+  "generated_at": "2026-09-17T00:20:38.882079Z",
   "source": "radar",
-  "status": "fresh",
+  "status": "empty",
   "partial": false,
   "warnings": [],
   "errors": []
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 97,
+  "symbols_total": 98,
   "with_quote_data": 60,
   "sources": [
    "watchlist",
    "videos",
+   "earnings",
    "movers"
   ]
  },
- "items": [
-  {
-   "symbol": "ORCL",
-   "name": "Oracle",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,6 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 143.945,
-    "pct": 2.57,
-    "cur": "USD",
-    "as_of": "2026-09-16T18:33:14.367878+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-14",
-    "distance_days": -2,
-    "zeit": "tbd"
-   }
-  }
- ]
+ "items": []
 }
