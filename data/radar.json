@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-18T06:20:42.650687Z",
+  "generated_at": "2026-09-18T07:20:38.926443Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 95,
+  "symbols_total": 94,
   "with_quote_data": 56,
   "sources": [
    "watchlist",
@@ -21,52 +21,6 @@
  },
  "items": [
   {
-   "symbol": "GBF.DE",
-   "name": "Bilfinger",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-21,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "12,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:GBF",
-   "quote": {
-    "price": 59.35,
-    "pct": -21.44,
-    "cur": "EUR",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Bilfinger mit starkem Kursrückgang und hohem Volumen",
-    "why_now": "Die Bilfinger-Aktie notiert bei 59,35 EUR und liegt 21,44 % im Minus. Das Handelsvolumen beträgt das 12,0-Fache des Durchschnitts. Das könnte auf eine erhöhte Marktaufmerksamkeit hindeuten; zusätzlich wurde 1 Video in 3 Tagen erfasst. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Rückgang",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-17T19:20:43.858776Z"
-   }
-  },
-  {
    "symbol": "GNRC",
    "name": "Generac",
    "score": 80,
@@ -76,13 +30,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+17,6 %",
+     "value": "+18,3 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,9× Durchschnitt",
+     "value": "8,2× Durchschnitt",
      "weight": 25
     },
     {
@@ -93,22 +47,67 @@
     }
    ],
    "quote": {
-    "price": 205.8,
-    "pct": 17.53,
+    "price": 207.23,
+    "pct": 18.34,
     "cur": "USD",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
+    "as_of": "2026-09-18T06:31:52.062919+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Generac mit starker Kursbewegung und hohem Volumen",
-    "why_now": "Die Generac-Aktie liegt bei 205,8 USD und verzeichnet eine Kursbewegung von plus 17,53 %. Das Handelsvolumen beträgt das 6,9-Fache des Durchschnitts; zudem wurde in drei Tagen ein Video erwähnt. Ursache unklar; das erhöhte Volumen und die Video-Erwähnung könnten mit der auffälligen Bewegung zusammenhängen.",
+    "headline": "Generac mit starkem Kursanstieg und hohem Volumen",
+    "why_now": "Generac legte um 18,34 % auf 207,23 USD zu. Das Handelsvolumen lag beim 8,2-Fachen des Durchschnitts. Zusätzlich wurde das Unternehmen in den vergangenen drei Tagen in einem Video erwähnt, was auf erhöhte Aufmerksamkeit hindeuten könnte. Ursache unklar.",
     "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
+     "Kursentwicklung nach dem Anstieg",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-18T03:20:38.559918Z"
+    "generated_at": "2026-09-18T07:20:38.926443Z"
+   }
+  },
+  {
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,7 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 108.8,
+    "pct": 7.67,
+    "cur": "USD",
+    "as_of": "2026-09-18T06:31:52.062919+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Intel fällt heute durch starke Kursbewegung auf",
+    "why_now": "Intel notiert bei 108,8 USD und liegt 7,67 % im Plus. Das Handelsvolumen beträgt das 1,6-Fache des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
+    "watch_next": [
+     "Weitere Kursbewegung",
+     "Entwicklung des Handelsvolumens",
+     "Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-18T07:20:38.926443Z"
    }
   },
   {
@@ -121,7 +120,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,3 %",
+     "value": "+5,5 %",
      "weight": 30
     },
     {
@@ -138,10 +137,10 @@
     }
    ],
    "quote": {
-    "price": 975.85,
-    "pct": 5.32,
+    "price": 977.5,
+    "pct": 5.5,
     "cur": "USD",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
+    "as_of": "2026-09-18T06:31:52.062919+00:00"
    },
    "earnings": {
     "date": "2026-09-21",
@@ -150,8 +149,8 @@
    }
   },
   {
-   "symbol": "INTC",
-   "name": "Intel",
+   "symbol": "NBIS",
+   "name": "Nebius",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -159,8 +158,14 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+9,5 %",
-     "weight": 45
+     "value": "+4,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -170,78 +175,10 @@
     }
    ],
    "quote": {
-    "price": 110.485,
-    "pct": 9.34,
+    "price": 217.99,
+    "pct": 4.12,
     "cur": "USD",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
-   }
-  },
-  {
-   "symbol": "P911.DE",
-   "name": "Porsche AG",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,1 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,1× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:P911",
-   "quote": {
-    "price": 47.58,
-    "pct": 5.1,
-    "cur": "EUR",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
-   }
-  },
-  {
-   "symbol": "NOKIA.HE",
-   "name": "Nokia",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,6 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "OMXHEX:NOKIA",
-   "quote": {
-    "price": 9.25,
-    "pct": 4.64,
-    "cur": "EUR",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
+    "as_of": "2026-09-18T06:31:52.062919+00:00"
    }
   }
  ]
