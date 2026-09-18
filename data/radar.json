@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-17T23:20:47.368942Z",
+  "generated_at": "2026-09-18T00:20:39.988838Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -118,62 +118,6 @@
    }
   },
   {
-   "symbol": "ORCL",
-   "name": "Oracle",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,3 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 149.38,
-    "pct": 4.34,
-    "cur": "USD",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-14",
-    "distance_days": -3,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Oracle nach Earnings-Termin deutlich im Plus",
-    "why_now": "Die Oracle-Aktie liegt bei 149,38 USD und ist um 4,34 % gestiegen. Der Earnings-Termin liegt 3 Tage zurück, zudem wurden 2 Videos in 3 Tagen verzeichnet. Der zeitliche Zusammenhang könnte auf eine Reaktion nach den Ergebnissen hindeuten; zugleich ist der S&P 500 Future um 1,9 % gestiegen. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursentwicklung nach dem Earnings-Termin",
-     "Entwicklung des S&P 500 Future",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-17T21:25:00.063796Z"
-   }
-  },
-  {
    "symbol": "MU",
    "name": "Micron",
    "score": 65,
@@ -189,7 +133,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 4 Tagen",
+     "value": "Earnings in 3 Tagen",
      "weight": 20
     },
     {
@@ -213,7 +157,7 @@
    },
    "earnings": {
     "date": "2026-09-21",
-    "distance_days": 4,
+    "distance_days": 3,
     "zeit": "amc"
    }
   },
@@ -246,39 +190,6 @@
    "quote": {
     "price": 110.485,
     "pct": 9.34,
-    "cur": "USD",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
-   }
-  },
-  {
-   "symbol": "NNE",
-   "name": "Nano Nuclear Energy",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,0 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 17.039,
-    "pct": 8.95,
     "cur": "USD",
     "as_of": "2026-09-17T18:34:07.335593+00:00"
    }
@@ -360,40 +271,6 @@
     "price": 9.25,
     "pct": 4.64,
     "cur": "EUR",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
-   }
-  },
-  {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,1 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1745000.0,
-    "pct": 4.08,
-    "cur": "KRW",
     "as_of": "2026-09-17T18:34:07.335593+00:00"
    }
   },
@@ -480,6 +357,33 @@
      "weight": 5
     }
    ]
+  },
+  {
+   "symbol": "NNE",
+   "name": "Nano Nuclear Energy",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,0 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,9 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 17.039,
+    "pct": 8.95,
+    "cur": "USD",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   }
   }
  ]
 }
