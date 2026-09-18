@@ -40,6 +40,11 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   'mwDerivatHTML', 'mwEreignisHTML', 'mwFremdOk', 'mwKuerzen', 'mwFremdHTML',
   /* V2-5 Teil A (ADR-911): Sprecherklassen */
   'verbotMuster', 'mwEigenHTML',
+  /* V2-5 Teile B-F: Raum „Recherche", Suche, Wertansicht — Zustandsfunktionen tragen ihren Zustand als Eigenschaften */
+  'mwVideoLinkHTML', 'rcVideos', 'rcVideosOk', 'rcTag', 'rcFilter', 'rcFilterAktiv', 'rcKanaele', 'rcItemHTML',
+  'rcVideoKarte', 'rcGefiltert', 'rcSortiert', 'rcMonatLabel', 'rcArchivGruppen', 'rcTage', 'rcArchivHTML',
+  'rcArchivTagHTML', 'rcHaeufig', 'rcHaeufigHTML', 'suVideos', 'suKanaele', 'suSuche', 'suTrefferListe',
+  'suEintragInnen', 'suTrefferHTML',
   'mwAuftrittTexte', 'mwAuftrittKopf', 'mwVideoHTML', 'mwSparkHTML', 'mwDetailInhaltHTML',
   'mwKarte', 'mwOhneKursHTML',
   /* V2-4 Teil D */
@@ -56,7 +61,8 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
    Deklaration am Zeilenanfang. */
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
-  'VERBOT_ZITAT', 'VERBOT_EIGEN', 'MW_TEXTDECKEL', 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG',
+  'VERBOT_ZITAT', 'VERBOT_EIGEN', 'MW_TEXTDECKEL', 'RC_KATEGORIEN', 'RC_KATEGORIE_LABEL', 'RC_TEXTDECKEL',
+  'RC_HAEUFIG_TAGE', 'SU_DECKEL', 'SU_ART',   /* RC_HAEUFIG_ANZAHL steht in derselben Zeile wie RC_HAEUFIG_TAGE */ 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG',
   'YW_TIMEOUT_MS'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
@@ -72,7 +78,7 @@ function schneideConst(name) {
 
 /* URL gehört in die Sandbox: safeUrl prüft das Schema über new URL(...) und würde
    ohne die Klasse jede Adresse per catch verwerfen — das wäre ein Testartefakt. */
-const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL, j: null, TICKIDX: null, BST_POS: [],
+const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL, j: null, TICKIDX: null, BST_POS: [], VIDEOS: null, VIDIDX: null,
   RADAR: null, QUOTES: null, EARN: null, CANDIDATES: null, BESTAND: null,
   /* Kurspfad: Zeitgeber protokollieren statt warten; AbortController aus Node. */
   TIMER: [], setTimeout: (fn, ms) => { box.TIMER.push(ms); return box.TIMER.length; },
@@ -1016,6 +1022,214 @@ gruppe('V2-5 Teil A — Sprecherklassen nach ADR-911: Zitat-Liste, volle Liste, 
   /* NEGATIV: eine ASCII-Wortgrenze wuerde das Umlautmuster nie treffen — genau der Fehler,
      den eine 1:1-Uebernahme als Regex-Literal gemacht haette. */
   pruef('Gegenprobe: ASCII-\\b trifft das Umlautmuster nicht', /\büber(?:gewicht|bewertet)\w*/i.test('übergewichtet'), false);
+});
+
+/* --- V2-5 Teile B-F: Raum „Recherche", Suche, Wertansicht, Ladewelle -----------------
+   Geprueft werden die Renderfunktionen in der Sandbox (Videokarte, Filter, Archivgruppen,
+   Haeufig besprochen, drei Trefferklassen) und die Zusagen am Quelltext (Raumwelle,
+   transienter Join, kein thumbnail, keine Listenbegriffe). Interaktion, Fokus und Netzwerk
+   stehen in der Browserpruefung (Aufgabe T03). Zu jeder Zusage ein negativer Fall. */
+function rcVideo(over) {
+  return Object.assign({
+    channel: 'onvista', id: 'abc123', title: 'Nokia setzt auf KI-Netze', date: '20260917',
+    url: 'https://www.youtube.com/watch?v=abc123', thumbnail: 'https://i.ytimg.com/vi/abc123/hqdefault.jpg',
+    summary: 'Die Märkte zeigen Erholungstendenzen.',
+    items: [
+      { name: 'Nokia', ticker: 'NOKIA.HE', note: 'Der Host sieht ein Kaufsignal im Wochenchart.', figures: 'Kursziel 5 Euro',
+        tip: 'Stop-Loss laut Host bei 4 Euro', einordnung: 'Ich würde dem Volumen mehr Gewicht geben.',
+        detail: 'Lange eigene Deutung.', kategorie: 'chartanalyse', tlink: 'https://www.youtube.com/watch?v=abc123&t=193s' },
+      { name: 'Öl', ticker: 'CL=F', note: 'Der Ölpreis bleibt nahe 105 US-Dollar.', figures: '', tip: '', einordnung: '',
+        kategorie: 'makro', tlink: '' }
+    ],
+    macro: [{ text: 'Die Fed hat den Leitzins angehoben.', tlink: 'https://www.youtube.com/watch?v=abc123&t=33s' }]
+  }, over || {});
+}
+gruppe('V2-5 Teil D — Videokarte: S3-Felder mit Herkunft, kein einordnung, kein detail, kein thumbnail', () => {
+  vm.runInContext('rcFilter.wahl={kanal:[],kategorie:[]}', box);
+  box.v = rcVideo();
+  const k = vm.runInContext('rcVideoKarte(v,"r")', box);
+  pruef('Karte traegt Kanal und Datum aus JJJJMMTT', /onvista/.test(k) && /17\.09\.2026/.test(k), true);
+  pruef('Titel als h4 mit Fokusziel', /<h4 class="rc-titel" tabindex="-1">Nokia setzt auf KI-Netze<\/h4>/.test(k), true);
+  pruef('Ueberblick als S3 mit Kanal und Kennzeichnung', /Überblick · onvista · maschinell verdichtet/.test(k), true);
+  pruef('Videolink nur https, noopener', /href="https:\/\/www\.youtube\.com\/watch\?v=abc123" target="_blank" rel="noopener noreferrer"/.test(k), true);
+  pruef('Karten-ID aus Herkunft und Video-ID', /id="rcV-r-abc123"/.test(k), true);
+  pruef('zwei besprochene Werte und eine Marktnotiz im Aufklapper', /2 besprochene Werte · 1 Notiz zur Marktlage/.test(k), true);
+  pruef('Symbol-Chip oeffnet die Wertansicht', /data-rcwert="NOKIA\.HE"/.test(k) && /data-rcwert="CL=F"/.test(k), true);
+  pruef('note, figures, tip als S3', [/Zusammenfassung des Beitrags · onvista/.test(k), /Im Beitrag genannte Zahlen · onvista/.test(k),
+    /Hinweis im Beitrag · onvista/.test(k)], [true, true, true]);
+  pruef('Kaufsignal und Kursziel in dritter Person bleiben stehen (ADR-911 Punkt 5)', /Kaufsignal im Wochenchart/.test(k) && /Kursziel 5 Euro/.test(k), true);
+  pruef('Kategorie-Chip', /<span class="jz-chip">Chartanalyse<\/span>/.test(k) && /data-rckat="makro"/.test(k), true);
+  pruef('Zeitmarke aus tlink, fehlende tlink faellt auf den Videolink ohne Zeitmarke zurueck',
+    /Zum Video ab 3:13/.test(k) && /Zum Video \(ohne Zeitmarke\)/.test(k), true);
+  pruef('der Kartenlink heisst schlicht „Zum Video", die fehlende Marke wird nur an Items benannt', />Zum Video<svg/.test(k), true);
+  pruef('Marktnotiz als S3 mit Zeitmarke', /Marktlage · onvista · maschinell verdichtet/.test(k) && /Zum Video ab 0:33/.test(k), true);
+  /* NEGATIV: S2-Felder und das Vorschaubild duerfen nicht in der Karte stehen. */
+  pruef('einordnung nicht in der Karte', /Volumen mehr Gewicht|mw-eigen|Einordnung dieser Seite/.test(k), false);
+  pruef('detail nicht in der Karte', /Lange eigene Deutung/.test(k), false);
+  pruef('kein img, kein ytimg', /<img|ytimg/.test(k), false);
+  /* NEGATIV: ein S3-Feld mit Zitat-Verstoss entfaellt, der Rest der Karte bleibt. */
+  box.v = rcVideo({ title: 'Kaufen Sie jetzt!', items: [{ name: 'Nokia', ticker: 'NOKIA.HE', note: 'Das lohnt sich.', kategorie: 'news', tlink: 'https://www.youtube.com/watch?v=abc123&t=5s' }] });
+  const verboten = vm.runInContext('rcVideoKarte(v,"r")', box);
+  pruef('Titel mit Aufforderung entfaellt, Ersatz ist sachlich', /Kaufen Sie/.test(verboten) === false && /<h4 class="rc-titel" tabindex="-1">Videoanalyse<\/h4>/.test(verboten), true);
+  pruef('note mit Listenbegriff entfaellt, Item bleibt mit Name und Link', /lohnt sich/.test(verboten) === false && /Nokia/.test(verboten) && /Zum Video ab 0:05/.test(verboten), true);
+  /* NEGATIV (ADR-025): Markup und unsichere Links. */
+  box.v = rcVideo({ title: '<script>alert(1)</script>', url: 'javascript:alert(1)', channel: '<b>x</b>', items: [{ name: '<img src=x>', ticker: 'AA<b>', note: 'ok', kategorie: 'news' }] });
+  const xss = vm.runInContext('rcVideoKarte(v,"r")', box);
+  pruef('Titel geescapet', /&lt;script&gt;/.test(xss) && !/<script/.test(xss), true);
+  pruef('javascript-URL ergibt keinen Link', /javascript:/.test(xss), false);
+  pruef('Kanal geescapet, unsauberes Symbol ergibt keinen Chip', /&lt;b&gt;x/.test(xss) && !/data-rcwert/.test(xss), true);
+  pruef('Item ohne Namen und Symbol entfaellt', vm.runInContext('rcItemHTML({note:"x",kategorie:"news"},"k","https://x.de/")', box), '');
+  pruef('Laengendeckel der Karte ist gemessen groesser als jedes heutige Feld',
+    vm.runInContext('RC_TEXTDECKEL', box) >= 800, true);
+  pruef('mwKuerzen nimmt einen Deckel entgegen', vm.runInContext('mwKuerzen("Wort ".repeat(200),800).length', box) <= 801, true);
+  pruef('ohne Video kein Markup', vm.runInContext('rcVideoKarte(null,"r")', box), '');
+});
+
+gruppe('V2-5 Teil D — Filter reduzieren Karten und Items, sortieren nicht um; Archiv in Lieferreihenfolge', () => {
+  const liste = [rcVideo({ id: 'a', date: '20260917', channel: 'onvista' }), rcVideo({ id: 'b', date: '20260916', channel: 'BerneckerTV', items: [{ name: 'DAX', ticker: '^GDAXI', kategorie: 'makro' }] }),
+    rcVideo({ id: 'c', date: '20260918', channel: 'onvista', items: [{ name: 'Gold', ticker: 'GC=F', kategorie: 'news' }] })];
+  box.L = liste;
+  vm.runInContext('rcFilter.wahl={kanal:[],kategorie:[]}', box);
+  pruef('ohne Filter alle Karten', vm.runInContext('rcGefiltert(L).map(v=>v.id)', box), ['a', 'b', 'c']);
+  pruef('Sortierung absteigend nach Datum, stabil', vm.runInContext('rcSortiert(L).map(v=>v.id)', box), ['c', 'a', 'b']);
+  vm.runInContext('rcFilter.wahl={kanal:["onvista"],kategorie:[]}', box);
+  pruef('Kanalfilter reduziert auf den Kanal', vm.runInContext('rcGefiltert(L).map(v=>v.id)', box), ['a', 'c']);
+  vm.runInContext('rcFilter.wahl={kanal:[],kategorie:["makro"]}', box);
+  pruef('Kategoriefilter behaelt Karten mit mindestens einem Treffer', vm.runInContext('rcGefiltert(L).map(v=>v.id)', box), ['a', 'b']);
+  box.v = liste[0];
+  const k = vm.runInContext('rcVideoKarte(v,"r")', box);
+  pruef('Kategoriefilter reduziert die Items der Karte', /1 besprochener Wert/.test(k) && /data-rckat="makro"/.test(k) && !/data-rckat="chartanalyse"/.test(k), true);
+  vm.runInContext('rcFilter.wahl={kanal:["gibt es nicht"],kategorie:[]}', box);
+  pruef('ohne Treffer bleibt nichts', vm.runInContext('rcGefiltert(L).length', box), 0);
+  pruef('Filter ist nirgends persistiert', /localStorage\.setItem\('aa-(?:filter|recherche)/.test(html), false);
+  vm.runInContext('rcFilter.wahl={kanal:[],kategorie:[]}', box);
+  /* Archiv: Monatsgruppen in Lieferreihenfolge, unplausible Tage sichtbar. */
+  const tage = [{ date: '2026-09-17', label: 'Donnerstag, 17.09.2026', count: 1 }, { date: '2026-09-16', label: 'Mittwoch, 16.09.2026', count: 2 },
+    { date: '2026-08-30', label: 'Sonntag, 30.08.2026', count: 1 }, { date: '2020-03-12', label: 'Donnerstag, 12.03.2020', count: 1 },
+    { date: 'kaputt', label: 'x', count: 1 }, { date: '2026-09-01', label: 'Dienstag, 01.09.2026', count: 3 }];
+  box.T = tage;
+  const g = vm.runInContext('rcArchivGruppen(T)', box);
+  pruef('Gruppen entstehen in Lieferreihenfolge, ein spaeter September-Tag bildet eine neue Gruppe',
+    g.map(x => x.label + ':' + x.tage.length), ['September 2026:2', 'August 2026:1', 'März 2020:1', 'September 2026:1']);
+  pruef('unplausibles Datum wird gezeigt, wie es kommt', g.some(x => x.label === 'März 2020'), true);
+  pruef('ungueltiges Datum entfaellt still (kein Tag-Knopf ohne ladbare Datei)', g.reduce((n, x) => n + x.tage.length, 0), 5);
+  const a = vm.runInContext('rcArchivHTML(T)', box);
+  pruef('Aufklapper heisst „Fruehere Tage" und zaehlt', /Frühere Tage \(5\)/.test(a), true);
+  pruef('Tag-Knoepfe mit Label und count', /data-rctag="2026-09-16"[^>]*>Mittwoch, 16\.09\.2026 · <span class="num">2<\/span>/.test(a), true);
+  pruef('kein Tag-Knopf fuer das ungueltige Datum', /data-rctag="kaputt"/.test(a), false);
+  pruef('ohne Tage kein Archiv', vm.runInContext('rcArchivHTML([])', box), '');
+  /* Tagesflaeche: Fehler- und Ladezustand ohne Daten. */
+  vm.runInContext('rcTage.speicher={};rcTage.offen="2026-09-16";rcTage.fehler="2026-09-16"', box);
+  const fehler = vm.runInContext('rcArchivTagHTML()', box);
+  pruef('Fehlzustand nennt den Tag und bietet Erneut versuchen', /16\.09\.2026/.test(fehler) && /Erneut versuchen/.test(fehler) && /data-rctag="2026-09-16"/.test(fehler), true);
+  vm.runInContext('rcTage.fehler=null', box);
+  pruef('Ladezustand ist eine Zeile', /aria-busy="true"/.test(vm.runInContext('rcArchivTagHTML()', box)), true);
+  vm.runInContext('rcTage.speicher["2026-09-16"]={label:"Mittwoch, 16.09.2026",videos:[]}', box);
+  pruef('leerer Tag sagt das', /keine Videoanalysen vor/.test(vm.runInContext('rcArchivTagHTML()', box)), true);
+  vm.runInContext('rcTage.offen=null;rcTage.speicher={}', box);
+  pruef('Archiv-Tag wird ohne Cache geholt und genau ueber data/videos/', /fetch\('data\/videos\/'\+d\+'\.json',\{cache:'no-store'\}\)/.test(html), true);
+});
+
+gruppe('V2-5 Teil D.5 — „Haeufig besprochen": reine Zaehlung, reproduzierbar, ohne Listenbegriff', () => {
+  box.TICKIDX = { ticker: {
+    AAA: { name: 'Alpha', auftritte: [{ date: '2026-09-17' }, { date: '2026-09-01' }, { date: '2026-08-20' }, { date: '2026-08-19' }] },
+    BBB: { name: 'Beta', auftritte: [{ date: '2026-09-10' }, { date: '2026-09-11' }, { date: '2026-09-12' }] },
+    CCC: { name: 'Gamma', auftritte: [{ date: '2026-07-01' }] },
+    'DD<D': { name: 'schmutzig', auftritte: [{ date: '2026-09-17' }] },
+    EEE: { name: 'Epsilon', auftritte: [{ date: '2026-09-17' }, { date: 'kaputt' }] }
+  } };
+  const h = vm.runInContext('rcHaeufig("2026-09-17")', box);
+  pruef('Zaehlung der letzten 30 Tage (heute eingeschlossen, ab 19.08.)', h.map(e => e.symbol + ':' + e.anzahl), ['AAA:4', 'BBB:3', 'EEE:1']);
+  pruef('unsauberes Symbol, alter Auftritt und kaputtes Datum entfallen', h.map(e => e.symbol), ['AAA', 'BBB', 'EEE']);
+  box.TICKIDX.ticker.AAA.auftritte.pop();
+  pruef('Gleichstand nach Alphabet', vm.runInContext('rcHaeufig("2026-09-17")', box).map(e => e.symbol + ':' + e.anzahl), ['AAA:3', 'BBB:3', 'EEE:1']);
+  pruef('der 31. Tag zaehlt nicht mehr', vm.runInContext('rcHaeufig("2026-09-19")', box).map(e => e.symbol + ':' + e.anzahl), ['BBB:3', 'AAA:2', 'EEE:1']);
+  /* Reproduzierbar gegen den echten Feed: dieselbe Zaehlung mit einem zweiten, unabhaengigen Weg. */
+  const feed = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'ticker-index.json'), 'utf8'));
+  box.TICKIDX = feed;
+  const live = vm.runInContext('rcHaeufig("2026-09-18")', box);
+  const grenze = '2026-08-20';
+  const eigen = Object.keys(feed.ticker).map(s => ({ symbol: s, anzahl: (feed.ticker[s].auftritte || []).filter(a => a.date >= grenze && a.date <= '2026-09-18').length }))
+    .filter(e => e.anzahl > 0).sort((a, b) => b.anzahl - a.anzahl || a.symbol.localeCompare(b.symbol)).slice(0, 10);
+  pruef('zehn Symbole, Zaehlung gegen den Feed reproduziert', [live.length, live.map(e => e.symbol + ':' + e.anzahl)], [10, eigen.map(e => e.symbol + ':' + e.anzahl)]);
+  const markup = vm.runInContext('rcHaeufigHTML(rcHaeufig("2026-09-18"))', box);
+  pruef('Zeile traegt Symbol, Name und „n Auftritte · 30 Tage"', /jz-sym/.test(markup) && /Auftritte · 30 Tage/.test(markup) && /data-rcwert="/.test(markup), true);
+  pruef('Ueberschrift ohne Listenbegriff', /Häufig besprochen/.test(html) && /Top-Werte|Top Werte|beste Werte|Top-Pick/i.test(html.slice(html.indexOf('id="raum-recherche"'), html.indexOf('id="raum-werte"'))), false);
+  box.TICKIDX = null;
+  pruef('ohne ticker-index entfaellt die Flaeche', vm.runInContext('rcHaeufig("2026-09-18")', box), null);
+  pruef('ohne Liste kein Markup', vm.runInContext('rcHaeufigHTML([])', box), '');
+});
+
+gruppe('V2-5 Teil C — Suche: drei Trefferklassen, keine Suche in Fremd- oder Modelltext, escapet', () => {
+  box.VIDEOS = { videos: [rcVideo({ id: 'v1', title: 'Nokia setzt auf KI-Netze', channel: 'onvista' }),
+    rcVideo({ id: 'v2', title: 'DAX-Ausblick', channel: 'Rendezvous mit Harry', items: [{ name: 'Amazon', ticker: 'AMZN', note: 'Nokia wird hier nur in der note erwaehnt', einordnung: 'Harry gefaellt es', kategorie: 'news' }] }),
+    rcVideo({ id: 'v3', title: 'Märkte am Morgen', channel: 'Der Aktionär - Märkte am Morgen', items: [{ name: 'Siemens', ticker: 'SIE.DE', kategorie: 'news', detail: 'nokia im detail' }] })] };
+  box.TICKIDX = { ticker: { AMZN: { name: 'Amazon', auftritte: [{ date: '2026-09-17' }] }, NOKIA: { name: 'Nokia Oyj', auftritte: [] } } };
+  box.QUOTES = null; box.RADAR = null; box.EARN = null; box.CANDIDATES = null;
+  vm.runInContext('MW_INDEX=null;MW_INDEX_STAND=0;mwSymbole.liste=null;mwSymbole.map=null;mwSymbole.stand=0', box);
+  const t = vm.runInContext('suSuche("nokia")', box);
+  pruef('Werte ueber mwSuche', t.werte.map(e => e.symbol), ['NOKIA']);
+  pruef('Videoanalysen: Titel trifft, note und detail sind KEIN Suchraum', t.videos.map(x => x.video.id), ['v1']);
+  pruef('Kanaele: kein Kanal heisst nokia', t.kanaele.length, 0);
+  const h = vm.runInContext('suSuche("harry")', box);
+  pruef('Kanalname trifft Videoanalyse und Kanal', [h.videos.map(x => x.video.id), h.kanaele.map(k => k.name)], [['v2'], ['Rendezvous mit Harry']]);
+  const a = vm.runInContext('suSuche("amzn")', box);
+  pruef('Ticker-Volltreffer findet das Video mit Fundstelle', [a.videos.map(x => x.video.id), a.videos[0].fund], [['v2'], 'Amazon']);
+  pruef('Rang: Titeltreffer vor Itemtreffer', vm.runInContext('suVideos("DAX").map(x=>x.video.id)', box), ['v2']);
+  pruef('leere Eingabe ergibt nichts', vm.runInContext('suTrefferListe(suSuche("  ")).length', box), 0);
+  const liste = vm.runInContext('suTrefferListe(suSuche("harry"))', box);
+  pruef('Reihenfolge der Klassen: Werte, Videoanalysen, Kanaele', liste.map(x => x.art), ['video', 'kanal']);
+  const seite = vm.runInContext('suTrefferHTML(suTrefferListe(suSuche("harry")),"harry",0,"seite")', box);
+  pruef('Vollbild: Abschnitte mit Ueberschrift und Knoepfen', /<h3 class="t-h2">Videoanalysen<\/h3>/.test(seite) && /<h3 class="t-h2">Kanäle<\/h3>/.test(seite) && /data-suwahl="0"/.test(seite) && /class="su-eintrag aktiv"/.test(seite), true);
+  pruef('Hervorhebung ueber mark', /<mark>Harry<\/mark>/.test(seite), true);
+  pruef('Videotreffer nennt Kanal und Datum', /Rendezvous mit <mark>Harry<\/mark> · <span class="num">17\.09\.2026<\/span>/.test(seite), true);
+  const dl = vm.runInContext('suTrefferHTML(suTrefferListe(suSuche("harry")),"harry",1,"liste")', box);
+  pruef('Kopfliste: Optionen mit Gruppenzeilen und aktiver Markierung', /role="option" id="suD1" aria-selected="true"/.test(dl) && /su-gruppe/.test(dl), true);
+  /* NEGATIV (ADR-025): Markup in der Eingabe und im Titel wird nie roh gerendert. */
+  box.VIDEOS = { videos: [rcVideo({ id: 'x', title: '<img src=x onerror=alert(1)> Nokia', channel: '<b>K</b>' })] };
+  const xss = vm.runInContext('suTrefferHTML(suTrefferListe(suSuche("<img")),"<img",0,"seite")', box);
+  pruef('Titel und Kanal geescapet', /<img/.test(xss) === false && /&lt;img/.test(xss), true);
+  pruef('Kein-Treffer-Satz escapet die Eingabe', /<b>/.test(vm.runInContext('suTrefferHTML([],"<b>x",0,"seite")', box)) === false, true);
+  pruef('Titel mit Zitat-Verstoss wird im Treffer ersetzt', /Kaufen Sie/.test(vm.runInContext('suEintragInnen({art:"video",v:{title:"Kaufen Sie jetzt",channel:"k",date:"20260917"}},"jetzt")', box)), false);
+  /* Nichts verlaesst den Browser: kein Suchbegriff in einer URL oder einem Abruf. */
+  const su = html.slice(html.indexOf('function suVideos('), html.indexOf("['suche-desktop','suche-vollbild'].forEach"));
+  pruef('kein fetch, keine URL, kein history/location mit dem Suchbegriff', /fetch\(|location\.|history\.|URLSearchParams|console\./.test(su), false);
+  pruef('beide Felder haengen an derselben Funktion', /\['suche-desktop','suche-vollbild'\]\.forEach/.test(html) && /addEventListener\('input',\(\)=>suZeigen\(f\)\)/.test(html), true);
+  box.VIDEOS = null; box.TICKIDX = null;
+});
+
+gruppe('V2-5 Teile E und F — Wertansicht fuer jedes Symbol, Raumwelle videos.json', () => {
+  /* Teil E.1: transientes Positionsobjekt durch bstJoin, kein zweiter Datenpfad. */
+  const jf = schneide('mwJoinFuer');
+  pruef('mwJoinFuer faellt auf ein transientes Objekt zurueck', /bstJoin\(\{symbol:s,typ:'beobachtung',_transient:true\}\)/.test(jf), true);
+  pruef('das transiente Objekt wird nie gespeichert', /bstSave\(|localStorage\.|bstAdd\(/.test(jf), false);
+  const auf = schneide('mwAufnehmen');
+  pruef('Aufnehmen laeuft ueber bstAdd mit Duplikatpruefung', /positionen\.some\(p=>p\.symbol===s\)/.test(auf) && /bstAdd\(\{id:bstNextId\(b\),symbol:s,typ:'beobachtung',added_at:bstToday\(\)\}\)/.test(auf), true);
+  pruef('kein Entfernen aus der Wertansicht', /bstRemove/.test(auf) || /data-mwweg/.test(schneide('mwDetailInhaltHTML')), false);
+  vm.runInContext('BST_TEST=[]', box);
+  box.j = mwJoin({ auftritte: [mwAuftritt()], pos: { symbol: 'AAA', typ: 'beobachtung', _transient: true } });
+  const d = vm.runInContext('mwDetailInhaltHTML(j)', box);
+  pruef('ohne Position: Knopf „In Meine Werte aufnehmen"', /data-mwaufnahme="AAA">In Meine Werte aufnehmen</.test(d), true);
+  vm.runInContext('BST_TEST=["AAA"]', box);
+  const e = vm.runInContext('mwDetailInhaltHTML(j)', box);
+  pruef('mit Position: Zustand statt Knopf', /In Meine Werte enthalten/.test(e) && !/data-mwaufnahme/.test(e), true);
+  vm.runInContext('BST_TEST=[]', box);
+  pruef('Chartweg unveraendert ueber mwChartOeffnen (Drittdienst nur auf Klick)', /data-mwchart="AAA"/.test(d) && !/ywFetch\(/.test(schneide('mwDetailInhaltHTML')), true);
+  /* Teil F: videos.json als Raumwelle. */
+  const klein = html.slice(html.indexOf('async function feedsKlein('), html.indexOf('async function feedsGross('));
+  pruef('videos.json nicht mehr in der ersten Welle', /hol\('videos\.json'/.test(klein), false);
+  pruef('videos-index.json bleibt in der ersten Welle', /hol\('videos-index\.json'/.test(klein), true);
+  pruef('Raumwelle ueber hol(), idempotent', /function rcVideosLaden\(\)\{\s*if\(rcVideos\.stand\)return/.test(html) && /rcVideos\.laden=hol\('videos\.json'/.test(html), true);
+  pruef('raumZeigen loest die Welle fuer Recherche und Suche aus', /if\(\(id==='recherche'\|\|id==='suche'\)&&typeof rcVideosLaden==='function'\)rcVideosLaden\(\);/.test(html), true);
+  pruef('Struktur falsch ⇒ Feed verworfen', vm.runInContext('[rcVideosOk({videos:[]}),rcVideosOk({unerwartet:[1]}),rcVideosOk(null)]', box), [true, false, false]);
+  pruef('ticker-index.json bleibt in der zweiten Welle', /hol\('ticker-index\.json',j=>\{TICKIDX=j\}\)/.test(html.slice(html.indexOf('async function feedsGross('))), true);
+  pruef('Datum JJJJMMTT wird umgesetzt, anderes nicht', vm.runInContext('[rcTag("20260917"),rcTag("2026-09-17"),rcTag("")]', box), ['2026-09-17', '', '']);
+  /* Raum und Suche im Markup. */
+  const raeume = html.slice(html.indexOf('id="raum-recherche"'), html.indexOf('id="raum-werte"')) + html.slice(html.indexOf('id="raum-suche"'), html.indexOf('</main>'));
+  pruef('kein Platzhalter mehr in Recherche und Suche', /class="platzhalter"/.test(raeume), false);
+  pruef('Sachueberschriften der drei Bereiche', ['Suche und Filter', 'Zuletzt besprochen', 'Archiv', 'Häufig besprochen'].every(t => html.indexOf('>' + t + '<') > -1), true);
+  pruef('Kontextspalte teilt die Rasterregel mit Jetzt', /#rcKontext,#jzKontext\{grid-column:8 \/ span 5/.test(html) && /#rcListe,#rcArchiv\{grid-column:1 \/ span 7\}/.test(html), true);
+  pruef('CSP unveraendert: kein ytimg, kein neuer Origin im Markup', /i\.ytimg\.com/.test(html.replace(/thumbnail[^\n]*/g, '')), false);
 });
 
 /* --- Kurspfad ueber den Proxy (Nutzerbefund 13.09.2026) -----------------------------

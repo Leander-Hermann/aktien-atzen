@@ -43,6 +43,26 @@
        bliebe der earnings-Ausfall wirkungslos und damit ungeprueft (ADR-317.5). */
     { id: 'p4', symbol: 'ORCL', typ: 'aktie', added_at: '2026-09-10' }] };
 
+  /* V2-5: die vier Flaechen des Raums „Recherche". videos.json ist eine Raumwelle — der Raum
+     wird sichtbar geschaltet und die Welle abgewartet. Erwartung: videos.json ⇒ Liste als
+     Satz statt Karten und keine Filterchips; videos-index.json ⇒ nur das Archiv entfaellt;
+     ticker-index.json ⇒ nur „Haeufig besprochen" entfaellt. Ein Ladezustand zaehlt nicht. */
+  const RC_SEKTIONEN = ['rcSuche', 'rcHaeufig', 'rcListe', 'rcArchiv'];
+  async function rcBefund(f) {
+    const d = f.contentDocument, w = f.contentWindow;
+    try { w.raumZeigen('recherche', false); } catch (e) {}
+    await new Promise(r => setTimeout(r, 900));
+    const sichtbar = RC_SEKTIONEN.filter(id => { const e = d.getElementById(id); return e && !e.hidden && !/geladen …/.test(e.textContent || ''); });
+    return {
+      rechercheFlaechen: sichtbar,
+      rechercheKarten: d.querySelectorAll('#rcListeInhalt article.card').length,
+      rechercheFilter: d.querySelectorAll('#rcFilter [data-rcfilter]').length,
+      rechercheHaeufig: d.querySelectorAll('#rcHaeufigInhalt [data-rcwert]').length,
+      rechercheTage: d.querySelectorAll('#rcArchivListe [data-rctag]').length,
+      rechercheListeText: (d.getElementById('rcListeInhalt') || { textContent: '' }).textContent.trim().slice(0, 50)
+    };
+  }
+
   async function stoere(datei, art) {
     await fetch('/__stoere?reset=1');
     if (datei) await fetch('/__stoere?' + encodeURIComponent(datei) + '=' + encodeURIComponent(art));
@@ -114,7 +134,7 @@
     await stoere(datei, art);
     const f = await ladeRahmen(wartezeit);
     let b;
-    try { b = befund(f); } catch (e) { b = { fehler: String(e && e.message || e) }; }
+    try { b = befund(f); Object.assign(b, await rcBefund(f)); } catch (e) { b = { fehler: String(e && e.message || e) }; }
     f.remove();
     return Object.assign({ datei: datei || '(ungestoert)', art: art || '-' }, b);
   }

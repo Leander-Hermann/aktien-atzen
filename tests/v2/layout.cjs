@@ -298,6 +298,14 @@ gruppe('Kriterium 8 — Ladewellen: radar.json in der ersten Welle, Chartknopf n
   pruef('radar.json liegt NICHT in der zweiten Welle', gross.indexOf('radar.json') > -1, false);
   pruef('die zweite Welle traegt genau die beiden grossen Dateien', gross.slice().sort(),
     ['quotes.json', 'ticker-index.json']);
+  /* V2-5 Teil F.1: videos.json (577 KB) ist eine RAUMWELLE — nicht in der ersten, nicht in der
+     zweiten; die kleine videos-index.json bleibt in der ersten. */
+  pruef('videos.json in keiner der beiden Startwellen', [klein.indexOf('videos.json') > -1, gross.indexOf('videos.json') > -1], [false, false]);
+  pruef('videos-index.json bleibt in der ersten Welle', klein.indexOf('videos-index.json') > -1, true);
+  pruef('videos.json haengt an der Raumwelle rcVideosLaden', /rcVideos\.laden=hol\('videos\.json',j=>\{VIDEOS=j\}\)/.test(html), true);
+  negativ('videos.json zurueck in die erste Welle',
+    html.replace("    hol('videos-index.json',j=>{VIDIDX=j}),", "    hol('videos.json',j=>{VIDEOS=j}),\r\n    hol('videos-index.json',j=>{VIDIDX=j}),"),
+    q => welle(q, 'feedsKlein').indexOf('videos.json') > -1);
   pruef('die drei Radar-Feeds melden ihren Abschluss in derselben Welle',
     ['earnings.json', 'candidates.json', 'radar.json'].every(f => klein.indexOf(f) > -1), true);
   /* ADR-714 Punkt 2: der Knopf wird angelegt, nicht eingefuegt — im Quelltext heisst das,

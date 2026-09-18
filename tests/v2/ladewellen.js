@@ -13,6 +13,7 @@
      await V2WELLEN.reihenfolge()   — Netzwerkreihenfolge der Feeds
      await V2WELLEN.radarSprung()   — Referenzposition vorher/nachher
      await V2WELLEN.werteSprung()   — Kartenreihenfolge vorher/nachher
+     await V2WELLEN.rechercheWelle() — videos.json als Raumwelle (V2-5)
      await V2WELLEN.alles()
 
    Jeder Fall laeuft in einem eigenen iframe derselben Herkunft; die Seite unter Test wird
@@ -161,14 +162,49 @@
     };
   }
 
+  /* --- 4. Raumwelle „Recherche" (V2-5 Teil F.1, ADR-714) --------------------------- */
+  /* videos.json (577 KB) darf in keiner Startwelle liegen und kommt beim ersten Sichtbarwerden
+     von „Recherche" oder „Suche" GENAU EINMAL — auch nach mehrfachem Raumwechsel.
+       await V2WELLEN.rechercheWelle()                    — Erwartung: vorher 0, danach 1, nach Wechseln 1
+       await V2WELLEN.rechercheWelle({stoere:'videos.json'}) — Gegenprobe 404: Liste entfaellt, Raum bleibt */
+  async function rechercheWelle(opt) {
+    const o = opt || {};
+    await stoere(o.stoere || null, o.stoere ? (o.art || '404') : null);
+    const f = await rahmen();
+    await warte(2000);
+    const w = f.contentWindow, d = f.contentDocument;
+    const zaehl = () => w.performance.getEntriesByType('resource').filter((e) => e.name.indexOf('/data/videos.json') > -1).length;
+    const vorher = zaehl();
+    const startwelleEnde = Math.max.apply(null, w.performance.getEntriesByType('resource')
+      .filter((e) => /\/data\/[a-z-]+\.json/.test(e.name)).map((e) => Math.round(e.responseEnd)));
+    raum(w, 'recherche');
+    await warte(1500);
+    const nachErstem = zaehl();
+    const eintrag = w.performance.getEntriesByType('resource').find((e) => e.name.indexOf('/data/videos.json') > -1);
+    raum(w, 'jetzt'); raum(w, 'recherche'); raum(w, 'suche'); raum(w, 'recherche');
+    await warte(800);
+    const nachWechseln = zaehl();
+    const karten = d.querySelectorAll('#rcListeInhalt article.card').length;
+    const bereiche = ['rcSuche', 'rcHaeufig', 'rcListe', 'rcArchiv'].filter((id) => d.getElementById(id) && !d.getElementById(id).hidden);
+    const listeText = (d.getElementById('rcListeInhalt') || { textContent: '' }).textContent.trim().slice(0, 60);
+    f.remove();
+    await stoere(null, null);
+    return {
+      vorher, nachErstem, nachWechseln, karten, bereiche, listeText, startwelleEnde,
+      videosStart: eintrag ? Math.round(eintrag.startTime) : null, videosEnde: eintrag ? Math.round(eintrag.responseEnd) : null,
+      startwelleOhneVideos: vorher === 0, genauEinmal: nachErstem === 1 && nachWechseln === 1
+    };
+  }
+
   async function alles() {
     return {
       reihenfolge: await reihenfolge(),
       radarSprung: await radarSprung(),
-      werteSprung: await werteSprung()
+      werteSprung: await werteSprung(),
+      rechercheWelle: await rechercheWelle()
     };
   }
 
-  window.V2WELLEN = { reihenfolge, radarSprung, werteSprung, alles };
+  window.V2WELLEN = { reihenfolge, radarSprung, werteSprung, rechercheWelle, alles };
   return 'V2WELLEN bereit';
 })();

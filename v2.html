@@ -184,6 +184,10 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .dsearch{display:none;align-items:center;gap:var(--sp-2);min-width:0;width:clamp(160px,22vw,260px);
     min-height:44px;padding:0 14px;background:var(--chip);border:1px solid var(--line);border-radius:var(--radius-pill)}
   .dsearch svg{width:18px;height:18px;flex:0 0 auto;color:var(--muted)}
+  /* V2-5: die Trefferliste schwebt unter dem Kopffeld (E2 nach §14.1) und ist breiter als das
+     Feld, weil Videotitel darin stehen. Sie bleibt unter dem Breitendeckel der Karten. */
+  .dsearch{position:relative}
+  #suDesktopListe{left:auto;right:0;width:min(32rem,calc(100vw - 2*var(--sp-4)))}
   .dsearch input{flex:1;min-width:0;min-height:44px;border:0;background:transparent;color:var(--ink);font-size:12.5px}
   .dsearch input::placeholder{color:var(--muted)}
 
@@ -338,7 +342,9 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     /* Explizite Platzierung (Auftrag Teil B.4): das Raster haengt NICHT an der
        Dokumentreihenfolge, damit jzReihenfolge() es nicht verschieben kann. */
     #jzLead,#jzFolge,#jzMeldungen{grid-column:1 / span 7}
-    #jzKontext{grid-column:8 / span 5;grid-row:1 / span 3;
+    #rcListe,#rcArchiv{grid-column:1 / span 7}
+    /* V2-5: #rcKontext (Recherche) teilt die Regel der Kontextspalte — kein zweites Raster. */
+    #rcKontext,#jzKontext{grid-column:8 / span 5;grid-row:1 / span 3;
       display:flex;flex-direction:column;gap:var(--sp-8);align-self:start;
       position:sticky;top:calc(var(--appbar-h) + var(--sp-4));
       max-height:calc(100vh - var(--appbar-h) - 2*var(--sp-4));
@@ -346,7 +352,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     /* dvh, wo vorhanden: auf dem Handy-Desktop-Modus ist vh sonst zu gross.
        Als zweite Deklaration, damit aeltere Engines die erste behalten. */
     @supports (height:100dvh){
-      #jzKontext{max-height:calc(100dvh - var(--appbar-h) - 2*var(--sp-4))}
+      #rcKontext,#jzKontext{max-height:calc(100dvh - var(--appbar-h) - 2*var(--sp-4))}
     }
     /* Pflicht-Fallback (§4.2): ohne Container-Query-Unterstuetzung faellt die
        Seite auf die einspaltige Basisdarstellung zurueck — kein halbes Raster. */
@@ -357,7 +363,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
          Fallbacklauf (tests/v2/preview.cjs --fallback) gezeigt. */
       .jz{display:flex;flex-direction:column;gap:var(--sp-8);align-items:stretch}
       /* per ID, sonst schlaegt die #jzKontext-Regel oben die Klasse */
-      #jzKontext{display:contents;position:static;max-height:none;overflow:visible}
+      #rcKontext,#jzKontext{display:contents;position:static;max-height:none;overflow:visible}
     }
   }
   .jz-kopf{display:flex;align-items:baseline;justify-content:space-between;gap:var(--sp-4);flex-wrap:wrap}
@@ -702,6 +708,62 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .mw-karte.klickbar:focus-within{outline:2px solid var(--accent);outline-offset:2px}
 
   /* ==========================================================================
+     V2-5 Raum „Recherche" und Suche. Kein neues Raster (die .jz-Regeln oben), keine
+     neue Kartenklasse (.card, .jz-grid, .jz-chip, .jz-zeile, .mw-fremd, .mw-mehr).
+     Nur die Bausteine, die es noch nicht gab: Filtergruppen, Item- und Marktnotizblock
+     in der Videokarte, die Zeile in „Häufig besprochen", die Suchabschnitte.
+     ========================================================================== */
+  #rcSuche,#rcHaeufig,#rcListe,#rcArchiv{container-type:inline-size}
+  /* §3: jedes Klickziel ≥ 44 px — auch die Links in Karten und Suchtreffern. */
+  #raum-recherche a,#raum-suche a{display:inline-flex;align-items:center;min-height:44px}
+  .rc-suchknopf{display:inline-flex;align-items:center;gap:var(--sp-2);width:100%;justify-content:flex-start;text-align:left}
+  .rc-suchknopf svg{width:18px;height:18px;flex:0 0 auto;color:var(--muted)}
+  @media (min-width:1024px){.rc-suchknopf{display:none}}
+  .rc-filter{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .rc-filter[hidden]{display:none}
+  .rc-filtergruppe{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2)}
+  .rc-filterlabel{color:var(--muted);flex:0 0 100%}
+  /* Ein Chip als Knopf: 44 px in beiden Richtungen (§3, „Chips mit Padding") — gemessen 18.09.:
+     ohne Mindestbreite lagen 18 Symbolchips wie „MU" bei 36-44 px Breite. Zustand am
+     aria-pressed — Farbe nur als Verstaerkung, der Zustand ist auch fuer Hilfstechnik lesbar. */
+  .rc-chip{min-height:44px;min-width:44px;justify-content:center;border:0;cursor:pointer;font:inherit;font-size:11px;font-weight:600;letter-spacing:.02em}
+  .rc-chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .jz-chip[aria-pressed="true"]{background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent-ink)}
+  @media (hover:hover) and (pointer:fine){.rc-chip:hover{filter:brightness(1.08)}}
+  .rc-video{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .rc-titel{font-size:16px;line-height:1.3;font-weight:650;letter-spacing:-.01em;margin:0;text-wrap:pretty}
+  .rc-titel:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .rc-item{display:flex;flex-direction:column;gap:var(--sp-1);padding-top:var(--sp-3);border-top:1px solid var(--line)}
+  .rc-item-kopf{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2)}
+  .rc-item-name{font-size:14.5px;font-weight:600}
+  .rc-macro{display:flex;flex-direction:column;gap:var(--sp-2);padding-top:var(--sp-3);border-top:1px solid var(--line)}
+  .rc-monat{display:flex;flex-direction:column;gap:var(--sp-2)}
+  .rc-monat-h{margin:0;color:var(--muted);font-weight:600}
+  .rc-tage{display:flex;flex-wrap:wrap;gap:var(--sp-2)}
+  .rc-zeile{grid-template-columns:auto minmax(0,1fr) auto}
+  .rc-zeile-n{color:var(--muted);text-align:right}
+  /* Suche: Kopfzeile des Vollbilds, Abschnitte, Eintraege als Knoepfe (44 px), Gruppenzeilen
+     in der Kopfliste. Die Hervorhebung nutzt dieselbe mark-Regel wie die Symbolsuche. */
+  .su-kopf{display:flex;align-items:center;gap:var(--sp-3)}
+  .su-kopf .raumfeld{flex:1;min-width:0;margin-top:0}
+  .su-kopf .ghost{margin-top:0;flex:0 0 auto}
+  .su-treffer{display:flex;flex-direction:column;gap:var(--sp-6);margin-top:var(--sp-6)}
+  .su-liste{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+  .su-eintrag{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-3);width:100%;min-height:44px;
+    padding:var(--sp-2) 0;border:0;border-bottom:1px solid var(--line);background:transparent;color:inherit;
+    font:inherit;text-align:left;cursor:pointer;border-radius:var(--radius-sm)}
+  .su-liste li:last-child .su-eintrag{border-bottom:0}
+  .su-eintrag.aktiv{background:var(--chip)}
+  .su-eintrag:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  @media (hover:hover) and (pointer:fine){.su-eintrag:hover{background:var(--chip)}}
+  .su-gruppe{padding:var(--sp-2) var(--sp-3) 2px;color:var(--muted);font-weight:600;list-style:none}
+  .su-eintrag mark{background:color-mix(in srgb,var(--accent) 26%,transparent);
+    color:var(--accent-ink);font-weight:700;border-radius:3px;padding:0 1px}
+  /* Wertansicht: Aufnahmeknopf mit Statuszeile (Teil E.4). */
+  .rc-aufnahme{display:flex;flex-direction:column;gap:var(--sp-2);align-items:flex-start}
+  .rc-aufnahme .mw-meldung:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  /* ==========================================================================
      Overlays (E2 schwebend, §14.1). Struktur und Klassennamen aus index.html
      uebernommen, damit die dort geprueften Chartbausteine unveraendert greifen.
      ========================================================================== */
@@ -777,7 +839,12 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
     <div class="dsearch">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
-      <input type="search" id="suche-desktop" placeholder="Werte, Themen, Analysen" aria-label="Suche">
+      <input type="search" id="suche-desktop" placeholder="Werte, Analysen, Kanäle" aria-label="Suche"
+        autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false"
+        aria-controls="suDesktopListe" aria-autocomplete="list">
+      <!-- V2-5 Teil C.1: das Kopffeld rendert seine Treffer als Liste unter dem Feld
+           (Muster mwVorschlaege aus V2-4) und wechselt beim Waehlen in „Recherche". -->
+      <ul class="mw-vorschlaege" id="suDesktopListe" role="listbox" aria-label="Treffer" hidden></ul>
     </div>
 
     <button type="button" class="iconbtn kopfmenue" data-raum="mehr" aria-label="Mehr — Werkzeuge und Rechtliches">
@@ -930,8 +997,56 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   <section class="raum" id="raum-recherche" data-raum="recherche" aria-labelledby="h-recherche" hidden>
     <h2 id="h-recherche" tabindex="-1">Recherche</h2>
     <p class="stand t-caption" hidden></p>
-    <p class="platzhalter">Was zu einem Wert oder Thema bereits erklärt wurde: Videoanalysen,
-      Ticker und Archiv. Die Inhalte folgen im nächsten Schritt.</p>
+    <!-- Teil B.4: laufen die Stände von videos.json und videos-index.json um mehr als eine
+         Minute auseinander, tritt die getrennte Zeile an die Stelle der Sammelzeile
+         (Muster rdStaendeRender / mwStaendeRender). -->
+    <p class="jz-staende t-caption" id="rcStaende" hidden></p>
+
+    <!-- V2-5 Teil B: drei Bereiche — Suche und Filter, Zuletzt besprochen, Archiv. Dasselbe
+         7/5-Raster wie in „Jetzt" (V2-6, Klasse .jz): ab 1024 px liegen Suche, Filter und
+         „Häufig besprochen" in der sticky Kontextspalte (#rcKontext teilt die Regel mit
+         #jzKontext), Liste und Archiv in der Hauptspalte. Darunter fließt die Kontextspalte
+         durchsichtig in die eine Spalte — Lesereihenfolge gleich Tabreihenfolge. -->
+    <div class="jz" id="rcInhalt">
+      <div class="jz-kontext" id="rcKontext">
+        <section class="jz-sek" id="rcSuche" aria-labelledby="rcSucheH">
+          <div class="jz-kopf">
+            <h3 class="t-h2" id="rcSucheH">Suche und Filter</h3>
+          </div>
+          <!-- Ein Index, zwei Felder (Teil C.1): unter 1024 px führt dieser Knopf in die
+               Vollbild-Suche hinter dem Bottom-Nav-Slot; ab 1024 px ist das Kopffeld die
+               Suche und der Knopf entfällt. Ein drittes Feld gibt es bewusst nicht. -->
+          <button type="button" class="ghost rc-suchknopf" data-raum="suche">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+            Werte, Videoanalysen und Kanäle suchen
+          </button>
+          <div class="rc-filter" id="rcFilter" hidden></div>
+        </section>
+        <section class="jz-sek" id="rcHaeufig" aria-labelledby="rcHaeufigH" hidden>
+          <div class="jz-kopf">
+            <h3 class="t-h2" id="rcHaeufigH">Häufig besprochen</h3>
+            <span class="t-caption">Auftritte in den Videoanalysen, letzte 30 Tage</span>
+          </div>
+          <div id="rcHaeufigInhalt"></div>
+        </section>
+      </div><!-- /#rcKontext -->
+
+      <section class="jz-sek" id="rcListe" aria-labelledby="rcListeH">
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="rcListeH" tabindex="-1">Zuletzt besprochen</h3>
+          <span class="t-caption" id="rcListeMeta"></span>
+        </div>
+        <div id="rcListeInhalt"></div>
+      </section>
+
+      <section class="jz-sek" id="rcArchiv" aria-labelledby="rcArchivH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="rcArchivH">Archiv</h3>
+          <span class="t-caption" id="rcArchivMeta"></span>
+        </div>
+        <div id="rcArchivInhalt"></div>
+      </section>
+    </div>
   </section>
 
   <section class="raum" id="raum-werte" data-raum="werte" aria-labelledby="h-werte" hidden>
@@ -999,12 +1114,19 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
        dieselbe Fokus- und inert-Regel für sie gilt. Die Funktion selbst baut V2-5. -->
   <section class="raum" id="raum-suche" data-raum="suche" aria-labelledby="h-suche" hidden>
     <h2 id="h-suche" tabindex="-1">Suche</h2>
-    <div class="raumfeld">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
-      <input type="search" id="suche-vollbild" placeholder="Werte, Themen, Analysen" aria-label="Suche">
+    <!-- V2-5 Teil C.1: öffnet mit Fokus im Feld, Escape oder „Zurück" kehrt in den vorherigen
+         Raum zurück. Dieselbe Suchfunktion wie das Kopffeld; Treffer als drei Abschnitte. -->
+    <div class="su-kopf">
+      <div class="raumfeld">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+        <input type="search" id="suche-vollbild" placeholder="Werte, Analysen, Kanäle" aria-label="Suche"
+          autocomplete="off" spellcheck="false" aria-describedby="suHilfe">
+      </div>
+      <button type="button" class="ghost" id="suZurueck">Zurück</button>
     </div>
-    <p class="platzhalter">Die Suche über Videoanalysen, Ticker und Archiv folgt im Schritt V2-5.
-      Eingaben bleiben bis dahin ohne Wirkung.</p>
+    <p class="t-caption" id="suHilfe" style="color:var(--muted);margin-top:var(--sp-2)">Findet Werte,
+      Videoanalysen und Kanäle. Die Eingabe bleibt in diesem Browser.</p>
+    <div class="su-treffer" id="suTreffer" aria-live="polite"></div>
   </section>
 
 </main>
@@ -1140,9 +1262,12 @@ document.querySelectorAll('[data-theme-wahl]').forEach(b=>{
 const RAEUME=[].slice.call(document.querySelectorAll('.raum'));
 const NAVKNOEPFE=[].slice.call(document.querySelectorAll('[data-raum]')).filter(el=>el.tagName==='BUTTON');
 let RAUM_AKTIV='jetzt';
+/* V2-5: Rueckkehrpunkt der Vollbild-Suche — der Raum, aus dem sie geoeffnet wurde. */
+let RAUM_VORHER='jetzt';
 
 function raumZeigen(id,fokus){
   if(!RAEUME.some(r=>r.dataset.raum===id))return;
+  if(id!==RAUM_AKTIV&&RAUM_AKTIV!=='suche')RAUM_VORHER=RAUM_AKTIV;
   RAUM_AKTIV=id;
   RAEUME.forEach(r=>{
     const an=r.dataset.raum===id;
@@ -1163,9 +1288,15 @@ function raumZeigen(id,fokus){
      Verlassen des Raums endet der Frost — dann sieht niemand mehr zu. */
   if(id==='werte'){if(typeof werteRendern==='function')werteRendern()}
   else if(typeof mwFrostLoesen==='function')mwFrostLoesen();
+  /* V2-5 Teil F.1: videos.json ist eine Raumwelle — erstes Sichtbarwerden von „Recherche"
+     oder „Suche" loest sie aus, genau einmal (rcVideosLaden ist idempotent). Der Raum
+     rendert sofort mit dem, was da ist; die Liste fuellt sich, sortiert aber nicht um. */
+  if((id==='recherche'||id==='suche')&&typeof rcVideosLaden==='function')rcVideosLaden();
+  if(id==='recherche'&&typeof rechercheRendern==='function')rechercheRendern();
   if(fokus){
-    const h=document.querySelector('#raum-'+id+' > h2');
-    if(h)h.focus({preventScroll:true});
+    /* Die Vollbild-Suche oeffnet mit dem Fokus IM FELD (Teil C.1), jeder andere Raum an seiner Ueberschrift. */
+    const ziel=id==='suche'?document.getElementById('suche-vollbild'):document.querySelector('#raum-'+id+' > h2');
+    if(ziel)ziel.focus({preventScroll:true});
     window.scrollTo({top:0,behavior:'auto'});
   }
 }
@@ -1214,12 +1345,14 @@ const hol=async(datei,set)=>{try{const r=await fetch('data/'+datei,{cache:'no-st
 
 async function loadDay(date){if(DATA[date])return;const r=await fetch('data/'+date+'.json',{cache:'no-store'});if(!r.ok)throw 0;const d=await r.json();DATA[date]=d;labels[date]=d.label||date}
 
-/* Acht kleine Feeds sofort. Ein Ausfall entfernt genau seinen Beitrag, nie die Seite. */
+/* Sieben kleine Feeds sofort. Ein Ausfall entfernt genau seinen Beitrag, nie die Seite.
+   videos.json (577 KB am 17.09.2026) ist seit V2-5 NICHT mehr hier: kein sichtbarer Startraum
+   liest es, nur „Recherche" — es kommt als Raumwelle (rcVideosLaden, ADR-714 Punkt 1).
+   videos-index.json (16 KB) bleibt: klein, und das Archiv steht damit sofort. */
 async function feedsKlein(){
   await Promise.all([
     hol('index.json',j=>{if(Array.isArray(j)&&j.length){order=j.map(d=>d.date);j.forEach(d=>labels[d.date]=d.label);current=order[0]}}),
     hol('market.json',j=>{MARKET=j;if(j&&j.feargreed)FGDATA=j.feargreed}),
-    hol('videos.json',j=>{VIDEOS=j}),
     hol('videos-index.json',j=>{VIDIDX=j}),
     hol('ideas.json',j=>{IDEAS=j}),
     /* Teil F.2: die drei Radar-Feeds melden ihren EIGENEN Abschluss. hol() bleibt
@@ -1265,7 +1398,13 @@ async function feedsGross(){
      ein Nachzug statt zwei. */
   await mwSymboleBeiBedarf();
   werteRendern();
+  /* V2-5: „Haeufig besprochen" und die Werte-Trefferklasse haengen an ticker-index.json;
+     die Recherche rendert nach, ohne umzusortieren. Das Fertig-Flag sagt der Flaeche, ob sie
+     noch warten soll oder entfaellt (ADR-714 Punkt 2). */
+  feedsGross.fertig=true;
+  rechercheRendern();
 }
+feedsGross.fertig=false;
 
 /* ===== Datenstand je Raum (§8.1: keine erfundene Frische) =======================
    Angezeigt wird ausschliesslich ein real geliefertes Feld — `updated` auf oberster
@@ -2660,24 +2799,25 @@ function mwFremdOk(s,liste){const t=String(s==null?'':s);return !!t.trim()&&!(li
    er haelt die Zusage aber unabhaengig davon, ob das Backend sie weiter einhaelt.
    Geschnitten wird an der Wortgrenze, wie in V1. */
 const MW_TEXTDECKEL=220;
-function mwKuerzen(s){
+function mwKuerzen(s,deckel){
+  const d=(isFinite(+deckel)&&+deckel>0)?+deckel:MW_TEXTDECKEL;   // V2-5: die Videokarte traegt RC_TEXTDECKEL
   const t=String(s==null?'':s).trim();
-  if(t.length<=MW_TEXTDECKEL)return t;
-  const teil=t.slice(0,MW_TEXTDECKEL);
+  if(t.length<=d)return t;
+  const teil=t.slice(0,d);
   const raum=teil.lastIndexOf(' ');
-  return (raum>MW_TEXTDECKEL*0.6?teil.slice(0,raum):teil).replace(/[\s.,;:–-]+$/,'')+'…';
+  return (raum>d*0.6?teil.slice(0,raum):teil).replace(/[\s.,;:–-]+$/,'')+'…';
 }
 
 /* Ein S3-Feld mit seiner Herkunft (ADR-911 Punkt 4 b): Kanal und „maschinell verdichtet"
    stehen als sichtbarer Text in derselben Zeile — der Leser muss ohne Nachdenken sehen,
    dass hier der Kanal spricht und nicht die Seite. figures wird dabei NICHT kommentiert,
    nicht eingeordnet und nicht in eine eigene Formulierung ueberfuehrt. */
-function mwFremdHTML(marke,text,kanal){
+function mwFremdHTML(marke,text,kanal,deckel){
   if(!mwFremdOk(text,VERBOT_ZITAT))return '';
   return '<p class="mw-fremd t-small jz-fliess">'+
     '<span class="mw-herkunft t-caption">'+escapeHtml(marke)+
       (kanal?' · '+escapeHtml(kanal):'')+' · maschinell verdichtet</span>'+
-    escapeHtml(mwKuerzen(text))+'</p>';
+    escapeHtml(mwKuerzen(text,deckel))+'</p>';
 }
 /* Ein S2-Feld: die eigene Stimme der Seite durch ihr Modell (ADR-911 Punkt 6). Das Etikett
    nennt die SEITE als Sprecher und traegt bewusst KEINEN Kanalnamen — sonst laese es sich
@@ -2703,11 +2843,19 @@ function mwAuftrittKopf(a){
   const kanal=escapeHtml(String(a.channel||'').trim()),tag=jzTag(a.date);
   const kopf='<span class="t-small mw-kanal">'+(kanal||'Videoanalyse')+
     (tag?' · <span class="num">'+tag+'</span>':'')+'</span>';
-  const u=safeUrl(a.url);
-  if(!u)return kopf+'<span class="jz-leer">Kein sicherer Link vorhanden.</span>';
-  const zm=jzZeitmarke(a.url);
-  return kopf+'<a class="t-small" href="'+u+'" target="_blank" rel="noopener noreferrer">'+
-    (zm?'Zum Video ab '+zm:'Zum Video (ohne Zeitmarke)')+
+  return kopf+mwVideoLinkHTML(a.url);
+}
+/* Der Videolink mit Zeitmarke — aus mwAuftrittKopf herausgeloest (V2-5), damit die Videokarte
+   und ihre Items denselben Baustein tragen. https-Zwang, noopener, Zeitmarke nur aus der URL. */
+/* `ohne` ist der Text ohne Zeitmarke: fuer einen Auftritt oder ein Item „Zum Video (ohne
+   Zeitmarke)" — die fehlende Marke wird benannt; fuer den Link der ganzen Videokarte schlicht
+   „Zum Video", weil ein Video als Ganzes keine Zeitmarke hat. */
+function mwVideoLinkHTML(url,ohne){
+  const u=safeUrl(url);
+  if(!u)return '<span class="jz-leer">Kein sicherer Link vorhanden.</span>';
+  const zm=jzZeitmarke(url);
+  return '<a class="t-small" href="'+u+'" target="_blank" rel="noopener noreferrer">'+
+    (zm?'Zum Video ab '+zm:(ohne||'Zum Video (ohne Zeitmarke)'))+
     '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h6"/></svg></a>';
 }
 
@@ -2786,6 +2934,14 @@ function mwDetailInhaltHTML(j){
       (chart?'':' disabled aria-disabled="true" title="'+
         ((QUOTES&&QUOTES.quotes)?'Für diesen Wert nicht geliefert':'Kursdaten werden noch geladen')+'"')+
       '>Kursverlauf ansehen</button></div>'+
+    /* V2-5 Teil E.4: die einzige Bestandsaktion ausserhalb von „Meine Werte". Nur Aufnehmen —
+       kein Entfernen aus dieser Flaeche (Zwei-Schritt-Regel bleibt im Raum). Ist der Wert
+       schon im Bestand, steht das als Zustand da, nicht als Knopf. */
+    '<div class="rc-aufnahme">'+
+      (bstSymbole().indexOf(s)>-1?'<span class="jz-chip">In Meine Werte enthalten</span>':
+        '<button type="button" class="ghost" data-mwaufnahme="'+escapeHtml(s)+'">In Meine Werte aufnehmen</button>')+
+      '<p class="mw-meldung t-small" id="mwAufnahmeMeldung" role="status" aria-live="polite" tabindex="-1" hidden></p>'+
+    '</div>'+
     (auftritte.length?
       '<h4 class="mw-detail-h">In den Videoanalysen</h4>'+
       '<div class="mw-detail-auftritte">'+
@@ -2822,7 +2978,9 @@ function mwDetailOeffnen(sym,ausloeser){
   document.getElementById('mwDetailTitel').textContent=j.name||s;
   document.getElementById('mwDetailMeta').innerHTML=
     '<span class="jz-sym">'+escapeHtml(s)+'</span>'+
-    '<span class="t-caption" style="color:var(--muted)">'+escapeHtml(BST_TYP[j.pos.typ]||j.pos.typ||'')+'</span>'+
+    /* V2-5: fuer ein Symbol ohne Position sagt die Kopfzeile das, statt eine Art zu erfinden. */
+    '<span class="t-caption" style="color:var(--muted)" id="mwDetailArt">'+
+      (j.pos._transient?'Nicht in Meine Werte':escapeHtml(BST_TYP[j.pos.typ]||j.pos.typ||''))+'</span>'+
     (k?'<span class="t-caption num" style="color:'+jzFarbe(pct)+'">'+
       (pct==null?'':fp(pct)+' · ')+mwGeld(k.price,k.cur)+'</span>':'');
 
@@ -3550,7 +3708,33 @@ function werteRendern(){
 function mwJoinFuer(sym){
   const l=bstPositionen();
   for(let i=0;i<l.length;i++)if(l[i].symbol===sym)return bstJoin(l[i]);
-  return null;
+  /* V2-5 Teil E.1: die Wertansicht gilt fuer JEDES gueltige Symbol. Liegt keine Position vor,
+     laeuft ein transientes, nie persistiertes Positionsobjekt durch denselben Join — keine
+     zweite Datenstruktur, kein localStorage-Eintrag, kein Migrationsmarker. */
+  const s=validTicker(String(sym==null?'':sym));
+  return s?bstJoin({symbol:s,typ:'beobachtung',_transient:true}):null;
+}
+/* Aufnehmen aus der Wertansicht (Teil E.4): derselbe Anlegepfad wie in V2-4 (bstAdd mit
+   Validierung), Duplikat wird abgewiesen und gesagt; danach wechselt der Knopf zum Zustand. */
+function mwAufnehmen(sym,btn){
+  const s=bstNormEingabe(sym);
+  if(!s){mwMeldung('mwAufnahmeMeldung','Kein gültiges Symbol.','warn');return false}
+  const b=bstLoad();
+  if(b.positionen.some(p=>p.symbol===s)){
+    mwMeldung('mwAufnahmeMeldung','„'+s+'" steht schon in Meine Werte.','warn');
+    return false;
+  }
+  const pos=bstAdd({id:bstNextId(b),symbol:s,typ:'beobachtung',added_at:bstToday()});
+  if(!pos){mwMeldung('mwAufnahmeMeldung','„'+s+'" konnte nicht angelegt werden.','fehler');return false}
+  mwFrostLoesen();
+  mwBestandslisteRender();
+  werteRendern();
+  const wrap=btn&&btn.closest?btn.closest('.rc-aufnahme'):null;
+  if(wrap&&btn.parentNode===wrap)wrap.replaceChild(Object.assign(document.createElement('span'),{className:'jz-chip',textContent:'In Meine Werte enthalten'}),btn);
+  const art=document.getElementById('mwDetailArt');if(art)art.textContent=BST_TYP.beobachtung;
+  mwMeldung('mwAufnahmeMeldung','„'+s+'" ist jetzt als Beobachtung in Meine Werte.','ok');
+  const m=document.getElementById('mwAufnahmeMeldung');if(m)m.focus();   // der Knopf ist weg — der Fokus bleibt an Ort und Stelle
+  return true;
 }
 function mwChartOeffnen(sym,el){
   const s=validTicker(String(sym==null?'':sym));
@@ -3766,6 +3950,533 @@ function jzChartFehler(titel,ausloeser,text){
   const zu=document.getElementById('stkSchliessen');if(zu)zu.focus();
 }
 
+/* ================================================================================
+   Raum „Recherche" und die Suche — V2-5 (Freeze § 2, § 3 Punkte 8a/8b; ADR-911).
+   Der Raum beantwortet „Was wurde zu einem Wert oder Thema bereits erklaert?": jede
+   Videoanalyse des Recent-Fensters, jeder Archiv-Tag, die haeufig besprochenen Werte —
+   und ueber die Suche die Wertansicht fuer JEDES Symbol des Kanalindex. Gebaut aus den
+   Bausteinen von V2-4: Symbolsuche (mwSuche), Detailflaeche (mwDetailOeffnen), Auftritte
+   (mwAuftrittKopf/mwAuftrittTexte), Fremdtext (mwFremdHTML mit Sprecherklasse), Join
+   (bstJoin). Es gibt keine zweite Symbolsuche, keine zweite Detailflaeche, keine zweite
+   Auftrittsdarstellung und kein zweites Raster.
+
+   Sprecherklassen (ADR-911, Contract v0.19 _meta._sprecherklassen): title, summary,
+   items[].name/note/figures/tip und macro[].text sind S3 (Wiedergabe des Kanals) und laufen
+   durch mwFremdHTML — Kanal, Datum und Link stehen an derselben Karte, die Kennzeichnung
+   „maschinell verdichtet" in jeder Herkunftszeile. einordnung und detail sind S2 und
+   erscheinen in der Videokarte NICHT: die Karte ist Wiedergabe, die eigene Einordnung steht
+   etikettiert in der Wertansicht. thumbnail wird nie geladen (Drittanfrage je Karte). Der
+   Raum liest keine Position und aendert keine; die einzige Bestandsaktion ist der Knopf
+   „In Meine Werte aufnehmen" in der Wertansicht.
+   Zustand haengt an Funktionen statt an let-Variablen: raumZeigen() laeuft beim Start vor
+   diesem Block (Bug-Log 10.09., TDZ).
+   ================================================================================ */
+
+/* --- Raumwelle: videos.json (Teil F.1, ADR-714) ------------------------------------
+   Gemessen 17.09.2026 vor dem Umbau (ladewellen.js, Stand 44d1b60): videos.json (577 KB)
+   lag in der ERSTEN Welle (71 → 82 ms, neben market.json 71 → 93 ms), obwohl kein
+   sichtbarer Startraum es liest — nur RAUMFEEDS.recherche und dieser Raum. Jetzt: Laden
+   beim ersten Sichtbarwerden von „Recherche" oder „Suche", genau einmal, nach dem Muster
+   mwSymboleBeiBedarf. Ein Ausfall oder eine fremde Struktur verwirft den Feed — dann
+   entfaellt genau die Liste, nicht der Raum (design-system.md § 8.1). */
+function rcVideos(){return rcVideos.stand}
+rcVideos.stand=0;rcVideos.laden=null;   // 0 nicht angefordert, 1 lädt, 2 da, 3 fehlgeschlagen
+function rcVideosOk(j){return !!(j&&typeof j==='object'&&Array.isArray(j.videos))}
+function rcVideosLaden(){
+  if(rcVideos.stand)return rcVideos.laden||Promise.resolve();
+  rcVideos.stand=1;
+  rcVideos.laden=hol('videos.json',j=>{VIDEOS=j}).then(()=>{
+    if(rcVideosOk(VIDEOS))rcVideos.stand=2;else{rcVideos.stand=3;VIDEOS=null}
+    standAnzeigen();
+    rechercheRendern();
+    suNachziehen();
+  });
+  return rcVideos.laden;
+}
+
+/* --- Datum: der Video-Feed traegt JJJJMMTT (Contract), jzTag() will JJJJ-MM-TT. ------ */
+function rcTag(d8){const m=/^(\d{4})(\d{2})(\d{2})$/.exec(String(d8==null?'':d8).trim());return m?m[1]+'-'+m[2]+'-'+m[3]:''}
+
+/* --- Filter (Teil D.2): rein lokal, nie persistiert, Mehrfachwahl je Gruppe. ---------- */
+function rcFilter(){return rcFilter.wahl}
+rcFilter.wahl={kanal:[],kategorie:[]};
+function rcFilterAktiv(){return !!(rcFilter.wahl.kanal.length||rcFilter.wahl.kategorie.length)}
+/* _kategorie_enum aus dem Contract; ein unbekannter Wert bekommt keinen Chip. */
+const RC_KATEGORIEN=['chartanalyse','fundamental','news','makro','sonstiges'];
+const RC_KATEGORIE_LABEL={chartanalyse:'Chartanalyse',fundamental:'Fundamental',news:'News',makro:'Makro',sonstiges:'Sonstiges'};
+/* Laengendeckel der Videokarte. Design-System § 4.1 ist eine BREITENregel (54ch), keine
+   Zeichenzahl; der 220er-Deckel aus V2-4 stand fuer „drei Zeilen auf der Kachel". Der
+   Aufklapper der Videokarte ist der Ort der vollstaendigen Wiedergabe — und Zitatbedingung
+   (c) aus ADR-911 verbietet, zu kuerzen, bis der Sinn kippt. Gemessen am 17.09.2026:
+   laengste summary 714, laengstes Item-Feld 613, laengste Marktnotiz 431 Zeichen. 800 haelt
+   die Zusage gegen Ausreisser, ohne heute ein Feld anzuschneiden. Interpretations-Entscheid. */
+const RC_TEXTDECKEL=800;
+
+/* Kanalnamen aus VIDEOS — die Filterchips und die dritte Trefferklasse der Suche. */
+function rcKanaele(){
+  const s={};
+  ((VIDEOS&&Array.isArray(VIDEOS.videos))?VIDEOS.videos:[]).forEach(v=>{
+    const k=String((v&&v.channel)||'').trim();if(k)s[k]=(s[k]||0)+1;
+  });
+  return Object.keys(s).sort((a,b)=>a.localeCompare(b,'de')).map(k=>({name:k,anzahl:s[k]}));
+}
+
+/* --- Ein Item der Videokarte (Teil D.1) ------------------------------------------------
+   name (S3) mit Symbol-Chip, wenn ticker gesetzt und sauber; note, figures, tip (S3) ueber
+   denselben Baustein wie die Auftritte; kategorie als Chip; tlink mit Zeitmarke aus dem
+   Feed oder „ohne Zeitmarke" — nie geraten. einordnung und detail fehlen hier bewusst. */
+function rcItemHTML(it,kanal,videoUrl){
+  if(!it||typeof it!=='object')return '';
+  const sym=validTicker(String(it.ticker==null?'':it.ticker).toUpperCase());
+  const name=mwFremdOk(it.name,VERBOT_ZITAT)?escapeHtml(mwKuerzen(it.name,RC_TEXTDECKEL)):'';
+  const katKey=String(it.kategorie==null?'':it.kategorie),kat=RC_KATEGORIE_LABEL[katKey]||'';
+  /* Ohne Namen und ohne Symbol koennte der Leser nichts zuordnen — dann entfaellt das Item. */
+  if(!name&&!sym)return '';
+  return '<div class="rc-item"'+(kat?' data-rckat="'+escapeHtml(katKey)+'"':'')+'>'+
+    '<div class="rc-item-kopf">'+
+      (name?'<span class="rc-item-name">'+name+'</span>':'')+
+      (sym?'<button type="button" class="jz-chip brand rc-chip" data-rcwert="'+escapeHtml(sym)+'" '+
+        'aria-label="'+escapeHtml(sym)+' in der Wertansicht öffnen"><span class="num">'+escapeHtml(sym)+'</span></button>':'')+
+      (kat?'<span class="jz-chip">'+escapeHtml(kat)+'</span>':'')+
+    '</div>'+
+    mwFremdHTML('Zusammenfassung des Beitrags',it.note,kanal,RC_TEXTDECKEL)+
+    mwFremdHTML('Im Beitrag genannte Zahlen',it.figures,kanal,RC_TEXTDECKEL)+
+    mwFremdHTML('Hinweis im Beitrag',it.tip,kanal,RC_TEXTDECKEL)+
+    mwVideoLinkHTML(it.tlink||videoUrl)+
+  '</div>';
+}
+
+/* --- Die Videokarte (Teil D.1) ----------------------------------------------------------
+   Kopf: Kanal, Datum, Titel (S3), Ueberblick (S3), Link zum Video. Aufklapper: die Items und
+   die Marktnotizen (macro[], S3). Kein thumbnail, kein einordnung, kein detail. `herkunft`
+   unterscheidet die Karten-IDs des Recent-Fensters von denen eines Archiv-Tags — dasselbe
+   Video kann in beiden stehen. */
+function rcVideoKarte(v,herkunft){
+  if(!v||typeof v!=='object')return '';
+  const kanal=String(v.channel||'').trim(),tag=jzTag(rcTag(v.date));
+  const id=String(v.id==null?'':v.id).replace(/[^A-Za-z0-9_-]/g,'');
+  const titel=mwFremdOk(v.title,VERBOT_ZITAT)?escapeHtml(mwKuerzen(v.title,RC_TEXTDECKEL)):'';
+  const items=Array.isArray(v.items)?v.items:[];
+  const kat=rcFilter.wahl.kategorie;
+  const sichtbar=kat.length?items.filter(it=>it&&kat.indexOf(String(it.kategorie==null?'':it.kategorie))>-1):items;
+  const itemsHtml=sichtbar.map(it=>rcItemHTML(it,kanal,v.url)).filter(Boolean);
+  const macro=(Array.isArray(v.macro)?v.macro:[]).filter(m=>m&&typeof m==='object'&&mwFremdOk(m.text,VERBOT_ZITAT));
+  const n=itemsHtml.length;
+  return '<article class="card rc-video"'+(id?' id="rcV-'+escapeHtml(String(herkunft||'r'))+'-'+escapeHtml(id)+'"':'')+
+      ' data-rckanal="'+escapeHtml(kanal)+'">'+
+    '<div class="mw-auftritt">'+
+      '<span class="t-small mw-kanal">'+(escapeHtml(kanal)||'Videoanalyse')+
+        (tag?' · <span class="num">'+tag+'</span>':'')+'</span>'+
+      '<h4 class="rc-titel" tabindex="-1">'+(titel||'Videoanalyse')+'</h4>'+
+      mwFremdHTML('Überblick',v.summary,kanal,RC_TEXTDECKEL)+
+      mwVideoLinkHTML(v.url,'Zum Video')+
+    '</div>'+
+    (n||macro.length?
+      '<details class="mw-mehr rc-items"><summary class="t-small">'+
+        (n===1?'1 besprochener Wert':n+' besprochene Werte')+
+        (macro.length?' · '+(macro.length===1?'1 Notiz zur Marktlage':macro.length+' Notizen zur Marktlage'):'')+
+      '</summary><div class="mw-frueher">'+itemsHtml.join('')+
+        (macro.length?'<div class="rc-macro"><span class="t-small mw-kanal">Zur Marktlage im Beitrag</span>'+
+          macro.map(m=>mwFremdHTML('Marktlage',m.text,kanal,RC_TEXTDECKEL)+mwVideoLinkHTML(m.tlink||v.url)).join('')+
+        '</div>':'')+
+      '</div></details>':'')+
+  '</article>';
+}
+
+/* Filter wirken auf Karten (Kanal) und auf Items (Kategorie): eine Karte bleibt, wenn
+   mindestens ein Item die Kategorie traegt. Sie sortieren nie um (ADR-714 Punkt 3). */
+function rcGefiltert(liste){
+  const w=rcFilter.wahl;
+  return liste.filter(v=>{
+    if(!v||typeof v!=='object')return false;
+    if(w.kanal.length&&w.kanal.indexOf(String(v.channel||'').trim())<0)return false;
+    if(w.kategorie.length){
+      const items=Array.isArray(v.items)?v.items:[];
+      if(!items.some(it=>it&&w.kategorie.indexOf(String(it.kategorie==null?'':it.kategorie))>-1))return false;
+    }
+    return true;
+  });
+}
+/* Absteigend nach Datum, stabil: der Feed kommt bereits so, die Sortierung haelt es nur fest. */
+function rcSortiert(liste){
+  return liste.slice().sort((a,b)=>{const x=rcTag(a.date),y=rcTag(b.date);return x<y?1:x>y?-1:0});
+}
+
+function rcListeRender(){
+  const ziel=document.getElementById('rcListeInhalt'),meta=document.getElementById('rcListeMeta');
+  if(!ziel)return;
+  if(rcVideos.stand!==2){
+    if(meta)meta.textContent='';
+    ziel.innerHTML=rcVideos.stand===3?
+      '<p class="jz-leer">Die Videoanalysen konnten nicht geladen werden.</p>':
+      '<p class="jz-leer" aria-busy="true">Videoanalysen werden geladen …</p>';
+    return;
+  }
+  const alle=rcSortiert(VIDEOS.videos.filter(v=>v&&typeof v==='object'));
+  const gef=rcGefiltert(alle);
+  if(meta)meta.textContent=(gef.length===alle.length?alle.length:gef.length+' von '+alle.length)+
+    (alle.length===1?' Videoanalyse':' Videoanalysen');
+  if(!gef.length){
+    ziel.innerHTML='<p class="jz-leer">'+(alle.length?'Keine Analysen für diese Auswahl.':
+      'Derzeit liegen keine Videoanalysen vor.')+'</p>';
+    return;
+  }
+  ziel.innerHTML='<div class="jz-grid">'+gef.map(v=>rcVideoKarte(v,'r')).join('')+'</div>';
+}
+
+function rcFilterRender(){
+  const ziel=document.getElementById('rcFilter');if(!ziel)return;
+  if(rcVideos.stand!==2){ziel.innerHTML='';ziel.hidden=true;return}
+  const w=rcFilter.wahl;
+  const chip=(art,wert,label)=>'<button type="button" class="jz-chip rc-chip" data-rcfilter="'+escapeHtml(art)+
+    '" data-rcfilterwert="'+escapeHtml(wert)+'" aria-pressed="'+(w[art].indexOf(wert)>-1?'true':'false')+'">'+
+    escapeHtml(label)+'</button>';
+  ziel.innerHTML=
+    '<div class="rc-filtergruppe" role="group" aria-label="Kanal"><span class="t-caption rc-filterlabel">Kanal</span>'+
+      rcKanaele().map(k=>chip('kanal',k.name,k.name)).join('')+'</div>'+
+    '<div class="rc-filtergruppe" role="group" aria-label="Kategorie"><span class="t-caption rc-filterlabel">Kategorie</span>'+
+      RC_KATEGORIEN.map(k=>chip('kategorie',k,RC_KATEGORIE_LABEL[k])).join('')+'</div>'+
+    (rcFilterAktiv()?'<div><button type="button" class="ghost" id="rcFilterWeg">Filter zurücksetzen</button></div>':'');
+  ziel.hidden=false;
+}
+function rcFilterSetzen(art,wert,nur){
+  const w=rcFilter.wahl;
+  if(!Object.prototype.hasOwnProperty.call(w,art))return;
+  const s=String(wert==null?'':wert);
+  if(nur)w[art]=[s];
+  else{const i=w[art].indexOf(s);if(i<0)w[art].push(s);else w[art].splice(i,1)}
+  rcFilterRender();rcListeRender();rcArchivTagRender();
+}
+function rcFilterLeeren(){rcFilter.wahl={kanal:[],kategorie:[]};rcFilterRender();rcListeRender();rcArchivTagRender()}
+
+/* --- Archiv (Teil D.4): Monatsgruppen in LIEFERREIHENFOLGE ------------------------------
+   Es wird nicht sortiert und nichts ausgeblendet: die acht Tage vor Mai 2026 (darunter
+   2020-03-11/12) sind ein Backend-Befund und stehen beim Architekten; hier erscheinen sie,
+   wie sie kommen. Eine Gruppe entsteht, wo sich der Monat aufeinanderfolgender Tage aendert. */
+function rcMonatLabel(iso){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(String(iso||'')))return 'Ohne Datum';
+  const d=new Date(iso+'T00:00:00');
+  return isFinite(d.getTime())?d.toLocaleDateString('de-DE',{month:'long',year:'numeric'}):'Ohne Datum';
+}
+function rcArchivGruppen(tage){
+  const out=[];let akt=null;
+  (Array.isArray(tage)?tage:[]).forEach(t=>{
+    if(!t||typeof t!=='object'||!/^\d{4}-\d{2}-\d{2}$/.test(String(t.date||'')))return;
+    const label=rcMonatLabel(t.date);
+    if(!akt||akt.label!==label){akt={label:label,tage:[]};out.push(akt)}
+    akt.tage.push(t);
+  });
+  return out;
+}
+function rcTage(){return rcTage.speicher}
+rcTage.speicher={};rcTage.laeuft={};rcTage.offen=null;rcTage.fehler=null;   // DATA-Muster: geladene Tage bleiben
+function rcArchivHTML(tage){
+  const gruppen=rcArchivGruppen(tage);
+  if(!gruppen.length)return '';
+  const n=gruppen.reduce((s,g)=>s+g.tage.length,0);
+  return '<details class="mw-mehr" id="rcArchivListe"><summary class="t-small">Frühere Tage ('+n+')</summary>'+
+    '<div class="mw-frueher">'+gruppen.map(g=>'<div class="rc-monat"><h4 class="t-small rc-monat-h">'+escapeHtml(g.label)+'</h4>'+
+      '<div class="rc-tage">'+g.tage.map(t=>{
+        const d=String(t.date),c=isFinite(+t.count)?+t.count:0;
+        return '<button type="button" class="jz-chip rc-chip" data-rctag="'+escapeHtml(d)+'" aria-pressed="false">'+
+          escapeHtml(String(t.label||jzTag(d)||d))+' · <span class="num">'+c+'</span></button>';
+      }).join('')+'</div></div>').join('')+
+    '</div></details>';
+}
+function rcTagLaden(tag){
+  const d=/^\d{4}-\d{2}-\d{2}$/.test(String(tag||''))?String(tag):'';
+  if(!d)return Promise.resolve();
+  rcTage.offen=d;rcTage.fehler=null;
+  if(rcTage.speicher[d]){rcArchivTagRender();return Promise.resolve()}   // zweiter Klick: kein Abruf
+  if(rcTage.laeuft[d])return rcTage.laeuft[d];
+  rcArchivTagRender();                                                     // Ladezeile sofort
+  rcTage.laeuft[d]=(async()=>{
+    try{
+      const r=await fetch('data/videos/'+d+'.json',{cache:'no-store'});
+      const j=r.ok?await r.json():null;
+      if(j&&typeof j==='object'&&Array.isArray(j.videos))rcTage.speicher[d]=j;else rcTage.fehler=d;
+    }catch(e){rcTage.fehler=d}
+    delete rcTage.laeuft[d];
+    if(rcTage.offen===d)rcArchivTagRender();
+  })();
+  return rcTage.laeuft[d];
+}
+function rcArchivTagHTML(){
+  const d=rcTage.offen;if(!d)return '';
+  const j=rcTage.speicher[d];
+  const kopf='<div class="jz-kopf"><h4 class="t-h2" id="rcArchivTagH" tabindex="-1">'+
+    escapeHtml(String((j&&j.label)||jzTag(d)||d))+'</h4>';
+  if(!j){
+    if(rcTage.fehler===d)return kopf+'</div><div class="jz-fehler"><p class="jz-leer" style="color:var(--down)">'+
+      'Dieser Tag konnte nicht geladen werden.</p><button type="button" class="ghost" data-rctag="'+escapeHtml(d)+'">'+
+      'Erneut versuchen</button></div>';
+    return kopf+'</div><p class="jz-leer" aria-busy="true">Videoanalysen werden geladen …</p>';
+  }
+  const alle=rcSortiert(j.videos.filter(v=>v&&typeof v==='object')),gef=rcGefiltert(alle);
+  return kopf+'<span class="t-caption">'+(gef.length===alle.length?alle.length:gef.length+' von '+alle.length)+
+    (alle.length===1?' Videoanalyse':' Videoanalysen')+'</span></div>'+
+    (gef.length?'<div class="jz-grid">'+gef.map(v=>rcVideoKarte(v,'a'+d.replace(/-/g,''))).join('')+'</div>':
+      '<p class="jz-leer">'+(alle.length?'Keine Analysen für diese Auswahl.':'Für diesen Tag liegen keine Videoanalysen vor.')+'</p>');
+}
+function rcArchivTagRender(){
+  const t=document.getElementById('rcArchivTag');if(!t)return;
+  t.innerHTML=rcArchivTagHTML();
+  [].forEach.call(document.querySelectorAll('#rcArchivListe [data-rctag]'),b=>{
+    b.setAttribute('aria-pressed',b.dataset.rctag===rcTage.offen?'true':'false');
+  });
+}
+function rcArchivRender(){
+  const sek=document.getElementById('rcArchiv'),ziel=document.getElementById('rcArchivInhalt'),meta=document.getElementById('rcArchivMeta');
+  if(!sek||!ziel)return;
+  const tage=(VIDIDX&&Array.isArray(VIDIDX.tage))?VIDIDX.tage.filter(t=>t&&/^\d{4}-\d{2}-\d{2}$/.test(String(t.date||''))):[];
+  if(!tage.length){sek.hidden=true;return}            // videos-index.json fehlt ⇒ nur diese Flaeche entfaellt
+  sek.hidden=false;
+  if(meta)meta.textContent=tage.length+(tage.length===1?' Tag':' Tage');
+  /* Die Tagesliste wird EINMAL aufgebaut — ein Neuaufbau bei jedem Filterklick wuerde den
+     Aufklapper schliessen. Die Tagesflaeche darunter rendert je Klick. */
+  if(!ziel.querySelector('#rcArchivListe'))ziel.innerHTML=rcArchivHTML(tage)+'<div id="rcArchivTag"></div>';
+  rcArchivTagRender();
+}
+
+/* --- „Haeufig besprochen" (Teil D.5): reine Zaehlung, keine Rangfolge nach Guete. ---------
+   Die zehn Symbole mit den meisten Auftritten in den letzten 30 Tagen (heute eingeschlossen,
+   also ab heute minus 29 Tage) aus ticker-index.json. Gleichstand: Alphabet. Die Ueberschrift
+   ist eine Sachueberschrift — „Top" oder „beste" waeren Listenbegriffe (ADR-806/807). */
+const RC_HAEUFIG_TAGE=30,RC_HAEUFIG_ANZAHL=10;
+function rcHaeufig(heute){
+  if(!(TICKIDX&&TICKIDX.ticker&&typeof TICKIDX.ticker==='object'))return null;
+  const h=/^\d{4}-\d{2}-\d{2}$/.test(String(heute||''))?String(heute):bstToday();
+  const g=new Date(h+'T00:00:00');g.setDate(g.getDate()-(RC_HAEUFIG_TAGE-1));
+  const ab=g.getFullYear()+'-'+String(g.getMonth()+1).padStart(2,'0')+'-'+String(g.getDate()).padStart(2,'0');
+  const out=[];
+  Object.keys(TICKIDX.ticker).forEach(s=>{
+    const sym=validTicker(String(s).toUpperCase());if(!sym)return;
+    const t=TICKIDX.ticker[s],l=(t&&Array.isArray(t.auftritte))?t.auftritte:[];
+    const n=l.filter(a=>a&&/^\d{4}-\d{2}-\d{2}$/.test(String(a.date||''))&&a.date>=ab&&a.date<=h).length;
+    if(n)out.push({symbol:sym,name:String((t&&t.name)||'').trim(),anzahl:n});
+  });
+  out.sort((a,b)=>b.anzahl-a.anzahl||a.symbol.localeCompare(b.symbol));
+  return out.slice(0,RC_HAEUFIG_ANZAHL);
+}
+function rcHaeufigHTML(liste){
+  if(!Array.isArray(liste)||!liste.length)return '';
+  return '<div class="card"><div class="jz-liste">'+liste.map(e=>
+    '<button type="button" class="jz-zeile rc-zeile" data-rcwert="'+escapeHtml(e.symbol)+'">'+
+      '<span class="jz-sym">'+escapeHtml(e.symbol)+'</span>'+
+      '<span class="jz-kurz">'+escapeHtml(e.name||'')+'</span>'+
+      '<span class="t-caption num rc-zeile-n">'+e.anzahl+(e.anzahl===1?' Auftritt':' Auftritte')+' · '+RC_HAEUFIG_TAGE+' Tage</span>'+
+    '</button>').join('')+'</div></div>';
+}
+function rcHaeufigRender(){
+  const sek=document.getElementById('rcHaeufig'),ziel=document.getElementById('rcHaeufigInhalt');
+  if(!sek||!ziel)return;
+  if(!TICKIDX){
+    /* ADR-714 Punkt 2: solange die zweite Welle laeuft, eine Zeile konstanter Hoehe; ist sie
+       vorbei und der Feed fehlt, entfaellt die Flaeche. */
+    if(feedsGross.fertig){sek.hidden=true;return}
+    sek.hidden=false;ziel.innerHTML='<p class="jz-leer" aria-busy="true">Wird geladen …</p>';return;
+  }
+  const h=rcHaeufigHTML(rcHaeufig());
+  if(!h){sek.hidden=true;return}
+  sek.hidden=false;ziel.innerHTML=h;
+}
+
+/* Staende getrennt, wenn sie auseinanderlaufen (Teil B.4, Muster rdStaendeRender). */
+function rcStaendeRender(){
+  const el=document.getElementById('rcStaende'),sammel=document.querySelector('#raum-recherche .stand');
+  if(!el)return;
+  const da=[['Videoanalysen',VIDEOS],['Archiv',VIDIDX]].map(q=>[q[0],feedStand(q[1])]).filter(q=>!!q[1]);
+  const zu=()=>{el.textContent='';el.hidden=true;if(sammel)sammel.hidden=!sammel.textContent};
+  if(da.length<2){zu();return}
+  const min=Math.min.apply(null,da.map(q=>q[1].getTime())),max=Math.max.apply(null,da.map(q=>q[1].getTime()));
+  if(max-min<60000){zu();return}
+  el.innerHTML=da.map(q=>'<span>'+escapeHtml(q[0])+': '+escapeHtml(jzUhr(q[1].toISOString()))+' Uhr</span>').join('');
+  el.hidden=false;
+  if(sammel)sammel.hidden=true;
+}
+function rechercheRendern(){
+  rcStaendeRender();rcFilterRender();rcListeRender();rcArchivRender();rcHaeufigRender();
+}
+/* Sprung zu einer Videokarte (Suche → Videoanalyse): aufklappen, hinscrollen, Fokus auf den
+   Titel. Verdeckt ein Filter die Karte, wird er geloest — der Nutzer hat sie ausdruecklich
+   gewaehlt. */
+function rcZuVideo(id){
+  const sauber=String(id==null?'':id).replace(/[^A-Za-z0-9_-]/g,'');
+  let el=sauber?document.getElementById('rcV-r-'+sauber):null;
+  if(!el&&rcFilterAktiv()){rcFilterLeeren();el=sauber?document.getElementById('rcV-r-'+sauber):null}
+  if(!el){const h=document.getElementById('rcListeH');if(h)h.focus({preventScroll:true});return}
+  const det=el.querySelector('details');if(det)det.open=true;
+  el.scrollIntoView({behavior:'smooth',block:'start'});
+  const h=el.querySelector('.rc-titel');if(h)h.focus({preventScroll:true});
+}
+
+/* ================================================================================
+   Die Suche (Teil C, Freeze 8a/8b) — ein Index, zwei Felder.
+   #suche-desktop (Kopf, ab 1024 px) und #suche-vollbild (Raum „Suche" hinter dem
+   Bottom-Nav-Slot) rufen dieselbe Funktion. Drei Trefferklassen, sichtbar getrennt, in
+   dieser Reihenfolge: Werte (mwSuche aus V2-4, unveraendert), Videoanalysen (Volltreffer
+   im Recent-Fenster: title, channel, items[].name, items[].ticker — NICHT in note,
+   einordnung oder detail, das sind kein Suchraum; keine Archivsuche), Kanaele.
+   Nichts verlaesst den Browser: kein Suchbegriff in einer URL, einem Log oder einem
+   Feed-Abruf; symbole.json und videos.json kommen nur bei Bedarf (bestehende Wellen).
+   ================================================================================ */
+const SU_DECKEL=8;
+function suVideos(q){
+  const s=String(q==null?'':q).trim().toLowerCase();
+  if(!s||!(VIDEOS&&Array.isArray(VIDEOS.videos)))return [];
+  const out=[];
+  VIDEOS.videos.forEach(v=>{
+    if(!v||typeof v!=='object')return;
+    const items=Array.isArray(v.items)?v.items:[];
+    const inTitel=String(v.title||'').toLowerCase().indexOf(s)>-1;
+    const inKanal=String(v.channel||'').toLowerCase().indexOf(s)>-1;
+    const it=items.find(i=>i&&typeof i==='object'&&(String(i.name||'').toLowerCase().indexOf(s)>-1||
+      String(i.ticker||'').toLowerCase()===s));
+    if(inTitel||inKanal||it)out.push({video:v,rang:inTitel?0:it?1:2,fund:(it&&!inTitel)?String(it.name||it.ticker||''):''});
+  });
+  out.sort((a,b)=>a.rang-b.rang);                  // stabil: innerhalb des Rangs bleibt die Feedreihenfolge (Datum absteigend)
+  return out.slice(0,SU_DECKEL);
+}
+function suKanaele(q){
+  const s=String(q==null?'':q).trim().toLowerCase();
+  if(!s)return [];
+  return rcKanaele().filter(k=>k.name.toLowerCase().indexOf(s)>-1);
+}
+function suSuche(q){
+  const s=String(q==null?'':q).trim();
+  if(!s)return {werte:[],videos:[],kanaele:[]};
+  return {werte:mwSuche(s,SU_DECKEL),videos:suVideos(s),kanaele:suKanaele(s)};
+}
+/* Flache Liste fuer Tastatur und Rendering — die Klasse steht an jedem Eintrag. */
+function suTrefferListe(t){
+  const l=[];
+  (t.werte||[]).forEach(e=>l.push({art:'wert',id:e.symbol,e:e}));
+  (t.videos||[]).forEach(x=>l.push({art:'video',id:String(x.video.id==null?'':x.video.id),v:x.video,fund:x.fund}));
+  (t.kanaele||[]).forEach(k=>l.push({art:'kanal',id:k.name,k:k}));
+  return l;
+}
+const SU_ART={wert:'Werte',video:'Videoanalysen',kanal:'Kanäle'};
+/* Ein Eintrag: Werte wie in V2-4 (Symbol, Name, Datenlage), Videoanalysen mit Kanal, Datum und
+   Titel (S3, gefiltert), Kanaele mit Zahl der Analysen. Alles ueber mwHervor (escapet). */
+function suEintragInnen(x,q){
+  if(x.art==='wert'){
+    const e=x.e,hin=mwTrefferHinweis(e);
+    return '<span class="mw-v-sym num">'+mwHervor(e.symbol,q)+'</span><span class="mw-v-name">'+mwHervor(e.name||'',q)+'</span>'+
+      (hin?'<span class="mw-v-hinweis t-caption">'+escapeHtml(hin)+'</span>':'');
+  }
+  if(x.art==='video'){
+    const v=x.v,kanal=String(v.channel||'').trim(),tag=jzTag(rcTag(v.date));
+    const titel=mwFremdOk(v.title,VERBOT_ZITAT)?String(v.title):'Videoanalyse';
+    return '<span class="mw-v-sym">'+mwHervor(kanal,q)+(tag?' · <span class="num">'+tag+'</span>':'')+'</span>'+
+      '<span class="mw-v-name">'+mwHervor(titel,q)+'</span>'+
+      (x.fund?'<span class="mw-v-hinweis t-caption">'+mwHervor(x.fund,q)+'</span>':'');
+  }
+  const k=x.k;
+  return '<span class="mw-v-name">'+mwHervor(k.name,q)+'</span>'+
+    '<span class="mw-v-hinweis t-caption">'+k.anzahl+(k.anzahl===1?' Videoanalyse':' Videoanalysen')+'</span>';
+}
+/* modus 'liste': Optionen einer Combobox (Kopffeld); 'seite': Knoepfe in Abschnitten (Vollbild). */
+function suTrefferHTML(liste,q,aktiv,modus){
+  if(!liste.length){
+    const s=String(q==null?'':q).trim();
+    if(!s)return '';
+    const satz='Kein Treffer für „'+escapeHtml(s)+'" — weder Wert, Videoanalyse noch Kanal. '+
+      'Gesucht wird in Symbolen, Namen, Videotiteln und Kanalnamen.';
+    return modus==='liste'?'<li role="presentation" class="su-gruppe t-small">'+satz+'</li>':'<p class="jz-leer">'+satz+'</p>';
+  }
+  let out='',letzte='';
+  liste.forEach((x,i)=>{
+    if(x.art!==letzte){
+      if(modus==='liste')out+='<li role="presentation" class="su-gruppe t-caption">'+SU_ART[x.art]+'</li>';
+      else out+=(letzte?'</ul></section>':'')+'<section class="jz-sek"><h3 class="t-h2">'+SU_ART[x.art]+'</h3><ul class="su-liste">';
+      letzte=x.art;
+    }
+    if(modus==='liste')out+='<li class="mw-vorschlag'+(i===aktiv?' aktiv':'')+'" role="option" id="suD'+i+'" aria-selected="'+
+      (i===aktiv?'true':'false')+'" data-suwahl="'+i+'">'+suEintragInnen(x,q)+'</li>';
+    else out+='<li><button type="button" class="su-eintrag'+(i===aktiv?' aktiv':'')+'" data-suwahl="'+i+'">'+suEintragInnen(x,q)+'</button></li>';
+  });
+  if(modus!=='liste')out+='</ul></section>';
+  return out;
+}
+/* Zustand haengt an der Funktion (siehe oben). */
+function suZustand(){return suZustand.s}
+suZustand.s={q:'',treffer:[],aktiv:-1,feld:null};
+function suFeldDesktop(feld){return !!(feld&&feld.id==='suche-desktop')}
+function suZeigen(feld){
+  if(!feld)return;
+  const q=String(feld.value||'').trim();
+  rcVideosLaden();
+  const p=mwSymboleLaden();if(mwSymbole.stand===1)p.then(suNachziehen);   // Liste kommt nach — Suche laeuft weiter
+  const liste=suTrefferListe(suSuche(q));
+  suZustand.s={q:q,treffer:liste,aktiv:liste.length?0:-1,feld:feld};
+  if(suFeldDesktop(feld))suDesktopRender();else suSeiteRender();
+}
+function suDesktopRender(){
+  const z=suZustand.s,feld=document.getElementById('suche-desktop'),liste=document.getElementById('suDesktopListe');
+  if(!feld||!liste)return;
+  const h=suTrefferHTML(z.treffer,z.q,z.aktiv,'liste');
+  liste.innerHTML=h;liste.hidden=!h;
+  feld.setAttribute('aria-expanded',h?'true':'false');
+  if(z.aktiv>=0)feld.setAttribute('aria-activedescendant','suD'+z.aktiv);else feld.removeAttribute('aria-activedescendant');
+}
+function suSeiteRender(){
+  const z=suZustand.s,ziel=document.getElementById('suTreffer');
+  if(!ziel)return;
+  ziel.innerHTML=suTrefferHTML(z.treffer,z.q,z.aktiv,'seite');
+}
+function suSchliessenDesktop(){
+  const feld=document.getElementById('suche-desktop'),liste=document.getElementById('suDesktopListe');
+  if(liste){liste.innerHTML='';liste.hidden=true}
+  if(feld){feld.setAttribute('aria-expanded','false');feld.removeAttribute('aria-activedescendant')}
+  if(suFeldDesktop(suZustand.s.feld))suZustand.s={q:'',treffer:[],aktiv:-1,feld:null};
+}
+function suBewegen(schritt){
+  const z=suZustand.s;if(!z.treffer.length)return;
+  z.aktiv=(z.aktiv+schritt+z.treffer.length)%z.treffer.length;
+  if(suFeldDesktop(z.feld))suDesktopRender();else suSeiteRender();
+  const el=document.querySelector(suFeldDesktop(z.feld)?'#suDesktopListe .aktiv':'#suTreffer .aktiv');
+  if(el&&el.scrollIntoView)el.scrollIntoView({block:'nearest'});
+}
+/* Kommt ein Feed nach (videos.json, symbole.json), laeuft die offene Suche ohne erneutes Tippen weiter. */
+function suNachziehen(){
+  const f=suZustand.s.feld;
+  if(f&&String(f.value||'').trim()&&(document.activeElement===f||RAUM_AKTIV==='suche'))suZeigen(f);
+}
+/* Die Wahl: Wert ⇒ Wertansicht; Videoanalyse ⇒ Sprung zur Karte in „Recherche"; Kanal ⇒
+   Kanalfilter. In allen Faellen wechselt die Seite in „Recherche" (Teil C.1). Rueckkehrpunkt
+   des Fokus ist das Kopffeld bzw. die Raumueberschrift — nie ein Element im dann inerten
+   Suchraum. */
+function suWahlIndex(i){
+  const z=suZustand.s,x=z.treffer[i];
+  if(!x)return;
+  const desktop=suFeldDesktop(z.feld);
+  const feld=z.feld;
+  if(desktop)suSchliessenDesktop();
+  raumZeigen('recherche',true);
+  const rueck=desktop?feld:document.getElementById('h-recherche');
+  if(x.art==='wert'){mwDetailOeffnen(x.id,rueck);return}
+  if(x.art==='kanal'){rcFilterSetzen('kanal',x.id,true);const h=document.getElementById('rcListeH');if(h)h.focus({preventScroll:true});return}
+  rcZuVideo(x.id);
+}
+/* Vollbild-Suche verlassen: zurueck in den Raum, aus dem sie geoeffnet wurde. */
+function suZurueck(){
+  const ziel=(RAUM_VORHER&&RAUM_VORHER!=='suche')?RAUM_VORHER:'jetzt';
+  raumZeigen(ziel,true);
+}
+['suche-desktop','suche-vollbild'].forEach(id=>{
+  const f=document.getElementById(id);if(!f)return;
+  f.addEventListener('focus',()=>{rcVideosLaden();mwSymboleLaden()});
+  f.addEventListener('input',()=>suZeigen(f));
+  f.addEventListener('keydown',ev=>{
+    if(ev.key==='ArrowDown'){ev.preventDefault();if(suZustand.s.feld!==f||!suZustand.s.treffer.length)suZeigen(f);else suBewegen(1);return}
+    if(ev.key==='ArrowUp'){ev.preventDefault();if(suZustand.s.feld===f)suBewegen(-1);return}
+    if(ev.key==='Enter'){ev.preventDefault();if(suZustand.s.feld!==f)suZeigen(f);suWahlIndex(suZustand.s.aktiv);return}
+    /* Escape im Kopffeld schliesst die Liste; im Vollbild verlaesst der Dokument-Handler den Raum. */
+    if(ev.key==='Escape'&&suFeldDesktop(f)&&suZustand.s.treffer.length){ev.preventDefault();ev.stopPropagation();suSchliessenDesktop()}
+  });
+  if(suFeldDesktop(f))f.addEventListener('blur',()=>{setTimeout(suSchliessenDesktop,150)});
+});
+
 /* --- Ereignisse (Delegation, damit Neurendern keine Handler verdoppelt) ------- */
 document.addEventListener('click',ev=>{
   const t=ev.target;if(!t||!t.closest)return;
@@ -3820,6 +4531,26 @@ document.addEventListener('click',ev=>{
   if(wegNein){mwBestandslisteRender();return}
   const mc=t.closest('[data-mwchart]');
   if(mc){mwChartOeffnen(mc.dataset.mwchart,mc);return}
+  /* V2-5: Recherche und Suche. */
+  const ma=t.closest('[data-mwaufnahme]');
+  if(ma){mwAufnehmen(ma.dataset.mwaufnahme,ma);return}
+  const rw=t.closest('[data-rcwert]');
+  if(rw){mwDetailOeffnen(rw.dataset.rcwert,rw);return}
+  const rf=t.closest('[data-rcfilter]');
+  if(rf){
+    const art=rf.dataset.rcfilter,wert=rf.dataset.rcfilterwert;
+    rcFilterSetzen(art,wert,false);
+    /* der Chip wurde neu gezeichnet — der Fokus bleibt auf demselben Chip */
+    const neu=[].find.call(document.querySelectorAll('#rcFilter [data-rcfilter]'),b=>b.dataset.rcfilter===art&&b.dataset.rcfilterwert===wert);
+    if(neu)neu.focus();
+    return;
+  }
+  if(t.closest('#rcFilterWeg')){rcFilterLeeren();const h=document.getElementById('rcListeH');if(h)h.focus({preventScroll:true});return}
+  const rt=t.closest('[data-rctag]');
+  if(rt){rcTagLaden(rt.dataset.rctag).then(()=>{const h=document.getElementById('rcArchivTagH');if(h)h.focus()});return}
+  const sw=t.closest('[data-suwahl]');
+  if(sw){suWahlIndex(+sw.dataset.suwahl);return}
+  if(t.closest('#suZurueck')){suZurueck();return}
   /* Nutzerwunsch 10.09.: der Klick auf die Kachel oeffnet die Detailansicht. Ein Klick
      auf ein eigenes Bedienelement INNERHALB der Karte gehoert diesem — sonst risse der
      Videolink das Detail mit auf. */
@@ -3845,7 +4576,9 @@ document.addEventListener('keydown',ev=>{
   const stk=document.getElementById('stkOverlay');
   if(stk&&stk.classList.contains('open')){ev.preventDefault();jzStkSchliessen();return}
   const ix=document.getElementById('ixOverlay');
-  if(ix&&ix.classList.contains('open')){ev.preventDefault();jzIxSchliessen()}
+  if(ix&&ix.classList.contains('open')){ev.preventDefault();jzIxSchliessen();return}
+  /* V2-5 Teil C.1: Escape verlaesst die Vollbild-Suche in den vorherigen Raum. */
+  if(RAUM_AKTIV==='suche'){ev.preventDefault();suZurueck()}
 });
 /* Fokusbegrenzung: Tab laeuft im offenen Dialog im Kreis. */
 document.addEventListener('keydown',ev=>{
