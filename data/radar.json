@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-18T02:20:37.109863Z",
+  "generated_at": "2026-09-18T03:20:38.559918Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -20,57 +20,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "GNRC",
-   "name": "Generac",
-   "score": 85,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+17,6 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,9× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 205.8,
-    "pct": 17.53,
-    "cur": "USD",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Generac mit starker Kursbewegung und hohem Volumen",
-    "why_now": "Generac liegt bei 205,8 USD und ist um 17,6 % gestiegen. Das Handelsvolumen beträgt das 6,9-Fache des Durchschnitts, zudem legte der S&P 500 Future um 1,9 % zu. Eine Marktbreitenbewegung könnte die Kursbewegung teilweise begünstigt haben; die Video-Erwähnung umfasst ein Video in 3 Tagen. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung von Generac",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Entwicklung des S&P 500 Future"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-17T21:25:00.063796Z"
-   }
-  },
   {
    "symbol": "GBF.DE",
    "name": "Bilfinger",
@@ -118,9 +67,54 @@
    }
   },
   {
+   "symbol": "GNRC",
+   "name": "Generac",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+17,6 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "6,9× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 205.8,
+    "pct": 17.53,
+    "cur": "USD",
+    "as_of": "2026-09-17T18:34:07.335593+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Generac mit starker Kursbewegung und hohem Volumen",
+    "why_now": "Die Generac-Aktie liegt bei 205,8 USD und verzeichnet eine Kursbewegung von plus 17,53 %. Das Handelsvolumen beträgt das 6,9-Fache des Durchschnitts; zudem wurde in drei Tagen ein Video erwähnt. Ursache unklar; das erhöhte Volumen und die Video-Erwähnung könnten mit der auffälligen Bewegung zusammenhängen.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-18T03:20:38.559918Z"
+   }
+  },
+  {
    "symbol": "MU",
    "name": "Micron",
-   "score": 65,
+   "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -141,12 +135,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -164,7 +152,7 @@
   {
    "symbol": "INTC",
    "name": "Intel",
-   "score": 60,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -179,12 +167,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
     }
    ],
    "quote": {
@@ -197,7 +179,7 @@
   {
    "symbol": "P911.DE",
    "name": "Porsche AG",
-   "score": 60,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -218,12 +200,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "XETR:P911",
@@ -237,7 +213,7 @@
   {
    "symbol": "NOKIA.HE",
    "name": "Nokia",
-   "score": 60,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -258,12 +234,6 @@
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
     }
    ],
    "tv_symbol": "OMXHEX:NOKIA",
@@ -271,117 +241,6 @@
     "price": 9.25,
     "pct": 4.64,
     "cur": "EUR",
-    "as_of": "2026-09-17T18:34:07.335593+00:00"
-   }
-  },
-  {
-   "symbol": "VICR",
-   "name": "Vicor",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+18,5 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "TEM",
-   "name": "Tempus AI",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+15,1 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "TWST",
-   "name": "Twist Bioscience Corporation",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+11,4 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "IONQ",
-   "name": "IonQ",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+10,3 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "NNE",
-   "name": "Nano Nuclear Energy",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,0 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +1,9 %",
-     "weight": 5
-    }
-   ],
-   "quote": {
-    "price": 17.039,
-    "pct": 8.95,
-    "cur": "USD",
     "as_of": "2026-09-17T18:34:07.335593+00:00"
    }
   }
