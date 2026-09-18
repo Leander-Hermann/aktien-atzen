@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-18T18:20:37.757726Z",
+  "generated_at": "2026-09-18T19:20:42.995854Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -11,7 +11,7 @@
  "mode": "batch",
  "universe": {
   "symbols_total": 94,
-  "with_quote_data": 56,
+  "with_quote_data": 59,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,8 @@
  },
  "items": [
   {
-   "symbol": "GNRC",
-   "name": "Generac",
+   "symbol": "GBF.DE",
+   "name": "Bilfinger",
    "score": 80,
    "priority": "high",
    "alert_type": "large_move",
@@ -30,13 +30,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+18,3 %",
+     "value": "-24,0 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "8,2× Durchschnitt",
+     "value": "7,0× Durchschnitt",
      "weight": 25
     },
     {
@@ -46,126 +46,44 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "XETR:GBF",
    "quote": {
-    "price": 207.23,
-    "pct": 18.34,
-    "cur": "USD",
-    "as_of": "2026-09-18T06:31:52.062919+00:00"
+    "price": 57.4,
+    "pct": -24.02,
+    "cur": "EUR",
+    "as_of": "2026-09-18T18:33:31.460610+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Generac mit starkem Kursanstieg und hohem Volumen",
-    "why_now": "Generac legte um 18,34 % auf 207,23 USD zu. Das Handelsvolumen lag beim 8,2-Fachen des Durchschnitts. Zusätzlich wurde das Unternehmen in den vergangenen drei Tagen in einem Video erwähnt, was auf erhöhte Aufmerksamkeit hindeuten könnte. Ursache unklar.",
+    "headline": "Bilfinger fällt bei deutlich erhöhtem Handelsvolumen",
+    "why_now": "Die Bilfinger-Aktie ist um 24,0 % auf 57,4 EUR gefallen. Gleichzeitig lag das Handelsvolumen beim 7,0-Fachen des Durchschnitts. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Anstieg",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Kursentwicklung",
+     "Handelsvolumen",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-18T07:20:38.926443Z"
+    "generated_at": "2026-09-18T19:20:42.995854Z"
    }
   },
   {
-   "symbol": "INTC",
-   "name": "Intel",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,7 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 108.8,
-    "pct": 7.67,
-    "cur": "USD",
-    "as_of": "2026-09-18T06:31:52.062919+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Intel fällt heute durch starke Kursbewegung auf",
-    "why_now": "Intel notiert bei 108,8 USD und liegt 7,67 % im Plus. Das Handelsvolumen beträgt das 1,6-Fache des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursbewegung",
-     "Entwicklung des Handelsvolumens",
-     "Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-18T07:20:38.926443Z"
-   }
-  },
-  {
-   "symbol": "MU",
-   "name": "Micron",
-   "score": 60,
+   "symbol": "NOKIA.HE",
+   "name": "Nokia",
+   "score": 65,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,5 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 3 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 977.5,
-    "pct": 5.5,
-    "cur": "USD",
-    "as_of": "2026-09-18T06:31:52.062919+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-21",
-    "distance_days": 3,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "NBIS",
-   "name": "Nebius",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,1 %",
+     "value": "+5,9 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
+     "value": "12,4× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
@@ -174,11 +92,114 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "OMXHEX:NOKIA",
    "quote": {
-    "price": 217.99,
-    "pct": 4.12,
-    "cur": "USD",
-    "as_of": "2026-09-18T06:31:52.062919+00:00"
+    "price": 9.362,
+    "pct": 5.88,
+    "cur": "EUR",
+    "as_of": "2026-09-18T18:33:31.460610+00:00"
+   }
+  },
+  {
+   "symbol": "R3NK.DE",
+   "name": "Renk",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,8 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:R3NK",
+   "quote": {
+    "price": 42.28,
+    "pct": 3.83,
+    "cur": "EUR",
+    "as_of": "2026-09-18T18:33:31.460610+00:00"
+   }
+  },
+  {
+   "symbol": "BMW.DE",
+   "name": "BMW",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,8 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:BMW",
+   "quote": {
+    "price": 60.4,
+    "pct": -2.8,
+    "cur": "EUR",
+    "as_of": "2026-09-18T18:33:31.460610+00:00"
+   }
+  },
+  {
+   "symbol": "ENR.DE",
+   "name": "Siemens Energy",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,2 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:ENR",
+   "quote": {
+    "price": 140.2,
+    "pct": 2.25,
+    "cur": "EUR",
+    "as_of": "2026-09-18T18:33:31.460610+00:00"
    }
   }
  ]
