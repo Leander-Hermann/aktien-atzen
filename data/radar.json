@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-19T18:20:36.543744Z",
+  "generated_at": "2026-09-19T19:20:37.835593Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 94,
+  "symbols_total": 96,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -50,7 +50,7 @@
     "price": 76.43,
     "pct": -4.1,
     "cur": "USD",
-    "as_of": "2026-09-19T06:32:02.719584+00:00"
+    "as_of": "2026-09-19T18:31:57.009674+00:00"
    }
   },
   {
@@ -83,7 +83,7 @@
     "price": 28.12,
     "pct": 6.6,
     "cur": "USD",
-    "as_of": "2026-09-19T06:32:02.719584+00:00"
+    "as_of": "2026-09-19T18:31:57.009674+00:00"
    }
   },
   {
@@ -116,7 +116,75 @@
     "price": 7.32,
     "pct": -4.44,
     "cur": "USD",
-    "as_of": "2026-09-19T06:32:02.719584+00:00"
+    "as_of": "2026-09-19T18:31:57.009674+00:00"
+   }
+  },
+  {
+   "symbol": "R3NK.DE",
+   "name": "Renk",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,8 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:R3NK",
+   "quote": {
+    "price": 42.28,
+    "pct": 3.83,
+    "cur": "EUR",
+    "as_of": "2026-09-19T18:31:57.009674+00:00"
+   }
+  },
+  {
+   "symbol": "ENR.DE",
+   "name": "Siemens Energy",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,2 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:ENR",
+   "quote": {
+    "price": 140.2,
+    "pct": 2.25,
+    "cur": "EUR",
+    "as_of": "2026-09-19T18:31:57.009674+00:00"
    }
   }
  ]
