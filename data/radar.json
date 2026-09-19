@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-19T06:20:38.813884Z",
+  "generated_at": "2026-09-19T07:20:36.672780Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -21,54 +21,8 @@
  },
  "items": [
   {
-   "symbol": "GBF.DE",
-   "name": "Bilfinger",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-24,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "7,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:GBF",
-   "quote": {
-    "price": 57.4,
-    "pct": -24.02,
-    "cur": "EUR",
-    "as_of": "2026-09-18T18:33:31.460610+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Bilfinger fällt bei deutlich erhöhtem Handelsvolumen",
-    "why_now": "Die Bilfinger-Aktie ist um 24,0 % auf 57,4 EUR gefallen. Gleichzeitig lag das Handelsvolumen beim 7,0-Fachen des Durchschnitts. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-18T19:20:42.995854Z"
-   }
-  },
-  {
-   "symbol": "NOKIA.HE",
-   "name": "Nokia",
+   "symbol": "LEN",
+   "name": "Lennar",
    "score": 65,
    "priority": "medium",
    "alert_type": "large_move",
@@ -76,13 +30,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,9 %",
+     "value": "-4,1 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "12,4× Durchschnitt",
+     "value": "3,5× Durchschnitt",
      "weight": 25
     },
     {
@@ -92,32 +46,31 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "OMXHEX:NOKIA",
    "quote": {
-    "price": 9.362,
-    "pct": 5.88,
-    "cur": "EUR",
-    "as_of": "2026-09-18T18:33:31.460610+00:00"
+    "price": 76.43,
+    "pct": -4.1,
+    "cur": "USD",
+    "as_of": "2026-09-19T06:32:02.719584+00:00"
    }
   },
   {
-   "symbol": "R3NK.DE",
-   "name": "Renk",
-   "score": 50,
+   "symbol": "APLD",
+   "name": "Applied Digital",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "volume_spike",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+3,8 %",
-     "weight": 15
+     "value": "+6,6 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,0× Durchschnitt",
-     "weight": 25
+     "value": "1,6× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -126,32 +79,31 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:R3NK",
    "quote": {
-    "price": 42.28,
-    "pct": 3.83,
-    "cur": "EUR",
-    "as_of": "2026-09-18T18:33:31.460610+00:00"
+    "price": 28.12,
+    "pct": 6.6,
+    "cur": "USD",
+    "as_of": "2026-09-19T06:32:02.719584+00:00"
    }
   },
   {
-   "symbol": "ENR.DE",
-   "name": "Siemens Energy",
-   "score": 50,
+   "symbol": "FLNC",
+   "name": "Fluence Energy",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "volume_spike",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,2 %",
-     "weight": 15
+     "value": "-4,4 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
-     "weight": 25
+     "value": "2,1× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -160,12 +112,11 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:ENR",
    "quote": {
-    "price": 140.2,
-    "pct": 2.25,
-    "cur": "EUR",
-    "as_of": "2026-09-18T18:33:31.460610+00:00"
+    "price": 7.32,
+    "pct": -4.44,
+    "cur": "USD",
+    "as_of": "2026-09-19T06:32:02.719584+00:00"
    }
   }
  ]
