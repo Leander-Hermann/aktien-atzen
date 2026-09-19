@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-18T23:20:41.791770Z",
+  "generated_at": "2026-09-19T00:20:40.297278Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -130,40 +130,6 @@
    "quote": {
     "price": 42.28,
     "pct": 3.83,
-    "cur": "EUR",
-    "as_of": "2026-09-18T18:33:31.460610+00:00"
-   }
-  },
-  {
-   "symbol": "BMW.DE",
-   "name": "BMW",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,8 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,6× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:BMW",
-   "quote": {
-    "price": 60.4,
-    "pct": -2.8,
     "cur": "EUR",
     "as_of": "2026-09-18T18:33:31.460610+00:00"
    }
