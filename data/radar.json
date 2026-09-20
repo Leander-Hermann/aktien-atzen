@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-20T06:20:39.297577Z",
+  "generated_at": "2026-09-20T07:20:40.080609Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 96,
+  "symbols_total": 93,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -20,6 +20,46 @@
   ]
  },
  "items": [
+  {
+   "symbol": "GBF.DE",
+   "name": "Bilfinger",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-24,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "7,0× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "XETR:GBF",
+   "quote": {
+    "price": 57.4,
+    "pct": -24.02,
+    "cur": "EUR",
+    "as_of": "2026-09-20T06:32:00.921099+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Bilfinger fällt bei ungewöhnlich hohem Volumen deutlich",
+    "why_now": "Die Bilfinger-Aktie liegt bei 57,4 EUR und damit 24,02 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 7,0-Fache des Durchschnitts. Ursache unklar. Das hohe Volumen dürfte die außergewöhnliche Kursbewegung begleiten, belegt aber keinen konkreten Auslöser.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Unternehmensmeldungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-20T07:20:40.080609Z"
+   }
+  },
   {
    "symbol": "APLD",
    "name": "Applied Digital",
@@ -50,7 +90,35 @@
     "price": 28.12,
     "pct": 6.6,
     "cur": "USD",
-    "as_of": "2026-09-19T18:31:57.009674+00:00"
+    "as_of": "2026-09-20T06:32:00.921099+00:00"
+   }
+  },
+  {
+   "symbol": "NOKIA.HE",
+   "name": "Nokia",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,9 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "12,5× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "OMXHEX:NOKIA",
+   "quote": {
+    "price": 9.362,
+    "pct": 5.88,
+    "cur": "EUR",
+    "as_of": "2026-09-20T06:32:00.921099+00:00"
    }
   },
   {
@@ -83,7 +151,7 @@
     "price": 7.32,
     "pct": -4.44,
     "cur": "USD",
-    "as_of": "2026-09-19T18:31:57.009674+00:00"
+    "as_of": "2026-09-20T06:32:00.921099+00:00"
    }
   },
   {
@@ -110,7 +178,7 @@
     "price": 76.43,
     "pct": -4.1,
     "cur": "USD",
-    "as_of": "2026-09-19T18:31:57.009674+00:00"
+    "as_of": "2026-09-20T06:32:00.921099+00:00"
    }
   },
   {
@@ -137,7 +205,7 @@
     "price": 1015.8,
     "pct": 3.92,
     "cur": "USD",
-    "as_of": "2026-09-19T18:31:57.009674+00:00"
+    "as_of": "2026-09-20T06:32:00.921099+00:00"
    },
    "earnings": {
     "date": "2026-09-21",
@@ -176,7 +244,7 @@
     "price": 42.28,
     "pct": 3.83,
     "cur": "EUR",
-    "as_of": "2026-09-19T18:31:57.009674+00:00"
+    "as_of": "2026-09-20T06:32:00.921099+00:00"
    }
   }
  ]
