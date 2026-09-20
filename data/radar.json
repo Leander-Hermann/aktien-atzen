@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-19T23:20:37.864075Z",
+  "generated_at": "2026-09-20T00:20:38.007540Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -20,39 +20,6 @@
   ]
  },
  "items": [
-  {
-   "symbol": "LEN",
-   "name": "Lennar",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,1 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,5× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 76.43,
-    "pct": -4.1,
-    "cur": "USD",
-    "as_of": "2026-09-19T18:31:57.009674+00:00"
-   }
-  },
   {
    "symbol": "APLD",
    "name": "Applied Digital",
@@ -120,6 +87,65 @@
    }
   },
   {
+   "symbol": "LEN",
+   "name": "Lennar",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,1 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,5× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "quote": {
+    "price": 76.43,
+    "pct": -4.1,
+    "cur": "USD",
+    "as_of": "2026-09-19T18:31:57.009674+00:00"
+   }
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,9 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    }
+   ],
+   "quote": {
+    "price": 1015.8,
+    "pct": 3.92,
+    "cur": "USD",
+    "as_of": "2026-09-19T18:31:57.009674+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-21",
+    "distance_days": 1,
+    "zeit": "amc"
+   }
+  },
+  {
    "symbol": "R3NK.DE",
    "name": "Renk",
    "score": 50,
@@ -149,40 +175,6 @@
    "quote": {
     "price": 42.28,
     "pct": 3.83,
-    "cur": "EUR",
-    "as_of": "2026-09-19T18:31:57.009674+00:00"
-   }
-  },
-  {
-   "symbol": "ENR.DE",
-   "name": "Siemens Energy",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,2 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:ENR",
-   "quote": {
-    "price": 140.2,
-    "pct": 2.25,
     "cur": "EUR",
     "as_of": "2026-09-19T18:31:57.009674+00:00"
    }
