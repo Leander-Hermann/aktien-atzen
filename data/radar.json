@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-20T23:20:46.156700Z",
+  "generated_at": "2026-09-21T00:23:10.985827Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 94,
+  "symbols_total": 95,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -61,39 +61,6 @@
    }
   },
   {
-   "symbol": "APLD",
-   "name": "Applied Digital",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,6 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 28.12,
-    "pct": 6.6,
-    "cur": "USD",
-    "as_of": "2026-09-20T18:31:52.700886+00:00"
-   }
-  },
-  {
    "symbol": "NOKIA.HE",
    "name": "Nokia",
    "score": 55,
@@ -118,39 +85,6 @@
     "price": 9.362,
     "pct": 5.88,
     "cur": "EUR",
-    "as_of": "2026-09-20T18:31:52.700886+00:00"
-   }
-  },
-  {
-   "symbol": "FLNC",
-   "name": "Fluence Energy",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,4 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,1× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 7.32,
-    "pct": -4.44,
-    "cur": "USD",
     "as_of": "2026-09-20T18:31:52.700886+00:00"
    }
   },
@@ -186,7 +120,7 @@
    "name": "Micron",
    "score": 50,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -197,7 +131,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     }
    ],
@@ -209,42 +143,8 @@
    },
    "earnings": {
     "date": "2026-09-21",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "R3NK.DE",
-   "name": "Renk",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,8 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:R3NK",
-   "quote": {
-    "price": 42.28,
-    "pct": 3.83,
-    "cur": "EUR",
-    "as_of": "2026-09-20T18:31:52.700886+00:00"
    }
   }
  ]
