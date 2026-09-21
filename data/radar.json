@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-21T06:20:41.307692Z",
+  "generated_at": "2026-09-21T07:20:38.611057Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "GBF.DE",
    "name": "Bilfinger",
-   "score": 70,
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -38,6 +38,12 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "7,0× Durchschnitt",
      "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "tv_symbol": "XETR:GBF",
@@ -45,19 +51,19 @@
     "price": 57.4,
     "pct": -24.02,
     "cur": "EUR",
-    "as_of": "2026-09-20T18:31:52.700886+00:00"
+    "as_of": "2026-09-21T06:33:04.226323+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Bilfinger fällt bei ungewöhnlich hohem Volumen deutlich",
-    "why_now": "Die Bilfinger-Aktie liegt bei 57,4 EUR und damit 24,02 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 7,0-Fache des Durchschnitts. Ursache unklar. Das hohe Volumen dürfte die außergewöhnliche Kursbewegung begleiten, belegt aber keinen konkreten Auslöser.",
+    "headline": "Bilfinger fällt bei stark erhöhtem Volumen deutlich",
+    "why_now": "Die Bilfinger-Aktie liegt bei 57,4 EUR und ist damit um 24,0 % gefallen. Gleichzeitig liegt das Volumen beim 7,0-Fachen des Durchschnitts; zudem wurde ein Video in den vergangenen 3 Tagen erfasst. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Unternehmensmeldungen"
+     "Kursveränderung von -24,0 %",
+     "Volumen beim 7,0-Fachen des Durchschnitts",
+     "1 Video-Erwähnung in 3 Tagen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-20T07:20:40.080609Z"
+    "generated_at": "2026-09-21T07:20:38.611057Z"
    }
   },
   {
@@ -85,7 +91,7 @@
     "price": 9.362,
     "pct": 5.88,
     "cur": "EUR",
-    "as_of": "2026-09-20T18:31:52.700886+00:00"
+    "as_of": "2026-09-21T06:33:04.226323+00:00"
    }
   },
   {
@@ -112,7 +118,7 @@
     "price": 76.43,
     "pct": -4.1,
     "cur": "USD",
-    "as_of": "2026-09-20T18:31:52.700886+00:00"
+    "as_of": "2026-09-21T06:33:04.226323+00:00"
    }
   },
   {
@@ -139,12 +145,46 @@
     "price": 1015.8,
     "pct": 3.92,
     "cur": "USD",
-    "as_of": "2026-09-20T18:31:52.700886+00:00"
+    "as_of": "2026-09-21T06:33:04.226323+00:00"
    },
    "earnings": {
     "date": "2026-09-21",
     "distance_days": 0,
     "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "VOW3.DE",
+   "name": "Volkswagen",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,0 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "7,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:VOW3",
+   "quote": {
+    "price": 76.52,
+    "pct": -2.99,
+    "cur": "EUR",
+    "as_of": "2026-09-21T06:33:04.226323+00:00"
    }
   }
  ]
