@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-21T14:20:36.465044Z",
+  "generated_at": "2026-09-21T15:20:38.218545Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -69,7 +69,7 @@
   {
    "symbol": "NOKIA.HE",
    "name": "Nokia",
-   "score": 55,
+   "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -84,6 +84,12 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "12,5× Durchschnitt",
      "weight": 25
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
     }
    ],
    "tv_symbol": "OMXHEX:NOKIA",
@@ -124,7 +130,7 @@
   {
    "symbol": "MU",
    "name": "Micron",
-   "score": 50,
+   "score": 55,
    "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
@@ -139,6 +145,12 @@
      "label": "Earnings-Termin",
      "value": "Earnings heute",
      "weight": 35
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
     }
    ],
    "quote": {
@@ -151,6 +163,144 @@
     "date": "2026-09-21",
     "distance_days": 0,
     "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "MSTR",
+   "name": "Strategy",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+16,4 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "PS",
+   "name": "Pershing Square Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+13,7 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "COIN",
+   "name": "Coinbase",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,7 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "SNDK",
+   "name": "SanDisk",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,0 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "GLXY",
+   "name": "Galaxy Digital Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,8 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "APLD",
+   "name": "Applied Digital",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,6 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +1,8 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 28.12,
+    "pct": 6.6,
+    "cur": "USD",
+    "as_of": "2026-09-21T06:33:04.226323+00:00"
    }
   },
   {
