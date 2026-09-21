@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-21T18:20:38.526757Z",
+  "generated_at": "2026-09-21T19:20:34.182774Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 95,
-  "with_quote_data": 59,
+  "symbols_total": 94,
+  "with_quote_data": 57,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,59 @@
  },
  "items": [
   {
-   "symbol": "GBF.DE",
-   "name": "Bilfinger",
+   "symbol": "CRML",
+   "name": "Critical Metals",
+   "score": 85,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+33,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "6,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,4 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 8.955,
+    "pct": 32.99,
+    "cur": "USD",
+    "as_of": "2026-09-21T18:33:54.904387+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Critical Metals mit starker Kursbewegung",
+    "why_now": "Die Aktie von Critical Metals steigt um 33,0 % auf 8,955 USD. Gleichzeitig liegt das Handelsvolumen beim 6,0-Fachen des Durchschnitts. Die Bewegung könnte durch das insgesamt positive Marktumfeld mit einem S&P 500 Future von +2,4 % und durch erhöhte Aufmerksamkeit nach 1 Video-Erwähnung in 3 Tagen begünstigt worden sein. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-21T19:20:34.182774Z"
+   }
+  },
+  {
+   "symbol": "NVO",
+   "name": "Novo Nordisk",
    "score": 80,
    "priority": "high",
    "alert_type": "large_move",
@@ -30,13 +81,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-24,0 %",
+     "value": "-8,1 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "7,0× Durchschnitt",
+     "value": "3,9× Durchschnitt",
      "weight": 25
     },
     {
@@ -46,29 +97,107 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:GBF",
    "quote": {
-    "price": 57.4,
-    "pct": -24.02,
-    "cur": "EUR",
-    "as_of": "2026-09-21T06:33:04.226323+00:00"
+    "price": 39.705,
+    "pct": -8.16,
+    "cur": "USD",
+    "as_of": "2026-09-21T18:33:54.904387+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Bilfinger fällt bei stark erhöhtem Volumen deutlich",
-    "why_now": "Die Bilfinger-Aktie liegt bei 57,4 EUR und ist damit um 24,0 % gefallen. Gleichzeitig liegt das Volumen beim 7,0-Fachen des Durchschnitts; zudem wurde ein Video in den vergangenen 3 Tagen erfasst. Ursache unklar.",
+    "headline": "Novo Nordisk fällt bei ungewöhnlich hohem Volumen",
+    "why_now": "Die Aktie von Novo Nordisk liegt bei 39,705 USD und damit 8,16 % im Minus. Das Handelsvolumen beträgt das 3,9-Fache des Durchschnitts. Zudem wurde das Unternehmen in den vergangenen 3 Tagen in 1 Video erwähnt. Ursache unklar.",
     "watch_next": [
-     "Kursveränderung von -24,0 %",
-     "Volumen beim 7,0-Fachen des Durchschnitts",
-     "1 Video-Erwähnung in 3 Tagen"
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-21T07:20:38.611057Z"
+    "generated_at": "2026-09-21T19:20:34.182774Z"
    }
   },
   {
-   "symbol": "NOKIA.HE",
-   "name": "Nokia",
+   "symbol": "NOVO-B.CO",
+   "name": "Novo Nordisk",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,7 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,1× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "OMXCOP:NOVO-B",
+   "quote": {
+    "price": 260.0,
+    "pct": -7.65,
+    "cur": "DKK",
+    "as_of": "2026-09-21T18:33:54.904387+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Novo Nordisk fällt bei hohem Handelsvolumen",
+    "why_now": "Die Aktie von Novo Nordisk verlor 7,7 % und notiert bei 260,0 DKK. Das Handelsvolumen lag beim 3,1-Fachen des Durchschnitts. Zusätzlich wurde die Aktie in den vergangenen drei Tagen in einem Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Video-Erwähnungen beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-21T19:20:34.182774Z"
+   }
+  },
+  {
+   "symbol": "META",
+   "name": "Meta",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+12,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,4 %",
+     "weight": 5
+    }
+   ],
+   "quote": {
+    "price": 747.77,
+    "pct": 12.32,
+    "cur": "USD",
+    "as_of": "2026-09-21T18:33:54.904387+00:00"
+   }
+  },
+  {
+   "symbol": "BTC-USD",
+   "name": "Bitcoin",
    "score": 60,
    "priority": "medium",
    "alert_type": "large_move",
@@ -82,49 +211,28 @@
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "12,5× Durchschnitt",
-     "weight": 25
+     "value": "1,9× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     },
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
-   "tv_symbol": "OMXHEX:NOKIA",
+   "tv_symbol": "CRYPTO:BTCUSD",
    "quote": {
-    "price": 9.362,
-    "pct": 5.88,
-    "cur": "EUR",
-    "as_of": "2026-09-21T06:33:04.226323+00:00"
-   }
-  },
-  {
-   "symbol": "LEN",
-   "name": "Lennar",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,1 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,5× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "quote": {
-    "price": 76.43,
-    "pct": -4.1,
+    "price": 85922.74,
+    "pct": 5.89,
     "cur": "USD",
-    "as_of": "2026-09-21T06:33:04.226323+00:00"
+    "as_of": "2026-09-21T18:33:54.904387+00:00"
    }
   },
   {
@@ -137,7 +245,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+3,9 %",
+     "value": "+2,6 %",
      "weight": 15
     },
     {
@@ -149,15 +257,15 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
    "quote": {
-    "price": 1015.8,
-    "pct": 3.92,
+    "price": 1042.09,
+    "pct": 2.59,
     "cur": "USD",
-    "as_of": "2026-09-21T06:33:04.226323+00:00"
+    "as_of": "2026-09-21T18:33:54.904387+00:00"
    },
    "earnings": {
     "date": "2026-09-21",
@@ -166,8 +274,8 @@
    }
   },
   {
-   "symbol": "MSTR",
-   "name": "Strategy",
+   "symbol": "ARM",
+   "name": "Arm",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -175,20 +283,20 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+16,4 %",
+     "value": "+15,9 %",
      "weight": 45
     },
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ]
   },
   {
-   "symbol": "PS",
-   "name": "Pershing Square Inc.",
+   "symbol": "MRNA",
+   "name": "Moderna",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -196,20 +304,41 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+13,7 %",
+     "value": "+13,8 %",
      "weight": 45
     },
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ]
   },
   {
-   "symbol": "COIN",
-   "name": "Coinbase",
+   "symbol": "DOCN",
+   "name": "DigitalOcean Holdings, Inc.",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+12,1 %",
+     "weight": 45
+    },
+    {
+     "type": "market_regime",
+     "label": "Marktbreite Bewegung",
+     "value": "S&P 500 Future +2,4 %",
+     "weight": 5
+    }
+   ]
+  },
+  {
+   "symbol": "INTC",
+   "name": "Intel",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -223,35 +352,20 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
-   ]
+   ],
+   "quote": {
+    "price": 121.025,
+    "pct": 11.45,
+    "cur": "USD",
+    "as_of": "2026-09-21T18:33:54.904387+00:00"
+   }
   },
   {
-   "symbol": "SNDK",
-   "name": "SanDisk",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+11,0 %",
-     "weight": 45
-    },
-    {
-     "type": "market_regime",
-     "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
-     "weight": 5
-    }
-   ]
-  },
-  {
-   "symbol": "GLXY",
-   "name": "Galaxy Digital Inc.",
+   "symbol": "WBD",
+   "name": "Warner Bros Discovery",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -265,14 +379,14 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ]
   },
   {
-   "symbol": "APLD",
-   "name": "Applied Digital",
+   "symbol": "APP",
+   "name": "AppLovin",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -280,61 +394,21 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+6,6 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
+     "value": "+7,5 %",
+     "weight": 45
     },
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
    "quote": {
-    "price": 28.12,
-    "pct": 6.6,
+    "price": 331.3,
+    "pct": 7.54,
     "cur": "USD",
-    "as_of": "2026-09-21T06:33:04.226323+00:00"
-   }
-  },
-  {
-   "symbol": "VOW3.DE",
-   "name": "Volkswagen",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,0 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "7,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:VOW3",
-   "quote": {
-    "price": 76.52,
-    "pct": -2.99,
-    "cur": "EUR",
-    "as_of": "2026-09-21T06:33:04.226323+00:00"
+    "as_of": "2026-09-21T18:33:54.904387+00:00"
    }
   }
  ]
