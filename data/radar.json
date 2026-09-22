@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-21T23:20:43.781213Z",
+  "generated_at": "2026-09-22T00:20:38.821578Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -48,7 +48,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
@@ -60,15 +60,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Critical Metals mit starkem Kursanstieg",
-    "why_now": "Die Aktie steigt um 33,0 % auf 8,955 USD bei einem Volumen von 6,0× des Durchschnitts. Ursache unklar. Die Bewegung könnte mit der positiven Marktbreite durch den S&P 500 Future bei +2,3 % und einer Video-Erwähnung in den vergangenen drei Tagen zusammenhängen.",
+    "headline": "Critical Metals mit starker Kursbewegung und hohem Volumen",
+    "why_now": "Critical Metals legt um 33,0 % auf 8,955 USD zu. Das Handelsvolumen liegt beim 6,0-Fachen des Durchschnitts, zudem wurde 1 Video in 3 Tagen erfasst. Die gleichzeitige Bewegung des S&P 500 Future von +2,4 % könnte die Nachfrage zusätzlich begünstigt haben. Ursache unklar.",
     "watch_next": [
-     "Volumen im weiteren Handel",
-     "Entwicklung des S&P 500 Future",
+     "Kursentwicklung nach dem starken Anstieg",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-21T22:23:15.152865Z"
+    "generated_at": "2026-09-22T00:20:38.821578Z"
    }
   },
   {
@@ -184,7 +184,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
@@ -223,7 +223,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
@@ -240,7 +240,7 @@
    "name": "Micron",
    "score": 55,
    "priority": "medium",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -251,13 +251,13 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
@@ -269,7 +269,7 @@
    },
    "earnings": {
     "date": "2026-09-21",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "amc"
    }
   },
@@ -289,7 +289,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ]
@@ -310,7 +310,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ]
@@ -331,7 +331,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ]
@@ -352,7 +352,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
@@ -379,7 +379,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ]
@@ -400,7 +400,7 @@
     {
      "type": "market_regime",
      "label": "Marktbreite Bewegung",
-     "value": "S&P 500 Future +2,3 %",
+     "value": "S&P 500 Future +2,4 %",
      "weight": 5
     }
    ],
