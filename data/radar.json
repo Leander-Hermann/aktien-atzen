@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-22T06:20:38.352291Z",
+  "generated_at": "2026-09-22T07:20:43.859761Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 94,
-  "with_quote_data": 57,
+  "symbols_total": 100,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -30,13 +30,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+33,0 %",
+     "value": "+38,6 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,0× Durchschnitt",
+     "value": "7,3× Durchschnitt",
      "weight": 25
     },
     {
@@ -47,22 +47,67 @@
     }
    ],
    "quote": {
-    "price": 8.955,
-    "pct": 32.99,
+    "price": 9.33,
+    "pct": 38.63,
     "cur": "USD",
-    "as_of": "2026-09-21T18:33:54.904387+00:00"
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Critical Metals heute mit starker Kursbewegung",
-    "why_now": "Die Aktie von Critical Metals legte um 33,0 % auf 8,955 USD zu. Gleichzeitig lag das Handelsvolumen beim 6,0-Fachen des Durchschnitts. Zudem wurde das Unternehmen in einem Video innerhalb von 3 Tagen erwähnt, was die erhöhte Aufmerksamkeit erklären könnte. Ursache unklar.",
+    "headline": "Critical Metals fällt heute durch starke Bewegung auf",
+    "why_now": "Die Aktie von Critical Metals steigt um 38,6 % auf 9,33 USD. Das Handelsvolumen liegt beim 7,3-Fachen des Durchschnitts. Zusätzlich wurde die Aktie in den vergangenen drei Tagen in einem Video erwähnt, was als möglicher Aufmerksamkeitstreiber infrage kommt. Ursache unklar.",
     "watch_next": [
-     "Weitere Kursbewegung",
-     "Entwicklung des Handelsvolumens",
+     "Kursbewegung von 38,6 %",
+     "Volumen beim 7,3-Fachen des Durchschnitts",
+     "Eine Video-Erwähnung in drei Tagen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-22T07:20:43.859761Z"
+   }
+  },
+  {
+   "symbol": "META",
+   "name": "Meta",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,3 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 741.245,
+    "pct": 11.34,
+    "cur": "USD",
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Meta mit starker Kursbewegung und hohem Volumen",
+    "why_now": "Die Meta-Aktie legte um 11,3 % auf 741,245 USD zu. Das Handelsvolumen lag beim 2,6-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video erwähnt, was damit zusammenhängen könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung von 11,3 %",
+     "Volumen beim 2,6-Fachen des Durchschnitts",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-22T02:20:46.799690Z"
+    "generated_at": "2026-09-22T07:20:43.859761Z"
    }
   },
   {
@@ -75,13 +120,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-8,1 %",
+     "value": "-8,0 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,9× Durchschnitt",
+     "value": "4,9× Durchschnitt",
      "weight": 25
     },
     {
@@ -92,109 +137,70 @@
     }
    ],
    "quote": {
-    "price": 39.705,
-    "pct": -8.16,
+    "price": 39.8,
+    "pct": -7.96,
     "cur": "USD",
-    "as_of": "2026-09-21T18:33:54.904387+00:00"
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Novo Nordisk fällt bei ungewöhnlich hohem Volumen",
-    "why_now": "Die Aktie von Novo Nordisk liegt bei 39,705 USD und damit 8,16 % im Minus. Das Handelsvolumen beträgt das 3,9-Fache des Durchschnitts. Zudem wurde das Unternehmen in den vergangenen 3 Tagen in 1 Video erwähnt. Ursache unklar.",
+    "headline": "Novo Nordisk mit starker Kursbewegung bei hohem Volumen",
+    "why_now": "Die Aktie von Novo Nordisk liegt bei 39,8 USD und verlor 8,0 %. Das Handelsvolumen beträgt das 4,9-Fache des Durchschnitts. Eine Video-Erwähnung in drei Tagen könnte auf erhöhte Aufmerksamkeit hindeuten, belegt aber keine Ursache. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung",
      "Handelsvolumen",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-21T19:20:34.182774Z"
+    "generated_at": "2026-09-22T07:20:43.859761Z"
    }
   },
   {
-   "symbol": "NOVO-B.CO",
-   "name": "Novo Nordisk",
-   "score": 80,
+   "symbol": "VOW3.DE",
+   "name": "Volkswagen",
+   "score": 75,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-7,7 %",
-     "weight": 45
+     "value": "-5,6 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,1× Durchschnitt",
+     "value": "7,6× Durchschnitt",
      "weight": 25
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
-   "tv_symbol": "OMXCOP:NOVO-B",
+   "tv_symbol": "XETR:VOW3",
    "quote": {
-    "price": 260.0,
-    "pct": -7.65,
-    "cur": "DKK",
-    "as_of": "2026-09-21T18:33:54.904387+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Novo Nordisk fällt bei hohem Handelsvolumen",
-    "why_now": "Die Aktie von Novo Nordisk verlor 7,7 % und notiert bei 260,0 DKK. Das Handelsvolumen lag beim 3,1-Fachen des Durchschnitts. Zusätzlich wurde die Aktie in den vergangenen drei Tagen in einem Video erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung beobachten",
-     "Handelsvolumen beobachten",
-     "Weitere Video-Erwähnungen beobachten"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-21T19:20:34.182774Z"
+    "price": 74.98,
+    "pct": -5.58,
+    "cur": "EUR",
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
    }
   },
   {
-   "symbol": "META",
-   "name": "Meta",
-   "score": 60,
-   "priority": "medium",
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 70,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+12,2 %",
+     "value": "+12,1 %",
      "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 747.77,
-    "pct": 12.32,
-    "cur": "USD",
-    "as_of": "2026-09-21T18:33:54.904387+00:00"
-   }
-  },
-  {
-   "symbol": "BTC-USD",
-   "name": "Bitcoin",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,9 %",
-     "weight": 30
     },
     {
      "type": "volume_spike",
@@ -209,44 +215,236 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "CRYPTO:BTCUSD",
    "quote": {
-    "price": 85922.74,
-    "pct": 5.89,
+    "price": 121.78,
+    "pct": 12.14,
     "cur": "USD",
-    "as_of": "2026-09-21T18:33:54.904387+00:00"
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
    }
   },
   {
-   "symbol": "MU",
-   "name": "Micron",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
+   "symbol": "MSTR",
+   "name": "Strategy",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,6 %",
+     "value": "+9,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
      "weight": 15
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
-    "price": 1042.09,
-    "pct": 2.59,
+    "price": 168.5,
+    "pct": 9.47,
     "cur": "USD",
-    "as_of": "2026-09-21T18:33:54.904387+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-21",
-    "distance_days": -1,
-    "zeit": "amc"
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
+   }
+  },
+  {
+   "symbol": "BTC-USD",
+   "name": "Bitcoin",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,3 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,1× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "CRYPTO:BTCUSD",
+   "quote": {
+    "price": 85472.93,
+    "pct": 5.34,
+    "cur": "USD",
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
+   }
+  },
+  {
+   "symbol": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,2 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "5,1× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:DTE",
+   "quote": {
+    "price": 27.29,
+    "pct": -4.2,
+    "cur": "EUR",
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
+   }
+  },
+  {
+   "symbol": "285A.T",
+   "name": "Kioxia",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,4 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "TSE:285A",
+   "quote": {
+    "price": 54570.0,
+    "pct": 9.4,
+    "cur": "JPY",
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
+   }
+  },
+  {
+   "symbol": "R3NK.DE",
+   "name": "Renk",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,6 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,9× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "XETR:R3NK",
+   "quote": {
+    "price": 41.96,
+    "pct": 5.62,
+    "cur": "EUR",
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
+   }
+  },
+  {
+   "symbol": "MAP.MC",
+   "name": "Mapfre",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,3 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,4× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "BME:MAP",
+   "quote": {
+    "price": 4.454,
+    "pct": -3.3,
+    "cur": "EUR",
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
+   }
+  },
+  {
+   "symbol": "GBF.DE",
+   "name": "Bilfinger",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,3 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,5× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:GBF",
+   "quote": {
+    "price": 56.45,
+    "pct": -3.29,
+    "cur": "EUR",
+    "as_of": "2026-09-22T06:33:28.286508+00:00"
    }
   }
  ]
