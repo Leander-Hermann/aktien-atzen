@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-09-19T08:23:37.712049Z",
-    "trading_day": "2026-09-18",
+    "generated_at": "2026-09-22T08:55:07.075866Z",
+    "trading_day": "2026-09-21",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,301 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-09-19T08:23:37.712049Z"
+    "as_of": "2026-09-22T08:55:07.075866Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc. (Class A)",
-      "sector": "Communication Services",
-      "as_of": "2026-09-18T13:30:00Z",
-      "quote": {
-        "price": 349.54,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/GOOGL",
-        "as_of": "2026-09-18T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 7
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 345.54,
-        "entry_high": 349.54,
-        "stop": 335.04,
-        "target": 378.54,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-07-23",
-              "price": 314.9
-            },
-            "b": {
-              "date": "2026-08-24",
-              "price": 351.6
-            },
-            "c": {
-              "date": "2026-09-10",
-              "price": 327.74
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 364.44
-            },
-            {
-              "ratio": 1.272,
-              "price": 374.42
-            },
-            {
-              "ratio": 1.618,
-              "price": 387.12
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 2,
-      "ticker": "CVX",
-      "name": "Chevron Corporation",
-      "sector": "Energy",
-      "as_of": "2026-09-18T13:30:00Z",
-      "quote": {
-        "price": 209.51,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/CVX",
-        "as_of": "2026-09-18T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 8
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 207.47,
-        "entry_high": 209.51,
-        "stop": 201.85,
-        "target": 224.84,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-08-07",
-              "price": 185.87
-            },
-            "b": {
-              "date": "2026-08-20",
-              "price": 208.98
-            },
-            "c": {
-              "date": "2026-08-27",
-              "price": 197.82
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 220.93
-            },
-            {
-              "ratio": 1.272,
-              "price": 227.22
-            },
-            {
-              "ratio": 1.618,
-              "price": 235.21
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 3,
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "as_of": "2026-09-18T13:30:00Z",
-      "quote": {
-        "price": 665.75,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/META",
-        "as_of": "2026-09-18T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 8
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 655.59,
-        "entry_high": 665.75,
-        "stop": 629.04,
-        "target": 739.16,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-07-30",
-              "price": 524.49
-            },
-            "b": {
-              "date": "2026-08-11",
-              "price": 612.43
-            },
-            "c": {
-              "date": "2026-09-01",
-              "price": 556.1
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 644.04
-            },
-            {
-              "ratio": 1.272,
-              "price": 667.96
-            },
-            {
-              "ratio": 1.618,
-              "price": 698.39
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 4,
-      "ticker": "MSFT",
-      "name": "Microsoft Corporation",
-      "sector": "Information Technology",
-      "as_of": "2026-09-18T13:30:00Z",
-      "quote": {
-        "price": 493.78,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/MSFT",
-        "as_of": "2026-09-18T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 8
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 490.6,
-        "entry_high": 493.78,
-        "stop": 477.32,
-        "target": 531.03,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-08-18",
-              "price": 477.15
-            },
-            "b": {
-              "date": "2026-08-28",
-              "price": 517.78
-            },
-            "c": {
-              "date": "2026-09-10",
-              "price": 486.0
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 526.63
-            },
-            {
-              "ratio": 1.272,
-              "price": 537.68
-            },
-            {
-              "ratio": 1.618,
-              "price": 551.74
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 5,
       "ticker": "T",
       "name": "AT&T Inc.",
       "sector": "Communication Services",
-      "as_of": "2026-09-18T13:30:00Z",
+      "as_of": "2026-09-21T13:30:00Z",
       "quote": {
-        "price": 25.4,
+        "price": 25.45,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/T",
-        "as_of": "2026-09-18T13:30:00Z"
+        "as_of": "2026-09-21T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -331,10 +51,10 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 25.2,
-        "entry_high": 25.4,
-        "stop": 24.43,
-        "target": 27.34,
+        "entry_low": 25.29,
+        "entry_high": 25.45,
+        "stop": 24.53,
+        "target": 27.28,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -363,6 +83,286 @@
             {
               "ratio": 1.618,
               "price": 31.09
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "ticker": "GS",
+      "name": "The Goldman Sachs Group, Inc.",
+      "sector": "Financials",
+      "as_of": "2026-09-21T13:30:00Z",
+      "quote": {
+        "price": 959.39,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/GS",
+        "as_of": "2026-09-21T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 10
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 952.24,
+        "entry_high": 959.39,
+        "stop": 917.55,
+        "target": 1043.07,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-07-29",
+              "price": 977.7
+            },
+            "b": {
+              "date": "2026-08-05",
+              "price": 1077.21
+            },
+            "c": {
+              "date": "2026-08-20",
+              "price": 1001.68
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 1101.19
+            },
+            {
+              "ratio": 1.272,
+              "price": 1128.26
+            },
+            {
+              "ratio": 1.618,
+              "price": 1162.69
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "ticker": "KHC",
+      "name": "The Kraft Heinz Company",
+      "sector": "Consumer Staples",
+      "as_of": "2026-09-21T13:30:00Z",
+      "quote": {
+        "price": 24.37,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/KHC",
+        "as_of": "2026-09-21T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 11
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 24.16,
+        "entry_high": 24.37,
+        "stop": 23.32,
+        "target": 26.47,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-06-22",
+              "price": 22.0
+            },
+            "b": {
+              "date": "2026-07-17",
+              "price": 27.13
+            },
+            "c": {
+              "date": "2026-07-23",
+              "price": 25.17
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 30.29
+            },
+            {
+              "ratio": 1.272,
+              "price": 31.69
+            },
+            {
+              "ratio": 1.618,
+              "price": 33.46
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-09-21T13:30:00Z",
+      "quote": {
+        "price": 41.2,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/SMCI",
+        "as_of": "2026-09-21T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 11
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 40.08,
+        "entry_high": 41.2,
+        "stop": 37.03,
+        "target": 51.4,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-08-24",
+              "price": 34.09
+            },
+            "b": {
+              "date": "2026-08-27",
+              "price": 39.47
+            },
+            "c": {
+              "date": "2026-09-02",
+              "price": 35.63
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 41.01
+            },
+            {
+              "ratio": 1.272,
+              "price": 42.47
+            },
+            {
+              "ratio": 1.618,
+              "price": 44.33
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "ticker": "LLY",
+      "name": "Eli Lilly and Company",
+      "sector": "Health Care",
+      "as_of": "2026-09-21T13:30:00Z",
+      "quote": {
+        "price": 1164.89,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/LLY",
+        "as_of": "2026-09-21T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 12
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 1156.0,
+        "entry_high": 1164.89,
+        "stop": 1118.49,
+        "target": 1292.65,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-07-15",
+              "price": 1134.4
+            },
+            "b": {
+              "date": "2026-07-28",
+              "price": 1232.0
+            },
+            "c": {
+              "date": "2026-08-17",
+              "price": 1163.5
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 1261.1
+            },
+            {
+              "ratio": 1.272,
+              "price": 1287.65
+            },
+            {
+              "ratio": 1.618,
+              "price": 1321.42
             }
           ]
         }
