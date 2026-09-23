@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-23T06:20:38.995173Z",
+  "generated_at": "2026-09-23T07:20:38.021908Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 101,
-  "with_quote_data": 60,
+  "symbols_total": 102,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,177 @@
  },
  "items": [
   {
+   "symbol": "META",
+   "name": "Meta",
+   "score": 90,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+11,3 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "4 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 736.595,
+    "pct": 11.34,
+    "cur": "USD",
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Meta fällt heute durch starke Kursbewegung auf",
+    "why_now": "Meta liegt 11,3 % höher als zuvor. Dabei lag das Handelsvolumen beim 2,6-Fachen des Durchschnitts. Zudem wurden 4 Videos in 3 Tagen erwähnt, was für erhöhte Aufmerksamkeit sprechen könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung beobachten",
+     "Handelsvolumen beobachten",
+     "Video-Erwähnungen beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-23T07:20:38.021908Z"
+   }
+  },
+  {
    "symbol": "CRML",
    "name": "Critical Metals",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+38,6 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "7,3× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 8.54,
+    "pct": 38.63,
+    "cur": "USD",
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Critical Metals mit starkem Tagesanstieg",
+    "why_now": "Die Aktie von Critical Metals stieg um 38,6 % auf 8,54 USD. Das Handelsvolumen lag beim 7,3-Fachen des Durchschnitts, zudem wurde 1 Video-Erwähnung in 3 Tagen erfasst. Ursache unklar. Die Kombination könnte auf eine erhöhte Aufmerksamkeit hindeuten, belegt aber keinen konkreten Auslöser.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-23T07:20:38.021908Z"
+   }
+  },
+  {
+   "symbol": "NVO",
+   "name": "Novo Nordisk",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-8,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "5,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 39.4,
+    "pct": -7.96,
+    "cur": "USD",
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Novo Nordisk mit starker Kursbewegung",
+    "why_now": "Die Aktie von Novo Nordisk liegt bei 39,4 USD und ist um 8,0 % gefallen. Das Handelsvolumen beträgt das 5,0-Fache des Durchschnitts und ist damit ungewöhnlich hoch. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung verzeichnet. Eine konkrete Ursache lässt sich daraus nicht ableiten; Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Video-Erwähnungen beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-23T07:20:38.021908Z"
+   }
+  },
+  {
+   "symbol": "NOVO-B.CO",
+   "name": "Novo Nordisk",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,7 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,2× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "OMXCOP:NOVO-B",
+   "quote": {
+    "price": 258.8,
+    "pct": -7.65,
+    "cur": "DKK",
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
+   }
+  },
+  {
+   "symbol": "AMD",
+   "name": "AMD",
    "score": 70,
    "priority": "high",
    "alert_type": "large_move",
@@ -30,13 +199,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-7,3 %",
+     "value": "+9,9 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
+     "value": "2,3× Durchschnitt",
      "weight": 15
     },
     {
@@ -47,22 +216,97 @@
     }
    ],
    "quote": {
-    "price": 8.655,
-    "pct": -7.29,
+    "price": 623.77,
+    "pct": 9.95,
     "cur": "USD",
-    "as_of": "2026-09-22T18:34:34.770217+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Critical Metals fällt bei erhöhtem Handelsvolumen",
-    "why_now": "Critical Metals verzeichnet eine Kursbewegung von -7,3 %. Das Handelsvolumen liegt beim 1,7-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-22T19:20:42.496319Z"
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
+   }
+  },
+  {
+   "symbol": "MSTR",
+   "name": "Strategy",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 167.33,
+    "pct": 9.47,
+    "cur": "USD",
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
+   }
+  },
+  {
+   "symbol": "QCOM",
+   "name": "Qualcomm",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,3 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 198.27,
+    "pct": 9.29,
+    "cur": "USD",
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
+   }
+  },
+  {
+   "symbol": "MRNA",
+   "name": "Moderna",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+12,3 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 182.56,
+    "pct": 12.27,
+    "cur": "USD",
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
    }
   },
   {
@@ -90,27 +334,21 @@
     "price": 54570.0,
     "pct": 9.4,
     "cur": "JPY",
-    "as_of": "2026-09-22T18:34:34.770217+00:00"
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
    }
   },
   {
-   "symbol": "HG=F",
-   "name": "Kupfer",
-   "score": 50,
+   "symbol": "RKLB",
+   "name": "Rocket Lab",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "volume_spike",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,7 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "14,5× Durchschnitt",
-     "weight": 25
+     "value": "+8,2 %",
+     "weight": 45
     },
     {
      "type": "content_velocity",
@@ -120,10 +358,10 @@
     }
    ],
    "quote": {
-    "price": 6.8685,
-    "pct": 2.69,
+    "price": 71.98,
+    "pct": 8.24,
     "cur": "USD",
-    "as_of": "2026-09-22T18:34:34.770217+00:00"
+    "as_of": "2026-09-23T06:32:38.765285+00:00"
    }
   }
  ]
