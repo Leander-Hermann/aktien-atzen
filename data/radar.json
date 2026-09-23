@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-23T18:20:42.122647Z",
+  "generated_at": "2026-09-23T19:20:40.586481Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 102,
-  "with_quote_data": 58,
+  "symbols_total": 98,
+  "with_quote_data": 57,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,8 @@
  },
  "items": [
   {
-   "symbol": "META",
-   "name": "Meta",
+   "symbol": "WAF.DE",
+   "name": "Siltronic",
    "score": 90,
    "priority": "high",
    "alert_type": "large_move",
@@ -30,8 +30,132 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+11,3 %",
+     "value": "-7,0 %",
      "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,1× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:WAF",
+   "quote": {
+    "price": 76.95,
+    "pct": -7.01,
+    "cur": "EUR",
+    "as_of": "2026-09-23T18:33:38.708819+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Siltronic fällt bei ungewöhnlich hohem Volumen",
+    "why_now": "Die Siltronic-Aktie notiert bei 76,95 EUR und liegt 7,01 % im Minus. Das Handelsvolumen beträgt das 3,1-Fache des Durchschnitts; zudem wurden in drei Tagen zwei Videos erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-23T19:20:40.586481Z"
+   }
+  },
+  {
+   "symbol": "VKTX",
+   "name": "Viking Therapeutics",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+35,3 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "5,2× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 40.735,
+    "pct": 35.3,
+    "cur": "USD",
+    "as_of": "2026-09-23T18:33:38.708819+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Viking Therapeutics mit starkem Kursanstieg",
+    "why_now": "Viking Therapeutics legte um 35,3 % auf 40,735 USD zu. Das Handelsvolumen lag beim 5,2-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-23T19:20:40.586481Z"
+   }
+  },
+  {
+   "symbol": "IONQ",
+   "name": "IonQ",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,8 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,3× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 42.69,
+    "pct": 5.38,
+    "cur": "USD",
+    "as_of": "2026-09-23T18:33:38.708819+00:00"
+   }
+  },
+  {
+   "symbol": "MCD",
+   "name": "McDonald's",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,1 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
@@ -42,249 +166,20 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "4 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 736.595,
-    "pct": 11.34,
-    "cur": "USD",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Meta fällt heute durch starke Kursbewegung auf",
-    "why_now": "Meta liegt 11,3 % höher als zuvor. Dabei lag das Handelsvolumen beim 2,6-Fachen des Durchschnitts. Zudem wurden 4 Videos in 3 Tagen erwähnt, was für erhöhte Aufmerksamkeit sprechen könnte. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung beobachten",
-     "Handelsvolumen beobachten",
-     "Video-Erwähnungen beobachten"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-23T07:20:38.021908Z"
-   }
-  },
-  {
-   "symbol": "CRML",
-   "name": "Critical Metals",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+38,6 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "7,3× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
     }
    ],
    "quote": {
-    "price": 8.54,
-    "pct": 38.63,
+    "price": 237.735,
+    "pct": -4.09,
     "cur": "USD",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Critical Metals mit starkem Tagesanstieg",
-    "why_now": "Die Aktie von Critical Metals stieg um 38,6 % auf 8,54 USD. Das Handelsvolumen lag beim 7,3-Fachen des Durchschnitts, zudem wurde 1 Video-Erwähnung in 3 Tagen erfasst. Ursache unklar. Die Kombination könnte auf eine erhöhte Aufmerksamkeit hindeuten, belegt aber keinen konkreten Auslöser.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-23T07:20:38.021908Z"
+    "as_of": "2026-09-23T18:33:38.708819+00:00"
    }
   },
   {
-   "symbol": "NVO",
-   "name": "Novo Nordisk",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-8,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "5,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 39.4,
-    "pct": -7.96,
-    "cur": "USD",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Novo Nordisk mit starker Kursbewegung",
-    "why_now": "Die Aktie von Novo Nordisk liegt bei 39,4 USD und ist um 8,0 % gefallen. Das Handelsvolumen beträgt das 5,0-Fache des Durchschnitts und ist damit ungewöhnlich hoch. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung verzeichnet. Eine konkrete Ursache lässt sich daraus nicht ableiten; Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung beobachten",
-     "Handelsvolumen beobachten",
-     "Weitere Video-Erwähnungen beobachten"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-23T07:20:38.021908Z"
-   }
-  },
-  {
-   "symbol": "NOVO-B.CO",
-   "name": "Novo Nordisk",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,7 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,2× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "OMXCOP:NOVO-B",
-   "quote": {
-    "price": 258.8,
-    "pct": -7.65,
-    "cur": "DKK",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
-   }
-  },
-  {
-   "symbol": "AMD",
-   "name": "AMD",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,3× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 623.77,
-    "pct": 9.95,
-    "cur": "USD",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
-   }
-  },
-  {
-   "symbol": "MSTR",
-   "name": "Strategy",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,5 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 167.33,
-    "pct": 9.47,
-    "cur": "USD",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
-   }
-  },
-  {
-   "symbol": "QCOM",
-   "name": "Qualcomm",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 198.27,
-    "pct": 9.29,
-    "cur": "USD",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
-   }
-  },
-  {
-   "symbol": "MRNA",
-   "name": "Moderna",
+   "symbol": "ONON",
+   "name": "On Holding",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -292,7 +187,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+12,3 %",
+     "value": "+11,2 %",
      "weight": 45
     },
     {
@@ -303,10 +198,10 @@
     }
    ],
    "quote": {
-    "price": 182.56,
-    "pct": 12.27,
+    "price": 30.375,
+    "pct": 11.2,
     "cur": "USD",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
+    "as_of": "2026-09-23T18:33:38.708819+00:00"
    }
   },
   {
@@ -334,12 +229,12 @@
     "price": 54570.0,
     "pct": 9.4,
     "cur": "JPY",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
+    "as_of": "2026-09-23T18:33:38.708819+00:00"
    }
   },
   {
-   "symbol": "RKLB",
-   "name": "Rocket Lab",
+   "symbol": "ADYEN.AS",
+   "name": "Adyen",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -347,8 +242,14 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+8,2 %",
-     "weight": 45
+     "value": "-4,7 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -357,11 +258,46 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "EURONEXT:ADYEN",
    "quote": {
-    "price": 71.98,
-    "pct": 8.24,
+    "price": 860.6,
+    "pct": -4.7,
+    "cur": "EUR",
+    "as_of": "2026-09-23T18:33:38.708819+00:00"
+   }
+  },
+  {
+   "symbol": "BTC-USD",
+   "name": "Bitcoin",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,4 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "CRYPTO:BTCUSD",
+   "quote": {
+    "price": 84145.12,
+    "pct": -2.35,
     "cur": "USD",
-    "as_of": "2026-09-23T06:32:38.765285+00:00"
+    "as_of": "2026-09-23T18:33:38.708819+00:00"
    }
   }
  ]
