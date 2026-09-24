@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T18:20:41.549285Z",
+  "generated_at": "2026-09-24T19:20:42.742786Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 99,
-  "with_quote_data": 55,
+  "symbols_total": 100,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -21,67 +21,22 @@
  },
  "items": [
   {
-   "symbol": "MCD",
-   "name": "McDonald's",
-   "score": 75,
+   "symbol": "VKTX",
+   "name": "Viking Therapeutics",
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,8 %",
-     "weight": 30
+     "value": "-11,6 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,3× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 238.32,
-    "pct": -4.81,
-    "cur": "USD",
-    "as_of": "2026-09-24T06:33:07.877170+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "McDonald's mit deutlichem Kursrückgang und hohem Volumen",
-    "why_now": "Die McDonald's-Aktie liegt bei 238,32 USD und ist um 4,81 % gefallen. Das Handelsvolumen beträgt das 3,3-Fache des Durchschnitts. Zusätzlich wurden in drei Tagen zwei Videos erwähnt, was für erhöhte Aufmerksamkeit sprechen könnte. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung beobachten",
-     "Handelsvolumen beobachten",
-     "Weitere Video-Erwähnungen beobachten"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-24T07:20:38.381796Z"
-   }
-  },
-  {
-   "symbol": "IONQ",
-   "name": "IonQ",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,4 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,8× Durchschnitt",
+     "value": "4,6× Durchschnitt",
      "weight": 25
     },
     {
@@ -92,15 +47,27 @@
     }
    ],
    "quote": {
-    "price": 42.54,
-    "pct": 4.42,
+    "price": 36.81,
+    "pct": -11.62,
     "cur": "USD",
-    "as_of": "2026-09-24T06:33:07.877170+00:00"
+    "as_of": "2026-09-24T18:33:45.485339+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Viking Therapeutics fällt bei ungewöhnlich hohem Volumen",
+    "why_now": "Viking Therapeutics liegt bei 36,81 USD und damit 11,62 % im Minus. Das Handelsvolumen beträgt das 4,6-Fache des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung registriert. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung in USD",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-24T19:20:42.742786Z"
    }
   },
   {
-   "symbol": "EVK.DE",
-   "name": "Evonik",
+   "symbol": "PL",
+   "name": "Planet Labs",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -108,14 +75,8 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,3 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
+     "value": "+7,3 %",
+     "weight": 45
     },
     {
      "type": "content_velocity",
@@ -124,17 +85,16 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:EVK",
    "quote": {
-    "price": 18.13,
-    "pct": 4.29,
-    "cur": "EUR",
-    "as_of": "2026-09-24T06:33:07.877170+00:00"
+    "price": 17.575,
+    "pct": 7.33,
+    "cur": "USD",
+    "as_of": "2026-09-24T18:33:45.485339+00:00"
    }
   },
   {
-   "symbol": "BZ=F",
-   "name": "Öl Brent",
+   "symbol": "META",
+   "name": "Meta",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -142,22 +102,55 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,6 %",
+     "value": "+4,2 %",
      "weight": 30
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
+     "value": "6 Videos in 3 Tagen",
      "weight": 20
     }
    ],
-   "tv_symbol": "TVC:UKOIL",
    "quote": {
-    "price": 98.37,
-    "pct": -4.57,
+    "price": 775.21,
+    "pct": 4.18,
     "cur": "USD",
-    "as_of": "2026-09-24T06:33:07.877170+00:00"
+    "as_of": "2026-09-24T18:33:45.485339+00:00"
+   }
+  },
+  {
+   "symbol": "VBK.DE",
+   "name": "Verbio",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,1 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:VBK",
+   "quote": {
+    "price": 30.8,
+    "pct": -3.14,
+    "cur": "EUR",
+    "as_of": "2026-09-24T18:33:45.485339+00:00"
    }
   }
  ]
