@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-23T23:20:41.365536Z",
+  "generated_at": "2026-09-24T00:20:37.854435Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -205,34 +205,6 @@
    }
   },
   {
-   "symbol": "285A.T",
-   "name": "Kioxia",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+9,4 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "TSE:285A",
-   "quote": {
-    "price": 54570.0,
-    "pct": 9.4,
-    "cur": "JPY",
-    "as_of": "2026-09-23T18:33:38.708819+00:00"
-   }
-  },
-  {
    "symbol": "ADYEN.AS",
    "name": "Adyen",
    "score": 55,
@@ -288,7 +260,7 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
+     "value": "2 Videos in 3 Tagen",
      "weight": 20
     }
    ],
