@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-09-25T06:31:47+00:00",
+  "generated_at": "2026-09-25T18:31:57+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,19 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-769688",
+   "symbol": "HYQ.DE",
+   "name": "Hypoport",
+   "veroeffentlicht": "2026-09-25T13:46:23+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/hypoport-aktie/hypoport-analyse/#hypoport-die-immobilienkrise-ist-nicht-vorbei"
+   }
+  },
   {
    "id": "lynx-769586",
    "symbol": "DBK.DE",
@@ -1050,32 +1063,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/microsoft-aktie/microsoft-analyse/#microsoft-mit-erholung-wie-koennte-es-weitergehen"
-   }
-  },
-  {
-   "id": "lynx-766280",
-   "symbol": "META",
-   "name": "Meta",
-   "veroeffentlicht": "2026-08-27T06:28:24+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/meta-platforms-aktie/meta-platforms-analyse/#meta-nach-milliardenvergleich-startet-jetzt-das-comeback"
-   }
-  },
-  {
-   "id": "lynx-766267",
-   "symbol": "G1A.DE",
-   "name": "GEA Group",
-   "veroeffentlicht": "2026-08-27T06:23:20+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/gea-group-aktie/gea-group-analyse/#gea-group-auf-leisen-sohlen-weit-gekommen"
    }
   }
  ]
