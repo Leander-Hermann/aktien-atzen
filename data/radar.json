@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-24T23:20:40.380352Z",
+  "generated_at": "2026-09-25T00:20:40.013038Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -66,33 +66,6 @@
    }
   },
   {
-   "symbol": "PL",
-   "name": "Planet Labs",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 17.575,
-    "pct": 7.33,
-    "cur": "USD",
-    "as_of": "2026-09-24T18:33:45.485339+00:00"
-   }
-  },
-  {
    "symbol": "META",
    "name": "Meta",
    "score": 50,
@@ -108,7 +81,7 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "6 Videos in 3 Tagen",
+     "value": "3 Videos in 3 Tagen",
      "weight": 20
     }
    ],
