@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-25T18:20:39.444396Z",
+  "generated_at": "2026-09-25T19:20:42.432811Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 100,
+  "symbols_total": 98,
   "with_quote_data": 58,
   "sources": [
    "watchlist",
@@ -21,23 +21,109 @@
  },
  "items": [
   {
-   "symbol": "WAF.DE",
-   "name": "Siltronic",
-   "score": 90,
+   "symbol": "HFG.DE",
+   "name": "HelloFresh",
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-7,0 %",
+     "value": "-9,5 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,1× Durchschnitt",
+     "value": "4,4× Durchschnitt",
      "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:HFG",
+   "quote": {
+    "price": 2.285,
+    "pct": -9.49,
+    "cur": "EUR",
+    "as_of": "2026-09-25T18:32:21.541254+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "HelloFresh fällt bei ungewöhnlich hohem Volumen",
+    "why_now": "Die Aktie von HelloFresh fällt um 9,49 % auf 2,285 EUR. Das Handelsvolumen liegt beim 4,4-Fachen des Durchschnitts. Zudem wird 1 Video in 3 Tagen genannt. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-25T19:20:42.432811Z"
+   }
+  },
+  {
+   "symbol": "EVK.DE",
+   "name": "Evonik",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,5× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:EVK",
+   "quote": {
+    "price": 19.37,
+    "pct": 7.19,
+    "cur": "EUR",
+    "as_of": "2026-09-25T18:32:21.541254+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Evonik mit deutlichem Tagesanstieg und hohem Volumen",
+    "why_now": "Die Evonik-Aktie legte heute um 7,2 % zu. Gleichzeitig lag das Handelsvolumen beim 4,5-Fachen des Durchschnitts. Ursache unklar. Die eine Video-Erwähnung in drei Tagen könnte auf erhöhte Aufmerksamkeit hindeuten, belegt aber keinen Auslöser.",
+    "watch_next": [
+     "Weitere Kursentwicklung",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-25T19:20:42.432811Z"
+   }
+  },
+  {
+   "symbol": "BZ=F",
+   "name": "Öl",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-8,8 %",
+     "weight": 45
     },
     {
      "type": "content_velocity",
@@ -46,152 +132,55 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:WAF",
+   "tv_symbol": "TVC:UKOIL",
    "quote": {
-    "price": 75.4,
-    "pct": -7.01,
-    "cur": "EUR",
-    "as_of": "2026-09-25T06:32:42.985410+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Siltronic fällt bei hohem Handelsvolumen deutlich",
-    "why_now": "Die Siltronic-Aktie ist um 7,0 % auf 75,4 EUR gefallen. Das Handelsvolumen lag beim 3,1-Fachen des Durchschnitts. Zudem wurden 2 Videos in 3 Tagen erfasst. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung beobachten",
-     "Handelsvolumen mit dem Durchschnitt vergleichen",
-     "Weitere Video-Erwähnungen prüfen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-25T07:20:40.085390Z"
-   }
-  },
-  {
-   "symbol": "VKTX",
-   "name": "Viking Therapeutics",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,8 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "6,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 36.75,
-    "pct": -11.76,
+    "price": 97.21,
+    "pct": -8.81,
     "cur": "USD",
-    "as_of": "2026-09-25T06:32:42.985410+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Viking Therapeutics mit starkem Kursrückgang",
-    "why_now": "Die Aktie von Viking Therapeutics liegt bei 36,75 USD und fällt um 11,76 %. Gleichzeitig beträgt das Handelsvolumen das 6,0-Fache des Durchschnitts, was für eine ungewöhnlich rege Marktaktivität spricht. Ursache unklar. Ein Video wurde in den vergangenen 3 Tagen erwähnt, ein Zusammenhang mit der Kursbewegung ist daraus nicht ableitbar.",
-    "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-25T07:20:40.085390Z"
+    "as_of": "2026-09-25T18:32:21.541254+00:00"
    }
   },
   {
-   "symbol": "XMTR",
-   "name": "Xometry",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 97.38,
-    "pct": -7.27,
-    "cur": "USD",
-    "as_of": "2026-09-25T06:32:42.985410+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Xometry fällt bei auffällig hohem Handelsvolumen",
-    "why_now": "Die Xometry-Aktie liegt bei 97,38 USD und fällt um 7,27 %. Das Handelsvolumen beträgt das 2,4-Fache des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-25T07:20:40.085390Z"
-   }
-  },
-  {
-   "symbol": "META",
-   "name": "Meta",
-   "score": 65,
+   "symbol": "COST",
+   "name": "Costco",
+   "score": 60,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,5 %",
-     "weight": 30
+     "value": "+3,0 %",
+     "weight": 15
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "4 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
-    "price": 777.59,
-    "pct": 4.5,
+    "price": 923.11,
+    "pct": 2.97,
     "cur": "USD",
-    "as_of": "2026-09-25T06:32:42.985410+00:00"
+    "as_of": "2026-09-25T18:32:21.541254+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-24",
+    "distance_days": -1,
+    "zeit": "amc"
    }
   },
   {
-   "symbol": "IONQ",
-   "name": "IonQ",
+   "symbol": "TWLO",
+   "name": "Twilio",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -199,14 +188,8 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,7 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
+     "value": "-7,5 %",
+     "weight": 45
     },
     {
      "type": "content_velocity",
@@ -216,44 +199,10 @@
     }
    ],
    "quote": {
-    "price": 44.98,
-    "pct": 5.74,
+    "price": 277.09,
+    "pct": -7.53,
     "cur": "USD",
-    "as_of": "2026-09-25T06:32:42.985410+00:00"
-   }
-  },
-  {
-   "symbol": "VBK.DE",
-   "name": "Verbio",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,6 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:VBK",
-   "quote": {
-    "price": 30.8,
-    "pct": 4.61,
-    "cur": "EUR",
-    "as_of": "2026-09-25T06:32:42.985410+00:00"
+    "as_of": "2026-09-25T18:32:21.541254+00:00"
    }
   }
  ]
