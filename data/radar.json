@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-26T18:20:36.102437Z",
+  "generated_at": "2026-09-26T19:20:41.692887Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 99,
+  "symbols_total": 100,
   "with_quote_data": 58,
   "sources": [
    "watchlist",
@@ -20,6 +20,52 @@
   ]
  },
  "items": [
+  {
+   "symbol": "HFG.DE",
+   "name": "HelloFresh",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-9,5 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,4× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:HFG",
+   "quote": {
+    "price": 2.285,
+    "pct": -9.49,
+    "cur": "EUR",
+    "as_of": "2026-09-26T18:34:16.919809+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "HelloFresh fällt bei ungewöhnlich hohem Volumen",
+    "why_now": "Die HelloFresh-Aktie gab um 9,5 % nach. Gleichzeitig lag das Handelsvolumen beim 4,4-Fachen des Durchschnitts. Zudem wurde die Aktie in den vergangenen drei Tagen in einem Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-26T19:20:41.692887Z"
+   }
+  },
   {
    "symbol": "TWLO",
    "name": "Twilio",
@@ -50,7 +96,7 @@
     "price": 275.8,
     "pct": -7.96,
     "cur": "USD",
-    "as_of": "2026-09-26T06:32:03.575090+00:00"
+    "as_of": "2026-09-26T18:34:16.919809+00:00"
    },
    "llm": {
     "status": "ready",
@@ -63,6 +109,46 @@
     ],
     "confidence": "low",
     "generated_at": "2026-09-26T07:20:36.937975Z"
+   }
+  },
+  {
+   "symbol": "EVK.DE",
+   "name": "Evonik",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,5× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "XETR:EVK",
+   "quote": {
+    "price": 19.37,
+    "pct": 7.19,
+    "cur": "EUR",
+    "as_of": "2026-09-26T18:34:16.919809+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Evonik mit starkem Kursanstieg und hohem Volumen",
+    "why_now": "Die Evonik-Aktie liegt bei 19,37 EUR und ist heute um 7,2 % gestiegen. Zugleich lag das Handelsvolumen beim 4,5-Fachen des Durchschnitts. Das spricht für eine erhöhte Marktaktivität, liefert aber keinen eindeutigen Grund für die Bewegung. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach dem Anstieg",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere prozentuale Tagesbewegung"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-26T19:20:41.692887Z"
    }
   },
   {
@@ -101,46 +187,12 @@
     "price": 922.765,
     "pct": 2.93,
     "cur": "USD",
-    "as_of": "2026-09-26T06:32:03.575090+00:00"
+    "as_of": "2026-09-26T18:34:16.919809+00:00"
    },
    "earnings": {
     "date": "2026-09-24",
     "distance_days": -2,
     "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "VBK.DE",
-   "name": "Verbio",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,1 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:VBK",
-   "quote": {
-    "price": 30.36,
-    "pct": -3.14,
-    "cur": "EUR",
-    "as_of": "2026-09-26T06:32:03.575090+00:00"
    }
   }
  ]
