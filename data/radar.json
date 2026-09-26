@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-25T23:20:36.524056Z",
+  "generated_at": "2026-09-26T00:20:39.837001Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -69,7 +69,7 @@
   {
    "symbol": "EVK.DE",
    "name": "Evonik",
-   "score": 80,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -84,12 +84,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "4,5× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "tv_symbol": "XETR:EVK",
@@ -101,15 +95,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Evonik mit deutlichem Tagesanstieg und hohem Volumen",
-    "why_now": "Die Evonik-Aktie legte heute um 7,2 % zu. Gleichzeitig lag das Handelsvolumen beim 4,5-Fachen des Durchschnitts. Ursache unklar. Die eine Video-Erwähnung in drei Tagen könnte auf erhöhte Aufmerksamkeit hindeuten, belegt aber keinen Auslöser.",
+    "headline": "Evonik mit deutlichem Tagesplus und hohem Volumen",
+    "why_now": "Die Evonik-Aktie liegt heute 7,2 % im Plus und notiert bei 19,37 EUR. Das Handelsvolumen beträgt das 4,5-Fache des Durchschnitts. Ursache unklar. Das hohe Volumen dürfte die auffällige Kursbewegung begleitet haben.",
     "watch_next": [
-     "Weitere Kursentwicklung",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
+     "Kursentwicklung nach dem Tagesplus",
+     "Handelsvolumen im weiteren Verlauf",
+     "Bestätigung der Bewegung"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-25T19:20:42.432811Z"
+    "generated_at": "2026-09-26T00:20:39.837001Z"
    }
   },
   {
@@ -138,44 +132,6 @@
     "pct": -8.81,
     "cur": "USD",
     "as_of": "2026-09-25T18:32:21.541254+00:00"
-   }
-  },
-  {
-   "symbol": "COST",
-   "name": "Costco",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,0 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 923.11,
-    "pct": 2.97,
-    "cur": "USD",
-    "as_of": "2026-09-25T18:32:21.541254+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-24",
-    "distance_days": -1,
-    "zeit": "amc"
    }
   },
   {
