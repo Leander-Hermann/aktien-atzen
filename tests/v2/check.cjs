@@ -1245,6 +1245,184 @@ async function gruppeAsync(titel, fn) {
   await fn();
   console.log((fehler === vorher ? 'ok    ' : 'FEHLER') + ' ' + titel);
 }
+/* ===== V2-7 Teil B — Raum „Mehr" ==========================================================
+   Die V1 ist hier die Referenz: Rechtstexte, Rechen- und Filterlogik werden aus index.html
+   UND v2.html geschnitten und gegeneinander geprueft — Textgleichheit und Rechengleichheit. */
+const v1html = fs.readFileSync(path.join(__dirname, '..', '..', 'index.html'), 'utf8').replace(/\r\n/g, '\n');
+const v2n = html.replace(/\r\n/g, '\n');
+/* Zeilen von der ersten, die mit `von` beginnt, bis zur ersten, die mit `bis` beginnt (inklusive). */
+function zeilen(quelle, von, bis) {
+  const z = quelle.split('\n');
+  const a = z.findIndex(l => l.startsWith(von)), b = z.findIndex((l, i) => i >= a && l.startsWith(bis));
+  if (a < 0 || b < 0) throw new Error('Zeilen nicht gefunden: ' + von + ' … ' + bis);
+  return z.slice(a, b + 1).join('\n');
+}
+const norm = s => String(s).replace(/<!--[\s\S]*?-->/g, '').replace(/\s+/g, ' ').trim();
+/* Der Inhalt eines Rechtsabschnitts in v2.html: vom Container bis zu seinem schliessenden div. */
+function v2Legal(k) {
+  const a = v2n.indexOf('data-mhlegal="' + k + '">');
+  if (a < 0) throw new Error('Rechtsabschnitt fehlt: ' + k);
+  const start = a + ('data-mhlegal="' + k + '">').length;
+  const ende = v2n.indexOf('\n        </div>\n      </section>', start);
+  return v2n.slice(start, ende);
+}
+/* Das V1-Objekt LEGAL wird ausgefuehrt, nicht abgeschrieben. */
+const v1box = {};
+vm.createContext(v1box);
+vm.runInContext(zeilen(v1html, 'const LEGAL={', '};').replace('const LEGAL=', 'var LEGAL='), v1box);
+
+gruppe('V2-7 Teil B.1 — Impressum und Lizenz wörtlich zur V1, Datenschutz nur in 3 und 4 geändert', () => {
+  pruef('Impressum textgleich zu LEGAL.impressum', norm(v2Legal('impressum')), norm(v1box.LEGAL.impressum.html));
+  pruef('Lizenz textgleich zu LEGAL.lizenz (samt Verwendete Software)', norm(v2Legal('lizenz')), norm(v1box.LEGAL.lizenz.html));
+  /* Datenschutz je Abschnitt (an den h4-Überschriften geschnitten): alles ausser 3 und 4
+     unveraendert, 3 und 4 geaendert und im Markup markiert. */
+  const abschnitte = s => norm(s).split(/(?=<h4>)/).map(x => x.trim());
+  const alt = abschnitte(v1box.LEGAL.datenschutz.html), neu = abschnitte(v2Legal('datenschutz'));
+  pruef('Datenschutz hat dieselben Überschriften', neu.map(x => (x.match(/^<h4>[^<]*<\/h4>/) || [''])[0]), alt.map(x => (x.match(/^<h4>[^<]*<\/h4>/) || [''])[0]));
+  const geaendert = neu.map((b, i) => b === alt[i] ? null : (b.match(/^<h4>([^<]*)<\/h4>/) || [, 'Vorspann'])[1]).filter(Boolean);
+  pruef('nur die Abschnitte 3 und 4 weichen ab', geaendert, ['3. Kurs- und Marktdaten', '4. Eingebundene Drittinhalte']);
+  pruef('jeder Absatz in 3 und 4 ist als geändert markiert', neu.filter(b => /^<h4>[34]\./.test(b)).every(b =>
+    (b.match(/<p[ >]/g) || []).length === (b.match(/<p data-mhgeaendert="[34]">/g) || []).length), true);
+  /* Negativfall DoD 2: ein V1-Absatz über einen Drittdienst, den V2 nicht nutzt, bleibt stehen ⇒ rot. */
+  const ds = v2Legal('datenschutz');
+  ['corsproxy.io', 'production.dataviz.cnn.io', 'i.ytimg.com', 'tradingview.com'].forEach(h =>
+    pruef('kein ungenutzter Dienst genannt: ' + h, ds.indexOf(h), -1));
+  /* Jeder gemessene Drittdienst ist genannt (Messung in AA-20260928-FE-01-E01-T02, Abschnitt F). */
+  ['cdn.jsdelivr.net', 'query1.finance.yahoo.com', 'api.allorigins.win', 'pbs.twimg.com', 'GoatCounter', 'GitHub Pages'].forEach(h =>
+    pruef('gemessener Dienst genannt: ' + h, ds.indexOf(h) > -1, true));
+  pruef('Platzhaltersatz entfernt', v2n.indexOf('Die Inhalte folgen im nächsten Schritt'), -1);
+  pruef('„Darstellung" bleibt', /id="mhDarstellung"[\s\S]{0,400}data-theme-wahl="auto"/.test(v2n), true);
+});
+
+gruppe('V2-7 Teil B.2 — Impressum und Datenschutz aus jedem Raum als Textlink', () => {
+  const fuss = v2n.slice(v2n.indexOf('<footer class="fuss">'), v2n.indexOf('</footer>'));
+  pruef('Fußzeile steht im #app nach dem letzten Raum, außerhalb jeder .raum-Fläche',
+    v2n.indexOf('<footer class="fuss">') > v2n.lastIndexOf('<section class="raum"') &&
+    v2n.indexOf('<footer class="fuss">') > v2n.indexOf('id="raum-suche"') &&
+    v2n.indexOf('<footer class="fuss">') < v2n.indexOf('</main>'), true);
+  const links = [...fuss.matchAll(/<button type="button" class="ghost" data-mhziel="([^"]+)">([^<]*)<\/button>/g)].map(m => [m[1], m[2]]);
+  /* Negativfall DoD 3: ein Link nur als Symbol hat keinen Text — dann fehlt er hier. */
+  pruef('Textlinks Impressum und Datenschutz (und Lizenz) mit Ziel', links,
+    [['mhImpressum', 'Impressum'], ['mhDatenschutz', 'Datenschutz'], ['mhLizenz', 'Lizenz']]);
+  links.forEach(([id]) => pruef('Ziel ' + id + ' liegt in „Mehr" und trägt eine fokussierbare Überschrift',
+    new RegExp('id="' + id + '"[^>]*>\\s*<div class="jz-kopf"><h3 class="t-h2" id="' + id + 'H" tabindex="-1">').test(v2n) &&
+    v2n.indexOf('id="' + id + '"') > v2n.indexOf('id="raum-mehr"') && v2n.indexOf('id="' + id + '"') < v2n.indexOf('id="raum-suche"'), true));
+  pruef('©-Zeile wie in der V1', /<p class="t-caption fuss-copy">© 2026 Aktien Atzen · Alle Rechte vorbehalten<\/p>/.test(fuss), true);
+});
+
+gruppe('V2-7 Teil B.3 — Attribution lightweight-charts in v2.html und index.html, CSP unverändert', () => {
+  const NOTICE = 'TradingView Lightweight Charts™<br>Copyright (с) 2023 TradingView, Inc. ';
+  const LINK = '<a href="https://www.tradingview.com/" target="_blank" rel="noopener noreferrer">https://www.tradingview.com/</a>';
+  pruef('NOTICE-Satz samt https-Link in v2.html', v2n.indexOf(NOTICE + LINK) > -1, true);
+  pruef('NOTICE-Satz samt https-Link in index.html', v1html.indexOf(NOTICE + LINK) > -1, true);
+  pruef('„(с)" ist das kyrillische с aus der NOTICE-Datei', NOTICE.charCodeAt(NOTICE.indexOf('(') + 1), 0x441);
+  /* Negativfall DoD 4: http:// statt https:// ⇒ der Satz wird oben nicht mehr gefunden. */
+  pruef('kein http-Link auf tradingview', /http:\/\/www\.tradingview/.test(v2n) || /http:\/\/www\.tradingview/.test(v1html), false);
+  const csp = s => (s.match(/<meta http-equiv="Content-Security-Policy" content="([^"]+)"/) || [])[1];
+  pruef('Meta-CSP zeichengleich zwischen v2.html und index.html', csp(v2n) === csp(v1html) && !!csp(v2n), true);
+  pruef('script-src unverändert', (csp(v2n).match(/script-src [^;]+/) || [])[0], "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://gc.zgo.at");
+});
+
+/* KO-Rechner und Quartalszahlen: dieselbe Logik zweimal ausfuehren — einmal aus der V1, einmal
+   aus v2.html — und die Ergebnisse vergleichen. */
+function rechenBox(quelle) {
+  const felder = {}, out = { koOut: { innerHTML: '', querySelectorAll: () => [] }, fibOut: { innerHTML: '', querySelectorAll: () => [] } };
+  const b = {
+    felder, out, console,
+    document: { getElementById: id => id in out ? out[id] : (id in felder ? { value: felder[id] } : null) }
+  };
+  vm.createContext(b);
+  vm.runInContext(zeilen(quelle, "let koTypeVal='long';", 'function koFib(').replace("let koTypeVal='long';", "var koTypeVal='long';") + '\n' +
+    "var EARN=null,ERECAP=null,earnMode='cal',earnRange='week',earnRegion='',earnIndex='',earnWLonly=false,earnSortKey='reaktion',earnSortDir=-1,EARNWL=new Set();\n" +
+    zeilen(quelle, 'function earnHasCal(', 'function eFilteredEntries(') + '\n' +
+    zeilen(quelle, 'function eRecapSorted(', 'function eRecapSorted(') + '\n' +
+    zeilen(quelle, 'function validTicker(', 'function validTicker('), b, { filename: 'rechenbox' });
+  return b;
+}
+const r1 = rechenBox(v1html), r2 = rechenBox(v2n);
+
+gruppe('V2-7 Teil B.4 — KO-Rechner rechnet zeichengleich zur V1', () => {
+  ["let koTypeVal='long';", 'function knum(', 'function eurv(', 'function pctv(', 'function nv(', 'function korow(', 'function koCalc('].forEach(p =>
+    pruef('Quelle zeichengleich: ' + p, zeilen(v2n, p, p), zeilen(v1html, p, p)));
+  const faelle = [
+    ['Long mit Strike, KO, TP, SL, Einsatz', 'long', { koS: '182,40', koBV: '0,1', koStrike: '150,00', koKO: '150,00', koTP: '195,00', koSL: '172,00', koStake: '1000' }],
+    ['Short, Strike aus Scheinkurs', 'short', { koS: '182,40', koBV: '0,1', koCert: '3,24', koTP: '170', koSL: '190' }],
+    ['bereits ausgeknockt', 'long', { koS: '140', koBV: '1', koStrike: '150' }]
+  ];
+  faelle.forEach(([name, typ, werte]) => {
+    [r1, r2].forEach(b => { Object.keys(b.felder).forEach(k => delete b.felder[k]); Object.assign(b.felder, werte); vm.runInContext('koTypeVal=' + JSON.stringify(typ) + ';koCalc()', b); });
+    pruef('gleiches Ergebnis: ' + name, r2.out.koOut.innerHTML, r1.out.koOut.innerHTML);
+    pruef('Ergebnis nicht leer: ' + name, r2.out.koOut.innerHTML.length > 100, true);
+  });
+  /* Rechnung von Hand: (182,40 − 150) × 0,1 = 3,24 €; Hebel 18,24 / 3,24 = 5,63. */
+  Object.keys(r2.felder).forEach(k => delete r2.felder[k]); Object.assign(r2.felder, faelle[0][2]);
+  vm.runInContext("koTypeVal='long';koCalc()", r2);
+  pruef('Fall 1 von Hand nachgerechnet: Scheinkurs 3,24 €, Hebel × 5,63', /3,24 €/.test(r2.out.koOut.innerHTML) && /× 5,63/.test(r2.out.koOut.innerHTML), true);
+  /* koFib: Rechnung gleich, nur die Marke ist ein Knopf. Verglichen werden Beschriftung und Wert jeder Zeile. */
+  const fib = q => zeilen(q, 'function koFib(', 'function koFib(');
+  const fibV1 = fib(v1html), fibV2 = fib(v2n);
+  pruef('koFib: einziger Unterschied ist das Element der Marke',
+    fibV2.replace(/<button type="button" class="fibset" data-v="\$\{v\.toFixed\(2\)\}" data-set="(tp|sl)" aria-label="[^"]*">(→TP|→SL)<\/button>/g, '<span class="fibset" data-v="${v.toFixed(2)}" data-set="$1">$2</span>'), fibV1);
+  pruef('koFib: Marke ist ein Knopf', /<button type="button" class="fibset"/.test(fibV2), true);
+  /* die Werte selbst */
+  const fb = quelle => { const b = rechenBox(quelle); vm.runInContext(fib(quelle), b); b.felder.fibH = '195,00'; b.felder.fibL = '150,00'; vm.runInContext('koFib()', b); return [...b.out.fibOut.innerHTML.matchAll(/data-v="([^"]+)" data-set="tp"/g)].map(m => m[1]); };
+  pruef('Fibonacci-Marken gleich (9 Stufen)', fb(v2n), fb(v1html));
+  pruef('Fibonacci 0,618 von 195/150 = 167,19', fb(v2n)[4], '167.19');
+  pruef('Eingaben nur numerisch (mhNurZahl)', vm.runInContext(schneide('mhNurZahl') + ';mhNurZahl("12a,5€ -3")', vm.createContext({})), '12,5 -3');
+});
+
+gruppe('V2-7 Teil B.5 — Quartalszahlen filtern und sortieren wie die V1', () => {
+  ['function earnHasCal(', 'function earnHasRecap(', 'function eRegionGroup(', 'function eNum(', 'function eISO(', 'function eWeekStart(',
+    'function eRangeBounds(', 'function eFilteredEntries(', 'function eRecapSorted(', 'function eEntryWatched(', 'function eDeriveCode('].forEach(p =>
+    pruef('Quelle zeichengleich: ' + p, zeilen(v2n, p, p), zeilen(v1html, p, p)));
+  const heute = new Date(); heute.setHours(0, 0, 0, 0);
+  const iso = d => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  const tag = n => { const d = new Date(heute); d.setDate(d.getDate() + n); return iso(d); };
+  const EARN = { updated: '2026-09-28T05:00:00Z', eintraege: [
+    { ticker: 'AAPL', name: 'Apple', date: tag(0), zeit: 'amc', region: 'US', index: 'Nasdaq 100', status: 'scheduled', eps_est: 1.2, rev_est: 9e10 },
+    { ticker: 'SAP.DE', name: 'SAP', date: tag(0), zeit: 'bmo', region: 'DE', index: 'DAX', status: 'scheduled' },
+    { ticker: 'TSM', name: 'TSMC', date: tag(8), zeit: 'tbd', region: 'TW', index: 'TWSE', status: 'scheduled' },
+    { ticker: 'WMT', name: 'Walmart', date: tag(30), region: 'US', index: 'S&P 500', status: 'reported', eps_act: 0.6, eps_est: 0.62, surprise_pct: -3.2, reaktion_pct: -6.5 }
+  ] };
+  const lauf = (b, zustand) => { b.EARN = EARN; vm.runInContext('EARN=this.EARN;' + zustand + ';EARNWL=new Set(["AAPL","TSM"]);', b); return vm.runInContext('eFilteredEntries().map(e=>e.ticker)', b); };
+  [['Heute', "earnRange='today';earnRegion='';earnIndex='';earnWLonly=false"],
+   ['Alle, Region Asien', "earnRange='all';earnRegion='AS';earnIndex='';earnWLonly=false"],
+   ['Alle, Index Nasdaq 100, nur Bestand', "earnRange='all';earnRegion='';earnIndex='Nasdaq 100';earnWLonly=true"],
+   ['Alle, nur Bestand', "earnRange='all';earnRegion='';earnIndex='';earnWLonly=true"]].forEach(([name, z]) =>
+    pruef('Filterfall gleich V1: ' + name, lauf(r2, z), lauf(r1, z)));
+  pruef('Filterfall Heute liefert beide Tagestermine', lauf(r2, "earnRange='today';earnRegion='';earnIndex='';earnWLonly=false").sort(), ['AAPL', 'SAP.DE']);
+  pruef('Region Asien fasst TW', lauf(r2, "earnRange='all';earnRegion='AS';earnIndex='';earnWLonly=false"), ['TSM']);
+  const ER = { tabelle: [
+    { ticker: 'WMT', name: 'Walmart', reaktion_pct: -6.5, eps_surprise_pct: -3.2, rev_surprise_pct: -1.2 },
+    { ticker: 'NVDA', name: 'Nvidia', reaktion_pct: 3.1, eps_surprise_pct: 8.4, rev_surprise_pct: 2.2 },
+    { ticker: 'KO', name: 'Coca-Cola', reaktion_pct: 0.4, eps_surprise_pct: 1.0, rev_surprise_pct: -0.5 }] };
+  const sortiert = (b, k, d) => { b.ERECAP = ER; vm.runInContext('ERECAP=this.ERECAP;earnSortKey=' + JSON.stringify(k) + ';earnSortDir=' + d, b); return vm.runInContext('eRecapSorted().map(r=>r.ticker)', b); };
+  pruef('Sortierung Reaktion (Betrag, absteigend) gleich V1', sortiert(r2, 'reaktion', -1), sortiert(r1, 'reaktion', -1));
+  pruef('Sortierung Reaktion ergibt WMT, NVDA, KO', sortiert(r2, 'reaktion', -1), ['WMT', 'NVDA', 'KO']);
+  pruef('Sortierung EPS-Überraschung gleich V1', sortiert(r2, 'eps', -1), sortiert(r1, 'eps', -1));
+  pruef('Sortierung Name gleich V1', sortiert(r2, 'name', 1), sortiert(r1, 'name', 1));
+  /* Tagesreihenfolge: mhEarnTage traegt die Sortierzeile aus renderEarnCal() zeichengleich. */
+  const sortZeile = (v1html.split('\n').find(l => l.startsWith('  list.sort((a,b)=>a.date<b.date')) || '').trim();
+  pruef('Tagessortierung zeichengleich aus renderEarnCal()', !!sortZeile && schneide('mhEarnTage').indexOf(sortZeile) > -1, true);
+});
+
+gruppe('V2-7 Teil B.5 — Nachlese-Signale: S2 mit Etikett und Kante, Treffer ⇒ Feld entfällt', () => {
+  vm.runInContext(schneide('mhEarnSignalHTML'), box);
+  box.SIG = { titel: 'Konsum schwächer', branche: 'Einzelhandel', tickers: ['WMT', 'javascript:x'], kernaussage: 'Mehrere Händler melden weniger Umsatz.',
+    einordnung: 'Für die Branche ist das ein Kaufsignal.', einschaetzung: 'defensiv neutral', belege: [{ bezug: 'EPS -3,2 % Miss' }], konfidenz: 'mittel' };
+  const h = vm.runInContext('mhEarnSignalHTML(SIG)', box);
+  /* Negativfall DoD 5: „Kaufsignal" in der Nachlese-einordnung wird gerendert ⇒ rot. */
+  pruef('einordnung mit „Kaufsignal" entfällt', /Kaufsignal/.test(h), false);
+  pruef('Etikett der Seite als Sprecher', /Einordnung dieser Seite · maschinell erzeugt/.test(h), true);
+  pruef('gestrichelte Kante (mw-eigen)', /mw-fremd mw-eigen/.test(h), true);
+  pruef('übrige Felder bleiben', /Konsum schwächer/.test(h) && /weniger Umsatz/.test(h) && /EPS -3,2 % Miss/.test(h), true);
+  pruef('Ticker nur über validTicker', /javascript/.test(h), false);
+  box.SIG = { titel: 'Jetzt einsteigen', kernaussage: 'Top Pick der Saison' };
+  pruef('ohne erlaubten Text entfällt das Signal ganz', vm.runInContext('mhEarnSignalHTML(SIG)', box), '');
+  box.SIG = { titel: '<img src=x onerror=alert(1)>', kernaussage: 'x' };
+  pruef('Signaltext escapet', /<img/.test(vm.runInContext('mhEarnSignalHTML(SIG)', box)), false);
+});
+
 const KURSPFAD = gruppeAsync('Kurspfad - toter Proxy entfernt, Zeitlimit 10 s, ehrlicher Grund statt Stille', async () => {
   const quelle = schneide('ywFetch');
   pruef('genau ein Proxy-Host im Abruf', (quelle.match(/https:\/\/[a-z.]+\/[^'\s]*url=/g) || []).length, 1);

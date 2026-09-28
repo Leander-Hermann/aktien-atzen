@@ -648,6 +648,99 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   textarea.mw-input{padding:var(--sp-2) var(--sp-3);line-height:1.45;resize:vertical}
   .mw-code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;
     word-break:break-all}
+
+  /* ==========================================================================
+     V2-7 Teil B — Raum „Mehr": Quartalszahlen, KO-Rechner, Darstellung, Rechtliches.
+     Kein neues Raster: die Werkzeugkarten nutzen .jz-grid (Spurenregel §4.2, ADR-713),
+     die Abschnitte stehen wie im Raum „Radar" untereinander. Werte nur aus den Tokens;
+     die Klassen .kores/.koformula/.fibrow … erzeugen koCalc/koFib (zeichengleich aus der
+     V1), deshalb tragen sie ihre V1-Namen und sind hier nur neu gesetzt.
+     ========================================================================== */
+  .mh{display:flex;flex-direction:column;gap:var(--sp-8);margin-top:var(--sp-6)}
+  .mh-sprung{margin-top:var(--sp-4)}
+  /* Sprungziele landen unter der sticky Kopfleiste, nicht dahinter */
+  .mh>.jz-sek{scroll-margin-top:calc(var(--appbar-h) + var(--sp-4))}
+  .mh>.jz-sek,.fuss{container-type:inline-size}
+  .mh-karte{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .mh-paar{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp-3)}
+  .mh-opt{font-weight:500}
+  .mh-notiz,.mh-leise{color:var(--muted)}
+  .kores{display:flex;justify-content:space-between;align-items:baseline;gap:var(--sp-3);
+    padding:var(--sp-3) 0;border-bottom:1px solid var(--line)}
+  .kores:last-child{border-bottom:0}
+  .kores .kl{font-size:12.5px;line-height:1.45;font-weight:500;color:var(--muted)}
+  .kores .kv{font-size:16px;line-height:1.3;font-weight:650;text-align:right;font-variant-numeric:tabular-nums}
+  .koformula{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;line-height:1.35;
+    color:var(--muted);background:var(--chip);border-radius:var(--radius-sm);padding:var(--sp-2) var(--sp-3);
+    margin:var(--sp-1) 0;overflow-x:auto;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .kowarn{font-size:12.5px;line-height:1.45;color:var(--down);background:color-mix(in srgb,var(--down) 16%,transparent);
+    border-radius:var(--radius-sm);padding:var(--sp-2) var(--sp-3);margin:0 0 var(--sp-3)}
+  .kogood{color:var(--up)}
+  .kobad{color:var(--down)}
+  .fibrow{display:flex;justify-content:space-between;align-items:center;gap:var(--sp-2);
+    border-bottom:1px solid var(--line);font-size:12.5px;line-height:1.45}
+  .fibrow:last-child{border-bottom:0}
+  .fibrow .fl{color:var(--muted)}
+  .fibrow .fv{font-weight:600;font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:var(--sp-2)}
+  .fibset{min-width:44px;min-height:44px;padding:0 var(--sp-2);border:0;border-radius:var(--radius-pill);
+    background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--accent-ink);
+    font:inherit;font-size:11px;font-weight:600;letter-spacing:.02em;cursor:pointer}
+  .fibset:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+  /* Quartalszahlen */
+  .mh-filter{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .mh-filterzeile{display:flex;flex-direction:column;gap:var(--sp-1)}
+  .mh-filterzeile>.t-caption{color:var(--muted)}
+  .mh-filterzeile .ghostreihe{margin-top:0}
+  .mh-tagkarte{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .mh-eintrag{display:flex;flex-direction:column;gap:var(--sp-2);padding:var(--sp-3) 0;border-bottom:1px solid var(--line)}
+  .mh-eintrag:first-child{padding-top:0}
+  .mh-eintrag:last-child{border-bottom:0;padding-bottom:0}
+  .mh-ekopf{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp-2)}
+  .mh-ename{font-weight:600}
+  .mh-metrik{display:flex;flex-wrap:wrap;gap:var(--sp-1) var(--sp-3);font-size:12.5px;line-height:1.45;
+    font-variant-numeric:tabular-nums}
+  .mh-plus{color:var(--up);font-weight:700}
+  .mh-minus{color:var(--down);font-weight:700}
+  .jz-chip.plus{background:color-mix(in srgb,var(--up) 16%,transparent);color:var(--up)}
+  .jz-chip.minus{background:color-mix(in srgb,var(--down) 16%,transparent);color:var(--down)}
+  .mh-tabelle{width:100%;border-collapse:collapse;font-size:12.5px;line-height:1.45;font-variant-numeric:tabular-nums}
+  .mh-tabelle th{text-align:left;font-size:11px;line-height:1.35;font-weight:600;letter-spacing:.02em;color:var(--muted);
+    padding:var(--sp-2) var(--sp-3);border-bottom:1px solid var(--line);white-space:nowrap}
+  .mh-tabelle td{padding:var(--sp-3);border-bottom:1px solid var(--line);vertical-align:top}
+  .mh-tabelle tbody tr:last-child td{border-bottom:0}
+  .mh-tabelle tr:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+  .mh-tabelle a{display:inline-flex;align-items:center;min-height:44px}
+  .mh-tabelle tr.mh-hl{background:color-mix(in srgb,var(--accent) 16%,transparent)}
+  /* Unter 42,5rem Abschnittsbreite (680 px, der V1-Umschaltpunkt) wird jede Zeile eine
+     Kachel; die Spaltennamen kommen aus data-l. Container, nicht Fenster (§4.2). */
+  @container (max-width:42.5rem){
+    .mh-tabelle thead{display:none}
+    .mh-tabelle,.mh-tabelle tbody,.mh-tabelle tr,.mh-tabelle td{display:block;width:100%}
+    .mh-tabelle tr{padding:var(--sp-2) 0;border-bottom:1px solid var(--line)}
+    .mh-tabelle tbody tr:last-child{border-bottom:0}
+    .mh-tabelle td{display:flex;justify-content:space-between;gap:var(--sp-3);border:0;padding:var(--sp-1) 0}
+    .mh-tabelle td::before{content:attr(data-l);color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.02em}
+  }
+  .mh-signal{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .mh-signal .mw-fremd{max-width:min(54ch,100%)}
+
+  /* Rechtliches: statischer eigener Text, Fließtextdeckel §4.1 */
+  .mh-text{display:flex;flex-direction:column;gap:var(--sp-3)}
+  .mh-text p{max-width:min(54ch,100%)}
+  .mh-text h4{font-size:16px;line-height:1.3;font-weight:650;letter-spacing:-.01em;margin:var(--sp-3) 0 0}
+  .mh-text code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12.5px;
+    background:var(--chip);border-radius:var(--radius-sm);padding:0 var(--sp-1)}
+  .mh-text .draftnote{font-size:12.5px;line-height:1.45;color:var(--warn);background:color-mix(in srgb,var(--warn) 16%,transparent);
+    border-radius:var(--radius-sm);padding:var(--sp-3) var(--sp-4);max-width:min(54ch,100%)}
+  .mh-text .lph{color:var(--muted)}
+  .mh-text a{overflow-wrap:anywhere}
+
+  /* Fußzeile (Teil B.2): in jedem Raum sichtbar, Textlinks mit 44-px-Zielen */
+  .fuss{margin-top:var(--sp-12);padding-top:var(--sp-6);border-top:1px solid var(--line);
+    display:flex;flex-direction:column;gap:var(--sp-2)}
+  .fuss-links{margin-top:0}
+  .fuss-copy{color:var(--muted)}
   /* §4.2 Punkt 3: dieselbe Spurenregel wie überall, hier nur mit schmalerer Idealbreite —
      ein Zahlenfeld braucht keine 35rem. */
   .mw-raster{display:grid;gap:var(--sp-3);
@@ -1100,12 +1193,157 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
 
   <section class="raum" id="raum-mehr" data-raum="mehr" aria-labelledby="h-mehr" hidden>
     <h2 id="h-mehr" tabindex="-1">Mehr</h2>
-    <p class="platzhalter">Werkzeuge und Rechtliches. Die Inhalte folgen im nächsten Schritt.</p>
-    <h3 style="margin-top:var(--sp-6)">Darstellung</h3>
-    <div class="ghostreihe" role="group" aria-label="Farbschema">
-      <button type="button" class="ghost" data-theme-wahl="auto">Automatisch</button>
-      <button type="button" class="ghost" data-theme-wahl="light">Hell</button>
-      <button type="button" class="ghost" data-theme-wahl="dark">Dunkel</button>
+    <!-- V2-7 Teil B: „Mehr" ist ein Raum, kein Dialog (Freeze, Tabelle der Räume). Inhalt aus dem
+         Bestand der V1: Rechen- und Filterlogik und alle Texte übernommen, neu sind nur Markup und
+         CSS. Reihenfolge (Interpretations-Entscheid, Tagebuch 28.09.): erst die beiden Werkzeuge,
+         dann die Darstellung, zuletzt das Rechtliche — das Rechtliche erreicht man zusätzlich aus
+         jedem Raum über die Fußzeile. -->
+    <nav class="ghostreihe mh-sprung" aria-label="Abschnitte in Mehr">
+      <button type="button" class="ghost" data-mhziel="mhEarn" id="mhSprungEarn">Quartalszahlen</button>
+      <button type="button" class="ghost" data-mhziel="mhKO">KO-Rechner</button>
+      <button type="button" class="ghost" data-mhziel="mhDarstellung">Darstellung</button>
+      <button type="button" class="ghost" data-mhziel="mhImpressum">Impressum</button>
+      <button type="button" class="ghost" data-mhziel="mhDatenschutz">Datenschutz</button>
+      <button type="button" class="ghost" data-mhziel="mhLizenz">Lizenz</button>
+    </nav>
+
+    <div class="mh" id="mhInhalt">
+      <!-- B.5 Quartalszahlen: Kalender (earnings.json) mit allen V1-Filtern und die Nachlese
+           (earnings-recap.json) mit Sortierung. Die Radar-„Termine" bleiben daneben unverändert. -->
+      <section class="jz-sek" id="mhEarn" aria-labelledby="mhEarnH">
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="mhEarnH" tabindex="-1">Quartalszahlen</h3>
+          <span class="t-caption" id="mhEarnMeta"></span>
+        </div>
+        <p class="t-small jz-fliess" style="color:var(--muted)">Wer meldet wann – und wie die Zahlen ankamen. Termine sind vorläufig und können sich verschieben. Keine Anlageberatung.</p>
+        <div class="ghostreihe" role="group" aria-label="Ansicht" id="mhEarnModus" hidden>
+          <button type="button" class="ghost" data-em="cal" aria-pressed="true">Kalender</button>
+          <button type="button" class="ghost" data-em="recap" aria-pressed="false">Nachlese</button>
+        </div>
+        <div id="mhEarnInhalt"></div>
+      </section>
+
+      <!-- B.4 KO-Rechner samt Fibonacci-Helfer (#pageKO der V1). koCalc, koFib und ihre Helfer
+           sind zeichengleich übernommen und greifen über dieselben IDs. -->
+      <section class="jz-sek" id="mhKO" aria-labelledby="mhKOH">
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="mhKOH" tabindex="-1">KO-Rechner</h3>
+        </div>
+        <p class="t-small jz-fliess" style="color:var(--muted)">Rechne den Kurs deines Knockout-Zertifikats aus dem Basiswert aus – und umgekehrt, was Scheinkurs, Hebel und Stop/Ziel bei deinen Wunsch-Marken machen. Die Eckdaten (Basispreis, Bezugsverhältnis, KO-Schwelle) stehen auf der Produktseite des Emittenten bzw. bei deinem Broker. Keine Anlageberatung.</p>
+        <div class="jz-grid eng mh-ko">
+          <div class="card mh-karte">
+            <h4 class="t-h3">Eingabe</h4>
+            <div class="ghostreihe" role="group" aria-label="Richtung" id="koType">
+              <button type="button" class="ghost" data-t="long" aria-pressed="true">Long / Call</button>
+              <button type="button" class="ghost" data-t="short" aria-pressed="false">Short / Put</button>
+            </div>
+            <div class="mw-feld"><label class="t-small" for="koWKN">WKN / ISIN <span class="mh-opt">(optional, nur Notiz)</span></label><input class="mw-input" id="koWKN" maxlength="12" autocomplete="off" spellcheck="false" placeholder="z. B. SY1234"></div>
+            <div class="mh-paar">
+              <div class="mw-feld"><label class="t-small" for="koS">Basiswert-Kurs jetzt</label><input class="mw-input num" id="koS" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="182,40"></div>
+              <div class="mw-feld"><label class="t-small" for="koBV">Bezugsverhältnis</label><input class="mw-input num" id="koBV" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="0,1"></div>
+            </div>
+            <div class="mh-paar">
+              <div class="mw-feld"><label class="t-small" for="koStrike">Basispreis (Strike)</label><input class="mw-input num" id="koStrike" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="150,00"></div>
+              <div class="mw-feld"><label class="t-small" for="koCert">Scheinkurs aktuell <span class="mh-opt">(falls Strike leer)</span></label><input class="mw-input num" id="koCert" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="3,24"></div>
+            </div>
+            <div class="mh-paar">
+              <div class="mw-feld"><label class="t-small" for="koKO">KO-Schwelle <span class="mh-opt">(optional)</span></label><input class="mw-input num" id="koKO" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="150,00"></div>
+              <div class="mw-feld"><label class="t-small" for="koStake">Einsatz € <span class="mh-opt">(optional)</span></label><input class="mw-input num" id="koStake" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="1000"></div>
+            </div>
+            <div class="mh-paar">
+              <div class="mw-feld"><label class="t-small" for="koTP">Take-Profit (Basiswert)</label><input class="mw-input num" id="koTP" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="195,00"></div>
+              <div class="mw-feld"><label class="t-small" for="koSL">Stop-Loss (Basiswert)</label><input class="mw-input num" id="koSL" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="172,00"></div>
+            </div>
+          </div>
+          <div class="card mh-karte">
+            <h4 class="t-h3">Ergebnis</h4>
+            <div id="koOut" class="num" aria-live="polite"></div>
+            <p class="t-caption mh-notiz">Formel (Long): P = (Kurs − Basispreis) × Bezugsverhältnis · Hebel = Kurs / (Kurs − Basispreis). Bei Short gespiegelt.</p>
+          </div>
+          <div class="card mh-karte">
+            <h4 class="t-h3">Fibonacci-Helfer</h4>
+            <div class="mh-paar">
+              <div class="mw-feld"><label class="t-small" for="fibH">Hoch</label><input class="mw-input num" id="fibH" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="195,00"></div>
+              <div class="mw-feld"><label class="t-small" for="fibL">Tief</label><input class="mw-input num" id="fibL" inputmode="decimal" autocomplete="off" data-mhzahl placeholder="150,00"></div>
+            </div>
+            <div id="fibOut" class="num"></div>
+            <p class="t-caption mh-notiz">Retracement-Marken aus einer Bewegung Hoch→Tief. Tippe →TP / →SL, um eine Marke direkt in den Rechner zu übernehmen.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="jz-sek" id="mhDarstellung" aria-labelledby="mhDarstellungH">
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="mhDarstellungH" tabindex="-1">Darstellung</h3>
+        </div>
+        <div class="ghostreihe" role="group" aria-label="Farbschema">
+          <button type="button" class="ghost" data-theme-wahl="auto">Automatisch</button>
+          <button type="button" class="ghost" data-theme-wahl="light">Hell</button>
+          <button type="button" class="ghost" data-theme-wahl="dark">Dunkel</button>
+        </div>
+      </section>
+
+      <!-- B.1 Rechtliches: Impressum und Lizenz wörtlich aus dem V1-Objekt LEGAL (ADR-302/309).
+           Die Datenschutzerklärung ist wörtlich bis auf die Abschnitte 3 und 4, die an die
+           GEMESSENEN Datenflüsse von V2 angepasst sind (Abgleich in AA-20260928-FE-01-E01-T02).
+           Statischer, selbst verfasster Text — kein Fremdinhalt, deshalb direkt im Markup. -->
+      <section class="jz-sek mh-recht" id="mhImpressum" aria-labelledby="mhImpressumH">
+        <div class="jz-kopf"><h3 class="t-h2" id="mhImpressumH" tabindex="-1">Impressum</h3></div>
+        <div class="card mh-text" data-mhlegal="impressum">
+   <!-- ADR-302/309: nicht-kommerzielle Zwischenlösung; vollständige Betreiberangaben bleiben Pflicht vor Kommerzialisierung. -->
+   <div class="draftnote"><b>Privates, nicht-kommerzielles Projekt.</b> Aktien Atzen wird derzeit als Hobby-/Studienprojekt ohne Gewinnerzielungsabsicht betrieben. Vollständige Betreiberangaben werden vor einer Kommerzialisierung ergänzt und rechtlich geprüft.</div>
+   <h4>Projektbetreiber / Herausgeber</h4>
+   <p>Aktien Atzen<br>Privates, nicht-kommerzielles Hobby-/Studienprojekt</p>
+   <h4>Kontakt</h4>
+   <p>E-Mail: <a href="mailto:15.spitzen-updates@icloud.com">15.spitzen-updates@icloud.com</a></p>
+   <h4>Transparenz zu eigenen Positionen</h4>
+   <p>Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt. Stand: 15.07.2026.</p>
+   <h4>Hinweise zu Inhalten, Risiken und Haftung</h4>
+   <p>Die Inhalte von Aktien Atzen dienen ausschließlich der allgemeinen Information und Wissensvermittlung. Sie sind nicht auf persönliche finanzielle Verhältnisse, Anlageziele, Kenntnisse oder Risikobereitschaft abgestimmt und stellen keine individuelle Anlageberatung oder persönliche Aufforderung zum Kauf, Verkauf oder Halten eines Finanzinstruments dar.</p>
+   <p>Beobachtungskandidaten werden nach regelbasierten Kriterien, insbesondere der Nähe zu einer definierten Beobachtungszone, ausgewählt. Daraus folgt keine Aussage über eine zukünftige Wertentwicklung oder Erfolgswahrscheinlichkeit.</p>
+   <p>Finanzinstrumente unterliegen Kursrisiken bis hin zum vollständigen Verlust des eingesetzten Kapitals. Frühere Entwicklungen erlauben keine verlässlichen Rückschlüsse auf zukünftige Ergebnisse.</p>
+   <p>Markt-, Kurs-, Termin-, Nachrichten- und Analysedaten können aus Drittquellen stammen und verzögert, unvollständig oder fehlerhaft sein. Trotz sorgfältiger Aufbereitung wird keine Gewähr für Richtigkeit, Vollständigkeit, Aktualität oder dauerhafte Verfügbarkeit übernommen. Nutzer müssen Angaben eigenständig prüfen und treffen Entscheidungen in eigener Verantwortung. Zwingende gesetzliche Haftungsvorschriften bleiben unberührt.</p>
+   <p>Für Inhalte verlinkter externer Webseiten sind deren jeweilige Betreiber verantwortlich. Bei Bekanntwerden rechtswidriger Inhalte werden entsprechende Links entfernt.</p>
+        </div>
+      </section>
+
+      <section class="jz-sek mh-recht" id="mhDatenschutz" aria-labelledby="mhDatenschutzH">
+        <div class="jz-kopf"><h3 class="t-h2" id="mhDatenschutzH" tabindex="-1">Datenschutz</h3></div>
+        <div class="card mh-text" data-mhlegal="datenschutz">
+   <div class="draftnote"><b>Entwurf (Stand 2026) – vor Monetarisierung anwaltlich gegenprüfen.</b> Diese Erklärung beschreibt die bekannten Datenflüsse dieses privaten Projekts und ist noch nicht abschließend rechtsverbindlich geprüft.</div>
+   <h4>1. Hosting (GitHub Pages)</h4>
+   <p>Diese Seite wird über GitHub Pages (GitHub, Inc., USA) ausgeliefert. Beim Aufruf verarbeitet der Hoster technisch notwendige Zugriffsdaten (u. a. IP-Adresse, Zeitpunkt, abgerufene Datei, Browser-/Geräteangaben) in Server-Logfiles. Dabei findet eine Datenübermittlung in die USA (Drittland) statt. Rechtsgrundlage: berechtigtes Interesse am sicheren Betrieb (Art. 6 Abs. 1 lit. f DSGVO).</p>
+   <h4>2. Programmbibliothek (CDN)</h4>
+   <p>Für die Chart-Darstellung wird die Bibliothek „lightweight-charts" von jsDelivr (<code>cdn.jsdelivr.net</code>) geladen. Dabei wird Ihre IP-Adresse an den CDN-Anbieter übertragen.</p>
+   <h4>3. Kurs- und Marktdaten</h4>
+   <p data-mhgeaendert="3">Kurs- und Marktdaten liefert diese Seite aus eigenen Dateien. Nur wenn Sie für einen Wert ohne hinterlegte Kurse ausdrücklich Kurse oder einen Chart anfordern, wird eine Anfrage an Yahoo Finance (<code>query1.finance.yahoo.com</code>) gestellt. Da ein direkter Browser-Abruf nicht möglich ist, läuft sie über den öffentlichen CORS-Proxy-Dienst <code>api.allorigins.win</code>; das von Ihnen abgefragte Börsensymbol und Ihre IP-Adresse werden dabei an diesen Dritt-Dienst übermittelt. Auch der Fear-&amp;-Greed-Index stammt aus den eigenen Dateien dieser Seite; Ihr Browser ruft dafür keinen Dienst von CNN ab.</p>
+   <h4>4. Eingebundene Drittinhalte</h4>
+   <p data-mhgeaendert="4"><b>Bilder zu Meldungen:</b> Liefert eine Meldung ein Bild mit, wird es erst geladen, wenn Sie die Meldung in der Vollansicht öffnen – nicht automatisch beim Seitenaufruf. Das Bild kommt direkt von seiner Quelle, derzeit von <code>pbs.twimg.com</code> (X Corp., USA). Dabei wird Ihre IP-Adresse an diesen Anbieter übertragen.</p>
+   <h4>5. Lokale Speicherung (localStorage)</h4>
+   <p>Ihr Bestand (beobachtete Werte und optional von Ihnen selbst eingetragene Positionsangaben) sowie die Hell-/Dunkel-Einstellung werden ausschließlich lokal in Ihrem Browser gespeichert (<code>localStorage</code>). Diese Daten verbleiben auf Ihrem Gerät, werden nicht an einen Server übertragen und sind für uns nicht einsehbar. Es werden keine Tracking-Cookies gesetzt; zur Reichweitenmessung kommt ein cookieloses, datenschutzfreundliches Verfahren zum Einsatz (siehe Abschnitt 6).</p>
+   <h4>6. Reichweitenmessung (GoatCounter)</h4>
+   <p>Zur Verbesserung des Angebots messen wir die Reichweite und die Nutzung einzelner Funktionen (z. B. welche Bereiche/Tabs aufgerufen werden, Mobil- vs. Desktop-Zugriff) mit dem Dienst <b>GoatCounter</b>. Die Verarbeitung erfolgt auf Servern innerhalb der EU (Deutschland/Finnland), eine Übermittlung in ein Drittland findet dabei nicht statt. GoatCounter arbeitet <b>cookielos</b>, setzt also keine Cookies und legt keine Kennungen auf Ihrem Gerät ab. Es werden <b>keine personenbezogenen Daten gespeichert</b>: Ihre IP-Adresse wird ausschließlich kurzzeitig und <b>anonymisiert</b> zur Aufrufzählung verwendet und nicht dauerhaft gespeichert; es findet <b>kein Profiling</b> und keine geräte- oder personenübergreifende Wiedererkennung statt. Erhoben werden nur aggregierte, nicht auf eine Person rückführbare Statistiken. Eine <b>„Do Not Track"</b>-Einstellung Ihres Browsers wird respektiert (in diesem Fall erfolgt keine Zählung). Da weder Cookies gesetzt noch personenbezogene Daten verarbeitet werden, ist hierfür keine Einwilligung erforderlich; Rechtsgrundlage ist das berechtigte Interesse an einer bedarfsgerechten Gestaltung des Angebots (Art. 6 Abs. 1 lit. f DSGVO).</p>
+   <h4>7. Ihre Rechte</h4>
+   <p>Sie haben im Rahmen der DSGVO das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch sowie ein Beschwerderecht bei einer Aufsichtsbehörde. Lokal gespeicherte Daten können Sie jederzeit über die Einstellungen Ihres Browsers löschen.</p>
+   <h4>8. Verantwortlicher</h4>
+   <p class="lph">Siehe Impressum (wird vor Kommerzialisierung mit Kontaktdaten ergänzt).</p>
+        </div>
+      </section>
+
+      <section class="jz-sek mh-recht" id="mhLizenz" aria-labelledby="mhLizenzH">
+        <div class="jz-kopf"><h3 class="t-h2" id="mhLizenzH" tabindex="-1">Lizenz</h3></div>
+        <div class="card mh-text" data-mhlegal="lizenz">
+   <p><b>© 2026 Aktien Atzen — Alle Rechte vorbehalten / All Rights Reserved.</b></p>
+   <p>Dieser Quellcode und sämtliche zugehörigen Inhalte (HTML, JavaScript, CSS, Texte, Daten und Gestaltung) sind urheberrechtlich geschützt und proprietär lizenziert.</p>
+   <p>Kein Teil dieses Codes oder dieser Inhalte darf ohne ausdrückliche vorherige schriftliche Genehmigung des Rechteinhabers kopiert, vervielfältigt, verändert, weiterverbreitet, öffentlich zugänglich gemacht oder kommerziell genutzt werden. Es wird keine Open-Source-Lizenz (z. B. MIT, Apache, GPL) gewährt.</p>
+   <p>Das Ansehen, Klonen und Forken dieses öffentlichen Repositorys im Rahmen der GitHub-Nutzungsbedingungen bleibt unberührt; daraus entstehen keine Nutzungs-, Bearbeitungs- oder Verwertungsrechte am Code oder an den Inhalten.</p>
+   <p>Die dargestellten Markt-, Kurs-, News- und Videodaten stammen aus Drittquellen, unterliegen den Rechten ihrer jeweiligen Anbieter und dienen ausschließlich Informationszwecken – keine Anlageberatung.</p>
+   <p>Den vollständigen Lizenztext finden Sie in der Datei <code>LICENSE</code> im Repository.</p>
+   <h4>Verwendete Software</h4>
+   <p>Die Kursdiagramme verwenden die Bibliothek „lightweight-charts" 4.1.3 (Apache License 2.0). Attribution laut deren NOTICE-Datei:</p>
+   <p>TradingView Lightweight Charts™<br>Copyright (с) 2023 TradingView, Inc. <a href="https://www.tradingview.com/" target="_blank" rel="noopener noreferrer">https://www.tradingview.com/</a></p>
+        </div>
+      </section>
     </div>
   </section>
 
@@ -1128,6 +1366,19 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
       Videoanalysen und Kanäle. Die Eingabe bleibt in diesem Browser.</p>
     <div class="su-treffer" id="suTreffer" aria-live="polite"></div>
   </section>
+
+  <!-- V2-7 Teil B.2: Fußzeile nach dem Muster der V1 (nav.footlinks, ADR-302). Sie steht
+       AUSSERHALB der Räume und ist damit in jedem Raum sichtbar; ein Klick führt in „Mehr"
+       direkt zum Abschnitt — ein Schritt. Textlinks, kein Symbolknopf. Sie liegt im #app,
+       damit dessen Innenabstand sie über der Bottom-Nav hält (§10). -->
+  <footer class="fuss">
+    <nav class="ghostreihe fuss-links" aria-label="Rechtliches">
+      <button type="button" class="ghost" data-mhziel="mhImpressum">Impressum</button>
+      <button type="button" class="ghost" data-mhziel="mhDatenschutz">Datenschutz</button>
+      <button type="button" class="ghost" data-mhziel="mhLizenz">Lizenz</button>
+    </nav>
+    <p class="t-caption fuss-copy">© 2026 Aktien Atzen · Alle Rechte vorbehalten</p>
+  </footer>
 
 </main>
 
@@ -4604,6 +4855,277 @@ if(jzIdxSchalter)jzIdxSchalter.addEventListener('click',()=>{
   jzIdxSchalter.setAttribute('aria-expanded',String(!auf));
 });
 
+/* ================================================================================
+   V2-7 Teil B — Raum „Mehr": Quartalszahlen, KO-Rechner, Rechtliches.
+   Rechen-, Filter- und Sortierlogik stammen ZEICHENGLEICH aus index.html (geprueft in
+   tests/v2/check.cjs gegen die V1-Quelle). Neu gesetzt sind nur Markup, Renderer und
+   Verdrahtung — mit den Klassen und Tokens von v2.html.
+   ================================================================================ */
+
+/* Sprung aus der Fusszeile oder der Abschnittsleiste: EIN Schritt bis zum Abschnitt (B.2).
+   Der Raum wechselt ohne Fokussprung, dann landet der Fokus auf der Abschnittsueberschrift —
+   Screenreader hoeren, wo sie sind, und Tab geht im Abschnitt weiter. */
+function mhSprung(id){
+  const ziel=document.getElementById(id);
+  if(!ziel||!ziel.closest('#raum-mehr'))return;
+  raumZeigen('mehr',false);
+  /* Sofort statt weich: der Raum wechselt ohnehin, ein Gleiten ueber fremden Inhalt
+     hinweg waere Bewegung ohne Bedeutung (§7). Aeltere Engines ohne 'instant' fallen auf
+     den einfachen Aufruf zurueck. */
+  try{ziel.scrollIntoView({block:'start',behavior:'instant'})}catch(e){ziel.scrollIntoView(true)}
+  const h=ziel.querySelector('h3[tabindex="-1"]');
+  if(h)h.focus({preventScroll:true});
+}
+
+/* --- KO-Rechner (B.4) --------------------------------------------------------------
+   koTypeVal, knum, eurv, pctv, nv, korow und koCalc: zeichengleich aus index.html. */
+let koTypeVal='long';
+function knum(id){const e=document.getElementById(id);if(!e)return null;const t=e.value.trim();if(!t)return null;const v=parseFloat(t.replace(/\s/g,'').replace(',','.'));return isFinite(v)?v:null}
+function eurv(v){if(v==null||!isFinite(v))return '–';const d=Math.abs(v)<1?3:2;return v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d})+' €'}
+function pctv(v){if(v==null||!isFinite(v))return '–';return (v>=0?'+':'')+v.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})+' %'}
+function nv(v,d){if(v==null||!isFinite(v))return '–';d=d==null?2:d;return v.toLocaleString('de-DE',{minimumFractionDigits:d,maximumFractionDigits:d})}
+function korow(l,v){return `<div class="kores"><span class="kl">${l}</span><span class="kv">${v}</span></div>`}
+function koCalc(){const out=document.getElementById('koOut');if(!out)return;const long=koTypeVal==='long';const S=knum('koS'),BV=knum('koBV')||1;let strike=knum('koStrike');const cert=knum('koCert');let derived=false;if(strike==null&&cert!=null&&S!=null){strike=long?S-cert/BV:S+cert/BV;derived=true}const KO=knum('koKO'),TP=knum('koTP'),SL=knum('koSL'),stake=knum('koStake');if(S==null||strike==null){out.innerHTML='<p style="color:var(--muted);font-size:12.5px">Bitte mindestens <b>Basiswert-Kurs</b> und <b>Basispreis</b> (oder Scheinkurs) eingeben.</p>';return}const price=(long?(S-strike):(strike-S))*BV;const koOut=price<=0;const lev=price>0?(S*BV)/price:null;let kodist=null;if(KO!=null)kodist=long?(S-KO)/S*100:(KO-S)/S*100;const pAt=x=>(long?(x-strike):(strike-x))*BV;const knocked=x=>long?(KO!=null?x<=KO:pAt(x)<=0):(KO!=null?x>=KO:pAt(x)<=0);let html='';if(koOut)html+='<div class="kowarn">Mit diesen Werten ist der Schein bereits ausgeknockt (Kurs jenseits des Basispreises). Prüfe Typ (Long/Short), Basispreis und Kurs.</div>';if(stake&&price>0){const st=Math.floor(stake/price);html+=korow('Position',`${st} Stück · ${eurv(st*price)}`)}html+=korow('Scheinkurs (jetzt)',koOut?'<span class="kobad">KO ausgelöst</span>':eurv(price));html+=`<div class="koformula">P = (${long?'Kurs − Strike':'Strike − Kurs'}) × BV = (${nv(long?S:strike,2)} − ${nv(long?strike:S,2)}) × ${nv(BV,BV<1?2:0)} = ${koOut?'≤ 0':eurv(price)}</div>`;if(derived)html+=`<div class="koformula">Strike aus Scheinkurs berechnet = ${nv(strike,2)}</div>`;if(lev)html+=korow('Hebel','× '+nv(lev,2));if(kodist!=null)html+=korow('Abstand zum KO',`<span class="${kodist>=0?'kogood':'kobad'}">${pctv(kodist)}</span>`);if(TP!=null){const pt=pAt(TP),ren=price>0?(pt-price)/price*100:null,kn=knocked(TP);html+=korow(`Take-Profit @ ${nv(TP,2)}`,kn?'<span class="kobad">KO</span>':`${eurv(pt)}${ren!=null?` <span class="kogood" style="font-size:12.5px">(${pctv(ren)})</span>`:''}`);if(stake&&price>0&&!kn){const st=Math.floor(stake/price);html+=`<div class="koformula">${st} Stück · Wert ${eurv(st*pt)} · G/V ${eurv(st*(pt-price))}</div>`}}if(SL!=null){const ps=pAt(SL),ren=price>0?(ps-price)/price*100:null,kn=knocked(SL);html+=korow(`Stop-Loss @ ${nv(SL,2)}`,kn?'<span class="kobad">KO – Totalverlust</span>':`${eurv(ps)}${ren!=null?` <span class="kobad" style="font-size:12.5px">(${pctv(ren)})</span>`:''}`);if(stake&&price>0){const st=Math.floor(stake/price),val=kn?0:st*ps;html+=`<div class="koformula">${st} Stück · Wert ${eurv(val)} · G/V ${eurv(val-st*price)}</div>`}}out.innerHTML=html;out.querySelectorAll('.kv').forEach(e=>{e.classList.remove('flash');void e.offsetWidth;e.classList.add('flash')})}
+/* koFib: die Rechnung ist zeichengleich zur V1. Neu ist allein das Element der Marke —
+   ein <button> statt eines klickbaren <span>, damit sie per Tastatur erreichbar ist und
+   44 px misst (DoD-Basis 5/6); dazu ein zugaenglicher Name. */
+function koFib(){const out=document.getElementById('fibOut');if(!out)return;const H=knum('fibH'),L=knum('fibL');if(H==null||L==null||H<=L){out.innerHTML='<p style="color:var(--muted);font-size:12.5px">Hoch und Tief eingeben (Hoch &gt; Tief).</p>';return}const diff=H-L;const lv=[['0,0 · Hoch',H],['0,236',H-diff*0.236],['0,382',H-diff*0.382],['0,5',H-diff*0.5],['0,618',H-diff*0.618],['0,786',H-diff*0.786],['1,0 · Tief',L],['1,272 · Ext',L-diff*0.272],['1,618 · Ext',L-diff*0.618]];out.innerHTML=lv.map(([lab,v])=>`<div class="fibrow"><span class="fl">Fib ${lab}</span><span class="fv">${nv(v,2)}<button type="button" class="fibset" data-v="${v.toFixed(2)}" data-set="tp" aria-label="Fib ${lab} in Take-Profit übernehmen">→TP</button><button type="button" class="fibset" data-v="${v.toFixed(2)}" data-set="sl" aria-label="Fib ${lab} in Stop-Loss übernehmen">→SL</button></span></div>`).join('');out.querySelectorAll('.fibset').forEach(s=>s.onclick=()=>{const id=s.dataset.set==='tp'?'koTP':'koSL';const f=document.getElementById(id);f.value=s.dataset.v.replace('.',',');koCalc();f.focus()})}
+/* Eingaben sind nur numerisch (B.4): beim Tippen fallen alle Zeichen weg, die keine Zahl
+   bilden koennen. Ziffern, Komma, Punkt, Minus und Leerzeichen bleiben — knum() liest
+   daraus wie in der V1. */
+function mhNurZahl(t){return String(t==null?'':t).replace(/[^0-9,.\s-]/g,'')}
+/* Verdrahtung neu: der Richtungsschalter zeigt seinen Zustand ueber aria-pressed (§8,
+   Signifier) statt ueber die V1-Klasse .on. */
+function koInit(){
+  document.querySelectorAll('#koType button').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('#koType button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+    koTypeVal=b.dataset.t;koCalc();
+  }));
+  document.querySelectorAll('#mhKO [data-mhzahl]').forEach(e=>e.addEventListener('input',()=>{
+    const s=mhNurZahl(e.value);if(s!==e.value)e.value=s;
+  }));
+  ['koS','koBV','koStrike','koCert','koKO','koTP','koSL','koStake'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',koCalc)});
+  ['fibH','fibL'].forEach(id=>{const e=document.getElementById(id);if(e)e.addEventListener('input',koFib)});
+  koCalc();koFib();
+}
+
+/* --- Quartalszahlen (B.5) ---------------------------------------------------------
+   Zustand wie in der V1 (dort in einer Zeile mit EARN/ERECAP, die in v2.html schon
+   deklariert sind). Filter, Zeitfenster und Sortierung: zeichengleich aus index.html. */
+let earnMode='cal',earnRange='week',earnRegion='',earnIndex='',earnWLonly=false,earnSortKey='reaktion',earnSortDir=-1,EARNWL=new Set();
+function earnHasCal(){return !!(EARN&&Array.isArray(EARN.eintraege)&&EARN.eintraege.length)}
+function earnHasRecap(){return !!(ERECAP&&((Array.isArray(ERECAP.tabelle)&&ERECAP.tabelle.length)||(Array.isArray(ERECAP.signale)&&ERECAP.signale.length)))}
+const EZEIT={bmo:{l:'vorbörslich',c:'ezeit-bmo'},amc:{l:'nachbörslich',c:'ezeit-amc'},tbd:{l:'Zeit offen',c:'ezeit-tbd'}};
+const EZEITORD={bmo:0,amc:1,tbd:2};
+const EREGION_GROUP={US:'US',DE:'DE',EU:'EU',TW:'AS',KR:'AS',HK:'AS',CN:'AS',JP:'AS',OTHER:'OT'};
+const EREGION_LABEL={US:'USA',DE:'Deutschland',EU:'Europa',AS:'Asien',OT:'Andere'};
+function eRegionGroup(r){return EREGION_GROUP[String(r==null?'':r).toUpperCase()]||'OT'}
+function eNum(v){if(v==null||v==='')return null;const n=+v;return isFinite(n)?n:null}
+function eEps(v){const n=eNum(v);return n==null?'–':n.toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function eRev(v){const n=eNum(v);if(n==null)return '–';const a=Math.abs(n);if(a>=1e12)return (n/1e12).toLocaleString('de-DE',{maximumFractionDigits:2})+' Bio';if(a>=1e9)return (n/1e9).toLocaleString('de-DE',{maximumFractionDigits:1})+' Mrd';if(a>=1e6)return (n/1e6).toLocaleString('de-DE',{maximumFractionDigits:0})+' Mio';return n.toLocaleString('de-DE')}
+function eDayLabel(iso){try{return new Date(iso+'T00:00:00').toLocaleDateString('de-DE',{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}catch(e){return String(iso||'')}}
+function eDateTime(iso){try{return new Date(iso).toLocaleString('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit'})}catch(e){return ''}}
+function eResultLabel(c){return {beat:'Beat',miss:'Miss',inline:'In line',gemischt:'Gemischt'}[c]||c}
+function eDeriveCode(a,b){a=eNum(a);b=eNum(b);if(a==null&&b==null)return null;const s=x=>x==null?0:(x>0.05?1:x<-0.05?-1:0);const sa=s(a),sb=s(b);if(sa>=0&&sb>=0&&(sa>0||sb>0))return 'beat';if(sa<=0&&sb<=0&&(sa<0||sb<0))return 'miss';if(sa===0&&sb===0)return 'inline';return 'gemischt'}
+function eEntryWatched(e){const tk=validTicker(e&&e.ticker);return tk?EARNWL.has(tk.toUpperCase()):false}
+function earnRecapHasTicker(tk){if(!earnHasRecap())return false;const u=String(tk).toUpperCase();return (ERECAP.tabelle||[]).some(r=>r&&String(r.ticker||'').toUpperCase()===u)}
+// --- Zeitraum-Fenster (Heute / Diese Woche / Nächste Woche / Alle) ---
+function eISO(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function eWeekStart(d){const x=new Date(d);x.setHours(0,0,0,0);x.setDate(x.getDate()-((x.getDay()+6)%7));return x}
+function eRangeBounds(){const t=new Date();t.setHours(0,0,0,0);if(earnRange==='today')return [eISO(t),eISO(t)];if(earnRange==='week'){const s=eWeekStart(t),e=new Date(s);e.setDate(s.getDate()+6);return [eISO(s),eISO(e)]}if(earnRange==='next'){const s=eWeekStart(t);s.setDate(s.getDate()+7);const e=new Date(s);e.setDate(s.getDate()+6);return [eISO(s),eISO(e)]}return null}
+function eFilteredEntries(){let list=(EARN.eintraege||[]).filter(e=>e&&e.date);const b=eRangeBounds();if(b)list=list.filter(e=>e.date>=b[0]&&e.date<=b[1]);if(earnRegion)list=list.filter(e=>eRegionGroup(e.region)===earnRegion);if(earnIndex)list=list.filter(e=>String(e.index||'')===earnIndex);if(earnWLonly)list=list.filter(eEntryWatched);return list}
+function eRecapSorted(){const rows=(ERECAP.tabelle||[]).filter(r=>r);const k=earnSortKey,dir=earnSortDir,num=(r,f)=>{const n=eNum(r[f]);return n==null?0:n};rows.sort((a,b)=>{let c=0;if(k==='name')c=String(a.name||a.ticker||'').localeCompare(String(b.name||b.ticker||''));else if(k==='reaktion')c=Math.abs(num(a,'reaktion_pct'))-Math.abs(num(b,'reaktion_pct'));else if(k==='eps')c=num(a,'eps_surprise_pct')-num(b,'eps_surprise_pct');else if(k==='rev')c=num(a,'rev_surprise_pct')-num(b,'rev_surprise_pct');return c*dir});return rows}
+/* Tagesreihenfolge wie in renderEarnCal() der V1 (Sortierzeile zeichengleich), als reine
+   Funktion herausgezogen, damit sie pruefbar ist. */
+function mhEarnTage(list){
+  list=list.slice();
+  list.sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:(((EZEITORD[a.zeit]!=null?EZEITORD[a.zeit]:3)-(EZEITORD[b.zeit]!=null?EZEITORD[b.zeit]:3))||String(a.name||a.ticker||'').localeCompare(String(b.name||b.ticker||''))));
+  const byDay={},days=[];list.forEach(e=>{if(!byDay[e.date]){byDay[e.date]=[];days.push(e.date)}byDay[e.date].push(e)});days.sort();
+  return days.map(d=>({datum:d,eintraege:byDay[d]}));
+}
+/* Chipfarben statt der V1-Klassen: vorboerslich warn, nachboerslich brand, offen neutral;
+   Ergebnis beat plus, miss minus, in line neutral, gemischt warn. Bedeutung nie durch Farbe
+   allein (§11) — jeder Chip traegt sein Wort. */
+const MH_ZEIT_CHIP={bmo:'warn',amc:'brand',tbd:''};
+const MH_ERGEBNIS_CHIP={beat:'plus',miss:'minus',inline:'',gemischt:'warn'};
+function mhWertHTML(tk,name){
+  return '<span class="mh-ename">'+escapeHtml(name)+'</span>'+
+    (tk?'<button type="button" class="jz-chip brand rc-chip" data-rcwert="'+escapeHtml(tk)+'" '+
+      'aria-label="'+escapeHtml(tk)+' in der Wertansicht öffnen"><span class="num">'+escapeHtml(tk)+'</span></button>':'');
+}
+function mhEarnEintragHTML(e){
+  const tk=validTicker(e.ticker);
+  const name=(e.name!=null&&String(e.name).trim()!=='')?String(e.name):(e.ticker?String(e.ticker):'—');
+  const zk=String(e.zeit||'').toLowerCase(),z=EZEIT[zk];
+  const tags=[];if(e.index)tags.push(String(e.index));const rl=EREGION_LABEL[eRegionGroup(e.region)];if(e.region&&rl)tags.push(rl);if(e.branche)tags.push(String(e.branche));
+  let metrik;
+  if(String(e.status||'')==='reported'){
+    const sB=eNum(e.surprise_pct),code=sB==null?null:(sB>0.05?'beat':sB<-0.05?'miss':'inline');
+    const rk=eNum(e.reaktion_pct);
+    metrik='<span>EPS <b>'+eEps(e.eps_act)+'</b> <span class="mh-leise">(Erw. '+eEps(e.eps_est)+')</span></span>'+
+      '<span>Umsatz <b>'+eRev(e.rev_act)+'</b> <span class="mh-leise">(Erw. '+eRev(e.rev_est)+')</span></span>'+
+      (code?'<span class="jz-chip '+MH_ERGEBNIS_CHIP[code]+'">'+eResultLabel(code)+(sB!=null?' '+fp(sB):'')+'</span>':'')+
+      (rk!=null?'<span>Reaktion <span class="'+(rk>=0?'mh-plus':'mh-minus')+'">'+fp(rk)+'</span></span>':'');
+  }else{
+    metrik='<span class="mh-leise">Erwartet:</span><span>EPS <b>'+eEps(e.eps_est)+'</b></span><span>Umsatz <b>'+eRev(e.rev_est)+'</b></span>';
+  }
+  const link=(String(e.status||'')==='reported'&&tk&&earnRecapHasTicker(tk))?
+    '<button type="button" class="ghost" data-mhnachlese="'+escapeHtml(tk)+'">→ Zur Nachlese</button>':'';
+  return '<div class="mh-eintrag">'+
+    '<div class="mh-ekopf">'+mhWertHTML(tk,name)+
+      (eEntryWatched(e)?'<span class="jz-chip brand">in deiner Liste</span>':'')+
+      (z?'<span class="jz-chip '+MH_ZEIT_CHIP[zk]+'">'+z.l+'</span>':'')+
+      (e.periode?'<span class="t-small mh-leise">'+escapeHtml(e.periode)+'</span>':'')+'</div>'+
+    (tags.length?'<div class="mh-ekopf">'+tags.map(t=>'<span class="jz-chip">'+escapeHtml(t)+'</span>').join('')+'</div>':'')+
+    '<div class="mh-metrik">'+metrik+'</div>'+
+    (e.confirmed===false?'<p class="t-caption mh-leise"><i>Termin noch nicht bestätigt – voraussichtlich.</i></p>':'')+
+    link+'</div>';
+}
+/* Filterleisten: dieselben Gruppen wie in buildEarnFilters() der V1, als Knoepfe mit
+   aria-pressed. Region und Index zeigen nur, was im Feed vorkommt. */
+function mhEarnFilterHTML(){
+  const ents=(EARN&&EARN.eintraege)||[];
+  const rg={};ents.forEach(e=>{if(e&&e.region)rg[eRegionGroup(e.region)]=1});
+  const ix={};ents.forEach(e=>{if(e&&e.index)ix[e.index]=1});
+  const knopf=(art,wert,lab,an)=>'<button type="button" class="ghost" data-mhfilter="'+art+'" data-mhwert="'+escapeHtml(wert)+'" aria-pressed="'+an+'">'+escapeHtml(lab)+'</button>';
+  const zeile=(lab,inhalt)=>'<div class="mh-filterzeile"><span class="t-caption">'+lab+'</span><div class="ghostreihe" role="group" aria-label="'+lab+'">'+inhalt+'</div></div>';
+  return '<div class="mh-filter">'+
+    zeile('Zeitraum',[['today','Heute'],['week','Diese Woche'],['next','Nächste Woche'],['all','Alle']].map(x=>knopf('range',x[0],x[1],earnRange===x[0])).join(''))+
+    zeile('Region',knopf('region','','Alle',earnRegion==='')+Object.keys(rg).sort().map(g=>knopf('region',g,EREGION_LABEL[g]||g,earnRegion===g)).join(''))+
+    zeile('Index',knopf('index','','Alle',earnIndex==='')+Object.keys(ix).sort().map(n=>knopf('index',n,n,earnIndex===n)).join(''))+
+    zeile('Bestand',knopf('wl','1','Nur mein Bestand',earnWLonly))+
+  '</div>';
+}
+function mhEarnKalHTML(){
+  const u=EARN&&EARN.updated?eDateTime(EARN.updated):'';
+  EARNWL=new Set(bstSymbole().map(s=>String(s).toUpperCase()));
+  const tage=mhEarnTage(eFilteredEntries());
+  return mhEarnFilterHTML()+
+    '<p class="t-small mh-leise">'+(u?'Stand: '+escapeHtml(u)+' · ':'')+'Termine sind vorläufig und können sich verschieben.</p>'+
+    (tage.length?'<div class="jz-grid" id="mhEarnTage">'+tage.map(t=>
+      '<article class="card mh-tagkarte"><div class="jz-kopf"><h4 class="t-h3">'+escapeHtml(eDayLabel(t.datum))+'</h4>'+
+        '<span class="t-caption">'+t.eintraege.length+' '+(t.eintraege.length===1?'Wert':'Werte')+'</span></div>'+
+        '<div>'+t.eintraege.map(mhEarnEintragHTML).join('')+'</div></article>').join('')+'</div>'
+     :'<article class="card"><p class="t-small mh-leise">Keine Termine in diesem Zeitraum. Wähle einen anderen Zeitraum oder Filter.</p></article>');
+}
+function mhEarnZeileHTML(r){
+  const tk=validTicker(r.ticker);
+  const name=(r.name!=null&&String(r.name).trim()!=='')?String(r.name):(r.ticker?String(r.ticker):'—');
+  const sub=[r.index,r.branche].filter(Boolean).map(escapeHtml).join(' · ');
+  const epsS=eNum(r.eps_surprise_pct),revS=eNum(r.rev_surprise_pct);
+  const code=['beat','miss','inline','gemischt'].indexOf(String(r.ergebnis||'').toLowerCase())>=0?String(r.ergebnis).toLowerCase():eDeriveCode(epsS,revS);
+  const sur=s=>s==null?'':' <span class="jz-chip '+(s>0?'plus':s<0?'minus':'')+'">'+fp(s)+'</span>';
+  const rk=eNum(r.reaktion_pct);
+  const q=safeUrl(r.source_url)?'<a href="'+safeUrl(r.source_url)+'" target="_blank" rel="noopener noreferrer">Quelle'+(r.source?' · '+escapeHtml(r.source):'')+' ↗</a>':(r.source?escapeHtml(r.source):'–');
+  return '<tr data-tk="'+escapeHtml(tk||'')+'" tabindex="-1">'+
+    '<td data-l="Wert"><span>'+mhWertHTML(tk,name)+(sub?'<br><span class="t-caption mh-leise">'+sub+'</span>':'')+'</span></td>'+
+    '<td data-l="Periode">'+escapeHtml(r.periode||'–')+'</td>'+
+    '<td data-l="EPS · Erw.">'+eEps(r.eps_act)+' <span class="mh-leise">· '+eEps(r.eps_est)+'</span>'+sur(epsS)+'</td>'+
+    '<td data-l="Umsatz · Erw.">'+eRev(r.rev_act)+' <span class="mh-leise">· '+eRev(r.rev_est)+'</span>'+sur(revS)+'</td>'+
+    '<td data-l="Ergebnis">'+(code?'<span class="jz-chip '+MH_ERGEBNIS_CHIP[code]+'">'+eResultLabel(code)+'</span>':'–')+'</td>'+
+    '<td data-l="Reaktion">'+(rk!=null?'<span class="'+(rk>=0?'mh-plus':'mh-minus')+'">'+fp(rk)+'</span>':'–')+'</td>'+
+    '<td data-l="Quelle">'+q+'</td></tr>';
+}
+/* Branchen-Signale sind laut Contract eine LLM-Synthese (analyst_synthesis). `einordnung`
+   ist S2 (_sprecherklassen); jedes andere Textfeld des Signals ist dort nicht genannt und
+   gilt damit ebenfalls als S2 — also volle Liste VERBOT_EIGEN, Etikett „Einordnung dieser
+   Seite · maschinell erzeugt" und gestrichelte Kante (V2-5 Teil A). Traegt ein Feld einen
+   Listenbegriff, entfaellt GENAU DIESES FELD; bleibt kein Text uebrig, entfaellt das Signal. */
+function mhEarnSignalHTML(s){
+  if(!s||typeof s!=='object')return '';
+  const ok=t=>typeof t==='string'&&mwFremdOk(t,VERBOT_EIGEN);
+  const titel=ok(s.titel)?s.titel:(ok(s.title)?s.title:'');
+  const kern=ok(s.kernaussage)?s.kernaussage:'';
+  const einord=ok(s.einordnung)?String(s.einordnung).trim():'';
+  const einsch=ok(s.einschaetzung)?s.einschaetzung:'';
+  const belege=(Array.isArray(s.belege)?s.belege:[]).map(b=>(b&&typeof b==='object')?(b.bezug||b.text||''):String(b||'')).filter(ok);
+  if(!titel&&!kern&&!einord&&!einsch)return '';
+  const konf={hoch:'hoch',high:'hoch',mittel:'mittel',medium:'mittel',niedrig:'niedrig',low:'niedrig'}[String(s.konfidenz||'').toLowerCase()]||'';
+  const tks=(Array.isArray(s.tickers)?s.tickers:[]).map(t=>{const sym=(t&&typeof t==='object')?(t.ticker||t.symbol||''):t;return validTicker(sym)}).filter(Boolean);
+  return '<article class="card mh-signal">'+
+    '<div class="mw-fremd mw-eigen"><span class="mw-herkunft t-caption">Einordnung dieser Seite · maschinell erzeugt</span>'+
+      (titel?'<span class="t-h3">'+escapeHtml(titel)+'</span>':'')+'</div>'+
+    ((s.branche||konf)?'<div class="mh-ekopf">'+(s.branche?'<span class="jz-chip">'+escapeHtml(s.branche)+'</span>':'')+
+      (konf?'<span class="jz-chip">Konfidenz '+konf+'</span>':'')+'</div>':'')+
+    (tks.length?'<div class="mh-ekopf">'+tks.map(t=>'<button type="button" class="jz-chip brand rc-chip" data-rcwert="'+escapeHtml(t)+'" '+
+      'aria-label="'+escapeHtml(t)+' in der Wertansicht öffnen"><span class="num">'+escapeHtml(t)+'</span></button>').join('')+'</div>':'')+
+    (kern?'<p class="mw-fremd mw-eigen jz-fliess">'+escapeHtml(kern)+'</p>':'')+
+    ((einord||belege.length)?'<details class="mw-mehr"><summary class="t-small">Tiefer einordnen</summary>'+
+      (einord?'<p class="mw-fremd mw-eigen jz-fliess">'+escapeHtml(einord)+'</p>':'')+
+      (belege.length?'<div class="mw-fremd mw-eigen"><span class="mw-herkunft t-caption">Belege</span>'+belege.map(b=>'<span class="t-small">'+escapeHtml(b)+'</span>').join('')+'</div>':'')+
+    '</details>':'')+
+    (einsch?'<p class="mw-fremd mw-eigen t-small"><span class="mw-herkunft t-caption">Einschätzung</span>'+escapeHtml(einsch)+'</p>':'')+
+  '</article>';
+}
+function mhEarnRecapHTML(){
+  const lbl=ERECAP&&(ERECAP.label||(ERECAP.date?eDayLabel(ERECAP.date):''));
+  const rows=earnHasRecap()?eRecapSorted():[];
+  const sig=((ERECAP&&Array.isArray(ERECAP.signale))?ERECAP.signale:[]).map(mhEarnSignalHTML).filter(Boolean);
+  const sk=(k,lab)=>'<button type="button" class="ghost" data-mhsort="'+k+'" aria-pressed="'+(earnSortKey===k)+'">'+lab+'</button>';
+  return '<p class="t-small mh-leise">'+(lbl?'Nachlese · '+escapeHtml(lbl):'Nachlese')+'</p>'+
+    (rows.length?
+      '<div class="mh-filterzeile"><span class="t-caption">Sortieren</span><div class="ghostreihe" role="group" aria-label="Sortieren">'+
+        sk('reaktion','Reaktion')+sk('eps','EPS-Überraschung')+sk('rev','Umsatz-Überraschung')+sk('name','Name')+'</div></div>'+
+      '<div class="card"><table class="mh-tabelle"><thead><tr><th>Wert</th><th>Periode</th><th>EPS · Erw.</th><th>Umsatz · Erw.</th><th>Ergebnis</th><th>Reaktion</th><th>Quelle</th></tr></thead>'+
+        '<tbody>'+rows.map(mhEarnZeileHTML).join('')+'</tbody></table></div>'
+      :'<article class="card"><p class="t-small mh-leise">Noch keine Beat/Miss-Auswertung vorhanden.</p></article>')+
+    (sig.length?'<h4 class="t-h3">Branchen-Signale</h4><div class="jz-grid">'+sig.join('')+'</div>'+
+      '<p class="mw-fussnote t-caption">Die Branchen-Signale sind eine maschinell erzeugte Einordnung dieser Seite auf Grundlage der Tabelle darüber — keine Anlageberatung.</p>':'');
+}
+/* Ein Durchgang fuer den ganzen Abschnitt. Vor dem ersten Ladeversuch steht der
+   Ladezustand; fehlen danach beide Feeds, entfaellt der Abschnitt samt Sprungknopf
+   (§8.1: nur die betroffene Flaeche, nie der Raum). */
+let MH_EARN_VERSUCH=false;
+function mhEarnRender(){
+  const sek=document.getElementById('mhEarn'),ziel=document.getElementById('mhEarnInhalt'),
+        modus=document.getElementById('mhEarnModus'),sprung=document.getElementById('mhSprungEarn');
+  if(!sek||!ziel)return;
+  if(!MH_EARN_VERSUCH){ziel.innerHTML='<article class="card"><span class="t-small mh-leise">Quartalszahlen werden geladen.</span></article>';return}
+  const hasCal=earnHasCal(),hasRecap=earnHasRecap();
+  sek.hidden=!hasCal&&!hasRecap;if(sprung)sprung.hidden=sek.hidden;
+  if(sek.hidden){ziel.innerHTML='';return}
+  if(earnMode==='recap'&&!hasRecap)earnMode='cal';if(earnMode==='cal'&&!hasCal)earnMode='recap';
+  if(modus){
+    modus.hidden=!(hasCal&&hasRecap);
+    modus.querySelectorAll('[data-em]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.em===earnMode)));
+  }
+  ziel.innerHTML=earnMode==='cal'?mhEarnKalHTML():mhEarnRecapHTML();
+}
+function mhEarnFertig(){MH_EARN_VERSUCH=true;mhEarnRender()}
+/* Nach einem Klick zeichnet der Abschnitt neu — der Fokus bleibt auf dem gleichen Knopf. */
+function mhFokusZurueck(sel){const b=document.querySelector(sel);if(b)b.focus()}
+document.addEventListener('click',ev=>{
+  const t=ev.target;if(!(t instanceof Element))return;
+  const z=t.closest('[data-mhziel]');
+  if(z){mhSprung(z.dataset.mhziel);return}
+  const em=t.closest('#mhEarnModus [data-em]');
+  if(em){earnMode=em.dataset.em;mhEarnRender();mhFokusZurueck('#mhEarnModus [data-em="'+earnMode+'"]');return}
+  const f=t.closest('[data-mhfilter]');
+  if(f){
+    const art=f.dataset.mhfilter,w=f.dataset.mhwert;
+    if(art==='range')earnRange=w;else if(art==='region')earnRegion=w;else if(art==='index')earnIndex=w;else if(art==='wl')earnWLonly=!earnWLonly;
+    mhEarnRender();
+    const neu=[].find.call(document.querySelectorAll('#mhEarn [data-mhfilter]'),b=>b.dataset.mhfilter===art&&b.dataset.mhwert===w);
+    if(neu)neu.focus();
+    return;
+  }
+  const s=t.closest('[data-mhsort]');
+  if(s){
+    const k=s.dataset.mhsort;
+    if(earnSortKey===k){earnSortDir=-earnSortDir}else{earnSortKey=k;earnSortDir=(k==='name'?1:-1)}
+    mhEarnRender();mhFokusZurueck('#mhEarn [data-mhsort="'+k+'"]');return;
+  }
+  const n=t.closest('[data-mhnachlese]');
+  if(n){
+    const u=String(n.dataset.mhnachlese||'').toUpperCase();
+    earnMode='recap';mhEarnRender();
+    const row=[].find.call(document.querySelectorAll('#mhEarn tr[data-tk]'),r=>r.dataset.tk.toUpperCase()===u);
+    if(row){row.classList.add('mh-hl');row.scrollIntoView({block:'center'});row.focus({preventScroll:true});setTimeout(()=>row.classList.remove('mh-hl'),2400)}
+  }
+});
+koInit();
+mhEarnRender();
+
 /* ===== Start ==================================================================== */
 (async function boot(){
   /* Reihenfolge zaehlt: den letzten Besuch LESEN, bevor der neue geschrieben wird —
@@ -4616,6 +5138,7 @@ if(jzIdxSchalter)jzIdxSchalter.addEventListener('click',()=>{
      fuellen, statt nacheinander aufzuklappen (Teil F.2). */
   radarRendern();
   await feedsKlein();
+  mhEarnFertig();              // V2-7 Teil B.5: Quartalszahlen in „Mehr"
   standAnzeigen();
   jetztRendern();               // erstes Rendern: hier steht die Reihenfolge fest
   /* Bewusst ohne await — blockiert das erste Rendern nicht. Ein Ausfall der grossen
