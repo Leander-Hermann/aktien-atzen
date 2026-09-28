@@ -6,7 +6,9 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
-const datei = path.join(__dirname, '..', '..', 'v2.html');
+/* Zieldatei aus tests/v2/ziel.cjs (V2-7 Teil E.1). */
+const ZIEL = require('./ziel.cjs');
+const datei = ZIEL.pfad(ZIEL.v2);
 const html = fs.readFileSync(datei, 'utf8');
 
 const bloecke = [];
@@ -20,7 +22,7 @@ while ((m = re.exec(html)) !== null) {
 let fehler = 0;
 bloecke.forEach((b, i) => {
   try {
-    new vm.Script(b.code, { filename: `v2.html:${b.zeile}` });
+    new vm.Script(b.code, { filename: `${ZIEL.v2}:${b.zeile}` });
     console.log(`ok    Block ${i + 1} (ab Zeile ${b.zeile}, ${b.code.length} Zeichen)`);
   } catch (e) {
     fehler++;

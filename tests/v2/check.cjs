@@ -9,7 +9,9 @@ const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
-const html = fs.readFileSync(path.join(__dirname, '..', '..', 'v2.html'), 'utf8');
+/* Zieldateien aus tests/v2/ziel.cjs (V2-7 Teil E.1): V2 heisst vor dem Cutover v2.html, danach index.html. */
+const ZIEL = require('./ziel.cjs');
+const html = fs.readFileSync(ZIEL.pfad(ZIEL.v2), 'utf8');
 
 /* Eine Funktion samt Rumpf aus dem Quelltext schneiden.
    Klammern zu zählen scheitert an regulären Ausdrücken wie dem in safeUrl, die
@@ -89,7 +91,7 @@ const box = { current: null, DATA: {}, MARKET: null, FGDATA: null, console, URL,
   clearTimeout: id => { box.GELOESCHT = (box.GELOESCHT || 0) + 1; }, AbortController, fetch: null, GELOESCHT: 0 };
 vm.createContext(box);
 vm.runInContext(KONSTANTEN.map(schneideConst).join('\n') + '\n' +
-  NAMEN.map(schneide).join('\n'), box, { filename: 'v2.html-auszug' });
+  NAMEN.map(schneide).join('\n'), box, { filename: ZIEL.v2 + '-auszug' });
 /* bstSymbole liest den localStorage ueber bstLoad(); in der Sandbox gibt es keinen.
    Ersetzt wird deshalb genau diese eine Abhaengigkeit, nicht die geprueften
    Funktionen selbst — der Bestandsbezug der Terminliste wird darueber gesteuert. */
@@ -1253,7 +1255,7 @@ async function gruppeAsync(titel, fn) {
 /* ===== V2-7 Teil B — Raum „Mehr" ==========================================================
    Die V1 ist hier die Referenz: Rechtstexte, Rechen- und Filterlogik werden aus index.html
    UND v2.html geschnitten und gegeneinander geprueft — Textgleichheit und Rechengleichheit. */
-const v1html = fs.readFileSync(path.join(__dirname, '..', '..', 'index.html'), 'utf8').replace(/\r\n/g, '\n');
+const v1html = fs.readFileSync(ZIEL.pfad(ZIEL.v1), 'utf8').replace(/\r\n/g, '\n');
 const v2n = html.replace(/\r\n/g, '\n');
 /* Zeilen von der ersten, die mit `von` beginnt, bis zur ersten, die mit `bis` beginnt (inklusive). */
 function zeilen(quelle, von, bis) {

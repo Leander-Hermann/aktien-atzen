@@ -6,7 +6,9 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const wurzel = path.join(__dirname, '..', '..');
+/* Zieldatei aus tests/v2/ziel.cjs (V2-7 Teil E.1): „/" liefert die Datei, die gerade V2 ist. */
+const ZIEL = require('./ziel.cjs');
+const wurzel = ZIEL.wurzel;
 const port = Number(process.argv[2]) || 8732;
 
 /* Störmodus für die Ausfallprüfung (Auftrag V2-2, DoD-Zeile „Ausfälle"):
@@ -66,7 +68,7 @@ http.createServer((req, res) => {
     return;
   }
 
-  const rel = roh === '/' ? '/v2.html' : roh;
+  const rel = roh === '/' ? '/' + ZIEL.v2 : roh;
   const ziel = path.join(wurzel, rel);
   // Kein Ausbruch aus dem Repoordner
   if (!ziel.startsWith(wurzel)) {
@@ -95,7 +97,7 @@ http.createServer((req, res) => {
       res.writeHead(404, { 'content-type': 'text/plain; charset=utf-8' }).end('nicht gefunden: ' + rel);
       return;
     }
-    if (fallback && /v2\.html$/.test(rel)) {
+    if (fallback && rel === '/' + ZIEL.v2) {
       const roh = buf.toString('utf8');
       /* Eine Engine ohne Container Queries kennt drei Dinge nicht: die
          @supports-Bedingung (sie ist dort wahr), die Deklaration container-type
@@ -115,5 +117,5 @@ http.createServer((req, res) => {
     res.end(buf);
   });
 }).listen(port, '127.0.0.1', () => {
-  console.log('v2-Vorschau auf http://127.0.0.1:' + port + '/v2.html');
+  console.log('v2-Vorschau auf http://127.0.0.1:' + port + '/' + ZIEL.v2);
 });

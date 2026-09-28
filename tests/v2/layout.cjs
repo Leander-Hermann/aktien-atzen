@@ -12,7 +12,9 @@ const path = require('path');
 const crypto = require('crypto');
 
 const WURZEL = path.join(__dirname, '..', '..');
-const html = fs.readFileSync(path.join(WURZEL, 'v2.html'), 'utf8');
+/* Zieldateien aus tests/v2/ziel.cjs (V2-7 Teil E.1). */
+const ZIEL = require('./ziel.cjs');
+const html = fs.readFileSync(ZIEL.pfad(ZIEL.v2), 'utf8');
 
 let gruppen = 0, faelle = 0, fehler = 0;
 function gruppe(titel, fn) {
@@ -269,7 +271,7 @@ function hash(p) {
 }
 gruppe('Kriterium 7 — CSP zeichengleich, Fremddateien unberuehrt', () => {
   const cspV2 = (html.match(/<meta http-equiv="Content-Security-Policy"[\s\S]*?>/) || [''])[0];
-  const idx = fs.readFileSync(path.join(WURZEL, 'index.html'), 'utf8');
+  const idx = fs.readFileSync(ZIEL.pfad(ZIEL.v1), 'utf8');
   const cspV1 = (idx.match(/<meta http-equiv="Content-Security-Policy"[\s\S]*?>/) || [''])[0];
   pruef('CSP-Meta zeichengleich zu index.html', cspV2 === cspV1 && cspV2.length > 0, true);
   pruef('CSP-Laenge in Byte', Buffer.byteLength(cspV2, 'utf8'), Buffer.byteLength(cspV1, 'utf8'));

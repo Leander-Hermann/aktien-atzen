@@ -33,7 +33,7 @@
     return new Promise((res) => {
       const f = document.createElement('iframe');
       f.style.cssText = 'position:fixed;left:-10000px;top:0;width:1280px;height:900px;border:0';
-      f.src = '/v2.html?wellen=' + Date.now();
+      f.src = location.pathname + '?wellen=' + Date.now();   // die geoeffnete Seite (V2-7 Teil E.1)
       f.onload = () => res(f);
       document.body.appendChild(f);
     });

@@ -11,8 +11,10 @@ const fs = require('fs');
 const path = require('path');
 
 const wurzel = path.join(__dirname, '..', '..');
-const v1 = fs.readFileSync(path.join(wurzel, 'index.html'), 'utf8');
-const v2 = fs.readFileSync(path.join(wurzel, 'v2.html'), 'utf8');
+/* Zieldateien aus tests/v2/ziel.cjs (V2-7 Teil E.1). */
+const ZIEL = require('./ziel.cjs');
+const v1 = fs.readFileSync(ZIEL.pfad(ZIEL.v1), 'utf8');
+const v2 = fs.readFileSync(ZIEL.pfad(ZIEL.v2), 'utf8');
 
 const NAECHSTE = /^(?:\/\*|\/\/|function |const |let |var |async function |document\.|addEventListener|window\.)/;
 function schneide(html, name) {
@@ -32,8 +34,8 @@ let fehler = 0;
 
 ZEICHENGLEICH.forEach(name => {
   const a = schneide(v1, name), b = schneide(v2, name);
-  if (a === null) { fehler++; console.error('FEHLER ' + name + ': in index.html nicht gefunden'); return; }
-  if (b === null) { fehler++; console.error('FEHLER ' + name + ': in v2.html nicht gefunden'); return; }
+  if (a === null) { fehler++; console.error('FEHLER ' + name + ': in ' + ZIEL.v1 + ' nicht gefunden'); return; }
+  if (b === null) { fehler++; console.error('FEHLER ' + name + ': in ' + ZIEL.v2 + ' nicht gefunden'); return; }
   if (a === b) {
     console.log('ok     ' + name + ' zeichengleich (' + a.length + ' Zeichen)');
   } else {
@@ -58,7 +60,7 @@ else {
   const fehlend = norm(b).filter(z => norm(a).indexOf(z) < 0);
   if (fehlend.length) {
     fehler++;
-    console.error('FEHLER applyStkLevels enthält Zeilen ohne Vorbild in index.html:');
+    console.error('FEHLER applyStkLevels enthält Zeilen ohne Vorbild in ' + ZIEL.v1 + ':');
     fehlend.forEach(z => console.error('       ' + z.slice(0, 120)));
   } else {
     const fib = /candFibDate|CAND_FIB_RATIO_LABEL/.test(b);
@@ -74,8 +76,8 @@ const v2Code = (v2.match(/<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi) |
   .replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '');
 ['candlesGen', 'resData'].forEach(n => {
   const treffer = new RegExp('(?:function\\s+' + n + '\\s*\\(|\\b' + n + '\\s*\\()').test(v2Code);
-  if (treffer) { fehler++; console.error('FEHLER v2.html ruft ' + n + ' auf — Zufallskerzen sind ausgeschlossen'); }
-  else console.log('ok     ' + n + ' wird in v2.html nirgends aufgerufen');
+  if (treffer) { fehler++; console.error('FEHLER ' + ZIEL.v2 + ' ruft ' + n + ' auf — Zufallskerzen sind ausgeschlossen'); }
+  else console.log('ok     ' + n + ' wird in ' + ZIEL.v2 + ' nirgends aufgerufen');
 });
 
 console.log('BLOCKVERGLEICH ' + (fehler === 0 ? 'OK' : 'FEHLER') + ' fehler=' + fehler);
