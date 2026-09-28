@@ -736,6 +736,12 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .mh-text .lph{color:var(--muted)}
   .mh-text a{overflow-wrap:anywhere}
 
+  /* V2-7 Teil C: Querverweise (S3) und der eigene Block „detail" (S2) in der Videokarte */
+  .rc-refs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--sp-2)}
+  .rc-refs li{display:flex;flex-direction:column;gap:2px;max-width:min(54ch,100%)}
+  .rc-refs a{display:inline-flex;align-items:center;min-height:44px;align-self:flex-start}
+  .rc-detail p{margin-top:var(--sp-2)}
+
   /* Fußzeile (Teil B.2): in jedem Raum sichtbar, Textlinks mit 44-px-Zielen */
   .fuss{margin-top:var(--sp-12);padding-top:var(--sp-6);border-top:1px solid var(--line);
     display:flex;flex-direction:column;gap:var(--sp-2)}
@@ -3000,8 +3006,11 @@ const VERBOT_ZITAT=String.raw`\bsolltest\b
 \bzu hoch gewichtet\b
 \bgut gelaufen\b`.split('\n').map(verbotMuster);
 /* Referenzfassung nach ADR-911 Punkt 3; Änderung nur per ADR. Die ersten 33 Zeilen sind
-   backend/radar.py LLM_FORBIDDEN_RX zeichengleich, die letzten sechs die dort fehlenden
-   Zitat-Begriffe (ADR-911 Punkt 3). Gilt fuer S1 (eigener UI-Text) und S2 (Modelltext). */
+   backend/radar.py LLM_FORBIDDEN_RX zeichengleich, danach sechs dort fehlende Zitat-Begriffe
+   (ADR-911 Punkt 3) und als letzte Zeile „zusteigen": die Zitat-Liste trifft „jetzt zusteigen",
+   und die Teilmengenregel aus Punkt 3 verlangt, dass die volle Liste es auch tut —
+   Fehlerbehebung ohne neuen ADR (Architektenentscheid 28.09.2026, V2-7 Teil C.3; derselbe
+   Nachtrag steht im Backend-Auftrag Verbotsliste). Gilt fuer S1 (eigener UI-Text) und S2 (Modelltext). */
 const VERBOT_EIGEN=String.raw`\b(?:nach|zu|ver)?kaufen\b
 \b(?:ver)?kauf(?:s?empfehlung|signal|kandidat)\w*
 \bkaufen?\b
@@ -3040,7 +3049,8 @@ const VERBOT_EIGEN=String.raw`\b(?:nach|zu|ver)?kaufen\b
 \blohnt sich\b
 \baussichtsreich\w*
 \bzu hoch gewichtet\b
-\bgut gelaufen\b`.split('\n').map(verbotMuster);
+\bgut gelaufen\b
+\bzusteig\w*`.split('\n').map(verbotMuster);
 /* Ohne Listenangabe gilt die STRENGERE Liste — ein Feld ohne Zuordnung ist S2 (ADR-911 Punkt 2). */
 function mwFremdOk(s,liste){const t=String(s==null?'':s);return !!t.trim()&&!(liste||VERBOT_EIGEN).some(r=>r.test(t))}
 
@@ -4272,10 +4282,57 @@ function rcKanaele(){
   return Object.keys(s).sort((a,b)=>a.localeCompare(b,'de')).map(k=>({name:k,anzahl:s[k]}));
 }
 
+/* --- V2-7 Teil C: die drei Item-Felder, die bis V2-5 fehlten ---------------------------
+   chart_info (S3): Herkunftszeile aus der V1 — das Feld ist maschinell aus einem internen
+   Chart-Standbild abgelesen, keine woertliche Aussage des Kanals. Zitat-Liste, escapet. */
+function rcChartHTML(text,kanal){
+  if(!mwFremdOk(text,VERBOT_ZITAT))return '';
+  return '<p class="mw-fremd t-small jz-fliess"><span class="mw-herkunft t-caption">Chart im Beitrag'+
+    (kanal?' · '+escapeHtml(kanal):'')+' · maschinell aus einem internen Chart-Standbild abgelesen – keine wörtliche Aussage des Kanals</span>'+
+    escapeHtml(mwKuerzen(text,RC_TEXTDECKEL))+'</p>';
+}
+/* cross_refs (bezug ist S3): je Verweis Art, optional Datum, Quelle (verlinkt nur ueber
+   safeUrl, also nur https) und der Bezug. `quelle` steht in keiner Sprecherklasse und laeuft
+   deshalb durch die volle Liste (Contract: ungenanntes Feld = S2). Ohne Link und ohne Bezug
+   bliebe nichts Nachpruefbares — dann entfaellt der Verweis. */
+const RC_REF_TYP={news:'News',video:'Video',historie:'Früherer Auftritt'};
+function rcRefsHTML(refs){
+  const z=(Array.isArray(refs)?refs:[]).filter(r=>r&&typeof r==='object').map(r=>{
+    const bezug=mwFremdOk(r.bezug,VERBOT_ZITAT)?escapeHtml(mwKuerzen(r.bezug,RC_TEXTDECKEL)):'';
+    const u=safeUrl(r.url);
+    if(!bezug&&!u)return '';
+    const art=RC_REF_TYP[String(r.typ||'')]||'Verweis',tag=jzTag(String(r.date||''));
+    const q=mwFremdOk(r.quelle,VERBOT_EIGEN)?escapeHtml(String(r.quelle).trim()):'';
+    const lab=q||escapeHtml(art);
+    return '<li><span class="mw-herkunft t-caption">'+escapeHtml(art)+(tag?' · <span class="num">'+tag+'</span>':'')+'</span>'+
+      (u?'<a href="'+u+'" target="_blank" rel="noopener noreferrer">'+lab+'</a>':'<span class="mh-ename">'+lab+'</span>')+
+      (bezug?'<span>'+bezug+'</span>':'')+'</li>';
+  }).filter(Boolean);
+  if(!z.length)return '';
+  return '<div class="mw-fremd t-small"><span class="mw-herkunft t-caption">Querverweise · maschinell verdichtet</span>'+
+    '<ul class="rc-refs">'+z.join('')+'</ul></div>';
+}
+/* detail (S2): die eigene Stimme der Seite durch ihr Modell — eingeklappt, mit Etikett und
+   gestrichelter Kante wie in V2-5 Teil A, volle Liste, bei einem Treffer entfaellt der Block
+   GANZ. Das revidiert V2-5 Teil D.1 nur fuer dieses Feld (Architektenentscheid 28.09.2026):
+   ADR-021 hat es fuer genau diesen Aufklapper geschaffen, und die Karte bleibt Wiedergabe,
+   weil die eigene Stimme sichtbar abgesetzt ist. Das Etikett steht im Aufklapperknopf selbst,
+   damit man den Sprecher schon im geschlossenen Zustand liest. Kein Laengendeckel: der
+   Aufklapper ist der Ort der Tiefe (laengstes Feld 906 Zeichen am 28.09.); die Breite deckelt
+   §4.1. Absaetze wie in der V1 (vParas: Leerzeile trennt). */
+function rcDetailHTML(text){
+  if(!mwFremdOk(text,VERBOT_EIGEN))return '';
+  const absaetze=String(text).trim().split(/\n{2,}/).map(p=>'<p class="jz-fliess">'+escapeHtml(p).replace(/\n/g,'<br>')+'</p>').join('');
+  return '<div class="mw-fremd mw-eigen rc-detail"><details class="mw-mehr"><summary class="t-small">'+
+    '<span class="mw-herkunft t-caption">Einordnung dieser Seite · maschinell erzeugt</span></summary>'+absaetze+'</details></div>';
+}
+
 /* --- Ein Item der Videokarte (Teil D.1) ------------------------------------------------
-   name (S3) mit Symbol-Chip, wenn ticker gesetzt und sauber; note, figures, tip (S3) ueber
-   denselben Baustein wie die Auftritte; kategorie als Chip; tlink mit Zeitmarke aus dem
-   Feed oder „ohne Zeitmarke" — nie geraten. einordnung und detail fehlen hier bewusst. */
+   name (S3) mit Symbol-Chip, wenn ticker gesetzt und sauber; note, figures, tip, chart_info
+   und cross_refs (S3) ueber denselben Baustein wie die Auftritte; kategorie als Chip; tlink
+   mit Zeitmarke aus dem Feed oder „ohne Zeitmarke" — nie geraten. detail (S2) seit V2-7 als
+   eigener, etikettierter Block; einordnung fehlt hier weiter bewusst (sie steht in der
+   Wertansicht). */
 function rcItemHTML(it,kanal,videoUrl){
   if(!it||typeof it!=='object')return '';
   const sym=validTicker(String(it.ticker==null?'':it.ticker).toUpperCase());
@@ -4293,18 +4350,24 @@ function rcItemHTML(it,kanal,videoUrl){
     mwFremdHTML('Zusammenfassung des Beitrags',it.note,kanal,RC_TEXTDECKEL)+
     mwFremdHTML('Im Beitrag genannte Zahlen',it.figures,kanal,RC_TEXTDECKEL)+
     mwFremdHTML('Hinweis im Beitrag',it.tip,kanal,RC_TEXTDECKEL)+
+    rcChartHTML(it.chart_info,kanal)+
+    rcRefsHTML(it.cross_refs)+
     mwVideoLinkHTML(it.tlink||videoUrl)+
+    rcDetailHTML(it.detail)+
   '</div>';
 }
 
 /* --- Die Videokarte (Teil D.1) ----------------------------------------------------------
    Kopf: Kanal, Datum, Titel (S3), Ueberblick (S3), Link zum Video. Aufklapper: die Items und
-   die Marktnotizen (macro[], S3). Kein thumbnail, kein einordnung, kein detail. `herkunft`
-   unterscheidet die Karten-IDs des Recent-Fensters von denen eines Archiv-Tags — dasselbe
-   Video kann in beiden stehen. */
+   die Marktnotizen (macro[], S3). Kein thumbnail und kein einordnung; detail nur im
+   etikettierten Block je Item (V2-7 Teil C.2). `herkunft` unterscheidet die Karten-IDs des
+   Recent-Fensters von denen eines Archiv-Tags — dasselbe Video kann in beiden stehen.
+   V2-7 (Inventur Zeile 22): die Playlist steht wie in der V1 hinter dem Kanal. Sie ist ein
+   Name ohne Sprecherklasse und laeuft deshalb durch die volle Liste. */
 function rcVideoKarte(v,herkunft){
   if(!v||typeof v!=='object')return '';
   const kanal=String(v.channel||'').trim(),tag=jzTag(rcTag(v.date));
+  const liste=mwFremdOk(v.playlist,VERBOT_EIGEN)?String(v.playlist).trim():'';
   const id=String(v.id==null?'':v.id).replace(/[^A-Za-z0-9_-]/g,'');
   const titel=mwFremdOk(v.title,VERBOT_ZITAT)?escapeHtml(mwKuerzen(v.title,RC_TEXTDECKEL)):'';
   const items=Array.isArray(v.items)?v.items:[];
@@ -4317,6 +4380,7 @@ function rcVideoKarte(v,herkunft){
       ' data-rckanal="'+escapeHtml(kanal)+'">'+
     '<div class="mw-auftritt">'+
       '<span class="t-small mw-kanal">'+(escapeHtml(kanal)||'Videoanalyse')+
+        (liste?' · '+escapeHtml(liste):'')+
         (tag?' · <span class="num">'+tag+'</span>':'')+'</span>'+
       '<h4 class="rc-titel" tabindex="-1">'+(titel||'Videoanalyse')+'</h4>'+
       mwFremdHTML('Überblick',v.summary,kanal,RC_TEXTDECKEL)+

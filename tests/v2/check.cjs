@@ -55,7 +55,9 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   /* Symbolliste (Nutzerentscheid 11.09.) — mwSymbole traegt seinen Zustand als Eigenschaften */
   'mwSymbole', 'mwSymboleOk', 'mwListenName', 'mwWortanfang',
   /* Kurspfad ueber den Proxy (Nutzerbefund 13.09.: 6-20 s Wartezeit auf einen Fehler) */
-  'ywFetch', 'ywFehlerText', 'ywSammelHinweis'];
+  'ywFetch', 'ywFehlerText', 'ywSammelHinweis',
+  /* V2-7 Teil C: die drei Item-Felder der Videokarte */
+  'rcChartHTML', 'rcRefsHTML', 'rcDetailHTML'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
@@ -63,7 +65,7 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
   'VERBOT_ZITAT', 'VERBOT_EIGEN', 'MW_TEXTDECKEL', 'RC_KATEGORIEN', 'RC_KATEGORIE_LABEL', 'RC_TEXTDECKEL',
   'RC_HAEUFIG_TAGE', 'SU_DECKEL', 'SU_ART',   /* RC_HAEUFIG_ANZAHL steht in derselben Zeile wie RC_HAEUFIG_TAGE */ 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG',
-  'YW_TIMEOUT_MS'];
+  'YW_TIMEOUT_MS', 'RC_REF_TYP'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -958,7 +960,7 @@ gruppe('V2-4 Nachtrag — Symbolliste: Nu Holdings wird gefunden, Feeds behalten
 gruppe('V2-5 Teil A — Sprecherklassen nach ADR-911: Zitat-Liste, volle Liste, Etikett, Fussnote', () => {
   const zitat = vm.runInContext('VERBOT_ZITAT', box), eigen = vm.runInContext('VERBOT_EIGEN', box);
   pruef('VERBOT_ZITAT traegt 27 Muster', zitat.length, 27);
-  pruef('VERBOT_EIGEN traegt 33 radar.py-Muster plus sechs', eigen.length, 39);
+  pruef('VERBOT_EIGEN traegt 33 radar.py-Muster plus sechs plus „zusteigen" (V2-7 Teil C.3)', eigen.length, 40);
   /* instanceof scheitert ueber die Realm-Grenze der Sandbox — deshalb der Typname. */
   pruef('beide Listen sind kompilierte Unicode-Regexe',
     zitat.concat(eigen).every(r => Object.prototype.toString.call(r) === '[object RegExp]' && r.flags === 'iu'), true);
@@ -967,16 +969,15 @@ gruppe('V2-5 Teil A — Sprecherklassen nach ADR-911: Zitat-Liste, volle Liste, 
     'Einstieg jetzt', 'zugreifen', 'nachkaufen', 'aufstocken', 'Erfolgswahrscheinlichkeit',
     'garantiert', 'sichere Gewinne', 'sicheres Ziel', 'risikolos', 'sichere Ziele', 'Top-Pick', 'beste Chancen',
     'Kaufkandidat', 'Schnäppchen', 'lohnt sich', 'aussichtsreich', 'dein Risiko', 'Ihr Risiko', 'dein Depot',
-    'Ihr Depot', 'zu hoch gewichtet', 'gut gelaufen'];
+    'Ihr Depot', 'zu hoch gewichtet', 'gut gelaufen', 'jetzt zusteigen'];
   const trifft = (liste, t) => liste.some(r => r.test(t));
   pruef('jedes Probewort trifft die Zitat-Liste', proben.filter(t => !trifft(zitat, t)), []);
   pruef('jedes dieser Probewoerter trifft auch die volle Liste (Teilmenge)', proben.filter(t => !trifft(eigen, t)), []);
   pruef('jedes Zitat-Muster hat mindestens ein Probewort', zitat.filter(r => !proben.some(t => r.test(t))).length, 0);
-  /* BEFUND 17.09.2026 (Architektenfrage, Handoff): „jetzt zusteigen" trifft die Zitat-Liste, aber
-     radar.py kennt nur einsteig/aussteig — die Teilmenge gilt hier nur ueber das Probewort
-     „jetzt einsteigen". Beide Listen wachsen nur per ADR-Nachtrag (ADR-911 Punkt 3); dieser
-     Fall haelt die Luecke sichtbar und kippt, sobald der Nachtrag da ist. */
-  pruef('bekannte Luecke: „zusteigen" fehlt in der vollen Liste', [trifft(zitat, 'jetzt zusteigen'), trifft(eigen, 'jetzt zusteigen')], [true, false]);
+  /* BEFUND 17.09.2026, geschlossen 28.09.2026 (V2-7 Teil C.3, Architektenentscheid): „jetzt
+     zusteigen" traf die Zitat-Liste, aber nicht die volle. Der Fall stand hier als „bekannte
+     Luecke" und ist mit dem Nachtrag „\bzusteig\w*" gekippt — jetzt trifft das Wort beide. */
+  pruef('„zusteigen" trifft beide Listen (Teilmenge auch fuer dieses Probewort)', [trifft(zitat, 'jetzt zusteigen'), trifft(eigen, 'jetzt zusteigen'), trifft(eigen, 'Zusteiger')], [true, true, true]);
   /* (b) die MSFT-Zeile vom 31.08.: Sachaussage des Kanals in dritter Person. */
   const msft = 'Microsoft gefällt dem Host charttechnisch. Nach den Quartalszahlen kam es zu einem Gap-up; ' +
     '350 US-Dollar gelten als zentrale Unterstützung, und der Chart liefert ein mittelfristiges Kaufsignal.';
@@ -1044,7 +1045,7 @@ function rcVideo(over) {
     macro: [{ text: 'Die Fed hat den Leitzins angehoben.', tlink: 'https://www.youtube.com/watch?v=abc123&t=33s' }]
   }, over || {});
 }
-gruppe('V2-5 Teil D — Videokarte: S3-Felder mit Herkunft, kein einordnung, kein detail, kein thumbnail', () => {
+gruppe('V2-5 Teil D — Videokarte: S3-Felder mit Herkunft, kein einordnung, detail nur etikettiert (V2-7), kein thumbnail', () => {
   vm.runInContext('rcFilter.wahl={kanal:[],kategorie:[]}', box);
   box.v = rcVideo();
   const k = vm.runInContext('rcVideoKarte(v,"r")', box);
@@ -1064,8 +1065,10 @@ gruppe('V2-5 Teil D — Videokarte: S3-Felder mit Herkunft, kein einordnung, kei
   pruef('der Kartenlink heisst schlicht „Zum Video", die fehlende Marke wird nur an Items benannt', />Zum Video<svg/.test(k), true);
   pruef('Marktnotiz als S3 mit Zeitmarke', /Marktlage · onvista · maschinell verdichtet/.test(k) && /Zum Video ab 0:33/.test(k), true);
   /* NEGATIV: S2-Felder und das Vorschaubild duerfen nicht in der Karte stehen. */
-  pruef('einordnung nicht in der Karte', /Volumen mehr Gewicht|mw-eigen|Einordnung dieser Seite/.test(k), false);
-  pruef('detail nicht in der Karte', /Lange eigene Deutung/.test(k), false);
+  pruef('einordnung nicht in der Karte', /Volumen mehr Gewicht/.test(k), false);
+  /* V2-7 Teil C.2 revidiert V2-5 Teil D.1 NUR fuer detail: es steht im etikettierten S2-Block. */
+  pruef('detail nur im etikettierten S2-Block', k.indexOf('<div class="mw-fremd mw-eigen rc-detail"><details class="mw-mehr"><summary class="t-small"><span class="mw-herkunft t-caption">Einordnung dieser Seite · maschinell erzeugt</span></summary><p class="jz-fliess">Lange eigene Deutung.</p>') > -1, true);
+  pruef('genau ein S2-Block (das eine detail), keiner fuer einordnung', (k.match(/mw-eigen/g) || []).length, 1);
   pruef('kein img, kein ytimg', /<img|ytimg/.test(k), false);
   /* NEGATIV: ein S3-Feld mit Zitat-Verstoss entfaellt, der Rest der Karte bleibt. */
   box.v = rcVideo({ title: 'Kaufen Sie jetzt!', items: [{ name: 'Nokia', ticker: 'NOKIA.HE', note: 'Das lohnt sich.', kategorie: 'news', tlink: 'https://www.youtube.com/watch?v=abc123&t=5s' }] });
@@ -1421,6 +1424,45 @@ gruppe('V2-7 Teil B.5 — Nachlese-Signale: S2 mit Etikett und Kante, Treffer �
   pruef('ohne erlaubten Text entfällt das Signal ganz', vm.runInContext('mhEarnSignalHTML(SIG)', box), '');
   box.SIG = { titel: '<img src=x onerror=alert(1)>', kernaussage: 'x' };
   pruef('Signaltext escapet', /<img/.test(vm.runInContext('mhEarnSignalHTML(SIG)', box)), false);
+});
+
+gruppe('V2-7 Teil C — chart_info und cross_refs (S3), detail (S2) im etikettierten Block, Playlist', () => {
+  vm.runInContext('rcFilter.wahl={kanal:[],kategorie:[]}', box);
+  box.v = rcVideo({ playlist: 'Märkte am Morgen', items: [{ name: 'Nokia', ticker: 'NOKIA.HE', kategorie: 'chartanalyse',
+    chart_info: 'Aufwärtstrend intakt, Widerstand bei 5,20 Euro.',
+    cross_refs: [
+      { typ: 'video', quelle: 'Der Aktionär', url: '', bezug: 'Das Tagesvideo ordnet die Netzsparte ein.' },
+      { typ: 'news', quelle: 'Reuters', url: 'https://www.reuters.com/a', bezug: 'Auftrag aus Indien gemeldet.' },
+      { typ: 'historie', quelle: 'onvista', url: 'javascript:alert(1)', bezug: 'Früher schon besprochen.', date: '2026-08-01' },
+      { typ: 'news', quelle: 'X', url: 'http://unsicher.example', bezug: '' },
+      { typ: 'video', quelle: 'Y', url: '', bezug: 'Jetzt einsteigen, sagt der Host.' }],
+    detail: 'Erster Absatz der Tiefe.' + String.fromCharCode(10, 10) + 'Zweiter Absatz <b>mit</b> Markup.', einordnung: 'Eigene Deutung.',
+    tlink: 'https://www.youtube.com/watch?v=abc123&t=5s' }] });
+  const k = vm.runInContext('rcVideoKarte(v,"r")', box);
+  const hat = t => k.indexOf(t) > -1;
+  pruef('chart_info mit Herkunftszeile aus der V1', hat('Chart im Beitrag · onvista · maschinell aus einem internen Chart-Standbild abgelesen – keine wörtliche Aussage des Kanals</span>Aufwärtstrend intakt'), true);
+  pruef('Querverweise als S3 gekennzeichnet', hat('Querverweise · maschinell verdichtet'), true);
+  pruef('https-Quelle verlinkt, noopener', hat('<a href="https://www.reuters.com/a" target="_blank" rel="noopener noreferrer">Reuters</a>'), true);
+  /* Negativfall DoD 6: cross_refs.url mit javascript: wird verlinkt ⇒ rot. */
+  pruef('javascript:-URL wird nicht verlinkt', hat('javascript:'), false);
+  pruef('http-URL wird nicht verlinkt, Verweis ohne Bezug entfaellt', hat('unsicher.example') || hat('>X<'), false);
+  pruef('Verweis ohne Link behaelt Quelle und Bezug als Text', hat('<span class="mh-ename">Der Aktionär</span><span>Das Tagesvideo ordnet'), true);
+  pruef('historie mit Datum', hat('Früherer Auftritt · <span class="num">01.08.2026</span>'), true);
+  pruef('Bezug mit Zitat-Verstoss entfaellt samt Verweis', hat('einsteigen'), false);
+  /* Negativfall DoD 6: detail ohne Etikett ⇒ rot. */
+  pruef('detail mit Etikett und gestrichelter Kante', hat('<div class="mw-fremd mw-eigen rc-detail"><details class="mw-mehr"><summary class="t-small"><span class="mw-herkunft t-caption">Einordnung dieser Seite · maschinell erzeugt</span></summary>'), true);
+  pruef('detail eingeklappt (kein open)', hat('<details class="mw-mehr" open'), false);
+  pruef('detail in Absaetzen, escapet', hat('<p class="jz-fliess">Erster Absatz der Tiefe.</p><p class="jz-fliess">Zweiter Absatz &lt;b&gt;mit&lt;/b&gt; Markup.</p>'), true);
+  pruef('einordnung weiter nicht in der Karte', hat('Eigene Deutung'), false);
+  pruef('Playlist hinter dem Kanal', hat('onvista · Märkte am Morgen · <span class="num">17.09.2026'), true);
+  box.v = rcVideo({ items: [{ name: 'Nokia', ticker: 'NOKIA.HE', detail: 'Die Aktie ist ein klarer Kaufkandidat.', chart_info: 'Jetzt zugreifen!', kategorie: 'news' }] });
+  const verb = vm.runInContext('rcVideoKarte(v,"r")', box);
+  pruef('detail mit Listenbegriff entfaellt GANZ (kein leerer Block)', /Kaufkandidat|rc-detail|Einordnung dieser Seite/.test(verb), false);
+  pruef('chart_info mit Zitat-Verstoss entfaellt', /zugreifen|Chart im Beitrag/.test(verb), false);
+  pruef('Item bleibt mit Name', /Nokia/.test(verb), true);
+  /* Gefunden beim Erzwingen von DoD 7: eine leere Listenzeile (etwa ein allein stehendes CR,
+     das im Template-Literal zu LF wird) kompiliert zu einem Muster, das JEDEN Text trifft. */
+  pruef('keine leere Zeile in den Verbotslisten', vm.runInContext('VERBOT_ZITAT.concat(VERBOT_EIGEN).filter(r=>r.test("")).length', box), 0);
 });
 
 const KURSPFAD = gruppeAsync('Kurspfad - toter Proxy entfernt, Zeitlimit 10 s, ehrlicher Grund statt Stille', async () => {
