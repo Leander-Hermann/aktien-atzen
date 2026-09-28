@@ -1228,7 +1228,10 @@ const LEGAL={
    <p>Kein Teil dieses Codes oder dieser Inhalte darf ohne ausdrückliche vorherige schriftliche Genehmigung des Rechteinhabers kopiert, vervielfältigt, verändert, weiterverbreitet, öffentlich zugänglich gemacht oder kommerziell genutzt werden. Es wird keine Open-Source-Lizenz (z. B. MIT, Apache, GPL) gewährt.</p>
    <p>Das Ansehen, Klonen und Forken dieses öffentlichen Repositorys im Rahmen der GitHub-Nutzungsbedingungen bleibt unberührt; daraus entstehen keine Nutzungs-, Bearbeitungs- oder Verwertungsrechte am Code oder an den Inhalten.</p>
    <p>Die dargestellten Markt-, Kurs-, News- und Videodaten stammen aus Drittquellen, unterliegen den Rechten ihrer jeweiligen Anbieter und dienen ausschließlich Informationszwecken – keine Anlageberatung.</p>
-   <p>Den vollständigen Lizenztext finden Sie in der Datei <code>LICENSE</code> im Repository.</p>`}
+   <p>Den vollständigen Lizenztext finden Sie in der Datei <code>LICENSE</code> im Repository.</p>
+   <h4>Verwendete Software</h4>
+   <p>Die Kursdiagramme verwenden die Bibliothek „lightweight-charts" 4.1.3 (Apache License 2.0). Attribution laut deren NOTICE-Datei:</p>
+   <p>TradingView Lightweight Charts™<br>Copyright (с) 2023 TradingView, Inc. <a href="https://www.tradingview.com/" target="_blank" rel="noopener noreferrer">https://www.tradingview.com/</a></p>`}
 };
 function openLegal(k){const e=LEGAL[k];if(!e)return;document.getElementById('legalTitle').textContent=e.title;document.getElementById('legalBody').innerHTML=e.html;const ov=document.getElementById('legalOverlay');ov.classList.add('open');const md=ov.querySelector('.modal');if(md)md.scrollTop=0}
 function closeLegal(){document.getElementById('legalOverlay').classList.remove('open')}
