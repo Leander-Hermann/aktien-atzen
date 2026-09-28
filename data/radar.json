@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-28T18:20:42.083751Z",
+  "generated_at": "2026-09-28T19:20:41.401473Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -11,7 +11,7 @@
  "mode": "batch",
  "universe": {
   "symbols_total": 97,
-  "with_quote_data": 57,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -20,149 +20,103 @@
  },
  "items": [
   {
-   "symbol": "EVK.DE",
-   "name": "Evonik",
-   "score": 80,
-   "priority": "high",
+   "symbol": "HFG.DE",
+   "name": "HelloFresh",
+   "score": 55,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+7,2 %",
-     "weight": 45
+     "value": "+4,8 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,5× Durchschnitt",
-     "weight": 25
+     "value": "2,0× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:EVK",
-   "quote": {
-    "price": 19.37,
-    "pct": 7.19,
-    "cur": "EUR",
-    "as_of": "2026-09-28T06:34:28.076240+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Evonik mit deutlichem Kursanstieg und hohem Volumen",
-    "why_now": "Die Evonik-Aktie steigt um 7,2 % auf 19,37 EUR. Gleichzeitig liegt das Handelsvolumen beim 4,5-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt, was als möglicher zusätzlicher Aufmerksamkeitstreiber infrage kommt. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-28T07:20:40.499307Z"
-   }
-  },
-  {
-   "symbol": "HFG.DE",
-   "name": "HelloFresh",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-9,5 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,4× Durchschnitt",
-     "weight": 25
     }
    ],
    "tv_symbol": "XETR:HFG",
    "quote": {
-    "price": 2.285,
-    "pct": -9.49,
+    "price": 2.401,
+    "pct": 4.8,
     "cur": "EUR",
-    "as_of": "2026-09-28T06:34:28.076240+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "HelloFresh fällt bei ungewöhnlich hohem Volumen",
-    "why_now": "Die HelloFresh-Aktie liegt bei 2,285 EUR und verzeichnet eine Tagesbewegung von -9,5 %. Gleichzeitig beträgt das Handelsvolumen das 4,4-Fache des Durchschnitts. Die Kombination spricht für eine ungewöhnlich starke Marktbewegung, belegt aber keinen konkreten Auslöser. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursbewegung",
-     "Handelsvolumen",
-     "Neue Unternehmensdaten"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-28T00:24:41.600716Z"
+    "as_of": "2026-09-28T18:35:00.073228+00:00"
    }
   },
   {
-   "symbol": "TWLO",
-   "name": "Twilio",
-   "score": 60,
+   "symbol": "NKE",
+   "name": "Nike",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-8,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "quote": {
-    "price": 275.8,
-    "pct": -7.96,
-    "cur": "USD",
-    "as_of": "2026-09-28T06:34:28.076240+00:00"
-   }
-  },
-  {
-   "symbol": "AKAM",
-   "name": "Akamai",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+3,2 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "9,0× Durchschnitt",
-     "weight": 25
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 113.94,
-    "pct": 3.2,
+    "price": 36.445,
+    "pct": 1.93,
     "cur": "USD",
-    "as_of": "2026-09-28T06:34:28.076240+00:00"
+    "as_of": "2026-09-28T18:35:00.073228+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-28",
+    "distance_days": 0,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "EVK.DE",
+   "name": "Evonik",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,4 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:EVK",
+   "quote": {
+    "price": 19.84,
+    "pct": 2.43,
+    "cur": "EUR",
+    "as_of": "2026-09-28T18:35:00.073228+00:00"
    }
   }
  ]
