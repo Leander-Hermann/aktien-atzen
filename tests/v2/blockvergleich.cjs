@@ -13,8 +13,11 @@ const path = require('path');
 const wurzel = path.join(__dirname, '..', '..');
 /* Zieldateien aus tests/v2/ziel.cjs (V2-7 Teil E.1). */
 const ZIEL = require('./ziel.cjs');
-const v1 = fs.readFileSync(ZIEL.pfad(ZIEL.v1), 'utf8');
-const v2 = fs.readFileSync(ZIEL.pfad(ZIEL.v2), 'utf8');
+/* Zeilenenden normalisiert: die Rueckwechsel-Probe (V2-7 Teil E.2) hat gezeigt, dass eine mit LF
+   geschriebene und eine mit CRLF ausgecheckte Datei sonst als „weicht ab" gelten, obwohl die
+   Bloecke zeichengleich sind. */
+const v1 = fs.readFileSync(ZIEL.pfad(ZIEL.v1), 'utf8').replace(/\r\n/g, '\n');
+const v2 = fs.readFileSync(ZIEL.pfad(ZIEL.v2), 'utf8').replace(/\r\n/g, '\n');
 
 const NAECHSTE = /^(?:\/\*|\/\/|function |const |let |var |async function |document\.|addEventListener|window\.)/;
 function schneide(html, name) {
