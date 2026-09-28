@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-27T23:20:40.377501Z",
+  "generated_at": "2026-09-28T00:24:41.600716Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "HFG.DE",
    "name": "HelloFresh",
-   "score": 80,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -38,12 +38,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "4,4× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "tv_symbol": "XETR:HFG",
@@ -56,14 +50,14 @@
    "llm": {
     "status": "ready",
     "headline": "HelloFresh fällt bei ungewöhnlich hohem Volumen",
-    "why_now": "Die HelloFresh-Aktie gab um 9,5 % nach. Gleichzeitig lag das Handelsvolumen beim 4,4-Fachen des Durchschnitts. Zudem wurde die Aktie in den vergangenen drei Tagen in einem Video erwähnt. Ursache unklar.",
+    "why_now": "Die HelloFresh-Aktie liegt bei 2,285 EUR und verzeichnet eine Tagesbewegung von -9,5 %. Gleichzeitig beträgt das Handelsvolumen das 4,4-Fache des Durchschnitts. Die Kombination spricht für eine ungewöhnlich starke Marktbewegung, belegt aber keinen konkreten Auslöser. Ursache unklar.",
     "watch_next": [
-     "Kursbewegung",
+     "Weitere Kursbewegung",
      "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
+     "Neue Unternehmensdaten"
     ],
     "confidence": "low",
-    "generated_at": "2026-09-26T19:20:41.692887Z"
+    "generated_at": "2026-09-28T00:24:41.600716Z"
    }
   },
   {
@@ -131,78 +125,6 @@
     "pct": -7.96,
     "cur": "USD",
     "as_of": "2026-09-27T18:32:51.718475+00:00"
-   }
-  },
-  {
-   "symbol": "BZ=F",
-   "name": "Öl",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-8,6 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "TVC:UKOIL",
-   "quote": {
-    "price": 97.44,
-    "pct": -8.59,
-    "cur": "USD",
-    "as_of": "2026-09-27T18:32:51.718475+00:00"
-   }
-  },
-  {
-   "symbol": "COST",
-   "name": "Costco",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,9 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,1× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 922.765,
-    "pct": 2.93,
-    "cur": "USD",
-    "as_of": "2026-09-27T18:32:51.718475+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-24",
-    "distance_days": -3,
-    "zeit": "amc"
    }
   }
  ]
