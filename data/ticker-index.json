@@ -1,6 +1,651 @@
 {
- "updated": "2026-09-27T18:32:51.718475+00:00",
+ "updated": "2026-09-28T06:34:28.076240+00:00",
  "ticker": {
+  "AKAM": {
+   "name": "Akamai",
+   "auftritte": [
+    {
+     "date": "2026-09-28",
+     "video_id": "iPOhcrx5BhI",
+     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=187s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Akamai hat mit Anthropic einen mehrjährigen Milliardenvertrag geschlossen. Der Deal löste am Freitag einen Kurssprung aus, woraufhin mehrere Analysten ihre Kursziele anhoben.",
+     "einordnung": "Der Vertrag ist strategisch bedeutend, aber ein Kurssprung von 17% preist bereits viel Zukunft ein. Entscheidend wird sein, wie schnell sich der Auftrag in belastbaren Umsatz und Cashflow übersetzt.",
+     "figures": "Deal mindestens 11,6 Mrd. USD über sieben Jahre, Option auf bis zu 5% der Aktien, möglicher Gesamtwert bis 20 Mrd. USD, Schlusskurs 113,94 USD, Tageshoch 133 USD, Guggenheim-Kursziel 225 USD, JPMorga…"
+    }
+   ]
+  },
+  "MU": {
+   "name": "Micron",
+   "auftritte": [
+    {
+     "date": "2026-09-28",
+     "video_id": "iPOhcrx5BhI",
+     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=355s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Micron gilt als KI-Profiteur, hat das im Beitrag genannte eigene Kursziel bereits erreicht und steht am Mittwochabend vor der Veröffentlichung der Quartalszahlen. RBC wird als weiterhin optimistisch…",
+     "einordnung": "Bei einem bereits erreichten Kursziel verschiebt sich das Chance-Risiko-Verhältnis kurzfristig auf die Zahlen und den Ausblick. Der KI- und Speichermarkt bleibt attraktiv, ist aber zyklisch und entsp…",
+     "figures": "Eigenes Kursziel 1082 USD erreicht; RBC optimistisch, ohne genanntes Kursziel"
+    },
+    {
+     "date": "2026-09-23",
+     "video_id": "SZrm5GELGqI",
+     "url": "https://www.youtube.com/watch?v=SZrm5GELGqI&t=3142s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Michael Burry baut laut Host seine Short-Positionen in Micron, Palantir, Nvidia und einem Halbleiter-ETF aus. Goersch widerspricht der skeptischen Sicht auf den Memory-Zyklus und verweist auf steigen…",
+     "einordnung": "Die niedrige Bewertung und der KI-getriebene Speicherbedarf sprechen für die Bullen, doch Burry trifft mit dem Hinweis auf die Zyklik einen wunden Punkt der These. Bei Micron ist entscheidend, ob die…",
+     "figures": "KGV 7,5, Citi-Ziel 1.300 US-Dollar nach zuvor 1.150 US-Dollar, durchschnittliches Analystenziel 1.565 US-Dollar, laut Host 42 Prozent Aufwärtspotenzial, UBS erwartet steigende Preise bis 2028, Speich…"
+    },
+    {
+     "date": "2026-09-16",
+     "video_id": "3YMjiOZKbm4",
+     "url": "https://www.youtube.com/watch?v=3YMjiOZKbm4&t=2577s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "In Taiwan stehen Tarifverhandlungen an; die Gewerkschaft fordert 15 Prozent des operativen Gewinns als Beteiligung. Der Host verweist zugleich auf die erwartete starke Expansion des Speichermarkts un…",
+     "einordnung": "Micron vereint einen strukturell starken KI-Speicherzyklus mit einem konkreten Kosten- und Produktionsrisiko in Taiwan. Der positive Blick des Hosts ist angesichts des Marktwachstums verständlich, do…",
+     "figures": "Gewerkschaftsforderung: 15 Prozent des operativen Gewinns; Speichermarkt 2026: 937 Milliarden US-Dollar, 2030: 1,8 Billionen US-Dollar; gesamter Halbleitermarkt 2026: 1,7 Billionen US-Dollar, 2030: 3…"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "6VmhA9lWzLk",
+     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=2798s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "Micron verliert vorbörslich rund 5 Prozent, ausgelöst durch die KI-Panik und zusätzliche Sorgen über einen möglichen Streik in Taiwan. Mittelfristig sieht der Host tiefere Kurse als mögliche Chance.",
+     "einordnung": "Micron bleibt ein zyklischer Speicherwert, dessen Kurs stark auf Erwartungen an KI-Investitionen und Lieferketten reagiert. Der Rückgang kann deshalb sowohl eine Übertreibung des Sentiments als auch…",
+     "figures": "Vorbörslich -5 Prozent; Bonus 1 Mio. TWD beziehungsweise 31.500 Dollar; Mitarbeiter fordern 15 Prozent Gewinnbeteiligung"
+    },
+    {
+     "date": "2026-09-07",
+     "video_id": "BbDMdNi1LC4",
+     "url": "https://www.youtube.com/watch?v=BbDMdNi1LC4&t=1905s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Bei Micron verdichten sich die gleitenden Durchschnitte, während der Host eine bullische inverse Schulter-Kopf-Schulter-Formation erkennt. Der entscheidende Ausbruchspunkt liegt um 1.000 US-Dollar.",
+     "einordnung": "Die Formation bietet eine klare technische Triggerzone, ist bis zum tatsächlichen Ausbruch aber lediglich eine Möglichkeit. Bei einem Halbleiterwert ist zudem mit erhöhter Schwankungsbreite zu rechne…",
+     "figures": "Ausbruchsniveau um 1.000 US-Dollar, Stopp unter 890 US-Dollar."
+    },
+    {
+     "date": "2026-09-07",
+     "video_id": "SSFzzcpor7A",
+     "url": "https://www.youtube.com/watch?v=SSFzzcpor7A&t=3315s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Micron wird als Teil der bullishen Speicheraktien genannt. Der Host sieht einen Dreieckausbruch und nennt Kursziele von 300 US-Dollar sowie langfristig 1.700 US-Dollar.",
+     "einordnung": "Die genannten Ziele spiegeln eine sehr weitreichende Aufwärtsprojektion wider, die stark vom Fortbestand des Speicher- und KI-Zyklus abhängt. Das kurzfristige und das langfristige Ziel sollten daher…",
+     "figures": "Kursziel 300 US-Dollar, entsprechend 30%; langfristiges Kursziel 1.700 US-Dollar, entsprechend 65 bis 70%"
+    },
+    {
+     "date": "2026-08-18",
+     "video_id": "-mSKtaN5emQ",
+     "url": "https://www.youtube.com/watch?v=-mSKtaN5emQ&t=2549s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Die Bank of America bekräftigt ihre Kaufempfehlung mit einem Kursziel von 50 US-Dollar. Micron profitiert laut Host von steigenden DRAM-Preisen und geopolitischer Unterstützung durch die US-Blockade…",
+     "einordnung": "Micron ist ein klassischer zyklischer Profiteur eines knappen Speichermarktes, dessen Bewertung stark vom erwarteten Preiszyklus abhängt. Politische Unterstützung verbessert die Wettbewerbsposition i…",
+     "figures": "Kursziel 50 US-Dollar; erwartetes EPS-Wachstum von mehr als 30% pro Jahr bis 2030; DRAM-Preise +30% im Jahr 2026; Investitionen von 250 Mrd. US-Dollar bis 2035; Ziel eines US-DRAM-Produktionsanteils…"
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "Hwf_CXhBgJU",
+     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=1248s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Die Bank of America sieht bei Micron eine Kaufgelegenheit und nennt starke Gewinnperspektiven bis 2028. Der Host bleibt dennoch abwartend und verweist auf ein Kursziel von 50 Dollar, ein EPS von 150…",
+     "einordnung": "Micron ist ein direkter Hebel auf die Speicherpreise und damit chancenreich, aber besonders zyklisch. Die im Rohmaterial ungewöhnlich wirkende Zahlenkombination sollte nicht überinterpretiert werden;…",
+     "figures": "Kursziel 50 $, EPS 2028: 150 $, Bärenmarktszenario 100 $"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "AgPutPCLfas",
+     "url": "https://www.youtube.com/watch?v=AgPutPCLfas&t=3508s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Micron wird als fundamental bullischer Wert nahe den Tiefs eingeordnet. Das KGV liegt im einstelligen Bereich, allerdings bestehen ein Korea-Overhang und weiterhin zyklische Risiken.",
+     "einordnung": "Die niedrige Bewertung kann bei einem Speicherzyklus attraktiv sein, ist aber gerade bei Halbleitern häufig ein Spätzyklus-Signal. Ohne weitere Zahlen im Auszug bleibt der Wert eine zyklische Erholun…",
+     "figures": "KGV im einstelligen Bereich"
+    },
+    {
+     "date": "2026-08-03",
+     "video_id": "n8967zUx9oE",
+     "url": "https://www.youtube.com/watch?v=n8967zUx9oE&t=3048s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der Host beschreibt eine Verzehnfachung der Aktie im Speicherchip-Hype und anschließend eine Korrektur von 30 Prozent. Die fundamentale Nachfrage bleibe hoch, dennoch müsse der Kursrücksetzer verarbe…",
+     "einordnung": "Micron zeigt das typische Muster eines zyklischen Halbleiterwerts: Starke Nachfrage kann die Gewinnfantasie schnell treiben, aber auch hohe Erwartungen erzeugen. Nach einer Verzehnfachung ist eine Ko…",
+     "figures": "Verzehnfachung der Aktie; Korrektur um 30 Prozent"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "RefnY01hhvw",
+     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=218s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Der Chipsektor steht unter Druck. Der Host hält die fundamentale Bewertung von Micron weiterhin für günstig und sieht in den Sorgen vor einer Wachstumsabschwächung mögliche Einstiegschancen.",
+     "einordnung": "Bei Halbleitern ist ein günstiges Bewertungsniveau allein kein ausreichendes Signal, weil die Gewinnschätzungen stark zyklisch sind. Entscheidend ist, ob die erwartete Abkühlung nur eine Zwischenphas…"
+    },
+    {
+     "date": "2026-07-23",
+     "video_id": "WCEAWp8ZtiA",
+     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=517s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Micron steigt laut Egmond um 2 Prozent, was er im Kontext der übrigen Marktbewegungen ebenfalls für unlogisch hält.",
+     "einordnung": "Die relative Stärke ist deutlich weniger spektakulär als bei SK Hynix, bleibt aber ein Zeichen für eine uneinheitliche Halbleiterreaktion. Der Titel profitiert offenbar von derselben Speicherfantasie…",
+     "figures": "plus 2 Prozent"
+    }
+   ]
+  },
+  "NKE": {
+   "name": "Nike",
+   "auftritte": [
+    {
+     "date": "2026-09-28",
+     "video_id": "iPOhcrx5BhI",
+     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=433s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Nike bleibt ein Sorgenkind: Der Konzern hat Marktanteile verloren, der Wechsel von Kylian Mbappé zu On belastet die Wahrnehmung und der neue CEO konnte bislang keinen überzeugenden Erfolg vorweisen.…",
+     "einordnung": "Nike steht nicht vor einem gewöhnlichen kurzfristigen Ergebnisproblem, sondern vor einer möglichen mehrjährigen Erneuerung von Marke, Produkt und Vertrieb. Solange der operative Beweis ausbleibt, ist…",
+     "figures": "Quartalszahlen am Donnerstag"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "6VmhA9lWzLk",
+     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=2460s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nike befindet sich in einem Abwärtstrend. Mehrere Analysten senken ihre Kursziele, während die Nachfrage in China und in den Lifestyle-Segmenten schwach bleibt.",
+     "einordnung": "Die breite Spanne der Analystenziele zeigt, wie uneinheitlich die Erholungserwartungen sind. Solange China und die Lifestyle-Nachfrage nicht drehen, bleibt eine niedrige Bewertung allein kein ausreic…",
+     "figures": "Kurs 37 Dollar; Kursziele: Bert 44 Dollar, Citigroup 39 Dollar, Morgan Stanley 31 Dollar, BMO 30 Dollar"
+    },
+    {
+     "date": "2026-09-04",
+     "video_id": "JYaFrjI3lJA",
+     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=130s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Nike fällt weiter; die Marktkapitalisierung liegt inzwischen unter 50 Milliarden US-Dollar. Der Sportartikelmarkt bleibt schwierig, auch wenn die Aktie langfristig günstig bewertet erscheint.",
+     "einordnung": "Die niedrige Bewertung allein ist bei einem angeschlagenen Konsumwert noch kein Wendepunkt. Entscheidend ist, ob Nike operativ wieder an Dynamik gewinnt und der Markt diese Verbesserung glaubhaft vor…",
+     "figures": "Marktkapitalisierung unter 50 Mrd. USD"
+    },
+    {
+     "date": "2026-08-18",
+     "video_id": "-mSKtaN5emQ",
+     "url": "https://www.youtube.com/watch?v=-mSKtaN5emQ&t=4496s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Fallende Sneakerpreise und der Bruch der Unterstützung bei 40 US-Dollar erzeugten ein neues Verkaufssignal. Die Dividendenrendite liegt über 4%, doch der Host bezeichnet die Aktie zunächst als fallen…",
+     "einordnung": "Eine hohe Dividendenrendite ist bei einem strukturell schwachen Chart kein ausreichender Schutz. Nike braucht zunächst eine glaubwürdige Verbesserung bei Nachfrage, Preisen und Lagerbestand, bevor di…",
+     "figures": "Unterstützung bei 40 US-Dollar durchbrochen; Dividendenrendite über 4%."
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "Hwf_CXhBgJU",
+     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=1964s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nike verliert laut einer Morgan-Stanley-Umfrage weiter Marktanteile. Die Aktie ist technisch schwach und notiert unter 50 Dollar.",
+     "einordnung": "Die Dividendenrendite bietet eine gewisse Unterstützung, kompensiert aber nicht automatisch den möglichen Verlust von Marken- und Marktanteilen. Bei einem KGV von 24,3 braucht Nike sichtbare operativ…",
+     "figures": "Marktanteil Nike 28 %, On Holding 13 %, Kursziel 34 $ bei Bruch von 40,50 $, KGV 24,3, Dividendenrendite 4 %"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "ZtKFU4SJtbQ",
+     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=160s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Nike gehörte am Vortag mit einem Plus von 4 Prozent zu den Gewinnern. Der Host sieht jedoch noch keine bestätigte Branchenrotation; die Kurslücke bei 48 Dollar und die Oberkante bei 52 Dollar sind fü…",
+     "einordnung": "Ein Tagesgewinn ist bei einer angeschlagenen Konsum- und Markenaktie zunächst nur ein Stabilisierungssignal. Erst wenn die genannten Widerstände überwunden werden, würde sich das technische Bild bela…",
+     "figures": "Plus 4 Prozent; 48 Dollar; 52 Dollar"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=125s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Nike hat in der vergangenen Woche Zahlen veröffentlicht. Haidt verweist auf einen separaten BNP-Paribas-Beitrag.",
+     "einordnung": "Die Auslagerung in einen separaten Beitrag zeigt, dass Nike keine unmittelbare marktrelevante Neuigkeit mehr liefert. Für die Gesamtmarktbewegung ist der Wert aktuell kein Treiber."
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "mNobFjJKrNE",
+     "url": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=227s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Quartalszahlen überraschten positiv — Umsatz und Gewinn lagen über den Erwartungen. Skeptische Aussagen zum Umfeld belasten die Aktie jedoch nachbörslich mit einem erwarteten Startverlust von 3-4 Pro…",
+     "einordnung": "Das ist das klassische 'Beat and Retreat'-Muster: Die Zahlen stimmen, aber das Guidance-Sentiment trübt die Stimmung. Bei Nike kommt erschwerend hinzu, dass der strukturelle Turnaround im Gange ist —…",
+     "figures": "Umsatz 10,97 Mrd. USD (Erwartung 10,86 Mrd.); Gewinn 72 Cent/Aktie (mit Sondereffekt), bereinigt +13 Cent; erwarteter Startverlust 3-4%"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "kbhs3X-LW2E",
+     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=3350s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Quartalszahlen: Gewinn +414% (bereinigt +271%), Umsatz -1%. China-Umsatz -12% auf 1,3 Mrd. USD. Analysten senken Ziele auf 42-47 USD. Abwärtstrend hält an, charttechnisch schwach.",
+     "einordnung": "Der Gewinnjump von +414% ist beeindruckend, aber der Umsatzrückgang von -1% und China -12% zeigen, dass die operative Wende noch nicht da ist. Die Analystenziele von 42-48 USD implizieren 10-20% Aufw…",
+     "figures": "Gewinnwachstum 414% (von 0,14 auf 0,72 USD; adjustiert 0,52 USD); Umsatz -1%; China -12% auf 1,3 Mrd. USD; Analystenziele: BoA 47, Goldman 42, UBS 48, Citi 45 USD"
+    },
+    {
+     "date": "2026-06-26",
+     "video_id": "F6cTDl0_v6Q",
+     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=632s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Nach jahrelanger Skepsis zeigt Nike erste Lichtblicke durch einen neuen CFO. Der Host identifiziert ein technisches Kaufsignal über 47,50 USD und sieht eine mögliche Bodenbildung.",
+     "einordnung": "Nach jahrelangem Verfall durch Markenerosion, Inventarprobleme und Konkurrenz durch neuere Athletic-Brands zeigt das technische Setup erste Stabilisierungsanzeichen. Ein KGV von 22 für 2027 ist nicht…",
+     "figures": "KGV 22 für 2027; Kaufsignal über 47,50 USD; Support bei 150 USD; bei Bruch Ziel 37-35 USD"
+    },
+    {
+     "date": "2026-06-25",
+     "video_id": "1_zNnqdriM4",
+     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2050s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nike leidet unter schlechten China-Daten, neuem CFO-Wechsel und herabgestuften Analysten; charttechnisch weiter schwach.",
+     "einordnung": "Nike ist ein klassischer Wert, bei dem sich fundamentale und charttechnische Probleme überlagern — China-Schwäche, Managementwechsel und Analystenherabstufungen bilden eine giftige Mischung. Die Divi…",
+     "figures": "Umsatzrückgang China -20% (Prognose Q4), Kursziel Bank of America 55$, Dividendenrendite 3,8%"
+    },
+    {
+     "date": "2025-12-19",
+     "video_id": "juY3ezTp3DY",
+     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1162s",
+     "channel": "Calling USA",
+     "kategorie": "news",
+     "note": "Die Aktie verlor 10% seit Jahresbeginn. Der CEO hat Prognosen reduziert, ein Turnaround wird erwartet. Eine neue Kollektion mit Kim Kardashian (Skims) soll helfen.",
+     "einordnung": "Nike bei -10% ist ein klassischer Turnaround-Fall — neue Führung, reduzierte Prognosen, erste strategische Initiativen. Die Skims-Kollaboration ist typisch für den Versuch, über Celebrity-Marketing j…",
+     "figures": "-10% Jahresperformance"
+    }
+   ]
+  },
+  "^GDAXI": {
+   "name": "DAX",
+   "auftritte": [
+    {
+     "date": "2026-09-28",
+     "video_id": "iPOhcrx5BhI",
+     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=562s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX beendete den Freitag mit einem Plus und soll zum Wochenstart leicht höher eröffnen. Der Host erwartet Aufschläge von etwa 30 bis 40 Punkten.",
+     "einordnung": "Der Schluss nahe dem Tageshoch war konstruktiv, doch die internationale Gemengelage verhindert ein klares Trendbild. Hohe Ölpreise und schwache chinesische Daten bleiben die Gegengewichte zur festen…",
+     "figures": "25.409 Punkte, +0,56% am Freitag, erwartete Aufschläge von 30 bis 40 Punkten, Vorwoche +0,4%; aktuell laut Marktdaten: 25.409 Punkte und +0,56%"
+    },
+    {
+     "date": "2026-09-25",
+     "video_id": "97EQOzIFgsg",
+     "url": "https://www.youtube.com/watch?v=97EQOzIFgsg&t=522s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX wird bei 25.463 Punkten erwartet, nachdem er am Vortag 144 Punkte beziehungsweise 0,57 Prozent auf 25.267 Punkte verloren hatte.",
+     "einordnung": "Die erwartete Erholung wäre zunächst nur ein Gegenimpuls nach zwei schwächeren Tagen und noch kein belastbares Trendwendesignal. Der Markt bleibt stark von externen Faktoren wie Ölpreis und internati…",
+     "figures": "Erwartet 25.463 Punkte, zuvor 25.267 Punkte und -0,57 Prozent; aktuell laut Marktdaten 25.267 Punkte"
+    },
+    {
+     "date": "2026-09-24",
+     "video_id": "c34idUqZntQ",
+     "url": "https://www.youtube.com/watch?v=c34idUqZntQ&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Der DAX erholt sich nach den Vortagesverlusten, während die US-Vorbörse schwächer tendiert. Robuste US-PMI-Daten schüren Inflationsängste und lassen den Zinsanstieg insbesondere Technologiewerte bela…",
+     "einordnung": "Die Kombination aus starkem Wachstum und steigenden Renditen ist für hoch bewertete Wachstumsaktien ein klassischer Gegenwind. Der aktuelle Fear-and-Greed-Wert von 35 signalisiert zugleich, dass das…",
+     "figures": "PMI erwartet 53, tatsächlich 57; Services 58,7 auf dem höchsten Stand seit fünf Jahren; Manufacturing 56,7 auf dem höchsten Stand seit vier Jahren; die Rendite zehnjähriger US-Anleihen steigt auf 4,9…"
+    },
+    {
+     "date": "2026-09-22",
+     "video_id": "frGJ0jOwCr0",
+     "url": "https://www.youtube.com/watch?v=frGJ0jOwCr0&t=1237s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX steigt im Sog der US-KI-Rally, wird laut Egmond aber nur von wenigen Titeln wie Infineon, Siemens Energy und Hochtief getragen. Seit Jahresbeginn liegt der Index 4,7 Prozent im Plus, davon en…",
+     "einordnung": "Die Indexentwicklung wirkt stabiler, als es die geringe Breite vermuten lässt. Der aktuelle Stand von 25.579 Punkten laut Marktdaten unterstreicht die Stärke des Gesamtindex, sagt aber wenig über die…",
+     "figures": "+4,7 % seit Jahresanfang, Kursindex +2,2 %; DAX laut Marktdaten 25.579 Punkte"
+    },
+    {
+     "date": "2026-09-21",
+     "video_id": "dBF30r0lEG8",
+     "url": "https://www.youtube.com/watch?v=dBF30r0lEG8&t=96s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt nach dem Pullback Akkumulation und nimmt die Aufwärtshausse wieder auf. Der Host nennt 28.800 Punkte als nächstes Ziel.",
+     "einordnung": "Das technische Bild bleibt konstruktiv, zumal der DAX laut Marktdaten aktuell 1,07 Prozent zulegt. Die Zielmarke setzt allerdings voraus, dass die laufende Erholung in einen nachhaltigen Trend überge…",
+     "figures": "Ziel: 28.800 Punkte"
+    },
+    {
+     "date": "2026-09-17",
+     "video_id": "amyhUQyi3ck",
+     "url": "https://www.youtube.com/watch?v=amyhUQyi3ck&t=400s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX startet nach den Verlusten mit einer Erholung und liegt auf Jahressicht noch deutlich im Plus.",
+     "einordnung": "Die relative Stärke gegenüber der Wall Street ist ein positives kurzfristiges Signal, sollte aber nicht mit einer vollständigen Entwarnung verwechselt werden. Der DAX bleibt abhängig von Zinsimpulsen…",
+     "figures": "Aktuell laut Marktdaten: 25.538 Punkte und +0,53 %"
+    },
+    {
+     "date": "2026-09-17",
+     "video_id": "YxE1PtFR_38",
+     "url": "https://www.youtube.com/watch?v=YxE1PtFR_38&t=0s",
+     "channel": "onvista",
+     "kategorie": "makro",
+     "note": "Die US-Notenbank erhöht den Leitzins um 25 Basispunkte auf 3,75 bis 4 Prozent und signalisiert eine weitere mögliche Anhebung. Der S&P 500 erholt sich nach dem ersten Schock; der Host sieht bei 7.500…",
+     "einordnung": "Die positive Futures-Reaktion trotz der Fed-Anhebung zeigt, dass der Markt den Zinsschritt offenbar bereits verarbeitet hat. Der niedrige Fear-and-Greed-Wert spricht allerdings gegen eine sorglose Ra…",
+     "figures": "DAX im Video +0,4 Prozent, aktuell laut Marktdaten +0,70 Prozent; Fed-Leitzins 3,75 bis 4 Prozent; mögliche nächste Stufe 4 bis 4,25 Prozent; S&P-500-Ziel 7.900 bis 8.000 Punkte; Unterstützung 7.500…"
+    },
+    {
+     "date": "2026-09-16",
+     "video_id": "cpxSg33tOUo",
+     "url": "https://www.youtube.com/watch?v=cpxSg33tOUo&t=458s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX gab im Zuge der Fed-Reaktion etwas nach, hatte in den Vortagen jedoch bereits stärker verloren.",
+     "einordnung": "Der DAX ist wegen seines hohen Anteils an Industrie- und Exportwerten besonders abhängig von globalem Wachstum, Finanzierungskosten und Währungseffekten. Der aktuelle Anstieg von 1,07 Prozent relativ…"
+    },
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=448s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX fiel unter seine 50-Tage-Linie, blieb aber oberhalb der 200-Tage-Linie. Der Host bewertet die Lage deshalb vorerst als entspannt.",
+     "einordnung": "Der Bruch der kurzfristigen Durchschnittslinie ist ein Warnsignal, aber der Halt über der 200-Tage-Linie verhindert bislang ein übergeordnetes Verkaufssignal. In einem nervösen Umfeld ist diese techn…",
+     "figures": "Schlussstand laut Videobeschreibung: 25.440 Punkte, minus 0,5 %; laut Marktdaten: 25.441 Punkte, minus 0,50 %"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "vOXfcKwP55o",
+     "url": "https://www.youtube.com/watch?v=vOXfcKwP55o&t=317s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX beendete die vergangene Woche mit einem Minus von rund 1,8 Prozent, nachdem die ersten vier Handelstage schwach verlaufen waren. Am Freitag gelang eine klare Erholung; der Host hält es für mö…",
+     "einordnung": "Meine Einordnung: Der Freitagsanstieg verbessert das kurzfristige Bild, beseitigt den Rendite- und Ölpreisgegenwind aber nicht. Der Markt bleibt damit anfällig für schnelle Richtungswechsel, wie sie…",
+     "figures": "Wochenminus: rund 1,8 %; DAX laut Marktdaten: 25.569 Punkte, plus 0,82 %"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "i1kvrS7aV-Q",
+     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=222s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX bewegt sich trotz negativer Themen seitwärts und zeigt damit relative Stabilität. Harry hält einen Ausbruch in Richtung 28.800 Punkte für eine Frage der Zeit.",
+     "einordnung": "Die relative Stabilität ist bemerkenswert, weil steigende Ölpreise und höhere Zinserwartungen normalerweise stärker auf zyklische Aktien drücken. Der Weg von der aktuellen Marktdaten-Notierung bis zu…",
+     "figures": "Zielbereich 28.800 Punkte; laut Marktdaten aktuell 25.441 Punkte, Tagesveränderung -0,50 Prozent."
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "6VmhA9lWzLk",
+     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=0s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt sich mit einem Minus von 0,3 Prozent relativ stabil, während der Nasdaq 100 mit minus 1,5 Prozent deutlich stärker unter Druck steht. Charttechnisch ist beim DAX eine Korrektur bis in d…",
+     "einordnung": "Die relative DAX-Stärke ist bemerkenswert, bleibt angesichts der Öl- und Zinsrisiken aber zunächst ein Stabilitätssignal und kein bestätigter neuer Aufwärtstrend. Das Nasdaq-100-KGV von 22,2 lässt be…",
+     "figures": "DAX -0,3 Prozent; Nasdaq 100 -1,5 Prozent; DAX-Ziel 25.200 Punkte; Nasdaq-100-KGV 22,2; DAX laut Marktdaten 25.441 Punkte, Nasdaq-100-Future 29.573 Punkte"
+    }
+   ]
+  },
+  "BAS.DE": {
+   "name": "BASF",
+   "auftritte": [
+    {
+     "date": "2026-09-28",
+     "video_id": "iPOhcrx5BhI",
+     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=613s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BASF führt Sondierungsgespräche über eine mögliche Übernahme von Evonik. Die Übernahmefantasie ließ Evonik steigen, während BASF im Markt zunächst unter Druck geriet.",
+     "einordnung": "Für BASF wäre ein solcher Schritt strategisch und finanziell anspruchsvoll; der anfängliche Kursdruck zeigt, dass der Markt mögliche Integrations- und Finanzierungsrisiken höher gewichtet als die rei…",
+     "figures": "BASF-Kursziel 72 EUR, Stopp 39 EUR"
+    },
+    {
+     "date": "2026-09-04",
+     "video_id": "JYaFrjI3lJA",
+     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=486s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "BASF zeigt eine stabile Aufwärtsbewegung in Richtung 55 Euro. Der Host beschreibt den Verlauf als solide und frei von größeren Ausschlägen.",
+     "einordnung": "Das Kursbild wirkt konstruktiv, bleibt bei einem zyklischen Chemiewert aber von Konjunktur, Energiepreisen und der Nachfrage aus der Industrie abhängig. Ein ruhiger Anstieg ist deshalb belastbarer al…",
+     "figures": "Richtung 55 EUR"
+    },
+    {
+     "date": "2026-09-03",
+     "video_id": "_sVc-sAsjNY",
+     "url": "https://www.youtube.com/watch?v=_sVc-sAsjNY&t=365s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BASF behauptet sich in einem schwachen Marktumfeld. Niedrigere Rheinpegel und Kosteneinsparungen stützen das Unternehmen; zugleich fällt der Ausblick für die Chemiebranche positiver aus.",
+     "einordnung": "Die Stärke der Aktie ist angesichts der zyklischen Chemiebranche bemerkenswert, sollte aber nicht mit einer bereits vollzogenen Nachfragewende verwechselt werden. Kostensenkungen können die Gewinnent…"
+    },
+    {
+     "date": "2026-08-31",
+     "video_id": "oTVTqvO9we8",
+     "url": "https://www.youtube.com/watch?v=oTVTqvO9we8&t=485s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Pegelstände am Rhein steigen leicht und erleichtern damit den Transport. Das historische Niedrigwasser von 2018 verursachte bei BASF Kosten von 250 Millionen Euro; aktuell erwartet der Host keine…",
+     "einordnung": "Das Thema ist für BASF kurzfristig logistisch relevant, ändert aber wenig an den größeren Herausforderungen des Chemiekonzerns. Eine Entspannung am Rhein nimmt einen Sonderbelastungsfaktor heraus, lö…",
+     "figures": "250 Millionen Euro Kosten durch Niedrigwasser 2018"
+    },
+    {
+     "date": "2026-08-17",
+     "video_id": "PqtSJuBpK44",
+     "url": "https://www.youtube.com/watch?v=PqtSJuBpK44&t=316s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BASF steht wegen des Niedrigwassers unter Druck. Der Host verweist auf Sorgen hinsichtlich der Chemiepreise und der Versorgungssicherheit.",
+     "einordnung": "Für einen Chemiekonzern ist Niedrigwasser nicht nur ein logistisches Problem, sondern kann direkt die Auslastung und die Kostenstruktur beeinflussen. Die Nachricht verschärft damit die ohnehin zyklis…"
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "s6VvSYzc1qc",
+     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=361s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BASF profitiert von der freundlichen Marktstimmung, wird aber durch Niedrigwasser im Rhein und dadurch steigende Transportkosten belastet. Die Marke von 50 Euro hält laut Host zunächst.",
+     "einordnung": "Bei BASF treffen günstige Stimmung und ein realwirtschaftlicher Kostenfaktor unmittelbar aufeinander. Die gehaltene 50-Euro-Marke stabilisiert zwar das Chartbild, ersetzt aber keine Verbesserung der…",
+     "figures": "50-Euro-Marke"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "wOWTV_pDNkE",
+     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=558s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BASF bestätigt die vorläufigen Zahlen und berichtet über einen weiteren deutlichen Stellenabbau. In Ludwigshafen sinkt die Beschäftigtenzahl unter 30.000, während ein neues Aktienrückkaufprogramm ang…",
+     "einordnung": "BASF befindet sich sichtbar in einer Phase der strukturellen Anpassung und nicht in einer klassischen Wachstumsstory. Das Rückkaufprogramm kann den Aktienkurs stützen, ersetzt aber keine überzeugende…",
+     "figures": "7.000 abgebaute Stellen; Beschäftigtenzahl in Ludwigshafen unter 30.000; Aktienrückkaufprogramm bis zu 1 Milliarde Aktien von August 2024 bis April 2027"
+    },
+    {
+     "date": "2026-07-21",
+     "video_id": "J6gUTUPHems",
+     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=308s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "BASF meldete starke Zahlen für das zweite Quartal, doch die Anhebung der Prognose blieb leicht hinter den Analystenerwartungen zurück und enttäuschte damit den Markt.",
+     "einordnung": "Die operative Überraschung im Quartal ist positiv, wird aber durch den nur vorsichtig angehobenen Ausblick und den negativen Quartals-Free-Cashflow relativiert. Bei einem zyklischen Chemiewert zählt…",
+     "figures": "Umsatz: 17,2 Mrd. Euro gegenüber erwarteten 16,5 Mrd. Euro; bereinigtes EBITDA: 2,4 Mrd. Euro gegenüber erwarteten 2,15 Mrd. Euro; Free Cashflow: minus 0,2 Mrd. Euro. EBITDA-Prognose: 6,9 bis 7,7 Mrd…"
+    },
+    {
+     "date": "2026-07-16",
+     "video_id": "8n4SjPW9E8M",
+     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=612s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "BASF fokussiert sich auf das Kerngeschäft, spaltet die Agrarsparte ab und verkauft das Coatings-Geschäft. Der Host hebt BASF als guten Dividendenzahler hervor und sieht Potenzial über 50.",
+     "einordnung": "Die Neuausrichtung kann den Konzern fokussieren und Kapital freisetzen, ist aber zunächst mit Umbaukosten und Ausführungsrisiken verbunden. Die Dividende bietet einen Puffer, ersetzt bei einem zyklis…",
+     "figures": "Potenzial über 50; konkrete Währung beziehungsweise Kursziel im Video nicht genannt"
+    },
+    {
+     "date": "2026-07-16",
+     "video_id": "l9xly8aiYMM",
+     "url": "https://www.youtube.com/watch?v=l9xly8aiYMM&t=986s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "MWB Research stuft BASF von 'Halten' auf 'Kaufen' hoch. Der vorläufige Umsatz im zweiten Quartal liegt über den Erwartungen, das EBITDA steigt deutlich.",
+     "einordnung": "Die Zahlen sprechen für eine operative Verbesserung, doch BASF bleibt ein zyklischer Chemiewert, bei dem Preis- und Mengeneffekte nicht automatisch dauerhaft sind. Der Hinweis auf die Mitte einer Sei…",
+     "figures": "Kursziel 55 Euro nach zuvor 52 Euro; Umsatz 17,2 Mrd. Euro bei erwarteten 16,5 Mrd. Euro; EBITDA 2,4 Mrd. Euro bei erwarteten 2,1 Mrd. Euro; Preise +11 %, Mengen +7 %; Prognose 2026: 6,9 bis 7,7 Mrd.…"
+    },
+    {
+     "date": "2026-07-13",
+     "video_id": "8EytmuiphH4",
+     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=1448s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Für die Agrarsparte ist ein Börsengang mit einem Unternehmenswert von 20 bis 30 Mrd. Euro geplant. BASF selbst kommt auf eine Marktkapitalisierung von 42,6 Mrd. Euro und ein KGV von 18; charttechnisc…",
+     "einordnung": "Ein möglicher Börsengang kann verborgene Werte sichtbar machen, ist aber zunächst eine Bewertungs- und Umsetzungsstory. Befindet sich der Kurs zugleich mitten in der Handelsspanne, fehlt aus charttec…",
+     "figures": "Marktkapitalisierung BASF 42,6 Mrd. Euro, erwarteter Wert der Agrarsparte 20 bis 30 Mrd. Euro, KGV 18, Tagesplus 1,2 Prozent"
+    }
+   ]
+  },
+  "EVK.DE": {
+   "name": "Evonik",
+   "auftritte": [
+    {
+     "date": "2026-09-28",
+     "video_id": "iPOhcrx5BhI",
+     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=613s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Evonik rückte wegen möglicher Sondierungsgespräche mit BASF in den Fokus. Die Aktie legte deutlich zu, wobei die RAG-Stiftung als Großaktionär mit 44% eine entscheidende Rolle spielt.",
+     "einordnung": "Der Kursanstieg ist vor allem eine Übernahmeprämie und nicht automatisch ein Beleg für eine nachhaltige operative Verbesserung. Die Beteiligung der RAG-Stiftung macht die Aktionärsstruktur zum zentra…",
+     "figures": "Evonik +7%, zwischenzeitlich +10%, Kursziel 22 EUR, Stopp 13 EUR, RAG-Stiftung 44% an Evonik"
+    },
+    {
+     "date": "2026-09-23",
+     "video_id": "SZrm5GELGqI",
+     "url": "https://www.youtube.com/watch?v=SZrm5GELGqI&t=698s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Evonik treibt eine Restrukturierung voran, baut 2.800 und 3.200 Stellen ab und konzentriert sich stärker auf profitable Sparten. Das Polyestergeschäft mit 150 Millionen Euro Umsatz wurde eingestellt.",
+     "einordnung": "Die niedrige Bewertung lässt Spielraum für eine Neubewertung, sofern die Restrukturierung tatsächlich zu nachhaltig besseren Margen führt. Der Chart befindet sich aber noch in einer Konsolidierungsph…",
+     "figures": "KGV 10,7, Chartziel 20,50 Euro, Umsatz des eingestellten Polyestergeschäfts 150 Millionen Euro"
+    },
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=553s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Evonik geriet nach einem starken Lauf unter Druck. Zusätzlich belastet ein Sparprogramm, das die Schließung von zwei Werken vorsieht.",
+     "einordnung": "Hier verbinden sich Gewinnmitnahmen mit einer operativen Anpassung, die auf anhaltenden Kostendruck hindeutet. Das macht Evonik im Vergleich zu den reinen Umschichtungsthemen zu einem Wert mit eigene…"
+    },
+    {
+     "date": "2026-09-15",
+     "video_id": "hgqdSE3-bAk",
+     "url": "https://www.youtube.com/watch?v=hgqdSE3-bAk&t=1002s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Morgan Stanley stufte Evonik von Overweight auf Equal Weight zurück und senkte das Kursziel von 21 auf 18 Euro. Als Grund wird Vorsicht beim Tiernahrungsgeschäft genannt; charttechnisch gilt 17 Euro…",
+     "einordnung": "Das Downgrade trifft Evonik an einer charttechnisch heiklen Stelle. Solange 17 Euro verteidigt werden, bleibt eine Stabilisierung möglich; darunter würde sich das Risikoprofil deutlich verschlechtern.",
+     "figures": "Kursziel alt 21 Euro, neu 18 Euro; Unterstützung 17 Euro; mögliches Tief 15 Euro"
+    }
+   ]
+  },
+  "BMW.DE": {
+   "name": "BMW",
+   "auftritte": [
+    {
+     "date": "2026-09-28",
+     "video_id": "iPOhcrx5BhI",
+     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=717s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "BMW veranstaltet am Dienstag und Mittwoch einen Kapitalmarkttag. Analysten bleiben skeptisch, haben ihre Kursziele gesenkt und HSBC stufte die Aktie von Buy auf Hold herab. Charttechnisch wird ein ne…",
+     "einordnung": "Der Kapitalmarkttag ist ein wichtiger Test, ob BMW den skeptischen Konsens mit einem glaubwürdigen Plan für Profitabilität und Transformation drehen kann. Bis dahin spricht die Kombination aus gesenk…",
+     "figures": "Bank of America-Kursziel 66 EUR, Goldman-Sachs-Kursziel 66 EUR, HSBC von Buy auf Hold herabgestuft"
+    },
+    {
+     "date": "2026-09-16",
+     "video_id": "3YMjiOZKbm4",
+     "url": "https://www.youtube.com/watch?v=3YMjiOZKbm4&t=1714s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Die BMW-Aktie fällt trotz einer Hochstufung durch Berenberg auf Kaufen. Das Kursziel wurde von 69 auf 75 Euro angehoben, während der Host die Gewinnwarnung vom Juni als weitgehend eingepreist betrach…",
+     "einordnung": "Ein KGV von 8,6 wirkt auf den ersten Blick günstig, doch bei zyklischen Autobauern ist ein niedriges KGV häufig ein Spiegel hoher aktueller Gewinne und nicht zwingend ein Sicherheitsmargin. Die ableh…",
+     "figures": "Berenberg-Kursziel 75 Euro, zuvor 69 Euro; KGV 8,6; Tagesbewegung laut Host: -1,3 Prozent"
+    },
+    {
+     "date": "2026-09-07",
+     "video_id": "tHrMBx5m1QU",
+     "url": "https://www.youtube.com/watch?v=tHrMBx5m1QU&t=685s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "BMW ist laut Host mit der 'Neuen Klasse' gut aufgestellt und verzeichnet eine hohe Nachfrage. Charttechnisch sieht er Potenzial bis zur 200-Tage-Linie.",
+     "einordnung": "BMW verbindet derzeit eine Produkt- und Technologiestory mit dem zyklischen Risiko des europäischen Automarkts. Die hohe Nachfrage ist positiv, muss sich aber gegen Margendruck und den intensiveren W…",
+     "figures": "200-Tage-Linie"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "jbBenx99pmg",
+     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=1347s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Die BMW-Aktie legt 0,9 Prozent zu. HSBC stufte den Titel von 'Halten' auf 'Kaufen' hoch und nannte ein Kursziel von 71 Euro; charttechnisch zeigt sich ein Doppeltief im Bereich von 56,70 bis 57 Euro.",
+     "einordnung": "Ein KGV von 8 wirkt im historischen und sektoralen Vergleich niedrig, ist bei einem beobachteten Gewinnrückgang aber kein Selbstläufer. Die Zone um 56,70 bis 57 Euro ist für die Stabilisierung wichti…",
+     "figures": "Kurs +0,9 Prozent, KGV 8, Kursziel HSBC 71 Euro, Doppeltief 56,70 bis 57 Euro"
+    },
+    {
+     "date": "2026-07-07",
+     "video_id": "_FhINJOGun8",
+     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1194s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "BMW wird als Nachzügler gekauft, aber die fundamentalen Aussichten bleiben unverändert. Haidt sieht nur eine technische Erholung.",
+     "einordnung": "Autowerte als Nachzügler zu kaufen ist ein klassisches Rotationsspiel, das oft endet, wenn die Fundamente einholen. Ohne echte Erholung im chinesischen Automarkt bleibt BMW strukturell belastet."
+    },
+    {
+     "date": "2026-06-30",
+     "video_id": "pX8Iw4nTeqI",
+     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt, im Kontext der deutschen Autobranche-Krise besprochen.",
+     "einordnung": "BMW wird von Haidt nicht isoliert betrachtet, sondern als Teil des Branchenproblems. Die Münchner gelten als etwas robuster als Mercedes und VW, aber der Sektordruck erfasst alle."
+    },
+    {
+     "date": "2026-06-23",
+     "video_id": "Fv8-4-RrpRU",
+     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=142s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Gewinnwarnung, Aktie hat innerhalb weniger Monate ein Drittel an Wert verloren. Egmond hatte zuvor mehrfach vor der Geschäftsentwicklung gewarnt.",
+     "einordnung": "Die Gewinnwarnung kommt für den Markt überraschend, für Egmond nicht. Ein Drittel Wertverlust in wenigen Monaten spiegelt die strukturelle Schwäche der deutschen Automobilbranche wider, die unter Zöl…"
+    },
+    {
+     "date": "2026-06-22",
+     "video_id": "9G1WNKY6uuY",
+     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY&t=548s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "BMW hat die wichtige Unterstützung bei 68 Euro nach unten durchbrochen, was charttechnisch in einen Bärenmarkt führt. Harry nennt dies eine 'Gewinnwarnung' im Chart.",
+     "einordnung": "Der Bruch der 68-Euro-Marke ist ein massives negatives Signal. BMW war lange ein relativ stabiler Wert im DAX, aber wenn eine solche Schlüsselmarke fällt, kommt oft systematisches Risiko ins Spiel. D…",
+     "figures": "68, 87, 110, 131, 139"
+    },
+    {
+     "date": "2026-06-17",
+     "video_id": "UBcaG1xcyng",
+     "url": "https://www.youtube.com/watch?v=UBcaG1xcyng&t=199s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "BMW senkt nach Gewinnwarnung die Prognosen drastisch: EBIT-Marge nur noch 1–3% (zuvor 4–6%), Free Cashflow auf 2,5 Mrd. Euro halbiert (zuvor 4,5 Mrd.), Auslieferungen leicht rückläufig. Aktie vorbörs…",
+     "einordnung": "Eine EBIT-Marge von 1–3% für einen Premium-Automobilhersteller ist alarmierend – das ist industrielles Subsistenzniveau, kein Premiumgeschäft mehr. Der Artikel-Titel 'Schlimmer geht immer' des Aktion…",
+     "figures": "EBIT-Marge 1–3% (vorher 4–6%); Free Cashflow 2,5 Mrd. Euro (vorher 4,5 Mrd.); Aktie vorbörslich -6,6%; tiefster Stand seit Herbst 2020"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
+     "einordnung": "BMW als Underperformer profitiert kurzfristig vom Momentum-Wechsel – die strukturellen Herausforderungen (E-Auto-Wettbewerb, Zölle) bleiben jedoch ungelöst."
+    }
+   ]
+  },
   "BA": {
    "name": "Boeing",
    "auftritte": [
@@ -813,130 +1458,6 @@
      "note": "Costco testet eigenständige Tankstellen ohne angeschlossenes Warenhaus. Der Host hält die Aktie mit einem KGV von 43 für zu teuer und rät von einem Kauf ab; zudem bewegt sie sich seit Anfang 2025 sei…",
      "einordnung": "Costco bleibt ein starkes Geschäftsmodell, doch die Qualität ist im Kurs bereits mitbezahlt. Bei einer hohen Bewertung wird aus einer normalen Wachstumsverlangsamung schnell ein Kursproblem.",
      "figures": "KGV 43; Seitwärtsbewegung seit Anfang 2025"
-    }
-   ]
-  },
-  "^GDAXI": {
-   "name": "DAX",
-   "auftritte": [
-    {
-     "date": "2026-09-25",
-     "video_id": "97EQOzIFgsg",
-     "url": "https://www.youtube.com/watch?v=97EQOzIFgsg&t=522s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX wird bei 25.463 Punkten erwartet, nachdem er am Vortag 144 Punkte beziehungsweise 0,57 Prozent auf 25.267 Punkte verloren hatte.",
-     "einordnung": "Die erwartete Erholung wäre zunächst nur ein Gegenimpuls nach zwei schwächeren Tagen und noch kein belastbares Trendwendesignal. Der Markt bleibt stark von externen Faktoren wie Ölpreis und internati…",
-     "figures": "Erwartet 25.463 Punkte, zuvor 25.267 Punkte und -0,57 Prozent; aktuell laut Marktdaten 25.267 Punkte"
-    },
-    {
-     "date": "2026-09-24",
-     "video_id": "c34idUqZntQ",
-     "url": "https://www.youtube.com/watch?v=c34idUqZntQ&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Der DAX erholt sich nach den Vortagesverlusten, während die US-Vorbörse schwächer tendiert. Robuste US-PMI-Daten schüren Inflationsängste und lassen den Zinsanstieg insbesondere Technologiewerte bela…",
-     "einordnung": "Die Kombination aus starkem Wachstum und steigenden Renditen ist für hoch bewertete Wachstumsaktien ein klassischer Gegenwind. Der aktuelle Fear-and-Greed-Wert von 35 signalisiert zugleich, dass das…",
-     "figures": "PMI erwartet 53, tatsächlich 57; Services 58,7 auf dem höchsten Stand seit fünf Jahren; Manufacturing 56,7 auf dem höchsten Stand seit vier Jahren; die Rendite zehnjähriger US-Anleihen steigt auf 4,9…"
-    },
-    {
-     "date": "2026-09-22",
-     "video_id": "frGJ0jOwCr0",
-     "url": "https://www.youtube.com/watch?v=frGJ0jOwCr0&t=1237s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX steigt im Sog der US-KI-Rally, wird laut Egmond aber nur von wenigen Titeln wie Infineon, Siemens Energy und Hochtief getragen. Seit Jahresbeginn liegt der Index 4,7 Prozent im Plus, davon en…",
-     "einordnung": "Die Indexentwicklung wirkt stabiler, als es die geringe Breite vermuten lässt. Der aktuelle Stand von 25.579 Punkten laut Marktdaten unterstreicht die Stärke des Gesamtindex, sagt aber wenig über die…",
-     "figures": "+4,7 % seit Jahresanfang, Kursindex +2,2 %; DAX laut Marktdaten 25.579 Punkte"
-    },
-    {
-     "date": "2026-09-21",
-     "video_id": "dBF30r0lEG8",
-     "url": "https://www.youtube.com/watch?v=dBF30r0lEG8&t=96s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt nach dem Pullback Akkumulation und nimmt die Aufwärtshausse wieder auf. Der Host nennt 28.800 Punkte als nächstes Ziel.",
-     "einordnung": "Das technische Bild bleibt konstruktiv, zumal der DAX laut Marktdaten aktuell 1,07 Prozent zulegt. Die Zielmarke setzt allerdings voraus, dass die laufende Erholung in einen nachhaltigen Trend überge…",
-     "figures": "Ziel: 28.800 Punkte"
-    },
-    {
-     "date": "2026-09-17",
-     "video_id": "amyhUQyi3ck",
-     "url": "https://www.youtube.com/watch?v=amyhUQyi3ck&t=400s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX startet nach den Verlusten mit einer Erholung und liegt auf Jahressicht noch deutlich im Plus.",
-     "einordnung": "Die relative Stärke gegenüber der Wall Street ist ein positives kurzfristiges Signal, sollte aber nicht mit einer vollständigen Entwarnung verwechselt werden. Der DAX bleibt abhängig von Zinsimpulsen…",
-     "figures": "Aktuell laut Marktdaten: 25.538 Punkte und +0,53 %"
-    },
-    {
-     "date": "2026-09-17",
-     "video_id": "YxE1PtFR_38",
-     "url": "https://www.youtube.com/watch?v=YxE1PtFR_38&t=0s",
-     "channel": "onvista",
-     "kategorie": "makro",
-     "note": "Die US-Notenbank erhöht den Leitzins um 25 Basispunkte auf 3,75 bis 4 Prozent und signalisiert eine weitere mögliche Anhebung. Der S&P 500 erholt sich nach dem ersten Schock; der Host sieht bei 7.500…",
-     "einordnung": "Die positive Futures-Reaktion trotz der Fed-Anhebung zeigt, dass der Markt den Zinsschritt offenbar bereits verarbeitet hat. Der niedrige Fear-and-Greed-Wert spricht allerdings gegen eine sorglose Ra…",
-     "figures": "DAX im Video +0,4 Prozent, aktuell laut Marktdaten +0,70 Prozent; Fed-Leitzins 3,75 bis 4 Prozent; mögliche nächste Stufe 4 bis 4,25 Prozent; S&P-500-Ziel 7.900 bis 8.000 Punkte; Unterstützung 7.500…"
-    },
-    {
-     "date": "2026-09-16",
-     "video_id": "cpxSg33tOUo",
-     "url": "https://www.youtube.com/watch?v=cpxSg33tOUo&t=458s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX gab im Zuge der Fed-Reaktion etwas nach, hatte in den Vortagen jedoch bereits stärker verloren.",
-     "einordnung": "Der DAX ist wegen seines hohen Anteils an Industrie- und Exportwerten besonders abhängig von globalem Wachstum, Finanzierungskosten und Währungseffekten. Der aktuelle Anstieg von 1,07 Prozent relativ…"
-    },
-    {
-     "date": "2026-09-15",
-     "video_id": "RJtgvUko4k4",
-     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=448s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX fiel unter seine 50-Tage-Linie, blieb aber oberhalb der 200-Tage-Linie. Der Host bewertet die Lage deshalb vorerst als entspannt.",
-     "einordnung": "Der Bruch der kurzfristigen Durchschnittslinie ist ein Warnsignal, aber der Halt über der 200-Tage-Linie verhindert bislang ein übergeordnetes Verkaufssignal. In einem nervösen Umfeld ist diese techn…",
-     "figures": "Schlussstand laut Videobeschreibung: 25.440 Punkte, minus 0,5 %; laut Marktdaten: 25.441 Punkte, minus 0,50 %"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "vOXfcKwP55o",
-     "url": "https://www.youtube.com/watch?v=vOXfcKwP55o&t=317s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX beendete die vergangene Woche mit einem Minus von rund 1,8 Prozent, nachdem die ersten vier Handelstage schwach verlaufen waren. Am Freitag gelang eine klare Erholung; der Host hält es für mö…",
-     "einordnung": "Meine Einordnung: Der Freitagsanstieg verbessert das kurzfristige Bild, beseitigt den Rendite- und Ölpreisgegenwind aber nicht. Der Markt bleibt damit anfällig für schnelle Richtungswechsel, wie sie…",
-     "figures": "Wochenminus: rund 1,8 %; DAX laut Marktdaten: 25.569 Punkte, plus 0,82 %"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "i1kvrS7aV-Q",
-     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=222s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX bewegt sich trotz negativer Themen seitwärts und zeigt damit relative Stabilität. Harry hält einen Ausbruch in Richtung 28.800 Punkte für eine Frage der Zeit.",
-     "einordnung": "Die relative Stabilität ist bemerkenswert, weil steigende Ölpreise und höhere Zinserwartungen normalerweise stärker auf zyklische Aktien drücken. Der Weg von der aktuellen Marktdaten-Notierung bis zu…",
-     "figures": "Zielbereich 28.800 Punkte; laut Marktdaten aktuell 25.441 Punkte, Tagesveränderung -0,50 Prozent."
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "6VmhA9lWzLk",
-     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=0s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt sich mit einem Minus von 0,3 Prozent relativ stabil, während der Nasdaq 100 mit minus 1,5 Prozent deutlich stärker unter Druck steht. Charttechnisch ist beim DAX eine Korrektur bis in d…",
-     "einordnung": "Die relative DAX-Stärke ist bemerkenswert, bleibt angesichts der Öl- und Zinsrisiken aber zunächst ein Stabilitätssignal und kein bestätigter neuer Aufwärtstrend. Das Nasdaq-100-KGV von 22,2 lässt be…",
-     "figures": "DAX -0,3 Prozent; Nasdaq 100 -1,5 Prozent; DAX-Ziel 25.200 Punkte; Nasdaq-100-KGV 22,2; DAX laut Marktdaten 25.441 Punkte, Nasdaq-100-Future 29.573 Punkte"
-    },
-    {
-     "date": "2026-09-09",
-     "video_id": "jt2Dj1AYn08",
-     "url": "https://www.youtube.com/watch?v=jt2Dj1AYn08&t=585s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX hielt sich zuletzt an der 50-Tage-Linie und schloss am Vortag knapp im Plus. Für den aktuellen Handelstag wird nach den schwachen internationalen Vorgaben ein deutlich schwächerer Start erwar…",
-     "einordnung": "Aus meiner Sicht ist die 50-Tage-Linie aktuell der kurzfristige Taktgeber, aber kein Freibrief für Stabilität. Die Marktdaten zeigen gegenüber dem im Video genannten Niveau bereits einen weiteren Rüc…",
-     "figures": "Vortag 26.008 Punkte; vorbörslich 25.859 Punkte; im Video aktuell 25.863 Punkte; laut Marktdaten aktuell 25.576 Punkte und -1,66 %"
     }
    ]
   },
@@ -2115,40 +2636,6 @@
     }
    ]
   },
-  "EVK.DE": {
-   "name": "Evonik",
-   "auftritte": [
-    {
-     "date": "2026-09-23",
-     "video_id": "SZrm5GELGqI",
-     "url": "https://www.youtube.com/watch?v=SZrm5GELGqI&t=698s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Evonik treibt eine Restrukturierung voran, baut 2.800 und 3.200 Stellen ab und konzentriert sich stärker auf profitable Sparten. Das Polyestergeschäft mit 150 Millionen Euro Umsatz wurde eingestellt.",
-     "einordnung": "Die niedrige Bewertung lässt Spielraum für eine Neubewertung, sofern die Restrukturierung tatsächlich zu nachhaltig besseren Margen führt. Der Chart befindet sich aber noch in einer Konsolidierungsph…",
-     "figures": "KGV 10,7, Chartziel 20,50 Euro, Umsatz des eingestellten Polyestergeschäfts 150 Millionen Euro"
-    },
-    {
-     "date": "2026-09-15",
-     "video_id": "RJtgvUko4k4",
-     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=553s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Evonik geriet nach einem starken Lauf unter Druck. Zusätzlich belastet ein Sparprogramm, das die Schließung von zwei Werken vorsieht.",
-     "einordnung": "Hier verbinden sich Gewinnmitnahmen mit einer operativen Anpassung, die auf anhaltenden Kostendruck hindeutet. Das macht Evonik im Vergleich zu den reinen Umschichtungsthemen zu einem Wert mit eigene…"
-    },
-    {
-     "date": "2026-09-15",
-     "video_id": "hgqdSE3-bAk",
-     "url": "https://www.youtube.com/watch?v=hgqdSE3-bAk&t=1002s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Morgan Stanley stufte Evonik von Overweight auf Equal Weight zurück und senkte das Kursziel von 21 auf 18 Euro. Als Grund wird Vorsicht beim Tiernahrungsgeschäft genannt; charttechnisch gilt 17 Euro…",
-     "einordnung": "Das Downgrade trifft Evonik an einer charttechnisch heiklen Stelle. Solange 17 Euro verteidigt werden, bleibt eine Stabilisierung möglich; darunter würde sich das Risikoprofil deutlich verschlechtern.",
-     "figures": "Kursziel alt 21 Euro, neu 18 Euro; Unterstützung 17 Euro; mögliches Tief 15 Euro"
-    }
-   ]
-  },
   "ONON": {
    "name": "On Holding",
    "auftritte": [
@@ -2519,130 +3006,6 @@
      "note": "Im Kontext von CrowdStrike erwähnt: Hackerangriff auf Salesforce mit 1 Mrd. betroffenen Daten als Beleg für wachsenden Cybersicherheitsbedarf.",
      "einordnung": "Der Hack ist ein Reputationsrisiko für Salesforce und gleichzeitig ein Vertriebsargument für Cybersecurity-Anbieter wie CrowdStrike. Für Salesforce-Anleger ist die Frage, ob Datensicherheitsvorfälle…",
      "figures": "1 Mrd. betroffene Daten"
-    }
-   ]
-  },
-  "MU": {
-   "name": "Micron",
-   "auftritte": [
-    {
-     "date": "2026-09-23",
-     "video_id": "SZrm5GELGqI",
-     "url": "https://www.youtube.com/watch?v=SZrm5GELGqI&t=3142s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Michael Burry baut laut Host seine Short-Positionen in Micron, Palantir, Nvidia und einem Halbleiter-ETF aus. Goersch widerspricht der skeptischen Sicht auf den Memory-Zyklus und verweist auf steigen…",
-     "einordnung": "Die niedrige Bewertung und der KI-getriebene Speicherbedarf sprechen für die Bullen, doch Burry trifft mit dem Hinweis auf die Zyklik einen wunden Punkt der These. Bei Micron ist entscheidend, ob die…",
-     "figures": "KGV 7,5, Citi-Ziel 1.300 US-Dollar nach zuvor 1.150 US-Dollar, durchschnittliches Analystenziel 1.565 US-Dollar, laut Host 42 Prozent Aufwärtspotenzial, UBS erwartet steigende Preise bis 2028, Speich…"
-    },
-    {
-     "date": "2026-09-16",
-     "video_id": "3YMjiOZKbm4",
-     "url": "https://www.youtube.com/watch?v=3YMjiOZKbm4&t=2577s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "In Taiwan stehen Tarifverhandlungen an; die Gewerkschaft fordert 15 Prozent des operativen Gewinns als Beteiligung. Der Host verweist zugleich auf die erwartete starke Expansion des Speichermarkts un…",
-     "einordnung": "Micron vereint einen strukturell starken KI-Speicherzyklus mit einem konkreten Kosten- und Produktionsrisiko in Taiwan. Der positive Blick des Hosts ist angesichts des Marktwachstums verständlich, do…",
-     "figures": "Gewerkschaftsforderung: 15 Prozent des operativen Gewinns; Speichermarkt 2026: 937 Milliarden US-Dollar, 2030: 1,8 Billionen US-Dollar; gesamter Halbleitermarkt 2026: 1,7 Billionen US-Dollar, 2030: 3…"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "6VmhA9lWzLk",
-     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=2798s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Micron verliert vorbörslich rund 5 Prozent, ausgelöst durch die KI-Panik und zusätzliche Sorgen über einen möglichen Streik in Taiwan. Mittelfristig sieht der Host tiefere Kurse als mögliche Chance.",
-     "einordnung": "Micron bleibt ein zyklischer Speicherwert, dessen Kurs stark auf Erwartungen an KI-Investitionen und Lieferketten reagiert. Der Rückgang kann deshalb sowohl eine Übertreibung des Sentiments als auch…",
-     "figures": "Vorbörslich -5 Prozent; Bonus 1 Mio. TWD beziehungsweise 31.500 Dollar; Mitarbeiter fordern 15 Prozent Gewinnbeteiligung"
-    },
-    {
-     "date": "2026-09-07",
-     "video_id": "BbDMdNi1LC4",
-     "url": "https://www.youtube.com/watch?v=BbDMdNi1LC4&t=1905s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Bei Micron verdichten sich die gleitenden Durchschnitte, während der Host eine bullische inverse Schulter-Kopf-Schulter-Formation erkennt. Der entscheidende Ausbruchspunkt liegt um 1.000 US-Dollar.",
-     "einordnung": "Die Formation bietet eine klare technische Triggerzone, ist bis zum tatsächlichen Ausbruch aber lediglich eine Möglichkeit. Bei einem Halbleiterwert ist zudem mit erhöhter Schwankungsbreite zu rechne…",
-     "figures": "Ausbruchsniveau um 1.000 US-Dollar, Stopp unter 890 US-Dollar."
-    },
-    {
-     "date": "2026-09-07",
-     "video_id": "SSFzzcpor7A",
-     "url": "https://www.youtube.com/watch?v=SSFzzcpor7A&t=3315s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Micron wird als Teil der bullishen Speicheraktien genannt. Der Host sieht einen Dreieckausbruch und nennt Kursziele von 300 US-Dollar sowie langfristig 1.700 US-Dollar.",
-     "einordnung": "Die genannten Ziele spiegeln eine sehr weitreichende Aufwärtsprojektion wider, die stark vom Fortbestand des Speicher- und KI-Zyklus abhängt. Das kurzfristige und das langfristige Ziel sollten daher…",
-     "figures": "Kursziel 300 US-Dollar, entsprechend 30%; langfristiges Kursziel 1.700 US-Dollar, entsprechend 65 bis 70%"
-    },
-    {
-     "date": "2026-08-18",
-     "video_id": "-mSKtaN5emQ",
-     "url": "https://www.youtube.com/watch?v=-mSKtaN5emQ&t=2549s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Die Bank of America bekräftigt ihre Kaufempfehlung mit einem Kursziel von 50 US-Dollar. Micron profitiert laut Host von steigenden DRAM-Preisen und geopolitischer Unterstützung durch die US-Blockade…",
-     "einordnung": "Micron ist ein klassischer zyklischer Profiteur eines knappen Speichermarktes, dessen Bewertung stark vom erwarteten Preiszyklus abhängt. Politische Unterstützung verbessert die Wettbewerbsposition i…",
-     "figures": "Kursziel 50 US-Dollar; erwartetes EPS-Wachstum von mehr als 30% pro Jahr bis 2030; DRAM-Preise +30% im Jahr 2026; Investitionen von 250 Mrd. US-Dollar bis 2035; Ziel eines US-DRAM-Produktionsanteils…"
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "Hwf_CXhBgJU",
-     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=1248s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Die Bank of America sieht bei Micron eine Kaufgelegenheit und nennt starke Gewinnperspektiven bis 2028. Der Host bleibt dennoch abwartend und verweist auf ein Kursziel von 50 Dollar, ein EPS von 150…",
-     "einordnung": "Micron ist ein direkter Hebel auf die Speicherpreise und damit chancenreich, aber besonders zyklisch. Die im Rohmaterial ungewöhnlich wirkende Zahlenkombination sollte nicht überinterpretiert werden;…",
-     "figures": "Kursziel 50 $, EPS 2028: 150 $, Bärenmarktszenario 100 $"
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "AgPutPCLfas",
-     "url": "https://www.youtube.com/watch?v=AgPutPCLfas&t=3508s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Micron wird als fundamental bullischer Wert nahe den Tiefs eingeordnet. Das KGV liegt im einstelligen Bereich, allerdings bestehen ein Korea-Overhang und weiterhin zyklische Risiken.",
-     "einordnung": "Die niedrige Bewertung kann bei einem Speicherzyklus attraktiv sein, ist aber gerade bei Halbleitern häufig ein Spätzyklus-Signal. Ohne weitere Zahlen im Auszug bleibt der Wert eine zyklische Erholun…",
-     "figures": "KGV im einstelligen Bereich"
-    },
-    {
-     "date": "2026-08-03",
-     "video_id": "n8967zUx9oE",
-     "url": "https://www.youtube.com/watch?v=n8967zUx9oE&t=3048s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der Host beschreibt eine Verzehnfachung der Aktie im Speicherchip-Hype und anschließend eine Korrektur von 30 Prozent. Die fundamentale Nachfrage bleibe hoch, dennoch müsse der Kursrücksetzer verarbe…",
-     "einordnung": "Micron zeigt das typische Muster eines zyklischen Halbleiterwerts: Starke Nachfrage kann die Gewinnfantasie schnell treiben, aber auch hohe Erwartungen erzeugen. Nach einer Verzehnfachung ist eine Ko…",
-     "figures": "Verzehnfachung der Aktie; Korrektur um 30 Prozent"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "RefnY01hhvw",
-     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=218s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Der Chipsektor steht unter Druck. Der Host hält die fundamentale Bewertung von Micron weiterhin für günstig und sieht in den Sorgen vor einer Wachstumsabschwächung mögliche Einstiegschancen.",
-     "einordnung": "Bei Halbleitern ist ein günstiges Bewertungsniveau allein kein ausreichendes Signal, weil die Gewinnschätzungen stark zyklisch sind. Entscheidend ist, ob die erwartete Abkühlung nur eine Zwischenphas…"
-    },
-    {
-     "date": "2026-07-23",
-     "video_id": "WCEAWp8ZtiA",
-     "url": "https://www.youtube.com/watch?v=WCEAWp8ZtiA&t=517s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Micron steigt laut Egmond um 2 Prozent, was er im Kontext der übrigen Marktbewegungen ebenfalls für unlogisch hält.",
-     "einordnung": "Die relative Stärke ist deutlich weniger spektakulär als bei SK Hynix, bleibt aber ein Zeichen für eine uneinheitliche Halbleiterreaktion. Der Titel profitiert offenbar von derselben Speicherfantasie…",
-     "figures": "plus 2 Prozent"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "nPEPzB9N_5o",
-     "url": "https://www.youtube.com/watch?v=nPEPzB9N_5o&t=317s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Micron korrigiert laut Host nach einer zuvor sehr guten Entwicklung deutlich um 25 bis 30 Prozent. Die fundamentale Bewertung wird dennoch als attraktiv beschrieben.",
-     "einordnung": "Bei einem zyklischen Speicherhersteller ist ein starker Kursrückgang allein noch kein Beweis für eine günstige Gelegenheit. Entscheidend ist, ob die Gewinnschätzungen den nächsten Speicherzyklus bere…",
-     "figures": "Korrektur um 25 bis 30 Prozent"
     }
    ]
   },
@@ -7309,97 +7672,6 @@
     }
    ]
   },
-  "BMW.DE": {
-   "name": "BMW",
-   "auftritte": [
-    {
-     "date": "2026-09-16",
-     "video_id": "3YMjiOZKbm4",
-     "url": "https://www.youtube.com/watch?v=3YMjiOZKbm4&t=1714s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Die BMW-Aktie fällt trotz einer Hochstufung durch Berenberg auf Kaufen. Das Kursziel wurde von 69 auf 75 Euro angehoben, während der Host die Gewinnwarnung vom Juni als weitgehend eingepreist betrach…",
-     "einordnung": "Ein KGV von 8,6 wirkt auf den ersten Blick günstig, doch bei zyklischen Autobauern ist ein niedriges KGV häufig ein Spiegel hoher aktueller Gewinne und nicht zwingend ein Sicherheitsmargin. Die ableh…",
-     "figures": "Berenberg-Kursziel 75 Euro, zuvor 69 Euro; KGV 8,6; Tagesbewegung laut Host: -1,3 Prozent"
-    },
-    {
-     "date": "2026-09-07",
-     "video_id": "tHrMBx5m1QU",
-     "url": "https://www.youtube.com/watch?v=tHrMBx5m1QU&t=685s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "BMW ist laut Host mit der 'Neuen Klasse' gut aufgestellt und verzeichnet eine hohe Nachfrage. Charttechnisch sieht er Potenzial bis zur 200-Tage-Linie.",
-     "einordnung": "BMW verbindet derzeit eine Produkt- und Technologiestory mit dem zyklischen Risiko des europäischen Automarkts. Die hohe Nachfrage ist positiv, muss sich aber gegen Margendruck und den intensiveren W…",
-     "figures": "200-Tage-Linie"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "jbBenx99pmg",
-     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=1347s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Die BMW-Aktie legt 0,9 Prozent zu. HSBC stufte den Titel von 'Halten' auf 'Kaufen' hoch und nannte ein Kursziel von 71 Euro; charttechnisch zeigt sich ein Doppeltief im Bereich von 56,70 bis 57 Euro.",
-     "einordnung": "Ein KGV von 8 wirkt im historischen und sektoralen Vergleich niedrig, ist bei einem beobachteten Gewinnrückgang aber kein Selbstläufer. Die Zone um 56,70 bis 57 Euro ist für die Stabilisierung wichti…",
-     "figures": "Kurs +0,9 Prozent, KGV 8, Kursziel HSBC 71 Euro, Doppeltief 56,70 bis 57 Euro"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=1194s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "BMW wird als Nachzügler gekauft, aber die fundamentalen Aussichten bleiben unverändert. Haidt sieht nur eine technische Erholung.",
-     "einordnung": "Autowerte als Nachzügler zu kaufen ist ein klassisches Rotationsspiel, das oft endet, wenn die Fundamente einholen. Ohne echte Erholung im chinesischen Automarkt bleibt BMW strukturell belastet."
-    },
-    {
-     "date": "2026-06-30",
-     "video_id": "pX8Iw4nTeqI",
-     "url": "https://www.youtube.com/watch?v=pX8Iw4nTeqI",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt, im Kontext der deutschen Autobranche-Krise besprochen.",
-     "einordnung": "BMW wird von Haidt nicht isoliert betrachtet, sondern als Teil des Branchenproblems. Die Münchner gelten als etwas robuster als Mercedes und VW, aber der Sektordruck erfasst alle."
-    },
-    {
-     "date": "2026-06-23",
-     "video_id": "Fv8-4-RrpRU",
-     "url": "https://www.youtube.com/watch?v=Fv8-4-RrpRU&t=142s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Gewinnwarnung, Aktie hat innerhalb weniger Monate ein Drittel an Wert verloren. Egmond hatte zuvor mehrfach vor der Geschäftsentwicklung gewarnt.",
-     "einordnung": "Die Gewinnwarnung kommt für den Markt überraschend, für Egmond nicht. Ein Drittel Wertverlust in wenigen Monaten spiegelt die strukturelle Schwäche der deutschen Automobilbranche wider, die unter Zöl…"
-    },
-    {
-     "date": "2026-06-22",
-     "video_id": "9G1WNKY6uuY",
-     "url": "https://www.youtube.com/watch?v=9G1WNKY6uuY&t=548s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "BMW hat die wichtige Unterstützung bei 68 Euro nach unten durchbrochen, was charttechnisch in einen Bärenmarkt führt. Harry nennt dies eine 'Gewinnwarnung' im Chart.",
-     "einordnung": "Der Bruch der 68-Euro-Marke ist ein massives negatives Signal. BMW war lange ein relativ stabiler Wert im DAX, aber wenn eine solche Schlüsselmarke fällt, kommt oft systematisches Risiko ins Spiel. D…",
-     "figures": "68, 87, 110, 131, 139"
-    },
-    {
-     "date": "2026-06-17",
-     "video_id": "UBcaG1xcyng",
-     "url": "https://www.youtube.com/watch?v=UBcaG1xcyng&t=199s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "BMW senkt nach Gewinnwarnung die Prognosen drastisch: EBIT-Marge nur noch 1–3% (zuvor 4–6%), Free Cashflow auf 2,5 Mrd. Euro halbiert (zuvor 4,5 Mrd.), Auslieferungen leicht rückläufig. Aktie vorbörs…",
-     "einordnung": "Eine EBIT-Marge von 1–3% für einen Premium-Automobilhersteller ist alarmierend – das ist industrielles Subsistenzniveau, kein Premiumgeschäft mehr. Der Artikel-Titel 'Schlimmer geht immer' des Aktion…",
-     "figures": "EBIT-Marge 1–3% (vorher 4–6%); Free Cashflow 2,5 Mrd. Euro (vorher 4,5 Mrd.); Aktie vorbörslich -6,6%; tiefster Stand seit Herbst 2020"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video als einer der größten DAX-Verlierer seit Jahresanfang erwähnt.",
-     "einordnung": "BMW als Underperformer profitiert kurzfristig vom Momentum-Wechsel – die strukturellen Herausforderungen (E-Auto-Wettbewerb, Zölle) bleiben jedoch ungelöst."
-    }
-   ]
-  },
   "ULTA": {
    "name": "Ulta Beauty",
    "auftritte": [
@@ -8638,120 +8910,6 @@
      "note": "Der norwegische Energiekonzern profitiert von den steigenden Energiepreisen. Der Host nennt ein eigenes Kursziel von 520 norwegischen Kronen und verweist auf ein Analystenziel von 435 norwegischen Kr…",
      "einordnung": "Equinor bietet als Energieproduzent einen natürlichen Ausgleich zu ölpreisabhängigen Verbrauchern wie Airlines. Der niedrige KGV-Wert signalisiert eine moderate Bewertung, spiegelt aber auch die Zykl…",
      "figures": "KGV 9,7; Analystenziel 435 NOK; Sprecherziel 520 NOK; Kursziel in Euro 48 Euro"
-    }
-   ]
-  },
-  "NKE": {
-   "name": "Nike",
-   "auftritte": [
-    {
-     "date": "2026-09-14",
-     "video_id": "6VmhA9lWzLk",
-     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=2460s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nike befindet sich in einem Abwärtstrend. Mehrere Analysten senken ihre Kursziele, während die Nachfrage in China und in den Lifestyle-Segmenten schwach bleibt.",
-     "einordnung": "Die breite Spanne der Analystenziele zeigt, wie uneinheitlich die Erholungserwartungen sind. Solange China und die Lifestyle-Nachfrage nicht drehen, bleibt eine niedrige Bewertung allein kein ausreic…",
-     "figures": "Kurs 37 Dollar; Kursziele: Bert 44 Dollar, Citigroup 39 Dollar, Morgan Stanley 31 Dollar, BMO 30 Dollar"
-    },
-    {
-     "date": "2026-09-04",
-     "video_id": "JYaFrjI3lJA",
-     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=130s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Nike fällt weiter; die Marktkapitalisierung liegt inzwischen unter 50 Milliarden US-Dollar. Der Sportartikelmarkt bleibt schwierig, auch wenn die Aktie langfristig günstig bewertet erscheint.",
-     "einordnung": "Die niedrige Bewertung allein ist bei einem angeschlagenen Konsumwert noch kein Wendepunkt. Entscheidend ist, ob Nike operativ wieder an Dynamik gewinnt und der Markt diese Verbesserung glaubhaft vor…",
-     "figures": "Marktkapitalisierung unter 50 Mrd. USD"
-    },
-    {
-     "date": "2026-08-18",
-     "video_id": "-mSKtaN5emQ",
-     "url": "https://www.youtube.com/watch?v=-mSKtaN5emQ&t=4496s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Fallende Sneakerpreise und der Bruch der Unterstützung bei 40 US-Dollar erzeugten ein neues Verkaufssignal. Die Dividendenrendite liegt über 4%, doch der Host bezeichnet die Aktie zunächst als fallen…",
-     "einordnung": "Eine hohe Dividendenrendite ist bei einem strukturell schwachen Chart kein ausreichender Schutz. Nike braucht zunächst eine glaubwürdige Verbesserung bei Nachfrage, Preisen und Lagerbestand, bevor di…",
-     "figures": "Unterstützung bei 40 US-Dollar durchbrochen; Dividendenrendite über 4%."
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "Hwf_CXhBgJU",
-     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=1964s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nike verliert laut einer Morgan-Stanley-Umfrage weiter Marktanteile. Die Aktie ist technisch schwach und notiert unter 50 Dollar.",
-     "einordnung": "Die Dividendenrendite bietet eine gewisse Unterstützung, kompensiert aber nicht automatisch den möglichen Verlust von Marken- und Marktanteilen. Bei einem KGV von 24,3 braucht Nike sichtbare operativ…",
-     "figures": "Marktanteil Nike 28 %, On Holding 13 %, Kursziel 34 $ bei Bruch von 40,50 $, KGV 24,3, Dividendenrendite 4 %"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "ZtKFU4SJtbQ",
-     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=160s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Nike gehörte am Vortag mit einem Plus von 4 Prozent zu den Gewinnern. Der Host sieht jedoch noch keine bestätigte Branchenrotation; die Kurslücke bei 48 Dollar und die Oberkante bei 52 Dollar sind fü…",
-     "einordnung": "Ein Tagesgewinn ist bei einer angeschlagenen Konsum- und Markenaktie zunächst nur ein Stabilisierungssignal. Erst wenn die genannten Widerstände überwunden werden, würde sich das technische Bild bela…",
-     "figures": "Plus 4 Prozent; 48 Dollar; 52 Dollar"
-    },
-    {
-     "date": "2026-07-07",
-     "video_id": "_FhINJOGun8",
-     "url": "https://www.youtube.com/watch?v=_FhINJOGun8&t=125s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Nike hat in der vergangenen Woche Zahlen veröffentlicht. Haidt verweist auf einen separaten BNP-Paribas-Beitrag.",
-     "einordnung": "Die Auslagerung in einen separaten Beitrag zeigt, dass Nike keine unmittelbare marktrelevante Neuigkeit mehr liefert. Für die Gesamtmarktbewegung ist der Wert aktuell kein Treiber."
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "mNobFjJKrNE",
-     "url": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=227s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Quartalszahlen überraschten positiv — Umsatz und Gewinn lagen über den Erwartungen. Skeptische Aussagen zum Umfeld belasten die Aktie jedoch nachbörslich mit einem erwarteten Startverlust von 3-4 Pro…",
-     "einordnung": "Das ist das klassische 'Beat and Retreat'-Muster: Die Zahlen stimmen, aber das Guidance-Sentiment trübt die Stimmung. Bei Nike kommt erschwerend hinzu, dass der strukturelle Turnaround im Gange ist —…",
-     "figures": "Umsatz 10,97 Mrd. USD (Erwartung 10,86 Mrd.); Gewinn 72 Cent/Aktie (mit Sondereffekt), bereinigt +13 Cent; erwarteter Startverlust 3-4%"
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "kbhs3X-LW2E",
-     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=3350s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Quartalszahlen: Gewinn +414% (bereinigt +271%), Umsatz -1%. China-Umsatz -12% auf 1,3 Mrd. USD. Analysten senken Ziele auf 42-47 USD. Abwärtstrend hält an, charttechnisch schwach.",
-     "einordnung": "Der Gewinnjump von +414% ist beeindruckend, aber der Umsatzrückgang von -1% und China -12% zeigen, dass die operative Wende noch nicht da ist. Die Analystenziele von 42-48 USD implizieren 10-20% Aufw…",
-     "figures": "Gewinnwachstum 414% (von 0,14 auf 0,72 USD; adjustiert 0,52 USD); Umsatz -1%; China -12% auf 1,3 Mrd. USD; Analystenziele: BoA 47, Goldman 42, UBS 48, Citi 45 USD"
-    },
-    {
-     "date": "2026-06-26",
-     "video_id": "F6cTDl0_v6Q",
-     "url": "https://www.youtube.com/watch?v=F6cTDl0_v6Q&t=632s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Nach jahrelanger Skepsis zeigt Nike erste Lichtblicke durch einen neuen CFO. Der Host identifiziert ein technisches Kaufsignal über 47,50 USD und sieht eine mögliche Bodenbildung.",
-     "einordnung": "Nach jahrelangem Verfall durch Markenerosion, Inventarprobleme und Konkurrenz durch neuere Athletic-Brands zeigt das technische Setup erste Stabilisierungsanzeichen. Ein KGV von 22 für 2027 ist nicht…",
-     "figures": "KGV 22 für 2027; Kaufsignal über 47,50 USD; Support bei 150 USD; bei Bruch Ziel 37-35 USD"
-    },
-    {
-     "date": "2026-06-25",
-     "video_id": "1_zNnqdriM4",
-     "url": "https://www.youtube.com/watch?v=1_zNnqdriM4&t=2050s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nike leidet unter schlechten China-Daten, neuem CFO-Wechsel und herabgestuften Analysten; charttechnisch weiter schwach.",
-     "einordnung": "Nike ist ein klassischer Wert, bei dem sich fundamentale und charttechnische Probleme überlagern — China-Schwäche, Managementwechsel und Analystenherabstufungen bilden eine giftige Mischung. Die Divi…",
-     "figures": "Umsatzrückgang China -20% (Prognose Q4), Kursziel Bank of America 55$, Dividendenrendite 3,8%"
-    },
-    {
-     "date": "2025-12-19",
-     "video_id": "juY3ezTp3DY",
-     "url": "https://www.youtube.com/watch?v=juY3ezTp3DY&t=1162s",
-     "channel": "Calling USA",
-     "kategorie": "news",
-     "note": "Die Aktie verlor 10% seit Jahresbeginn. Der CEO hat Prognosen reduziert, ein Turnaround wird erwartet. Eine neue Kollektion mit Kim Kardashian (Skims) soll helfen.",
-     "einordnung": "Nike bei -10% ist ein klassischer Turnaround-Fall — neue Führung, reduzierte Prognosen, erste strategische Initiativen. Die Skims-Kollaboration ist typisch für den Versuch, über Celebrity-Marketing j…",
-     "figures": "-10% Jahresperformance"
     }
    ]
   },
@@ -10137,109 +10295,6 @@
      "note": "Snowflake meldet starke Zahlen und steigt vorbörslich um 23 Prozent. Umsatz und Gewinn übertreffen die Erwartungen, die Zahl der Großkunden und die verbleibenden Leistungsverpflichtungen wachsen kräf…",
      "einordnung": "Snowflake liefert genau die Kombination, die der Markt bei einem Cloud-Datenwert sehen will: Beschleunigung, große Vertragsbasis und KI-Fantasie. Nach einem Plus von 23 Prozent steigt allerdings das…",
      "figures": "Vorbörsliches Plus 23 Prozent; Umsatz 1,55 Milliarden US-Dollar gegenüber erwarteten 1,48 Milliarden US-Dollar; Gewinn je Aktie 0,60 US-Dollar gegenüber 0,45 US-Dollar, plus 77 Prozent gegenüber der…"
-    }
-   ]
-  },
-  "BAS.DE": {
-   "name": "BASF",
-   "auftritte": [
-    {
-     "date": "2026-09-04",
-     "video_id": "JYaFrjI3lJA",
-     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=486s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "BASF zeigt eine stabile Aufwärtsbewegung in Richtung 55 Euro. Der Host beschreibt den Verlauf als solide und frei von größeren Ausschlägen.",
-     "einordnung": "Das Kursbild wirkt konstruktiv, bleibt bei einem zyklischen Chemiewert aber von Konjunktur, Energiepreisen und der Nachfrage aus der Industrie abhängig. Ein ruhiger Anstieg ist deshalb belastbarer al…",
-     "figures": "Richtung 55 EUR"
-    },
-    {
-     "date": "2026-09-03",
-     "video_id": "_sVc-sAsjNY",
-     "url": "https://www.youtube.com/watch?v=_sVc-sAsjNY&t=365s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "BASF behauptet sich in einem schwachen Marktumfeld. Niedrigere Rheinpegel und Kosteneinsparungen stützen das Unternehmen; zugleich fällt der Ausblick für die Chemiebranche positiver aus.",
-     "einordnung": "Die Stärke der Aktie ist angesichts der zyklischen Chemiebranche bemerkenswert, sollte aber nicht mit einer bereits vollzogenen Nachfragewende verwechselt werden. Kostensenkungen können die Gewinnent…"
-    },
-    {
-     "date": "2026-08-31",
-     "video_id": "oTVTqvO9we8",
-     "url": "https://www.youtube.com/watch?v=oTVTqvO9we8&t=485s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Die Pegelstände am Rhein steigen leicht und erleichtern damit den Transport. Das historische Niedrigwasser von 2018 verursachte bei BASF Kosten von 250 Millionen Euro; aktuell erwartet der Host keine…",
-     "einordnung": "Das Thema ist für BASF kurzfristig logistisch relevant, ändert aber wenig an den größeren Herausforderungen des Chemiekonzerns. Eine Entspannung am Rhein nimmt einen Sonderbelastungsfaktor heraus, lö…",
-     "figures": "250 Millionen Euro Kosten durch Niedrigwasser 2018"
-    },
-    {
-     "date": "2026-08-17",
-     "video_id": "PqtSJuBpK44",
-     "url": "https://www.youtube.com/watch?v=PqtSJuBpK44&t=316s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "BASF steht wegen des Niedrigwassers unter Druck. Der Host verweist auf Sorgen hinsichtlich der Chemiepreise und der Versorgungssicherheit.",
-     "einordnung": "Für einen Chemiekonzern ist Niedrigwasser nicht nur ein logistisches Problem, sondern kann direkt die Auslastung und die Kostenstruktur beeinflussen. Die Nachricht verschärft damit die ohnehin zyklis…"
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "s6VvSYzc1qc",
-     "url": "https://www.youtube.com/watch?v=s6VvSYzc1qc&t=361s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "BASF profitiert von der freundlichen Marktstimmung, wird aber durch Niedrigwasser im Rhein und dadurch steigende Transportkosten belastet. Die Marke von 50 Euro hält laut Host zunächst.",
-     "einordnung": "Bei BASF treffen günstige Stimmung und ein realwirtschaftlicher Kostenfaktor unmittelbar aufeinander. Die gehaltene 50-Euro-Marke stabilisiert zwar das Chartbild, ersetzt aber keine Verbesserung der…",
-     "figures": "50-Euro-Marke"
-    },
-    {
-     "date": "2026-07-29",
-     "video_id": "wOWTV_pDNkE",
-     "url": "https://www.youtube.com/watch?v=wOWTV_pDNkE&t=558s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "BASF bestätigt die vorläufigen Zahlen und berichtet über einen weiteren deutlichen Stellenabbau. In Ludwigshafen sinkt die Beschäftigtenzahl unter 30.000, während ein neues Aktienrückkaufprogramm ang…",
-     "einordnung": "BASF befindet sich sichtbar in einer Phase der strukturellen Anpassung und nicht in einer klassischen Wachstumsstory. Das Rückkaufprogramm kann den Aktienkurs stützen, ersetzt aber keine überzeugende…",
-     "figures": "7.000 abgebaute Stellen; Beschäftigtenzahl in Ludwigshafen unter 30.000; Aktienrückkaufprogramm bis zu 1 Milliarde Aktien von August 2024 bis April 2027"
-    },
-    {
-     "date": "2026-07-21",
-     "video_id": "J6gUTUPHems",
-     "url": "https://www.youtube.com/watch?v=J6gUTUPHems&t=308s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "BASF meldete starke Zahlen für das zweite Quartal, doch die Anhebung der Prognose blieb leicht hinter den Analystenerwartungen zurück und enttäuschte damit den Markt.",
-     "einordnung": "Die operative Überraschung im Quartal ist positiv, wird aber durch den nur vorsichtig angehobenen Ausblick und den negativen Quartals-Free-Cashflow relativiert. Bei einem zyklischen Chemiewert zählt…",
-     "figures": "Umsatz: 17,2 Mrd. Euro gegenüber erwarteten 16,5 Mrd. Euro; bereinigtes EBITDA: 2,4 Mrd. Euro gegenüber erwarteten 2,15 Mrd. Euro; Free Cashflow: minus 0,2 Mrd. Euro. EBITDA-Prognose: 6,9 bis 7,7 Mrd…"
-    },
-    {
-     "date": "2026-07-16",
-     "video_id": "8n4SjPW9E8M",
-     "url": "https://www.youtube.com/watch?v=8n4SjPW9E8M&t=612s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "BASF fokussiert sich auf das Kerngeschäft, spaltet die Agrarsparte ab und verkauft das Coatings-Geschäft. Der Host hebt BASF als guten Dividendenzahler hervor und sieht Potenzial über 50.",
-     "einordnung": "Die Neuausrichtung kann den Konzern fokussieren und Kapital freisetzen, ist aber zunächst mit Umbaukosten und Ausführungsrisiken verbunden. Die Dividende bietet einen Puffer, ersetzt bei einem zyklis…",
-     "figures": "Potenzial über 50; konkrete Währung beziehungsweise Kursziel im Video nicht genannt"
-    },
-    {
-     "date": "2026-07-16",
-     "video_id": "l9xly8aiYMM",
-     "url": "https://www.youtube.com/watch?v=l9xly8aiYMM&t=986s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "MWB Research stuft BASF von 'Halten' auf 'Kaufen' hoch. Der vorläufige Umsatz im zweiten Quartal liegt über den Erwartungen, das EBITDA steigt deutlich.",
-     "einordnung": "Die Zahlen sprechen für eine operative Verbesserung, doch BASF bleibt ein zyklischer Chemiewert, bei dem Preis- und Mengeneffekte nicht automatisch dauerhaft sind. Der Hinweis auf die Mitte einer Sei…",
-     "figures": "Kursziel 55 Euro nach zuvor 52 Euro; Umsatz 17,2 Mrd. Euro bei erwarteten 16,5 Mrd. Euro; EBITDA 2,4 Mrd. Euro bei erwarteten 2,1 Mrd. Euro; Preise +11 %, Mengen +7 %; Prognose 2026: 6,9 bis 7,7 Mrd.…"
-    },
-    {
-     "date": "2026-07-13",
-     "video_id": "8EytmuiphH4",
-     "url": "https://www.youtube.com/watch?v=8EytmuiphH4&t=1448s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Für die Agrarsparte ist ein Börsengang mit einem Unternehmenswert von 20 bis 30 Mrd. Euro geplant. BASF selbst kommt auf eine Marktkapitalisierung von 42,6 Mrd. Euro und ein KGV von 18; charttechnisc…",
-     "einordnung": "Ein möglicher Börsengang kann verborgene Werte sichtbar machen, ist aber zunächst eine Bewertungs- und Umsetzungsstory. Befindet sich der Kurs zugleich mitten in der Handelsspanne, fehlt aus charttec…",
-     "figures": "Marktkapitalisierung BASF 42,6 Mrd. Euro, erwarteter Wert der Agrarsparte 20 bis 30 Mrd. Euro, KGV 18, Tagesplus 1,2 Prozent"
     }
    ]
   },
