@@ -742,6 +742,18 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   .rc-refs a{display:inline-flex;align-items:center;min-height:44px;align-self:flex-start}
   .rc-detail p{margin-top:var(--sp-2)}
 
+  /* V2-7 Teil D.1: Skelette (§ 8 „Laden") — Flaeche --chip, Puls mit --dur-slide aus § 7,
+     Tiefpunkt 50 % wie der deaktivierte Zustand (§ 8); ruhend bei reduzierter Bewegung.
+     Die Skelettkarten stehen untereinander — kein wiederholendes Raster, keine Spurenregel. */
+  .nur-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+    clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .skelett{display:flex;flex-direction:column;gap:var(--sp-4)}
+  .skelett-karte{display:flex;flex-direction:column;gap:var(--sp-3);max-width:45rem}
+  .skelett-balken{display:block;height:var(--sp-3);border-radius:var(--radius-pill);background:var(--chip);
+    animation:skelettPuls var(--dur-slide) var(--ease-out) infinite alternate}
+  @keyframes skelettPuls{from{opacity:1}to{opacity:.5}}
+  @media (prefers-reduced-motion:reduce){.skelett-balken{animation:none}}
+
   /* Fußzeile (Teil B.2): in jedem Raum sichtbar, Textlinks mit 44-px-Zielen */
   .fuss{margin-top:var(--sp-12);padding-top:var(--sp-6);border-top:1px solid var(--line);
     display:flex;flex-direction:column;gap:var(--sp-2)}
@@ -1588,14 +1600,15 @@ function safeLink(u,label,extra){const h=safeUrl(u),t=escapeHtml(label==null?'':
 function validTicker(t){t=String(t==null?'':t).trim();return /^[A-Z0-9.=^-]+$/.test(t)?t:''}
 
 /* ================================================================================
-   Feeds — elf Dateien, alle von derselben Origin, keine neue Drittquelle.
+   Feeds — zehn Dateien, alle von derselben Origin, keine neue Drittquelle. ideas.json ist seit
+   V2-7 Teil D.2 nicht mehr dabei: die „Ideen" entfallen in V2 (Nutzerentscheid 28.09.2026).
    ================================================================================ */
 let DATA={},order=[],labels={},current=null;
-let MARKET=null,VIDEOS=null,VIDIDX=null,IDEAS=null,EARN=null,ERECAP=null,CANDIDATES=null;
+let MARKET=null,VIDEOS=null,VIDIDX=null,EARN=null,ERECAP=null,CANDIDATES=null;
 let RADAR=null,QUOTES=null,TICKIDX=null,FGDATA=null;
 
 /* Der fail-softe Helfer aus index.html:870 — unveraendert uebernommen und nur von der
-   lokalen Funktion auf Modulebene gehoben, damit ALLE elf Feeds denselben Pfad nehmen.
+   lokalen Funktion auf Modulebene gehoben, damit ALLE zehn Feeds denselben Pfad nehmen.
    Er faengt jeden Fehler ab und setzt nur bei r.ok; genau das ist die Grundlage des
    graceful degrade (design-system.md §8.1). */
 const hol=async(datei,set)=>{try{const r=await fetch('data/'+datei,{cache:'no-store'});if(r.ok)set(await r.json())}catch(e){}};
@@ -1611,7 +1624,6 @@ async function feedsKlein(){
     hol('index.json',j=>{if(Array.isArray(j)&&j.length){order=j.map(d=>d.date);j.forEach(d=>labels[d.date]=d.label);current=order[0]}}),
     hol('market.json',j=>{MARKET=j;if(j&&j.feargreed)FGDATA=j.feargreed}),
     hol('videos-index.json',j=>{VIDIDX=j}),
-    hol('ideas.json',j=>{IDEAS=j}),
     /* Teil F.2: die drei Radar-Feeds melden ihren EIGENEN Abschluss. hol() bleibt
        unveraendert — angehaengt ist nur sein Promise, kein Orchestrator. Damit
        rendert jede Sektion, sobald ihre Datei da ist, statt auf die langsamste
@@ -1692,6 +1704,65 @@ const RAUMFEEDS={
   recherche:()=>[VIDEOS,VIDIDX],
   werte:()=>[QUOTES,TICKIDX]
 };
+/* ===== Skelette (V2-7 Teil D.1, Design-System § 8 „Laden") =========================
+   Eine Flaeche, deren Layout vor den Daten feststeht, setzt beim Warten einen WARTEPLATZ
+   (skelettPlatzHTML): leer bis auf einen Satz fuer Screenreader. Erst wenn er nach
+   SKELETT_MS noch im Dokument steht — die Daten also nicht kamen —, wird er zum Skelett.
+   Kommen die Daten frueher, ersetzt das Rendern den Warteplatz, und ein Skelett entsteht
+   gar nicht (Designbewertung 18.09., Zeile 6: darunter wuerde es nur flackern). Ein
+   MutationObserver findet jeden neuen Warteplatz; keine Renderfunktion verwaltet einen
+   Zeitgeber selbst. Welche Flaechen einen Warteplatz haben, steht in der Aufgabendatei
+   AA-20260928-FE-01-E01-T04 (Skelettliste). */
+const SKELETT_MS=300;
+/* Form je Flaeche: Zahl der Karten und relative Balkenlaengen je Karte (Form, kein Designwert). */
+const SKELETT_FORM={karten:[3,[40,90,75]],tage:[2,[45,85,60]],zeilen:[1,[70,50]]};
+function skelettPlatzHTML(form,text){
+  return '<div class="skelett-platz" data-skelett="'+escapeHtml(form)+'" aria-busy="true">'+
+    '<span class="nur-sr">'+escapeHtml(text)+'</span></div>';
+}
+function skelettHTML(form){
+  const f=SKELETT_FORM[form]||SKELETT_FORM.zeilen;
+  let h='';
+  for(let i=0;i<f[0];i++)h+='<div class="card skelett-karte">'+f[1].map(b=>'<span class="skelett-balken" style="width:'+b+'%"></span>').join('')+'</div>';
+  return '<div class="skelett" aria-hidden="true">'+h+'</div>';
+}
+/* Wartebeginn je Container (naechster Vorfahr mit id). Zeichnet eine Flaeche waehrend des
+   Wartens neu — etwa wenn die zweite Welle „Recherche" nachrendert —, zaehlt die Wartezeit
+   weiter, statt neu zu beginnen: ein schon sichtbares Skelett kommt sofort wieder, statt
+   300 ms zu verschwinden. Endet das Warten (kein Warteplatz mehr im Container), faellt der
+   Eintrag weg, und das naechste Warten beginnt wieder bei null. */
+const SKELETT_SEIT={};
+function skelettSchluessel(platz){
+  const c=platz.parentElement&&platz.parentElement.closest('[id]');
+  return c?c.id:'';
+}
+function skelettPlanen(platz){
+  if(!platz||!platz.dataset||platz.dataset.skelettPlan)return;
+  platz.dataset.skelettPlan='1';
+  const k=skelettSchluessel(platz),jetzt=Date.now();
+  if(k&&!(k in SKELETT_SEIT))SKELETT_SEIT[k]=jetzt;
+  const warte=Math.max(0,SKELETT_MS-(jetzt-(k?SKELETT_SEIT[k]:jetzt)));
+  setTimeout(()=>{
+    if(!platz.isConnected||platz.querySelector('.skelett'))return;
+    platz.insertAdjacentHTML('beforeend',skelettHTML(platz.dataset.skelett));
+  },warte);
+}
+/* Ein Beobachter fuer alle Warteplaetze der Seite. Gezaehlt wird nur, was man sieht: ein
+   Warteplatz in einem verborgenen Raum (etwa „Recherche", die beim Start schon rendert, ihre
+   Raumwelle aber erst beim Oeffnen anfragt) wird erst geplant, wenn der Raum sichtbar wird —
+   gemessen 28.09.: sonst lief die Wartezeit ab dem Seitenstart, und das Skelett stand beim
+   Oeffnen nach 5 ms statt nach 300 ms. Deshalb beobachtet er auch das hidden-Attribut. */
+(function(){
+  const app=document.getElementById('app');
+  if(!app||typeof MutationObserver!=='function')return;
+  const suche=()=>{
+    app.querySelectorAll('[data-skelett]:not([data-skelett-plan])').forEach(p=>{if(!p.closest('[hidden]'))skelettPlanen(p)});
+    Object.keys(SKELETT_SEIT).forEach(k=>{const c=document.getElementById(k);if(!c||!c.querySelector('[data-skelett]')||c.closest('[hidden]'))delete SKELETT_SEIT[k]});
+  };
+  new MutationObserver(suche).observe(app,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']});
+  suche();
+})();
+
 function standAnzeigen(){
   Object.keys(RAUMFEEDS).forEach(id=>{
     const el=document.querySelector('#raum-'+id+' .stand');
@@ -2432,9 +2503,10 @@ const RD_VERSUCH={signale:false,termine:false,kandidaten:false};
 /* Teil F.2: ruhiger Ladezustand nach design-system.md §8 — ein Satz, keine Animation,
    kein Fehler-Look. Er steht in derselben Karte, die spaeter den Inhalt traegt, damit
    der Aufbau an Ort und Stelle geschieht statt als Einblendung. */
+/* V2-7 Teil D.1: statt der sofort sichtbaren Textkarte ein Warteplatz — nach 300 ms ohne
+   Daten wird er zum Skelett (skelettPlanen), der Satz bleibt fuer Screenreader stehen. */
 function rdLadeHTML(was){
-  return '<article class="card rd-laden"><span class="t-small" style="color:var(--muted)">'+
-    escapeHtml(was)+' werden geladen.</span></article>';
+  return skelettPlatzHTML('zeilen',was+' werden geladen.');
 }
 
 /* Teil A.4: drei Feeds, drei Staende. Fallen sie auf dieselbe Minute, steht eine
@@ -4424,7 +4496,7 @@ function rcListeRender(){
     if(meta)meta.textContent='';
     ziel.innerHTML=rcVideos.stand===3?
       '<p class="jz-leer">Die Videoanalysen konnten nicht geladen werden.</p>':
-      '<p class="jz-leer" aria-busy="true">Videoanalysen werden geladen …</p>';
+      skelettPlatzHTML('karten','Videoanalysen werden geladen …');   // V2-7 Teil D.1
     return;
   }
   const alle=rcSortiert(VIDEOS.videos.filter(v=>v&&typeof v==='object'));
@@ -4525,7 +4597,7 @@ function rcArchivTagHTML(){
     if(rcTage.fehler===d)return kopf+'</div><div class="jz-fehler"><p class="jz-leer" style="color:var(--down)">'+
       'Dieser Tag konnte nicht geladen werden.</p><button type="button" class="ghost" data-rctag="'+escapeHtml(d)+'">'+
       'Erneut versuchen</button></div>';
-    return kopf+'</div><p class="jz-leer" aria-busy="true">Videoanalysen werden geladen …</p>';
+    return kopf+'</div>'+skelettPlatzHTML('tage','Videoanalysen werden geladen …');   // V2-7 Teil D.1
   }
   const alle=rcSortiert(j.videos.filter(v=>v&&typeof v==='object')),gef=rcGefiltert(alle);
   return kopf+'<span class="t-caption">'+(gef.length===alle.length?alle.length:gef.length+' von '+alle.length)+
@@ -5144,7 +5216,7 @@ function mhEarnRender(){
   const sek=document.getElementById('mhEarn'),ziel=document.getElementById('mhEarnInhalt'),
         modus=document.getElementById('mhEarnModus'),sprung=document.getElementById('mhSprungEarn');
   if(!sek||!ziel)return;
-  if(!MH_EARN_VERSUCH){ziel.innerHTML='<article class="card"><span class="t-small mh-leise">Quartalszahlen werden geladen.</span></article>';return}
+  if(!MH_EARN_VERSUCH){ziel.innerHTML=skelettPlatzHTML('tage','Quartalszahlen werden geladen.');return}   // V2-7 Teil D.1
   const hasCal=earnHasCal(),hasRecap=earnHasRecap();
   sek.hidden=!hasCal&&!hasRecap;if(sprung)sprung.hidden=sek.hidden;
   if(sek.hidden){ziel.innerHTML='';return}

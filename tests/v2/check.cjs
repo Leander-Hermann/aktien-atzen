@@ -57,7 +57,9 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   /* Kurspfad ueber den Proxy (Nutzerbefund 13.09.: 6-20 s Wartezeit auf einen Fehler) */
   'ywFetch', 'ywFehlerText', 'ywSammelHinweis',
   /* V2-7 Teil C: die drei Item-Felder der Videokarte */
-  'rcChartHTML', 'rcRefsHTML', 'rcDetailHTML'];
+  'rcChartHTML', 'rcRefsHTML', 'rcDetailHTML',
+  /* V2-7 Teil D.1: Skelette */
+  'skelettPlatzHTML', 'skelettHTML', 'skelettSchluessel', 'skelettPlanen'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
@@ -65,7 +67,7 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
   'VERBOT_ZITAT', 'VERBOT_EIGEN', 'MW_TEXTDECKEL', 'RC_KATEGORIEN', 'RC_KATEGORIE_LABEL', 'RC_TEXTDECKEL',
   'RC_HAEUFIG_TAGE', 'SU_DECKEL', 'SU_ART',   /* RC_HAEUFIG_ANZAHL steht in derselben Zeile wie RC_HAEUFIG_TAGE */ 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG',
-  'YW_TIMEOUT_MS', 'RC_REF_TYP'];
+  'YW_TIMEOUT_MS', 'RC_REF_TYP', 'SKELETT_MS', 'SKELETT_FORM', 'SKELETT_SEIT'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -1463,6 +1465,47 @@ gruppe('V2-7 Teil C — chart_info und cross_refs (S3), detail (S2) im etikettie
   /* Gefunden beim Erzwingen von DoD 7: eine leere Listenzeile (etwa ein allein stehendes CR,
      das im Template-Literal zu LF wird) kompiliert zu einem Muster, das JEDEN Text trifft. */
   pruef('keine leere Zeile in den Verbotslisten', vm.runInContext('VERBOT_ZITAT.concat(VERBOT_EIGEN).filter(r=>r.test("")).length', box), 0);
+});
+
+gruppe('V2-7 Teil D — Skelett erst nach 300 ms ohne Daten, ruhend bei reduzierter Bewegung; ideas.json entfällt', () => {
+  pruef('Schwelle 300 ms (Designbewertung 18.09., Zeile 6)', vm.runInContext('SKELETT_MS', box), 300);
+  const platz = vm.runInContext('skelettPlatzHTML("karten","Videoanalysen werden geladen …")', box);
+  pruef('Warteplatz: aria-busy und Satz fuer Screenreader', platz.indexOf('aria-busy="true"') > -1 && platz.indexOf('<span class="nur-sr">Videoanalysen werden geladen …</span>') > -1, true);
+  /* Negativfall DoD 8: ein Skelett ohne Verzoegerung waere schon im Warteplatz enthalten ⇒ rot. */
+  pruef('Warteplatz enthaelt noch kein Skelett', platz.indexOf('skelett-balken'), -1);
+  /* Zeitgeber abfangen: skelettPlanen darf NUR einen Zeitgeber stellen, nicht sofort einfuegen. */
+  const gestellt = [];
+  const altST = box.setTimeout;
+  box.setTimeout = (fn, ms) => { gestellt.push({ fn, ms }); return gestellt.length; };
+  const element = (verbunden, id) => ({ dataset: { skelett: 'karten' }, isConnected: verbunden, parentElement: { closest: () => ({ id }) },
+    inhalt: '', querySelector() { return this.inhalt.indexOf('class="skelett"') > -1 ? {} : null; }, insertAdjacentHTML(o, h) { this.inhalt += h; } });
+  box.EL = element(true, 'rcListeInhalt');
+  vm.runInContext('for (const k in SKELETT_SEIT) delete SKELETT_SEIT[k]; skelettPlanen(EL)', box);
+  pruef('ein Zeitgeber ueber 300 ms gestellt', gestellt.map(g => g.ms), [300]);
+  pruef('vor Ablauf nichts eingefuegt', box.EL.inhalt, '');
+  gestellt[0].fn();
+  pruef('nach Ablauf drei Skelettkarten in --chip-Balken', (box.EL.inhalt.match(/skelett-karte/g) || []).length, 3);
+  pruef('Skelett ist fuer Screenreader verborgen', box.EL.inhalt.indexOf('<div class="skelett" aria-hidden="true">') === 0, true);
+  pruef('zweimal geplant ⇒ ein Zeitgeber', (vm.runInContext('skelettPlanen(EL)', box), gestellt.length), 1);
+  /* Daten kamen vor Ablauf: der Warteplatz ist nicht mehr im Dokument ⇒ kein Skelett. */
+  box.EL2 = element(false, 'mhEarnInhalt');
+  vm.runInContext('skelettPlanen(EL2)', box);
+  gestellt[1].fn();
+  pruef('Daten vor 300 ms ⇒ Skelett entsteht nicht', box.EL2.inhalt, '');
+  /* Neuzeichnen waehrend des Wartens: die Wartezeit zaehlt weiter, statt neu zu beginnen. */
+  vm.runInContext('SKELETT_SEIT.rdSignaleInhalt = Date.now() - 1000', box);
+  box.EL3 = element(true, 'rdSignaleInhalt');
+  vm.runInContext('skelettPlanen(EL3)', box);
+  pruef('Wartezeit laeuft weiter: schon verstrichen ⇒ 0 ms', gestellt[2].ms, 0);
+  box.setTimeout = altST;
+  /* CSS: Flaeche --chip, Puls aus dem Token --dur-slide (§ 7), ruhend bei reduzierter Bewegung. */
+  pruef('Balken in --chip mit Puls aus --dur-slide', v2n.indexOf('.skelett-balken{display:block;height:var(--sp-3);border-radius:var(--radius-pill);background:var(--chip);\n    animation:skelettPuls var(--dur-slide) var(--ease-out) infinite alternate}') > -1, true);
+  pruef('reduzierte Bewegung: kein Puls', v2n.indexOf('@media (prefers-reduced-motion:reduce){.skelett-balken{animation:none}}') > -1, true);
+  pruef('vier Flaechen setzen einen Warteplatz (Radar, Recherche-Liste, Archiv-Tag, Quartalszahlen)',
+    (v2n.match(/skelettPlatzHTML\('(?:zeilen|karten|tage)',/g) || []).length, 4);
+  /* D.2 */
+  pruef('ideas.json wird nicht mehr geladen', v2n.indexOf("hol('ideas.json'"), -1);
+  pruef('IDEAS entfernt', /\bIDEAS\b/.test(v2n), false);
 });
 
 const KURSPFAD = gruppeAsync('Kurspfad - toter Proxy entfernt, Zeitlimit 10 s, ehrlicher Grund statt Stille', async () => {

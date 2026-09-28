@@ -24,7 +24,7 @@
      dem Datum und wird zur Laufzeit aus index.json bestimmt. */
   const FEEDS = ['index.json', 'market.json', 'quotes.json', 'radar.json', 'ticker-index.json',
     'videos.json', 'videos-index.json', 'earnings.json', 'earnings-recap.json',
-    'candidates.json', 'ideas.json'];
+    'candidates.json'];
   const ARTEN = ['404', 'muell', 'struktur'];
   const SEKTIONEN = ['jzLead', 'jzFolge', 'jzFokus', 'jzMarkt', 'jzMeldungen'];
   /* V2-3: die drei Flaechen des Raums „Radar" */
