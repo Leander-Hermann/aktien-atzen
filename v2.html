@@ -342,7 +342,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
     /* Explizite Platzierung (Auftrag Teil B.4): das Raster haengt NICHT an der
        Dokumentreihenfolge, damit jzReihenfolge() es nicht verschieben kann. */
     #jzLead,#jzFolge,#jzMeldungen{grid-column:1 / span 7}
-    #rcListe,#rcArchiv{grid-column:1 / span 7}
+    #rcListe,#rcArchiv,#rcMeldungen{grid-column:1 / span 7}
     /* V2-5: #rcKontext (Recherche) teilt die Regel der Kontextspalte — kein zweites Raster. */
     #rcKontext,#jzKontext{grid-column:8 / span 5;grid-row:1 / span 3;
       display:flex;flex-direction:column;gap:var(--sp-8);align-self:start;
@@ -754,6 +754,13 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
   @keyframes skelettPuls{from{opacity:1}to{opacity:.5}}
   @media (prefers-reduced-motion:reduce){.skelett-balken{animation:none}}
 
+  /* V2-7, Nutzerentscheide d1–d3 (29.09.2026): Digest-Archiv, TradingView- und Wikipedia-Link */
+  #rcMeldungen{scroll-margin-top:calc(var(--appbar-h) + var(--sp-4))}
+  .jz-meldung.rc-mitdatum{grid-template-columns:5.5rem minmax(0,1fr)}
+  @container (min-width:37rem){.jz-meldung.rc-mitdatum{grid-template-columns:5.5rem minmax(0,1fr) auto}}
+  .rc-tv,.dt-wiki{display:inline-flex;align-items:center;min-height:44px;font-size:12.5px;line-height:1.45}
+  .dt-wiki{align-self:flex-start}
+
   /* Fußzeile (Teil B.2): in jedem Raum sichtbar, Textlinks mit 44-px-Zielen */
   .fuss{margin-top:var(--sp-12);padding-top:var(--sp-6);border-top:1px solid var(--line);
     display:flex;flex-direction:column;gap:var(--sp-2)}
@@ -824,7 +831,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
      Nur die Bausteine, die es noch nicht gab: Filtergruppen, Item- und Marktnotizblock
      in der Videokarte, die Zeile in „Häufig besprochen", die Suchabschnitte.
      ========================================================================== */
-  #rcSuche,#rcHaeufig,#rcListe,#rcArchiv{container-type:inline-size}
+  #rcSuche,#rcHaeufig,#rcListe,#rcArchiv,#rcMeldungen{container-type:inline-size}
   /* §3: jedes Klickziel ≥ 44 px — auch die Links in Karten und Suchtreffern. */
   #raum-recherche a,#raum-suche a{display:inline-flex;align-items:center;min-height:44px}
   .rc-suchknopf{display:inline-flex;align-items:center;gap:var(--sp-2);width:100%;justify-content:flex-start;text-align:left}
@@ -1054,6 +1061,10 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
         <div class="card" style="padding:var(--sp-2) var(--sp-5)">
           <div class="jz-liste" id="jzMeldungenListe"></div>
         </div>
+        <!-- V2-7 d1: Weg zum Digest-Archiv in „Recherche" (in der V1 lag er auf derselben Seite). -->
+        <div class="ghostreihe" style="margin-top:0">
+          <button type="button" class="ghost" data-rcmeldsprung>Meldungen früherer Tage</button>
+        </div>
       </section>
     </div>
   </section>
@@ -1156,6 +1167,34 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
           <span class="t-caption" id="rcArchivMeta"></span>
         </div>
         <div id="rcArchivInhalt"></div>
+      </section>
+
+      <!-- V2-7, Nutzerentscheid d1 (29.09.2026): das Digest-Archiv der V1 bleibt verfügbar —
+           jeder frühere Tag einzeln und die Suche über alle Tage mit Prio-Filter (searchAll der V1).
+           Platz nach der Freeze-Tabelle: „Recherche" trägt Archiv und Suche. Eigenes Suchfeld,
+           weil diese Suche erst alle Tagesdateien laden muss (97 Tage, 1,15 MB am 29.09.) und die
+           globale Suche sofort und lokal bleiben soll. -->
+      <section class="jz-sek" id="rcMeldungen" aria-labelledby="rcMeldungenH" hidden>
+        <div class="jz-kopf">
+          <h3 class="t-h2" id="rcMeldungenH" tabindex="-1">Meldungen früherer Tage</h3>
+          <span class="t-caption" id="rcMeldungenMeta"></span>
+        </div>
+        <p class="t-small jz-fliess" style="margin:0;color:var(--muted)">Der Tagesdigest jedes Tages, wie er
+          erschienen ist. Die Suche lädt beim ersten Suchbegriff die Meldungen aller Tage.</p>
+        <div class="raumfeld" style="margin-top:0">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#i-suche"/></svg>
+          <input type="search" id="rcMeldSuche" placeholder="Meldungen aller Tage durchsuchen"
+            aria-label="Meldungen aller Tage durchsuchen" autocomplete="off" spellcheck="false">
+        </div>
+        <div class="ghostreihe" role="group" aria-label="Priorität" id="rcMeldPrio" style="margin-top:0">
+          <button type="button" class="ghost" data-rcmeldprio="0" aria-pressed="true">Alle</button>
+          <button type="button" class="ghost" data-rcmeldprio="3" aria-pressed="false">Hoch</button>
+          <button type="button" class="ghost" data-rcmeldprio="2" aria-pressed="false">Mittel</button>
+          <button type="button" class="ghost" data-rcmeldprio="1" aria-pressed="false">Niedrig</button>
+        </div>
+        <div id="rcMeldTreffer" aria-live="polite"></div>
+        <div id="rcMeldListe"></div>
+        <div id="rcMeldTag"></div>
       </section>
     </div>
   </section>
@@ -1337,6 +1376,7 @@ try{var _t=localStorage.getItem('aa-theme');if(_t==='light'||_t==='dark')documen
    <p data-mhgeaendert="3">Kurs- und Marktdaten liefert diese Seite aus eigenen Dateien. Nur wenn Sie für einen Wert ohne hinterlegte Kurse ausdrücklich Kurse oder einen Chart anfordern, wird eine Anfrage an Yahoo Finance (<code>query1.finance.yahoo.com</code>) gestellt. Da ein direkter Browser-Abruf nicht möglich ist, läuft sie über den öffentlichen CORS-Proxy-Dienst <code>api.allorigins.win</code>; das von Ihnen abgefragte Börsensymbol und Ihre IP-Adresse werden dabei an diesen Dritt-Dienst übermittelt. Auch der Fear-&amp;-Greed-Index stammt aus den eigenen Dateien dieser Seite; Ihr Browser ruft dafür keinen Dienst von CNN ab.</p>
    <h4>4. Eingebundene Drittinhalte</h4>
    <p data-mhgeaendert="4"><b>Bilder zu Meldungen:</b> Liefert eine Meldung ein Bild mit, wird es erst geladen, wenn Sie die Meldung in der Vollansicht öffnen – nicht automatisch beim Seitenaufruf. Das Bild kommt direkt von seiner Quelle, derzeit von <code>pbs.twimg.com</code> (X Corp., USA). Dabei wird Ihre IP-Adresse an diesen Anbieter übertragen.</p>
+   <p><b>TradingView:</b> Zu einzelnen Börsenwerten bieten wir einen Verweis-Link auf den passenden TradingView-Chart (<code>tradingview.com</code>) an. Es werden keine TradingView-Skripte, -Widgets oder -Inhalte in diese Seite eingebettet oder automatisch geladen; erst wenn Sie den Link aktiv anklicken, öffnet sich TradingView in einem neuen Tab und Ihre IP-Adresse wird an TradingView übertragen.</p>
    <h4>5. Lokale Speicherung (localStorage)</h4>
    <p>Ihr Bestand (beobachtete Werte und optional von Ihnen selbst eingetragene Positionsangaben) sowie die Hell-/Dunkel-Einstellung werden ausschließlich lokal in Ihrem Browser gespeichert (<code>localStorage</code>). Diese Daten verbleiben auf Ihrem Gerät, werden nicht an einen Server übertragen und sind für uns nicht einsehbar. Es werden keine Tracking-Cookies gesetzt; zur Reichweitenmessung kommt ein cookieloses, datenschutzfreundliches Verfahren zum Einsatz (siehe Abschnitt 6).</p>
    <h4>6. Reichweitenmessung (GoatCounter)</h4>
@@ -2050,8 +2090,10 @@ function jzFarbe(p){return (p==null||!isFinite(p))?'var(--muted)':(p>=0?'var(--u
    hinten, wird aber nicht verworfen. Titelloses entfaellt ganz. */
 function jzPrioWert(t){const p=+((t&&t.prio));return (isFinite(p)&&p>=1&&p<=3)?p:0}
 function jzPrioLabel(t){const p=jzPrioWert(t);return p===3?{k:'hoch',l:'Priorität hoch'}:p===2?{k:'mittel',l:'Priorität mittel'}:p===1?{k:'niedrig',l:'Priorität niedrig'}:null}
-function jzTopics(){
-  const d=current&&DATA[current];
+/* V2-7 (Nutzerentscheid d1, 29.09.2026): optional ein anderer Digest-Tag als `current` —
+   dieselbe Auswahl und Reihenfolge fuer das Archiv „Meldungen frueherer Tage". */
+function jzTopics(tag){
+  const t=tag||current,d=t&&DATA[t];
   const roh=(d&&Array.isArray(d.topics))?d.topics:[];
   const mit=[];
   roh.forEach((t,i)=>{if(t&&typeof t.title==='string'&&t.title.trim())mit.push({t:t,i:i})});
@@ -2142,12 +2184,26 @@ function dtFokusFelder(){
   return [].slice.call(d.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'))
     .filter(el=>el.offsetParent!==null||el===document.activeElement);
 }
-function dtOeffnen(top,ausloeser){
+/* V2-7 (Nutzerentscheid d3, 29.09.2026): je Begriff wieder der Suchlink „Wikipedia ↗" der V1 —
+   nur https, Begriff URL-kodiert, neuer Tab, noopener. Als eigene Funktion, damit pruefbar. */
+function dtBegriffeHTML(begriffe){
+  if(!Array.isArray(begriffe)||!begriffe.length)return '';
+  const b=begriffe.filter(x=>x&&typeof x.term==='string'&&x.term.trim());
+  if(!b.length)return '';
+  return '<div class="dt-abschnitt"><span class="dt-marke">Begriffe</span>'+
+    '<div class="jz-grid eng" style="margin-top:var(--sp-1)">'+b.map(x=>
+      '<div class="dt-begriff"><span class="t-h3">'+escapeHtml(x.term)+'</span>'+
+      (x.erklaerung?'<span class="t-small jz-fliess" style="color:var(--muted)">'+escapeHtml(x.erklaerung)+'</span>':'')+
+      '<a class="dt-wiki" href="https://de.wikipedia.org/wiki/Spezial:Suche?search='+encodeURIComponent(x.term.trim())+
+        '" target="_blank" rel="noopener noreferrer">Wikipedia ↗</a></div>').join('')+'</div></div>';
+}
+/* `tag` (optional, V2-7 d1): Datum der Meldung, wenn sie aus dem Archiv statt aus `current` kommt. */
+function dtOeffnen(top,ausloeser,tag){
   if(!top)return;
   const ov=document.getElementById('dtOverlay');if(!ov)return;
   DT_AUSLOESER=ausloeser||null;
   const pr=jzPrioLabel(top),meta=[];
-  if(current)meta.push(jzTag(current));
+  if(tag||current)meta.push(jzTag(tag||current));
   if(typeof top.time==='string'&&top.time.trim())meta.push(escapeHtml(top.time.trim()));
   if(typeof top.timing==='string'&&top.timing.trim())meta.push(escapeHtml(top.timing.trim()));
   document.getElementById('dtMeta').innerHTML=
@@ -2164,13 +2220,7 @@ function dtOeffnen(top,ausloeser){
   /* Bild ist optional und darf beim Fehler NUR selbst entfallen (Teil A.4) */
   const bild=safeUrl(top.img);
   if(bild)h+='<img class="dt-bild" src="'+bild+'" alt="" loading="lazy" onerror="this.remove()">';
-  if(Array.isArray(top.begriffe)&&top.begriffe.length){
-    const b=top.begriffe.filter(x=>x&&typeof x.term==='string'&&x.term.trim());
-    if(b.length)h+='<div class="dt-abschnitt"><span class="dt-marke">Begriffe</span>'+
-      '<div class="jz-grid eng" style="margin-top:var(--sp-1)">'+b.map(x=>
-        '<div class="dt-begriff"><span class="t-h3">'+escapeHtml(x.term)+'</span>'+
-        (x.erklaerung?'<span class="t-small jz-fliess" style="color:var(--muted)">'+escapeHtml(x.erklaerung)+'</span>':'')+'</div>').join('')+'</div></div>';
-  }
+  h+=dtBegriffeHTML(top.begriffe);
   const linkReihe=(marke,arr,lab,url)=>{
     if(!Array.isArray(arr)||!arr.length)return '';
     const teile=arr.filter(Boolean).map(x=>{
@@ -4399,6 +4449,17 @@ function rcDetailHTML(text){
     '<span class="mw-herkunft t-caption">Einordnung dieser Seite · maschinell erzeugt</span></summary>'+absaetze+'</details></div>';
 }
 
+/* V2-7 (Nutzerentscheid d2, 29.09.2026, ADR-701 Option iii): neben der Wertansicht (primaer)
+   wieder der dezente Zweitlink „TradingView ↗" der V1. Nur mit einem Symbol, das validTicker
+   passiert hat; URL-kodiert (validTicker erlaubt ^ und =), neuer Tab, noopener. TradingView
+   wird erst beim Klick angefragt — Datenschutz Abschnitt 4 traegt dafuer wieder den V1-Absatz. */
+function rcTvHTML(sym){
+  const s=validTicker(String(sym==null?'':sym));
+  if(!s)return '';
+  return '<a class="rc-tv" href="https://www.tradingview.com/chart/?symbol='+encodeURIComponent(s)+
+    '" target="_blank" rel="noopener noreferrer" aria-label="'+escapeHtml(s)+' auf TradingView ansehen (neuer Tab)">TradingView ↗</a>';
+}
+
 /* --- Ein Item der Videokarte (Teil D.1) ------------------------------------------------
    name (S3) mit Symbol-Chip, wenn ticker gesetzt und sauber; note, figures, tip, chart_info
    und cross_refs (S3) ueber denselben Baustein wie die Auftritte; kategorie als Chip; tlink
@@ -4418,6 +4479,7 @@ function rcItemHTML(it,kanal,videoUrl){
       (sym?'<button type="button" class="jz-chip brand rc-chip" data-rcwert="'+escapeHtml(sym)+'" '+
         'aria-label="'+escapeHtml(sym)+' in der Wertansicht öffnen"><span class="num">'+escapeHtml(sym)+'</span></button>':'')+
       (kat?'<span class="jz-chip">'+escapeHtml(kat)+'</span>':'')+
+      rcTvHTML(sym)+
     '</div>'+
     mwFremdHTML('Zusammenfassung des Beitrags',it.note,kanal,RC_TEXTDECKEL)+
     mwFremdHTML('Im Beitrag genannte Zahlen',it.figures,kanal,RC_TEXTDECKEL)+
@@ -4682,8 +4744,135 @@ function rcStaendeRender(){
   if(sammel)sammel.hidden=true;
 }
 function rechercheRendern(){
-  rcStaendeRender();rcFilterRender();rcListeRender();rcArchivRender();rcHaeufigRender();
+  rcStaendeRender();rcFilterRender();rcListeRender();rcArchivRender();rcHaeufigRender();rcMeldRender();
 }
+
+/* ===== V2-7, Nutzerentscheid d1 (29.09.2026): Meldungen frueherer Tage =================
+   Das Digest-Archiv der V1 (Datumsnavigation und searchAll mit Prio-Filter) in „Recherche".
+   Ein Tag laedt erst, wenn er gewaehlt wird, und genau einmal (loadDay cacht in DATA); alle
+   Tage laedt erst der erste Suchbegriff — wie ensureAll() der V1. Titel und Text sind
+   Fremdtext und laufen durch escapeHtml, dieselbe Darstellung wie „Weitere Meldungen". */
+const RC_MELD_DECKEL=50;
+const rcMeld={tag:null,prio:0,frage:'',alle:false,laedtAlle:null,laeuft:{},fehler:{}};
+function rcMeldTage(){return order.filter(d=>/^\d{4}-\d{2}-\d{2}$/.test(String(d)))}
+/* Die Suchregel der V1: Teilstring in Titel plus Text, ohne Gross-/Kleinschreibung,
+   optional genau eine Prioritaet. Reihenfolge: Tage wie index.json, im Tag wie jzTopics(). */
+function rcMeldSuchen(frage,prio){
+  const f=String(frage==null?'':frage).trim().toLowerCase();
+  if(!f)return [];
+  const out=[];
+  rcMeldTage().forEach(tag=>jzTopics(tag).forEach((t,i)=>{
+    if((String(t.title)+(typeof t.body==='string'?t.body:'')).toLowerCase().includes(f)&&(!prio||jzPrioWert(t)===prio))out.push({tag:tag,i:i,t:t});
+  }));
+  return out;
+}
+function rcMeldZeileHTML(t,tag,i,mitDatum){
+  const pr=jzPrioLabel(t);
+  return '<button type="button" class="jz-zeile jz-meldung'+(mitDatum?' rc-mitdatum':'')+'" data-rcmeld="'+escapeHtml(tag)+'|'+(+i)+'">'+
+    '<span class="t-caption num" style="color:var(--muted)">'+
+      (mitDatum?escapeHtml(jzTag(tag)):(typeof t.time==='string'?escapeHtml(t.time.trim()):''))+'</span>'+
+    '<span class="t-small">'+escapeHtml(t.title)+'</span>'+
+    (pr?'<span class="jz-chip '+pr.k+'" style="justify-self:end">'+escapeHtml(pr.l)+'</span>':'<span></span>')+
+  '</button>';
+}
+function rcMeldListeHTML(){
+  const tage=rcMeldTage();
+  if(!tage.length)return '';
+  const gr=[];
+  tage.forEach(d=>{const m=d.slice(0,7);let g=gr[gr.length-1];if(!g||g.m!==m){g={m:m,label:rcMonatLabel(d),tage:[]};gr.push(g)}g.tage.push(d)});
+  return '<details class="mw-mehr" id="rcMeldAuswahl"><summary class="t-small">Tag wählen ('+tage.length+' Tage)</summary>'+
+    '<div class="mw-frueher">'+gr.map(g=>'<div class="rc-monat"><h4 class="t-small rc-monat-h">'+escapeHtml(g.label)+'</h4>'+
+      '<div class="rc-tage">'+g.tage.map(d=>'<button type="button" class="jz-chip rc-chip" data-rcmeldtag="'+d+'" aria-pressed="'+(rcMeld.tag===d)+'">'+
+        '<span class="num">'+escapeHtml(jzTag(d)||d)+'</span></button>').join('')+'</div></div>').join('')+
+    '</div></details>';
+}
+function rcMeldTagHTML(){
+  const d=rcMeld.tag;if(!d)return '';
+  const tage=rcMeldTage(),pos=tage.indexOf(d);
+  const kopf='<div class="jz-kopf"><h4 class="t-h2" id="rcMeldTagH" tabindex="-1">'+escapeHtml(labels[d]||jzTag(d)||d)+'</h4></div>'+
+    '<div class="ghostreihe" style="margin-top:0">'+
+      (pos>-1&&pos<tage.length-1?'<button type="button" class="ghost" data-rcmeldtag="'+tage[pos+1]+'">‹ Vorheriger Tag</button>':'')+
+      (pos>0?'<button type="button" class="ghost" data-rcmeldtag="'+tage[pos-1]+'">Nächster Tag ›</button>':'')+
+    '</div>';
+  if(!DATA[d]){
+    if(rcMeld.fehler[d])return kopf+'<div class="jz-fehler"><p class="jz-leer" style="color:var(--down)">Dieser Tag konnte nicht geladen werden.</p>'+
+      '<button type="button" class="ghost" data-rcmeldtag="'+d+'">Erneut versuchen</button></div>';
+    return kopf+skelettPlatzHTML('zeilen','Meldungen werden geladen …');
+  }
+  const tops=jzTopics(d).map((t,i)=>({t:t,i:i})).filter(x=>!rcMeld.prio||jzPrioWert(x.t)===rcMeld.prio);
+  return kopf+(tops.length?'<div class="card" style="padding:var(--sp-2) var(--sp-5)"><div class="jz-liste">'+
+    tops.map(x=>rcMeldZeileHTML(x.t,d,x.i,false)).join('')+'</div></div>'
+    :'<p class="jz-leer">An diesem Tag keine Meldungen'+(rcMeld.prio?' dieser Priorität':'')+'.</p>');
+}
+function rcMeldTrefferHTML(){
+  const frage=rcMeld.frage.trim();
+  if(!frage)return '';
+  if(!rcMeld.alle)return skelettPlatzHTML('zeilen','Meldungen aller Tage werden geladen …');
+  const r=rcMeldSuchen(frage,rcMeld.prio);
+  if(!r.length)return '<p class="jz-leer">Keine Meldung enthält „'+escapeHtml(frage)+'"'+(rcMeld.prio?' in dieser Priorität':'')+'.</p>';
+  return '<p class="t-caption" style="color:var(--muted)">'+(r.length===1?'1 Treffer':r.length+' Treffer')+
+      (r.length>RC_MELD_DECKEL?', die ersten '+RC_MELD_DECKEL+' — Suchbegriff verfeinern':'')+'</p>'+
+    '<div class="card" style="padding:var(--sp-2) var(--sp-5)"><div class="jz-liste">'+
+      r.slice(0,RC_MELD_DECKEL).map(x=>rcMeldZeileHTML(x.t,x.tag,x.i,true)).join('')+'</div></div>';
+}
+function rcMeldRender(){
+  const sek=document.getElementById('rcMeldungen');if(!sek)return;
+  const tage=rcMeldTage();
+  sek.hidden=!tage.length;if(sek.hidden)return;
+  const meta=document.getElementById('rcMeldungenMeta');if(meta)meta.textContent=tage.length+' Tage';
+  document.querySelectorAll('#rcMeldPrio [data-rcmeldprio]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.rcmeldprio===rcMeld.prio)));
+  const l=document.getElementById('rcMeldListe');
+  if(l&&!l.firstElementChild)l.innerHTML=rcMeldListeHTML();          // einmal — der Aufklapper behaelt seinen Zustand
+  else if(l)l.querySelectorAll('[data-rcmeldtag]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.rcmeldtag===rcMeld.tag)));
+  const tz=document.getElementById('rcMeldTreffer');if(tz)tz.innerHTML=rcMeldTrefferHTML();
+  const tg=document.getElementById('rcMeldTag');if(tg)tg.innerHTML=rcMeldTagHTML();
+}
+function rcMeldAlleLaden(){
+  if(rcMeld.alle)return Promise.resolve();
+  if(!rcMeld.laedtAlle)rcMeld.laedtAlle=Promise.all(rcMeldTage().map(d=>loadDay(d).catch(()=>{rcMeld.fehler[d]=true})))
+    .then(()=>{rcMeld.alle=true;rcMeldRender()});
+  return rcMeld.laedtAlle;
+}
+function rcMeldTagLaden(tag){
+  const d=rcMeldTage().indexOf(String(tag))>-1?String(tag):'';
+  if(!d)return Promise.resolve();
+  rcMeld.tag=d;delete rcMeld.fehler[d];rcMeldRender();
+  if(DATA[d])return Promise.resolve();
+  /* Das Neuzeichnen nach dem Laden ersetzt die Tagesueberschrift; stand der Fokus dort
+     (Tag gewaehlt, gemessen 29.09.: sonst landet er auf <body>), bekommt die neue ihn zurueck. */
+  if(!rcMeld.laeuft[d])rcMeld.laeuft[d]=loadDay(d).catch(()=>{rcMeld.fehler[d]=true})
+    .then(()=>{
+      delete rcMeld.laeuft[d];if(rcMeld.tag!==d)return;
+      const fokus=document.activeElement&&document.activeElement.id==='rcMeldTagH';
+      rcMeldRender();
+      const h=document.getElementById('rcMeldTagH');if(fokus&&h)h.focus({preventScroll:true});
+    });
+  return rcMeld.laeuft[d];
+}
+/* Eingabe und Klicks des Abschnitts. Nach dem Neuzeichnen bleibt der Fokus beim Bedienelement. */
+(function(){
+  const feld=document.getElementById('rcMeldSuche');
+  if(feld)feld.addEventListener('input',()=>{
+    rcMeld.frage=feld.value;
+    if(rcMeld.frage.trim()&&!rcMeld.alle)rcMeldAlleLaden();
+    const tz=document.getElementById('rcMeldTreffer');if(tz)tz.innerHTML=rcMeldTrefferHTML();
+  });
+})();
+document.addEventListener('click',ev=>{
+  const t=ev.target;if(!(t instanceof Element))return;
+  const m=t.closest('[data-rcmeld]');
+  if(m){const p=m.dataset.rcmeld.split('|');dtOeffnen(jzTopics(p[0])[+p[1]],m,p[0]);return}
+  const tg=t.closest('[data-rcmeldtag]');
+  if(tg){rcMeldTagLaden(tg.dataset.rcmeldtag);const h=document.getElementById('rcMeldTagH');if(h)h.focus();return}
+  const pr=t.closest('[data-rcmeldprio]');
+  if(pr){rcMeld.prio=+pr.dataset.rcmeldprio;rcMeldRender();const b=document.querySelector('#rcMeldPrio [data-rcmeldprio="'+rcMeld.prio+'"]');if(b)b.focus();return}
+  if(t.closest('[data-rcmeldsprung]')){
+    raumZeigen('recherche',false);
+    const s=document.getElementById('rcMeldungen');
+    if(s&&!s.hidden){try{s.scrollIntoView({block:'start',behavior:'instant'})}catch(e){s.scrollIntoView(true)}
+      const h=document.getElementById('rcMeldungenH');if(h)h.focus({preventScroll:true})}
+  }
+});
 /* Sprung zu einer Videokarte (Suche → Videoanalyse): aufklappen, hinscrollen, Fokus auf den
    Titel. Verdeckt ein Filter die Karte, wird er geloest — der Nutzer hat sie ausdruecklich
    gewaehlt. */

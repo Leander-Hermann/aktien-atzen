@@ -61,7 +61,9 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
   /* V2-7 Teil C: die drei Item-Felder der Videokarte */
   'rcChartHTML', 'rcRefsHTML', 'rcDetailHTML',
   /* V2-7 Teil D.1: Skelette */
-  'skelettPlatzHTML', 'skelettHTML', 'skelettSchluessel', 'skelettPlanen'];
+  'skelettPlatzHTML', 'skelettHTML', 'skelettSchluessel', 'skelettPlanen',
+  /* V2-7 Nutzerentscheide d1–d3 */
+  'rcTvHTML', 'dtBegriffeHTML', 'rcMeldTage', 'rcMeldSuchen', 'rcMeldZeileHTML'];
 
 /* Konstanten-Tabellen (RD_ZEIT, RD_READY …) sind keine Funktionsdeklarationen und
    werden mit demselben Verfahren geschnitten: ab `const NAME=` bis zur naechsten
@@ -69,7 +71,7 @@ const NAMEN = ['escapeHtml', 'safeUrl', 'safeLink', 'jzPrioWert', 'jzPrioLabel',
 const KONSTANTEN = ['RD_ZEIT', 'RD_READY', 'RD_REGEL', 'RD_RISIKO', 'RD_DQ', 'BST_TYP', 'MW_ALIAS',
   'VERBOT_ZITAT', 'VERBOT_EIGEN', 'MW_TEXTDECKEL', 'RC_KATEGORIEN', 'RC_KATEGORIE_LABEL', 'RC_TEXTDECKEL',
   'RC_HAEUFIG_TAGE', 'SU_DECKEL', 'SU_ART',   /* RC_HAEUFIG_ANZAHL steht in derselben Zeile wie RC_HAEUFIG_TAGE */ 'BST_ART', 'BST_RICHTUNG', 'MW_SPARK_TAGE', 'MW_BOERSE_RANG',
-  'YW_TIMEOUT_MS', 'RC_REF_TYP', 'SKELETT_MS', 'SKELETT_FORM', 'SKELETT_SEIT'];
+  'YW_TIMEOUT_MS', 'RC_REF_TYP', 'SKELETT_MS', 'SKELETT_FORM', 'SKELETT_SEIT', 'RC_MELD_DECKEL'];
 function schneideConst(name) {
   const start = html.indexOf('\nconst ' + name + '=');
   if (start < 0) throw new Error('Konstante nicht gefunden: ' + name);
@@ -1235,7 +1237,7 @@ gruppe('V2-5 Teile E und F — Wertansicht fuer jedes Symbol, Raumwelle videos.j
   const raeume = html.slice(html.indexOf('id="raum-recherche"'), html.indexOf('id="raum-werte"')) + html.slice(html.indexOf('id="raum-suche"'), html.indexOf('</main>'));
   pruef('kein Platzhalter mehr in Recherche und Suche', /class="platzhalter"/.test(raeume), false);
   pruef('Sachueberschriften der drei Bereiche', ['Suche und Filter', 'Zuletzt besprochen', 'Archiv', 'Häufig besprochen'].every(t => html.indexOf('>' + t + '<') > -1), true);
-  pruef('Kontextspalte teilt die Rasterregel mit Jetzt', /#rcKontext,#jzKontext\{grid-column:8 \/ span 5/.test(html) && /#rcListe,#rcArchiv\{grid-column:1 \/ span 7\}/.test(html), true);
+  pruef('Kontextspalte teilt die Rasterregel mit Jetzt', /#rcKontext,#jzKontext\{grid-column:8 \/ span 5/.test(html) && html.indexOf('#rcListe,#rcArchiv,#rcMeldungen{grid-column:1 / span 7}') > -1, true);
   pruef('CSP unveraendert: kein ytimg, kein neuer Origin im Markup', /i\.ytimg\.com/.test(html.replace(/thumbnail[^\n]*/g, '')), false);
 });
 
@@ -1288,11 +1290,15 @@ gruppe('V2-7 Teil B.1 — Impressum und Lizenz wörtlich zur V1, Datenschutz nur
   pruef('Datenschutz hat dieselben Überschriften', neu.map(x => (x.match(/^<h4>[^<]*<\/h4>/) || [''])[0]), alt.map(x => (x.match(/^<h4>[^<]*<\/h4>/) || [''])[0]));
   const geaendert = neu.map((b, i) => b === alt[i] ? null : (b.match(/^<h4>([^<]*)<\/h4>/) || [, 'Vorspann'])[1]).filter(Boolean);
   pruef('nur die Abschnitte 3 und 4 weichen ab', geaendert, ['3. Kurs- und Marktdaten', '4. Eingebundene Drittinhalte']);
-  pruef('jeder Absatz in 3 und 4 ist als geändert markiert', neu.filter(b => /^<h4>[34]\./.test(b)).every(b =>
-    (b.match(/<p[ >]/g) || []).length === (b.match(/<p data-mhgeaendert="[34]">/g) || []).length), true);
+  /* Seit dem Nutzerentscheid d2 (29.09.) steht der TradingView-Absatz wieder in 4 — wörtlich aus V1, deshalb
+     unmarkiert; jeder andere Absatz in 3 und 4 ist als geändert markiert. */
+  const tvAbsatz = (norm(v1box.LEGAL.datenschutz.html).match(/<p><b>TradingView:<\/b>[^]*?<\/p>/) || [''])[0];
+  pruef('TradingView-Absatz wörtlich aus V1 (d2)', !!tvAbsatz && norm(v2Legal('datenschutz')).indexOf(tvAbsatz) > -1, true);
+  pruef('jeder übrige Absatz in 3 und 4 ist als geändert markiert', neu.filter(b => /^<h4>[34]\./.test(b)).every(b =>
+    (b.replace(tvAbsatz, '').match(/<p[ >]/g) || []).length === (b.match(/<p data-mhgeaendert="[34]">/g) || []).length), true);
   /* Negativfall DoD 2: ein V1-Absatz über einen Drittdienst, den V2 nicht nutzt, bleibt stehen ⇒ rot. */
   const ds = v2Legal('datenschutz');
-  ['corsproxy.io', 'production.dataviz.cnn.io', 'i.ytimg.com', 'tradingview.com'].forEach(h =>
+  ['corsproxy.io', 'production.dataviz.cnn.io', 'i.ytimg.com'].forEach(h =>
     pruef('kein ungenutzter Dienst genannt: ' + h, ds.indexOf(h), -1));
   /* Jeder gemessene Drittdienst ist genannt (Messung in AA-20260928-FE-01-E01-T02, Abschnitt F). */
   ['cdn.jsdelivr.net', 'query1.finance.yahoo.com', 'api.allorigins.win', 'pbs.twimg.com', 'GoatCounter', 'GitHub Pages'].forEach(h =>
@@ -1503,11 +1509,51 @@ gruppe('V2-7 Teil D — Skelett erst nach 300 ms ohne Daten, ruhend bei reduzier
   /* CSS: Flaeche --chip, Puls aus dem Token --dur-slide (§ 7), ruhend bei reduzierter Bewegung. */
   pruef('Balken in --chip mit Puls aus --dur-slide', v2n.indexOf('.skelett-balken{display:block;height:var(--sp-3);border-radius:var(--radius-pill);background:var(--chip);\n    animation:skelettPuls var(--dur-slide) var(--ease-out) infinite alternate}') > -1, true);
   pruef('reduzierte Bewegung: kein Puls', v2n.indexOf('@media (prefers-reduced-motion:reduce){.skelett-balken{animation:none}}') > -1, true);
-  pruef('vier Flaechen setzen einen Warteplatz (Radar, Recherche-Liste, Archiv-Tag, Quartalszahlen)',
-    (v2n.match(/skelettPlatzHTML\('(?:zeilen|karten|tage)',/g) || []).length, 4);
+  pruef('sechs Flaechen setzen einen Warteplatz (Radar, Recherche-Liste, Archiv-Tag, Quartalszahlen; seit d1 Tag und Suche im Digest-Archiv)',
+    (v2n.match(/skelettPlatzHTML\('(?:zeilen|karten|tage)',/g) || []).length, 6);
   /* D.2 */
   pruef('ideas.json wird nicht mehr geladen', v2n.indexOf("hol('ideas.json'"), -1);
   pruef('IDEAS entfernt', /\bIDEAS\b/.test(v2n), false);
+});
+
+gruppe('V2-7 Nutzerentscheide d1–d3 — Digest-Archiv, TradingView-Link, Wikipedia-Link', () => {
+  /* d2 */
+  const tv = vm.runInContext('rcTvHTML("^GDAXI")', box);
+  pruef('d2: TradingView-Link nur https, URL-kodiert, neuer Tab', tv.indexOf('<a class="rc-tv" href="https://www.tradingview.com/chart/?symbol=%5EGDAXI" target="_blank" rel="noopener noreferrer"') === 0, true);
+  /* Negativfall: ein Symbol ohne validTicker darf nie im Link landen. */
+  box.BOESE = 'x" onmouseover="1';
+  pruef('d2: ungueltiges Symbol ergibt keinen Link', vm.runInContext('rcTvHTML(BOESE)', box), '');
+  box.v = rcVideo();
+  pruef('d2: Videokarte traegt den Link je Wert mit Symbol', (vm.runInContext('rcVideoKarte(v,"r")', box).match(/class="rc-tv"/g) || []).length, 2);
+  /* d3 */
+  box.B = [{ term: 'Short Squeeze', erklaerung: 'Eindeckungsdruck' }, { term: '<b>x</b>' }, { term: '' }];
+  const b = vm.runInContext('dtBegriffeHTML(B)', box);
+  pruef('d3: Wikipedia-Suchlink je Begriff, kodiert', b.indexOf('href="https://de.wikipedia.org/wiki/Spezial:Suche?search=Short%20Squeeze" target="_blank" rel="noopener noreferrer">Wikipedia ↗</a>') > -1, true);
+  pruef('d3: Begriff escapet, auch im Link kodiert', b.indexOf('&lt;b&gt;x&lt;/b&gt;') > -1 && b.indexOf('search=%3Cb%3Ex%3C%2Fb%3E') > -1 && b.indexOf('<b>x</b>') < 0, true);
+  pruef('d3: leerer Begriff entfaellt', (b.match(/dt-begriff/g) || []).length, 2);
+  /* d1 */
+  box.order = ['2026-09-29', '2026-09-28', 'kaputt'];
+  box.DATA = { '2026-09-29': { topics: [{ prio: 1, title: 'Öl fällt', body: 'Brent schwächer' }, { prio: 3, title: 'Fed senkt', body: 'Zinsen' }] },
+    '2026-09-28': { topics: [{ prio: 2, title: 'Nvidia meldet', body: 'Der Ölpreis spielt keine Rolle' }, { prio: 3, title: '<img src=x onerror=1>', body: 'öl' }] } };
+  vm.runInContext('DATA=this.DATA;order=this.order', box);
+  pruef('d1: nur gueltige Tage aus index.json', vm.runInContext('rcMeldTage()', box), ['2026-09-29', '2026-09-28']);
+  const such = (f, pr) => vm.runInContext('rcMeldSuchen(' + JSON.stringify(f) + ',' + pr + ').map(x=>x.tag+"#"+x.t.title)', box);
+  pruef('d1: Teilstring in Titel und Text, ohne Gross-/Kleinschreibung (V1-Regel)', such('ÖL', 0), ['2026-09-29#Öl fällt', '2026-09-28#<img src=x onerror=1>', '2026-09-28#Nvidia meldet']);
+  pruef('d1: Prio-Filter Hoch', such('öl', 3), ['2026-09-28#<img src=x onerror=1>']);
+  pruef('d1: leerer Suchbegriff ergibt nichts', such('  ', 0), []);
+  /* Gegenprobe mit der V1-Regel aus searchAll (Zeichenkette aus index.html), gleiche Treffermenge. */
+  const v1Regel = (f, prio) => { const o = []; box.order.forEach(day => ((box.DATA[day] || {}).topics || []).forEach(t => { if ((t.title + (t.body || '')).toLowerCase().includes(f) && (!prio || t.prio === prio)) o.push(day + '#' + t.title); })); return o.sort(); };
+  pruef('d1: V1-Suchregel steht so in index.html', v1html.indexOf("if((t.title+(t.body||'')).toLowerCase().includes(f)&&(!filterPrio||t.prio===filterPrio))") > -1, true);
+  [['öl', 0], ['fed', 3], ['e', 2]].forEach(([f, pr]) => pruef('d1: gleiche Treffermenge wie V1: ' + f + '/' + pr, such(f, pr).sort(), v1Regel(f, pr)));
+  /* Negativfall: Treffer ohne escapeHtml ⇒ rot. */
+  const z = vm.runInContext('rcMeldZeileHTML(DATA["2026-09-28"].topics[1],"2026-09-28",0,true)', box);
+  pruef('d1: Treffertitel escapet', z.indexOf('<img') < 0 && z.indexOf('&lt;img') > -1, true);
+  pruef('d1: Datum als Spalte', z.indexOf('28.09.2026') > -1 && z.indexOf('rc-mitdatum') > -1, true);
+  pruef('d1: Deckel der Trefferliste', vm.runInContext('RC_MELD_DECKEL', box), 50);
+  /* genau ein Aufrufer (die Sucheingabe) neben der Definition */
+  pruef('d1: kein Abruf aller Tage beim Start — nur die Sucheingabe ruft rcMeldAlleLaden', (v2n.match(/rcMeldAlleLaden\(\)/g) || []).length - 1, 1);
+  pruef('d1: der Aufrufer haengt an einem Suchbegriff', v2n.indexOf("if(rcMeld.frage.trim()&&!rcMeld.alle)rcMeldAlleLaden();") > -1, true);
+  box.DATA = {}; box.order = []; vm.runInContext('DATA=this.DATA;order=this.order', box);
 });
 
 const KURSPFAD = gruppeAsync('Kurspfad - toter Proxy entfernt, Zeitlimit 10 s, ehrlicher Grund statt Stille', async () => {
