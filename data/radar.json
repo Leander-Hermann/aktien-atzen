@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-29T18:20:41.141087Z",
+  "generated_at": "2026-09-29T19:20:41.190314Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 95,
-  "with_quote_data": 59,
+  "symbols_total": 98,
+  "with_quote_data": 57,
   "sources": [
    "watchlist",
    "videos",
@@ -20,183 +20,8 @@
  },
  "items": [
   {
-   "symbol": "EVK.DE",
-   "name": "Evonik",
-   "score": 90,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,2 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,5× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:EVK",
-   "quote": {
-    "price": 19.84,
-    "pct": 7.19,
-    "cur": "EUR",
-    "as_of": "2026-09-29T06:34:37.917376+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Evonik mit deutlichem Kursanstieg und hohem Volumen",
-    "why_now": "Die Evonik-Aktie steigt um 7,2 % auf 19,84 EUR. Das Handelsvolumen liegt beim 4,5-Fachen des Durchschnitts. Zudem wurden in den vergangenen 3 Tagen 2 Videos erwähnt, die möglicherweise zusätzliche Aufmerksamkeit erzeugt haben. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Anstieg",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-29T07:20:38.226589Z"
-   }
-  },
-  {
-   "symbol": "MDB",
-   "name": "MongoDB",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-18,5 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "8,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 334.68,
-    "pct": -18.46,
-    "cur": "USD",
-    "as_of": "2026-09-29T06:34:37.917376+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "MongoDB mit starkem Kursrückgang bei hohem Volumen",
-    "why_now": "Die Daten zeigen einen Kursrückgang von 18,46 % auf 334,68 USD. Gleichzeitig lag das Handelsvolumen beim 8,8-Fachen des Durchschnitts. Ein Video wurde in den vergangenen 3 Tagen erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-29T07:20:38.226589Z"
-   }
-  },
-  {
-   "symbol": "HFG.DE",
-   "name": "HelloFresh",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-9,5 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,4× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:HFG",
-   "quote": {
-    "price": 2.401,
-    "pct": -9.49,
-    "cur": "EUR",
-    "as_of": "2026-09-29T06:34:37.917376+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "HelloFresh fällt bei ungewöhnlich hohem Volumen",
-    "why_now": "Die Aktie von HelloFresh fällt um 9,49 % auf 2.401 EUR. Zugleich liegt das Handelsvolumen beim 4,4-Fachen des Durchschnitts. Es gibt eine Video-Erwähnung in 3 Tagen. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-09-29T07:20:38.226589Z"
-   }
-  },
-  {
-   "symbol": "MU",
-   "name": "Micron",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,6 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings morgen",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 1053.98,
-    "pct": -2.61,
-    "cur": "USD",
-    "as_of": "2026-09-29T06:34:37.917376+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-30",
-    "distance_days": 1,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "BA",
-   "name": "Boeing",
+   "symbol": "RDC.DE",
+   "name": "Redcare Pharmacy",
    "score": 65,
    "priority": "medium",
    "alert_type": "large_move",
@@ -204,13 +29,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-6,9 %",
+     "value": "+4,3 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
+     "value": "2,7× Durchschnitt",
      "weight": 25
     },
     {
@@ -220,16 +45,17 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "XETR:RDC",
    "quote": {
-    "price": 184.39,
-    "pct": -6.91,
-    "cur": "USD",
-    "as_of": "2026-09-29T06:34:37.917376+00:00"
+    "price": 71.1,
+    "pct": 4.25,
+    "cur": "EUR",
+    "as_of": "2026-09-29T18:37:43.625321+00:00"
    }
   },
   {
-   "symbol": "AKAM",
-   "name": "Akamai",
+   "symbol": "BZ=F",
+   "name": "Ölpreis",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -237,14 +63,36 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,3 %",
-     "weight": 30
+     "value": "-8,6 %",
+     "weight": 45
     },
     {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "TVC:UKOIL",
+   "quote": {
+    "price": 96.18,
+    "pct": -8.64,
+    "cur": "USD",
+    "as_of": "2026-09-29T18:37:43.625321+00:00"
+   }
+  },
+  {
+   "symbol": "RCL",
+   "name": "Royal Caribbean",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,3 %",
+     "weight": 45
     },
     {
      "type": "content_velocity",
@@ -254,10 +102,10 @@
     }
    ],
    "quote": {
-    "price": 108.99,
-    "pct": -4.34,
+    "price": 260.65,
+    "pct": 7.44,
     "cur": "USD",
-    "as_of": "2026-09-29T06:34:37.917376+00:00"
+    "as_of": "2026-09-29T18:37:43.625321+00:00"
    }
   },
   {
@@ -281,10 +129,10 @@
     }
    ],
    "quote": {
-    "price": 36.39,
-    "pct": 1.79,
+    "price": 35.705,
+    "pct": -1.87,
     "cur": "USD",
-    "as_of": "2026-09-29T06:34:37.917376+00:00"
+    "as_of": "2026-09-29T18:37:43.625321+00:00"
    },
    "earnings": {
     "date": "2026-09-28",
@@ -293,23 +141,17 @@
    }
   },
   {
-   "symbol": "BAS.DE",
-   "name": "BASF",
-   "score": 50,
+   "symbol": "MU",
+   "name": "Micron",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "content_velocity",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,6 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
-     "weight": 15
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -318,12 +160,16 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:BAS",
    "quote": {
-    "price": 50.28,
-    "pct": -3.59,
-    "cur": "EUR",
-    "as_of": "2026-09-29T06:34:37.917376+00:00"
+    "price": 1072.4,
+    "pct": 1.75,
+    "cur": "USD",
+    "as_of": "2026-09-29T18:37:43.625321+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-30",
+    "distance_days": 1,
+    "zeit": "amc"
    }
   }
  ]
