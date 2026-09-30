@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-29T23:20:41.919274Z",
+  "generated_at": "2026-09-30T00:20:37.229411Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -109,38 +109,6 @@
    }
   },
   {
-   "symbol": "NKE",
-   "name": "Nike",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 35.705,
-    "pct": -1.87,
-    "cur": "USD",
-    "as_of": "2026-09-29T18:37:43.625321+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-28",
-    "distance_days": -1,
-    "zeit": "tbd"
-   }
-  },
-  {
    "symbol": "MU",
    "name": "Micron",
    "score": 55,
@@ -150,7 +118,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     },
     {
@@ -168,7 +136,7 @@
    },
    "earnings": {
     "date": "2026-09-30",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "amc"
    }
   }
