@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-30T04:20:39.290938Z",
+  "generated_at": "2026-09-30T05:20:38.696670Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -106,6 +106,38 @@
     "pct": 7.44,
     "cur": "USD",
     "as_of": "2026-09-29T18:37:43.625321+00:00"
+   }
+  },
+  {
+   "symbol": "NKE",
+   "name": "Nike",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 35.705,
+    "pct": -1.87,
+    "cur": "USD",
+    "as_of": "2026-09-29T18:37:43.625321+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-01",
+    "distance_days": 1,
+    "zeit": "amc"
    }
   },
   {
