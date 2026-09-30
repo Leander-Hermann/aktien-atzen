@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-30T06:20:37.699252Z",
+  "generated_at": "2026-09-30T07:20:42.968136Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 98,
-  "with_quote_data": 57,
+  "symbols_total": 93,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -22,20 +22,20 @@
   {
    "symbol": "RDC.DE",
    "name": "Redcare Pharmacy",
-   "score": 65,
-   "priority": "medium",
+   "score": 80,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,3 %",
-     "weight": 30
+     "value": "+12,7 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,7× Durchschnitt",
+     "value": "2,6× Durchschnitt",
      "weight": 25
     },
     {
@@ -48,37 +48,21 @@
    "tv_symbol": "XETR:RDC",
    "quote": {
     "price": 71.1,
-    "pct": 4.25,
+    "pct": 12.73,
     "cur": "EUR",
-    "as_of": "2026-09-29T18:37:43.625321+00:00"
-   }
-  },
-  {
-   "symbol": "BZ=F",
-   "name": "Ölpreis",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-8,6 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "TVC:UKOIL",
-   "quote": {
-    "price": 96.18,
-    "pct": -8.64,
-    "cur": "USD",
-    "as_of": "2026-09-29T18:37:43.625321+00:00"
+    "as_of": "2026-09-30T06:36:42.909696+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Redcare Pharmacy mit starkem Kursanstieg",
+    "why_now": "Die Aktie von Redcare Pharmacy liegt bei 71,1 EUR und gewinnt 12,73 %. Das Handelsvolumen beträgt das 2,6-Fache des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt, was Aufmerksamkeit ausgelöst haben könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-09-30T07:20:42.968136Z"
    }
   },
   {
@@ -91,7 +75,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+7,3 %",
+     "value": "+7,5 %",
      "weight": 45
     },
     {
@@ -102,10 +86,44 @@
     }
    ],
    "quote": {
-    "price": 260.65,
-    "pct": 7.44,
+    "price": 260.67,
+    "pct": 7.45,
     "cur": "USD",
-    "as_of": "2026-09-29T18:37:43.625321+00:00"
+    "as_of": "2026-09-30T06:36:42.909696+00:00"
+   }
+  },
+  {
+   "symbol": "HFG.DE",
+   "name": "HelloFresh",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,8 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:HFG",
+   "quote": {
+    "price": 2.299,
+    "pct": 4.8,
+    "cur": "EUR",
+    "as_of": "2026-09-30T06:36:42.909696+00:00"
    }
   },
   {
@@ -129,10 +147,10 @@
     }
    ],
    "quote": {
-    "price": 35.705,
-    "pct": -1.87,
+    "price": 35.84,
+    "pct": -1.51,
     "cur": "USD",
-    "as_of": "2026-09-29T18:37:43.625321+00:00"
+    "as_of": "2026-09-30T06:36:42.909696+00:00"
    },
    "earnings": {
     "date": "2026-10-01",
@@ -142,7 +160,7 @@
   },
   {
    "symbol": "MU",
-   "name": "Micron",
+   "name": "Micron Technology",
    "score": 55,
    "priority": "medium",
    "alert_type": "earnings_watch",
@@ -156,20 +174,54 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
+     "value": "3 Videos in 3 Tagen",
      "weight": 20
     }
    ],
    "quote": {
-    "price": 1072.4,
-    "pct": 1.75,
+    "price": 1065.08,
+    "pct": 1.05,
     "cur": "USD",
-    "as_of": "2026-09-29T18:37:43.625321+00:00"
+    "as_of": "2026-09-30T06:36:42.909696+00:00"
    },
    "earnings": {
     "date": "2026-09-30",
     "distance_days": 0,
     "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "EVK.DE",
+   "name": "Evonik",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,4 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "4 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:EVK",
+   "quote": {
+    "price": 19.84,
+    "pct": 2.43,
+    "cur": "EUR",
+    "as_of": "2026-09-30T06:36:42.909696+00:00"
    }
   }
  ]
