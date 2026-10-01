@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-09-30T23:20:38.670225Z",
+  "generated_at": "2026-10-01T00:20:37.732265Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,11 +10,12 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 95,
+  "symbols_total": 96,
   "with_quote_data": 57,
   "sources": [
    "watchlist",
    "videos",
+   "earnings",
    "movers"
   ]
  },
@@ -50,64 +51,6 @@
     "pct": 4.81,
     "cur": "USD",
     "as_of": "2026-09-30T18:35:13.369134+00:00"
-   }
-  },
-  {
-   "symbol": "MU",
-   "name": "Micron Technology",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 1068.57,
-    "pct": 0.33,
-    "cur": "USD",
-    "as_of": "2026-09-30T18:35:13.369134+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-30",
-    "distance_days": 0,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "NKE",
-   "name": "Nike",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings morgen",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "earnings": {
-    "date": "2026-10-01",
-    "distance_days": 1,
-    "zeit": "amc"
    }
   },
   {
