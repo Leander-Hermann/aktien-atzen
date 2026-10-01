@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-01T06:20:41.142337Z",
+  "generated_at": "2026-10-01T07:20:37.669743Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 96,
-  "with_quote_data": 57,
+  "symbols_total": 98,
+  "with_quote_data": 60,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,8 @@
  },
  "items": [
   {
-   "symbol": "MDB",
-   "name": "MongoDB",
+   "symbol": "RDC.DE",
+   "name": "Redcare Pharmacy",
    "score": 65,
    "priority": "medium",
    "alert_type": "large_move",
@@ -30,14 +30,48 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,8 %",
+     "value": "+4,3 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
+     "value": "2,7× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:RDC",
+   "quote": {
+    "price": 73.25,
+    "pct": 4.25,
+    "cur": "EUR",
+    "as_of": "2026-10-01T06:34:27.124404+00:00"
+   }
+  },
+  {
+   "symbol": "SI=F",
+   "name": "Silber",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,5 %",
      "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "27,5× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
@@ -46,31 +80,26 @@
      "weight": 20
     }
    ],
+   "tv_symbol": "TVC:SILVER",
    "quote": {
-    "price": 353.41,
-    "pct": 4.81,
+    "price": 61.6,
+    "pct": 2.5,
     "cur": "USD",
-    "as_of": "2026-09-30T18:35:13.369134+00:00"
+    "as_of": "2026-10-01T06:34:27.124404+00:00"
    }
   },
   {
    "symbol": "LPK.DE",
    "name": "LPKF",
-   "score": 50,
+   "score": 55,
    "priority": "medium",
-   "alert_type": "volume_spike",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,5 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "4,6× Durchschnitt",
-     "weight": 25
+     "value": "+8,6 %",
+     "weight": 45
     },
     {
      "type": "content_velocity",
@@ -82,9 +111,102 @@
    "tv_symbol": "XETR:LPK",
    "quote": {
     "price": 15.35,
-    "pct": -2.54,
+    "pct": 8.62,
     "cur": "EUR",
-    "as_of": "2026-09-30T18:35:13.369134+00:00"
+    "as_of": "2026-10-01T06:34:27.124404+00:00"
+   }
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron Technology",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 1065.11,
+    "pct": 0.0,
+    "cur": "USD",
+    "as_of": "2026-10-01T06:34:27.124404+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-30",
+    "distance_days": -1,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,8 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:IFX",
+   "quote": {
+    "price": 59.5,
+    "pct": 4.83,
+    "cur": "EUR",
+    "as_of": "2026-10-01T06:34:27.124404+00:00"
+   }
+  },
+  {
+   "symbol": "MDB",
+   "name": "MongoDB",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,4 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 348.61,
+    "pct": 3.39,
+    "cur": "USD",
+    "as_of": "2026-10-01T06:34:27.124404+00:00"
    }
   }
  ]
