@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-09-30T18:33:28+00:00",
+  "generated_at": "2026-10-01T06:33:06+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -13,9 +13,35 @@
  },
  "analysen": [
   {
+   "id": "lynx-770119",
+   "symbol": "DB1.DE",
+   "name": "Deutsche Börse",
+   "veroeffentlicht": "2026-10-01T06:27:09+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/deutsche-boerse-aktie/deutsche-boerse-analyse/#deutsche-boerse-jetzt-wird-es-spannend"
+   }
+  },
+  {
+   "id": "lynx-770118",
+   "symbol": "VOW3.DE",
+   "name": "Volkswagen",
+   "veroeffentlicht": "2026-10-01T06:25:00+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/volkswagen-vz-aktie/volkswagen-vz-analyse/#volkswagen-vz-hier-liegt-jetzt-der-entscheidende-deckel"
+   }
+  },
+  {
    "id": "lynx-770088",
    "symbol": "CCL",
-   "name": "Carnival Corp",
+   "name": "Carnival",
    "veroeffentlicht": "2026-09-30T11:00:09+00:00",
    "autor": "",
    "kategorie": "Aktienanalysen",
@@ -1037,32 +1063,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/deutsche-telekom-aktie/deutsche-telekom-analyse/#deutsche-telekom-trotz-geruechten-weiter-auf-der-kippe"
-   }
-  },
-  {
-   "id": "lynx-766956",
-   "symbol": "SNOW",
-   "name": "Snowflake",
-   "veroeffentlicht": "2026-09-03T06:21:28+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/snowflake-aktie/snowflake-analyse/#snowflake-ki-aktie-ubertrifft-erwartungen-und-legt-nachborslich-deutlich-zu"
-   }
-  },
-  {
-   "id": "lynx-766955",
-   "symbol": "AVGO",
-   "name": "Broadcom",
-   "veroeffentlicht": "2026-09-03T06:19:17+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/broadcom-aktie/broadcom-analyse/#broadcom-ubertrifft-die-erwartungen-neue-impulse-fur-chipaktien"
    }
   }
  ]
