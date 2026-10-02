@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-02T06:20:38.195270Z",
+  "generated_at": "2026-10-02T07:20:43.651412Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 99,
-  "with_quote_data": 60,
+  "symbols_total": 95,
+  "with_quote_data": 59,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,181 @@
  },
  "items": [
   {
-   "symbol": "LPK.DE",
-   "name": "LPKF",
+   "symbol": "SNPS",
+   "name": "Synopsys",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+12,8 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,3× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 490.54,
+    "pct": 12.78,
+    "cur": "USD",
+    "as_of": "2026-10-02T06:35:17.475796+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Synopsys mit starkem Kurssprung und hohem Volumen",
+    "why_now": "Die Synopsys-Aktie liegt bei 490,54 USD und verzeichnet eine Kursbewegung von +12,8 %. Das Handelsvolumen beträgt 3,3× des Durchschnitts und ist damit ungewöhnlich hoch. Zudem wurde Synopsys in den vergangenen 3 Tagen in 1 Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-02T07:20:43.651412Z"
+   }
+  },
+  {
+   "symbol": "NKE",
+   "name": "Nike",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,1× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 35.15,
+    "pct": -0.71,
+    "cur": "USD",
+    "as_of": "2026-10-02T06:35:17.475796+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-01",
+    "distance_days": -1,
+    "zeit": "amc"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Nike nach Earnings mit erhöhtem Handelsvolumen",
+    "why_now": "Nike notiert bei 35,15 USD und liegt 0,71 % im Minus. Das Handelsvolumen beträgt 3,1× des Durchschnitts, der Earnings-Termin war gestern. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin könnte die erhöhte Aufmerksamkeit und das ungewöhnliche Volumen erklären; zudem wurde 1 Video in 3 Tagen erwähnt.",
+    "watch_next": [
+     "Weitere Kursbewegung nach dem Earnings-Termin",
+     "Entwicklung des Handelsvolumens",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-02T07:20:43.651412Z"
+   }
+  },
+  {
+   "symbol": "EVD.DE",
+   "name": "CTS Eventim",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-6,2 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "8,8× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:EVD",
+   "quote": {
+    "price": 53.55,
+    "pct": -6.2,
+    "cur": "EUR",
+    "as_of": "2026-10-02T06:35:17.475796+00:00"
+   }
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron Technology",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,0 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 1097.39,
+    "pct": 3.03,
+    "cur": "USD",
+    "as_of": "2026-10-02T06:35:17.475796+00:00"
+   },
+   "earnings": {
+    "date": "2026-09-30",
+    "distance_days": -2,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "JBL",
+   "name": "Jabil",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -30,14 +203,81 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,6 %",
+     "value": "+4,5 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
+     "value": "1,8× Durchschnitt",
      "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 299.79,
+    "pct": 4.51,
+    "cur": "USD",
+    "as_of": "2026-10-02T06:35:17.475796+00:00"
+   }
+  },
+  {
+   "symbol": "CBK.DE",
+   "name": "Commerzbank",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,0 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:CBK",
+   "quote": {
+    "price": 39.4,
+    "pct": -4.0,
+    "cur": "EUR",
+    "as_of": "2026-10-02T06:35:17.475796+00:00"
+   }
+  },
+  {
+   "symbol": "LPK.DE",
+   "name": "LPKF",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,5 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,6× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
@@ -49,9 +289,9 @@
    "tv_symbol": "XETR:LPK",
    "quote": {
     "price": 16.05,
-    "pct": 4.56,
+    "pct": -2.54,
     "cur": "EUR",
-    "as_of": "2026-10-01T18:34:54.526179+00:00"
+    "as_of": "2026-10-02T06:35:17.475796+00:00"
    }
   }
  ]
