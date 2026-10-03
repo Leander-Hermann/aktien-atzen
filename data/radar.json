@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-03T06:20:34.832741Z",
+  "generated_at": "2026-10-03T07:20:41.495298Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 89,
+  "symbols_total": 90,
   "with_quote_data": 53,
   "sources": [
    "watchlist",
@@ -21,22 +21,112 @@
  },
  "items": [
   {
+   "symbol": "WDC",
+   "name": "Western Digital",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-10,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 415.29,
+    "pct": -10.22,
+    "cur": "USD",
+    "as_of": "2026-10-03T06:32:55.946808+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Western Digital mit starkem Tagesrückgang",
+    "why_now": "Die Aktie von Western Digital fällt um 10,22 % auf 415,29 USD. Das Handelsvolumen liegt beim 3,6-Fachen des Durchschnitts, zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-03T07:20:41.495298Z"
+   }
+  },
+  {
+   "symbol": "STX",
+   "name": "Seagate Technology",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-10,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 848.99,
+    "pct": -10.21,
+    "cur": "USD",
+    "as_of": "2026-10-03T06:32:55.946808+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Seagate mit deutlichem Kursrückgang und hohem Volumen",
+    "why_now": "Die Seagate-Aktie fiel um 10,21 % auf 848,99 USD. Gleichzeitig lag das Handelsvolumen beim 3,6-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach dem Rückgang",
+     "Handelsvolumen im weiteren Verlauf",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-03T07:20:41.495298Z"
+   }
+  },
+  {
    "symbol": "NKE",
    "name": "Nike",
-   "score": 90,
+   "score": 75,
    "priority": "high",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,3 %",
-     "weight": 30
+     "value": "-3,6 %",
+     "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,9× Durchschnitt",
+     "value": "3,7× Durchschnitt",
      "weight": 25
     },
     {
@@ -53,10 +143,10 @@
     }
    ],
    "quote": {
-    "price": 33.655,
-    "pct": -4.27,
+    "price": 33.87,
+    "pct": -3.64,
     "cur": "USD",
-    "as_of": "2026-10-02T18:35:04.265038+00:00"
+    "as_of": "2026-10-03T06:32:55.946808+00:00"
    },
    "earnings": {
     "date": "2026-10-01",
@@ -66,104 +156,14 @@
    "llm": {
     "status": "ready",
     "headline": "Nike nach Earnings mit deutlichem Kursrückgang",
-    "why_now": "Die Nike-Aktie liegt bei 33,655 USD und ist um 4,27 % gefallen. Gleichzeitig lag das Handelsvolumen beim 2,9-Fachen des Durchschnitts. Der Earnings-Termin war vor zwei Tagen, daher dürfte die Bewegung damit zusammenhängen. Ursache unklar.",
+    "why_now": "Die Nike-Aktie verlor 3,6 %, begleitet von einem ungewöhnlich hohen Volumen von 3,7× des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen. Ursache unklar. Der zeitliche Zusammenhang spricht dafür, dass die Bewegung mit der Reaktion auf den Earnings-Termin zusammenhängen könnte.",
     "watch_next": [
      "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Verlauf",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-03T00:20:36.360541Z"
-   }
-  },
-  {
-   "symbol": "STX",
-   "name": "Seagate Technology",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-10,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 847.569,
-    "pct": -10.36,
-    "cur": "USD",
-    "as_of": "2026-10-02T18:35:04.265038+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Seagate Technology mit deutlichem Tagesverlust",
-    "why_now": "Die Aktie von Seagate Technology liegt bei 847.569 USD und damit 10,36 % im Minus. Das Handelsvolumen beträgt 3,0× des Durchschnitts. Zusätzlich wurde 1 Video in 3 Tagen erfasst. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursentwicklung",
-     "Handelsvolumen",
-     "Neue Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-02T19:20:39.408751Z"
-   }
-  },
-  {
-   "symbol": "WDC",
-   "name": "Western Digital",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-9,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,9× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 420.91,
-    "pct": -9.0,
-    "cur": "USD",
-    "as_of": "2026-10-02T18:35:04.265038+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Western Digital fällt um -9,0 % bei hohem Volumen",
-    "why_now": "Western Digital fiel um -9,0 % auf 420.91 USD. Das Handelsvolumen lag bei 2,9× des Durchschnitts, zudem gab es 1 Video in 3 Tagen. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-02T19:20:39.408751Z"
+    "generated_at": "2026-10-03T07:20:41.495298Z"
    }
   },
   {
@@ -176,7 +176,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+8,2 %",
+     "value": "+7,4 %",
      "weight": 45
     },
     {
@@ -187,15 +187,15 @@
     }
    ],
    "quote": {
-    "price": 69.89,
-    "pct": 8.22,
+    "price": 69.33,
+    "pct": 7.36,
     "cur": "USD",
-    "as_of": "2026-10-02T18:35:04.265038+00:00"
+    "as_of": "2026-10-03T06:32:55.946808+00:00"
    }
   },
   {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
+   "symbol": "ACN",
+   "name": "Accenture",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -203,8 +203,14 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+8,8 %",
-     "weight": 45
+     "value": "-6,3 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -213,12 +219,11 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:IFX",
    "quote": {
-    "price": 64.64,
-    "pct": 8.78,
-    "cur": "EUR",
-    "as_of": "2026-10-02T18:35:04.265038+00:00"
+    "price": 198.9,
+    "pct": -6.31,
+    "cur": "USD",
+    "as_of": "2026-10-03T06:32:55.946808+00:00"
    }
   },
   {
@@ -231,7 +236,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,2 %",
+     "value": "-2,1 %",
      "weight": 15
     },
     {
@@ -248,10 +253,10 @@
     }
    ],
    "quote": {
-    "price": 1073.785,
-    "pct": -2.15,
+    "price": 1074.89,
+    "pct": -2.05,
     "cur": "USD",
-    "as_of": "2026-10-02T18:35:04.265038+00:00"
+    "as_of": "2026-10-03T06:32:55.946808+00:00"
    },
    "earnings": {
     "date": "2026-09-30",
