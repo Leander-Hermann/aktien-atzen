@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-03T23:20:40.231615Z",
+  "generated_at": "2026-10-04T00:20:39.518964Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -132,7 +132,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
+     "value": "Earnings vor 3 Tagen",
      "weight": 15
     },
     {
@@ -150,75 +150,20 @@
    },
    "earnings": {
     "date": "2026-10-01",
-    "distance_days": -2,
+    "distance_days": -3,
     "zeit": "amc"
    },
    "llm": {
     "status": "ready",
-    "headline": "Nike nach Earnings mit deutlichem Kursrückgang",
-    "why_now": "Die Nike-Aktie verlor 3,6 %, begleitet von einem ungewöhnlich hohen Volumen von 3,7× des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen. Ursache unklar. Der zeitliche Zusammenhang spricht dafür, dass die Bewegung mit der Reaktion auf den Earnings-Termin zusammenhängen könnte.",
+    "headline": "Nike nach Earnings-Termin deutlich schwächer",
+    "why_now": "Die Nike-Aktie fällt um 3,6 % auf 33,87 USD bei einem Volumen von 3,7× des Durchschnitts. Der Earnings-Termin liegt drei Tage zurück, zudem wurden in diesem Zeitraum zwei Videos erwähnt. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Kursbewegung nach dem Earnings-Termin",
+     "Handelsvolumen",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-03T07:20:41.495298Z"
-   }
-  },
-  {
-   "symbol": "HPE",
-   "name": "Hewlett Packard Enterprise",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,4 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 69.33,
-    "pct": 7.36,
-    "cur": "USD",
-    "as_of": "2026-10-03T18:33:05.283122+00:00"
-   }
-  },
-  {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+8,8 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:IFX",
-   "quote": {
-    "price": 64.64,
-    "pct": 8.78,
-    "cur": "EUR",
-    "as_of": "2026-10-03T18:33:05.283122+00:00"
+    "generated_at": "2026-10-04T00:20:39.518964Z"
    }
   },
   {
@@ -252,44 +197,6 @@
     "pct": -6.31,
     "cur": "USD",
     "as_of": "2026-10-03T18:33:05.283122+00:00"
-   }
-  },
-  {
-   "symbol": "MU",
-   "name": "Micron Technology",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,1 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 1074.89,
-    "pct": -2.05,
-    "cur": "USD",
-    "as_of": "2026-10-03T18:33:05.283122+00:00"
-   },
-   "earnings": {
-    "date": "2026-09-30",
-    "distance_days": -3,
-    "zeit": "amc"
    }
   }
  ]
