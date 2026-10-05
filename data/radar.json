@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-04T23:20:38.160862Z",
+  "generated_at": "2026-10-05T00:24:05.302571Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "WDC",
    "name": "Western Digital",
-   "score": 80,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -38,12 +38,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "3,6× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "quote": {
@@ -54,21 +48,21 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Western Digital mit starkem Tagesrückgang",
-    "why_now": "Die Aktie von Western Digital fällt um 10,22 % auf 415,29 USD. Das Handelsvolumen liegt beim 3,6-Fachen des Durchschnitts, zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "headline": "Western Digital fällt bei hohem Handelsvolumen",
+    "why_now": "Western Digital verzeichnete heute einen Kursrückgang von 10,2 %. Das Handelsvolumen lag beim 3,6-Fachen des Durchschnitts. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
+     "Weitere Kursbewegung",
+     "Entwicklung des Handelsvolumens",
+     "Neue Angaben zur Aktie"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-03T07:20:41.495298Z"
+    "generated_at": "2026-10-05T00:24:05.302571Z"
    }
   },
   {
    "symbol": "STX",
    "name": "Seagate Technology",
-   "score": 80,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -83,12 +77,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "3,6× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "quote": {
@@ -99,104 +87,15 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Seagate mit deutlichem Kursrückgang und hohem Volumen",
-    "why_now": "Die Seagate-Aktie fiel um 10,21 % auf 848,99 USD. Gleichzeitig lag das Handelsvolumen beim 3,6-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "headline": "Seagate Technology fällt bei hohem Handelsvolumen",
+    "why_now": "Die Aktie von Seagate Technology fällt heute um 10,2 % auf 848,99 USD. Gleichzeitig liegt das Handelsvolumen beim 3,6-Fachen des Durchschnitts. Das spricht für eine außergewöhnlich starke Marktaktivität, belegt aber keinen konkreten Auslöser. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung nach dem Rückgang",
      "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
+     "Weitere Signale zur Kursbewegung"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-03T07:20:41.495298Z"
-   }
-  },
-  {
-   "symbol": "NKE",
-   "name": "Nike",
-   "score": 75,
-   "priority": "high",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,6 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,7× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 3 Tagen",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 33.87,
-    "pct": -3.64,
-    "cur": "USD",
-    "as_of": "2026-10-04T18:32:49.005047+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-01",
-    "distance_days": -3,
-    "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Nike nach Earnings-Termin deutlich schwächer",
-    "why_now": "Die Nike-Aktie fällt um 3,6 % auf 33,87 USD bei einem Volumen von 3,7× des Durchschnitts. Der Earnings-Termin liegt drei Tage zurück, zudem wurden in diesem Zeitraum zwei Videos erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung nach dem Earnings-Termin",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-04T00:20:39.518964Z"
-   }
-  },
-  {
-   "symbol": "ACN",
-   "name": "Accenture",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-6,3 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 198.9,
-    "pct": -6.31,
-    "cur": "USD",
-    "as_of": "2026-10-04T18:32:49.005047+00:00"
+    "generated_at": "2026-10-05T00:24:05.302571Z"
    }
   }
  ]
