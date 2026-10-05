@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-05T18:20:36.996093Z",
+  "generated_at": "2026-10-05T19:21:10.496766Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 91,
-  "with_quote_data": 53,
+  "symbols_total": 99,
+  "with_quote_data": 54,
   "sources": [
    "watchlist",
    "videos",
@@ -21,81 +21,94 @@
  },
  "items": [
   {
-   "symbol": "WDC",
-   "name": "Western Digital",
-   "score": 70,
+   "symbol": "PTC",
+   "name": "PTC",
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-10,2 %",
+     "value": "+33,7 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,6× Durchschnitt",
+     "value": "13,2× Durchschnitt",
      "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
-    "price": 415.29,
-    "pct": -10.22,
+    "price": 192.625,
+    "pct": 33.74,
     "cur": "USD",
-    "as_of": "2026-10-05T06:33:53.807069+00:00"
+    "as_of": "2026-10-05T18:36:20.499692+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Western Digital fällt bei hohem Handelsvolumen",
-    "why_now": "Western Digital verzeichnete heute einen Kursrückgang von 10,2 %. Das Handelsvolumen lag beim 3,6-Fachen des Durchschnitts. Ursache unklar.",
+    "headline": "PTC steigt stark bei ungewöhnlich hohem Volumen",
+    "why_now": "Die PTC-Aktie liegt bei 192.625 USD und verzeichnet eine Bewegung von +33,7 %. Ursache unklar. Das Volumen beträgt 13,2× des Durchschnitts, zudem wurde 1 Video in 3 Tagen registriert; dies könnte auf erhöhte Aufmerksamkeit hindeuten, belegt aber keinen Auslöser.",
     "watch_next": [
-     "Weitere Kursbewegung",
-     "Entwicklung des Handelsvolumens",
-     "Neue Angaben zur Aktie"
+     "Kursbewegung von +33,7 %",
+     "Volumen bei 13,2× Durchschnitt",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-05T00:24:05.302571Z"
+    "generated_at": "2026-10-05T19:21:10.496766Z"
    }
   },
   {
-   "symbol": "STX",
-   "name": "Seagate Technology",
-   "score": 70,
+   "symbol": "SU.PA",
+   "name": "Schneider Electric",
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-10,2 %",
+     "value": "-10,0 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,6× Durchschnitt",
+     "value": "3,2× Durchschnitt",
      "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
+   "tv_symbol": "EURONEXT:SU",
    "quote": {
-    "price": 848.99,
-    "pct": -10.21,
-    "cur": "USD",
-    "as_of": "2026-10-05T06:33:53.807069+00:00"
+    "price": 272.8,
+    "pct": -9.97,
+    "cur": "EUR",
+    "as_of": "2026-10-05T18:36:20.499692+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Seagate Technology fällt bei hohem Handelsvolumen",
-    "why_now": "Die Aktie von Seagate Technology fällt heute um 10,2 % auf 848,99 USD. Gleichzeitig liegt das Handelsvolumen beim 3,6-Fachen des Durchschnitts. Das spricht für eine außergewöhnlich starke Marktaktivität, belegt aber keinen konkreten Auslöser. Ursache unklar.",
+    "headline": "Schneider Electric fällt bei hohem Handelsvolumen deutlich",
+    "why_now": "Schneider Electric verlor 10,0 % auf 272,8 EUR. Das Handelsvolumen lag bei 3,2× des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Rückgang",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Signale zur Kursbewegung"
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-05T00:24:05.302571Z"
+    "generated_at": "2026-10-05T19:21:10.496766Z"
    }
   }
  ]
