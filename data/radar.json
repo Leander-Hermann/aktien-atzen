@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-06T06:20:37.124140Z",
+  "generated_at": "2026-10-06T07:20:39.401001Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 103,
-  "with_quote_data": 54,
+  "symbols_total": 104,
+  "with_quote_data": 59,
   "sources": [
    "watchlist",
    "videos",
@@ -30,13 +30,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+33,7 %",
+     "value": "+33,5 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "13,2× Durchschnitt",
+     "value": "16,9× Durchschnitt",
      "weight": 25
     },
     {
@@ -47,27 +47,27 @@
     }
    ],
    "quote": {
-    "price": 192.625,
-    "pct": 33.74,
+    "price": 192.26,
+    "pct": 33.49,
     "cur": "USD",
-    "as_of": "2026-10-05T18:36:20.499692+00:00"
+    "as_of": "2026-10-06T06:34:36.254876+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "PTC steigt stark bei ungewöhnlich hohem Volumen",
-    "why_now": "Die PTC-Aktie liegt bei 192.625 USD und verzeichnet eine Bewegung von +33,7 %. Ursache unklar. Das Volumen beträgt 13,2× des Durchschnitts, zudem wurde 1 Video in 3 Tagen registriert; dies könnte auf erhöhte Aufmerksamkeit hindeuten, belegt aber keinen Auslöser.",
+    "headline": "PTC steigt bei außergewöhnlich hohem Volumen deutlich",
+    "why_now": "PTC liegt bei 192,26 USD und ist um 33,5 % gestiegen. Gleichzeitig lag das Handelsvolumen beim 16,9-Fachen des Durchschnitts. Zudem wurde PTC in den vergangenen 3 Tagen in 1 Video erwähnt. Ursache unklar.",
     "watch_next": [
-     "Kursbewegung von +33,7 %",
-     "Volumen bei 13,2× Durchschnitt",
+     "Kursbewegung von 33,5 %",
+     "Handelsvolumen im Verhältnis zum Durchschnitt",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-05T19:21:10.496766Z"
+    "generated_at": "2026-10-06T07:20:39.401001Z"
    }
   },
   {
-   "symbol": "SU.PA",
-   "name": "Schneider Electric",
+   "symbol": "KGX.DE",
+   "name": "Kion",
    "score": 80,
    "priority": "high",
    "alert_type": "large_move",
@@ -75,13 +75,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-10,0 %",
+     "value": "-7,7 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,2× Durchschnitt",
+     "value": "4,5× Durchschnitt",
      "weight": 25
     },
     {
@@ -91,24 +91,86 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "EURONEXT:SU",
+   "tv_symbol": "XETR:KGX",
    "quote": {
-    "price": 272.8,
-    "pct": -9.97,
+    "price": 35.89,
+    "pct": -7.68,
     "cur": "EUR",
-    "as_of": "2026-10-05T18:36:20.499692+00:00"
+    "as_of": "2026-10-06T06:34:36.254876+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Schneider Electric fällt bei hohem Handelsvolumen deutlich",
-    "why_now": "Schneider Electric verlor 10,0 % auf 272,8 EUR. Das Handelsvolumen lag bei 3,2× des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
+    "headline": "Kion fällt bei ungewöhnlich hohem Handelsvolumen",
+    "why_now": "Die Kion-Aktie liegt bei 35,89 EUR und fällt um 7,68 %. Gleichzeitig beträgt das Handelsvolumen das 4,5-Fache des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Die Ursache unklar. Das hohe Volumen und die Video-Erwähnung könnten mit der auffälligen Bewegung zusammenhängen.",
     "watch_next": [
-     "Kursentwicklung",
+     "Kursbewegung",
      "Handelsvolumen",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-05T19:21:10.496766Z"
+    "generated_at": "2026-10-06T07:20:39.401001Z"
+   }
+  },
+  {
+   "symbol": "AG1.DE",
+   "name": "Auto1",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,8 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:AG1",
+   "quote": {
+    "price": 15.7,
+    "pct": -4.8,
+    "cur": "EUR",
+    "as_of": "2026-10-06T06:34:36.254876+00:00"
+   }
+  },
+  {
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+8,8 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:IFX",
+   "quote": {
+    "price": 63.47,
+    "pct": 8.78,
+    "cur": "EUR",
+    "as_of": "2026-10-06T06:34:36.254876+00:00"
    }
   }
  ]
