@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-10-03T09:32:43.194798Z",
-    "trading_day": "2026-10-02",
+    "generated_at": "2026-10-06T10:50:26.223274Z",
+    "trading_day": "2026-10-05",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-10-03T09:32:43.194798Z"
+    "as_of": "2026-10-06T10:50:26.223274Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "KO",
-      "name": "The Coca-Cola Company",
-      "sector": "Consumer Staples",
-      "as_of": "2026-10-02T13:30:00Z",
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-10-05T13:30:00Z",
       "quote": {
-        "price": 85.65,
+        "price": 332.89,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/KO",
-        "as_of": "2026-10-02T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/AAPL",
+        "as_of": "2026-10-05T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -47,42 +47,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 6
+        "warnings_count": 7
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 85.33,
-        "entry_high": 85.65,
-        "stop": 83.79,
-        "target": 90.36,
+        "entry_low": 330.83,
+        "entry_high": 332.89,
+        "stop": 322.25,
+        "target": 354.16,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
               "date": "2026-08-12",
-              "price": 85.66
+              "price": 300.57
             },
             "b": {
-              "date": "2026-08-24",
-              "price": 92.49
+              "date": "2026-08-20",
+              "price": 320.28
             },
             "c": {
               "date": "2026-09-09",
-              "price": 87.41
+              "price": 309.9
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 94.24
+              "price": 329.61
             },
             {
               "ratio": 1.272,
-              "price": 96.1
+              "price": 334.97
             },
             {
               "ratio": 1.618,
-              "price": 98.46
+              "price": 341.79
             }
           ]
         }
@@ -90,16 +90,16 @@
     },
     {
       "rank": 2,
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc. (Class A)",
-      "sector": "Communication Services",
-      "as_of": "2026-10-02T13:30:00Z",
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-10-05T13:30:00Z",
       "quote": {
-        "price": 343.5,
+        "price": 251.4,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/GOOGL",
-        "as_of": "2026-10-02T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/AMZN",
+        "as_of": "2026-10-05T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -117,42 +117,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 7
+        "warnings_count": 8
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 340.37,
-        "entry_high": 343.5,
-        "stop": 329.11,
-        "target": 373.16,
+        "entry_low": 249.9,
+        "entry_high": 251.4,
+        "stop": 242.97,
+        "target": 268.26,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-07-23",
-              "price": 314.9
+              "date": "2026-09-16",
+              "price": 244.3
             },
             "b": {
-              "date": "2026-08-24",
-              "price": 351.6
+              "date": "2026-09-21",
+              "price": 259.49
             },
             "c": {
-              "date": "2026-09-10",
-              "price": 327.74
+              "date": "2026-09-28",
+              "price": 244.73
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 364.44
+              "price": 259.92
             },
             {
               "ratio": 1.272,
-              "price": 374.42
+              "price": 264.05
             },
             {
               "ratio": 1.618,
-              "price": 387.12
+              "price": 269.31
             }
           ]
         }
@@ -160,86 +160,16 @@
     },
     {
       "rank": 3,
-      "ticker": "V",
-      "name": "Visa Inc.",
-      "sector": "Financials",
-      "as_of": "2026-10-02T13:30:00Z",
-      "quote": {
-        "price": 360.66,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/V",
-        "as_of": "2026-10-02T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 7
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 358.37,
-        "entry_high": 360.66,
-        "stop": 351.2,
-        "target": 385.57,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-08-18",
-              "price": 358.05
-            },
-            "b": {
-              "date": "2026-08-26",
-              "price": 385.57
-            },
-            "c": {
-              "date": "2026-09-22",
-              "price": 359.8
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 387.32
-            },
-            {
-              "ratio": 1.272,
-              "price": 394.81
-            },
-            {
-              "ratio": 1.618,
-              "price": 404.33
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 4,
       "ticker": "MA",
       "name": "Mastercard Incorporated",
       "sector": "Financials",
-      "as_of": "2026-10-02T13:30:00Z",
+      "as_of": "2026-10-05T13:30:00Z",
       "quote": {
-        "price": 552.26,
+        "price": 564.59,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/MA",
-        "as_of": "2026-10-02T13:30:00Z"
+        "as_of": "2026-10-05T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -261,10 +191,10 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 547.69,
-        "entry_high": 552.26,
-        "stop": 536.09,
-        "target": 584.6,
+        "entry_low": 561.92,
+        "entry_high": 564.59,
+        "stop": 549.83,
+        "target": 594.11,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -299,17 +229,17 @@
       }
     },
     {
-      "rank": 5,
-      "ticker": "COP",
-      "name": "ConocoPhillips",
-      "sector": "Energy",
-      "as_of": "2026-10-02T13:30:00Z",
+      "rank": 4,
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "as_of": "2026-10-05T13:30:00Z",
       "quote": {
-        "price": 126.75,
+        "price": 848.14,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/COP",
-        "as_of": "2026-10-02T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/CAT",
+        "as_of": "2026-10-05T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -331,9 +261,79 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 125.96,
-        "entry_high": 126.75,
-        "stop": 122.01,
+        "entry_low": 839.5,
+        "entry_high": 848.14,
+        "stop": 809.22,
+        "target": 931.35,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-09-14",
+              "price": 772.86
+            },
+            "b": {
+              "date": "2026-09-21",
+              "price": 827.81
+            },
+            "c": {
+              "date": "2026-09-24",
+              "price": 794.2
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 849.15
+            },
+            {
+              "ratio": 1.272,
+              "price": 864.1
+            },
+            {
+              "ratio": 1.618,
+              "price": 883.11
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "as_of": "2026-10-05T13:30:00Z",
+      "quote": {
+        "price": 128.4,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/COP",
+        "as_of": "2026-10-05T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 12
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 127.19,
+        "entry_high": 128.4,
+        "stop": 123.16,
         "target": 141.62,
         "horizon_sessions": 30,
         "fib": {
