@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-07T18:20:38.494839Z",
+  "generated_at": "2026-10-07T19:20:45.747464Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 106,
-  "with_quote_data": 58,
+  "symbols_total": 105,
+  "with_quote_data": 53,
   "sources": [
    "watchlist",
    "videos",
@@ -21,53 +21,53 @@
  },
  "items": [
   {
-   "symbol": "MRVL",
-   "name": "Marvell Technology",
-   "score": 75,
+   "symbol": "PENG",
+   "name": "Penguin Solutions",
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,8 %",
-     "weight": 30
+     "value": "+13,6 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,0× Durchschnitt",
+     "value": "8,1× Durchschnitt",
      "weight": 25
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
-    "price": 287.01,
-    "pct": 5.81,
+    "price": 72.96,
+    "pct": 13.63,
     "cur": "USD",
-    "as_of": "2026-10-07T06:35:34.011424+00:00"
+    "as_of": "2026-10-07T18:35:44.838838+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Marvell Technology mit auffälliger Kursbewegung",
-    "why_now": "Die Aktie von Marvell Technology liegt bei 287,01 USD und ist um 5,81 % gestiegen. Das Handelsvolumen beträgt das 3,0-Fache des Durchschnitts. Zudem wurden in drei Tagen zwei Video-Erwähnungen verzeichnet, was für erhöhte Aufmerksamkeit sprechen könnte. Ursache unklar.",
+    "headline": "Penguin Solutions mit starker Kursbewegung",
+    "why_now": "Die Aktie von Penguin Solutions stieg um 13,6 % auf 72,96 USD. Gleichzeitig lag das Handelsvolumen beim 8,1-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung registriert. Ursache unklar.",
     "watch_next": [
-     "Kursbewegung beobachten",
-     "Handelsvolumen beobachten",
-     "Weitere Video-Erwähnungen beobachten"
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-07T07:20:39.404934Z"
+    "generated_at": "2026-10-07T19:20:45.747464Z"
    }
   },
   {
-   "symbol": "STX",
-   "name": "Seagate",
+   "symbol": "RDC.DE",
+   "name": "Redcare Pharmacy",
    "score": 70,
    "priority": "high",
    "alert_type": "large_move",
@@ -75,13 +75,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,2 %",
+     "value": "+10,8 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
+     "value": "1,5× Durchschnitt",
      "weight": 15
     },
     {
@@ -91,37 +91,38 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "XETR:RDC",
    "quote": {
-    "price": 805.63,
-    "pct": -9.18,
-    "cur": "USD",
-    "as_of": "2026-10-07T06:35:34.011424+00:00"
+    "price": 75.15,
+    "pct": 10.76,
+    "cur": "EUR",
+    "as_of": "2026-10-07T18:35:44.838838+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Seagate fällt bei erhöhtem Handelsvolumen deutlich",
-    "why_now": "Die Seagate-Aktie liegt bei 805,63 USD und fällt um 9,18 %. Das Handelsvolumen beträgt das 1,6-Fache des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video erwähnt. Ursache unklar.",
+    "headline": "Redcare Pharmacy mit deutlichem Tagesanstieg",
+    "why_now": "Die Aktie von Redcare Pharmacy legte um 10,8 % auf 75,15 EUR zu. Das Handelsvolumen lag beim 1,5-Fachen des Durchschnitts. Zudem wurde die Aktie in den vergangenen 3 Tagen in 1 Video erwähnt. Ursache unklar; die erhöhte Aufmerksamkeit könnte die Bewegung begleitet haben.",
     "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Erwähnungen"
+     "Kursentwicklung nach dem Tagesanstieg",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-07T07:20:39.404934Z"
+    "generated_at": "2026-10-07T19:20:45.747464Z"
    }
   },
   {
    "symbol": "NBIS",
    "name": "Nebius",
-   "score": 65,
+   "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+7,4 %",
-     "weight": 45
+     "value": "-6,0 %",
+     "weight": 30
     },
     {
      "type": "content_velocity",
@@ -131,37 +132,38 @@
     }
    ],
    "quote": {
-    "price": 249.87,
-    "pct": 7.44,
+    "price": 234.97,
+    "pct": -5.96,
     "cur": "USD",
-    "as_of": "2026-10-07T06:35:34.011424+00:00"
+    "as_of": "2026-10-07T18:35:44.838838+00:00"
    }
   },
   {
-   "symbol": "MRNA",
-   "name": "Moderna",
-   "score": 55,
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-7,8 %",
-     "weight": 45
+     "value": "-5,8 %",
+     "weight": 30
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
+   "tv_symbol": "XETR:IFX",
    "quote": {
-    "price": 187.46,
-    "pct": -7.75,
-    "cur": "USD",
-    "as_of": "2026-10-07T06:35:34.011424+00:00"
+    "price": 60.95,
+    "pct": -5.77,
+    "cur": "EUR",
+    "as_of": "2026-10-07T18:35:44.838838+00:00"
    }
   }
  ]
