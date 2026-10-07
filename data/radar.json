@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-07T06:20:38.074402Z",
+  "generated_at": "2026-10-07T07:20:39.404934Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -11,7 +11,7 @@
  "mode": "batch",
  "universe": {
   "symbols_total": 106,
-  "with_quote_data": 60,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -21,17 +21,23 @@
  },
  "items": [
   {
-   "symbol": "NBIS",
-   "name": "Nebius",
-   "score": 65,
-   "priority": "medium",
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
+   "score": 75,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+8,6 %",
-     "weight": 45
+     "value": "+5,8 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,0× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
@@ -41,118 +47,36 @@
     }
    ],
    "quote": {
-    "price": 252.46,
-    "pct": 8.55,
+    "price": 287.01,
+    "pct": 5.81,
     "cur": "USD",
-    "as_of": "2026-10-06T18:40:52.787297+00:00"
-   }
-  },
-  {
-   "symbol": "SU.PA",
-   "name": "Schneider Electric",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,5 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,8× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "EURONEXT:SU",
-   "quote": {
-    "price": 260.5,
-    "pct": -4.51,
-    "cur": "EUR",
-    "as_of": "2026-10-06T18:40:52.787297+00:00"
+    "as_of": "2026-10-07T06:35:34.011424+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Marvell Technology mit auffälliger Kursbewegung",
+    "why_now": "Die Aktie von Marvell Technology liegt bei 287,01 USD und ist um 5,81 % gestiegen. Das Handelsvolumen beträgt das 3,0-Fache des Durchschnitts. Zudem wurden in drei Tagen zwei Video-Erwähnungen verzeichnet, was für erhöhte Aufmerksamkeit sprechen könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Video-Erwähnungen beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-07T07:20:39.404934Z"
    }
   },
   {
    "symbol": "STX",
    "name": "Seagate",
-   "score": 55,
-   "priority": "medium",
+   "score": 70,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,4 %",
+     "value": "-9,2 %",
      "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 804.33,
-    "pct": -9.33,
-    "cur": "USD",
-    "as_of": "2026-10-06T18:40:52.787297+00:00"
-   }
-  },
-  {
-   "symbol": "MRVL",
-   "name": "Marvell Technology",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,4 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 285.92,
-    "pct": 5.41,
-    "cur": "USD",
-    "as_of": "2026-10-06T18:40:52.787297+00:00"
-   }
-  },
-  {
-   "symbol": "HAG.DE",
-   "name": "Hensoldt",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,5 %",
-     "weight": 30
     },
     {
      "type": "volume_spike",
@@ -167,12 +91,77 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:HAG",
    "quote": {
-    "price": 78.9,
-    "pct": -4.46,
-    "cur": "EUR",
-    "as_of": "2026-10-06T18:40:52.787297+00:00"
+    "price": 805.63,
+    "pct": -9.18,
+    "cur": "USD",
+    "as_of": "2026-10-07T06:35:34.011424+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Seagate fällt bei erhöhtem Handelsvolumen deutlich",
+    "why_now": "Die Seagate-Aktie liegt bei 805,63 USD und fällt um 9,18 %. Das Handelsvolumen beträgt das 1,6-Fache des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-07T07:20:39.404934Z"
+   }
+  },
+  {
+   "symbol": "NBIS",
+   "name": "Nebius",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,4 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 249.87,
+    "pct": 7.44,
+    "cur": "USD",
+    "as_of": "2026-10-07T06:35:34.011424+00:00"
+   }
+  },
+  {
+   "symbol": "MRNA",
+   "name": "Moderna",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,8 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 187.46,
+    "pct": -7.75,
+    "cur": "USD",
+    "as_of": "2026-10-07T06:35:34.011424+00:00"
    }
   }
  ]
