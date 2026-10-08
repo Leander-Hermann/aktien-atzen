@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-08T06:20:42.130629Z",
+  "generated_at": "2026-10-08T07:20:36.689647Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -30,13 +30,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+13,6 %",
+     "value": "+13,1 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "8,1× Durchschnitt",
+     "value": "9,2× Durchschnitt",
      "weight": 25
     },
     {
@@ -47,41 +47,41 @@
     }
    ],
    "quote": {
-    "price": 72.96,
-    "pct": 13.63,
+    "price": 72.61,
+    "pct": 13.08,
     "cur": "USD",
-    "as_of": "2026-10-07T18:35:44.838838+00:00"
+    "as_of": "2026-10-08T06:34:14.161837+00:00"
    },
    "llm": {
     "status": "ready",
     "headline": "Penguin Solutions mit starker Kursbewegung",
-    "why_now": "Die Aktie von Penguin Solutions stieg um 13,6 % auf 72,96 USD. Gleichzeitig lag das Handelsvolumen beim 8,1-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung registriert. Ursache unklar.",
+    "why_now": "Die Aktie von Penguin Solutions ist um 13,1 % auf 72,61 USD gestiegen. Das Handelsvolumen lag beim 9,2-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst, was auf erhöhte Aufmerksamkeit hindeuten könnte. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung",
      "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
+     "Weitere Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-07T19:20:45.747464Z"
+    "generated_at": "2026-10-08T07:20:36.689647Z"
    }
   },
   {
-   "symbol": "RDC.DE",
-   "name": "Redcare Pharmacy",
-   "score": 70,
-   "priority": "high",
+   "symbol": "HAG.DE",
+   "name": "Hensoldt",
+   "score": 55,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+10,8 %",
-     "weight": 45
+     "value": "-4,5 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
+     "value": "1,6× Durchschnitt",
      "weight": 15
     },
     {
@@ -91,24 +91,12 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:RDC",
+   "tv_symbol": "XETR:HAG",
    "quote": {
-    "price": 75.15,
-    "pct": 10.76,
+    "price": 75.14,
+    "pct": -4.46,
     "cur": "EUR",
-    "as_of": "2026-10-07T18:35:44.838838+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Redcare Pharmacy mit deutlichem Tagesanstieg",
-    "why_now": "Die Aktie von Redcare Pharmacy legte um 10,8 % auf 75,15 EUR zu. Das Handelsvolumen lag beim 1,5-Fachen des Durchschnitts. Zudem wurde die Aktie in den vergangenen 3 Tagen in 1 Video erwähnt. Ursache unklar; die erhöhte Aufmerksamkeit könnte die Bewegung begleitet haben.",
-    "watch_next": [
-     "Kursentwicklung nach dem Tagesanstieg",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-07T19:20:45.747464Z"
+    "as_of": "2026-10-08T06:34:14.161837+00:00"
    }
   },
   {
@@ -121,7 +109,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-6,0 %",
+     "value": "-5,1 %",
      "weight": 30
     },
     {
@@ -132,15 +120,15 @@
     }
    ],
    "quote": {
-    "price": 234.97,
-    "pct": -5.96,
+    "price": 237.15,
+    "pct": -5.09,
     "cur": "USD",
-    "as_of": "2026-10-07T18:35:44.838838+00:00"
+    "as_of": "2026-10-08T06:34:14.161837+00:00"
    }
   },
   {
-   "symbol": "IFX.DE",
-   "name": "Infineon",
+   "symbol": "MU",
+   "name": "Micron Technology",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -148,8 +136,41 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-5,8 %",
+     "value": "+4,1 %",
      "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 1088.0,
+    "pct": 4.06,
+    "cur": "USD",
+    "as_of": "2026-10-08T06:34:14.161837+00:00"
+   }
+  },
+  {
+   "symbol": "RHM.DE",
+   "name": "Rheinmetall",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "content_velocity",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,8 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -158,12 +179,12 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:IFX",
+   "tv_symbol": "XETR:RHM",
    "quote": {
-    "price": 60.95,
-    "pct": -5.77,
+    "price": 926.2,
+    "pct": -2.77,
     "cur": "EUR",
-    "as_of": "2026-10-07T18:35:44.838838+00:00"
+    "as_of": "2026-10-08T06:34:14.161837+00:00"
    }
   }
  ]
