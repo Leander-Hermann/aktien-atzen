@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-08T18:20:40.955748Z",
+  "generated_at": "2026-10-08T19:20:39.855763Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 106,
-  "with_quote_data": 53,
+  "symbols_total": 108,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -21,53 +21,8 @@
  },
  "items": [
   {
-   "symbol": "PENG",
-   "name": "Penguin Solutions",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+13,1 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "9,2× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 72.61,
-    "pct": 13.08,
-    "cur": "USD",
-    "as_of": "2026-10-08T06:34:14.161837+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Penguin Solutions mit starker Kursbewegung",
-    "why_now": "Die Aktie von Penguin Solutions ist um 13,1 % auf 72,61 USD gestiegen. Das Handelsvolumen lag beim 9,2-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst, was auf erhöhte Aufmerksamkeit hindeuten könnte. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-08T07:20:36.689647Z"
-   }
-  },
-  {
-   "symbol": "HAG.DE",
-   "name": "Hensoldt",
+   "symbol": "SZU.DE",
+   "name": "Südzucker",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -81,7 +36,7 @@
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
+     "value": "1,7× Durchschnitt",
      "weight": 15
     },
     {
@@ -91,12 +46,12 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:HAG",
+   "tv_symbol": "XETR:SZU",
    "quote": {
-    "price": 75.14,
-    "pct": -4.46,
+    "price": 11.84,
+    "pct": -4.52,
     "cur": "EUR",
-    "as_of": "2026-10-08T06:34:14.161837+00:00"
+    "as_of": "2026-10-08T18:34:58.598963+00:00"
    }
   },
   {
@@ -109,7 +64,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-5,1 %",
+     "value": "-6,6 %",
      "weight": 30
     },
     {
@@ -120,10 +75,64 @@
     }
    ],
    "quote": {
-    "price": 237.15,
-    "pct": -5.09,
+    "price": 221.58,
+    "pct": -6.57,
     "cur": "USD",
-    "as_of": "2026-10-08T06:34:14.161837+00:00"
+    "as_of": "2026-10-08T18:34:58.598963+00:00"
+   }
+  },
+  {
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,8 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 106.35,
+    "pct": -5.98,
+    "cur": "USD",
+    "as_of": "2026-10-08T18:34:58.598963+00:00"
+   }
+  },
+  {
+   "symbol": "AMD",
+   "name": "AMD",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,2 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 618.695,
+    "pct": -4.21,
+    "cur": "USD",
+    "as_of": "2026-10-08T18:34:58.598963+00:00"
    }
   },
   {
@@ -136,7 +145,34 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,1 %",
+     "value": "-4,1 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "4 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 1043.88,
+    "pct": -4.06,
+    "cur": "USD",
+    "as_of": "2026-10-08T18:34:58.598963+00:00"
+   }
+  },
+  {
+   "symbol": "P911.DE",
+   "name": "Porsche AG",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,0 %",
      "weight": 30
     },
     {
@@ -146,45 +182,12 @@
      "weight": 20
     }
    ],
+   "tv_symbol": "XETR:P911",
    "quote": {
-    "price": 1088.0,
-    "pct": 4.06,
-    "cur": "USD",
-    "as_of": "2026-10-08T06:34:14.161837+00:00"
-   }
-  },
-  {
-   "symbol": "RHM.DE",
-   "name": "Rheinmetall",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,8 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:RHM",
-   "quote": {
-    "price": 926.2,
-    "pct": -2.77,
+    "price": 40.96,
+    "pct": -4.01,
     "cur": "EUR",
-    "as_of": "2026-10-08T06:34:14.161837+00:00"
+    "as_of": "2026-10-08T18:34:58.598963+00:00"
    }
   }
  ]
