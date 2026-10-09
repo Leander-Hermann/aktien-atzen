@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-09T06:20:40.669719Z",
+  "generated_at": "2026-10-09T07:20:42.011998Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -11,7 +11,7 @@
  "mode": "batch",
  "universe": {
   "symbols_total": 108,
-  "with_quote_data": 56,
+  "with_quote_data": 60,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,8 @@
  },
  "items": [
   {
-   "symbol": "SZU.DE",
-   "name": "Südzucker",
+   "symbol": "VST",
+   "name": "Vistra",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -30,7 +30,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,5 %",
+     "value": "-6,3 %",
      "weight": 30
     },
     {
@@ -46,12 +46,11 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:SZU",
    "quote": {
-    "price": 11.84,
-    "pct": -4.52,
-    "cur": "EUR",
-    "as_of": "2026-10-08T18:34:58.598963+00:00"
+    "price": 156.14,
+    "pct": -6.35,
+    "cur": "USD",
+    "as_of": "2026-10-09T06:36:50.249874+00:00"
    }
   },
   {
@@ -64,7 +63,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,1 %",
+     "value": "-4,8 %",
      "weight": 30
     },
     {
@@ -75,38 +74,43 @@
     }
    ],
    "quote": {
-    "price": 1043.88,
-    "pct": -4.06,
+    "price": 1035.84,
+    "pct": -4.79,
     "cur": "USD",
-    "as_of": "2026-10-08T18:34:58.598963+00:00"
+    "as_of": "2026-10-09T06:36:50.249874+00:00"
    }
   },
   {
-   "symbol": "P911.DE",
-   "name": "Porsche AG",
+   "symbol": "MRVL",
+   "name": "Marvell Technology",
    "score": 50,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "content_velocity",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,0 %",
-     "weight": 30
+     "value": "-3,5 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
+     "value": "3 Videos in 3 Tagen",
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:P911",
    "quote": {
-    "price": 40.96,
-    "pct": -4.01,
-    "cur": "EUR",
-    "as_of": "2026-10-08T18:34:58.598963+00:00"
+    "price": 274.66,
+    "pct": -3.52,
+    "cur": "USD",
+    "as_of": "2026-10-09T06:36:50.249874+00:00"
    }
   }
  ]
