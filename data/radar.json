@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-08T23:20:43.736804Z",
+  "generated_at": "2026-10-09T00:20:36.229259Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -55,87 +55,6 @@
    }
   },
   {
-   "symbol": "NBIS",
-   "name": "Nebius",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-6,6 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 221.58,
-    "pct": -6.57,
-    "cur": "USD",
-    "as_of": "2026-10-08T18:34:58.598963+00:00"
-   }
-  },
-  {
-   "symbol": "INTC",
-   "name": "Intel",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,8 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 106.35,
-    "pct": -5.98,
-    "cur": "USD",
-    "as_of": "2026-10-08T18:34:58.598963+00:00"
-   }
-  },
-  {
-   "symbol": "AMD",
-   "name": "AMD",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,2 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 618.695,
-    "pct": -4.21,
-    "cur": "USD",
-    "as_of": "2026-10-08T18:34:58.598963+00:00"
-   }
-  },
-  {
    "symbol": "MU",
    "name": "Micron Technology",
    "score": 50,
@@ -151,7 +70,7 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "4 Videos in 3 Tagen",
+     "value": "2 Videos in 3 Tagen",
      "weight": 20
     }
    ],
@@ -178,7 +97,7 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
+     "value": "2 Videos in 3 Tagen",
      "weight": 20
     }
    ],
