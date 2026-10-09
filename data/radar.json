@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-09T18:20:38.392389Z",
+  "generated_at": "2026-10-09T19:20:41.003129Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 108,
-  "with_quote_data": 60,
+  "symbols_total": 101,
+  "with_quote_data": 55,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,245 @@
  },
  "items": [
   {
-   "symbol": "VST",
-   "name": "Vistra",
+   "symbol": "TMUS",
+   "name": "T-Mobile US",
+   "score": 90,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-12,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,7× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 149.545,
+    "pct": -12.71,
+    "cur": "USD",
+    "as_of": "2026-10-09T18:36:15.060314+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "T-Mobile US mit deutlichem Kursrückgang",
+    "why_now": "Die Aktie von T-Mobile US liegt bei 149,545 USD und damit 12,71 % im Minus. Gleichzeitig liegt das Handelsvolumen beim 2,7-Fachen des Durchschnitts. Zudem wurden in den vergangenen drei Tagen zwei Videos erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Video-Erwähnungen beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-09T19:20:41.003129Z"
+   }
+  },
+  {
+   "symbol": "T",
+   "name": "AT&T",
+   "score": 90,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-10,4 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,9× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 22.105,
+    "pct": -11.14,
+    "cur": "USD",
+    "as_of": "2026-10-09T18:36:15.060314+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "AT&T fällt bei ungewöhnlich hohem Volumen deutlich",
+    "why_now": "Die AT&T-Aktie notiert bei 22.105 USD und liegt 11,14 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 2,9-Fache des Durchschnitts. Zudem wurden 2 Videos in 3 Tagen erfasst. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-09T19:20:41.003129Z"
+   }
+  },
+  {
+   "symbol": "VZ",
+   "name": "Verizon",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-9,6 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,3× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 41.33,
+    "pct": -10.83,
+    "cur": "USD",
+    "as_of": "2026-10-09T18:36:15.060314+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Verizon fällt bei ungewöhnlich hohem Volumen deutlich",
+    "why_now": "Die Verizon-Aktie liegt bei 41,33 USD und damit 10,83 % im Minus. Als Auslöserdaten sind eine starke Kursbewegung von -9,6 % und ein Volumen von 3,3× des Durchschnitts ausgewiesen. Zudem gibt es 1 Video-Erwähnung in 3 Tagen. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-09T19:20:41.003129Z"
+   }
+  },
+  {
+   "symbol": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:DTE",
+   "quote": {
+    "price": 24.7,
+    "pct": -7.94,
+    "cur": "EUR",
+    "as_of": "2026-10-09T18:36:15.060314+00:00"
+   }
+  },
+  {
+   "symbol": "SZG.DE",
+   "name": "Salzgitter",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+13,4 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:SZG",
+   "quote": {
+    "price": 49.94,
+    "pct": 13.4,
+    "cur": "EUR",
+    "as_of": "2026-10-09T18:36:15.060314+00:00"
+   }
+  },
+  {
+   "symbol": "1810.HK",
+   "name": "Xiaomi",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+9,7 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,4× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "HKEX:1810",
+   "quote": {
+    "price": 25.96,
+    "pct": 9.72,
+    "cur": "HKD",
+    "as_of": "2026-10-09T18:36:15.060314+00:00"
+   }
+  },
+  {
+   "symbol": "ZAL.DE",
+   "name": "Zalando",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -30,7 +267,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-6,3 %",
+     "value": "+4,3 %",
      "weight": 30
     },
     {
@@ -46,16 +283,17 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "XETR:ZAL",
    "quote": {
-    "price": 156.14,
-    "pct": -6.35,
-    "cur": "USD",
-    "as_of": "2026-10-09T06:36:50.249874+00:00"
+    "price": 23.8,
+    "pct": 4.34,
+    "cur": "EUR",
+    "as_of": "2026-10-09T18:36:15.060314+00:00"
    }
   },
   {
-   "symbol": "MU",
-   "name": "Micron Technology",
+   "symbol": "LITE",
+   "name": "Lumentum",
    "score": 50,
    "priority": "medium",
    "alert_type": "large_move",
@@ -63,7 +301,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,8 %",
+     "value": "+6,4 %",
      "weight": 30
     },
     {
@@ -74,43 +312,10 @@
     }
    ],
    "quote": {
-    "price": 1035.84,
-    "pct": -4.79,
+    "price": 1115.66,
+    "pct": 6.4,
     "cur": "USD",
-    "as_of": "2026-10-09T06:36:50.249874+00:00"
-   }
-  },
-  {
-   "symbol": "MRVL",
-   "name": "Marvell Technology",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,5 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 274.66,
-    "pct": -3.52,
-    "cur": "USD",
-    "as_of": "2026-10-09T06:36:50.249874+00:00"
+    "as_of": "2026-10-09T18:36:15.060314+00:00"
    }
   }
  ]
