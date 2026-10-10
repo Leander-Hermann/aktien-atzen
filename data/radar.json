@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-10T18:20:37.453820Z",
+  "generated_at": "2026-10-10T19:20:36.193573Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -50,7 +50,7 @@
     "price": 148.58,
     "pct": -13.27,
     "cur": "USD",
-    "as_of": "2026-10-10T06:32:29.007801+00:00"
+    "as_of": "2026-10-10T18:32:49.899065+00:00"
    },
    "llm": {
     "status": "ready",
@@ -95,7 +95,7 @@
     "price": 22.18,
     "pct": -10.82,
     "cur": "USD",
-    "as_of": "2026-10-10T06:32:29.007801+00:00"
+    "as_of": "2026-10-10T18:32:49.899065+00:00"
    },
    "llm": {
     "status": "ready",
@@ -140,7 +140,7 @@
     "price": 41.65,
     "pct": -10.14,
     "cur": "USD",
-    "as_of": "2026-10-10T06:32:29.007801+00:00"
+    "as_of": "2026-10-10T18:32:49.899065+00:00"
    },
    "llm": {
     "status": "ready",
@@ -153,6 +153,74 @@
     ],
     "confidence": "low",
     "generated_at": "2026-10-10T07:20:45.620756Z"
+   }
+  },
+  {
+   "symbol": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:DTE",
+   "quote": {
+    "price": 24.7,
+    "pct": -7.94,
+    "cur": "EUR",
+    "as_of": "2026-10-10T18:32:49.899065+00:00"
+   }
+  },
+  {
+   "symbol": "SZG.DE",
+   "name": "Salzgitter",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+13,4 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:SZG",
+   "quote": {
+    "price": 49.94,
+    "pct": 13.4,
+    "cur": "EUR",
+    "as_of": "2026-10-10T18:32:49.899065+00:00"
    }
   },
   {
@@ -186,7 +254,7 @@
     "price": 25.96,
     "pct": 9.72,
     "cur": "HKD",
-    "as_of": "2026-10-10T06:32:29.007801+00:00"
+    "as_of": "2026-10-10T18:32:49.899065+00:00"
    }
   },
   {
@@ -219,41 +287,7 @@
     "price": 209.05,
     "pct": 5.17,
     "cur": "USD",
-    "as_of": "2026-10-10T06:32:29.007801+00:00"
-   }
-  },
-  {
-   "symbol": "SZU.DE",
-   "name": "Südzucker",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,5 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:SZU",
-   "quote": {
-    "price": 12.22,
-    "pct": -4.52,
-    "cur": "EUR",
-    "as_of": "2026-10-10T06:32:29.007801+00:00"
+    "as_of": "2026-10-10T18:32:49.899065+00:00"
    }
   },
   {
@@ -280,7 +314,7 @@
     "price": 1103.35,
     "pct": 5.22,
     "cur": "USD",
-    "as_of": "2026-10-10T06:32:29.007801+00:00"
+    "as_of": "2026-10-10T18:32:49.899065+00:00"
    }
   }
  ]
