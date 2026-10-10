@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-10T06:20:37.418375Z",
+  "generated_at": "2026-10-10T07:20:45.620756Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 101,
+  "symbols_total": 103,
   "with_quote_data": 55,
   "sources": [
    "watchlist",
@@ -30,13 +30,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-12,9 %",
+     "value": "-13,3 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,7× Durchschnitt",
+     "value": "3,7× Durchschnitt",
      "weight": 25
     },
     {
@@ -47,22 +47,22 @@
     }
    ],
    "quote": {
-    "price": 149.545,
-    "pct": -12.71,
+    "price": 148.58,
+    "pct": -13.27,
     "cur": "USD",
-    "as_of": "2026-10-09T18:36:15.060314+00:00"
+    "as_of": "2026-10-10T06:32:29.007801+00:00"
    },
    "llm": {
     "status": "ready",
     "headline": "T-Mobile US mit deutlichem Kursrückgang",
-    "why_now": "Die Aktie von T-Mobile US liegt bei 149,545 USD und damit 12,71 % im Minus. Gleichzeitig liegt das Handelsvolumen beim 2,7-Fachen des Durchschnitts. Zudem wurden in den vergangenen drei Tagen zwei Videos erwähnt. Ursache unklar.",
+    "why_now": "Die Aktie von T-Mobile US ist um 13,3 % auf 148,58 USD gefallen. Gleichzeitig lag das Handelsvolumen beim 3,7-Fachen des Durchschnitts. Zudem wurden in den vergangenen drei Tagen zwei Videos erwähnt. Ursache unklar. Die Daten belegen damit eine starke Bewegung bei ungewöhnlich hohem Volumen, nennen aber keinen konkreten Auslöser.",
     "watch_next": [
-     "Kursentwicklung beobachten",
-     "Handelsvolumen beobachten",
-     "Weitere Video-Erwähnungen beobachten"
+     "Kursentwicklung nach dem Rückgang",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-09T19:20:41.003129Z"
+    "generated_at": "2026-10-10T07:20:45.620756Z"
    }
   },
   {
@@ -75,13 +75,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-10,4 %",
+     "value": "-9,8 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,9× Durchschnitt",
+     "value": "3,9× Durchschnitt",
      "weight": 25
     },
     {
@@ -92,22 +92,22 @@
     }
    ],
    "quote": {
-    "price": 22.105,
-    "pct": -11.14,
+    "price": 22.18,
+    "pct": -10.82,
     "cur": "USD",
-    "as_of": "2026-10-09T18:36:15.060314+00:00"
+    "as_of": "2026-10-10T06:32:29.007801+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "AT&T fällt bei ungewöhnlich hohem Volumen deutlich",
-    "why_now": "Die AT&T-Aktie notiert bei 22.105 USD und liegt 11,14 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 2,9-Fache des Durchschnitts. Zudem wurden 2 Videos in 3 Tagen erfasst. Ursache unklar.",
+    "headline": "AT&T mit deutlichem Kursrückgang und hohem Volumen",
+    "why_now": "Die AT&T-Aktie notiert bei 22,18 USD und liegt 10,82 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 3,9-Fache des Durchschnitts. Zudem wurden in drei Tagen zwei Videos erwähnt. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung",
      "Handelsvolumen",
-     "Video-Erwähnungen"
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-09T19:20:41.003129Z"
+    "generated_at": "2026-10-10T07:20:45.620756Z"
    }
   },
   {
@@ -120,13 +120,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,6 %",
+     "value": "-8,8 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,3× Durchschnitt",
+     "value": "4,3× Durchschnitt",
      "weight": 25
     },
     {
@@ -137,90 +137,22 @@
     }
    ],
    "quote": {
-    "price": 41.33,
-    "pct": -10.83,
+    "price": 41.65,
+    "pct": -10.14,
     "cur": "USD",
-    "as_of": "2026-10-09T18:36:15.060314+00:00"
+    "as_of": "2026-10-10T06:32:29.007801+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Verizon fällt bei ungewöhnlich hohem Volumen deutlich",
-    "why_now": "Die Verizon-Aktie liegt bei 41,33 USD und damit 10,83 % im Minus. Als Auslöserdaten sind eine starke Kursbewegung von -9,6 % und ein Volumen von 3,3× des Durchschnitts ausgewiesen. Zudem gibt es 1 Video-Erwähnung in 3 Tagen. Ursache unklar.",
+    "headline": "Verizon mit auffälliger Abwärtsbewegung",
+    "why_now": "Die Verizon-Aktie liegt bei 41,65 USD und weist eine Kursveränderung von -10,14 % auf. Zudem wird eine starke Kursbewegung von -8,8 % bei einem Volumen von 4,3× des Durchschnitts ausgewiesen. Ursache unklar. Die Erwähnung in 1 Video in 3 Tagen könnte mit der erhöhten Aufmerksamkeit zusammenhängen, belegt aber keinen Auslöser.",
     "watch_next": [
      "Kursentwicklung",
      "Handelsvolumen",
-     "Weitere Erwähnungen"
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-09T19:20:41.003129Z"
-   }
-  },
-  {
-   "symbol": "DTE.DE",
-   "name": "Deutsche Telekom",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:DTE",
-   "quote": {
-    "price": 24.7,
-    "pct": -7.94,
-    "cur": "EUR",
-    "as_of": "2026-10-09T18:36:15.060314+00:00"
-   }
-  },
-  {
-   "symbol": "SZG.DE",
-   "name": "Salzgitter",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+13,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:SZG",
-   "quote": {
-    "price": 49.94,
-    "pct": 13.4,
-    "cur": "EUR",
-    "as_of": "2026-10-09T18:36:15.060314+00:00"
+    "generated_at": "2026-10-10T07:20:45.620756Z"
    }
   },
   {
@@ -254,7 +186,74 @@
     "price": 25.96,
     "pct": 9.72,
     "cur": "HKD",
-    "as_of": "2026-10-09T18:36:15.060314+00:00"
+    "as_of": "2026-10-10T06:32:29.007801+00:00"
+   }
+  },
+  {
+   "symbol": "PLTR",
+   "name": "Palantir",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,2 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 209.05,
+    "pct": 5.17,
+    "cur": "USD",
+    "as_of": "2026-10-10T06:32:29.007801+00:00"
+   }
+  },
+  {
+   "symbol": "SZU.DE",
+   "name": "Südzucker",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,5 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:SZU",
+   "quote": {
+    "price": 12.22,
+    "pct": -4.52,
+    "cur": "EUR",
+    "as_of": "2026-10-10T06:32:29.007801+00:00"
    }
   },
   {
@@ -267,7 +266,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+6,4 %",
+     "value": "+5,2 %",
      "weight": 30
     },
     {
@@ -278,10 +277,10 @@
     }
    ],
    "quote": {
-    "price": 1115.66,
-    "pct": 6.4,
+    "price": 1103.35,
+    "pct": 5.22,
     "cur": "USD",
-    "as_of": "2026-10-09T18:36:15.060314+00:00"
+    "as_of": "2026-10-10T06:32:29.007801+00:00"
    }
   }
  ]
