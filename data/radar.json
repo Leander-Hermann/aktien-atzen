@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-09T23:20:43.412428Z",
+  "generated_at": "2026-10-10T00:20:36.372632Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -254,40 +254,6 @@
     "price": 25.96,
     "pct": 9.72,
     "cur": "HKD",
-    "as_of": "2026-10-09T18:36:15.060314+00:00"
-   }
-  },
-  {
-   "symbol": "ZAL.DE",
-   "name": "Zalando",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,3 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:ZAL",
-   "quote": {
-    "price": 23.8,
-    "pct": 4.34,
-    "cur": "EUR",
     "as_of": "2026-10-09T18:36:15.060314+00:00"
    }
   },
