@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-10T23:20:39.040034Z",
+  "generated_at": "2026-10-11T00:20:37.154911Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -254,39 +254,6 @@
     "price": 25.96,
     "pct": 9.72,
     "cur": "HKD",
-    "as_of": "2026-10-10T18:32:49.899065+00:00"
-   }
-  },
-  {
-   "symbol": "PLTR",
-   "name": "Palantir",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,2 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 209.05,
-    "pct": 5.17,
-    "cur": "USD",
     "as_of": "2026-10-10T18:32:49.899065+00:00"
    }
   },
