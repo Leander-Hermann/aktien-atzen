@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-11T23:20:49.705089Z",
+  "generated_at": "2026-10-12T00:24:10.203601Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 102,
+  "symbols_total": 105,
   "with_quote_data": 55,
   "sources": [
    "watchlist",
@@ -23,7 +23,7 @@
   {
    "symbol": "TMUS",
    "name": "T-Mobile US",
-   "score": 90,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -38,12 +38,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "3,7× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
     }
    ],
    "quote": {
@@ -54,21 +48,21 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "T-Mobile US mit deutlichem Kursrückgang",
-    "why_now": "Die Aktie von T-Mobile US ist um 13,3 % auf 148,58 USD gefallen. Gleichzeitig lag das Handelsvolumen beim 3,7-Fachen des Durchschnitts. Zudem wurden in den vergangenen drei Tagen zwei Videos erwähnt. Ursache unklar. Die Daten belegen damit eine starke Bewegung bei ungewöhnlich hohem Volumen, nennen aber keinen konkreten Auslöser.",
+    "headline": "T-Mobile US mit starkem Kursrückgang und hohem Volumen",
+    "why_now": "Die Daten zeigen einen Kursrückgang von 13,3 % auf 148,58 USD. Gleichzeitig lag das Handelsvolumen beim 3,7-Fachen des Durchschnitts. Ursache unklar. Das erhöhte Volumen dürfte die ungewöhnlich starke Bewegung begleiten, belegt aber keinen konkreten Auslöser.",
     "watch_next": [
      "Kursentwicklung nach dem Rückgang",
      "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
+     "Weitere prozentuale Tagesbewegung"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-10T07:20:45.620756Z"
+    "generated_at": "2026-10-12T00:24:10.203601Z"
    }
   },
   {
    "symbol": "T",
    "name": "AT&T",
-   "score": 90,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -83,12 +77,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "3,9× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
     }
    ],
    "quote": {
@@ -99,21 +87,21 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "AT&T mit deutlichem Kursrückgang und hohem Volumen",
-    "why_now": "Die AT&T-Aktie notiert bei 22,18 USD und liegt 10,82 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 3,9-Fache des Durchschnitts. Zudem wurden in drei Tagen zwei Videos erwähnt. Ursache unklar.",
+    "headline": "AT&T mit starkem Kursrückgang und hohem Volumen",
+    "why_now": "Die Daten zeigen bei AT&T eine starke Kursbewegung von -9,8 % und einen Kurs von 22,18 USD, der mit -10,82 % ausgewiesen ist. Gleichzeitig lag das Handelsvolumen beim 3,9-Fachen des Durchschnitts. Ursache unklar. Das hohe Volumen könnte darauf hindeuten, dass die Bewegung von ungewöhnlich reger Handelsaktivität begleitet wurde.",
     "watch_next": [
      "Kursentwicklung",
      "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
+     "Weitere Auslöser"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-10T07:20:45.620756Z"
+    "generated_at": "2026-10-12T00:24:10.203601Z"
    }
   },
   {
    "symbol": "VZ",
    "name": "Verizon",
-   "score": 80,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -128,12 +116,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "4,3× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "quote": {
@@ -144,21 +126,21 @@
    },
    "llm": {
     "status": "ready",
-    "headline": "Verizon mit auffälliger Abwärtsbewegung",
-    "why_now": "Die Verizon-Aktie liegt bei 41,65 USD und weist eine Kursveränderung von -10,14 % auf. Zudem wird eine starke Kursbewegung von -8,8 % bei einem Volumen von 4,3× des Durchschnitts ausgewiesen. Ursache unklar. Die Erwähnung in 1 Video in 3 Tagen könnte mit der erhöhten Aufmerksamkeit zusammenhängen, belegt aber keinen Auslöser.",
+    "headline": "Verizon mit deutlichem Kursrückgang und hohem Volumen",
+    "why_now": "Die Verizon-Aktie liegt bei 41,65 USD und ist laut Kursdaten um 10,14 % gefallen. Als Auslöser wird eine starke Kursbewegung von -8,8 % bei einem ungewöhnlich hohen Volumen von 4,3× des Durchschnitts ausgewiesen. Ursache unklar. Das hohe Volumen könnte auf eine erhöhte Marktaktivität während des Rückgangs hindeuten.",
     "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
+     "Kursentwicklung nach dem Rückgang",
+     "Handelsvolumen im weiteren Verlauf",
+     "Abweichung zwischen Kursdaten und Auslöserwert"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-10T07:20:45.620756Z"
+    "generated_at": "2026-10-12T00:24:10.203601Z"
    }
   },
   {
    "symbol": "DTE.DE",
    "name": "Deutsche Telekom",
-   "score": 80,
+   "score": 70,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -173,12 +155,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "2,6× Durchschnitt",
      "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "tv_symbol": "XETR:DTE",
@@ -192,8 +168,8 @@
   {
    "symbol": "SZG.DE",
    "name": "Salzgitter",
-   "score": 70,
-   "priority": "high",
+   "score": 60,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -207,12 +183,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "1,7× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "tv_symbol": "XETR:SZG",
@@ -226,8 +196,8 @@
   {
    "symbol": "1810.HK",
    "name": "Xiaomi",
-   "score": 70,
-   "priority": "high",
+   "score": 60,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -241,12 +211,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "2,4× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "tv_symbol": "HKEX:1810",
@@ -254,33 +218,6 @@
     "price": 25.96,
     "pct": 9.72,
     "cur": "HKD",
-    "as_of": "2026-10-11T18:32:59.716116+00:00"
-   }
-  },
-  {
-   "symbol": "LITE",
-   "name": "Lumentum",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,2 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 1103.355,
-    "pct": 5.22,
-    "cur": "USD",
     "as_of": "2026-10-11T18:32:59.716116+00:00"
    }
   }
