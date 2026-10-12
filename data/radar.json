@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-12T06:20:38.392391Z",
+  "generated_at": "2026-10-12T07:20:38.366759Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -23,7 +23,7 @@
   {
    "symbol": "TMUS",
    "name": "T-Mobile US",
-   "score": 70,
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
@@ -38,25 +38,77 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "3,7× Durchschnitt",
      "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
     "price": 148.58,
     "pct": -13.27,
     "cur": "USD",
-    "as_of": "2026-10-11T18:32:59.716116+00:00"
+    "as_of": "2026-10-12T06:34:45.523756+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "T-Mobile US mit starkem Kursrückgang und hohem Volumen",
-    "why_now": "Die Daten zeigen einen Kursrückgang von 13,3 % auf 148,58 USD. Gleichzeitig lag das Handelsvolumen beim 3,7-Fachen des Durchschnitts. Ursache unklar. Das erhöhte Volumen dürfte die ungewöhnlich starke Bewegung begleiten, belegt aber keinen konkreten Auslöser.",
+    "headline": "T-Mobile US mit starkem Tagesverlust und hohem Volumen",
+    "why_now": "Die Aktie von T-Mobile US liegt 13,27 % im Minus. Gleichzeitig beträgt das Handelsvolumen das 3,7-Fache des Durchschnitts. Ursache unklar. Eine mögliche zusätzliche Aufmerksamkeit ergibt sich aus einer Video-Erwähnung in den vergangenen 3 Tagen, ein Zusammenhang ist aus den Daten jedoch nicht ableitbar.",
     "watch_next": [
-     "Kursentwicklung nach dem Rückgang",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere prozentuale Tagesbewegung"
+     "Kursentwicklung weiter beobachten",
+     "Handelsvolumen im Vergleich zum Durchschnitt beobachten",
+     "Weitere Video-Erwähnungen beobachten"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-12T00:24:10.203601Z"
+    "generated_at": "2026-10-12T07:20:38.366759Z"
+   }
+  },
+  {
+   "symbol": "DTE.DE",
+   "name": "Telekom",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:DTE",
+   "quote": {
+    "price": 24.7,
+    "pct": -7.94,
+    "cur": "EUR",
+    "as_of": "2026-10-12T06:34:45.523756+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Telekom mit deutlichem Kursrückgang und hohem Volumen",
+    "why_now": "Die Telekom verliert 7,9 % auf 24,7 EUR. Gleichzeitig liegt das Handelsvolumen beim 2,6-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-12T07:20:38.366759Z"
    }
   },
   {
@@ -83,7 +135,7 @@
     "price": 22.18,
     "pct": -10.82,
     "cur": "USD",
-    "as_of": "2026-10-11T18:32:59.716116+00:00"
+    "as_of": "2026-10-12T06:34:45.523756+00:00"
    },
    "llm": {
     "status": "ready",
@@ -122,47 +174,7 @@
     "price": 41.65,
     "pct": -10.14,
     "cur": "USD",
-    "as_of": "2026-10-11T18:32:59.716116+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Verizon mit deutlichem Kursrückgang und hohem Volumen",
-    "why_now": "Die Verizon-Aktie liegt bei 41,65 USD und ist laut Kursdaten um 10,14 % gefallen. Als Auslöser wird eine starke Kursbewegung von -8,8 % bei einem ungewöhnlich hohen Volumen von 4,3× des Durchschnitts ausgewiesen. Ursache unklar. Das hohe Volumen könnte auf eine erhöhte Marktaktivität während des Rückgangs hindeuten.",
-    "watch_next": [
-     "Kursentwicklung nach dem Rückgang",
-     "Handelsvolumen im weiteren Verlauf",
-     "Abweichung zwischen Kursdaten und Auslöserwert"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-12T00:24:10.203601Z"
-   }
-  },
-  {
-   "symbol": "DTE.DE",
-   "name": "Deutsche Telekom",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "XETR:DTE",
-   "quote": {
-    "price": 24.7,
-    "pct": -7.94,
-    "cur": "EUR",
-    "as_of": "2026-10-11T18:32:59.716116+00:00"
+    "as_of": "2026-10-12T06:34:45.523756+00:00"
    }
   },
   {
@@ -190,35 +202,41 @@
     "price": 49.94,
     "pct": 13.4,
     "cur": "EUR",
-    "as_of": "2026-10-11T18:32:59.716116+00:00"
+    "as_of": "2026-10-12T06:34:45.523756+00:00"
    }
   },
   {
-   "symbol": "1810.HK",
-   "name": "Xiaomi",
-   "score": 60,
+   "symbol": "ZAL.DE",
+   "name": "Zalando",
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+9,7 %",
-     "weight": 45
+     "value": "+4,3 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,4× Durchschnitt",
+     "value": "1,7× Durchschnitt",
      "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
-   "tv_symbol": "HKEX:1810",
+   "tv_symbol": "XETR:ZAL",
    "quote": {
-    "price": 25.96,
-    "pct": 9.72,
-    "cur": "HKD",
-    "as_of": "2026-10-11T18:32:59.716116+00:00"
+    "price": 23.8,
+    "pct": 4.34,
+    "cur": "EUR",
+    "as_of": "2026-10-12T06:34:45.523756+00:00"
    }
   }
  ]
