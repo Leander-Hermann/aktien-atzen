@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-13T18:20:49.031802Z",
+  "generated_at": "2026-10-13T19:20:42.723378Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 111,
-  "with_quote_data": 60,
+  "symbols_total": 112,
+  "with_quote_data": 56,
   "sources": [
    "watchlist",
    "videos",
@@ -21,23 +21,23 @@
  },
  "items": [
   {
-   "symbol": "DTE.DE",
-   "name": "Deutsche Telekom",
-   "score": 90,
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-7,9 %",
+     "value": "-10,1 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
+     "value": "1,8× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -46,71 +46,43 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:DTE",
+   "tv_symbol": "KRX:000660",
    "quote": {
-    "price": 24.98,
-    "pct": -7.94,
-    "cur": "EUR",
-    "as_of": "2026-10-13T06:36:14.664233+00:00"
+    "price": 1443000.0,
+    "pct": -10.09,
+    "cur": "KRW",
+    "as_of": "2026-10-13T18:42:14.604463+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Deutsche Telekom mit auffälliger Kursbewegung",
-    "why_now": "Die Aktie der Deutschen Telekom fiel um 7,94 % auf 24,98 EUR. Dabei lag das Handelsvolumen beim 2,6-Fachen des Durchschnitts, zudem wurden 2 Videos in 3 Tagen erwähnt. Ursache unklar.",
+    "headline": "SK Hynix fällt um 10,1 % bei hohem Volumen",
+    "why_now": "Die Aktie von SK Hynix fiel um 10,1 % auf 1.443.000 KRW, begleitet von einem Volumen von 1,8× des Durchschnitts. Ursache unklar. Zwei Video-Erwähnungen in drei Tagen könnten zusätzliche Aufmerksamkeit auf den Wert gelenkt haben.",
     "watch_next": [
-     "Kursentwicklung beobachten",
-     "Handelsvolumen beobachten",
-     "Weitere Video-Erwähnungen beobachten"
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-13T07:20:37.720834Z"
+    "generated_at": "2026-10-13T19:20:42.723378Z"
    }
   },
   {
-   "symbol": "SZG.DE",
-   "name": "Salzgitter",
-   "score": 60,
-   "priority": "medium",
+   "symbol": "005930.KS",
+   "name": "Samsung Electronics",
+   "score": 70,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+13,4 %",
+     "value": "-7,4 %",
      "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "tv_symbol": "XETR:SZG",
-   "quote": {
-    "price": 48.84,
-    "pct": 13.4,
-    "cur": "EUR",
-    "as_of": "2026-10-13T06:36:14.664233+00:00"
-   }
-  },
-  {
-   "symbol": "ZAL.DE",
-   "name": "Zalando",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,3 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
+     "value": "1,6× Durchschnitt",
      "weight": 15
     },
     {
@@ -120,12 +92,89 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:ZAL",
+   "tv_symbol": "KRX:005930",
    "quote": {
-    "price": 24.14,
-    "pct": 4.34,
-    "cur": "EUR",
-    "as_of": "2026-10-13T06:36:14.664233+00:00"
+    "price": 232000.0,
+    "pct": -7.39,
+    "cur": "KRW",
+    "as_of": "2026-10-13T18:42:14.604463+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Samsung Electronics fällt bei erhöhtem Handelsvolumen",
+    "why_now": "Die Aktie von Samsung Electronics verlor 7,4 % auf 232000 KRW. Das Handelsvolumen lag beim 1,6-Fachen des Durchschnitts. Zudem wurde die Aktie in den vergangenen drei Tagen in einem Video erwähnt. Ursache unklar. Ein Zusammenhang zwischen der erhöhten Aufmerksamkeit und der Kursbewegung könnte bestehen, ist durch die Daten aber nicht belegt.",
+    "watch_next": [
+     "Kursentwicklung und Handelsvolumen",
+     "Weitere Video-Erwähnungen",
+     "Neue Daten zur Aktie"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-13T19:20:42.723378Z"
+   }
+  },
+  {
+   "symbol": "UNH",
+   "name": "UnitedHealth",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,8× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 378.008,
+    "pct": -0.13,
+    "cur": "USD",
+    "as_of": "2026-10-13T18:42:14.604463+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-13",
+    "distance_days": 0,
+    "zeit": "bmo"
+   }
+  },
+  {
+   "symbol": "MU",
+   "name": "Micron Technology",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,2 %",
+     "weight": 30
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 937.781,
+    "pct": -5.18,
+    "cur": "USD",
+    "as_of": "2026-10-13T18:42:14.604463+00:00"
    }
   }
  ]
