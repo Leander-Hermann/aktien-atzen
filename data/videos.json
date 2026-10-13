@@ -1,6 +1,1075 @@
 {
- "updated": "2026-10-13T06:36:14.664233+00:00",
+ "updated": "2026-10-13T18:42:14.604463+00:00",
  "videos": [
+  {
+   "channel": "Fundamentalanalyse mit Egmond",
+   "playlist": "Fundamentalanalyse",
+   "id": "DpbDS3UHiOE",
+   "title": "SpaceX, OpenAI, SK Hynix, Infineon, Telekom, LVMH – Euer Egmond vom 13.10.2026",
+   "date": "20261013",
+   "url": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+   "thumbnail": "https://i.ytimg.com/vi/DpbDS3UHiOE/hqdefault.jpg",
+   "summarized_at": "2026-10-13T18:42:14.604249+00:00",
+   "summary": "Im Mittelpunkt steht ein breiter Rückschlag bei Chip-, KI- und Rechenzentrumswerten: Hohe Zinsen, auslaufende Aktienrückkäufe und der technologische Vorstoß des chinesischen Speicherchipherstellers CXMT verschärfen die Neubewertung. Der Host bleibt bei zahlreichen Technologie-, Auto- und Luxuswerten sehr skeptisch, während er US-Raffinerien bevorzugt. Gold stabilisiert sich, der Ölmarkt bleibt geopolitisch nervös, und die Märkte warten gespannt auf die Zahlen von ASML und TSMC.",
+   "items": [
+    {
+     "name": "SpaceX",
+     "ticker": null,
+     "note": "SpaceX strebt eine Finanzierung von 40 Mrd. US-Dollar für Nvidia-Chips an; die Aktie gibt nach. Egmond hält das Unternehmen für kolossal überbewertet.",
+     "figures": "40 Mrd. US-Dollar Finanzierung; geplantes IPO mit 85 Mrd. US-Dollar Bewertung",
+     "tip": "Verkauf wegen Überbewertung.",
+     "einordnung": "Meine Einschätzung: SpaceX verbindet hohe operative Ambitionen mit einem erheblichen Finanzierungsbedarf, während eine belastbare Börsenbewertung noch nicht vorliegt. Das macht die Aktie besonders anfällig für Enttäuschungen bei Wachstum und Kapitalbeschaffung.",
+     "detail": "Der kritische Punkt ist die Finanzierungskette: Hohe Investitionen in Chips und Infrastruktur setzen voraus, dass künftige Erlöse schnell genug wachsen, um den Kapitalbedarf zu rechtfertigen. In einem Umfeld steigender Renditen wird dieses Modell zusätzlich belastet, weil spekulative Wachstumsbewertungen stärker über den Diskontsatz reagieren als etablierte Cashflow-Unternehmen. Der Host unterstellt damit, dass nicht die langfristige Vision, sondern die Finanzierung und der gegenwärtige Preis das entscheidende Risiko darstellen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 188,
+     "t": "03:08",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=188s"
+    },
+    {
+     "name": "Iran und Ölpreis",
+     "ticker": null,
+     "note": "Iran verstärkt nach Darstellung des Hosts die Angriffe auf Tanker in der Straße von Hormus. Der Ölpreis gerät dadurch auf Berg- und Talfahrt, während der DAX zeitweise einbricht.",
+     "figures": "DAX knapp über 25.000 Punkte",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Die Straße von Hormus bleibt ein klassischer geopolitischer Risikokanal, bei dem schon die Möglichkeit einer längeren Störung die Preise und Risikoaufschläge bewegen kann. Für Aktien ist weniger der erste Ölpreissprung als dessen Dauer problematisch.",
+     "detail": "Eine anhaltende Beeinträchtigung des Schiffsverkehrs würde nicht nur den Rohölpreis, sondern auch Tankerraten, Versicherungsprämien und Inflationserwartungen beeinflussen. Die Tages-News verweisen auf einen Tankerbrand und neue US-Drohungen; damit ist der Konflikt nicht bloß ein lokales Ereignis, sondern ein potenzieller Belastungsfaktor für globale Lieferketten. Gleichzeitig können zusätzliche OPEC+-Mengen und eine schwächere Nachfrage den Preisdruck teilweise begrenzen.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News: Hormus-Konflikt eskaliert mit Tankerbrand und US-Drohungen",
+       "url": "",
+       "bezug": "Die Meldung beschreibt steigende Risiken für Ölpreise, Tankerraten und Versicherungsprämien infolge einer möglichen Störung der Schifffahrt."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 327,
+     "t": "05:27",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=327s"
+    },
+    {
+     "name": "Porsche",
+     "ticker": "P911.DE",
+     "note": "Porsche nennt Kostensenkungen, 20 Prozent weniger Modellvarianten und mittelfristig einen Umsatz von 41 bis 45 Mrd. Euro. Egmond hält diese Ziele für heiße Luft und spricht sich klar gegen die Aktie aus.",
+     "figures": "Modellvarianten -20%; mittelfristiger Umsatz 41–45 Mrd. Euro; erwarteter Umsatz 2026: 35,05 Mrd. Euro; Preis der teuersten Modelle plus 20% auf 330.000 Euro; operative Marge 10–15%",
+     "tip": "Klarer Verkauf.",
+     "einordnung": "Meine Einschätzung: Die geplante Straffung der Modellpalette kann zwar Kosten senken, sie löst aber nicht automatisch die Absatz- und China-Probleme der Marke. Die Glaubwürdigkeit hängt daher stärker an der Umsetzung als an den ambitionierten Zielgrößen.",
+     "detail": "Porsche steht exemplarisch für das Dilemma europäischer Premiumhersteller: Preissteigerungen und Exklusivität sollen die Marge schützen, können aber in einer schwächeren Nachfragephase die Stückzahlen zusätzlich drücken. Weniger Varianten vereinfachen Produktion und Vertrieb, bergen jedoch das Risiko, Kundensegmente zu verlieren. Der Bärenfall entsteht, wenn die Marke zwar höhere Preise verlangt, diese aber nicht mehr durch ausreichende Nachfrage und Produktdifferenzierung durchsetzen kann.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 361,
+     "t": "06:01",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=361s",
+     "tv_symbol": "XETR:P911"
+    },
+    {
+     "name": "Mercedes-Benz",
+     "ticker": "MBG.DE",
+     "note": "Mercedes meldet schwache Absatzdaten für das dritte Quartal. Besonders deutlich fällt das Geschäft in China und bei hochpreisigen Fahrzeugen zurück.",
+     "figures": "Q3-Absatz Pkw und Vans: 491.700; Autosparte: 407.200, minus 8%; China: 86.800, minus 31%; hochpreisige Fahrzeuge: minus 21%",
+     "tip": "Klarer Verkauf.",
+     "einordnung": "Meine Einschätzung: Der Rückgang im chinesischen Markt trifft Mercedes an einer besonders profitablen Stelle der Modellpalette. Das spricht eher für ein strukturelles Wettbewerbs- und Nachfrageproblem als für eine normale saisonale Delle.",
+     "detail": "Die Kombination aus rückläufigem China-Absatz und einem stärkeren Einbruch bei hochpreisigen Fahrzeugen ist für die Ergebnisqualität ungünstig: Gerade die teuersten Modelle tragen überproportional zur Marge bei. Gleichzeitig verschärfen chinesische Hersteller den Wettbewerb bei Elektrofahrzeugen und im Premiumsegment. Der Host setzt implizit darauf, dass Kostensenkungen die fehlende Volumendynamik kurzfristig nicht kompensieren können.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 524,
+     "t": "08:44",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=524s",
+     "tv_symbol": "XETR:MBG"
+    },
+    {
+     "name": "Samsung Electronics",
+     "ticker": "005930.KS",
+     "note": "Samsung meldet vorläufig starke Quartalszahlen, doch Egmond bleibt wegen der hohen Speicherchipmargen und des ausgelaufenen Aktienrückkaufprogramms skeptisch.",
+     "figures": "Umsatz 195 Billionen koreanische Won, 2,3-mal Vorjahr; operativer Gewinn 107 Billionen Won beziehungsweise 80,1 Mrd. US-Dollar, 8,8-mal Vorjahr",
+     "tip": "Klarer Verkauf.",
+     "einordnung": "Meine Einschätzung: Die Zahlen zeigen eine außergewöhnliche Hochphase, nicht zwingend ein dauerhaftes Ertragsniveau. Bei Speicherchips ist die Zyklik so ausgeprägt, dass sehr hohe Margen eher Warnsignal als Sicherheitsgarantie sein können.",
+     "detail": "Der entscheidende Mechanismus ist die Angebotsreaktion: Hohe Gewinne ziehen zusätzliche Kapazitäten an und fördern Preisdruck, sobald sich die Nachfrage normalisiert. Das Ende eines Rückkaufprogramms nimmt der Aktie zudem einen technischen Nachfragefaktor. Der Host verbindet daher die hervorragenden aktuellen Zahlen mit der Annahme, dass die Gewinnspitze bereits weitgehend eingepreist ist.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 722,
+     "t": "12:02",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=722s",
+     "tv_symbol": "KRX:005930"
+    },
+    {
+     "name": "TSMC",
+     "ticker": "TSM",
+     "note": "TSMC steigert den September-Umsatz deutlich. Egmond verweist zugleich auf die anstehenden Quartalszahlen am Donnerstag.",
+     "figures": "September-Umsatz 511,86 Mrd. Taiwan-Dollar, plus 54,6%",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: TSMC verfügt im Vergleich zu Speicherchipherstellern über eine robustere Stellung in der Fertigungskette, bleibt aber vom Investitionszyklus der KI-Kunden abhängig. Die bevorstehenden Zahlen sind deshalb ein wichtiger Test, ob die Nachfrage tatsächlich in nachhaltige Aufträge übergeht.",
+     "detail": "Die Umsatzdynamik spricht zunächst für eine starke Auslastung der modernen Fertigung. Der Markt dürfte jedoch weniger auf das vergangene Wachstum als auf Kapazitätspläne, Kundenkonzentration und die Nachhaltigkeit der KI-Nachfrage achten. Sollte die Finanzierung von Rechenzentren schwieriger werden, könnte der bisherige Investitionszyklus zeitverzögert auch die Auftragslage der Auftragsfertiger erreichen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 770,
+     "t": "12:50",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=770s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "SK Hynix",
+     "ticker": "000660.KS",
+     "note": "Die Aktie fällt trotz guter Nachrichten, nachdem das Aktienrückkaufprogramm vorzeitig ausgelaufen ist. Egmond verweist außerdem auf ein KGV von 2,7 bis 3 und eine aus seiner Sicht nicht nachhaltige operative Marge von 75 bis 80 Prozent.",
+     "figures": "KGV 2,7–3; operative Marge 75–80%; seit 17. Juli von 1.830.000 auf 1.443.000 Won, minus 21%",
+     "tip": "Klarer Verkauf.",
+     "einordnung": "Meine Einschätzung: Das niedrige KGV wirkt bei einem stark zyklischen Speicherhersteller weniger beruhigend, weil es auf dem Gewinnhoch berechnet sein kann. Der Kursrückgang trotz guter Nachrichten ist ein Hinweis darauf, dass der Markt die Gewinnqualität und den nächsten Zyklus bereits hinterfragt.",
+     "detail": "Bei Speicherchips sind Margen von 75 bis 80 Prozent historisch außerordentliche Zustände; der Host stellt ihnen übliche Größenordnungen von 15 bis 30 Prozent gegenüber. Diese Differenz erklärt, weshalb ein niedriger Bewertungsmultiplikator nicht automatisch günstig bedeutet. Zusätzlich verschärft CXMT die Sorge, dass chinesische Anbieter bei einer technologischen Aufholbewegung den Wettbewerb und damit die Preise beeinflussen könnten.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "onvista: Q3-Berichtssaison startet: China setzt Halbleiter-Aktien unter Druck",
+       "url": "",
+       "bezug": "Das Tagesvideo beschreibt ebenfalls den Druck chinesischer Konkurrenz auf Speicherchipwerte wie SK Hynix, SanDisk und Micron."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 792,
+     "t": "13:12",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=792s",
+     "tv_symbol": "KRX:000660"
+    },
+    {
+     "name": "DAX und Zinsen",
+     "ticker": "^GDAXI",
+     "note": "Egmond führt den Rückgang des DAX unter 25.000 Punkte auf den Zinsanstieg zurück.",
+     "figures": "DAX unter 25.000 Punkte",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Steigende langfristige Renditen setzen vor allem hoch bewertete Wachstumswerte unter Druck, können aber auch zyklische Aktien über den Diskontsatz belasten. Der aktuelle Marktdatenstand von 25.260 Punkten zeigt, dass der Index diese Schwelle zuletzt wieder knapp überschritten hat.",
+     "detail": "Der DAX reagiert nicht nur auf deutsche Konjunkturdaten, sondern auf globale Liquiditäts- und Bewertungsbedingungen. Eine Renditebewegung von mehr als einem Prozentpunkt seit Jahresbeginn verändert die relative Attraktivität von Aktien gegenüber Anleihen und erhöht die Finanzierungskosten. Das erklärt, weshalb selbst gute Unternehmensnachrichten in dieser Phase weniger Kurswirkung entfalten.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 882,
+     "t": "14:42",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=882s",
+     "tv_symbol": "XETR:DAX"
+    },
+    {
+     "name": "Broadcom",
+     "ticker": "AVGO",
+     "note": "Broadcom arbeitet an einem Kredit von mehr als 50 Mrd. US-Dollar für OpenAI; ein ähnlicher Deal mit Anthropic soll 60 Mrd. US-Dollar umfassen. Egmond sieht darin Round Tripping und bleibt klar negativ.",
+     "figures": "Kredit über 50 Mrd. US-Dollar für OpenAI; ähnlicher Deal mit Anthropic über 60 Mrd. US-Dollar",
+     "tip": "Klarer Verkauf.",
+     "einordnung": "Meine Einschätzung: Die Finanzierungskonstruktionen verdienen eine besonders kritische Prüfung, weil sie Nachfrage und Finanzierung innerhalb desselben KI-Ökosystems verknüpfen. Solange daraus keine nachhaltig zahlungsfähigen Endkundenumsätze entstehen, bleibt das Bewertungsrisiko hoch.",
+     "detail": "Round Tripping bezeichnet hier die Gefahr, dass Kapital über mehrere Vertragspartner zirkuliert und dadurch eine stärkere Nachfrage suggeriert, als am Ende aus operativen Cashflows gedeckt ist. Der Bullenfall wäre eine echte Beschleunigung bei KI-Anwendungen; der Bärenfall eine Kettenreaktion aus hohen Investitionen, steigenden Finanzierungskosten und ausbleibenden Renditen. Der Host setzt voraus, dass die Kapitalintensität des KI-Ausbaus schneller wächst als dessen Ertragsbasis.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 941,
+     "t": "15:41",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=941s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "OpenAI",
+     "ticker": null,
+     "note": "Der Umsatz lag Ende September annualisiert bei 50 Mrd. US-Dollar und damit unter den erwarteten 70 Mrd. US-Dollar. Ein später eingeräumtes Missverständnis relativierte die ursprüngliche Darstellung.",
+     "figures": "50 Mrd. US-Dollar annualisierter Umsatz; Erwartung 70 Mrd. US-Dollar",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Bei einem Unternehmen mit derart hohen Infrastruktur- und Finanzierungserwartungen ist die Qualität des Umsatzwachstums entscheidender als eine einzelne annualisierte Zahl. Die Unklarheit über die Datenlage erhöht zusätzlich das Vertrauensrisiko.",
+     "detail": "Annualisierte Umsätze können einen kurzen Zeitraum auf das Gesamtjahr hochrechnen und sind daher anfällig für Verzerrungen durch Wachstumstempo, Einmaleffekte und Vertragsstruktur. Für die Bewertung wäre entscheidend, wie viel davon wiederkehrend ist und welche Kosten für Rechenleistung dagegenstehen. Die Tages-News erwähnen außerdem Warnungen vor weiteren bislang unentdeckten KI-Vorfällen; solche Risiken können die Monetarisierung und die regulatorische Akzeptanz bremsen.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News: OpenAI warnt vor weiteren unentdeckten KI-Vorfällen",
+       "url": "",
+       "bezug": "Die Meldung verweist auf mögliche weitere KI-Vorfälle, die neben der Umsatzentwicklung ein zusätzliches Betriebs- und Vertrauensrisiko darstellen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 999,
+     "t": "16:39",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=999s"
+    },
+    {
+     "name": "US-Raffinerien",
+     "ticker": null,
+     "note": "Nach Trumps Aussage, die USA würden Iran vor den Halbzeitwahlen nicht angreifen, gibt der Ölpreis nach. Egmond bevorzugt US-Raffinerieaktien wie Valero, Marathon Petroleum und Phillips 66.",
+     "figures": "",
+     "tip": "Valero, Marathon Petroleum und Phillips 66 kaufen.",
+     "einordnung": "Meine Einschätzung: Raffinerien können von einer günstigen Differenz zwischen Rohölkosten und Produktpreisen profitieren, sind aber stark von Margen, Lagerbeständen und der Nachfrage nach Benzin und Diesel abhängig. Der Ansatz ist deshalb eher ein zyklischer Handelsgedanke als ein defensives Öl-Investment.",
+     "detail": "Der Host setzt auf die relative Position der Raffinerien: Ein fallender Rohölpreis kann ihre Inputkosten senken, während die Produktpreise zunächst stabil bleiben. Dieser Vorteil kann jedoch rasch verschwinden, wenn die Crack-Spreads schrumpfen oder die Konjunktur die Kraftstoffnachfrage belastet. Geopolitische Entspannung wäre für die Rohölseite positiv, aber nicht automatisch für jede Raffinerieaktie.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 1076,
+     "t": "17:56",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1076s"
+    },
+    {
+     "name": "Deutsche Telekom",
+     "ticker": "DTE.DE",
+     "note": "SpaceX kauft in den USA Niedrigband-Spektrum für den Mobilfunk. Daraufhin geraten T-Mobile US und die Deutsche Telekom unter Druck; Egmond mahnt bei beiden Werten zu großer Vorsicht.",
+     "figures": "",
+     "tip": "Bei der Deutschen Telekom und T-Mobile US sehr vorsichtig sein.",
+     "einordnung": "Meine Einschätzung: Der Kursdruck ist zunächst vor allem eine Erwartungsreaktion auf möglichen Wettbewerb, nicht der Beleg für eine unmittelbar verschlechterte Geschäftsentwicklung. Entscheidend wird sein, ob SpaceX tatsächlich eine wettbewerbsfähige Netzqualität und Kostenstruktur aufbauen kann.",
+     "detail": "Niedrigbandspektrum ist wegen seiner Reichweite attraktiv, doch der Besitz von Frequenzen ersetzt noch kein dichtes und leistungsfähiges Netz. Für etablierte Betreiber entsteht das Risiko zunächst über höhere Investitionen, Preisdruck und steigende Kundenakquisitionskosten. Der Markt preist solche Bedrohungen oft früh ein; historisch zeigt sich aber, dass neue Netzbetreiber bei Skalierung und Profitabilität vor hohen Hürden stehen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 1135,
+     "t": "18:55",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1135s",
+     "tv_symbol": "XETR:DTE"
+    },
+    {
+     "name": "Trump und Diesel-Lieferungen",
+     "ticker": null,
+     "note": "Trump behauptet, Putin habe Diesel-Lieferungen zugesagt. Egmond bezeichnet diese Darstellung als Fake News.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Solche ungeklärten politischen Aussagen können kurzfristig Preise bewegen, besitzen aber ohne überprüfbare Vereinbarungen nur geringe fundamentale Aussagekraft. Anleger sollten zwischen politischer Rhetorik und tatsächlich verfügbaren Liefermengen unterscheiden.",
+     "detail": "Für den Energiemarkt zählen letztlich Lieferverträge, Logistik, Sanktionen und die tatsächliche Freigabe von Mengen. Eine bloße politische Ankündigung verändert diese Faktoren nicht automatisch. Der Host warnt damit vor einer typischen Schlagzeilenreaktion, bei der Marktteilnehmer eine behauptete Entspannung vorwegnehmen, obwohl die Umsetzung offen ist.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 1218,
+     "t": "20:18",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1218s"
+    },
+    {
+     "name": "Siemens Energy und Infineon",
+     "ticker": "IFX.DE",
+     "note": "Siemens Energy gehört im DAX zu den Gewinnern, während Infineon als größter Verlierer genannt wird.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Die gegenläufige Kursreaktion unterstreicht, wie stark der Markt derzeit zwischen strukturellem Infrastrukturwachstum und zyklischer Chipabhängigkeit unterscheidet. Infineon bleibt damit besonders empfindlich gegenüber einer Neubewertung der Halbleiternachfrage.",
+     "detail": "Siemens Energy profitiert in der Wahrnehmung stärker von Netzausbau und Energiewende, während Infineon in mehreren zyklischen Endmärkten von Investitions- und Automobiltrends abhängt. Die Reaktion ist daher nicht nur unternehmensspezifisch, sondern spiegelt eine Umschichtung innerhalb des deutschen Technologiesektors wider. Bei Infineon verschärft der CXMT-Schock die ohnehin vorhandene Skepsis gegenüber Chipwerten.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1312,
+     "t": "21:52",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1312s",
+     "tv_symbol": "XETR:IFX"
+    },
+    {
+     "name": "Chip- und KI-Aktien",
+     "ticker": null,
+     "note": "Chip- und KI-Aktien führen die Verliererliste im Nasdaq 100 an. Banken haben zudem Schwierigkeiten, Anleihen für Rechenzentren zu platzieren.",
+     "figures": "38 Mrd. US-Dollar Anleihevolumen; 5 Mrd. US-Dollar zu 11% Zins",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Die Finanzierungskosten sind hier der zentrale Belastungsfaktor, weil Rechenzentren enorme Vorleistungen benötigen. Der Marktdatenstand mit einem Nasdaq-100-Future von 30.762 Punkten und minus 0,44 Prozent passt zu diesem vorsichtigeren Risikoappetit.",
+     "detail": "Wenn Anleihen nur zu deutlich höheren Zinsen platziert werden können, verschlechtert sich die Wirtschaftlichkeit neuer Rechenzentren, bevor überhaupt ein Nachfrageproblem sichtbar wird. Das betrifft die gesamte Kette von Chipdesignern über Ausrüster bis zu Betreibern. Die Tages-News sprechen ebenfalls von einem KI-Ausverkauf, betonen aber, dass die langfristige Nachfrage nach Rechenleistung bestehen bleibt; genau diese Spannung zwischen strukturellem Trend und kurzfristiger Finanzierung ist der Kern der Neubewertung.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News: Chip- und Speicherwerte rutschen im KI-Ausverkauf ab",
+       "url": "",
+       "bezug": "Die Meldung beschreibt das erhöhte Risiko einer Neubewertung des KI-Investmentthemas trotz weiterhin hoher langfristiger Nachfrage nach Rechenleistung."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 1368,
+     "t": "22:48",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1368s"
+    },
+    {
+     "name": "LVMH",
+     "ticker": "MC.PA",
+     "note": "Der Umsatz der Sparte Mode und Lederwaren sinkt im dritten Quartal um 3 Prozent auf 8,245 Mrd. Euro; organisch beträgt der Rückgang 5 Prozent. Besonders schwach entwickelt sich Asien ohne Japan.",
+     "figures": "Umsatz 8,245 Mrd. Euro; minus 3%; organisch minus 5%; Asien ohne Japan organisch minus 5%",
+     "tip": "Skeptisch bleiben; der Host erwartet eine Talfahrt.",
+     "einordnung": "Meine Einschätzung: LVMH bleibt qualitativ stark, aber die Abhängigkeit vom chinesischen Luxuskonsum ist derzeit ein klarer Ergebnis- und Bewertungsgegenwind. Bei Luxuswerten kann eine längere Wachstumsdelle zudem zu einer überproportionalen Multiple-Kompression führen.",
+     "detail": "Die Schwäche in Asien ist nicht nur ein regionales Problem, sondern berührt die zentrale Wachstumserzählung des Luxussegments. Preissteigerungen können die Margen zunächst stützen, verlieren aber ihre Wirkung, wenn chinesische Kunden Käufe verschieben oder auf günstigere Marken ausweichen. Der Host unterstellt daher, dass die frühere Preissetzungsmacht die fehlende Volumendynamik nicht unbegrenzt kompensieren kann.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 1515,
+     "t": "25:15",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1515s",
+     "tv_symbol": "EURONEXT:MC"
+    },
+    {
+     "name": "CXMT",
+     "ticker": null,
+     "note": "Der chinesische Speicherchiphersteller ChangXin Memory Technologies kündigt einen technologischen Durchbruch an. Neue Chips sollen Ende 2026 auf den Markt kommen; daraufhin geraten SK Hynix und Samsung unter Druck.",
+     "figures": "Neue Chips ab Ende 2026 angekündigt",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Eine Ankündigung ist noch kein Beweis für industrielle Ausbeute oder wettbewerbsfähige Kosten, sie verändert aber die Erwartungen an die künftige Angebotsstruktur. Genau deshalb reagiert der Markt bereits vor dem tatsächlichen Verkaufsstart.",
+     "detail": "Der mögliche Durchbruch ist für den Speichersektor deshalb wichtig, weil zusätzliche chinesische Kapazitäten die bisherige Konzentration auf wenige große Anbieter aufbrechen könnten. Selbst wenn CXMT technisch zunächst hinter den etablierten Produzenten zurückbleibt, kann die Aussicht auf mehr Angebot die Preissetzungsmacht und die hohen Margen der westlichen und koreanischen Anbieter begrenzen. Die Reaktion ist damit ein Beispiel für antizipierte Konkurrenz: Der Markt diskontiert den möglichen Preis- und Margendruck lange vor den ersten realen Absatzdaten.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "onvista: Q3-Berichtssaison startet: China setzt Halbleiter-Aktien unter Druck",
+       "url": "",
+       "bezug": "Das Tagesvideo ordnet die chinesische Konkurrenz als Belastung für Speicherchipwerte wie SK Hynix, SanDisk und Micron ein."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 1696,
+     "t": "28:16",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1696s"
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "note": "Egmond verweist auf eine normale EBIT-Marge von 28 Prozent und hält die aktuell deutlich höheren Margen im Speicherchipgeschäft für astronomisch und nicht nachhaltig. CXMT verschärfe den Wettbewerbsdruck.",
+     "figures": "EBIT-Marge in normalen Zeiten: 28%",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Micron ist ein gutes Beispiel dafür, warum ein scheinbar günstiges KGV bei Speicherwerten am Gewinnhoch gefährlich sein kann. Die entscheidende Frage ist nicht die aktuelle Marge, sondern ihr Niveau über den gesamten Zyklus.",
+     "detail": "Speicherchips sind weitgehend standardisierte Produkte; dadurch schlagen kleine Veränderungen bei Angebot und Nachfrage stark auf die Preise durch. Hohe Margen ziehen Kapazität an, während neue Wettbewerber wie CXMT zusätzlich auf Marktanteile drängen können. Der Host argumentiert damit im Kern zyklisch: Die Gewinnschätzungen müssen mit normalisierten Margen geprüft werden, nicht mit den außergewöhnlichen Spitzenwerten.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 1948,
+     "t": "32:28",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1948s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "US-Inflationserwartung",
+     "ticker": null,
+     "note": "Die Inflationserwartung für die kommenden fünf Jahre stagniert bei 2,34 Prozent.",
+     "figures": "2,34% für die nächsten fünf Jahre",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Eine stabile Inflationserwartung spricht gegen eine völlig entgleiste Preisdynamik, nimmt den langfristigen Renditedruck aber nicht automatisch aus dem Markt. Entscheidend ist, warum die Anleiherenditen steigen, obwohl die Erwartungen relativ verankert bleiben.",
+     "detail": "Die Konstellation deutet eher auf reale Rendite- oder Fiskalrisiken als auf einen reinen Inflationsschock hin. Für Wachstumsaktien ist das ebenfalls belastend, weil höhere reale Diskontsätze künftige Gewinne stärker abwerten. Der Host stellt damit indirekt die Frage, ob die Aktienmärkte einen dauerhaft höheren risikofreien Zins noch ausreichend eingepreist haben.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 2017,
+     "t": "33:37",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=2017s"
+    },
+    {
+     "name": "US-Staatsanleihen, zehnjährige Rendite",
+     "ticker": null,
+     "note": "Die Rendite zehnjähriger US-Anleihen steigt auf 5,2 Prozent, nachdem sie seit Jahresbeginn von 4,2 Prozent um mehr als 100 Basispunkte zugelegt hat.",
+     "figures": "5,2% aktuell; 4,2% zu Jahresbeginn; Anstieg um mehr als 100 Basispunkte",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Ein solcher Renditeanstieg ist für hoch bewertete Technologieaktien ein ernstzunehmender Bewertungsgegenwind. Der Marktdatenstand mit Fear & Greed bei 44,7 und im Bereich 'fear' bestätigt das vorsichtigere Sentiment.",
+     "detail": "Steigende Treasury-Renditen wirken doppelt: Sie erhöhen den Diskontsatz für langfristige Unternehmensgewinne und machen Anleihen als Alternative attraktiver. Wenn die Bewegung zudem durch hohe staatliche Finanzierung, ein größeres Angebot an Anleihen oder eine veränderte Fed-Erwartung getragen wird, kann sie länger anhalten als ein kurzfristiger Inflationsschub. Das erklärt die Breite des Drucks auf KI-, Chip- und andere Wachstumswerte.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 2031,
+     "t": "33:51",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=2031s"
+    },
+    {
+     "name": "Euro-Dollar",
+     "ticker": "EURUSD=X",
+     "note": "Egmond bleibt wegen möglicher Zinserhöhungen der Fed bärisch für den Euro gegenüber dem US-Dollar.",
+     "figures": "",
+     "tip": "Bärisch für den Euro beziehungsweise Euro verkaufen.",
+     "einordnung": "Meine Einschätzung: Ein höherer US-Zinspfad würde den Dollar grundsätzlich stützen, doch der Wechselkurs hängt zusätzlich von Wachstum, Fiskalpolitik und Risikoaversion ab. Die Aussage ist daher plausibel, aber stark von der tatsächlichen Fed-Kommunikation abhängig.",
+     "detail": "Ein Zinsvorteil der USA kann Kapital in Dollar-Anlagen lenken und den Euro belasten. Gleichzeitig würde eine ausgeprägte globale Risikoaversion den Dollar als sicheren Hafen unterstützen, während ein stärkerer US-Konjunkturrückgang den Effekt wieder drehen könnte. Der Host setzt somit auf eine Kombination aus Zinsdifferenz und defensiver Dollar-Nachfrage.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 2079,
+     "t": "34:39",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=2079s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "WTI-Öl",
+     "ticker": "CL=F",
+     "note": "WTI bewegt sich zuletzt relativ seitwärts. Der Host betont, dass die USA weitgehend unabhängig von Ölimporten seien, während Europa stärker von Energieimporten abhänge.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Die unterschiedliche Importabhängigkeit macht Europa konjunkturell empfindlicher gegenüber einem anhaltenden Ölpreisschock. Der aktuelle Brent-Stand von 105,90 US-Dollar und minus 0,70 Prozent zeigt zugleich, dass der Markt geopolitische Risiken nicht geradlinig einpreist.",
+     "detail": "Die US-Schieferölproduktion reduziert die direkte Abhängigkeit der Vereinigten Staaten, beseitigt aber nicht die globale Preiswirkung eines Hormus-Schocks. Europa bekommt höhere Energiepreise über Importe und industrielle Kosten zu spüren, während die USA eher über globale Preise, Raffineriemargen und Inflation betroffen sind. Die Tages-News nennen niedrige US-Ölreserven und einen höheren OPEC-Nachfrageausblick für 2027 als gegenläufige Faktoren.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News: OPEC erhöht Nachfrageausblick für 2027, US-Ölreserven bleiben niedrig",
+       "url": "",
+       "bezug": "Die Meldung nennt niedrige US-Reserven als kurzfristige Unterstützung und zusätzliche OPEC+-Mengen als möglichen dämpfenden Faktor."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+     "tv_symbol": "TVC:USOIL"
+    },
+    {
+     "name": "Gold",
+     "ticker": "GC=F",
+     "note": "Der Goldpreis hat sich nach den jüngsten Bewegungen stabilisiert.",
+     "figures": "4.171 US-Dollar",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Gold profitiert grundsätzlich von geopolitischer Unsicherheit und Vertrauensfragen, bleibt bei steigenden Realrenditen aber anfällig für Rückschläge. Die Stabilisierung ist daher noch kein Beleg für eine neue geradlinige Aufwärtsbewegung.",
+     "detail": "Der Markt zeigt derzeit eine ungewöhnliche Kombination aus hoher Unsicherheit und steigenden Renditen. Normalerweise belastet ein höherer realer Zins Gold, während geopolitische Risiken und Zweifel an Währungen dagegenhalten. Diese gegenläufigen Kräfte erklären, warum der Preis trotz des Zinsdrucks stabil bleibt, aber auch nicht zwangsläufig sofort weiterläuft.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+     "tv_symbol": "TVC:GOLD"
+    },
+    {
+     "name": "Silber",
+     "ticker": "SI=F",
+     "note": "Silber wird im Ausblick auf die wichtigsten Märkte genannt; eine konkrete Richtungsprognose oder Zahl liegt im Rohmaterial nicht vor.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Silber wäre wegen seiner Doppelrolle als Edel- und Industriemetall stärker von Konjunktur- und Chipinvestitionen abhängig als Gold. Ohne konkrete Host-Aussage bleibt eine Richtungsbewertung hier bewusst offen.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+     "tv_symbol": "TVC:SILVER"
+    },
+    {
+     "name": "Bitcoin",
+     "ticker": "BTC-USD",
+     "note": "Bitcoin wird im Marktausblick der Sendung genannt; eine konkrete Host-Aussage zur Richtung oder Bewertung liegt im Rohmaterial nicht vor.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Bitcoin reagiert häufig besonders sensibel auf Liquidität, Renditen und Risikoappetit. Im vorliegenden Material gibt es jedoch keine belastbare Aussage, aus der sich ein spezifischer Ausblick ableiten ließe.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+     "tv_symbol": "CRYPTO:BTCUSD"
+    },
+    {
+     "name": "ASML",
+     "ticker": "ASML",
+     "note": "Investoren warten auf die Zahlen von ASML am Mittwochmorgen. Die Aktie wird im Zusammenhang mit dem Rückgang der Chip- und KI-Werte genannt.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: ASML ist ein zentraler Stimmungstest für die Halbleiterbranche, weil Auftragseingang und Ausblick mehr zählen werden als der zurückliegende Umsatz. Eine gute Meldung müsste nicht nur die Nachfrage, sondern auch die Investitionsbereitschaft der Kunden bestätigen.",
+     "detail": "Die Zahlen fallen in eine Phase, in der der Markt zwischen langfristigem KI-Bedarf und kurzfristig schwierigerer Finanzierung unterscheidet. Für ASML sind daher Buchungen, Lieferpläne und Aussagen zur Investitionsplanung der Kunden entscheidend. Eine Enttäuschung könnte den gesamten Ausrüstersektor belasten, während ein überzeugender Ausblick den CXMT- und Zinsdruck zumindest vorübergehend überlagern könnte.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär: Märkte am Morgen",
+       "url": "",
+       "bezug": "Das Tagesvideo nennt ASML neben Micron, Infineon, Deutsche Telekom und LVMH als wichtigen Einzelwert der anstehenden Berichtssaison."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+     "tv_symbol": ""
+    },
+    {
+     "name": "AbbVie",
+     "ticker": "ABBV",
+     "note": "AbbVie wird in der Videobeschreibung als besprochener Wert genannt; im Rohmaterial liegt dazu keine ausgeführte Aussage vor.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Da keine konkrete Host-Aussage, Kennzahl oder Kursmarke vorliegt, ist hier keine belastbare eigene Einordnung über die allgemeine Branchenzuordnung hinaus möglich.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "sonstiges",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+     "tv_symbol": ""
+    },
+    {
+     "name": "S&P 500",
+     "ticker": "^GSPC",
+     "note": "Der S&P 500 wird im Marktausblick der Sendung genannt; im Rohmaterial liegt keine konkrete Host-Prognose vor.",
+     "figures": "S&P-500-Future: 7.852 Punkte, minus 0,07%",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Der nahezu unveränderte Future bei gleichzeitig vorsichtigem Sentiment spricht eher für Konsolidierung als für einen überzeugenden neuen Trend. Die geringe Marktbreite aus dem Tagesvideo mahnt zusätzlich zur Vorsicht beim Stockpicking.",
+     "detail": "Wenn nur ein kleiner Teil der Aktien den Index trägt, kann der Gesamtindex stabil aussehen, obwohl die interne Marktstruktur bereits schwächer wird. Das macht den S&P 500 anfällig für Rückschläge, falls die wenigen großen Technologiegewichte ebenfalls unter Renditedruck geraten. Der Host ordnet den Index damit in ein Umfeld ein, in dem Makro und Marktbreite wichtiger sind als einzelne positive Unternehmensmeldungen.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "onvista: Q3-Berichtssaison startet: China setzt Halbleiter-Aktien unter Druck",
+       "url": "",
+       "bezug": "Das Tagesvideo verweist auf eine schwache Marktbreite, bei der nur rund 30 Prozent der Einzelaktien den Index schlagen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+     "tv_symbol": "SP:SPX"
+    },
+    {
+     "name": "Nasdaq 100",
+     "ticker": "^NDX",
+     "note": "Der Nasdaq 100 wird im Kontext des Einbruchs von Chip- und KI-Aktien behandelt.",
+     "figures": "Nasdaq-100-Future: 30.762 Punkte, minus 0,44%",
+     "tip": "",
+     "einordnung": "Meine Einschätzung: Der Nasdaq 100 ist wegen seiner Konzentration auf Technologie- und KI-Gewichte besonders empfindlich gegenüber steigenden Renditen und Finanzierungssorgen. Der schwächere Future passt daher zum roten Faden der Sendung.",
+     "detail": "Die Bewegung betrifft nicht nur einzelne Halbleiterwerte, sondern die Bewertungslogik des gesamten Wachstumssegments. Sobald der Markt höhere Kapitalkosten und eine langsamere Amortisation von Rechenzentren einpreist, werden die teuersten Zukunftserwartungen zuerst korrigiert. Ein langfristig intakter KI-Trend schließt deshalb eine deutlich volatilere Zwischenphase nicht aus.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE",
+     "tv_symbol": "NASDAQ:NDX"
+    },
+    {
+     "name": "Deutsche Telekom und T-Mobile US",
+     "ticker": null,
+     "note": "SpaceX kauft Niedrigband-Spektrum für den US-Mobilfunk, woraufhin T-Mobile US und die Deutsche Telekom unter Druck geraten. Egmond mahnt bei beiden Unternehmen zu großer Vorsicht.",
+     "figures": "",
+     "tip": "Bei beiden Werten sehr vorsichtig sein.",
+     "einordnung": "Meine Einschätzung: Die Konkurrenzgefahr ist real, aber ihre wirtschaftliche Bedeutung hängt von Netzqualität, Ausbaukosten und Kundengewinnung ab. Der Kursabschlag kann daher schneller kommen als eine tatsächliche Verschlechterung der operativen Kennzahlen.",
+     "detail": "Für T-Mobile US wäre der direkte Wettbewerb in den Vereinigten Staaten relevant; bei der Deutschen Telekom wirkt er zusätzlich über die Beteiligung und die Bewertung des US-Geschäfts. Ein neuer Anbieter müsste Frequenzen, Satelliten- oder Bodeninfrastruktur und Vertrieb gleichzeitig skalieren. Das ist kapitalintensiv und macht die Bedrohung plausibel, aber nicht automatisch kurzfristig profitabel.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "news",
+     "sec": 1135,
+     "t": "18:55",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1135s"
+    }
+   ],
+   "macro": [
+    {
+     "text": "Steigende langfristige US-Renditen von 4,2 auf 5,2 Prozent belasten insbesondere hoch bewertete Technologie- und KI-Aktien.",
+     "sec": 2031,
+     "t": "33:51",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=2031s"
+    },
+    {
+     "text": "Die geopolitische Eskalation rund um Iran und die Straße von Hormus erhöht die Unsicherheit für Ölpreise, Schifffahrt und europäische Aktienmärkte.",
+     "sec": 327,
+     "t": "05:27",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=327s"
+    },
+    {
+     "text": "Der mögliche technologische Vorstoß von CXMT verschärft den strukturellen Wettbewerbsdruck im Speicherchipsektor, obwohl neue Produkte erst Ende 2026 erwartet werden.",
+     "sec": 1696,
+     "t": "28:16",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1696s"
+    },
+    {
+     "text": "Die Finanzierung von Rechenzentren wird schwieriger, weil Banken Anleihen nur zu deutlich höheren Zinsen platzieren können.",
+     "sec": 1368,
+     "t": "22:48",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1368s"
+    },
+    {
+     "text": "Die Inflationserwartungen bleiben mit 2,34 Prozent relativ stabil, während höhere Real- und Nominalrenditen den Bewertungsdruck auf Aktien erhöhen.",
+     "sec": 2017,
+     "t": "33:37",
+     "tlink": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=2017s"
+    }
+   ]
+  },
+  {
+   "channel": "onvista",
+   "playlist": "Börse & Märkte LIVE",
+   "id": "hpNlbenh6Gw",
+   "title": "Q3-Berichtssaison startet: China setzt Halbleiter-Aktien unter Druck",
+   "date": "20261013",
+   "url": "https://www.youtube.com/watch?v=hpNlbenh6Gw",
+   "thumbnail": "https://i.ytimg.com/vi/hpNlbenh6Gw/hqdefault.jpg",
+   "summarized_at": "2026-10-13T18:41:41.217903+00:00",
+   "summary": "Die Q3-Berichtssaison startet mit dem Blick auf US-Banken, während der S&P 500 trotz einer erwarteten Jahresendrallye eine auffallend schwache Marktbreite zeigt. Bei den Halbleiterwerten sorgt der technologische Fortschritt des chinesischen Herstellers CXMT für erheblichen Druck auf SK Hynix, SanDisk und Micron. Gold und Realrenditen bewegen sich nicht mehr im historisch üblichen Gleichlauf, während steigende US-Renditen zum zentralen Risikofaktor für Technologie- und Wachstumswerte werden. Neben den Einzelwerten reicht die Analyse von Salesforce und ASML bis zu LVMH, UnitedHealth, TSMC, Microsoft, Nike, Allianz und SAP.",
+   "items": [
+    {
+     "name": "US-Banken",
+     "ticker": null,
+     "note": "Der Host erwartet zum Start der Berichtssaison überwiegend positive Zahlen von JP Morgan, Bank of America, Citigroup und Goldman Sachs. JP Morgan bezeichnet er als die am besten geführte Bank der Welt.",
+     "figures": "KBW-Bankenindex im Monatsvergleich über 7% gefallen; JP-Morgan-Umsatz 51 Mrd. USD; Goldman-Sachs-EPS 12,90 bis 130 USD; Goldman-Sachs-Umsatz +11%; US-10-Jahres-Rendite über 5,2%",
+     "tip": "",
+     "einordnung": "Die negative Kursreaktion des Bankenindex vor den Zahlen erhöht die Wahrscheinlichkeit einer Erleichterungsreaktion, falls die Ergebnisse die Erwartungen übertreffen. Entscheidend bleiben jedoch Zinsentwicklung, Kapitalmarktgeschäft und Kreditqualität.",
+     "detail": "Der Host setzt implizit darauf, dass die operative Stärke der Großbanken die schwache Kursentwicklung vor den Zahlen überlagern kann. Ein höheres Renditeniveau stützt zwar grundsätzlich das Zinsergebnis, belastet aber gleichzeitig die Bewertung von Anleihen und kann die Nachfrage nach Krediten sowie die Kapitalmarktaktivität bremsen. Die Zahlen sind deshalb weniger ein isolierter Konjunkturindikator als ein Test, ob die Banken die widersprüchlichen Effekte des Zinsumfelds bislang auffangen können.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 270,
+     "t": "04:30",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=270s"
+    },
+    {
+     "name": "S&P 500",
+     "ticker": "^GSPC",
+     "note": "Der S&P 500 verläuft nach einer Sommerrallye bislang ähnlich wie sein historischer Durchschnitt. Der Host erwartet eine mögliche Jahresschlussrallye.",
+     "figures": "Historischer Vergleich über 35 Jahre von 1990 bis 2025",
+     "tip": "",
+     "einordnung": "Das saisonale Muster ist ein hilfreicher Orientierungsrahmen, aber kein Ersatz für Marktbreite und Gewinnrevisionen. Bei einem aktuellen S&P-500-Future von 7.852 Punkten bleibt die Indexstärke zudem stark von wenigen großen Titeln abhängig.",
+     "detail": "Die entscheidende Einschränkung des saisonalen Optimismus liefert die anschließende Analyse der Marktbreite: Ein Index kann nahe am Hoch bleiben, obwohl viele Einzelwerte bereits nachlassen. Das erinnert an späte Marktphasen, in denen die Indexentwicklung zunächst stabil wirkt, während die interne Verfassung schrittweise erodiert. Für eine belastbare Jahresendrallye müsste daher die Beteiligung breiter werden, nicht nur die Gewichtung der Indexschwergewichte weiter steigen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 480,
+     "t": "08:00",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=480s",
+     "tv_symbol": "SP:SPX"
+    },
+    {
+     "name": "Marktbreite",
+     "ticker": null,
+     "note": "Nur rund 30% der Einzelaktien schlagen den Index. Der Host wertet diese extrem schwache relative Marktbreite als Warnsignal für das Stockpicking.",
+     "figures": "Rund 30% der Aktien schlagen den Index",
+     "tip": "",
+     "einordnung": "Eine derart konzentrierte Marktführung macht den Gesamtmarkt anfällig für Rückschläge bei wenigen Schwergewichten. Der aktuelle Fear-and-Greed-Wert von 44,7 signalisiert zudem eher Vorsicht als breite Risikofreude.",
+     "detail": "Schwache Marktbreite bedeutet nicht automatisch, dass der Index unmittelbar fallen muss. Sie zeigt aber, dass die Aufwärtsbewegung weniger robust ist, weil immer weniger Aktien den Trend tragen. Kommt es bei den führenden Technologie- und KI-Werten zu Gewinnmitnahmen, fehlt dem Markt die breite zweite Reihe, die einen solchen Rücksetzer abfedern könnte.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 630,
+     "t": "10:30",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=630s"
+    },
+    {
+     "name": "S&P-500-Chart",
+     "ticker": "^GSPC",
+     "note": "Der S&P 500 konsolidiert unter einer Trendlinie. Bei einem Ausbruch über 7.817 Punkte sieht der Host Potenzial bis in den Bereich von 8.000 Punkten.",
+     "figures": "Aktuell 7.817 Punkte; Kursziel 8.000 Punkte",
+     "tip": "Bei einem Ausbruch über 7.817 Punkte liegt das Kursziel bei 8.000 Punkten.",
+     "einordnung": "Das ist ein klar definiertes prozyklisches Szenario, dessen Aussagekraft durch die schwache Marktbreite begrenzt wird. Der aktuelle S&P-500-Future liegt mit 7.852 Punkten bereits oberhalb der im Video genannten Ausbruchsschwelle.",
+     "detail": "Der charttechnische Ansatz beruht auf einer Fortsetzung des bestehenden Trends nach einer Konsolidierung. Sollte der Ausbruch nur von wenigen Indexschwergewichten getragen werden, wäre das Risiko eines Fehlausbruchs erhöht. Umgekehrt würde ein überzeugender Anstieg über die Schwelle die saisonale These des Hosts technisch bestätigen und den Weg zum genannten Zielbereich öffnen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 769,
+     "t": "12:49",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=769s",
+     "tv_symbol": "SP:SPX"
+    },
+    {
+     "name": "Gold",
+     "ticker": "GC=F",
+     "note": "Die historische Korrelation zwischen Gold und Realrenditen ist nach Einschätzung des Hosts gebrochen. Gold wird derzeit stärker von Zentralbankkäufen, Entdollarisierung und geopolitischen Risiken beeinflusst, ist charttechnisch aber angeschlagen.",
+     "figures": "Um 4.000 USD interessant; mögliches Abverkaufsziel 3.600 bis 3.400 USD; Bruch bei 4.100 USD",
+     "tip": "Kurse um 4.000 USD oder darunter wären für einen Einstieg interessant.",
+     "einordnung": "Der Ansatz trennt sinnvoll zwischen struktureller Nachfrage und kurzfristiger Charttechnik. Laut dem anderen Tagesvideo stabilisierte sich Gold bei 4.171 USD; damit lag der Markt dort noch über der vom Host genannten interessanten Zone.",
+     "detail": "Die Verschiebung der Preistreiber erklärt, warum Gold trotz höherer Realrenditen fest bleiben kann: Zentralbankkäufe und geopolitische Absicherung wirken nicht wie klassische zinssensitive Investmentnachfrage. Gleichzeitig kann ein Anstieg der US-Renditen kurzfristig Liquidität aus allen nicht verzinslichen Anlagen abziehen. Das andere Tagesvideo nennt neben geopolitischen Spannungen auch steigende Renditen von 10-jährigen US-Anleihen bei 5,2% als Belastungsfaktor; daraus ergibt sich ein Spannungsfeld zwischen strukturellem Nachfragefundament und kurzfristigem Zinsdruck.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Euer Egmond",
+       "url": "",
+       "bezug": "Das Tagesvideo beschreibt eine Stabilisierung des Goldpreises bei 4.171 USD und verweist zugleich auf steigende US-Renditen und geopolitische Spannungen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 843,
+     "t": "14:03",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=843s",
+     "tv_symbol": "TVC:GOLD"
+    },
+    {
+     "name": "US-10-Jahres-Rendite",
+     "ticker": "^TNX",
+     "note": "Der Host sieht charttechnisch ein Renditeziel von 5,3%; bei einem Ausbruch wäre ein Anstieg in Richtung 5,7% möglich. Die anstehenden CPI-Daten werden anhand mehrerer Szenarien eingeordnet.",
+     "figures": "Kursziel 5,3%; bei Ausbruch 5,7%; erwartete CPI-Inflation 3,7%; erwartete Kerninflation 2,4 bis 2,5%",
+     "tip": "",
+     "einordnung": "Ein Renditeanstieg in Richtung 5,3% oder gar 5,7% wäre besonders für hoch bewertete Wachstumswerte problematisch. Die Tages-News, wonach Williams nur noch eine Fed-Zinserhöhung 2026 sieht, steht diesem Aufwärtsrisiko bei den Renditen entgegen.",
+     "detail": "Die drei vom Host angesprochenen Szenarien zeigen, dass der CPI nicht nur über die Schlagzeile, sondern vor allem über die Kerninflation und die Reaktion der Anleihemärkte relevant wird. Bleibt die Kerninflation zäh, können die Renditen trotz einer möglicherweise weniger aggressiven Fed-Erwartung hoch bleiben. Sinkende Renditen würden dagegen den Bewertungsdruck auf Technologieaktien mindern und könnten die von mehreren Analysten erwartete Entlastungsrallye unterstützen.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Die Tages-News berichten, dass Williams nur noch eine Fed-Zinserhöhung 2026 sieht und dies die Renditen sowie die Erwartungen an den Zinspfad dämpfen könnte."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "makro",
+     "sec": 1020,
+     "t": "17:00",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1020s",
+     "tv_symbol": "TVC:TNX"
+    },
+    {
+     "name": "Salesforce",
+     "ticker": "CRM",
+     "note": "Die Bank of America stufte Salesforce in einem Double Upgrade von Underperform auf Buy hoch und erhöhte das Kursziel von 160 auf 285 USD. Charttechnisch erwartet der Host zunächst einen erneuten Anlauf in Richtung 268 bis 270 USD; bei einem Ausbruch sieht er Potenzial bis 355 USD.",
+     "figures": "Kursziel der Bank of America 285 USD; aktuell 230 USD; Forward-KGV 15,9; Dividendenrendite 0,75%; charttechnische Ziele 268 bis 270, 311 und 355 USD",
+     "tip": "Eine Konsolidierung abwarten; Zielbereich 268 bis 270 USD, bei einem Ausbruch über 270 USD besteht Potenzial bis 355 USD.",
+     "einordnung": "Mit einem Forward-KGV von 15,9 ist Salesforce im Vergleich zu vielen KI-getriebenen Softwarewerten nicht extrem bewertet. Der charttechnische Abstand zum langfristigen Ziel bleibt jedoch groß und verlangt eine Bestätigung durch operative Dynamik.",
+     "detail": "Das Double Upgrade signalisiert eine deutliche Änderung der Einschätzung zur Bewertung und zum Ertragspotenzial, nicht lediglich ein kurzfristiges Chartargument. Der Markt muss nun zeigen, dass die erwartete Verbesserung auch im Cashflow und im Wachstum ankommt. Der bullische Fall basiert auf einer Neubewertung eines reiferen Softwarekonzerns; der bearishe Fall wäre, dass das niedrigere Multiple ein Ausdruck nachlassender Wachstumsqualität bleibt.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1194,
+     "t": "19:54",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1194s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "SK Hynix",
+     "ticker": "000660.KS",
+     "note": "SK Hynix steht wegen der chinesischen Konkurrenz durch CXMT unter Druck. Der Host sieht den Chart als gebrochen und nennt 56.000 Won als Unterstützung; darunter drohen Rückgänge auf 145.000 oder 133.000 Won.",
+     "figures": "Unterstützung 56.000 Won; mögliche Ziele 145.000 und 133.000 Won",
+     "tip": "Vorsichtig bleiben und die Aktie zunächst nur von der Seitenlinie beobachten.",
+     "einordnung": "Die Kursziele und die genannte Unterstützung sind in der Rohanalyse widersprüchlich angeordnet; die Zahlen werden daher unverändert als Host-Angaben wiedergegeben. Fundamentale Risiken durch chinesische Konkurrenz und die hohe Zyklik des Speichermarktes rechtfertigen eine zurückhaltende Einordnung.",
+     "detail": "Das andere Tagesvideo ergänzt, dass das Aktienrückkaufprogramm von SK Hynix vorzeitig ausläuft und die Aktie trotz guter Nachrichten nachgibt. Zudem wird dort ein KGV von 2,7 bis 3 genannt, gleichzeitig aber eine operative Marge von 75 bis 80% als nicht nachhaltig bezeichnet. Das ist der Kern des Problems: Eine scheinbar sehr niedrige Bewertung kann bei stark fallenden Speicherpreisen schnell wie eine klassische Zyklusfalle wirken. Der technologische Fortschritt von CXMT verschärft den Druck auf Preise und Marktanteile.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Euer Egmond",
+       "url": "",
+       "bezug": "Das Tagesvideo nennt das auslaufende Rückkaufprogramm, ein KGV von 2,7 bis 3 und Zweifel an der Nachhaltigkeit der operativen Marge von 75 bis 80%."
+      },
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Die Tages-News ordnen den Rückgang der Chip- und Speicherwerte als möglichen Beginn einer Neubewertung des KI-Investmentthemas ein."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1407,
+     "t": "23:27",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1407s",
+     "tv_symbol": "KRX:000660"
+    },
+    {
+     "name": "SanDisk",
+     "ticker": "SNDK",
+     "note": "SanDisk leidet laut Host unter der Konkurrenz durch CXMT und Sorgen um die Nachhaltigkeit der Margen. Trotz einer zuletzt genannten Bruttomarge von 84,6% sieht der Host Abwärtspotenzial bis 1.300 USD; darunter liegen Unterstützungen bei 1.300 und 750 USD.",
+     "figures": "Bruttomarge 84,6%; Abwärtsziel 1.300 USD; Unterstützung 1.300 USD; 200-Tage-EMA 750 USD",
+     "tip": "Abwarten und zunächst eine Bodenbildung abwarten.",
+     "einordnung": "Eine Bruttomarge von 84,6% wirkt bei einem zyklischen Speicherwert außergewöhnlich hoch und ist deshalb besonders abhängig von Preisniveau und Produktmix. Der Host stellt folgerichtig nicht die aktuelle Marge, sondern ihre Nachhaltigkeit in den Mittelpunkt.",
+     "detail": "Die Konkurrenz durch CXMT ist für SanDisk vor allem deshalb problematisch, weil Speicherchips stark über den Preis konkurrieren und hohe Margen in Aufschwungphasen schnell erodieren können. Der Abstand zwischen der kurzfristigen Unterstützung und dem langfristig genannten 200-Tage-EMA zeigt, wie weit eine Neubewertung reichen könnte, wenn der Markt nicht nur Gewinnmitnahmen, sondern einen neuen Zyklusabschlag einpreist.",
+     "cross_refs": [
+      {
+       "typ": "news",
+       "quelle": "Tages-News",
+       "url": "",
+       "bezug": "Die Tages-News beschreiben den Rückgang der Speicherwerte als Reaktion auf einen neuen chinesischen Wettbewerber und steigende Zweifel am KI-Investmentzyklus."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1622,
+     "t": "27:02",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1622s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Micron",
+     "ticker": "MU",
+     "note": "Micron hat die Marke von 1.000 USD überschritten, fällt aber wieder zurück. Der Host hält den Chart für ungünstig und nennt 950 bis 940 USD als nächste Ziele; unter 900 USD wäre ein Rückgang bis 820 USD möglich.",
+     "figures": "Marke 1.000 USD; mögliche Ziele 950 bis 940, 900 und 820 USD; 200-Tage-EMA 750 USD",
+     "tip": "Vorsichtig bleiben und eher abwarten.",
+     "einordnung": "Der Rückfall nach dem Überschreiten einer runden Marke spricht charttechnisch zunächst für nachlassendes Momentum. Wie bei SK Hynix und SanDisk bleibt die entscheidende Frage, ob der Rücksetzer nur Gewinnmitnahmen oder eine Neubewertung der Speicherpreiserwartungen ist.",
+     "detail": "Micron steht stellvertretend für den Konflikt zwischen langfristig hoher Nachfrage nach Rechenleistung und kurzfristig überzogenen Erwartungen an KI-Investitionen. Das andere Tagesvideo spricht von einem KI-Ausverkauf und einem neuen chinesischen Wettbewerber; dadurch wird verständlich, weshalb selbst gute Branchennachrichten den Kurs nicht ausreichend stabilisieren. Ein Bruch der genannten Zwischenmarken würde die technische Schwäche schrittweise bestätigen und den Blick auf den langfristigen Durchschnitt lenken.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär – Märkte am Morgen",
+       "url": "",
+       "bezug": "Das Tagesvideo behandelt den Druck auf westliche Speicherchiphersteller durch einen neuen chinesischen Wettbewerber und die bevorstehende Berichtssaison."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 1784,
+     "t": "29:44",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1784s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "ASML",
+     "ticker": "ASML",
+     "note": "Die Bank of America führt ASML als Top Pick und erhöhte das Kursziel von 2.452 auf 2.557 EUR. Die langfristige Umsatzprognose für 2028 wurde auf 76,5 Mrd. EUR angehoben, die EPS-Schätzung um 13%.",
+     "figures": "Kursziel 2.557 EUR; Umsatzprognose 2028 76,5 Mrd. EUR; EPS-Schätzung +13%; durchschnittliches Gewinnwachstum bis 2028 50% p.a.; Bruttomarge +6,5%; Systemumsatz +40%; Forward-KGV 32,4",
+     "tip": "",
+     "einordnung": "ASML besitzt im Halbleiterausrüstungssektor eine besondere Stellung, wird mit einem Forward-KGV von 32,4 aber bereits mit hohen Zukunftserwartungen bewertet. Die Aktie braucht deshalb nicht nur gute Zahlen, sondern auch eine Bestätigung der langfristigen Investitionspläne der Chiphersteller.",
+     "detail": "Die positiven Schätzungsrevisionen spiegeln die Hebelwirkung wider, die steigende Investitionen der Chipindustrie auf einen führenden Ausrüster haben können. Gleichzeitig kann eine Verschiebung der Kapazitätsausgaben die Auftragseingänge schnell beeinträchtigen, obwohl der strukturelle Technologietrend intakt bleibt. ASML ist damit weniger direkt dem Speicherpreis ausgesetzt als SK Hynix oder Micron, aber indirekt von deren Investitionsbudgets und geopolitischen Exportbeschränkungen abhängig.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär – Märkte am Morgen",
+       "url": "",
+       "bezug": "Das Tagesvideo nimmt ASML neben Micron, Microsoft, SAP und weiteren Technologieaktien in den Fokus und ordnet die schwächere Tendenz bei Technologiewerten ein."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 1904,
+     "t": "31:44",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1904s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "LVMH",
+     "ticker": "MC.PA",
+     "note": "LVMH meldete einen Umsatz von 18,5 Mrd. EUR und ein organisches Wachstum von lediglich 1%. Mode und Lederwaren gingen um 5% zurück, während Uhren und Schmuck sowie Spirituosen jeweils um 6% zulegten.",
+     "figures": "Umsatz 18,5 Mrd. EUR; organisches Wachstum +1%; Mode und Lederwaren -5%; Uhren und Schmuck +6%; Spirituosen +6%; Forward-KGV 16,3; Dividendenrendite 3,5%; Kursziele 333 und 310 EUR",
+     "tip": "Vorsichtig bleiben, eine Bodenbildung abwarten und nicht in ein fallendes Messer greifen.",
+     "einordnung": "Das niedrige Forward-KGV und die Dividendenrendite machen LVMH optisch attraktiver, beseitigen aber nicht das Problem eines schwachen Luxuszyklus. Die Segmentdivergenz zeigt, dass die Erholung nicht gleichmäßig über das Portfolio läuft.",
+     "detail": "Die Schwäche bei Mode und Lederwaren trifft den wichtigsten Prestige- und Wachstumstreiber des Konzerns und ist deshalb aussagekräftiger als die positiven Beiträge einzelner kleinerer Sparten. Das andere Tagesvideo verweist zusätzlich auf die schwierige Lage in China bei anderen Premiumgüterherstellern; damit wird klar, dass es sich nicht nur um ein unternehmensspezifisches Problem handelt. Eine nachhaltige Bodenbildung würde daher wahrscheinlich eine Stabilisierung der chinesischen Nachfrage und eine Verbesserung der organischen Dynamik voraussetzen.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär – Märkte am Morgen",
+       "url": "",
+       "bezug": "Das Tagesvideo behandelt LVMH als angeschlagenen Luxusgüterkonzern im Umfeld schwächerer Technologiewerte und asiatischer Börsen."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2123,
+     "t": "35:23",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=2123s",
+     "tv_symbol": "EURONEXT:MC"
+    },
+    {
+     "name": "Bristol Myers Squibb",
+     "ticker": "BMY",
+     "note": "Bristol Myers meldete gemischte Phase-3-Daten zu einem Wirkstoff gegen Lungenfibrose. Cantor Fitzgerald senkte das Kursziel auf 53 USD; die Aktie lag laut Host bei 57 USD.",
+     "figures": "Kursziel 53 USD; aktuell 57 USD; Dividendenrendite über 4%; weitere Analystenziele 75, 82, 80 und 63 USD; mögliches Rücklaufziel 50 bis 48 USD",
+     "tip": "Für Dividendenorientierte bei steigender Rendite interessant, allerdings besteht das Risiko weiterer Rückgänge.",
+     "einordnung": "Die hohe Dividendenrendite bietet einen gewissen Puffer, ersetzt bei einem Pharmakonzern aber nicht die Pipelinequalität. Die große Spanne der Analystenziele zeigt, wie unterschiedlich der Markt die klinischen und strategischen Risiken bewertet.",
+     "detail": "Bei Pharmakonzernen können gemischte Studiendaten überproportional wirken, weil die Bewertung stark auf zukünftigen Produkten und dem Ersatz auslaufender Blockbuster beruht. Das Abwärtsszenario bis 48 bis 50 USD steht daher nicht nur für Charttechnik, sondern auch für die Möglichkeit, dass Anleger die Pipeline mit einem höheren Risikoabschlag versehen. Die optimistischeren Kursziele setzen entsprechend voraus, dass andere Entwicklungsprogramme die Unsicherheit ausgleichen.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2322,
+     "t": "38:42",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=2322s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Ciena",
+     "ticker": "CIEN",
+     "note": "Ciena gab wegen Gewinnmitnahmen, Sektorschwäche und der hohen Bewertung um 10% nach. Der Host verweist auf ein KGV von über 90 und wartet auf ein neues Kaufsignal.",
+     "figures": "Rücksetzer 10%; KGV über 90; Unterstützungen 240 und 191 USD; Widerstand 465 USD",
+     "tip": "Aktuell uninteressant; ein Kaufsignal über 463 USD abwarten.",
+     "einordnung": "Ein KGV von über 90 lässt nur wenig Raum für Enttäuschungen bei Wachstum oder Auftragseingängen. Der technische Ansatz über 463 USD ist deshalb nachvollziehbar, weil er eine Rückkehr der Nachfrage nach dem Rücksetzer voraussetzt.",
+     "detail": "Die Sorgen um das Investitionstempo der Cloud-Hyperscaler verweisen auf die Abhängigkeit der Netzwerkausrüster vom Ausbau der Rechenzentren. Selbst wenn der langfristige Datenverkehr steigt, können die Kunden ihre Budgets zeitlich strecken und dadurch die Auftragseingänge kurzfristig belasten. Ciena steht damit zwischen strukturellem Infrastrukturbedarf und einer Bewertung, die bereits einen erheblichen Teil dieses Wachstums vorwegnimmt.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2440,
+     "t": "40:40",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=2440s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Chipotle Mexican Grill",
+     "ticker": "CMG",
+     "note": "Übernahmegerüchte durch Starbucks wurden dementiert. Die Aktie bleibt volatil; das Buy-Rating und Kursziel von OBS stehen schwachen Same-Store-Sales gegenüber.",
+     "figures": "Kursziel 45 USD; Unterstützung 30,50 USD; mögliche Ziele 29 und 26,40 USD",
+     "tip": "",
+     "einordnung": "Der Kurs wird derzeit von Gerüchten und der operativen Schwäche bei den Same-Store-Sales zugleich bewegt. Ohne eine Verbesserung des organischen Wachstums bleibt das genannte Kursziel anfällig für weitere Enttäuschungen.",
+     "detail": "Das Dementi nimmt der Aktie einen möglichen Übernahmeimpuls und lenkt den Blick zurück auf das eigene Geschäft. Bei Restaurantketten sind Same-Store-Sales ein besonders wichtiger Frühindikator, weil sie Preisgestaltung, Kundenfrequenz und Markenstärke zusammenfassen. Die genannten Unterstützungen markieren daher nicht nur technische Marken, sondern auch die Zonen, in denen der Markt die operative Schwäche bereits teilweise eingepreist haben könnte.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2564,
+     "t": "42:44",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=2564s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Nebius",
+     "ticker": "NBIS",
+     "note": "Nebius geriet wegen Sorgen über die Bewertung von KI-Unternehmen und die finanzielle Tragfähigkeit der Rechenzentrumsausgaben unter Druck. Der Host verweist außerdem auf einen Umsatzdämpfer bei OpenAI.",
+     "figures": "Unterstützung 225 USD; mögliche Ziele 193, 183, 164, 155 und 140 USD",
+     "tip": "Vorsichtig bleiben, da weitere Verluste möglich sind.",
+     "einordnung": "Nebius ist besonders empfindlich gegenüber steigenden Kapitalkosten, weil der Ausbau von KI-Rechenzentren hohe Vorleistungen verlangt. Die breite Staffelung der Abwärtsziele unterstreicht, dass der Host hier eher ein Bewertungs- und Finanzierungsrisiko als einen normalen Rücksetzer sieht.",
+     "detail": "Das andere Tagesvideo nennt zunehmende Finanzierungsprobleme für Rechenzentren und eine geplante Finanzierung von 40 Mrd. USD für Nvidia-Chips bei SpaceX. Diese Beispiele verdeutlichen, wie kapitalintensiv das KI-Ökosystem inzwischen ist: Nachfrage nach Rechenleistung kann langfristig hoch bleiben, während die Finanzierung einzelner Projekte dennoch ins Stocken gerät. Für Nebius entsteht dadurch ein doppeltes Risiko aus hohen Investitionen und der Frage, wann daraus ausreichend wiederkehrender Umsatz entsteht.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Euer Egmond",
+       "url": "",
+       "bezug": "Das Tagesvideo berichtet über Finanzierungsprobleme bei Rechenzentren, eine mögliche Finanzierung von 40 Mrd. USD für Nvidia-Chips bei SpaceX und eine hohe Bewertung von KI-Aktien."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2675,
+     "t": "44:35",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=2675s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "UnitedHealth",
+     "ticker": "UNH",
+     "note": "Für UnitedHealth werden ein EPS von 4,12 USD und ein Umsatz von 111 Mrd. USD erwartet. Bei positiven Zahlen sieht der Host einen Ausbruch über 386 bis 387 USD mit Zielen bis 580 USD; bei Enttäuschungen droht ein Verkaufssignal unter 363 USD.",
+     "figures": "Erwartetes EPS 4,12 USD; erwarteter Umsatz 111 Mrd. USD; Medical-Care-Ratio Q1 83,9%, Q2 86,7%, Prognose 88,1%; Kursmarken 386 bis 387, 435, 480 und 580 USD; Abwärtsmarken 363, 346 und 326 USD",
+     "tip": "Bei positiven Zahlen über 386 bis 387 USD einsteigen; bei negativen Zahlen unter 363 USD liegt ein Verkaufssignal vor.",
+     "einordnung": "Die Medical-Care-Ratio ist hier der entscheidende operative Hebel, weil ein Anstieg die Margen belastet. Der Chart bietet zwar ein asymmetrisches Erholungsszenario, verlangt aber eine Bestätigung durch die Zahlen.",
+     "detail": "Die steigende Medical-Care-Ratio von 83,9% über 86,7% auf erwartete 88,1% deutet auf wachsenden Kostendruck im Versicherungsgeschäft hin. Selbst ein Umsatz- oder EPS-Treffer könnte daher enttäuschen, wenn die Anleger eine weitere Verschlechterung der Schadenquote befürchten. Der Host macht die Aktie folgerichtig zu einem binären Berichtssaison-Trade: Die Zahlen entscheiden, ob der Markt eine Normalisierung oder eine anhaltende Margenerosion einpreist.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2748,
+     "t": "45:48",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=2748s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "TSMC",
+     "ticker": "TSM",
+     "note": "TSMC soll im dritten Quartal einen Umsatz von 46,7 Mrd. USD und einen Nettogewinn von 23,4 Mrd. USD erzielt haben. Der Host nennt ein Bank-of-America-Kursziel von 512 USD und bewertet den Chart bei einem Ausbruch über 444 bis 435 USD positiv.",
+     "figures": "Q3-Umsatz 46,7 Mrd. USD; +18% gegenüber dem Vorquartal; +50% gegenüber dem Vorjahr; erwarteter Nettogewinn 23,4 Mrd. USD; +65% gegenüber dem Vorjahr; Kursziel 512 USD; aktuell 445 USD; Investitionsbudget 60 bis 64 Mrd. USD",
+     "tip": "Bei einem Ausbruch über 444 bis 435 USD bleibt der Chart positiv; unter 434 USD wäre die Chance vertan.",
+     "einordnung": "TSMC weist im Vergleich zu den Speicherwerten eine deutlich stärkere operative Dynamik auf. Die hohe Bewertung bleibt dennoch an die Nachhaltigkeit der KI-Nachfrage und an das geplante Investitionsbudget gebunden.",
+     "detail": "Das andere Tagesvideo meldet für September ein Umsatzwachstum von 54,6% auf 511,86 Mrd. Taiwan-Dollar und bestätigt damit die starke Nachfrageentwicklung. Der entscheidende Unterschied zu den Speicherherstellern liegt in TSMCs Stellung als Auftragsfertiger für fortschrittliche Chips: Die Nachfrage ist breiter abgestützt, aber die Kapazitätserweiterung bindet erhebliche Mittel. Das Investitionsbudget von 60 bis 64 Mrd. USD ist deshalb zugleich Wachstumssignal und Beleg für die hohe Kapitalintensität des Geschäfts.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Euer Egmond",
+       "url": "",
+       "bezug": "Das Tagesvideo berichtet über ein September-Umsatzwachstum von 54,6% bei TSMC auf 511,86 Mrd. Taiwan-Dollar."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "fundamental",
+     "sec": 2857,
+     "t": "47:37",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=2857s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Microsoft",
+     "ticker": "MSFT",
+     "note": "Microsoft hat sich laut Host gut entwickelt. Oberhalb von 518 USD sieht er ein neues Kaufsignal mit Potenzial bis 563 USD; langfristig befindet sich die Aktie weiterhin in einer Seitwärtsphase zwischen 350 und 530 USD.",
+     "figures": "Kaufsignal über 518 USD; Kursziel 563 USD; Seitwärtsphase 350 bis 530 USD; Forward-KGV 27,3",
+     "tip": "Kurzfristig besteht weiteres Potenzial; für langfristige Einstiege wäre ein größerer Rücksetzer wünschenswert.",
+     "einordnung": "Ein Forward-KGV von 27,3 ist für die Qualität und die Wachstumserwartungen des Konzerns nicht exzessiv, setzt aber weiterhin eine überzeugende Monetarisierung der KI-Investitionen voraus. Der Host trennt sinnvoll zwischen kurzfristigem Momentum und einem attraktiveren langfristigen Einstiegsniveau.",
+     "detail": "Die Seitwärtsphase zeigt, dass der Markt trotz der starken Unternehmensstellung noch keine dauerhafte Neubewertung oberhalb der bisherigen Handelsspanne vollzogen hat. Ein Ausbruch über 518 USD wäre daher zunächst ein technisches Signal, kein Beweis für eine vollständige Auflösung der Bewertungsfrage. Steigende Renditen und Zweifel am Investitionstempo der Cloud-Kunden bleiben die wichtigsten Gegenspieler der KI-Fantasie.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär – Märkte am Morgen",
+       "url": "",
+       "bezug": "Das Tagesvideo behandelt Microsoft im Zusammenhang mit der bevorstehenden Berichtssaison und der unterschiedlichen Entwicklung von Technologie- und asiatischen Märkten."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 2957,
+     "t": "49:17",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=2957s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Nike",
+     "ticker": "NKE",
+     "note": "Nike notiert laut Host nahe den Tiefstständen bei 33 bis 34 USD. Das China-Geschäft ist schwach, der Turnaround dauert an, und der Chart bleibt angeschlagen.",
+     "figures": "Kurs 33 bis 34 USD; Dividendenrendite über 4%; mögliches Ziel 40 USD; Risiko 30 USD",
+     "tip": "Nur für spekulative Trades mit Absicherung; kein langfristiger Einstieg.",
+     "einordnung": "Die Dividendenrendite kann bei einem gefallenen Konsumwert attraktiv wirken, ist aber kein Ersatz für eine Trendwende bei Umsatz und Marke. Die klare Warnung des Hosts ist angesichts des schwachen China-Geschäfts und der fehlenden charttechnischen Bestätigung nachvollziehbar.",
+     "detail": "Nike muss gleichzeitig die Nachfrage in China stabilisieren, den Produktzyklus verbessern und gegen den intensiven Wettbewerb im Sportartikelmarkt ankämpfen. Ein Anstieg auf 40 USD wäre zunächst eine technische Gegenbewegung und noch kein Beleg für einen abgeschlossenen Turnaround. Das Risiko bis 30 USD zeigt, dass der Markt weitere operative Enttäuschungen noch nicht vollständig ausgeschlossen hat.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 3045,
+     "t": "50:45",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=3045s",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Allianz",
+     "ticker": "ALV.DE",
+     "note": "Allianz hat laut Host das Hoch aus dem Jahr 2000 überschritten und befindet sich nun in einer Konsolidierung. Ein Rücklauf an den Wochen-EMA 50 bei etwa 395 bis 400 EUR könnte für Trader interessant werden.",
+     "figures": "Wochen-EMA 50 bei etwa 395 bis 400 EUR; Wochen-EMA 200 bei 321 EUR",
+     "tip": "Ein Rücksetzer auf 395 bis 400 EUR könnte als Einstieg für Trader interessant sein.",
+     "einordnung": "Der Ausbruch über ein historisches Hoch ist charttechnisch konstruktiv, solange die Aktie die frühere Ausbruchszone nicht wieder deutlich verliert. Ein Rücklauf an den mittelfristigen Durchschnitt wäre für das Chance-Risiko-Verhältnis plausibler als ein prozyklischer Einstieg nach der Aufwärtsbewegung.",
+     "detail": "Die Konsolidierung nach dem Überschreiten eines langjährigen Hochs ist zunächst normal und kann der Stabilisierung des neuen Preisniveaus dienen. Der Abstand zwischen dem Wochen-EMA 50 und dem Wochen-EMA 200 zeigt zugleich, dass der übergeordnete Trend deutlich aufwärtsgerichtet ist. Bricht die Aktie jedoch unter die mittelfristige Unterstützung, würde sich die Frage stellen, ob der Ausbruch nur ein kurzfristiger Überschuss war.",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": 3123,
+     "t": "52:03",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=3123s",
+     "tv_symbol": "XETR:ALV"
+    },
+    {
+     "name": "SAP",
+     "ticker": "SAP.DE",
+     "note": "SAP hat sich laut Host gut entwickelt und ein Kaufsignal erhalten, konsolidiert aber derzeit. Widerstände liegen bei 200 bis 203 EUR; bei einem nachhaltigen Ausbruch über 214 bis 220 EUR wäre der Kipppunkt überwunden.",
+     "figures": "Widerstand 200 bis 203 EUR; Ausbruchszone 214 bis 220 EUR",
+     "tip": "",
+     "einordnung": "Die Konsolidierung nach dem Kaufsignal ist konstruktiv, solange die Aktie die Ausbruchsstruktur verteidigt. Der Bereich 214 bis 220 EUR ist als Bestätigung wichtiger als ein kurzfristiges Überschreiten der ersten Widerstandszone.",
+     "detail": "Der Host unterscheidet zwischen einem ersten Widerstand bei 200 bis 203 EUR und dem eigentlichen Kipppunkt bei 214 bis 220 EUR. Damit setzt die Analyse voraus, dass der Markt zunächst Angebot an den Zwischenhochs absorbieren muss, bevor ein neuer Trendabschnitt beginnen kann. Bei Softwarewerten bleibt zudem das Zinsumfeld relevant, weil höhere Renditen die Barwerte weit in der Zukunft liegender Cashflows belasten.",
+     "cross_refs": [
+      {
+       "typ": "video",
+       "quelle": "Der Aktionär – Märkte am Morgen",
+       "url": "",
+       "bezug": "Das Tagesvideo behandelt SAP im Rahmen der Berichtssaison neben Microsoft, Micron, ASML und weiteren Technologie- und Telekommunikationswerten."
+      }
+     ],
+     "chart_info": "",
+     "kategorie": "chartanalyse",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw",
+     "tv_symbol": "XETR:SAP"
+    },
+    {
+     "name": "T-Mobile US",
+     "ticker": "TMUS",
+     "note": "T-Mobile US wird in der Videobeschreibung als besprochener Einzelwert genannt, im Rohmaterial aber nicht näher analysiert.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Da keine konkreten Aussagen, Kennzahlen oder Chartmarken vorliegen, ist eine belastbare Einordnung an dieser Stelle nicht möglich.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "sonstiges",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw",
+     "tv_symbol": ""
+    },
+    {
+     "name": "Ferrari",
+     "ticker": "RACE",
+     "note": "Ferrari wird in der Videobeschreibung als besprochener Einzelwert genannt, im Rohmaterial aber nicht näher analysiert.",
+     "figures": "",
+     "tip": "",
+     "einordnung": "Ohne Host-Aussage, Kennzahlen oder Chartmarken lässt sich Ferrari aus diesem Material nicht sinnvoll bewerten.",
+     "detail": "",
+     "cross_refs": [],
+     "chart_info": "",
+     "kategorie": "sonstiges",
+     "sec": null,
+     "t": "00:00",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw",
+     "tv_symbol": ""
+    }
+   ],
+   "macro": [
+    {
+     "text": "Die Q3-Berichtssaison startet mit den US-Großbanken und weiteren wichtigen Unternehmen; der Host erwartet insbesondere bei den Banken überwiegend positive Zahlen.",
+     "sec": 113,
+     "t": "01:53",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=113s"
+    },
+    {
+     "text": "Steigende US-Renditen und die anstehenden CPI-Daten bilden den zentralen geldpolitischen Risikofaktor für hoch bewertete Technologie- und Wachstumswerte.",
+     "sec": 1020,
+     "t": "17:00",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1020s"
+    },
+    {
+     "text": "Geopolitische Risiken, Entdollarisierung und Zentralbankkäufe verändern laut Host die Goldpreistreiber; zusätzlich belasten Spannungen im Nahen Osten die Risikoaufschläge an den Märkten.",
+     "sec": 843,
+     "t": "14:03",
+     "tlink": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=843s"
+    }
+   ]
+  },
   {
    "channel": "Der Aktionär - Märkte am Morgen",
    "playlist": "Märkte am Morgen",

@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-10-13T06:33:24+00:00",
+  "generated_at": "2026-10-13T18:32:51+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -13,6 +13,19 @@
  },
  "analysen": [
   {
+   "id": "lynx-771579",
+   "symbol": "META",
+   "name": "Meta",
+   "veroeffentlicht": "2026-10-13T09:42:33+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/meta-platforms-aktie/meta-platforms-analyse/#meta-kursziel-allzeithoch"
+   }
+  },
+  {
    "id": "lynx-771556",
    "symbol": "PLTR",
    "name": "Palantir",
@@ -23,19 +36,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/palantir-technologies-aktie/palantir-technologies-analyse/#palantir-neues-allzeithoch-unterstreicht-den-aufwaertstrend"
-   }
-  },
-  {
-   "id": "lynx-771555",
-   "symbol": "SAP.DE",
-   "name": "SAP",
-   "veroeffentlicht": "2026-10-13T06:23:15+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/sap-aktie/sap-analyse/#sap-aktie-mit-ausbruch-nach-oben-wie-koennte-es-weitergehen"
    }
   },
   {
@@ -114,6 +114,19 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/dell-technologies-aktie/dell-technologies-analyse/#dell-naehert-sich-dem-allzeithoch-gelingt-der-ausbruch-ueber-600-usd"
+   }
+  },
+  {
+   "id": "lynx-771310",
+   "symbol": "DTE.DE",
+   "name": "Deutsche Telekom",
+   "veroeffentlicht": "2026-10-09T14:21:14+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/deutsche-telekom-aktie/deutsche-telekom-analyse/#deutsche-telekom-nach-spacex-frequenzdeal-unter-druck"
    }
   },
   {
@@ -335,19 +348,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/sandisk-aktie/sandisk-analyse/#sandisk-nimmt-die-aktie-das-allzeithoch-ins-visier"
-   }
-  },
-  {
-   "id": "lynx-770259",
-   "symbol": "SAP.DE",
-   "name": "SAP",
-   "veroeffentlicht": "2026-10-02T06:14:46+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/sap-aktie/sap-analyse/#sap-konnte-diese-aktie-zum-einaugigen-unter-blinden-werden"
    }
   },
   {
@@ -985,32 +985,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/wacker-chemie-aktie/wacker-chemie-analyse/#wacker-chemie-balanceakt-auf-der-200-tage-linie"
-   }
-  },
-  {
-   "id": "lynx-768826",
-   "symbol": "GBF.DE",
-   "name": "Bilfinger",
-   "veroeffentlicht": "2026-09-18T06:33:16+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/bilfinger-aktie/bilfinger-analyse/#bilfinger-es-lauft-nicht-1-000-tage-linie-im-fokus"
-   }
-  },
-  {
-   "id": "lynx-768816",
-   "symbol": "INTC",
-   "name": "Intel",
-   "veroeffentlicht": "2026-09-18T06:32:24+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/intel-aktie/intel-analyse/#intel-mit-ausbruch-aktie-verlaesst-baerische-trendphase"
    }
   }
  ]
