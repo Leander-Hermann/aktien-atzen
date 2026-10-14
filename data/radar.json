@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-14T06:20:36.670482Z",
+  "generated_at": "2026-10-14T07:20:35.936345Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 116,
-  "with_quote_data": 56,
+  "symbols_total": 115,
+  "with_quote_data": 59,
   "sources": [
    "watchlist",
    "videos",
@@ -21,108 +21,22 @@
  },
  "items": [
   {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 80,
+   "symbol": "JNJ",
+   "name": "Johnson & Johnson",
+   "score": 90,
    "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-10,1 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1443000.0,
-    "pct": -10.09,
-    "cur": "KRW",
-    "as_of": "2026-10-13T18:42:14.604463+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "SK Hynix fällt um 10,1 % bei hohem Volumen",
-    "why_now": "Die Aktie von SK Hynix fiel um 10,1 % auf 1.443.000 KRW, begleitet von einem Volumen von 1,8× des Durchschnitts. Ursache unklar. Zwei Video-Erwähnungen in drei Tagen könnten zusätzliche Aufmerksamkeit auf den Wert gelenkt haben.",
-    "watch_next": [
-     "Kursentwicklung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-13T19:20:42.723378Z"
-   }
-  },
-  {
-   "symbol": "005930.KS",
-   "name": "Samsung Electronics",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,4 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "KRX:005930",
-   "quote": {
-    "price": 232000.0,
-    "pct": -7.39,
-    "cur": "KRW",
-    "as_of": "2026-10-13T18:42:14.604463+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Samsung Electronics fällt bei erhöhtem Handelsvolumen",
-    "why_now": "Die Aktie von Samsung Electronics verlor 7,4 % auf 232000 KRW. Das Handelsvolumen lag beim 1,6-Fachen des Durchschnitts. Zudem wurde die Aktie in den vergangenen drei Tagen in einem Video erwähnt. Ursache unklar. Ein Zusammenhang zwischen der erhöhten Aufmerksamkeit und der Kursbewegung könnte bestehen, ist durch die Daten aber nicht belegt.",
-    "watch_next": [
-     "Kursentwicklung und Handelsvolumen",
-     "Weitere Video-Erwähnungen",
-     "Neue Daten zur Aktie"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-13T19:20:42.723378Z"
-   }
-  },
-  {
-   "symbol": "UNH",
-   "name": "UnitedHealth",
-   "score": 60,
-   "priority": "medium",
    "alert_type": "earnings_watch",
    "triggers": [
     {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,7 %",
+     "weight": 30
+    },
+    {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "2,4× Durchschnitt",
      "weight": 15
     },
     {
@@ -139,10 +53,106 @@
     }
    ],
    "quote": {
-    "price": 378.008,
-    "pct": -0.13,
+    "price": 248.61,
+    "pct": -5.73,
     "cur": "USD",
-    "as_of": "2026-10-13T18:42:14.604463+00:00"
+    "as_of": "2026-10-14T06:34:43.939859+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-13",
+    "distance_days": -1,
+    "zeit": "bmo"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Johnson & Johnson fällt nach Earnings-Termin deutlich",
+    "why_now": "Die Aktie verlor 5,7 % bei einem Handelsvolumen von 2,4× des Durchschnitts. Der Earnings-Termin lag gestern. Ursache unklar; der zeitliche Zusammenhang könnte darauf hindeuten, dass die Bewegung mit der Veröffentlichung zusammenhängt.",
+    "watch_next": [
+     "Weitere Kursbewegung nach dem Earnings-Termin",
+     "Entwicklung des Handelsvolumens",
+     "Neue Unternehmensmeldungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-14T07:20:35.936345Z"
+   }
+  },
+  {
+   "symbol": "EVT.DE",
+   "name": "Evotec",
+   "score": 80,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-11,2 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "4,0× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:EVT",
+   "quote": {
+    "price": 2.444,
+    "pct": -11.19,
+    "cur": "EUR",
+    "as_of": "2026-10-14T06:34:43.939859+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Evotec heute mit deutlichem Kursrückgang",
+    "why_now": "Die Evotec-Aktie liegt bei 2,444 EUR und ist um 11,19 % gefallen. Gleichzeitig lag das Handelsvolumen beim 4,0-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Video-Erwähnungen beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-14T07:20:35.936345Z"
+   }
+  },
+  {
+   "symbol": "UNH",
+   "name": "UnitedHealth",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,5× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 377.76,
+    "pct": -0.2,
+    "cur": "USD",
+    "as_of": "2026-10-14T06:34:43.939859+00:00"
    },
    "earnings": {
     "date": "2026-10-13",
@@ -151,30 +161,37 @@
    }
   },
   {
-   "symbol": "MU",
-   "name": "Micron Technology",
+   "symbol": "NDX1.DE",
+   "name": "Nordex",
    "score": 50,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "content_velocity",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-5,2 %",
-     "weight": 30
+     "value": "+3,9 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
+     "value": "2 Videos in 3 Tagen",
      "weight": 20
     }
    ],
+   "tv_symbol": "XETR:NDX1",
    "quote": {
-    "price": 937.781,
-    "pct": -5.18,
-    "cur": "USD",
-    "as_of": "2026-10-13T18:42:14.604463+00:00"
+    "price": 36.2,
+    "pct": 3.9,
+    "cur": "EUR",
+    "as_of": "2026-10-14T06:34:43.939859+00:00"
    }
   }
  ]
