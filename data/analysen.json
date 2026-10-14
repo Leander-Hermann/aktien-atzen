@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-10-14T06:32:53+00:00",
+  "generated_at": "2026-10-14T18:33:11+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,19 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-771783",
+   "symbol": "JPM",
+   "name": "JPMorgan",
+   "veroeffentlicht": "2026-10-14T10:03:05+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/jpmorgan-aktie/jpmorgan-analyse/#jpmorgan-jamie-dimon-warnt-vor-einer-unsicheren-zukunft"
+   }
+  },
   {
    "id": "lynx-771721",
    "symbol": "MC.PA",
@@ -998,32 +1011,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/siltronic-aktie/siltronic-analyse/#siltronic-wenn-trader-die-zukunft-kaufen"
-   }
-  },
-  {
-   "id": "lynx-768980",
-   "symbol": "AMZN",
-   "name": "Amazon",
-   "veroeffentlicht": "2026-09-21T06:19:00+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/amazon-aktie/amazon-analyse/#amazon-wo-bleiben-die-kaufer"
-   }
-  },
-  {
-   "id": "lynx-769015",
-   "symbol": "MU",
-   "name": "Micron Technology",
-   "veroeffentlicht": "2026-09-21T06:18:13+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/micron-technology-aktie/micron-technology-analyse/#micron-zeichnet-sich-eine-neue-aufwaertsbewegung-ab"
    }
   }
  ]
