@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-15T18:20:37.400630Z",
+  "generated_at": "2026-10-15T19:20:42.223381Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 118,
-  "with_quote_data": 60,
+  "symbols_total": 120,
+  "with_quote_data": 57,
   "sources": [
    "watchlist",
    "videos",
@@ -21,29 +21,69 @@
  },
  "items": [
   {
-   "symbol": "BAC",
-   "name": "Bank of America",
-   "score": 100,
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
+   "score": 80,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,8 %",
-     "weight": 30
+     "value": "-11,1 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,1× Durchschnitt",
-     "weight": 25
+     "value": "1,9× Durchschnitt",
+     "weight": 15
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "3 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "KRX:000660",
+   "quote": {
+    "price": 1262000.0,
+    "pct": -11.06,
+    "cur": "KRW",
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "SK Hynix fällt bei hohem Volumen deutlich",
+    "why_now": "Der Kurs von SK Hynix ist um 11,1 % gefallen. Das Handelsvolumen lag beim 1,9-Fachen des Durchschnitts. Zusätzlich wurden 3 Videos in 3 Tagen verzeichnet. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-15T19:20:42.223381Z"
+   }
+  },
+  {
+   "symbol": "RKLB",
+   "name": "Rocket Lab",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-9,6 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -53,32 +93,27 @@
     }
    ],
    "quote": {
-    "price": 51.39,
-    "pct": -4.76,
+    "price": 53.45,
+    "pct": -9.68,
     "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-14",
-    "distance_days": -1,
-    "zeit": "bmo"
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Bank of America nach Earnings mit auffälliger Bewegung",
-    "why_now": "Die Aktie von Bank of America liegt bei 51,39 USD und ist um 4,76 % gefallen. Gleichzeitig lag das Handelsvolumen beim 3,1-Fachen des Durchschnitts. Der Earnings-Termin war gestern; dies könnte im zeitlichen Zusammenhang mit der Bewegung stehen. Ursache unklar.",
+    "headline": "Rocket Lab fällt heute deutlich bei erhöhtem Volumen",
+    "why_now": "Die Aktie von Rocket Lab liegt bei 53,45 USD und ist um 9,68 % gefallen. Das Handelsvolumen liegt beim 1,7-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung registriert. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Verlauf",
-     "Weitere Video-Erwähnungen"
+     "Weitere Kursentwicklung",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-15T07:20:36.172690Z"
+    "generated_at": "2026-10-15T19:20:42.223381Z"
    }
   },
   {
-   "symbol": "NBIS",
-   "name": "Nebius",
+   "symbol": "005930.KS",
+   "name": "Samsung Electronics",
    "score": 70,
    "priority": "high",
    "alert_type": "large_move",
@@ -86,7 +121,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-10,1 %",
+     "value": "-9,5 %",
      "weight": 45
     },
     {
@@ -102,43 +137,78 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "KRX:005930",
    "quote": {
-    "price": 186.01,
-    "pct": -10.08,
-    "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
+    "price": 210000.0,
+    "pct": -9.48,
+    "cur": "KRW",
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "Nebius fällt um 10,1 % bei hohem Volumen",
-    "why_now": "Die Nebius-Aktie notiert bei 186,01 USD und liegt 10,08 % im Minus. Das Handelsvolumen beträgt das 2,0-Fache des Durchschnitts. Ursache unklar. Eine Video-Erwähnung in den vergangenen drei Tagen könnte mit der erhöhten Aufmerksamkeit zusammenhängen, belegt die Bewegung aber nicht eindeutig.",
+    "headline": "Samsung Electronics fällt um 9,5 % bei hohem Volumen",
+    "why_now": "Samsung Electronics verlor 9,5 % und notiert bei 210000 KRW. Das Handelsvolumen lag beim 2,0-Fachen des Durchschnitts. Ursache unklar. Die eine Video-Erwähnung in 3 Tagen könnte mit der erhöhten Aufmerksamkeit zusammenhängen, belegt aber keinen Auslöser.",
     "watch_next": [
-     "Kursverlauf nach dem Rückgang",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Kursentwicklung",
+     "Handelsvolumen",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-15T07:20:36.172690Z"
+    "generated_at": "2026-10-15T19:20:42.223381Z"
    }
   },
   {
-   "symbol": "005930.KS",
-   "name": "Samsung Electronics",
-   "score": 70,
-   "priority": "high",
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "score": 65,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-9,7 %",
-     "weight": 45
+     "value": "-5,2 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
+     "value": "2,0× Durchschnitt",
      "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "XETR:IFX",
+   "quote": {
+    "price": 52.47,
+    "pct": -5.2,
+    "cur": "EUR",
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
+   }
+  },
+  {
+   "symbol": "BLK",
+   "name": "BlackRock",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,7 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -147,52 +217,16 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "KRX:005930",
    "quote": {
-    "price": 209500.0,
-    "pct": -9.7,
-    "cur": "KRW",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
+    "price": 1113.405,
+    "pct": 3.69,
+    "cur": "USD",
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
    },
-   "llm": {
-    "status": "ready",
-    "headline": "Samsung Electronics fällt deutlich bei erhöhtem Volumen",
-    "why_now": "Die Aktie von Samsung Electronics liegt bei 209500 KRW und verzeichnet eine Kursbewegung von -9,7 %. Das Handelsvolumen liegt beim 1,6-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung bei weiter erhöhtem Volumen",
-     "Weitere Video-Erwähnungen",
-     "Veränderung der Tagesbewegung"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-15T07:20:36.172690Z"
-   }
-  },
-  {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1258000.0,
-    "pct": -11.35,
-    "cur": "KRW",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
+   "earnings": {
+    "date": "2026-10-14",
+    "distance_days": -1,
+    "zeit": "bmo"
    }
   },
   {
@@ -217,15 +251,15 @@
    ],
    "tv_symbol": "TSE:285A",
    "quote": {
-    "price": 12885.0,
-    "pct": -12.29,
+    "price": 12880.0,
+    "pct": -12.32,
     "cur": "JPY",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
    }
   },
   {
-   "symbol": "CIEN",
-   "name": "Ciena",
+   "symbol": "ASML.AS",
+   "name": "ASML",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -233,67 +267,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-10,2 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 359.6,
-    "pct": -10.19,
-    "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
-   }
-  },
-  {
-   "symbol": "RKLB",
-   "name": "Rocket Lab",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-7,8 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 59.18,
-    "pct": -7.85,
-    "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
-   }
-  },
-  {
-   "symbol": "UNH",
-   "name": "UnitedHealth",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,7 %",
+     "value": "-4,2 %",
      "weight": 30
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,5× Durchschnitt",
      "weight": 15
     },
     {
@@ -303,15 +283,43 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "EURONEXT:ASML",
    "quote": {
-    "price": 395.62,
-    "pct": 4.73,
+    "price": 1464.2,
+    "pct": -4.19,
+    "cur": "EUR",
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
+   }
+  },
+  {
+   "symbol": "BAC",
+   "name": "Bank of America",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 51.745,
+    "pct": 0.68,
     "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
    },
    "earnings": {
-    "date": "2026-10-13",
-    "distance_days": -2,
+    "date": "2026-10-14",
+    "distance_days": -1,
     "zeit": "bmo"
    }
   },
@@ -325,7 +333,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,6 %",
+     "value": "-4,3 %",
      "weight": 30
     },
     {
@@ -342,63 +350,37 @@
    }
   },
   {
-   "symbol": "MU",
-   "name": "Micron Technology",
+   "symbol": "SI=F",
+   "name": "Silber",
    "score": 50,
    "priority": "medium",
-   "alert_type": "large_move",
+   "alert_type": "volume_spike",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-4,1 %",
-     "weight": 30
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 914.13,
-    "pct": -4.1,
-    "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
-   }
-  },
-  {
-   "symbol": "ASML",
-   "name": "ASML",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,9 %",
+     "value": "+3,0 %",
      "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
+     "value": "185,3× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "4 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
+   "tv_symbol": "TVC:SILVER",
    "quote": {
-    "price": 1650.0,
-    "pct": -3.94,
+    "price": 57.215,
+    "pct": 3.01,
     "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
    }
   },
   {
@@ -411,65 +393,94 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-3,4 %",
+     "value": "-2,6 %",
      "weight": 15
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
+     "value": "1,7× Durchschnitt",
      "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "3 Videos in 3 Tagen",
+     "value": "4 Videos in 3 Tagen",
      "weight": 20
     }
    ],
    "quote": {
-    "price": 430.0,
-    "pct": -3.4,
+    "price": 418.728,
+    "pct": -2.62,
     "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
    }
   },
   {
-   "symbol": "JNJ",
-   "name": "Johnson & Johnson",
+   "symbol": "CRWV",
+   "name": "CoreWeave",
    "score": 50,
    "priority": "medium",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "volume_spike",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,1 %",
+     "value": "+2,4 %",
      "weight": 15
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,0× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
-    "price": 253.91,
-    "pct": 2.13,
+    "price": 67.409,
+    "pct": 2.48,
     "cur": "USD",
-    "as_of": "2026-10-15T06:34:31.526028+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-13",
-    "distance_days": -2,
-    "zeit": "bmo"
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
+   }
+  },
+  {
+   "symbol": "ENR.DE",
+   "name": "Siemens Energy",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "volume_spike",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,2 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,5× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:ENR",
+   "quote": {
+    "price": 132.36,
+    "pct": -2.16,
+    "cur": "EUR",
+    "as_of": "2026-10-15T18:34:58.433346+00:00"
    }
   }
  ]
