@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-10-14T09:07:08.446517Z",
-    "trading_day": "2026-10-13",
+    "generated_at": "2026-10-15T08:42:21.633297Z",
+    "trading_day": "2026-10-14",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,306 +15,26 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-10-14T09:07:08.446517Z"
+    "as_of": "2026-10-15T08:42:21.633297Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "JPM",
-      "name": "JPMorgan Chase & Co.",
-      "sector": "Financials",
-      "as_of": "2026-10-13T13:30:00Z",
-      "quote": {
-        "price": 331.43,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/JPM",
-        "as_of": "2026-10-13T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 8
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 328.54,
-        "entry_high": 331.43,
-        "stop": 320.8,
-        "target": 362.86,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-07-29",
-              "price": 343.78
-            },
-            "b": {
-              "date": "2026-08-13",
-              "price": 366.5
-            },
-            "c": {
-              "date": "2026-08-21",
-              "price": 350.37
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 373.09
-            },
-            {
-              "ratio": 1.272,
-              "price": 379.27
-            },
-            {
-              "ratio": 1.618,
-              "price": 387.13
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 2,
-      "ticker": "LLY",
-      "name": "Eli Lilly and Company",
-      "sector": "Health Care",
-      "as_of": "2026-10-13T13:30:00Z",
-      "quote": {
-        "price": 1166.51,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/LLY",
-        "as_of": "2026-10-13T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 1156.75,
-        "entry_high": 1166.51,
-        "stop": 1115.23,
-        "target": 1269.06,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-07-15",
-              "price": 1134.4
-            },
-            "b": {
-              "date": "2026-07-28",
-              "price": 1232.0
-            },
-            "c": {
-              "date": "2026-08-17",
-              "price": 1163.5
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 1261.1
-            },
-            {
-              "ratio": 1.272,
-              "price": 1287.65
-            },
-            {
-              "ratio": 1.618,
-              "price": 1321.42
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 3,
-      "ticker": "NVDA",
-      "name": "NVIDIA Corporation",
-      "sector": "Information Technology",
-      "as_of": "2026-10-13T13:30:00Z",
-      "quote": {
-        "price": 228.52,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/NVDA",
-        "as_of": "2026-10-13T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "near",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 8
-      },
-      "interest_status": "position_or_interest",
-      "levels": {
-        "entry_low": 226.92,
-        "entry_high": 228.52,
-        "stop": 219.93,
-        "target": 245.7,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-08-24",
-              "price": 207.25
-            },
-            "b": {
-              "date": "2026-09-04",
-              "price": 234.76
-            },
-            "c": {
-              "date": "2026-09-14",
-              "price": 208.93
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 236.44
-            },
-            {
-              "ratio": 1.272,
-              "price": 243.92
-            },
-            {
-              "ratio": 1.618,
-              "price": 253.44
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 4,
-      "ticker": "LIN",
-      "name": "Linde plc",
-      "sector": "Materials",
-      "as_of": "2026-10-13T13:30:00Z",
-      "quote": {
-        "price": 492.11,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/LIN",
-        "as_of": "2026-10-13T13:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "near",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 12
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 488.39,
-        "entry_high": 492.11,
-        "stop": 478.35,
-        "target": 519.63,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-06-01",
-              "price": 488.88
-            },
-            "b": {
-              "date": "2026-06-15",
-              "price": 525.87
-            },
-            "c": {
-              "date": "2026-06-29",
-              "price": 506.78
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 543.77
-            },
-            {
-              "ratio": 1.272,
-              "price": 553.83
-            },
-            {
-              "ratio": 1.618,
-              "price": 566.63
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 5,
-      "ticker": "GOOGL",
-      "name": "Alphabet Inc. (Class A)",
+      "ticker": "DIS",
+      "name": "The Walt Disney Company",
       "sector": "Communication Services",
-      "as_of": "2026-10-13T13:30:00Z",
+      "as_of": "2026-10-14T13:30:00Z",
       "quote": {
-        "price": 353.78,
+        "price": 108.99,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/GOOGL",
-        "as_of": "2026-10-13T13:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/DIS",
+        "as_of": "2026-10-14T13:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
-        "readiness": "near",
-        "distance_to_zone_pct": 0.19
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
       },
       "rule_hits": [
         "weekly_uptrend",
@@ -331,10 +51,80 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 349.05,
-        "entry_high": 353.11,
-        "stop": 338.89,
-        "target": 381.56,
+        "entry_low": 108.29,
+        "entry_high": 108.99,
+        "stop": 105.75,
+        "target": 115.46,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-07-23",
+              "price": 92.49
+            },
+            "b": {
+              "date": "2026-09-03",
+              "price": 109.2
+            },
+            "c": {
+              "date": "2026-09-09",
+              "price": 102.99
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 119.7
+            },
+            {
+              "ratio": 1.272,
+              "price": 124.25
+            },
+            {
+              "ratio": 1.618,
+              "price": 130.03
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc. (Class A)",
+      "sector": "Communication Services",
+      "as_of": "2026-10-14T13:30:00Z",
+      "quote": {
+        "price": 347.64,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/GOOGL",
+        "as_of": "2026-10-14T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 7
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 344.65,
+        "entry_high": 347.64,
+        "stop": 334.04,
+        "target": 374.83,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -363,6 +153,216 @@
             {
               "ratio": 1.618,
               "price": 394.45
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-10-14T13:30:00Z",
+      "quote": {
+        "price": 254.08,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/AMZN",
+        "as_of": "2026-10-14T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 8
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 251.79,
+        "entry_high": 254.08,
+        "stop": 244.55,
+        "target": 273.15,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-09-16",
+              "price": 244.3
+            },
+            "b": {
+              "date": "2026-09-21",
+              "price": 259.49
+            },
+            "c": {
+              "date": "2026-09-28",
+              "price": 244.73
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 259.92
+            },
+            {
+              "ratio": 1.272,
+              "price": 264.05
+            },
+            {
+              "ratio": 1.618,
+              "price": 269.31
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "ticker": "SMCI",
+      "name": "Super Micro Computer, Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-10-14T13:30:00Z",
+      "quote": {
+        "price": 35.78,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/SMCI",
+        "as_of": "2026-10-14T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 11
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 35.03,
+        "entry_high": 35.78,
+        "stop": 32.04,
+        "target": 43.25,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-08-24",
+              "price": 34.09
+            },
+            "b": {
+              "date": "2026-08-27",
+              "price": 39.47
+            },
+            "c": {
+              "date": "2026-09-02",
+              "price": 35.63
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 41.01
+            },
+            {
+              "ratio": 1.272,
+              "price": 42.47
+            },
+            {
+              "ratio": 1.618,
+              "price": 44.33
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "ticker": "CRM",
+      "name": "Salesforce, Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-10-14T13:30:00Z",
+      "quote": {
+        "price": 235.95,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/CRM",
+        "as_of": "2026-10-14T13:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 12
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 232.37,
+        "entry_high": 235.95,
+        "stop": 221.8,
+        "target": 267.9,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-08-17",
+              "price": 189.91
+            },
+            "b": {
+              "date": "2026-09-15",
+              "price": 262.34
+            },
+            "c": {
+              "date": "2026-09-28",
+              "price": 221.18
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 293.61
+            },
+            {
+              "ratio": 1.272,
+              "price": 313.31
+            },
+            {
+              "ratio": 1.618,
+              "price": 338.37
             }
           ]
         }
