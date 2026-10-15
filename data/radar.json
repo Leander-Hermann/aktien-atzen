@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-14T23:20:51.739074Z",
+  "generated_at": "2026-10-15T00:20:38.941056Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 114,
+  "symbols_total": 120,
   "with_quote_data": 60,
   "sources": [
    "watchlist",
@@ -25,7 +25,7 @@
    "name": "Bank of America",
    "score": 90,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
@@ -42,7 +42,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -60,20 +60,20 @@
    },
    "earnings": {
     "date": "2026-10-14",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "bmo"
    },
    "llm": {
     "status": "ready",
-    "headline": "Bank of America fällt bei hohem Handelsvolumen",
-    "why_now": "Die Aktie von Bank of America liegt bei 50,885 USD und damit 5,71 % im Minus. Das Handelsvolumen beträgt das 2,2-Fache des Durchschnitts. Heute steht ein Earnings-Termin an. Ursache unklar; der zeitliche Zusammenhang könnte auf eine Reaktion im Umfeld der Veröffentlichung hindeuten.",
+    "headline": "Bank of America fällt bei erhöhtem Handelsvolumen",
+    "why_now": "Die Aktie liegt bei 50,885 USD und ist um 5,71 % gefallen. Das Handelsvolumen beträgt 2,2× des Durchschnitts; zugleich wurde gestern der Earnings-Termin ausgewiesen. Der zeitliche Zusammenhang könnte auf eine Reaktion rund um den Termin hindeuten, ist aber nicht belegt. Ursache unklar.",
     "watch_next": [
-     "Kursverlauf nach dem Earnings-Termin",
-     "Handelsvolumen im weiteren Tagesverlauf",
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen im weiteren Verlauf",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-14T19:20:43.977523Z"
+    "generated_at": "2026-10-15T00:20:38.941056Z"
    }
   },
   {
@@ -153,116 +153,6 @@
     "pct": -5.66,
     "cur": "USD",
     "as_of": "2026-10-14T18:37:08.973225+00:00"
-   }
-  },
-  {
-   "symbol": "ENR.DE",
-   "name": "Siemens Energy",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,4 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:ENR",
-   "quote": {
-    "price": 135.28,
-    "pct": -5.44,
-    "cur": "EUR",
-    "as_of": "2026-10-14T18:37:08.973225+00:00"
-   }
-  },
-  {
-   "symbol": "UNH",
-   "name": "UnitedHealth",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+4,0 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 392.695,
-    "pct": 3.95,
-    "cur": "USD",
-    "as_of": "2026-10-14T18:37:08.973225+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-13",
-    "distance_days": -1,
-    "zeit": "bmo"
-   }
-  },
-  {
-   "symbol": "GS",
-   "name": "Goldman Sachs",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,7 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 867.96,
-    "pct": -2.69,
-    "cur": "USD",
-    "as_of": "2026-10-14T18:37:08.973225+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-13",
-    "distance_days": -1,
-    "zeit": "bmo"
    }
   },
   {
@@ -382,35 +272,37 @@
    }
   },
   {
-   "symbol": "JNJ",
-   "name": "Johnson & Johnson",
+   "symbol": "ENR.DE",
+   "name": "Siemens Energy",
    "score": 55,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "large_move",
    "triggers": [
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,4 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
+   "tv_symbol": "XETR:ENR",
    "quote": {
-    "price": 253.46,
-    "pct": 1.95,
-    "cur": "USD",
+    "price": 135.28,
+    "pct": -5.44,
+    "cur": "EUR",
     "as_of": "2026-10-14T18:37:08.973225+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-13",
-    "distance_days": -1,
-    "zeit": "bmo"
    }
   },
   {
@@ -429,13 +321,13 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings in 6 Tagen",
      "weight": 20
     }
    ],
    "earnings": {
     "date": "2026-10-21",
-    "distance_days": 7,
+    "distance_days": 6,
     "zeit": "amc"
    }
   }
