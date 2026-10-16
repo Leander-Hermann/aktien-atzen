@@ -1,6 +1,724 @@
 {
- "updated": "2026-10-15T18:34:58.433346+00:00",
+ "updated": "2026-10-16T06:35:08.707032+00:00",
  "ticker": {
+  "CRWV": {
+   "name": "CoreWeave",
+   "auftritte": [
+    {
+     "date": "2026-10-16",
+     "video_id": "tEfOuRfQvOU",
+     "url": "https://www.youtube.com/watch?v=tEfOuRfQvOU&t=116s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "CoreWeave schwankte stark: Nach einem Rückgang von etwa 75 auf rund 60 US-Dollar setzte eine Erholung ein. Als Belastungsfaktoren nennt der Host die hohe Verschuldung und mögliche Zinsänderungen.",
+     "einordnung": "Hier treffen ein strukturell attraktives KI-Thema und eine erhebliche Bilanz- sowie Zinsabhängigkeit aufeinander. Die Erholung ist daher zunächst eher ein Sentiment- und Short-Covering-Signal als ein…",
+     "figures": "Rückgang von ca. 75 auf 60 USD; Erholung vom Tief zum Hoch um ca. 15%; Verschuldung knapp über 20 Mrd. USD"
+    },
+    {
+     "date": "2026-10-15",
+     "video_id": "hddKkJD_9GU",
+     "url": "https://www.youtube.com/watch?v=hddKkJD_9GU&t=3420s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Die CoreWeave-Aktie verlor 15,5 Prozent am Vortag und weitere 6 Prozent vorbörslich. Noch kritischer als der Aktienkurs ist der Anleihemarkt: Eine Anleihe mit 9,75 Prozent Kupon notiert nur noch bei…",
+     "einordnung": "Der Anleihekurs ist hier das wichtigere Warnsignal als der Aktienchart, weil er die Refinanzierungsfähigkeit des Geschäftsmodells unmittelbar bepreist. Bei einem kapitalintensiven Infrastrukturmodell…",
+     "figures": "Aktie: -15,5% am Vortag und -6% vorbörslich; Anleihe: 78% des Nennwerts; Kupon: 9,75%; effektive Rendite: etwa 15 bis 16%, intraday bis 20%; CDS: über 1000; Branchenabschläge: 10 bis 11%, unter ander…"
+    },
+    {
+     "date": "2026-10-06",
+     "video_id": "GtrRTN1P-RM",
+     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM&t=1313s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "CoreWeave steigt laut Host um 4,4 Prozent und gehört damit zu den Gewinnern der KI-Aktien.",
+     "einordnung": "Der Titel profitiert besonders direkt vom KI-Rechenzentrumsboom, ist dadurch aber auch besonders abhängig von Finanzierung, Kapazitätsauslastung und anhaltender Nachfrage. Die Zinsbewegung bleibt für…",
+     "figures": "+4,4 Prozent"
+    },
+    {
+     "date": "2026-09-18",
+     "video_id": "rwwuPMsxzj8",
+     "url": "https://www.youtube.com/watch?v=rwwuPMsxzj8&t=2886s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "CoreWeave plant die Aufnahme von 3 Mrd. US-Dollar über Wandelanleihen, mit einer möglichen Ausweitung auf 3,5 Mrd. US-Dollar, sowie ein ATM-Programm über 35 Mio. Aktien. Die Nachfrage ist laut Host s…",
+     "einordnung": "CoreWeave zeigt exemplarisch, dass hohe KI-Nachfrage nicht automatisch hohe Eigenkapitalrenditen bedeutet. Die Kapitalaufnahme kann das Wachstum finanzieren, erhöht aber bei einer Netto-Schuld/EBITDA…",
+     "figures": "Wandelanleihen 3 Mrd. US-Dollar, maximal 3,5 Mrd. US-Dollar; ATM-Programm 35 Mio. Aktien; Netto-Schuld/EBITDA rund 9; vertragliche Leistung 4,2 GW nach 3,7 GW vor sechs Wochen; Rechenkapazität 40 Mio…"
+    },
+    {
+     "date": "2026-08-18",
+     "video_id": "BxOBsfGofLs",
+     "url": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=224s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Der Host bezeichnet die Zahlen als gut und den Ausblick als bombastisch, sieht die Aktie wegen des Zinsanstiegs aber als nervös an.",
+     "einordnung": "CoreWeave steht exemplarisch für den Konflikt zwischen starkem KI-Wachstum und hoher Kapitalintensität. Bei solchen Geschäftsmodellen können steigende Finanzierungskosten die Gewinn- und Bewertungsfa…",
+     "figures": "Im späteren Verlauf wird ein Kurseinbruch von 8 % genannt."
+    },
+    {
+     "date": "2026-08-12",
+     "video_id": "wNEk0PB02MQ",
+     "url": "https://www.youtube.com/watch?v=wNEk0PB02MQ&t=2445s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "CoreWeave steigerte den Umsatz um 112 % auf 2,58 Mrd. $, blieb aber mit einem Nettoverlust von 626 Mio. $ tief defizitär. Der Backlog beträgt 104,2 Mrd. $, zugleich belasten hohe Schulden und Zinskos…",
+     "einordnung": "CoreWeave ist das reine Hochrisiko-Papier im KI-Infrastrukturkorb: Die Nachfrage ist außergewöhnlich stark, die Finanzierung aber ebenso außergewöhnlich anspruchsvoll. Der Markt preist Wachstum ein,…",
+     "figures": "Umsatz +112% beziehungsweise +24% gegenüber dem Vorquartal auf 2,58 Mrd. $, EPS -11 $ gegenüber erwarteten -1,41 $, Nettoverlust 626 Mio. $, Cash 6,9 Mrd. $, Backlog 104,2 Mrd. $, Zinskosten 640 Mio.…"
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "_CPZNQv1cns",
+     "url": "https://www.youtube.com/watch?v=_CPZNQv1cns",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "CoreWeave wird in der Videobeschreibung als weiterer Einzelwert im Zusammenhang mit Quartalsberichten genannt; im Rohmaterial liegen dazu keine konkreten charttechnischen Aussagen vor.",
+     "einordnung": "Ohne überlieferte Marken oder eine Host-Einschätzung lässt sich aus dem vorliegenden Material kein belastbares technisches Setup ableiten."
+    },
+    {
+     "date": "2026-06-12",
+     "video_id": "0YJSCsAcAPg",
+     "url": "https://www.youtube.com/watch?v=0YJSCsAcAPg&t=842s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Spezialisierter KI-Cloud-Anbieter mit explosivem Umsatzwachstum — plus 736 Prozent in 2024 und plus 168 Prozent in 2025 — bleibt jedoch weiterhin deutlich defizitär. Ein potenzieller Einstieg in den…",
+     "einordnung": "Dreistellige Wachstumsraten sind beeindruckend, aber ein sich ausweitender Verlust bei gleichzeitig sinkender Wachstumsdynamik ist ein klassisches Warnzeichen — das Geschäftsmodell muss erst den Bewe…",
+     "figures": "Umsatzwachstum 2024: +736%, 2025: +168%; Verlust 2024: +45%, 2025: +35% (Verlust weitet sich aus)"
+    }
+   ]
+  },
+  "MU": {
+   "name": "Micron Technology",
+   "auftritte": [
+    {
+     "date": "2026-10-16",
+     "video_id": "tEfOuRfQvOU",
+     "url": "https://www.youtube.com/watch?v=tEfOuRfQvOU&t=214s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Micron Technology erholte sich im Tagesverlauf deutlich von anfänglich 860 auf 931 US-Dollar.",
+     "einordnung": "Die starke Intraday-Erholung spricht für eine hohe Bereitschaft, Rücksetzer im Speicherchipsektor zu kaufen. Dennoch bleibt Micron ein zyklischer Wert, bei dem Preise, Lagerbestände und Investitionsb…",
+     "figures": "Start bei 860 USD, Schluss bei 931 USD"
+    },
+    {
+     "date": "2026-10-13",
+     "video_id": "T0dWxExM4iM",
+     "url": "https://www.youtube.com/watch?v=T0dWxExM4iM&t=206s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Micron und andere Speicherchiphersteller geraten durch die Ankündigung eines neuen chinesischen Chips unter Druck.",
+     "einordnung": "Bei Speicherchips kann schon die Aussicht auf zusätzliche Konkurrenz die Erwartungen an Preise, Margen und Marktanteile belasten. Der Kursdruck ist deshalb zunächst eine Neubewertung des Wettbewerbsr…"
+    },
+    {
+     "date": "2026-10-13",
+     "video_id": "DpbDS3UHiOE",
+     "url": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1948s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Egmond verweist auf eine normale EBIT-Marge von 28 Prozent und hält die aktuell deutlich höheren Margen im Speicherchipgeschäft für astronomisch und nicht nachhaltig. CXMT verschärfe den Wettbewerbsd…",
+     "einordnung": "Meine Einschätzung: Micron ist ein gutes Beispiel dafür, warum ein scheinbar günstiges KGV bei Speicherwerten am Gewinnhoch gefährlich sein kann. Die entscheidende Frage ist nicht die aktuelle Marge,…",
+     "figures": "EBIT-Marge in normalen Zeiten: 28%"
+    },
+    {
+     "date": "2026-10-13",
+     "video_id": "hpNlbenh6Gw",
+     "url": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1784s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Micron hat die Marke von 1.000 USD überschritten, fällt aber wieder zurück. Der Host hält den Chart für ungünstig und nennt 950 bis 940 USD als nächste Ziele; unter 900 USD wäre ein Rückgang bis 820…",
+     "einordnung": "Der Rückfall nach dem Überschreiten einer runden Marke spricht charttechnisch zunächst für nachlassendes Momentum. Wie bei SK Hynix und SanDisk bleibt die entscheidende Frage, ob der Rücksetzer nur G…",
+     "figures": "Marke 1.000 USD; mögliche Ziele 950 bis 940, 900 und 820 USD; 200-Tage-EMA 750 USD"
+    },
+    {
+     "date": "2026-10-08",
+     "video_id": "xi3h-6-jVVU",
+     "url": "https://www.youtube.com/watch?v=xi3h-6-jVVU&t=226s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Micron erhält von Davidson ein neues Kursziel von 3.000 Dollar. Der Host sieht den KI-Trade damit noch nicht als beendet an.",
+     "einordnung": "Das Kursziel signalisiert außerordentlichen Optimismus gegenüber dem KI-Speicherzyklus. Gerade bei Speicherherstellern bleibt aber die Zyklik ein Gegengewicht, weil hohe Preise und Kapazitätsausbau s…",
+     "figures": "Kursziel 3.000 $"
+    },
+    {
+     "date": "2026-10-08",
+     "video_id": "jN4sbPRhE28",
+     "url": "https://www.youtube.com/watch?v=jN4sbPRhE28&t=2760s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Davidson hebt das Kursziel für Micron auf 3.000 US-Dollar an und begründet dies mit einem für 2027 unterstellten KGV von 19. Der Host hält dieses Ziel für unrealistisch, sieht aber wegen des bullisch…",
+     "einordnung": "Die Differenz zwischen einem KGV von 6 und einem unterstellten KGV von 19 zeigt, wie stark die These von dauerhaft höheren Speichergewinnen abhängt. Das eigene Ziel des Hosts ist ambitioniert, aber d…",
+     "figures": "Analystenkursziel 3.000 US-Dollar; Kurs laut Host rund 1.100 US-Dollar; aktuelles KGV 6; historischer Durchschnitt 17,7; unterstelltes KGV 19 für 2027; eigenes Kursziel des Hosts 1.600 bis 1.700 US-D…"
+    },
+    {
+     "date": "2026-10-06",
+     "video_id": "GtrRTN1P-RM",
+     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM&t=367s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Micron kündigt für den 9. Dezember Neuigkeiten zur Kapitalallokation an. Der Host erwartet eine Aufstockung der Aktienrückkäufe und führt den jüngsten Kursanstieg eher auf den Renditerückgang als auf…",
+     "einordnung": "Rückkäufe könnten den Kurs zusätzlich stützen, ändern aber nichts daran, dass Micron stark vom zyklischen Speicherpreis abhängt. Die Reaktion auf fallende Renditen zeigt, wie viel der aktuellen Beweg…",
+     "figures": "Ankündigung zur Kapitalallokation am 9. Dezember"
+    },
+    {
+     "date": "2026-10-06",
+     "video_id": "_8Jge1nuuHs",
+     "url": "https://www.youtube.com/watch?v=_8Jge1nuuHs&t=2960s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Micron profitiert stark vom KI-Boom bei Speicherchips und weist laut Host ein extrem niedriges KGV von 6 auf. Der erwartete Free Cashflow könnte massiv steigen und Aktienrückkäufe ermöglichen; als Ku…",
+     "einordnung": "Das niedrige KGV wirkt bei den genannten Cashflow- und Umsatzsprüngen attraktiv, ist bei Micron aber zyklisch zu lesen und kein klassischer Dauer-Multiplikator. Die Aktie kann weiter überraschen, doc…",
+     "figures": "KGV 6; Free Cashflow 33 Mrd. US-Dollar im vierten Quartal; Prognose 150 Mrd. US-Dollar für 2027 und 182 Mrd. US-Dollar für 2028; Kursziel 1.000 US-Dollar; erwarteter Gewinn je Aktie 176 US-Dollar; Um…"
+    },
+    {
+     "date": "2026-10-05",
+     "video_id": "11hsSxRDwMg",
+     "url": "https://www.youtube.com/watch?v=11hsSxRDwMg&t=1225s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Micron hat sich nach starken Quartalszahlen stabilisiert. Der Host sieht die Nachfrage weiterhin als hoch an und bewertet den Trend als intakt.",
+     "einordnung": "Micron ist als Speicherhersteller ein besonders konjunktur- und zykliksensibler KI-Indikator. Die positive Reaktion auf die Zahlen spricht für Vertrauen in die Nachfrage, die genannten Kursziele zeig…",
+     "figures": "Kursziele bei 1.330 US-Dollar und 1.690 US-Dollar"
+    },
+    {
+     "date": "2026-10-01",
+     "video_id": "yylBKlp7vIg",
+     "url": "https://www.youtube.com/watch?v=yylBKlp7vIg&t=120s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Micron überzeugte im vierten Quartal mit Umsatz, Gewinn und Bruttomarge. Auch der Ausblick auf das erste Quartal lag beim Umsatz und Gewinn über dem Konsens, die Aktie reagierte nachbörslich dennoch…",
+     "einordnung": "Operativ ist das ein Ausrufezeichen, doch die verhaltene Börsenreaktion zeigt, dass der Markt bei Micron bereits sehr hohe Erwartungen eingepreist hat. Die leicht unter dem Konsens liegende Margenpro…",
+     "figures": "Umsatz Q4 54,29 Mrd. $ gegenüber 11,32 Mrd. $ im Vorjahr und 51,49 Mrd. $ Konsens; Gewinn je Aktie 33,42 $ gegenüber 31,83 $ Konsens; Bruttomarge 87% gegenüber 86,2% Konsens; Ausblick Umsatz 60 bis 6…"
+    },
+    {
+     "date": "2026-10-01",
+     "video_id": "DE2rEbY1HNI",
+     "url": "https://www.youtube.com/watch?v=DE2rEbY1HNI&t=3477s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Micron meldet Rekordzahlen mit starkem Umsatz- und Gewinnwachstum, doch die Aktie bewegt sich kaum. Der Markt sorgt sich, dass der Memory-Zyklus bereits seinen Höhepunkt erreicht haben könnte; der Ho…",
+     "einordnung": "Die Kursreaktion trotz außergewöhnlicher Zahlen zeigt, wie stark der Markt bei Speicherwerten auf den Zyklus und nicht nur auf das vergangene Quartal blickt. Das sehr niedrige KGV kann bei anhaltende…",
+     "figures": "Umsatzwachstum +379%; Umsatzwachstum gegenüber dem Vorquartal +33%; EPS 33,42 US-Dollar gegenüber 31,61 US-Dollar Konsens; Bruttomarge 87% gegenüber 86,1%; KGV 7; PEG 0,04; rund 6.000 Fonds; Goldman-…"
+    },
+    {
+     "date": "2026-09-30",
+     "video_id": "DDB7VT8gm4E",
+     "url": "https://www.youtube.com/watch?v=DDB7VT8gm4E&t=233s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Micron legt die Bilanz für das vierte Quartal vor. Der Markt rechnet mit einem kräftigen Wachstum, zugleich könnten bestehende Verträge die weitere Entwicklung bremsen.",
+     "einordnung": "Micron steht vor einer extrem hohen Erwartungshürde: Selbst sehr starke Zahlen könnten bei verhaltenem Ausblick enttäuschen. Die enorme Optionsbewegung zeigt, dass die Bilanz eher ein Ereignis- als e…",
+     "figures": "Analystenschätzung: Umsatz 51,1 Milliarden US-Dollar und Gewinn je Aktie 31,52 US-Dollar; Unternehmenseigene Prognose: 50 Milliarden US-Dollar Umsatz und 31 US-Dollar Gewinn je Aktie; Bruttomarge 86…"
+    }
+   ]
+  },
+  "NKE": {
+   "name": "Nike",
+   "auftritte": [
+    {
+     "date": "2026-10-16",
+     "video_id": "tEfOuRfQvOU",
+     "url": "https://www.youtube.com/watch?v=tEfOuRfQvOU&t=248s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Nike legte um mehr als 20 Prozent zu und wird vom Host als günstig bewertet.",
+     "einordnung": "Ein derartiger Kurssprung signalisiert vor allem eine Neubewertung der Erwartungen, nicht automatisch eine schnelle operative Trendwende. Die vom Host genannte Bewertung wäre extrem niedrig und sollt…",
+     "figures": "Kursanstieg von über 20%; Börsenwert 50 Mrd. USD; KGV 1"
+    },
+    {
+     "date": "2026-10-13",
+     "video_id": "hpNlbenh6Gw",
+     "url": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=3045s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Nike notiert laut Host nahe den Tiefstständen bei 33 bis 34 USD. Das China-Geschäft ist schwach, der Turnaround dauert an, und der Chart bleibt angeschlagen.",
+     "einordnung": "Die Dividendenrendite kann bei einem gefallenen Konsumwert attraktiv wirken, ist aber kein Ersatz für eine Trendwende bei Umsatz und Marke. Die klare Warnung des Hosts ist angesichts des schwachen Ch…",
+     "figures": "Kurs 33 bis 34 USD; Dividendenrendite über 4%; mögliches Ziel 40 USD; Risiko 30 USD"
+    },
+    {
+     "date": "2026-10-09",
+     "video_id": "zlI3Nv72aMI",
+     "url": "https://www.youtube.com/watch?v=zlI3Nv72aMI",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "Nike wird als bekannter Qualitätswert genannt, der deutlich unter seinem Hoch notiert und damit die schwache Marktbreite außerhalb der KI-Aktien illustriert.",
+     "einordnung": "Der Kursrückstand allein macht Nike noch nicht attraktiv; entscheidend wäre eine glaubhafte operative Trendwende. In einem Umfeld hoher Renditen werden etablierte Konsummarken zudem stärker nach Wach…"
+    },
+    {
+     "date": "2026-10-06",
+     "video_id": "GtrRTN1P-RM",
+     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM&t=652s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Nike fällt nach der Zahlenvorlage auf ein 13-Jahrestief. Besonders das China-Geschäft ist laut Host eingebrochen; er bleibt deshalb skeptisch.",
+     "einordnung": "Ein Mehrjahrestief allein ist kein Kaufsignal, wenn Umsatzqualität, Marke und China-Dynamik gleichzeitig unter Druck stehen. Die Skepsis ist bei einem Konsumwert mit schwacher Nachfrage und hoher Erh…",
+     "figures": "13-Jahrestief"
+    },
+    {
+     "date": "2026-10-02",
+     "video_id": "JgUJN3izL5s",
+     "url": "https://www.youtube.com/watch?v=JgUJN3izL5s&t=180s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nike enttäuschte mit den Zahlen, insbesondere wegen der ausgeprägten Schwäche in China. Die Aktie fiel nachbörslich deutlich; der Host sieht deshalb keinen Kaufgrund.",
+     "einordnung": "Das Problem ist nicht nur ein einzelnes schwaches Quartal, sondern die Kombination aus regionalem Nachfragerückgang und niedrigerer Profitabilität. Bei einem globalen Konsumwert muss zunächst glaubha…",
+     "figures": "China-Umsatz minus 26 Prozent, Bruttomarge 42,8 Prozent, Sparprogramm über 2,5 Milliarden US-Dollar, Kursziel von Piper Sandler auf 28 US-Dollar gesenkt, nachbörslicher Kursrückgang um 8 bis 9 Prozent"
+    },
+    {
+     "date": "2026-10-02",
+     "video_id": "kIqPqPlWdLM",
+     "url": "https://www.youtube.com/watch?v=kIqPqPlWdLM&t=3510s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nike verfehlt beim Umsatz die Dynamik, kann beim Gewinn je Aktie aber leicht positiv überraschen. Besonders schwach sind China, das Direktgeschäft und Converse; der Host hält ein KGV von 21 angesicht…",
+     "einordnung": "Die Gewinnüberraschung ist angesichts des Umsatz- und Margendrucks nur ein schwacher Trost. China, der Direktvertrieb und Converse zeigen, dass Nike nicht nur ein temporäres Nachfrageproblem, sondern…",
+     "figures": "Umsatz -4 % auf 11,2 Mrd. USD, EPS 0,48 USD bei erwarteten 0,44 USD, China-Umsatz -22 %, China-EBIT -34 %, Direktgeschäft -8 %, Converse -28 %, KGV 21"
+    },
+    {
+     "date": "2026-09-28",
+     "video_id": "iPOhcrx5BhI",
+     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=433s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Nike bleibt ein Sorgenkind: Der Konzern hat Marktanteile verloren, der Wechsel von Kylian Mbappé zu On belastet die Wahrnehmung und der neue CEO konnte bislang keinen überzeugenden Erfolg vorweisen.…",
+     "einordnung": "Nike steht nicht vor einem gewöhnlichen kurzfristigen Ergebnisproblem, sondern vor einer möglichen mehrjährigen Erneuerung von Marke, Produkt und Vertrieb. Solange der operative Beweis ausbleibt, ist…",
+     "figures": "Quartalszahlen am Donnerstag"
+    },
+    {
+     "date": "2026-09-28",
+     "video_id": "AmCmqN7O-P4",
+     "url": "https://www.youtube.com/watch?v=AmCmqN7O-P4&t=2857s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Bank of America hat Nike auf Underperform abgestuft und das Kursziel von 47 auf 30 US-Dollar gesenkt. Die EPS-Prognosen für 2027 und 2028 wurden um 11 beziehungsweise 12 Prozent reduziert; eine Umsat…",
+     "einordnung": "Eine hohe Dividendenrendite ist bei einer Ausschüttungsquote von über 100 Prozent kein ausreichender Sicherheitsanker. Solange Umsatz- und Gewinnwende erst für 2028 erwartet werden, bleibt die Aktie…",
+     "figures": "Neues Kursziel 30 US-Dollar; vorher 47 US-Dollar; EPS-Prognosen 2027 und 2028 um 11 beziehungsweise 12 Prozent gesenkt; EPS 143 beziehungsweise 187; Dividendenrendite 4,6 Prozent; Ausschüttungsquote…"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "6VmhA9lWzLk",
+     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=2460s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nike befindet sich in einem Abwärtstrend. Mehrere Analysten senken ihre Kursziele, während die Nachfrage in China und in den Lifestyle-Segmenten schwach bleibt.",
+     "einordnung": "Die breite Spanne der Analystenziele zeigt, wie uneinheitlich die Erholungserwartungen sind. Solange China und die Lifestyle-Nachfrage nicht drehen, bleibt eine niedrige Bewertung allein kein ausreic…",
+     "figures": "Kurs 37 Dollar; Kursziele: Bert 44 Dollar, Citigroup 39 Dollar, Morgan Stanley 31 Dollar, BMO 30 Dollar"
+    },
+    {
+     "date": "2026-09-04",
+     "video_id": "JYaFrjI3lJA",
+     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=130s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Nike fällt weiter; die Marktkapitalisierung liegt inzwischen unter 50 Milliarden US-Dollar. Der Sportartikelmarkt bleibt schwierig, auch wenn die Aktie langfristig günstig bewertet erscheint.",
+     "einordnung": "Die niedrige Bewertung allein ist bei einem angeschlagenen Konsumwert noch kein Wendepunkt. Entscheidend ist, ob Nike operativ wieder an Dynamik gewinnt und der Markt diese Verbesserung glaubhaft vor…",
+     "figures": "Marktkapitalisierung unter 50 Mrd. USD"
+    },
+    {
+     "date": "2026-08-18",
+     "video_id": "-mSKtaN5emQ",
+     "url": "https://www.youtube.com/watch?v=-mSKtaN5emQ&t=4496s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Fallende Sneakerpreise und der Bruch der Unterstützung bei 40 US-Dollar erzeugten ein neues Verkaufssignal. Die Dividendenrendite liegt über 4%, doch der Host bezeichnet die Aktie zunächst als fallen…",
+     "einordnung": "Eine hohe Dividendenrendite ist bei einem strukturell schwachen Chart kein ausreichender Schutz. Nike braucht zunächst eine glaubwürdige Verbesserung bei Nachfrage, Preisen und Lagerbestand, bevor di…",
+     "figures": "Unterstützung bei 40 US-Dollar durchbrochen; Dividendenrendite über 4%."
+    },
+    {
+     "date": "2026-08-10",
+     "video_id": "Hwf_CXhBgJU",
+     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=1964s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nike verliert laut einer Morgan-Stanley-Umfrage weiter Marktanteile. Die Aktie ist technisch schwach und notiert unter 50 Dollar.",
+     "einordnung": "Die Dividendenrendite bietet eine gewisse Unterstützung, kompensiert aber nicht automatisch den möglichen Verlust von Marken- und Marktanteilen. Bei einem KGV von 24,3 braucht Nike sichtbare operativ…",
+     "figures": "Marktanteil Nike 28 %, On Holding 13 %, Kursziel 34 $ bei Bruch von 40,50 $, KGV 24,3, Dividendenrendite 4 %"
+    }
+   ]
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "auftritte": [
+    {
+     "date": "2026-10-16",
+     "video_id": "tEfOuRfQvOU",
+     "url": "https://www.youtube.com/watch?v=tEfOuRfQvOU&t=317s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon stand stellvertretend für den unter Druck geratenen Chipsektor, könnte nach Einschätzung des Hosts aber von einer allgemeinen Markterholung profitieren.",
+     "einordnung": "Infineon ist stärker als reine KI-Hoffnungswerte von Industrie-, Auto- und Konjunkturzyklen abhängig. Eine Erholung des Sektors wäre hilfreich, ersetzt aber keine Verbesserung bei Nachfrage und Ausla…"
+    },
+    {
+     "date": "2026-10-13",
+     "video_id": "T0dWxExM4iM",
+     "url": "https://www.youtube.com/watch?v=T0dWxExM4iM&t=391s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Infineon gerät wegen der allgemeinen Schwäche im Chipsektor unter Druck. Die 200-Tagelinie gilt als wichtige Unterstützung; bei einem Bruch rät der Host zum Abwarten.",
+     "einordnung": "Infineon ist nicht identisch mit einem Speicherchiphersteller, wird an der Börse aber vom Halbleitersentiment mitgezogen. Die 200-Tagelinie markiert damit nicht nur eine Chartmarke, sondern auch die…",
+     "figures": "200-Tagelinie"
+    },
+    {
+     "date": "2026-10-13",
+     "video_id": "DpbDS3UHiOE",
+     "url": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1312s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Siemens Energy gehört im DAX zu den Gewinnern, während Infineon als größter Verlierer genannt wird.",
+     "einordnung": "Meine Einschätzung: Die gegenläufige Kursreaktion unterstreicht, wie stark der Markt derzeit zwischen strukturellem Infrastrukturwachstum und zyklischer Chipabhängigkeit unterscheidet. Infineon bleib…"
+    },
+    {
+     "date": "2026-10-08",
+     "video_id": "xi3h-6-jVVU",
+     "url": "https://www.youtube.com/watch?v=xi3h-6-jVVU&t=455s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Infineon könnte vom starken TSMC-Update profitieren. Charttechnisch testet die Aktie erfolgreich die 200-Tage-Linie.",
+     "einordnung": "Die 200-Tage-Linie ist für viele Marktteilnehmer eine wichtige Trendmarke, liefert allein aber noch keine belastbare Trendwende. Infineon bleibt stärker von Industrie- und Automobilzyklen abhängig al…"
+    },
+    {
+     "date": "2026-10-06",
+     "video_id": "osb6qhZjHcM",
+     "url": "https://www.youtube.com/watch?v=osb6qhZjHcM&t=388s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Infineon findet Unterstützung an der 200-Tage-Linie. Der Host sieht die Chipwerte weiterhin durch die KI-Nachfrage gestützt und betrachtet Rücksetzer an diese Linie als Kaufgelegenheiten.",
+     "einordnung": "Die 200-Tage-Linie trennt hier eine intakte mittelfristige Aufwärtsstruktur von einer möglichen Trendverschlechterung. Infineon ist allerdings zyklischer als viele reine KI-Hochflieger, weshalb die N…",
+     "figures": "200-Tage-Linie als Unterstützung"
+    },
+    {
+     "date": "2026-10-06",
+     "video_id": "GtrRTN1P-RM",
+     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM&t=544s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon profitiert laut Host von den Micron-Nachrichten und der Zinsentwicklung und führt zeitweise die Gewinnerliste an.",
+     "einordnung": "Der Kursimpuls ist plausibel, weil Halbleiteraktien sowohl zinssensitiv als auch stark stimmungsgetrieben sind. Für eine nachhaltige Neubewertung müssten jedoch Nachfrage und Margen im Industrie- und…"
+    },
+    {
+     "date": "2026-10-01",
+     "video_id": "yylBKlp7vIg",
+     "url": "https://www.youtube.com/watch?v=yylBKlp7vIg&t=536s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon gehörte mit einem Minus von 27 Prozent zu den schwächsten DAX-Werten im dritten Quartal.",
+     "einordnung": "Die schwache Quartalsbilanz passt zum zyklischen Charakter des Halbleitergeschäfts und zeigt, dass KI-Fantasie nicht automatisch alle Chipwerte trägt. Entscheidend bleibt, wann sich Nachfrage und Mar…",
+     "figures": "Q3-Performance -27%"
+    },
+    {
+     "date": "2026-09-30",
+     "video_id": "Bg0A3ucDL6M",
+     "url": "https://www.youtube.com/watch?v=Bg0A3ucDL6M&t=793s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon gehört nach der Anthropic-IPO-Nachricht zu den Aktien, die steigen, gibt nach dem ifo-Bericht und in der allgemeinen Schwäche der zyklischen Werte aber zunächst nach.",
+     "einordnung": "Infineon profitiert vom KI- und Elektrifizierungsthema, bleibt als Halbleiterwert aber stark konjunktur- und zinssensitiv. Der Titel ist damit eher ein Zykliker als ein reiner defensiver KI-Profiteur."
+    },
+    {
+     "date": "2026-09-22",
+     "video_id": "frGJ0jOwCr0",
+     "url": "https://www.youtube.com/watch?v=frGJ0jOwCr0&t=349s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Infineon führte am Verfallstag und am Montag die DAX-Gewinnerliste an. Egmond wertet dies als Zeichen, dass Investoren massiv in Chipwerte zurückkehren.",
+     "einordnung": "Infineon profitiert in einer solchen Phase überproportional vom Sektor-Momentum, bleibt aber stärker konjunkturabhängig als reine KI-Hochflieger. Der Kursanstieg ist daher zunächst eher ein Sentiment…"
+    },
+    {
+     "date": "2026-09-18",
+     "video_id": "rwwuPMsxzj8",
+     "url": "https://www.youtube.com/watch?v=rwwuPMsxzj8&t=966s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Oddo BHF wird nach der Korrektur optimistischer für Infineon. Die Aktie testet die 200-Tage-Linie und profitiert aktuell mit 2,3 % von der Erholung im Chipsektor; 2027 rückt als entscheidendes Wachst…",
+     "einordnung": "Ein PEG von 0,5 spricht im Verhältnis zum erwarteten Wachstum für eine vergleichsweise moderate Bewertung, sofern die Gewinnannahmen für 2027 eintreffen. Der Test der 200-Tage-Linie bleibt dennoch ei…",
+     "figures": "Kurs plus 2,3 %; Korrektur rund 40 % beziehungsweise laut Host 37 % unter dem Hoch; KGV 21; PEG 0,5; entscheidender Ausbruch über 57 Euro"
+    },
+    {
+     "date": "2026-09-15",
+     "video_id": "RJtgvUko4k4",
+     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=517s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Infineon fiel ebenfalls unter die 200-Tage-Linie und gehörte zu den größeren Verlierern.",
+     "einordnung": "Der Fall unter die 200-Tage-Linie ist bei einem zyklischen Halbleiterwert ein ernstzunehmendes technisches Warnsignal. Gleichzeitig macht die Nähe zum KI- und Technologiethema die Aktie besonders anf…"
+    },
+    {
+     "date": "2026-09-15",
+     "video_id": "Q2c5Ustra_c",
+     "url": "https://www.youtube.com/watch?v=Q2c5Ustra_c&t=785s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Infineon gehörte im DAX zu den größten Verlierern und markierte ein neues Monatstief. Als Belastungsfaktoren nennt Egmond Haidt die Zins- und Chip-Sorgen.",
+     "einordnung": "Infineon ist als zyklischer Halbleiterwert besonders anfällig für steigende Renditen und eine Eintrübung der Konjunkturerwartungen. Dass die Aktie trotz ihrer breiteren industriellen Ausrichtung mit…"
+    }
+   ]
+  },
+  "AIXA.DE": {
+   "name": "Aixtron",
+   "auftritte": [
+    {
+     "date": "2026-10-16",
+     "video_id": "tEfOuRfQvOU",
+     "url": "https://www.youtube.com/watch?v=tEfOuRfQvOU&t=352s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Aixtron zeigte sich vorbörslich von den Vortagesverlusten erholt. Für weitere Details verwies der Host auf aktionaer.de.",
+     "einordnung": "Bei Aixtron bleibt die Börse besonders empfindlich gegenüber Änderungen bei Investitionsplänen der Halbleiterkunden. Eine vorbörsliche Erholung ist daher zunächst eine technische Gegenbewegung und no…"
+    },
+    {
+     "date": "2026-08-11",
+     "video_id": "mREZgmSkQCI",
+     "url": "https://www.youtube.com/watch?v=mREZgmSkQCI&t=549s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Aixtron hat sich deutlich erholt, ist an der 200-Tagelinie nach oben abgeprallt und bewegt sich auf die Marke von 40 Euro zu. Ein Kollege hatte zuvor ein Turbo-Produkt empfohlen, das rund 45 Prozent…",
+     "einordnung": "Der Abprall an der 200-Tagelinie macht die Aktie charttechnisch interessant, doch die Nähe zu einer runden Zielmarke kann auch Gewinnmitnahmen auslösen. Bei gehebelten Produkten ist die Schwankungs-…",
+     "figures": "40 Euro; plus 45 Prozent"
+    },
+    {
+     "date": "2026-07-27",
+     "video_id": "i5q2OHZUl84",
+     "url": "https://www.youtube.com/watch?v=i5q2OHZUl84&t=554s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Aixtron liegt vorbörslich zusammen mit Infineon rund 3 bis 4 Prozent im Plus. Die Marke von 40 Euro wird als interessante charttechnische Orientierung genannt.",
+     "einordnung": "Aixtron bleibt ein stärker zyklischer Halbleiterausrüster, bei dem Bewegungen schnell durch Branchenstimmung und Auftragserwartungen verstärkt werden. Die 40-Euro-Marke ist daher eher ein technischer…",
+     "figures": "Vorbörslich rund 3 bis 4 Prozent Plus, 40 €"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "ZtKFU4SJtbQ",
+     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=459s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Aixtron ist von 60 auf 40 Euro gefallen und damit rund 30 Prozent zurückgekommen. Die Aktie nähert sich der 200-Tage-Linie; 40 Euro werden als mögliche Unterstützung und Sicherheitsnetz genannt.",
+     "einordnung": "Der Rückgang ist für einen zyklischen Halbleiterausrüster erheblich und macht die Unterstützungszone charttechnisch relevant. Eine Unterstützung wird aber erst durch eine erkennbare Stabilisierung be…",
+     "figures": "Rückgang von 60 auf 40 Euro; rund 30 Prozent Minus; 200-Tage-Linie; 40 Euro"
+    },
+    {
+     "date": "2026-07-15",
+     "video_id": "6LLJagAsqAI",
+     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Aixtron gehörte laut Host zu den Halbleiterwerten, die von der angehobenen ASML-Prognose profitierten.",
+     "einordnung": "Die stärkere Kursreaktion als bei Infineon unterstreicht den Hebel, den positive Branchensignale bei spezialisierten Ausrüstern auslösen können. Sie erhöht aber auch die Abhängigkeit von Investitions…",
+     "figures": "Tagesplus +3 Prozent"
+    }
+   ]
+  },
+  "NDX1.DE": {
+   "name": "Nordex",
+   "auftritte": [
+    {
+     "date": "2026-10-16",
+     "video_id": "tEfOuRfQvOU",
+     "url": "https://www.youtube.com/watch?v=tEfOuRfQvOU&t=371s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Nordex überzeugte mit starken Quartalszahlen und legte vorbörslich um 6 bis 7 Prozent zu. Der Host sieht die 40-Euro-Marke als Ziel.",
+     "einordnung": "Starke Quartalszahlen können bei Nordex eine über längere Zeit gedrückte Erwartungshaltung drehen. Der Windanlagenbau bleibt jedoch margensensitiv und politisch abhängig, sodass der Weg zur genannten…",
+     "figures": "Vorbörslicher Kursanstieg um 6 bis 7%; Ziel 40 €"
+    },
+    {
+     "date": "2026-10-12",
+     "video_id": "dygYRkXpB_g",
+     "url": "https://www.youtube.com/watch?v=dygYRkXpB_g&t=390s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Nordex meldet im dritten Quartal mehr als 400 Anlagen in 10 Ländern und liegt damit deutlich über den Erwartungen. Der Host beurteilt die Aktie positiv und nennt ein Kursziel von 40 Euro.",
+     "einordnung": "Die Meldung bestätigt eine starke operative Dynamik, wobei bei Windkraftanlagen der Auftragseingang und die Margenqualität wichtiger sind als reine Stückzahlen. Das Kursziel signalisiert eine konstru…",
+     "figures": "Mehr als 400 Anlagen, 10 Länder, Kursziel 40 EUR"
+    },
+    {
+     "date": "2026-10-12",
+     "video_id": "ndIevt5yveg",
+     "url": "https://www.youtube.com/watch?v=ndIevt5yveg&t=699s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Nordex verzeichnet trotz eines starken Auftragseingangs von 30 Prozent auf mehr als 2,8 Gigawatt weiterhin einen intakten Abwärtstrend. Nach Einschätzung des Hosts wird die Aktie nach jedem Anstieg s…",
+     "einordnung": "Die günstige Bewertung und der Auftragseingang liefern fundamentale Argumente, reichen aber bislang nicht für eine Trendwende. Solange der Kurs trotz guter Nachrichten nicht nachhaltig reagiert, blei…",
+     "figures": "Hoch 52 Euro; Tief 34 Euro; KGV 12; Auftragseingang plus 30 Prozent auf mehr als 2,8 Gigawatt; 427 Anlagen"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "vOXfcKwP55o",
+     "url": "https://www.youtube.com/watch?v=vOXfcKwP55o&t=439s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Nordex meldet viele neue Aufträge, doch die Aktie reagiert darauf nicht mit entsprechender Stärke. Der Host sieht steigende Zinsen und teureres Kapital als Bremsfaktoren und verweist auf die 200-Tage…",
+     "einordnung": "Meine Einordnung: Der Kurs zeigt, dass der Markt Auftragseingänge derzeit nicht isoliert bewertet, sondern gegen Finanzierungskosten und erwartete Renditen der Projekte stellt. Solange die 200-Tage-L…"
+    },
+    {
+     "date": "2026-09-08",
+     "video_id": "fYae2mfR1ps",
+     "url": "https://www.youtube.com/watch?v=fYae2mfR1ps&t=1265s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Citigroup hebt Nordex von Neutral auf Kaufen an und setzt das Kursziel auf 50 Euro. Zuvor hatte bereits die Bank of America 54 Euro genannt; der Host verweist auf ein Kursplus von 29 auf 41 Euro seit…",
+     "einordnung": "Nordex hat bereits viel vorweggenommen, wird aber mit einem KGV von 13,8 nicht als spekulative Extrembewertung beschrieben. Nach dem starken Anstieg ist die Positionierung wichtiger als ein blindes H…",
+     "figures": "50 € Citigroup-Kursziel, 48 € vorher, 54 € Bank of America, 20–22 % Potenzial, 29 € im Januar, 41 € aktuell, 41 % Jahresplus, KGV 13,8"
+    },
+    {
+     "date": "2026-09-07",
+     "video_id": "tHrMBx5m1QU",
+     "url": "https://www.youtube.com/watch?v=tHrMBx5m1QU&t=640s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Nordex steigt nach einem neuen Auftrag um drei Prozent. Im Beitrag wird ein Kursziel von 40 Euro genannt.",
+     "einordnung": "Ein Auftrag liefert der Aktie kurzfristig Rückenwind, entscheidend bleibt aber, ob sich daraus dauerhaft bessere Margen und ein stabiler Auftragseingang ableiten lassen. Der Windkraftsektor bleibt po…",
+     "figures": "3 Prozent, 40 Euro"
+    },
+    {
+     "date": "2026-09-07",
+     "video_id": "SSFzzcpor7A",
+     "url": "https://www.youtube.com/watch?v=SSFzzcpor7A&t=677s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Die Bank of America stuft Nordex von Neutral auf Kaufen hoch und hebt das Kursziel von 50 auf 54 Euro an. Die Aktie steigt um 11 Prozent und ist damit der stärkste MDAX-Wert.",
+     "einordnung": "Der Kurssprung ist deutlich größer als die Anhebung des Kursziels und signalisiert viel kurzfristiges Momentum. Nach einem Anstieg von 11 Prozent steigt allerdings auch das Risiko, dass ein Teil der…",
+     "figures": "+11%; Kursziel 54 Euro, zuvor 50 Euro; durchschnittliches Kursziel 48,70 Euro; KGV 13 vor dem Anstieg"
+    },
+    {
+     "date": "2026-07-29",
+     "video_id": "JRUiVhwgTqA",
+     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=403s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Nordex übertrifft die Erwartungen mit starkem Umsatz- und Gewinnwachstum. Erstmals liegt die EBITDA-Marge über 10 Prozent; der operative Turnaround schreitet voran, und der hohe Auftragsbestand siche…",
+     "einordnung": "Nordex zeigt eine für einen zyklischen Anlagenbauer bemerkenswerte Kombination aus Wachstum, Marge und Netto-Cash. Der Auftragsbestand reduziert zwar das kurzfristige Auslastungsrisiko, ersetzt aber…",
+     "figures": "Umsatz plus 16 Prozent auf 2,18 Mrd. EUR, EBITDA 224 Mio. EUR, EBITDA-Marge über 10 Prozent, Nettoergebnis 111 Mio. EUR, Auftragseingang 3 Mrd. EUR, Auftragsbestand 18,4 Mrd. EUR, Free Cashflow 164 M…"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
+     "einordnung": "Nordex leidet unter dem Momentum-Wechsel, nicht unter 'Sell in May' – das ist ein wichtiger Unterschied, da der Momentum-Wechsel temporär sein kann."
+    }
+   ]
+  },
+  "SAP.DE": {
+   "name": "SAP",
+   "auftritte": [
+    {
+     "date": "2026-10-16",
+     "video_id": "tEfOuRfQvOU",
+     "url": "https://www.youtube.com/watch?v=tEfOuRfQvOU&t=401s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "SAP brach laut Host nach oben aus und stieg von etwa 190 beziehungsweise 192 auf 203 Euro. Dies wurde als Zeichen einer Entspannung bei den KI-Sorgen interpretiert.",
+     "einordnung": "SAP profitiert als etablierter Softwareanbieter eher von planbaren Unternehmensbudgets als von einem kurzfristigen KI-Hype. Der genannte Kursanstieg passt zu einer Neubewertung der Wachstumsperspekti…",
+     "figures": "Anstieg von ca. 190 beziehungsweise 192 auf 203 €; vom Host genanntes Plus von 60 bis 70%"
+    },
+    {
+     "date": "2026-10-13",
+     "video_id": "T0dWxExM4iM",
+     "url": "https://www.youtube.com/watch?v=T0dWxExM4iM&t=365s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "SAP zeigte zuletzt große Stärke und gelang laut Host ein charttechnischer Ausbruch. Die Aktie wird von Anlegern eingesammelt und weist eine ähnliche Dynamik wie Microsoft auf.",
+     "einordnung": "SAP profitiert derzeit vom Rückenwind für etablierte Software- und KI-Plattformen. Der Ausbruch ist konstruktiv, sollte aber durch die operative Entwicklung bestätigt werden, weil starke Trendphasen…"
+    },
+    {
+     "date": "2026-10-13",
+     "video_id": "hpNlbenh6Gw",
+     "url": "https://www.youtube.com/watch?v=hpNlbenh6Gw",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "SAP hat sich laut Host gut entwickelt und ein Kaufsignal erhalten, konsolidiert aber derzeit. Widerstände liegen bei 200 bis 203 EUR; bei einem nachhaltigen Ausbruch über 214 bis 220 EUR wäre der Kip…",
+     "einordnung": "Die Konsolidierung nach dem Kaufsignal ist konstruktiv, solange die Aktie die Ausbruchsstruktur verteidigt. Der Bereich 214 bis 220 EUR ist als Bestätigung wichtiger als ein kurzfristiges Überschreit…",
+     "figures": "Widerstand 200 bis 203 EUR; Ausbruchszone 214 bis 220 EUR"
+    },
+    {
+     "date": "2026-10-12",
+     "video_id": "dygYRkXpB_g",
+     "url": "https://www.youtube.com/watch?v=dygYRkXpB_g&t=505s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SAP zeigt eine stabile Aufwärtsbewegung. Das Narrativ eines KI-Verlierers hat sich laut Host aufgelöst; Kurse von 200 Euro erscheinen möglich.",
+     "einordnung": "SAP profitiert davon, dass der Markt KI zunehmend als Ergänzung zu bestehender Unternehmenssoftware und nicht nur als Bedrohung für klassische Anbieter bewertet. Die stabile Bewegung spricht für Vert…",
+     "figures": "Mögliches Kursziel: 200 EUR"
+    },
+    {
+     "date": "2026-10-06",
+     "video_id": "GtrRTN1P-RM",
+     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "SAP wird im anderen Tagesvideo mit einer Kurszielerhöhung von Goldman Sachs auf 230 Euro erwähnt; zugleich bleibt der Sprecher wegen der hohen Bewertung und des Jahresminus fundamental skeptisch.",
+     "einordnung": "SAP vereint starke strukturelle Cloud- und Softwaretreiber mit einer anspruchsvollen Bewertung. Das Aufwärtspotenzial hängt daher davon ab, ob Gewinnwachstum und Margen die bereits eingepreisten Erwa…",
+     "figures": "Kursziel von Goldman Sachs: 230 Euro"
+    },
+    {
+     "date": "2026-10-06",
+     "video_id": "_8Jge1nuuHs",
+     "url": "https://www.youtube.com/watch?v=_8Jge1nuuHs&t=1438s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Goldman Sachs erhöht das Kursziel auf 230 Euro. Der Host sieht charttechnisch Potenzial bis 235 Euro, bleibt fundamental aber wegen der hohen Bewertung und eines Jahresverlusts von 10% skeptisch.",
+     "einordnung": "Ein KGV von 24 ist für einen Qualitäts- und Wachstumswert nicht automatisch überzogen, setzt aber eine verlässlich gute operative Entwicklung voraus. Dass die Aktie trotz eines höheren Analystenziels…",
+     "figures": "Kursziel 230 Euro; charttechnisches Ziel 235 Euro; KGV 24; minus 10% seit Jahresbeginn"
+    },
+    {
+     "date": "2026-10-01",
+     "video_id": "yylBKlp7vIg",
+     "url": "https://www.youtube.com/watch?v=yylBKlp7vIg&t=536s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SAP war mit einem Plus von 38,5 Prozent der stärkste im Beitrag genannte DAX-Wert des dritten Quartals.",
+     "einordnung": "SAP verkörpert die derzeit bevorzugte Kombination aus wiederkehrenden Erlösen, Softwaremargen und strukturellem Digitalisierungswachstum. Der starke Kursanstieg erhöht allerdings automatisch die Anfo…",
+     "figures": "Q3-Performance +38,5%"
+    },
+    {
+     "date": "2026-09-28",
+     "video_id": "E1Yrkj2Fl_k",
+     "url": "https://www.youtube.com/watch?v=E1Yrkj2Fl_k&t=580s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "SAP hat die richtungsentscheidende Barriere bei 172,70 Euro überwunden. Ein Tagesreversal wertet der Host als bullisches Signal für einen weiteren Anstieg.",
+     "einordnung": "SAP zeigt im Vergleich zum zinssensitiven Wachstumssegment ein relativ klares, regelbasiertes Setup. Der Abstand zwischen Trigger und Ziel macht allerdings deutlich, dass die Bestätigung über 189 Eur…",
+     "figures": "Richtungsentscheidende Barriere bei 172,70 Euro; Trigger bei etwa 189 Euro; nächstes Ziel bei 223 Euro."
+    },
+    {
+     "date": "2026-09-23",
+     "video_id": "_DMyTuJrFjQ",
+     "url": "https://www.youtube.com/watch?v=_DMyTuJrFjQ&t=225s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Jefferies hebt das Kursziel für SAP von 210 auf 220 Euro an und bestätigt die Kaufempfehlung. Begründet wird dies mit einem robusten Auftragseingang und einem erwarteten ruhigeren zweiten Halbjahr.",
+     "einordnung": "Die Kurszielanhebung ist ein positiver Vertrauensbeweis, bleibt aber zunächst eine Analystenrevision und kein neuer Ergebnisbeleg. Bei SAP muss der robuste Auftragseingang die hohe Erwartung an das C…",
+     "figures": "Kursziel 220 Euro nach zuvor 210 Euro; Anhebung um rund 5%"
+    },
+    {
+     "date": "2026-09-15",
+     "video_id": "Q2c5Ustra_c",
+     "url": "https://www.youtube.com/watch?v=Q2c5Ustra_c&t=1582s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "SAP war der größte Gewinner im DAX und profitierte von der Skepsis gegenüber anderen KI- und Chipwerten. Egmond Haidt erwartet nach dem starken Anstieg kurzfristig eine Seitwärtsbewegung.",
+     "einordnung": "SAP profitiert derzeit von der Rotation aus hochsensiblen Halbleitern in etablierte Software. Nach einem starken Anstieg ist eine Konsolidierung jedoch plausibler als ein geradliniger weiterer Anstie…"
+    },
+    {
+     "date": "2026-09-14",
+     "video_id": "5mSLfuHfSco",
+     "url": "https://www.youtube.com/watch?v=5mSLfuHfSco&t=783s",
+     "channel": "BerneckerTV",
+     "kategorie": "fundamental",
+     "note": "SAP wird als Beispiel für ein tief integriertes Softwaresystem genannt, das trotz KI nicht automatisch an Wert verliert.",
+     "einordnung": "Bei einem zentralen Unternehmenssystem ist die Austauschbarkeit wesentlich geringer als bei einfacher Massensoftware. Der langfristige Wert hängt dennoch davon ab, ob SAP KI in seine bestehende Proze…"
+    },
+    {
+     "date": "2026-09-11",
+     "video_id": "gIWKBn6INGI",
+     "url": "https://www.youtube.com/watch?v=gIWKBn6INGI&t=456s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "SAP zeigte sich nach dem starken Lauf bis 190 Euro gestern schwach und befindet sich nun in einer Konsolidierung. Als DAX-Schwergewicht belastet die Aktie damit auch den deutschen Leitindex.",
+     "einordnung": "Nach einem kräftigen Anstieg ist eine Konsolidierung zunächst kein Warnsignal, sondern eine normale Neubewertung von Kurs und Erwartungen. Wegen des hohen Indexgewichts fällt die Schwäche bei SAP für…",
+     "figures": "Vorheriges Hoch: 190 Euro."
+    }
+   ]
+  },
   "000660.KS": {
    "name": "SK Hynix",
    "auftritte": [
@@ -606,80 +1324,6 @@
      "note": "GlobalFoundries erhält Unterstützung durch staatliche und internationale Finanzierung. Die USA investieren 1 Mrd. US-Dollar im Rahmen des CHIPS Act; zusammen mit japanischem Kapital sollen insgesamt…",
      "einordnung": "Die staatliche Unterstützung verbessert die strategische Position, ersetzt aber nicht den Nachweis einer ausreichenden Auslastung und Rendite der neuen Werke. Nach dem Einbruch von 92,50 auf 42,15 US…",
      "figures": "US-Investition: 1 Mrd. US-Dollar; Gesamtinvestitionen: 21 Mrd. US-Dollar; früherer Kurs: 92,50 US-Dollar; Tief: 42,15 US-Dollar; erwarteter EPS-Schub 2027: 10 bis 15%; Margenverbesserung: 30 bis 50 B…"
-    }
-   ]
-  },
-  "CRWV": {
-   "name": "CoreWeave",
-   "auftritte": [
-    {
-     "date": "2026-10-15",
-     "video_id": "hddKkJD_9GU",
-     "url": "https://www.youtube.com/watch?v=hddKkJD_9GU&t=3420s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Die CoreWeave-Aktie verlor 15,5 Prozent am Vortag und weitere 6 Prozent vorbörslich. Noch kritischer als der Aktienkurs ist der Anleihemarkt: Eine Anleihe mit 9,75 Prozent Kupon notiert nur noch bei…",
-     "einordnung": "Der Anleihekurs ist hier das wichtigere Warnsignal als der Aktienchart, weil er die Refinanzierungsfähigkeit des Geschäftsmodells unmittelbar bepreist. Bei einem kapitalintensiven Infrastrukturmodell…",
-     "figures": "Aktie: -15,5% am Vortag und -6% vorbörslich; Anleihe: 78% des Nennwerts; Kupon: 9,75%; effektive Rendite: etwa 15 bis 16%, intraday bis 20%; CDS: über 1000; Branchenabschläge: 10 bis 11%, unter ander…"
-    },
-    {
-     "date": "2026-10-06",
-     "video_id": "GtrRTN1P-RM",
-     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM&t=1313s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "CoreWeave steigt laut Host um 4,4 Prozent und gehört damit zu den Gewinnern der KI-Aktien.",
-     "einordnung": "Der Titel profitiert besonders direkt vom KI-Rechenzentrumsboom, ist dadurch aber auch besonders abhängig von Finanzierung, Kapazitätsauslastung und anhaltender Nachfrage. Die Zinsbewegung bleibt für…",
-     "figures": "+4,4 Prozent"
-    },
-    {
-     "date": "2026-09-18",
-     "video_id": "rwwuPMsxzj8",
-     "url": "https://www.youtube.com/watch?v=rwwuPMsxzj8&t=2886s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "CoreWeave plant die Aufnahme von 3 Mrd. US-Dollar über Wandelanleihen, mit einer möglichen Ausweitung auf 3,5 Mrd. US-Dollar, sowie ein ATM-Programm über 35 Mio. Aktien. Die Nachfrage ist laut Host s…",
-     "einordnung": "CoreWeave zeigt exemplarisch, dass hohe KI-Nachfrage nicht automatisch hohe Eigenkapitalrenditen bedeutet. Die Kapitalaufnahme kann das Wachstum finanzieren, erhöht aber bei einer Netto-Schuld/EBITDA…",
-     "figures": "Wandelanleihen 3 Mrd. US-Dollar, maximal 3,5 Mrd. US-Dollar; ATM-Programm 35 Mio. Aktien; Netto-Schuld/EBITDA rund 9; vertragliche Leistung 4,2 GW nach 3,7 GW vor sechs Wochen; Rechenkapazität 40 Mio…"
-    },
-    {
-     "date": "2026-08-18",
-     "video_id": "BxOBsfGofLs",
-     "url": "https://www.youtube.com/watch?v=BxOBsfGofLs&t=224s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Der Host bezeichnet die Zahlen als gut und den Ausblick als bombastisch, sieht die Aktie wegen des Zinsanstiegs aber als nervös an.",
-     "einordnung": "CoreWeave steht exemplarisch für den Konflikt zwischen starkem KI-Wachstum und hoher Kapitalintensität. Bei solchen Geschäftsmodellen können steigende Finanzierungskosten die Gewinn- und Bewertungsfa…",
-     "figures": "Im späteren Verlauf wird ein Kurseinbruch von 8 % genannt."
-    },
-    {
-     "date": "2026-08-12",
-     "video_id": "wNEk0PB02MQ",
-     "url": "https://www.youtube.com/watch?v=wNEk0PB02MQ&t=2445s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "CoreWeave steigerte den Umsatz um 112 % auf 2,58 Mrd. $, blieb aber mit einem Nettoverlust von 626 Mio. $ tief defizitär. Der Backlog beträgt 104,2 Mrd. $, zugleich belasten hohe Schulden und Zinskos…",
-     "einordnung": "CoreWeave ist das reine Hochrisiko-Papier im KI-Infrastrukturkorb: Die Nachfrage ist außergewöhnlich stark, die Finanzierung aber ebenso außergewöhnlich anspruchsvoll. Der Markt preist Wachstum ein,…",
-     "figures": "Umsatz +112% beziehungsweise +24% gegenüber dem Vorquartal auf 2,58 Mrd. $, EPS -11 $ gegenüber erwarteten -1,41 $, Nettoverlust 626 Mio. $, Cash 6,9 Mrd. $, Backlog 104,2 Mrd. $, Zinskosten 640 Mio.…"
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "_CPZNQv1cns",
-     "url": "https://www.youtube.com/watch?v=_CPZNQv1cns",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "CoreWeave wird in der Videobeschreibung als weiterer Einzelwert im Zusammenhang mit Quartalsberichten genannt; im Rohmaterial liegen dazu keine konkreten charttechnischen Aussagen vor.",
-     "einordnung": "Ohne überlieferte Marken oder eine Host-Einschätzung lässt sich aus dem vorliegenden Material kein belastbares technisches Setup ableiten."
-    },
-    {
-     "date": "2026-06-12",
-     "video_id": "0YJSCsAcAPg",
-     "url": "https://www.youtube.com/watch?v=0YJSCsAcAPg&t=842s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Spezialisierter KI-Cloud-Anbieter mit explosivem Umsatzwachstum — plus 736 Prozent in 2024 und plus 168 Prozent in 2025 — bleibt jedoch weiterhin deutlich defizitär. Ein potenzieller Einstieg in den…",
-     "einordnung": "Dreistellige Wachstumsraten sind beeindruckend, aber ein sich ausweitender Verlust bei gleichzeitig sinkender Wachstumsdynamik ist ein klassisches Warnzeichen — das Geschäftsmodell muss erst den Bewe…",
-     "figures": "Umsatzwachstum 2024: +736%, 2025: +168%; Verlust 2024: +45%, 2025: +35% (Verlust weitet sich aus)"
     }
    ]
   },
@@ -2203,130 +2847,6 @@
     }
    ]
   },
-  "MU": {
-   "name": "Micron Technology",
-   "auftritte": [
-    {
-     "date": "2026-10-13",
-     "video_id": "T0dWxExM4iM",
-     "url": "https://www.youtube.com/watch?v=T0dWxExM4iM&t=206s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Micron und andere Speicherchiphersteller geraten durch die Ankündigung eines neuen chinesischen Chips unter Druck.",
-     "einordnung": "Bei Speicherchips kann schon die Aussicht auf zusätzliche Konkurrenz die Erwartungen an Preise, Margen und Marktanteile belasten. Der Kursdruck ist deshalb zunächst eine Neubewertung des Wettbewerbsr…"
-    },
-    {
-     "date": "2026-10-13",
-     "video_id": "DpbDS3UHiOE",
-     "url": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1948s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Egmond verweist auf eine normale EBIT-Marge von 28 Prozent und hält die aktuell deutlich höheren Margen im Speicherchipgeschäft für astronomisch und nicht nachhaltig. CXMT verschärfe den Wettbewerbsd…",
-     "einordnung": "Meine Einschätzung: Micron ist ein gutes Beispiel dafür, warum ein scheinbar günstiges KGV bei Speicherwerten am Gewinnhoch gefährlich sein kann. Die entscheidende Frage ist nicht die aktuelle Marge,…",
-     "figures": "EBIT-Marge in normalen Zeiten: 28%"
-    },
-    {
-     "date": "2026-10-13",
-     "video_id": "hpNlbenh6Gw",
-     "url": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=1784s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Micron hat die Marke von 1.000 USD überschritten, fällt aber wieder zurück. Der Host hält den Chart für ungünstig und nennt 950 bis 940 USD als nächste Ziele; unter 900 USD wäre ein Rückgang bis 820…",
-     "einordnung": "Der Rückfall nach dem Überschreiten einer runden Marke spricht charttechnisch zunächst für nachlassendes Momentum. Wie bei SK Hynix und SanDisk bleibt die entscheidende Frage, ob der Rücksetzer nur G…",
-     "figures": "Marke 1.000 USD; mögliche Ziele 950 bis 940, 900 und 820 USD; 200-Tage-EMA 750 USD"
-    },
-    {
-     "date": "2026-10-08",
-     "video_id": "xi3h-6-jVVU",
-     "url": "https://www.youtube.com/watch?v=xi3h-6-jVVU&t=226s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Micron erhält von Davidson ein neues Kursziel von 3.000 Dollar. Der Host sieht den KI-Trade damit noch nicht als beendet an.",
-     "einordnung": "Das Kursziel signalisiert außerordentlichen Optimismus gegenüber dem KI-Speicherzyklus. Gerade bei Speicherherstellern bleibt aber die Zyklik ein Gegengewicht, weil hohe Preise und Kapazitätsausbau s…",
-     "figures": "Kursziel 3.000 $"
-    },
-    {
-     "date": "2026-10-08",
-     "video_id": "jN4sbPRhE28",
-     "url": "https://www.youtube.com/watch?v=jN4sbPRhE28&t=2760s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Davidson hebt das Kursziel für Micron auf 3.000 US-Dollar an und begründet dies mit einem für 2027 unterstellten KGV von 19. Der Host hält dieses Ziel für unrealistisch, sieht aber wegen des bullisch…",
-     "einordnung": "Die Differenz zwischen einem KGV von 6 und einem unterstellten KGV von 19 zeigt, wie stark die These von dauerhaft höheren Speichergewinnen abhängt. Das eigene Ziel des Hosts ist ambitioniert, aber d…",
-     "figures": "Analystenkursziel 3.000 US-Dollar; Kurs laut Host rund 1.100 US-Dollar; aktuelles KGV 6; historischer Durchschnitt 17,7; unterstelltes KGV 19 für 2027; eigenes Kursziel des Hosts 1.600 bis 1.700 US-D…"
-    },
-    {
-     "date": "2026-10-06",
-     "video_id": "GtrRTN1P-RM",
-     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM&t=367s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Micron kündigt für den 9. Dezember Neuigkeiten zur Kapitalallokation an. Der Host erwartet eine Aufstockung der Aktienrückkäufe und führt den jüngsten Kursanstieg eher auf den Renditerückgang als auf…",
-     "einordnung": "Rückkäufe könnten den Kurs zusätzlich stützen, ändern aber nichts daran, dass Micron stark vom zyklischen Speicherpreis abhängt. Die Reaktion auf fallende Renditen zeigt, wie viel der aktuellen Beweg…",
-     "figures": "Ankündigung zur Kapitalallokation am 9. Dezember"
-    },
-    {
-     "date": "2026-10-06",
-     "video_id": "_8Jge1nuuHs",
-     "url": "https://www.youtube.com/watch?v=_8Jge1nuuHs&t=2960s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Micron profitiert stark vom KI-Boom bei Speicherchips und weist laut Host ein extrem niedriges KGV von 6 auf. Der erwartete Free Cashflow könnte massiv steigen und Aktienrückkäufe ermöglichen; als Ku…",
-     "einordnung": "Das niedrige KGV wirkt bei den genannten Cashflow- und Umsatzsprüngen attraktiv, ist bei Micron aber zyklisch zu lesen und kein klassischer Dauer-Multiplikator. Die Aktie kann weiter überraschen, doc…",
-     "figures": "KGV 6; Free Cashflow 33 Mrd. US-Dollar im vierten Quartal; Prognose 150 Mrd. US-Dollar für 2027 und 182 Mrd. US-Dollar für 2028; Kursziel 1.000 US-Dollar; erwarteter Gewinn je Aktie 176 US-Dollar; Um…"
-    },
-    {
-     "date": "2026-10-05",
-     "video_id": "11hsSxRDwMg",
-     "url": "https://www.youtube.com/watch?v=11hsSxRDwMg&t=1225s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Micron hat sich nach starken Quartalszahlen stabilisiert. Der Host sieht die Nachfrage weiterhin als hoch an und bewertet den Trend als intakt.",
-     "einordnung": "Micron ist als Speicherhersteller ein besonders konjunktur- und zykliksensibler KI-Indikator. Die positive Reaktion auf die Zahlen spricht für Vertrauen in die Nachfrage, die genannten Kursziele zeig…",
-     "figures": "Kursziele bei 1.330 US-Dollar und 1.690 US-Dollar"
-    },
-    {
-     "date": "2026-10-01",
-     "video_id": "yylBKlp7vIg",
-     "url": "https://www.youtube.com/watch?v=yylBKlp7vIg&t=120s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Micron überzeugte im vierten Quartal mit Umsatz, Gewinn und Bruttomarge. Auch der Ausblick auf das erste Quartal lag beim Umsatz und Gewinn über dem Konsens, die Aktie reagierte nachbörslich dennoch…",
-     "einordnung": "Operativ ist das ein Ausrufezeichen, doch die verhaltene Börsenreaktion zeigt, dass der Markt bei Micron bereits sehr hohe Erwartungen eingepreist hat. Die leicht unter dem Konsens liegende Margenpro…",
-     "figures": "Umsatz Q4 54,29 Mrd. $ gegenüber 11,32 Mrd. $ im Vorjahr und 51,49 Mrd. $ Konsens; Gewinn je Aktie 33,42 $ gegenüber 31,83 $ Konsens; Bruttomarge 87% gegenüber 86,2% Konsens; Ausblick Umsatz 60 bis 6…"
-    },
-    {
-     "date": "2026-10-01",
-     "video_id": "DE2rEbY1HNI",
-     "url": "https://www.youtube.com/watch?v=DE2rEbY1HNI&t=3477s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Micron meldet Rekordzahlen mit starkem Umsatz- und Gewinnwachstum, doch die Aktie bewegt sich kaum. Der Markt sorgt sich, dass der Memory-Zyklus bereits seinen Höhepunkt erreicht haben könnte; der Ho…",
-     "einordnung": "Die Kursreaktion trotz außergewöhnlicher Zahlen zeigt, wie stark der Markt bei Speicherwerten auf den Zyklus und nicht nur auf das vergangene Quartal blickt. Das sehr niedrige KGV kann bei anhaltende…",
-     "figures": "Umsatzwachstum +379%; Umsatzwachstum gegenüber dem Vorquartal +33%; EPS 33,42 US-Dollar gegenüber 31,61 US-Dollar Konsens; Bruttomarge 87% gegenüber 86,1%; KGV 7; PEG 0,04; rund 6.000 Fonds; Goldman-…"
-    },
-    {
-     "date": "2026-09-30",
-     "video_id": "DDB7VT8gm4E",
-     "url": "https://www.youtube.com/watch?v=DDB7VT8gm4E&t=233s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Micron legt die Bilanz für das vierte Quartal vor. Der Markt rechnet mit einem kräftigen Wachstum, zugleich könnten bestehende Verträge die weitere Entwicklung bremsen.",
-     "einordnung": "Micron steht vor einer extrem hohen Erwartungshürde: Selbst sehr starke Zahlen könnten bei verhaltenem Ausblick enttäuschen. Die enorme Optionsbewegung zeigt, dass die Bilanz eher ein Ereignis- als e…",
-     "figures": "Analystenschätzung: Umsatz 51,1 Milliarden US-Dollar und Gewinn je Aktie 31,52 US-Dollar; Unternehmenseigene Prognose: 50 Milliarden US-Dollar Umsatz und 31 US-Dollar Gewinn je Aktie; Bruttomarge 86…"
-    },
-    {
-     "date": "2026-09-28",
-     "video_id": "iPOhcrx5BhI",
-     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=355s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Micron gilt als KI-Profiteur, hat das im Beitrag genannte eigene Kursziel bereits erreicht und steht am Mittwochabend vor der Veröffentlichung der Quartalszahlen. RBC wird als weiterhin optimistisch…",
-     "einordnung": "Bei einem bereits erreichten Kursziel verschiebt sich das Chance-Risiko-Verhältnis kurzfristig auf die Zahlen und den Ausblick. Der KI- und Speichermarkt bleibt attraktiv, ist aber zyklisch und entsp…",
-     "figures": "Eigenes Kursziel 1082 USD erreicht; RBC optimistisch, ohne genanntes Kursziel"
-    }
-   ]
-  },
   "MSFT": {
    "name": "Microsoft",
    "auftritte": [
@@ -2615,245 +3135,6 @@
      "note": "Der Markt bleibt vor den US-PCE-Daten und den Micron-Zahlen verunsichert. Der Host verweist auf den leicht schwächeren DAX, die gesunkene Zinserhöhungswahrscheinlichkeit und volatile Ölpreise.",
      "einordnung": "Die Kombination aus schwacher Marktbreite, hohen Anleiherenditen und geopolitisch bewegten Energiepreisen spricht eher für Selektivität als für einen breiten Risikoaufschlag. Dass Technologiewerte ro…",
      "figures": "DAX -0,2 %, 2-jährige US-Rendite 4,9 %, erwarteter PCE-Rückgang 0,2–0,4 %, Zinserhöhungswahrscheinlichkeit für Oktober 44 %"
-    }
-   ]
-  },
-  "SAP.DE": {
-   "name": "SAP",
-   "auftritte": [
-    {
-     "date": "2026-10-13",
-     "video_id": "T0dWxExM4iM",
-     "url": "https://www.youtube.com/watch?v=T0dWxExM4iM&t=365s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "SAP zeigte zuletzt große Stärke und gelang laut Host ein charttechnischer Ausbruch. Die Aktie wird von Anlegern eingesammelt und weist eine ähnliche Dynamik wie Microsoft auf.",
-     "einordnung": "SAP profitiert derzeit vom Rückenwind für etablierte Software- und KI-Plattformen. Der Ausbruch ist konstruktiv, sollte aber durch die operative Entwicklung bestätigt werden, weil starke Trendphasen…"
-    },
-    {
-     "date": "2026-10-13",
-     "video_id": "hpNlbenh6Gw",
-     "url": "https://www.youtube.com/watch?v=hpNlbenh6Gw",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "SAP hat sich laut Host gut entwickelt und ein Kaufsignal erhalten, konsolidiert aber derzeit. Widerstände liegen bei 200 bis 203 EUR; bei einem nachhaltigen Ausbruch über 214 bis 220 EUR wäre der Kip…",
-     "einordnung": "Die Konsolidierung nach dem Kaufsignal ist konstruktiv, solange die Aktie die Ausbruchsstruktur verteidigt. Der Bereich 214 bis 220 EUR ist als Bestätigung wichtiger als ein kurzfristiges Überschreit…",
-     "figures": "Widerstand 200 bis 203 EUR; Ausbruchszone 214 bis 220 EUR"
-    },
-    {
-     "date": "2026-10-12",
-     "video_id": "dygYRkXpB_g",
-     "url": "https://www.youtube.com/watch?v=dygYRkXpB_g&t=505s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "SAP zeigt eine stabile Aufwärtsbewegung. Das Narrativ eines KI-Verlierers hat sich laut Host aufgelöst; Kurse von 200 Euro erscheinen möglich.",
-     "einordnung": "SAP profitiert davon, dass der Markt KI zunehmend als Ergänzung zu bestehender Unternehmenssoftware und nicht nur als Bedrohung für klassische Anbieter bewertet. Die stabile Bewegung spricht für Vert…",
-     "figures": "Mögliches Kursziel: 200 EUR"
-    },
-    {
-     "date": "2026-10-06",
-     "video_id": "GtrRTN1P-RM",
-     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "SAP wird im anderen Tagesvideo mit einer Kurszielerhöhung von Goldman Sachs auf 230 Euro erwähnt; zugleich bleibt der Sprecher wegen der hohen Bewertung und des Jahresminus fundamental skeptisch.",
-     "einordnung": "SAP vereint starke strukturelle Cloud- und Softwaretreiber mit einer anspruchsvollen Bewertung. Das Aufwärtspotenzial hängt daher davon ab, ob Gewinnwachstum und Margen die bereits eingepreisten Erwa…",
-     "figures": "Kursziel von Goldman Sachs: 230 Euro"
-    },
-    {
-     "date": "2026-10-06",
-     "video_id": "_8Jge1nuuHs",
-     "url": "https://www.youtube.com/watch?v=_8Jge1nuuHs&t=1438s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Goldman Sachs erhöht das Kursziel auf 230 Euro. Der Host sieht charttechnisch Potenzial bis 235 Euro, bleibt fundamental aber wegen der hohen Bewertung und eines Jahresverlusts von 10% skeptisch.",
-     "einordnung": "Ein KGV von 24 ist für einen Qualitäts- und Wachstumswert nicht automatisch überzogen, setzt aber eine verlässlich gute operative Entwicklung voraus. Dass die Aktie trotz eines höheren Analystenziels…",
-     "figures": "Kursziel 230 Euro; charttechnisches Ziel 235 Euro; KGV 24; minus 10% seit Jahresbeginn"
-    },
-    {
-     "date": "2026-10-01",
-     "video_id": "yylBKlp7vIg",
-     "url": "https://www.youtube.com/watch?v=yylBKlp7vIg&t=536s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SAP war mit einem Plus von 38,5 Prozent der stärkste im Beitrag genannte DAX-Wert des dritten Quartals.",
-     "einordnung": "SAP verkörpert die derzeit bevorzugte Kombination aus wiederkehrenden Erlösen, Softwaremargen und strukturellem Digitalisierungswachstum. Der starke Kursanstieg erhöht allerdings automatisch die Anfo…",
-     "figures": "Q3-Performance +38,5%"
-    },
-    {
-     "date": "2026-09-28",
-     "video_id": "E1Yrkj2Fl_k",
-     "url": "https://www.youtube.com/watch?v=E1Yrkj2Fl_k&t=580s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "SAP hat die richtungsentscheidende Barriere bei 172,70 Euro überwunden. Ein Tagesreversal wertet der Host als bullisches Signal für einen weiteren Anstieg.",
-     "einordnung": "SAP zeigt im Vergleich zum zinssensitiven Wachstumssegment ein relativ klares, regelbasiertes Setup. Der Abstand zwischen Trigger und Ziel macht allerdings deutlich, dass die Bestätigung über 189 Eur…",
-     "figures": "Richtungsentscheidende Barriere bei 172,70 Euro; Trigger bei etwa 189 Euro; nächstes Ziel bei 223 Euro."
-    },
-    {
-     "date": "2026-09-23",
-     "video_id": "_DMyTuJrFjQ",
-     "url": "https://www.youtube.com/watch?v=_DMyTuJrFjQ&t=225s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Jefferies hebt das Kursziel für SAP von 210 auf 220 Euro an und bestätigt die Kaufempfehlung. Begründet wird dies mit einem robusten Auftragseingang und einem erwarteten ruhigeren zweiten Halbjahr.",
-     "einordnung": "Die Kurszielanhebung ist ein positiver Vertrauensbeweis, bleibt aber zunächst eine Analystenrevision und kein neuer Ergebnisbeleg. Bei SAP muss der robuste Auftragseingang die hohe Erwartung an das C…",
-     "figures": "Kursziel 220 Euro nach zuvor 210 Euro; Anhebung um rund 5%"
-    },
-    {
-     "date": "2026-09-15",
-     "video_id": "Q2c5Ustra_c",
-     "url": "https://www.youtube.com/watch?v=Q2c5Ustra_c&t=1582s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "SAP war der größte Gewinner im DAX und profitierte von der Skepsis gegenüber anderen KI- und Chipwerten. Egmond Haidt erwartet nach dem starken Anstieg kurzfristig eine Seitwärtsbewegung.",
-     "einordnung": "SAP profitiert derzeit von der Rotation aus hochsensiblen Halbleitern in etablierte Software. Nach einem starken Anstieg ist eine Konsolidierung jedoch plausibler als ein geradliniger weiterer Anstie…"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "5mSLfuHfSco",
-     "url": "https://www.youtube.com/watch?v=5mSLfuHfSco&t=783s",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "SAP wird als Beispiel für ein tief integriertes Softwaresystem genannt, das trotz KI nicht automatisch an Wert verliert.",
-     "einordnung": "Bei einem zentralen Unternehmenssystem ist die Austauschbarkeit wesentlich geringer als bei einfacher Massensoftware. Der langfristige Wert hängt dennoch davon ab, ob SAP KI in seine bestehende Proze…"
-    },
-    {
-     "date": "2026-09-11",
-     "video_id": "gIWKBn6INGI",
-     "url": "https://www.youtube.com/watch?v=gIWKBn6INGI&t=456s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "SAP zeigte sich nach dem starken Lauf bis 190 Euro gestern schwach und befindet sich nun in einer Konsolidierung. Als DAX-Schwergewicht belastet die Aktie damit auch den deutschen Leitindex.",
-     "einordnung": "Nach einem kräftigen Anstieg ist eine Konsolidierung zunächst kein Warnsignal, sondern eine normale Neubewertung von Kurs und Erwartungen. Wegen des hohen Indexgewichts fällt die Schwäche bei SAP für…",
-     "figures": "Vorheriges Hoch: 190 Euro."
-    },
-    {
-     "date": "2026-08-31",
-     "video_id": "ou1chvjk6G8",
-     "url": "https://www.youtube.com/watch?v=ou1chvjk6G8&t=1199s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "SAP ist über die Barriere bei 172 Euro ausgebrochen. Als nächste größere Hürde gilt die primäre Abwärtstrendlinie im Bereich von 224 bis 225 Euro; der Softwaresektor bleibt nach Einschätzung des Host…",
-     "einordnung": "Der Ausbruch über 172 Euro verbessert das mittelfristige Chartbild, doch die Abwärtstrendlinie bei 224 bis 225 Euro ist die eigentliche Bewährungsprobe. Die KI-Fantasie unterstützt die Bewertung, nim…",
-     "figures": "Ausbruch über 172 Euro; Abwärtstrendlinie 224 bis 225 Euro"
-    }
-   ]
-  },
-  "IFX.DE": {
-   "name": "Infineon",
-   "auftritte": [
-    {
-     "date": "2026-10-13",
-     "video_id": "T0dWxExM4iM",
-     "url": "https://www.youtube.com/watch?v=T0dWxExM4iM&t=391s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Infineon gerät wegen der allgemeinen Schwäche im Chipsektor unter Druck. Die 200-Tagelinie gilt als wichtige Unterstützung; bei einem Bruch rät der Host zum Abwarten.",
-     "einordnung": "Infineon ist nicht identisch mit einem Speicherchiphersteller, wird an der Börse aber vom Halbleitersentiment mitgezogen. Die 200-Tagelinie markiert damit nicht nur eine Chartmarke, sondern auch die…",
-     "figures": "200-Tagelinie"
-    },
-    {
-     "date": "2026-10-13",
-     "video_id": "DpbDS3UHiOE",
-     "url": "https://www.youtube.com/watch?v=DpbDS3UHiOE&t=1312s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Siemens Energy gehört im DAX zu den Gewinnern, während Infineon als größter Verlierer genannt wird.",
-     "einordnung": "Meine Einschätzung: Die gegenläufige Kursreaktion unterstreicht, wie stark der Markt derzeit zwischen strukturellem Infrastrukturwachstum und zyklischer Chipabhängigkeit unterscheidet. Infineon bleib…"
-    },
-    {
-     "date": "2026-10-08",
-     "video_id": "xi3h-6-jVVU",
-     "url": "https://www.youtube.com/watch?v=xi3h-6-jVVU&t=455s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Infineon könnte vom starken TSMC-Update profitieren. Charttechnisch testet die Aktie erfolgreich die 200-Tage-Linie.",
-     "einordnung": "Die 200-Tage-Linie ist für viele Marktteilnehmer eine wichtige Trendmarke, liefert allein aber noch keine belastbare Trendwende. Infineon bleibt stärker von Industrie- und Automobilzyklen abhängig al…"
-    },
-    {
-     "date": "2026-10-06",
-     "video_id": "osb6qhZjHcM",
-     "url": "https://www.youtube.com/watch?v=osb6qhZjHcM&t=388s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Infineon findet Unterstützung an der 200-Tage-Linie. Der Host sieht die Chipwerte weiterhin durch die KI-Nachfrage gestützt und betrachtet Rücksetzer an diese Linie als Kaufgelegenheiten.",
-     "einordnung": "Die 200-Tage-Linie trennt hier eine intakte mittelfristige Aufwärtsstruktur von einer möglichen Trendverschlechterung. Infineon ist allerdings zyklischer als viele reine KI-Hochflieger, weshalb die N…",
-     "figures": "200-Tage-Linie als Unterstützung"
-    },
-    {
-     "date": "2026-10-06",
-     "video_id": "GtrRTN1P-RM",
-     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM&t=544s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon profitiert laut Host von den Micron-Nachrichten und der Zinsentwicklung und führt zeitweise die Gewinnerliste an.",
-     "einordnung": "Der Kursimpuls ist plausibel, weil Halbleiteraktien sowohl zinssensitiv als auch stark stimmungsgetrieben sind. Für eine nachhaltige Neubewertung müssten jedoch Nachfrage und Margen im Industrie- und…"
-    },
-    {
-     "date": "2026-10-01",
-     "video_id": "yylBKlp7vIg",
-     "url": "https://www.youtube.com/watch?v=yylBKlp7vIg&t=536s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon gehörte mit einem Minus von 27 Prozent zu den schwächsten DAX-Werten im dritten Quartal.",
-     "einordnung": "Die schwache Quartalsbilanz passt zum zyklischen Charakter des Halbleitergeschäfts und zeigt, dass KI-Fantasie nicht automatisch alle Chipwerte trägt. Entscheidend bleibt, wann sich Nachfrage und Mar…",
-     "figures": "Q3-Performance -27%"
-    },
-    {
-     "date": "2026-09-30",
-     "video_id": "Bg0A3ucDL6M",
-     "url": "https://www.youtube.com/watch?v=Bg0A3ucDL6M&t=793s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon gehört nach der Anthropic-IPO-Nachricht zu den Aktien, die steigen, gibt nach dem ifo-Bericht und in der allgemeinen Schwäche der zyklischen Werte aber zunächst nach.",
-     "einordnung": "Infineon profitiert vom KI- und Elektrifizierungsthema, bleibt als Halbleiterwert aber stark konjunktur- und zinssensitiv. Der Titel ist damit eher ein Zykliker als ein reiner defensiver KI-Profiteur."
-    },
-    {
-     "date": "2026-09-22",
-     "video_id": "frGJ0jOwCr0",
-     "url": "https://www.youtube.com/watch?v=frGJ0jOwCr0&t=349s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Infineon führte am Verfallstag und am Montag die DAX-Gewinnerliste an. Egmond wertet dies als Zeichen, dass Investoren massiv in Chipwerte zurückkehren.",
-     "einordnung": "Infineon profitiert in einer solchen Phase überproportional vom Sektor-Momentum, bleibt aber stärker konjunkturabhängig als reine KI-Hochflieger. Der Kursanstieg ist daher zunächst eher ein Sentiment…"
-    },
-    {
-     "date": "2026-09-18",
-     "video_id": "rwwuPMsxzj8",
-     "url": "https://www.youtube.com/watch?v=rwwuPMsxzj8&t=966s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Oddo BHF wird nach der Korrektur optimistischer für Infineon. Die Aktie testet die 200-Tage-Linie und profitiert aktuell mit 2,3 % von der Erholung im Chipsektor; 2027 rückt als entscheidendes Wachst…",
-     "einordnung": "Ein PEG von 0,5 spricht im Verhältnis zum erwarteten Wachstum für eine vergleichsweise moderate Bewertung, sofern die Gewinnannahmen für 2027 eintreffen. Der Test der 200-Tage-Linie bleibt dennoch ei…",
-     "figures": "Kurs plus 2,3 %; Korrektur rund 40 % beziehungsweise laut Host 37 % unter dem Hoch; KGV 21; PEG 0,5; entscheidender Ausbruch über 57 Euro"
-    },
-    {
-     "date": "2026-09-15",
-     "video_id": "RJtgvUko4k4",
-     "url": "https://www.youtube.com/watch?v=RJtgvUko4k4&t=517s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Infineon fiel ebenfalls unter die 200-Tage-Linie und gehörte zu den größeren Verlierern.",
-     "einordnung": "Der Fall unter die 200-Tage-Linie ist bei einem zyklischen Halbleiterwert ein ernstzunehmendes technisches Warnsignal. Gleichzeitig macht die Nähe zum KI- und Technologiethema die Aktie besonders anf…"
-    },
-    {
-     "date": "2026-09-15",
-     "video_id": "Q2c5Ustra_c",
-     "url": "https://www.youtube.com/watch?v=Q2c5Ustra_c&t=785s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Infineon gehörte im DAX zu den größten Verlierern und markierte ein neues Monatstief. Als Belastungsfaktoren nennt Egmond Haidt die Zins- und Chip-Sorgen.",
-     "einordnung": "Infineon ist als zyklischer Halbleiterwert besonders anfällig für steigende Renditen und eine Eintrübung der Konjunkturerwartungen. Dass die Aktie trotz ihrer breiteren industriellen Ausrichtung mit…"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "i1kvrS7aV-Q",
-     "url": "https://www.youtube.com/watch?v=i1kvrS7aV-Q&t=1327s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Infineon steht ebenfalls unter Druck und wird als Teil des europäischen Chip-Universums eingeordnet. Eine detaillierte Chartanalyse liefert der Host in diesem Abschnitt nicht.",
-     "einordnung": "Infineon ist damit eher ein Sektorindikator als ein eigenständiges Setup der Sendung. Die Aktie bleibt von der allgemeinen Halbleiterstimmung abhängig, ohne dass hier eine konkrete technische Marke g…"
     }
    ]
   },
@@ -4859,130 +5140,6 @@
     }
    ]
   },
-  "NKE": {
-   "name": "Nike",
-   "auftritte": [
-    {
-     "date": "2026-10-13",
-     "video_id": "hpNlbenh6Gw",
-     "url": "https://www.youtube.com/watch?v=hpNlbenh6Gw&t=3045s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Nike notiert laut Host nahe den Tiefstständen bei 33 bis 34 USD. Das China-Geschäft ist schwach, der Turnaround dauert an, und der Chart bleibt angeschlagen.",
-     "einordnung": "Die Dividendenrendite kann bei einem gefallenen Konsumwert attraktiv wirken, ist aber kein Ersatz für eine Trendwende bei Umsatz und Marke. Die klare Warnung des Hosts ist angesichts des schwachen Ch…",
-     "figures": "Kurs 33 bis 34 USD; Dividendenrendite über 4%; mögliches Ziel 40 USD; Risiko 30 USD"
-    },
-    {
-     "date": "2026-10-09",
-     "video_id": "zlI3Nv72aMI",
-     "url": "https://www.youtube.com/watch?v=zlI3Nv72aMI",
-     "channel": "BerneckerTV",
-     "kategorie": "fundamental",
-     "note": "Nike wird als bekannter Qualitätswert genannt, der deutlich unter seinem Hoch notiert und damit die schwache Marktbreite außerhalb der KI-Aktien illustriert.",
-     "einordnung": "Der Kursrückstand allein macht Nike noch nicht attraktiv; entscheidend wäre eine glaubhafte operative Trendwende. In einem Umfeld hoher Renditen werden etablierte Konsummarken zudem stärker nach Wach…"
-    },
-    {
-     "date": "2026-10-06",
-     "video_id": "GtrRTN1P-RM",
-     "url": "https://www.youtube.com/watch?v=GtrRTN1P-RM&t=652s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Nike fällt nach der Zahlenvorlage auf ein 13-Jahrestief. Besonders das China-Geschäft ist laut Host eingebrochen; er bleibt deshalb skeptisch.",
-     "einordnung": "Ein Mehrjahrestief allein ist kein Kaufsignal, wenn Umsatzqualität, Marke und China-Dynamik gleichzeitig unter Druck stehen. Die Skepsis ist bei einem Konsumwert mit schwacher Nachfrage und hoher Erh…",
-     "figures": "13-Jahrestief"
-    },
-    {
-     "date": "2026-10-02",
-     "video_id": "JgUJN3izL5s",
-     "url": "https://www.youtube.com/watch?v=JgUJN3izL5s&t=180s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nike enttäuschte mit den Zahlen, insbesondere wegen der ausgeprägten Schwäche in China. Die Aktie fiel nachbörslich deutlich; der Host sieht deshalb keinen Kaufgrund.",
-     "einordnung": "Das Problem ist nicht nur ein einzelnes schwaches Quartal, sondern die Kombination aus regionalem Nachfragerückgang und niedrigerer Profitabilität. Bei einem globalen Konsumwert muss zunächst glaubha…",
-     "figures": "China-Umsatz minus 26 Prozent, Bruttomarge 42,8 Prozent, Sparprogramm über 2,5 Milliarden US-Dollar, Kursziel von Piper Sandler auf 28 US-Dollar gesenkt, nachbörslicher Kursrückgang um 8 bis 9 Prozent"
-    },
-    {
-     "date": "2026-10-02",
-     "video_id": "kIqPqPlWdLM",
-     "url": "https://www.youtube.com/watch?v=kIqPqPlWdLM&t=3510s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nike verfehlt beim Umsatz die Dynamik, kann beim Gewinn je Aktie aber leicht positiv überraschen. Besonders schwach sind China, das Direktgeschäft und Converse; der Host hält ein KGV von 21 angesicht…",
-     "einordnung": "Die Gewinnüberraschung ist angesichts des Umsatz- und Margendrucks nur ein schwacher Trost. China, der Direktvertrieb und Converse zeigen, dass Nike nicht nur ein temporäres Nachfrageproblem, sondern…",
-     "figures": "Umsatz -4 % auf 11,2 Mrd. USD, EPS 0,48 USD bei erwarteten 0,44 USD, China-Umsatz -22 %, China-EBIT -34 %, Direktgeschäft -8 %, Converse -28 %, KGV 21"
-    },
-    {
-     "date": "2026-09-28",
-     "video_id": "iPOhcrx5BhI",
-     "url": "https://www.youtube.com/watch?v=iPOhcrx5BhI&t=433s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Nike bleibt ein Sorgenkind: Der Konzern hat Marktanteile verloren, der Wechsel von Kylian Mbappé zu On belastet die Wahrnehmung und der neue CEO konnte bislang keinen überzeugenden Erfolg vorweisen.…",
-     "einordnung": "Nike steht nicht vor einem gewöhnlichen kurzfristigen Ergebnisproblem, sondern vor einer möglichen mehrjährigen Erneuerung von Marke, Produkt und Vertrieb. Solange der operative Beweis ausbleibt, ist…",
-     "figures": "Quartalszahlen am Donnerstag"
-    },
-    {
-     "date": "2026-09-28",
-     "video_id": "AmCmqN7O-P4",
-     "url": "https://www.youtube.com/watch?v=AmCmqN7O-P4&t=2857s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Bank of America hat Nike auf Underperform abgestuft und das Kursziel von 47 auf 30 US-Dollar gesenkt. Die EPS-Prognosen für 2027 und 2028 wurden um 11 beziehungsweise 12 Prozent reduziert; eine Umsat…",
-     "einordnung": "Eine hohe Dividendenrendite ist bei einer Ausschüttungsquote von über 100 Prozent kein ausreichender Sicherheitsanker. Solange Umsatz- und Gewinnwende erst für 2028 erwartet werden, bleibt die Aktie…",
-     "figures": "Neues Kursziel 30 US-Dollar; vorher 47 US-Dollar; EPS-Prognosen 2027 und 2028 um 11 beziehungsweise 12 Prozent gesenkt; EPS 143 beziehungsweise 187; Dividendenrendite 4,6 Prozent; Ausschüttungsquote…"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "6VmhA9lWzLk",
-     "url": "https://www.youtube.com/watch?v=6VmhA9lWzLk&t=2460s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nike befindet sich in einem Abwärtstrend. Mehrere Analysten senken ihre Kursziele, während die Nachfrage in China und in den Lifestyle-Segmenten schwach bleibt.",
-     "einordnung": "Die breite Spanne der Analystenziele zeigt, wie uneinheitlich die Erholungserwartungen sind. Solange China und die Lifestyle-Nachfrage nicht drehen, bleibt eine niedrige Bewertung allein kein ausreic…",
-     "figures": "Kurs 37 Dollar; Kursziele: Bert 44 Dollar, Citigroup 39 Dollar, Morgan Stanley 31 Dollar, BMO 30 Dollar"
-    },
-    {
-     "date": "2026-09-04",
-     "video_id": "JYaFrjI3lJA",
-     "url": "https://www.youtube.com/watch?v=JYaFrjI3lJA&t=130s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Nike fällt weiter; die Marktkapitalisierung liegt inzwischen unter 50 Milliarden US-Dollar. Der Sportartikelmarkt bleibt schwierig, auch wenn die Aktie langfristig günstig bewertet erscheint.",
-     "einordnung": "Die niedrige Bewertung allein ist bei einem angeschlagenen Konsumwert noch kein Wendepunkt. Entscheidend ist, ob Nike operativ wieder an Dynamik gewinnt und der Markt diese Verbesserung glaubhaft vor…",
-     "figures": "Marktkapitalisierung unter 50 Mrd. USD"
-    },
-    {
-     "date": "2026-08-18",
-     "video_id": "-mSKtaN5emQ",
-     "url": "https://www.youtube.com/watch?v=-mSKtaN5emQ&t=4496s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Fallende Sneakerpreise und der Bruch der Unterstützung bei 40 US-Dollar erzeugten ein neues Verkaufssignal. Die Dividendenrendite liegt über 4%, doch der Host bezeichnet die Aktie zunächst als fallen…",
-     "einordnung": "Eine hohe Dividendenrendite ist bei einem strukturell schwachen Chart kein ausreichender Schutz. Nike braucht zunächst eine glaubwürdige Verbesserung bei Nachfrage, Preisen und Lagerbestand, bevor di…",
-     "figures": "Unterstützung bei 40 US-Dollar durchbrochen; Dividendenrendite über 4%."
-    },
-    {
-     "date": "2026-08-10",
-     "video_id": "Hwf_CXhBgJU",
-     "url": "https://www.youtube.com/watch?v=Hwf_CXhBgJU&t=1964s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nike verliert laut einer Morgan-Stanley-Umfrage weiter Marktanteile. Die Aktie ist technisch schwach und notiert unter 50 Dollar.",
-     "einordnung": "Die Dividendenrendite bietet eine gewisse Unterstützung, kompensiert aber nicht automatisch den möglichen Verlust von Marken- und Marktanteilen. Bei einem KGV von 24,3 braucht Nike sichtbare operativ…",
-     "figures": "Marktanteil Nike 28 %, On Holding 13 %, Kursziel 34 $ bei Bruch von 40,50 $, KGV 24,3, Dividendenrendite 4 %"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "ZtKFU4SJtbQ",
-     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=160s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Nike gehörte am Vortag mit einem Plus von 4 Prozent zu den Gewinnern. Der Host sieht jedoch noch keine bestätigte Branchenrotation; die Kurslücke bei 48 Dollar und die Oberkante bei 52 Dollar sind fü…",
-     "einordnung": "Ein Tagesgewinn ist bei einer angeschlagenen Konsum- und Markenaktie zunächst nur ein Stabilisierungssignal. Erst wenn die genannten Widerstände überwunden werden, würde sich das technische Bild bela…",
-     "figures": "Plus 4 Prozent; 48 Dollar; 52 Dollar"
-    }
-   ]
-  },
   "ALV.DE": {
    "name": "Allianz",
    "auftritte": [
@@ -5301,89 +5458,6 @@
      "kategorie": "fundamental",
      "note": "Volkswagen-Chef Oliver Blume betont weitere Sparmaßnahmen. Die Aktie notiert laut Host in der Nähe eines 15-Jahres-Tiefs.",
      "einordnung": "Die niedrige Bewertung allein ist bei Volkswagen kein ausreichendes Gegenargument, solange Restrukturierung, Elektromobilität und internationale Wettbewerbsfähigkeit ungeklärt bleiben. Der Markt verl…"
-    }
-   ]
-  },
-  "NDX1.DE": {
-   "name": "Nordex",
-   "auftritte": [
-    {
-     "date": "2026-10-12",
-     "video_id": "dygYRkXpB_g",
-     "url": "https://www.youtube.com/watch?v=dygYRkXpB_g&t=390s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Nordex meldet im dritten Quartal mehr als 400 Anlagen in 10 Ländern und liegt damit deutlich über den Erwartungen. Der Host beurteilt die Aktie positiv und nennt ein Kursziel von 40 Euro.",
-     "einordnung": "Die Meldung bestätigt eine starke operative Dynamik, wobei bei Windkraftanlagen der Auftragseingang und die Margenqualität wichtiger sind als reine Stückzahlen. Das Kursziel signalisiert eine konstru…",
-     "figures": "Mehr als 400 Anlagen, 10 Länder, Kursziel 40 EUR"
-    },
-    {
-     "date": "2026-10-12",
-     "video_id": "ndIevt5yveg",
-     "url": "https://www.youtube.com/watch?v=ndIevt5yveg&t=699s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Nordex verzeichnet trotz eines starken Auftragseingangs von 30 Prozent auf mehr als 2,8 Gigawatt weiterhin einen intakten Abwärtstrend. Nach Einschätzung des Hosts wird die Aktie nach jedem Anstieg s…",
-     "einordnung": "Die günstige Bewertung und der Auftragseingang liefern fundamentale Argumente, reichen aber bislang nicht für eine Trendwende. Solange der Kurs trotz guter Nachrichten nicht nachhaltig reagiert, blei…",
-     "figures": "Hoch 52 Euro; Tief 34 Euro; KGV 12; Auftragseingang plus 30 Prozent auf mehr als 2,8 Gigawatt; 427 Anlagen"
-    },
-    {
-     "date": "2026-09-14",
-     "video_id": "vOXfcKwP55o",
-     "url": "https://www.youtube.com/watch?v=vOXfcKwP55o&t=439s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Nordex meldet viele neue Aufträge, doch die Aktie reagiert darauf nicht mit entsprechender Stärke. Der Host sieht steigende Zinsen und teureres Kapital als Bremsfaktoren und verweist auf die 200-Tage…",
-     "einordnung": "Meine Einordnung: Der Kurs zeigt, dass der Markt Auftragseingänge derzeit nicht isoliert bewertet, sondern gegen Finanzierungskosten und erwartete Renditen der Projekte stellt. Solange die 200-Tage-L…"
-    },
-    {
-     "date": "2026-09-08",
-     "video_id": "fYae2mfR1ps",
-     "url": "https://www.youtube.com/watch?v=fYae2mfR1ps&t=1265s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Citigroup hebt Nordex von Neutral auf Kaufen an und setzt das Kursziel auf 50 Euro. Zuvor hatte bereits die Bank of America 54 Euro genannt; der Host verweist auf ein Kursplus von 29 auf 41 Euro seit…",
-     "einordnung": "Nordex hat bereits viel vorweggenommen, wird aber mit einem KGV von 13,8 nicht als spekulative Extrembewertung beschrieben. Nach dem starken Anstieg ist die Positionierung wichtiger als ein blindes H…",
-     "figures": "50 € Citigroup-Kursziel, 48 € vorher, 54 € Bank of America, 20–22 % Potenzial, 29 € im Januar, 41 € aktuell, 41 % Jahresplus, KGV 13,8"
-    },
-    {
-     "date": "2026-09-07",
-     "video_id": "tHrMBx5m1QU",
-     "url": "https://www.youtube.com/watch?v=tHrMBx5m1QU&t=640s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Nordex steigt nach einem neuen Auftrag um drei Prozent. Im Beitrag wird ein Kursziel von 40 Euro genannt.",
-     "einordnung": "Ein Auftrag liefert der Aktie kurzfristig Rückenwind, entscheidend bleibt aber, ob sich daraus dauerhaft bessere Margen und ein stabiler Auftragseingang ableiten lassen. Der Windkraftsektor bleibt po…",
-     "figures": "3 Prozent, 40 Euro"
-    },
-    {
-     "date": "2026-09-07",
-     "video_id": "SSFzzcpor7A",
-     "url": "https://www.youtube.com/watch?v=SSFzzcpor7A&t=677s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Die Bank of America stuft Nordex von Neutral auf Kaufen hoch und hebt das Kursziel von 50 auf 54 Euro an. Die Aktie steigt um 11 Prozent und ist damit der stärkste MDAX-Wert.",
-     "einordnung": "Der Kurssprung ist deutlich größer als die Anhebung des Kursziels und signalisiert viel kurzfristiges Momentum. Nach einem Anstieg von 11 Prozent steigt allerdings auch das Risiko, dass ein Teil der…",
-     "figures": "+11%; Kursziel 54 Euro, zuvor 50 Euro; durchschnittliches Kursziel 48,70 Euro; KGV 13 vor dem Anstieg"
-    },
-    {
-     "date": "2026-07-29",
-     "video_id": "JRUiVhwgTqA",
-     "url": "https://www.youtube.com/watch?v=JRUiVhwgTqA&t=403s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Nordex übertrifft die Erwartungen mit starkem Umsatz- und Gewinnwachstum. Erstmals liegt die EBITDA-Marge über 10 Prozent; der operative Turnaround schreitet voran, und der hohe Auftragsbestand siche…",
-     "einordnung": "Nordex zeigt eine für einen zyklischen Anlagenbauer bemerkenswerte Kombination aus Wachstum, Marge und Netto-Cash. Der Auftragsbestand reduziert zwar das kurzfristige Auslastungsrisiko, ersetzt aber…",
-     "figures": "Umsatz plus 16 Prozent auf 2,18 Mrd. EUR, EBITDA 224 Mio. EUR, EBITDA-Marge über 10 Prozent, Nettoergebnis 111 Mio. EUR, Auftragseingang 3 Mrd. EUR, Auftragsbestand 18,4 Mrd. EUR, Free Cashflow 164 M…"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
-     "einordnung": "Nordex leidet unter dem Momentum-Wechsel, nicht unter 'Sell in May' – das ist ein wichtiger Unterschied, da der Momentum-Wechsel temporär sein kann."
     }
    ]
   },
@@ -15802,51 +15876,6 @@
      "kategorie": "news",
      "note": "Die Hyundai-Aktie stieg laut Host nach einer Vorführung von Boston Dynamics.",
      "einordnung": "Hyundai wird damit als Beispiel für einen Industriekonzern mit Robotikfantasie sichtbar. Eine Kursreaktion nach einer Demonstration ist jedoch zunächst Sentiment und noch kein Beleg für einen wesentl…"
-    }
-   ]
-  },
-  "AIXA.DE": {
-   "name": "Aixtron",
-   "auftritte": [
-    {
-     "date": "2026-08-11",
-     "video_id": "mREZgmSkQCI",
-     "url": "https://www.youtube.com/watch?v=mREZgmSkQCI&t=549s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Aixtron hat sich deutlich erholt, ist an der 200-Tagelinie nach oben abgeprallt und bewegt sich auf die Marke von 40 Euro zu. Ein Kollege hatte zuvor ein Turbo-Produkt empfohlen, das rund 45 Prozent…",
-     "einordnung": "Der Abprall an der 200-Tagelinie macht die Aktie charttechnisch interessant, doch die Nähe zu einer runden Zielmarke kann auch Gewinnmitnahmen auslösen. Bei gehebelten Produkten ist die Schwankungs-…",
-     "figures": "40 Euro; plus 45 Prozent"
-    },
-    {
-     "date": "2026-07-27",
-     "video_id": "i5q2OHZUl84",
-     "url": "https://www.youtube.com/watch?v=i5q2OHZUl84&t=554s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Aixtron liegt vorbörslich zusammen mit Infineon rund 3 bis 4 Prozent im Plus. Die Marke von 40 Euro wird als interessante charttechnische Orientierung genannt.",
-     "einordnung": "Aixtron bleibt ein stärker zyklischer Halbleiterausrüster, bei dem Bewegungen schnell durch Branchenstimmung und Auftragserwartungen verstärkt werden. Die 40-Euro-Marke ist daher eher ein technischer…",
-     "figures": "Vorbörslich rund 3 bis 4 Prozent Plus, 40 €"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "ZtKFU4SJtbQ",
-     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=459s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Aixtron ist von 60 auf 40 Euro gefallen und damit rund 30 Prozent zurückgekommen. Die Aktie nähert sich der 200-Tage-Linie; 40 Euro werden als mögliche Unterstützung und Sicherheitsnetz genannt.",
-     "einordnung": "Der Rückgang ist für einen zyklischen Halbleiterausrüster erheblich und macht die Unterstützungszone charttechnisch relevant. Eine Unterstützung wird aber erst durch eine erkennbare Stabilisierung be…",
-     "figures": "Rückgang von 60 auf 40 Euro; rund 30 Prozent Minus; 200-Tage-Linie; 40 Euro"
-    },
-    {
-     "date": "2026-07-15",
-     "video_id": "6LLJagAsqAI",
-     "url": "https://www.youtube.com/watch?v=6LLJagAsqAI&t=185s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Aixtron gehörte laut Host zu den Halbleiterwerten, die von der angehobenen ASML-Prognose profitierten.",
-     "einordnung": "Die stärkere Kursreaktion als bei Infineon unterstreicht den Hebel, den positive Branchensignale bei spezialisierten Ausrüstern auslösen können. Sie erhöht aber auch die Abhängigkeit von Investitions…",
-     "figures": "Tagesplus +3 Prozent"
     }
    ]
   },
