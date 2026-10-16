@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-16T06:20:38.962382Z",
+  "generated_at": "2026-10-16T07:20:37.422273Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 121,
-  "with_quote_data": 57,
+  "symbols_total": 123,
+  "with_quote_data": 58,
   "sources": [
    "watchlist",
    "videos",
@@ -21,17 +21,190 @@
  },
  "items": [
   {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 70,
+   "symbol": "CRWV",
+   "name": "CoreWeave",
+   "score": 75,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-11,1 %",
+     "value": "+5,9 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "3,7× Durchschnitt",
+     "weight": 25
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 69.69,
+    "pct": 5.94,
+    "cur": "USD",
+    "as_of": "2026-10-16T06:35:08.707032+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "CoreWeave mit deutlicher Kurs- und Volumenbewegung",
+    "why_now": "Die Aktie von CoreWeave liegt bei 69,69 USD und ist um 5,94 % gestiegen. Das Handelsvolumen beträgt das 3,7-Fache des Durchschnitts, zudem wurden 2 Videos in 3 Tagen erwähnt. Ursache unklar. Die Video-Erwähnungen könnten mit der erhöhten Aufmerksamkeit zusammenhängen, belegen aber keinen konkreten Auslöser.",
+    "watch_next": [
+     "Kursentwicklung bei 69,69 USD",
+     "Volumen im Verhältnis zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-16T07:20:37.422273Z"
+   }
+  },
+  {
+   "symbol": "BLK",
+   "name": "BlackRock",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+4,4 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,2× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings vor 2 Tagen",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 1120.78,
+    "pct": 4.38,
+    "cur": "USD",
+    "as_of": "2026-10-16T06:35:08.707032+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-14",
+    "distance_days": -2,
+    "zeit": "bmo"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "BlackRock: Kursanstieg nach Earnings-Termin",
+    "why_now": "Die BlackRock-Aktie liegt bei 1120,78 USD und ist um 4,4 % gestiegen. Das Handelsvolumen beträgt das 2,2-Fache des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen, was als zeitlicher Zusammenhang infrage kommen könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Earnings-Reaktion beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-16T07:20:37.422273Z"
+   }
+  },
+  {
+   "symbol": "TMO",
+   "name": "Thermo Fisher Scientific",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,5 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 5 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 696.49,
+    "pct": 3.46,
+    "cur": "USD",
+    "as_of": "2026-10-16T06:35:08.707032+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-21",
+    "distance_days": 5,
+    "zeit": "bmo"
+   }
+  },
+  {
+   "symbol": "OHB.DE",
+   "name": "OHB",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+10,6 %",
      "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:OHB",
+   "quote": {
+    "price": 169.6,
+    "pct": 10.61,
+    "cur": "EUR",
+    "as_of": "2026-10-16T06:35:08.707032+00:00"
+   }
+  },
+  {
+   "symbol": "EVT.DE",
+   "name": "Evotec",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,0 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
@@ -46,102 +219,17 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "KRX:000660",
+   "tv_symbol": "XETR:EVT",
    "quote": {
-    "price": 1262000.0,
-    "pct": -11.06,
-    "cur": "KRW",
-    "as_of": "2026-10-15T18:34:58.433346+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "SK Hynix fällt bei hohem Handelsvolumen deutlich",
-    "why_now": "Die Aktie von SK Hynix fällt um 11,1 % auf 1.262.000 KRW. Das Handelsvolumen liegt beim 1,9-Fachen des Durchschnitts. Zudem wurde die Aktie in den vergangenen drei Tagen in einem Video erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Rückgang",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-16T00:20:38.319102Z"
+    "price": 2.528,
+    "pct": 6.97,
+    "cur": "EUR",
+    "as_of": "2026-10-16T06:35:08.707032+00:00"
    }
   },
   {
    "symbol": "RKLB",
    "name": "Rocket Lab",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-9,6 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 53.45,
-    "pct": -9.68,
-    "cur": "USD",
-    "as_of": "2026-10-15T18:34:58.433346+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Rocket Lab fällt heute deutlich bei erhöhtem Volumen",
-    "why_now": "Die Aktie von Rocket Lab liegt bei 53,45 USD und ist um 9,68 % gefallen. Das Handelsvolumen liegt beim 1,7-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung registriert. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursentwicklung",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-15T19:20:42.223381Z"
-   }
-  },
-  {
-   "symbol": "005930.KS",
-   "name": "Samsung Electronics",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-9,5 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,0× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "tv_symbol": "KRX:005930",
-   "quote": {
-    "price": 210000.0,
-    "pct": -9.48,
-    "cur": "KRW",
-    "as_of": "2026-10-15T18:34:58.433346+00:00"
-   }
-  },
-  {
-   "symbol": "285A.T",
-   "name": "Kioxia",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -149,41 +237,13 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-12,3 %",
-     "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "TSE:285A",
-   "quote": {
-    "price": 12880.0,
-    "pct": -12.32,
-    "cur": "JPY",
-    "as_of": "2026-10-15T18:34:58.433346+00:00"
-   }
-  },
-  {
-   "symbol": "ASML.AS",
-   "name": "ASML",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,2 %",
+     "value": "-6,6 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
+     "value": "2,2× Durchschnitt",
      "weight": 15
     },
     {
@@ -193,124 +253,31 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "EURONEXT:ASML",
    "quote": {
-    "price": 1464.2,
-    "pct": -4.19,
-    "cur": "EUR",
-    "as_of": "2026-10-15T18:34:58.433346+00:00"
-   }
-  },
-  {
-   "symbol": "INTC",
-   "name": "Intel",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-4,3 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 5 Tagen",
-     "weight": 20
-    }
-   ],
-   "earnings": {
-    "date": "2026-10-21",
-    "distance_days": 5,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "TSM",
-   "name": "TSMC",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,6 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 418.728,
-    "pct": -2.62,
+    "price": 55.25,
+    "pct": -6.64,
     "cur": "USD",
-    "as_of": "2026-10-15T18:34:58.433346+00:00"
-   }
-  },
-  {
-   "symbol": "CRWV",
-   "name": "CoreWeave",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "volume_spike",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,4 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,0× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 67.409,
-    "pct": 2.48,
-    "cur": "USD",
-    "as_of": "2026-10-15T18:34:58.433346+00:00"
+    "as_of": "2026-10-16T06:35:08.707032+00:00"
    }
   },
   {
    "symbol": "ENR.DE",
    "name": "Siemens Energy",
-   "score": 50,
+   "score": 55,
    "priority": "medium",
-   "alert_type": "volume_spike",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,2 %",
-     "weight": 15
+     "value": "-5,4 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
-     "weight": 25
+     "value": "1,6× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -322,9 +289,9 @@
    "tv_symbol": "XETR:ENR",
    "quote": {
     "price": 132.36,
-    "pct": -2.16,
+    "pct": -5.44,
     "cur": "EUR",
-    "as_of": "2026-10-15T18:34:58.433346+00:00"
+    "as_of": "2026-10-16T06:35:08.707032+00:00"
    }
   }
  ]
