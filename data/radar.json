@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-16T18:20:57.950263Z",
+  "generated_at": "2026-10-16T19:20:40.568737Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 123,
-  "with_quote_data": 58,
+  "symbols_total": 121,
+  "with_quote_data": 60,
   "sources": [
    "watchlist",
    "videos",
@@ -23,21 +23,21 @@
   {
    "symbol": "CRWV",
    "name": "CoreWeave",
-   "score": 75,
+   "score": 80,
    "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,9 %",
-     "weight": 30
+     "value": "-12,7 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,7× Durchschnitt",
-     "weight": 25
+     "value": "1,8× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "content_velocity",
@@ -47,36 +47,36 @@
     }
    ],
    "quote": {
-    "price": 69.69,
-    "pct": 5.94,
+    "price": 60.93,
+    "pct": -12.57,
     "cur": "USD",
-    "as_of": "2026-10-16T06:35:08.707032+00:00"
+    "as_of": "2026-10-16T18:35:06.996338+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "CoreWeave mit deutlicher Kurs- und Volumenbewegung",
-    "why_now": "Die Aktie von CoreWeave liegt bei 69,69 USD und ist um 5,94 % gestiegen. Das Handelsvolumen beträgt das 3,7-Fache des Durchschnitts, zudem wurden 2 Videos in 3 Tagen erwähnt. Ursache unklar. Die Video-Erwähnungen könnten mit der erhöhten Aufmerksamkeit zusammenhängen, belegen aber keinen konkreten Auslöser.",
+    "headline": "CoreWeave fällt bei erhöhtem Handelsvolumen deutlich",
+    "why_now": "Die Daten zeigen für CoreWeave einen Kursrückgang von 12,7 % auf 60,93 USD. Gleichzeitig lag das Handelsvolumen beim 1,8-Fachen des Durchschnitts. Zudem wurden in den vergangenen drei Tagen zwei Videos erwähnt. Ursache unklar.",
     "watch_next": [
-     "Kursentwicklung bei 69,69 USD",
-     "Volumen im Verhältnis zum Durchschnitt",
+     "Kursbewegung von 12,7 %",
+     "Handelsvolumen im Verhältnis zum Durchschnitt",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-16T07:20:37.422273Z"
+    "generated_at": "2026-10-16T19:20:40.568737Z"
    }
   },
   {
-   "symbol": "BLK",
-   "name": "BlackRock",
-   "score": 70,
+   "symbol": "NDX1.DE",
+   "name": "Nordex",
+   "score": 80,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+4,4 %",
-     "weight": 30
+     "value": "+12,3 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
@@ -85,193 +85,90 @@
      "weight": 15
     },
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
-     "weight": 15
-    },
-    {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
+   "tv_symbol": "XETR:NDX1",
    "quote": {
-    "price": 1120.78,
-    "pct": 4.38,
-    "cur": "USD",
-    "as_of": "2026-10-16T06:35:08.707032+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-14",
-    "distance_days": -2,
-    "zeit": "bmo"
+    "price": 39.14,
+    "pct": 12.28,
+    "cur": "EUR",
+    "as_of": "2026-10-16T18:35:06.996338+00:00"
    },
    "llm": {
     "status": "ready",
-    "headline": "BlackRock: Kursanstieg nach Earnings-Termin",
-    "why_now": "Die BlackRock-Aktie liegt bei 1120,78 USD und ist um 4,4 % gestiegen. Das Handelsvolumen beträgt das 2,2-Fache des Durchschnitts. Der Earnings-Termin lag vor 2 Tagen, was als zeitlicher Zusammenhang infrage kommen könnte. Ursache unklar.",
+    "headline": "Nordex mit starkem Kursanstieg und hohem Volumen",
+    "why_now": "Die Nordex-Aktie stieg um 12,3 % auf 39,14 EUR. Das Handelsvolumen lag beim 2,2-Fachen des Durchschnitts. Zudem wurden in drei Tagen zwei Videos zur Aktie erfasst, was auf erhöhte Aufmerksamkeit hindeuten könnte. Ursache unklar.",
     "watch_next": [
-     "Kursbewegung beobachten",
-     "Handelsvolumen beobachten",
-     "Weitere Earnings-Reaktion beobachten"
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-16T07:20:37.422273Z"
+    "generated_at": "2026-10-16T19:20:40.568737Z"
    }
   },
   {
-   "symbol": "TMO",
-   "name": "Thermo Fisher Scientific",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
+   "symbol": "AIXA.DE",
+   "name": "Aixtron",
+   "score": 75,
+   "priority": "high",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+3,5 %",
-     "weight": 15
+     "value": "+6,2 %",
+     "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,7× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 5 Tagen",
-     "weight": 20
+     "value": "2,6× Durchschnitt",
+     "weight": 25
     },
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
+   "tv_symbol": "XETR:AIXA",
    "quote": {
-    "price": 696.49,
-    "pct": 3.46,
-    "cur": "USD",
-    "as_of": "2026-10-16T06:35:08.707032+00:00"
+    "price": 32.89,
+    "pct": 6.17,
+    "cur": "EUR",
+    "as_of": "2026-10-16T18:35:06.996338+00:00"
    },
-   "earnings": {
-    "date": "2026-10-21",
-    "distance_days": 5,
-    "zeit": "bmo"
+   "llm": {
+    "status": "ready",
+    "headline": "Aixtron mit deutlichem Kursanstieg und hohem Volumen",
+    "why_now": "Die Aixtron-Aktie stieg um 6,17 % auf 32,89 EUR. Das Handelsvolumen lag beim 2,6-Fachen des Durchschnitts. Zudem wurden in den vergangenen 3 Tagen 2 Videos erwähnt, was als möglicher zusätzlicher Aufmerksamkeitstreiber infrage kommen könnte. Ursache unklar.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-16T19:20:40.568737Z"
    }
   },
   {
    "symbol": "OHB.DE",
    "name": "OHB",
-   "score": 55,
-   "priority": "medium",
+   "score": 70,
+   "priority": "high",
    "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+10,6 %",
+     "value": "+13,0 %",
      "weight": 45
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:OHB",
-   "quote": {
-    "price": 169.6,
-    "pct": 10.61,
-    "cur": "EUR",
-    "as_of": "2026-10-16T06:35:08.707032+00:00"
-   }
-  },
-  {
-   "symbol": "EVT.DE",
-   "name": "Evotec",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+7,0 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:EVT",
-   "quote": {
-    "price": 2.528,
-    "pct": 6.97,
-    "cur": "EUR",
-    "as_of": "2026-10-16T06:35:08.707032+00:00"
-   }
-  },
-  {
-   "symbol": "RKLB",
-   "name": "Rocket Lab",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-6,6 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,2× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 55.25,
-    "pct": -6.64,
-    "cur": "USD",
-    "as_of": "2026-10-16T06:35:08.707032+00:00"
-   }
-  },
-  {
-   "symbol": "ENR.DE",
-   "name": "Siemens Energy",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,4 %",
-     "weight": 30
     },
     {
      "type": "volume_spike",
@@ -286,12 +183,65 @@
      "weight": 10
     }
    ],
-   "tv_symbol": "XETR:ENR",
+   "tv_symbol": "XETR:OHB",
    "quote": {
-    "price": 132.36,
-    "pct": -5.44,
+    "price": 191.6,
+    "pct": 12.97,
     "cur": "EUR",
-    "as_of": "2026-10-16T06:35:08.707032+00:00"
+    "as_of": "2026-10-16T18:35:06.996338+00:00"
+   }
+  },
+  {
+   "symbol": "RKLB",
+   "name": "Rocket Lab",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-7,7 %",
+     "weight": 45
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 50.98,
+    "pct": -7.73,
+    "cur": "USD",
+    "as_of": "2026-10-16T18:35:06.996338+00:00"
+   }
+  },
+  {
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-5,0 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 5 Tagen",
+     "weight": 20
+    }
+   ],
+   "earnings": {
+    "date": "2026-10-21",
+    "distance_days": 5,
+    "zeit": "amc"
    }
   }
  ]
