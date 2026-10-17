@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-16T23:20:55.110724Z",
+  "generated_at": "2026-10-17T00:20:37.522057Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 121,
+  "symbols_total": 119,
   "with_quote_data": 60,
   "sources": [
    "watchlist",
@@ -160,8 +160,8 @@
   {
    "symbol": "OHB.DE",
    "name": "OHB",
-   "score": 70,
-   "priority": "high",
+   "score": 60,
+   "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
     {
@@ -175,12 +175,6 @@
      "label": "Ungewöhnlich hohes Volumen",
      "value": "1,6× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
    "tv_symbol": "XETR:OHB",
@@ -194,7 +188,7 @@
   {
    "symbol": "RKLB",
    "name": "Rocket Lab",
-   "score": 65,
+   "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
    "triggers": [
@@ -207,8 +201,8 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
     }
    ],
    "quote": {
@@ -234,13 +228,13 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 5 Tagen",
+     "value": "Earnings in 4 Tagen",
      "weight": 20
     }
    ],
    "earnings": {
     "date": "2026-10-21",
-    "distance_days": 5,
+    "distance_days": 4,
     "zeit": "amc"
    }
   }
