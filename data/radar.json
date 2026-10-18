@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-17T23:20:34.948949Z",
+  "generated_at": "2026-10-18T00:20:38.411102Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -67,51 +67,6 @@
    }
   },
   {
-   "symbol": "CRWV",
-   "name": "CoreWeave",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 61.39,
-    "pct": -11.91,
-    "cur": "USD",
-    "as_of": "2026-10-17T18:32:49.323634+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "CoreWeave fällt bei hohem Volumen deutlich",
-    "why_now": "CoreWeave fällt heute um 11,9 % auf 61,39 USD. Das Handelsvolumen liegt bei 2,5× des Durchschnitts, zudem wurden 2 Videos in 3 Tagen erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung von CoreWeave",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-17T07:20:37.850599Z"
-   }
-  },
-  {
    "symbol": "AIXA.DE",
    "name": "Aixtron",
    "score": 75,
@@ -155,6 +110,51 @@
     ],
     "confidence": "low",
     "generated_at": "2026-10-17T19:20:33.688367Z"
+   }
+  },
+  {
+   "symbol": "CRWV",
+   "name": "CoreWeave",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-11,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,5× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 61.39,
+    "pct": -11.91,
+    "cur": "USD",
+    "as_of": "2026-10-17T18:32:49.323634+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "CoreWeave fällt bei hohem Handelsvolumen deutlich",
+    "why_now": "Die Aktie von CoreWeave verlor 11,9 % und notiert bei 61,39 USD. Gleichzeitig lag das Handelsvolumen beim 2,5-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
+    "watch_next": [
+     "Kursentwicklung nach dem Rückgang",
+     "Handelsvolumen im Vergleich zum Durchschnitt",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-18T00:20:38.411102Z"
    }
   },
   {
@@ -207,7 +207,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 3 Tagen",
+     "value": "Earnings in 2 Tagen",
      "weight": 20
     },
     {
@@ -225,7 +225,7 @@
    },
    "earnings": {
     "date": "2026-10-20",
-    "distance_days": 3,
+    "distance_days": 2,
     "zeit": "amc"
    }
   },
@@ -272,47 +272,14 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 4 Tagen",
+     "value": "Earnings in 3 Tagen",
      "weight": 20
     }
    ],
    "earnings": {
     "date": "2026-10-21",
-    "distance_days": 4,
+    "distance_days": 3,
     "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "TSM",
-   "name": "TSMC",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "content_velocity",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,3 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 412.61,
-    "pct": -2.28,
-    "cur": "USD",
-    "as_of": "2026-10-17T18:32:49.323634+00:00"
    }
   }
  ]
