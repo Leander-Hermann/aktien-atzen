@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-19T18:20:40.031000Z",
+  "generated_at": "2026-10-19T19:20:40.621208Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 122,
-  "with_quote_data": 59,
+  "symbols_total": 123,
+  "with_quote_data": 55,
   "sources": [
    "watchlist",
    "videos",
@@ -21,113 +21,16 @@
  },
  "items": [
   {
-   "symbol": "NDX1.DE",
-   "name": "Nordex",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+12,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,2× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "XETR:NDX1",
-   "quote": {
-    "price": 39.14,
-    "pct": 12.28,
-    "cur": "EUR",
-    "as_of": "2026-10-19T06:34:44.262236+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Nordex mit starker Kursbewegung und hohem Volumen",
-    "why_now": "Die Nordex-Aktie legte um 12,3 % auf 39,14 EUR zu. Das Handelsvolumen lag beim 2,2-Fachen des Durchschnitts. Zudem wurde 1 Video-Erwähnung in 3 Tagen erfasst, was als möglicher zusätzlicher Aufmerksamkeitsfaktor infrage kommt. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursbewegung",
-     "Entwicklung des Handelsvolumens",
-     "Neue Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-19T07:20:39.760869Z"
-   }
-  },
-  {
-   "symbol": "CRWV",
-   "name": "CoreWeave",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 61.39,
-    "pct": -11.91,
-    "cur": "USD",
-    "as_of": "2026-10-19T06:34:44.262236+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "CoreWeave fällt bei hohem Handelsvolumen deutlich",
-    "why_now": "Die Aktie von CoreWeave fällt um 11,9 % auf 61,39 USD. Das Handelsvolumen liegt beim 2,5-Fachen des Durchschnitts. Zudem wurde in den vergangenen 3 Tagen 1 Video-Erwähnung erfasst. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-19T07:20:39.760869Z"
-   }
-  },
-  {
    "symbol": "TSLA",
    "name": "Tesla",
-   "score": 65,
+   "score": 50,
    "priority": "medium",
    "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,1 %",
-     "weight": 15
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "+3,4 %",
      "weight": 15
     },
     {
@@ -138,124 +41,10 @@
     }
    ],
    "quote": {
-    "price": 354.72,
-    "pct": -2.13,
+    "price": 366.69,
+    "pct": 3.37,
     "cur": "USD",
-    "as_of": "2026-10-19T06:34:44.262236+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-20",
-    "distance_days": 1,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "OHB.DE",
-   "name": "OHB",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+13,0 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    }
-   ],
-   "tv_symbol": "XETR:OHB",
-   "quote": {
-    "price": 191.6,
-    "pct": 12.97,
-    "cur": "EUR",
-    "as_of": "2026-10-19T06:34:44.262236+00:00"
-   }
-  },
-  {
-   "symbol": "AIXA.DE",
-   "name": "Aixtron",
-   "score": 55,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,2 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
-    }
-   ],
-   "tv_symbol": "XETR:AIXA",
-   "quote": {
-    "price": 32.89,
-    "pct": 6.17,
-    "cur": "EUR",
-    "as_of": "2026-10-19T06:34:44.262236+00:00"
-   }
-  },
-  {
-   "symbol": "INTC",
-   "name": "Intel",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-5,8 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
-    }
-   ],
-   "earnings": {
-    "date": "2026-10-21",
-    "distance_days": 2,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "NFLX",
-   "name": "Netflix",
-   "score": 50,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-2,9 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings morgen",
-     "weight": 35
-    }
-   ],
-   "quote": {
-    "price": 70.53,
-    "pct": -2.86,
-    "cur": "USD",
-    "as_of": "2026-10-19T06:34:44.262236+00:00"
+    "as_of": "2026-10-19T18:36:36.529130+00:00"
    },
    "earnings": {
     "date": "2026-10-20",
