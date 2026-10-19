@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-18T23:20:34.896518Z",
+  "generated_at": "2026-10-19T00:23:10.746644Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 120,
+  "symbols_total": 122,
   "with_quote_data": 60,
   "sources": [
    "watchlist",
@@ -21,140 +21,41 @@
  },
  "items": [
   {
-   "symbol": "NDX1.DE",
-   "name": "Nordex",
-   "score": 80,
-   "priority": "high",
-   "alert_type": "large_move",
+   "symbol": "TSLA",
+   "name": "Tesla",
+   "score": 65,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+12,3 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,2× Durchschnitt",
+     "value": "-2,1 %",
      "weight": 15
     },
     {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:NDX1",
-   "quote": {
-    "price": 39.14,
-    "pct": 12.28,
-    "cur": "EUR",
-    "as_of": "2026-10-18T18:32:57.953850+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Nordex: Deutlicher Kursanstieg bei hohem Volumen",
-    "why_now": "Die Nordex-Aktie liegt bei 39,14 EUR und verzeichnet eine Kursbewegung von +12,28 %. Das Handelsvolumen beträgt 2,2× des Durchschnitts; zudem wurden in drei Tagen zwei Videos erwähnt. Diese erhöhte Aufmerksamkeit könnte mit der Bewegung zusammenhängen, belegt aber keine Ursache. Ursache unklar.",
-    "watch_next": [
-     "Weitere Kursentwicklung",
-     "Entwicklung des Handelsvolumens",
-     "Neue Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-17T19:20:33.688367Z"
-   }
-  },
-  {
-   "symbol": "AIXA.DE",
-   "name": "Aixtron",
-   "score": 75,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+6,2 %",
-     "weight": 30
-    },
-    {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "2 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "tv_symbol": "XETR:AIXA",
-   "quote": {
-    "price": 32.89,
-    "pct": 6.17,
-    "cur": "EUR",
-    "as_of": "2026-10-18T18:32:57.953850+00:00"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Aixtron mit deutlichem Kursanstieg und hohem Volumen",
-    "why_now": "Die Aixtron-Aktie legte um 6,17 % auf 32,89 EUR zu. Gleichzeitig lag das Handelsvolumen beim 2,6-Fachen des Durchschnitts. Zudem wurden in drei Tagen zwei Videos zur Aktie erfasst. Ursache unklar.",
-    "watch_next": [
-     "Kursbewegung",
-     "Handelsvolumen",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-17T19:20:33.688367Z"
-   }
-  },
-  {
-   "symbol": "CRWV",
-   "name": "CoreWeave",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-11,9 %",
-     "weight": 45
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,5× Durchschnitt",
+     "value": "1,8× Durchschnitt",
      "weight": 15
     },
     {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
     }
    ],
    "quote": {
-    "price": 61.39,
-    "pct": -11.91,
+    "price": 354.72,
+    "pct": -2.13,
     "cur": "USD",
     "as_of": "2026-10-18T18:32:57.953850+00:00"
    },
-   "llm": {
-    "status": "ready",
-    "headline": "CoreWeave fällt bei hohem Handelsvolumen deutlich",
-    "why_now": "Die Aktie von CoreWeave verlor 11,9 % und notiert bei 61,39 USD. Gleichzeitig lag das Handelsvolumen beim 2,5-Fachen des Durchschnitts. Zudem wurde in den vergangenen drei Tagen ein Video erwähnt. Ursache unklar.",
-    "watch_next": [
-     "Kursentwicklung nach dem Rückgang",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-18T00:20:38.411102Z"
+   "earnings": {
+    "date": "2026-10-20",
+    "distance_days": 1,
+    "zeit": "amc"
    }
   },
   {
@@ -186,52 +87,63 @@
    }
   },
   {
-   "symbol": "TSLA",
-   "name": "Tesla",
+   "symbol": "NDX1.DE",
+   "name": "Nordex",
    "score": 60,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-2,1 %",
-     "weight": 15
+     "value": "+12,3 %",
+     "weight": 45
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,8× Durchschnitt",
+     "value": "2,2× Durchschnitt",
      "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 2 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
     }
    ],
+   "tv_symbol": "XETR:NDX1",
    "quote": {
-    "price": 354.72,
-    "pct": -2.13,
-    "cur": "USD",
+    "price": 39.14,
+    "pct": 12.28,
+    "cur": "EUR",
     "as_of": "2026-10-18T18:32:57.953850+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-20",
-    "distance_days": 2,
-    "zeit": "amc"
    }
   },
   {
-   "symbol": "RKLB",
-   "name": "Rocket Lab",
+   "symbol": "CRWV",
+   "name": "CoreWeave",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-11,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,5× Durchschnitt",
+     "weight": 15
+    }
+   ],
+   "quote": {
+    "price": 61.39,
+    "pct": -11.91,
+    "cur": "USD",
+    "as_of": "2026-10-18T18:32:57.953850+00:00"
+   }
+  },
+  {
+   "symbol": "AIXA.DE",
+   "name": "Aixtron",
    "score": 55,
    "priority": "medium",
    "alert_type": "large_move",
@@ -239,20 +151,21 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-8,0 %",
-     "weight": 45
+     "value": "+6,2 %",
+     "weight": 30
     },
     {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
     }
    ],
+   "tv_symbol": "XETR:AIXA",
    "quote": {
-    "price": 50.84,
-    "pct": -7.98,
-    "cur": "USD",
+    "price": 32.89,
+    "pct": 6.17,
+    "cur": "EUR",
     "as_of": "2026-10-18T18:32:57.953850+00:00"
    }
   },
@@ -272,13 +185,45 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 3 Tagen",
+     "value": "Earnings in 2 Tagen",
      "weight": 20
     }
    ],
    "earnings": {
     "date": "2026-10-21",
-    "distance_days": 3,
+    "distance_days": 2,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "NFLX",
+   "name": "Netflix",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-2,9 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    }
+   ],
+   "quote": {
+    "price": 70.53,
+    "pct": -2.86,
+    "cur": "USD",
+    "as_of": "2026-10-18T18:32:57.953850+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-20",
+    "distance_days": 1,
     "zeit": "amc"
    }
   }
