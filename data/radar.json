@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-19T23:20:45.327186Z",
+  "generated_at": "2026-10-20T00:20:41.690611Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 123,
+  "symbols_total": 131,
   "with_quote_data": 55,
   "sources": [
    "watchlist",
@@ -21,11 +21,49 @@
  },
  "items": [
   {
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,6 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 92.13,
+    "pct": 2.54,
+    "cur": "USD",
+    "as_of": "2026-10-19T18:36:36.529130+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-21",
+    "distance_days": 1,
+    "zeit": "amc"
+   }
+  },
+  {
    "symbol": "TSLA",
    "name": "Tesla",
    "score": 50,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -36,7 +74,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     }
    ],
@@ -48,7 +86,7 @@
    },
    "earnings": {
     "date": "2026-10-20",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "amc"
    }
   }
