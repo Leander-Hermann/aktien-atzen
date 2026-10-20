@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-10-20T06:33:00+00:00",
+  "generated_at": "2026-10-20T18:33:18+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,19 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-772491",
+   "symbol": "OHB.DE",
+   "name": "OHB",
+   "veroeffentlicht": "2026-10-20T09:43:30+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/ohb-aktie/ohb-analyse/#ohb-erhalt-auftrag-fur-mondstation-aktie-reif-fur-den-nachsten-hohenflug"
+   }
+  },
   {
    "id": "lynx-772467",
    "symbol": "HAL",
@@ -998,19 +1011,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/hypoport-aktie/hypoport-analyse/#hypoport-die-immobilienkrise-ist-nicht-vorbei"
-   }
-  },
-  {
-   "id": "lynx-769586",
-   "symbol": "DBK.DE",
-   "name": "Deutsche Bank",
-   "veroeffentlicht": "2026-09-25T06:30:38+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/deutsche-bank-aktie/deutsche-bank-analyse/#deutsche-bank-mit-kursrueckgang-aufwaertstrend-beendet"
    }
   }
  ]
