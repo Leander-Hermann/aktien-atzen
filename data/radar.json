@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-20T06:20:40.719861Z",
+  "generated_at": "2026-10-20T07:20:38.472114Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,8 +10,8 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 131,
-  "with_quote_data": 55,
+  "symbols_total": 128,
+  "with_quote_data": 60,
   "sources": [
    "watchlist",
    "videos",
@@ -21,8 +21,138 @@
  },
  "items": [
   {
-   "symbol": "INTC",
-   "name": "Intel",
+   "symbol": "OHB.DE",
+   "name": "OHB",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+13,0 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:OHB",
+   "quote": {
+    "price": 198.8,
+    "pct": 12.97,
+    "cur": "EUR",
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "OHB mit starker Kursbewegung und erhöhtem Volumen",
+    "why_now": "Die OHB-Aktie stieg um 13,0 %. Gleichzeitig lag das Handelsvolumen beim 1,6-Fachen des Durchschnitts. Zudem wurde OHB in den vergangenen drei Tagen in einem Video erwähnt. Das könnte zur erhöhten Aufmerksamkeit beigetragen haben, die genaue Ursache bleibt jedoch unklar.",
+    "watch_next": [
+     "Kursbewegung beobachten",
+     "Handelsvolumen beobachten",
+     "Weitere Video-Erwähnungen beobachten"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-20T07:20:38.472114Z"
+   }
+  },
+  {
+   "symbol": "NDX1.DE",
+   "name": "Nordex",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+12,3 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,2× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:NDX1",
+   "quote": {
+    "price": 38.44,
+    "pct": 12.28,
+    "cur": "EUR",
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Nordex mit starkem Kursplus und erhöhtem Volumen",
+    "why_now": "Nordex liegt bei 38,44 EUR und verzeichnet eine Kursbewegung von +12,3 %. Das Handelsvolumen beträgt das 2,2-Fache des Durchschnitts; zudem wurde 1 Video in 3 Tagen erfasst. Das erhöhte Volumen und die Video-Erwähnung könnten mit der gestiegenen Aufmerksamkeit zusammenhängen, belegen aber keine Ursache. Ursache unklar.",
+    "watch_next": [
+     "Weitere Kursentwicklung",
+     "Entwicklung des Handelsvolumens",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-20T07:20:38.472114Z"
+   }
+  },
+  {
+   "symbol": "TSLA",
+   "name": "Tesla",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,8 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 368.06,
+    "pct": 3.76,
+    "cur": "USD",
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-20",
+    "distance_days": 0,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "LRCX",
+   "name": "Lam Research",
    "score": 60,
    "priority": "medium",
    "alert_type": "earnings_watch",
@@ -30,7 +160,7 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+2,6 %",
+     "value": "+3,1 %",
      "weight": 15
     },
     {
@@ -47,10 +177,48 @@
     }
    ],
    "quote": {
-    "price": 92.13,
-    "pct": 2.54,
+    "price": 272.2,
+    "pct": 3.13,
     "cur": "USD",
-    "as_of": "2026-10-19T18:36:36.529130+00:00"
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-21",
+    "distance_days": 1,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "INTC",
+   "name": "Intel",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+2,4 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings morgen",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 92.03,
+    "pct": 2.43,
+    "cur": "USD",
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
    },
    "earnings": {
     "date": "2026-10-21",
@@ -59,35 +227,163 @@
    }
   },
   {
-   "symbol": "TSLA",
-   "name": "Tesla",
-   "score": 50,
+   "symbol": "RHM.DE",
+   "name": "Rheinmetall",
+   "score": 55,
    "priority": "medium",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+3,4 %",
+     "value": "+6,3 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
      "weight": 15
     },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:RHM",
+   "quote": {
+    "price": 1059.8,
+    "pct": 6.26,
+    "cur": "EUR",
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
+   }
+  },
+  {
+   "symbol": "AIXA.DE",
+   "name": "Aixtron",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+6,2 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,6× Durchschnitt",
+     "weight": 25
+    }
+   ],
+   "tv_symbol": "XETR:AIXA",
+   "quote": {
+    "price": 32.77,
+    "pct": 6.17,
+    "cur": "EUR",
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
+   }
+  },
+  {
+   "symbol": "AMZN",
+   "name": "Amazon",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,0 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,6× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 262.45,
+    "pct": 4.98,
+    "cur": "USD",
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
+   }
+  },
+  {
+   "symbol": "NFLX",
+   "name": "Netflix",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
      "value": "Earnings heute",
      "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 366.69,
-    "pct": 3.37,
+    "price": 69.85,
+    "pct": -0.96,
     "cur": "USD",
-    "as_of": "2026-10-19T18:36:36.529130+00:00"
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
    },
    "earnings": {
     "date": "2026-10-20",
     "distance_days": 0,
     "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
+   "score": 50,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,9 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 7 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "KRX:000660",
+   "quote": {
+    "price": 1214000.0,
+    "pct": -4.93,
+    "cur": "KRW",
+    "as_of": "2026-10-20T06:36:21.459582+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-27",
+    "distance_days": 7,
+    "zeit": "tbd"
    }
   }
  ]
