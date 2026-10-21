@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-21T18:20:41.268004Z",
+  "generated_at": "2026-10-21T19:20:46.641233Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 129,
+  "symbols_total": 127,
   "with_quote_data": 58,
   "sources": [
    "watchlist",
@@ -21,8 +21,8 @@
  },
  "items": [
   {
-   "symbol": "GM",
-   "name": "GM",
+   "symbol": "NFLX",
+   "name": "Netflix",
    "score": 100,
    "priority": "high",
    "alert_type": "earnings_watch",
@@ -30,14 +30,14 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-6,8 %",
+     "value": "-4,3 %",
      "weight": 30
     },
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "3,6× Durchschnitt",
-     "weight": 25
+     "value": "2,1× Durchschnitt",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
@@ -48,37 +48,93 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
+     "value": "5 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 65.65,
+    "pct": -4.43,
+    "cur": "USD",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-20",
+    "distance_days": -1,
+    "zeit": "amc"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "Netflix fällt bei erhöhtem Handelsvolumen",
+    "why_now": "Die Netflix-Aktie liegt bei 65,65 USD und ist um 4,43 % gefallen. Das Handelsvolumen beträgt das 2,1-Fache des Durchschnitts. Der Earnings-Termin war gestern, zudem wurden in drei Tagen fünf Videos erwähnt. Ursache unklar; der zeitliche Zusammenhang mit dem Earnings-Termin könnte die erhöhte Aufmerksamkeit und Bewegung erklären.",
+    "watch_next": [
+     "Kursbewegung",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-21T19:20:46.641233Z"
+   }
+  },
+  {
+   "symbol": "ABT",
+   "name": "Abbott Laboratories",
+   "score": 75,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,4 %",
+     "weight": 15
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,7× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
      "value": "1 Video in 3 Tagen",
      "weight": 10
     }
    ],
    "quote": {
-    "price": 77.09,
-    "pct": -6.84,
+    "price": 98.98,
+    "pct": -3.39,
     "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
    },
    "earnings": {
-    "date": "2026-10-20",
-    "distance_days": -1,
+    "date": "2026-10-21",
+    "distance_days": 0,
     "zeit": "bmo"
    },
    "llm": {
     "status": "ready",
-    "headline": "GM fällt bei erhöhtem Handelsvolumen",
-    "why_now": "GM notiert bei 77,09 USD und liegt 6,84 % im Minus. Das Handelsvolumen beträgt das 3,6-Fache des Durchschnitts. Der Earnings-Termin war gestern. Ursache unklar.",
+    "headline": "Abbott nach Earnings-Termin deutlich schwächer",
+    "why_now": "Die Aktie von Abbott Laboratories liegt bei 98.98 USD und damit 3,39 % im Minus. Gleichzeitig liegt das Handelsvolumen beim 1,7-Fachen des Durchschnitts. Die zeitliche Nähe zum Earnings-Termin heute könnte die Bewegung erklären. Ursache unklar.",
     "watch_next": [
      "Kursentwicklung nach dem Earnings-Termin",
      "Handelsvolumen im weiteren Verlauf",
      "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-21T07:20:39.955141Z"
+    "generated_at": "2026-10-21T19:20:46.641233Z"
    }
   },
   {
-   "symbol": "005930.KS",
-   "name": "Samsung Electronics",
+   "symbol": "SMCI",
+   "name": "Super Micro Computer",
    "score": 70,
    "priority": "high",
    "alert_type": "large_move",
@@ -86,14 +142,131 @@
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "+5,0 %",
-     "weight": 30
+     "value": "+8,8 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "quote": {
+    "price": 35.315,
+    "pct": 8.75,
+    "cur": "USD",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
+   },
+   "llm": {
+    "status": "ready",
+    "headline": "SMCI mit deutlichem Kursanstieg und hohem Volumen",
+    "why_now": "Die Aktie stieg um 8,8 %. Das Handelsvolumen lag beim 1,9-Fachen des Durchschnitts. Zudem wurde 1 Video-Erwähnung in 3 Tagen erfasst. Ursache unklar. Die Kombination könnte auf erhöhte Aufmerksamkeit hindeuten, belegt aber keinen konkreten Auslöser.",
+    "watch_next": [
+     "Weitere Kursbewegung",
+     "Entwicklung des Handelsvolumens",
+     "Weitere Video-Erwähnungen"
+    ],
+    "confidence": "low",
+    "generated_at": "2026-10-21T19:20:46.641233Z"
+   }
+  },
+  {
+   "symbol": "MBB.DE",
+   "name": "MBB",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+7,9 %",
+     "weight": 45
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "2,0× Durchschnitt",
+     "weight": 15
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:MBB",
+   "quote": {
+    "price": 194.2,
+    "pct": 7.89,
+    "cur": "EUR",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
+   }
+  },
+  {
+   "symbol": "TSLA",
+   "name": "Tesla",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,6 %",
+     "weight": 15
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings in 7 Tagen",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "5 Videos in 3 Tagen",
      "weight": 20
+    }
+   ],
+   "quote": {
+    "price": 387.08,
+    "pct": 3.58,
+    "cur": "USD",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-20",
+    "distance_days": -1,
+    "zeit": "amc"
+   }
+  },
+  {
+   "symbol": "SAP.DE",
+   "name": "SAP",
+   "score": 70,
+   "priority": "high",
+   "alert_type": "post_earnings_reaction",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+3,5 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
     },
     {
      "type": "content_velocity",
@@ -102,348 +275,24 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "KRX:005930",
+   "tv_symbol": "XETR:SAP",
    "quote": {
-    "price": 222000.0,
-    "pct": 4.96,
-    "cur": "KRW",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-28",
-    "distance_days": 7,
-    "zeit": "tbd"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Samsung Electronics mit starker Kursbewegung",
-    "why_now": "Die Aktie von Samsung Electronics liegt bei 222000 KRW und stieg um 4,96 %. Ursache unklar. Der bevorstehende Earnings-Termin in 7 Tagen könnte im Zusammenhang mit der Bewegung stehen. Auch die zwei Video-Erwähnungen in den vergangenen 3 Tagen könnten eine Rolle spielen.",
-    "watch_next": [
-     "Earnings-Termin in 7 Tagen",
-     "Weitere Kursbewegung",
-     "Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-21T07:20:39.955141Z"
-   }
-  },
-  {
-   "symbol": "NFLX",
-   "name": "Netflix",
-   "score": 70,
-   "priority": "high",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,9× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "4 Videos in 3 Tagen",
-     "weight": 20
-    }
-   ],
-   "quote": {
-    "price": 68.69,
-    "pct": -1.66,
-    "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-20",
-    "distance_days": -1,
-    "zeit": "amc"
-   },
-   "llm": {
-    "status": "ready",
-    "headline": "Netflix fällt bei erhöhtem Volumen nach Earnings",
-    "why_now": "Die Netflix-Aktie notiert bei 68,69 USD und liegt 1,66 % im Minus. Das Handelsvolumen beträgt 1,9× des Durchschnitts; zugleich fanden gestern die Earnings statt. Ursache unklar. Der zeitliche Zusammenhang mit dem Earnings-Termin könnte die erhöhte Aufmerksamkeit und Bewegung erklären.",
-    "watch_next": [
-     "Kursentwicklung nach dem Earnings-Termin",
-     "Handelsvolumen im Vergleich zum Durchschnitt",
-     "Weitere Video-Erwähnungen"
-    ],
-    "confidence": "low",
-    "generated_at": "2026-10-21T07:20:39.955141Z"
-   }
-  },
-  {
-   "symbol": "MMM",
-   "name": "3M",
-   "score": 65,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,8 %",
-     "weight": 30
-    },
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,6× Durchschnitt",
-     "weight": 25
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 171.37,
-    "pct": 5.78,
-    "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   }
-  },
-  {
-   "symbol": "000660.KS",
-   "name": "SK Hynix",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "large_move",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+5,9 %",
-     "weight": 30
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings in 6 Tagen",
-     "weight": 20
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "tv_symbol": "KRX:000660",
-   "quote": {
-    "price": 1295000.0,
-    "pct": 5.89,
-    "cur": "KRW",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-27",
-    "distance_days": 6,
-    "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "LRCX",
-   "name": "Lam Research",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,2 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 263.45,
-    "pct": -3.21,
-    "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
+    "price": 208.65,
+    "pct": 3.52,
+    "cur": "EUR",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
    },
    "earnings": {
     "date": "2026-10-21",
     "distance_days": 0,
     "zeit": "tbd"
-   }
-  },
-  {
-   "symbol": "IBM",
-   "name": "IBM",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "post_earnings_reaction",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,3 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 241.92,
-    "pct": 2.34,
-    "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-21",
-    "distance_days": 0,
-    "zeit": "amc"
-   }
-  },
-  {
-   "symbol": "CMCSA",
-   "name": "Comcast",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "+2,1 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings morgen",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 22.36,
-    "pct": 2.1,
-    "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-22",
-    "distance_days": 1,
-    "zeit": "bmo"
-   }
-  },
-  {
-   "symbol": "ABT",
-   "name": "Abbott Laboratories",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,5× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 102.45,
-    "pct": -1.55,
-    "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-21",
-    "distance_days": 0,
-    "zeit": "bmo"
-   }
-  },
-  {
-   "symbol": "TMO",
-   "name": "Thermo Fisher Scientific",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "volume_spike",
-     "label": "Ungewöhnlich hohes Volumen",
-     "value": "1,6× Durchschnitt",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 687.37,
-    "pct": 1.18,
-    "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-21",
-    "distance_days": 0,
-    "zeit": "bmo"
    }
   },
   {
    "symbol": "ISRG",
    "name": "Intuitive Surgical",
-   "score": 60,
-   "priority": "medium",
+   "score": 70,
+   "priority": "high",
    "alert_type": "earnings_watch",
    "triggers": [
     {
@@ -461,15 +310,15 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
     }
    ],
    "quote": {
-    "price": 438.0,
-    "pct": 1.11,
+    "price": 429.9,
+    "pct": -1.85,
     "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
    },
    "earnings": {
     "date": "2026-10-20",
@@ -478,28 +327,126 @@
    }
   },
   {
-   "symbol": "GE",
-   "name": "GE Aerospace",
-   "score": 55,
+   "symbol": "T",
+   "name": "AT&T",
+   "score": 65,
    "priority": "medium",
    "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
      "label": "Starke Kursbewegung",
-     "value": "-3,7 %",
-     "weight": 15
+     "value": "-6,1 %",
+     "weight": 30
     },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings heute",
+     "weight": 35
+    }
+   ],
+   "earnings": {
+    "date": "2026-10-21",
+    "distance_days": 0,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "000660.KS",
+   "name": "SK Hynix",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,2 %",
+     "weight": 30
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 6 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "KRX:000660",
+   "quote": {
+    "price": 1294000.0,
+    "pct": -4.23,
+    "cur": "KRW",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-27",
+    "distance_days": 6,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "DB1.DE",
+   "name": "Deutsche Börse",
+   "score": 60,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
     {
      "type": "volume_spike",
      "label": "Ungewöhnlich hohes Volumen",
-     "value": "2,3× Durchschnitt",
+     "value": "2,2× Durchschnitt",
      "weight": 15
     },
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings vor 2 Tagen",
+     "value": "Earnings gestern",
+     "weight": 35
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "1 Video in 3 Tagen",
+     "weight": 10
+    }
+   ],
+   "tv_symbol": "XETR:DB1",
+   "quote": {
+    "price": 308.0,
+    "pct": -0.29,
+    "cur": "EUR",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-20",
+    "distance_days": -1,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "GYC.DE",
+   "name": "Grand City Properties",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "large_move",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "+5,6 %",
+     "weight": 30
+    },
+    {
+     "type": "volume_spike",
+     "label": "Ungewöhnlich hohes Volumen",
+     "value": "1,9× Durchschnitt",
      "weight": 15
     },
     {
@@ -509,21 +456,56 @@
      "weight": 10
     }
    ],
+   "tv_symbol": "XETR:GYC",
    "quote": {
-    "price": 299.87,
-    "pct": -3.67,
-    "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-19",
-    "distance_days": -2,
-    "zeit": "bmo"
+    "price": 7.14,
+    "pct": 5.62,
+    "cur": "EUR",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
    }
   },
   {
-   "symbol": "TSLA",
-   "name": "Tesla",
+   "symbol": "005930.KS",
+   "name": "Samsung Electronics",
+   "score": 55,
+   "priority": "medium",
+   "alert_type": "earnings_watch",
+   "triggers": [
+    {
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-3,0 %",
+     "weight": 15
+    },
+    {
+     "type": "earnings_watch",
+     "label": "Earnings-Termin",
+     "value": "Earnings in 7 Tagen",
+     "weight": 20
+    },
+    {
+     "type": "content_velocity",
+     "label": "Video-Erwähnungen",
+     "value": "2 Videos in 3 Tagen",
+     "weight": 20
+    }
+   ],
+   "tv_symbol": "KRX:005930",
+   "quote": {
+    "price": 223500.0,
+    "pct": -2.98,
+    "cur": "KRW",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
+   },
+   "earnings": {
+    "date": "2026-10-28",
+    "distance_days": 7,
+    "zeit": "tbd"
+   }
+  },
+  {
+   "symbol": "GM",
+   "name": "General Motors",
    "score": 55,
    "priority": "medium",
    "alert_type": "earnings_watch",
@@ -537,34 +519,34 @@
     {
      "type": "content_velocity",
      "label": "Video-Erwähnungen",
-     "value": "4 Videos in 3 Tagen",
+     "value": "2 Videos in 3 Tagen",
      "weight": 20
     }
    ],
    "quote": {
-    "price": 373.71,
-    "pct": 1.54,
+    "price": 76.12,
+    "pct": -1.26,
     "cur": "USD",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
    },
    "earnings": {
     "date": "2026-10-20",
     "distance_days": -1,
-    "zeit": "amc"
+    "zeit": "bmo"
    }
   },
   {
-   "symbol": "SAP.DE",
-   "name": "SAP",
-   "score": 55,
+   "symbol": "CL=F",
+   "name": "Ölpreis",
+   "score": 50,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "large_move",
    "triggers": [
     {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings heute",
-     "weight": 35
+     "type": "large_move",
+     "label": "Starke Kursbewegung",
+     "value": "-4,5 %",
+     "weight": 30
     },
     {
      "type": "content_velocity",
@@ -573,17 +555,12 @@
      "weight": 20
     }
    ],
-   "tv_symbol": "XETR:SAP",
+   "tv_symbol": "TVC:USOIL",
    "quote": {
-    "price": 201.55,
-    "pct": 0.31,
-    "cur": "EUR",
-    "as_of": "2026-10-21T06:35:37.325998+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-21",
-    "distance_days": 0,
-    "zeit": "tbd"
+    "price": 97.18,
+    "pct": -4.53,
+    "cur": "USD",
+    "as_of": "2026-10-21T18:35:43.574446+00:00"
    }
   }
  ]
