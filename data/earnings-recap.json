@@ -1,7 +1,46 @@
 {
- "updated": "2026-10-20T05:01:54.049661+00:00",
- "date": "2026-10-19",
- "label": "Montag, 19.10.2026",
- "tabelle": [],
+ "updated": "2026-10-21T05:02:18.297578+00:00",
+ "date": "2026-10-20",
+ "label": "Dienstag, 20.10.2026",
+ "tabelle": [
+  {
+   "ticker": "0941.HK",
+   "name": "China Mobile",
+   "index": "HSI",
+   "region": "HK",
+   "branche": "Telekommunikation",
+   "periode": "",
+   "eps_est": 1.3148,
+   "eps_act": 1.24,
+   "rev_est": 249997287170,
+   "rev_act": null,
+   "eps_surprise_pct": -5.69,
+   "rev_surprise_pct": null,
+   "ergebnis": "miss",
+   "reaktion_pct": -0.56,
+   "source": "yahoo",
+   "source_url": "https://finance.yahoo.com/quote/0941.HK",
+   "as_of": "2026-10-21T05:01:47.648131+00:00"
+  },
+  {
+   "ticker": "DB1.DE",
+   "name": "Deutsche Boerse",
+   "index": "DAX",
+   "region": "DE",
+   "branche": "Finanzdienstleistungen",
+   "periode": "",
+   "eps_est": 3.3689,
+   "eps_act": 3.1,
+   "rev_est": 1734730510,
+   "rev_act": null,
+   "eps_surprise_pct": -7.98,
+   "rev_surprise_pct": null,
+   "ergebnis": "miss",
+   "reaktion_pct": null,
+   "source": "yahoo",
+   "source_url": "https://finance.yahoo.com/quote/DB1.DE",
+   "as_of": "2026-10-21T05:01:47.648131+00:00"
+  }
+ ],
  "signale": []
 }
