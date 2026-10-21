@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-10-21T06:32:47+00:00",
+  "generated_at": "2026-10-21T18:33:30+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,19 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-772707",
+   "symbol": "AMZN",
+   "name": "Amazon",
+   "veroeffentlicht": "2026-10-21T09:31:30+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/amazon-aktie/amazon-analyse/#amazon-diese-aussagen-des-aws-finanzchefs-muss-man-gehort-haben"
+   }
+  },
   {
    "id": "lynx-772671",
    "symbol": "NFLX",
@@ -405,7 +418,7 @@
   {
    "id": "lynx-771579",
    "symbol": "META",
-   "name": "Meta Platforms",
+   "name": "Meta",
    "veroeffentlicht": "2026-10-13T09:42:33+00:00",
    "autor": "",
    "kategorie": "Aktienanalysen",
@@ -478,6 +491,19 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/nordex-aktie/nordex-analyse/#nordex-diese-formation-laesst-steigende-volatilitaet-erwarten"
+   }
+  },
+  {
+   "id": "lynx-771373",
+   "symbol": "ANF",
+   "name": "Abercrombie & Fitch",
+   "veroeffentlicht": "2026-10-12T06:19:42+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/abercrombie-fitch-aktie/abercrombie-fitch-analyse/#abercrombie-fitch-steht-ein-ausbruch-bevor"
    }
   },
   {
@@ -951,7 +977,7 @@
   {
    "id": "lynx-769956",
    "symbol": "META",
-   "name": "Meta Platforms",
+   "name": "Meta",
    "veroeffentlicht": "2026-09-29T06:16:18+00:00",
    "autor": "",
    "kategorie": "Aktienanalysen",
@@ -998,19 +1024,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/basf-aktie/basf-analyse/#basf-ein-typischer-reflex"
-   }
-  },
-  {
-   "id": "lynx-769841",
-   "symbol": "AOF.DE",
-   "name": "Atoss Software",
-   "veroeffentlicht": "2026-09-28T06:19:33+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/atoss-software-aktie/atoss-software-analyse/#atoss-software-war-es-das-jetzt-mit-der-aufwartswende"
    }
   }
  ]
