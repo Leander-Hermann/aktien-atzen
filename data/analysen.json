@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-10-20T18:33:18+00:00",
+  "generated_at": "2026-10-21T06:32:47+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,58 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-772671",
+   "symbol": "NFLX",
+   "name": "Netflix",
+   "veroeffentlicht": "2026-10-21T06:12:43+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/netflix-aktie/netflix-analyse/#netflix-gewinn-steigt-aktie-gibt-nach-prognose-nach"
+   }
+  },
+  {
+   "id": "lynx-772668",
+   "symbol": "PUM.DE",
+   "name": "Puma",
+   "veroeffentlicht": "2026-10-21T06:09:20+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/puma-aktie/puma-analyse/#puma-erholung-mit-moeglichen-anzeichen-einer-trendwende"
+   }
+  },
+  {
+   "id": "lynx-772647",
+   "symbol": "ADS.DE",
+   "name": "Adidas",
+   "veroeffentlicht": "2026-10-21T05:55:00+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/adidas-aktie/adidas-analyse/#adidas-das-koennten-genau-die-zahlen-sein-die-die-bullen-brauchen"
+   }
+  },
+  {
+   "id": "lynx-772650",
+   "symbol": "S92.DE",
+   "name": "SMA Solar",
+   "veroeffentlicht": "2026-10-21T05:45:42+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/sma-solar-aktie/sma-solar-analyse/#sma-solar-wird-dieser-ausbruchsversuch-zum-bumerang"
+   }
+  },
   {
    "id": "lynx-772491",
    "symbol": "OHB.DE",
@@ -353,7 +405,7 @@
   {
    "id": "lynx-771579",
    "symbol": "META",
-   "name": "Meta",
+   "name": "Meta Platforms",
    "veroeffentlicht": "2026-10-13T09:42:33+00:00",
    "autor": "",
    "kategorie": "Aktienanalysen",
@@ -899,7 +951,7 @@
   {
    "id": "lynx-769956",
    "symbol": "META",
-   "name": "Meta",
+   "name": "Meta Platforms",
    "veroeffentlicht": "2026-09-29T06:16:18+00:00",
    "autor": "",
    "kategorie": "Aktienanalysen",
@@ -925,7 +977,7 @@
   {
    "id": "lynx-769889",
    "symbol": "AKAM",
-   "name": "Akamai",
+   "name": "Akamai Technologies",
    "veroeffentlicht": "2026-09-28T09:52:37+00:00",
    "autor": "",
    "kategorie": "Aktienanalysen",
@@ -959,58 +1011,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/atoss-software-aktie/atoss-software-analyse/#atoss-software-war-es-das-jetzt-mit-der-aufwartswende"
-   }
-  },
-  {
-   "id": "lynx-769830",
-   "symbol": "EVK.DE",
-   "name": "Evonik",
-   "veroeffentlicht": "2026-09-28T06:16:39+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/evonik-aktie/evonik-analyse/#evonik-mit-kurssprung-nach-uebernahmeinteresse-von-basf"
-   }
-  },
-  {
-   "id": "lynx-769831",
-   "symbol": "NVDA",
-   "name": "Nvidia",
-   "veroeffentlicht": "2026-09-28T06:14:00+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/nvidia-aktie/nvidia-analyse/#nvidia-ueber-236-usd-koennte-sich-weiteres-aufwaertspotenzial-eroeffnen"
-   }
-  },
-  {
-   "id": "lynx-769840",
-   "symbol": "HFG.DE",
-   "name": "HelloFresh",
-   "veroeffentlicht": "2026-09-28T06:11:53+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/hellofresh-aktie/hellofresh-analyse/#hellofresh-ist-das-der-sogenannte-finale-selloff"
-   }
-  },
-  {
-   "id": "lynx-769688",
-   "symbol": "HYQ.DE",
-   "name": "Hypoport",
-   "veroeffentlicht": "2026-09-25T13:46:23+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/hypoport-aktie/hypoport-analyse/#hypoport-die-immobilienkrise-ist-nicht-vorbei"
    }
   }
  ]
