@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-20T23:20:50.510072Z",
+  "generated_at": "2026-10-21T00:20:37.607411Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -10,7 +10,7 @@
  },
  "mode": "batch",
  "universe": {
-  "symbols_total": 129,
+  "symbols_total": 135,
   "with_quote_data": 59,
   "sources": [
    "watchlist",
@@ -25,7 +25,7 @@
    "name": "GM",
    "score": 100,
    "priority": "high",
-   "alert_type": "post_earnings_reaction",
+   "alert_type": "large_move",
    "triggers": [
     {
      "type": "large_move",
@@ -42,7 +42,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -60,58 +60,20 @@
    },
    "earnings": {
     "date": "2026-10-20",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "bmo"
    },
    "llm": {
     "status": "ready",
-    "headline": "GM nach Earnings-Termin deutlich schwächer",
-    "why_now": "GM liegt heute 7,87 % im Minus; zugleich beträgt das Handelsvolumen das 2,3-Fache des Durchschnitts. Der Earnings-Termin ist für heute angegeben. Ursache unklar. Der zeitliche Zusammenhang könnte auf eine Reaktion rund um den Earnings-Termin hindeuten, konkrete Ergebnisse oder Nachrichten enthält der Datenblock jedoch nicht.",
+    "headline": "GM fällt bei erhöhtem Handelsvolumen deutlich",
+    "why_now": "Die GM-Aktie liegt bei 76.24 USD und fällt um 7,87 %. Das Handelsvolumen beträgt 2,3× des Durchschnitts. Ursache unklar. Der Earnings-Termin gestern könnte zeitlich mit der Bewegung zusammenhängen; zudem wurde GM in 1 Video in 3 Tagen erwähnt.",
     "watch_next": [
-     "Weitere Kursbewegung nach dem Earnings-Termin",
-     "Entwicklung des Handelsvolumens",
-     "Weitere Earnings-bezogene Informationen"
+     "Kursentwicklung nach dem Earnings-Termin",
+     "Handelsvolumen",
+     "Weitere Video-Erwähnungen"
     ],
     "confidence": "low",
-    "generated_at": "2026-10-20T19:20:39.623938Z"
-   }
-  },
-  {
-   "symbol": "GE",
-   "name": "GE Aerospace",
-   "score": 60,
-   "priority": "medium",
-   "alert_type": "earnings_watch",
-   "triggers": [
-    {
-     "type": "large_move",
-     "label": "Starke Kursbewegung",
-     "value": "-3,6 %",
-     "weight": 15
-    },
-    {
-     "type": "earnings_watch",
-     "label": "Earnings-Termin",
-     "value": "Earnings gestern",
-     "weight": 35
-    },
-    {
-     "type": "content_velocity",
-     "label": "Video-Erwähnungen",
-     "value": "1 Video in 3 Tagen",
-     "weight": 10
-    }
-   ],
-   "quote": {
-    "price": 299.98,
-    "pct": -3.63,
-    "cur": "USD",
-    "as_of": "2026-10-20T18:36:52.657918+00:00"
-   },
-   "earnings": {
-    "date": "2026-10-19",
-    "distance_days": -1,
-    "zeit": "bmo"
+    "generated_at": "2026-10-21T00:20:37.607411Z"
    }
   },
   {
@@ -119,7 +81,7 @@
    "name": "Lam Research",
    "score": 60,
    "priority": "medium",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
@@ -130,7 +92,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings morgen",
+     "value": "Earnings heute",
      "weight": 35
     },
     {
@@ -148,7 +110,7 @@
    },
    "earnings": {
     "date": "2026-10-21",
-    "distance_days": 1,
+    "distance_days": 0,
     "zeit": "tbd"
    }
   },
@@ -168,7 +130,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -187,7 +149,7 @@
    },
    "earnings": {
     "date": "2026-10-20",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "tbd"
    }
   },
@@ -268,7 +230,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -286,7 +248,7 @@
    },
    "earnings": {
     "date": "2026-10-20",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "amc"
    }
   },
@@ -300,7 +262,7 @@
     {
      "type": "earnings_watch",
      "label": "Earnings-Termin",
-     "value": "Earnings heute",
+     "value": "Earnings gestern",
      "weight": 35
     },
     {
@@ -318,7 +280,7 @@
    },
    "earnings": {
     "date": "2026-10-20",
-    "distance_days": 0,
+    "distance_days": -1,
     "zeit": "amc"
    }
   }
