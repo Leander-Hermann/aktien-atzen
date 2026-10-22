@@ -1,7 +1,7 @@
 {
  "_meta": {
   "schema_version": "1.0",
-  "generated_at": "2026-10-22T04:20:39.516877Z",
+  "generated_at": "2026-10-22T05:20:36.691934Z",
   "source": "radar",
   "status": "fresh",
   "partial": false,
@@ -172,7 +172,7 @@
    "name": "SAP",
    "score": 70,
    "priority": "high",
-   "alert_type": "earnings_watch",
+   "alert_type": "post_earnings_reaction",
    "triggers": [
     {
      "type": "large_move",
