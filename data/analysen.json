@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-11-08T19:32:34+00:00",
+  "generated_at": "2026-11-09T07:32:43+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,32 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-774581",
+   "symbol": "AMZN",
+   "name": "Amazon",
+   "veroeffentlicht": "2026-11-09T07:08:00+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/amazon-aktie/amazon-analyse/#amazon-erstaunlich-stabil-was-koennte-dahinterstecken"
+   }
+  },
+  {
+   "id": "lynx-774579",
+   "symbol": "NEM.DE",
+   "name": "Nemetschek",
+   "veroeffentlicht": "2026-11-09T06:58:06+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/nemetschek-aktie/nemetschek-analyse/#nemetschek-waren-da-haare-in-der-bilanzsuppe"
+   }
+  },
   {
    "id": "lynx-774472",
    "symbol": "LLY",
@@ -179,6 +205,19 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/amd-aktie/amd-analyse/#amd-mit-kurssprung-nach-den-quartalszahlen-ist-eine-trendwende-moeglich"
+   }
+  },
+  {
+   "id": "lynx-773959",
+   "symbol": "LHA.DE",
+   "name": "Lufthansa",
+   "veroeffentlicht": "2026-11-04T07:05:14+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/lufthansa-aktie/#deutsche-lufthansa-wie-weit-traegt-dieser-lichtblick-die-aktie"
    }
   },
   {
@@ -972,84 +1011,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/dell-technologies-aktie/dell-technologies-analyse/#dell-mit-17-kursverlust-und-einem-deutlichen-trendbruch"
-   }
-  },
-  {
-   "id": "lynx-772035",
-   "symbol": "NDX1.DE",
-   "name": "Nordex",
-   "veroeffentlicht": "2026-10-16T06:13:02+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/nordex-aktie/nordex-analyse/#nordex-good-news-im-genau-richtigen-moment"
-   }
-  },
-  {
-   "id": "lynx-772060",
-   "symbol": "CRM",
-   "name": "Salesforce",
-   "veroeffentlicht": "2026-10-16T06:06:01+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/salesforce-aktie/salesforce-analyse/#salesforce-ueberwindet-widerstand-bei-242-usd-setzt-sich-die-erholung-fort"
-   }
-  },
-  {
-   "id": "lynx-772057",
-   "symbol": "DBK.DE",
-   "name": "Deutsche Bank",
-   "veroeffentlicht": "2026-10-16T06:03:25+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/deutsche-bank-aktie/deutsche-bank-analyse/#deutsche-bank-wie-lange-koennte-der-abwaertstrend-noch-anhalten"
-   }
-  },
-  {
-   "id": "lynx-772033",
-   "symbol": "ENR.DE",
-   "name": "Siemens Energy",
-   "veroeffentlicht": "2026-10-16T05:55:05+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/siemens-energy-aktie/siemens-energy-analyse/#siemens-energy-nach-unten-ausgebrochen-und-auch-wieder-nicht"
-   }
-  },
-  {
-   "id": "lynx-772034",
-   "symbol": "AIXA.DE",
-   "name": "Aixtron",
-   "veroeffentlicht": "2026-10-16T05:53:24+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/aixtron-aktie/#aixtron-je-spaeter-der-abend-desto-besser-die-meldungen"
-   }
-  },
-  {
-   "id": "lynx-771870",
-   "symbol": "ADS.DE",
-   "name": "Adidas",
-   "veroeffentlicht": "2026-10-15T06:25:00+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/adidas-aktie/adidas-analyse/#adidas-auf-dem-sprung-aber-springt-man-da-auf-festen-boden"
    }
   }
  ]
