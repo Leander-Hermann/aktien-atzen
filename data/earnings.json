@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-09T06:01:35.363186+00:00",
+ "updated": "2026-11-10T06:01:50.143429+00:00",
  "window": {
-  "from": "2026-11-06",
-  "to": "2026-11-30"
+  "from": "2026-11-07",
+  "to": "2026-12-01"
  },
  "universe_meta": {
   "indizes": [
@@ -22,69 +22,6 @@
  },
  "eintraege": [
   {
-   "date": "2026-11-06",
-   "ticker": "DTG.DE",
-   "name": "Daimler Truck",
-   "index": "DAX",
-   "region": "DE",
-   "branche": "Nutzfahrzeuge",
-   "zeit": "tbd",
-   "periode": "",
-   "eps_est": 1.7628,
-   "rev_est": 14418617540,
-   "status": "reported",
-   "eps_act": 0.9747,
-   "rev_act": null,
-   "surprise_pct": -7.89,
-   "reaktion_pct": -3.39,
-   "confirmed": true,
-   "source": "yahoo",
-   "source_url": "https://finance.yahoo.com/quote/DTG.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
-  },
-  {
-   "date": "2026-11-06",
-   "ticker": "0388.HK",
-   "name": "HKEX",
-   "index": "HSI",
-   "region": "HK",
-   "branche": "Boerse",
-   "zeit": "tbd",
-   "periode": "",
-   "eps_est": 3.3181,
-   "rev_est": 7135000000,
-   "status": "reported",
-   "eps_act": 3.83,
-   "rev_act": null,
-   "surprise_pct": -2.13,
-   "reaktion_pct": -2.28,
-   "confirmed": true,
-   "source": "yahoo",
-   "source_url": "https://finance.yahoo.com/quote/0388.HK",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
-  },
-  {
-   "date": "2026-11-06",
-   "ticker": "035420.KS",
-   "name": "NAVER",
-   "index": "KOSPI",
-   "region": "KR",
-   "branche": "Internet",
-   "zeit": "tbd",
-   "periode": "",
-   "eps_est": 3273.0234,
-   "rev_est": 3515775620000,
-   "status": "scheduled",
-   "eps_act": null,
-   "rev_act": null,
-   "surprise_pct": null,
-   "reaktion_pct": null,
-   "confirmed": true,
-   "source": "yahoo",
-   "source_url": "https://finance.yahoo.com/quote/035420.KS",
-   "as_of": "2026-10-20T05:01:49.801369+00:00"
-  },
-  {
    "date": "2026-11-09",
    "ticker": "HNR1.DE",
    "name": "Hannover Rueck",
@@ -93,17 +30,17 @@
    "branche": "Rueckversicherung",
    "zeit": "tbd",
    "periode": "",
-   "eps_est": 5.354,
+   "eps_est": 5.475,
    "rev_est": 6628974850,
-   "status": "scheduled",
-   "eps_act": null,
+   "status": "reported",
+   "eps_act": 5.77,
    "rev_act": null,
-   "surprise_pct": null,
+   "surprise_pct": 6.3,
    "reaktion_pct": null,
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/HNR1.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-10",
@@ -124,7 +61,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/HEN3.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-10",
@@ -145,7 +82,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/IFX.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-10",
@@ -166,7 +103,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/SDF.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-10",
@@ -187,7 +124,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/9984.T",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-10",
@@ -208,7 +145,7 @@
    "confirmed": false,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/2382.TW",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-10",
@@ -250,7 +187,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/BNR.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-11",
@@ -271,7 +208,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/EOAN.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-11",
@@ -292,7 +229,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/RWE.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-11",
@@ -313,7 +250,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/ENR.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-11",
@@ -334,7 +271,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/6098.T",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -355,7 +292,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/ALV.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -376,7 +313,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/MRK.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -397,7 +334,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/MUV2.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -418,7 +355,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/SIE.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -439,7 +376,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/TLX.DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -481,7 +418,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/035420.KS",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -502,7 +439,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/2317.TW",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -523,7 +460,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/AMAT",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -544,7 +481,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/CSCO",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-12",
@@ -586,7 +523,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/8306.T",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-17",
@@ -628,7 +565,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/HD",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-17",
@@ -649,7 +586,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/NVDA",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-17",
@@ -670,7 +607,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/DIS",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-18",
@@ -712,7 +649,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/PANW",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-18",
@@ -733,7 +670,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/TGT",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-19",
@@ -775,7 +712,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/INTU",
-   "as_of": "2026-11-08T06:01:36.925302+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-19",
@@ -796,7 +733,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/WMT",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-20",
@@ -859,7 +796,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/DELL",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-25",
@@ -880,7 +817,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/DE",
-   "as_of": "2026-11-09T06:01:29.333259+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   },
   {
    "date": "2026-11-26",
@@ -912,8 +849,8 @@
    "branche": "Halbleiter",
    "zeit": "tbd",
    "periode": "Q3 FY27",
-   "eps_est": 1.1138,
-   "rev_est": 3219504478,
+   "eps_est": 1.1133,
+   "rev_est": 3205736172,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -922,7 +859,28 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/MRVL",
-   "as_of": "2026-11-08T06:01:36.925302+00:00"
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
+  },
+  {
+   "date": "2026-12-01",
+   "ticker": "CRWD",
+   "name": "CrowdStrike",
+   "index": "Nasdaq 100",
+   "region": "US",
+   "branche": "Cybersicherheit",
+   "zeit": "tbd",
+   "periode": "Q3 FY27",
+   "eps_est": 0.3179,
+   "rev_est": 1559026211,
+   "status": "scheduled",
+   "eps_act": null,
+   "rev_act": null,
+   "surprise_pct": null,
+   "reaktion_pct": null,
+   "confirmed": true,
+   "source": "finnhub",
+   "source_url": "https://finance.yahoo.com/quote/CRWD",
+   "as_of": "2026-11-10T06:01:47.545634+00:00"
   }
  ]
 }
