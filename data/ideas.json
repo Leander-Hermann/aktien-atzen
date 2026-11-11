@@ -1,68 +1,71 @@
 {
- "updated": "2026-11-10T19:36:53.235107+00:00",
- "date": "2026-11-10",
+ "updated": "2026-11-11T07:37:12.071117+00:00",
+ "date": "2026-11-11",
  "ideas": [
   {
-   "title": "Steigende Renditen belasten hoch bewertete Technologiewerte",
-   "thesis": "Die stärker als erwartete US-Inflation erhöht den Druck auf die Fed, die Zinsen weiter anzuheben. Renditen zehnjähriger US-Staatsanleihen von über fünf Prozent und die anhaltende Korrektur bei Halbleitern sprechen kurzfristig gegen besonders zinssensitive Technologie- und KI-Werte.",
+   "title": "Versorgungsrisiko in der Straße von Hormus als Ölpreis-Impuls",
+   "thesis": "Die gemeldete Tankerhavarie nach einem möglichen Minentreffer ist zwar nicht unabhängig bestätigt, erhöht aber den Risikoaufschlag für Schifffahrt und Energieversorgung. Bei einer weiteren Eskalation könnten Brent und energiebezogene Anlagen profitieren.",
+   "values": [
+    "Brent",
+    "Energieaktien",
+    "Energie-ETFs"
+   ],
+   "angle": "Long",
+   "risk": "Eine Entwarnung oder fehlende Bestätigung des Vorfalls könnte den Risikoaufschlag beim Öl rasch zurückführen.",
+   "source": "News: Iran meldet Tankerbrand nach Minentreffer in der Straße von Hormus",
+   "source_url": "https://x.com/FirstSquawk/status/2120409094557511822"
+  },
+  {
+   "title": "Zinsstress spricht kurzfristig gegen hoch bewertete US-Technologie",
+   "thesis": "Die überraschend hohe US-Inflation stärkt die Erwartungen an einen länger restriktiven Fed-Kurs und belastet dadurch Aktien- und Anleihebewertungen. Besonders anfällig bleiben Nasdaq 100 und Halbleiterwerte, deren jüngste Korrektur in den Briefings ausdrücklich als Risiko für den KI-Sektor eingeordnet wird.",
    "values": [
     "Nasdaq 100",
     "Philadelphia Semiconductor Index",
-    "AMD"
+    "US-Technologieaktien"
    ],
    "angle": "Short",
-   "risk": "Eine schnelle Entspannung bei Inflation und Zinserwartungen könnte die Technologiewerte erneut deutlich antreiben.",
-   "source": "News: US-Inflation stärkt Erwartungen an weitere Fed-Zinserhöhungen",
-   "source_url": "https://x.com/DeItaone/status/2120147296587251740"
+   "risk": "Eine schnelle Entspannung bei Inflation oder Zinserwartungen könnte die angeschlagenen Technologiewerte kräftig erholen lassen.",
+   "source": "News: Fed-Zinserhöhungswetten belasten Aktien und Anleihen weiter",
+   "source_url": "https://x.com/WSJmarkets/status/2120342251066859883"
   },
   {
-   "title": "Nvidia bleibt bis zur Aufklärung der Untersuchung ein Ereignisrisiko",
-   "thesis": "Die Untersuchung der Beziehung von Jensen Huang zu einer chinesischen Führungskraft hat die Nvidia-Aktie zeitweise deutlich belastet. Trotz der Erklärung des Verwaltungsrats, es gebe keinen Grund für eine Beeinträchtigung von Unternehmensgeheimnissen oder der nationalen Sicherheit, spricht das Risiko vor den Quartalszahlen für Zurückhaltung.",
+   "title": "Nvidia vor den Quartalszahlen nur beobachten",
+   "thesis": "Die Untersuchung der Beziehungen von Jensen Huang zu einer chinesischen Führungskraft belastet Nvidia zusätzlich zu den bereits erhöhten Zins- und Bewertungsrisiken. Zugleich liegt im Briefing eine technische Unterstützung bei 164 bis 165 US-Dollar vor, weshalb vor den Quartalszahlen am 17. November ein Abwarten gegenüber einem sofortigen Einstieg sinnvoll erscheint.",
    "values": [
     "Nvidia",
-    "Halbleitersektor"
+    "Halbleitersektor",
+    "KI-Aktien"
    ],
    "angle": "Beobachten",
-   "risk": "Eine Entlastung Huangs oder überzeugende Quartalszahlen könnte den vorherigen Kursdruck rasch umkehren.",
-   "source": "News: Nvidia verschärft interne Untersuchung gegen Jensen Huang",
-   "source_url": "https://x.com/DeItaone/status/2120191114619527326"
+   "risk": "Ein Bruch der genannten Unterstützung oder eine negative Überraschung bei den Quartalszahlen könnte den Abwärtsdruck verstärken.",
+   "source": "News: Nvidia-Aktie fällt weiter, Trump verteidigt Huang",
+   "source_url": "https://x.com/DeItaone/status/2120232705845793230"
   },
   {
-   "title": "Siemens Energy als Kapitalrückführungs-Story",
-   "thesis": "Siemens Energy plant zusätzlich zum laufenden Programm Aktienrückkäufe von bis zu neun Milliarden Euro bis zum Geschäftsjahr 2030. Die angekündigte Kapitalrückführung kann die Nachfrage nach der Aktie stützen, sofern die operative Entwicklung ausreichend Mittel dafür bereitstellt.",
+   "title": "Britische Offshore-Windkraft als langfristige Infrastrukturchance",
+   "thesis": "Die bestätigten Investitionen von RWE und KKR in Höhe von zwölf Milliarden Pfund schaffen einen konkreten Ausbauimpuls für britische Offshore-Windprojekte. Die staatliche Beteiligung am Finanzierungspaket und die erwartete Unterstützung von mehr als 2.400 Arbeitsplätzen stärken die Sichtbarkeit des Vorhabens.",
    "values": [
-    "Siemens Energy",
-    "Europäische Energieinfrastruktur"
+    "RWE",
+    "Offshore-Windkraft",
+    "Erneuerbare-Energien-ETFs"
    ],
    "angle": "Long",
-   "risk": "Die Rückkäufe könnten durch eine schwächere operative Entwicklung oder einen höheren Kapitalbedarf eingeschränkt werden.",
-   "source": "News: Siemens Energy plant weitere Aktienrückkäufe",
-   "source_url": "https://x.com/FirstSquawk/status/2120237252580401244"
+   "risk": "Baukosten, Finanzierung, Verzögerungen oder regulatorische Änderungen könnten die Rendite der Projekte belasten.",
+   "source": "News: RWE und KKR investieren zwölf Milliarden Pfund in britische Offshore-Windkraft",
+   "source_url": "https://x.com/FirstSquawk/status/2120399533758976456"
   },
   {
-   "title": "Deutz als günstig bewerteter Profiteur von Diversifikation und Rüstung",
-   "thesis": "Deutz weist laut dem Briefing steigende Auftragseingänge, verbesserte Margen und eine Diversifikation in Richtung Rüstung durch die Übernahme von FFG auf. Die im Video genannte Kaufempfehlung und das Kursziel von 14,50 Euro bilden eine konkrete Long-Idee, bleiben aber von der Umsetzung der Übernahme und der Margenentwicklung abhängig.",
+   "title": "SoftBank bleibt eine spekulative KI-Beteiligung mit erhöhtem Rückschlagrisiko",
+   "thesis": "Nach einem Quartalsverlust von rund sieben Milliarden Dollar signalisiert SoftBank eine vorsichtigere Haltung bei weiteren KI-Investitionen. Zusammen mit der im Briefing genannten charttechnischen Unterstützung bei 21 Euro spricht das für Beobachten statt aggressivem Nachkaufen.",
    "values": [
-    "Deutz",
-    "Europäische Industrie- und Rüstungszulieferer"
-   ],
-   "angle": "Long",
-   "risk": "Die erwarteten Synergien oder Margenverbesserungen könnten ausbleiben, während die zyklische Nachfrage nach Motoren nachlassen könnte.",
-   "source": "Deutz: Die Deutsche Bank stuft Deutz auf Kaufen hoch und nennt ein Kursziel von 14,50 Euro.",
-   "source_url": ""
-  },
-  {
-   "title": "Geopolitische Unsicherheit als Chance für den Energiesektor",
-   "thesis": "Die widersprüchlichen Signale aus Iran und Katar sowie die Bedingungen für eine Öffnung der Straße von Hormus halten ein Risiko für die regionale Energieversorgung aufrecht. Das spricht für eine Beobachtung beziehungsweise taktische Long-Positionierung in Öl und Energieproduzenten, solange die Diplomatie nicht zu einer belastbaren Entspannung führt.",
-   "values": [
-    "Brent-Öl",
-    "Ölproduzenten",
-    "Energie-ETFs"
+    "SoftBank",
+    "KI-Beteiligungsgesellschaften",
+    "Technologieaktien"
    ],
    "angle": "Beobachten",
-   "risk": "Eine erfolgreiche diplomatische Einigung könnte den geopolitischen Risikoaufschlag im Ölpreis schnell abbauen.",
-   "source": "News: Iran weist Gespräche zurück, Katar sieht zwei Wochen für Diplomatie",
-   "source_url": "https://x.com/FirstSquawk/status/2120225050741846205"
+   "risk": "Weitere Wertverluste bei KI-Beteiligungen oder eine Unterschreitung der Unterstützung bei 21 Euro könnten die Aktie deutlich schwächen.",
+   "source": "News: SoftBank erwägt nach Milliardenverlust vorsichtigere KI-Investitionen",
+   "source_url": "https://x.com/DeItaone/status/2120179556682183092"
   }
  ]
 }
