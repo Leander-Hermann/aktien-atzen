@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-11-10T11:41:45.102304Z",
-    "trading_day": "2026-11-09",
+    "generated_at": "2026-11-11T11:32:12.410945Z",
+    "trading_day": "2026-11-10",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,161 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-11-10T11:41:45.102304Z"
+    "as_of": "2026-11-11T11:32:12.410945Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "CVX",
-      "name": "Chevron Corporation",
-      "sector": "Energy",
-      "as_of": "2026-11-09T14:30:00Z",
-      "quote": {
-        "price": 210.78,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/CVX",
-        "as_of": "2026-11-09T14:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 6
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 209.01,
-        "entry_high": 210.78,
-        "stop": 202.36,
-        "target": 236.48,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-08-27",
-              "price": 197.82
-            },
-            "b": {
-              "date": "2026-09-15",
-              "price": 217.78
-            },
-            "c": {
-              "date": "2026-10-05",
-              "price": 201.96
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 221.92
-            },
-            {
-              "ratio": 1.272,
-              "price": 227.35
-            },
-            {
-              "ratio": 1.618,
-              "price": 234.26
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 2,
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "sector": "Energy",
-      "as_of": "2026-11-09T14:30:00Z",
-      "quote": {
-        "price": 164.73,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/XOM",
-        "as_of": "2026-11-09T14:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 6
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 163.38,
-        "entry_high": 164.73,
-        "stop": 157.61,
-        "target": 178.97,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-08-28",
-              "price": 155.32
-            },
-            "b": {
-              "date": "2026-09-15",
-              "price": 169.64
-            },
-            "c": {
-              "date": "2026-09-22",
-              "price": 155.85
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 170.17
-            },
-            {
-              "ratio": 1.272,
-              "price": 174.06
-            },
-            {
-              "ratio": 1.618,
-              "price": 179.02
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 3,
       "ticker": "AMD",
       "name": "Advanced Micro Devices, Inc.",
       "sector": "Information Technology",
-      "as_of": "2026-11-09T14:30:00Z",
+      "as_of": "2026-11-10T14:30:00Z",
       "quote": {
-        "price": 508.58,
+        "price": 515.21,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/AMD",
-        "as_of": "2026-11-09T14:30:00Z"
+        "as_of": "2026-11-10T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -191,10 +51,10 @@
       },
       "interest_status": "position_or_interest",
       "levels": {
-        "entry_low": 492.92,
-        "entry_high": 508.58,
-        "stop": 444.52,
-        "target": 636.69,
+        "entry_low": 503.83,
+        "entry_high": 515.21,
+        "stop": 454.94,
+        "target": 635.76,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -229,17 +89,87 @@
       }
     },
     {
-      "rank": 4,
-      "ticker": "RTX",
-      "name": "RTX Corporation",
-      "sector": "Industrials",
-      "as_of": "2026-11-09T14:30:00Z",
+      "rank": 2,
+      "ticker": "META",
+      "name": "Meta Platforms, Inc.",
+      "sector": "Communication Services",
+      "as_of": "2026-11-10T14:30:00Z",
       "quote": {
-        "price": 196.31,
+        "price": 641.39,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/RTX",
-        "as_of": "2026-11-09T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/META",
+        "as_of": "2026-11-10T14:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 8
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 632.58,
+        "entry_high": 641.39,
+        "stop": 602.43,
+        "target": 719.31,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-09-01",
+              "price": 556.1
+            },
+            "b": {
+              "date": "2026-09-24",
+              "price": 779.82
+            },
+            "c": {
+              "date": "2026-10-08",
+              "price": 711.68
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 935.4
+            },
+            {
+              "ratio": 1.272,
+              "price": 996.25
+            },
+            {
+              "ratio": 1.618,
+              "price": 1073.66
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "ticker": "QCOM",
+      "name": "QUALCOMM Incorporated",
+      "sector": "Information Technology",
+      "as_of": "2026-11-10T14:30:00Z",
+      "quote": {
+        "price": 173.53,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/QCOM",
+        "as_of": "2026-11-10T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -261,55 +191,55 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 193.67,
-        "entry_high": 196.31,
-        "stop": 186.84,
-        "target": 215.25,
+        "entry_low": 170.84,
+        "entry_high": 173.53,
+        "stop": 159.34,
+        "target": 201.92,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-22",
-              "price": 180.97
+              "date": "2026-08-24",
+              "price": 156.23
             },
             "b": {
-              "date": "2026-07-07",
-              "price": 203.94
+              "date": "2026-09-25",
+              "price": 205.85
             },
             "c": {
-              "date": "2026-07-21",
-              "price": 190.02
+              "date": "2026-10-15",
+              "price": 168.84
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 212.99
+              "price": 218.46
             },
             {
               "ratio": 1.272,
-              "price": 219.24
+              "price": 231.96
             },
             {
               "ratio": 1.618,
-              "price": 227.19
+              "price": 249.13
             }
           ]
         }
       }
     },
     {
-      "rank": 5,
+      "rank": 4,
       "ticker": "SO",
       "name": "The Southern Company",
       "sector": "Utilities",
-      "as_of": "2026-11-09T14:30:00Z",
+      "as_of": "2026-11-10T14:30:00Z",
       "quote": {
-        "price": 93.57,
+        "price": 93.65,
         "currency": "USD",
         "source": "yahoo",
         "source_url": "https://finance.yahoo.com/quote/SO",
-        "as_of": "2026-11-09T14:30:00Z"
+        "as_of": "2026-11-10T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -332,9 +262,9 @@
       "interest_status": "none_declared",
       "levels": {
         "entry_low": 92.99,
-        "entry_high": 93.57,
-        "stop": 90.65,
-        "target": 99.41,
+        "entry_high": 93.65,
+        "stop": 90.67,
+        "target": 99.61,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
@@ -363,6 +293,76 @@
             {
               "ratio": 1.618,
               "price": 102.97
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "ticker": "XOM",
+      "name": "Exxon Mobil Corporation",
+      "sector": "Energy",
+      "as_of": "2026-11-10T14:30:00Z",
+      "quote": {
+        "price": 164.47,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/XOM",
+        "as_of": "2026-11-10T14:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "near",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 6
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 162.27,
+        "entry_high": 164.47,
+        "stop": 156.48,
+        "target": 180.46,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-08-28",
+              "price": 155.32
+            },
+            "b": {
+              "date": "2026-09-15",
+              "price": 169.64
+            },
+            "c": {
+              "date": "2026-09-22",
+              "price": 155.85
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 170.17
+            },
+            {
+              "ratio": 1.272,
+              "price": 174.06
+            },
+            {
+              "ratio": 1.618,
+              "price": 179.02
             }
           ]
         }
