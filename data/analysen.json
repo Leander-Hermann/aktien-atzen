@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-11-11T07:33:28+00:00",
+  "generated_at": "2026-11-11T19:32:46+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,19 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-774874",
+   "symbol": "TDG",
+   "name": "TransDigm",
+   "veroeffentlicht": "2026-11-11T10:59:31+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/transdigm-group-aktie/transdigm-group-analyse/#transdigm-der-vielleicht-profitabelste-zulieferer-der-luftfahrtindustrie"
+   }
+  },
   {
    "id": "lynx-774842",
    "symbol": "NVDA",
@@ -1050,32 +1063,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/ohb-aktie/ohb-analyse/#ohb-erhalt-auftrag-fur-mondstation-aktie-reif-fur-den-nachsten-hohenflug"
-   }
-  },
-  {
-   "id": "lynx-772467",
-   "symbol": "HAL",
-   "name": "Halliburton",
-   "veroeffentlicht": "2026-10-20T06:10:54+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/halliburton-aktie/halliburton-analyse/#halliburton-wann-koennte-die-oelaktie-wieder-an-dynamik-gewinnen"
-   }
-  },
-  {
-   "id": "lynx-772464",
-   "symbol": "AAPL",
-   "name": "Apple",
-   "veroeffentlicht": "2026-10-20T06:09:13+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/apple-aktie/apple-analyse/#apple-zeigt-relative-staerke-im-technologiesektor-gelingt-der-ausbruch"
    }
   }
  ]
