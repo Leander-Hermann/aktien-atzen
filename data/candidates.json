@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-11-11T11:32:12.410945Z",
-    "trading_day": "2026-11-10",
+    "generated_at": "2026-11-12T11:49:54.258583Z",
+    "trading_day": "2026-11-11",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-11-11T11:32:12.410945Z"
+    "as_of": "2026-11-12T11:49:54.258583Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "AMD",
-      "name": "Advanced Micro Devices, Inc.",
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
       "sector": "Information Technology",
-      "as_of": "2026-11-10T14:30:00Z",
+      "as_of": "2026-11-11T14:30:00Z",
       "quote": {
-        "price": 515.21,
+        "price": 172.4,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/AMD",
-        "as_of": "2026-11-10T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/PLTR",
+        "as_of": "2026-11-11T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -47,42 +47,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 8
+        "warnings_count": 9
       },
-      "interest_status": "position_or_interest",
+      "interest_status": "none_declared",
       "levels": {
-        "entry_low": 503.83,
-        "entry_high": 515.21,
-        "stop": 454.94,
-        "target": 635.76,
+        "entry_low": 169.92,
+        "entry_high": 172.4,
+        "stop": 158.35,
+        "target": 200.49,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-09-03",
-              "price": 440.5
+              "date": "2026-09-10",
+              "price": 164.55
             },
             "b": {
-              "date": "2026-10-06",
-              "price": 658.52
+              "date": "2026-10-12",
+              "price": 212.94
             },
             "c": {
-              "date": "2026-10-22",
-              "price": 502.6
+              "date": "2026-10-16",
+              "price": 184.45
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 720.62
+              "price": 232.84
             },
             {
               "ratio": 1.272,
-              "price": 779.92
+              "price": 246.0
             },
             {
               "ratio": 1.618,
-              "price": 855.36
+              "price": 262.75
             }
           ]
         }
@@ -90,16 +90,16 @@
     },
     {
       "rank": 2,
-      "ticker": "META",
-      "name": "Meta Platforms, Inc.",
-      "sector": "Communication Services",
-      "as_of": "2026-11-10T14:30:00Z",
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "sector": "Materials",
+      "as_of": "2026-11-11T14:30:00Z",
       "quote": {
-        "price": 641.39,
+        "price": 526.55,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/META",
-        "as_of": "2026-11-10T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/LIN",
+        "as_of": "2026-11-11T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -117,42 +117,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 8
+        "warnings_count": 12
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 632.58,
-        "entry_high": 641.39,
-        "stop": 602.43,
-        "target": 719.31,
+        "entry_low": 523.7,
+        "entry_high": 526.55,
+        "stop": 512.1,
+        "target": 555.44,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-09-01",
-              "price": 556.1
+              "date": "2026-06-01",
+              "price": 488.88
             },
             "b": {
-              "date": "2026-09-24",
-              "price": 779.82
+              "date": "2026-06-15",
+              "price": 525.87
             },
             "c": {
-              "date": "2026-10-08",
-              "price": 711.68
+              "date": "2026-06-29",
+              "price": 506.78
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 935.4
+              "price": 543.77
             },
             {
               "ratio": 1.272,
-              "price": 996.25
+              "price": 553.83
             },
             {
               "ratio": 1.618,
-              "price": 1073.66
+              "price": 566.63
             }
           ]
         }
@@ -160,16 +160,16 @@
     },
     {
       "rank": 3,
-      "ticker": "QCOM",
-      "name": "QUALCOMM Incorporated",
-      "sector": "Information Technology",
-      "as_of": "2026-11-10T14:30:00Z",
+      "ticker": "MRK",
+      "name": "Merck & Co., Inc.",
+      "sector": "Health Care",
+      "as_of": "2026-11-11T14:30:00Z",
       "quote": {
-        "price": 173.53,
+        "price": 147.18,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/QCOM",
-        "as_of": "2026-11-10T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/MRK",
+        "as_of": "2026-11-11T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -191,38 +191,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 170.84,
-        "entry_high": 173.53,
-        "stop": 159.34,
-        "target": 201.92,
+        "entry_low": 145.19,
+        "entry_high": 147.18,
+        "stop": 139.69,
+        "target": 162.15,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-08-24",
-              "price": 156.23
+              "date": "2026-10-05",
+              "price": 138.8
             },
             "b": {
-              "date": "2026-09-25",
-              "price": 205.85
+              "date": "2026-10-22",
+              "price": 154.02
             },
             "c": {
-              "date": "2026-10-15",
-              "price": 168.84
+              "date": "2026-10-28",
+              "price": 139.21
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 218.46
+              "price": 154.43
             },
             {
               "ratio": 1.272,
-              "price": 231.96
+              "price": 158.57
             },
             {
               "ratio": 1.618,
-              "price": 249.13
+              "price": 163.84
             }
           ]
         }
@@ -230,16 +230,16 @@
     },
     {
       "rank": 4,
-      "ticker": "SO",
-      "name": "The Southern Company",
-      "sector": "Utilities",
-      "as_of": "2026-11-10T14:30:00Z",
+      "ticker": "TXN",
+      "name": "Texas Instruments Incorporated",
+      "sector": "Information Technology",
+      "as_of": "2026-11-11T14:30:00Z",
       "quote": {
-        "price": 93.65,
+        "price": 309.81,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/SO",
-        "as_of": "2026-11-10T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/TXN",
+        "as_of": "2026-11-11T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -261,38 +261,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 92.99,
-        "entry_high": 93.65,
-        "stop": 90.67,
-        "target": 99.61,
+        "entry_low": 305.56,
+        "entry_high": 309.81,
+        "stop": 289.22,
+        "target": 350.98,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-17",
-              "price": 92.31
+              "date": "2026-09-03",
+              "price": 248.13
             },
             "b": {
-              "date": "2026-07-17",
-              "price": 98.34
+              "date": "2026-10-06",
+              "price": 298.75
             },
             "c": {
-              "date": "2026-07-21",
-              "price": 93.21
+              "date": "2026-10-20",
+              "price": 272.01
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 99.24
+              "price": 322.63
             },
             {
               "ratio": 1.272,
-              "price": 100.88
+              "price": 336.4
             },
             {
               "ratio": 1.618,
-              "price": 102.97
+              "price": 353.91
             }
           ]
         }
@@ -300,16 +300,16 @@
     },
     {
       "rank": 5,
-      "ticker": "XOM",
-      "name": "Exxon Mobil Corporation",
-      "sector": "Energy",
-      "as_of": "2026-11-10T14:30:00Z",
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-11-11T14:30:00Z",
       "quote": {
-        "price": 164.47,
+        "price": 390.84,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/XOM",
-        "as_of": "2026-11-10T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/TSLA",
+        "as_of": "2026-11-11T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -327,42 +327,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 6
+        "warnings_count": 10
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 162.27,
-        "entry_high": 164.47,
-        "stop": 156.48,
-        "target": 180.46,
+        "entry_low": 384.83,
+        "entry_high": 390.84,
+        "stop": 364.07,
+        "target": 444.38,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-08-28",
-              "price": 155.32
+              "date": "2026-09-30",
+              "price": 345.88
             },
             "b": {
-              "date": "2026-09-15",
-              "price": 169.64
+              "date": "2026-10-09",
+              "price": 388.56
             },
             "c": {
-              "date": "2026-09-22",
-              "price": 155.85
+              "date": "2026-10-16",
+              "price": 349.33
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 170.17
+              "price": 392.01
             },
             {
               "ratio": 1.272,
-              "price": 174.06
+              "price": 403.62
             },
             {
               "ratio": 1.618,
-              "price": 179.02
+              "price": 418.39
             }
           ]
         }
