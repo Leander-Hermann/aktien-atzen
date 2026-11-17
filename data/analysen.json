@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-11-17T07:33:24+00:00",
+  "generated_at": "2026-11-17T19:33:50+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,19 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-775249",
+   "symbol": "AMAT",
+   "name": "Applied Materials",
+   "veroeffentlicht": "2026-11-17T14:43:40+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/applied-materials-aktie/applied-materials-analyse/#applied-materials-was-weiss-die-boerse-was-wir-nicht-wissen"
+   }
+  },
   {
    "id": "lynx-775196",
    "symbol": "KO",
@@ -1076,32 +1089,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/caterpillar-aktie/caterpillar-analyse/#caterpillar-sind-35-prozent-korrektur-nicht-langsam-genug"
-   }
-  },
-  {
-   "id": "lynx-773110",
-   "symbol": "AOF.DE",
-   "name": "Atoss Software",
-   "veroeffentlicht": "2026-10-27T06:54:35+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/atoss-software-aktie/atoss-software-analyse/#atoss-software-wer-hat-hier-recht-bullen-oder-baeren"
-   }
-  },
-  {
-   "id": "lynx-773083",
-   "symbol": "MSFT",
-   "name": "Microsoft",
-   "veroeffentlicht": "2026-10-26T14:56:18+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/microsoft-aktie/microsoft-analyse/#microsoft-das-imperium-schlaegt-zurueck"
    }
   }
  ]
