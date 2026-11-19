@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-11-18T19:32:57+00:00",
+  "generated_at": "2026-11-19T07:33:05+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,32 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-775386",
+   "symbol": "INTC",
+   "name": "Intel",
+   "veroeffentlicht": "2026-11-19T07:12:41+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/intel-aktie/intel-analyse/#intel-wie-entwickelt-sich-die-laufende-korrektur"
+   }
+  },
+  {
+   "id": "lynx-775363",
+   "symbol": "OHB.DE",
+   "name": "OHB",
+   "veroeffentlicht": "2026-11-19T06:55:34+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/ohb-aktie/ohb-analyse/#ohb-vorsicht-hohe-volatilitaet"
+   }
+  },
   {
    "id": "lynx-775354",
    "symbol": "XYZ",
@@ -1024,45 +1050,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/mercedes-benz-group-aktie/mercedes-benz-group-analyse/#mercedes-benz-group-prognose-gesenkt-und-jetzt"
-   }
-  },
-  {
-   "id": "lynx-773236",
-   "symbol": "SMHN.DE",
-   "name": "Süss MicroTec",
-   "veroeffentlicht": "2026-10-28T07:14:00+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/suess-microtec-aktie/suess-microtec-analyse/#suss-microtec-aktie-minus-nach-prognosesenkung-aber-die-kaeufer-standen-parat"
-   }
-  },
-  {
-   "id": "lynx-773258",
-   "symbol": "DBK.DE",
-   "name": "Deutsche Bank",
-   "veroeffentlicht": "2026-10-28T07:11:13+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/deutsche-bank-aktie/deutsche-bank-analyse/#deutsche-bank-quartalszahlen-stark-chartbild-bleibt-angeschlagen"
-   }
-  },
-  {
-   "id": "lynx-773264",
-   "symbol": "HOOD",
-   "name": "Robinhood",
-   "veroeffentlicht": "2026-10-28T07:07:24+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/robinhood-markets-aktie/robinhood-markets-analyse/#robinhood-aktie-unter-druck-haelt-die-unterstuetzung"
    }
   }
  ]
