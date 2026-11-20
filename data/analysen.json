@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-11-20T07:33:25+00:00",
+  "generated_at": "2026-11-20T19:33:14+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,19 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-775563",
+   "symbol": "ANET",
+   "name": "Arista Networks",
+   "veroeffentlicht": "2026-11-20T11:00:57+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/arista-networks-aktie/arista-networks-analyse/#liquiditaetsschock-der-wahre-grund-fuer-den-boersencrash"
+   }
+  },
   {
    "id": "lynx-775532",
    "symbol": "GOOGL",
@@ -1037,32 +1050,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/marvell-technology-aktie/marvell-technology-analyse/#marvell-unter-druck-nach-uebernahmebericht-wie-koennte-es-weitergehen"
-   }
-  },
-  {
-   "id": "lynx-773345",
-   "symbol": "BAS.DE",
-   "name": "BASF",
-   "veroeffentlicht": "2026-10-29T07:11:00+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/basf-aktie/basf-analyse/#basf-das-chartbild-erschwert-einen-ausbruch"
-   }
-  },
-  {
-   "id": "lynx-773342",
-   "symbol": "P911.DE",
-   "name": "Porsche",
-   "veroeffentlicht": "2026-10-29T06:47:30+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/porsche-vz-aktie/porsche-vz-analyse/#porsche-ag-vz-primus-inter-pares"
    }
   }
  ]
