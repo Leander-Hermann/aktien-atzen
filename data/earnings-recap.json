@@ -1,8 +1,27 @@
 {
- "updated": "2026-11-20T06:02:02.952158+00:00",
+ "updated": "2026-11-21T06:01:53.657275+00:00",
  "date": "2026-11-19",
  "label": "Donnerstag, 19.11.2026",
  "tabelle": [
+  {
+   "ticker": "INTU",
+   "name": "Intuit",
+   "index": "Nasdaq 100",
+   "region": "US",
+   "branche": "Software",
+   "periode": "Q1 FY27",
+   "eps_est": 2.7497,
+   "eps_act": 2.91,
+   "rev_est": 4391554665,
+   "rev_act": 4354000000,
+   "eps_surprise_pct": 5.83,
+   "rev_surprise_pct": -0.86,
+   "ergebnis": "beat",
+   "reaktion_pct": -12.77,
+   "source": "finnhub",
+   "source_url": "https://finance.yahoo.com/quote/INTU",
+   "as_of": "2026-11-21T06:01:47.834753+00:00"
+  },
   {
    "ticker": "9988.HK",
    "name": "Alibaba",
@@ -20,7 +39,7 @@
    "reaktion_pct": -5.51,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/9988.HK",
-   "as_of": "2026-11-20T06:01:57.592092+00:00"
+   "as_of": "2026-11-21T06:01:47.834753+00:00"
   },
   {
    "ticker": "WMT",
@@ -39,26 +58,7 @@
    "reaktion_pct": -1.04,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/WMT",
-   "as_of": "2026-11-20T06:01:57.592092+00:00"
-  },
-  {
-   "ticker": "INTU",
-   "name": "Intuit",
-   "index": "Nasdaq 100",
-   "region": "US",
-   "branche": "Software",
-   "periode": "Q1 FY27",
-   "eps_est": 2.7497,
-   "eps_act": 2.91,
-   "rev_est": 4391554665,
-   "rev_act": 4354000000,
-   "eps_surprise_pct": 5.83,
-   "rev_surprise_pct": -0.86,
-   "ergebnis": "beat",
-   "reaktion_pct": null,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/INTU",
-   "as_of": "2026-11-20T06:01:57.592092+00:00"
+   "as_of": "2026-11-21T06:01:47.834753+00:00"
   }
  ],
  "signale": []
