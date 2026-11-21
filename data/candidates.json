@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-11-20T12:13:08.584365Z",
-    "trading_day": "2026-11-19",
+    "generated_at": "2026-11-21T11:45:30.495670Z",
+    "trading_day": "2026-11-20",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,161 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-11-20T12:13:08.584365Z"
+    "as_of": "2026-11-21T11:45:30.495670Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "CVX",
-      "name": "Chevron Corporation",
-      "sector": "Energy",
-      "as_of": "2026-11-19T14:30:00Z",
-      "quote": {
-        "price": 206.5,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/CVX",
-        "as_of": "2026-11-19T14:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 6
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 204.74,
-        "entry_high": 206.5,
-        "stop": 198.41,
-        "target": 236.48,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-10-05",
-              "price": 201.96
-            },
-            "b": {
-              "date": "2026-10-30",
-              "price": 236.48
-            },
-            "c": {
-              "date": "2026-11-10",
-              "price": 206.01
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 240.53
-            },
-            {
-              "ratio": 1.272,
-              "price": 249.92
-            },
-            {
-              "ratio": 1.618,
-              "price": 261.86
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 2,
-      "ticker": "WMT",
-      "name": "Walmart Inc.",
-      "sector": "Consumer Staples",
-      "as_of": "2026-11-19T14:30:00Z",
-      "quote": {
-        "price": 126.04,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/WMT",
-        "as_of": "2026-11-19T14:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "in_zone",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 7
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 125.22,
-        "entry_high": 126.04,
-        "stop": 121.75,
-        "target": 134.62,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-08-21",
-              "price": 102.15
-            },
-            "b": {
-              "date": "2026-09-14",
-              "price": 109.74
-            },
-            "c": {
-              "date": "2026-09-21",
-              "price": 106.08
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 113.67
-            },
-            {
-              "ratio": 1.272,
-              "price": 115.73
-            },
-            {
-              "ratio": 1.618,
-              "price": 118.36
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 3,
-      "ticker": "ABBV",
-      "name": "AbbVie Inc.",
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
       "sector": "Health Care",
-      "as_of": "2026-11-19T14:30:00Z",
+      "as_of": "2026-11-20T14:30:00Z",
       "quote": {
-        "price": 283.54,
+        "price": 195.0,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/ABBV",
-        "as_of": "2026-11-19T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/MRNA",
+        "as_of": "2026-11-20T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -191,38 +51,148 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 280.89,
-        "entry_high": 283.54,
-        "stop": 272.51,
-        "target": 305.6,
+        "entry_low": 189.05,
+        "entry_high": 195.0,
+        "stop": 166.02,
+        "target": 254.48,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-10-22",
-              "price": 278.01
+              "date": "2026-08-03",
+              "price": 52.66
             },
             "b": {
-              "date": "2026-11-05",
-              "price": 302.93
+              "date": "2026-09-02",
+              "price": 156.41
             },
             "c": {
-              "date": "2026-11-06",
-              "price": 281.07
+              "date": "2026-09-10",
+              "price": 130.38
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 305.99
+              "price": 234.13
             },
             {
               "ratio": 1.272,
-              "price": 312.77
+              "price": 262.36
             },
             {
               "ratio": 1.618,
-              "price": 321.39
+              "price": 298.26
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "sector": "Materials",
+      "as_of": "2026-11-20T14:30:00Z",
+      "quote": {
+        "price": 502.83,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/LIN",
+        "as_of": "2026-11-20T14:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 12
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 499.79,
+        "entry_high": 502.83,
+        "stop": 488.23,
+        "target": 532.04,
+        "horizon_sessions": 30
+      }
+    },
+    {
+      "rank": 3,
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Health Care",
+      "as_of": "2026-11-20T14:30:00Z",
+      "quote": {
+        "price": 270.47,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/JNJ",
+        "as_of": "2026-11-20T14:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "near",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 6
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 267.48,
+        "entry_high": 270.47,
+        "stop": 259.1,
+        "target": 293.21,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-08-04",
+              "price": 250.44
+            },
+            "b": {
+              "date": "2026-08-19",
+              "price": 276.47
+            },
+            "c": {
+              "date": "2026-08-27",
+              "price": 263.83
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 289.86
+            },
+            {
+              "ratio": 1.272,
+              "price": 296.94
+            },
+            {
+              "ratio": 1.618,
+              "price": 305.95
             }
           ]
         }
@@ -230,20 +200,20 @@
     },
     {
       "rank": 4,
-      "ticker": "AMT",
-      "name": "American Tower Corporation",
-      "sector": "Real Estate",
-      "as_of": "2026-11-19T14:30:00Z",
+      "ticker": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-11-20T14:30:00Z",
       "quote": {
-        "price": 181.15,
+        "price": 246.82,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/AMT",
-        "as_of": "2026-11-19T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/AMZN",
+        "as_of": "2026-11-20T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
-        "readiness": "in_zone",
+        "readiness": "near",
         "distance_to_zone_pct": 0.0
       },
       "rule_hits": [
@@ -257,42 +227,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 12
+        "warnings_count": 7
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 179.43,
-        "entry_high": 181.15,
-        "stop": 173.06,
-        "target": 197.34,
+        "entry_low": 242.24,
+        "entry_high": 246.82,
+        "stop": 229.78,
+        "target": 280.91,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-10-05",
-              "price": 160.3
+              "date": "2026-09-16",
+              "price": 244.3
             },
             "b": {
-              "date": "2026-10-23",
-              "price": 202.5
+              "date": "2026-09-21",
+              "price": 259.49
             },
             "c": {
-              "date": "2026-10-28",
-              "price": 175.78
+              "date": "2026-09-28",
+              "price": 244.73
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 217.98
+              "price": 259.92
             },
             {
               "ratio": 1.272,
-              "price": 229.46
+              "price": 264.05
             },
             {
               "ratio": 1.618,
-              "price": 244.06
+              "price": 269.31
             }
           ]
         }
@@ -300,20 +270,20 @@
     },
     {
       "rank": 5,
-      "ticker": "SO",
-      "name": "The Southern Company",
-      "sector": "Utilities",
-      "as_of": "2026-11-19T14:30:00Z",
+      "ticker": "SBUX",
+      "name": "Starbucks Corporation",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-11-20T14:30:00Z",
       "quote": {
-        "price": 93.29,
+        "price": 103.13,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/SO",
-        "as_of": "2026-11-19T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/SBUX",
+        "as_of": "2026-11-20T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
-        "readiness": "in_zone",
+        "readiness": "near",
         "distance_to_zone_pct": 0.0
       },
       "rule_hits": [
@@ -327,42 +297,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 12
+        "warnings_count": 10
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 92.76,
-        "entry_high": 93.29,
-        "stop": 90.53,
-        "target": 98.8,
+        "entry_low": 102.19,
+        "entry_high": 103.13,
+        "stop": 98.29,
+        "target": 112.81,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-06-17",
-              "price": 92.31
+              "date": "2026-08-04",
+              "price": 101.8
             },
             "b": {
-              "date": "2026-07-17",
-              "price": 98.34
+              "date": "2026-08-13",
+              "price": 110.51
             },
             "c": {
-              "date": "2026-07-21",
-              "price": 93.21
+              "date": "2026-08-20",
+              "price": 102.97
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 99.24
+              "price": 111.68
             },
             {
               "ratio": 1.272,
-              "price": 100.88
+              "price": 114.05
             },
             {
               "ratio": 1.618,
-              "price": 102.97
+              "price": 117.06
             }
           ]
         }
