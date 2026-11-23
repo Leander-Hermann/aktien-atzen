@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-22T06:01:47.569983+00:00",
+ "updated": "2026-11-23T06:01:25.955078+00:00",
  "window": {
-  "from": "2026-11-19",
-  "to": "2026-12-13"
+  "from": "2026-11-20",
+  "to": "2026-12-14"
  },
  "universe_meta": {
   "indizes": [
@@ -21,69 +21,6 @@
   "stand": "2026-06-25"
  },
  "eintraege": [
-  {
-   "date": "2026-11-19",
-   "ticker": "9988.HK",
-   "name": "Alibaba",
-   "index": "HSI",
-   "region": "HK",
-   "branche": "E-Commerce",
-   "zeit": "tbd",
-   "periode": "",
-   "eps_est": 1.9506,
-   "rev_est": 310798749330,
-   "status": "reported",
-   "eps_act": 1.01,
-   "rev_act": null,
-   "surprise_pct": -27.3,
-   "reaktion_pct": -5.51,
-   "confirmed": true,
-   "source": "yahoo",
-   "source_url": "https://finance.yahoo.com/quote/9988.HK",
-   "as_of": "2026-11-20T06:01:49.788320+00:00"
-  },
-  {
-   "date": "2026-11-19",
-   "ticker": "INTU",
-   "name": "Intuit",
-   "index": "Nasdaq 100",
-   "region": "US",
-   "branche": "Software",
-   "zeit": "amc",
-   "periode": "Q1 FY27",
-   "eps_est": 2.7514,
-   "rev_est": 4391554665,
-   "status": "reported",
-   "eps_act": 2.91,
-   "rev_act": 4354000000,
-   "surprise_pct": 5.76,
-   "reaktion_pct": -12.77,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/INTU",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
-  },
-  {
-   "date": "2026-11-19",
-   "ticker": "WMT",
-   "name": "Walmart",
-   "index": "S&P 500",
-   "region": "US",
-   "branche": "Einzelhandel",
-   "zeit": "bmo",
-   "periode": "Q3 FY27",
-   "eps_est": 0.6424,
-   "rev_est": 189143823120,
-   "status": "reported",
-   "eps_act": 0.65,
-   "rev_act": 188835000000,
-   "surprise_pct": 1.18,
-   "reaktion_pct": -1.04,
-   "confirmed": true,
-   "source": "finnhub",
-   "source_url": "https://finance.yahoo.com/quote/WMT",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
-  },
   {
    "date": "2026-11-20",
    "ticker": "INTU",
@@ -124,7 +61,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/1810.HK",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-11-24",
@@ -145,7 +82,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/DELL",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-11-25",
@@ -166,7 +103,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/DE",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-11-26",
@@ -229,7 +166,7 @@
    "confirmed": true,
    "source": "yahoo",
    "source_url": "https://finance.yahoo.com/quote/3690.HK",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-12-01",
@@ -250,7 +187,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/CRWD",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-12-01",
@@ -271,7 +208,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/MRVL",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-12-02",
@@ -292,7 +229,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/CRM",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-12-02",
@@ -303,8 +240,8 @@
    "branche": "Software",
    "zeit": "amc",
    "periode": "Q3 FY27",
-   "eps_est": 0.6089,
-   "rev_est": 1685357536,
+   "eps_est": 0.6092,
+   "rev_est": 1685591616,
    "status": "scheduled",
    "eps_act": null,
    "rev_act": null,
@@ -313,7 +250,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/SNOW",
-   "as_of": "2026-11-21T06:01:41.678888+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-12-03",
@@ -355,7 +292,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/ADBE",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-12-09",
@@ -376,7 +313,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/AVGO",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-12-09",
@@ -397,7 +334,7 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/LULU",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   },
   {
    "date": "2026-12-10",
@@ -439,7 +376,28 @@
    "confirmed": true,
    "source": "finnhub",
    "source_url": "https://finance.yahoo.com/quote/COST",
-   "as_of": "2026-11-22T06:01:44.596673+00:00"
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
+  },
+  {
+   "date": "2026-12-14",
+   "ticker": "ORCL",
+   "name": "Oracle",
+   "index": "S&P 500",
+   "region": "US",
+   "branche": "Software",
+   "zeit": "tbd",
+   "periode": "Q2 FY27",
+   "eps_est": 1.934,
+   "rev_est": 21747851113,
+   "status": "scheduled",
+   "eps_act": null,
+   "rev_act": null,
+   "surprise_pct": null,
+   "reaktion_pct": null,
+   "confirmed": true,
+   "source": "finnhub",
+   "source_url": "https://finance.yahoo.com/quote/ORCL",
+   "as_of": "2026-11-23T06:01:23.638068+00:00"
   }
  ]
 }
