@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "generated_at": "2026-11-23T19:34:58+00:00",
+  "generated_at": "2026-11-24T07:35:23+00:00",
   "status": "fresh",
   "schema_version": "1.0",
   "quellen": [
@@ -12,6 +12,58 @@
   ]
  },
  "analysen": [
+  {
+   "id": "lynx-775801",
+   "symbol": "MRNA",
+   "name": "Moderna",
+   "veroeffentlicht": "2026-11-24T07:15:15+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/moderna-aktie/moderna-analyse/#moderna-nach-deutlichem-kursverlust-erholung-an-der-50-tage-linie"
+   }
+  },
+  {
+   "id": "lynx-775798",
+   "symbol": "ALV.DE",
+   "name": "Allianz",
+   "veroeffentlicht": "2026-11-24T07:08:08+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/allianz-aktie/allianz-analyse/#allianz-nach-rallye-zurueck-am-ausbruchsniveau"
+   }
+  },
+  {
+   "id": "lynx-775804",
+   "symbol": "CRWD",
+   "name": "CrowdStrike",
+   "veroeffentlicht": "2026-11-24T07:06:11+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/crowdstrike-holdings-aktie/crowdstrike-holdings-analyse/#crowdstrike-geplante-zscaler-uebernahme-belastet-die-aktie"
+   }
+  },
+  {
+   "id": "lynx-775782",
+   "symbol": "IFX.DE",
+   "name": "Infineon",
+   "veroeffentlicht": "2026-11-24T07:05:05+00:00",
+   "autor": "",
+   "kategorie": "Aktienanalysen",
+   "quelle": {
+    "name": "LYNX",
+    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
+    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/infineon-aktie/infineon-analyse/#infineon-huang-ist-zurueck-kommt-jetzt-fuer-chip-aktien-die-wende"
+   }
+  },
   {
    "id": "lynx-775769",
    "symbol": "EVD.DE",
@@ -730,7 +782,7 @@
   {
    "id": "lynx-774418",
    "symbol": "MU",
-   "name": "Micron",
+   "name": "Micron Technology",
    "veroeffentlicht": "2026-11-06T07:13:22+00:00",
    "autor": "",
    "kategorie": "Aktienanalysen",
@@ -998,71 +1050,6 @@
     "name": "LYNX",
     "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
     "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/sandisk-aktie/sandisk-analyse/#sandisk-verliert-51-bruch-der-200-tage-linie-als-warnsignal"
-   }
-  },
-  {
-   "id": "lynx-773744",
-   "symbol": "INTC",
-   "name": "Intel",
-   "veroeffentlicht": "2026-11-02T07:15:20+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/intel-aktie/intel-analyse/#intel-ob-man-diese-aktie-wirklich-abhaken-sollte"
-   }
-  },
-  {
-   "id": "lynx-773743",
-   "symbol": "PUM.DE",
-   "name": "Puma",
-   "veroeffentlicht": "2026-11-02T06:56:45+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/puma-aktie/puma-analyse/#puma-waren-diese-ergebnisse-wirklich-gut"
-   }
-  },
-  {
-   "id": "lynx-773580",
-   "symbol": "GOOGL",
-   "name": "Alphabet",
-   "veroeffentlicht": "2026-10-30T07:40:34+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/alphabet-aktie/alphabet-analyse/#alphabet-aktie-tagesverlust-von-rund-13-prozent-nach-quartalszahlen"
-   }
-  },
-  {
-   "id": "lynx-773579",
-   "symbol": "VNA.DE",
-   "name": "Vonovia",
-   "veroeffentlicht": "2026-10-30T07:36:08+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/vonovia-aktie/vonovia-analyse/#vonovia-deutlicher-abverkauf-hinweise-auf-moegliche-bodenbildung"
-   }
-  },
-  {
-   "id": "lynx-773581",
-   "symbol": "AMZN",
-   "name": "Amazon",
-   "veroeffentlicht": "2026-10-30T07:32:56+00:00",
-   "autor": "",
-   "kategorie": "Aktienanalysen",
-   "quelle": {
-    "name": "LYNX",
-    "art": "von LYNX als Marketingmitteilung gekennzeichnet (nach eigener Angabe keine Anlageempfehlung)",
-    "url": "https://www.lynxbroker.de/boerse/boerse-kurse/aktien/amazon-aktie/amazon-analyse/#amazon-nach-quartalszahlen-unter-druck-wie-koennte-es-weitergehen"
    }
   }
  ]
