@@ -4,86 +4,176 @@
  "topics": [
   {
    "prio": 3,
-   "title": "Trump stellt Nvidia-Chef Huang Begnadigung und US-Einstieg in Aussicht",
-   "time": "00:38",
-   "body": "US-Präsident Donald Trump hält eine Begnadigung von Nvidia-Chef Jensen Huang für möglich und fordert ihn zu wahrheitsgemäßen Aussagen vor dem Kongress auf. Zugleich bleibt eine Beteiligung der US-Regierung an Nvidia laut Trump denkbar.",
-   "timing": "After-Hours",
-   "verlauf": "Die Aussagen verschärfen die seit Tagen laufende Debatte über Huangs Rückkehr, Nvidias China-Geschäft und den politischen Einfluss auf den Konzern.",
-   "einordnung": "Die direkte politische Unterstützung könnte Nvidia kurzfristig stabilisieren, erhöht aber zugleich die Unsicherheit über die Grenze zwischen Industriepolitik und Unternehmensführung.",
+   "title": "Wall Street rutscht trotz Erholung deutlich ab",
+   "time": "19:21",
+   "body": "US-Technologie- und KI-Aktien standen erneut stark unter Druck: Der Nasdaq 100 fiel zeitweise mehr als 4 Prozent und näherte sich damit der Bärenmarkt-Schwelle von 20 Prozent unter dem Rekordhoch. Halbleiter- und KI-Infrastrukturwerte führten den Ausverkauf an, bevor sich die großen Indizes im weiteren Handel teilweise erholten.",
+   "timing": "Handel offen",
+   "verlauf": "Die Verluste setzen die seit dem Vortag laufende Korrektur nach der Huang-Rally fort.",
+   "einordnung": "Die anhaltende Schwäche zeigt, dass Zweifel an KI-Bewertungen, Renditen und der Finanzierung des Ausbaus weiterhin den Gesamtmarkt belasten.",
    "img": "",
+   "sources": [
+    {
+     "l": "@FirstSquawk",
+     "u": "https://x.com/FirstSquawk/status/2125603942155579578"
+    },
+    {
+     "l": "@DeItaone",
+     "u": "https://x.com/DeItaone/status/2125602176101704093"
+    }
+   ],
+   "begriffe": [
+    {
+     "term": "Bärenmarkt",
+     "erklaerung": "Damit wird meist ein Rückgang eines Index von mindestens 20 Prozent gegenüber seinem jüngsten Hoch bezeichnet."
+    }
+   ]
+  },
+  {
+   "prio": 3,
+   "title": "S&P droht Nvidia mit Herabstufung",
+   "time": "19:53",
+   "body": "S&P Global hat Nvidias AA-Kreditrating wegen zunehmender Management- und Governance-Risiken auf die Beobachtungsliste für eine mögliche Herabstufung gesetzt. Die Ratingagentur kritisiert unter anderem die Aufsicht des Verwaltungsrats und will Gespräche mit Vorstand und Management führen. Gleichzeitig sehen US-Behörden laut Wall Street Journal keine Belege dafür, dass China die Affäre um Jensen Huang gesteuert hat; Untersuchungen zu möglichen Chip-Lieferungen nach China laufen jedoch weiter.",
+   "timing": "Handel offen",
+   "verlauf": "Die neue Rating-Warnung verschärft die seit Tagen laufende Debatte über Huangs Wiedereinsetzung, Nvidias China-Geschäft und die politische Einflussnahme auf das Unternehmen.",
+   "einordnung": "Eine Herabstufung könnte die Finanzierungskosten erhöhen und den Druck auf Nvidias Führung verstärken, auch wenn die Spionagevorwürfe bislang nicht bestätigt wurden.",
+   "img": "",
+   "sources": [
+    {
+     "l": "@FirstSquawk",
+     "u": "https://x.com/FirstSquawk/status/2125664121647718818"
+    },
+    {
+     "l": "@DeItaone",
+     "u": "https://x.com/DeItaone/status/2125617553921716543"
+    }
+   ],
+   "begriffe": [
+    {
+     "term": "CreditWatch Negative",
+     "erklaerung": "Eine Ratingagentur signalisiert damit, dass eine Herabstufung in absehbarer Zeit wahrscheinlicher geworden ist."
+    },
+    {
+     "term": "Governance",
+     "erklaerung": "Der Begriff beschreibt die Regeln und Strukturen, nach denen ein Unternehmen geführt und überwacht wird."
+    }
+   ]
+  },
+  {
+   "prio": 3,
+   "title": "US-Inflation bleibt hartnäckig, Fed-Zinsschritt fast eingepreist",
+   "time": "20:28",
+   "body": "Die Kernrate des US-PCE-Preisindex stieg im Oktober binnen Jahresfrist auf 3,3 Prozent und lag damit über den Erwartungen. Zugleich wuchs die US-Wirtschaft im dritten Quartal vorläufig mit annualisierten 4,3 Prozent, während der private Konsum im Oktober hinter den Prognosen zurückblieb und die Erstanträge auf Arbeitslosenhilfe auf 189.000 sanken. Die Kombination aus robustem Wachstum, schwächerem realem Konsum und anhaltendem Preisdruck ließ die Wahrscheinlichkeit einer Zinserhöhung im Dezember laut Prognosemärkten auf 93 Prozent steigen.",
+   "timing": "Handel offen",
+   "verlauf": "Die Daten verstärken die am Vortag bereits beschriebenen Sorgen über anhaltenden Preisdruck trotz positiver Konjunktursignale.",
+   "einordnung": "Für die US-Notenbank wird ein lockerer Kurs schwieriger, weil die Inflation über dem Ziel bleibt, während die Konjunktur bislang widerstandsfähig wirkt.",
+   "img": "https://pbs.twimg.com/media/HX-XgNyWgAA1FH7.png",
    "sources": [
     {
      "l": "@DeItaone",
-     "u": "https://x.com/DeItaone/status/2125373534914429267"
+     "u": "https://x.com/DeItaone/status/2125584140900683877"
+    },
+    {
+     "l": "@FirstSquawk",
+     "u": "https://x.com/FirstSquawk/status/2125673058824597981"
     }
    ],
    "begriffe": [
     {
-     "term": "US-Regierungsbeteiligung",
-     "erklaerung": "Dabei würde der Staat Aktien eines privaten Unternehmens kaufen und dadurch Miteigentümer werden."
+     "term": "Kern-PCE",
+     "erklaerung": "Der Kern-PCE misst die Preisentwicklung ohne stark schwankende Lebensmittel- und Energiepreise und gilt als wichtiges Inflationsmaß der Fed."
+    },
+    {
+     "term": "Annualisiert",
+     "erklaerung": "Eine kurzfristige Wachstumsrate wird dabei so umgerechnet, als würde sie ein ganzes Jahr lang anhalten."
     }
    ]
   },
   {
    "prio": 3,
-   "title": "KI-Zweifel belasten asiatische Börsen erneut",
-   "time": "07:36",
-   "body": "Asiatische Aktien stehen wegen anhaltender Zweifel am KI-Boom und neuer Handelsunsicherheit unter Druck. Der KOSPI fällt um 6,16 Prozent und schließt auf dem schwächsten Stand seit dem 13. Januar; auch der Nikkei gibt deutlich nach, vor allem wegen chipbezogener Aktien.",
-   "timing": "Börse zu",
-   "verlauf": "Die Verluste setzen die am Vortag in den USA wieder aufgeflammte Abwärtsbewegung bei KI- und Halbleiterwerten fort.",
-   "einordnung": "Die Bewegung zeigt, dass Anleger die hohen Bewertungen und den Kapitalbedarf des KI-Ausbaus weiterhin kritisch hinterfragen.",
+   "title": "USA konkretisieren neue Zollpläne für wichtige Handelspartner",
+   "time": "19:17",
+   "body": "Die USA schlagen nach Reuters-Berichten unter anderem einen Zollsatz von 15 Prozent zusätzlich zu bestehenden Meistbegünstigungszöllen für Südkorea, Taiwan und Japan vor. Zugleich erwägt Washington höhere Abgaben auf China, Indien und weitere Handelspartner; Anhörungen zu den Untersuchungen sollen am 25. Januar 2027 stattfinden. Die USA und China vereinbarten daneben, Gespräche über einen stabileren Agrarhandel fortzusetzen.",
+   "timing": "Handel offen",
+   "verlauf": "Die Pläne knüpfen an die am Vortag gemeldete Vorbereitung gezielter Zölle gegen China, die EU und weitere Länder an.",
+   "einordnung": "Die konkreten Sätze und der Zeitplan sind noch nicht endgültig, doch zusätzliche Zölle könnten Lieferketten und den globalen Inflationsdruck belasten.",
    "img": "",
    "sources": [
     {
-     "l": "@FirstSquawk",
-     "u": "https://x.com/FirstSquawk/status/2125478832493007043"
+     "l": "@ReutersWorld",
+     "u": "https://x.com/ReutersWorld/status/2125643283795673453"
     },
     {
-     "l": "@WSJmarkets",
-     "u": "https://x.com/WSJmarkets/status/2125423219259674651"
+     "l": "@FirstSquawk",
+     "u": "https://x.com/FirstSquawk/status/2125655020100305289"
     }
    ],
    "begriffe": [
     {
-     "term": "KI-Boom",
-     "erklaerung": "Damit ist der starke Anstieg von Investitionen und Börsenbewertungen rund um künstliche Intelligenz gemeint."
+     "term": "Meistbegünstigungszoll",
+     "erklaerung": "Das ist der reguläre Zollsatz, den ein Land grundsätzlich allen Handelspartnern ohne Sonderabkommen berechnet."
     }
    ]
   },
   {
    "prio": 3,
-   "title": "Neue Spannungen in der Straße von Hormus trotz fallender Ölpreise",
-   "time": "08:18",
-   "body": "Die iranische Revolutionsgarde meldet, dass zwei Tanker auf einer nicht genehmigten Route in der Straße von Hormus Feuer gefangen hätten; eine unabhängige Bestätigung liegt nicht vor. Gleichzeitig fallen die Ölpreise, weil Händler das erwartete Angebot gegen die erneuten Risiken im Nahen Osten abwägen.",
-   "timing": "Börse zu",
-   "verlauf": "Die Meldung verschärft die seit mehreren Tagen angespannte Lage um die US-Blockade, Tanker und die Straße von Hormus.",
-   "einordnung": "Bestätigte Angriffe auf die Schifffahrt könnten die Risikoprämie für Energie und Transport deutlich erhöhen, auch wenn der Markt aktuell das Angebot stärker gewichtet.",
+   "title": "Neue Zwischenfälle in der Straße von Hormus gemeldet",
+   "time": "16:38",
+   "body": "Die iranische Revolutionsgarden-Marine meldete, ein LNG-Tanker sei nach dem Kontakt mit einer Mine explodiert; die iranische Armee sprach ebenfalls von einem von einer Mine getroffenen Tanker östlich der Straße von Hormus. Eine unabhängige Bestätigung liegt bislang nicht vor. US-Finanzminister Bessent erklärte zudem, Iran habe kein Öl mehr auf dem Wasser zu verkaufen.",
+   "timing": "Handel offen",
+   "verlauf": "Die Meldungen verschärfen die seit dem Vortag bestehende Unsicherheit über Tanker, Energieversorgung und die Sicherheit der Schifffahrt in der Region.",
+   "einordnung": "Sollten sich die Berichte bestätigen, könnte die geopolitische Risikoprämie für Öl und Schifffahrt deutlich steigen; derzeit bleibt die Faktenlage unklar.",
    "img": "",
    "sources": [
     {
      "l": "@FirstSquawk",
-     "u": "https://x.com/FirstSquawk/status/2125450399213859036"
-    },
-    {
-     "l": "@WSJmarkets",
-     "u": "https://x.com/WSJmarkets/status/2125409603529625712"
+     "u": "https://x.com/FirstSquawk/status/2125615011712442763"
     }
    ],
    "begriffe": [
+    {
+     "term": "LNG",
+     "erklaerung": "LNG ist verflüssigtes Erdgas, das per Schiff transportiert werden kann."
+    },
     {
      "term": "Risikoprämie",
-     "erklaerung": "Das ist ein zusätzlicher Preisaufschlag, den Anleger wegen politischer oder wirtschaftlicher Unsicherheit verlangen."
+     "erklaerung": "Damit ist ein zusätzlicher Preisaufschlag gemeint, den Anleger wegen höherer Unsicherheit verlangen."
     }
    ]
   },
   {
    "prio": 2,
-   "title": "Chinas Führung demonstriert Geschlossenheit hinter untersuchtetem Shanghaier Parteichef",
-   "time": "04:40",
-   "body": "Die Führung in Shanghai bekundet laut Reuters Loyalität zu Peking, während Parteichef Chen Jining untersucht wird. Damit wäre er das vierte Politbüromitglied, das seit 2025 politisch zu Fall gekommen ist.",
+   "title": "Kreditrisiken der KI-Infrastruktur nehmen zu",
+   "time": "18:51",
+   "body": "CoreWeave-Anleihen gerieten erneut unter Druck; die Rendite der 2031 fälligen Papiere stieg laut Tradeweb auf rund 17,9 Prozent. Gleichzeitig bereiten Morgan Stanley und MUFG den Verkauf eines mit einem Meta-Rechenzentrumsprojekt verbundenen Kredits über 4,5 Milliarden US-Dollar vor, der trotz der angespannten Lage bei CoreWeave selbst Investment-Grade-Interessenten finden könnte.",
+   "timing": "Handel offen",
+   "verlauf": "Die Entwicklung baut auf den zuletzt gewachsenen Zweifeln an der kreditfinanzierten Expansion von KI-Rechenzentren auf.",
+   "einordnung": "Die starke Spreizung zwischen vergleichsweise gut abgesicherten Projekten und der eigenen CoreWeave-Verschuldung zeigt, dass Anleger die Finanzierungsqualität im KI-Sektor stärker differenzieren.",
+   "img": "",
+   "sources": [
+    {
+     "l": "@DeItaone",
+     "u": "https://x.com/DeItaone/status/2125610724885950960"
+    }
+   ],
+   "begriffe": [
+    {
+     "term": "Investment Grade",
+     "erklaerung": "So werden Anleihen mit vergleichsweise guter Bonität und niedrigem Ausfallrisiko bezeichnet."
+    },
+    {
+     "term": "Rendite",
+     "erklaerung": "Die Rendite zeigt, welche jährliche Verzinsung Anleger beim aktuellen Preis eines Wertpapiers erwarten."
+    }
+   ]
+  },
+  {
+   "prio": 2,
+   "title": "Chinas Machtkampf um Shanghaier Parteichef weitet sich aus",
+   "time": "18:40",
+   "body": "Reuters berichtet, dass die Korruptionsuntersuchung gegen Shanghais Parteichef Chen Jining den traditionellen politischen Aufstieg in China erschüttert. Die Untersuchung reiht sich in eine breitere Säuberungswelle ein, durch die sich das Politbüro verkleinert und weitere hochrangige Funktionäre unter Druck geraten.",
    "timing": "Börse zu",
-   "verlauf": "Die Entwicklung setzt die am Vortag bekannt gewordene Untersuchung Chens und die Debatte über neue Machtverschiebungen in der Kommunistischen Partei fort.",
-   "einordnung": "Die demonstrative Geschlossenheit soll offenbar politische Stabilität signalisieren; konkrete Folgen für Wirtschafts- und Technologiepolitik bleiben offen.",
+   "verlauf": "Die Entwicklung setzt die am Vortag gemeldete Untersuchung Chens und die Diskussion über politische Stabilität in China fort.",
+   "einordnung": "Kurzfristige Marktfolgen sind offen, doch die Unsicherheit könnte die Kontinuität wirtschafts- und technologiepolitischer Projekte beeinträchtigen.",
    "img": "",
    "sources": [
     {
@@ -94,136 +184,26 @@
    "begriffe": [
     {
      "term": "Politbüro",
-     "erklaerung": "Das Politbüro ist das zentrale Führungsorgan der Kommunistischen Partei Chinas."
-    }
-   ]
-  },
-  {
-   "prio": 2,
-   "title": "EU erwägt 50-Milliarden-Euro-Fonds für Technologie",
-   "time": "06:03",
-   "body": "Die EU prüft laut Financial Times einen Investitionsfonds von 50 Milliarden Euro, um ihren Technologiesektor gegenüber den USA und China zu stärken. Details zu Finanzierung und Ausgestaltung sind noch offen.",
-   "timing": "Börse zu",
-   "verlauf": "",
-   "einordnung": "Ein solcher Fonds könnte europäische Technologieunternehmen und strategische Lieferketten unterstützen, sofern die Mitgliedstaaten sich auf Umfang und Finanzierung einigen.",
-   "img": "",
-   "sources": [
-    {
-     "l": "@FirstSquawk",
-     "u": "https://x.com/FirstSquawk/status/2125455319296028991"
-    }
-   ],
-   "begriffe": [
-    {
-     "term": "Technologiesouveränität",
-     "erklaerung": "Damit ist die Fähigkeit gemeint, bei wichtigen Technologien weniger von ausländischen Anbietern abhängig zu sein."
-    }
-   ]
-  },
-  {
-   "prio": 2,
-   "title": "Boeing erhält Großauftrag von Chinas Xiamen Airlines",
-   "time": "05:07",
-   "body": "Boeing sichert sich laut CNBC einen Flugzeugauftrag im Volumen von 7,4 Milliarden US-Dollar von Chinas Xiamen Airlines. Der Auftrag folgt auf Trumps frühere, nicht näher erläuterte Angaben zu umfangreichen Boeing-Verkäufen nach China.",
-   "timing": "Börse zu",
-   "verlauf": "Die Meldung konkretisiert teilweise die am Vortag von Trump genannten Boeing-Verkäufe und erwarteten Bestellungen aus China.",
-   "einordnung": "Der Auftrag wäre positiv für Boeing, steht aber im größeren Spannungsfeld zwischen US-Handelspolitik und chinesischer Nachfrage nach amerikanischen Flugzeugen.",
-   "img": "",
-   "sources": [
-    {
-     "l": "@FirstSquawk",
-     "u": "https://x.com/FirstSquawk/status/2125441232906457265"
-    }
-   ],
-   "begriffe": [
-    {
-     "term": "Flugzeugauftrag",
-     "erklaerung": "Dabei verpflichtet sich eine Fluggesellschaft, neue Flugzeuge zu kaufen oder abzunehmen."
-    }
-   ]
-  },
-  {
-   "prio": 2,
-   "title": "Kanadische Inflationssorgen stützen Zinserhöhungserwartungen",
-   "time": "01:40",
-   "body": "Bank-of-Canada-Chef Tiff Macklem sieht anhaltenden Preisdruck, weil Unternehmen höhere Kosten weiterhin an Kunden weitergeben könnten. Der kanadische Dollar steigt auf ein Elf-Tage-Hoch, während Anleger stärker auf eine Zinserhöhung setzen.",
-   "timing": "After-Hours",
-   "verlauf": "Die Aussagen bauen auf der am Vortag gestiegenen marktimpliziten Wahrscheinlichkeit einer Zinserhöhung im Dezember auf.",
-   "einordnung": "Bleibt die Inflation hartnäckig, dürfte die kanadische Notenbank einen restriktiveren Kurs beibehalten.",
-   "img": "",
-   "sources": [
-    {
-     "l": "@ReutersWorld",
-     "u": "https://x.com/ReutersWorld/status/2125371509283738044"
-    }
-   ],
-   "begriffe": [
-    {
-     "term": "Zinserhöhungserwartung",
-     "erklaerung": "Sie beschreibt, wie wahrscheinlich Anleger eine Anhebung des Leitzinses einschätzen."
-    }
-   ]
-  },
-  {
-   "prio": 2,
-   "title": "Shein zahlt 100 Millionen Dollar im Streit mit US-Handelsbehörde",
-   "time": "05:19",
-   "body": "Der Onlinehändler Shein hat laut Angaben von First Squawk eine Vereinbarung mit der US-Handelsbehörde FTC getroffen, die eine Zahlung von 100 Millionen US-Dollar an das US-Finanzministerium vorsieht. Einzelheiten der Vorwürfe und der Vereinbarung wurden nicht genannt.",
-   "timing": "Börse zu",
-   "verlauf": "",
-   "einordnung": "Die Einigung erhöht den regulatorischen Druck auf den chinesischen Onlinehändler im US-Markt.",
-   "img": "",
-   "sources": [
-    {
-     "l": "@FirstSquawk",
-     "u": "https://x.com/FirstSquawk/status/2125444348976493037"
-    }
-   ],
-   "begriffe": [
-    {
-     "term": "FTC",
-     "erklaerung": "Die FTC ist die US-Behörde, die unter anderem Wettbewerb und Verbraucherschutz überwacht."
-    }
-   ]
-  },
-  {
-   "prio": 2,
-   "title": "Cyberangriff legt unklassifizierte US-Geheimdienstinformationen offen",
-   "time": "20:49",
-   "body": "Die CIA und das Büro des US-Geheimdienstdirektors wurden laut New York Times Opfer eines Cyberangriffs. Betroffen war demnach ein System zur Analyse frei verfügbarer Informationen; klassifizierte Daten sollen nicht offengelegt worden sein, die Angreifer sind unbekannt.",
-   "timing": "Handel offen",
-   "verlauf": "",
-   "einordnung": "Der Vorfall erhöht den Druck auf die US-Regierung, die Absicherung ihrer ressortübergreifenden Informationssysteme zu verbessern.",
-   "img": "",
-   "sources": [
-    {
-     "l": "@DeItaone",
-     "u": "https://x.com/DeItaone/status/2125315887745950080"
-    }
-   ],
-   "begriffe": [
-    {
-     "term": "unklassifizierte Informationen",
-     "erklaerung": "Das sind staatliche Informationen, die nicht als geheim eingestuft sind, aber dennoch sensibel sein können."
+     "erklaerung": "Das Politbüro ist eines der wichtigsten Führungsorgane der Kommunistischen Partei Chinas."
     }
    ]
   }
  ],
  "reads": [
   {
-   "s": "@axios",
-   "h": "Jensen Huang ist zurück, Nvidia aber noch nicht aus dem Schneider",
-   "u": "https://www.axios.com/2026/11/24/jensen-huang-nvidia-scandal-ceo?utm_campaign=mrf-utm_source=x&utm_medium=organic_social&utm_campaign=editorial&utm_source=twitter&utm_medium=social&mrfcid=202611246afab8045228136c9e6f9947"
+   "s": "@TheStalwart",
+   "h": "S&P verschärft den Druck auf Nvidia",
+   "u": "https://x.com/TheStalwart/status/2125662933048861007"
   },
   {
    "s": "@axios",
-   "h": "Trump bereitet neue gezielte Zölle vor",
-   "u": "https://www.axios.com/2026/11/24/trump-tariffs-china-affordability?utm_campaign=mrf-utm_source=x&utm_medium=organic_social&utm_campaign=editorial&utm_source=twitter&utm_medium=social&mrfcid=202611246afab8045228136c9e6f9918"
+   "h": "US-Wirtschaft wächst im dritten Quartal überraschend stark",
+   "u": "https://www.axios.com/2026/11/25/economy-gdp-inflation-ai?utm_campaign=mrf-utm_source=x&utm_medium=organic_social&utm_campaign=editorial&utm_source=twitter&utm_medium=social&mrfcid=202611256afc09853051fa79bd04d943"
   },
   {
    "s": "@axios",
-   "h": "Anthropic-Aktie fällt weiter",
-   "u": "https://www.axios.com/2026/11/24/anthropic-stock-ipo-banks?utm_campaign=mrf-utm_source=x&utm_medium=organic_social&utm_campaign=editorial&utm_source=twitter&utm_medium=social&mrfcid=202611246afab8045228136c9e6f9946"
+   "h": "Trump bereitet neue Zölle gegen Handelspartner vor",
+   "u": "https://www.axios.com/2026/11/25/trump-tariffs-china?utm_campaign=mrf-utm_source=x&utm_medium=organic_social&utm_campaign=editorial&utm_source=twitter&utm_medium=social&mrfcid=202611256afc09853051fa79bd04d93d"
   }
  ]
 }
