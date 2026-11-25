@@ -1,8 +1,8 @@
 {
   "_meta": {
     "schema_version": "1.1",
-    "generated_at": "2026-11-24T14:17:52.054287Z",
-    "trading_day": "2026-11-23",
+    "generated_at": "2026-11-25T13:31:37.465203Z",
+    "trading_day": "2026-11-24",
     "status": "fresh",
     "partial": false,
     "ranking_basis": "setup_readiness_v1",
@@ -15,21 +15,21 @@
     "contact_url": "https://leander-hermann.github.io/aktien-atzen/",
     "methodology": "Regelbasiertes Setup-Readiness-Ranking aus Point-in-time-Marktdaten; keine individuelle Eignungsprüfung. Die Beobachtungszone liegt am nächsten technischen Referenzniveau unter dem Kurs (Unterstützung, Fibonacci-Retracement, Volumen-Schwerpunkt oder gleitender Durchschnitt – je nachdem, welches am höchsten liegt) mit einer Bandbreite von einem Viertel der durchschnittlichen Tagesschwankung (ATR); der Stop-Loss liegt 1,25 ATR darunter, das Kursziel mindestens beim doppelten Chance-Risiko-Verhältnis darüber oder – falls vorhanden – am nächsten früheren Kurswiderstand. Die zusätzlich im Chart gezeigten Fibonacci-Extension-Linien (1,0/1,272/1,618 einer Auf-Ab-Auf-Kursbewegung) sind eine ergänzende Orientierung aus demselben Regelwerk, nicht die Grundlage des Kursziels. Alle Werte sind feste Ergebnisse eines vorab veröffentlichten Regelwerks auf historischen Kursverläufen – keine Vorhersage, keine Erfolgsgarantie.",
     "interests": "Der Betreiber hält derzeit eigene Long-Positionen in AMD und NVIDIA. Die Auswahl und Reihenfolge der Beobachtungskandidaten werden regelbasiert und unabhängig von diesen Positionen ermittelt. Die Positionen werden als mögliche Interessen offengelegt.",
-    "as_of": "2026-11-24T14:17:52.054287Z"
+    "as_of": "2026-11-25T13:31:37.465203Z"
   },
   "items": [
     {
       "rank": 1,
-      "ticker": "AAPL",
-      "name": "Apple Inc.",
-      "sector": "Information Technology",
-      "as_of": "2026-11-23T14:30:00Z",
+      "ticker": "MRNA",
+      "name": "Moderna, Inc.",
+      "sector": "Health Care",
+      "as_of": "2026-11-24T14:30:00Z",
       "quote": {
-        "price": 349.08,
+        "price": 227.38,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/AAPL",
-        "as_of": "2026-11-23T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/MRNA",
+        "as_of": "2026-11-24T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -47,42 +47,42 @@
       ],
       "data_quality": {
         "status": "partial",
-        "warnings_count": 6
+        "warnings_count": 9
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 345.66,
-        "entry_high": 349.08,
-        "stop": 335.26,
-        "target": 376.71,
+        "entry_low": 222.38,
+        "entry_high": 227.38,
+        "stop": 199.46,
+        "target": 283.22,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-10-01",
-              "price": 325.81
+              "date": "2026-08-03",
+              "price": 52.66
             },
             "b": {
-              "date": "2026-10-13",
-              "price": 348.15
+              "date": "2026-09-02",
+              "price": 156.41
             },
             "c": {
-              "date": "2026-10-20",
-              "price": 338.7
+              "date": "2026-09-10",
+              "price": 130.38
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 361.04
+              "price": 234.13
             },
             {
               "ratio": 1.272,
-              "price": 367.12
+              "price": 262.36
             },
             {
               "ratio": 1.618,
-              "price": 374.85
+              "price": 298.26
             }
           ]
         }
@@ -90,16 +90,86 @@
     },
     {
       "rank": 2,
-      "ticker": "SBUX",
-      "name": "Starbucks Corporation",
-      "sector": "Consumer Discretionary",
-      "as_of": "2026-11-23T14:30:00Z",
+      "ticker": "PLTR",
+      "name": "Palantir Technologies Inc.",
+      "sector": "Information Technology",
+      "as_of": "2026-11-24T14:30:00Z",
       "quote": {
-        "price": 106.36,
+        "price": 161.18,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/SBUX",
-        "as_of": "2026-11-23T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/PLTR",
+        "as_of": "2026-11-24T14:30:00Z"
+      },
+      "setup": {
+        "type": "trend_pullback_v1",
+        "readiness": "in_zone",
+        "distance_to_zone_pct": 0.0
+      },
+      "rule_hits": [
+        "weekly_uptrend",
+        "above_ma200",
+        "support_near"
+      ],
+      "risk_flags": [
+        "data_partial",
+        "earnings_date_unverified"
+      ],
+      "data_quality": {
+        "status": "partial",
+        "warnings_count": 9
+      },
+      "interest_status": "none_declared",
+      "levels": {
+        "entry_low": 157.3,
+        "entry_high": 161.18,
+        "stop": 145.51,
+        "target": 192.53,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-09-10",
+              "price": 164.55
+            },
+            "b": {
+              "date": "2026-10-12",
+              "price": 212.94
+            },
+            "c": {
+              "date": "2026-10-16",
+              "price": 184.45
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 232.84
+            },
+            {
+              "ratio": 1.272,
+              "price": 246.0
+            },
+            {
+              "ratio": 1.618,
+              "price": 262.75
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "as_of": "2026-11-24T14:30:00Z",
+      "quote": {
+        "price": 384.68,
+        "currency": "USD",
+        "source": "yahoo",
+        "source_url": "https://finance.yahoo.com/quote/TSLA",
+        "as_of": "2026-11-24T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -121,55 +191,55 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 105.43,
-        "entry_high": 106.36,
-        "stop": 101.48,
-        "target": 116.13,
+        "entry_low": 378.6,
+        "entry_high": 384.68,
+        "stop": 354.84,
+        "target": 444.35,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-08-04",
-              "price": 101.8
+              "date": "2026-09-30",
+              "price": 345.88
             },
             "b": {
-              "date": "2026-08-13",
-              "price": 110.51
+              "date": "2026-10-09",
+              "price": 388.56
             },
             "c": {
-              "date": "2026-08-20",
-              "price": 102.97
+              "date": "2026-10-16",
+              "price": 349.33
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 111.68
+              "price": 392.01
             },
             {
               "ratio": 1.272,
-              "price": 114.05
+              "price": 403.62
             },
             {
               "ratio": 1.618,
-              "price": 117.06
+              "price": 418.39
             }
           ]
         }
       }
     },
     {
-      "rank": 3,
-      "ticker": "LIN",
-      "name": "Linde plc",
-      "sector": "Materials",
-      "as_of": "2026-11-23T14:30:00Z",
+      "rank": 4,
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "sector": "Industrials",
+      "as_of": "2026-11-24T14:30:00Z",
       "quote": {
-        "price": 517.0,
+        "price": 195.33,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/LIN",
-        "as_of": "2026-11-23T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/RTX",
+        "as_of": "2026-11-24T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -191,25 +261,55 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 513.83,
-        "entry_high": 517.0,
-        "stop": 501.8,
-        "target": 547.4,
-        "horizon_sessions": 30
+        "entry_low": 193.73,
+        "entry_high": 195.33,
+        "stop": 187.21,
+        "target": 211.57,
+        "horizon_sessions": 30,
+        "fib": {
+          "anchors": {
+            "a": {
+              "date": "2026-10-08",
+              "price": 179.02
+            },
+            "b": {
+              "date": "2026-11-03",
+              "price": 205.62
+            },
+            "c": {
+              "date": "2026-11-06",
+              "price": 187.71
+            }
+          },
+          "extensions": [
+            {
+              "ratio": 1.0,
+              "price": 214.31
+            },
+            {
+              "ratio": 1.272,
+              "price": 221.55
+            },
+            {
+              "ratio": 1.618,
+              "price": 230.75
+            }
+          ]
+        }
       }
     },
     {
-      "rank": 4,
-      "ticker": "CVX",
-      "name": "Chevron Corporation",
-      "sector": "Energy",
-      "as_of": "2026-11-23T14:30:00Z",
+      "rank": 5,
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Health Care",
+      "as_of": "2026-11-24T14:30:00Z",
       "quote": {
-        "price": 206.17,
+        "price": 276.46,
         "currency": "USD",
         "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/CVX",
-        "as_of": "2026-11-23T14:30:00Z"
+        "source_url": "https://finance.yahoo.com/quote/JNJ",
+        "as_of": "2026-11-24T14:30:00Z"
       },
       "setup": {
         "type": "trend_pullback_v1",
@@ -231,108 +331,38 @@
       },
       "interest_status": "none_declared",
       "levels": {
-        "entry_low": 204.78,
-        "entry_high": 206.17,
-        "stop": 198.64,
-        "target": 221.23,
+        "entry_low": 273.9,
+        "entry_high": 276.46,
+        "stop": 265.47,
+        "target": 298.44,
         "horizon_sessions": 30,
         "fib": {
           "anchors": {
             "a": {
-              "date": "2026-10-05",
-              "price": 201.96
+              "date": "2026-08-04",
+              "price": 250.44
             },
             "b": {
-              "date": "2026-10-30",
-              "price": 236.48
+              "date": "2026-08-19",
+              "price": 276.47
             },
             "c": {
-              "date": "2026-11-10",
-              "price": 206.01
+              "date": "2026-08-27",
+              "price": 263.83
             }
           },
           "extensions": [
             {
               "ratio": 1.0,
-              "price": 240.53
+              "price": 289.86
             },
             {
               "ratio": 1.272,
-              "price": 249.92
+              "price": 296.94
             },
             {
               "ratio": 1.618,
-              "price": 261.86
-            }
-          ]
-        }
-      }
-    },
-    {
-      "rank": 5,
-      "ticker": "AMZN",
-      "name": "Amazon.com, Inc.",
-      "sector": "Consumer Discretionary",
-      "as_of": "2026-11-23T14:30:00Z",
-      "quote": {
-        "price": 255.39,
-        "currency": "USD",
-        "source": "yahoo",
-        "source_url": "https://finance.yahoo.com/quote/AMZN",
-        "as_of": "2026-11-23T14:30:00Z"
-      },
-      "setup": {
-        "type": "trend_pullback_v1",
-        "readiness": "near",
-        "distance_to_zone_pct": 0.0
-      },
-      "rule_hits": [
-        "weekly_uptrend",
-        "above_ma200",
-        "support_near"
-      ],
-      "risk_flags": [
-        "data_partial",
-        "earnings_date_unverified"
-      ],
-      "data_quality": {
-        "status": "partial",
-        "warnings_count": 7
-      },
-      "interest_status": "none_declared",
-      "levels": {
-        "entry_low": 252.6,
-        "entry_high": 255.39,
-        "stop": 239.63,
-        "target": 286.92,
-        "horizon_sessions": 30,
-        "fib": {
-          "anchors": {
-            "a": {
-              "date": "2026-09-16",
-              "price": 244.3
-            },
-            "b": {
-              "date": "2026-09-21",
-              "price": 259.49
-            },
-            "c": {
-              "date": "2026-09-28",
-              "price": 244.73
-            }
-          },
-          "extensions": [
-            {
-              "ratio": 1.0,
-              "price": 259.92
-            },
-            {
-              "ratio": 1.272,
-              "price": 264.05
-            },
-            {
-              "ratio": 1.618,
-              "price": 269.31
+              "price": 305.95
             }
           ]
         }
