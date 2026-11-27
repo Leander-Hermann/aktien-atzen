@@ -1,6 +1,738 @@
 {
- "updated": "2026-11-26T19:36:29.785728+00:00",
+ "updated": "2026-11-27T07:38:36.021480+00:00",
  "ticker": {
+  "BTC-USD": {
+   "name": "Bitcoin",
+   "auftritte": [
+    {
+     "date": "2026-11-27",
+     "video_id": "NCfMNE60nDI",
+     "url": "https://www.youtube.com/watch?v=NCfMNE60nDI&t=139s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin erholte sich von Kursen unter 60.000 Dollar auf 63.400 Dollar. Der Host führt die vorherigen Kapitalabflüsse auf die gesunkene Risikobereitschaft zurück und sieht die Unterstützung weiterhin…",
+     "einordnung": "Die Bewegung ist zunächst eine Rückkehr über eine psychologisch wichtige Marke, noch kein Beleg für einen stabilen neuen Aufwärtstrend. Dass Bitcoin stark auf die Risikoneigung reagiert, bleibt der z…",
+     "figures": "63.400 Dollar; zuvor unter 60.000 Dollar"
+    },
+    {
+     "date": "2026-11-26",
+     "video_id": "tOxytSTlmX0",
+     "url": "https://www.youtube.com/watch?v=tOxytSTlmX0&t=455s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bitcoin hat sich wieder über die Marke von 60.000 US-Dollar stabilisiert. Zuvor hatten Risikoabschläge und Kapitalabflüsse den Kurs belastet.",
+     "einordnung": "Die Rückkehr über 60.000 US-Dollar ist psychologisch positiv, ändert aber noch nichts am übergeordneten Risikocharakter des Kryptomarktes. In einem Umfeld extremer Börsenangst bleibt Bitcoin besonder…",
+     "figures": "Über 60.000 US-Dollar"
+    },
+    {
+     "date": "2026-11-26",
+     "video_id": "K9UDgUwObLo",
+     "url": "https://www.youtube.com/watch?v=K9UDgUwObLo&t=1777s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin kämpft um die Marke von 60.000 USD. Der Host sieht 55.000 USD als kritische Unterstützung; bei einem Bruch drohen seiner Einschätzung nach weitere Tiefs im Bereich von 28.000 bis 48.000 USD.",
+     "einordnung": "Bitcoin bleibt ein klarer Risikoindikator: Die Stabilisierung über 60.000 USD wäre psychologisch wichtig, ändert aber noch nichts an der fragilen Chartstruktur. Die breite mögliche Abwärtszone zeigt,…",
+     "figures": "60.000 USD; 55.000 USD; 58.000 USD; 66.000 USD; 28.000 bis 48.000 USD"
+    },
+    {
+     "date": "2026-11-25",
+     "video_id": "Krnrcwx6JnE",
+     "url": "https://www.youtube.com/watch?v=Krnrcwx6JnE&t=158s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bitcoin fiel unter die Marke von 60.000 Dollar, nachdem eine zwischenzeitliche Erholung nicht gehalten hatte. Der Host führt die Schwäche vor allem auf hohe Abflüsse aus Bitcoin-ETFs zurück.",
+     "einordnung": "Der Bruch der 60.000-Dollar-Marke verschlechtert zunächst das kurzfristige Chartbild, während die ETF-Abflüsse den institutionellen Nachfrageimpuls abschwächen. Solange der Markt unter dem Druck von…",
+     "figures": "Jahrestief 55.130 Dollar; aktuell 59.140 Dollar; wichtige Marke 60.000 Dollar; ETF-Abflüsse laut Host: Farside 3,331 Mio. Dollar, BlackRock 175 Mio. Dollar; November-Abflüsse 4,71 Mrd. Dollar, zuvor…"
+    },
+    {
+     "date": "2026-11-24",
+     "video_id": "i6hLFUQiit4",
+     "url": "https://www.youtube.com/watch?v=i6hLFUQiit4&t=2114s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Bitcoin steht ebenfalls unter Liquiditätsdruck, weil Verluste in Chip- und KI-Aktien weitere Verkäufe erzwingen können. Egmond hält eine Fortsetzung der Talfahrt für möglich.",
+     "einordnung": "Bitcoin verhält sich in solchen Phasen eher wie ein hochvolatiler Risiko-Asset als wie ein klassischer sicherer Hafen. Entscheidend sind deshalb Liquidität und Positionierung, nicht allein das langfr…"
+    },
+    {
+     "date": "2026-11-17",
+     "video_id": "CnEStLtZP4I",
+     "url": "https://www.youtube.com/watch?v=CnEStLtZP4I&t=2536s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Bitcoin verzeichnete laut Host einen Ausverkauf, weil Investoren Liquidität benötigen. Die Tendenz wird als abwärtsgerichtet eingeschätzt.",
+     "einordnung": "Bitcoin verhält sich in der beschriebenen Phase eher wie ein liquiditäts- und risikosensitiver Vermögenswert als wie ein sicherer Hafen. Der niedrige Fear-and-Greed-Wert spricht für ein Umfeld, in de…"
+    },
+    {
+     "date": "2026-11-13",
+     "video_id": "6CcX_0yMONM",
+     "url": "https://www.youtube.com/watch?v=6CcX_0yMONM&t=3959s",
+     "channel": "onvista",
+     "kategorie": "news",
+     "note": "Bitcoin fällt unter 70.000, was der Host auf Liquidierungen gehebelter Positionen zurückführt. Gegenüber dem Zwischenhoch von 85 ist damit die Risikobereitschaft im Kryptomarkt deutlich zurückgegange…",
+     "einordnung": "Die Schwäche von Bitcoin passt zum gleichzeitigen Druck auf Technologieaktien und signalisiert eine breitere Reduzierung spekulativer Risiken. Hebelbedingte Verkäufe können den Rückgang beschleunigen…",
+     "figures": "Bitcoin unter 70.000, Zwischenhoch bei 85"
+    },
+    {
+     "date": "2026-11-10",
+     "video_id": "KRqHmPKgyFQ",
+     "url": "https://www.youtube.com/watch?v=KRqHmPKgyFQ&t=2439s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Schlechte Nachrichten rund um Binance und ein schwacher Chart belasten Bitcoin. Der Host warnt vor einem weiteren Rückgang und sieht darin ein Risikosignal für den Gesamtmarkt.",
+     "einordnung": "Bitcoin reagiert besonders empfindlich auf Liquiditätsentzug und Risikoaversion. Die Verbindung zum Gesamtmarkt ist als Sentimentindikator plausibel, sollte aber nicht mit einer direkten Konjunkturpr…"
+    },
+    {
+     "date": "2026-11-06",
+     "video_id": "0koj6--8Ias",
+     "url": "https://www.youtube.com/watch?v=0koj6--8Ias&t=259s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Bitcoin verlor 4,5 bis 5 Prozent und geriet in eine deutliche Verkaufsbewegung. Auch andere mit Bitcoin verbundene Werte standen unter Druck.",
+     "einordnung": "Bitcoin verhält sich in dieser Episode wie ein ausgeprägter Risikoindikator und nicht wie ein stabilisierender Wertspeicher. Solange Tech-Aktien und spekulative Wachstumswerte verkauft werden, bleibt…",
+     "figures": "4,5% bis 5% Verlust"
+    },
+    {
+     "date": "2026-11-03",
+     "video_id": "vfCrg-3KLoY",
+     "url": "https://www.youtube.com/watch?v=vfCrg-3KLoY&t=2484s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Bitcoin steht unter Druck, unter anderem wegen des Binance-Cyberangriffs mit einem laut Host genannten Schaden von 6,3 bis 6,4 Mrd. USD. Egmond beurteilt die Lage skeptisch und erwartet kurzfristig e…",
+     "einordnung": "Bitcoin verhält sich in der beschriebenen Phase eher wie ein Liquiditäts- und Risikoasset als wie ein klassischer sicherer Hafen. Der Cyberangriff verschärft das Vertrauensproblem, erklärt aber nicht…",
+     "figures": "Binance-Schaden 6,3 bis 6,4 Mrd. USD"
+    },
+    {
+     "date": "2026-11-02",
+     "video_id": "H8m4Aj6VfLo",
+     "url": "https://www.youtube.com/watch?v=H8m4Aj6VfLo&t=3295s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Bitcoin testet laut Harry den Widerstand bei 80.822 US-Dollar. Nach dem Binance-Hack kam es zu einer Erholung; das Signal wird ebenso wie bei Ethereum als bullisch bezeichnet.",
+     "einordnung": "Der Widerstand bei 80.822 US-Dollar ist der entscheidende technische Prüfpunkt. Nach einem Hack-bedingten Rückschlag bleibt die Erholung jedoch anfällig für erneute Sentimentwechsel.",
+     "figures": "80.822 USD"
+    },
+    {
+     "date": "2026-11-02",
+     "video_id": "H8m4Aj6VfLo",
+     "url": "https://www.youtube.com/watch?v=H8m4Aj6VfLo&t=3495s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Carsten ist mittelfristig positiv für Bitcoin und erwartet eine Bewegung in Richtung 100.000 US-Dollar. Er sieht außerhalb Europas eine breite Akzeptanz.",
+     "einordnung": "Die Akzeptanzthese liefert den strukturellen Überbau zur kurzfristigen Charttechnik. Sie beseitigt jedoch nicht die hohe Schwankungsanfälligkeit des Marktes.",
+     "figures": "100.000 USD"
+    }
+   ]
+  },
+  "^GDAXI": {
+   "name": "DAX",
+   "auftritte": [
+    {
+     "date": "2026-11-27",
+     "video_id": "NCfMNE60nDI",
+     "url": "https://www.youtube.com/watch?v=NCfMNE60nDI&t=176s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX legte am Vortag um mehr als 2 Prozent zu und dürfte laut Host zunächst eine positive Anschlussbewegung zeigen.",
+     "einordnung": "Die Anschlusschance ist angesichts der starken Asien-Vorgaben plausibel, doch der Feiertag in den USA macht die Aussagekraft des ersten Anstiegs etwas geringer. Erst ein stabiler Handel bei voller US…",
+     "figures": "über 2 % am Vortag; aktuell laut Marktdaten: 25.216 Punkte, +2,08 %"
+    },
+    {
+     "date": "2026-11-26",
+     "video_id": "tOxytSTlmX0",
+     "url": "https://www.youtube.com/watch?v=tOxytSTlmX0&t=484s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX unterschritt seine 200-Tage-Linie bei 25.000 Punkten und geriet dadurch charttechnisch unter Druck. Für den Handelstag wird dennoch eine freundlichere Tendenz erwartet, vor allem wegen der er…",
+     "einordnung": "Der Schluss unter der 200-Tage-Linie verschlechtert das kurzfristige Chartbild, auch wenn ein einzelner Handelstag noch keine Trendentscheidung ist. Die Hoffnung auf eine Gegenbewegung ist angesichts…",
+     "figures": "Schluss bei 24.702 Punkten, minus 1,26 Prozent; zwischenzeitliches Hoch über 25.100 Punkte; 200-Tage-Linie bei 25.000 Punkten"
+    },
+    {
+     "date": "2026-11-26",
+     "video_id": "K9UDgUwObLo",
+     "url": "https://www.youtube.com/watch?v=K9UDgUwObLo&t=0s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX erholt sich nach einem Rücksetzer, während der Nasdaq laut Host eine Korrektur von 20 % zeigt. Der Fear-and-Greed-Index bei 15 und der Morgan Stanley Sentiment Index signalisieren extreme Ang…",
+     "einordnung": "Die Marktdaten bestätigen die Erholung im DAX, aber der Fear-and-Greed-Wert von 15 zeigt, dass die Risikobereitschaft noch nicht zurückgekehrt ist. Extreme Angst kann historisch ein guter Kontraindik…",
+     "figures": "DAX laut Host +1,8 % und bei 25.000 Punkten; aktuell laut Marktdaten 25.216 Punkte und +2,08 %; Nasdaq 20 % Korrektur; VIX 36; Fear and Greed 15; Capex 1,5 Billionen USD; BIP 4,3 %"
+    },
+    {
+     "date": "2026-11-24",
+     "video_id": "W11kFdFSLpA",
+     "url": "https://www.youtube.com/watch?v=W11kFdFSLpA&t=863s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX unterbrach seine Verlustserie und schloss rund 2 Prozent höher oberhalb der 200-Tage-Linie und der psychologisch wichtigen Marke von 25.000 Punkten. In der Vorwoche hatte der Index noch 7,3 P…",
+     "einordnung": "Charttechnisch war der Sprung über 25.000 Punkte ein wichtiges kurzfristiges Entspannungssignal, doch der aktuelle Datenstand liegt wieder darunter. Nach einem Wochenverlust von 7,3 Prozent bleibt da…",
+     "figures": "Video: +2% auf 25.364 Punkte; Videobeschreibung: +2,15% auf 25.337 Punkte; Freitagsschluss 24.800 Punkte; Vorwochenverlust -7,3%; aktuell laut Marktdaten 25.018 Punkte und -1,26%"
+    },
+    {
+     "date": "2026-11-24",
+     "video_id": "i6hLFUQiit4",
+     "url": "https://www.youtube.com/watch?v=i6hLFUQiit4&t=1979s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX verlor innerhalb von sechs Handelstagen mehr als 2.000 Punkte und lag laut Host bei 25.330 Punkten. Mit einem Jahresplus von nur 2,1 Prozent sei der Index faktisch wieder am Jahresanfang ange…",
+     "einordnung": "Die Abweichung zwischen Host-Niveau und aktuellen Marktdaten zeigt die hohe Intraday-Volatilität. Bei 25.018 Punkten und 1,26 Prozent Minus bleibt der DAX laut Marktdaten klar unter Druck.",
+     "figures": "Host: 25.330 Punkte; aktuell laut Marktdaten: 25.018 Punkte; mehr als 2.000 Punkte Verlust in sechs Handelstagen; plus 2,1 Prozent seit Jahresbeginn"
+    },
+    {
+     "date": "2026-11-23",
+     "video_id": "JxUsy_ZmS14",
+     "url": "https://www.youtube.com/watch?v=JxUsy_ZmS14&t=1398s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX wurde durch die Tech-Korrektur belastet, weist laut Host aber weiterhin eine intakte Aufwärtstrendstruktur auf. Die zentrale Unterstützung liegt bei 24.860 Punkten, das technische Ziel bei 28…",
+     "einordnung": "Der DAX zeigt im Vergleich zur US-Technologiebörse ein robusteres, aber ebenfalls angeschlagenes Bild. Die enge Nähe von EMA 50 und Unterstützung macht die genannte Zone zur kurzfristigen Entscheidun…",
+     "figures": "EMA 50 bei 24.900 Punkten; Unterstützung bei 24.860 Punkten; Ziel bei 28.800 Punkten; möglicher Rückfall bis 23.000 Punkte."
+    },
+    {
+     "date": "2026-11-19",
+     "video_id": "5wS5zsYClPo",
+     "url": "https://www.youtube.com/watch?v=5wS5zsYClPo&t=813s",
+     "channel": "BerneckerTV",
+     "kategorie": "chartanalyse",
+     "note": "Für die Indizes sieht der Host noch eine Restkorrektur von etwa 5 Prozent. Beim DAX nennt er als Größenordnung einen Rückgang von 26.000 auf 25.500 Punkte; Nvidia könne zusätzlich 5 bis 10 Prozent ve…",
+     "einordnung": "Der aktuell gemeldete DAX-Stand von 25.464 Punkten liegt bereits nahe an der vom Host genannten Marke von 25.500 Punkten. Das macht die Größenordnung nachvollziehbar, beseitigt aber nicht das Risiko…",
+     "figures": "Etwa 5 Prozent Restrisiko, 26.000 auf 25.500 DAX-Punkte, 5 bis 10 Prozent bei Nvidia"
+    },
+    {
+     "date": "2026-11-17",
+     "video_id": "CnEStLtZP4I",
+     "url": "https://www.youtube.com/watch?v=CnEStLtZP4I&t=817s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX stieg zwischenzeitlich auf Rekordhochs, was der Host vor allem mit Umschichtungen aus Chip- und KI-Aktien erklärt. Langfristig hält er ein durchschnittliches Wachstum von 8,85 Prozent pro Jah…",
+     "einordnung": "Der DAX zeigt relative Stärke, doch die aktuelle Bewegung wirkt teilweise wie eine Kapitalrotation und nicht wie ein eindeutiger Konjunkturaufschwung. Bei 26.045 Punkten und einem Tagesminus von 2,08…",
+     "figures": "8,85 Prozent jährliches Wachstum; laut Host rund 26.100 Punkte, zwischenzeitlich 26.800 bis 26.900 Punkte; Prognosen 27.300 Punkte für 2026, 38.000 beziehungsweise 40.000 Punkte für 2030 und 58.000 P…"
+    },
+    {
+     "date": "2026-11-16",
+     "video_id": "LjUia13snt0",
+     "url": "https://www.youtube.com/watch?v=LjUia13snt0&t=111s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX zeigt trotz Handelskrieg und Energiekrise technische Stärke. Der Host sieht ein Kursziel von 28.800 Punkten, erwartet auf dem Weg dorthin aber einen steinigen Anstieg mit zwischenzeitlichen K…",
+     "einordnung": "Die relative Stärke des DAX fällt im Vergleich zum schwächeren Technologiekomplex auf. Das Setup bleibt konstruktiv, ist nach dem starken Lauf aber eher von Rücksetzern als von einem geradlinigen Ans…",
+     "figures": "Kursziel: 28.800 Punkte; aktueller DAX laut Marktdaten: 26.599 Punkte (-0,57 %)"
+    },
+    {
+     "date": "2026-11-13",
+     "video_id": "TAyK_gCkRXw",
+     "url": "https://www.youtube.com/watch?v=TAyK_gCkRXw&t=366s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX stieg erstmals im Tagesverlauf über 27.000 Punkte, gab anschließend aber etwas nach. Der Host bewertet den Anstieg von 25.000 auf 27.000 Punkte in kurzer Zeit als besonders dynamische Rally.",
+     "einordnung": "Der Sprung über 27.000 Punkte ist ein starkes Momentum-Signal, aber kein Freibrief für die nächste Etappe. Nach einer derart schnellen Bewegung steigt erfahrungsgemäß die Anfälligkeit für Gewinnmitna…",
+     "figures": "Rekordmarke 27.000 Punkte, Anstieg von 25.000 Punkten, aktuell laut Marktdaten 26.772 Punkte"
+    },
+    {
+     "date": "2026-11-10",
+     "video_id": "KRqHmPKgyFQ",
+     "url": "https://www.youtube.com/watch?v=KRqHmPKgyFQ&t=296s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der DAX stieg nach dem Wahlsieg zunächst um rund 700 Punkte auf etwa 26.600 Punkte, bevor er innerhalb von zwei Tagen rund 1.000 Punkte einbüßte.",
+     "einordnung": "Die extreme Schwankungsbreite spricht eher für einen überdehnten Markt als für einen stabilen neuen Aufwärtstrend. Der aktuelle Stand liegt zwar wieder nahe am genannten Hoch, doch die politische und…",
+     "figures": "Anstieg um 700 Punkte, anschließend Einbruch um 1.000 Punkte; kurzfristiges Hoch bei 26.600 Punkten; aktuell laut Marktdaten 26.347 Punkte"
+    },
+    {
+     "date": "2026-11-09",
+     "video_id": "mrV7Oatlozw",
+     "url": "https://www.youtube.com/watch?v=mrV7Oatlozw&t=425s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Der DAX hatte zuvor ein neues Rekordhoch erreicht und fiel anschließend kräftig zurück. Zum Sendungszeitpunkt wurde eine leichte Erholung erwartet.",
+     "einordnung": "Der Rückfall nach dem Rekordhoch ist ein klassischer Hinweis auf nachlassende Risikobereitschaft, aber noch kein Beweis für einen neuen Bärenmarkt. Die deutlich schwächere aktuelle Datenlage mahnt je…",
+     "figures": "DAX aktuell laut Marktdaten 25.820 Punkte, minus 1,92%"
+    }
+   ]
+  },
+  "RHM.DE": {
+   "name": "Rheinmetall",
+   "auftritte": [
+    {
+     "date": "2026-11-27",
+     "video_id": "NCfMNE60nDI",
+     "url": "https://www.youtube.com/watch?v=NCfMNE60nDI&t=199s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall lag vorbörslich rund 2 bis 2,5 Prozent im Plus. Der Host erwartet für den Rüstungssektor weiterhin gute Geschäfte und empfiehlt, einen Einstieg zu wagen.",
+     "einordnung": "Die strukturelle Nachfrage im europäischen Verteidigungssektor spricht für Rheinmetall, zugleich ist die Aktie stark von Erwartungen und politischer Nachrichtenlage abhängig. Nach kräftigen Bewegunge…",
+     "figures": "vorbörslich etwa +2 bis +2,5 %"
+    },
+    {
+     "date": "2026-11-26",
+     "video_id": "tOxytSTlmX0",
+     "url": "https://www.youtube.com/watch?v=tOxytSTlmX0&t=519s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall zeigt vor dem anstehenden Kapitalmarkttag nach der jüngsten Schwäche eine leichte Erholung. Einzelne Analysten sprechen weiterhin Kaufempfehlungen aus.",
+     "einordnung": "Vor einem Kapitalmarkttag werden Erwartungen häufig vorweggenommen, wodurch die Aktie besonders anfällig für Enttäuschungen oder Gewinnmitnahmen ist. Die strukturelle Rüstungsnachfrage bleibt ein Plu…"
+    },
+    {
+     "date": "2026-11-26",
+     "video_id": "K9UDgUwObLo",
+     "url": "https://www.youtube.com/watch?v=K9UDgUwObLo&t=1191s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Vor dem Kapitalmarkttag erwartet der Markt für 2030 Umsatzziele zwischen 35 und 43 Mrd. €. Der Host sieht das eingepreiste Umsatzniveau von 30 Mrd. € als relativ niedrig, ein reduziertes Abwärtsrisik…",
+     "einordnung": "Die These lebt von einer Fortsetzung des europäischen Verteidigungsbooms und einer besseren Visibilität der Aufträge. Bei einem KGV von 16 wirkt die Bewertung nicht exzessiv, doch der Markt wird vor…",
+     "figures": "Erwartete Umsatzziele 2030: 35 bis 43 Mrd. €; eingepreistes Umsatzniveau 30 Mrd. €; KGV 16; Umsatz 50 Mrd. €; Marge 20 %; Insiderkäufe 700.000 €; Analystenziele 1.350 €, 1.340 €, 1.100 €, 1.000 € und…"
+    },
+    {
+     "date": "2026-11-24",
+     "video_id": "i6hLFUQiit4",
+     "url": "https://www.youtube.com/watch?v=i6hLFUQiit4&t=2255s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "news",
+     "note": "Vor dem Kapitalmarkttag am Donnerstag weist Egmond darauf hin, dass Rheinmetall bereits 60 Prozent vom Hoch gefallen ist. Er warnt davor, trotz des starken Kursrückgangs zu bullisch zu werden.",
+     "einordnung": "Ein starker Kursverlust allein macht einen Rüstungswert nicht automatisch günstig. Vor dem Kapitalmarkttag ist die entscheidende Frage, ob neue Ziele und Auftragsaussichten die bereits hohen Erwartun…",
+     "figures": "60 Prozent unter dem Hoch"
+    },
+    {
+     "date": "2026-11-12",
+     "video_id": "xE_TatFj0Pg",
+     "url": "https://www.youtube.com/watch?v=xE_TatFj0Pg&t=1432s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Rheinmetall steht nach Gewinnwarnungen aus der Branche unter Druck; der Kurs fiel von 1.000 auf 800 Euro. Der Host hält die Bewertung mit einem KGV von unter 18 für günstig und sieht insbesondere nac…",
+     "einordnung": "Der Rückgang hat die Bewertung deutlich entlastet, beseitigt aber nicht die zyklischen und politischen Erwartungen, die zuvor im Kurs steckten. Entscheidend wird sein, ob der Kapitalmarkttag neue Wac…",
+     "figures": "Kursrückgang von 1.000 auf 800 Euro, KGV unter 18, rund 20 Prozent niedrigere Kursziele."
+    },
+    {
+     "date": "2026-11-10",
+     "video_id": "KRqHmPKgyFQ",
+     "url": "https://www.youtube.com/watch?v=KRqHmPKgyFQ&t=575s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Rheinmetall gab nach einer Gewinnwarnung wegen verschobener Projekte 16,5 Prozent nach. Der Host rät zum Verkauf.",
+     "einordnung": "Die Reaktion zeigt, wie hoch die Erwartungen im Rüstungssektor bereits waren. Projektverschiebungen treffen bei einem Auftragsgeschäft nicht nur den aktuellen Umsatz, sondern können auch die Glaubwür…",
+     "figures": "Umsatz 13,2 Mrd. Euro, operative Marge 18,5 Prozent, Aktie minus 16,5 Prozent"
+    },
+    {
+     "date": "2026-11-09",
+     "video_id": "uup5fsAz-3o",
+     "url": "https://www.youtube.com/watch?v=uup5fsAz-3o&t=1101s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Die Unterstützung bei 934 Euro wurde gebrochen; als nächste wichtige Barriere gilt 1.096 Euro. Ein belastbarer Boden ist aus Sicht des Hosts noch nicht erkennbar.",
+     "einordnung": "Der Bruch der Unterstützung ist charttechnisch ein Warnsignal und wiegt schwerer als die langfristig starke Rüstungsstory. Für eine nachhaltige Stabilisierung müsste die Aktie zunächst verlorenes Ter…",
+     "figures": "Unterstützung bei 934 Euro gebrochen, Widerstand bei 1.096 Euro"
+    },
+    {
+     "date": "2026-11-09",
+     "video_id": "pB401bANsOk",
+     "url": "https://www.youtube.com/watch?v=pB401bANsOk&t=870s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Die Aktie ist unter 800 Euro gefallen, während CEO Armin Papperger erneut Aktien gekauft hat. Analysten senken zwar teilweise ihre Kursziele, das niedrigste genannte Kursziel liegt jedoch weiterhin b…",
+     "einordnung": "Der Insiderkauf stützt das Vertrauen, beseitigt aber nicht das Risiko sinkender Margenerwartungen. Nach der starken Aufwärtsbewegung ist die Aktie zudem anfällig für Gewinnmitnahmen und eine Neubewer…",
+     "figures": "CEO-Kauf von 249 Aktien zu 844,00 Euro am 6. November; KGV 18; erwartete operative Marge 18,5% nach zuvor 19%; niedrigstes Kursziel 1.000 Euro"
+    },
+    {
+     "date": "2026-11-06",
+     "video_id": "0koj6--8Ias",
+     "url": "https://www.youtube.com/watch?v=0koj6--8Ias&t=460s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Belastende Zahlen und ein enttäuschender Ausblick drückten auf die Aktie. Das Boxer-Geschäft und Artilleriemunition werden erst später stärker beitragen, während die Margenentwicklung negativ bewerte…",
+     "einordnung": "Die langfristige Rüstungsstory wird kurzfristig von Ausführung, Lieferprofil und Margen überlagert. Nach einer starken Vorgeschichte reicht ein positiver Auftragseingang allein nicht, wenn Gewinnschä…"
+    },
+    {
+     "date": "2026-11-06",
+     "video_id": "tqZanIS3ebQ",
+     "url": "https://www.youtube.com/watch?v=tqZanIS3ebQ&t=1314s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Bei Rheinmetall wurden die Kursziele im Durchschnitt um 22 Prozent gesenkt. Der Host sieht trotz dieser Revisionen bei etwa 800 Euro ein attraktives Chance-Risiko-Verhältnis.",
+     "einordnung": "Die gesenkten Kursziele zeigen, dass selbst strukturelles Rüstungswachstum nicht vor Gewinnmitnahmen und Erwartungsanpassungen schützt. Ein KGV unter 19 wirkt im Verhältnis zum langfristigen Thema mo…",
+     "figures": "Kursziele unter anderem: Metzler 2.180 auf 1.750 Euro, Kepler 1.900 auf 1.450 Euro; KGV unter 19; aktueller Kurs laut Host 810 Euro."
+    },
+    {
+     "date": "2026-11-05",
+     "video_id": "yH0v968w-EM",
+     "url": "https://www.youtube.com/watch?v=yH0v968w-EM&t=499s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Rheinmetall senkt die Umsatzprognose auf rund 13,2 Milliarden Euro und nimmt auch die erwartete operative Marge zurück. Verzögerungen beim Boxer-Projekt und bei Artilleriemunition belasten den Ausbli…",
+     "einordnung": "Die langfristige Aufrüstungsstory bleibt intakt, kurzfristig zählt jedoch die Ausführung: Verzögerte Programme treffen Umsatz, Marge und Vertrauen gleichzeitig. Nach der starken Branchenperformance i…",
+     "figures": "rund 13,2 Mrd. Euro Umsatz, vorbörslich minus 5–7%"
+    },
+    {
+     "date": "2026-11-05",
+     "video_id": "yFf6CPPlyGY",
+     "url": "https://www.youtube.com/watch?v=yFf6CPPlyGY&t=1947s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Rheinmetall liefert starke operative Zahlen, verfehlt beim Umsatz jedoch die Erwartungen und senkt wegen Verzögerungen beim Boxer-Projekt und bei Artilleriemunition die Prognose. Der Host sieht die B…",
+     "einordnung": "Hier prallen operative Stärke und fehlende kurzfristige Visibilität aufeinander. Ein PEG von 0,5 kann attraktiv wirken, doch die Prognosesenkung und das Book-to-Bill unter 1 erklären, warum der Markt…",
+     "figures": "Umsatz +32 Prozent auf 3,15 Mrd. Euro gegenüber erwarteten 3,23 Mrd. Euro, operatives Ergebnis +66 Prozent auf über 550 Mio. Euro, operative Marge 17,5 Prozent gegenüber 14,8 Prozent im Vorjahr, Auft…"
+    }
+   ]
+  },
+  "SAP": {
+   "name": "SAP",
+   "auftritte": [
+    {
+     "date": "2026-11-27",
+     "video_id": "NCfMNE60nDI",
+     "url": "https://www.youtube.com/watch?v=NCfMNE60nDI&t=248s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SAP lag am Morgen rund 2 Prozent im Plus. Trotz der Nachricht, dass 10.000 Stellen auf der Kippe stehen, bewertet der Host den Softwarekonzern als stabil in turbulenten Zeiten.",
+     "einordnung": "Die relative Stabilität passt zum Charakter eines großen, wiederkehrende Erlöse erzielenden Softwarekonzerns. Der Stellenabbau kann die operative Effizienz verbessern, bleibt kurzfristig aber ein Bel…",
+     "figures": "+2 %; 10.000 Stellen"
+    },
+    {
+     "date": "2026-10-12",
+     "video_id": "6Pq-q_x9_pM",
+     "url": "https://www.youtube.com/watch?v=6Pq-q_x9_pM&t=1772s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "SAP zeigt relative Stärke und einen prozyklischen Ausbruch, der laut Host eine Jahresendrally einleiten könnte. Die Aktie ist für ihn einen näheren Blick wert.",
+     "einordnung": "SAP gehört damit zu den konstruktivsten Einzelwerten der Sendung. Relative Stärke ist in einem von Rendite- und Konjunktursorgen geprägten Umfeld ein Qualitätsmerkmal, wobei der Ausbruch bestätigt we…",
+     "figures": "222"
+    }
+   ]
+  },
+  "IFX.DE": {
+   "name": "Infineon",
+   "auftritte": [
+    {
+     "date": "2026-11-27",
+     "video_id": "NCfMNE60nDI",
+     "url": "https://www.youtube.com/watch?v=NCfMNE60nDI&t=297s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon lag vorbörslich rund 3,5 Prozent im Plus. Der Host ordnet die Bewegung als Erholung des KI-Trades ein.",
+     "einordnung": "Der Kursimpuls zeigt, wie schnell Halbleiterwerte bei einer besseren Technologiestimmung drehen können. Eine Tageserholung ersetzt jedoch noch keine nachhaltige Nachfragebelebung über die zyklischen…",
+     "figures": "vorbörslich +3,5 %"
+    },
+    {
+     "date": "2026-11-26",
+     "video_id": "tOxytSTlmX0",
+     "url": "https://www.youtube.com/watch?v=tOxytSTlmX0&t=533s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon lag zeitweise 7 Prozent im Plus. Auch die asiatischen Wettbewerber SK Hynix und Samsung waren zunächst stark, gaben ihre Gewinne im weiteren Verlauf aber wieder ab.",
+     "einordnung": "Der Sprung zeigt die hohe Hebelwirkung von Halbleiterwerten auf eine technische Erholung im Sektor. Dass die asiatische Konkurrenz später wieder abverkauft wurde, mahnt allerdings zur Vorsicht gegenü…",
+     "figures": "Infineon zeitweise plus 7 Prozent"
+    },
+    {
+     "date": "2026-11-24",
+     "video_id": "W11kFdFSLpA",
+     "url": "https://www.youtube.com/watch?v=W11kFdFSLpA&t=963s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Infineon stieg im Sog der KI-Rally um 6,6 Prozent. Das Analystenhaus Rothschild sprach eine Kaufempfehlung mit einem Kursziel von 65 Euro aus; zusätzlich stützt ein Aktienrückkauf. Seit Juni war die…",
+     "einordnung": "Die Erholung ist angesichts des vorherigen Einbruchs kräftig, aber der Kursverfall zeigt zugleich, wie zyklisch der Halbleiterwert wahrgenommen wird. Das Rückkaufprogramm kann den Kurs stabilisieren,…",
+     "figures": "+6,6%, Kursziel 65 Euro, etwa 89 Euro auf 44 Euro, rund -45%"
+    },
+    {
+     "date": "2026-11-24",
+     "video_id": "i6hLFUQiit4",
+     "url": "https://www.youtube.com/watch?v=i6hLFUQiit4&t=348s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Infineon fiel auf 46 Euro. Egmond erwartet, dass die Aktie zum Jahresende unter dem Niveau von Ende 2025 schließt; Erholungen seien daher Verkaufsgelegenheiten.",
+     "einordnung": "Infineon ist als zyklischer Halbleiterwert besonders anfällig für eine Kombination aus Konjunkturschwäche, Lagerkorrekturen und sinkender Risikobereitschaft. Der Kurs zeigt damit eher die Branchen- a…",
+     "figures": "Aktuell 46 Euro, 37,60 Euro zum Jahresende 2025, laut Host noch 15 Prozent bis zum Jahresanfangsniveau"
+    },
+    {
+     "date": "2026-11-17",
+     "video_id": "CnEStLtZP4I",
+     "url": "https://www.youtube.com/watch?v=CnEStLtZP4I&t=366s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon war gemeinsam mit Siemens Energy einer der größten Gewinner im DAX. Der Host hält die Kursgewinne jedoch für nicht nachhaltig und erwartet, dass bis zum Jahresende ein großer Teil davon wied…",
+     "einordnung": "Die Einschätzung passt zu einem zyklischen Halbleiterwert, dessen Kurs stark von Gewinnrevisionen und nicht nur von der aktuellen Unternehmenslage abhängt. Nach einer kräftigen Erholung steigt das Rü…",
+     "figures": "28,3 Prozent Performance seit Jahresanfang, zwischenzeitlich 80 bis 85 EUR, zuletzt unter 50 EUR"
+    },
+    {
+     "date": "2026-11-11",
+     "video_id": "0G2ZbU-tcm8",
+     "url": "https://www.youtube.com/watch?v=0G2ZbU-tcm8&t=1094s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Infineon steigert den Umsatz um 12 % und verdoppelt das Geschäft mit KI-Rechenzentren auf 1,7 Mrd. €. Der Nettogewinn wächst um 50 %; der Host bleibt bullish, obwohl die Analystenziele weit auseinand…",
+     "einordnung": "Die breite Spanne der Kursziele zeigt, wie stark die Bewertung von den Annahmen zur KI-Dynamik abhängt. Operativ spricht das Gewinnwachstum für Rückenwind, doch die niedrigere HSBC-Einschätzung erinn…",
+     "figures": "Umsatz +12 % auf über 16 Mrd. €, KI-Umsatz 1,7 Mrd. €, Nettogewinn +50 % auf 1,5 Mrd. €, Prognose 2026/27: Umsatz 20 Mrd. €, Marge 25 %, Kursziele: HSBC 55 €, Berenberg 100 €, JP Morgan 96 €, Goldman…"
+    },
+    {
+     "date": "2026-11-10",
+     "video_id": "KRqHmPKgyFQ",
+     "url": "https://www.youtube.com/watch?v=KRqHmPKgyFQ&t=1267s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon meldete gute Zahlen, doch der Host stellt dem tatsächlichen EBIT das bereinigte EBIT gegenüber. Der Rechenzentrumsumsatz soll um 80 Prozent auf 4,0 Mrd. Euro steigen; zugleich wird der Auftr…",
+     "einordnung": "Die Wachstumsstory im Rechenzentrum ist attraktiv, aber die deutliche Differenz zwischen berichteten und bereinigten Kennzahlen verlangt einen kritischen Blick auf die Ergebnisqualität. Das Ausbleibe…",
+     "figures": "EBIT 2,214 Mrd. Euro, bereinigtes EBIT 3,22 Mrd. Euro, EBIT-Marge 13,5 Prozent, bereinigte Marge 19,7 Prozent, Rechenzentrumsumsatz plus 80 Prozent auf 4,0 Mrd. Euro"
+    },
+    {
+     "date": "2026-11-06",
+     "video_id": "0koj6--8Ias",
+     "url": "https://www.youtube.com/watch?v=0koj6--8Ias&t=502s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon erholte sich zeitweise um 4 Prozent, wurde anschließend jedoch wieder verkauft und lag noch 2 Prozent im Plus.",
+     "einordnung": "Die zunächst starke Erholung und das anschließende Abbröckeln zeigen, dass Käufer im schwachen Sektorumfeld noch nicht die Kontrolle übernommen haben. Infineon ist als diversifizierter Halbleiterwert…",
+     "figures": "zeitweise +4%, dann +2%"
+    },
+    {
+     "date": "2026-11-03",
+     "video_id": "gNArzC1uGgI",
+     "url": "https://www.youtube.com/watch?v=gNArzC1uGgI&t=678s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Infineon wird als KI- und Chipwert auf die Watchlist gesetzt. Die anstehenden AMD-Zahlen gelten als wichtiger Indikator für das Halbleitersegment.",
+     "einordnung": "Infineon ist als Zulieferer stärker vom gesamten Investitionszyklus abhängig als von einem einzelnen KI-Hype. Die AMD-Zahlen können deshalb vor allem über die Stimmung und die Erwartungen im Chipsekt…"
+    },
+    {
+     "date": "2026-11-03",
+     "video_id": "vfCrg-3KLoY",
+     "url": "https://www.youtube.com/watch?v=vfCrg-3KLoY&t=409s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "chartanalyse",
+     "note": "Infineon gehörte nach den SK-Hynix-Zahlen zunächst zu den größten Gewinnern im DAX. Egmond ordnet die Bewegung als technische Erholung ein; später zählte die Aktie zu den größeren DAX-Verlierern.",
+     "einordnung": "Infineon ist stärker von Industrie- und Automobilzyklen geprägt als reine Speicherwerte, bleibt aber über das Halbleitersentiment vom gleichen Risikoappetit abhängig. Die zwischenzeitliche Erholung w…"
+    },
+    {
+     "date": "2026-10-27",
+     "video_id": "xtu2UzowK7c",
+     "url": "https://www.youtube.com/watch?v=xtu2UzowK7c&t=418s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "makro",
+     "note": "Der Host führt den Kursanstieg bei Infineon auf die hohen Investitionen von SpaceX und die dadurch ausgelösten Hoffnungen für Chip- und KI-Werte zurück.",
+     "einordnung": "Das ist vor allem ein Sentiment- und Zuliefererimpuls, keine eigenständige Neubewertung der Infineon-Fundamentaldaten. Solche Bewegungen können in einem nervösen Halbleitersektor schnell wieder korri…"
+    },
+    {
+     "date": "2026-10-20",
+     "video_id": "qV0UIKOOY7c",
+     "url": "https://www.youtube.com/watch?v=qV0UIKOOY7c&t=521s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Infineon gehört laut Host zu den größten Verlierern im DAX. Die Sorge vor einer geplatzten KI-Blase hält die Aktie unter Druck.",
+     "einordnung": "Infineon ist nicht identisch mit den großen KI-Rechenzentrumswerten, wird aber vom allgemeinen Halbleitersentiment mitgezogen. Das macht die Aktie anfällig für pauschale Sektorverkäufe, obwohl die Ge…"
+    }
+   ]
+  },
+  "ADS.DE": {
+   "name": "Adidas",
+   "auftritte": [
+    {
+     "date": "2026-11-27",
+     "video_id": "NCfMNE60nDI",
+     "url": "https://www.youtube.com/watch?v=NCfMNE60nDI&t=312s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Bei Adidas sind die Analysten uneins: Einige sehen ein niedrigeres Kursziel, während andere die Aktie als beste Anlageidee für 2027 bezeichnen. Der Host erwägt einen Einstieg, sobald die Marke von 18…",
+     "einordnung": "Die 180-Euro-Marke fungiert in der Host-Argumentation als technische Bestätigung und nicht als Fundamentalziel. Der Gegensatz der Analysten zeigt, dass die Erwartungen an die Erholung des Geschäfts b…",
+     "figures": "180 Euro"
+    },
+    {
+     "date": "2026-11-03",
+     "video_id": "gNArzC1uGgI",
+     "url": "https://www.youtube.com/watch?v=gNArzC1uGgI&t=757s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Adidas liefert solide Zahlen und berichtet von einem guten Geschäft in China und den USA. Die Nachfrage nach Laufschuhen ist gestiegen; vorbörslich lag die Aktie leicht im Minus, der Host sieht jedoc…",
+     "einordnung": "Die regionale Breite und die Nachfrage nach Laufschuhen sprechen für eine operative Stabilisierung. Dass die Aktie vorbörslich dennoch leicht schwächer notiert, zeigt, dass der Markt bei Konsumwerten…"
+    },
+    {
+     "date": "2026-10-29",
+     "video_id": "JnjRzc89CAM",
+     "url": "https://www.youtube.com/watch?v=JnjRzc89CAM&t=1534s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Adidas erzielt im dritten Quartal einen Rekordgewinn und hebt die Jahresprognose an. Der kräftige Ergebnisanstieg wird jedoch durch eine Zollrückerstattung begünstigt; ohne diesen Sondereffekt zeigt…",
+     "einordnung": "Adidas wirkt fundamental deutlich günstiger als viele hoch bewertete Wachstumswerte, doch der Sondereffekt relativiert den Rekordcharakter des Quartals. Die Qualität der Erholung muss sich an der Ent…",
+     "figures": "Umsatz plus 9 Prozent auf 7,25 Mrd. Euro; EBIT plus 37 Prozent auf über 1 Mrd. Euro; EBIT-Marge 13,9 Prozent nach 11,1 Prozent im Vorjahr; Nettogewinn plus 48 Prozent auf 711 Mio. Euro; Ergebnis je A…"
+    },
+    {
+     "date": "2026-10-21",
+     "video_id": "vHxakiF17JQ",
+     "url": "https://www.youtube.com/watch?v=vHxakiF17JQ&t=619s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas meldete ein Rekordquartal mit kräftigem Umsatz- und Gewinnwachstum und hob die Prognose an. Die Aktie wurde vorbörslich rund 3,5% höher erwartet.",
+     "einordnung": "Adidas liefert derzeit die überzeugendste Kombination aus Wachstum, Margenverbesserung und angehobener Prognose im heutigen Einzelwert-Tableau. Zu beachten ist allerdings, dass die Zollrückerstattung…",
+     "figures": "Umsatz +9% auf 7,25 Mrd. EUR, Bruttomarge +2,5 Prozentpunkte auf 54,3%, Betriebsgewinn +37% auf rund 1 Mrd. EUR einschließlich 200 Mio. USD Zollrückerstattungen, Prognose für das Betriebsergebnis 2,5…"
+    },
+    {
+     "date": "2026-10-12",
+     "video_id": "dygYRkXpB_g",
+     "url": "https://www.youtube.com/watch?v=dygYRkXpB_g&t=450s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "Adidas zeigt technisch eine kleine Erholungsbewegung in Richtung 200-Tagelinie. Der Host hält bei ausbleibenden größeren Impulsen von Nike einen Anstieg bis 160 Euro für möglich.",
+     "einordnung": "Das ist primär eine technische Erholungsperspektive und keine neue fundamentale Wachstumsstory. Ohne positive Branchensignale bleibt die 200-Tagelinie der Prüfstein dafür, ob aus dem Gegenimpuls mehr…",
+     "figures": "Mögliches Kursziel: 160 EUR"
+    },
+    {
+     "date": "2026-10-01",
+     "video_id": "yylBKlp7vIg",
+     "url": "https://www.youtube.com/watch?v=yylBKlp7vIg&t=536s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas büßte im dritten Quartal 19 Prozent ein und zählte damit zu den DAX-Flops.",
+     "einordnung": "Der Rückgang zeigt, dass Markenstärke allein in einem vorsichtigeren Konsumumfeld nicht genügt. Für eine bessere Kursentwicklung braucht es wieder steigende Absatzdynamik und verlässliche Margenforts…",
+     "figures": "Q3-Performance -19%"
+    },
+    {
+     "date": "2026-09-23",
+     "video_id": "_DMyTuJrFjQ",
+     "url": "https://www.youtube.com/watch?v=_DMyTuJrFjQ&t=292s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Adidas startet den zweitägigen Investorentag 'Home of Innovation' mit Fokus auf mittelfristige Strategie, Produkte und Wachstum. Für 2026 werden ein währungsbereinigtes Umsatzwachstum von 9 bis 10% u…",
+     "einordnung": "Der Investorentag kann einen neuen Bewertungsimpuls liefern, sofern Adidas nicht nur Produkte, sondern auch belastbare Margenperspektiven präsentiert. Nach dem jüngsten Kursanstieg bleibt die Aktie a…",
+     "figures": "Prognose 2026: währungsbereinigtes Umsatzwachstum 9 bis 10% und EBIT 2,3 Mrd. Euro; Aktie am Vortag +2,6%"
+    },
+    {
+     "date": "2026-08-17",
+     "video_id": "3DUJ3DYoTx8",
+     "url": "https://www.youtube.com/watch?v=3DUJ3DYoTx8&t=2159s",
+     "channel": "Rendezvous mit Harry",
+     "kategorie": "chartanalyse",
+     "note": "Der Bullkeil bei adidas wurde bei 172 bis 173 Euro ausgelöst, anschließend fiel die Aktie jedoch zurück. Ein neues Kaufsignal sieht der Host erst oberhalb von 190 Euro und bleibt vorsichtig.",
+     "einordnung": "Der Rückfall nach dem Keilausbruch ist ein klassischer Warnhinweis für fehlende Anschlusskäufe. Die 190-Euro-Marke markiert im Host-Szenario die Hürde, an der die Käufer ihre Stärke erneut beweisen m…",
+     "figures": "172 bis 173 Euro Ausbruch; 190 Euro neue Barriere"
+    },
+    {
+     "date": "2026-08-04",
+     "video_id": "F_2Zy0R6i1I",
+     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=629s",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "fundamental",
+     "note": "Adidas steigerte den Umsatz im zweiten Quartal um 13,3 Prozent auf 6,74 Mrd. Euro. Höhere Marketingausgaben belasteten jedoch das Ergebnis: Das EBIT wuchs nur um 5,1 Prozent auf 574 Mio. Euro und lag…",
+     "einordnung": "Der Umsatz wächst ordentlich, aber der deutlich höhere Marketingeinsatz wird nicht ausreichend in operatives Ergebnis übersetzt. Das ist für einen Konsumwert mit starkem Markenanspruch ein Warnsignal…",
+     "figures": "Umsatz 6,74 Mrd. Euro im zweiten Quartal, plus 13,3 Prozent; Marketingausgaben 924 Mio. Euro, plus 30 Prozent; EBIT 574 Mio. Euro, plus 5,1 Prozent; Erwartung 616 Mio. Euro; Marge 8,5 Prozent; Umsatz…"
+    },
+    {
+     "date": "2026-07-31",
+     "video_id": "SQ7RGehrHSw",
+     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=396s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas eröffnete vier bis fünf Prozent schwächer und erholte sich anschließend. Der Host verweist auf die Belastung durch Zölle, sieht die einmaligen Werbeausgaben rund um die Fußball-Weltmeisterscha…",
+     "einordnung": "Die Erholung spricht für Nachfrage auf dem niedrigeren Niveau, beseitigt aber weder Zollrisiken noch die Unsicherheit über die Kosten der WM-Kampagne. Bei Adidas sollte man daher stärker zwischen ein…",
+     "figures": "Eröffnung minus 4 % bis minus 5 %"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "RefnY01hhvw",
+     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=563s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Adidas steigerte den Umsatz im zweiten Quartal um 13 Prozent auf 6,7 Milliarden Euro und hob die Prognose für 2026 an. Das Ergebnis fiel wegen höherer Marketingausgaben und Zölle schwächer aus, die A…",
+     "einordnung": "Das ist ein typischer Fall, in dem der operative Umsatzimpuls durch die Kosten- und Margenseite überlagert wird. Die angehobene Prognose ist konstruktiv, doch der Markt verlangt Belege, dass Marketin…",
+     "figures": "Umsatz +13 % auf 6,7 Mrd. €, Prognose für 2026 angehoben"
+    },
+    {
+     "date": "2026-07-30",
+     "video_id": "IpdIeeA0GLM",
+     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=1076s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "Adidas profitiert von der starken Nachfrage rund um die Fußball-WM und steigert den Umsatz deutlich. Der Gewinn wächst jedoch wesentlich langsamer, weil Kosten und Zölle belasten; der unveränderte Au…",
+     "einordnung": "Adidas zeigt derzeit das klassische Bild eines Umsatzwachstums ohne ausreichenden operativen Hebel. Solange die Margen nicht sichtbar stärker anziehen, bleibt ein hohes Kursziel schwer zu rechtfertig…",
+     "figures": "Umsatz: plus 13 Prozent auf 6,7 Milliarden Euro; EBIT: plus 5 Prozent auf 574 Millionen Euro; Prognose: 2,3 Milliarden Euro; Analystenkonsens: 2,4 Milliarden Euro; Jefferies-Kursziel: 205 Euro."
+    }
+   ]
+  },
+  "S92.DE": {
+   "name": "SMA Solar",
+   "auftritte": [
+    {
+     "date": "2026-11-27",
+     "video_id": "NCfMNE60nDI",
+     "url": "https://www.youtube.com/watch?v=NCfMNE60nDI&t=365s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "chartanalyse",
+     "note": "SMA Solar zeigte ein solides Zahlenwerk, ist charttechnisch jedoch angeschlagen und hat die 200-Tage-Linie unterschritten. Unter dem jüngsten Tief würde laut Host ein Verkaufssignal entstehen; zuglei…",
+     "einordnung": "Hier klaffen Fundamentaldaten und Chartbild auseinander: Das Zahlenwerk stützt die Aktie, der Bruch der 200-Tage-Linie signalisiert dagegen nachlassendes Vertrauen. Für eine belastbare Trendwende müs…",
+     "figures": "200-Tage-Linie"
+    },
+    {
+     "date": "2026-08-24",
+     "video_id": "CxBQV7-eeMA",
+     "url": "https://www.youtube.com/watch?v=CxBQV7-eeMA&t=788s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "Das Umfeld für erneuerbare Energien bleibt grundsätzlich positiv, dennoch steht SMA Solar unter dem allgemeinen Marktdruck. Der Host empfiehlt, eine längerfristige Perspektive einzunehmen.",
+     "einordnung": "Ein positives Branchenumfeld reicht bei SMA Solar allein nicht aus, wenn Finanzierungskosten, Preisdruck oder schwache Nachfrage die kurzfristige Ertragslage belasten. Der Hinweis auf den langen Atem…"
+    },
+    {
+     "date": "2026-08-13",
+     "video_id": "mH0gLyCp4xk",
+     "url": "https://www.youtube.com/watch?v=mH0gLyCp4xk&t=525s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SMA Solar meldete endgültige Zahlen mit 345 Millionen Euro Umsatz und einem EBT von 491 Millionen Euro nach einem Verlust im Vorjahr. Der Ausblick wurde bestätigt; technisch notiert die Aktie oberhal…",
+     "einordnung": "Die bestätigte Prognose ist in einem volatilen Solarumfeld ein Stabilitätsanker, während die Lage oberhalb der 200-Tage-Linie konstruktiv bleibt. Die Zahlenangabe zum EBT wirkt im Verhältnis zum gena…",
+     "figures": "345 Millionen Euro Umsatz; EBT 491 Millionen Euro; Vorjahresverlust; 200-Tage-Linie"
+    },
+    {
+     "date": "2026-07-24",
+     "video_id": "CchW9uxHhuM",
+     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=561s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "SMA Solar wird als möglicher Profiteur steigender Ölpreise im Bereich erneuerbarer Energien eingeordnet. Konkrete Unternehmenszahlen wurden nicht genannt.",
+     "einordnung": "Der Zusammenhang mit dem Ölpreis ist eher mittelbar, weil Solarwechselrichter nicht direkt mit dem Ölmarkt konkurrieren. Der strukturelle Rückenwind für erneuerbare Energien ist plausibel, doch bei S…"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "ZtKFU4SJtbQ",
+     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=400s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "fundamental",
+     "note": "SMA Solar meldete gute Quartalszahlen und hob die Prognose an. Der Host verweist auf eine Umsatzprognose von 1,625 bis 1,725 Milliarden Euro sowie ein verbessertes operatives Ergebnis; die Aktie befi…",
+     "einordnung": "Eine angehobene Prognose ist in einem schwachen Markt ein klarer relativer Stärkeindikator. Nach einem bereits deutlichen Kursanstieg ist allerdings entscheidend, ob die operative Verbesserung weiter…",
+     "figures": "Umsatzprognose 1,625 bis 1,725 Milliarden Euro; seit dem Kauf plus 80 Prozent"
+    },
+    {
+     "date": "2026-07-17",
+     "video_id": "jbBenx99pmg",
+     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=1056s",
+     "channel": "onvista",
+     "kategorie": "fundamental",
+     "note": "SMA Solar meldete starke Quartalszahlen, die zusätzlich von Zollrückerstattungen profitierten. Der Jahresausblick wurde deutlich angehoben.",
+     "einordnung": "Die Prognoseanhebung ist substanziell, aber die Zollrückerstattungen relativieren die Qualität des Quartals. Charttechnisch entscheidet die 65-Euro-Marke darüber, ob der Erholungsversuch über die Ein…",
+     "figures": "Umsatz 345 Mio. Euro, EBITDA 65 Mio. Euro gegenüber 44 Mio. Euro Konsens, EBIT 52 Mio. Euro gegenüber -30 Mio. Euro im Vorjahr, EBITDA-Prognose 180 bis 230 Mio. Euro nach zuvor 50 bis 180 Mio. Euro,…"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "mNobFjJKrNE",
+     "url": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=616s",
+     "channel": "Der Aktionär - Märkte am Morgen",
+     "kategorie": "news",
+     "note": "Die Aktie stieg 11 Prozent nach der Ankündigung von US-Beschränkungen gegen chinesische Solarkonzerne. Westliche Solaraktien profitieren von dieser Entwicklung.",
+     "einordnung": "Das ist ein geopolitischer Katalysator, kein fundamentaler Turnaround. SMA Solar profitiert kurzfristig vom Schutzschild gegen chinesische Konkurrenz, aber der Solar-Sektor leidet strukturell unter Ü…",
+     "figures": "+11%"
+    },
+    {
+     "date": "2026-07-01",
+     "video_id": "kbhs3X-LW2E",
+     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1221s",
+     "channel": "onvista",
+     "kategorie": "chartanalyse",
+     "note": "Nach starkem Anstieg leichte Konsolidierung. Ein mögliches US-Importverbot für chinesische Wechselrichter könnte SMA als westlichen Anbieter begünstigen. Technisch bleibt die Aktie bullisch, solange…",
+     "einordnung": "Das KGV-Kollaps von 120 auf 28 spiegelt die explosive Gewinnexpansion wider — das ist kein Bewertungsproblem, sondern ein Wachstumsstory. Der geopolitische Hebel durch ein chinesisches Importverbot i…",
+     "figures": "KGV 28 (zuvor 120-140); erwartetes Gewinnwachstum 70% und 18%; Unterstützung bei 59 EUR"
+    },
+    {
+     "date": "2026-05-19",
+     "video_id": "qvNHgD6xSvU",
+     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
+     "channel": "Fundamentalanalyse mit Egmond",
+     "kategorie": "sonstiges",
+     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
+     "einordnung": "SMA Solar leidet unter dem Momentum-Wechsel – die Aktie ist hoch volatil und reagiert besonders sensibel auf Rotationseffekte."
+    }
+   ]
+  },
   "NVDA": {
    "name": "Nvidia",
    "auftritte": [
@@ -491,495 +1223,6 @@
      "note": "Apple erreichte ein neues Rekordhoch und überschritt laut Egmond eine Marktkapitalisierung von 5 Billionen US-Dollar. Egmond bleibt für die Aktie bullish.",
      "einordnung": "Die Stärke bestätigt die dominante Stellung des Titels im US-Technologiesektor. Je höher die Größe und die Erwartung, desto wichtiger wird allerdings, dass auch die künftigen Gewinnzuwächse mit der B…",
      "figures": "Börsenwert über 5 Billionen US-Dollar"
-    }
-   ]
-  },
-  "BTC-USD": {
-   "name": "Bitcoin",
-   "auftritte": [
-    {
-     "date": "2026-11-26",
-     "video_id": "tOxytSTlmX0",
-     "url": "https://www.youtube.com/watch?v=tOxytSTlmX0&t=455s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Bitcoin hat sich wieder über die Marke von 60.000 US-Dollar stabilisiert. Zuvor hatten Risikoabschläge und Kapitalabflüsse den Kurs belastet.",
-     "einordnung": "Die Rückkehr über 60.000 US-Dollar ist psychologisch positiv, ändert aber noch nichts am übergeordneten Risikocharakter des Kryptomarktes. In einem Umfeld extremer Börsenangst bleibt Bitcoin besonder…",
-     "figures": "Über 60.000 US-Dollar"
-    },
-    {
-     "date": "2026-11-26",
-     "video_id": "K9UDgUwObLo",
-     "url": "https://www.youtube.com/watch?v=K9UDgUwObLo&t=1777s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Bitcoin kämpft um die Marke von 60.000 USD. Der Host sieht 55.000 USD als kritische Unterstützung; bei einem Bruch drohen seiner Einschätzung nach weitere Tiefs im Bereich von 28.000 bis 48.000 USD.",
-     "einordnung": "Bitcoin bleibt ein klarer Risikoindikator: Die Stabilisierung über 60.000 USD wäre psychologisch wichtig, ändert aber noch nichts an der fragilen Chartstruktur. Die breite mögliche Abwärtszone zeigt,…",
-     "figures": "60.000 USD; 55.000 USD; 58.000 USD; 66.000 USD; 28.000 bis 48.000 USD"
-    },
-    {
-     "date": "2026-11-25",
-     "video_id": "Krnrcwx6JnE",
-     "url": "https://www.youtube.com/watch?v=Krnrcwx6JnE&t=158s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Bitcoin fiel unter die Marke von 60.000 Dollar, nachdem eine zwischenzeitliche Erholung nicht gehalten hatte. Der Host führt die Schwäche vor allem auf hohe Abflüsse aus Bitcoin-ETFs zurück.",
-     "einordnung": "Der Bruch der 60.000-Dollar-Marke verschlechtert zunächst das kurzfristige Chartbild, während die ETF-Abflüsse den institutionellen Nachfrageimpuls abschwächen. Solange der Markt unter dem Druck von…",
-     "figures": "Jahrestief 55.130 Dollar; aktuell 59.140 Dollar; wichtige Marke 60.000 Dollar; ETF-Abflüsse laut Host: Farside 3,331 Mio. Dollar, BlackRock 175 Mio. Dollar; November-Abflüsse 4,71 Mrd. Dollar, zuvor…"
-    },
-    {
-     "date": "2026-11-24",
-     "video_id": "i6hLFUQiit4",
-     "url": "https://www.youtube.com/watch?v=i6hLFUQiit4&t=2114s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Bitcoin steht ebenfalls unter Liquiditätsdruck, weil Verluste in Chip- und KI-Aktien weitere Verkäufe erzwingen können. Egmond hält eine Fortsetzung der Talfahrt für möglich.",
-     "einordnung": "Bitcoin verhält sich in solchen Phasen eher wie ein hochvolatiler Risiko-Asset als wie ein klassischer sicherer Hafen. Entscheidend sind deshalb Liquidität und Positionierung, nicht allein das langfr…"
-    },
-    {
-     "date": "2026-11-17",
-     "video_id": "CnEStLtZP4I",
-     "url": "https://www.youtube.com/watch?v=CnEStLtZP4I&t=2536s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Bitcoin verzeichnete laut Host einen Ausverkauf, weil Investoren Liquidität benötigen. Die Tendenz wird als abwärtsgerichtet eingeschätzt.",
-     "einordnung": "Bitcoin verhält sich in der beschriebenen Phase eher wie ein liquiditäts- und risikosensitiver Vermögenswert als wie ein sicherer Hafen. Der niedrige Fear-and-Greed-Wert spricht für ein Umfeld, in de…"
-    },
-    {
-     "date": "2026-11-13",
-     "video_id": "6CcX_0yMONM",
-     "url": "https://www.youtube.com/watch?v=6CcX_0yMONM&t=3959s",
-     "channel": "onvista",
-     "kategorie": "news",
-     "note": "Bitcoin fällt unter 70.000, was der Host auf Liquidierungen gehebelter Positionen zurückführt. Gegenüber dem Zwischenhoch von 85 ist damit die Risikobereitschaft im Kryptomarkt deutlich zurückgegange…",
-     "einordnung": "Die Schwäche von Bitcoin passt zum gleichzeitigen Druck auf Technologieaktien und signalisiert eine breitere Reduzierung spekulativer Risiken. Hebelbedingte Verkäufe können den Rückgang beschleunigen…",
-     "figures": "Bitcoin unter 70.000, Zwischenhoch bei 85"
-    },
-    {
-     "date": "2026-11-10",
-     "video_id": "KRqHmPKgyFQ",
-     "url": "https://www.youtube.com/watch?v=KRqHmPKgyFQ&t=2439s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Schlechte Nachrichten rund um Binance und ein schwacher Chart belasten Bitcoin. Der Host warnt vor einem weiteren Rückgang und sieht darin ein Risikosignal für den Gesamtmarkt.",
-     "einordnung": "Bitcoin reagiert besonders empfindlich auf Liquiditätsentzug und Risikoaversion. Die Verbindung zum Gesamtmarkt ist als Sentimentindikator plausibel, sollte aber nicht mit einer direkten Konjunkturpr…"
-    },
-    {
-     "date": "2026-11-06",
-     "video_id": "0koj6--8Ias",
-     "url": "https://www.youtube.com/watch?v=0koj6--8Ias&t=259s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Bitcoin verlor 4,5 bis 5 Prozent und geriet in eine deutliche Verkaufsbewegung. Auch andere mit Bitcoin verbundene Werte standen unter Druck.",
-     "einordnung": "Bitcoin verhält sich in dieser Episode wie ein ausgeprägter Risikoindikator und nicht wie ein stabilisierender Wertspeicher. Solange Tech-Aktien und spekulative Wachstumswerte verkauft werden, bleibt…",
-     "figures": "4,5% bis 5% Verlust"
-    },
-    {
-     "date": "2026-11-03",
-     "video_id": "vfCrg-3KLoY",
-     "url": "https://www.youtube.com/watch?v=vfCrg-3KLoY&t=2484s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Bitcoin steht unter Druck, unter anderem wegen des Binance-Cyberangriffs mit einem laut Host genannten Schaden von 6,3 bis 6,4 Mrd. USD. Egmond beurteilt die Lage skeptisch und erwartet kurzfristig e…",
-     "einordnung": "Bitcoin verhält sich in der beschriebenen Phase eher wie ein Liquiditäts- und Risikoasset als wie ein klassischer sicherer Hafen. Der Cyberangriff verschärft das Vertrauensproblem, erklärt aber nicht…",
-     "figures": "Binance-Schaden 6,3 bis 6,4 Mrd. USD"
-    },
-    {
-     "date": "2026-11-02",
-     "video_id": "H8m4Aj6VfLo",
-     "url": "https://www.youtube.com/watch?v=H8m4Aj6VfLo&t=3295s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Bitcoin testet laut Harry den Widerstand bei 80.822 US-Dollar. Nach dem Binance-Hack kam es zu einer Erholung; das Signal wird ebenso wie bei Ethereum als bullisch bezeichnet.",
-     "einordnung": "Der Widerstand bei 80.822 US-Dollar ist der entscheidende technische Prüfpunkt. Nach einem Hack-bedingten Rückschlag bleibt die Erholung jedoch anfällig für erneute Sentimentwechsel.",
-     "figures": "80.822 USD"
-    },
-    {
-     "date": "2026-11-02",
-     "video_id": "H8m4Aj6VfLo",
-     "url": "https://www.youtube.com/watch?v=H8m4Aj6VfLo&t=3495s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Carsten ist mittelfristig positiv für Bitcoin und erwartet eine Bewegung in Richtung 100.000 US-Dollar. Er sieht außerhalb Europas eine breite Akzeptanz.",
-     "einordnung": "Die Akzeptanzthese liefert den strukturellen Überbau zur kurzfristigen Charttechnik. Sie beseitigt jedoch nicht die hohe Schwankungsanfälligkeit des Marktes.",
-     "figures": "100.000 USD"
-    },
-    {
-     "date": "2026-10-30",
-     "video_id": "FTjFCW6DHHM",
-     "url": "https://www.youtube.com/watch?v=FTjFCW6DHHM&t=148s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Bitcoin fiel zeitweise unter 78.000 USD. Auslöser war ein Hack bei Binance mit Kryptoabflüssen von 6,3 Mrd. USD; der Sprecher bleibt grundsätzlich optimistisch und sieht Bitcoin als mögliche Beimisch…",
-     "einordnung": "Die Reaktion zeigt erneut, wie empfindlich Bitcoin auf Vertrauens- und Sicherheitsprobleme im Kryptosektor reagiert. Als Beimischung bleibt der Wert spekulativ und sollte nicht mit der Stabilität kla…",
-     "figures": "78.000 USD zeitweise unterschritten; 6,3 Mrd. USD Kryptoabflüsse bei Binance"
-    }
-   ]
-  },
-  "^GDAXI": {
-   "name": "DAX",
-   "auftritte": [
-    {
-     "date": "2026-11-26",
-     "video_id": "tOxytSTlmX0",
-     "url": "https://www.youtube.com/watch?v=tOxytSTlmX0&t=484s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX unterschritt seine 200-Tage-Linie bei 25.000 Punkten und geriet dadurch charttechnisch unter Druck. Für den Handelstag wird dennoch eine freundlichere Tendenz erwartet, vor allem wegen der er…",
-     "einordnung": "Der Schluss unter der 200-Tage-Linie verschlechtert das kurzfristige Chartbild, auch wenn ein einzelner Handelstag noch keine Trendentscheidung ist. Die Hoffnung auf eine Gegenbewegung ist angesichts…",
-     "figures": "Schluss bei 24.702 Punkten, minus 1,26 Prozent; zwischenzeitliches Hoch über 25.100 Punkte; 200-Tage-Linie bei 25.000 Punkten"
-    },
-    {
-     "date": "2026-11-26",
-     "video_id": "K9UDgUwObLo",
-     "url": "https://www.youtube.com/watch?v=K9UDgUwObLo&t=0s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX erholt sich nach einem Rücksetzer, während der Nasdaq laut Host eine Korrektur von 20 % zeigt. Der Fear-and-Greed-Index bei 15 und der Morgan Stanley Sentiment Index signalisieren extreme Ang…",
-     "einordnung": "Die Marktdaten bestätigen die Erholung im DAX, aber der Fear-and-Greed-Wert von 15 zeigt, dass die Risikobereitschaft noch nicht zurückgekehrt ist. Extreme Angst kann historisch ein guter Kontraindik…",
-     "figures": "DAX laut Host +1,8 % und bei 25.000 Punkten; aktuell laut Marktdaten 25.216 Punkte und +2,08 %; Nasdaq 20 % Korrektur; VIX 36; Fear and Greed 15; Capex 1,5 Billionen USD; BIP 4,3 %"
-    },
-    {
-     "date": "2026-11-24",
-     "video_id": "W11kFdFSLpA",
-     "url": "https://www.youtube.com/watch?v=W11kFdFSLpA&t=863s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX unterbrach seine Verlustserie und schloss rund 2 Prozent höher oberhalb der 200-Tage-Linie und der psychologisch wichtigen Marke von 25.000 Punkten. In der Vorwoche hatte der Index noch 7,3 P…",
-     "einordnung": "Charttechnisch war der Sprung über 25.000 Punkte ein wichtiges kurzfristiges Entspannungssignal, doch der aktuelle Datenstand liegt wieder darunter. Nach einem Wochenverlust von 7,3 Prozent bleibt da…",
-     "figures": "Video: +2% auf 25.364 Punkte; Videobeschreibung: +2,15% auf 25.337 Punkte; Freitagsschluss 24.800 Punkte; Vorwochenverlust -7,3%; aktuell laut Marktdaten 25.018 Punkte und -1,26%"
-    },
-    {
-     "date": "2026-11-24",
-     "video_id": "i6hLFUQiit4",
-     "url": "https://www.youtube.com/watch?v=i6hLFUQiit4&t=1979s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX verlor innerhalb von sechs Handelstagen mehr als 2.000 Punkte und lag laut Host bei 25.330 Punkten. Mit einem Jahresplus von nur 2,1 Prozent sei der Index faktisch wieder am Jahresanfang ange…",
-     "einordnung": "Die Abweichung zwischen Host-Niveau und aktuellen Marktdaten zeigt die hohe Intraday-Volatilität. Bei 25.018 Punkten und 1,26 Prozent Minus bleibt der DAX laut Marktdaten klar unter Druck.",
-     "figures": "Host: 25.330 Punkte; aktuell laut Marktdaten: 25.018 Punkte; mehr als 2.000 Punkte Verlust in sechs Handelstagen; plus 2,1 Prozent seit Jahresbeginn"
-    },
-    {
-     "date": "2026-11-23",
-     "video_id": "JxUsy_ZmS14",
-     "url": "https://www.youtube.com/watch?v=JxUsy_ZmS14&t=1398s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX wurde durch die Tech-Korrektur belastet, weist laut Host aber weiterhin eine intakte Aufwärtstrendstruktur auf. Die zentrale Unterstützung liegt bei 24.860 Punkten, das technische Ziel bei 28…",
-     "einordnung": "Der DAX zeigt im Vergleich zur US-Technologiebörse ein robusteres, aber ebenfalls angeschlagenes Bild. Die enge Nähe von EMA 50 und Unterstützung macht die genannte Zone zur kurzfristigen Entscheidun…",
-     "figures": "EMA 50 bei 24.900 Punkten; Unterstützung bei 24.860 Punkten; Ziel bei 28.800 Punkten; möglicher Rückfall bis 23.000 Punkte."
-    },
-    {
-     "date": "2026-11-19",
-     "video_id": "5wS5zsYClPo",
-     "url": "https://www.youtube.com/watch?v=5wS5zsYClPo&t=813s",
-     "channel": "BerneckerTV",
-     "kategorie": "chartanalyse",
-     "note": "Für die Indizes sieht der Host noch eine Restkorrektur von etwa 5 Prozent. Beim DAX nennt er als Größenordnung einen Rückgang von 26.000 auf 25.500 Punkte; Nvidia könne zusätzlich 5 bis 10 Prozent ve…",
-     "einordnung": "Der aktuell gemeldete DAX-Stand von 25.464 Punkten liegt bereits nahe an der vom Host genannten Marke von 25.500 Punkten. Das macht die Größenordnung nachvollziehbar, beseitigt aber nicht das Risiko…",
-     "figures": "Etwa 5 Prozent Restrisiko, 26.000 auf 25.500 DAX-Punkte, 5 bis 10 Prozent bei Nvidia"
-    },
-    {
-     "date": "2026-11-17",
-     "video_id": "CnEStLtZP4I",
-     "url": "https://www.youtube.com/watch?v=CnEStLtZP4I&t=817s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX stieg zwischenzeitlich auf Rekordhochs, was der Host vor allem mit Umschichtungen aus Chip- und KI-Aktien erklärt. Langfristig hält er ein durchschnittliches Wachstum von 8,85 Prozent pro Jah…",
-     "einordnung": "Der DAX zeigt relative Stärke, doch die aktuelle Bewegung wirkt teilweise wie eine Kapitalrotation und nicht wie ein eindeutiger Konjunkturaufschwung. Bei 26.045 Punkten und einem Tagesminus von 2,08…",
-     "figures": "8,85 Prozent jährliches Wachstum; laut Host rund 26.100 Punkte, zwischenzeitlich 26.800 bis 26.900 Punkte; Prognosen 27.300 Punkte für 2026, 38.000 beziehungsweise 40.000 Punkte für 2030 und 58.000 P…"
-    },
-    {
-     "date": "2026-11-16",
-     "video_id": "LjUia13snt0",
-     "url": "https://www.youtube.com/watch?v=LjUia13snt0&t=111s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt trotz Handelskrieg und Energiekrise technische Stärke. Der Host sieht ein Kursziel von 28.800 Punkten, erwartet auf dem Weg dorthin aber einen steinigen Anstieg mit zwischenzeitlichen K…",
-     "einordnung": "Die relative Stärke des DAX fällt im Vergleich zum schwächeren Technologiekomplex auf. Das Setup bleibt konstruktiv, ist nach dem starken Lauf aber eher von Rücksetzern als von einem geradlinigen Ans…",
-     "figures": "Kursziel: 28.800 Punkte; aktueller DAX laut Marktdaten: 26.599 Punkte (-0,57 %)"
-    },
-    {
-     "date": "2026-11-13",
-     "video_id": "TAyK_gCkRXw",
-     "url": "https://www.youtube.com/watch?v=TAyK_gCkRXw&t=366s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX stieg erstmals im Tagesverlauf über 27.000 Punkte, gab anschließend aber etwas nach. Der Host bewertet den Anstieg von 25.000 auf 27.000 Punkte in kurzer Zeit als besonders dynamische Rally.",
-     "einordnung": "Der Sprung über 27.000 Punkte ist ein starkes Momentum-Signal, aber kein Freibrief für die nächste Etappe. Nach einer derart schnellen Bewegung steigt erfahrungsgemäß die Anfälligkeit für Gewinnmitna…",
-     "figures": "Rekordmarke 27.000 Punkte, Anstieg von 25.000 Punkten, aktuell laut Marktdaten 26.772 Punkte"
-    },
-    {
-     "date": "2026-11-10",
-     "video_id": "KRqHmPKgyFQ",
-     "url": "https://www.youtube.com/watch?v=KRqHmPKgyFQ&t=296s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der DAX stieg nach dem Wahlsieg zunächst um rund 700 Punkte auf etwa 26.600 Punkte, bevor er innerhalb von zwei Tagen rund 1.000 Punkte einbüßte.",
-     "einordnung": "Die extreme Schwankungsbreite spricht eher für einen überdehnten Markt als für einen stabilen neuen Aufwärtstrend. Der aktuelle Stand liegt zwar wieder nahe am genannten Hoch, doch die politische und…",
-     "figures": "Anstieg um 700 Punkte, anschließend Einbruch um 1.000 Punkte; kurzfristiges Hoch bei 26.600 Punkten; aktuell laut Marktdaten 26.347 Punkte"
-    },
-    {
-     "date": "2026-11-09",
-     "video_id": "mrV7Oatlozw",
-     "url": "https://www.youtube.com/watch?v=mrV7Oatlozw&t=425s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX hatte zuvor ein neues Rekordhoch erreicht und fiel anschließend kräftig zurück. Zum Sendungszeitpunkt wurde eine leichte Erholung erwartet.",
-     "einordnung": "Der Rückfall nach dem Rekordhoch ist ein klassischer Hinweis auf nachlassende Risikobereitschaft, aber noch kein Beweis für einen neuen Bärenmarkt. Die deutlich schwächere aktuelle Datenlage mahnt je…",
-     "figures": "DAX aktuell laut Marktdaten 25.820 Punkte, minus 1,92%"
-    },
-    {
-     "date": "2026-11-09",
-     "video_id": "uup5fsAz-3o",
-     "url": "https://www.youtube.com/watch?v=uup5fsAz-3o&t=764s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der DAX zeigt sich trotz des Stresses in Frankreich erstaunlich stabil. Die wichtige Unterstützung liegt bei 24.650 Punkten; darüber bleibt ein Anstieg in Richtung 28.800 Punkte möglich.",
-     "einordnung": "Die charttechnische Ausgangslage ist trotz des angespannten Umfelds konstruktiver als bei vielen US-Technologiewerten. Der aktuelle Datenblock mit einem DAX-Stand von 26.267 Punkten und einem Tagespl…",
-     "figures": "Unterstützung bei 24.650 Punkten, Ziel bei 28.800 Punkten"
-    }
-   ]
-  },
-  "RHM.DE": {
-   "name": "Rheinmetall",
-   "auftritte": [
-    {
-     "date": "2026-11-26",
-     "video_id": "tOxytSTlmX0",
-     "url": "https://www.youtube.com/watch?v=tOxytSTlmX0&t=519s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall zeigt vor dem anstehenden Kapitalmarkttag nach der jüngsten Schwäche eine leichte Erholung. Einzelne Analysten sprechen weiterhin Kaufempfehlungen aus.",
-     "einordnung": "Vor einem Kapitalmarkttag werden Erwartungen häufig vorweggenommen, wodurch die Aktie besonders anfällig für Enttäuschungen oder Gewinnmitnahmen ist. Die strukturelle Rüstungsnachfrage bleibt ein Plu…"
-    },
-    {
-     "date": "2026-11-26",
-     "video_id": "K9UDgUwObLo",
-     "url": "https://www.youtube.com/watch?v=K9UDgUwObLo&t=1191s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Vor dem Kapitalmarkttag erwartet der Markt für 2030 Umsatzziele zwischen 35 und 43 Mrd. €. Der Host sieht das eingepreiste Umsatzniveau von 30 Mrd. € als relativ niedrig, ein reduziertes Abwärtsrisik…",
-     "einordnung": "Die These lebt von einer Fortsetzung des europäischen Verteidigungsbooms und einer besseren Visibilität der Aufträge. Bei einem KGV von 16 wirkt die Bewertung nicht exzessiv, doch der Markt wird vor…",
-     "figures": "Erwartete Umsatzziele 2030: 35 bis 43 Mrd. €; eingepreistes Umsatzniveau 30 Mrd. €; KGV 16; Umsatz 50 Mrd. €; Marge 20 %; Insiderkäufe 700.000 €; Analystenziele 1.350 €, 1.340 €, 1.100 €, 1.000 € und…"
-    },
-    {
-     "date": "2026-11-24",
-     "video_id": "i6hLFUQiit4",
-     "url": "https://www.youtube.com/watch?v=i6hLFUQiit4&t=2255s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "news",
-     "note": "Vor dem Kapitalmarkttag am Donnerstag weist Egmond darauf hin, dass Rheinmetall bereits 60 Prozent vom Hoch gefallen ist. Er warnt davor, trotz des starken Kursrückgangs zu bullisch zu werden.",
-     "einordnung": "Ein starker Kursverlust allein macht einen Rüstungswert nicht automatisch günstig. Vor dem Kapitalmarkttag ist die entscheidende Frage, ob neue Ziele und Auftragsaussichten die bereits hohen Erwartun…",
-     "figures": "60 Prozent unter dem Hoch"
-    },
-    {
-     "date": "2026-11-12",
-     "video_id": "xE_TatFj0Pg",
-     "url": "https://www.youtube.com/watch?v=xE_TatFj0Pg&t=1432s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Rheinmetall steht nach Gewinnwarnungen aus der Branche unter Druck; der Kurs fiel von 1.000 auf 800 Euro. Der Host hält die Bewertung mit einem KGV von unter 18 für günstig und sieht insbesondere nac…",
-     "einordnung": "Der Rückgang hat die Bewertung deutlich entlastet, beseitigt aber nicht die zyklischen und politischen Erwartungen, die zuvor im Kurs steckten. Entscheidend wird sein, ob der Kapitalmarkttag neue Wac…",
-     "figures": "Kursrückgang von 1.000 auf 800 Euro, KGV unter 18, rund 20 Prozent niedrigere Kursziele."
-    },
-    {
-     "date": "2026-11-10",
-     "video_id": "KRqHmPKgyFQ",
-     "url": "https://www.youtube.com/watch?v=KRqHmPKgyFQ&t=575s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Rheinmetall gab nach einer Gewinnwarnung wegen verschobener Projekte 16,5 Prozent nach. Der Host rät zum Verkauf.",
-     "einordnung": "Die Reaktion zeigt, wie hoch die Erwartungen im Rüstungssektor bereits waren. Projektverschiebungen treffen bei einem Auftragsgeschäft nicht nur den aktuellen Umsatz, sondern können auch die Glaubwür…",
-     "figures": "Umsatz 13,2 Mrd. Euro, operative Marge 18,5 Prozent, Aktie minus 16,5 Prozent"
-    },
-    {
-     "date": "2026-11-09",
-     "video_id": "uup5fsAz-3o",
-     "url": "https://www.youtube.com/watch?v=uup5fsAz-3o&t=1101s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Die Unterstützung bei 934 Euro wurde gebrochen; als nächste wichtige Barriere gilt 1.096 Euro. Ein belastbarer Boden ist aus Sicht des Hosts noch nicht erkennbar.",
-     "einordnung": "Der Bruch der Unterstützung ist charttechnisch ein Warnsignal und wiegt schwerer als die langfristig starke Rüstungsstory. Für eine nachhaltige Stabilisierung müsste die Aktie zunächst verlorenes Ter…",
-     "figures": "Unterstützung bei 934 Euro gebrochen, Widerstand bei 1.096 Euro"
-    },
-    {
-     "date": "2026-11-09",
-     "video_id": "pB401bANsOk",
-     "url": "https://www.youtube.com/watch?v=pB401bANsOk&t=870s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Die Aktie ist unter 800 Euro gefallen, während CEO Armin Papperger erneut Aktien gekauft hat. Analysten senken zwar teilweise ihre Kursziele, das niedrigste genannte Kursziel liegt jedoch weiterhin b…",
-     "einordnung": "Der Insiderkauf stützt das Vertrauen, beseitigt aber nicht das Risiko sinkender Margenerwartungen. Nach der starken Aufwärtsbewegung ist die Aktie zudem anfällig für Gewinnmitnahmen und eine Neubewer…",
-     "figures": "CEO-Kauf von 249 Aktien zu 844,00 Euro am 6. November; KGV 18; erwartete operative Marge 18,5% nach zuvor 19%; niedrigstes Kursziel 1.000 Euro"
-    },
-    {
-     "date": "2026-11-06",
-     "video_id": "0koj6--8Ias",
-     "url": "https://www.youtube.com/watch?v=0koj6--8Ias&t=460s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Belastende Zahlen und ein enttäuschender Ausblick drückten auf die Aktie. Das Boxer-Geschäft und Artilleriemunition werden erst später stärker beitragen, während die Margenentwicklung negativ bewerte…",
-     "einordnung": "Die langfristige Rüstungsstory wird kurzfristig von Ausführung, Lieferprofil und Margen überlagert. Nach einer starken Vorgeschichte reicht ein positiver Auftragseingang allein nicht, wenn Gewinnschä…"
-    },
-    {
-     "date": "2026-11-06",
-     "video_id": "tqZanIS3ebQ",
-     "url": "https://www.youtube.com/watch?v=tqZanIS3ebQ&t=1314s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Bei Rheinmetall wurden die Kursziele im Durchschnitt um 22 Prozent gesenkt. Der Host sieht trotz dieser Revisionen bei etwa 800 Euro ein attraktives Chance-Risiko-Verhältnis.",
-     "einordnung": "Die gesenkten Kursziele zeigen, dass selbst strukturelles Rüstungswachstum nicht vor Gewinnmitnahmen und Erwartungsanpassungen schützt. Ein KGV unter 19 wirkt im Verhältnis zum langfristigen Thema mo…",
-     "figures": "Kursziele unter anderem: Metzler 2.180 auf 1.750 Euro, Kepler 1.900 auf 1.450 Euro; KGV unter 19; aktueller Kurs laut Host 810 Euro."
-    },
-    {
-     "date": "2026-11-05",
-     "video_id": "yH0v968w-EM",
-     "url": "https://www.youtube.com/watch?v=yH0v968w-EM&t=499s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Rheinmetall senkt die Umsatzprognose auf rund 13,2 Milliarden Euro und nimmt auch die erwartete operative Marge zurück. Verzögerungen beim Boxer-Projekt und bei Artilleriemunition belasten den Ausbli…",
-     "einordnung": "Die langfristige Aufrüstungsstory bleibt intakt, kurzfristig zählt jedoch die Ausführung: Verzögerte Programme treffen Umsatz, Marge und Vertrauen gleichzeitig. Nach der starken Branchenperformance i…",
-     "figures": "rund 13,2 Mrd. Euro Umsatz, vorbörslich minus 5–7%"
-    },
-    {
-     "date": "2026-11-05",
-     "video_id": "yFf6CPPlyGY",
-     "url": "https://www.youtube.com/watch?v=yFf6CPPlyGY&t=1947s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Rheinmetall liefert starke operative Zahlen, verfehlt beim Umsatz jedoch die Erwartungen und senkt wegen Verzögerungen beim Boxer-Projekt und bei Artilleriemunition die Prognose. Der Host sieht die B…",
-     "einordnung": "Hier prallen operative Stärke und fehlende kurzfristige Visibilität aufeinander. Ein PEG von 0,5 kann attraktiv wirken, doch die Prognosesenkung und das Book-to-Bill unter 1 erklären, warum der Markt…",
-     "figures": "Umsatz +32 Prozent auf 3,15 Mrd. Euro gegenüber erwarteten 3,23 Mrd. Euro, operatives Ergebnis +66 Prozent auf über 550 Mio. Euro, operative Marge 17,5 Prozent gegenüber 14,8 Prozent im Vorjahr, Auft…"
-    },
-    {
-     "date": "2026-11-03",
-     "video_id": "vfCrg-3KLoY",
-     "url": "https://www.youtube.com/watch?v=vfCrg-3KLoY&t=2543s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Rheinmetall wird als Unternehmen genannt, das in den nächsten Tagen Quartalszahlen vorlegt.",
-     "einordnung": "Die bevorstehenden Zahlen können den Verteidigungssektor unabhängig vom KI-Ausverkauf bewegen. Der Host liefert im vorliegenden Material keine konkrete Richtungsvorgabe."
-    }
-   ]
-  },
-  "IFX.DE": {
-   "name": "Infineon",
-   "auftritte": [
-    {
-     "date": "2026-11-26",
-     "video_id": "tOxytSTlmX0",
-     "url": "https://www.youtube.com/watch?v=tOxytSTlmX0&t=533s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon lag zeitweise 7 Prozent im Plus. Auch die asiatischen Wettbewerber SK Hynix und Samsung waren zunächst stark, gaben ihre Gewinne im weiteren Verlauf aber wieder ab.",
-     "einordnung": "Der Sprung zeigt die hohe Hebelwirkung von Halbleiterwerten auf eine technische Erholung im Sektor. Dass die asiatische Konkurrenz später wieder abverkauft wurde, mahnt allerdings zur Vorsicht gegenü…",
-     "figures": "Infineon zeitweise plus 7 Prozent"
-    },
-    {
-     "date": "2026-11-24",
-     "video_id": "W11kFdFSLpA",
-     "url": "https://www.youtube.com/watch?v=W11kFdFSLpA&t=963s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Infineon stieg im Sog der KI-Rally um 6,6 Prozent. Das Analystenhaus Rothschild sprach eine Kaufempfehlung mit einem Kursziel von 65 Euro aus; zusätzlich stützt ein Aktienrückkauf. Seit Juni war die…",
-     "einordnung": "Die Erholung ist angesichts des vorherigen Einbruchs kräftig, aber der Kursverfall zeigt zugleich, wie zyklisch der Halbleiterwert wahrgenommen wird. Das Rückkaufprogramm kann den Kurs stabilisieren,…",
-     "figures": "+6,6%, Kursziel 65 Euro, etwa 89 Euro auf 44 Euro, rund -45%"
-    },
-    {
-     "date": "2026-11-24",
-     "video_id": "i6hLFUQiit4",
-     "url": "https://www.youtube.com/watch?v=i6hLFUQiit4&t=348s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Infineon fiel auf 46 Euro. Egmond erwartet, dass die Aktie zum Jahresende unter dem Niveau von Ende 2025 schließt; Erholungen seien daher Verkaufsgelegenheiten.",
-     "einordnung": "Infineon ist als zyklischer Halbleiterwert besonders anfällig für eine Kombination aus Konjunkturschwäche, Lagerkorrekturen und sinkender Risikobereitschaft. Der Kurs zeigt damit eher die Branchen- a…",
-     "figures": "Aktuell 46 Euro, 37,60 Euro zum Jahresende 2025, laut Host noch 15 Prozent bis zum Jahresanfangsniveau"
-    },
-    {
-     "date": "2026-11-17",
-     "video_id": "CnEStLtZP4I",
-     "url": "https://www.youtube.com/watch?v=CnEStLtZP4I&t=366s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon war gemeinsam mit Siemens Energy einer der größten Gewinner im DAX. Der Host hält die Kursgewinne jedoch für nicht nachhaltig und erwartet, dass bis zum Jahresende ein großer Teil davon wied…",
-     "einordnung": "Die Einschätzung passt zu einem zyklischen Halbleiterwert, dessen Kurs stark von Gewinnrevisionen und nicht nur von der aktuellen Unternehmenslage abhängt. Nach einer kräftigen Erholung steigt das Rü…",
-     "figures": "28,3 Prozent Performance seit Jahresanfang, zwischenzeitlich 80 bis 85 EUR, zuletzt unter 50 EUR"
-    },
-    {
-     "date": "2026-11-11",
-     "video_id": "0G2ZbU-tcm8",
-     "url": "https://www.youtube.com/watch?v=0G2ZbU-tcm8&t=1094s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Infineon steigert den Umsatz um 12 % und verdoppelt das Geschäft mit KI-Rechenzentren auf 1,7 Mrd. €. Der Nettogewinn wächst um 50 %; der Host bleibt bullish, obwohl die Analystenziele weit auseinand…",
-     "einordnung": "Die breite Spanne der Kursziele zeigt, wie stark die Bewertung von den Annahmen zur KI-Dynamik abhängt. Operativ spricht das Gewinnwachstum für Rückenwind, doch die niedrigere HSBC-Einschätzung erinn…",
-     "figures": "Umsatz +12 % auf über 16 Mrd. €, KI-Umsatz 1,7 Mrd. €, Nettogewinn +50 % auf 1,5 Mrd. €, Prognose 2026/27: Umsatz 20 Mrd. €, Marge 25 %, Kursziele: HSBC 55 €, Berenberg 100 €, JP Morgan 96 €, Goldman…"
-    },
-    {
-     "date": "2026-11-10",
-     "video_id": "KRqHmPKgyFQ",
-     "url": "https://www.youtube.com/watch?v=KRqHmPKgyFQ&t=1267s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon meldete gute Zahlen, doch der Host stellt dem tatsächlichen EBIT das bereinigte EBIT gegenüber. Der Rechenzentrumsumsatz soll um 80 Prozent auf 4,0 Mrd. Euro steigen; zugleich wird der Auftr…",
-     "einordnung": "Die Wachstumsstory im Rechenzentrum ist attraktiv, aber die deutliche Differenz zwischen berichteten und bereinigten Kennzahlen verlangt einen kritischen Blick auf die Ergebnisqualität. Das Ausbleibe…",
-     "figures": "EBIT 2,214 Mrd. Euro, bereinigtes EBIT 3,22 Mrd. Euro, EBIT-Marge 13,5 Prozent, bereinigte Marge 19,7 Prozent, Rechenzentrumsumsatz plus 80 Prozent auf 4,0 Mrd. Euro"
-    },
-    {
-     "date": "2026-11-06",
-     "video_id": "0koj6--8Ias",
-     "url": "https://www.youtube.com/watch?v=0koj6--8Ias&t=502s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon erholte sich zeitweise um 4 Prozent, wurde anschließend jedoch wieder verkauft und lag noch 2 Prozent im Plus.",
-     "einordnung": "Die zunächst starke Erholung und das anschließende Abbröckeln zeigen, dass Käufer im schwachen Sektorumfeld noch nicht die Kontrolle übernommen haben. Infineon ist als diversifizierter Halbleiterwert…",
-     "figures": "zeitweise +4%, dann +2%"
-    },
-    {
-     "date": "2026-11-03",
-     "video_id": "gNArzC1uGgI",
-     "url": "https://www.youtube.com/watch?v=gNArzC1uGgI&t=678s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Infineon wird als KI- und Chipwert auf die Watchlist gesetzt. Die anstehenden AMD-Zahlen gelten als wichtiger Indikator für das Halbleitersegment.",
-     "einordnung": "Infineon ist als Zulieferer stärker vom gesamten Investitionszyklus abhängig als von einem einzelnen KI-Hype. Die AMD-Zahlen können deshalb vor allem über die Stimmung und die Erwartungen im Chipsekt…"
-    },
-    {
-     "date": "2026-11-03",
-     "video_id": "vfCrg-3KLoY",
-     "url": "https://www.youtube.com/watch?v=vfCrg-3KLoY&t=409s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "chartanalyse",
-     "note": "Infineon gehörte nach den SK-Hynix-Zahlen zunächst zu den größten Gewinnern im DAX. Egmond ordnet die Bewegung als technische Erholung ein; später zählte die Aktie zu den größeren DAX-Verlierern.",
-     "einordnung": "Infineon ist stärker von Industrie- und Automobilzyklen geprägt als reine Speicherwerte, bleibt aber über das Halbleitersentiment vom gleichen Risikoappetit abhängig. Die zwischenzeitliche Erholung w…"
-    },
-    {
-     "date": "2026-10-27",
-     "video_id": "xtu2UzowK7c",
-     "url": "https://www.youtube.com/watch?v=xtu2UzowK7c&t=418s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "makro",
-     "note": "Der Host führt den Kursanstieg bei Infineon auf die hohen Investitionen von SpaceX und die dadurch ausgelösten Hoffnungen für Chip- und KI-Werte zurück.",
-     "einordnung": "Das ist vor allem ein Sentiment- und Zuliefererimpuls, keine eigenständige Neubewertung der Infineon-Fundamentaldaten. Solche Bewegungen können in einem nervösen Halbleitersektor schnell wieder korri…"
-    },
-    {
-     "date": "2026-10-20",
-     "video_id": "qV0UIKOOY7c",
-     "url": "https://www.youtube.com/watch?v=qV0UIKOOY7c&t=521s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Infineon gehört laut Host zu den größten Verlierern im DAX. Die Sorge vor einer geplatzten KI-Blase hält die Aktie unter Druck.",
-     "einordnung": "Infineon ist nicht identisch mit den großen KI-Rechenzentrumswerten, wird aber vom allgemeinen Halbleitersentiment mitgezogen. Das macht die Aktie anfällig für pauschale Sektorverkäufe, obwohl die Ge…"
-    },
-    {
-     "date": "2026-10-19",
-     "video_id": "zC_esKxuFTA",
-     "url": "https://www.youtube.com/watch?v=zC_esKxuFTA&t=365s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Infineon steht zusammen mit anderen KI- und Technologiewerten unter Druck. Die 200-Tage-Linie ist in den Fokus gerückt; werden die letzten Tiefs unterschritten, drohen weitere Kursverluste.",
-     "einordnung": "Infineon ist kein reiner KI-Wert, wird vom Markt aber derzeit in den allgemeinen Halbleiter- und Technologiebereich eingeordnet. Der Bruch wichtiger charttechnischer Unterstützungen würde deshalb nic…"
     }
    ]
   },
@@ -13423,130 +13666,6 @@
     }
    ]
   },
-  "ADS.DE": {
-   "name": "Adidas",
-   "auftritte": [
-    {
-     "date": "2026-11-03",
-     "video_id": "gNArzC1uGgI",
-     "url": "https://www.youtube.com/watch?v=gNArzC1uGgI&t=757s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Adidas liefert solide Zahlen und berichtet von einem guten Geschäft in China und den USA. Die Nachfrage nach Laufschuhen ist gestiegen; vorbörslich lag die Aktie leicht im Minus, der Host sieht jedoc…",
-     "einordnung": "Die regionale Breite und die Nachfrage nach Laufschuhen sprechen für eine operative Stabilisierung. Dass die Aktie vorbörslich dennoch leicht schwächer notiert, zeigt, dass der Markt bei Konsumwerten…"
-    },
-    {
-     "date": "2026-10-29",
-     "video_id": "JnjRzc89CAM",
-     "url": "https://www.youtube.com/watch?v=JnjRzc89CAM&t=1534s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Adidas erzielt im dritten Quartal einen Rekordgewinn und hebt die Jahresprognose an. Der kräftige Ergebnisanstieg wird jedoch durch eine Zollrückerstattung begünstigt; ohne diesen Sondereffekt zeigt…",
-     "einordnung": "Adidas wirkt fundamental deutlich günstiger als viele hoch bewertete Wachstumswerte, doch der Sondereffekt relativiert den Rekordcharakter des Quartals. Die Qualität der Erholung muss sich an der Ent…",
-     "figures": "Umsatz plus 9 Prozent auf 7,25 Mrd. Euro; EBIT plus 37 Prozent auf über 1 Mrd. Euro; EBIT-Marge 13,9 Prozent nach 11,1 Prozent im Vorjahr; Nettogewinn plus 48 Prozent auf 711 Mio. Euro; Ergebnis je A…"
-    },
-    {
-     "date": "2026-10-21",
-     "video_id": "vHxakiF17JQ",
-     "url": "https://www.youtube.com/watch?v=vHxakiF17JQ&t=619s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adidas meldete ein Rekordquartal mit kräftigem Umsatz- und Gewinnwachstum und hob die Prognose an. Die Aktie wurde vorbörslich rund 3,5% höher erwartet.",
-     "einordnung": "Adidas liefert derzeit die überzeugendste Kombination aus Wachstum, Margenverbesserung und angehobener Prognose im heutigen Einzelwert-Tableau. Zu beachten ist allerdings, dass die Zollrückerstattung…",
-     "figures": "Umsatz +9% auf 7,25 Mrd. EUR, Bruttomarge +2,5 Prozentpunkte auf 54,3%, Betriebsgewinn +37% auf rund 1 Mrd. EUR einschließlich 200 Mio. USD Zollrückerstattungen, Prognose für das Betriebsergebnis 2,5…"
-    },
-    {
-     "date": "2026-10-12",
-     "video_id": "dygYRkXpB_g",
-     "url": "https://www.youtube.com/watch?v=dygYRkXpB_g&t=450s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "chartanalyse",
-     "note": "Adidas zeigt technisch eine kleine Erholungsbewegung in Richtung 200-Tagelinie. Der Host hält bei ausbleibenden größeren Impulsen von Nike einen Anstieg bis 160 Euro für möglich.",
-     "einordnung": "Das ist primär eine technische Erholungsperspektive und keine neue fundamentale Wachstumsstory. Ohne positive Branchensignale bleibt die 200-Tagelinie der Prüfstein dafür, ob aus dem Gegenimpuls mehr…",
-     "figures": "Mögliches Kursziel: 160 EUR"
-    },
-    {
-     "date": "2026-10-01",
-     "video_id": "yylBKlp7vIg",
-     "url": "https://www.youtube.com/watch?v=yylBKlp7vIg&t=536s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adidas büßte im dritten Quartal 19 Prozent ein und zählte damit zu den DAX-Flops.",
-     "einordnung": "Der Rückgang zeigt, dass Markenstärke allein in einem vorsichtigeren Konsumumfeld nicht genügt. Für eine bessere Kursentwicklung braucht es wieder steigende Absatzdynamik und verlässliche Margenforts…",
-     "figures": "Q3-Performance -19%"
-    },
-    {
-     "date": "2026-09-23",
-     "video_id": "_DMyTuJrFjQ",
-     "url": "https://www.youtube.com/watch?v=_DMyTuJrFjQ&t=292s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Adidas startet den zweitägigen Investorentag 'Home of Innovation' mit Fokus auf mittelfristige Strategie, Produkte und Wachstum. Für 2026 werden ein währungsbereinigtes Umsatzwachstum von 9 bis 10% u…",
-     "einordnung": "Der Investorentag kann einen neuen Bewertungsimpuls liefern, sofern Adidas nicht nur Produkte, sondern auch belastbare Margenperspektiven präsentiert. Nach dem jüngsten Kursanstieg bleibt die Aktie a…",
-     "figures": "Prognose 2026: währungsbereinigtes Umsatzwachstum 9 bis 10% und EBIT 2,3 Mrd. Euro; Aktie am Vortag +2,6%"
-    },
-    {
-     "date": "2026-08-17",
-     "video_id": "3DUJ3DYoTx8",
-     "url": "https://www.youtube.com/watch?v=3DUJ3DYoTx8&t=2159s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "Der Bullkeil bei adidas wurde bei 172 bis 173 Euro ausgelöst, anschließend fiel die Aktie jedoch zurück. Ein neues Kaufsignal sieht der Host erst oberhalb von 190 Euro und bleibt vorsichtig.",
-     "einordnung": "Der Rückfall nach dem Keilausbruch ist ein klassischer Warnhinweis für fehlende Anschlusskäufe. Die 190-Euro-Marke markiert im Host-Szenario die Hürde, an der die Käufer ihre Stärke erneut beweisen m…",
-     "figures": "172 bis 173 Euro Ausbruch; 190 Euro neue Barriere"
-    },
-    {
-     "date": "2026-08-04",
-     "video_id": "F_2Zy0R6i1I",
-     "url": "https://www.youtube.com/watch?v=F_2Zy0R6i1I&t=629s",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "fundamental",
-     "note": "Adidas steigerte den Umsatz im zweiten Quartal um 13,3 Prozent auf 6,74 Mrd. Euro. Höhere Marketingausgaben belasteten jedoch das Ergebnis: Das EBIT wuchs nur um 5,1 Prozent auf 574 Mio. Euro und lag…",
-     "einordnung": "Der Umsatz wächst ordentlich, aber der deutlich höhere Marketingeinsatz wird nicht ausreichend in operatives Ergebnis übersetzt. Das ist für einen Konsumwert mit starkem Markenanspruch ein Warnsignal…",
-     "figures": "Umsatz 6,74 Mrd. Euro im zweiten Quartal, plus 13,3 Prozent; Marketingausgaben 924 Mio. Euro, plus 30 Prozent; EBIT 574 Mio. Euro, plus 5,1 Prozent; Erwartung 616 Mio. Euro; Marge 8,5 Prozent; Umsatz…"
-    },
-    {
-     "date": "2026-07-31",
-     "video_id": "SQ7RGehrHSw",
-     "url": "https://www.youtube.com/watch?v=SQ7RGehrHSw&t=396s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adidas eröffnete vier bis fünf Prozent schwächer und erholte sich anschließend. Der Host verweist auf die Belastung durch Zölle, sieht die einmaligen Werbeausgaben rund um die Fußball-Weltmeisterscha…",
-     "einordnung": "Die Erholung spricht für Nachfrage auf dem niedrigeren Niveau, beseitigt aber weder Zollrisiken noch die Unsicherheit über die Kosten der WM-Kampagne. Bei Adidas sollte man daher stärker zwischen ein…",
-     "figures": "Eröffnung minus 4 % bis minus 5 %"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "RefnY01hhvw",
-     "url": "https://www.youtube.com/watch?v=RefnY01hhvw&t=563s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Adidas steigerte den Umsatz im zweiten Quartal um 13 Prozent auf 6,7 Milliarden Euro und hob die Prognose für 2026 an. Das Ergebnis fiel wegen höherer Marketingausgaben und Zölle schwächer aus, die A…",
-     "einordnung": "Das ist ein typischer Fall, in dem der operative Umsatzimpuls durch die Kosten- und Margenseite überlagert wird. Die angehobene Prognose ist konstruktiv, doch der Markt verlangt Belege, dass Marketin…",
-     "figures": "Umsatz +13 % auf 6,7 Mrd. €, Prognose für 2026 angehoben"
-    },
-    {
-     "date": "2026-07-30",
-     "video_id": "IpdIeeA0GLM",
-     "url": "https://www.youtube.com/watch?v=IpdIeeA0GLM&t=1076s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "Adidas profitiert von der starken Nachfrage rund um die Fußball-WM und steigert den Umsatz deutlich. Der Gewinn wächst jedoch wesentlich langsamer, weil Kosten und Zölle belasten; der unveränderte Au…",
-     "einordnung": "Adidas zeigt derzeit das klassische Bild eines Umsatzwachstums ohne ausreichenden operativen Hebel. Solange die Margen nicht sichtbar stärker anziehen, bleibt ein hohes Kursziel schwer zu rechtfertig…",
-     "figures": "Umsatz: plus 13 Prozent auf 6,7 Milliarden Euro; EBIT: plus 5 Prozent auf 574 Millionen Euro; Prognose: 2,3 Milliarden Euro; Analystenkonsens: 2,4 Milliarden Euro; Jefferies-Kursziel: 205 Euro."
-    },
-    {
-     "date": "2026-07-20",
-     "video_id": "hcmndcPAbxk",
-     "url": "https://www.youtube.com/watch?v=hcmndcPAbxk&t=1647s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Adidas profitiert von der Fußball-Weltmeisterschaft, an der beide Finalisten mit Adidas-Ausrüstung beteiligt sind, sowie von hohen Trikotverkäufen und großer Markenpräsenz. Piper Sandler erhöht das K…",
-     "einordnung": "Die WM liefert einen starken kurzfristigen Marketingimpuls, entscheidend ist aber, ob daraus auch nach dem Turnier ein nachhaltiger Absatz- und Margeneffekt entsteht. Ein KGV von 18 wirkt im Markenar…",
-     "figures": "Earned Media Value 49 Millionen US-Dollar; Kursziel 200 Euro bei Piper Sandler; KGV 18; technisches Ziel 210 Euro"
-    }
-   ]
-  },
   "285A.T": {
    "name": "Kioxia",
    "auftritte": [
@@ -16115,21 +16234,6 @@
      "note": "Der TLT zeigt ein bärisches Muster; der Key Support bei 83 US-Dollar wurde gerissen. Das spricht für weiter steigende US-Renditen. Gleichzeitig verweist der Host auf rekordhohe Call-Positionen auf fa…",
      "einordnung": "Der gebrochene Support ist das stärkere technische Signal, solange der TLT nicht zügig über diese Marke zurückkehrt. Die hohe Positionierung auf fallende Renditen birgt allerdings das Potenzial für e…",
      "figures": "83 US-Dollar"
-    }
-   ]
-  },
-  "SAP": {
-   "name": "SAP",
-   "auftritte": [
-    {
-     "date": "2026-10-12",
-     "video_id": "6Pq-q_x9_pM",
-     "url": "https://www.youtube.com/watch?v=6Pq-q_x9_pM&t=1772s",
-     "channel": "Rendezvous mit Harry",
-     "kategorie": "chartanalyse",
-     "note": "SAP zeigt relative Stärke und einen prozyklischen Ausbruch, der laut Host eine Jahresendrally einleiten könnte. Die Aktie ist für ihn einen näheren Blick wert.",
-     "einordnung": "SAP gehört damit zu den konstruktivsten Einzelwerten der Sendung. Relative Stärke ist in einem von Rendite- und Konjunktursorgen geprägten Umfeld ein Qualitätsmerkmal, wobei der Ausbruch bestätigt we…",
-     "figures": "222"
     }
    ]
   },
@@ -19515,88 +19619,6 @@
      "note": "Carvana wird als S&P-500-Kandidat mit einer Marktkapitalisierung über 70 Mrd USD und einem Kursziel von 330–500 USD genannt.",
      "einordnung": "Carvana nach der Schuldenrestrukturierung und dem extremen Kurs-Runup als S&P-500-Kandidat zu diskutieren, zeigt, wie weit die Aktie gekommen ist. Bei einem Kursziel von 330–500 USD ist die Bandbreit…",
      "figures": "Marktkapitalisierung >70 Mrd USD, Kursziel 330–500 USD"
-    }
-   ]
-  },
-  "S92.DE": {
-   "name": "SMA Solar",
-   "auftritte": [
-    {
-     "date": "2026-08-24",
-     "video_id": "CxBQV7-eeMA",
-     "url": "https://www.youtube.com/watch?v=CxBQV7-eeMA&t=788s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "Das Umfeld für erneuerbare Energien bleibt grundsätzlich positiv, dennoch steht SMA Solar unter dem allgemeinen Marktdruck. Der Host empfiehlt, eine längerfristige Perspektive einzunehmen.",
-     "einordnung": "Ein positives Branchenumfeld reicht bei SMA Solar allein nicht aus, wenn Finanzierungskosten, Preisdruck oder schwache Nachfrage die kurzfristige Ertragslage belasten. Der Hinweis auf den langen Atem…"
-    },
-    {
-     "date": "2026-08-13",
-     "video_id": "mH0gLyCp4xk",
-     "url": "https://www.youtube.com/watch?v=mH0gLyCp4xk&t=525s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "SMA Solar meldete endgültige Zahlen mit 345 Millionen Euro Umsatz und einem EBT von 491 Millionen Euro nach einem Verlust im Vorjahr. Der Ausblick wurde bestätigt; technisch notiert die Aktie oberhal…",
-     "einordnung": "Die bestätigte Prognose ist in einem volatilen Solarumfeld ein Stabilitätsanker, während die Lage oberhalb der 200-Tage-Linie konstruktiv bleibt. Die Zahlenangabe zum EBT wirkt im Verhältnis zum gena…",
-     "figures": "345 Millionen Euro Umsatz; EBT 491 Millionen Euro; Vorjahresverlust; 200-Tage-Linie"
-    },
-    {
-     "date": "2026-07-24",
-     "video_id": "CchW9uxHhuM",
-     "url": "https://www.youtube.com/watch?v=CchW9uxHhuM&t=561s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "SMA Solar wird als möglicher Profiteur steigender Ölpreise im Bereich erneuerbarer Energien eingeordnet. Konkrete Unternehmenszahlen wurden nicht genannt.",
-     "einordnung": "Der Zusammenhang mit dem Ölpreis ist eher mittelbar, weil Solarwechselrichter nicht direkt mit dem Ölmarkt konkurrieren. Der strukturelle Rückenwind für erneuerbare Energien ist plausibel, doch bei S…"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "ZtKFU4SJtbQ",
-     "url": "https://www.youtube.com/watch?v=ZtKFU4SJtbQ&t=400s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "fundamental",
-     "note": "SMA Solar meldete gute Quartalszahlen und hob die Prognose an. Der Host verweist auf eine Umsatzprognose von 1,625 bis 1,725 Milliarden Euro sowie ein verbessertes operatives Ergebnis; die Aktie befi…",
-     "einordnung": "Eine angehobene Prognose ist in einem schwachen Markt ein klarer relativer Stärkeindikator. Nach einem bereits deutlichen Kursanstieg ist allerdings entscheidend, ob die operative Verbesserung weiter…",
-     "figures": "Umsatzprognose 1,625 bis 1,725 Milliarden Euro; seit dem Kauf plus 80 Prozent"
-    },
-    {
-     "date": "2026-07-17",
-     "video_id": "jbBenx99pmg",
-     "url": "https://www.youtube.com/watch?v=jbBenx99pmg&t=1056s",
-     "channel": "onvista",
-     "kategorie": "fundamental",
-     "note": "SMA Solar meldete starke Quartalszahlen, die zusätzlich von Zollrückerstattungen profitierten. Der Jahresausblick wurde deutlich angehoben.",
-     "einordnung": "Die Prognoseanhebung ist substanziell, aber die Zollrückerstattungen relativieren die Qualität des Quartals. Charttechnisch entscheidet die 65-Euro-Marke darüber, ob der Erholungsversuch über die Ein…",
-     "figures": "Umsatz 345 Mio. Euro, EBITDA 65 Mio. Euro gegenüber 44 Mio. Euro Konsens, EBIT 52 Mio. Euro gegenüber -30 Mio. Euro im Vorjahr, EBITDA-Prognose 180 bis 230 Mio. Euro nach zuvor 50 bis 180 Mio. Euro,…"
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "mNobFjJKrNE",
-     "url": "https://www.youtube.com/watch?v=mNobFjJKrNE&t=616s",
-     "channel": "Der Aktionär - Märkte am Morgen",
-     "kategorie": "news",
-     "note": "Die Aktie stieg 11 Prozent nach der Ankündigung von US-Beschränkungen gegen chinesische Solarkonzerne. Westliche Solaraktien profitieren von dieser Entwicklung.",
-     "einordnung": "Das ist ein geopolitischer Katalysator, kein fundamentaler Turnaround. SMA Solar profitiert kurzfristig vom Schutzschild gegen chinesische Konkurrenz, aber der Solar-Sektor leidet strukturell unter Ü…",
-     "figures": "+11%"
-    },
-    {
-     "date": "2026-07-01",
-     "video_id": "kbhs3X-LW2E",
-     "url": "https://www.youtube.com/watch?v=kbhs3X-LW2E&t=1221s",
-     "channel": "onvista",
-     "kategorie": "chartanalyse",
-     "note": "Nach starkem Anstieg leichte Konsolidierung. Ein mögliches US-Importverbot für chinesische Wechselrichter könnte SMA als westlichen Anbieter begünstigen. Technisch bleibt die Aktie bullisch, solange…",
-     "einordnung": "Das KGV-Kollaps von 120 auf 28 spiegelt die explosive Gewinnexpansion wider — das ist kein Bewertungsproblem, sondern ein Wachstumsstory. Der geopolitische Hebel durch ein chinesisches Importverbot i…",
-     "figures": "KGV 28 (zuvor 120-140); erwartetes Gewinnwachstum 70% und 18%; Unterstützung bei 59 EUR"
-    },
-    {
-     "date": "2026-05-19",
-     "video_id": "qvNHgD6xSvU",
-     "url": "https://www.youtube.com/watch?v=qvNHgD6xSvU",
-     "channel": "Fundamentalanalyse mit Egmond",
-     "kategorie": "sonstiges",
-     "note": "Im Video nur kurz erwähnt im Rahmen der Zuschauerfragen zu Erneuerbaren.",
-     "einordnung": "SMA Solar leidet unter dem Momentum-Wechsel – die Aktie ist hoch volatil und reagiert besonders sensibel auf Rotationseffekte."
     }
    ]
   },
